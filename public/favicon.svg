@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">GALO AI</title>
+  <rect width="64" height="64" rx="15" fill="#061724"/>
+  <g fill="#16B8A6">
+    <rect x="14" y="39" width="4" height="11" rx="2"/>
+    <rect x="21" y="34" width="4" height="16" rx="2"/>
+    <rect x="28" y="29" width="4" height="21" rx="2"/>
+    <rect x="35" y="24" width="4" height="26" rx="2"/>
+    <rect x="42" y="18" width="4" height="32" rx="2"/>
+  </g>
+  <path d="M15 14h31" stroke="#41C8E8" stroke-width="3" stroke-linecap="round"/>
+</svg>

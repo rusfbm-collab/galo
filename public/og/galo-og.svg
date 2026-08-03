@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">GALO AI</title>
+  <desc id="desc">Explicit world state and replayable execution</desc>
+  <rect width="1200" height="630" fill="#061724"/>
+  <g opacity=".08" stroke="#41C8E8"><path d="M0 90h1200M0 180h1200M0 270h1200M0 360h1200M0 450h1200M0 540h1200"/><path d="M100 0v630M200 0v630M300 0v630M400 0v630M500 0v630M600 0v630M700 0v630M800 0v630M900 0v630M1000 0v630M1100 0v630"/></g>
+  <g transform="translate(86 84)" fill="#16B8A6"><rect x="0" y="23" width="8" height="19" rx="4"/><rect x="15" y="16" width="8" height="26" rx="4"/><rect x="30" y="8" width="8" height="34" rx="4"/><rect x="45" width="8" height="42" rx="4"/></g>
+  <text x="166" y="122" fill="#fff" font-family="Arial, sans-serif" font-size="43" font-weight="700" letter-spacing="-2">GALO</text>
+  <text x="280" y="99" fill="#41C8E8" font-family="Arial, sans-serif" font-size="18" font-weight="700">AI</text>
+  <text x="86" y="278" fill="#fff" font-family="Arial, sans-serif" font-size="72" font-weight="600" letter-spacing="-4">Inspect the world state.</text>
+  <text x="86" y="362" fill="#fff" font-family="Arial, sans-serif" font-size="72" font-weight="600" letter-spacing="-4">Replay the execution.</text>
+  <text x="88" y="438" fill="#9BB0BF" font-family="Arial, sans-serif" font-size="28">A working bounded research prototype with disclosed boundaries.</text>
+  <rect x="86" y="508" width="238" height="50" rx="25" fill="#16B8A6"/>
+  <text x="112" y="541" fill="#061724" font-family="Arial, sans-serif" font-size="18" font-weight="700">aigalo.com</text>
+</svg>
