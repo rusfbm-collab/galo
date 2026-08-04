@@ -2,12 +2,23 @@ import { describe, expect, it } from "vitest";
 import {
   applyGaloOperation,
   buildCayleyTable,
+  buildCanonicalTower,
+  buildCanonicalTypedCell,
+  buildFixedActiveTransformation,
+  buildScaledTowerMorphism,
   canonicalTypedCellCount,
+  galoActionFamilies,
   galoLevels,
+  isStrongOperatorMorphism,
+  lawfulScaledTransfers,
   plusIndex,
   rawCellsPerOperator,
+  rawLawCellCount,
+  sameLevelAutomorphismCount,
   starIndex,
+  structuralOrbitCount,
   towerCounts,
+  unitMultipliers,
 } from "../src/content/mathematics";
 
 describe("GALO frozen PLUS/STAR mathematics", () => {
@@ -70,15 +81,95 @@ describe("GALO frozen PLUS/STAR mathematics", () => {
     expect(starIndex(3, 1, starIndex(3, 0, 1))).toBe(1);
   });
 
-  it("derives the 140 raw and 560 typed-cell invariants without stored table literals", () => {
-    expect(towerCounts.map((row) => row.cellsPerOperator)).toEqual([1, 4, 9, 16, 25, 36, 49]);
+  it("derives the 140-pair, 280-law-cell, and 560-typed-cell invariants without table literals", () => {
+    expect(towerCounts.map((row) => row.orderedPairs)).toEqual([1, 4, 9, 16, 25, 36, 49]);
+    expect(towerCounts.map((row) => row.lawCells)).toEqual([2, 8, 18, 32, 50, 72, 98]);
+    expect(towerCounts.map((row) => row.typedCells)).toEqual([4, 16, 36, 64, 100, 144, 196]);
     expect(rawCellsPerOperator).toBe(140);
+    expect(rawLawCellCount).toBe(280);
     expect(canonicalTypedCellCount).toBe(560);
-    expect(2 * 2 * rawCellsPerOperator).toBe(canonicalTypedCellCount);
+    expect(2 * rawCellsPerOperator).toBe(rawLawCellCount);
+    expect(2 * rawLawCellCount).toBe(canonicalTypedCellCount);
+  });
+
+  it("constructs every canonical typed coordinate exactly once and replays its raw table lookup", () => {
+    const tower = buildCanonicalTower();
+    expect(tower).toHaveLength(560);
+    expect(new Set(tower.map((cell) => cell.cellId)).size).toBe(560);
+
+    for (const cell of tower) {
+      expect(cell.target).toBe(applyGaloOperation(cell.operation, cell.level, cell.leftOperand, cell.rightOperand));
+      expect(cell.cellId).toBe(`L${cell.level}:${cell.family}:P${cell.source}:P${cell.active}`);
+    }
+
+    for (const level of galoLevels) {
+      for (const family of galoActionFamilies) {
+        expect(tower.filter((cell) => cell.level === level && cell.family === family)).toHaveLength(level ** 2);
+      }
+    }
+  });
+
+  it("preserves typed identity while applying LEFT and RIGHT operand placement exactly", () => {
+    const plusLeft = buildCanonicalTypedCell(3, "PLUS_LEFT", 0, 2);
+    const plusRight = buildCanonicalTypedCell(3, "PLUS_RIGHT", 0, 2);
+    const starLeft = buildCanonicalTypedCell(3, "STAR_LEFT", 0, 2);
+    const starRight = buildCanonicalTypedCell(3, "STAR_RIGHT", 0, 2);
+
+    expect([plusLeft.leftOperand, plusLeft.rightOperand, plusLeft.target]).toEqual([0, 2, 2]);
+    expect([plusRight.leftOperand, plusRight.rightOperand, plusRight.target]).toEqual([2, 0, 2]);
+    expect(plusLeft.cellId).not.toBe(plusRight.cellId);
+    expect([starLeft.leftOperand, starLeft.rightOperand, starLeft.target]).toEqual([0, 2, 0]);
+    expect([starRight.leftOperand, starRight.rightOperand, starRight.target]).toEqual([2, 0, 2]);
+  });
+
+  it("exposes an exact counterexample to naive Q3-to-Q5 same-index alignment", () => {
+    const mappedSourceResult = plusIndex(3, 1, 2);
+    const targetLevelResult = plusIndex(5, 1, 2);
+    expect(mappedSourceResult).toBe(0);
+    expect(targetLevelResult).toBe(3);
+    expect(mappedSourceResult).not.toBe(targetLevelResult);
+    expect(isStrongOperatorMorphism(3, 5, [0, 1, 2])).toBe(false);
+    expect(buildScaledTowerMorphism(3, 5)).toBeNull();
+  });
+
+  it("checks every lawful scaled tower morphism across all four families", () => {
+    expect(lawfulScaledTransfers).toHaveLength(16);
+    expect(
+      lawfulScaledTransfers
+        .filter(({ sourceLevel, targetLevel }) => sourceLevel >= 2 && targetLevel > sourceLevel)
+        .map(({ sourceLevel, targetLevel }) => [sourceLevel, targetLevel]),
+    ).toEqual([
+      [2, 4],
+      [2, 6],
+      [3, 6],
+    ]);
+
+    const l2ToL4 = buildScaledTowerMorphism(2, 4);
+    expect(l2ToL4).toEqual([0, 2]);
+    expect(l2ToL4 && isStrongOperatorMorphism(2, 4, l2ToL4)).toBe(true);
+  });
+
+  it("derives fixed-active ranks, 18 automorphisms, and 224 typed structural orbits", () => {
+    for (const level of galoLevels) {
+      for (let active = 0; active < level; active += 1) {
+        const rank = (family: (typeof galoActionFamilies)[number]) =>
+          new Set(buildFixedActiveTransformation(level, family, active)).size;
+
+        expect(rank("PLUS_LEFT")).toBe(level);
+        expect(rank("PLUS_RIGHT")).toBe(level);
+        expect(rank("STAR_LEFT")).toBe(active === 0 ? level : level - 1);
+        expect(rank("STAR_RIGHT")).toBe(active === 0 ? 1 : level);
+      }
+    }
+
+    expect(galoLevels.map((level) => unitMultipliers(level).length)).toEqual([1, 1, 2, 2, 4, 2, 6]);
+    expect(sameLevelAutomorphismCount).toBe(18);
+    expect(structuralOrbitCount).toBe(224);
   });
 
   it("rejects operands outside the selected finite carrier", () => {
     expect(() => applyGaloOperation("PLUS", 3, 3, 0)).toThrow(/belong to Q_3/);
     expect(() => applyGaloOperation("STAR", 2, 0, -1)).toThrow(/belong to Q_2/);
+    expect(() => buildCanonicalTypedCell(3, "STAR_LEFT", 0, 3)).toThrow(/belong to Q_3/);
   });
 });

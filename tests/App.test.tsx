@@ -116,12 +116,23 @@ describe("GALO public site", () => {
     expect(screen.getByRole("table", { name: "PLUS Cayley table at L3" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "PLUS at L3: P1 with P2 equals P0" })).toBeInTheDocument();
 
-    await user.click(screen.getByRole("tab", { name: /STAR/ }));
+    await user.click(screen.getByRole("tab", { name: /^STAR$/ }));
     await user.click(screen.getByRole("button", { name: "STAR at L3: P0 with P2 equals P0" }));
 
     expect(screen.getByRole("table", { name: "STAR Cayley table at L3" })).toBeInTheDocument();
     expect(document.querySelector(".cayley-result__equation")).toHaveTextContent("STAR3(P0, P2) = P0");
     expect(screen.getByText("RESET ROW")).toBeInTheDocument();
+
+    expect(document.querySelector(".typed-cell-record > code")).toHaveTextContent("L3:STAR_LEFT:P0:P2");
+    await user.click(screen.getByRole("button", { name: "STAR_RIGHT" }));
+    expect(document.querySelector(".typed-cell-record > code")).toHaveTextContent("L3:STAR_RIGHT:P0:P2");
+    expect(screen.getByText("224")).toBeInTheDocument();
+    expect(document.querySelector(".symmetry-card__counts")).toHaveTextContent("18");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing mathematics target #${target}`).toBeInTheDocument();
+    }
   });
 
   it("renders privacy and the custom 404", () => {
@@ -183,6 +194,7 @@ describe("GALO public site", () => {
     expect(document.documentElement).toHaveAttribute("lang", "ar");
     expect(document.documentElement).toHaveAttribute("dir", "rtl");
     expect(document.querySelector(".cayley-table-wrap")).toHaveAttribute("dir", "ltr");
+    expect(document.querySelector(".typed-cell-record > code")).toHaveAttribute("dir", "ltr");
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/ar/math");
   });
 
