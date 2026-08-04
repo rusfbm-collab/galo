@@ -17,11 +17,11 @@ That command produced the following terminal results:
 
 | Check                         | Result                                                                             |
 | ----------------------------- | ---------------------------------------------------------------------------------- |
-| Source claim firewall         | PASS — 27 public-source files, 0 forbidden matches, 20 required boundaries present |
+| Source claim firewall         | PASS — 29 public-source files, 0 forbidden matches, 20 required boundaries present |
 | ESLint                        | PASS                                                                               |
 | TypeScript strict build       | PASS                                                                               |
-| Vitest / Testing Library      | PASS — 2 files, 23 tests                                                           |
-| Vite build                    | PASS — 1,593 modules                                                               |
+| Vitest / Testing Library      | PASS — 2 files, 28 tests                                                           |
+| Vite build                    | PASS — 1,595 modules                                                               |
 | Localized HTML prerender      | PASS — 16 route entries                                                            |
 | Compiled-asset claim firewall | PASS — 25 local artifacts, 0 forbidden matches                                     |
 | Prettier                      | PASS — all selected release files                                                  |
@@ -30,13 +30,13 @@ Final static payload:
 
 ```text
 dist/index.html                   1.65 kB | gzip   0.70 kB
-dist/assets/index-LHDMZyPD.css   66.57 kB | gzip  14.31 kB
-dist/assets/index-DzKygxHe.js   409.69 kB | gzip 127.27 kB
+dist/assets/index-B8hZH_-S.css   79.29 kB | gzip  16.22 kB
+dist/assets/index-BE3j9VmO.js   474.23 kB | gzip 144.01 kB
 ```
 
 The compiled-asset firewall also checks that TODO_CONFIRM is absent from the browser artifact. DOM tests verify the confirmed `rusfbm@gmail.com` contact, localized evaluation subjects, locale-preserving routes, metadata, RTL direction, and unchanged receipt payload fields.
 
-The mathematics tests exhaustively derive every PLUS and STAR cell across L1–L7, verify PLUS group contracts, verify STAR reset/right-identity contracts and nonassociativity, and independently reconcile `Σn² = 140` with `4 × 140 = 560` typed cells.
+The mathematics tests exhaustively derive every PLUS and STAR cell across L1–L7, verify PLUS group contracts, verify STAR reset/right-identity contracts and nonassociativity, and independently reconcile `Σn² = 140`, 280 raw law cells, and 560 unique typed coordinates. They also replay LEFT/RIGHT operand placement for every coordinate, verify the three active nontrivial scaled morphisms, reject the naive Q3→Q5 embedding, derive all fixed-active ranks, and independently obtain 18 same-level automorphisms and 224 structural orbits.
 
 ## Content and claim verification
 
@@ -55,6 +55,9 @@ A cloud-browser review was completed at a 1,363 × 936 desktop viewport across E
 
 - Home, Mathematics, Evidence, Privacy, custom 404, localized URL prefixes, canonical URLs, reciprocal language alternates, and section anchors rendered.
 - The Mathematics route was inspected in English, Russian, Simplified Chinese, and Arabic. PLUS/STAR and L1–L7 controls, selectable cells, formulas, the 560 invariant, and the direct LEFT/RIGHT witness rendered.
+- The expanded Mathematics chapter was re-inspected in English and Arabic. Its seven-link chapter navigation, 140→280→560 derivation, four family cards, interactive canonical-cell anatomy, finite-rank/symmetry section, Catalan/bracketing section, and PASS/FAIL morphism witnesses rendered without horizontal page overflow.
+- The typed-cell laboratory switched from `L3:STAR_LEFT:P0:P2→P0` to `L3:STAR_RIGHT:P0:P2→P2`; the displayed ID, operand order, formula, and target changed together.
+- The operator-compatibility witness exposes the exact L2→L4 receipt ID and the failure witness exposes `REJECT_R5B5F_NO_LAWFUL_LEVEL_TRANSFER` plus `BOUNDARY_LEVEL_ALIGNMENT_NOT_PROVEN`.
 - The explorer was switched to STAR/L7 and returned the exact selected witness `STAR_7(P0, P6) = P0` with a 7 × 7 table.
 - Arabic prose remained RTL while Cayley tables, formulas, pole labels, and typed cell identifiers remained LTR.
 - Hero, current-versus-target architecture, Abu Dhabi plan, and receipt explorer were visually inspected.
