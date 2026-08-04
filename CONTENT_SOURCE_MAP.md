@@ -61,3 +61,15 @@ Each major concept follows the same learning pattern: plain-language model → e
 5. externally grounded operational outcomes, which remain `NOT_PROVEN`.
 
 The route also keeps object classes explicit: a pole is a local finite label; a typed cell is a formal transition address; a descriptor/frontier/handle belongs to the bounded current runtime; a World Atlas is target semantic state; and a receipt is only a scoped execution witness.
+
+The school notebook turns that publication rule into a testable data contract. It contains 59 entries divided into 20 foundations, 23 mathematics lessons, and 16 symmetry lessons. Every entry must provide all seven fields below in every locale:
+
+1. an intuition or analogy that does not replace the definition;
+2. the exact academic definition, including object types and quantifiers;
+3. a fully worked finite example, normally at L2 or L3;
+4. a reason or proof explaining why the statement follows;
+5. a common mistake, counterexample, or scope boundary;
+6. a complete table/ledger lookup channel;
+7. an independently calculated formula channel.
+
+The table and formula channels must agree, but neither is described as engine execution, learning evidence, or an external outcome.

@@ -11,11 +11,11 @@ Release target: pull request → terminal GitHub Actions → `main` → Amvera D
 
 | Check                         | Result                                                                                     |
 | ----------------------------- | ------------------------------------------------------------------------------------------ |
-| Source claim firewall         | PASS — 42 public-source files, 0 forbidden matches, 40 required boundaries                 |
+| Source claim firewall         | PASS — 43 public-source files, 0 forbidden matches, 40 required boundaries                 |
 | ESLint                        | PASS                                                                                       |
 | TypeScript strict build       | PASS                                                                                       |
-| Vitest / Testing Library      | PASS — 4 files, 62 tests                                                                   |
-| Vite production build         | PASS — 1,609 modules                                                                       |
+| Vitest / Testing Library      | PASS — 5 files, 77 tests                                                                   |
+| Vite production build         | PASS — 1,610 modules                                                                       |
 | Localized HTML prerender      | PASS — 24 route entries                                                                    |
 | Compiled-asset claim firewall | PASS — 30 artifacts, 0 forbidden matches                                                   |
 | Prettier                      | PASS                                                                                       |
@@ -24,12 +24,12 @@ Release target: pull request → terminal GitHub Actions → `main` → Amvera D
 Production payload:
 
 ```text
-dist/index.html                   1.65 kB | gzip   0.70 kB
-dist/assets/index-cUjd9IzL.css  119.18 kB | gzip  21.80 kB
-dist/assets/index-CqXeQB37.js   966.86 kB | gzip 287.58 kB
+dist/index.html                     1.65 kB | gzip   0.71 kB
+dist/assets/index-DiY_WqNl.css    121.46 kB | gzip  22.22 kB
+dist/assets/index-CK1P-qqb.js   1,303.68 kB | gzip 404.98 kB
 ```
 
-Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip JavaScript payload is 287.58 kB; route/locale code splitting remains a performance follow-up, not a correctness failure.
+Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip JavaScript payload is 404.98 kB after adding the complete four-language school curriculum; route/locale code splitting remains a performance follow-up, not a correctness failure.
 
 ## Archive evidence review
 
@@ -69,6 +69,8 @@ The public pages distinguish mathematical homomorphism, injective embedding, leg
 
 The dedicated Theory route is tested as an educational contour, not as a second source of mathematical authority.
 
+- A shared school notebook contains 59 concept lessons: 20 foundations, 23 mathematics lessons, and 16 symmetry lessons. Every lesson has the same seven fields: analogy, exact definition, worked finite example, reason/proof, common mistake or boundary, table check, and formula check.
+- The same cards appear in the guided Theory route and in the academic Mathematics and Symmetry chapters, so a learner can move from a concrete explanation to the formal reference without changing terminology.
 - Every one of the 280 raw PLUS/STAR table cells is reconstructed by a formula implementation that does not call the table lookup.
 - Every one of the 560 oriented typed coordinates is then reconciled through three witnesses: raw table address, independent formula result, and canonical typed target.
 - The interactive tutor exposes the same contract as `BEGINNER_TRANSITION_DUAL_CHANNEL`, including `cell_id`, `raw_operands`, `table_expected`, `formula_got`, `rc`, and terminal `status`.
@@ -102,7 +104,7 @@ This prevents the generated wheel marker from being miscounted as a selected sou
 
 - English, Russian, Simplified Chinese, and Arabic render all six routes: Home, Theory, Mathematics, Symmetry, Evidence, and Privacy — 24 prerendered HTML entries in total.
 - Rendered-route translation coverage is complete for RU/ZH/AR.
-- Academic terminology was reviewed separately per language; exact IDs, formulas, hashes, and machine statuses remain untranslated and LTR.
+- All 59 seven-part school lessons are translated as complete academic explanations rather than word-for-word glosses; terminology and placeholder parity are checked separately for RU, ZH, and AR. Exact IDs, formulas, hashes, and machine statuses remain untranslated and LTR.
 - Arabic document direction is RTL while tables, formulas, matrices, hashes, and receipt JSON remain LTR; translated captions and explanatory labels inherit RTL independently of their LTR mathematical containers.
 - Semantic header/navigation/main/footer landmarks, skip link, focus styles, reduced-motion rules, aria-live replay, and expanded-state navigation are present.
 - Beginner explanatory prose has a 14px minimum and table/technical text a 13px minimum; horizontal ledgers are labelled, keyboard-focusable regions.

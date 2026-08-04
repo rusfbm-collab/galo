@@ -48,14 +48,17 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 
 ## Beginner learning pattern
 
-Every substantial Theory section uses a consistent six-part explanation contract:
+The 59-entry school notebook uses one consistent seven-part explanation contract across Theory, Mathematics, and Symmetry:
 
-1. a plain-language mental model;
+1. a plain-language analogy that is explicitly subordinate to the mathematics;
 2. the exact mathematical definition;
-3. one fully worked L3 example;
-4. a complete finite table, tree, or replay where appropriate;
-5. an independent consistency check;
-6. a named misconception, counterexample, or evidence boundary.
+3. one fully worked small-level example;
+4. a short proof or reason explaining why the assertion follows;
+5. a named misconception, counterexample, or evidence boundary;
+6. a complete finite table, ledger, tree, or replay check;
+7. an independent formula check that must agree with the tabular channel.
+
+The seven fields are visually distinct: analogy spans the reading width, definitions and examples use ordinary prose with isolated mathematical tokens, warnings never rely on color alone, and the two independent checks sit side by side on wide screens and stack in reading order on narrow screens.
 
 The interface visually separates labels, calculation indices, and domain meaning. Likewise, it never merges formal mathematics, current V4 runtime behavior, archived compatibility evidence, target architecture, or external operational outcomes.
 

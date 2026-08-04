@@ -19,6 +19,9 @@ import {
   beginnerCountLedger,
   currentV4Flow,
   runtimeArithmeticRows,
+  schoolMathLessonRequiredFields,
+  schoolMathLessons,
+  schoolMathTranslationKeys,
   targetArchitectureFlow,
   theoryArchitectureLayers,
   theoryEvidenceLadder,
@@ -205,12 +208,24 @@ describe("beginner theory dual-channel safeguards", () => {
   });
 
   it("publishes paired plain-language and formal definitions without duplicate glossary terms", () => {
-    expect(theoryGlossary.length).toBeGreaterThanOrEqual(20);
+    expect(theoryGlossary).toBe(schoolMathLessons);
+    expect(schoolMathLessons).toHaveLength(59);
+    expect(
+      schoolMathLessons.reduce<Record<string, number>>((counts, lesson) => {
+        counts[lesson.chapter] = (counts[lesson.chapter] ?? 0) + 1;
+        return counts;
+      }, {}),
+    ).toEqual({ theory: 20, mathematics: 23, symmetry: 16 });
     expect(new Set(theoryGlossary.map(({ term }) => term)).size).toBe(theoryGlossary.length);
-    for (const entry of theoryGlossary) {
-      expect(entry.plain.trim().length).toBeGreaterThan(20);
-      expect(entry.formal.trim().length).toBeGreaterThan(5);
+    for (const lesson of schoolMathLessons) {
+      expect(lesson.term.trim().length).toBeGreaterThan(2);
+      for (const field of schoolMathLessonRequiredFields) {
+        const minimumLength = field === "analogy" || field === "whyTrue" || field === "commonMistake" ? 20 : 5;
+        expect(lesson[field].trim().length, `${lesson.term}.${field}`).toBeGreaterThan(minimumLength);
+      }
     }
+    expect(new Set(schoolMathTranslationKeys).size).toBe(schoolMathTranslationKeys.length);
+    expect(schoolMathTranslationKeys).toEqual(expect.arrayContaining(schoolMathLessons.map(({ term }) => term)));
     expect(theoryMisconceptions).toHaveLength(6);
   });
 });

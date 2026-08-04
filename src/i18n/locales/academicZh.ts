@@ -92,8 +92,8 @@ export const academicZh: TranslationDictionary = {
   "The L1 exception": "L1 例外",
   "On a one-element carrier the identity and universal congruences coincide, and every subset classification degenerates accordingly.":
     "在单元素载体上，恒等同余与全同余重合，各种子集分类也相应退化。",
-  "Canonical nonzero embedding": "典范非零嵌入",
-  "canonical nontrivial scaled embeddings": "典范非平凡缩放嵌入",
+  "Canonical nonzero embedding": "规范非零嵌入",
+  "canonical nontrivial scaled embeddings": "规范非平凡缩放嵌入",
   "Same-index candidate injection": "同指标候选单射",
   "Zero homomorphism exists between every pair of levels": "任意两个层级之间都存在零同态",
   "Therefore A3→A5 has a homomorphism, but no nonzero homomorphism and no embedding. For n≥2, a nonzero homomorphism A_n→A_m exists exactly when n divides m; every such map is injective. At n=1 the unique zero map is itself an embedding.":

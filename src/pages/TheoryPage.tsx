@@ -12,6 +12,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
+import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
 import { TransitionTutor } from "../components/theory/TransitionTutor";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -53,26 +54,6 @@ const contents = [
   { href: "#evidence-language", label: "How to read GALO evidence" },
   { href: "#glossary", label: "Plain-language glossary" },
 ] as const;
-
-const glossaryLtrTokens: Readonly<Record<string, readonly string[]>> = {
-  Carrier: ["Q_n={P0,…,P_(n−1)}"],
-  Pole: ["P_i", "n"],
-  Level: ["L_n", "Q_n", "n"],
-  "Binary operation": ["f:Q_n×Q_n→Q_n"],
-  "Modulo n": ["n"],
-  PLUS: ["PLUS_n(P_i,P_j)=P_((i+j) mod n)", "(Q_n,PLUS_n)", "C_n"],
-  STAR: ["STAR_n(P_i,P_j)=P0", "i=0", "P_((i+j) mod n)"],
-  "Left zero": ["P0★x=P0", "x"],
-  "Right-neutral element": ["x★P0=x", "P0"],
-  "Active pole": ["LEFT/RIGHT"],
-  "Typed coordinate": ["level:family:source:active"],
-  Composition: ["STAR"],
-  Orbit: ["Orb(x)={g·x | g∈G}"],
-  Stabilizer: ["Stab(x)={g∈G | g·x=x}"],
-  "Burnside's lemma": ["|X/G|=(1/|G|)Σ_g |Fix(g)|"],
-  Embedding: ["A_n→A_m", "n≥2", "n", "m"],
-  Boundary: ["BOUNDARY"],
-};
 
 function isolateLtrTokens(text: string, tokens: readonly string[]) {
   const ordered = [...new Set(tokens)].filter(Boolean).sort((left, right) => right.length - left.length);
@@ -138,6 +119,8 @@ const actionFamilies = [
     plain: "The active pole is placed on the left and therefore controls the STAR reset test.",
   },
 ] as const;
+
+const currentV4SchoolLesson = theoryGlossary.find(({ term }) => term === "Current V4 school replay")!;
 
 export function TheoryPage() {
   const { direction, href, t } = useI18n();
@@ -1232,6 +1215,9 @@ export function TheoryPage() {
               </li>
             ))}
           </ol>
+          <div className="theory-glossary">
+            <SchoolMathLessonCard lesson={currentV4SchoolLesson} index={0} open direction={direction} translate={t} />
+          </div>
           <div className="theory-current-contract">
             <p>
               <span>{t("Source-pattern rule")}</span>
@@ -1468,9 +1454,9 @@ export function TheoryPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("PLAIN-LANGUAGE GLOSSARY")}
-            title={t("Open a term for its intuitive meaning and exact mathematical contract.")}
+            title={t("Open a term for a complete seven-part explanation and two independent checks.")}
             text={t(
-              "The plain explanation supports understanding; the formal line remains the authoritative definition.",
+              "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.",
             )}
           />
           <div
@@ -1502,18 +1488,18 @@ export function TheoryPage() {
             </table>
           </div>
           <div className="theory-glossary">
-            {theoryGlossary.map((item, index) => (
-              <details key={item.term} open={index < 3}>
-                <summary>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <strong>{t(item.term)}</strong>
-                </summary>
-                <div>
-                  <p>{t(item.plain)}</p>
-                  <code dir={direction}>{isolateLtrTokens(t(item.formal), glossaryLtrTokens[item.term] ?? [])}</code>
-                </div>
-              </details>
-            ))}
+            {theoryGlossary
+              .filter((item) => item.term !== currentV4SchoolLesson.term)
+              .map((item, index) => (
+                <SchoolMathLessonCard
+                  key={item.term}
+                  lesson={item}
+                  index={index}
+                  open={index < 3}
+                  direction={direction}
+                  translate={t}
+                />
+              ))}
           </div>
         </div>
       </section>

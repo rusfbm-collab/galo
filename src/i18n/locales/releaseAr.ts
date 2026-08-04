@@ -47,7 +47,7 @@ export const releaseAr: TranslationDictionary = {
   "Deterministic selector": "مُحدِّد حتمي",
   "Deterministic selector for exactly two fixed source patterns": "مُحدِّد حتمي لنمطي مصدر ثابتين لا غير",
   "Do not infer runtime capability from formal or historical material.":
-    "لا تستنتج قدرات بيئة التشغيل من مواد صورية أو تاريخية.",
+    "لا تستنتج قدرات بيئة التشغيل من مواد شكلية أو تاريخية.",
   "Evaluate before learning": "التقييم قبل التعلّم",
   "Even or odd enumeration parity": "زوجية رتبة التعداد أو فرديتها",
   "Every counted work unit belongs to one checked phase.": "تنتمي كل وحدة عمل محتسبة إلى مرحلة واحدة خضعت للتحقق.",
@@ -56,9 +56,9 @@ export const releaseAr: TranslationDictionary = {
   "Expand semantic closure": "توسيع الإغلاق الدلالي",
   "External outcome and operational gain": "النتيجة الخارجية والمكسب التشغيلي",
   "Finite declared universe": "الكون المنتهي المعلن",
-  "Finite formal verification does not establish general intelligence.": "لا يثبت التحقق الصوري المنتهي وجود ذكاء عام.",
+  "Finite formal verification does not establish general intelligence.": "لا يثبت التحقق الشكلي المنتهي وجود ذكاء عام.",
   "Finite-universe membership and single-use executable handles": "عضوية الكون المنتهي ومقابض التنفيذ أحادية الاستخدام",
-  "Formal mathematics": "الرياضيات الصورية",
+  "Formal mathematics": "الرياضيات الشكلية",
   "Four allowed action kinds": "أربعة أنواع مسموح بها من الأفعال",
   "Fresh FAST": "FAST جديد",
   "Fresh FULL": "FULL جديد",
@@ -122,7 +122,7 @@ export const releaseAr: TranslationDictionary = {
   "The current verification does not prove operating-system capability isolation for the Python process.":
     "لا يثبت التحقق الحالي عزل صلاحيات عملية Python على مستوى نظام التشغيل.",
   "The formal L1–L7 kernel contains 560 oriented typed transition coordinates.":
-    "تحتوي النواة الصورية L1–L7 على 560 إحداثيًا موجَّهًا محدد النوع للانتقالات.",
+    "تحتوي النواة الشكلية L1–L7 على 560 إحداثيًا موجَّهًا محدد النوع للانتقالات.",
   "The physical total is an internal count of receipt work-unit IDs. It is not elapsed time, FLOPS, energy, cost saving, speedup, causal outcome, or external operational gain.":
     "المجموع الفعلي عدد داخلي لمعرّفات وحدات العمل في الإيصالات. وهو ليس زمنًا منقضيًا، ولا FLOPS، ولا طاقة، ولا وفرًا في التكلفة، ولا تسريعًا، ولا نتيجة سببية، ولا مكسبًا تشغيليًا خارجيًا.",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":

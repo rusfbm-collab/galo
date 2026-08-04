@@ -49,7 +49,7 @@ export const ar: TranslationDictionary = {
   "Inspect a verified receipt": "فحص إيصال متحقَّق منه",
   "Request a technical evaluation": "طلب تقييم تقني",
   "Formal replay within a declared scope. General AI and external capability superiority are not claimed.":
-    "إعادة تشغيل رسمية ضمن نطاق معلن. لا ندّعي تحقيق الذكاء الاصطناعي العام أو التفوق في القدرات الخارجية.",
+    "إعادة تشغيل شكلية ضمن نطاق معلن. لا ندّعي تحقيق الذكاء الاصطناعي العام أو التفوق في القدرات الخارجية.",
   "Layered resolution and receipt visual": "تمثيل بصري لمستويات الدقة وإيصالات التنفيذ",
   "WORLD STATE / RESOLUTION": "حالة العالم / مستوى الدقة",
   "DECLARED SCOPE": "النطاق المعلَن",
@@ -104,7 +104,7 @@ export const ar: TranslationDictionary = {
     "تقبل الشريحة الحالية المقيّدة الإجراءات من خلال عقود محددة الأنواع، وتسجل تنفيذها بواسطة الإيصالات.",
   "Constitutional verification": "تحقق دستوري",
   "The architectural proposal separates adaptive ordering from formal admission. Persistent adaptive ordering remains in development.":
-    "يفصل المقترح المعماري بين الترتيب التكيفي والقبول الرسمي. ويظل الترتيب التكيفي المستديم قيد التطوير.",
+    "يفصل المقترح المعماري بين الترتيب التكيفي والقبول الشكلي. ويظل الترتيب التكيفي المستديم قيد التطوير.",
   "The verifier is not the whole product. It is the constitutional layer intended to protect the wider adaptive architecture.":
     "أداة التحقق ليست المنتج بأكمله. فهي الطبقة الدستورية المقصود منها حماية البنية التكيفية الأوسع.",
   "CURRENT VERIFIED SLICE": "الشريحة الحالية المتحقَّق منها",
@@ -187,11 +187,11 @@ export const ar: TranslationDictionary = {
   EVIDENCE: "الأدلة",
   "Evidence, scoped precisely.": "الأدلة، بنطاق محدد بدقة.",
   "The numbers below describe formal inventory and release reproducibility. None is presented as a measure of intelligence, customer value, or external operational gain.":
-    "تصف الأرقام أدناه المخزون الرسمي وقابلية إعادة إنتاج الإصدار. ولا يُقدَّم أي منها بوصفه مقياسًا للذكاء أو قيمة العملاء أو المكسب التشغيلي الخارجي.",
+    "تصف الأرقام أدناه المخزون الشكلي وقابلية إعادة إنتاج الإصدار. ولا يُقدَّم أي منها بوصفه مقياسًا للذكاء أو قيمة العملاء أو المكسب التشغيلي الخارجي.",
   "Open evidence page": "فتح صفحة الأدلة",
   "CURRENT RELEASE DEMONSTRATES": "ما يثبته الإصدار الحالي",
   "A closed mechanical chain with explicit terminal boundaries.": "سلسلة ميكانيكية مغلقة ذات حدود نهائية صريحة.",
-  "Formal transition records": "سجلات انتقال رسمية",
+  "Formal transition records": "سجلات انتقال شكلية",
   "Frozen L1–L7 kernel. An execution alphabet, not semantic concepts.":
     "نواة L1–L7 مجمّدة. وهي أبجدية تنفيذ وليست مفاهيم دلالية.",
   "Committed candidate records": "سجلات مرشّحات مُثبّتة",
@@ -205,7 +205,7 @@ export const ar: TranslationDictionary = {
   "Single-use execution with bounded budget": "تنفيذ أحادي الاستخدام ضمن ميزانية محددة",
   "Atomic candidate and budget rollback": "تراجع ذري للمرشّح والميزانية",
   "Receipt-derived occurrence work accounting": "احتساب عمل مشتق من إيصالات الوقوع",
-  "Deterministic replay within the declared formal scope": "إعادة تشغيل حتمية ضمن النطاق الرسمي المعلن",
+  "Deterministic replay within the declared formal scope": "إعادة تشغيل حتمية ضمن النطاق الشكلي المعلن",
   "Authenticated external-source provenance": "منشأ موثَّق لمصدر خارجي",
   "Observation-conditioned structural reasoning": "استدلال بنيوي مشروط بالملاحظة",
   "External operational gain": "مكسب تشغيلي خارجي",

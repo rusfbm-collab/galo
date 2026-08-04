@@ -16,9 +16,9 @@ export const academicRu: TranslationDictionary = {
   "legacy compatibility code": "устаревший код слоя совместимости",
   "Across ordered pairs L1–L7 there are 70 full-algebra homomorphisms, including 28 embeddings. The compatibility replay lists 16 divisible level pairs and chooses one canonical embedding on each; it does not enumerate every homomorphism.":
     "Для упорядоченных пар L1–L7 существует 70 гомоморфизмов полной алгебры, включая 28 вложений. Воспроизведение слоя совместимости перечисляет 16 пар уровней, связанных делимостью, и выбирает по одному каноническому вложению для каждой; оно не перечисляет все гомоморфизмы.",
-  "Exact CRT boundary at L6": "Точная граница КТО на L6",
+  "Exact CRT boundary at L6": "Точная граница CRT на L6",
   "CRT decomposes cyclic addition, but STAR tests zero globally; a residue that is zero in only one CRT coordinate exposes the failure of coordinatewise preservation.":
-    "Китайская теорема об остатках разлагает циклическое сложение, однако STAR проверяет нуль глобально; класс, нулевой лишь в одной КТО-координате, обнаруживает нарушение покоординатного сохранения.",
+    "Китайская теорема об остатках (CRT) разлагает циклическое сложение, однако STAR проверяет нуль глобально; класс, нулевой лишь в одной CRT-координате, обнаруживает нарушение покоординатного сохранения.",
   "Complete L1–L7 count": "Полный подсчёт для L1–L7",
   "The compatibility replay chooses one canonical embedding on 16 divisible level pairs. Its legacy morphism module is excluded from the current V4 runtime wheel.":
     "Воспроизведение слоя совместимости выбирает по одному каноническому вложению на 16 парах уровней, связанных делимостью. Его устаревший модуль морфизмов исключён из текущего runtime-wheel V4.",
