@@ -7,21 +7,21 @@ export const academicAr: TranslationDictionary = {
   "STAR rigidity proof": "برهان صلابة STAR",
   "A STAR automorphism fixes the unique left zero P0 and preserves addition through the nonzero rows, so it is the same unit multiplication map.":
     "يثبت تشاكل STAR الذاتي الصفر الأيسر الوحيد P0 ويحفظ الجمع عبر الصفوف غير الصفرية؛ ولذلك فهو تطبيق الضرب بعنصر قابل للعكس نفسه.",
-  "Canonical group isomorphism": "تماثل الزمر القانوني",
+  "Canonical group isomorphism": "تماثل معياري بين الزمر",
   "The groups are canonically isomorphic under this map; writing them as literally equal would conflate residues with permutations.":
-    "تتماثل الزمرتان تماثلًا قانونيًا تحت هذا التطبيق؛ أما كتابتهما متساويتين حرفيًا فتخلط بين فئات البواقي والتبديلات.",
+    "تتماثل الزمرتان تماثلًا معياريًا تحت هذا التطبيق؛ أما كتابتهما متساويتين حرفيًا فتخلط بين فئات البواقي والتبديلات.",
   "Compatibility boundary:": "حدّ التوافق:",
   "The morphism receipts below belong to the compatibility and audit mathematics. The legacy morphism_v1 module is excluded from the current V4 runtime wheel; these examples are not current API capabilities.":
     "تنتمي إيصالات التشاكل أدناه إلى رياضيات التوافق والتدقيق. وقد استُبعدت الوحدة القديمة morphism_v1 من عجلة التشغيل الحالية V4؛ لذلك لا تمثل هذه الأمثلة قدرات لواجهة API الحالية.",
   "legacy compatibility code": "رمز التوافق القديم",
   "Across ordered pairs L1–L7 there are 70 full-algebra homomorphisms, including 28 embeddings. The compatibility replay lists 16 divisible level pairs and chooses one canonical embedding on each; it does not enumerate every homomorphism.":
-    "يوجد عبر الأزواج المرتبة للمستويات L1–L7 عدد 70 تشاكلًا للجبر الكامل، منها 28 تضمينًا. تسرد إعادة تشغيل التوافق 16 زوجًا من المستويات المرتبطة بالقسمة وتختار تضمينًا قانونيًا واحدًا لكل زوج؛ ولا تعدّد جميع التشاكلات.",
+    "يوجد عبر الأزواج المرتبة للمستويات L1–L7 عدد 70 تشاكلًا للجبر الكامل، منها 28 تضمينًا. تسرد إعادة تشغيل التوافق 16 زوجًا من المستويات المرتبطة بالقسمة وتختار تضمينًا معياريًا واحدًا لكل زوج؛ ولا تعدّد جميع التشاكلات.",
   "Exact CRT boundary at L6": "حدّ مبرهنة البواقي الصينية الدقيق عند L6",
   "CRT decomposes cyclic addition, but STAR tests zero globally; a residue that is zero in only one CRT coordinate exposes the failure of coordinatewise preservation.":
     "تفكك مبرهنة البواقي الصينية الجمع الدوري، لكن STAR تختبر الصفر عالميًا؛ وتكشف فئة البواقي التي تساوي صفرًا في إحداثي واحد فقط فشل الحفظ إحداثيًا.",
   "Complete L1–L7 count": "العدّ الكامل للمستويات L1–L7",
   "The compatibility replay chooses one canonical embedding on 16 divisible level pairs. Its legacy morphism module is excluded from the current V4 runtime wheel.":
-    "تختار إعادة تشغيل التوافق تضمينًا قانونيًا واحدًا على 16 زوجًا من المستويات المرتبطة بالقسمة. وقد استُبعدت وحدة التشاكل القديمة الخاصة بها من عجلة التشغيل الحالية V4.",
+    "تختار إعادة تشغيل التوافق تضمينًا معياريًا واحدًا على 16 زوجًا من المستويات المرتبطة بالقسمة. وقد استُبعدت وحدة التشاكل القديمة الخاصة بها من عجلة التشغيل الحالية V4.",
   Symmetry: "التناظرات",
   "GALO Symmetry — Automorphisms, Orbits, and Burnside": "تناظرات GALO — التشاكلات الذاتية والمدارات ولمّة برنسايد",
   "Explore the distinct PLUS and STAR symmetry layers, unit automorphisms, affine boundaries, orbits, stabilizers, Burnside counts, and cross-level homomorphisms.":
@@ -69,10 +69,10 @@ export const academicAr: TranslationDictionary = {
   "These are sums of local quantities, not the order of one global group or the orbit count of one global action. The dedicated chapter defines automorphisms, affine actions, orbits, stabilizers, and Burnside's lemma.":
     "هذه مجاميع لكميات محلية، وليست رتبة زمرة عالمية واحدة ولا عدد مدارات فعل عالمي واحد. يعرّف الفصل المستقل التشاكلات الذاتية، والأفعال الأفينية، والمدارات، والمثبتات، ولمّة برنسايد.",
   "Open the symmetry chapter": "فتح فصل التناظرات",
-  "Left-associated iteration at L6, a=P2": "تكرار مرتبط إلى اليسار عند L6،‏ a=P2",
+  "Left-associated iteration at L6, a=P2": "تكرار مقترن إلى اليسار عند L6،‏ a=P2",
   "Once a prefix sum reaches P0, every later left-associated STAR product remains P0.":
-    "متى بلغ مجموع بادئة P0، بقي كل حاصل STAR لاحق مرتبط إلى اليسار مساويًا لـ P0.",
-  "Right-associated iteration at L6, a=P2": "تكرار مرتبط إلى اليمين عند L6،‏ a=P2",
+    "متى بلغ مجموع بادئة P0، بقي كل حاصل STAR لاحق مقترن إلى اليسار مساويًا لـ P0.",
+  "Right-associated iteration at L6, a=P2": "تكرار مقترن إلى اليمين عند L6،‏ a=P2",
   "Right association repeatedly applies a nonzero left translation, so the additive cycle continues through P0.":
     "يطبّق الارتباط إلى اليمين ترجمة جبرية يسرى غير صفرية مرارًا، فتستمر الدورة الجمعية عبر P0.",
   "Zero-prefix theorem · L5 witness": "مبرهنة البادئة الصفرية · شاهد L5",
@@ -82,7 +82,7 @@ export const academicAr: TranslationDictionary = {
   "One-sided closure is asymmetric; quotient structure is rigid.":
     "الإغلاق أحادي الجانب غير متناظر، وبنية القسمة صارمة.",
   "These are statements about the STAR reduct S_n. They use standard finite-algebra terminology and do not import ring ideals or ring multiplication.":
-    "هذه عبارات عن بنية STAR المختزلة S_n، وتستخدم مصطلحات الجبر المنتهي القياسية من دون نقل مثُل الحلقات أو ضربها.",
+    "هذه عبارات عن بنية STAR المختزلة S_n، وتستخدم مصطلحات الجبر المنتهي القياسية من دون نقل مثاليّات الحلقات أو ضربها.",
   "Right-stable subsets · n≥2": "مجموعات جزئية مستقرة يمينًا · n≥2",
   "The proper nonempty example is {P0}; it is closed when elements of the subset occupy the left operand.":
     "المثال الجزئي غير الفارغ هو {P0}؛ وهو مغلق عندما تشغل عناصر المجموعة الجزئية موضع المعامل الأيسر.",
@@ -95,8 +95,8 @@ export const academicAr: TranslationDictionary = {
   "The L1 exception": "استثناء L1",
   "On a one-element carrier the identity and universal congruences coincide, and every subset classification degenerates accordingly.":
     "على حامل ذي عنصر واحد تتطابق علاقة التطابق الهوية مع العلاقة الكلية، وتتدهور تصنيفات المجموعات الجزئية تبعًا لذلك.",
-  "Canonical nonzero embedding": "تضمين قانوني غير صفري",
-  "canonical nontrivial scaled embeddings": "التضمينات القانونية غير التافهة ذات المقياس",
+  "Canonical nonzero embedding": "تضمين معياري غير صفري",
+  "canonical nontrivial scaled embeddings": "التضمينات المعيارية غير التافهة ذات المقياس",
   "Same-index candidate injection": "حقن مرشح يحافظ على الفهارس",
   "Zero homomorphism exists between every pair of levels": "يوجد تشاكل صفري بين كل زوج من المستويات",
   "Therefore A3→A5 has a homomorphism, but no nonzero homomorphism and no embedding. For n≥2, a nonzero homomorphism A_n→A_m exists exactly when n divides m; every such map is injective. At n=1 the unique zero map is itself an embedding.":
@@ -113,7 +113,7 @@ export const academicAr: TranslationDictionary = {
   "ACADEMIC SYMMETRY CHAPTER": "فصل أكاديمي عن التناظرات",
   "Symmetries of the PLUS and STAR families.": "تناظرات عائلتي PLUS وSTAR.",
   "This chapter distinguishes group automorphisms, affine torsor symmetries, STAR automorphisms, orbits, stabilizers, and cross-level homomorphisms. Similar formulas are not treated as the same structure.":
-    "يميّز هذا الفصل بين التشاكلات الذاتية للزمر، وتناظرات الفضاء المتجانس الأفينية، وتشاكلات STAR الذاتية، والمدارات، والمثبتات، والتشاكلات بين المستويات. ولا يعامل الصيغ المتشابهة بوصفها بنية واحدة.",
+    "يميّز هذا الفصل بين التشاكلات الذاتية للزمر، وتناظرات الفضاء المتجانس الرئيسي الأفينية، وتشاكلات STAR الذاتية، والمدارات، والمثبتات، والتشاكلات بين المستويات. ولا يعامل الصيغ المتشابهة بوصفها بنية واحدة.",
   "FIBREWISE, NOT GLOBAL": "على كل ليف، لا عالميًا",
   "Symmetry chapter navigation": "التنقل في فصل التناظرات",
   "OBJECT TYPES BEFORE SYMMETRIES": "أنواع الكائنات قبل التناظرات",
@@ -184,12 +184,12 @@ export const academicAr: TranslationDictionary = {
   "Equality is a consistency witness for the finite action; it does not authorize semantic merging.":
     "المساواة شاهد اتساق للفعل المنتهي؛ ولا تفوّض دمج الدلالات.",
   "POINTED AUTOMORPHISMS VS AFFINE TORSOR SYMMETRIES":
-    "التشاكلات الذاتية ذات النقطة المعينة مقابل تناظرات الفضاء المتجانس الأفينية",
+    "التشاكلات الذاتية ذات النقطة المعينة مقابل تناظرات الفضاء المتجانس الرئيسي الأفينية",
   "Hol(C_n) belongs to the PLUS torsor, not to STAR automorphisms.":
-    "ينتمي Hol(C_n) إلى فضاء PLUS المتجانس، لا إلى تشاكلات STAR الذاتية.",
+    "ينتمي Hol(C_n) إلى فضاء PLUS المتجانس الرئيسي، لا إلى تشاكلات STAR الذاتية.",
   "Pointed automorphism": "تشاكل ذاتي ذو نقطة معينة",
   "It preserves PLUS, STAR, and P0 for every unit u.": "يحفظ PLUS وSTAR وP0 لكل وحدة u.",
-  "Affine torsor map": "تطبيق أفيني لفضاء متجانس",
+  "Affine torsor map": "تطبيق أفيني لفضاء متجانس رئيسي",
   "For b≠0 it does not fix P0, so it is not an automorphism of the pointed cyclic group.":
     "عندما b≠0 لا يثبت P0؛ لذا فليس تشاكلًا ذاتيًا للزمرة الدورية ذات النقطة المعينة.",
   "Exact STAR failure": "فشل STAR الدقيق",
@@ -233,7 +233,7 @@ export const academicAr: TranslationDictionary = {
     "تفكك مبرهنة البواقي الصينية بنية PLUS المختزلة؛ لكن اختبار الصفر العالمي في STAR ليس إحداثيًا تحت ذلك التفكيك.",
   "Orbit equivalence does not merge provenance, semantics, authority, or real-world verdicts.":
     "لا يدمج تكافؤ المدارات المصدر أو الدلالة أو السلطة أو أحكام العالم الواقعي.",
-  "Return to the formal kernel chapter": "العودة إلى فصل النواة الرسمية",
+  "Return to the formal kernel chapter": "العودة إلى فصل النواة الشكلية",
   level: "المستوى",
   "carrier orbits": "مدارات الحامل",
   "pair orbits": "مدارات الأزواج المرتبة",

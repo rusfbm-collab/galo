@@ -236,12 +236,12 @@ export const mathAr: TranslationDictionary = {
   Mathematics: "الرياضيات",
   "GALO Mathematics — PLUS and STAR Cayley Tables": "رياضيات GALO — جدولا كايلي PLUS وSTAR",
   "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.":
-    "استكشف جدولي كايلي المنتهيين PLUS وSTAR، والصيغ الدقيقة، واتجاهات التنفيذ، والحدود المعلنة للنواة الرسمية لـ GALO.",
-  "FORMAL KERNEL": "النواة الرسمية",
+    "استكشف جدولي كايلي المنتهيين PLUS وSTAR، والصيغ الدقيقة، واتجاهات التنفيذ، والحدود المعلنة للنواة الشكلية لـ GALO.",
+  "FORMAL KERNEL": "النواة الشكلية",
   "The mathematics beneath GALO AI.": "الرياضيات التي تقوم عليها GALO AI.",
   "The L1–L7 Cayley tables define the frozen PLUS and STAR operators used by the current formal kernel. They specify exact finite transformations; they do not by themselves prove learning, intelligence, or external performance.":
-    "تعرّف جداول كايلي للمستويات L1–L7 العمليتين المجمّدتين PLUS وSTAR اللتين تستخدمهما النواة الرسمية الحالية. وهي تحدد تحويلات منتهية بدقة؛ لكنها لا تثبت بمفردها التعلّم أو الذكاء أو الأداء الخارجي.",
-  "Formal scope": "النطاق الرسمي",
+    "تعرّف جداول كايلي للمستويات L1–L7 العمليتين المجمّدتين PLUS وSTAR اللتين تستخدمهما النواة الشكلية الحالية. وهي تحدد تحويلات منتهية بدقة؛ لكنها لا تثبت بمفردها التعلّم أو الذكاء أو الأداء الخارجي.",
+  "Formal scope": "النطاق الشكلي",
   FORMALLY_DERIVED: "FORMALLY_DERIVED",
   "Explore the tables": "استكشف الجداول",
   "INTERACTIVE CAYLEY EXPLORER": "مستكشف جداول كايلي التفاعلي",
@@ -311,14 +311,14 @@ export const mathAr: TranslationDictionary = {
     "لماذا يحتوي السجل الحالي على 560 خلية محددة الأنواع بالضبط.",
   "Each level L_n has n² cells per operator. Two operators and two orientations produce 4n² typed cells.":
     "يحتوي كل مستوى L_n على n² خلية لكل عملية. وتنتج عمليتان واتجاهان 4n² خلية محددة الأنواع.",
-  "L1–L7 formal cell count": "العدد الرسمي لخلايا L1–L7",
+  "L1–L7 formal cell count": "العدد الشكلي لخلايا L1–L7",
   Poles: "الأقطاب",
   "Cells per operator": "الخلايا لكل عملية",
   "Typed cells": "الخلايا محددة الأنواع",
   Total: "المجموع",
   "Exact invariant": "الثابت الدقيق",
   "This count is a formal registry size, not a count of semantic concepts and not an intelligence metric.":
-    "هذا العدد هو حجم سجل رسمي، وليس عددًا للمفاهيم الدلالية ولا مقياسًا للذكاء.",
+    "هذا العدد هو حجم سجل شكلي، وليس عددًا للمفاهيم الدلالية ولا مقياسًا للذكاء.",
   "A higher level is not more intelligent. Pole labels are local to a frame and have no fixed global meaning.":
     "المستوى الأعلى ليس أكثر ذكاءً. تسميات الأقطاب محلية داخل الإطار وليس لها معنى عالمي ثابت.",
   "A binary Cayley operation on Q_n does not make the carrier L2. Every level L1–L7 has binary PLUS and STAR laws.":
@@ -330,7 +330,7 @@ export const mathAr: TranslationDictionary = {
   "Closure, operator formulas, typed operand orientation, and exact table count.":
     "الإغلاق، وصيغ العمليات، واتجاه المُعاملات محدد الأنواع، والعدد الدقيق لخلايا الجداول.",
   "A finite transition alphabet for the current formal execution layer.":
-    "أبجدية انتقالات منتهية لطبقة التنفيذ الرسمية الحالية.",
+    "أبجدية انتقالات منتهية لطبقة التنفيذ الشكلية الحالية.",
   "Not established": "غير مثبت",
   "Tables alone do not provide world semantics.": "لا توفر الجداول وحدها دلالات العالم.",
   "Persistent policy learning:": "التعلّم المستديم للسياسة:",

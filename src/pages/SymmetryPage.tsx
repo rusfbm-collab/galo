@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, CircleEqual, Orbit, ShieldAlert } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
+import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
 import { SymmetryExplorer } from "../components/math/SymmetryExplorer";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -12,11 +13,13 @@ import {
   structuralOrbitCountByBurnside,
   symmetryLevelProfiles,
 } from "../content/mathematics";
+import { schoolMathLessons } from "../content/theory";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
   { href: "#two-families", label: "Two indexed families" },
   { href: "#vocabulary", label: "Symmetry vocabulary" },
+  { href: "#school-symmetry-notebook", label: "School symmetry notebook" },
   { href: "#orbit-lab", label: "Orbit and stabilizer lab" },
   { href: "#level-ledger", label: "L1–L7 symmetry ledger" },
   { href: "#affine-boundary", label: "Affine and STAR boundary" },
@@ -24,8 +27,10 @@ const contents = [
   { href: "#interpretation", label: "Interpretation boundaries" },
 ] as const;
 
+const symmetrySchoolLessons = schoolMathLessons.filter(({ chapter }) => chapter === "symmetry");
+
 export function SymmetryPage() {
-  const { href, t } = useI18n();
+  const { direction, href, t } = useI18n();
 
   return (
     <PageShell>
@@ -201,6 +206,30 @@ export function SymmetryPage() {
               </p>
               <code dir="ltr">|X/G|=(1/|G|)Σ_g |Fix(g)|</code>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="school-symmetry-notebook" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("SCHOOL SYMMETRY NOTEBOOK")}
+            title={t("Treat a symmetry as a rule-preserving relabelling before counting anything.")}
+            text={t(
+              "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.",
+            )}
+          />
+          <div className="theory-glossary">
+            {symmetrySchoolLessons.map((lesson, index) => (
+              <SchoolMathLessonCard
+                key={lesson.term}
+                lesson={lesson}
+                index={index}
+                open={index < 2}
+                direction={direction}
+                translate={t}
+              />
+            ))}
           </div>
         </div>
       </section>

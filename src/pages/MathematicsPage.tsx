@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, Braces, Check, GitBranch, ShieldAlert } from "lucide-react";
 import { CayleyExplorer } from "../components/math/CayleyExplorer";
+import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
 import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
@@ -13,6 +14,7 @@ import {
   structuralOrbitCount,
   towerCounts,
 } from "../content/mathematics";
+import { schoolMathLessons } from "../content/theory";
 import { useI18n } from "../i18n/I18nContext";
 
 const readingSteps = [
@@ -101,6 +103,7 @@ const countSteps = [
 const mathContents = [
   { href: "#objects", label: "Objects and notation" },
   { href: "#cayley-tables", label: "Cayley tables" },
+  { href: "#school-proof-notebook", label: "School proof notebook" },
   { href: "#frozen-laws", label: "PLUS and STAR" },
   { href: "#typed-actions", label: "Four action families" },
   { href: "#cells-560", label: "The 560 coordinates" },
@@ -116,9 +119,10 @@ const activeNontrivialTransfers = canonicalScaledEmbeddings.filter(
 
 const l6LeftIteration = iterateStarProduct(6, 2, 6, "LEFT");
 const l6RightIteration = iterateStarProduct(6, 2, 6, "RIGHT");
+const mathematicsSchoolLessons = schoolMathLessons.filter(({ chapter }) => chapter === "mathematics");
 
 export function MathematicsPage() {
-  const { href, t } = useI18n();
+  const { direction, href, t } = useI18n();
 
   return (
     <PageShell>
@@ -233,6 +237,30 @@ export function MathematicsPage() {
               <code dir="ltr">STAR_3(P0, P2) = P0</code>
               <p>{t("The P0 row is constant under STAR: P0 is a left reset.")}</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="school-proof-notebook" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("SCHOOL PROOF NOTEBOOK")}
+            title={t("Advanced words become manageable when every claim follows the same seven questions.")}
+            text={t(
+              "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.",
+            )}
+          />
+          <div className="theory-glossary">
+            {mathematicsSchoolLessons.map((lesson, index) => (
+              <SchoolMathLessonCard
+                key={lesson.term}
+                lesson={lesson}
+                index={index}
+                open={index < 2}
+                direction={direction}
+                translate={t}
+              />
+            ))}
           </div>
         </div>
       </section>

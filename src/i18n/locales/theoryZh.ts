@@ -576,7 +576,7 @@ export const theoryZh: TranslationDictionary = {
     "PLUS 满足结合律和交换律，P0 是双侧单位元，每个极都有逆元。若不要求保留具名原点，则仿射映射构成更大的挠子对称群 Hol(C_n)。",
   "STAR family": "STAR 族",
   "STAR is a pointed total magma with a left zero and right-neutral P0. At n≥2 it is noncommutative, nonassociative, and has no affine translation symmetry layer.":
-    "STAR 是带指定点的全定义原群（magma），其中 P0 是左零元和右中性元。当 n≥2 时，它不满足交换律和结合律，也没有仿射平移对称层。",
+    "STAR 是带指定常元的全定义原群（magma），其中 P0 是左零元和右中性元。当 n≥2 时，它不满足交换律和结合律，也没有仿射平移对称层。",
   "Why a PLUS affine shift is not a STAR symmetry": "为什么 PLUS 的仿射平移不是 STAR 对称",
   "The shift moves the distinguished reset point P0. It is valid for the unpointed PLUS torsor but fails the STAR law.":
     "该平移移动了具名重置点 P0。它对不带指定点的 PLUS 挠子有效，却不保持 STAR 运算律。",
@@ -750,4 +750,835 @@ export const theoryZh: TranslationDictionary = {
     "入门章节通过读法图例介绍主要符号，分别从表格与公式独立重建转换，并严格区分形式化模型、当前运行时与目标学习架构。",
   "P0 resets to P0, while P1 wraps to P0 because 1+2≡0 (mod 3); two sources therefore share P0 and the image has rank 2.":
     "P0 因重置而映到 P0；P1 则因 1+2≡0 (mod 3) 循环回 P0。因此两个源状态共享输出 P0，像的秩为 2。",
+
+  // School mathematics lessons: finite states and typed transitions
+  "Think of the labelled seats on one small carousel: the carrier is the complete list of seats that exist.":
+    "把它想成小型旋转木马上带编号的座位：载体集就是所有实际存在座位的完整清单。",
+  "Q_n={P0,…,P_(n−1)} and |Q_n|=n.": "Q_n={P0,…,P_(n−1)} 且 |Q_n|=n。",
+  "L3: Q_3={P0,P1,P2}; there are exactly three allowed poles.": "L3：Q_3={P0,P1,P2}；恰好有 3 个允许的极。",
+  "The level is declared by listing one label for each residue from 0 through n−1, so no extra pole is hidden outside the list.":
+    "层级通过为 0 到 n−1 的每个剩余类列出一个标签来声明，因此清单之外没有隐藏的额外极。",
+  "A carrier is not the set of everything the agent knows; it is one finite local state set.":
+    "载体集不是智能体所知一切事物的集合；它只是一个有限的局部状态集合。",
+  "L3 row and column headers: P0 | P1 | P2.": "L3 的行、列标题：P0 | P1 | P2。",
+  "|Q_3|=3.": "|Q_3|=3。",
+  "A pole is one named seat on the carousel, not the whole carousel and not the passenger sitting there.":
+    "极是旋转木马上的一个具名座位，既不是整座旋转木马，也不是坐在座位上的乘客。",
+  "P_i∈Q_n with 0≤i<n; calculation identifies P_i with residue i modulo n.":
+    "P_i∈Q_n 且 0≤i<n；计算时将 P_i 与模 n 的剩余类 i 对应起来。",
+  "L3: P2 is the label with calculation index 2; one further PLUS step reaches P0.":
+    "L3：P2 是计算指标为 2 的标签；再执行一步 PLUS 就到达 P0。",
+  "The label-to-residue correspondence is a bijection, so every pole has one calculation index and every allowed index names one pole.":
+    "标签与剩余类之间的对应是双射，因此每个极恰有一个计算指标，每个允许的指标也恰好命名一个极。",
+  "P2 does not universally mean twice as much, better, later, or more intelligent than P1.":
+    "P2 并不普遍表示 P1 的两倍、更好、更晚或更智能。",
+  "L3: row P2 and column P2 are addresses labelled by P2, not measured quantities.":
+    "L3：第 P2 行与第 P2 列是以 P2 标记的地址，而不是测量得到的数量。",
+  "P_(i+kn)=P_i for every integer k.": "对每个整数 k，都有 P_(i+kn)=P_i。",
+  "Changing level is like choosing a dial with a different number of marked positions.":
+    "改变层级就像选择一个带有不同数量刻度位置的表盘。",
+  "L_n is the local frame whose carrier is Q_n and whose index arithmetic is modulo n.":
+    "L_n 是一个局部框架，其载体集为 Q_n，指标算术按模 n 进行。",
+  "L2 has {P0,P1}; L3 has {P0,P1,P2}. P2 exists locally at L3 but not at L2.":
+    "L2 有 {P0,P1}；L3 有 {P0,P1,P2}。P2 在 L3 中局部存在，但在 L2 中不存在。",
+  "The subscript n fixes both the number of labels and the modulus used by every operation at that level.":
+    "下标 n 同时确定标签数量，以及该层级每个运算所使用的模数。",
+  "A larger level gives more distinctions, not automatically more knowledge, accuracy, or intelligence.":
+    "更大的层级提供更多可区分状态，但不会自动带来更多知识、更高准确度或更强智能。",
+  "L2 laws have 2×2 tables; L3 laws have 3×3 tables.": "L2 的运算律使用 2×2 表；L3 的运算律使用 3×3 表。",
+  "|Q_n|=n and |Q_n×Q_n|=n².": "|Q_n|=n 且 |Q_n×Q_n|=n²。",
+  "It is a deterministic two-slot machine: insert a left state and a right state, then receive one state.":
+    "它像一台确定性的双槽机器：放入一个左状态和一个右状态，就会得到唯一一个状态。",
+  "f:Q_n×Q_n→Q_n is a total function on ordered pairs.": "f:Q_n×Q_n→Q_n 是定义在全部有序对上的全函数。",
+  "L2 has four inputs: (P0,P0), (P0,P1), (P1,P0), and (P1,P1).":
+    "L2 有 4 个输入：(P0,P0)、(P0,P1)、(P1,P0) 和 (P1,P1)。",
+  "A complete Cayley table contains one cell for every ordered pair and exactly one output in each cell.":
+    "完整的凯莱表为每个有序对提供一个单元格，并且每个单元格恰有一个输出。",
+  "Binary means two inputs, not a two-element carrier and not a probabilistic yes-or-no answer.":
+    "“二元”表示有两个输入，并不表示载体集只有两个元素，也不表示概率性的“是或否”答案。",
+  "A 2×2 table has four filled body cells and no missing input pair.":
+    "一张 2×2 表有 4 个已填充的表体单元格，没有遗漏任何输入对。",
+  "|Q_2×Q_2|=2²=4.": "|Q_2×Q_2|=2²=4。",
+  "Modulo arithmetic is clock arithmetic: after the last mark, counting continues from the first mark.":
+    "模算术就像钟表算术：越过最后一个刻度后，从第一个刻度继续计数。",
+  "i≡j (mod n) exactly when n divides i−j; the remainder is chosen from 0,…,n−1.":
+    "当且仅当 n 整除 i−j 时，i≡j (mod n)；余数从 0,…,n−1 中选取。",
+  "L3: 2+2=4 and 4 leaves remainder 1 after division by 3, so P2⊕P2=P1.":
+    "L3：2+2=4，而 4 除以 3 余 1，所以 P2⊕P2=P1。",
+  "The division algorithm gives one unique remainder between 0 and n−1 for every integer.":
+    "带余除法定理保证每个整数都有唯一一个位于 0 到 n−1 之间的余数。",
+  "The statement 4≡1 (mod 3) does not claim that the ordinary integers 4 and 1 are equal.":
+    "命题 4≡1 (mod 3) 并不是说普通整数 4 与 1 相等。",
+  "L3 PLUS: row P2, column P2, cell P1.": "L3 PLUS：第 P2 行、第 P2 列，单元格为 P1。",
+  "(2+2) mod 3=1.": "(2+2) mod 3=1。",
+  "It is the multiplication-table idea applied to any finite two-input rule.":
+    "它把乘法表的思想推广到任意有限的双输入规则。",
+  "The row names the raw-left operand, the column names the raw-right operand, and their intersection is f(row,column).":
+    "行标记原始左操作数，列标记原始右操作数，二者交叉处就是 f(row,column)。",
+  "L3 PLUS: select row P1 and column P2; the intersection is P0.": "L3 PLUS：选择第 P1 行和第 P2 列；交叉单元格为 P0。",
+  "Rows and columns enumerate the full Cartesian product Q_n×Q_n, so the table is another complete representation of the function.":
+    "各行各列枚举了完整的笛卡尔积 Q_n×Q_n，因此这张表是该函数的另一种完整表示。",
+  "Swapping row and column is harmless only after commutativity has been proved for that operation.":
+    "只有在已经证明该运算满足交换律后，互换行与列才不会改变结果。",
+  "row P1 · column P2 → P0.": "第 P1 行 · 第 P2 列 → P0。",
+  "PLUS_3(P1,P2)=P_((1+2) mod 3)=P0.": "PLUS_3(P1,P2)=P_((1+2) mod 3)=P0。",
+  "PLUS rotates a finite dial by the number of steps named by the second pole.":
+    "PLUS 按第二个极所指定的步数转动有限表盘。",
+  "PLUS_n(P_i,P_j)=P_((i+j) mod n); (Q_n,PLUS_n,P0)≅C_n.": "PLUS_n(P_i,P_j)=P_((i+j) mod n)；(Q_n,PLUS_n,P0)≅C_n。",
+  "L3: start at P1, move two steps, and wrap around: P1⊕P2=P0.": "L3：从 P1 出发，移动两步并循环回绕：P1⊕P2=P0。",
+  "Addition of residues is closed, associative, and commutative; P0 is the identity and P_(n−i) is the inverse of P_i.":
+    "剩余类加法具有封闭性、结合律和交换律；P0 是单位元，P_(n−i) 是 P_i 的逆元。",
+  "PLUS is a finite cyclic law on labels, not ordinary addition of domain meanings or real quantities.":
+    "PLUS 是标签上的有限循环运算律，并不是对领域含义或现实数量作普通加法。",
+  "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.":
+    "L3 PLUS：第 P1 行、第 P2 列的单元格为 P0；第 P2 行、第 P1 列也得到相同单元格值。",
+  "(1+2) mod 3=0=(2+1) mod 3.": "(1+2) mod 3=0=(2+1) mod 3。",
+  "STAR is a dial with a one-sided emergency latch: a raw-left P0 resets before any movement is calculated.":
+    "STAR 就像带单侧紧急锁扣的表盘：若原始左输入为 P0，就在计算任何移动之前重置。",
+  "STAR_n(P_i,P_j)=P0 if i=0; otherwise STAR_n(P_i,P_j)=P_((i+j) mod n).":
+    "若 i=0，则 STAR_n(P_i,P_j)=P0；否则 STAR_n(P_i,P_j)=P_((i+j) mod n)。",
+  "L3: P0★P2=P0, but P2★P0=P2 because only the raw-left input controls reset.":
+    "L3：P0★P2=P0，但 P2★P0=P2，因为只有原始左输入控制重置。",
+  "The piecewise definition checks i=0 first; every nonzero row then agrees cell-for-cell with PLUS.":
+    "分段定义首先检查 i=0；随后每个非零行都逐格与 PLUS 相同。",
+  "A P0 on the right does not trigger reset, and STAR is not commutative for n≥2.":
+    "右侧的 P0 不会触发重置，并且当 n≥2 时 STAR 不满足交换律。",
+  "L3 STAR: the P0 row is P0,P0,P0; the P2 row is P2,P0,P1.": "L3 STAR：P0 行为 P0,P0,P0；P2 行为 P2,P0,P1。",
+  "STAR_3(P0,P2)=P0 while STAR_3(P2,P0)=P_((2+0) mod 3)=P2.": "STAR_3(P0,P2)=P0，而 STAR_3(P2,P0)=P_((2+0) mod 3)=P2。",
+  "A left zero is a one-sided stop button: once it is in the left slot, the other input cannot change the output.":
+    "左零元像一个单侧停止按钮：一旦它位于左槽，另一个输入就无法改变输出。",
+  "z is a left zero when z★x=z for every x; in STAR, z=P0.": "若对每个 x 都有 z★x=z，则 z 是左零元；在 STAR 中，z=P0。",
+  "L3: P0★P0=P0, P0★P1=P0, and P0★P2=P0.": "L3：P0★P0=P0、P0★P1=P0 且 P0★P2=P0。",
+  "The first branch of the STAR definition returns P0 for every possible right index whenever the left index is 0.":
+    "只要左指标为 0，STAR 定义的第一个分支就会对每个可能的右指标返回 P0。",
+  "Left zero does not mean two-sided zero: P1★P0=P1≠P0.": "左零元并不意味着双侧零元：P1★P0=P1≠P0。",
+  "The complete P0 row of every STAR table is constant P0.": "每张 STAR 表的完整 P0 行恒为 P0。",
+  "∀j, STAR_n(P0,P_j)=P0.": "∀j, STAR_n(P0,P_j)=P0。",
+  "A right-neutral element is a do-nothing input only when placed in the right slot.":
+    "右中性元只有放在右槽时才是不改变结果的输入。",
+  "e is right-neutral when x★e=x for every x; in STAR, e=P0.":
+    "若对每个 x 都有 x★e=x，则 e 是右中性元；在 STAR 中，e=P0。",
+  "L3: P0★P0=P0, P1★P0=P1, and P2★P0=P2.": "L3：P0★P0=P0、P1★P0=P1 且 P2★P0=P2。",
+  "For a nonzero left index i, adding 0 leaves i unchanged; the zero row also returns P0.":
+    "对非零左指标 i，加 0 后 i 不变；零行同样返回 P0。",
+  "Right-neutral does not mean two-sided identity: P0★P1=P0≠P1.": "右中性并不意味着双侧单位元：P0★P1=P0≠P1。",
+  "The P0 column of the L3 STAR table reads P0,P1,P2 from top to bottom.": "L3 STAR 表的 P0 列从上到下为 P0,P1,P2。",
+  "∀i, STAR_n(P_i,P0)=P_i.": "∀i, STAR_n(P_i,P0)=P_i。",
+  "The source is the named starting role in a transition, like the person whose position is being updated.":
+    "源状态是转换中具名的起始角色，就像位置正在被更新的人。",
+  "source=P_s is a semantic role retained in level:family:source:active even when raw operand order changes.":
+    "source=P_s 是保留在 level:family:source:active 中的语义角色，即使原始操作数顺序改变也不变。",
+  "L3 with source P0 and active P2: LEFT places P0 in the row; RIGHT places P0 in the column.":
+    "在源状态为 P0、活动极为 P2 的 L3 中：LEFT 把 P0 放在行中；RIGHT 把 P0 放在列中。",
+  "The canonical record stores source separately from the left and right operand slots.":
+    "规范记录将 source 与左、右操作数槽分别存储。",
+  "Source does not always mean raw-left operand; it moves to the raw-right slot in a RIGHT family.":
+    "源状态并不总是原始左操作数；在 RIGHT 族中，它会移到原始右槽。",
+  "LEFT: row=source; RIGHT: column=source.": "LEFT：row=source；RIGHT：column=source。",
+  "LEFT(P_s,P_a)=F(P_s,P_a); RIGHT(P_s,P_a)=F(P_a,P_s).": "LEFT(P_s,P_a)=F(P_s,P_a)；RIGHT(P_s,P_a)=F(P_a,P_s)。",
+  "The active pole is the second named role, like the instruction applied to the source.":
+    "活动极是第二个具名角色，就像施加到源状态上的指令。",
+  "active=P_a is retained as a semantic role; orientation determines whether it occupies the raw-right or raw-left slot.":
+    "active=P_a 作为语义角色被保留；朝向决定它占据原始右槽还是原始左槽。",
+  "L3 with source P0 and active P2: STAR_LEFT resets to P0, while STAR_RIGHT places P2 left and returns P2.":
+    "在源状态为 P0、活动极为 P2 的 L3 中：STAR_LEFT 重置为 P0，而 STAR_RIGHT 把 P2 放在左侧并返回 P2。",
+  "STAR tests the raw-left operand, so moving the active role between axes can change the result without changing the law.":
+    "STAR 检查原始左操作数，因此在两轴之间移动活动角色可以改变结果，而运算律本身并未改变。",
+  "Active is not automatically an action command or a global World Atlas state; it is one local operand role.":
+    "active 并不会自动成为行动命令或全局 World Atlas 状态；它只是一个局部操作数角色。",
+  "STAR_LEFT uses column P2; STAR_RIGHT uses row P2.": "STAR_LEFT 使用 P2 列；STAR_RIGHT 使用 P2 行。",
+  "STAR_LEFT(P0,P2)=P0; STAR_RIGHT(P0,P2)=P2.": "STAR_LEFT(P0,P2)=P0；STAR_RIGHT(P0,P2)=P2。",
+  "It is a postal address for one transition: removing any address field can send you to a different cell.":
+    "它像一次转换的邮政地址：删去任何地址字段，都可能把你送到另一个单元格。",
+  "cell_id=L{n}:{family}:P{source}:P{active}; target is computed from the family law and orientation.":
+    "cell_id=L{n}:{family}:P{source}:P{active}；target 由运算族规律和朝向计算得到。",
+  "L3:STAR_RIGHT:P0:P2 has raw operands (P2,P0) and target P2.":
+    "L3:STAR_RIGHT:P0:P2 的原始操作数为 (P2,P0)，目标为 P2。",
+  "Level, family, source, and active together determine one raw ordered pair and therefore one deterministic output.":
+    "层级、运算族、源状态和活动极共同确定一个原始有序对，因而也确定唯一的确定性输出。",
+  "Two coordinates that share a target are not the same typed record and do not share provenance automatically.":
+    "两个目标相同的坐标并不是同一条类型化记录，也不会自动共享来源信息。",
+  "L3 STAR: row P2, column P0 → P2.": "L3 STAR：第 P2 行、第 P0 列 → P2。",
+  "STAR_RIGHT(P0,P2)=STAR_3(P2,P0)=P2.": "STAR_RIGHT(P0,P2)=STAR_3(P2,P0)=P2。",
+
+  // School mathematics lessons: counts, programs, and symmetries
+  "Typed catalogue count": "类型化目录计数",
+  "Count an inventory by addresses: input squares first, rule books second, and role labels third.":
+    "按地址清点目录：先数输入方格，再数规则手册，最后数角色标签。",
+  "Σ_(n=1)^7 n²=140; 2 laws give 280 raw law cells; 2 orientations give 560 typed coordinates.":
+    "Σ_(n=1)^7 n²=140；2 个运算律给出 280 个原始运算单元格；2 种朝向给出 560 个类型化坐标。",
+  "L2 contributes 4·2·2=16 typed coordinates; L3 contributes 9·2·2=36.":
+    "L2 贡献 4·2·2=16 个类型化坐标；L3 贡献 9·2·2=36 个。",
+  "At level n there are n choices for source and n for active, independently, for each of four family tags.":
+    "在层级 n 上，对四个运算族标签中的每一个，都有 n 种源状态选择和彼此独立的 n 种活动极选择。",
+  "The 560 records are not neurons, concepts, learned skills, meanings, or units of intelligence.":
+    "这 560 条记录不是神经元、概念、已学习技能、语义或智能单位。",
+  "Per-level typed totals: 4,16,36,64,100,144,196.": "各层级的类型化总数：4,16,36,64,100,144,196。",
+  "4Σ_(n=1)^7 n²=4·140=560; active L2–L7: 560−4=556.": "4Σ_(n=1)^7 n²=4·140=560；活动层级 L2–L7：560−4=556。",
+  Rank: "秩",
+  "Rank counts how many different destinations a fixed one-input machine can actually reach.":
+    "秩用于计算固定的一输入机器实际能够到达多少个不同目标。",
+  "rank(T)=|Im(T)| for T:Q_n→Q_n obtained by fixing the family and active pole.":
+    "固定运算族与活动极得到 T:Q_n→Q_n 时，rank(T)=|Im(T)|。",
+  "L3, active P2: STAR_LEFT maps P0,P1,P2 to P0,P0,P1, so its image is {P0,P1} and rank=2.":
+    "L3，活动极 P2：STAR_LEFT 将 P0,P1,P2 映到 P0,P0,P1，因此其像为 {P0,P1}，rank=2。",
+  "A finite map's image is found by listing every output once and removing duplicates.":
+    "求有限映射的像时，先列出每个输出，再删除重复项。",
+  "This is finite transformation rank, not learned matrix rank; ABI LEFT is the standard right translation when active is fixed.":
+    "这里指有限变换的秩，而不是已学习矩阵的秩；固定 active 时，ABI LEFT 对应标准右平移映射。",
+  "Read the fixed P2 column for STAR_LEFT and the fixed P2 row for STAR_RIGHT.":
+    "对 STAR_LEFT 读取固定的 P2 列；对 STAR_RIGHT 读取固定的 P2 行。",
+  "rank(STAR_LEFT(_,P2))=2; rank(STAR_RIGHT(_,P2))=3 at L3.":
+    "在 L3 中，rank(STAR_LEFT(_,P2))=2；rank(STAR_RIGHT(_,P2))=3。",
+  "Reduct and expansion": "约化与扩张",
+  "The same game board can be studied with one rule book or with both rule books open.":
+    "同一块游戏板既可以只打开一本规则手册来研究，也可以同时打开两本。",
+  "G_n=(Q_n,PLUS_n,P0), S_n=(Q_n,STAR_n,P0), and A_n=(Q_n,PLUS_n,STAR_n,P0).":
+    "G_n=(Q_n,PLUS_n,P0)、S_n=(Q_n,STAR_n,P0)，并且 A_n=(Q_n,PLUS_n,STAR_n,P0)。",
+  "At L2 the carrier {P0,P1} is shared, but PLUS and STAR have different P0 rows and therefore define different reducts.":
+    "在 L2 中二者共享载体集 {P0,P1}，但 PLUS 与 STAR 的 P0 行不同，因此定义了不同的约化结构。",
+  "A reduct forgets named operations; an expansion names more operations on the same carrier.":
+    "约化结构忘掉一些具名运算；扩张结构则在同一载体集上命名更多运算。",
+  "Sharing the same set of poles does not make PLUS and STAR the same algebraic structure.":
+    "共享同一组极，并不会使 PLUS 与 STAR 成为同一种代数结构。",
+  "L2 PLUS P0 row: P0,P1; L2 STAR P0 row: P0,P0.": "L2 PLUS 的 P0 行：P0,P1；L2 STAR 的 P0 行：P0,P0。",
+  "signature(G_n)=(2,0); signature(S_n)=(2,0); signature(A_n)=(2,2,0).":
+    "signature(G_n)=(2,0)；signature(S_n)=(2,0)；signature(A_n)=(2,2,0)。",
+  "Composition is a recipe in which the output of one two-input step becomes an ingredient in the next step.":
+    "复合就像一道食谱：一个双输入步骤的输出会成为下一步骤的原料。",
+  "A full binary tree with k leaves has k−1 apply nodes; its C_(k−1) possible shapes are counted by Catalan numbers.":
+    "具有 k 个叶子的满二叉树有 k−1 个 apply 节点；其 C_(k−1) 种可能形状由卡特兰数计数。",
+  "Three inputs have two trees: (P1★P0)★P1=P2 and P1★(P0★P1)=P1 at L3.":
+    "三个输入有两棵树：在 L3 中，(P1★P0)★P1=P2，而 P1★(P0★P1)=P1。",
+  "Every binary apply joins two existing subexpressions, reducing the number of separate pieces by one.":
+    "每次二元 apply 都把两个已有子表达式连接起来，使独立部分的数量减少 1。",
+  "A list of operands is not a complete STAR program, and the formal tree is not a current V4 multi-step runtime claim.":
+    "只有操作数列表并不能构成完整的 STAR 程序；形式化树也不是关于当前 V4 多步运行能力的声明。",
+  "First tree lookups: P1★P0=P1, then P1★P1=P2; second tree: P0★P1=P0, then P1★P0=P1.":
+    "第一棵树查表：先有 P1★P0=P1，再有 P1★P1=P2；第二棵树：先有 P0★P1=P0，再有 P1★P0=P1。",
+  "C_2=(1/3)binom(4,2)=2.": "C_2=(1/3)binom(4,2)=2。",
+  "Parentheses are like recipe order: mixing the same ingredients in a different order can change the result.":
+    "括号就像食谱中的操作顺序：以不同顺序混合同样的原料，可能得到不同结果。",
+  "An operation is nonassociative when some x,y,z satisfy (x★y)★z≠x★(y★z).":
+    "如果存在某些 x,y,z 使 (x★y)★z≠x★(y★z)，该运算就不满足结合律。",
+  "L3: (P1★P0)★P1=P2, while P1★(P0★P1)=P1.": "L3：(P1★P0)★P1=P2，而 P1★(P0★P1)=P1。",
+  "One explicit unequal pair of bracketed evaluations is enough to disprove a universal associativity law.":
+    "只需给出一对结果不等的带括号计算，就足以否定普遍成立的结合律。",
+  "Commutativity and associativity are different properties; STAR has neither for n≥2.":
+    "交换律与结合律是不同性质；当 n≥2 时，STAR 两者都不满足。",
+  "The four L3 table lookups in the two trees return final cells P2 and P1.":
+    "两棵树在 L3 中共进行四次查表，最终分别返回单元格 P2 与 P1。",
+  "P2≠P1 ⇒ STAR_3 is not associative.": "P2≠P1 ⇒ STAR_3 不满足结合律。",
+  "Zero-prefix rule": "零前缀规则",
+  "In a left-to-right chain, reaching the reset state is like a latch: every later step stays reset.":
+    "在从左到右的链中，到达重置状态就像扣上锁扣：之后每一步都保持重置。",
+  "A left-associated STAR word follows modular prefix sums until a prefix equals P0; after that point every later value is P0.":
+    "左结合的 STAR 字按模前缀和推进，直到某个前缀等于 P0；此后每个后续值都为 P0。",
+  "L5: (P2★P3)★P4=P0★P4=P0, although P2⊕P3⊕P4=P4.": "L5：(P2★P3)★P4=P0★P4=P0，尽管 P2⊕P3⊕P4=P4。",
+  "Before reset, each nonzero left value uses addition; after reset, the left-zero law P0★x=P0 applies inductively.":
+    "重置前，每个非零左值使用加法；重置后，通过归纳反复应用左零元规律 P0★x=P0。",
+  "The final ordinary PLUS sum does not reveal whether an earlier STAR prefix already hit P0.":
+    "最终的普通 PLUS 和无法告诉我们此前某个 STAR 前缀是否已经到达 P0。",
+  "L5 STAR: row P2, column P3 → P0; then row P0, column P4 → P0.":
+    "L5 STAR：第 P2 行、第 P3 列 → P0；随后第 P0 行、第 P4 列 → P0。",
+  "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.": "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0。",
+  "Stable subset": "稳定子集",
+  "A subset is stable on one side if using one of its members in that slot never sends the result outside the subset.":
+    "如果把子集中的成员放进指定一侧的槽后，结果绝不会跑出该子集，就称它在这一侧稳定。",
+  "Right-stable means S★Q_n⊆S; left-stable means Q_n★S⊆S.": "右稳定表示 S★Q_n⊆S；左稳定表示 Q_n★S⊆S。",
+  "L3: {P0} is right-stable because P0★x=P0, but not left-stable because P1★P0=P1.":
+    "L3：{P0} 是右稳定的，因为 P0★x=P0；但它不是左稳定的，因为 P1★P0=P1。",
+  "Every nonzero STAR row cycles through all of Q_n, so a proper nonempty right-stable subset can contain only P0.":
+    "STAR 的每个非零行都会循环遍历整个 Q_n，因此非空真右稳定子集只能包含 P0。",
+  "These one-sided magma subsets are not automatically ring ideals, and left/right refer to operand slots.":
+    "这些原群中的单侧子集不会自动成为环理想；这里的左/右指操作数槽。",
+  "L3 P0 row stays inside {P0}; the P0 column contains P1 and P2 outside {P0}.":
+    "L3 的 P0 行始终留在 {P0} 内；P0 列却包含位于 {P0} 外的 P1 与 P2。",
+  "{P0}★Q_3={P0}, but Q_3★{P0}=Q_3.": "{P0}★Q_3={P0}，但 Q_3★{P0}=Q_3。",
+  Congruence: "同余关系",
+  "A congruence allows labels to be merged only when every operation remains well-defined after the merge.":
+    "同余关系只在合并后每个运算仍有良好定义时，才允许合并标签。",
+  "An equivalence ∼ is a congruence when x∼x' and y∼y' imply x★y∼x'★y'.":
+    "若 x∼x' 且 y∼y' 能推出 x★y∼x'★y'，则等价关系 ∼ 是同余关系。",
+  "L3: if P0∼P1, then P0★P1=P0 and P1★P1=P2 force P0∼P2, so all poles merge.":
+    "L3：若 P0∼P1，则 P0★P1=P0 与 P1★P1=P2 会迫使 P0∼P2，于是所有极都被合并。",
+  "The reset row distinguishes P0 so strongly that any nontrivial identification propagates through compatibility to the universal relation.":
+    "重置行如此鲜明地区分 P0，以至于任何非平凡等同都会通过相容性传播为全关系。",
+  "An arbitrary grouping of visually similar poles is not automatically a valid quotient.":
+    "任意把外观相似的极分组，并不会自动得到有效的商结构。",
+  "Compare the L3 cells (P0,P1)→P0 and (P1,P1)→P2 after assuming P0∼P1.":
+    "假设 P0∼P1 后，比较 L3 单元格 (P0,P1)→P0 与 (P1,P1)→P2。",
+  "Con(S_n)={Δ_(Q_n),Q_n×Q_n} for n≥2.": "当 n≥2 时，Con(S_n)={Δ_(Q_n),Q_n×Q_n}。",
+  "Rename every locker and key reversibly; if every instruction still works after renaming, the renaming is an automorphism.":
+    "把每个储物柜和钥匙都可逆地重新命名；若重命名后每条指令仍然成立，这个重命名就是自同构。",
+  "A bijection σ:A_n→A_n preserving PLUS, STAR, and P0; σ_u(P_i)=P_((ui) mod n) for u∈U(n).":
+    "自同构是保持 PLUS、STAR 与 P0 的双射 σ:A_n→A_n；对 u∈U(n)，σ_u(P_i)=P_((ui) mod n)。",
+  "L3: u=2 fixes P0 and swaps P1 with P2.": "L3：u=2 固定 P0，并交换 P1 与 P2。",
+  "A unit u is invertible modulo n, so multiplication by u is a permutation and distributes over modular addition without moving zero.":
+    "单位元 u 在模 n 意义下可逆，因此乘以 u 构成一个置换，并对模加法满足分配律，同时不移动零。",
+  "A reversible permutation is not enough; it must preserve every declared operation and named constant.":
+    "仅仅是可逆置换还不够；它必须保持每个已声明运算和具名常元。",
+  "L3 PLUS: σ(P1⊕P2)=σ(P0)=P0 and σ(P1)⊕σ(P2)=P2⊕P1=P0.": "L3 PLUS：σ(P1⊕P2)=σ(P0)=P0，并且 σ(P1)⊕σ(P2)=P2⊕P1=P0。",
+  "σ_u(F(x,y))=F(σ_u(x),σ_u(y)).": "σ_u(F(x,y))=F(σ_u(x),σ_u(y))。",
+  "Group action": "群作用",
+  "A group action is a complete set of reversible buttons together with the rule for pressing buttons in sequence.":
+    "群作用是一整套可逆按钮，以及依次按下这些按钮时所遵循的规则。",
+  "An action satisfies 1·x=x and (gh)·x=g·(h·x).": "群作用满足 1·x=x 与 (gh)·x=g·(h·x)。",
+  "L3: U(3)={1,2}; button 1 does nothing and button 2 swaps P1,P2. Pressing button 2 twice returns every pole.":
+    "L3：U(3)={1,2}；按钮 1 不作改变，按钮 2 交换 P1,P2。连续按两次按钮 2 后，每个极都回到原位。",
+  "Multiplying unit indices corresponds exactly to composing their multiplication permutations.":
+    "单位元指标相乘，恰好对应其乘法置换的复合。",
+  "One chosen symmetry is a group element, not the whole acting group and not an orbit.":
+    "一个选定的对称变换是群元素，而不是整个作用群，也不是轨道。",
+  "L3 action rows: u=1 maps 0,1,2 to 0,1,2; u=2 maps them to 0,2,1.":
+    "L3 作用行：u=1 将 0,1,2 映到 0,1,2；u=2 将它们映到 0,2,1。",
+  "σ_2∘σ_2=σ_(4 mod 3)=σ_1=id.": "σ_2∘σ_2=σ_(4 mod 3)=σ_1=id。",
+  "An orbit is the list of every place a marker can reach when every allowed symmetry button is tried.":
+    "轨道是尝试每个允许的对称按钮后，一个标记能够到达的所有位置的清单。",
+  "L3 under U(3): Orb(P0)={P0} and Orb(P1)={P1,P2}.": "在 U(3) 作用下的 L3：Orb(P0)={P0}，Orb(P1)={P1,P2}。",
+  "Applying every group element produces exactly the reachable images, and the group axioms make reachability an equivalence relation.":
+    "应用每个群元素恰好产生所有可达的像；群公理使这种可达关系成为等价关系。",
+  "Objects in one orbit are structurally related, not automatically equal in meaning, provenance, evidence, or authority.":
+    "同一轨道中的对象在结构上相关，但其语义、来源、证据或权限并不会自动相等。",
+  "Apply u=1 and u=2 to P1: the output list is P1,P2.": "把 u=1 与 u=2 应用于 P1：输出清单为 P1,P2。",
+  "Orb(P1)={P_(1·1 mod 3),P_(2·1 mod 3)}={P1,P2}.": "Orb(P1)={P_(1·1 mod 3),P_(2·1 mod 3)}={P1,P2}。",
+  "The stabilizer contains exactly the symmetry buttons that leave a chosen marker in its original place.":
+    "稳定子群恰好包含那些使选定标记留在原位的对称按钮。",
+  "Stab(x)={g∈G | g·x=x}; |G|=|Orb(x)|·|Stab(x)| for finite actions.":
+    "Stab(x)={g∈G | g·x=x}；对有限作用，|G|=|Orb(x)|·|Stab(x)|。",
+  "L3: only u=1 fixes P1, so Stab(P1)={1}; 2=2·1 matches orbit–stabilizer.":
+    "L3：只有 u=1 固定 P1，所以 Stab(P1)={1}；2=2·1 与轨道—稳定子定理一致。",
+  "Group elements carrying x to the same orbit point form equal-sized cosets of the stabilizer.":
+    "把 x 送到同一轨道点的群元素构成稳定子群的等大小陪集。",
+  "The stabilizer is a subgroup of transformations, while the orbit is a set of acted-on objects.":
+    "稳定子群是由变换组成的子群，而轨道是受作用对象的集合。",
+  "L3: u=1 sends P1→P1; u=2 sends P1→P2.": "L3：u=1 把 P1→P1；u=2 把 P1→P2。",
+  "|U(3)|=2=|Orb(P1)|·|Stab(P1)|=2·1.": "|U(3)|=2=|Orb(P1)|·|Stab(P1)|=2·1。",
+  "Count symmetry classes by averaging how many objects each symmetry button leaves unmoved.":
+    "对每个对称按钮所固定的对象数取平均，就能计算对称类别数。",
+  "|X/G|=(1/|G|)Σ_(g∈G)|Fix(g)|.": "|X/G|=(1/|G|)Σ_(g∈G)|Fix(g)|。",
+  "L3 poles: identity fixes 3 and the swap fixes only P0, so (3+1)/2=2 orbits.":
+    "L3 的极：恒等变换固定 3 个极，交换变换只固定 P0，所以有 (3+1)/2=2 个轨道。",
+  "Count pairs (g,x) with g·x=x in two ways: each orbit contributes exactly |G| such pairs.":
+    "用两种方法计算满足 g·x=x 的有序对 (g,x)：每个轨道恰好贡献 |G| 个这样的有序对。",
+  "Do not divide the number of objects by |G| unless every orbit happens to have full size.":
+    "除非每个轨道都恰好具有完整大小，否则不能直接用对象数除以 |G|。",
+  "L3 fixed-pole ledger: id→3, swap→1; direct orbit list: {P0}, {P1,P2}.":
+    "L3 固定极清单：id→3，swap→1；直接列出的轨道：{P0}、{P1,P2}。",
+  "(3+1)/2=2; for ordered pairs, (9+1)/2=5.": "(3+1)/2=2；对有序对而言，(9+1)/2=5。",
+  "Affine torsor symmetry": "仿射挠子对称性",
+  "A marked dial can be relabelled around its fixed origin; an unmarked dial may also be rotated before relabelling.":
+    "有原点标记的表盘可以围绕固定原点重新标记；无原点标记的表盘还可以先旋转，再重新标记。",
+  "F_(u,b)(x)=ux+b with u∈U(n); all such maps form Hol(C_n)=C_n⋊U(n).":
+    "当 u∈U(n) 时，F_(u,b)(x)=ux+b；所有此类映射构成 Hol(C_n)=C_n⋊U(n)。",
+  "L3 shift T1(x)=x+1 preserves the unpointed affine torsor, but T1(P0★P0)=P1 while T1(P0)★T1(P0)=P2.":
+    "L3 平移 T1(x)=x+1 保持不带指定点的仿射挠子，但 T1(P0★P0)=P1，而 T1(P0)★T1(P0)=P2。",
+  "The translation term b moves the named origin; STAR's unique left zero must remain P0, forcing b=0 for a STAR automorphism.":
+    "平移项 b 会移动具名原点；STAR 的唯一左零元必须仍为 P0，因此 STAR 自同构必须满足 b=0。",
+  "Hol(C_n) is not the STAR automorphism group and an affine torsor map need not be a pointed group automorphism.":
+    "Hol(C_n) 不是 STAR 的自同构群，仿射挠子映射也不一定是保指定点群的自同构。",
+  "L3 STAR compares the original cell (P0,P0)→P0 with the shifted cell (P1,P1)→P2.":
+    "L3 STAR 把原单元格 (P0,P0)→P0 与平移后的单元格 (P1,P1)→P2 作比较。",
+  "T1(P0★P0)=P1≠P2=T1(P0)★T1(P0).": "T1(P0★P0)=P1≠P2=T1(P0)★T1(P0)。",
+  "Inversion orbit": "取逆轨道",
+  "Inversion pairs a clockwise difference with the equally long counter-clockwise difference on the dial.":
+    "取逆把表盘上的顺时针差值与同样长度的逆时针差值配成一对。",
+  "ι(δ)=−δ mod n and ι²=id; its orbits contain δ and −δ.": "ι(δ)=−δ mod n 且 ι²=id；它的轨道包含 δ 与 −δ。",
+  "L3 inversion orbits are {0} and {1,2} because −1≡2 (mod 3).": "L3 的取逆轨道为 {0} 与 {1,2}，因为 −1≡2 (mod 3)。",
+  "Applying the minus sign twice returns the original residue, so every orbit has one or two elements.":
+    "连续两次取负会回到原剩余类，因此每个轨道有 1 个或 2 个元素。",
+  "These are algebraic orbits of differences, not claims about physical mirrors, time reversal, or causality.":
+    "这些是差值的代数轨道，并不是关于物理镜像、时间反演或因果关系的声明。",
+  "L3 inversion lookup: 0→0, 1→2, 2→1.": "L3 取逆查表：0→0，1→2，2→1。",
+  "−(−δ)≡δ (mod n).": "−(−δ)≡δ (mod n)。",
+  "Quadratic-residue block": "二次剩余块",
+  "Colour nonzero dial marks by whether they are a square; some symmetries keep each colour, while others swap the colours.":
+    "按照非零表盘刻度是否为平方剩余给它们着色；有些对称变换保持每种颜色，另一些则交换两种颜色。",
+  "QR(p)={u² mod p | u∈U(p)} for odd prime p; QR(p) is a subgroup of U(p).":
+    "对奇素数 p，QR(p)={u² mod p | u∈U(p)}；QR(p) 是 U(p) 的子群。",
+  "L5: QR(5)={1,4} and the other unit block is {2,3}; multiplication by 2 swaps the two blocks.":
+    "L5：QR(5)={1,4}，另一个单位元块为 {2,3}；乘以 2 会交换这两个块。",
+  "Multiplying by a square preserves square/non-square status, while multiplying by a non-square interchanges the two cosets.":
+    "乘以平方剩余会保持“平方/非平方”类别；乘以非平方剩余则会交换两个陪集。",
+  "The full unit group preserves the unordered partition, but it does not fix each block separately.":
+    "完整单位群保持这个无序划分，但并不逐一固定每个块。",
+  "L5 under u=2: 1→2 and 4→3, so {1,4}→{2,3}.": "L5 在 u=2 下：1→2 且 4→3，所以 {1,4}→{2,3}。",
+  "QR(5)={1²,2²,3²,4²} mod 5={1,4}.": "QR(5)={1²,2²,3²,4²} mod 5={1,4}。",
+  "CRT boundary": "CRT 边界",
+  "A six-position addition dial can be viewed as a two-position dial and a three-position dial together, but STAR's reset watches global zero.":
+    "一个 6 位置加法表盘可以看成 2 位置表盘与 3 位置表盘的组合，但 STAR 的重置检查的是全局零。",
+  "CRT gives Z/6Z≅Z/2Z×Z/3Z for addition; it is not a coordinatewise STAR isomorphism.":
+    "中国剩余定理（CRT）给出加法结构 Z/6Z≅Z/2Z×Z/3Z；它并不是逐坐标的 STAR 同构。",
+  "L6: θ(3★1)=θ(4)=(0,1), but θ(3)★_coordθ(1)=(0,0).": "L6：θ(3★1)=θ(4)=(0,1)，但 θ(3)★_coordθ(1)=(0,0)。",
+  "The residue 3 is zero modulo 3 but not globally zero modulo 6, so a coordinatewise reset fires when the original STAR reset does not.":
+    "剩余类 3 在模 3 下为零，但在模 6 下不是全局零，因此逐坐标重置会在原 STAR 不重置时被触发。",
+  "A decomposition preserving PLUS does not automatically preserve every other operation on the same carrier.":
+    "保持 PLUS 的分解，并不会自动保持同一载体集上的其他每个运算。",
+  "L6 STAR: row P3, column P1 → P4; coordinate STAR resets the modulo-3 component.":
+    "L6 STAR：第 P3 行、第 P1 列 → P4；逐坐标 STAR 会重置模 3 分量。",
+  "θ(3★_6 1)=(0,1)≠(0,0)=θ(3)★_coordθ(1).": "θ(3★_6 1)=(0,1)≠(0,0)=θ(3)★_coordθ(1)。",
+  Character: "特征标",
+  "A character labels dial positions by equally spaced arrows on the complex unit circle while respecting addition.":
+    "特征标用复单位圆上等角间隔的箭头标记表盘位置，同时保持加法。",
+  "χ_s(k)=exp(2πisk/n) and χ_s(k+ℓ)=χ_s(k)χ_s(ℓ).": "χ_s(k)=exp(2πisk/n) 且 χ_s(k+ℓ)=χ_s(k)χ_s(ℓ)。",
+  "L3 with ω=exp(2πi/3): χ_1 maps P0→1, P1→ω, and P2→ω².": "在 ω=exp(2πi/3) 的 L3 中：χ_1 将 P0→1、P1→ω、P2→ω²。",
+  "The exponential turns addition of angles into multiplication of complex phases.":
+    "指数函数把角度相加转化为复相位相乘。",
+  "P0 maps to complex 1, not complex 0; only unit s gives a faithful label with trivial kernel.":
+    "P0 映到复数 1，而不是复数 0；只有单位元 s 才给出核为平凡子群的忠实标记。",
+  "L3 PLUS P1⊕P2=P0 matches ω·ω²=1.": "L3 PLUS 的 P1⊕P2=P0 与 ω·ω²=1 相对应。",
+  "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).": "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2)。",
+  "Fibrewise aggregate": "逐纤维汇总",
+  "Count objects inside labelled drawers first; adding drawer totals does not create one giant drawer.":
+    "先清点每个具名抽屉里的对象；把各抽屉总数相加，并不会制造出一个巨型抽屉。",
+  "Σ|Aut(A_n)|=18 and 4Σ pair_orbits(n)=224, with level and family tags fixed by the action.":
+    "Σ|Aut(A_n)|=18 且 4Σ pair_orbits(n)=224；作用始终固定层级标签和运算族标签。",
+  "L3 has 2 pole orbits, 5 ordered-pair orbits, and 4×5=20 typed orbits.":
+    "L3 有 2 个极轨道、5 个有序对轨道和 4×5=20 个类型化轨道。",
+  "The diagonal unit action is computed independently in each level and each of four family fibres before the finite totals are added.":
+    "先在每个层级和四个运算族纤维中的每一个独立计算单位群的对角作用，再把有限总数相加。",
+  "Eighteen is not one global group order, and 224 is not the orbit count of a cross-level action.":
+    "18 不是某个全局群的阶，224 也不是某个跨层级作用的轨道数。",
+  "Pair-orbit row L1–L7: 1,4,5,10,7,20,9; sum=56.": "L1–L7 的有序对轨道数：1,4,5,10,7,20,9；总和为 56。",
+  "4×56=224; 1+1+2+2+4+2+6=18.": "4×56=224；1+1+2+2+4+2+6=18。",
+  "A homomorphism translates labels between two dials while making every operation commute with the translation.":
+    "同态在两个表盘之间转换标签，并使每个运算都与这种转换可交换。",
+  "f:A_n→A_m preserves P0, PLUS, and STAR: f(F_n(x,y))=F_m(f(x),f(y)).":
+    "f:A_n→A_m 保持 P0、PLUS 与 STAR：f(F_n(x,y))=F_m(f(x),f(y))。",
+  "L2→L4 with f(P0)=P0 and f(P1)=P2 preserves P1⊕P1=P0 and P1★P1=P0.":
+    "L2→L4 中，f(P0)=P0 且 f(P1)=P2；该映射保持 P1⊕P1=P0 与 P1★P1=P0。",
+  "The preservation equation is checked on every ordered source pair; finite tables make this exhaustive.":
+    "对每个有序源输入对检查保持等式；有限表格使这项检查能够穷尽所有情况。",
+  "Matching pole names or being injective as a set map does not prove operation preservation.":
+    "极的名称相同，或作为集合映射是单射，都不能证明运算得到保持。",
+  "L2 cell (P1,P1)→P0 maps to L4 cell (P2,P2)→P0 for both laws.":
+    "对两个运算律，L2 单元格 (P1,P1)→P0 都映到 L4 单元格 (P2,P2)→P0。",
+  "f(P1⊕_2P1)=P0=P2⊕_4P2.": "f(P1⊕_2P1)=P0=P2⊕_4P2。",
+  "It is a translation that collapses every source label onto the target's P0.":
+    "它是一个把每个源标签都压缩到目标 P0 上的转换。",
+  "z_(n,m)(P_i)=P0 for every P_i∈Q_n.": "对每个 P_i∈Q_n，都有 z_(n,m)(P_i)=P0。",
+  "L3→L5: P0,P1,P2 all map to P0, and both sides of every preservation equation equal P0.":
+    "L3→L5：P0,P1,P2 全部映到 P0，并且每个保持等式的两边都等于 P0。",
+  "PLUS_m(P0,P0)=P0 and STAR_m(P0,P0)=P0, so constant-P0 outputs preserve both operations.":
+    "PLUS_m(P0,P0)=P0 且 STAR_m(P0,P0)=P0，因此常值 P0 输出保持两个运算。",
+  "Saying no morphism exists from L3 to L5 is false; what fails is every nonzero full-algebra homomorphism.":
+    "说 L3 到 L5 完全不存在态射是错误的；真正不存在的是所有非零完整代数同态。",
+  "Every source table cell maps to target cell (P0,P0)→P0.": "源表中的每个单元格都映到目标单元格 (P0,P0)→P0。",
+  "z(F_n(x,y))=P0=F_m(z(x),z(y)).": "z(F_n(x,y))=P0=F_m(z(x),z(y))。",
+  "An embedding places the smaller dial inside the larger one without merging any of its marked positions.":
+    "嵌入把较小表盘放进较大表盘，同时不合并它的任何标记位置。",
+  "An embedding is an injective homomorphism; for n≥2, A_n embeds in A_m exactly when n divides m.":
+    "嵌入是单射同态；当 n≥2 时，A_n 能嵌入 A_m 当且仅当 n 整除 m。",
+  "L2→L4 uses P0→P0 and P1→P2; L3→L5 is impossible because 3 does not divide 5.":
+    "L2→L4 使用 P0→P0 与 P1→P2；L3→L5 不可能，因为 3 不整除 5。",
+  "The image of generator P1 must have exact additive order n, and a cyclic group of order m has such an element exactly when n|m.":
+    "生成元 P1 的像必须具有恰为 n 的加法阶；阶为 m 的循环群当且仅当 n|m 时才含有这样的元素。",
+  "The same-index candidate P_i→P_i can fail even when labels look compatible; operational transfer needs further authorization.":
+    "即使标签看似相容，同指标候选 P_i→P_i 仍可能失败；运行层面的迁移还需要额外授权。",
+  "L3→L5 failure: source PLUS(P1,P2)→P0, target PLUS(P1,P2)→P3.":
+    "L3→L5 失败：源中 PLUS(P1,P2)→P0，目标中 PLUS(P1,P2)→P3。",
+  "h(P_i)=P_((u·m/n)i mod m), u∈U(n), when n|m.": "当 n|m 时，h(P_i)=P_((u·m/n)i mod m)，其中 u∈U(n)。",
+  "A receipt is like a laboratory log: it records which bounded check ran, on what scope, and what status ended it.":
+    "回执像实验室日志：它记录运行了哪项有边界检查、检查范围是什么，以及最终处于什么状态。",
+  "receipt=(check_id,scope,inputs,status,work ledger,terminal witness).":
+    "receipt=(check_id,scope,inputs,status,work ledger,terminal witness)。",
+  "DIRECT_MORPHISM_REPLAY_L2_TO_L4 records mapping, four checked pairs, four families, rc=0, and status=PASS.":
+    "DIRECT_MORPHISM_REPLAY_L2_TO_L4 记录映射、4 个已检查输入对、4 个运算族、rc=0 和 status=PASS。",
+  "Machine-readable fields bind a claim to one replayable contour instead of leaving an unscoped success word.":
+    "机器可读字段把声明绑定到一个可重放流程，而不是只留下没有范围的“成功”一词。",
+  "A receipt is not a mathematical theorem, truth certificate, customer outcome, or proof of intelligence.":
+    "回执不是数学定理、真值证书、客户结果或智能证明。",
+  "Receipt ledger columns: check_id | scope | expected | got | status.":
+    "回执清单列：check_id | scope | expected | got | status。",
+  "PASS + disclosed scope ≠ proof outside that scope.": "PASS + 已披露范围 ≠ 对该范围之外的证明。",
+  "A boundary is a clearly marked stop sign showing exactly why a stronger conclusion is not allowed.":
+    "边界是一块明确标出的停止牌，它准确说明为什么不能得出更强结论。",
+  "BOUNDARY is a terminal status paired with a missing condition, counterexample, or unavailable contour.":
+    "BOUNDARY 是一种终止状态，并同时给出缺失条件、反例或不可用流程。",
+  "L3→L5 same-index transfer ends at the named level-alignment boundary with the P0≠P3 witness.":
+    "L3→L5 的同指标迁移在具名的层级对齐边界终止，并给出 P0≠P3 见证。",
+  "An explicit failed preservation equation is sufficient to reject that candidate map without guessing a favourable interpretation.":
+    "一个明确失败的保持等式就足以否决该候选映射，无需猜测对它有利的解释。",
+  "A boundary is not a hidden pass, and an environment block must not be reported as a successful replay.":
+    "边界不是隐藏的通过；环境阻塞也不得报告为成功重放。",
+  "Receipt fields: expected=the divisible-pair tuple; got=[3,5]; the separate preservation counterexample compares P0 with P3.":
+    "回执字段：expected=可整除输入对元组；got=[3,5]；另列的保持性反例比较 P0 与 P3。",
+  "φ(PLUS_3(P1,P2))=P0≠P3=PLUS_5(φP1,φP2).": "φ(PLUS_3(P1,P2))=P0≠P3=PLUS_5(φP1,φP2)。",
+  "Formal, current, and target layers": "形式化层、当前 V4 与目标架构",
+  "Keep the proven blueprint, the machine running today, and the proposed future machine in three labelled folders.":
+    "把已证明的蓝图、今天实际运行的机器和提议中的未来机器分别放进三个具名文件夹。",
+  "FORMAL=finite laws; CURRENT V4=bounded deterministic selector; TARGET=unimplemented or unproven World Atlas learning architecture.":
+    "FORMAL=有限运算律；CURRENT V4=有边界的确定性选择器；TARGET=尚未实现或尚未证明的 World Atlas 学习架构。",
+  "Formal: 560 coordinates. Current: 556 active, 1,204 committed, 880 executable, 440 per pattern. Target: persistent trained Atlas NOT_PRESENT.":
+    "形式化层：560 个坐标。当前 V4：556 个活动坐标、1,204 个已提交描述符、880 个可执行描述符、每种模式 440 个。目标架构：持久化已训练 Atlas NOT_PRESENT。",
+  "Each layer has different objects and evidence, so conclusions are licensed only inside the layer whose contract was checked.":
+    "每一层都有不同的对象与证据，因此结论只在其契约已经接受检查的那一层内有效。",
+  "Verified finite tables do not prove persistent learning, external operational gain, a trained Atlas, or General AI.":
+    "经过核验的有限表格不能证明持久学习、外部运行增益、已训练 Atlas 或通用人工智能。",
+  "Layer ledger: FORMAL | CURRENT V4 | TARGET, with a separate status column.":
+    "分层清单：FORMAL | CURRENT V4 | TARGET，并另设 status 列。",
+  "1,204→880→440 is current selector arithmetic; it is not the 560-coordinate formal derivation.":
+    "1,204→880→440 是当前选择器的算术；它不是 560 个坐标的形式化推导。",
+  "Symbol legend": "符号图例",
+  "Mathematical symbols are road signs: learn what each sign asks you to do before trying to read the whole proof.":
+    "数学符号就像路标：先学会每个符号要求你做什么，再尝试阅读完整证明。",
+  "∈ means belongs to; ⇒ implies; ⇔ if and only if; ∅ empty set; ∤ does not divide; ⊆ subset; Δ equality relation; ord order; Aut automorphisms; End endomorphisms; Hom homomorphisms; φ Euler totient or a named map by context; gcd greatest common divisor; binom binomial coefficient; ⋊ semidirect product; χ character; exp exponential.":
+    "∈ 表示属于；⇒ 表示推出；⇔ 表示当且仅当；∅ 表示空集；∤ 表示不整除；⊆ 表示子集；Δ 表示相等关系；ord 表示阶；Aut 表示自同构；End 表示自同态；Hom 表示同态；φ 依上下文表示欧拉函数或某个具名映射；gcd 表示最大公因数；binom 表示二项式系数；⋊ 表示半直积；χ 表示特征标；exp 表示指数函数。",
+  "L3: P1∈Q_3 and ord(P1)=3 ⇒ P1 generates Q_3 under PLUS; 3∤5 ⇔ no element of order 3 exists in C_5.":
+    "L3：P1∈Q_3 且 ord(P1)=3 ⇒ P1 在 PLUS 下生成 Q_3；3∤5 ⇔ C_5 中不存在阶为 3 的元素。",
+  "Each symbol has a fixed local grammar, while overloaded letters such as φ receive their meaning from the definition immediately around them.":
+    "每个符号都有固定的局部语法；像 φ 这样具有多种含义的字母，则由紧邻它的定义确定含义。",
+  "Do not read ⇒ as equality, ⇔ as one-way implication, ∅ as P0, Δ as a numeric difference, or ⋊ as ordinary multiplication.":
+    "不要把 ⇒ 读成相等，不要把 ⇔ 读成单向蕴含，不要把 ∅ 当成 P0，不要把 Δ 当成数值差，也不要把 ⋊ 当成普通乘法。",
+  "Legend lookup: symbol | read aloud | meaning in this chapter.":
+    "图例查阅格式：symbol | read aloud | meaning in this chapter。",
+  "n∤m is the negation of n|m; x∈∅ is always false; Δ_X={(x,x)|x∈X}.":
+    "n∤m 是 n|m 的否定；x∈∅ 恒为假；Δ_X={(x,x)|x∈X}。",
+
+  // School mathematics lessons: foundational algebraic vocabulary
+  "Residue class": "剩余类",
+  "A residue class is a basket holding all integers that land on the same dial mark.":
+    "剩余类像一个篮子，装着所有落在同一表盘刻度上的整数。",
+  "[i]_n={i+kn | k∈Z}; P_i represents [i]_n in Q_n.": "[i]_n={i+kn | k∈Z}；P_i 在 Q_n 中表示 [i]_n。",
+  "L3: …,−5,−2,1,4,7,… all belong to [1]_3 and are represented by P1.":
+    "L3：…,−5,−2,1,4,7,… 都属于 [1]_3，并由 P1 表示。",
+  "Two integers land on the same mark exactly when their difference is a multiple of n.":
+    "两个整数落在同一刻度上，当且仅当它们的差是 n 的倍数。",
+  "A residue class is an infinite set of integers; the selected remainder 0,…,n−1 is only its convenient representative.":
+    "剩余类是一个无限整数集合；选出的余数 0,…,n−1 只是它的方便代表元。",
+  "L3 labels choose the representatives 0,1,2 for the three residue classes.": "L3 标签为三个剩余类选取代表元 0,1,2。",
+  "[4]_3=[1]_3 because 3|(4−1).": "[4]_3=[1]_3，因为 3|(4−1)。",
+  "Signature, arity, and constant": "运算签名、元数与常元",
+  "A signature is the list of available machine buttons together with the number of input slots on each button.":
+    "运算签名（代数型）是一张可用机器按钮的清单，并注明每个按钮有多少个输入槽。",
+  "arity(PLUS)=2, arity(STAR)=2, arity(P0)=0; the project shorthand for A_n is signature (2,2,0).":
+    "arity(PLUS)=2、arity(STAR)=2、arity(P0)=0；项目把 A_n 的运算签名简写为 (2,2,0)。",
+  "At L2, PLUS(P1,P1) uses two inputs, while the symbol P0 names one fixed element and accepts no inputs.":
+    "在 L2 中，PLUS(P1,P1) 使用两个输入，而符号 P0 命名一个固定元素，不接收任何输入。",
+  "Arity counts argument places syntactically; a named constant is exactly a nullary operation.":
+    "元数在语法层面计算参数位置；具名常元正是零元运算。",
+  "The tuple (2,2,0) lists arities, not level sizes, tensor dimensions, or learned layer widths.":
+    "元组 (2,2,0) 列出的是元数，而不是层级大小、张量维数或已学习层的宽度。",
+  "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.": "运算清单：PLUS | 2；STAR | 2；P0 | 0。",
+  "A_n=(Q_n,PLUS_n,STAR_n,P0).": "A_n=(Q_n,PLUS_n,STAR_n,P0)。",
+  "Magma, semigroup, monoid, and group": "原群、半群、幺半群与群",
+  "These names are levels of a checklist: each new level keeps every earlier requirement and adds another one.":
+    "这些名称像检查清单的不同级别：每升一级都保留此前所有要求，并增加一项新要求。",
+  "magma=closed total binary operation; semigroup=magma+associativity; monoid=semigroup+two-sided identity; group=monoid+two-sided inverses.":
+    "magma=封闭的全定义二元运算；semigroup=magma+结合律；monoid=semigroup+双侧单位元；group=monoid+双侧逆元。",
+  "For n≥2, PLUS is a group; STAR is a magma but fails associativity and therefore cannot be a semigroup, monoid, or group.":
+    "当 n≥2 时，PLUS 构成群；STAR 构成原群，但不满足结合律，因此不可能是半群、幺半群或群。",
+  "The hierarchy follows directly from nested definitions, so failing an earlier requirement blocks every stronger class.":
+    "这一层级结构直接来自嵌套定义，因此只要不满足较早的一项要求，就不可能属于任何更强的类别。",
+  "Having a right-neutral element is not enough for a monoid; the identity must work on both sides and associativity must hold.":
+    "仅有右中性元不足以构成幺半群；单位元必须在两侧都有效，而且运算必须满足结合律。",
+  "L3 STAR gives (P1★P0)★P1=P2 but P1★(P0★P1)=P1.": "L3 STAR 给出 (P1★P0)★P1=P2，但 P1★(P0★P1)=P1。",
+  "group ⇒ monoid ⇒ semigroup ⇒ magma; the reverse implications need not hold.":
+    "group ⇒ monoid ⇒ semigroup ⇒ magma；反向蕴含不一定成立。",
+  Closure: "封闭性",
+  "Closure means the operation never throws you outside the declared game board.":
+    "封闭性表示运算绝不会把你抛出已声明的游戏板。",
+  "F is closed on Q_n when F(x,y)∈Q_n for every x,y∈Q_n.": "若对每个 x,y∈Q_n 都有 F(x,y)∈Q_n，则 F 在 Q_n 上封闭。",
+  "L3: PLUS(P2,P2)=P1 and STAR(P0,P2)=P0; both outputs still belong to Q_3.":
+    "L3：PLUS(P2,P2)=P1 且 STAR(P0,P2)=P0；两个输出仍都属于 Q_3。",
+  "Modulo n always returns an index 0,…,n−1, and the reset branch returns P0, which is already in Q_n.":
+    "模 n 运算总会返回 0,…,n−1 中的一个指标，而重置分支返回本来就在 Q_n 中的 P0。",
+  "Closure does not imply associativity, commutativity, inverses, or meaningful real-world semantics.":
+    "封闭性并不能推出结合律、交换律、逆元或有意义的现实世界语义。",
+  "Every body cell of each L3 table contains one of P0,P1,P2 and no outside symbol.":
+    "每张 L3 表的每个表体单元格都包含 P0,P1,P2 中的一个，不含任何外部符号。",
+  "PLUS_n,STAR_n:Q_n×Q_n→Q_n.": "PLUS_n,STAR_n:Q_n×Q_n→Q_n。",
+  Associativity: "结合律",
+  "Associativity asks whether moving parentheses changes the answer while keeping operand order fixed.":
+    "结合律询问：保持操作数顺序不变时，移动括号会不会改变答案。",
+  "F is associative when F(F(x,y),z)=F(x,F(y,z)) for every x,y,z.":
+    "若对每个 x,y,z 都有 F(F(x,y),z)=F(x,F(y,z))，则 F 满足结合律。",
+  "L3 PLUS is associative, but STAR fails on x=P1,y=P0,z=P1, producing P2 on the left and P1 on the right.":
+    "L3 PLUS 满足结合律；但 STAR 在 x=P1,y=P0,z=P1 时失败，等式左边得到 P2，右边得到 P1。",
+  "Residue addition inherits integer associativity; one unequal STAR triple disproves STAR associativity.":
+    "剩余类加法继承整数加法的结合律；一个结果不等的 STAR 三元组就能否定 STAR 的结合律。",
+  "Associativity does not permit reordering operands; that separate permission is commutativity.":
+    "结合律不允许改变操作数顺序；允许换序的是另一个性质——交换律。",
+  "Replay two table lookups for each side of the L3 STAR counterexample.": "对 L3 STAR 反例的等式两边各重放两次查表。",
+  "(i+j)+k≡i+(j+k) (mod n), but (P1★P0)★P1≠P1★(P0★P1).": "(i+j)+k≡i+(j+k) (mod n)，但 (P1★P0)★P1≠P1★(P0★P1)。",
+  Commutativity: "交换律",
+  "Commutativity asks whether swapping the two input seats leaves the result unchanged.":
+    "交换律询问：交换两个输入座位后，结果是否保持不变。",
+  "F is commutative when F(x,y)=F(y,x) for every x,y.": "若对每个 x,y 都有 F(x,y)=F(y,x)，则 F 满足交换律。",
+  "L3 PLUS(P1,P2)=P0=PLUS(P2,P1), while STAR(P0,P1)=P0≠P1=STAR(P1,P0).":
+    "L3 中，PLUS(P1,P2)=P0=PLUS(P2,P1)，而 STAR(P0,P1)=P0≠P1=STAR(P1,P0)。",
+  "Integer addition is commutative, but STAR's reset condition singles out the raw-left operand.":
+    "整数加法满足交换律，但 STAR 的重置条件特别指定原始左操作数。",
+  "One symmetric-looking cell is not a proof; every reflected pair across the table diagonal must agree.":
+    "一个看似对称的单元格并不能构成证明；表格主对角线两侧的每一对镜像单元格都必须相等。",
+  "The PLUS table is symmetric across its diagonal; the STAR table is not for n≥2.":
+    "PLUS 表关于主对角线对称；当 n≥2 时，STAR 表不具备这种对称性。",
+  "i+j≡j+i (mod n); STAR_n(P0,P1)≠STAR_n(P1,P0).": "i+j≡j+i (mod n)；STAR_n(P0,P1)≠STAR_n(P1,P0)。",
+  "Identity element": "单位元",
+  "An identity is a do-nothing input that works from both sides for every element.":
+    "单位元是一个对每个元素从左右两侧都不改变结果的输入。",
+  "e is a two-sided identity when e∘x=x=x∘e for every x.": "若对每个 x 都有 e∘x=x=x∘e，则 e 是双侧单位元。",
+  "At L3, P0 is the PLUS identity; STAR has P_i★P0=P_i but P0★P1=P0≠P1, so it has no identity.":
+    "在 L3 中，P0 是 PLUS 的单位元；STAR 虽有 P_i★P0=P_i，但 P0★P1=P0≠P1，因此它没有单位元。",
+  "The two equations are separate universal conditions; failure of either side rejects the candidate.":
+    "这两个等式是彼此独立的全称条件；任意一侧失败都会否决该候选项。",
+  "Do not shorten right-neutral to identity, and keep the degenerate L1 exception separate.":
+    "不要把“右中性元”简称为“单位元”，并且必须把退化的 L1 例外单独处理。",
+  "An identity requires both its row and its column to reproduce the header sequence.":
+    "单位元要求它所在的行和列都完整复现标题序列。",
+  "PLUS_n(P0,P_i)=P_i=PLUS_n(P_i,P0).": "PLUS_n(P0,P_i)=P_i=PLUS_n(P_i,P0)。",
+  "Inverse and generator": "逆元与生成元",
+  "An inverse walks back to the origin; a generator can reach every dial mark by repeated steps.":
+    "逆元让你走回原点；生成元则能通过反复迈步到达表盘的每个刻度。",
+  "In PLUS, P_i^(−1)=P_((n−i) mod n); P_k generates C_n exactly when gcd(k,n)=1.":
+    "在 PLUS 中，P_i^(−1)=P_((n−i) mod n)；P_k 生成 C_n 当且仅当 gcd(k,n)=1。",
+  "L3: P1 and P2 are inverses because P1⊕P2=P0; repeated P1 visits P0,P1,P2.":
+    "L3：P1 与 P2 互为逆元，因为 P1⊕P2=P0；反复使用 P1 会访问 P0,P1,P2。",
+  "The inverse index cancels i modulo n, and a step k visits n/gcd(k,n) distinct residues.":
+    "逆元指标在模 n 意义下抵消 i；步长 k 会访问 n/gcd(k,n) 个不同剩余类。",
+  "STAR lacks a two-sided identity for n≥2, so group-style inverses and generators do not transfer unchanged to STAR.":
+    "当 n≥2 时，STAR 没有双侧单位元，因此群意义下的逆元与生成元概念不能原样搬到 STAR。",
+  "L3 PLUS row P1 contains P0 under column P2; powers of P1 cycle through all three poles.":
+    "L3 PLUS 的 P1 行在 P2 列处为 P0；P1 的各次幂循环遍历全部 3 个极。",
+  "i+(n−i)≡0 (mod n); ord(P_k)=n/gcd(k,n).": "i+(n−i)≡0 (mod n)；ord(P_k)=n/gcd(k,n)。",
+  "Standard left and right translation": "标准左、右平移映射",
+  "Fix one operand of a two-input table; a fixed row or column becomes a one-input route through the outputs.":
+    "固定双输入表中的一个操作数；固定的一行或一列就成为遍历输出的一输入路线。",
+  "L_a(x)=a★x is the standard left translation; R_a(x)=x★a is the standard right translation.":
+    "L_a(x)=a★x 是标准左平移映射；R_a(x)=x★a 是标准右平移映射。",
+  "L3 with a=P2: L_P2 maps P0,P1,P2 to P2,P0,P1; R_P2 maps them to P0,P0,P1.":
+    "L3 且 a=P2：L_P2 将 P0,P1,P2 映到 P2,P0,P1；R_P2 将它们映到 P0,P0,P1。",
+  "The adjective left or right names the slot occupied by the fixed multiplier a.":
+    "“左”或“右”描述的是固定乘子 a 所占据的操作数槽。",
+  "ABI STAR_LEFT(s,a)=s★a is standard R_a; ABI STAR_RIGHT(s,a)=a★s is standard L_a.":
+    "ABI STAR_LEFT(s,a)=s★a 对应标准 R_a；ABI STAR_RIGHT(s,a)=a★s 对应标准 L_a。",
+  "L_a is row a; R_a is column a.": "L_a 是第 a 行；R_a 是第 a 列。",
+  "STAR_LEFT(_,a)=R_a and STAR_RIGHT(_,a)=L_a.": "STAR_LEFT(_,a)=R_a 且 STAR_RIGHT(_,a)=L_a。",
+  "Image of a function": "函数的像",
+  "The image is the set of destinations actually reached, not every destination that was available in principle.":
+    "像是实际到达的目标所组成的集合，而不是原则上可用的所有目标。",
+  "Im(f)={f(x)|x∈X}; rank(f)=|Im(f)| for a finite transformation.": "Im(f)={f(x)|x∈X}；对有限变换，rank(f)=|Im(f)|。",
+  "L3 R_P2 has outputs P0,P0,P1, so Im(R_P2)={P0,P1} and rank=2.":
+    "L3 的 R_P2 输出 P0,P0,P1，因此 Im(R_P2)={P0,P1} 且 rank=2。",
+  "List all outputs and remove repetitions; the remaining distinct values are exactly the image.":
+    "列出全部输出并去除重复值；剩下的不同值恰好构成像。",
+  "Codomain Q_3 has three elements even when the image has only two; image and codomain are not synonyms.":
+    "即使像只有两个元素，陪域 Q_3 仍有 3 个元素；像与陪域不是同义词。",
+  "Fixed P2 STAR column: P0,P0,P1.": "固定的 STAR P2 列：P0,P0,P1。",
+  "Im(R_P2)={P0,P1}⊂Q_3.": "Im(R_P2)={P0,P1}⊂Q_3。",
+  "Function, injection, surjection, and bijection": "函数、单射、满射与双射",
+  "A function gives every student one locker; injective forbids sharing, surjective leaves no locker unused, and bijective does both.":
+    "函数给每名学生分配一个储物柜；单射不允许共用，满射不留下空柜，双射同时满足这两项。",
+  "function: one output per input; injective: f(x)=f(y)⇒x=y; surjective: Im(f)=Y; bijective: injective and surjective.":
+    "function：每个输入对应一个输出；injective：f(x)=f(y)⇒x=y；surjective：Im(f)=Y；bijective：既是单射又是满射。",
+  "L2→L4 map P0→P0,P1→P2 is injective but not surjective; L3 multiplication by 2 is bijective.":
+    "L2→L4 映射 P0→P0,P1→P2 是单射但不是满射；L3 中乘以 2 的映射是双射。",
+  "The definitions test collisions and coverage separately; on equal finite sets, injective and surjective are equivalent.":
+    "这些定义分别检查碰撞与覆盖；在大小相同的有限集合之间，单射与满射等价。",
+  "A homomorphism need not be injective, and an injection is not an embedding until operation preservation is proved.":
+    "同态不一定是单射；在证明保持运算之前，一个单射也还不是嵌入。",
+  "Mapping ledger L2→L4 uses two distinct targets but leaves P1 and P3 unused.":
+    "L2→L4 映射清单使用两个不同目标，但 P1 与 P3 未被使用。",
+  "injective+surjective⇔bijective.": "injective+surjective⇔bijective。",
+  "Divisibility and element order": "整除性与元素的阶",
+  "An n-step cycle fits evenly inside an m-step cycle only when m can be split into whole blocks of n steps.":
+    "只有当 m 能分成若干完整的 n 步块时，一个 n 步循环才能整齐地嵌入一个 m 步循环。",
+  "n|m means m=qn for an integer q; ord(x) is the least positive r with r·x=0 in an additive group.":
+    "n|m 表示对某个整数 q 有 m=qn；在加法群中，ord(x) 是使 r·x=0 的最小正整数 r。",
+  "2|4 and P2∈C_4 has order 2; 3∤5 and no element of C_5 has order 3.":
+    "2|4，并且 P2∈C_4 的阶为 2；3∤5，并且 C_5 中没有阶为 3 的元素。",
+  "Every element order in a finite group divides the group order; in C_m an element of order n exists exactly when n|m.":
+    "有限群中每个元素的阶都整除群的阶；C_m 中存在阶为 n 的元素，当且仅当 n|m。",
+  "The symbol n|m does not mean a fraction, and a same-name pole does not preserve element order across levels.":
+    "符号 n|m 并不表示分数；跨层级时，同名的极也不一定保持元素的阶。",
+  "L4 repeated PLUS of P2: P0→P2→P0; L5 every nonzero pole has order 5.":
+    "L4 中反复 PLUS P2：P0→P2→P0；L5 中每个非零极的阶都为 5。",
+  "ord(P_k in C_m)=m/gcd(k,m).": "ord(P_k in C_m)=m/gcd(k,m)。",
+  "Unit group and Euler totient": "单位群与欧拉函数",
+  "Units are exactly the step sizes that eventually visit every mark instead of getting trapped in a smaller loop.":
+    "单位元恰好是那些最终会访问每个刻度、而不会困在较小循环中的步长。",
+  "U(n)={u mod n | gcd(u,n)=1}; |U(n)|=φ(n).": "U(n)={u mod n | gcd(u,n)=1}；|U(n)|=φ(n)。",
+  "U(3)={1,2} and φ(3)=2; U(4)={1,3} while step 2 is excluded because gcd(2,4)=2.":
+    "U(3)={1,2} 且 φ(3)=2；U(4)={1,3}，步长 2 被排除，因为 gcd(2,4)=2。",
+  "A residue has a multiplicative inverse modulo n exactly when it is coprime to n.":
+    "一个剩余类在模 n 意义下存在乘法逆元，当且仅当它与 n 互素。",
+  "U(n) is a multiplicative group of indices, not the carrier Q_n under PLUS.":
+    "U(n) 是指标的乘法群，而不是 PLUS 下的载体集 Q_n。",
+  "Unit ledger L1–L7 has sizes 1,1,2,2,4,2,6.": "L1–L7 的单位元清单大小依次为 1,1,2,2,4,2,6。",
+  "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).": "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n)。",
+  "Catalan number and bracket recurrence": "卡特兰数与括号递推",
+  "Catalan numbers count all ways to split an ordered row of operands into a left subtree and a right subtree.":
+    "卡特兰数计算把一个保持顺序的操作数序列拆成左子树与右子树的全部方式。",
+  "C_0=1 and C_r=Σ_(i=0)^(r−1) C_i C_(r−1−i); equivalently C_r=(1/(r+1))binom(2r,r).":
+    "C_0=1 且 C_r=Σ_(i=0)^(r−1) C_i C_(r−1−i)；等价地，C_r=(1/(r+1))binom(2r,r)。",
+  "Three operands use r=2 apply nodes: C_2=C_0C_1+C_1C_0=1+1=2 bracketings.":
+    "三个操作数使用 r=2 个 apply 节点：C_2=C_0C_1+C_1C_0=1+1=2 种加括号方式。",
+  "Choose the root split; left and right subtree shapes are independent, so their counts multiply and all split positions add.":
+    "选择根部切分位置；左右子树的形状彼此独立，所以两边数量相乘，再把所有切分位置的结果相加。",
+  "Catalan counts tree shapes with fixed operand order; it does not count permutations of operands.":
+    "卡特兰数计算的是操作数顺序固定时的树形，不计算操作数的排列。",
+  "arity 2,3,4,5 → bracketings 1,2,5,14.": "arity 2,3,4,5 → bracketings 1,2,5,14。",
+  "C_3=C_0C_2+C_1C_1+C_2C_0=2+1+2=5.": "C_3=C_0C_2+C_1C_1+C_2C_0=2+1+2=5。",
+  "Equivalence relation and quotient": "等价关系与商集",
+  "An equivalence relation sorts objects into non-overlapping boxes; a quotient treats each whole box as one new point.":
+    "等价关系把对象分进互不重叠的盒子；商集把每个完整盒子视为一个新点。",
+  "∼ is reflexive, symmetric, and transitive; X/∼ is the set of equivalence classes. An algebraic quotient requires ∼ to be a congruence.":
+    "∼ 具有自反性、对称性与传递性；X/∼ 是等价类的集合。代数商结构还要求 ∼ 是同余关系。",
+  "L3 inversion gives classes {P0} and {P1,P2}, but these orbit classes are not automatically a STAR congruence quotient.":
+    "L3 取逆得到等价类 {P0} 与 {P1,P2}，但这些轨道类不会自动成为 STAR 的同余商。",
+  "The three axioms make every object belong to exactly one class; compatibility is the extra condition that makes operations independent of representatives.":
+    "三个公理使每个对象恰好属于一个等价类；相容性是额外条件，它使运算结果不依赖代表元的选择。",
+  "An orbit partition, semantic grouping, and congruence quotient are different constructions until compatibility is proved.":
+    "在证明相容性之前，轨道划分、语义分组与同余商是三种不同构造。",
+  "Test representatives P1 and P2 in the STAR table before trying to define an operation on their merged class.":
+    "尝试在 P1 与 P2 的合并类上定义运算之前，先在 STAR 表中检验这两个代表元。",
+  "[x]★[y]=[x★y] is well-defined only when ∼ is a congruence.": "只有当 ∼ 是同余关系时，[x]★[y]=[x★y] 才有良好定义。",
+  Endomorphism: "自同态",
+  "An endomorphism is a rule-preserving map that starts and ends on the same structure, even if it collapses states.":
+    "自同态是从一个结构映回自身并保持运算律的映射，即使它会压缩状态也仍可称为自同态。",
+  "End(A_n)=Hom(A_n,A_n); automorphisms are exactly the bijective endomorphisms.":
+    "End(A_n)=Hom(A_n,A_n)；自同构恰好是双射的自同态。",
+  "At L3, the zero map and the two unit maps u=1,2 are the three full-algebra endomorphisms.":
+    "在 L3 中，零映射和 u=1,2 的两个单位元映射构成 3 个完整代数自同态。",
+  "Every nonzero full-algebra endomorphism at n≥2 is injective and hence bijective on the finite carrier; the zero map is the only collapsing case.":
+    "当 n≥2 时，每个非零完整代数自同态都是单射，因而在有限载体集上也是双射；零映射是唯一的压缩情形。",
+  "End(A_n) is not the same set as Aut(A_n): the zero endomorphism is not an automorphism when n≥2.":
+    "End(A_n) 与 Aut(A_n) 不是同一集合：当 n≥2 时，零自同态不是自同构。",
+  "L3 endomorphism ledger: zero | identity | swap P1,P2.": "L3 自同态清单：zero | identity | swap P1,P2。",
+  "|End(A_3)|=1+|U(3)|=3; |Aut(A_3)|=2.": "|End(A_3)|=1+|U(3)|=3；|Aut(A_3)|=2。",
+  "Isomorphism versus literal equality": "同构与字面相等",
+  "Two maps can have the same route structure even when their labels and object types are different.":
+    "即使标签和对象类型不同，两个映射仍可能具有相同的路线结构。",
+  "A≅B means a bijective structure-preserving map exists; it does not assert A=B as literal sets or typed objects.":
+    "A≅B 表示存在保持结构的双射；它并不声称 A 与 B 作为字面集合或类型化对象满足 A=B。",
+  "U(3)={1,2} is canonically isomorphic to Aut(A_3)={id,σ_2} by u↦σ_u.":
+    "通过 u↦σ_u，U(3)={1,2} 与 Aut(A_3)={id,σ_2} 规范同构。",
+  "The correspondence preserves multiplication as composition and has a unique inverse, while residues and permutations remain different kinds of objects.":
+    "该对应把乘法保持为复合，并且具有唯一逆映射；同时，剩余类与置换仍是不同种类的对象。",
+  "Writing U(n)=Aut(A_n) without declaring the identification can conflate indices with functions.":
+    "若不声明所用的等同而直接写 U(n)=Aut(A_n)，就可能混淆指标与函数。",
+  "Correspondence table: 1→id; 2→(P1 P2).": "对应表：1→id；2→(P1 P2)。",
+  "σ_u∘σ_v=σ_(uv mod n).": "σ_u∘σ_v=σ_(uv mod n)。",
+  "Torsor and holomorph": "挠子与全纯群",
+  "A torsor is a dial whose relative differences remain meaningful even after the absolute zero mark is erased.":
+    "挠子（群的主齐性空间）就像一个擦去绝对零刻度后，相对差值仍有意义的表盘。",
+  "The cyclic torsor uses [x,y,z]=x−y+z; its affine symmetries x↦ux+b form Hol(C_n)=C_n⋊U(n).":
+    "循环挠子使用 [x,y,z]=x−y+z；其仿射对称变换 x↦ux+b 构成 Hol(C_n)=C_n⋊U(n)。",
+  "L3 shift T1(x)=x+1 preserves [x,y,z] because every b cancels in (x+b)−(y+b)+(z+b).":
+    "L3 平移 T1(x)=x+1 保持 [x,y,z]，因为每个 b 都会在 (x+b)−(y+b)+(z+b) 中抵消。",
+  "Translations change the chosen origin but preserve all relative differences; unit multipliers preserve the cyclic group structure.":
+    "平移改变选定原点，但保持全部相对差值；单位元乘法保持循环群结构。",
+  "A torsor is not a pointed group, and its translation symmetries do not preserve STAR's named reset point.":
+    "挠子不是保指定点群，它的平移对称变换也不保持 STAR 的具名重置点。",
+  "Check L3 triples before and after T1; corresponding ternary outputs differ by the same shift.":
+    "检查 T1 前后的 L3 三元组；对应的三元输出相差同一个平移。",
+  "[F(x),F(y),F(z)]=u(x−y+z)+b=F([x,y,z]).": "[F(x),F(y),F(z)]=u(x−y+z)+b=F([x,y,z])。",
+  "Five L3 ordered-pair orbits": "L3 的五个有序对轨道",
+  "Pair each point of the 3×3 source-active grid with the point obtained by swapping P1 and P2 in both coordinates.":
+    "把 3×3 源状态—活动极网格中的每个点，与同时在两个坐标中交换 P1 和 P2 后得到的点配对。",
+  "U(3) acts diagonally by u·(P_s,P_a)=(P_(us),P_(ua)).": "U(3) 按 u·(P_s,P_a)=(P_(us),P_(ua)) 作对角作用。",
+  "The five orbits are {(P0,P0)}, {(P0,P1),(P0,P2)}, {(P1,P0),(P2,P0)}, {(P1,P1),(P2,P2)}, and {(P1,P2),(P2,P1)}.":
+    "5 个轨道为 {(P0,P0)}、{(P0,P1),(P0,P2)}、{(P1,P0),(P2,P0)}、{(P1,P1),(P2,P2)} 和 {(P1,P2),(P2,P1)}。",
+  "Identity fixes all nine pairs; u=2 fixes only (P0,P0), and every other pair is matched with one distinct partner.":
+    "恒等变换固定全部 9 个有序对；u=2 只固定 (P0,P0)，其他每个有序对都与一个不同的伙伴配对。",
+  "These five pair orbits are not the two pole orbits and not the twenty typed orbits after four family tags are restored.":
+    "这 5 个有序对轨道既不是 2 个极轨道，也不是恢复四个运算族标签后的 20 个类型化轨道。",
+  "Orbit sizes 1+2+2+2+2=9 exhaust the L3 ordered-pair table.": "轨道大小 1+2+2+2+2=9 穷尽了 L3 有序对表。",
+  "Burnside: (9+1)/2=5; typed at L3: 4×5=20.": "伯恩赛德引理：(9+1)/2=5；L3 类型化后：4×5=20。",
+  "Current V4 school replay": "当前 V4 的课堂推演",
+  "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
+    "设想一个封闭卡片目录：识别两张精确请求卡中的一张，丢弃禁止的卡片类型，选择一个奇偶书架，以可复现方式排序，并只使用一张卡一次。",
+  "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":
+    "alpha,beta→LEFT/even；gamma,delta→RIGHT/odd；committed=1,204；executable=880；frontier=440；order=SHA-256(observation,candidate_id,ordinal)；arity=2；route_depth=1。",
+  "For alpha,beta, the selector accepts the fixed pattern, enters 1,204 committed descriptors, keeps 880 of four executable kinds, exposes the 440 even-parity candidates, derives a hash order, binds one process-local handle, executes one bounded action, and records a receipt.":
+    "对于 alpha,beta，选择器接受固定模式，进入 1,204 个已提交描述符，保留四种可执行类型中的 880 个，公开 440 个偶数奇偶性候选项，导出哈希次序，绑定一个进程内句柄，执行一个有边界行动，并记录回执。",
+  "The current release contract fixes each filter and count; semantic_reads, rank_effects, and learning_writes are all zero, so Atlas state cannot change the order.":
+    "当前版本契约固定每个筛选器与计数；semantic_reads、rank_effects 和 learning_writes 均为 0，因此 Atlas 状态不能改变次序。",
+  "A pole is a formal P_i label; a source pattern is one accepted input string; rank is |Im(T)|; ranking is the hash-derived candidate order. The arithmetic shows six 108-descriptor increments, but the reviewed source does not disclose names for six generated strata, so no such names may be invented.":
+    "极是形式化 P_i 标签；source pattern 是一个获准输入字符串；rank 是 |Im(T)|；ranking 是由哈希导出的候选次序。算术显示 6 个每次 108 个描述符的增量，但已审查源材料并未披露 6 个生成层的名称，因此不得虚构这些名称。",
+  "Replay ledger: fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt.":
+    "重放清单：fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt。",
+  "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.":
+    "108=4Σ_(n=2)^7n；1,204=556+6·108；880=556+3·108；440=880/2。",
+
+  // Remaining school symbol-legend readings and meanings
+  "x belongs to X": "x 属于 X",
+  "The object x is an element of the set X.": "对象 x 是集合 X 的一个元素。",
+  "A implies B": "A 推出 B",
+  "Whenever A is true, B must also be true.": "只要 A 为真，B 就一定也为真。",
+  "A if and only if B": "A 当且仅当 B",
+  "Both implications A⇒B and B⇒A hold.": "A⇒B 与 B⇒A 两个蕴含都成立。",
+  "the empty set": "空集",
+  "A set containing no elements; it is not the pole P0.": "不含任何元素的集合；它不是极 P0。",
+  "n does not divide m": "n 不整除 m",
+  "There is no integer q with m=qn.": "不存在满足 m=qn 的整数 q。",
+  "S is a subset of X": "S 是 X 的子集",
+  "Every element of S also belongs to X.": "S 的每个元素也都属于 X。",
+  "the equality relation on X": "X 上的相等关系",
+  "The pairs (x,x) and no pairs of distinct elements.":
+    "它包含所有形如 (x,x) 的有序对，不包含由两个不同元素组成的有序对。",
+  "the order of x": "x 的阶",
+  "The first positive repeat length returning x to the identity.": "使 x 经过重复运算首次回到单位元的最小正长度。",
+  "automorphisms of A": "A 的自同构",
+  "All bijective structure-preserving self-maps of A.": "A 到自身的所有保持结构的双射。",
+  "endomorphisms of A": "A 的自同态",
+  "All structure-preserving maps from A to itself.": "A 到自身的所有保持结构的映射。",
+  "homomorphisms from A to B": "从 A 到 B 的同态",
+  "All declared-structure-preserving maps A→B.": "所有保持已声明结构的映射 A→B。",
+  phi: "φ",
+  "Either a named map or Euler's totient φ(n); the surrounding definition fixes which one.":
+    "表示某个具名映射或欧拉函数 φ(n)；由周围的定义确定具体含义。",
+  "greatest common divisor": "最大公因数",
+  "The largest positive integer dividing both a and b.": "同时整除 a 与 b 的最大正整数。",
+  "n choose k": "n 取 k",
+  "The number of k-element subsets of an n-element set.": "一个 n 元集合所含 k 元子集的数量。",
+  "semidirect product": "半直积",
+  "A group built from G and H together with a declared action of H on G.":
+    "由 G、H 以及一个已声明的 H 对 G 的作用共同构成的群。",
+  "character chi sub s": "特征标 χ 下标 s",
+  "A group homomorphism from the cyclic group to nonzero complex phases.": "从循环群到非零复相位的群同态。",
+  "the exponential of z": "z 的指数函数值",
+  "Here it produces unit-circle phases such as exp(2πisk/n).": "这里它产生形如 exp(2πisk/n) 的单位圆相位。",
+
+  // Strengthened school definitions and lesson-card interface
+  "z is a left zero when z★x=z for every x; for STAR at n≥2, the unique left zero is z=P0.":
+    "若对每个 x 都有 z★x=z，则 z 是左零元；对于 n≥2 的 STAR，唯一的左零元是 z=P0。",
+  "The first branch gives P0★x=P0. If z=P_k is nonzero, choose x=P_(n−k): then z★x=P0≠z, so no nonzero pole is a left zero.":
+    "第一个分支给出 P0★x=P0。若 z=P_k 非零，取 x=P_(n−k)，则 z★x=P0≠z，所以任何非零极都不是左零元。",
+  "e is right-neutral when x★e=x for every x; for STAR at n≥2, the unique right-neutral element is e=P0.":
+    "若对每个 x 都有 x★e=x，则 e 是右中性元；对于 n≥2 的 STAR，唯一的右中性元是 e=P0。",
+  "P_i★P0=P_i for every i. Conversely, if e=P_k were right-neutral, P1★P_k=P1 would force 1+k≡1 (mod n), hence k≡0 and e=P0.":
+    "对每个 i 都有 P_i★P0=P_i。反过来，若 e=P_k 是右中性元，则 P1★P_k=P1 会迫使 1+k≡1 (mod n)，因此 k≡0 且 e=P0。",
+  "An equivalence ∼ is a congruence when it is compatible with every named operation: x∼x' and y∼y' imply F(x,y)∼F(x',y') for each F; use STAR for S_n and both PLUS and STAR for A_n.":
+    "当等价关系 ∼ 与每个具名运算都相容时，它才是同余关系：对每个 F，x∼x' 且 y∼y' 必须推出 F(x,y)∼F(x',y')；对 S_n 检查 STAR，对 A_n 则同时检查 PLUS 与 STAR。",
+  "A character is a group homomorphism C_n→C×; χ_s(k)=exp(2πisk/n), so χ_s(k+ℓ)=χ_s(k)χ_s(ℓ). It is faithful exactly when gcd(s,n)=1.":
+    "特征标是群同态 C_n→C×；χ_s(k)=exp(2πisk/n)，所以 χ_s(k+ℓ)=χ_s(k)χ_s(ℓ)。它是忠实的，当且仅当 gcd(s,n)=1。",
+  "f:A_n→A_m is a homomorphism when f(P0)=P0 and f(F_n(x,y))=F_m(f(x),f(y)) for every x,y and each F∈{PLUS,STAR}.":
+    "若 f(P0)=P0，并且对每个 x,y 以及每个 F∈{PLUS,STAR} 都有 f(F_n(x,y))=F_m(f(x),f(y))，则 f:A_n→A_m 是同态。",
+  "magma=set with a closed total binary operation; semigroup=magma+associativity; monoid=semigroup+two-sided identity; group=monoid in which every element has a two-sided inverse.":
+    "magma=带有封闭且全定义二元运算的集合；semigroup=magma+结合律；monoid=semigroup+双侧单位元；group=每个元素都有双侧逆元的 monoid。",
+  "For STAR, a right-neutral candidate e=P_k must satisfy P1★P_k=P1, which forces k≡0 and e=P0; the remaining candidate fails on the left because P0★P1=P0≠P1. Thus no two-sided identity exists for n≥2.":
+    "对 STAR 而言，右中性候选 e=P_k 必须满足 P1★P_k=P1，这会迫使 k≡0 且 e=P0；剩下的候选项在左侧失败，因为 P0★P1=P0≠P1。因此当 n≥2 时不存在双侧单位元。",
+  "Intuition / analogy": "直观理解 / 类比",
+  "Exact definition": "精确定义",
+  "Worked small-level example": "小层级算例",
+  "Why it is true": "为什么成立",
+  "Common mistake or boundary": "常见错误或适用边界",
+  "Table channel": "表格通道",
+  "Open a term for a complete seven-part explanation and two independent checks.":
+    "打开一个术语，查看完整的七部分讲解和两项独立核验。",
+  "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.":
+    "每个条目都从类比过渡到精确定义，演算一个小例子，解释命题为什么成立，指出一个常见错误，并核对表格通道与公式通道是否一致。",
+  "School proof notebook": "基础数学证明笔记",
+  "SCHOOL PROOF NOTEBOOK": "基础数学证明笔记",
+  "Advanced words become manageable when every claim follows the same seven questions.":
+    "当每条命题都回答同样的七个问题时，高阶术语也会变得容易理解。",
+  "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.":
+    "请按顺序打开卡片：先看类比，再读精确定义，重演小例子，检查成立理由，排除常见错误，最后确认表格与公式一致。",
+  "School symmetry notebook": "基础对称性笔记",
+  "SCHOOL SYMMETRY NOTEBOOK": "基础对称性笔记",
+  "Treat a symmetry as a rule-preserving relabelling before counting anything.":
+    "在开始计数之前，先把对称性理解为保持运算律的重新标记。",
+  "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.":
+    "每张卡片都从具体的表盘图景开始，随后给出学术定义，演算有限例子，证明命题，标明解释边界，并核对查表清单与公式是否一致。",
 };

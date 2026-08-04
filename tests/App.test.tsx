@@ -200,6 +200,9 @@ describe("GALO public site", () => {
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/stored release evidence and was not freshly replayed/i)).toBeInTheDocument();
+    const schoolLessonCards = document.querySelectorAll(".theory-glossary > .school-math-lesson-card");
+    expect(schoolLessonCards).toHaveLength(59);
+    expect(schoolLessonCards[0]?.querySelectorAll(".school-math-lesson__field")).toHaveLength(7);
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/theory");
 
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.theory-contents a[href^="#"]'))) {
@@ -318,10 +321,13 @@ describe("GALO public site", () => {
     expect(document.documentElement).toHaveAttribute("dir", "rtl");
     expect(caption).toHaveAttribute("dir", "rtl");
     expect(caption.closest("table")).toHaveAttribute("dir", "ltr");
-    expect(screen.getByText("قناة الصيغة")).not.toHaveAttribute("dir", "ltr");
     expect(document.querySelector(".theory-tutor__formula code")).toHaveAttribute("dir", "ltr");
-    const carrierDefinition = document.querySelector(".theory-glossary code");
-    expect(carrierDefinition).toHaveAttribute("dir", "rtl");
+    const firstLesson = document.querySelector(".theory-glossary .school-math-lesson");
+    expect(within(firstLesson as HTMLElement).getByText("قناة الصيغة")).not.toHaveAttribute("dir", "ltr");
+    const carrierDefinition = document.querySelector(
+      ".theory-glossary .school-math-lesson__field:nth-child(2) .school-math-lesson__formal",
+    );
+    expect(firstLesson).toHaveAttribute("dir", "rtl");
     expect(carrierDefinition?.querySelector("bdi")).toHaveAttribute("dir", "ltr");
     expect(document.querySelector(".theory-divisibility-proof h3 bdi")).toHaveAttribute("dir", "ltr");
   });

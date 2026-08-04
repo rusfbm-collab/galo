@@ -273,7 +273,7 @@ export const mathExtraAr: TranslationDictionary = {
   "A k-operand expression uses k−1 binary cells. For STAR, changing the tree can change the result, so a list of operands is not a complete program.":
     "يستخدم التعبير ذو k مُعاملات k−1 خلية ثنائية. في STAR، قد يؤدي تغيير الشجرة إلى تغيير النتيجة، لذلك لا تكفي قائمة المُعاملات لتكون برنامجًا كاملًا.",
   "A morphism is the mathematical preservation condition; LevelAlignmentReceipt is the auditable object that records whether a particular cross-level use passed it. Without that receipt, the correct result is BOUNDARY—not an implicit projection.":
-    "المورفزم هو شرط الحفظ الرياضي؛ أما LevelAlignmentReceipt فهو كائن قابل للتدقيق يسجل ما إذا كان استخدام معين عبر المستويات قد اجتاز هذا الشرط. ومن دون هذا الإيصال، تكون النتيجة الصحيحة BOUNDARY، لا إسقاطًا ضمنيًا.",
+    "التشاكل هو شرط الحفظ الرياضي؛ أما LevelAlignmentReceipt فهو كائن قابل للتدقيق يسجل ما إذا كان استخدام معين عبر المستويات قد اجتاز هذا الشرط. ومن دون هذا الإيصال، تكون النتيجة الصحيحة BOUNDARY، لا إسقاطًا ضمنيًا.",
   "A shared label is not a proof of lawful transport.": "اشتراك الحالات في التسمية لا يثبت أن النقل قانوني.",
   "Action family": "عائلة الإجراء",
   "Active pole": "القطب النشط",
@@ -287,7 +287,7 @@ export const mathExtraAr: TranslationDictionary = {
   "Bracket-sensitive observables must remain distinguishable on the declared domain.":
     "يجب أن تظل الكميات القابلة للرصد والحساسة للأقواس قابلة للتمييز على المجال المعلن.",
   "Brackets and programs": "الأقواس والبرامج",
-  "CROSS-LEVEL MORPHISMS": "المورفزمات عبر المستويات",
+  "CROSS-LEVEL MORPHISMS": "التشاكلات عبر المستويات",
   "Canonical typed coordinate": "الإحداثي المعياري محدد النوع",
   "Cayley tables": "جداول كايلي",
   "Change the level, family, source, and active pole. Every displayed field is recomputed from the frozen formulas in this browser.":
@@ -298,7 +298,7 @@ export const mathExtraAr: TranslationDictionary = {
   "Choose the carrier": "اختر المجموعة الحاملة",
   "Construct any one of the 560 coordinates and replay its table lookup.":
     "أنشئ أي إحداثي من الإحداثيات الـ560 وأعد تشغيل عملية البحث في جدوله.",
-  "Cross-level morphisms": "المورفزمات عبر المستويات",
+  "Cross-level morphisms": "التشاكلات عبر المستويات",
   "Direct table derivation": "اشتقاق مباشر من الجدول",
   "Enumerate ordered pairs": "عدّد الأزواج المرتبة",
   "Every internal node records its level, family, source, active pole, target, and parent-child position.":
@@ -362,7 +362,7 @@ export const mathExtraAr: TranslationDictionary = {
   "Source state": "حالة المصدر",
   "States from different carriers cannot enter the same Cayley cell directly. A cross-level map must preserve the declared typed operations on its stated domain and disclose every lost observable.":
     "لا يمكن إدخال حالات من مجموعات حاملة مختلفة مباشرة في خلية كايلي واحدة. يجب أن يحفظ التطبيق عبر المستويات العمليات محددة الأنواع المعلنة على مجاله المعلن، وأن يكشف كل كمية قابلة للرصد فُقدت.",
-  "Strong frozen-law morphism": "مورفزم قوي للقوانين المجمّدة",
+  "Strong frozen-law morphism": "تشاكل قوي للقوانين المجمّدة",
   "THE 560 ORIENTED TYPED COORDINATES": "الإحداثيات الموجّهة محددة النوع الـ560",
   "The 560 coordinates": "الإحداثيات الـ560",
   "The Catalan count is 1, 2, 5, and 14 for arities 2, 3, 4, and 5 respectively.":
