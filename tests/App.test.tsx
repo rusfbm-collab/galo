@@ -2,6 +2,12 @@ import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { App } from "../src/app/App";
+import {
+  getMissingTranslations,
+  localizedPath,
+  parseLocalizedPath,
+  resetMissingTranslations,
+} from "../src/i18n/I18nContext";
 
 function setPath(path: string) {
   window.history.replaceState({}, "", path);
@@ -55,13 +61,17 @@ describe("GALO public site", () => {
     expect(screen.getByText("General AI")).toBeInTheDocument();
   });
 
-  it("hides unconfirmed personal links and exposes contact status", () => {
+  it("publishes the confirmed evaluation email without inventing social links", () => {
     render(<App />);
     expect(screen.queryByRole("link", { name: /LinkedIn/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "rusfbm@gmail.com" })).toHaveAttribute("href", "mailto:rusfbm@gmail.com");
     expect(
-      screen.queryAllByRole("link").every((link) => !link.getAttribute("href")?.toLowerCase().startsWith("mailto:")),
+      screen
+        .getByRole("link", { name: /Request a 25-minute evaluation/i })
+        .getAttribute("href")
+        ?.startsWith("mailto:rusfbm@gmail.com?subject="),
     ).toBe(true);
-    expect(screen.getByText(/Public evaluation contact is pending founder confirmation/i)).toBeInTheDocument();
+    expect(screen.queryByText(/Public evaluation contact is pending founder confirmation/i)).not.toBeInTheDocument();
   });
 
   it("provides semantic landmarks and mobile navigation control", () => {
@@ -105,5 +115,78 @@ describe("GALO public site", () => {
     render(<App />);
     expect(screen.getByRole("heading", { level: 1, name: "Page not found." })).toBeInTheDocument();
     expect(screen.getByText(/outside the current site boundary/i)).toBeInTheDocument();
+  });
+
+  it("renders a complete Russian home route with localized navigation and contact", () => {
+    setPath("/ru");
+    render(<App />);
+    expect(document.documentElement).toHaveAttribute("lang", "ru");
+    expect(document.documentElement).toHaveAttribute("dir", "ltr");
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "ИИ-агентам необходимо состояние мира, которое можно проверять, пересматривать и воспроизводить.",
+      }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: "Доказательства" })[0]).toHaveAttribute("href", "/ru/evidence");
+    expect(screen.getByRole("combobox", { name: "Язык" })).toHaveValue("ru");
+  });
+
+  it("renders the Chinese evidence route while preserving exact release tokens", () => {
+    setPath("/zh/evidence");
+    render(<App />);
+    expect(document.documentElement).toHaveAttribute("lang", "zh-CN");
+    expect(screen.getByRole("heading", { level: 1, name: "严格限定范围的证据。" })).toBeInTheDocument();
+    expect(screen.getByText("READY_NOT_TRAINED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
+    expect(screen.getByText("通用人工智能")).toBeInTheDocument();
+    expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/zh/evidence");
+  });
+
+  it("renders Arabic in RTL while leaving recorded payload fields canonical", () => {
+    setPath("/ar");
+    render(<App />);
+    expect(document.documentElement).toHaveAttribute("lang", "ar");
+    expect(document.documentElement).toHaveAttribute("dir", "rtl");
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "تحتاج وكلاء الذكاء الاصطناعي إلى حالة عالم يمكنها فحصها ومراجعتها وإعادة تشغيلها.",
+      }),
+    ).toBeInTheDocument();
+    expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"hiddenTargetAccess": 0');
+    expect(screen.getByRole("link", { name: "rusfbm@gmail.com" })).toBeInTheDocument();
+  });
+
+  it("localizes privacy and 404 pages without losing the locale prefix", () => {
+    setPath("/ru/privacy");
+    const privacy = render(<App />);
+    expect(screen.getByRole("heading", { level: 1, name: /По умолчанию/i })).toBeInTheDocument();
+    privacy.unmount();
+    setPath("/ar/outside-scope");
+    render(<App />);
+    expect(screen.getByRole("heading", { level: 1, name: "الصفحة غير موجودة." })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /العودة إلى الرئيسية/ })).toHaveAttribute("href", "/ar");
+  });
+
+  it("builds stable localized URLs and parses prefixed routes", () => {
+    expect(localizedPath("en", "/evidence")).toBe("/evidence");
+    expect(localizedPath("ru", "/#receipt")).toBe("/ru#receipt");
+    expect(localizedPath("zh", "/privacy")).toBe("/zh/privacy");
+    expect(parseLocalizedPath("/ar/evidence/")).toEqual({ locale: "ar", route: "/evidence", rawRoute: "/evidence" });
+    expect(parseLocalizedPath("/ru/not-real")).toEqual({ locale: "ru", route: "/404", rawRoute: "/not-real" });
+  });
+
+  it("has translation coverage for every rendered string in every localized route", () => {
+    resetMissingTranslations();
+    for (const locale of ["ru", "zh", "ar"]) {
+      for (const route of ["", "/evidence", "/privacy", "/not-found"]) {
+        setPath(`/${locale}${route}`);
+        const view = render(<App />);
+        view.unmount();
+      }
+    }
+    expect(getMissingTranslations()).toEqual({});
   });
 });

@@ -1,4 +1,5 @@
 import { ArrowDown, RotateCcw } from "lucide-react";
+import { useI18n } from "../../i18n/I18nContext";
 
 const current = [
   "Committed finite universe",
@@ -18,18 +19,20 @@ const target = [
 ];
 
 export function ArchitectureFlow() {
+  const { t } = useI18n();
+
   return (
     <div className="architecture-split">
       <section className="architecture-lane architecture-lane--current" aria-labelledby="current-lane-title">
         <div className="architecture-lane__header">
-          <span className="status status--pass">CURRENT VERIFIED SLICE</span>
-          <h3 id="current-lane-title">Finite, typed, receipt-backed execution</h3>
+          <span className="status status--pass">{t("CURRENT VERIFIED SLICE")}</span>
+          <h3 id="current-lane-title">{t("Finite, typed, receipt-backed execution")}</h3>
         </div>
         <ol>
           {current.map((item, index) => (
             <li key={item}>
               <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{item}</strong>
+              <strong>{t(item)}</strong>
               {index < current.length - 1 && <ArrowDown size={16} aria-hidden="true" />}
             </li>
           ))}
@@ -37,16 +40,16 @@ export function ArchitectureFlow() {
       </section>
       <section className="architecture-lane architecture-lane--target" aria-labelledby="target-lane-title">
         <div className="architecture-lane__header">
-          <span className="status status--development">TARGET ARCHITECTURE · IN DEVELOPMENT</span>
-          <h3 id="target-lane-title">Explicit state, local revision, adaptive search</h3>
+          <span className="status status--development">{t("TARGET ARCHITECTURE · IN DEVELOPMENT")}</span>
+          <h3 id="target-lane-title">{t("Explicit state, local revision, adaptive search")}</h3>
         </div>
         <ol>
           {target.map((item, index) => (
             <li key={item}>
               <span>{String(index + 1).padStart(2, "0")}</span>
-              <strong>{item}</strong>
+              <strong>{t(item)}</strong>
               {index === 4 ? (
-                <RotateCcw size={16} aria-label="Revision loop" />
+                <RotateCcw size={16} aria-label={t("Revision loop")} />
               ) : (
                 index < target.length - 1 && <ArrowDown size={16} aria-hidden="true" />
               )}
@@ -54,8 +57,9 @@ export function ArchitectureFlow() {
           ))}
         </ol>
         <p>
-          A trained Atlas is not present. Observation-conditioned structural reasoning and persistent learning are not
-          implemented in the current release.
+          {t(
+            "A trained Atlas is not present. Observation-conditioned structural reasoning and persistent learning are not implemented in the current release.",
+          )}
         </p>
       </section>
     </div>

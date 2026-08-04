@@ -21,7 +21,9 @@ import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { releaseEvidence } from "../content/evidence";
-import { getEvaluationContact, siteContent } from "../content/site";
+import { getEvaluationContact } from "../content/contact";
+import { siteContent } from "../content/site";
+import { useI18n } from "../i18n/I18nContext";
 
 const problemCards = [
   {
@@ -118,45 +120,49 @@ const roadmap = [
 ];
 
 export function HomePage() {
-  const evaluationContact = getEvaluationContact("GALO technical evaluation");
+  const { href, t } = useI18n();
+  const evaluationContact = getEvaluationContact(t("GALO technical evaluation"));
 
   return (
     <PageShell>
       <section className="hero">
         <div className="shell hero__grid">
           <div className="hero__content">
-            <p className="eyebrow eyebrow--cyan">RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE</p>
-            <h1>AI agents need a world state they can inspect, revise, and replay.</h1>
+            <p className="eyebrow eyebrow--cyan">{t("RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE")}</p>
+            <h1>{t("AI agents need a world state they can inspect, revise, and replay.")}</h1>
             <p className="hero__lead">
-              GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed
-              replay. Its current release verifies a finite execution layer; persistent learning and external
-              performance remain unproven.
+              {t(
+                "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.",
+              )}
             </p>
-            <div className="hero__status" aria-label="Current project status">
+            <div className="hero__status" aria-label={t("Current project status")}>
               <span>
-                <CircleDot size={14} aria-hidden="true" /> Working bounded prototype
+                <CircleDot size={14} aria-hidden="true" /> {t("Working bounded prototype")}
               </span>
-              <span>Pre-seed</span>
-              <span>Founder-led</span>
-              <span>Abu Dhabi relocation planned</span>
+              <span>{t("Pre-seed")}</span>
+              <span>{t("Founder-led")}</span>
+              <span>{t("Abu Dhabi relocation planned")}</span>
             </div>
             <div className="hero__actions">
               <a className="button button--primary" href="#receipt">
-                Inspect a verified receipt <ArrowRight size={18} aria-hidden="true" />
+                {t("Inspect a verified receipt")}{" "}
+                <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
               <a className="button button--outline-light" href="#evaluation">
-                Request a technical evaluation
+                {t("Request a technical evaluation")}
               </a>
             </div>
             <p className="hero__boundary">
-              Formal replay within a declared scope. General AI and external capability superiority are not claimed.
+              {t(
+                "Formal replay within a declared scope. General AI and external capability superiority are not claimed.",
+              )}
             </p>
           </div>
 
-          <div className="hero-visual" aria-label="Layered resolution and receipt visual">
+          <div className="hero-visual" aria-label={t("Layered resolution and receipt visual")}>
             <div className="hero-visual__topline">
-              <span>WORLD STATE / RESOLUTION</span>
-              <strong>DECLARED SCOPE</strong>
+              <span>{t("WORLD STATE / RESOLUTION")}</span>
+              <strong>{t("DECLARED SCOPE")}</strong>
             </div>
             <div className="hero-visual__frames" aria-hidden="true">
               {["L7", "L6", "L5", "L4", "L3", "L2"].map((level, index) => (
@@ -166,30 +172,36 @@ export function HomePage() {
               ))}
             </div>
             <div className="hero-visual__receipt">
-              <span className="status status--pass">PASS</span>
+              <span className="status status--pass" dir="ltr">
+                PASS
+              </span>
               <div>
-                <small>BOUND HANDLE</small>
-                <strong className="mono">59e097da…dde3ab</strong>
+                <small>{t("BOUND HANDLE")}</small>
+                <strong className="mono" dir="ltr">
+                  59e097da…dde3ab
+                </strong>
               </div>
               <div>
-                <small>WORK LEDGER</small>
-                <strong className="mono">df8920b9…0a406b</strong>
+                <small>{t("WORK LEDGER")}</small>
+                <strong className="mono" dir="ltr">
+                  df8920b9…0a406b
+                </strong>
               </div>
             </div>
             <div className="hero-visual__caption">
-              <span>Minimum sufficient level selected</span>
-              <span>Receipt chain intact</span>
+              <span>{t("Minimum sufficient level selected")}</span>
+              <span>{t("Receipt chain intact")}</span>
             </div>
           </div>
         </div>
 
-        <div className="shell proof-strip" aria-label="Verified current mechanics">
+        <div className="shell proof-strip" aria-label={t("Verified current mechanics")}>
           {verifiedSlice.map(({ icon: Icon, title, text }) => (
             <div key={title} className="proof-strip__item">
               <Icon size={19} aria-hidden="true" />
               <div>
-                <strong>{title}</strong>
-                <span>{text}</span>
+                <strong>{t(title)}</strong>
+                <span>{t(text)}</span>
               </div>
             </div>
           ))}
@@ -199,16 +211,18 @@ export function HomePage() {
       <section id="why-galo" className="section section--paper">
         <div className="shell">
           <SectionHeading
-            eyebrow="THE PROBLEM"
-            title="Agentic AI is moving faster than its reasoning state can be governed."
-            text="Models can produce increasingly capable outputs, while the authoritative state behind long-running decisions can remain implicit, transient, or difficult to revise locally."
+            eyebrow={t("THE PROBLEM")}
+            title={t("Agentic AI is moving faster than its reasoning state can be governed.")}
+            text={t(
+              "Models can produce increasingly capable outputs, while the authoritative state behind long-running decisions can remain implicit, transient, or difficult to revise locally.",
+            )}
           />
           <div className="problem-grid">
             {problemCards.map((card) => (
               <article key={card.number} className="problem-card">
                 <span className="problem-card__number">{card.number}</span>
-                <h3>{card.title}</h3>
-                <p>{card.text}</p>
+                <h3>{t(card.title)}</h3>
+                <p>{t(card.text)}</p>
               </article>
             ))}
           </div>
@@ -218,9 +232,11 @@ export function HomePage() {
       <section id="architecture" className="section section--white">
         <div className="shell">
           <SectionHeading
-            eyebrow="ARCHITECTURE"
-            title="Separate the verified execution slice from the target world-model loop."
-            text="The current release verifies bounded local mechanics within the declared finite scope. The wider architecture specifies how explicit state, local revision, and adaptive search should connect once the open controls are closed."
+            eyebrow={t("ARCHITECTURE")}
+            title={t("Separate the verified execution slice from the target world-model loop.")}
+            text={t(
+              "The current release verifies bounded local mechanics within the declared finite scope. The wider architecture specifies how explicit state, local revision, and adaptive search should connect once the open controls are closed.",
+            )}
           />
           <ArchitectureFlow />
           <div className="principles-grid">
@@ -229,8 +245,8 @@ export function HomePage() {
                 <span className="principle-card__icon">
                   <Icon size={21} aria-hidden="true" />
                 </span>
-                <h3>{title}</h3>
-                <p>{text}</p>
+                <h3>{t(title)}</h3>
+                <p>{t(text)}</p>
               </article>
             ))}
           </div>
@@ -239,8 +255,9 @@ export function HomePage() {
             <LocalRevision />
           </div>
           <p className="architecture-note">
-            The verifier is not the whole product. It is the constitutional layer intended to protect the wider adaptive
-            architecture.
+            {t(
+              "The verifier is not the whole product. It is the constitutional layer intended to protect the wider adaptive architecture.",
+            )}
           </p>
         </div>
       </section>
@@ -248,13 +265,15 @@ export function HomePage() {
       <section id="receipt" className="section section--dark">
         <div className="shell">
           <SectionHeading
-            eyebrow="RECORDED RECEIPT"
-            title="Inspect the execution state, not a staged answer."
-            text="This deterministic walkthrough uses sanitized identifiers from the current direct selfcheck. It does not generate a semantic answer and it does not adapt to the input observation."
+            eyebrow={t("RECORDED RECEIPT")}
+            title={t("Inspect the execution state, not a staged answer.")}
+            text={t(
+              "This deterministic walkthrough uses sanitized identifiers from the current direct selfcheck. It does not generate a semantic answer and it does not adapt to the input observation.",
+            )}
             light
             aside={
               <span className="scope-chip">
-                <LockKeyhole size={16} aria-hidden="true" /> STATIC JSON · NO BACKEND
+                <LockKeyhole size={16} aria-hidden="true" /> {t("STATIC JSON · NO BACKEND")}
               </span>
             }
           />
@@ -265,34 +284,36 @@ export function HomePage() {
       <section id="evidence" className="section section--paper">
         <div className="shell">
           <SectionHeading
-            eyebrow="EVIDENCE"
-            title="Evidence, scoped precisely."
-            text="The numbers below describe formal inventory and release reproducibility. None is presented as a measure of intelligence, customer value, or external operational gain."
+            eyebrow={t("EVIDENCE")}
+            title={t("Evidence, scoped precisely.")}
+            text={t(
+              "The numbers below describe formal inventory and release reproducibility. None is presented as a measure of intelligence, customer value, or external operational gain.",
+            )}
             aside={
-              <a className="text-link" href="/evidence">
-                Open evidence page <ArrowRight size={16} aria-hidden="true" />
+              <a className="text-link" href={href("/evidence")}>
+                {t("Open evidence page")} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
               </a>
             }
           />
           <div className="metric-grid">
             {releaseEvidence.metrics.map((metric) => (
               <article key={metric.value} className="metric-card">
-                <strong>{metric.value}</strong>
-                <h3>{metric.label}</h3>
-                <p>{metric.detail}</p>
+                <strong dir="ltr">{metric.value}</strong>
+                <h3>{t(metric.label)}</h3>
+                <p>{t(metric.detail)}</p>
               </article>
             ))}
           </div>
           <div className="current-proof">
             <div>
-              <p className="eyebrow">CURRENT RELEASE DEMONSTRATES</p>
-              <h3>A closed mechanical chain with explicit terminal boundaries.</h3>
+              <p className="eyebrow">{t("CURRENT RELEASE DEMONSTRATES")}</p>
+              <h3>{t("A closed mechanical chain with explicit terminal boundaries.")}</h3>
             </div>
             <ul>
               {releaseEvidence.current.map((item) => (
                 <li key={item}>
                   <Check size={17} aria-hidden="true" />
-                  {item}
+                  {t(item)}
                 </li>
               ))}
             </ul>
@@ -303,24 +324,26 @@ export function HomePage() {
       <section id="boundaries" className="section section--white">
         <div className="shell">
           <SectionHeading
-            eyebrow="CLAIM DISCIPLINE"
-            title="What is verified — and what is not."
-            text="A useful research system must expose the edge of its evidence. GALO treats BOUNDARY and claim withdrawal as product behaviour, not footnotes."
+            eyebrow={t("CLAIM DISCIPLINE")}
+            title={t("What is verified — and what is not.")}
+            text={t(
+              "A useful research system must expose the edge of its evidence. GALO treats BOUNDARY and claim withdrawal as product behaviour, not footnotes.",
+            )}
           />
           <div className="boundary-grid">
             <div className="boundary-column boundary-column--current">
               <div className="boundary-column__header">
                 <ShieldCheck size={22} aria-hidden="true" />
                 <div>
-                  <span>CURRENT</span>
-                  <h3>Verified within declared scope</h3>
+                  <span>{t("CURRENT")}</span>
+                  <h3>{t("Verified within declared scope")}</h3>
                 </div>
               </div>
               <ul>
                 {releaseEvidence.current.map((item) => (
                   <li key={item}>
                     <Check size={16} aria-hidden="true" />
-                    {item}
+                    {t(item)}
                   </li>
                 ))}
               </ul>
@@ -329,67 +352,70 @@ export function HomePage() {
               <div className="boundary-column__header">
                 <ScanSearch size={22} aria-hidden="true" />
                 <div>
-                  <span>OPEN BOUNDARIES</span>
-                  <h3>Not implemented, started, or proven</h3>
+                  <span>{t("OPEN BOUNDARIES")}</span>
+                  <h3>{t("Not implemented, started, or proven")}</h3>
                 </div>
               </div>
               <ul>
                 {releaseEvidence.boundaries.map((item) => (
                   <li key={item.label}>
-                    <span>{item.status}</span>
-                    {item.label}
+                    <span dir="ltr">{item.status}</span>
+                    {t(item.label)}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <p className="claim-discipline">Claim discipline is part of the product.</p>
+          <p className="claim-discipline">{t("Claim discipline is part of the product.")}</p>
         </div>
       </section>
 
       <section id="evaluation" className="section section--navy">
         <div className="shell evaluation-grid">
           <div className="evaluation-copy">
-            <p className="eyebrow eyebrow--cyan">DESIGN-PARTNER EVALUATION</p>
-            <h2>Test the architecture on a bounded sequential decision problem.</h2>
+            <p className="eyebrow eyebrow--cyan">{t("DESIGN-PARTNER EVALUATION")}</p>
+            <h2>{t("Test the architecture on a bounded sequential decision problem.")}</h2>
             <p>
-              GALO is seeking partner-owned sequential data and a falsifiable evaluation environment where explicit
-              state, late evidence, local revision, and deterministic replay matter.
+              {t(
+                "GALO is seeking partner-owned sequential data and a falsifiable evaluation environment where explicit state, late evidence, local revision, and deterministic replay matter.",
+              )}
             </p>
             <div className="evaluation-actions">
               {evaluationContact ? (
                 <a className="button button--primary" href={evaluationContact.href}>
-                  Request a 25-minute evaluation <ArrowRight size={18} aria-hidden="true" />
+                  {t("Request a 25-minute evaluation")}{" "}
+                  <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
                 </a>
               ) : (
                 <a className="button button--primary" href="#founder">
-                  Review the founder plan <ArrowRight size={18} aria-hidden="true" />
+                  {t("Review the founder plan")}{" "}
+                  <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
                 </a>
               )}
-              <a className="button button--outline-light" href="/evidence">
-                Review the evidence boundary
+              <a className="button button--outline-light" href={href("/evidence")}>
+                {t("Review the evidence boundary")}
               </a>
             </div>
             {!evaluationContact && (
-              <p className="contact-pending">Public evaluation contact is pending founder confirmation.</p>
+              <p className="contact-pending">{t("Public evaluation contact is pending founder confirmation.")}</p>
             )}
           </div>
           <div className="evaluation-spec">
             <div className="evaluation-spec__top">
               <SquareTerminal size={22} aria-hidden="true" />
-              <span>PROPOSED EVALUATION INPUT</span>
+              <span>{t("PROPOSED EVALUATION INPUT")}</span>
             </div>
             <ul>
               {evaluationShape.map((item, index) => (
                 <li key={item}>
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  {item}
+                  {t(item)}
                 </li>
               ))}
             </ul>
             <div className="evaluation-spec__output">
-              <small>TERMINAL OUTPUT</small>
-              <strong>Evidence-backed result / portfolio / BOUNDARY</strong>
+              <small>{t("TERMINAL OUTPUT")}</small>
+              <strong>{t("Evidence-backed result / portfolio / BOUNDARY")}</strong>
             </div>
           </div>
         </div>
@@ -398,34 +424,38 @@ export function HomePage() {
       <section id="pilot" className="section section--paper">
         <div className="shell">
           <SectionHeading
-            eyebrow="COMMERCIAL WEDGE"
-            title="A staged route from technical evaluation to private deployment."
-            text="The commercial path is planned, not traction. No customers, revenue, pilots, or partner commitments are represented on this site."
+            eyebrow={t("COMMERCIAL WEDGE")}
+            title={t("A staged route from technical evaluation to private deployment.")}
+            text={t(
+              "The commercial path is planned, not traction. No customers, revenue, pilots, or partner commitments are represented on this site.",
+            )}
           />
           <div className="business-path">
             {businessSteps.map((step, index) => (
               <div key={step} className="business-step">
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{step}</strong>
-                {index < businessSteps.length - 1 && <ArrowRight size={18} aria-hidden="true" />}
+                <strong>{t(step)}</strong>
+                {index < businessSteps.length - 1 && (
+                  <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
+                )}
               </div>
             ))}
           </div>
           <div className="use-case-grid">
             <article>
               <Building2 size={21} aria-hidden="true" />
-              <h3>Sovereign and enterprise AI</h3>
-              <p>Long-running systems where the authoritative decision state must be inspected and replayed.</p>
+              <h3>{t("Sovereign and enterprise AI")}</h3>
+              <p>{t("Long-running systems where the authoritative decision state must be inspected and replayed.")}</p>
             </article>
             <article>
               <Database size={21} aria-hidden="true" />
-              <h3>Scientific and industrial workflows</h3>
-              <p>Bounded sequential evidence with competing hypotheses and expensive corrections.</p>
+              <h3>{t("Scientific and industrial workflows")}</h3>
+              <p>{t("Bounded sequential evidence with competing hypotheses and expensive corrections.")}</p>
             </article>
             <article>
               <MapPinned size={21} aria-hidden="true" />
-              <h3>Regulated decision support</h3>
-              <p>Private evaluation settings that require disclosed scope and explicit failure boundaries.</p>
+              <h3>{t("Regulated decision support")}</h3>
+              <p>{t("Private evaluation settings that require disclosed scope and explicit failure boundaries.")}</p>
             </article>
           </div>
         </div>
@@ -434,18 +464,18 @@ export function HomePage() {
       <section id="roadmap" className="section section--white">
         <div className="shell">
           <SectionHeading
-            eyebrow="ROADMAP"
-            title="From verified mechanics to externally grounded learning."
-            text="Each milestone closes a dependency before the next capability is authorized."
+            eyebrow={t("ROADMAP")}
+            title={t("From verified mechanics to externally grounded learning.")}
+            text={t("Each milestone closes a dependency before the next capability is authorized.")}
           />
           <div className="roadmap">
             {roadmap.map((item) => (
               <article key={item.number}>
                 <span>{item.number}</span>
                 <div>
-                  <small>IN DEVELOPMENT</small>
-                  <h3>{item.title}</h3>
-                  <p>{item.text}</p>
+                  <small>{t("IN DEVELOPMENT")}</small>
+                  <h3>{t(item.title)}</h3>
+                  <p>{t(item.text)}</p>
                 </div>
               </article>
             ))}
@@ -456,60 +486,70 @@ export function HomePage() {
       <section id="abu-dhabi" className="section section--abu-dhabi">
         <div className="shell">
           <SectionHeading
-            eyebrow="WHY ABU DHABI"
-            title="Abu Dhabi is GALO’s planned operating base — not a satellite office."
-            text="The next stage needs technical evaluation partners, company formation, focused hiring, and access to a serious AI infrastructure ecosystem in one place."
+            eyebrow={t("WHY ABU DHABI")}
+            title={t("Abu Dhabi is GALO’s planned operating base — not a satellite office.")}
+            text={t(
+              "The next stage needs technical evaluation partners, company formation, focused hiring, and access to a serious AI infrastructure ecosystem in one place.",
+            )}
           />
           <div className="abu-grid">
             <article>
               <span>01</span>
-              <h3>AI ecosystem</h3>
+              <h3>{t("AI ecosystem")}</h3>
               <p>
-                Access to research, compute, engineering, and infrastructure relationships relevant to a private
-                technical evaluation.
+                {t(
+                  "Access to research, compute, engineering, and infrastructure relationships relevant to a private technical evaluation.",
+                )}
               </p>
             </article>
             <article>
               <span>02</span>
-              <h3>Market access</h3>
+              <h3>{t("Market access")}</h3>
               <p>
-                Proximity to enterprise, government, and sovereign-AI teams able to define bounded partner-owned
-                settings.
+                {t(
+                  "Proximity to enterprise, government, and sovereign-AI teams able to define bounded partner-owned settings.",
+                )}
               </p>
             </article>
             <article>
               <span>03</span>
-              <h3>Company building</h3>
+              <h3>{t("Company building")}</h3>
               <p>
-                A base for incorporation, relocation, hiring, legal operations, finance, and the next fundraising
-                evidence.
+                {t(
+                  "A base for incorporation, relocation, hiring, legal operations, finance, and the next fundraising evidence.",
+                )}
               </p>
             </article>
           </div>
           <div className="twelve-month-plan">
             <div>
-              <p className="eyebrow">12-MONTH CONTRIBUTION PLAN</p>
-              <h3>Build the external-evidence layer from Abu Dhabi.</h3>
+              <p className="eyebrow">{t("12-MONTH CONTRIBUTION PLAN")}</p>
+              <h3>{t("Build the external-evidence layer from Abu Dhabi.")}</h3>
             </div>
             <ol>
               <li>
-                <span>01</span>Relocate the founder and establish the operating company
+                <span>01</span>
+                {t("Relocate the founder and establish the operating company")}
               </li>
               <li>
-                <span>02</span>Hire a founding systems engineer and research/evaluation engineer
+                <span>02</span>
+                {t("Hire a founding systems engineer and research/evaluation engineer")}
               </li>
               <li>
-                <span>03</span>Release a private Runtime and World Atlas alpha
+                <span>03</span>
+                {t("Release a private Runtime and World Atlas alpha")}
               </li>
               <li>
-                <span>04</span>Complete two partner-grade technical evaluations
+                <span>04</span>
+                {t("Complete two partner-grade technical evaluations")}
               </li>
               <li>
-                <span>05</span>Target one committed or paid pilot and prepare seed evidence
+                <span>05</span>
+                {t("Target one committed or paid pilot and prepare seed evidence")}
               </li>
             </ol>
           </div>
-          <p className="endorsement-note">No programme selection, partnership, or endorsement is implied.</p>
+          <p className="endorsement-note">{t("No programme selection, partnership, or endorsement is implied.")}</p>
         </div>
       </section>
 
@@ -517,24 +557,24 @@ export function HomePage() {
         <div className="shell founder-grid">
           <div className="founder-monogram" aria-hidden="true">
             <span>RA</span>
-            <small>FOUNDER / ARCHITECT</small>
+            <small>{t("FOUNDER / ARCHITECT")}</small>
           </div>
           <div className="founder-copy">
-            <p className="eyebrow">FOUNDER</p>
-            <h2>Founder-led research, built with adversarial claim discipline.</h2>
+            <p className="eyebrow">{t("FOUNDER")}</p>
+            <h2>{t("Founder-led research, built with adversarial claim discipline.")}</h2>
             <div className="founder-name">
               <h3>{siteContent.founder.name}</h3>
-              <span>{siteContent.founder.role}</span>
+              <span>{t(siteContent.founder.role)}</span>
             </div>
-            <p>{siteContent.founder.bio}</p>
+            <p>{t(siteContent.founder.bio)}</p>
             <div className="founder-facts">
               <div>
-                <small>RELOCATION</small>
-                <strong>{siteContent.founder.relocation}</strong>
+                <small>{t("RELOCATION")}</small>
+                <strong>{t(siteContent.founder.relocation)}</strong>
               </div>
               <div>
-                <small>FOUNDING TEAM PLAN</small>
-                <strong>Systems engineering · Research/evaluation · Abu Dhabi partnerships</strong>
+                <small>{t("FOUNDING TEAM PLAN")}</small>
+                <strong>{t("Systems engineering · Research/evaluation · Abu Dhabi partnerships")}</strong>
               </div>
             </div>
           </div>
@@ -544,20 +584,21 @@ export function HomePage() {
       <section className="section final-cta">
         <div className="shell final-cta__inner">
           <div>
-            <p className="eyebrow eyebrow--cyan">NEXT CONVERSATION</p>
-            <h2>Evaluate the architecture on a bounded problem.</h2>
+            <p className="eyebrow eyebrow--cyan">{t("NEXT CONVERSATION")}</p>
+            <h2>{t("Evaluate the architecture on a bounded problem.")}</h2>
             <p>
-              Bring partner-owned sequential data, a falsifiable outcome, and a setting where explicit state and replay
-              matter.
+              {t(
+                "Bring partner-owned sequential data, a falsifiable outcome, and a setting where explicit state and replay matter.",
+              )}
             </p>
           </div>
           <div className="final-cta__actions">
-            <a className="button button--primary" href={evaluationContact?.href ?? "/evidence"}>
-              {evaluationContact ? "Request a technical evaluation" : "Inspect the evidence first"}
-              <ArrowRight size={18} aria-hidden="true" />
+            <a className="button button--primary" href={evaluationContact?.href ?? href("/evidence")}>
+              {evaluationContact ? t("Request a technical evaluation") : t("Inspect the evidence first")}
+              <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
-            <a className="button button--outline-light" href="/#receipt">
-              Inspect the recorded receipt
+            <a className="button button--outline-light" href={href("/#receipt")}>
+              {t("Inspect the recorded receipt")}
             </a>
           </div>
         </div>

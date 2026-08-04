@@ -81,6 +81,16 @@ svg {
   letter-spacing: -0.02em;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .eyebrow {
   margin: 0 0 16px;
   color: var(--teal-deep);
@@ -341,6 +351,177 @@ svg {
 
 .site-header__menu {
   display: none;
+}
+
+.language-switcher {
+  display: inline-flex;
+  min-height: 40px;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: #b8c7d2;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.language-switcher select {
+  width: auto;
+  max-width: 92px;
+  border: 0;
+  padding: 0;
+  color: var(--white);
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.language-switcher option {
+  color: var(--navy-950);
+  background: var(--white);
+}
+
+.email-link,
+.brand,
+.mono,
+pre,
+code,
+[dir="ltr"] {
+  unicode-bidi: isolate;
+}
+
+.email-link,
+.brand,
+.mono,
+pre,
+code {
+  direction: ltr;
+}
+
+html[lang="zh-CN"] body {
+  font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, sans-serif;
+}
+
+html[lang="ar"] body {
+  font-family: "Noto Sans Arabic", "IBM Plex Sans Arabic", Tahoma, Arial, system-ui, sans-serif;
+}
+
+html[lang="zh-CN"] .eyebrow,
+html[lang="ar"] .eyebrow {
+  letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+html[lang="ru"] .eyebrow {
+  letter-spacing: 0.11em;
+}
+
+html[lang="ru"] .hero h1 {
+  font-size: clamp(3rem, 4vw, 5.1rem);
+}
+
+html[lang="ru"] .page-hero h1 {
+  font-size: clamp(3.2rem, 5.2vw, 6.5rem);
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3 {
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+html[lang="ar"] .button {
+  line-height: 1.4;
+}
+
+html[lang="ar"] .status,
+html[lang="ar"] .hero__status,
+html[lang="ar"] .claim-table__header,
+html[lang="ar"] .claim-status {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+html[lang="ar"] .hero__status {
+  font-family: inherit;
+}
+
+html[dir="rtl"] .directional-icon {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .skip-link {
+  right: auto;
+  left: auto;
+  inset-inline-start: 12px;
+}
+
+html[dir="rtl"] .hero__status span:not(:last-child)::after {
+  margin-right: 0;
+  margin-left: 0;
+  margin-inline-start: 10px;
+}
+
+html[dir="rtl"] .proof-strip__item:not(:last-child),
+html[dir="rtl"] .business-step:not(:last-child) {
+  border-right: 0;
+  border-inline-end: 1px solid;
+}
+
+html[dir="rtl"] .proof-strip__item:not(:last-child) {
+  border-inline-end-color: rgba(255, 255, 255, 0.09);
+}
+
+html[dir="rtl"] .business-step:not(:last-child) {
+  border-inline-end-color: var(--line);
+}
+
+html[dir="rtl"] .replay-explorer__rail {
+  border-right: 0;
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+html[dir="rtl"] .replay-explorer__rail button,
+html[dir="rtl"] .fingerprint-card__value {
+  text-align: start;
+}
+
+html[dir="rtl"] .business-step svg {
+  right: auto;
+  left: auto;
+  inset-inline-end: -10px;
+}
+
+html[dir="rtl"] .footer__bottom p:last-child {
+  text-align: end;
+}
+
+html[dir="rtl"] .scope-callout {
+  border-right: 0;
+  border-left: 0;
+  border-inline-start: 3px solid var(--amber);
+}
+
+html[dir="rtl"] .fingerprint-card__value > span,
+html[dir="rtl"] pre,
+html[dir="rtl"] code {
+  text-align: left;
+}
+
+.release-status strong,
+.fingerprint-card__value > span {
+  overflow-wrap: anywhere;
+}
+
+html[lang="ru"] .claim-table__header,
+html[lang="ru"] .claim-table__row,
+html[lang="ar"] .claim-table__header,
+html[lang="ar"] .claim-table__row {
+  grid-template-columns: 65px minmax(390px, 1.5fr) minmax(150px, 0.45fr) minmax(190px, 0.55fr);
 }
 
 .icon-button {
@@ -2267,7 +2448,7 @@ svg {
 
 /* Responsive */
 
-@media (max-width: 1120px) {
+@media (max-width: 1300px) {
   .site-header__desktop,
   .site-header__cta {
     display: none;
@@ -2275,6 +2456,11 @@ svg {
   .site-header__menu {
     display: inline-flex;
     margin-left: auto;
+    margin-inline-start: auto;
+  }
+  html[dir="rtl"] .site-header__menu {
+    margin-right: auto;
+    margin-left: 0;
   }
   .mobile-nav {
     display: block;
@@ -2481,6 +2667,14 @@ svg {
   }
   .site-header__inner {
     min-height: 64px;
+    gap: 10px;
+  }
+  .language-switcher {
+    gap: 5px;
+    padding-inline: 9px;
+  }
+  .language-switcher select {
+    max-width: 72px;
   }
   .section {
     padding-block: 76px;

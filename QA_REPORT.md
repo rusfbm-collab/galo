@@ -2,7 +2,7 @@
 
 Status: **PASS_WITH_DECLARED_ENVIRONMENT_LIMITS**
 
-Review date: 2026-08-03  
+Review date: 2026-08-04  
 Release target: main → Amvera Docker build → https://aigalo.com
 
 ## Automated release checks
@@ -15,25 +15,26 @@ npm run build
 
 That command produced the following terminal results:
 
-| Check                         | Result                                                                            |
-| ----------------------------- | --------------------------------------------------------------------------------- |
-| Source claim firewall         | PASS — 17 public-source files, 0 forbidden matches, 7 required boundaries present |
-| ESLint                        | PASS                                                                              |
-| TypeScript strict build       | PASS                                                                              |
-| Vitest / Testing Library      | PASS — 1 file, 10 tests                                                           |
-| Vite build                    | PASS — 1,583 modules                                                              |
-| Compiled-asset claim firewall | PASS — 10 artifacts, 0 forbidden matches                                          |
-| Prettier                      | PASS — all selected release files                                                 |
+| Check                         | Result                                                                             |
+| ----------------------------- | ---------------------------------------------------------------------------------- |
+| Source claim firewall         | PASS — 24 public-source files, 0 forbidden matches, 20 required boundaries present |
+| ESLint                        | PASS                                                                               |
+| TypeScript strict build       | PASS                                                                               |
+| Vitest / Testing Library      | PASS — 1 file, 16 tests                                                            |
+| Vite build                    | PASS — 1,589 modules                                                               |
+| Localized HTML prerender      | PASS — 12 route entries                                                            |
+| Compiled-asset claim firewall | PASS — 21 artifacts, 0 forbidden matches                                           |
+| Prettier                      | PASS — all selected release files                                                  |
 
 Final static payload:
 
 ```text
-dist/index.html                   1.62 kB | gzip  0.68 kB
-dist/assets/index-CoeNN8Mq.css   49.22 kB | gzip 11.14 kB
-dist/assets/index-DqeAM-at.js   240.18 kB | gzip 74.10 kB
+dist/index.html                   1.65 kB | gzip   0.70 kB
+dist/assets/index-B-4BPpD4.css   52.37 kB | gzip  11.83 kB
+dist/assets/index-CZ7nTfMH.js   361.35 kB | gzip 111.60 kB
 ```
 
-The compiled-asset firewall also checks that TODO_CONFIRM is absent from the browser artifact. A DOM test independently verifies that no email link is rendered while the contact value is unconfirmed.
+The compiled-asset firewall also checks that TODO_CONFIRM is absent from the browser artifact. DOM tests verify the confirmed `rusfbm@gmail.com` contact, localized evaluation subjects, locale-preserving routes, metadata, RTL direction, and unchanged receipt payload fields.
 
 ## Content and claim verification
 
@@ -48,17 +49,18 @@ The public interface distinguishes architecture, implemented bounded mechanics, 
 
 ## Browser and interaction review
 
-A cloud-browser review was completed at a 1,363 × 936 desktop viewport.
+A cloud-browser review was completed at a 1,363 × 936 desktop viewport across English, Russian, Simplified Chinese, and Arabic.
 
-- Home, Evidence, Privacy, custom 404, and section anchors rendered.
+- Home, Evidence, Privacy, custom 404, localized URL prefixes, canonical URLs, reciprocal language alternates, and section anchors rendered.
 - Hero, current-versus-target architecture, Abu Dhabi plan, and receipt explorer were visually inspected.
 - Receipt step navigation, reset, and terminal BOUNDARY state worked.
-- The Evidence page exposed the 10-row public claim matrix.
+- The Evidence page exposed the 10-row public claim matrix in LTR and RTL layouts.
+- The language switch preserved the current page when changing from Arabic Evidence to Chinese Evidence.
 - Same-page target resolution is covered by an automated DOM test.
 - No site-originated console errors were observed. Browser-extension metadata messages were excluded from the site result.
-- No external contact, social, partner-logo, or download link is emitted while its value or asset remains unconfirmed.
+- The confirmed evaluation email is public. Unconfirmed social, partner-logo, and download links remain hidden.
 
-Responsive behavior is implemented at 1,120 px, 860 px, and 620 px breakpoints. The mobile drawer and accessibility state are covered by automated interaction tests; a separate mobile screenshot and device Lighthouse run were not captured in this environment.
+Responsive behavior is implemented at 1,300 px, 860 px, and 620 px breakpoints. The mobile drawer and accessibility state are covered by automated interaction tests; a separate mobile screenshot and device Lighthouse run were not captured in this environment.
 
 ## Accessibility and privacy checks
 
@@ -77,20 +79,20 @@ Formal Lighthouse scores and assistive-technology manual testing were NOT_RUN in
 - Nginx includes SPA fallback, direct healthz, immutable hashed assets, no-cache HTML, gzip, and security headers.
 - GitHub Actions repeats formatting, lint, typecheck, both claim firewalls, tests, static build, container build, and route smoke checks on main and pull requests.
 
-Container execution is NOT_RUN_RUNTIME_ABSENT: neither docker nor nginx is installed in this review environment (command not found, exit code 127). The exact remaining deployment witness is a successful Amvera image build followed by HTTP checks for /healthz, /, /evidence, /privacy, and an unknown route.
+Container execution is NOT_RUN_RUNTIME_ABSENT: Docker is not installed in this review environment (command not found, exit code 127). The exact remaining deployment witness is a successful Amvera image build followed by HTTP checks for `/healthz`, the 12 localized routes, and an unknown route.
 
 ## Intentionally unresolved public data
 
 The following values remain null or absent and are hidden:
 
-- public evaluation email and Telegram;
+- Telegram;
 - founder photo and LinkedIn;
 - education, employment history, current location, and legal entity status;
 - IP-ownership statement;
 - Hub71 deck and sanitized public technical brief;
 - customers, users, revenue, funding, LOIs, pilots, and partner endorsements.
 
-The primary CTA therefore routes to inspectable evidence and founder context instead of inventing a contact destination. A confirmed public email is the remaining content blocker for email-based evaluation and pilot CTAs.
+Evaluation CTAs use the confirmed public email with a localized subject. No form submission or backend is introduced.
 
 ## Release decision
 

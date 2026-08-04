@@ -33,7 +33,7 @@ jobs:
       - name: Tests
         run: npm run test
       - name: Static build
-        run: npx vite build
+        run: npm run build:assets
       - name: Compiled-asset claim firewall
         run: npm run claims:artifact
       - name: Build container
@@ -53,3 +53,6 @@ jobs:
           curl --fail --silent http://127.0.0.1:8080/evidence | grep --quiet "<title>GALO AI"
           curl --fail --silent http://127.0.0.1:8080/privacy | grep --quiet "<title>GALO AI"
           curl --fail --silent http://127.0.0.1:8080/outside-scope | grep --quiet "<title>GALO AI"
+          curl --fail --silent http://127.0.0.1:8080/ru | grep --quiet '<html lang="ru" dir="ltr">'
+          curl --fail --silent http://127.0.0.1:8080/zh/evidence | grep --quiet '<title>证据 — GALO AI</title>'
+          curl --fail --silent http://127.0.0.1:8080/ar/privacy | grep --quiet '<html lang="ar" dir="rtl">'

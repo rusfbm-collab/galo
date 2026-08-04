@@ -19,6 +19,18 @@ const forbidden = [
   "all possible reasoning",
   "proves truth about the world",
   "TODO_CONFIRM",
+  "AGI достигнут",
+  "готово к промышленной эксплуатации",
+  "поддержано Hub71",
+  "никогда не галлюцинирует",
+  "已实现 AGI",
+  "生产就绪",
+  "Hub71 支持",
+  "永不产生幻觉",
+  "تم تحقيق AGI",
+  "جاهز للإنتاج",
+  "مدعوم من Hub71",
+  "لا يهلوس أبداً",
 ];
 
 async function collect(relativePath = "") {

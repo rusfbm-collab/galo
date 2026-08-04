@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "npm run check && vite build && npm run claims:artifact",
+    "build": "npm run check && npm run build:assets && npm run claims:artifact",
+    "build:assets": "vite build && node scripts/prerender-locales.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css,json}\" \"tests/**/*.{ts,tsx}\" \"scripts/*.mjs\" index.html vite.config.ts vitest.config.ts eslint.config.js postcss.config.js \"tsconfig*.json\" package.json package-lock.json amvera.yaml \"*.md\" \".github/**/*.yml\"",
     "lint": "eslint src tests vite.config.ts",

@@ -8,22 +8,25 @@ const levels = [
 ];
 
 export function ResolutionLadder() {
+  const { t } = useI18n();
+
   return (
     <figure className="resolution" aria-labelledby="resolution-title">
       <figcaption id="resolution-title">
-        <span>MINIMAL SUFFICIENT RESOLUTION</span>
-        Open only the level needed to preserve a task-relevant distinction.
+        <span>{t("MINIMAL SUFFICIENT RESOLUTION")}</span>
+        {t("Open only the level needed to preserve a task-relevant distinction.")}
       </figcaption>
       <div className="resolution__levels">
         {levels.map((item, index) => (
           <div key={item.level} className={`resolution__level ${index === 2 ? "resolution__level--active" : ""}`}>
             <span>{item.level}</span>
-            <small>{item.label}</small>
-            {index === 2 && <strong>selected</strong>}
+            <small>{t(item.label)}</small>
+            {index === 2 && <strong>{t("selected")}</strong>}
           </div>
         ))}
       </div>
-      <p className="resolution__note">More poles are not automatically better.</p>
+      <p className="resolution__note">{t("More poles are not automatically better.")}</p>
     </figure>
   );
 }
+import { useI18n } from "../../i18n/I18nContext";

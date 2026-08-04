@@ -6,7 +6,10 @@ const sourceRoots = [
   "src/pages",
   "src/components",
   "src/app",
+  "src/i18n",
   "src/content/evidence.ts",
+  "src/content/contact.ts",
+  "src/content/site.ts",
   "src/data/controlled-replay.json",
   "index.html",
 ];
@@ -26,6 +29,18 @@ const forbidden = [
   "never hallucinates",
   "all possible reasoning",
   "proves truth about the world",
+  "AGI достигнут",
+  "готово к промышленной эксплуатации",
+  "поддержано Hub71",
+  "никогда не галлюцинирует",
+  "已实现 AGI",
+  "生产就绪",
+  "Hub71 支持",
+  "永不产生幻觉",
+  "تم تحقيق AGI",
+  "جاهز للإنتاج",
+  "مدعوم من Hub71",
+  "لا يهلوس أبداً",
 ];
 
 const required = [
@@ -36,6 +51,19 @@ const required = [
   "General AI",
   "not a live model",
   "not an intelligence metric",
+  "Персистентное обучение политики не начато.",
+  "Обученный Atlas отсутствует.",
+  "Внешний операционный выигрыш не доказан.",
+  "General AI не заявляется.",
+  "持续策略学习尚未开始。",
+  "当前不存在已训练的 Atlas。",
+  "外部运行增益尚未得到证明。",
+  "不声称已实现通用人工智能。",
+  "لم يبدأ التعلّم المستديم للسياسة.",
+  "لا يوجد Atlas مدرَّب.",
+  "المكسب التشغيلي الخارجي غير مُثبت.",
+  "لا ندّعي تحقيق الذكاء الاصطناعي العام.",
+  "rusfbm@gmail.com",
 ];
 
 async function collect(relativePath) {

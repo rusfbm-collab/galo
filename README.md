@@ -1,6 +1,17 @@
 # GALO AI public site
 
-English-first public surface for GALO AI at `https://aigalo.com`. The site separates current verified bounded mechanics from the wider architecture under development.
+Multilingual public surface for GALO AI at `https://aigalo.com`. English, Russian, Simplified Chinese, and Arabic versions separate current verified bounded mechanics from the wider architecture under development.
+
+## Language routes
+
+| Language           | Home  | Evidence       | Privacy       |
+| ------------------ | ----- | -------------- | ------------- |
+| English            | `/`   | `/evidence`    | `/privacy`    |
+| Russian            | `/ru` | `/ru/evidence` | `/ru/privacy` |
+| Simplified Chinese | `/zh` | `/zh/evidence` | `/zh/privacy` |
+| Arabic             | `/ar` | `/ar/evidence` | `/ar/privacy` |
+
+The build writes a localized HTML entry for every route with matching `lang`, direction, canonical URL, and reciprocal `hreflang` metadata. Arabic routes use RTL layout while exact machine tokens, hashes, IDs, metrics, and receipt JSON remain LTR and unchanged.
 
 ## Local development
 
@@ -40,7 +51,7 @@ Expected health response: `ok` with HTTP 200.
 3. Configure the GitHub token or webhook in the Amvera interface. Do not commit a token to this repository.
 4. Keep the target event consistent between GitHub and Amvera. A push to `main` can trigger pull/build automatically.
 5. Amvera reads `amvera.yaml`, builds `Dockerfile`, and routes to container port 80.
-6. Confirm `/healthz`, `/`, `/evidence`, `/privacy`, and an unknown path after the first deployment.
+6. Confirm `/healthz`, the 12 localized routes above, and an unknown path after the first deployment.
 
 ## GitHub webhook checklist
 
@@ -62,12 +73,13 @@ Expected health response: `ok` with HTTP 200.
 ## Content editing
 
 - Confirmed founder and company facts: `src/content/site.ts`
+- Confirmed public evaluation contact: `src/content/contact.ts`
 - Public claim matrix: `src/content/publicClaims.ts`
 - Internal red-team claim controller: `src/content/claims.ts`
 - Release evidence: `src/content/evidence.ts`
 - Recorded receipt walkthrough: `src/data/controlled-replay.json`
 
-Unknown personal facts and missing assets remain `null` and are hidden from the interface. Do not add a deck, photo, technical brief, contact address, customer, revenue, funding, legal-status, or partnership claim without a direct source.
+The confirmed public evaluation address is `rusfbm@gmail.com`. Other unknown personal facts and missing assets remain `null` and are hidden from the interface. Do not add a deck, photo, technical brief, additional contact address, customer, revenue, funding, legal-status, or partnership claim without a direct source.
 
 Run `npm run claims:check` after every content change.
 

@@ -1,10 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, Check, ChevronRight, Play, RotateCcw } from "lucide-react";
 import replayData from "../../data/controlled-replay.json";
+import { useI18n } from "../../i18n/I18nContext";
 
 type ReplayTab = "current" | "target";
 
 export function ReplayExplorer() {
+  const { t } = useI18n();
   const [tab, setTab] = useState<ReplayTab>("current");
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -41,58 +43,64 @@ export function ReplayExplorer() {
 
   return (
     <div className="replay-explorer">
-      <div className="replay-explorer__tabs" role="tablist" aria-label="Receipt walkthrough modes">
+      <div className="replay-explorer__tabs" role="tablist" aria-label={t("Receipt walkthrough modes")}>
         <button type="button" role="tab" aria-selected={tab === "current"} onClick={() => setTab("current")}>
-          Recorded receipt
+          {t("Recorded receipt")}
         </button>
         <button type="button" role="tab" aria-selected={tab === "target"} onClick={() => setTab("target")}>
-          Target learning loop
+          {t("Target learning loop")}
         </button>
       </div>
 
       {tab === "current" ? (
         <div role="tabpanel" className="replay-explorer__panel">
-          <div className="replay-explorer__rail" aria-label="Receipt steps">
+          <div className="replay-explorer__rail" aria-label={t("Receipt steps")}>
             {replayData.steps.map((step, index) => (
               <button
                 key={step.id}
                 type="button"
                 className={`${index === activeIndex ? "is-active" : ""} ${index < activeIndex ? "is-complete" : ""}`}
-                aria-label={`Show step ${index + 1}: ${step.label}`}
+                aria-label={t("Show step {number}: {label}", { number: index + 1, label: t(step.label) })}
                 onClick={() => {
                   setIsPlaying(false);
                   setActiveIndex(index);
                 }}
               >
                 <span>{index < activeIndex ? <Check size={14} aria-hidden="true" /> : step.index}</span>
-                <strong>{step.label}</strong>
+                <strong>{t(step.label)}</strong>
               </button>
             ))}
           </div>
 
           <div className="receipt-card" aria-live="polite">
             <div className="receipt-card__topline">
-              <span className="mono">STEP {activeStep?.index}</span>
+              <span className="mono" dir="ltr">
+                {t("STEP")} {activeStep?.index}
+              </span>
               <span className={`status ${activeStep?.status === "PASS" ? "status--pass" : "status--boundary"}`}>
-                {activeStep?.status}
+                <bdi dir="ltr">{activeStep?.status}</bdi>
               </span>
             </div>
-            <h3>{activeStep?.label}</h3>
+            <h3>{activeStep ? t(activeStep.label) : ""}</h3>
             <dl>
               <div>
-                <dt>Receipt</dt>
-                <dd className="mono">{receiptPreview}</dd>
+                <dt>{t("Receipt")}</dt>
+                <dd className="mono" dir="ltr">
+                  {receiptPreview}
+                </dd>
               </div>
               <div>
-                <dt>Mode</dt>
-                <dd>deterministic / client-side</dd>
+                <dt>{t("Mode")}</dt>
+                <dd>{t("deterministic / client-side")}</dd>
               </div>
             </dl>
-            <pre aria-label="Sanitized receipt payload">{JSON.stringify(activeStep?.payload, null, 2)}</pre>
+            <pre dir="ltr" aria-label={t("Sanitized receipt payload")}>
+              {JSON.stringify(activeStep?.payload, null, 2)}
+            </pre>
             <div className="receipt-card__controls">
               <button className="button button--primary" type="button" onClick={play} disabled={isPlaying}>
                 <Play size={17} aria-hidden="true" />{" "}
-                {isPlaying ? "Replaying…" : isComplete ? "Replay again" : "Replay receipt"}
+                {isPlaying ? t("Replaying…") : isComplete ? t("Replay again") : t("Replay receipt")}
               </button>
               <button
                 className="button button--ghost"
@@ -100,31 +108,34 @@ export function ReplayExplorer() {
                 onClick={() => setActiveIndex((value) => Math.min(value + 1, replayData.steps.length - 1))}
                 disabled={isComplete || isPlaying}
               >
-                Next step <ChevronRight size={17} aria-hidden="true" />
+                {t("Next step")} <ChevronRight className="directional-icon" size={17} aria-hidden="true" />
               </button>
               <button className="text-button" type="button" onClick={reset}>
-                <RotateCcw size={15} aria-hidden="true" /> Reset
+                <RotateCcw size={15} aria-hidden="true" /> {t("Reset")}
               </button>
             </div>
           </div>
-          <p className="replay-explorer__disclaimer">{replayData.disclaimer}</p>
+          <p className="replay-explorer__disclaimer">{t(replayData.disclaimer)}</p>
         </div>
       ) : (
         <div role="tabpanel" className="target-loop">
           <div className="target-loop__intro">
-            <span className="status status--development">IN DEVELOPMENT</span>
-            <h3>From source custody to partner-owned evaluation</h3>
+            <span className="status status--development">{t("IN DEVELOPMENT")}</span>
+            <h3>{t("From source custody to partner-owned evaluation")}</h3>
             <p>
-              These components describe the next research contour. They are intentionally separated from the recorded
-              current receipt.
+              {t(
+                "These components describe the next research contour. They are intentionally separated from the recorded current receipt.",
+              )}
             </p>
           </div>
           <ol>
             {replayData.target.map((item, index) => (
               <li key={item}>
                 <span>{String(index + 1).padStart(2, "0")}</span>
-                <strong>{item}</strong>
-                {index < replayData.target.length - 1 && <ArrowRight size={16} aria-hidden="true" />}
+                <strong>{t(item)}</strong>
+                {index < replayData.target.length - 1 && (
+                  <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+                )}
               </li>
             ))}
           </ol>
