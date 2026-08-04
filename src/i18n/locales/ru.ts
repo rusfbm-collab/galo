@@ -1,8 +1,10 @@
 import type { TranslationDictionary } from "../translations";
 import { mathRu } from "./math";
+import { releaseRu } from "./releaseRu";
 
 export const ru: TranslationDictionary = {
   ...mathRu,
+  ...releaseRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
@@ -355,8 +357,6 @@ export const ru: TranslationDictionary = {
   "not-proven": "НЕ ДОКАЗАНО",
   "GALO is a standalone research architecture for explicit world state and bounded, replayable execution.":
     "GALO — самостоятельная исследовательская архитектура для явного состояния мира и ограниченного воспроизводимого исполнения.",
-  "The frozen L1–L7 kernel contains 560 formal transition records.":
-    "Зафиксированное ядро L1–L7 содержит 560 записей формальных переходов.",
   "The architecture specifies a versioned World Atlas; a trained Atlas is not present.":
     "Архитектура предусматривает версионируемый World Atlas; обученный Atlas отсутствует.",
   "Current bounded actions use typed execution contracts and receipts.":
@@ -377,8 +377,6 @@ export const ru: TranslationDictionary = {
   "Current release status": "Статус текущего выпуска",
   "Current claim registry": "Текущий реестр утверждений",
   "Replay status": "Статус воспроизведения",
-  "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,277/1,277 checks passing. The final report distinguishes stored evidence from any fresh heavy replay result.":
-    "Свежие проверки STATIC и FAST пройдены в текущей сессии анализа. Сохранённый протокол выпуска фиксирует прохождение 1,277 / 1,277 проверок. В итоговом отчёте сохранённые доказательства отделены от результатов любого нового ресурсоёмкого воспроизведения.",
   "Research archive policy": "Политика исследовательского архива",
   "Historical research materials may reflect earlier scopes, experiments, or metrics. They must not be combined with this release without an explicit provenance bridge.":
     "Исторические исследовательские материалы могут относиться к прежним областям, экспериментам или метрикам. Их нельзя объединять с этим выпуском без явной связи происхождения данных.",

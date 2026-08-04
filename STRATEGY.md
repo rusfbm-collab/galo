@@ -2,10 +2,11 @@
 
 ## Purpose
 
-The site is a two-layer public surface for Hub71 reviewers, prospective technical evaluators, and deep-tech investors:
+The site is a layered public surface for Hub71 reviewers, prospective technical evaluators, and deep-tech investors:
 
 1. `/` explains the problem, the architectural class, the verified bounded slice, and the proposed external evaluation in under three minutes.
-2. `/evidence` separates current mechanics from target architecture and publishes only sanitized release facts.
+2. `/math` and `/symmetry` publish the finite algebra with academic definitions, proofs, examples, and interpretation boundaries.
+3. `/evidence` separates formal mathematics, compatibility/audit history, current V4 mechanics, and target architecture.
 
 The primary conversion is a bounded technical-evaluation conversation. This is not a SaaS checkout, a public engine demo, or an AGI announcement.
 
@@ -25,7 +26,7 @@ The primary conversion is a bounded technical-evaluation conversation. This is n
 
 **Problem:** long-running AI systems can depend on reasoning state that is difficult to inspect, revise locally, and replay.
 
-**Current proof:** a verified finite execution layer with committed candidate membership, single-use execution handles, budget enforcement, atomic rollback, and receipt-derived work accounting.
+**Current proof:** a verified finite V4 layer with release-pinned bundled-sample integrity, two fixed source patterns, deterministic 440-candidate frontiers, single-use execution, process-local rollback/revocation checks, and receipt-derived work accounting.
 
 **Target architecture:** explicit World Atlas state, localized revision, minimal sufficient resolution, typed execution, and constitutional verification. Target capabilities are labelled `IN DEVELOPMENT` and are never presented as current operational abilities.
 
@@ -48,7 +49,7 @@ problem with implicit agent state
 - **“A philosophical theory?”** The page leads with falsifiable mechanics, receipt-backed controls, and a defined evaluation request.
 - **“A rule engine?”** The broader design includes versioned local world state and revision, while the page is explicit that those capabilities are not yet externally validated.
 - **“A live intelligence demo?”** The interactive is a deterministic walkthrough of a recorded bounded receipt.
-- **“Does it learn?”** Persistent policy learning has not started; a trained Atlas is not present.
+- **“Does it learn?”** Current V4 performs no policy update or Atlas learning write. A historical relational-KG research artifact is compatibility history, not a current trained Atlas or a supported strong-control advantage.
 - **“Why now?”** The mechanical slice is concrete enough to define the next controlled, externally grounded experiment.
 - **“Why Abu Dhabi?”** GALO needs a design partner, technical infrastructure, company formation, and a focused founding team in one operating base.
 

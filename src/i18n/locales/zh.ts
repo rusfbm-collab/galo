@@ -1,8 +1,10 @@
 import type { TranslationDictionary } from "../translations";
 import { mathZh } from "./math";
+import { releaseZh } from "./releaseZh";
 
 export const zh: TranslationDictionary = {
   ...mathZh,
+  ...releaseZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",
@@ -337,7 +339,6 @@ export const zh: TranslationDictionary = {
   "not-proven": "未证明",
   "GALO is a standalone research architecture for explicit world state and bounded, replayable execution.":
     "GALO 是一套面向显式世界状态以及受限、可重放执行的独立研究架构。",
-  "The frozen L1–L7 kernel contains 560 formal transition records.": "冻结的 L1–L7 内核包含 560 条形式化转换记录。",
   "The architecture specifies a versioned World Atlas; a trained Atlas is not present.":
     "该架构定义了带版本控制的 World Atlas；当前不存在已训练的 Atlas。",
   "Current bounded actions use typed execution contracts and receipts.": "当前有限范围动作使用类型化执行契约和回执。",
@@ -357,8 +358,6 @@ export const zh: TranslationDictionary = {
   "Current release status": "当前发布状态",
   "Current claim registry": "当前声明登记表",
   "Replay status": "重放状态",
-  "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,277/1,277 checks passing. The final report distinguishes stored evidence from any fresh heavy replay result.":
-    "当前审阅会话中新执行的 STATIC 和 FAST 验证均已通过。存档发布回执记录了 1,277/1,277 项检查通过。最终报告将存档证据与任何新执行的重型重放结果明确区分。",
   "Research archive policy": "研究档案政策",
   "Historical research materials may reflect earlier scopes, experiments, or metrics. They must not be combined with this release without an explicit provenance bridge.":
     "历史研究材料可能反映早期范围、实验或指标。在没有明确来源衔接的情况下，不得将其与当前版本合并。",

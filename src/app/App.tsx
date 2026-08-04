@@ -4,6 +4,7 @@ import { HomePage } from "../pages/HomePage";
 import { MathematicsPage } from "../pages/MathematicsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
+import { SymmetryPage } from "../pages/SymmetryPage";
 import {
   I18nProvider,
   localeConfig,
@@ -31,6 +32,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "GALO Mathematics — PLUS and STAR Cayley Tables",
     description:
       "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.",
+  },
+  "/symmetry": {
+    title: "GALO Symmetry — Automorphisms, Orbits, and Burnside",
+    description:
+      "Explore the distinct PLUS and STAR symmetry layers, unit automorphisms, affine boundaries, orbits, stabilizers, Burnside counts, and cross-level homomorphisms.",
   },
   "/privacy": {
     title: "Privacy — GALO AI",
@@ -121,6 +127,7 @@ export function App() {
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
       {route === "/math" && <MathematicsPage />}
+      {route === "/symmetry" && <SymmetryPage />}
       {route === "/evidence" && <EvidencePage />}
       {route === "/privacy" && <PrivacyPage />}
       {route === "/404" && <NotFoundPage />}

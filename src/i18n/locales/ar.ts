@@ -1,8 +1,10 @@
 import type { TranslationDictionary } from "../translations";
 import { mathAr } from "./math";
+import { releaseAr } from "./releaseAr";
 
 export const ar: TranslationDictionary = {
   ...mathAr,
+  ...releaseAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",
@@ -346,8 +348,6 @@ export const ar: TranslationDictionary = {
   "not-proven": "غير مُثبت",
   "GALO is a standalone research architecture for explicit world state and bounded, replayable execution.":
     "GALO هي بنية بحثية مستقلة لحالة عالم صريحة وتنفيذ مقيّد قابل لإعادة التشغيل.",
-  "The frozen L1–L7 kernel contains 560 formal transition records.":
-    "تحتوي النواة المجمّدة للمستويات L1–L7 على 560 سجلًا رسميًا للانتقالات.",
   "The architecture specifies a versioned World Atlas; a trained Atlas is not present.":
     "تحدد البنية World Atlas مُدارًا بالإصدارات؛ ولا يوجد Atlas مدرَّب.",
   "Current bounded actions use typed execution contracts and receipts.":
@@ -368,8 +368,6 @@ export const ar: TranslationDictionary = {
   "Current release status": "حالة الإصدار الحالي",
   "Current claim registry": "سجل الادعاءات الحالي",
   "Replay status": "حالة إعادة التشغيل",
-  "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,277/1,277 checks passing. The final report distinguishes stored evidence from any fresh heavy replay result.":
-    "نجح التحقق الجديد STATIC وFAST في جلسة المراجعة الحالية. ويسجل إيصال الإصدار المحفوظ نجاح 1,277/1,277 اختبارًا. ويميّز التقرير النهائي بين الأدلة المحفوظة وأي نتيجة جديدة لإعادة تشغيل كثيفة.",
   "Research archive policy": "سياسة أرشيف البحث",
   "Historical research materials may reflect earlier scopes, experiments, or metrics. They must not be combined with this release without an explicit provenance bridge.":
     "قد تعكس مواد البحث التاريخية نطاقات أو تجارب أو مقاييس سابقة. ويجب عدم دمجها مع هذا الإصدار من دون جسر منشأ صريح.",

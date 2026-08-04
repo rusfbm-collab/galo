@@ -4,6 +4,8 @@ export type GaloLevel = (typeof galoLevels)[number];
 export type GaloOperation = "PLUS" | "STAR";
 export type GaloOrientation = "LEFT" | "RIGHT";
 export type GaloActionFamily = `${GaloOperation}_${GaloOrientation}`;
+export type FixedActiveAxis = "ROW" | "COLUMN";
+export type StandardTranslation = "LEFT_TRANSLATION" | "RIGHT_TRANSLATION";
 
 export const galoOperations: readonly GaloOperation[] = ["PLUS", "STAR"];
 export const galoActionFamilies: readonly GaloActionFamily[] = ["PLUS_LEFT", "PLUS_RIGHT", "STAR_LEFT", "STAR_RIGHT"];
@@ -132,7 +134,7 @@ export function buildScaledTowerMorphism(sourceLevel: GaloLevel, targetLevel: Ga
   return Array.from({ length: sourceLevel }, (_, pole) => (pole * scale) % targetLevel);
 }
 
-export const lawfulScaledTransfers = galoLevels.flatMap((sourceLevel) =>
+export const canonicalScaledEmbeddings = galoLevels.flatMap((sourceLevel) =>
   galoLevels.flatMap((targetLevel) => {
     const mapping = buildScaledTowerMorphism(sourceLevel, targetLevel);
     return mapping && isStrongOperatorMorphism(sourceLevel, targetLevel, mapping)
@@ -141,7 +143,7 @@ export const lawfulScaledTransfers = galoLevels.flatMap((sourceLevel) =>
   }),
 );
 
-function greatestCommonDivisor(left: number, right: number) {
+export function greatestCommonDivisor(left: number, right: number) {
   let a = left;
   let b = right;
   while (b !== 0) {
@@ -150,32 +152,171 @@ function greatestCommonDivisor(left: number, right: number) {
   return a;
 }
 
+export function fixedActiveAxis(family: GaloActionFamily): FixedActiveAxis {
+  return parseActionFamily(family).orientation === "LEFT" ? "COLUMN" : "ROW";
+}
+
+export function standardTranslationForFamily(family: GaloActionFamily): StandardTranslation {
+  return parseActionFamily(family).orientation === "LEFT" ? "RIGHT_TRANSLATION" : "LEFT_TRANSLATION";
+}
+
+export function leftStarTranslation(level: GaloLevel, active: number, source: number) {
+  return starIndex(level, active, source);
+}
+
+export function rightStarTranslation(level: GaloLevel, active: number, source: number) {
+  return starIndex(level, source, active);
+}
+
 export function unitMultipliers(level: GaloLevel) {
   return Array.from({ length: level }, (_, value) => value).filter(
     (value) => greatestCommonDivisor(value, level) === 1,
   );
 }
 
-export const sameLevelAutomorphismCount = galoLevels.reduce((sum, level) => sum + unitMultipliers(level).length, 0);
+export function applyUnitMultiplier(level: GaloLevel, multiplier: number, value: number) {
+  assertCoordinate(level, value, "Unit-action");
+  if (!unitMultipliers(level).includes(multiplier)) {
+    throw new RangeError(`Multiplier ${multiplier} is not a unit modulo ${level}.`);
+  }
+  return (multiplier * value) % level;
+}
 
-export const structuralOrbitCount = galoLevels.reduce((towerTotal, level) => {
-  const multipliers = unitMultipliers(level);
+export function unitCycleDecomposition(level: GaloLevel, multiplier: number) {
+  const seen = new Set<number>();
+  const cycles: number[][] = [];
+
+  for (let value = 0; value < level; value += 1) {
+    if (seen.has(value)) continue;
+    const cycle: number[] = [];
+    let cursor = value;
+    do {
+      seen.add(cursor);
+      cycle.push(cursor);
+      cursor = applyUnitMultiplier(level, multiplier, cursor);
+    } while (!seen.has(cursor));
+    cycles.push(cycle);
+  }
+
+  return cycles;
+}
+
+export function buildCarrierOrbit(level: GaloLevel, value: number) {
+  assertCoordinate(level, value, "Orbit");
+  return [...new Set(unitMultipliers(level).map((multiplier) => (multiplier * value) % level))].sort(
+    (left, right) => left - right,
+  );
+}
+
+export function buildPairOrbit(level: GaloLevel, source: number, active: number) {
+  assertCoordinate(level, source, "Source");
+  assertCoordinate(level, active, "Active");
+  return [
+    ...new Set(
+      unitMultipliers(level).map((multiplier) => `${(multiplier * source) % level}:${(multiplier * active) % level}`),
+    ),
+  ]
+    .map((key) => key.split(":").map(Number) as [number, number])
+    .sort(([leftSource, leftActive], [rightSource, rightActive]) =>
+      leftSource === rightSource ? leftActive - rightActive : leftSource - rightSource,
+    );
+}
+
+export function buildPairStabilizer(level: GaloLevel, source: number, active: number) {
+  assertCoordinate(level, source, "Source");
+  assertCoordinate(level, active, "Active");
+  return unitMultipliers(level).filter(
+    (multiplier) => (multiplier * source) % level === source && (multiplier * active) % level === active,
+  );
+}
+
+export function countPairOrbitsByEnumeration(level: GaloLevel) {
   const seen = new Set<string>();
-  let pairOrbits = 0;
-
+  let count = 0;
   for (let source = 0; source < level; source += 1) {
     for (let active = 0; active < level; active += 1) {
       const key = `${source}:${active}`;
       if (seen.has(key)) continue;
-      pairOrbits += 1;
-      for (const multiplier of multipliers) {
-        seen.add(`${(multiplier * source) % level}:${(multiplier * active) % level}`);
+      count += 1;
+      for (const [orbitSource, orbitActive] of buildPairOrbit(level, source, active)) {
+        seen.add(`${orbitSource}:${orbitActive}`);
       }
     }
   }
+  return count;
+}
 
-  return towerTotal + galoActionFamilies.length * pairOrbits;
-}, 0);
+export function fixedPointsOfUnit(level: GaloLevel, multiplier: number) {
+  return Array.from({ length: level }, (_, value) => value).filter((value) => (multiplier * value) % level === value);
+}
+
+export function countPairOrbitsByBurnside(level: GaloLevel) {
+  const multipliers = unitMultipliers(level);
+  const fixedPairTotal = multipliers.reduce((sum, multiplier) => {
+    const fixedPointCount = fixedPointsOfUnit(level, multiplier).length;
+    return sum + fixedPointCount ** 2;
+  }, 0);
+  return fixedPairTotal / multipliers.length;
+}
+
+export function inversionOrbits(level: GaloLevel) {
+  const seen = new Set<number>();
+  const orbits: number[][] = [];
+  for (let value = 0; value < level; value += 1) {
+    if (seen.has(value)) continue;
+    const inverse = (level - value) % level;
+    const orbit = [...new Set([value, inverse])].sort((left, right) => left - right);
+    orbit.forEach((item) => seen.add(item));
+    orbits.push(orbit);
+  }
+  return orbits;
+}
+
+export function enumerateStarHomomorphisms(sourceLevel: GaloLevel, targetLevel: GaloLevel) {
+  const zero = Array.from({ length: sourceLevel }, () => 0);
+  if (sourceLevel === 1 || targetLevel % sourceLevel !== 0) return [zero];
+
+  const scale = targetLevel / sourceLevel;
+  const embeddings = unitMultipliers(sourceLevel).map((unit) =>
+    Array.from({ length: sourceLevel }, (_, value) => (scale * unit * value) % targetLevel),
+  );
+  return [zero, ...embeddings];
+}
+
+export function iterateStarProduct(level: GaloLevel, value: number, length: number, association: "LEFT" | "RIGHT") {
+  assertCoordinate(level, value, "Iteration");
+  if (!Number.isInteger(length) || length < 1) throw new RangeError("Iteration length must be positive.");
+  const sequence = [value];
+  for (let index = 1; index < length; index += 1) {
+    const previous = sequence[index - 1]!;
+    sequence.push(association === "LEFT" ? starIndex(level, previous, value) : starIndex(level, value, previous));
+  }
+  return sequence;
+}
+
+export const sameLevelAutomorphismCount = galoLevels.reduce((sum, level) => sum + unitMultipliers(level).length, 0);
+
+export const structuralOrbitCount = galoLevels.reduce(
+  (towerTotal, level) => towerTotal + galoActionFamilies.length * countPairOrbitsByEnumeration(level),
+  0,
+);
+
+export const structuralOrbitCountByBurnside = galoLevels.reduce(
+  (towerTotal, level) => towerTotal + galoActionFamilies.length * countPairOrbitsByBurnside(level),
+  0,
+);
+
+export const symmetryLevelProfiles = galoLevels.map((level) => ({
+  level,
+  units: unitMultipliers(level),
+  automorphismOrder: unitMultipliers(level).length,
+  holomorphOrder: level * unitMultipliers(level).length,
+  carrierOrbitCount: new Set(Array.from({ length: level }, (_, value) => buildCarrierOrbit(level, value).join(":")))
+    .size,
+  pairOrbitCount: countPairOrbitsByEnumeration(level),
+  pairOrbitCountByBurnside: countPairOrbitsByBurnside(level),
+  starEndomorphismCount: enumerateStarHomomorphisms(level, level).length,
+}));
 
 export function buildCayleyTable(operation: GaloOperation, level: GaloLevel): CayleyCell[][] {
   return Array.from({ length: level }, (_, left) =>

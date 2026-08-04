@@ -2,18 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://aigalo.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://aigalo.com/math</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aigalo.com/symmetry</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://aigalo.com/evidence</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aigalo.com/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://aigalo.com/ru</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://aigalo.com/ru/math</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aigalo.com/ru/symmetry</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aigalo.com/ru/evidence</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://aigalo.com/ru/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://aigalo.com/zh</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://aigalo.com/zh/math</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aigalo.com/zh/symmetry</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aigalo.com/zh/evidence</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://aigalo.com/zh/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://aigalo.com/ar</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://aigalo.com/ar/math</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aigalo.com/ar/symmetry</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://aigalo.com/ar/evidence</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://aigalo.com/ar/privacy</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>

@@ -31,6 +31,22 @@ const forbidden = [
   "جاهز للإنتاج",
   "مدعوم من Hub71",
   "لا يهلوس أبداً",
+  "STAR is closed and has right identity P0",
+  "STAR замкнут и имеет правую единицу P0",
+  "no homomorphism L3→L5",
+  "there is no homomorphism L3 to L5",
+  "18-element global automorphism group",
+  "560 formal transition records",
+  "560 formal raw cells",
+  "560 raw Cayley cells",
+  "learned selector",
+  "external truth authenticated",
+  "external operational gain is proven",
+  "fresh FULL passed",
+  "fresh FULL 1,366",
+  "dual-minor PASS",
+  "current trained Atlas is present",
+  "CORE/QUASI/BOUNDARY executable",
 ];
 
 async function collect(relativePath = "") {

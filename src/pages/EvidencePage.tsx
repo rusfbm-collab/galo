@@ -31,7 +31,9 @@ export function EvidencePage() {
           </p>
           <div className="release-status">
             <FileCheck2 size={19} aria-hidden="true" />
-            <span>{t("CURRENT RELEASE STATUS")}</span>
+            <span>
+              {t("CURRENT RELEASE STATUS")} · {releaseEvidence.release}
+            </span>
             <strong dir="ltr">{releaseEvidence.status}</strong>
           </div>
         </div>
@@ -74,9 +76,124 @@ export function EvidencePage() {
           <p className="scope-callout">
             <strong>{t("Exact public scope:")}</strong>{" "}
             {t(
-              "finite, binary, one-step candidate execution across the declared L1–L7 tower. This is not the complete space of general reasoning.",
+              "finite, binary, one-step candidate execution across active L2–L7; L1 is control-only. This is not the complete space of general reasoning.",
             )}
           </p>
+
+          <div className="replay-status-grid">
+            <article>
+              <span>{t("Fresh STATIC")}</span>
+              <strong>{releaseEvidence.freshReplay.static}</strong>
+              <code dir="ltr">{releaseEvidence.freshReplay.staticReceipt}</code>
+            </article>
+            <article>
+              <span>{t("Fresh FAST")}</span>
+              <strong>{releaseEvidence.freshReplay.fast}</strong>
+              <code dir="ltr">{releaseEvidence.freshReplay.fastReceipt}</code>
+            </article>
+            <article>
+              <span>{t("Fresh FULL")}</span>
+              <strong>{releaseEvidence.freshReplay.full}</strong>
+              <p>{t("The 1,366/1,366 FULL result is a stored release receipt, not a fresh replay result.")}</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--white">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">{t("THREE EVIDENCE LAYERS")}</p>
+              <h2>{t("Do not infer runtime capability from formal or historical material.")}</h2>
+              <p className="section-heading__text">
+                {t(
+                  "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.",
+                )}
+              </p>
+            </div>
+          </div>
+          <div className="evidence-layer-grid">
+            {releaseEvidence.layers.map((layer, index) => (
+              <article key={layer.name}>
+                <span dir="ltr">0{index + 1}</span>
+                <h3>{t(layer.name)}</h3>
+                <p>{t(layer.detail)}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--navy">
+        <div className="shell">
+          <div className="section-heading section-heading--light">
+            <div>
+              <p className="eyebrow">{t("CURRENT V4 SELECTOR")}</p>
+              <h2>{t("A closed deterministic selector, not a learned reasoner.")}</h2>
+              <p className="section-heading__text">
+                {t(
+                  "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.",
+                )}
+              </p>
+            </div>
+          </div>
+          <div className="selector-pipeline">
+            {releaseEvidence.selector.map((stage) => (
+              <article key={stage.label}>
+                <strong dir="ltr">{stage.value}</strong>
+                <h3>{t(stage.label)}</h3>
+                <p>{t(stage.detail)}</p>
+              </article>
+            ))}
+          </div>
+          <div className="selector-contract-grid">
+            <article>
+              <span>{t("Source ontology")}</span>
+              <code dir="ltr">alpha,beta → LEFT/even</code>
+              <code dir="ltr">gamma,delta → RIGHT/odd</code>
+            </article>
+            <article>
+              <span>{t("Executable kinds")}</span>
+              <code dir="ltr">FREE_FRAME · JOINT_COMPOSITION · PROBE · ROUTE</code>
+            </article>
+            <article>
+              <span>{t("Atlas influence")}</span>
+              <code dir="ltr">semantic reads=0 · rank effects=0 · learning writes=0</code>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--paper">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">{t("RECEIPT-DERIVED WORK LEDGER")}</p>
+              <h2>{t("Every counted work unit belongs to one checked phase.")}</h2>
+              <p className="section-heading__text">
+                {t(
+                  "The physical total is an internal count of receipt work-unit IDs. It is not elapsed time, FLOPS, energy, cost saving, speedup, causal outcome, or external operational gain.",
+                )}
+              </p>
+            </div>
+          </div>
+          <div className="work-ledger">
+            <div className="work-ledger__rows">
+              {releaseEvidence.workLedger.map((row) => (
+                <div key={row.label}>
+                  <span>{t(row.label)}</span>
+                  <strong dir="ltr">{row.value.toLocaleString("en-US")}</strong>
+                </div>
+              ))}
+            </div>
+            <article className="work-ledger__total">
+              <span>{t("Physical total")}</span>
+              <strong dir="ltr">4,802</strong>
+              <code dir="ltr">1,902 + 2,852 + 24 + 24 = 4,802</code>
+              <p>{t("Outcome evaluation and policy update each contribute zero work units in this release.")}</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -104,6 +221,7 @@ export function EvidencePage() {
                   <span>
                     <small dir="ltr">{item.status}</small>
                     {t(item.label)}
+                    <em>{t(item.detail)}</em>
                   </span>
                 </li>
               ))}
@@ -154,7 +272,23 @@ export function EvidencePage() {
             <h3>{t("Replay status")}</h3>
             <p>
               {t(
-                "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,277/1,277 checks passing. The final report distinguishes stored evidence from any fresh heavy replay result.",
+                "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,366/1,366 checks across 131 modules. Fresh FULL was not run, and CPython 3.13 replay was blocked by runtime availability.",
+              )}
+            </p>
+          </article>
+          <article>
+            <h3>{t("Source-integrity boundary")}</h3>
+            <p>
+              {t(
+                "The bundled finite sample verifies against a release-pinned public key. That proves integrity relative to the shipped key; it does not prove independent external origin or truth.",
+              )}
+            </p>
+          </article>
+          <article>
+            <h3>{t("Historical-learning boundary")}</h3>
+            <p>
+              {t(
+                "A legacy relational-KG research artifact exists in compatibility history, but it is not the current V4 selector, has no proven strong-control advantage, and is not presented as a current trained Atlas.",
               )}
             </p>
           </article>

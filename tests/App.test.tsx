@@ -29,9 +29,9 @@ describe("GALO public site", () => {
     render(<App />);
     expect(screen.getByText("560")).toBeInTheDocument();
     expect(screen.getByText("1,204")).toBeInTheDocument();
-    expect(screen.getByText("1,277 / 1,277")).toBeInTheDocument();
+    expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
     expect(screen.getByText(/not semantic concepts/i)).toBeInTheDocument();
-    expect(screen.getByText(/not an intelligence metric/i)).toBeInTheDocument();
+    expect(screen.getByText(/measure of intelligence/i)).toBeInTheDocument();
   });
 
   it("keeps current and target architecture visibly separate", () => {
@@ -46,19 +46,25 @@ describe("GALO public site", () => {
   it("replays the receipt deterministically", async () => {
     const user = userEvent.setup();
     render(<App />);
-    expect(screen.getByRole("heading", { name: "Public observation envelope recorded" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Bundled sample verified against the pinned release key" }),
+    ).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /Show step 6/i }));
-    expect(screen.getByRole("heading", { name: "Terminal result preserved with a boundary" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Terminal release status preserved with disclosed boundaries" }),
+    ).toBeInTheDocument();
     expect(screen.getAllByText("BOUNDARY").length).toBeGreaterThan(0);
     await user.click(screen.getByRole("button", { name: /Reset/i }));
-    expect(screen.getByRole("heading", { name: "Public observation envelope recorded" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Bundled sample verified against the pinned release key" }),
+    ).toBeInTheDocument();
   });
 
   it("discloses all critical boundaries", () => {
     render(<App />);
-    expect(screen.getByText("Authenticated external-source provenance")).toBeInTheDocument();
-    expect(screen.getByText("Oracle-free action selection")).toBeInTheDocument();
-    expect(screen.getByText("Persistent policy learning")).toBeInTheDocument();
+    expect(screen.getByText("Persistent trusted manifest head")).toBeInTheDocument();
+    expect(screen.getByText("Arbitrary free-text semantic noninterference")).toBeInTheDocument();
+    expect(screen.getAllByText("Persistent policy").length).toBeGreaterThan(0);
     expect(screen.getByText("General AI")).toBeInTheDocument();
   });
 
@@ -101,7 +107,11 @@ describe("GALO public site", () => {
     setPath("/evidence");
     render(<App />);
     expect(screen.getByRole("heading", { level: 1, name: "Evidence, scoped precisely." })).toBeInTheDocument();
-    expect(screen.getByText("READY_NOT_TRAINED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
+    expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
+    expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
+    expect(screen.getByText("4,802")).toBeInTheDocument();
+    expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
+    expect(screen.getByText(/closed deterministic selector, not a learned reasoner/i)).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Public claim matrix" })).toBeInTheDocument();
     expect(screen.getByText("NOT PRESENT")).toBeInTheDocument();
     expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
@@ -128,10 +138,53 @@ describe("GALO public site", () => {
     expect(document.querySelector(".typed-cell-record > code")).toHaveTextContent("L3:STAR_RIGHT:P0:P2");
     expect(screen.getByText("224")).toBeInTheDocument();
     expect(document.querySelector(".symmetry-card__counts")).toHaveTextContent("18");
+    expect(screen.getByText(/P0 is neutral only on the right/i)).toBeInTheDocument();
+    expect(screen.getByText(/Degenerate exception: on the one-element carrier/i)).toBeInTheDocument();
+    expect(screen.queryByText(/directed magma/i)).not.toBeInTheDocument();
 
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
       const target = link.getAttribute("href")?.slice(1) ?? "";
       expect(document.getElementById(target), `Missing mathematics target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("renders the symmetry route and recomputes cycles, stabilizers, and Burnside counts", async () => {
+    const user = userEvent.setup();
+    setPath("/symmetry");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Symmetries of the PLUS and STAR families." }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("enumeration=224 · Burnside=224")).toBeInTheDocument();
+    expect(screen.getByText(/Eighteen is a sum over seven local groups/i)).toBeInTheDocument();
+    expect(screen.getByText(/u=2: \{1,4\} → \{2,3\}/i)).toBeInTheDocument();
+
+    const controls = screen.getByLabelText("Symmetry explorer controls");
+    const selects = controls.querySelectorAll("select");
+    await user.selectOptions(selects[0]!, "7");
+    await user.selectOptions(selects[1]!, "6");
+    expect(screen.getByText("(P0) (P1 P6) (P2 P5) (P3 P4)")).toBeInTheDocument();
+    expect(screen.getByText(/Pair orbits: 9/)).toBeInTheDocument();
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing symmetry target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("renders the symmetry chapter in Russian, Chinese, and RTL Arabic", () => {
+    for (const [path, heading, direction] of [
+      ["/ru/symmetry", "Симметрии семейств PLUS и STAR.", "ltr"],
+      ["/zh/symmetry", "PLUS 与 STAR 族的对称性。", "ltr"],
+      ["/ar/symmetry", "تناظرات عائلتي PLUS وSTAR.", "rtl"],
+    ] as const) {
+      setPath(path);
+      const view = render(<App />);
+      expect(screen.getByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
+      expect(document.documentElement).toHaveAttribute("dir", direction);
+      expect(document.querySelector(".hom-matrix-wrap")).toHaveAttribute("dir", "ltr");
+      view.unmount();
     }
   });
 
@@ -167,7 +220,7 @@ describe("GALO public site", () => {
     render(<App />);
     expect(document.documentElement).toHaveAttribute("lang", "zh-CN");
     expect(screen.getByRole("heading", { level: 1, name: "严格限定范围的证据。" })).toBeInTheDocument();
-    expect(screen.getByText("READY_NOT_TRAINED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
+    expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("通用人工智能")).toBeInTheDocument();
     expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/zh/evidence");
@@ -184,7 +237,7 @@ describe("GALO public site", () => {
         name: "تحتاج وكلاء الذكاء الاصطناعي إلى حالة عالم يمكنها فحصها ومراجعتها وإعادة تشغيلها.",
       }),
     ).toBeInTheDocument();
-    expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"hiddenTargetAccess": 0');
+    expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');
     expect(screen.getByRole("link", { name: "rusfbm@gmail.com" })).toBeInTheDocument();
   });
 
@@ -214,8 +267,10 @@ describe("GALO public site", () => {
     expect(localizedPath("ru", "/#receipt")).toBe("/ru#receipt");
     expect(localizedPath("zh", "/privacy")).toBe("/zh/privacy");
     expect(localizedPath("ar", "/math#cayley-tables")).toBe("/ar/math#cayley-tables");
+    expect(localizedPath("ru", "/symmetry#orbit-lab")).toBe("/ru/symmetry#orbit-lab");
     expect(parseLocalizedPath("/ar/evidence/")).toEqual({ locale: "ar", route: "/evidence", rawRoute: "/evidence" });
     expect(parseLocalizedPath("/ru/math/")).toEqual({ locale: "ru", route: "/math", rawRoute: "/math" });
+    expect(parseLocalizedPath("/zh/symmetry/")).toEqual({ locale: "zh", route: "/symmetry", rawRoute: "/symmetry" });
     expect(parseLocalizedPath("/ru/not-real")).toEqual({ locale: "ru", route: "/404", rawRoute: "/not-real" });
     expect(switchLocalePath("zh", "/ar/math", "#cayley-tables")).toBe("/zh/math#cayley-tables");
   });
@@ -223,7 +278,7 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/math", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();

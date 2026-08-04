@@ -1,8 +1,8 @@
 import type { TranslationDictionary } from "../translations";
 
 export const mathExtraRu: TranslationDictionary = {
-  "A cell is a graph point; a fixed-active column is a function.":
-    "Ячейка — точка графика отображения; столбец при фиксированном активном полюсе — функция.",
+  "A cell is a graph point; a fixed-active slice is a function.":
+    "Ячейка — точка графика отображения; срез при фиксированном активном полюсе — функция.",
   "A cell is not a concept, word meaning, neuron, learned parameter, skill, truth value, or intelligence unit. Semantics and authority require separate evidence layers.":
     "Ячейка — не понятие, не значение слова, не нейрон, не обученный параметр, не навык, не значение истинности и не единица интеллекта. Для семантики и полномочий требуются отдельные слои доказательств.",
   "A k-operand expression uses k−1 binary cells. For STAR, changing the tree can change the result, so a list of operands is not a complete program.":
@@ -43,8 +43,8 @@ export const mathExtraRu: TranslationDictionary = {
     "Каждая пара «строка–столбец» — одна входная координата бинарного закона Кэли. Порядок сохраняется, даже если результаты совпадают.",
   "FINITE TRANSFORMATIONS AND SYMMETRY": "КОНЕЧНЫЕ ПРЕОБРАЗОВАНИЯ И СИММЕТРИЯ",
   "FOUR TYPED ACTION FAMILIES": "ЧЕТЫРЕ ТИПИЗИРОВАННЫХ СЕМЕЙСТВА ДЕЙСТВИЙ",
-  "Fixing the family and active pole turns the source-to-target column into a unary transformation. Those transformations compose into routes; the 560 cells are their atomic graph records, not the routes themselves.":
-    "Фиксация семейства и активного полюса превращает столбец отображения «исходное состояние → целевое состояние» в унарное преобразование. Такие преобразования компонуются в маршруты; 560 ячеек — атомарные записи их графиков, а не сами маршруты.",
+  "Fixing the family and active pole turns the source-to-target slice into a unary transformation. Those transformations compose into routes; the 560 coordinates are their atomic graph records, not the routes themselves.":
+    "Фиксация семейства и активного полюса превращает срез отображения «исходное состояние → целевое состояние» в унарное преобразование. Такие преобразования компонуются в маршруты; 560 координат — атомарные записи их графиков, а не сами маршруты.",
   "For a declared map φ: Q_n → Q_m and every tested family F, the following square must commute:":
     "Для заданного отображения φ: Q_n → Q_m и каждого проверяемого семейства F следующая диаграмма должна быть коммутативной:",
   "Formula / invariant": "Формула / инвариант",
@@ -57,12 +57,12 @@ export const mathExtraRu: TranslationDictionary = {
   "Frozen operator laws; contextual composition still needs its alignment receipt.":
     "Зафиксированные законы операторов; для контекстной композиции всё равно требуется LevelAlignmentReceipt.",
   "INTERACTIVE CELL ANATOMY": "ИНТЕРАКТИВНАЯ АНАТОМИЯ ЯЧЕЙКИ",
-  "L1–L7 derivation of 560 canonical typed cells": "Вывод 560 канонических типизированных ячеек для L1–L7",
+  "L1–L7 derivation of 560 oriented typed coordinates": "Вывод 560 ориентированных типизированных координат для L1–L7",
   "L1–L7 total": "Итого по L1–L7",
   "LEFT and RIGHT do not invent a third law. They record which role—source or active—occupies each table axis.":
     "LEFT и RIGHT не вводят третий закон. Они фиксируют, какая роль — source или active — занимает каждую ось таблицы Кэли.",
-  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 law-table cells become 560 canonical transition coordinates.":
-    "LEFT и RIGHT удваивают типизированную идентичность, а не численный закон Кэли. Поэтому 280 ячеек таблиц законов превращаются в 560 канонических координат переходов.",
+  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 raw law coordinates become 560 oriented typed transition coordinates.":
+    "LEFT и RIGHT удваивают типизированную идентичность, а не численный закон Кэли. Поэтому 280 исходных координат двух законов превращаются в 560 ориентированных типизированных координат переходов.",
   "LEFT and RIGHT say who occupies each Cayley-table axis.":
     "LEFT и RIGHT указывают, какая роль занимает каждую ось таблицы Кэли.",
   "Level L_n contains n poles. The level fixes the finite carrier before any table lookup occurs.":
@@ -100,8 +100,8 @@ export const mathExtraRu: TranslationDictionary = {
   "States from different carriers cannot enter the same Cayley cell directly. A cross-level map must preserve the declared typed operations on its stated domain and disclose every lost observable.":
     "Состояния из разных носителей нельзя напрямую подавать в одну ячейку Кэли. Межуровневое отображение должно сохранять заявленные типизированные операции на указанной области определения и явно раскрывать каждую утраченную наблюдаемую величину.",
   "Strong frozen-law morphism": "Сильный морфизм зафиксированных законов",
-  "THE 560 CANONICAL CELLS": "560 КАНОНИЧЕСКИХ ЯЧЕЕК",
-  "The 560 cells": "560 ячеек",
+  "THE 560 ORIENTED TYPED COORDINATES": "560 ОРИЕНТИРОВАННЫХ ТИПИЗИРОВАННЫХ КООРДИНАТ",
+  "The 560 coordinates": "560 координат",
   "The Catalan count is 1, 2, 5, and 14 for arities 2, 3, 4, and 5 respectively.":
     "Числа Каталана равны 1, 2, 5 и 14 соответственно для арностей 2, 3, 4 и 5.",
   "The active pole is placed on the left. An active P0 activates the reset row; this can change the target relative to STAR_LEFT.":
@@ -110,8 +110,8 @@ export const mathExtraRu: TranslationDictionary = {
     "Активный полюс выбирает строку PLUS. Благодаря коммутативности целевое состояние совпадает с PLUS_LEFT, но типизированная координата не совпадает.",
   "The frozen PLUS and STAR laws do not change. The action family preserves the semantic roles source and active while mapping them to the raw left and right operands.":
     "Зафиксированные законы PLUS и STAR не меняются. Семейство действий сохраняет семантические роли source и active, сопоставляя их левому и правому операндам исходного закона.",
-  "The full 560-cell catalogue is not executed in every episode.":
-    "Полный каталог из 560 ячеек не исполняется в каждом эпизоде.",
+  "The full 560-coordinate catalogue is not executed in every episode.":
+    "Полный каталог из 560 координат не исполняется в каждом эпизоде.",
   "The image of every state used by the composition.": "Образ каждого состояния, используемого в композиции.",
   "The mathematical catalogue counts L1–L7. In the current operational whole-tower scope, L1 is CONTROL_ONLY and L2–L7 are active.":
     "Математический каталог учитывает L1–L7. В текущей операционной области полной башни L1 имеет статус CONTROL_ONLY, а L2–L7 активны.",
@@ -132,12 +132,13 @@ export const mathExtraRu: TranslationDictionary = {
   "active nontrivial transfers": "активные нетривиальные переносы",
   "minimal fix": "минимальное исправление",
   "same-level automorphisms across L1–L7": "автоморфизмов одного уровня суммарно по L1–L7",
-  "structural orbits of the 560 typed cells": "структурных орбит 560 типизированных ячеек",
+  "fibrewise structural orbits of the 560 oriented typed coordinates":
+    "послойных структурных орбит 560 ориентированных типизированных координат",
 };
 
 export const mathExtraZh: TranslationDictionary = {
-  "A cell is a graph point; a fixed-active column is a function.":
-    "单元格是函数图像上的一个点；固定活动极后，对应的列就是一个函数。",
+  "A cell is a graph point; a fixed-active slice is a function.":
+    "单元格是函数图像上的一个点；固定活动极后，对应的切片就是一个函数。",
   "A cell is not a concept, word meaning, neuron, learned parameter, skill, truth value, or intelligence unit. Semantics and authority require separate evidence layers.":
     "单元格不是概念、词义、神经元、学习所得的参数、技能、真值或智能单位。语义和权限需要独立的证据层。",
   "A k-operand expression uses k−1 binary cells. For STAR, changing the tree can change the result, so a list of operands is not a complete program.":
@@ -176,8 +177,8 @@ export const mathExtraZh: TranslationDictionary = {
     "每个“行—列”对都是二元凯莱运算律的一个输入坐标。即使输出相同，顺序仍会保留。",
   "FINITE TRANSFORMATIONS AND SYMMETRY": "有限变换与对称性",
   "FOUR TYPED ACTION FAMILIES": "四个类型化动作族",
-  "Fixing the family and active pole turns the source-to-target column into a unary transformation. Those transformations compose into routes; the 560 cells are their atomic graph records, not the routes themselves.":
-    "固定动作族和活动极后，从源到目标的列就成为一元变换。这些变换可组合成路径；560 个单元格是它们的原子图记录，而不是路径本身。",
+  "Fixing the family and active pole turns the source-to-target slice into a unary transformation. Those transformations compose into routes; the 560 coordinates are their atomic graph records, not the routes themselves.":
+    "固定动作族和活动极后，从源到目标的切片就成为一元变换。这些变换可组合成路径；560 个坐标是它们的原子图记录，而不是路径本身。",
   "For a declared map φ: Q_n → Q_m and every tested family F, the following square must commute:":
     "对于声明的映射 φ: Q_n → Q_m 以及每个受检动作族 F，下列方块必须可交换：",
   "Formula / invariant": "公式 / 不变量",
@@ -190,12 +191,12 @@ export const mathExtraZh: TranslationDictionary = {
   "Frozen operator laws; contextual composition still needs its alignment receipt.":
     "冻结运算律；上下文组合仍需相应的对齐回执。",
   "INTERACTIVE CELL ANATOMY": "交互式单元格剖析",
-  "L1–L7 derivation of 560 canonical typed cells": "L1–L7 的 560 个规范类型化单元格推导",
+  "L1–L7 derivation of 560 oriented typed coordinates": "L1–L7 的 560 个有向类型化坐标推导",
   "L1–L7 total": "L1–L7 合计",
   "LEFT and RIGHT do not invent a third law. They record which role—source or active—occupies each table axis.":
     "LEFT 和 RIGHT 并未引入第三种运算律。它们记录 source 或 active 哪一角色占据各个表轴。",
-  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 law-table cells become 560 canonical transition coordinates.":
-    "LEFT 和 RIGHT 复制的是类型化身份，而不是数值凯莱运算律。正因如此，280 个运算律表单元格形成 560 个规范转换坐标。",
+  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 raw law coordinates become 560 oriented typed transition coordinates.":
+    "LEFT 和 RIGHT 复制的是类型化身份，而不是数值凯莱运算律。正因如此，280 个原始运算律坐标形成 560 个有向类型化转换坐标。",
   "LEFT and RIGHT say who occupies each Cayley-table axis.": "LEFT 和 RIGHT 说明谁占据凯莱表的每条轴。",
   "Level L_n contains n poles. The level fixes the finite carrier before any table lookup occurs.":
     "层级 L_n 包含 n 个极。在任何查表发生之前，层级就已固定有限载体集。",
@@ -231,8 +232,8 @@ export const mathExtraZh: TranslationDictionary = {
   "States from different carriers cannot enter the same Cayley cell directly. A cross-level map must preserve the declared typed operations on its stated domain and disclose every lost observable.":
     "来自不同载体集的状态不能直接进入同一个凯莱单元格。跨层映射必须在其声明域上保持所声明的类型化运算，并披露每个丢失的可观测量。",
   "Strong frozen-law morphism": "强冻结运算律态射",
-  "THE 560 CANONICAL CELLS": "560 个规范单元格",
-  "The 560 cells": "560 个单元格",
+  "THE 560 ORIENTED TYPED COORDINATES": "560 个有向类型化坐标",
+  "The 560 coordinates": "560 个坐标",
   "The Catalan count is 1, 2, 5, and 14 for arities 2, 3, 4, and 5 respectively.":
     "当元数分别为 2、3、4、5 时，卡特兰数依次为 1、2、5、14。",
   "The active pole is placed on the left. An active P0 activates the reset row; this can change the target relative to STAR_LEFT.":
@@ -241,7 +242,7 @@ export const mathExtraZh: TranslationDictionary = {
     "活动极选择 PLUS 行。由于交换律，目标与 PLUS_LEFT 相同，但类型化坐标不同。",
   "The frozen PLUS and STAR laws do not change. The action family preserves the semantic roles source and active while mapping them to the raw left and right operands.":
     "冻结的 PLUS 和 STAR 运算律不会改变。动作族保留 source 和 active 的语义角色，同时将它们映射到原始的左、右操作数。",
-  "The full 560-cell catalogue is not executed in every episode.": "并非每次运行都会执行完整的 560 单元格目录。",
+  "The full 560-coordinate catalogue is not executed in every episode.": "并非每个回合都会执行完整的 560 坐标目录。",
   "The image of every state used by the composition.": "组合所使用的每个状态的像。",
   "The mathematical catalogue counts L1–L7. In the current operational whole-tower scope, L1 is CONTROL_ONLY and L2–L7 are active.":
     "数学目录统计 L1–L7。在当前整塔运行范围内，L1 为 CONTROL_ONLY，L2–L7 处于活动状态。",
@@ -261,12 +262,12 @@ export const mathExtraZh: TranslationDictionary = {
   "active nontrivial transfers": "有效的非平凡传输",
   "minimal fix": "最小修复",
   "same-level automorphisms across L1–L7": "L1–L7 内的同层自同构",
-  "structural orbits of the 560 typed cells": "560 个类型化单元格的结构轨道",
+  "fibrewise structural orbits of the 560 oriented typed coordinates": "560 个有向类型化坐标的逐纤维结构轨道",
 };
 
 export const mathExtraAr: TranslationDictionary = {
-  "A cell is a graph point; a fixed-active column is a function.":
-    "الخلية نقطة على رسم دالة؛ والعمود ذو القطب النشط الثابت دالة.",
+  "A cell is a graph point; a fixed-active slice is a function.":
+    "الخلية نقطة على رسم دالة؛ والشريحة ذات القطب النشط الثابت دالة.",
   "A cell is not a concept, word meaning, neuron, learned parameter, skill, truth value, or intelligence unit. Semantics and authority require separate evidence layers.":
     "الخلية ليست مفهومًا، أو معنى كلمة، أو عصبونًا، أو مُعلَمة متعلَّمة، أو مهارة، أو قيمة صدق، أو وحدة ذكاء. تتطلب الدلالات والصلاحية طبقات أدلة مستقلة.",
   "A k-operand expression uses k−1 binary cells. For STAR, changing the tree can change the result, so a list of operands is not a complete program.":
@@ -306,8 +307,8 @@ export const mathExtraAr: TranslationDictionary = {
     "كل زوج صف وعمود هو إحداثي إدخال واحد لقانون كايلي ثنائي. ويُحتفظ بالترتيب حتى عندما تتطابق المخرجات.",
   "FINITE TRANSFORMATIONS AND SYMMETRY": "التحويلات المنتهية والتناظر",
   "FOUR TYPED ACTION FAMILIES": "عائلات الإجراءات الأربع محددة الأنواع",
-  "Fixing the family and active pole turns the source-to-target column into a unary transformation. Those transformations compose into routes; the 560 cells are their atomic graph records, not the routes themselves.":
-    "يحوّل تثبيت العائلة والقطب النشط عمود المصدر إلى الهدف إلى تحويل أحادي. وتتركب هذه التحويلات في مسارات؛ أما الخلايا الـ560 فهي سجلاتها البيانية الذرية وليست المسارات نفسها.",
+  "Fixing the family and active pole turns the source-to-target slice into a unary transformation. Those transformations compose into routes; the 560 coordinates are their atomic graph records, not the routes themselves.":
+    "يحوّل تثبيت العائلة والقطب النشط شريحة المصدر إلى الهدف إلى تحويل أحادي. وتتركب هذه التحويلات في مسارات؛ أما الإحداثيات الـ560 فهي سجلاتها البيانية الذرية وليست المسارات نفسها.",
   "For a declared map φ: Q_n → Q_m and every tested family F, the following square must commute:":
     "بالنسبة إلى تطبيق معلن φ: Q_n → Q_m ولكل عائلة مختبرة F، يجب أن يكون المربع الآتي تبادليًا:",
   "Formula / invariant": "الصيغة / الثابت",
@@ -320,12 +321,12 @@ export const mathExtraAr: TranslationDictionary = {
   "Frozen operator laws; contextual composition still needs its alignment receipt.":
     "قوانين المؤثرات المجمّدة؛ ولا يزال التركيب السياقي يحتاج إلى إيصال المحاذاة الخاص به.",
   "INTERACTIVE CELL ANATOMY": "تشريح تفاعلي للخلية",
-  "L1–L7 derivation of 560 canonical typed cells": "اشتقاق 560 خلية معيارية محددة النوع للمستويات L1–L7",
+  "L1–L7 derivation of 560 oriented typed coordinates": "اشتقاق 560 إحداثيًا موجّهًا محدد النوع للمستويات L1–L7",
   "L1–L7 total": "مجموع L1–L7",
   "LEFT and RIGHT do not invent a third law. They record which role—source or active—occupies each table axis.":
     "لا تستحدث LEFT وRIGHT قانونًا ثالثًا. بل تسجلان أي دور — source أو active — يشغل كل محور في الجدول.",
-  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 law-table cells become 560 canonical transition coordinates.":
-    "تكرر LEFT وRIGHT الهوية محددة النوع، لا قانون كايلي العددي. ولهذا تتحول 280 خلية من جداول القوانين إلى 560 إحداثيًا معياريًا للانتقال.",
+  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 raw law coordinates become 560 oriented typed transition coordinates.":
+    "تكرر LEFT وRIGHT الهوية محددة النوع، لا قانون كايلي العددي. ولهذا تتحول 280 إحداثيًا خامًا للقانون إلى 560 إحداثيًا موجّهًا محدد النوع للانتقال.",
   "LEFT and RIGHT say who occupies each Cayley-table axis.": "تحدد LEFT وRIGHT من يشغل كل محور في جدول كايلي.",
   "Level L_n contains n poles. The level fixes the finite carrier before any table lookup occurs.":
     "يحتوي المستوى L_n على n أقطاب. ويثبت المستوى المجموعة الحاملة المنتهية قبل أي بحث في الجدول.",
@@ -362,8 +363,8 @@ export const mathExtraAr: TranslationDictionary = {
   "States from different carriers cannot enter the same Cayley cell directly. A cross-level map must preserve the declared typed operations on its stated domain and disclose every lost observable.":
     "لا يمكن إدخال حالات من مجموعات حاملة مختلفة مباشرة في خلية كايلي واحدة. يجب أن يحفظ التطبيق عبر المستويات العمليات محددة الأنواع المعلنة على مجاله المعلن، وأن يكشف كل كمية قابلة للرصد فُقدت.",
   "Strong frozen-law morphism": "مورفزم قوي للقوانين المجمّدة",
-  "THE 560 CANONICAL CELLS": "الخلايا المعيارية الـ560",
-  "The 560 cells": "الخلايا الـ560",
+  "THE 560 ORIENTED TYPED COORDINATES": "الإحداثيات الموجّهة محددة النوع الـ560",
+  "The 560 coordinates": "الإحداثيات الـ560",
   "The Catalan count is 1, 2, 5, and 14 for arities 2, 3, 4, and 5 respectively.":
     "أعداد كاتالان هي 1 و2 و5 و14 لأعداد المُعاملات 2 و3 و4 و5 على التوالي.",
   "The active pole is placed on the left. An active P0 activates the reset row; this can change the target relative to STAR_LEFT.":
@@ -372,8 +373,8 @@ export const mathExtraAr: TranslationDictionary = {
     "يختار القطب النشط صف PLUS. ويطابق الهدف PLUS_LEFT بسبب التبادلية، لكن الإحداثي محدد النوع لا يطابقه.",
   "The frozen PLUS and STAR laws do not change. The action family preserves the semantic roles source and active while mapping them to the raw left and right operands.":
     "لا تتغير قوانين PLUS وSTAR المجمّدة. وتحفظ عائلة الإجراء الدورين الدلاليين source وactive عند ربطهما بالمُعاملين الخام الأيسر والأيمن.",
-  "The full 560-cell catalogue is not executed in every episode.":
-    "لا يُنفذ الكتالوج الكامل للخلايا الـ560 في كل حلقة تشغيل.",
+  "The full 560-coordinate catalogue is not executed in every episode.":
+    "لا يُنفذ الفهرس الكامل المكوّن من 560 إحداثيًا في كل حلقة تشغيل.",
   "The image of every state used by the composition.": "صورة كل حالة مستخدمة في التركيب.",
   "The mathematical catalogue counts L1–L7. In the current operational whole-tower scope, L1 is CONTROL_ONLY and L2–L7 are active.":
     "يعدّ الكتالوج الرياضي المستويات L1–L7. وفي النطاق التشغيلي الحالي للبرج كاملًا، تكون L1 بحالة CONTROL_ONLY وتكون L2–L7 نشطة.",
@@ -394,5 +395,6 @@ export const mathExtraAr: TranslationDictionary = {
   "active nontrivial transfers": "عمليات النقل النشطة غير البديهية",
   "minimal fix": "الإصلاح الأدنى",
   "same-level automorphisms across L1–L7": "التشاكلات الذاتية على المستوى نفسه عبر L1–L7",
-  "structural orbits of the 560 typed cells": "المدارات البنيوية للخلايا الـ560 محددة النوع",
+  "fibrewise structural orbits of the 560 oriented typed coordinates":
+    "المدارات البنيوية الليفية للإحداثيات الموجّهة محددة النوع الـ560",
 };

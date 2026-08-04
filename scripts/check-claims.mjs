@@ -41,6 +41,22 @@ const forbidden = [
   "جاهز للإنتاج",
   "مدعوم من Hub71",
   "لا يهلوس أبداً",
+  "STAR is closed and has right identity P0",
+  "STAR замкнут и имеет правую единицу P0",
+  "no homomorphism L3→L5",
+  "there is no homomorphism L3 to L5",
+  "18-element global automorphism group",
+  "560 formal transition records",
+  "560 formal raw cells",
+  "560 raw Cayley cells",
+  "learned selector",
+  "external truth authenticated",
+  "external operational gain is proven",
+  "fresh FULL passed",
+  "fresh FULL 1,366",
+  "dual-minor PASS",
+  "current trained Atlas is present",
+  "CORE/QUASI/BOUNDARY executable",
 ];
 
 const required = [
@@ -64,6 +80,17 @@ const required = [
   "المكسب التشغيلي الخارجي غير مُثبت.",
   "لا ندّعي تحقيق الذكاء الاصطناعي العام.",
   "rusfbm@gmail.com",
+  "P0 is the unique left zero and unique right-neutral element",
+  "not a two-sided identity or zero",
+  "560 oriented typed transition coordinates",
+  "Zero homomorphism exists between every pair of levels",
+  "compatibility and audit mathematics",
+  "deterministic selector for exactly two fixed source patterns",
+  "bundled finite sample verifies against a release-pinned public key",
+  "stored release evidence; fresh FULL was not run",
+  "единственным левым нулём и единственным правым нейтральным элементом",
+  "唯一的左零元和唯一的右中性元",
+  "الصفر الأيسر الوحيد والعنصر المحايد الوحيد من اليمين",
 ];
 
 async function collect(relativePath) {
