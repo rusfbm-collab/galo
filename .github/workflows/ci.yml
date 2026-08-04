@@ -50,8 +50,8 @@ jobs:
           done
           test "$(curl --fail --silent http://127.0.0.1:8080/healthz)" = "ok"
           curl --fail --silent http://127.0.0.1:8080/ | grep --quiet "<title>GALO AI"
-          curl --fail --silent http://127.0.0.1:8080/evidence | grep --quiet "<title>GALO AI"
-          curl --fail --silent http://127.0.0.1:8080/privacy | grep --quiet "<title>GALO AI"
+          curl --fail --silent http://127.0.0.1:8080/evidence | grep --quiet "<title>Evidence — GALO AI</title>"
+          curl --fail --silent http://127.0.0.1:8080/privacy | grep --quiet "<title>Privacy — GALO AI</title>"
           curl --fail --silent http://127.0.0.1:8080/outside-scope | grep --quiet "<title>GALO AI"
           curl --fail --silent http://127.0.0.1:8080/ru | grep --quiet '<html lang="ru" dir="ltr">'
           curl --fail --silent http://127.0.0.1:8080/zh/evidence | grep --quiet '<title>证据 — GALO AI</title>'
