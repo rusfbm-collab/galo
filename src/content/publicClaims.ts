@@ -1,4 +1,12 @@
-export type PublicClaimStatus = "architecture" | "implemented" | "bounded" | "in-development" | "not-proven";
+export type PublicClaimStatus =
+  | "architecture"
+  | "implemented"
+  | "bounded"
+  | "in-development"
+  | "not-proven"
+  | "not-started"
+  | "not-present"
+  | "not-claimed";
 
 export type PublicClaim = {
   id: string;
@@ -19,7 +27,7 @@ export const publicClaims: PublicClaim[] = [
   },
   {
     id: "C02_FROZEN_560_KERNEL",
-    publicCopy: "The frozen L1–L7 kernel contains 560 formal transition records.",
+    publicCopy: "The formal L1–L7 kernel contains 560 oriented typed transition coordinates.",
     status: "implemented",
     source: "Frozen kernel capability registry",
   },
@@ -49,14 +57,14 @@ export const publicClaims: PublicClaim[] = [
   },
   {
     id: "C07_PERSISTENT_LEARNING_NOT_STARTED",
-    publicCopy: "Persistent policy learning has not started.",
-    status: "not-proven",
+    publicCopy: "Persistent policy learning in the current V4 runtime has not started.",
+    status: "not-started",
     source: "Current release status",
   },
   {
     id: "C08_TRAINED_ATLAS_NOT_PRESENT",
-    publicCopy: "A trained Atlas is not present.",
-    status: "not-proven",
+    publicCopy: "A current trained Atlas is not present.",
+    status: "not-present",
     source: "Current release status",
   },
   {
@@ -68,7 +76,25 @@ export const publicClaims: PublicClaim[] = [
   {
     id: "C10_GENERAL_AI_NOT_CLAIMED",
     publicCopy: "General AI is not claimed.",
-    status: "not-proven",
+    status: "not-claimed",
     source: "Current release status",
+  },
+  {
+    id: "C11_DETERMINISTIC_TWO_PATTERN_SELECTOR",
+    publicCopy: "Current V4 uses a deterministic selector for exactly two fixed source patterns.",
+    status: "bounded",
+    source: "Current V4 direct selfcheck",
+  },
+  {
+    id: "C12_RELEASE_PINNED_SAMPLE_INTEGRITY",
+    publicCopy: "The bundled finite sample verifies against a release-pinned public key.",
+    status: "bounded",
+    source: "Current V4 release contract",
+  },
+  {
+    id: "C13_STORED_FULL_NOT_FRESH",
+    publicCopy: "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.",
+    status: "bounded",
+    source: "Stored FULL terminal receipt and fresh replay log",
   },
 ];

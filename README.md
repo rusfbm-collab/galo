@@ -4,12 +4,12 @@ Multilingual public surface for GALO AI at `https://aigalo.com`. English, Russia
 
 ## Language routes
 
-| Language           | Home  | Mathematics | Evidence       | Privacy       |
-| ------------------ | ----- | ----------- | -------------- | ------------- |
-| English            | `/`   | `/math`     | `/evidence`    | `/privacy`    |
-| Russian            | `/ru` | `/ru/math`  | `/ru/evidence` | `/ru/privacy` |
-| Simplified Chinese | `/zh` | `/zh/math`  | `/zh/evidence` | `/zh/privacy` |
-| Arabic             | `/ar` | `/ar/math`  | `/ar/evidence` | `/ar/privacy` |
+| Language           | Home  | Mathematics | Symmetry       | Evidence       | Privacy       |
+| ------------------ | ----- | ----------- | -------------- | -------------- | ------------- |
+| English            | `/`   | `/math`     | `/symmetry`    | `/evidence`    | `/privacy`    |
+| Russian            | `/ru` | `/ru/math`  | `/ru/symmetry` | `/ru/evidence` | `/ru/privacy` |
+| Simplified Chinese | `/zh` | `/zh/math`  | `/zh/symmetry` | `/zh/evidence` | `/zh/privacy` |
+| Arabic             | `/ar` | `/ar/math`  | `/ar/symmetry` | `/ar/evidence` | `/ar/privacy` |
 
 The build writes a localized HTML entry for every route with matching `lang`, direction, canonical URL, and reciprocal `hreflang` metadata. Arabic routes use RTL layout while exact machine tokens, hashes, IDs, metrics, and receipt JSON remain LTR and unchanged.
 
@@ -51,7 +51,7 @@ Expected health response: `ok` with HTTP 200.
 3. Configure the GitHub token or webhook in the Amvera interface. Do not commit a token to this repository.
 4. Keep the target event consistent between GitHub and Amvera. A push to `main` can trigger pull/build automatically.
 5. Amvera reads `amvera.yaml`, builds `Dockerfile`, and routes to container port 80.
-6. Confirm `/healthz`, the 16 localized routes above, and an unknown path after the first deployment.
+6. Confirm `/healthz`, the 20 localized routes above, and an unknown path after the first deployment.
 
 ## GitHub webhook checklist
 

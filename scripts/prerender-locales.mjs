@@ -25,6 +25,12 @@ const locales = {
         description:
           "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.",
       },
+      symmetry: {
+        path: "symmetry",
+        title: "GALO Symmetry — Automorphisms, Orbits, and Burnside",
+        description:
+          "Explore the distinct PLUS and STAR symmetry layers, unit automorphisms, affine boundaries, orbits, stabilizers, Burnside counts, and cross-level homomorphisms.",
+      },
       evidence: {
         path: "evidence",
         title: "Evidence — GALO AI",
@@ -57,6 +63,12 @@ const locales = {
         description:
           "Изучите конечные таблицы Кэли PLUS и STAR, точные формулы, ориентации исполнения и раскрытые границы формального ядра GALO.",
       },
+      symmetry: {
+        path: "symmetry",
+        title: "Симметрии GALO — автоморфизмы, орбиты и лемма Бёрнсайда",
+        description:
+          "Раздельный анализ симметрий PLUS и STAR: автоморфизмы, аффинные границы, орбиты, стабилизаторы, лемма Бёрнсайда и межуровневые гомоморфизмы.",
+      },
       evidence: {
         path: "evidence",
         title: "Доказательства — GALO AI",
@@ -87,6 +99,11 @@ const locales = {
         title: "GALO 数学 — PLUS 与 STAR 凯莱表",
         description: "探索有限的 PLUS 与 STAR 凯莱表、精确公式、执行方向以及 GALO 形式内核已披露的边界。",
       },
+      symmetry: {
+        path: "symmetry",
+        title: "GALO 对称性 — 自同构、轨道与伯恩赛德引理",
+        description: "分别探索 PLUS 与 STAR 的对称层、单位自同构、仿射边界、轨道、稳定子、伯恩赛德计数和跨层同态。",
+      },
       evidence: {
         path: "evidence",
         title: "证据 — GALO AI",
@@ -116,6 +133,12 @@ const locales = {
         title: "رياضيات GALO — جدولا كايلي PLUS وSTAR",
         description:
           "استكشف جدولي كايلي المحدودين PLUS وSTAR، والصيغ الدقيقة، واتجاهات التنفيذ، والحدود المعلنة للنواة الشكلية في GALO.",
+      },
+      symmetry: {
+        path: "symmetry",
+        title: "تناظرات GALO — التشاكلات الذاتية والمدارات ولمّة برنسايد",
+        description:
+          "استكشف طبقتي تناظر PLUS وSTAR كلًا على حدة، والتشاكلات الذاتية، والحدود الأفينية، والمدارات، والمثبتات، وعدّ برنسايد، والتشاكلات بين المستويات.",
       },
       evidence: {
         path: "evidence",

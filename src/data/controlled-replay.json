@@ -1,65 +1,70 @@
 {
-  "title": "Recorded bounded-execution receipt",
-  "disclaimer": "Controlled architecture walkthrough — not a live model, grounded reasoning demo, or external benchmark.",
+  "title": "Recorded R5B6A1_3 bounded-execution receipt",
+  "disclaimer": "Sanitized current-V4 receipt replay — deterministic, limited to two fixed source patterns, and not a live model or external benchmark.",
   "isLive": false,
   "externalBenchmark": false,
-  "observationConditioned": false,
+  "observationConditioned": "TWO_FIXED_PATTERNS_ONLY",
   "steps": [
     {
-      "id": "envelope",
+      "id": "source",
       "index": "01",
-      "label": "Public observation envelope recorded",
+      "label": "Bundled sample verified against the pinned release key",
       "status": "PASS",
-      "receipt": "c9fdc485e612462736e5a65b7b1fe5a776f8b77d8c324d528ff68b5df4f18b0e",
-      "payload": { "hiddenTargetAccess": 0, "semanticConditioning": "NOT_IMPLEMENTED" }
+      "receipt": "6d27944f0f5860ae872a799b544207c63f462c3e830b720370436a0706b57250",
+      "payload": { "freshAuthorityCount": 2, "freshStoreCount": 2, "externalOriginProven": false }
     },
     {
-      "id": "universe",
+      "id": "ontology",
       "index": "02",
-      "label": "Finite candidate universe committed",
+      "label": "Closed two-pattern source ontology admitted",
       "status": "PASS",
-      "receipt": "01d8f6add625391c0ee196bede2ad809036c6657969d9e2440f5a377e2450c2f",
-      "payload": { "candidateRecords": 1204, "coverageCells": 756, "scope": "binary / one-step" }
+      "receipt": "17cd256919abb03b5b38b9149ade200514deaad8eb1f3cb85569e06d6d7a8d60",
+      "payload": { "patterns": ["alpha,beta", "gamma,delta"], "arbitraryFreeText": false }
     },
     {
-      "id": "membership",
+      "id": "selector",
       "index": "03",
-      "label": "Executable handle bound to universe membership",
+      "label": "Deterministic 440-candidate frontier selected",
       "status": "PASS",
-      "receipt": "59e097da7a38beb107400272f8fdee3cbf9778377cb5c66fd487c7dd78dde3ab",
-      "payload": { "nonMemberPolicy": "REJECT", "handleUse": "single" }
+      "receipt": "963b78a0413adca0631f02ae7596001d51e91ff1faffe3196ea79b47c326e827",
+      "payload": { "candidateUniverse": 1204, "executable": 880, "frontier": 440, "atlasRankEffects": 0 }
     },
     {
-      "id": "execution",
+      "id": "episode",
       "index": "04",
-      "label": "One-shot action executed under budget",
+      "label": "Integrated one-step source-to-action episode executed",
       "status": "PASS",
-      "receipt": "bcbf0676a37f378e4a878549f1c86078fdde93fabcdc1e809da6835b2bea5c83",
-      "payload": { "budgetBound": true, "atomicRollback": true }
+      "receipt": "7868b3b6f5c2c3c62e5e1a89c57afc7b68b7911c4f7b5863ddfca7a502c57b22",
+      "payload": { "scope": "binary / one-step / L2-L7", "l1": "control-only", "multiStep": false }
     },
     {
       "id": "ledger",
       "index": "05",
-      "label": "Receipt-derived work ledger resolved",
+      "label": "Receipt-derived phase work ledger reconciled",
       "status": "PASS",
-      "receipt": "df8920b9a7b33eb6311d96f3238566a8713267c204469c462d77f3024d0a406b",
-      "payload": { "workAccounting": "receipt-derived", "scope": "occurrence" }
+      "receipt": "8f9a85c151eca72dedc0f6b30c7b5ea09a1beeea228a1913b01a61c5114258ed",
+      "payload": { "physicalWorkUnits": 4802, "outcomeEvaluation": 0, "policyUpdate": 0 }
     },
     {
       "id": "terminal",
       "index": "06",
-      "label": "Terminal result preserved with a boundary",
+      "label": "Terminal release status preserved with disclosed boundaries",
       "status": "BOUNDARY",
-      "receipt": "08769f10c1b001c06b33245079271c8aa651d873e5d29ff4033d87ab37e58f62",
-      "payload": { "resultAlphabet": ["PASS", "REJECT", "BOUNDARY"], "authorizesLearning": false }
+      "receipt": "5046b87d78373c6f9b3f707923f3b00fc9c2f013ae23c3e4d41313413f47d456",
+      "payload": {
+        "freshStatic": "PASS",
+        "freshFast": "PASS",
+        "freshFull": "NOT_COMPLETED",
+        "externalGain": "NOT_PROVEN"
+      }
     }
   ],
   "target": [
-    "Authenticated external source",
-    "Observation-conditioned admissibility",
-    "Oracle-free action selection",
-    "Multi-step proof state",
-    "Persistent policy sidecar",
-    "Partner-grade evaluator"
+    "Persistent trusted manifest head",
+    "Python process capability isolation",
+    "CPython 3.13 replay",
+    "Arbitrary free-text semantic noninterference",
+    "Multi-step trajectory and probe-response loop",
+    "Preregistered partner evaluator before policy learning"
   ]
 }

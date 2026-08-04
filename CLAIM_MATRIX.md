@@ -1,34 +1,39 @@
 # Public claim matrix
 
-Archive fingerprint used for this release: `03aebd6bdfe13ded06863d3cc2cca4280c9dd0d67285df312c1856b13594d62f`.
+Release: `R5B6A1_3`
+Archive SHA-256: `64506fbf19caac52fb8c44cebcc3fc4f8f1cfae959a5e75db3e63e3073716de9`
 
-The matrix records the public copy contract. Sanitized source names are used deliberately; the internal research archive is not published with the website.
+The matrix is a public-copy contract. Formal mathematics, compatibility/audit material, and current V4 runtime capability are separate evidence classes. Its `E` identifiers namespace evidence constraints; the rendered public-claim registry uses the separate, descriptive `Cxx_*` identifiers in `src/content/publicClaims.ts`.
 
-| ID  | Public claim                                                                                           | Status          | Public scope                                        | Forbidden expansion                                  |
-| --- | ------------------------------------------------------------------------------------------------------ | --------------- | --------------------------------------------------- | ---------------------------------------------------- |
-| C01 | GALO is a standalone research architecture for explicit world state and bounded, replayable execution. | architecture    | Architecture statement, not proof of broad autonomy | Fully autonomous world-model system                  |
-| C02 | The frozen L1–L7 kernel contains 560 formal transition records.                                        | implemented     | Execution alphabet only                             | 560 meanings or forms of intelligence                |
-| C03 | The architecture specifies a versioned World Atlas.                                                    | architecture    | Schemas and design; trained Atlas absent            | The Atlas already learns or remembers across domains |
-| C04 | Current bounded actions use typed execution contracts and receipts.                                    | bounded         | Declared formal execution scope                     | Arbitrary observations become verified programs      |
-| C05 | 1,204 commitments cover 756 cells in the declared binary, one-step scope.                              | bounded         | Finite current scope                                | All possible reasoning or strategies                 |
-| C06 | Executable handles are bound to membership in the committed finite universe.                           | implemented     | Membership law only                                 | Real-world action validity                           |
-| C07 | The current handle is single-use and enforces a bounded budget.                                        | implemented     | One-shot mechanics                                  | Autonomous multi-step planning                       |
-| C08 | Candidate and budget state roll back atomically on bounded-path failure.                               | implemented     | Current execution contract                          | Recovery from any agent failure                      |
-| C09 | Work accounting is reconstructed from execution receipts.                                              | implemented     | Current occurrence scope                            | Proof of external causal efficiency                  |
-| C10 | The release records 1,277 of 1,277 regression checks passing.                                          | stored-evidence | Reproducibility and consistency                     | Intelligence, customer value, or external gain       |
-| C11 | The current runtime wheel excludes legacy/oracle modules under its declared policy.                    | bounded         | Runtime artifact only                               | Entire research archive is oracle-free               |
-| C12 | Authenticated external-source provenance is not implemented.                                           | not-implemented | Current boundary                                    | All observations are authenticated                   |
-| C13 | Oracle-free action selection is not proven.                                                            | not-proven      | Current boundary                                    | Hidden-information-free selection                    |
-| C14 | Observation-conditioned structural reasoning is not implemented.                                       | not-implemented | Candidate census is observation-invariant           | Live grounded reasoning demo                         |
-| C15 | Persistent policy learning has not started; a trained Atlas is not present.                            | not-started     | Current boundary                                    | Continuous or persistent learning                    |
-| C16 | External operational gain and General AI are not claimed.                                              | not-proven      | Current boundary                                    | AGI, human-level, replacement, universal superiority |
+| ID  | Public claim                                                                                          | Status          | Exact scope                                                    | Forbidden expansion                                   |
+| --- | ----------------------------------------------------------------------------------------------------- | --------------- | -------------------------------------------------------------- | ----------------------------------------------------- |
+| E01 | GALO is a standalone research architecture for explicit world state and bounded replayable execution. | architecture    | Architecture statement                                         | Fully autonomous world-model system                   |
+| E02 | The L1–L7 formal kernel has 560 oriented typed transition coordinates.                                | derived         | 140 ordered coordinates × 2 laws × 2 operand-role orientations | Raw Cayley cells, concepts, neurons, or intelligence  |
+| E03 | The formal catalogue has 280 law coordinates; runtime-active L2–L7 has 556 typed coordinates.         | derived         | Finite algebra and current whole-tower scope                   | Every formal coordinate executes in each episode      |
+| E04 | Current V4 commits 1,204 descriptors, of which 880 are executable.                                    | implemented     | Binary, one-step; four executable kinds                        | All strategies or arbitrary programs                  |
+| E05 | Each of two fixed source patterns exposes a 440-candidate parity frontier.                            | bounded         | Closed ontology only                                           | Learned selection or arbitrary semantic reasoning     |
+| E06 | The bundled finite sample verifies against a release-pinned public key.                               | bounded         | Integrity relative to the shipped key                          | Independent external origin or truth                  |
+| E07 | Current handles are universe-bound and single-use, with process-local rollback and revocation checks. | implemented     | Current V4 process                                             | Persistent trust state or OS sandboxing               |
+| E08 | Receipt-derived phase accounting reconciles 4,802 internal work-unit IDs.                             | implemented     | Six internal receipt partitions                                | Time, FLOPS, energy, speedup, savings, or gain        |
+| E09 | Fresh STATIC and FAST verification passed.                                                            | fresh-evidence  | This review, CPython 3.12.13                                   | A fresh FULL or CPython 3.13 result                   |
+| E10 | The stored FULL receipt records 1,366/1,366 checks across 131 modules.                                | stored-evidence | Stored immutable release evidence                              | Fresh FULL, intelligence, or external gain            |
+| E11 | The current V4 selector performs zero Atlas semantic reads, rank effects, and learning writes.        | bounded         | Current selector only                                          | No historical training artifact ever existed          |
+| E12 | The compatibility morphism replay is not part of the current V4 wheel.                                | boundary        | Legacy/audit mathematics                                       | A current runtime level-transfer API                  |
+| E13 | Persistent trusted manifest head is not implemented.                                                  | not-implemented | Trust persistence                                              | Durable source custody                                |
+| E14 | Python process capability isolation is not proven.                                                    | not-proven      | Runtime isolation                                              | Secure process sandbox                                |
+| E15 | CPython 3.13 replay is blocked by runtime availability.                                               | blocked         | Environment boundary                                           | A pass or a product defect                            |
+| E16 | Arbitrary free-text semantic noninterference is not proven.                                           | not-proven      | Two fixed source patterns only                                 | General natural-language admissibility                |
+| E17 | Persistent policy learning is not started; a current trained Atlas is not present.                    | not-started     | Current V4 release                                             | Continuous learning                                   |
+| E18 | External outcome, operational gain, and General AI are not proven or claimed.                         | not-proven      | Current terminal boundary                                      | AGI, human-level ability, customer value, superiority |
 
-## Claim invariant
+## Claim invariants
 
 ```text
-PUBLIC_CURRENT ⊆ ALLOWED_CURRENT_CLAIMS
-ARCHITECTURE_TARGET ≠ CURRENT_IMPLEMENTATION
-REGRESSION_PASS ≠ EXTERNAL_INTELLIGENCE_OR_GAIN
+FORMAL_MATHEMATICS ≠ COMPATIBILITY_AUDIT ≠ CURRENT_V4_RUNTIME
+STORED_FULL_PASS ≠ FRESH_FULL_PASS
+PINNED_KEY_INTEGRITY ≠ INDEPENDENT_EXTERNAL_TRUTH
+INTERNAL_WORK_UNITS ≠ EXTERNAL_OPERATIONAL_GAIN
+REGRESSION_PASS ≠ INTELLIGENCE
 ```
 
-`npm run claims:check` enforces forbidden phrases and required boundary copy in public source.
+`npm run claims:check` enforces both general and mathematics-specific forbidden phrases and required boundary copy in public source. `npm run claims:artifact` repeats the forbidden-content check against the compiled site.

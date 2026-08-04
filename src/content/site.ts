@@ -35,6 +35,7 @@ export const siteContent = {
     { label: "Why GALO", href: "/#why-galo" },
     { label: "Architecture", href: "/#architecture" },
     { label: "Mathematics", href: "/math" },
+    { label: "Symmetry", href: "/symmetry" },
     { label: "Receipt", href: "/#receipt" },
     { label: "Evidence", href: "/evidence" },
     { label: "Evaluation", href: "/#evaluation" },

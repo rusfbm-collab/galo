@@ -1,4 +1,7 @@
 import type { TranslationDictionary } from "../translations";
+import { academicAr } from "./academicAr";
+import { academicRu } from "./academicRu";
+import { academicZh } from "./academicZh";
 import { mathExtraAr, mathExtraRu, mathExtraZh } from "./mathExtras";
 
 export const mathRu: TranslationDictionary = {
@@ -53,14 +56,11 @@ export const mathRu: TranslationDictionary = {
   "STAR reset example at L3": "Пример сброса STAR на L3",
   "The P0 row is constant under STAR: P0 is a left reset.": "Строка P0 постоянна в STAR: P0 является левым сбросом.",
   "TWO FROZEN OPERATORS": "ДВА ЗАФИКСИРОВАННЫХ ОПЕРАТОРА",
-  "PLUS and STAR share a carrier, but not an algebraic structure.":
+  "PLUS and STAR share a carrier; their reducts are different algebraic structures.":
     "PLUS и STAR имеют общий носитель, но разные алгебраические структуры.",
   "PLUS / CYCLIC GROUP": "PLUS / ЦИКЛИЧЕСКАЯ ГРУППА",
   "PLUS is closed and associative, P0 is the identity, and every pole has an inverse. It is the cyclic group C_n on the pole indices.":
-    "PLUS замкнут и ассоциативен, P0 является единицей, а у каждого полюса есть обратный элемент. На индексах полюсов это циклическая группа C_n.",
-  "STAR / DIRECTED MAGMA": "STAR / НАПРАВЛЕННАЯ МАГМА",
-  "STAR is closed and has right identity P0. Its P0 row is a left reset; for n ≥ 2 it is nonassociative and is not a group.":
-    "STAR замкнут и имеет правую единицу P0. Его строка P0 является левым сбросом; при n ≥ 2 STAR неассоциативен и не является группой.",
+    "PLUS замкнут и ассоциативен, P0 является нейтральным элементом, а у каждого полюса есть обратный элемент. На индексах полюсов это циклическая группа C_n.",
   "Exact nonassociativity witness at L3": "Точный свидетель неассоциативности на L3",
   "Same inputs, different brackets, different result.": "Одни входы, разные скобки, разный результат.",
   "The two bracketings return different poles, so brackets are part of the program.":
@@ -118,6 +118,7 @@ export const mathRu: TranslationDictionary = {
     "Изучите статус, отпечаток, протоколы проверок и границы утверждений.",
   "View the evidence layer": "Открыть слой доказательств",
   ...mathExtraRu,
+  ...academicRu,
 };
 
 export const mathZh: TranslationDictionary = {
@@ -172,13 +173,11 @@ export const mathZh: TranslationDictionary = {
   "STAR reset example at L3": "L3 的 STAR 重置示例",
   "The P0 row is constant under STAR: P0 is a left reset.": "在 STAR 下，P0 行恒为 P0：P0 是左侧重置元。",
   "TWO FROZEN OPERATORS": "两个冻结运算",
-  "PLUS and STAR share a carrier, but not an algebraic structure.": "PLUS 和 STAR 共享同一载体集，但代数结构不同。",
+  "PLUS and STAR share a carrier; their reducts are different algebraic structures.":
+    "PLUS 和 STAR 共享同一载体集；它们的约化结构是不同的代数结构。",
   "PLUS / CYCLIC GROUP": "PLUS / 循环群",
   "PLUS is closed and associative, P0 is the identity, and every pole has an inverse. It is the cyclic group C_n on the pole indices.":
-    "PLUS 在 Q_n 上封闭并满足结合律，P0 是单位元，每个极都有逆元。按极的索引，它构成循环群 C_n。",
-  "STAR / DIRECTED MAGMA": "STAR / 有向原群",
-  "STAR is closed and has right identity P0. Its P0 row is a left reset; for n ≥ 2 it is nonassociative and is not a group.":
-    "STAR 在 Q_n 上封闭，并以 P0 为右单位元。P0 行执行左侧重置；当 n ≥ 2 时，STAR 不满足结合律，也不是群。",
+    "PLUS 在 Q_n 上封闭并满足结合律，P0 是双侧中性元，每个极都有逆元。按极的索引，它构成循环群 C_n。",
   "Exact nonassociativity witness at L3": "L3 上非结合性的精确见证",
   "Same inputs, different brackets, different result.": "相同输入，不同括号，不同结果。",
   "The two bracketings return different poles, so brackets are part of the program.":
@@ -230,6 +229,7 @@ export const mathZh: TranslationDictionary = {
   "Review the status, fingerprint, test receipts, and claim boundaries.": "查看状态、指纹、测试回执和声明边界。",
   "View the evidence layer": "查看证据层",
   ...mathExtraZh,
+  ...academicZh,
 };
 
 export const mathAr: TranslationDictionary = {
@@ -284,14 +284,11 @@ export const mathAr: TranslationDictionary = {
   "STAR reset example at L3": "مثال إعادة ضبط STAR عند L3",
   "The P0 row is constant under STAR: P0 is a left reset.": "صف P0 ثابت تحت STAR: يمثّل P0 إعادة ضبط من اليسار.",
   "TWO FROZEN OPERATORS": "عمليتان مجمّدتان",
-  "PLUS and STAR share a carrier, but not an algebraic structure.":
+  "PLUS and STAR share a carrier; their reducts are different algebraic structures.":
     "تشترك PLUS وSTAR في المجموعة الحاملة نفسها، لكن بنيتيهما الجبريتين مختلفتان.",
   "PLUS / CYCLIC GROUP": "PLUS / زمرة دورية",
   "PLUS is closed and associative, P0 is the identity, and every pole has an inverse. It is the cyclic group C_n on the pole indices.":
     "عملية PLUS مغلقة وتحقق خاصية التجميع، وP0 هو العنصر المحايد، ولكل قطب معكوس. وهي الزمرة الدورية C_n على فهارس الأقطاب.",
-  "STAR / DIRECTED MAGMA": "STAR / بنية MAGMA موجّهة",
-  "STAR is closed and has right identity P0. Its P0 row is a left reset; for n ≥ 2 it is nonassociative and is not a group.":
-    "عملية STAR مغلقة ولها عنصر محايد يميني هو P0. يمثّل صف P0 إعادة ضبط من اليسار؛ وعندما n ≥ 2 لا تحقق STAR خاصية التجميع وليست زمرة.",
   "Exact nonassociativity witness at L3": "شاهد دقيق على عدم التجميع عند L3",
   "Same inputs, different brackets, different result.": "المدخلات نفسها، وأقواس مختلفة، ونتيجة مختلفة.",
   "The two bracketings return different poles, so brackets are part of the program.":
@@ -347,4 +344,5 @@ export const mathAr: TranslationDictionary = {
     "راجع الحالة والبصمة وإيصالات الاختبارات وحدود الادعاءات.",
   "View the evidence layer": "عرض طبقة الأدلة",
   ...mathExtraAr,
+  ...academicAr,
 };

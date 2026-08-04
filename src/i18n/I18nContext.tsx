@@ -4,7 +4,7 @@ import { translations } from "./translations";
 
 export const locales = ["en", "ru", "zh", "ar"] as const;
 export type Locale = (typeof locales)[number];
-export type PageRoute = "/" | "/math" | "/evidence" | "/privacy" | "/404";
+export type PageRoute = "/" | "/math" | "/symmetry" | "/evidence" | "/privacy" | "/404";
 
 export const localeConfig: Record<
   Locale,
@@ -50,7 +50,13 @@ export function parseLocalizedPath(pathname: string): { locale: Locale; route: P
   const routeSegments = locale === "en" ? segments : segments.slice(1);
   const rawRoute = routeSegments.length ? `/${routeSegments.join("/")}` : "/";
   const route: PageRoute =
-    rawRoute === "/" || rawRoute === "/math" || rawRoute === "/evidence" || rawRoute === "/privacy" ? rawRoute : "/404";
+    rawRoute === "/" ||
+    rawRoute === "/math" ||
+    rawRoute === "/symmetry" ||
+    rawRoute === "/evidence" ||
+    rawRoute === "/privacy"
+      ? rawRoute
+      : "/404";
 
   return { locale, route, rawRoute };
 }

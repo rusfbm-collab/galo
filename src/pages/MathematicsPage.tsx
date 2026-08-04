@@ -4,8 +4,9 @@ import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
+  canonicalScaledEmbeddings,
   canonicalTypedCellCount,
-  lawfulScaledTransfers,
+  iterateStarProduct,
   rawCellsPerOperator,
   rawLawCellCount,
   sameLevelAutomorphismCount,
@@ -86,30 +87,35 @@ const countSteps = [
   {
     number: "03",
     title: "Apply two frozen laws",
-    formula: "PLUS + STAR = 2n² law cells",
+    formula: "PLUS + STAR = 2n² law coordinates",
     text: "PLUS and STAR each fill the same n-by-n coordinate grid with their own deterministic result.",
   },
   {
     number: "04",
     title: "Attach two typed orientations",
-    formula: "LEFT + RIGHT = 4n² typed cells",
+    formula: "LEFT + RIGHT = 4n² oriented typed coordinates",
     text: "LEFT and RIGHT do not invent a third law. They record which role—source or active—occupies each table axis.",
   },
 ] as const;
 
 const mathContents = [
+  { href: "#objects", label: "Objects and notation" },
   { href: "#cayley-tables", label: "Cayley tables" },
   { href: "#frozen-laws", label: "PLUS and STAR" },
   { href: "#typed-actions", label: "Four action families" },
-  { href: "#cells-560", label: "The 560 cells" },
-  { href: "#transformations", label: "Transformations and symmetry" },
+  { href: "#cells-560", label: "The 560 coordinates" },
+  { href: "#transformations", label: "Translations and ranks" },
   { href: "#composition", label: "Brackets and programs" },
+  { href: "#star-structure", label: "Stability and congruences" },
   { href: "#morphisms", label: "Cross-level morphisms" },
 ] as const;
 
-const activeNontrivialTransfers = lawfulScaledTransfers.filter(
+const activeNontrivialTransfers = canonicalScaledEmbeddings.filter(
   ({ sourceLevel, targetLevel }) => sourceLevel >= 2 && targetLevel > sourceLevel,
 );
+
+const l6LeftIteration = iterateStarProduct(6, 2, 6, "LEFT");
+const l6RightIteration = iterateStarProduct(6, 2, 6, "RIGHT");
 
 export function MathematicsPage() {
   const { href, t } = useI18n();
@@ -152,6 +158,40 @@ export function MathematicsPage() {
           </div>
         </div>
       </nav>
+
+      <section id="objects" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("OBJECTS AND NOTATION")}
+            title={t("One carrier, two reducts, one full finite algebra.")}
+            text={t(
+              "Project labels P_i are residue classes. The word tower is project terminology for the indexed family L1–L7; it is not an ascending chain unless connecting morphisms are specified.",
+            )}
+          />
+          <div className="math-object-grid">
+            <article>
+              <span>{t("Carrier correspondence")}</span>
+              <code dir="ltr">Q_n = {`{P0,…,P_(n−1)}`} ↔ Z/nZ</code>
+              <p>{t("The bijection sends P_i to the residue class i modulo n and P0 to 0.")}</p>
+            </article>
+            <article>
+              <span>{t("PLUS reduct")}</span>
+              <code dir="ltr">G_n = (Q_n, PLUS_n, P0) ≅ C_n</code>
+              <p>{t("This is the cyclic group of order n. P0 is its two-sided neutral element.")}</p>
+            </article>
+            <article>
+              <span>{t("STAR reduct")}</span>
+              <code dir="ltr">S_n = (Q_n, STAR_n, P0)</code>
+              <p>{t("This is a pointed finite magma: a set with one total binary operation and a named constant.")}</p>
+            </article>
+            <article>
+              <span>{t("Full expansion")}</span>
+              <code dir="ltr">A_n = (Q_n, PLUS_n, STAR_n, P0)</code>
+              <p>{t("This finite algebra has signature (2,2,0): two binary operations and one constant.")}</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <section id="cayley-tables" className="section section--paper math-explorer-section">
         <div className="shell">
@@ -202,7 +242,7 @@ export function MathematicsPage() {
           <SectionHeading
             light
             eyebrow={t("TWO FROZEN OPERATORS")}
-            title={t("PLUS and STAR share a carrier, but not an algebraic structure.")}
+            title={t("PLUS and STAR share a carrier; their reducts are different algebraic structures.")}
           />
           <div className="operator-grid">
             <article>
@@ -222,12 +262,37 @@ export function MathematicsPage() {
               <div className="operator-card__mark" aria-hidden="true">
                 ★
               </div>
-              <p className="eyebrow">{t("STAR / DIRECTED MAGMA")}</p>
+              <p className="eyebrow">{t("STAR / POINTED FINITE MAGMA")}</p>
               <h3>STAR</h3>
               <code dir="ltr">P0 ★ P_j = P0; P_i ★ P_j = P_((i + j) mod n) if i ≠ 0</code>
               <p>
                 {t(
-                  "STAR is closed and has right identity P0. Its P0 row is a left reset; for n ≥ 2 it is nonassociative and is not a group.",
+                  "For STAR and n≥2, P0 is the unique left zero and unique right-neutral element. There is no left-neutral element, right zero, or two-sided neutral element: STAR is noncommutative, nonassociative, and neither a group nor a monoid.",
+                )}
+              </p>
+            </article>
+          </div>
+          <div className="p0-role-grid">
+            <article>
+              <span>PLUS · {t("all levels")}</span>
+              <code dir="ltr">P0 ⊕ P_i = P_i = P_i ⊕ P0</code>
+              <p>{t("P0 is a two-sided neutral element for PLUS.")}</p>
+            </article>
+            <article>
+              <span>STAR · n ≥ 2</span>
+              <code dir="ltr">P0 ★ P1 = P0 ≠ P1 · P1 ★ P0 = P1</code>
+              <p>
+                {t(
+                  "P0 is neutral only on the right and absorbing only on the left; it is not a two-sided identity or zero.",
+                )}
+              </p>
+            </article>
+            <article>
+              <span>STAR · L1</span>
+              <code dir="ltr">P0 ★ P0 = P0</code>
+              <p>
+                {t(
+                  "Degenerate exception: on the one-element carrier, P0 is simultaneously a two-sided neutral element and a two-sided zero.",
                 )}
               </p>
             </article>
@@ -294,7 +359,7 @@ export function MathematicsPage() {
       <section id="cells-560" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("THE 560 CANONICAL CELLS")}
+            eyebrow={t("THE 560 ORIENTED TYPED COORDINATES")}
             title={t("From Cayley coordinates to a typed transition registry.")}
             text={t(
               "The number 560 follows from complete enumeration, not from training or statistical estimation. The derivation has four explicit steps.",
@@ -316,7 +381,7 @@ export function MathematicsPage() {
           <div className="tower-math tower-math--expanded">
             <div className="tower-table-wrap" dir="ltr">
               <table className="tower-table tower-table--expanded">
-                <caption className="sr-only">{t("L1–L7 derivation of 560 canonical typed cells")}</caption>
+                <caption className="sr-only">{t("L1–L7 derivation of 560 oriented typed coordinates")}</caption>
                 <thead>
                   <tr>
                     <th scope="col">{t("Level")}</th>
@@ -366,7 +431,7 @@ export function MathematicsPage() {
               </code>
               <p>
                 {t(
-                  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 law-table cells become 560 canonical transition coordinates.",
+                  "LEFT and RIGHT duplicate typed identity, not the numerical Cayley law. That distinction is why 280 raw law coordinates become 560 oriented typed transition coordinates.",
                 )}
               </p>
             </aside>
@@ -427,10 +492,10 @@ export function MathematicsPage() {
       <section id="transformations" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("FINITE TRANSFORMATIONS AND SYMMETRY")}
-            title={t("A cell is a graph point; a fixed-active column is a function.")}
+            eyebrow={t("STANDARD TRANSLATIONS AND FINITE RANKS")}
+            title={t("A fixed active pole gives a column for LEFT and a row for RIGHT.")}
             text={t(
-              "Fixing the family and active pole turns the source-to-target column into a unary transformation. Those transformations compose into routes; the 560 cells are their atomic graph records, not the routes themselves.",
+              "Fixing the family and active pole turns source-to-target records into a unary map. ABI LEFT/RIGHT names encode operand placement; they are not the standard names of left and right algebraic translations.",
             )}
           />
           <div className="transformation-grid">
@@ -445,7 +510,7 @@ export function MathematicsPage() {
                 <b aria-hidden="true">→</b>
                 <code>BRACKETED_ROUTE</code>
               </div>
-              <p>{t("The full 560-cell catalogue is not executed in every episode.")}</p>
+              <p>{t("The full 560-coordinate catalogue is not executed in every episode.")}</p>
             </article>
             <article className="transformation-card transformation-card--rank">
               <span>{t("Rank for fixed active pole a")}</span>
@@ -466,9 +531,23 @@ export function MathematicsPage() {
               <p>{t("Rank means the number of image states of a finite map; it is not a learned matrix rank.")}</p>
             </article>
           </div>
+          <div className="translation-ledger">
+            <article>
+              <span dir="ltr">STAR_LEFT(s,a)</span>
+              <code dir="ltr">s ★ a = R_a(s)</code>
+              <strong>{t("fixed column · standard right translation")}</strong>
+              <p>{t("For a=0 this is the identity map; for a≠0 its image is Q_n without P_a.")}</p>
+            </article>
+            <article>
+              <span dir="ltr">STAR_RIGHT(s,a)</span>
+              <code dir="ltr">a ★ s = L_a(s)</code>
+              <strong>{t("fixed row · standard left translation")}</strong>
+              <p>{t("For a=0 this is the constant P0 map; for a≠0 it is a cyclic bijection.")}</p>
+            </article>
+          </div>
           <div className="symmetry-card">
             <div>
-              <span>{t("Multiplicative relabelling symmetry")}</span>
+              <span>{t("A separate academic symmetry chapter")}</span>
               <code dir="ltr">μ_u(P_i) = P_((u·i) mod n), gcd(u,n)=1</code>
               <code dir="ltr">μ_u(F_f(s,a)) = F_f(μ_u(s), μ_u(a))</code>
             </div>
@@ -479,14 +558,17 @@ export function MathematicsPage() {
               </div>
               <div>
                 <strong>{structuralOrbitCount}</strong>
-                <span>{t("structural orbits of the 560 typed cells")}</span>
+                <span>{t("fibrewise structural orbits of the 560 oriented typed coordinates")}</span>
               </div>
             </div>
             <p>
               {t(
-                "Orbit equivalence identifies a structural symmetry only. It never erases level, family, coordinate, provenance, or verdict boundaries.",
+                "These are sums of local quantities, not the order of one global group or the orbit count of one global action. The dedicated chapter defines automorphisms, affine actions, orbits, stabilizers, and Burnside's lemma.",
               )}
             </p>
+            <a className="button button--primary" href={href("/symmetry")}>
+              {t("Open the symmetry chapter")} <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>
@@ -527,6 +609,79 @@ export function MathematicsPage() {
               <code>P1 ★ (P0 ★ P1) = P1</code>
             </div>
             <p>{t("The two bracketings return different poles, so brackets are part of the program.")}</p>
+          </div>
+          <div className="iteration-grid">
+            <article>
+              <span>{t("Left-associated iteration at L6, a=P2")}</span>
+              <code dir="ltr">{l6LeftIteration.map((value) => `P${value}`).join(" → ")} → …</code>
+              <p>{t("Once a prefix sum reaches P0, every later left-associated STAR product remains P0.")}</p>
+            </article>
+            <article>
+              <span>{t("Right-associated iteration at L6, a=P2")}</span>
+              <code dir="ltr">{l6RightIteration.map((value) => `P${value}`).join(" → ")} → …</code>
+              <p>
+                {t(
+                  "Right association repeatedly applies a nonzero left translation, so the additive cycle continues through P0.",
+                )}
+              </p>
+            </article>
+            <article>
+              <span>{t("Zero-prefix theorem · L5 witness")}</span>
+              <code dir="ltr">(P2 ★ P3) ★ P4 = P0 ★ P4 = P0</code>
+              <p>
+                {t(
+                  "The ordinary PLUS sum is P4, but the first zero prefix is captured by the left-associated STAR word.",
+                )}
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="star-structure" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("STAR REDUCT: STABILITY AND CONGRUENCES")}
+            title={t("One-sided closure is asymmetric; quotient structure is rigid.")}
+            text={t(
+              "These are statements about the STAR reduct S_n. They use standard finite-algebra terminology and do not import ring ideals or ring multiplication.",
+            )}
+          />
+          <div className="star-structure-grid">
+            <article>
+              <span>{t("Right-stable subsets · n≥2")}</span>
+              <code dir="ltr">S ★ Q_n ⊆ S</code>
+              <strong dir="ltr">∅ · {`{P0}`} · Q_n</strong>
+              <p>
+                {t(
+                  "The proper nonempty example is {P0}; it is closed when elements of the subset occupy the left operand.",
+                )}
+              </p>
+            </article>
+            <article>
+              <span>{t("Left-stable and two-sided · n≥2")}</span>
+              <code dir="ltr">Q_n ★ S ⊆ S</code>
+              <strong dir="ltr">∅ · Q_n</strong>
+              <p>{t("The subset {P0} fails because P1 ★ P0 = P1. There is no proper nonempty left-stable subset.")}</p>
+            </article>
+            <article>
+              <span>{t("Congruences · n≥2")}</span>
+              <code dir="ltr">Con(S_n) = {`{Δ_(Q_n), Q_n×Q_n}`}</code>
+              <p>
+                {t(
+                  "If P0 is identified with one nonzero element, compatibility forces every element into one class. If P0 stays alone, two distinct nonzero elements cannot be identified.",
+                )}
+              </p>
+            </article>
+            <article>
+              <span>{t("The L1 exception")}</span>
+              <code dir="ltr">Δ_(Q_1) = Q_1 × Q_1</code>
+              <p>
+                {t(
+                  "On a one-element carrier the identity and universal congruences coincide, and every subset classification degenerates accordingly.",
+                )}
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -578,9 +733,16 @@ export function MathematicsPage() {
             </article>
           </div>
 
+          <p className="scope-callout">
+            <strong>{t("Compatibility boundary:")}</strong>{" "}
+            {t(
+              "The morphism receipts below belong to the compatibility and audit mathematics. The legacy morphism_v1 module is excluded from the current V4 runtime wheel; these examples are not current API capabilities.",
+            )}
+          </p>
+
           <div className="morphism-witness morphism-witness--pass">
             <div className="morphism-witness__heading">
-              <span>PASS · {t("Strong frozen-law morphism")}</span>
+              <span>PASS · {t("Canonical nonzero embedding")}</span>
               <strong dir="ltr">h: Q_2 → Q_4, h(P_i) = P_((2i) mod 4)</strong>
             </div>
             <div className="morphism-witness__equations" dir="ltr">
@@ -602,7 +764,7 @@ export function MathematicsPage() {
                 <dd dir="ltr">fc7946d5a85ec30ba495123bec2ba04288caca0c27b44fd0aace2ad8a5619f95</dd>
               </div>
               <div>
-                <dt>{t("active nontrivial transfers")}</dt>
+                <dt>{t("canonical nontrivial scaled embeddings")}</dt>
                 <dd dir="ltr">
                   {activeNontrivialTransfers
                     .map(({ sourceLevel, targetLevel }) => `L${sourceLevel}→L${targetLevel}`)
@@ -618,7 +780,7 @@ export function MathematicsPage() {
 
           <div className="morphism-witness">
             <div className="morphism-witness__heading">
-              <span>FAIL · {t("Naive same-index embedding")}</span>
+              <span>FAIL · {t("Same-index candidate injection")}</span>
               <strong dir="ltr">φ: Q_3 → Q_5, φ(P_i) = P_i</strong>
             </div>
             <div className="morphism-witness__equations" dir="ltr">
@@ -628,7 +790,7 @@ export function MathematicsPage() {
             </div>
             <dl>
               <div>
-                <dt>code</dt>
+                <dt>{t("legacy compatibility code")}</dt>
                 <dd dir="ltr">REJECT_R5B5F_NO_LAWFUL_LEVEL_TRANSFER</dd>
               </div>
               <div>
@@ -654,9 +816,31 @@ export function MathematicsPage() {
             </dl>
           </div>
 
+          <div className="morphism-witness morphism-witness--neutral">
+            <div className="morphism-witness__heading">
+              <span>PASS · {t("Zero homomorphism exists between every pair of levels")}</span>
+              <strong dir="ltr">z_(n,m): A_n → A_m, z_(n,m)(P_i) = P0</strong>
+            </div>
+            <div className="morphism-witness__equations" dir="ltr">
+              <code>{`Hom(A_n,A_m)={0}∪{h_u | n|m, u∈U(n)}`}</code>
+              <code>z(x ⊕ y) = P0 = P0 ⊕ P0</code>
+              <code>z(x ★ y) = P0 = P0 ★ P0</code>
+            </div>
+            <p>
+              {t(
+                "Therefore A3→A5 has a homomorphism, but no nonzero homomorphism and no embedding. For n≥2, a nonzero homomorphism A_n→A_m exists exactly when n divides m; every such map is injective. At n=1 the unique zero map is itself an embedding.",
+              )}
+            </p>
+          </div>
+
           <p className="math-contract-note">
             {t(
-              "A morphism is the mathematical preservation condition; LevelAlignmentReceipt is the auditable object that records whether a particular cross-level use passed it. Without that receipt, the correct result is BOUNDARY—not an implicit projection.",
+              "A homomorphism is a mathematical preservation condition; an embedding is an injective homomorphism; a candidate injection is only a set map until preservation is proved. LevelAlignmentReceipt separately records whether an operational transfer is authorized.",
+            )}
+          </p>
+          <p className="math-contract-note">
+            {t(
+              "Across ordered pairs L1–L7 there are 70 full-algebra homomorphisms, including 28 embeddings. The compatibility replay lists 16 divisible level pairs and chooses one canonical embedding on each; it does not enumerate every homomorphism.",
             )}
           </p>
         </div>

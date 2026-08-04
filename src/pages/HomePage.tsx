@@ -49,10 +49,10 @@ const problemCards = [
 ];
 
 const verifiedSlice = [
-  { icon: Layers3, title: "Finite universe", text: "1,204 commitments / 756 cells" },
-  { icon: LockKeyhole, title: "Bound execution", text: "Membership proof + one-shot handle" },
-  { icon: Gauge, title: "Budget law", text: "Bounded action + atomic rollback" },
-  { icon: FileCheck2, title: "Receipt ledger", text: "Work reconstructed from receipts" },
+  { icon: Layers3, title: "Finite universe", text: "1,204 descriptors / 880 executable" },
+  { icon: LockKeyhole, title: "Pinned-key sample integrity", text: "Bundled finite sample / two source patterns" },
+  { icon: Gauge, title: "Deterministic selector", text: "440-candidate frontier per source pattern" },
+  { icon: FileCheck2, title: "Receipt ledger", text: "4,802 internal work-unit IDs reconciled" },
 ];
 
 const architecturePrinciples = [
@@ -100,22 +100,22 @@ const businessSteps = [
 ];
 
 const roadmap = [
-  { number: "01", title: "Authenticate the source", text: "Signed source custody and a pinned external trust root." },
-  { number: "02", title: "Close selection", text: "Oracle-free candidate selection with noninterference receipts." },
+  { number: "01", title: "Persist trust state", text: "A durable trusted manifest head beyond process-local checks." },
+  { number: "02", title: "Isolate the executor", text: "OS capability isolation and a CPython 3.13 replay lane." },
   {
     number: "03",
-    title: "Condition the structure",
-    text: "Observation-derived admissibility and multi-step proof state.",
+    title: "Expand semantic closure",
+    text: "Preregistered rules beyond the current two fixed source patterns.",
   },
   {
     number: "04",
-    title: "Evaluate externally",
-    text: "Partner-owned data, preregistered outcomes, and private evaluation.",
+    title: "Add multi-step execution",
+    text: "Trajectories, real CORE/QUASI/BOUNDARY actions, and a probe-response loop.",
   },
   {
     number: "05",
-    title: "Authorize learning",
-    text: "Persistent policy sidecar with exact fallback only after prior controls close.",
+    title: "Evaluate before learning",
+    text: "Partner-owned data and preregistered outcomes before any persistent policy is authorized.",
   },
 ];
 
@@ -268,7 +268,7 @@ export function HomePage() {
             eyebrow={t("RECORDED RECEIPT")}
             title={t("Inspect the execution state, not a staged answer.")}
             text={t(
-              "This deterministic walkthrough uses sanitized identifiers from the current direct selfcheck. It does not generate a semantic answer and it does not adapt to the input observation.",
+              "This deterministic walkthrough uses sanitized identifiers from the current V4 direct selfcheck. It distinguishes two fixed source patterns, but it does not accept arbitrary observations, generate a semantic answer, or learn.",
             )}
             light
             aside={
