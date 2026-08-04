@@ -1,4 +1,5 @@
 import type { TranslationDictionary } from "../translations";
+import { mathExtraAr, mathExtraRu, mathExtraZh } from "./mathExtras";
 
 export const mathRu: TranslationDictionary = {
   Mathematics: "Математика",
@@ -116,6 +117,7 @@ export const mathRu: TranslationDictionary = {
   "Review the status, fingerprint, test receipts, and claim boundaries.":
     "Изучите статус, отпечаток, протоколы проверок и границы утверждений.",
   "View the evidence layer": "Открыть слой доказательств",
+  ...mathExtraRu,
 };
 
 export const mathZh: TranslationDictionary = {
@@ -227,6 +229,7 @@ export const mathZh: TranslationDictionary = {
   "Release evidence": "版本证据",
   "Review the status, fingerprint, test receipts, and claim boundaries.": "查看状态、指纹、测试回执和声明边界。",
   "View the evidence layer": "查看证据层",
+  ...mathExtraZh,
 };
 
 export const mathAr: TranslationDictionary = {
@@ -343,4 +346,5 @@ export const mathAr: TranslationDictionary = {
   "Review the status, fingerprint, test receipts, and claim boundaries.":
     "راجع الحالة والبصمة وإيصالات الاختبارات وحدود الادعاءات.",
   "View the evidence layer": "عرض طبقة الأدلة",
+  ...mathExtraAr,
 };
