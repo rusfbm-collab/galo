@@ -71,31 +71,43 @@ export function SymmetryPage() {
               "The project calls L1–L7 two towers. Academically they are indexed families until bonding maps are declared; divisibility supplies only some nonzero embeddings.",
             )}
           />
-          <div className="two-family-table-wrap">
+          <div
+            className="two-family-table-wrap"
+            role="region"
+            aria-label={t("The same carrier supports different symmetry categories.")}
+            tabIndex={0}
+          >
             <table className="two-family-table">
+              <caption className="sr-only">{t("The same carrier supports different symmetry categories.")}</caption>
               <thead>
                 <tr>
-                  <th>{t("Object")}</th>
-                  <th>{t("Preserved data")}</th>
-                  <th>{t("Automorphisms")}</th>
-                  <th>{t("Additional symmetry layer")}</th>
+                  <th scope="col">{t("Object")}</th>
+                  <th scope="col">{t("Preserved data")}</th>
+                  <th scope="col">{t("Automorphisms")}</th>
+                  <th scope="col">{t("Additional symmetry layer")}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th dir="ltr">G_n=(Q_n,PLUS,P0)</th>
+                  <th scope="row" dir="ltr">
+                    G_n=(Q_n,PLUS,P0)
+                  </th>
                   <td>{t("cyclic addition and P0")}</td>
                   <td dir="ltr">Aut(G_n) ≅ U(n)</td>
                   <td dir="ltr">Hol(C_n)=C_n⋊U(n)</td>
                 </tr>
                 <tr>
-                  <th dir="ltr">S_n=(Q_n,STAR,P0)</th>
+                  <th scope="row" dir="ltr">
+                    S_n=(Q_n,STAR,P0)
+                  </th>
                   <td>{t("STAR and the named point P0")}</td>
                   <td dir="ltr">Aut(S_n) ≅ U(n)</td>
                   <td>{t("No affine STAR layer")}</td>
                 </tr>
                 <tr>
-                  <th dir="ltr">A_n=(Q_n,PLUS,STAR,P0)</th>
+                  <th scope="row" dir="ltr">
+                    A_n=(Q_n,PLUS,STAR,P0)
+                  </th>
                   <td>{t("both operations and P0")}</td>
                   <td dir="ltr">Aut(A_n) ≅ U(n)</td>
                   <td>{t("Same unit maps; stronger preservation contract")}</td>
@@ -214,24 +226,31 @@ export function SymmetryPage() {
               "Pair orbits are computed inside each fixed level. Multiplying by four keeps the action-family tag fixed; no orbit crosses a level or family boundary.",
             )}
           />
-          <div className="symmetry-level-table-wrap" dir="ltr">
+          <div
+            className="symmetry-level-table-wrap"
+            dir="ltr"
+            role="region"
+            aria-label={t("Local groups first; aggregate sums second.")}
+            tabIndex={0}
+          >
             <table className="symmetry-level-table">
+              <caption className="sr-only">{t("Local groups first; aggregate sums second.")}</caption>
               <thead>
                 <tr>
-                  <th>{t("level")}</th>
-                  <th>U(n)</th>
-                  <th>|Aut|</th>
-                  <th>|Hol|</th>
-                  <th>{t("carrier orbits")}</th>
-                  <th>{t("pair orbits")}</th>
-                  <th>{t("typed orbits")}</th>
-                  <th>|End★|</th>
+                  <th scope="col">{t("level")}</th>
+                  <th scope="col">U(n)</th>
+                  <th scope="col">|Aut|</th>
+                  <th scope="col">|Hol|</th>
+                  <th scope="col">{t("carrier orbits")}</th>
+                  <th scope="col">{t("pair orbits")}</th>
+                  <th scope="col">{t("typed orbits")}</th>
+                  <th scope="col">|End★|</th>
                 </tr>
               </thead>
               <tbody>
                 {symmetryLevelProfiles.map((profile) => (
                   <tr key={profile.level}>
-                    <th>L{profile.level}</th>
+                    <th scope="row">L{profile.level}</th>
                     <td>{`{${profile.units.join(",")}}`}</td>
                     <td>{profile.automorphismOrder}</td>
                     <td>{profile.holomorphOrder}</td>
@@ -351,20 +370,29 @@ export function SymmetryPage() {
               "Each cell shows PLUS homomorphisms / full-algebra homomorphisms. PLUS has gcd(n,m) maps. For n≥2, the full algebra has the zero map and φ(n) additional embeddings exactly when n divides m; at n=1 the zero map is the unique embedding.",
             )}
           />
-          <div className="hom-matrix-wrap" dir="ltr">
+          <div
+            className="hom-matrix-wrap"
+            dir="ltr"
+            role="region"
+            aria-label={t("PLUS and STAR have different homomorphism counts.")}
+            tabIndex={0}
+          >
             <table className="hom-matrix">
+              <caption className="sr-only">{t("PLUS and STAR have different homomorphism counts.")}</caption>
               <thead>
                 <tr>
-                  <th>{t("source / target")}</th>
+                  <th scope="col">{t("source / target")}</th>
                   {galoLevels.map((target) => (
-                    <th key={target}>L{target}</th>
+                    <th scope="col" key={target}>
+                      L{target}
+                    </th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {galoLevels.map((source) => (
                   <tr key={source}>
-                    <th>L{source}</th>
+                    <th scope="row">L{source}</th>
                     {galoLevels.map((target) => (
                       <td key={target}>
                         {greatestCommonDivisor(source, target)} / {enumerateStarHomomorphisms(source, target).length}

@@ -48,6 +48,29 @@ const problemCards = [
   },
 ];
 
+const beginnerBridge = [
+  {
+    number: "01",
+    title: "Name the finite states",
+    text: "A level L_n declares exactly n local labels P0 through P_(n−1).",
+  },
+  {
+    number: "02",
+    title: "Apply one frozen law",
+    text: "PLUS performs cyclic addition; STAR adds a precise raw-left P0 reset clause.",
+  },
+  {
+    number: "03",
+    title: "Preserve the input roles",
+    text: "LEFT and RIGHT record how source and active are placed on the table axes.",
+  },
+  {
+    number: "04",
+    title: "Stop at the evidence boundary",
+    text: "A formal target is not yet world meaning, a useful action, a learned policy, or General AI.",
+  },
+] as const;
+
 const verifiedSlice = [
   { icon: Layers3, title: "Finite universe", text: "1,204 descriptors / 880 executable" },
   { icon: LockKeyhole, title: "Pinned-key sample integrity", text: "Bundled finite sample / two source patterns" },
@@ -144,12 +167,12 @@ export function HomePage() {
               <span>{t("Abu Dhabi relocation planned")}</span>
             </div>
             <div className="hero__actions">
-              <a className="button button--primary" href="#receipt">
-                {t("Inspect a verified receipt")}{" "}
+              <a className="button button--primary" href={href("/theory")}>
+                {t("Understand GALO step by step")}{" "}
                 <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
-              <a className="button button--outline-light" href="#evaluation">
-                {t("Request a technical evaluation")}
+              <a className="button button--outline-light" href="#receipt">
+                {t("Inspect a verified receipt")}
               </a>
             </div>
             <p className="hero__boundary">
@@ -189,7 +212,7 @@ export function HomePage() {
               </div>
             </div>
             <div className="hero-visual__caption">
-              <span>{t("Minimum sufficient level selected")}</span>
+              <span>{t("Illustrative target resolution ladder")}</span>
               <span>{t("Receipt chain intact")}</span>
             </div>
           </div>
@@ -223,6 +246,32 @@ export function HomePage() {
                 <span className="problem-card__number">{card.number}</span>
                 <h3>{t(card.title)}</h3>
                 <p>{t(card.text)}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="theory-introduction" className="section section--white home-theory-bridge">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("NEW TO THE MATHEMATICS?")}
+            title={t("Build GALO from one three-state example before opening the academic reference.")}
+            text={t(
+              "The beginner chapter introduces the main symbols with a reading legend, reconstructs transitions independently from tables and formulas, and keeps the formal model separate from the current runtime and target learning architecture.",
+            )}
+            aside={
+              <a className="text-link" href={href("/theory")}>
+                {t("Open the guided theory")} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            }
+          />
+          <div className="home-theory-bridge__steps">
+            {beginnerBridge.map((step) => (
+              <article key={step.number}>
+                <span>{step.number}</span>
+                <h3>{t(step.title)}</h3>
+                <p>{t(step.text)}</p>
               </article>
             ))}
           </div>

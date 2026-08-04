@@ -1,10 +1,12 @@
 import type { TranslationDictionary } from "../translations";
 import { mathRu } from "./math";
 import { releaseRu } from "./releaseRu";
+import { theoryRu } from "./theoryRu";
 
 export const ru: TranslationDictionary = {
   ...mathRu,
   ...releaseRu,
+  ...theoryRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

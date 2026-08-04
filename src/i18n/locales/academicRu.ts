@@ -128,7 +128,8 @@ export const academicRu: TranslationDictionary = {
   "STAR and the named point P0": "STAR и выделенная точка P0",
   "both operations and P0": "обе операции и P0",
   "No affine STAR layer": "Аффинного STAR-слоя нет",
-  "Same unit maps; stronger preservation contract": "Те же unit-отображения; более сильное условие сохранения",
+  "Same unit maps; stronger preservation contract":
+    "Те же отображения умножения на обратимые классы; более сильное условие сохранения",
   "STANDARD GROUP-ACTION VOCABULARY": "СТАНДАРТНАЯ ТЕРМИНОЛОГИЯ ДЕЙСТВИЙ ГРУПП",
   "Automorphism, action, orbit, stabilizer, and Burnside are different notions.":
     "Автоморфизм, действие, орбита, стабилизатор и лемма Бёрнсайда — разные понятия.",
@@ -204,7 +205,7 @@ export const academicRu: TranslationDictionary = {
   "Characters and faithful phase labels": "Характеры и точные фазовые параметризации",
   "All s define characters of C_n; only unit s give faithful labels. In a phase model P0 maps to complex 1, not complex 0.":
     "Каждый s задаёт характер C_n; только обратимые s дают точные параметризации. В фазовой модели P0 переходит в комплексное число 1, а не в комплексный нуль.",
-  "CROSS-LEVEL HOMOMORPHISMS": "МЕЖУРОВНЕВЫЕ ГОМOMОРФИЗМЫ",
+  "CROSS-LEVEL HOMOMORPHISMS": "МЕЖУРОВНЕВЫЕ ГОМОМОРФИЗМЫ",
   "PLUS and STAR have different homomorphism counts.": "PLUS и STAR имеют разные числа гомоморфизмов.",
   "Each cell shows PLUS homomorphisms / full-algebra homomorphisms. PLUS has gcd(n,m) maps. For n≥2, the full algebra has the zero map and φ(n) additional embeddings exactly when n divides m; at n=1 the zero map is the unique embedding.":
     "Каждая ячейка показывает число PLUS-гомоморфизмов / гомоморфизмов полной алгебры. Для PLUS их gcd(n,m). При n≥2 полная алгебра имеет нулевое отображение и ровно φ(n) дополнительных вложений, когда n делит m; при n=1 нулевое отображение является единственным вложением.",

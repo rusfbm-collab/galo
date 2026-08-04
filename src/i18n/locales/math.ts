@@ -187,9 +187,9 @@ export const mathZh: TranslationDictionary = {
   "TYPED EXECUTION": "类型化执行",
   "The four action families preserve operand order explicitly.": "四个动作族显式保留操作数顺序。",
   "The binary table is not redefined for LEFT or RIGHT. The family determines how source and active pole are placed into the same frozen operator.":
-    "LEFT 或 RIGHT 不会重新定义二元表。动作族只决定源极与活动极如何放入同一个冻结运算。",
-  "source then active": "先源极，后活动极",
-  "active then source": "先活动极，后源极",
+    "LEFT 或 RIGHT 不会重新定义二元表。动作族只决定源状态与活动极如何放入同一个冻结运算。",
+  "source then active": "先源状态，后活动极",
+  "active then source": "先活动极，后源状态",
   "Orientation changes operand placement, not the Cayley law.": "执行方向改变操作数的放置次序，而不改变凯莱运算律。",
   "Direct L3 orientation witness": "L3 方向的直接见证",
   "PLUS returns the same target because it is commutative, while STAR orientation changes the target. The typed identities remain distinct in both cases.":

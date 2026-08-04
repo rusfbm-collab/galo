@@ -5,6 +5,7 @@ import { MathematicsPage } from "../pages/MathematicsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
 import { SymmetryPage } from "../pages/SymmetryPage";
+import { TheoryPage } from "../pages/TheoryPage";
 import {
   I18nProvider,
   localeConfig,
@@ -27,6 +28,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "Evidence — GALO AI",
     description:
       "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.",
+  },
+  "/theory": {
+    title: "GALO Theory for Beginners — From States to Verified Execution",
+    description:
+      "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
   },
   "/math": {
     title: "GALO Mathematics — PLUS and STAR Cayley Tables",
@@ -126,6 +132,7 @@ export function App() {
     <I18nProvider locale={locale}>
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
+      {route === "/theory" && <TheoryPage />}
       {route === "/math" && <MathematicsPage />}
       {route === "/symmetry" && <SymmetryPage />}
       {route === "/evidence" && <EvidencePage />}

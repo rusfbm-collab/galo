@@ -32,15 +32,11 @@ export const siteContent = {
     releaseStatus: null as string | null,
   },
   navigation: [
-    { label: "Why GALO", href: "/#why-galo" },
-    { label: "Architecture", href: "/#architecture" },
+    { label: "Theory · start here", href: "/theory" },
     { label: "Mathematics", href: "/math" },
     { label: "Symmetry", href: "/symmetry" },
-    { label: "Receipt", href: "/#receipt" },
     { label: "Evidence", href: "/evidence" },
     { label: "Evaluation", href: "/#evaluation" },
-    { label: "Founder", href: "/#founder" },
-    { label: "Abu Dhabi", href: "/#abu-dhabi" },
   ],
 } as const;
 

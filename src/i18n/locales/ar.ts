@@ -1,10 +1,12 @@
 import type { TranslationDictionary } from "../translations";
 import { mathAr } from "./math";
 import { releaseAr } from "./releaseAr";
+import { theoryAr } from "./theoryAr";
 
 export const ar: TranslationDictionary = {
   ...mathAr,
   ...releaseAr,
+  ...theoryAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",
@@ -36,7 +38,7 @@ export const ar: TranslationDictionary = {
 
   "RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE": "بنية بحثية لحالة وكيل قابلة للفحص",
   "AI agents need a world state they can inspect, revise, and replay.":
-    "تحتاج وكلاء الذكاء الاصطناعي إلى حالة عالم يمكنها فحصها ومراجعتها وإعادة تشغيلها.",
+    "تحتاج أنظمة الذكاء الاصطناعي الوكيلة إلى حالة عالم تستطيع فحصها ومراجعتها وإعادة تشغيلها.",
   "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.":
     "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ. يتحقق إصدارها الحالي من طبقة تنفيذ محدودة؛ أما التعلّم المستديم والأداء الخارجي فلا يزالان غير مثبتين.",
   "Current project status": "حالة المشروع الحالية",

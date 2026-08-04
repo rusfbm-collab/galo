@@ -87,13 +87,13 @@ const countSteps = [
   {
     number: "03",
     title: "Apply two frozen laws",
-    formula: "PLUS + STAR = 2n² law coordinates",
+    formula: "2 × n² = 2n²",
     text: "PLUS and STAR each fill the same n-by-n coordinate grid with their own deterministic result.",
   },
   {
     number: "04",
     title: "Attach two typed orientations",
-    formula: "LEFT + RIGHT = 4n² oriented typed coordinates",
+    formula: "2 × (2n²) = 4n²",
     text: "LEFT and RIGHT do not invent a third law. They record which role—source or active—occupies each table axis.",
   },
 ] as const;
@@ -323,7 +323,7 @@ export function MathematicsPage() {
                 </div>
                 <h3 dir="ltr">{orientation.name}</h3>
                 <code dir="ltr">{orientation.formula}</code>
-                <strong dir="ltr">{orientation.order}</strong>
+                <strong>{t(orientation.order)}</strong>
                 <p>{t(orientation.text)}</p>
               </article>
             ))}
