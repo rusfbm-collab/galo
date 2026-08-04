@@ -1,6 +1,6 @@
 # QA report
 
-Status: **PASS_WITH_DECLARED_ENVIRONMENT_LIMITS**
+Status: **PASS_WITH_DECLARED_DEPLOYMENT_BOUNDARIES**
 
 Review date: 2026-08-04  
 Release target: main → Amvera Docker build → https://aigalo.com
@@ -23,7 +23,7 @@ That command produced the following terminal results:
 | Vitest / Testing Library      | PASS — 1 file, 16 tests                                                            |
 | Vite build                    | PASS — 1,589 modules                                                               |
 | Localized HTML prerender      | PASS — 12 route entries                                                            |
-| Compiled-asset claim firewall | PASS — 21 artifacts, 0 forbidden matches                                           |
+| Compiled-asset claim firewall | PASS — 21 local artifacts, 0 forbidden matches                                     |
 | Prettier                      | PASS — all selected release files                                                  |
 
 Final static payload:
@@ -33,6 +33,16 @@ dist/index.html                   1.65 kB | gzip   0.70 kB
 dist/assets/index-B-4BPpD4.css   52.37 kB | gzip  11.83 kB
 dist/assets/index-CZ7nTfMH.js   361.35 kB | gzip 111.60 kB
 ```
+
+The clean published tree produced this GitHub-runner payload:
+
+```text
+dist/index.html                   1.65 kB | gzip   0.70 kB
+dist/assets/index-O7NtI_-g.css   46.45 kB | gzip  10.46 kB
+dist/assets/index-BmE3tMn1.js   361.35 kB | gzip 111.60 kB
+```
+
+Its compiled-asset firewall scanned 18 published artifacts with 0 forbidden matches. The local count includes three unrelated starter SVGs that were intentionally excluded from the GitHub allowlist.
 
 The compiled-asset firewall also checks that TODO_CONFIRM is absent from the browser artifact. DOM tests verify the confirmed `rusfbm@gmail.com` contact, localized evaluation subjects, locale-preserving routes, metadata, RTL direction, and unchanged receipt payload fields.
 
@@ -79,7 +89,9 @@ Formal Lighthouse scores and assistive-technology manual testing were NOT_RUN in
 - Nginx includes SPA fallback, direct healthz, immutable hashed assets, no-cache HTML, gzip, and security headers.
 - GitHub Actions repeats formatting, lint, typecheck, both claim firewalls, tests, static build, container build, and route smoke checks on main and pull requests.
 
-Container execution is NOT_RUN_RUNTIME_ABSENT: Docker is not installed in this review environment (command not found, exit code 127). The exact remaining deployment witness is a successful Amvera image build followed by HTTP checks for `/healthz`, the 12 localized routes, and an unknown route.
+Docker is not installed in the local review environment (command not found, exit code 127). This local limitation is closed by the published operational witness: GitHub Actions run 30869804408 built the production image and completed the container smoke test successfully. Direct Nginx requests returned HTTP 200 for `/evidence`, `/privacy`, `/outside-scope`, `/ru`, `/zh/evidence`, and `/ar/privacy`; `/healthz` also passed before the route checks.
+
+The remaining deployment witness is the first Amvera image build followed by TLS/domain checks for `aigalo.com`, all 12 localized routes, and an unknown route.
 
 ## Intentionally unresolved public data
 
@@ -96,4 +108,4 @@ Evaluation CTAs use the confirmed public email with a localized subject. No form
 
 ## Release decision
 
-The static website source is ready for the requested GitHub commit. Production acceptance remains conditional on the first Amvera build, TLS/domain configuration using Amvera-provided DNS records, route checks, and deployed Lighthouse/accessibility review.
+The static website source is committed to GitHub and its push-triggered container CI is passing. Production acceptance remains conditional on the first Amvera build, TLS/domain configuration using Amvera-provided DNS records, route checks, and deployed Lighthouse/accessibility review.
