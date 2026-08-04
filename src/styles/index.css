@@ -2572,7 +2572,10 @@ html[lang="ar"] .claim-table__row {
   color: #ccd8e0;
   background: rgba(255, 255, 255, 0.08);
 }
-.claim-status--not-proven {
+.claim-status--not-proven,
+.claim-status--not-started,
+.claim-status--not-present,
+.claim-status--not-claimed {
   color: #ffe8b8;
   background: rgba(232, 169, 58, 0.12);
 }

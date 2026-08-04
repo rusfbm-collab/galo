@@ -14,7 +14,7 @@ Release target: pull request → terminal GitHub Actions → `main` → Amvera D
 | Source claim firewall         | PASS — 37 public-source files, 0 forbidden matches, 31 required boundaries                 |
 | ESLint                        | PASS                                                                                       |
 | TypeScript strict build       | PASS                                                                                       |
-| Vitest / Testing Library      | PASS — 3 files, 49 tests                                                                   |
+| Vitest / Testing Library      | PASS — 3 files, 50 tests                                                                   |
 | Vite production build         | PASS — 1,603 modules                                                                       |
 | Localized HTML prerender      | PASS — 20 route entries                                                                    |
 | Compiled-asset claim firewall | PASS — 26 artifacts, 0 forbidden matches                                                   |
@@ -25,11 +25,11 @@ Production payload:
 
 ```text
 dist/index.html                   1.65 kB | gzip   0.70 kB
-dist/assets/index-CnkYf94X.css   85.96 kB | gzip  16.77 kB
-dist/assets/index-CT2RwVUH.js   644.01 kB | gzip 189.14 kB
+dist/assets/index-DkWz-7XG.css   86.04 kB | gzip  16.80 kB
+dist/assets/index-CW0oRfCt.js   645.03 kB | gzip 189.64 kB
 ```
 
-Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip payload is 189.14 kB; route/locale code splitting remains a performance follow-up, not a correctness failure.
+Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip payload is 189.64 kB; route/locale code splitting remains a performance follow-up, not a correctness failure.
 
 ## Archive evidence review
 

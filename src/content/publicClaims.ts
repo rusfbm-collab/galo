@@ -1,4 +1,12 @@
-export type PublicClaimStatus = "architecture" | "implemented" | "bounded" | "in-development" | "not-proven";
+export type PublicClaimStatus =
+  | "architecture"
+  | "implemented"
+  | "bounded"
+  | "in-development"
+  | "not-proven"
+  | "not-started"
+  | "not-present"
+  | "not-claimed";
 
 export type PublicClaim = {
   id: string;
@@ -50,13 +58,13 @@ export const publicClaims: PublicClaim[] = [
   {
     id: "C07_PERSISTENT_LEARNING_NOT_STARTED",
     publicCopy: "Persistent policy learning in the current V4 runtime has not started.",
-    status: "not-proven",
+    status: "not-started",
     source: "Current release status",
   },
   {
     id: "C08_TRAINED_ATLAS_NOT_PRESENT",
     publicCopy: "A current trained Atlas is not present.",
-    status: "not-proven",
+    status: "not-present",
     source: "Current release status",
   },
   {
@@ -68,7 +76,7 @@ export const publicClaims: PublicClaim[] = [
   {
     id: "C10_GENERAL_AI_NOT_CLAIMED",
     publicCopy: "General AI is not claimed.",
-    status: "not-proven",
+    status: "not-claimed",
     source: "Current release status",
   },
   {

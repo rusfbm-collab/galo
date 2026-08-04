@@ -229,4 +229,10 @@ export const academicZh: TranslationDictionary = {
   "Orbit equivalence does not merge provenance, semantics, authority, or real-world verdicts.":
     "轨道等价不会合并来源、语义、权限或现实世界结论。",
   "Return to the formal kernel chapter": "返回形式化内核章节",
+  level: "层级",
+  "carrier orbits": "载体轨道",
+  "pair orbits": "有序对轨道",
+  "typed orbits": "类型化轨道",
+  "source / target": "源 / 目标",
+  embeddings: "个嵌入",
 };

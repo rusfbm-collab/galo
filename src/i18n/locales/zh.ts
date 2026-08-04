@@ -337,6 +337,9 @@ export const zh: TranslationDictionary = {
   bounded: "有限范围",
   "in-development": "开发中",
   "not-proven": "未证明",
+  "not-started": "未开始",
+  "not-present": "不存在",
+  "not-claimed": "未声称",
   "GALO is a standalone research architecture for explicit world state and bounded, replayable execution.":
     "GALO 是一套面向显式世界状态以及受限、可重放执行的独立研究架构。",
   "The architecture specifies a versioned World Atlas; a trained Atlas is not present.":

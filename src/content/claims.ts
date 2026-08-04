@@ -1,4 +1,12 @@
-export type ClaimStatus = "architecture" | "implemented" | "bounded" | "in-development" | "not-proven";
+export type ClaimStatus =
+  | "architecture"
+  | "implemented"
+  | "bounded"
+  | "in-development"
+  | "not-proven"
+  | "not-started"
+  | "not-present"
+  | "not-claimed";
 
 export type Claim = {
   id: string;
@@ -62,7 +70,7 @@ export const claims: Claim[] = [
   {
     id: "C07_PERSISTENT_LEARNING_NOT_STARTED",
     publicCopy: "Persistent policy learning in the current V4 runtime has not started.",
-    status: "not-proven",
+    status: "not-started",
     source: "Current release status",
     allowedPlacements: ["hero", "boundaries", "evidence", "footer"],
     forbiddenVariants: ["learns continuously", "persistent learning works"],
@@ -70,7 +78,7 @@ export const claims: Claim[] = [
   {
     id: "C08_TRAINED_ATLAS_NOT_PRESENT",
     publicCopy: "A current trained Atlas is not present.",
-    status: "not-proven",
+    status: "not-present",
     source: "Current release status",
     allowedPlacements: ["hero", "architecture", "boundaries", "evidence"],
     forbiddenVariants: ["trained Atlas exists"],
@@ -86,7 +94,7 @@ export const claims: Claim[] = [
   {
     id: "C10_GENERAL_AI_NOT_CLAIMED",
     publicCopy: "General AI is not claimed.",
-    status: "not-proven",
+    status: "not-claimed",
     source: "Current release status",
     allowedPlacements: ["hero", "boundaries", "evidence", "footer"],
     forbiddenVariants: ["AGI achieved", "human-level", "LLM killer"],

@@ -355,6 +355,9 @@ export const ru: TranslationDictionary = {
   bounded: "ОГРАНИЧЕННАЯ ОБЛАСТЬ",
   "in-development": "В РАЗРАБОТКЕ",
   "not-proven": "НЕ ДОКАЗАНО",
+  "not-started": "НЕ НАЧАТО",
+  "not-present": "ОТСУТСТВУЕТ",
+  "not-claimed": "НЕ ЗАЯВЛЯЕТСЯ",
   "GALO is a standalone research architecture for explicit world state and bounded, replayable execution.":
     "GALO — самостоятельная исследовательская архитектура для явного состояния мира и ограниченного воспроизводимого исполнения.",
   "The architecture specifies a versioned World Atlas; a trained Atlas is not present.":

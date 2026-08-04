@@ -234,4 +234,10 @@ export const academicAr: TranslationDictionary = {
   "Orbit equivalence does not merge provenance, semantics, authority, or real-world verdicts.":
     "لا يدمج تكافؤ المدارات المصدر أو الدلالة أو السلطة أو أحكام العالم الواقعي.",
   "Return to the formal kernel chapter": "العودة إلى فصل النواة الرسمية",
+  level: "المستوى",
+  "carrier orbits": "مدارات الحامل",
+  "pair orbits": "مدارات الأزواج المرتبة",
+  "typed orbits": "المدارات محددة النوع",
+  "source / target": "المصدر / الهدف",
+  embeddings: "تضمينًا",
 };

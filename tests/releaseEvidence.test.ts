@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { claims } from "../src/content/claims";
 import { releaseEvidence } from "../src/content/evidence";
+import { publicClaims } from "../src/content/publicClaims";
 
 describe("R5B6A1_3 evidence arithmetic", () => {
   it("reconciles the stored FULL extension without calling it fresh", () => {
@@ -33,5 +35,17 @@ describe("R5B6A1_3 evidence arithmetic", () => {
     const [left, right] = [440, 440];
     expect(left + right).toBe(880);
     expect(releaseEvidence.selector.map((stage) => stage.value)).toContain("440");
+  });
+
+  it("keeps the internal and rendered claim registries aligned with exact terminal statuses", () => {
+    expect(claims.map(({ id, publicCopy, status, source }) => ({ id, publicCopy, status, source }))).toEqual(
+      publicClaims,
+    );
+
+    const statuses = Object.fromEntries(publicClaims.map(({ id, status }) => [id, status]));
+    expect(statuses.C07_PERSISTENT_LEARNING_NOT_STARTED).toBe("not-started");
+    expect(statuses.C08_TRAINED_ATLAS_NOT_PRESENT).toBe("not-present");
+    expect(statuses.C09_EXTERNAL_GAIN_NOT_PROVEN).toBe("not-proven");
+    expect(statuses.C10_GENERAL_AI_NOT_CLAIMED).toBe("not-claimed");
   });
 });

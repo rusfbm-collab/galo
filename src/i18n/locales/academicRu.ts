@@ -235,4 +235,10 @@ export const academicRu: TranslationDictionary = {
   "Orbit equivalence does not merge provenance, semantics, authority, or real-world verdicts.":
     "Эквивалентность по орбитам не объединяет происхождение, семантику, полномочия или вердикты о реальном мире.",
   "Return to the formal kernel chapter": "Вернуться к главе о формальном ядре",
+  level: "уровень",
+  "carrier orbits": "орбиты носителя",
+  "pair orbits": "орбиты пар",
+  "typed orbits": "типизированные орбиты",
+  "source / target": "источник / цель",
+  embeddings: "вложений",
 };

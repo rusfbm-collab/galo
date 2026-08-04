@@ -346,6 +346,9 @@ export const ar: TranslationDictionary = {
   bounded: "مقيّد",
   "in-development": "قيد التطوير",
   "not-proven": "غير مُثبت",
+  "not-started": "لم يبدأ",
+  "not-present": "غير موجود",
+  "not-claimed": "غير مُدّعى",
   "GALO is a standalone research architecture for explicit world state and bounded, replayable execution.":
     "GALO هي بنية بحثية مستقلة لحالة عالم صريحة وتنفيذ مقيّد قابل لإعادة التشغيل.",
   "The architecture specifies a versioned World Atlas; a trained Atlas is not present.":

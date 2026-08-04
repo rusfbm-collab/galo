@@ -218,13 +218,13 @@ export function SymmetryPage() {
             <table className="symmetry-level-table">
               <thead>
                 <tr>
-                  <th>level</th>
+                  <th>{t("level")}</th>
                   <th>U(n)</th>
                   <th>|Aut|</th>
                   <th>|Hol|</th>
-                  <th>carrier orbits</th>
-                  <th>pair orbits</th>
-                  <th>typed orbits</th>
+                  <th>{t("carrier orbits")}</th>
+                  <th>{t("pair orbits")}</th>
+                  <th>{t("typed orbits")}</th>
                   <th>|End★|</th>
                 </tr>
               </thead>
@@ -355,7 +355,7 @@ export function SymmetryPage() {
             <table className="hom-matrix">
               <thead>
                 <tr>
-                  <th>source\target</th>
+                  <th>{t("source / target")}</th>
                   {galoLevels.map((target) => (
                     <th key={target}>L{target}</th>
                   ))}
@@ -402,7 +402,9 @@ export function SymmetryPage() {
             </article>
             <article>
               <h3>{t("Complete L1–L7 count")}</h3>
-              <code dir="ltr">70 Hom(A_n,A_m) · 28 embeddings</code>
+              <code dir="ltr">
+                70 Hom(A_n,A_m) · 28 <bdi>{t("embeddings")}</bdi>
+              </code>
               <p>
                 {t(
                   "The compatibility replay chooses one canonical embedding on 16 divisible level pairs. Its legacy morphism module is excluded from the current V4 runtime wheel.",
