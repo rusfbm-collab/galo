@@ -150,7 +150,7 @@ export const academicZh: TranslationDictionary = {
     "每个结果都由浏览器依据模 n 的可逆剩余类乘法重新计算。",
   "Symmetry explorer controls": "对称性浏览器控制项",
   "Unit multiplier": "单位乘子",
-  "Source pole": "源极",
+  "Source pole": "源状态",
   "Active pole": "活动极",
   "Selected automorphism": "所选自同构",
   "Cycle notation lists every pole exactly once; one-cycles are fixed points.":
@@ -160,7 +160,7 @@ export const academicZh: TranslationDictionary = {
     "该轨道包含所选极在所有单位作用下的像，而不仅是当前所选单位的像。",
   "Ordered-pair orbit": "有序对轨道",
   "The same multiplier acts diagonally on source and active; level and family remain fixed.":
-    "同一个乘子对源极与活动极作对角作用；层级和族保持不变。",
+    "同一个乘子对源状态与活动极作对角作用；层级和族保持不变。",
   "Stabilizer and orbit–stabilizer": "稳定子与轨道—稳定子定理",
   "Group order equals orbit size times stabilizer order for this finite action.":
     "对该有限作用，群的阶等于轨道大小与稳定子阶的乘积。",

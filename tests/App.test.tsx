@@ -1,4 +1,4 @@
-import { cleanup, fireEvent, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { App } from "../src/app/App";
@@ -126,7 +126,7 @@ describe("GALO public site", () => {
     expect(screen.getByRole("table", { name: "PLUS Cayley table at L3" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "PLUS at L3: P1 with P2 equals P0" })).toBeInTheDocument();
 
-    await user.click(screen.getByRole("tab", { name: /^STAR$/ }));
+    await user.click(screen.getByRole("button", { name: /^STAR$/ }));
     await user.click(screen.getByRole("button", { name: "STAR at L3: P0 with P2 equals P0" }));
 
     expect(screen.getByRole("table", { name: "STAR Cayley table at L3" })).toBeInTheDocument();
@@ -145,6 +145,66 @@ describe("GALO public site", () => {
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
       const target = link.getAttribute("href")?.slice(1) ?? "";
       expect(document.getElementById(target), `Missing mathematics target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("renders the beginner theory route with a two-channel transition witness and exact boundaries", async () => {
+    const user = userEvent.setup();
+    setPath("/theory");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "GALO theory, explained from the first state transition." }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: "Complete L3 PLUS table" })).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: "Complete L3 STAR table" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("table", { name: "From a local pole to an execution witness: do not mix object classes." }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Conclusion: STAR has no two-sided identity at any level n≥2.")).toBeInTheDocument();
+    expect(screen.getByText(/e=P_k ∈ Q_n.*k≡0.*e=P0/)).toBeInTheDocument();
+    expect(screen.getByText("A_n=(Q_n,PLUS_n,STAR_n,P0)")).toBeInTheDocument();
+    expect(screen.getByText("Im={P0,P1} · rank=2")).toBeInTheDocument();
+    expect(screen.getByText("Im=Q_3 · rank=3")).toBeInTheDocument();
+    expect(document.querySelector(".theory-translation-bridge__cards article:first-child p")).toHaveTextContent(
+      "P0 resets to P0, while P1 wraps to P0 because",
+    );
+    expect(screen.getByText("BEGINNER_TRANSITION_DUAL_CHANNEL")).toBeInTheDocument();
+
+    const witness = document.querySelector(".theory-tutor__record");
+    expect(witness).toHaveTextContent("L3:STAR_LEFT:P0:P2");
+    expect(witness).toHaveTextContent("table_expectedP0");
+    expect(witness).toHaveTextContent("formula_gotP0");
+    expect(witness).toHaveTextContent("statusPASS");
+
+    const controls = screen.getByLabelText("Beginner transition controls");
+    await user.click(within(controls).getByRole("button", { name: "STAR_RIGHT" }));
+    expect(witness).toHaveTextContent("L3:STAR_RIGHT:P0:P2");
+    expect(witness).toHaveTextContent("raw_operandsP2, P0");
+    expect(witness).toHaveTextContent("table_expectedP2");
+    expect(witness).toHaveTextContent("formula_gotP2");
+    expect(witness).toHaveTextContent("rc0");
+
+    expect(screen.getByText("COMPATIBILITY_ONLY:")).toBeInTheDocument();
+    expect(screen.getByText("DIRECT_MORPHISM_REJECTION_L3_TO_L5")).toBeInTheDocument();
+    expect(screen.getByText("BOUNDARY_LEVEL_ALIGNMENT_NOT_PROVEN")).toBeInTheDocument();
+    expect(screen.getByText("3 ∤ 5 ⇒ Emb(A_3,A_5)=∅")).toBeInTheDocument();
+    expect(
+      screen.getByText(/At L3 specifically there are two pole orbits, five ordered-pair orbits/i),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: "The release counts are derived in this order" })).toHaveTextContent(
+      "1,204556 + 6 × 108",
+    );
+    expect(screen.getByText("TARGET ARCHITECTURE · NOT CURRENT V4")).toBeInTheDocument();
+    expect(screen.getByText(/process-local; it does not establish durable trust state/i)).toBeInTheDocument();
+    expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
+    expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
+    expect(screen.getByText(/stored release evidence and was not freshly replayed/i)).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/theory");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.theory-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing theory target #${target}`).toBeInTheDocument();
     }
   });
 
@@ -234,7 +294,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "تحتاج وكلاء الذكاء الاصطناعي إلى حالة عالم يمكنها فحصها ومراجعتها وإعادة تشغيلها.",
+        name: "تحتاج أنظمة الذكاء الاصطناعي الوكيلة إلى حالة عالم تستطيع فحصها ومراجعتها وإعادة تشغيلها.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');
@@ -249,6 +309,21 @@ describe("GALO public site", () => {
     expect(document.querySelector(".cayley-table-wrap")).toHaveAttribute("dir", "ltr");
     expect(document.querySelector(".typed-cell-record > code")).toHaveAttribute("dir", "ltr");
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/ar/math");
+  });
+
+  it("keeps Arabic beginner prose RTL while isolating canonical tables and formulas as LTR", () => {
+    setPath("/ar/theory");
+    render(<App />);
+    const caption = screen.getByText("جدول PLUS الكامل عند L3");
+    expect(document.documentElement).toHaveAttribute("dir", "rtl");
+    expect(caption).toHaveAttribute("dir", "rtl");
+    expect(caption.closest("table")).toHaveAttribute("dir", "ltr");
+    expect(screen.getByText("قناة الصيغة")).not.toHaveAttribute("dir", "ltr");
+    expect(document.querySelector(".theory-tutor__formula code")).toHaveAttribute("dir", "ltr");
+    const carrierDefinition = document.querySelector(".theory-glossary code");
+    expect(carrierDefinition).toHaveAttribute("dir", "rtl");
+    expect(carrierDefinition?.querySelector("bdi")).toHaveAttribute("dir", "ltr");
+    expect(document.querySelector(".theory-divisibility-proof h3 bdi")).toHaveAttribute("dir", "ltr");
   });
 
   it("localizes privacy and 404 pages without losing the locale prefix", () => {
@@ -267,10 +342,12 @@ describe("GALO public site", () => {
     expect(localizedPath("ru", "/#receipt")).toBe("/ru#receipt");
     expect(localizedPath("zh", "/privacy")).toBe("/zh/privacy");
     expect(localizedPath("ar", "/math#cayley-tables")).toBe("/ar/math#cayley-tables");
+    expect(localizedPath("zh", "/theory#guided-lab")).toBe("/zh/theory#guided-lab");
     expect(localizedPath("ru", "/symmetry#orbit-lab")).toBe("/ru/symmetry#orbit-lab");
     expect(parseLocalizedPath("/ar/evidence/")).toEqual({ locale: "ar", route: "/evidence", rawRoute: "/evidence" });
     expect(parseLocalizedPath("/ru/math/")).toEqual({ locale: "ru", route: "/math", rawRoute: "/math" });
     expect(parseLocalizedPath("/zh/symmetry/")).toEqual({ locale: "zh", route: "/symmetry", rawRoute: "/symmetry" });
+    expect(parseLocalizedPath("/ar/theory/")).toEqual({ locale: "ar", route: "/theory", rawRoute: "/theory" });
     expect(parseLocalizedPath("/ru/not-real")).toEqual({ locale: "ru", route: "/404", rawRoute: "/not-real" });
     expect(switchLocalePath("zh", "/ar/math", "#cayley-tables")).toBe("/zh/math#cayley-tables");
   });
@@ -278,7 +355,7 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/theory", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();

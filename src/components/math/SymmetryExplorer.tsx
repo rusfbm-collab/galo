@@ -87,7 +87,7 @@ export function SymmetryExplorer() {
         </label>
       </div>
 
-      <div className="symmetry-explorer__results">
+      <div className="symmetry-explorer__results" aria-live="polite">
         <article>
           <span>{t("Selected automorphism")}</span>
           <code dir="ltr">
@@ -122,7 +122,7 @@ export function SymmetryExplorer() {
         </article>
       </div>
 
-      <div className="burnside-ledger">
+      <div className="burnside-ledger" aria-live="polite">
         <div>
           <span>{t("Burnside ledger for ordered pairs")}</span>
           <code dir="ltr">|Q_n²/U(n)| = (1/|U(n)|) Σ_u |Fix(u)|²</code>

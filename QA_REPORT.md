@@ -11,13 +11,13 @@ Release target: pull request → terminal GitHub Actions → `main` → Amvera D
 
 | Check                         | Result                                                                                     |
 | ----------------------------- | ------------------------------------------------------------------------------------------ |
-| Source claim firewall         | PASS — 37 public-source files, 0 forbidden matches, 31 required boundaries                 |
+| Source claim firewall         | PASS — 42 public-source files, 0 forbidden matches, 40 required boundaries                 |
 | ESLint                        | PASS                                                                                       |
 | TypeScript strict build       | PASS                                                                                       |
-| Vitest / Testing Library      | PASS — 3 files, 50 tests                                                                   |
-| Vite production build         | PASS — 1,603 modules                                                                       |
-| Localized HTML prerender      | PASS — 20 route entries                                                                    |
-| Compiled-asset claim firewall | PASS — 26 artifacts, 0 forbidden matches                                                   |
+| Vitest / Testing Library      | PASS — 4 files, 62 tests                                                                   |
+| Vite production build         | PASS — 1,609 modules                                                                       |
+| Localized HTML prerender      | PASS — 24 route entries                                                                    |
+| Compiled-asset claim firewall | PASS — 30 artifacts, 0 forbidden matches                                                   |
 | Prettier                      | PASS                                                                                       |
 | `npm audit`                   | PASS — 0 known production or development vulnerabilities after compatible lock-file update |
 
@@ -25,11 +25,11 @@ Production payload:
 
 ```text
 dist/index.html                   1.65 kB | gzip   0.70 kB
-dist/assets/index-DkWz-7XG.css   86.04 kB | gzip  16.80 kB
-dist/assets/index-CW0oRfCt.js   645.03 kB | gzip 189.64 kB
+dist/assets/index-cUjd9IzL.css  119.18 kB | gzip  21.80 kB
+dist/assets/index-CqXeQB37.js   966.86 kB | gzip 287.58 kB
 ```
 
-Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip payload is 189.64 kB; route/locale code splitting remains a performance follow-up, not a correctness failure.
+Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip JavaScript payload is 287.58 kB; route/locale code splitting remains a performance follow-up, not a correctness failure.
 
 ## Archive evidence review
 
@@ -37,7 +37,7 @@ Vite reports a non-failing raw-chunk-size warning above 500 kB. The gzip payload
 - ZIP integrity: PASS, 569 entries.
 - Fresh STATIC: PASS; receipt `f00581021163a7236194517d0370cff3d836803804959fdf1adfb318cb4666ea`.
 - Fresh FAST on CPython 3.12.13: PASS; receipt `5046b87d78373c6f9b3f707923f3b00fc9c2f013ae23c3e4d41313413f47d456`.
-- Fresh FULL: NOT_COMPLETED / not run.
+- Fresh FULL: `NOT COMPLETED` — not run.
 - Stored FULL: PASS, 1,366/1,366 checks across 131 modules.
 - Stored targeted: 338 PASS; direct gates: 22 PASS.
 - CPython 3.13 replay: BLOCKED_ENVIRONMENT_RUNTIME_UNAVAILABLE.
@@ -65,6 +65,23 @@ The tests independently enumerate the finite structures instead of accepting dis
 
 The public pages distinguish mathematical homomorphism, injective embedding, legacy compatibility replay, and authorized operational transfer. They explicitly state that the old morphism module is excluded from the current V4 wheel.
 
+### Beginner-theory verification
+
+The dedicated Theory route is tested as an educational contour, not as a second source of mathematical authority.
+
+- Every one of the 280 raw PLUS/STAR table cells is reconstructed by a formula implementation that does not call the table lookup.
+- Every one of the 560 oriented typed coordinates is then reconciled through three witnesses: raw table address, independent formula result, and canonical typed target.
+- The interactive tutor exposes the same contract as `BEGINNER_TRANSITION_DUAL_CHANNEL`, including `cell_id`, `raw_operands`, `table_expected`, `formula_got`, `rc`, and terminal `status`.
+- The L3 P0 reset example is replayed in both `STAR_LEFT` and `STAR_RIGHT`, proving that source/active role placement can change the target.
+- Every possible identity candidate is checked at each `n≥2`; the displayed proof first forces `e=P0` from `P1★e=P1` and then rejects that sole candidate with `P0★P1≠P1`.
+- The fixed-active L3 example independently recovers `rank(STAR_LEFT,P2)=2` and `rank(STAR_RIGHT,P2)=3`, while a direct affine-shift witness fails STAR preservation.
+- Independent direct orbit enumeration and the Burnside calculation both reconstruct the fibrewise typed total `224`; `18` remains the sum of seven local automorphism-group orders.
+- The route explicitly bridges two L3 carrier orbits, five L3 ordered-pair orbits, twenty L3 typed orbits, and the fibrewise whole-tower total `224`; no orbit crosses a level or family boundary.
+- Beginner-facing tests require the exact L3→L5 preservation counterexample, the independent `n∣m` embedding theorem, and the distinction between the always-present zero homomorphism and a nonzero embedding. Archived morphism receipts remain `COMPATIBILITY_ONLY`, not a current V4 API.
+- The object-boundary ledger separates pole, typed coordinate, committed descriptor, frontier, one-shot handle, target World Atlas state, and execution receipt.
+- Current-selector arithmetic is independently reconstructed as `108=4Σ_{n=2}^7n`, `1,204=556+6×108`, `880=556+3×108`, and `440=880/2`; all eight target-architecture stages remain explicitly marked `TARGET`.
+- Evidence tests preserve the contour boundary: fresh FULL was not run; the stored FULL receipt is `1,366/1,366`; the current V4 selector is deterministic, untrained, and limited to exactly two fixed source patterns.
+
 ## Release arithmetic tests
 
 The release test suite checks:
@@ -83,12 +100,13 @@ This prevents the generated wheel marker from being miscounted as a selected sou
 
 ## Localization and accessibility checks
 
-- English, Russian, Simplified Chinese, and Arabic render all five routes: Home, Mathematics, Symmetry, Evidence, and Privacy.
+- English, Russian, Simplified Chinese, and Arabic render all six routes: Home, Theory, Mathematics, Symmetry, Evidence, and Privacy — 24 prerendered HTML entries in total.
 - Rendered-route translation coverage is complete for RU/ZH/AR.
 - Academic terminology was reviewed separately per language; exact IDs, formulas, hashes, and machine statuses remain untranslated and LTR.
-- Arabic document direction is RTL while tables, formulas, matrices, hashes, and receipt JSON remain LTR.
+- Arabic document direction is RTL while tables, formulas, matrices, hashes, and receipt JSON remain LTR; translated captions and explanatory labels inherit RTL independently of their LTR mathematical containers.
 - Semantic header/navigation/main/footer landmarks, skip link, focus styles, reduced-motion rules, aria-live replay, and expanded-state navigation are present.
-- Interactive tests cover Cayley cells, typed-family switching, receipt replay/reset, symmetry cycles, stabilizers, Burnside totals, localized paths, metadata, and all chapter anchors.
+- Beginner explanatory prose has a 14px minimum and table/technical text a 13px minimum; horizontal ledgers are labelled, keyboard-focusable regions.
+- Interactive tests cover Cayley cells and keyboard-oriented selection, beginner dual-channel replay, typed-family switching, receipt replay/reset, symmetry cycles, stabilizers, Burnside totals, localized paths, metadata, and all chapter anchors.
 
 ## Claim firewall
 
@@ -107,7 +125,7 @@ The source and compiled-artifact firewalls reject general overclaims plus the fo
 
 The cloud browser cannot access the local loopback preview in this environment (`ERR_BLOCKED_BY_CLIENT`). Therefore no human-like browser screenshot review of this local build is claimed. DOM, responsive CSS, overflow wrappers, RTL direction, and interactions are automated; a deployed desktop/mobile visual review remains required after Amvera publishes the terminally green `main` commit.
 
-Docker is unavailable in the local workspace. GitHub Actions is the authoritative container witness: it must build the image and smoke-test `/healthz`, all localized Mathematics and Symmetry routes, the existing routes, and an unknown fallback before merge/publication acceptance.
+Docker is unavailable in the local workspace. GitHub Actions is the authoritative container witness: it must build the image and smoke-test `/healthz`, all localized Theory, Mathematics, and Symmetry routes, the existing routes, and an unknown fallback before merge/publication acceptance.
 
 ## Remaining research boundaries
 

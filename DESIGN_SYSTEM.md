@@ -40,10 +40,26 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 
 ## Signature components
 
-1. **Resolution ladder:** L2–L7 frames with a mid-level highlighted to communicate minimal sufficient resolution rather than “higher is always better”.
+1. **Resolution ladder:** neutral L2–L7 frames explain target resolution without implying that the current V4 runtime has selected a level; “higher is automatically better” is explicitly rejected.
 2. **Receipt stack:** observation envelope, committed universe, bound handle, execution receipt, and work ledger.
 3. **Local revision:** one local hypothesis changes while neighbouring cards stay unchanged.
 4. **Current / Target split:** mechanically verified slice and in-development architecture never share an undifferentiated status surface.
+5. **Theory from zero:** a dedicated long-form route starts with an L3 dial, introduces one object class at a time, and provides optional depth through tables, exact records, glossary disclosures, and links to the academic chapters.
+
+## Beginner learning pattern
+
+Every substantial Theory section uses a consistent six-part explanation contract:
+
+1. a plain-language mental model;
+2. the exact mathematical definition;
+3. one fully worked L3 example;
+4. a complete finite table, tree, or replay where appropriate;
+5. an independent consistency check;
+6. a named misconception, counterexample, or evidence boundary.
+
+The interface visually separates labels, calculation indices, and domain meaning. Likewise, it never merges formal mathematics, current V4 runtime behavior, archived compatibility evidence, target architecture, or external operational outcomes.
+
+The guided transition laboratory uses two independent result channels. The browser reconstructs the formula result directly and separately reads the complete Cayley-table cell. Its canonical record exposes `check_id=BEGINNER_TRANSITION_DUAL_CHANNEL`, typed cell ID, raw operands, expected table result, formula result, return code, and status. The lab explicitly states that it does not execute the release engine, interpret natural language, issue an operational receipt, or learn.
 
 ## Motion
 
@@ -61,3 +77,13 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 - `aria-live="polite"` on replay state
 - Text alternatives for diagrams
 - Comparison surfaces reflow into readable mobile cards
+- Cayley-table cells use one roving tab stop with arrow-key movement instead of placing every cell in the tab order
+- Complete tables include captions; horizontal overflow regions remain keyboard reachable where needed
+- Beginner-route explanatory prose is never smaller than 14px; table and technical text is never smaller than 13px, with compact labels at least 12px
+- Exact IDs, formulas, hashes, matrices, and receipt records stay LTR inside the Arabic RTL document
+- Translated Arabic captions and prose inherit RTL even when the adjacent formula or table remains explicitly LTR
+- Closed mobile navigation is removed from the accessibility tree rather than merely hidden visually
+
+## Localized delivery
+
+Six pages — Home, Theory, Mathematics, Symmetry, Evidence, and Privacy — are prerendered in English, Russian, Simplified Chinese, and Arabic. That yields 24 localized HTML entry points with canonical and alternate metadata. Theory prose is independently translated per language; mathematical tokens and machine witnesses remain stable across locales.

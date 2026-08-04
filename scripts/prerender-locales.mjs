@@ -19,6 +19,12 @@ const locales = {
         description:
           "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.",
       },
+      theory: {
+        path: "theory",
+        title: "GALO Theory for Beginners — From States to Verified Execution",
+        description:
+          "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
+      },
       math: {
         path: "math",
         title: "GALO Mathematics — PLUS and STAR Cayley Tables",
@@ -57,6 +63,12 @@ const locales = {
         description:
           "GALO — самостоятельная исследовательская архитектура для явного состояния мира, типизированного исполнения и воспроизведения, подтверждаемого протоколами исполнения.",
       },
+      theory: {
+        path: "theory",
+        title: "Теория GALO для начинающих — от состояний к верифицированному исполнению",
+        description:
+          "Пошаговое введение в GALO: конечные состояния, PLUS и STAR, типизированные переходы, 560 координат, программы, симметрии, отображения уровней, runtime и границы доказательств.",
+      },
       math: {
         path: "math",
         title: "Математика GALO — таблицы Кэли PLUS и STAR",
@@ -94,6 +106,12 @@ const locales = {
         title: "GALO AI — 显式世界状态与可重放执行",
         description: "GALO 是一套面向显式世界状态、类型化执行与回执支撑重放的独立研究架构。",
       },
+      theory: {
+        path: "theory",
+        title: "GALO 入门理论 — 从状态到可验证执行",
+        description:
+          "逐步理解 GALO：有限状态、PLUS 与 STAR、类型化转换、560 个坐标、程序、对称性、层级映射、运行时范围与证据边界。",
+      },
       math: {
         path: "math",
         title: "GALO 数学 — PLUS 与 STAR 凯莱表",
@@ -127,6 +145,12 @@ const locales = {
         title: "GALO AI — حالة عالم صريحة وتنفيذ قابل لإعادة التشغيل",
         description:
           "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ.",
+      },
+      theory: {
+        path: "theory",
+        title: "نظرية GALO للمبتدئين — من الحالات إلى التنفيذ القابل للتحقق",
+        description:
+          "شرح تدريجي لـ GALO: الحالات المنتهية وPLUS وSTAR والانتقالات محددة النوع و560 إحداثيًا والبرامج والتناظرات وخرائط المستويات ونطاق التشغيل وحدود الأدلة.",
       },
       math: {
         path: "math",

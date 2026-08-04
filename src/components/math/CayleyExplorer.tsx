@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, type KeyboardEvent } from "react";
 import {
   applyGaloOperation,
   buildCayleyTable,
@@ -20,7 +20,7 @@ function initialCoordinate(level: GaloLevel): Coordinate {
 }
 
 export function CayleyExplorer() {
-  const { t } = useI18n();
+  const { direction, t } = useI18n();
   const [level, setLevel] = useState<GaloLevel>(3);
   const [operation, setOperation] = useState<GaloOperation>("PLUS");
   const [selected, setSelected] = useState<Coordinate>(initialCoordinate(3));
@@ -35,6 +35,27 @@ export function CayleyExplorer() {
     setLevel(nextLevel);
     setSelected(initialCoordinate(nextLevel));
     setPreview(null);
+  };
+
+  const moveByKeyboard = (event: KeyboardEvent<HTMLButtonElement>, left: number, right: number) => {
+    const offsets: Partial<Record<string, Coordinate>> = {
+      ArrowUp: { left: -1, right: 0 },
+      ArrowDown: { left: 1, right: 0 },
+      ArrowLeft: { left: 0, right: -1 },
+      ArrowRight: { left: 0, right: 1 },
+    };
+    const offset = offsets[event.key];
+    if (!offset) return;
+    event.preventDefault();
+    const next = {
+      left: (left + offset.left + level) % level,
+      right: (right + offset.right + level) % level,
+    };
+    setSelected(next);
+    setPreview(null);
+    window.requestAnimationFrame(() => {
+      document.querySelector<HTMLButtonElement>(`[data-cayley-cell="${next.left}-${next.right}"]`)?.focus();
+    });
   };
 
   return (
@@ -58,13 +79,12 @@ export function CayleyExplorer() {
         </fieldset>
         <fieldset>
           <legend>{t("Operation")}</legend>
-          <div className="segmented-control" role="tablist" aria-label={t("Choose operation")}>
+          <div className="segmented-control" aria-label={t("Choose operation")}>
             {galoOperations.map((item) => (
               <button
                 key={item}
                 type="button"
-                role="tab"
-                aria-selected={operation === item}
+                aria-pressed={operation === item}
                 onClick={() => {
                   setOperation(item);
                   setPreview(null);
@@ -80,7 +100,7 @@ export function CayleyExplorer() {
       <div className="cayley-explorer__workspace">
         <div className="cayley-table-wrap" dir="ltr">
           <table className="cayley-table">
-            <caption>{t("{operation} Cayley table at L{level}", { operation, level })}</caption>
+            <caption dir={direction}>{t("{operation} Cayley table at L{level}", { operation, level })}</caption>
             <thead>
               <tr>
                 <th className="cayley-table__corner" scope="col" aria-label={t("Left operand by right operand")}>
@@ -109,6 +129,8 @@ export function CayleyExplorer() {
                           className={isSelected ? "is-selected" : ""}
                           type="button"
                           aria-pressed={isSelected}
+                          tabIndex={isSelected ? 0 : -1}
+                          data-cayley-cell={`${cell.left}-${cell.right}`}
                           aria-label={t("{operation} at L{level}: P{left} with P{right} equals P{result}", {
                             operation,
                             level,
@@ -121,6 +143,7 @@ export function CayleyExplorer() {
                           onBlur={() => setPreview(null)}
                           onMouseEnter={() => setPreview({ left: cell.left, right: cell.right })}
                           onMouseLeave={() => setPreview(null)}
+                          onKeyDown={(event) => moveByKeyboard(event, cell.left, cell.right)}
                         >
                           P{cell.result}
                         </button>

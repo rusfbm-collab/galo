@@ -1,10 +1,12 @@
+import { useI18n } from "../../i18n/I18nContext";
+
 const levels = [
-  { level: "L2", label: "binary distinction" },
-  { level: "L3", label: "third alternative" },
-  { level: "L4", label: "directional relation" },
-  { level: "L5", label: "additional resolution" },
-  { level: "L6", label: "higher-order distinction" },
-  { level: "L7", label: "maximum current level" },
+  { level: "L2", label: "2 local states" },
+  { level: "L3", label: "3 local states" },
+  { level: "L4", label: "4 local states" },
+  { level: "L5", label: "5 local states" },
+  { level: "L6", label: "6 local states" },
+  { level: "L7", label: "7 local states" },
 ];
 
 export function ResolutionLadder() {
@@ -13,20 +15,22 @@ export function ResolutionLadder() {
   return (
     <figure className="resolution" aria-labelledby="resolution-title">
       <figcaption id="resolution-title">
-        <span>{t("MINIMAL SUFFICIENT RESOLUTION")}</span>
-        {t("Open only the level needed to preserve a task-relevant distinction.")}
+        <span>{t("ILLUSTRATIVE TARGET RESOLUTION LADDER")}</span>
+        {t("The target architecture proposes choosing only the level needed to preserve a task-relevant distinction.")}
       </figcaption>
       <div className="resolution__levels">
-        {levels.map((item, index) => (
-          <div key={item.level} className={`resolution__level ${index === 2 ? "resolution__level--active" : ""}`}>
+        {levels.map((item) => (
+          <div key={item.level} className="resolution__level">
             <span>{item.level}</span>
             <small>{t(item.label)}</small>
-            {index === 2 && <strong>{t("selected")}</strong>}
           </div>
         ))}
       </div>
-      <p className="resolution__note">{t("More poles are not automatically better.")}</p>
+      <p className="resolution__note">
+        {t(
+          "More poles are not automatically better. Current V4 does not prove observation-conditioned level selection.",
+        )}
+      </p>
     </figure>
   );
 }
-import { useI18n } from "../../i18n/I18nContext";

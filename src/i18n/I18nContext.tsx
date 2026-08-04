@@ -4,7 +4,7 @@ import { translations } from "./translations";
 
 export const locales = ["en", "ru", "zh", "ar"] as const;
 export type Locale = (typeof locales)[number];
-export type PageRoute = "/" | "/math" | "/symmetry" | "/evidence" | "/privacy" | "/404";
+export type PageRoute = "/" | "/theory" | "/math" | "/symmetry" | "/evidence" | "/privacy" | "/404";
 
 export const localeConfig: Record<
   Locale,
@@ -51,6 +51,7 @@ export function parseLocalizedPath(pathname: string): { locale: Locale; route: P
   const rawRoute = routeSegments.length ? `/${routeSegments.join("/")}` : "/";
   const route: PageRoute =
     rawRoute === "/" ||
+    rawRoute === "/theory" ||
     rawRoute === "/math" ||
     rawRoute === "/symmetry" ||
     rawRoute === "/evidence" ||

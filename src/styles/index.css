@@ -4632,6 +4632,1969 @@ html[dir="rtl"] .operator-card__mark {
   margin-top: 32px;
 }
 
+/* Beginner theory route */
+
+.page-hero--theory {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 28%, rgba(22, 184, 166, 0.2), transparent 28%),
+    radial-gradient(circle at 12% 82%, rgba(65, 200, 232, 0.1), transparent 24%),
+    linear-gradient(145deg, var(--navy-950), #0d3045);
+}
+
+.page-hero--theory::after {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 46px 46px;
+  content: "";
+  mask-image: linear-gradient(100deg, transparent 10%, black);
+  pointer-events: none;
+}
+
+.page-hero--theory .shell {
+  position: relative;
+  z-index: 1;
+}
+
+.theory-hero__path {
+  display: flex;
+  max-width: 880px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  margin-top: 30px;
+  color: #b6c8d2;
+}
+
+.theory-hero__path span {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: rgba(255, 255, 255, 0.045);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.theory-hero__path svg {
+  flex: 0 0 auto;
+  color: var(--cyan);
+}
+
+.theory-contents .shell > div {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.theory-first-principles,
+.home-theory-bridge__steps {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.theory-first-principles article,
+.home-theory-bridge__steps article {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 25px;
+  background: var(--white);
+}
+
+.theory-first-principles svg {
+  color: var(--teal-deep);
+}
+
+.theory-first-principles h3,
+.home-theory-bridge__steps h3 {
+  margin: 34px 0 10px;
+  color: var(--navy-900);
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.theory-first-principles p,
+.home-theory-bridge__steps p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.home-theory-bridge__steps {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.home-theory-bridge__steps article > span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.home-theory-bridge__steps h3 {
+  margin-top: 45px;
+}
+
+.theory-running-example {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+  grid-template-columns: minmax(230px, 0.45fr) minmax(0, 1fr);
+  margin-top: 14px;
+  border: 1px solid #b7dcd7;
+  border-radius: 20px;
+  padding: 24px;
+  background: #effaf8;
+}
+
+.theory-running-example span,
+.theory-running-example strong {
+  display: block;
+}
+
+.theory-running-example span,
+.theory-card-label {
+  color: var(--teal-deep);
+  font-size: 0.68rem;
+  font-weight: 820;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.theory-running-example strong {
+  margin-top: 6px;
+  color: var(--navy-900);
+  font-family: var(--font-mono);
+}
+
+.theory-running-example p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.theory-dial-grid,
+.theory-law-grid,
+.theory-program-grid,
+.theory-map-grid,
+.theory-current-target {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-dial-grid > article,
+.theory-program-grid > article {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 26px;
+  background: var(--white);
+}
+
+.theory-dial-card > span,
+.theory-object-card > span,
+.theory-program-grid article > span {
+  color: var(--teal-deep);
+  font-size: 0.69rem;
+  font-weight: 820;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.theory-dial {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 38px 0 20px;
+  direction: ltr;
+}
+
+.theory-dial strong {
+  display: grid;
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--navy-900);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.theory-dial svg {
+  flex: 0 1 auto;
+  color: var(--teal-deep);
+}
+
+.theory-dial-card code,
+.theory-program-grid code {
+  display: block;
+  overflow-wrap: anywhere;
+  color: var(--navy-900);
+  font-size: 0.82rem;
+}
+
+.theory-dial-card p,
+.theory-program-grid > article > p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.theory-object-card dl {
+  display: grid;
+  gap: 10px;
+  margin: 34px 0 0;
+}
+
+.theory-object-card dl div {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(125px, 0.38fr) minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.theory-object-card dt {
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.theory-object-card dd {
+  margin: 0;
+  color: var(--navy-900);
+  font-size: 0.84rem;
+  font-weight: 680;
+}
+
+.theory-analogy-boundary,
+.theory-exception-card,
+.theory-compatibility-note,
+.theory-architecture-boundary {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px 0 0;
+  border-inline-start: 3px solid var(--amber);
+  padding: 16px 19px;
+  color: #5c4a2b;
+  background: #fff8e9;
+  font-size: 0.84rem;
+}
+
+.theory-analogy-boundary p,
+.theory-exception-card p,
+.theory-compatibility-note,
+.theory-architecture-boundary {
+  margin-block: 0;
+}
+
+.theory-law-grid > article {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 24px;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.theory-law-card__symbol {
+  position: absolute;
+  top: 12px;
+  right: 24px;
+  color: rgba(65, 200, 232, 0.18);
+  font-size: 5rem;
+  line-height: 1;
+}
+
+html[dir="rtl"] .theory-law-card__symbol {
+  right: auto;
+  left: 24px;
+}
+
+.theory-law-grid article > span {
+  color: var(--cyan);
+  font-size: 0.69rem;
+  font-weight: 820;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.theory-law-grid h3 {
+  max-width: 430px;
+  margin: 70px 0 14px;
+  color: var(--white);
+  font-size: 1.35rem;
+}
+
+.theory-law-grid code {
+  display: block;
+  min-height: 52px;
+  overflow-wrap: anywhere;
+  color: #b7fff6;
+  font-size: 0.78rem;
+}
+
+.theory-worked-calculation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+  padding: 13px;
+  color: #b8c9d4;
+  background: rgba(0, 0, 0, 0.12);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.theory-worked-calculation strong {
+  color: var(--cyan);
+}
+
+.theory-law-grid article > p {
+  margin: 18px 0 0;
+  color: #a0b4c1;
+  font-size: 0.86rem;
+}
+
+.theory-l3-tables {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 16px;
+}
+
+.theory-l3-tables table,
+.theory-tutor__table {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  border-spacing: 5px;
+  padding: 10px;
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.04);
+  font-family: var(--font-mono);
+  table-layout: fixed;
+}
+
+.theory-l3-tables caption,
+.theory-tutor__table caption {
+  padding: 4px 5px 11px;
+  color: #b7c9d4;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  font-weight: 750;
+  text-align: start;
+}
+
+.theory-l3-tables th,
+.theory-l3-tables td,
+.theory-tutor__table th,
+.theory-tutor__table td {
+  height: 42px;
+  border-radius: 8px;
+  padding: 8px;
+  text-align: center;
+}
+
+.theory-l3-tables th,
+.theory-tutor__table th {
+  color: #d7e3e9;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.theory-l3-tables td,
+.theory-tutor__table td {
+  color: #b7fff6;
+  background: rgba(22, 184, 166, 0.07);
+}
+
+.theory-l3-tables td.is-reset,
+.theory-tutor__table td.is-selected {
+  color: var(--navy-950);
+  background: var(--cyan);
+  font-weight: 850;
+}
+
+.theory-table-reconciliation {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 16px 0 0;
+  border-inline-start: 3px solid var(--teal);
+  padding: 15px 18px;
+  color: #c7d7df;
+  background: rgba(22, 184, 166, 0.08);
+  font-size: 0.83rem;
+}
+
+.theory-table-reconciliation svg {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  color: var(--teal);
+}
+
+.theory-table-reconciliation--light {
+  color: var(--muted);
+  background: #edf8f6;
+}
+
+.theory-p0-grid,
+.theory-map-types,
+.theory-symmetry-example,
+.theory-evidence-ladder {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.theory-p0-grid article,
+.theory-map-types article {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px;
+  background: var(--white);
+}
+
+.theory-p0-grid article > span {
+  color: var(--teal-deep);
+  font-size: 0.68rem;
+  font-weight: 820;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.theory-p0-grid code {
+  display: block;
+  margin-top: 34px;
+  color: var(--navy-900);
+  font-size: 1rem;
+}
+
+.theory-p0-grid h3 {
+  margin: 18px 0 7px;
+  font-size: 1.05rem;
+}
+
+.theory-p0-grid p,
+.theory-map-types p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.theory-p0-grid__counterexample {
+  border-color: #ebc785 !important;
+  background: #fffaf0 !important;
+}
+
+.theory-exception-card {
+  align-items: center;
+  border-inline-start-color: var(--teal);
+  color: var(--muted);
+  background: #eff9f7;
+}
+
+.theory-exception-card strong {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--teal-deep);
+  font-family: var(--font-mono);
+}
+
+.theory-check {
+  margin-top: 15px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+}
+
+.theory-check summary {
+  padding: 15px 18px;
+  color: var(--navy-900);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 760;
+}
+
+.theory-check p {
+  margin: 0;
+  border-top: 1px solid var(--line);
+  padding: 15px 18px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.theory-role-flow {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 8px;
+}
+
+.theory-role-flow > div {
+  min-width: 150px;
+  flex: 1 0 150px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 14px;
+  background: var(--white);
+}
+
+.theory-role-flow span,
+.theory-role-flow strong {
+  display: block;
+}
+
+.theory-role-flow span {
+  color: var(--muted);
+  font-size: 0.65rem;
+}
+
+.theory-role-flow strong {
+  margin-top: 5px;
+  color: var(--navy-900);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.theory-role-flow svg {
+  flex: 0 0 auto;
+  color: var(--teal-deep);
+}
+
+.theory-action-table-wrap,
+.theory-count-table-wrap,
+.theory-runtime-ledger {
+  margin-top: 16px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+}
+
+.theory-action-table,
+.theory-count-table,
+.theory-runtime-ledger table {
+  width: 100%;
+  min-width: 780px;
+  border-collapse: collapse;
+}
+
+.theory-action-table caption,
+.theory-count-table caption,
+.theory-runtime-ledger caption {
+  padding: 14px 16px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 750;
+  text-align: start;
+}
+
+.theory-action-table th,
+.theory-action-table td,
+.theory-count-table th,
+.theory-count-table td,
+.theory-runtime-ledger th,
+.theory-runtime-ledger td {
+  border-top: 1px solid var(--line);
+  padding: 14px 16px;
+  font-size: 0.8rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+.theory-action-table thead th,
+.theory-count-table thead th,
+.theory-runtime-ledger thead th {
+  color: var(--white);
+  background: var(--navy-800);
+  font-size: 0.69rem;
+}
+
+.theory-action-table tbody th,
+.theory-count-table tbody th,
+.theory-runtime-ledger tbody th {
+  color: var(--teal-deep);
+  font-weight: 780;
+}
+
+.theory-action-table code {
+  overflow-wrap: anywhere;
+  color: var(--navy-900);
+  font-size: 0.73rem;
+}
+
+.theory-tutor {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.theory-tutor__topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+}
+
+.theory-tutor__topline span,
+.theory-tutor__topline strong {
+  display: block;
+}
+
+.theory-tutor__topline > div > span {
+  color: var(--cyan);
+  font-size: 0.67rem;
+  font-weight: 820;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.theory-tutor__topline > div > strong {
+  margin-top: 4px;
+  color: var(--white);
+  font-size: 0.88rem;
+}
+
+.theory-tutor__controls {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: 24px;
+}
+
+.theory-tutor__controls fieldset {
+  min-width: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.theory-tutor__controls legend {
+  margin-bottom: 8px;
+  color: #a8bcc8;
+  font-size: 0.72rem;
+  font-weight: 750;
+}
+
+.theory-tutor .segmented-control {
+  overflow-x: auto;
+  border-color: rgba(255, 255, 255, 0.14);
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.theory-tutor .segmented-control button {
+  min-width: 44px;
+  color: #b8cad5;
+}
+
+.theory-tutor__families {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-tutor__families button {
+  min-width: 0 !important;
+}
+
+.theory-tutor__transition {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  gap: 10px;
+  border-block: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 17px 24px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.theory-tutor__transition > div {
+  min-width: 105px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+
+.theory-tutor__transition span,
+.theory-tutor__transition strong {
+  display: block;
+}
+
+.theory-tutor__transition span {
+  color: #7791a2;
+  font-size: 0.61rem;
+}
+
+.theory-tutor__transition strong {
+  margin-top: 3px;
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.theory-tutor__transition svg {
+  flex: 0 0 auto;
+  color: var(--cyan);
+}
+
+.theory-tutor__target strong {
+  color: var(--cyan);
+}
+
+.theory-tutor__workspace {
+  display: grid;
+  grid-template-columns: minmax(290px, 0.7fr) minmax(460px, 1.3fr);
+}
+
+.theory-tutor__workspace > article {
+  min-width: 0;
+  padding: 26px;
+}
+
+.theory-tutor__replay {
+  border-inline-end: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.theory-tutor__replay h3 {
+  margin: 14px 0 22px;
+  color: var(--white);
+  font-size: 1.16rem;
+}
+
+.theory-tutor__replay ol {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theory-tutor__replay li {
+  display: grid;
+  align-items: start;
+  gap: 9px;
+  grid-template-columns: 18px minmax(0, 1fr);
+}
+
+.theory-tutor__replay li svg {
+  margin-top: 4px;
+  color: var(--teal);
+}
+
+.theory-tutor__replay li p {
+  margin: 0;
+  color: #9db2c0;
+  font-size: 0.8rem;
+}
+
+.theory-tutor .text-button {
+  margin-top: 18px;
+  color: var(--cyan);
+}
+
+.theory-tutor__witness-heading span,
+.theory-tutor__witness-heading strong {
+  display: block;
+}
+
+.theory-tutor__witness-heading strong {
+  margin-top: 4px;
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+.theory-tutor__formula {
+  margin-top: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+  padding: 13px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.theory-tutor__formula span {
+  display: block;
+  color: #8ba2b1;
+  font-size: 0.62rem;
+}
+
+.theory-tutor__formula code {
+  display: block;
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+  color: #c1fff7;
+  font-size: 0.69rem;
+}
+
+.theory-tutor__table-wrap {
+  margin-top: 12px;
+  overflow-x: auto;
+}
+
+.theory-tutor__table {
+  min-width: 500px;
+}
+
+.theory-tutor__table th.is-axis {
+  color: var(--navy-950);
+  background: #96d9d1;
+}
+
+.theory-tutor__record,
+.theory-exact-witness,
+.theory-release-witness dl {
+  display: grid;
+  gap: 1px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.theory-tutor__record div,
+.theory-exact-witness div,
+.theory-release-witness dl div {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: minmax(120px, 0.38fr) minmax(0, 1fr);
+  padding: 9px 12px;
+  background: var(--navy-950);
+}
+
+.theory-tutor__record dt,
+.theory-exact-witness dt,
+.theory-release-witness dt {
+  color: #7792a4;
+  font-size: 0.61rem;
+}
+
+.theory-tutor__record dd,
+.theory-exact-witness dd,
+.theory-release-witness dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #c8fff8;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+
+.theory-tutor__boundary {
+  margin: 12px 0 0;
+  color: #829aa9;
+  font-size: 0.75rem;
+}
+
+.theory-count-equation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 19px;
+  color: var(--muted);
+  background: var(--white);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.theory-count-equation strong {
+  color: var(--teal-deep);
+  font-size: 1.45rem;
+}
+
+.theory-not-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.theory-not-list strong,
+.theory-not-list span {
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-size: 0.75rem;
+}
+
+.theory-not-list strong {
+  color: var(--white);
+  background: var(--navy-900);
+}
+
+.theory-not-list span {
+  color: #7b383d;
+  border: 1px solid #efc7ca;
+  background: #fff4f5;
+}
+
+.theory-program-grid code {
+  margin-top: 30px;
+}
+
+.theory-program-tree {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px;
+  background: #f7fafc;
+  text-align: center;
+}
+
+.theory-program-tree > div {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.theory-program-tree span,
+.theory-program-tree strong {
+  border-radius: 8px;
+  padding: 6px 8px;
+  color: var(--navy-900);
+  background: var(--white);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.theory-definition-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 15px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  padding: 16px;
+  background: var(--white);
+}
+
+.theory-definition-row svg {
+  flex: 0 0 auto;
+  color: var(--teal-deep);
+}
+
+.theory-definition-row p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.theory-symmetry-example article {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 19px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.theory-symmetry-example svg {
+  margin-bottom: 14px;
+  color: var(--cyan);
+}
+
+.theory-symmetry-example article > span {
+  color: var(--cyan);
+  font-size: 0.68rem;
+  font-weight: 820;
+}
+
+.theory-symmetry-example code {
+  display: block;
+  margin-top: 26px;
+  overflow-wrap: anywhere;
+  color: var(--white);
+  font-size: 0.71rem;
+}
+
+.theory-symmetry-example p {
+  margin: 15px 0 0;
+  color: #a2b6c2;
+  font-size: 0.81rem;
+}
+
+.theory-burnside-simple {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 14px;
+}
+
+.theory-burnside-simple div {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 13px;
+  padding: 13px;
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.theory-burnside-simple span,
+.theory-burnside-simple strong {
+  display: block;
+}
+
+.theory-burnside-simple span {
+  color: #829aa9;
+  font-size: 0.65rem;
+}
+
+.theory-burnside-simple strong {
+  margin-top: 4px;
+  color: #c7fff8;
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+}
+
+.theory-symmetry-receipt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 14px;
+  border: 1px solid rgba(22, 184, 166, 0.26);
+  border-radius: 14px;
+  padding: 13px;
+  background: rgba(22, 184, 166, 0.09);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+}
+
+.theory-symmetry-receipt span,
+.theory-symmetry-receipt strong {
+  overflow-wrap: anywhere;
+  color: #bdfff7;
+}
+
+.theory-symmetry-boundary {
+  margin-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  padding-top: 18px;
+}
+
+.theory-symmetry-boundary strong {
+  color: var(--white);
+}
+
+.theory-symmetry-boundary p {
+  max-width: 840px;
+  color: #9db2bf;
+  font-size: 0.82rem;
+}
+
+.theory-map-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px;
+  background: var(--white);
+}
+
+.theory-map-card--pass {
+  border-top: 4px solid var(--teal);
+}
+
+.theory-map-card--boundary {
+  border-top: 4px solid var(--amber);
+}
+
+.theory-map-card > span {
+  color: var(--teal-deep);
+  font-size: 0.66rem;
+  font-weight: 820;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.theory-map-card h3 {
+  margin: 28px 0 8px;
+  font-size: 1.85rem;
+}
+
+.theory-map-card > code {
+  color: var(--navy-900);
+  font-size: 0.75rem;
+}
+
+.theory-map-checks {
+  margin-top: 16px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: #f7fafc;
+}
+
+.theory-map-checks p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--navy-900);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.theory-map-checks p + p {
+  margin-top: 6px;
+}
+
+.theory-map-card > p {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.theory-exact-witness {
+  border-color: var(--line);
+  background: var(--line);
+}
+
+.theory-exact-witness div {
+  background: #f8fafc;
+}
+
+.theory-exact-witness dt {
+  color: var(--muted);
+}
+
+.theory-exact-witness dd {
+  color: var(--navy-900);
+}
+
+.theory-compatibility-note {
+  color: var(--muted);
+  border-inline-start-color: var(--amber);
+}
+
+.theory-map-types {
+  margin-top: 15px;
+}
+
+.theory-map-types strong {
+  color: var(--navy-900);
+}
+
+.theory-map-types p {
+  margin-top: 10px;
+}
+
+.theory-architecture-stack {
+  display: grid;
+  gap: 8px;
+}
+
+.theory-architecture-stack article {
+  display: grid;
+  align-items: center;
+  gap: 16px;
+  grid-template-columns: 45px minmax(0, 1fr) auto;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px;
+  background: var(--white);
+}
+
+.theory-architecture-stack article > span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.theory-architecture-stack small {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+}
+
+.theory-architecture-stack h3 {
+  margin: 3px 0 0;
+  font-size: 1rem;
+}
+
+.theory-architecture-stack p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.theory-architecture-stack svg {
+  color: var(--teal-deep);
+}
+
+.theory-runtime-ledger {
+  margin-top: 17px;
+}
+
+.theory-current-target {
+  margin-top: 16px;
+}
+
+.theory-current-target article {
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  padding: 22px;
+  background: var(--white);
+}
+
+.theory-current-target svg {
+  color: var(--teal-deep);
+}
+
+.theory-current-target article > span {
+  display: block;
+  margin-top: 13px;
+  color: var(--navy-900);
+  font-weight: 780;
+}
+
+.theory-current-target ul {
+  margin: 13px 0 0;
+  padding-inline-start: 20px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.theory-architecture-boundary {
+  color: var(--muted);
+}
+
+.theory-evidence-ladder article {
+  min-width: 0;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 19px;
+  padding: 21px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.theory-evidence-ladder {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.theory-evidence-ladder article > span {
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 800;
+}
+
+.theory-evidence-ladder h3 {
+  margin: 34px 0 9px;
+  color: var(--white);
+  font-size: 0.91rem;
+  line-height: 1.35;
+}
+
+.theory-evidence-ladder p {
+  margin: 0;
+  color: #9db2bf;
+  font-size: 0.78rem;
+}
+
+.theory-release-witness {
+  margin-block: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 22px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.theory-release-witness > div span,
+.theory-release-witness > div strong {
+  display: block;
+}
+
+.theory-release-witness > div span {
+  color: #8ca3b1;
+  font-size: 0.68rem;
+}
+
+.theory-release-witness > div strong {
+  margin-top: 5px;
+  overflow-wrap: anywhere;
+  color: #c2fff7;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.theory-release-witness > p {
+  margin: 14px 0 0;
+  color: #8ba2b0;
+  font-size: 0.77rem;
+}
+
+.theory-glossary {
+  display: grid;
+  gap: 8px;
+}
+
+.theory-glossary details {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+}
+
+.theory-glossary summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  cursor: pointer;
+}
+
+.theory-glossary summary span {
+  color: #9babb7;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+}
+
+.theory-glossary summary strong {
+  color: var(--navy-900);
+  font-size: 0.9rem;
+}
+
+.theory-glossary details > div {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.7fr);
+  border-top: 1px solid var(--line);
+  padding: 15px 18px;
+}
+
+.theory-glossary p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.theory-glossary code {
+  overflow-wrap: anywhere;
+  color: var(--teal-deep);
+  font-size: 0.74rem;
+}
+
+.theory-misconceptions {
+  display: grid;
+  gap: 13px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-misconceptions article {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  background: var(--white);
+}
+
+.theory-misconceptions article > div,
+.theory-misconceptions article > p {
+  display: grid;
+  align-items: start;
+  gap: 9px;
+  grid-template-columns: 18px minmax(0, 1fr);
+}
+
+.theory-misconceptions article > div svg {
+  margin-top: 3px;
+  color: var(--red);
+}
+
+.theory-misconceptions article > p {
+  margin: 13px 0 0;
+  border-top: 1px solid var(--line);
+  padding-top: 13px;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.theory-misconceptions article > p svg {
+  margin-top: 3px;
+  color: var(--teal-deep);
+}
+
+.theory-next {
+  text-align: center;
+}
+
+.theory-next > .shell > svg {
+  margin: 0 auto 15px;
+  color: var(--cyan);
+}
+
+.theory-next h2 {
+  max-width: 820px;
+  margin: 0 auto;
+  color: var(--white);
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+.theory-next__links {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 38px;
+  text-align: start;
+}
+
+.theory-next__links a {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 17px;
+  padding: 19px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.theory-next__links a span,
+.theory-next__links a strong {
+  grid-column: 1;
+}
+
+.theory-next__links a span {
+  color: var(--cyan);
+  font-size: 0.69rem;
+  font-weight: 780;
+}
+
+.theory-next__links a strong {
+  color: var(--white);
+  font-size: 0.84rem;
+}
+
+.theory-next__links a svg {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: center;
+  color: var(--cyan);
+}
+
+.theory-next__scope {
+  max-width: 900px;
+  margin: 24px auto 0;
+  color: #91a8b7;
+  font-size: 0.78rem;
+}
+
+/* Beginner theory: object boundaries, proofs, and explicit layer bridges */
+
+.theory-object-boundary-wrap,
+.theory-runtime-arithmetic-wrap,
+.theory-symbol-legend-wrap {
+  margin-top: 22px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 19px;
+  background: var(--white);
+}
+
+.theory-object-boundary-table,
+.theory-runtime-arithmetic,
+.theory-symbol-legend {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+}
+
+.theory-object-boundary-table {
+  min-width: 980px;
+}
+
+.theory-object-boundary-table caption,
+.theory-runtime-arithmetic caption,
+.theory-symbol-legend caption,
+.theory-orbit-ledger caption {
+  padding: 15px 17px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 760;
+  text-align: start;
+}
+
+.theory-object-boundary-table th,
+.theory-object-boundary-table td,
+.theory-runtime-arithmetic th,
+.theory-runtime-arithmetic td,
+.theory-symbol-legend th,
+.theory-symbol-legend td {
+  border-top: 1px solid var(--line);
+  padding: 14px 16px;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  text-align: start;
+  vertical-align: top;
+}
+
+.theory-object-boundary-table thead th,
+.theory-runtime-arithmetic thead th,
+.theory-symbol-legend thead th {
+  color: var(--white);
+  background: var(--navy-800);
+  font-size: 0.76rem;
+}
+
+.theory-object-boundary-table tbody th,
+.theory-runtime-arithmetic tbody th,
+.theory-symbol-legend tbody th {
+  color: var(--teal-deep);
+  font-weight: 820;
+}
+
+.theory-object-boundary-table code,
+.theory-runtime-arithmetic code,
+.theory-symbol-legend code {
+  overflow-wrap: anywhere;
+  color: var(--navy-900);
+  font-size: 0.79rem;
+}
+
+.theory-identity-proof,
+.theory-divisibility-proof {
+  margin-top: 22px;
+  border: 1px solid #cfe7e3;
+  border-radius: 21px;
+  padding: 24px;
+  background: linear-gradient(145deg, #f5fbfa, #ffffff);
+}
+
+.theory-identity-proof > span,
+.theory-divisibility-proof > span,
+.theory-two-towers__heading > span,
+.theory-translation-bridge__heading > span,
+.theory-orbit-bridge__heading > span,
+.theory-architecture-subheading > span,
+.theory-target-heading > span {
+  color: var(--teal-deep);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.055em;
+}
+
+.theory-identity-proof h3,
+.theory-divisibility-proof h3,
+.theory-two-towers__heading h3,
+.theory-translation-bridge__heading h3,
+.theory-orbit-bridge__heading h3,
+.theory-architecture-subheading h3,
+.theory-target-heading h3 {
+  margin: 8px 0;
+  color: var(--navy-900);
+  font-size: clamp(1.2rem, 2.3vw, 1.7rem);
+  line-height: 1.25;
+}
+
+.theory-identity-proof ol {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.theory-identity-proof li {
+  display: grid;
+  gap: 10px 18px;
+  grid-template-columns: minmax(230px, 0.78fr) minmax(0, 1.22fr);
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.theory-identity-proof code,
+.theory-identity-proof strong {
+  color: var(--teal-deep);
+}
+
+.theory-identity-proof p,
+.theory-divisibility-proof p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.theory-two-towers,
+.theory-translation-bridge,
+.theory-divisibility-proof,
+.theory-architecture-subheading,
+.theory-target-heading {
+  margin-top: 26px;
+}
+
+.theory-two-towers__heading p,
+.theory-translation-bridge__heading p,
+.theory-orbit-bridge__heading p,
+.theory-architecture-subheading p,
+.theory-target-heading p {
+  max-width: 900px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.theory-two-towers__grid,
+.theory-translation-bridge__cards {
+  display: grid;
+  gap: 14px;
+  margin-top: 17px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-two-towers__grid article,
+.theory-translation-bridge__cards article {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 21px;
+  background: var(--white);
+}
+
+.theory-two-towers__grid article > span,
+.theory-translation-bridge__cards article > span {
+  color: var(--teal-deep);
+  font-size: 0.8rem;
+  font-weight: 820;
+}
+
+.theory-two-towers__grid code,
+.theory-translation-bridge__cards code,
+.theory-translation-bridge__cards strong {
+  display: block;
+  margin-top: 15px;
+  overflow-wrap: anywhere;
+  color: var(--navy-900);
+  font-size: 0.82rem;
+}
+
+.theory-two-towers__grid p,
+.theory-translation-bridge__cards p {
+  margin: 15px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.theory-two-towers__full {
+  grid-column: 1 / -1;
+}
+
+.theory-translation-bridge__cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-translation-bridge__failure {
+  grid-column: 1 / -1;
+  border-color: #ebc785 !important;
+  background: #fffaf0 !important;
+}
+
+.theory-orbit-bridge {
+  margin-top: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 21px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.theory-orbit-bridge__heading > span {
+  color: var(--cyan);
+}
+
+.theory-orbit-bridge__heading h3 {
+  color: var(--white);
+}
+
+.theory-orbit-bridge__heading p,
+.theory-orbit-bridge > p {
+  color: #a8bcc7;
+}
+
+.theory-orbit-ledger-wrap {
+  margin-top: 17px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.theory-orbit-ledger {
+  width: 100%;
+  min-width: 740px;
+  border-collapse: collapse;
+}
+
+.theory-orbit-ledger caption {
+  color: #a8bcc7;
+}
+
+.theory-orbit-ledger th,
+.theory-orbit-ledger td {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 14px;
+  color: #c9d6dd;
+  font-size: 0.82rem;
+  text-align: start;
+}
+
+.theory-orbit-ledger thead th {
+  color: var(--cyan);
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.theory-orbit-ledger tbody th {
+  color: var(--white);
+}
+
+.theory-orbit-equations,
+.theory-current-contract {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.theory-orbit-equations code,
+.theory-current-contract code {
+  border-radius: 10px;
+  padding: 10px 12px;
+  overflow-wrap: anywhere;
+  font-size: 0.8rem;
+}
+
+.theory-orbit-equations code {
+  color: #c7fff8;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.theory-orbit-bridge > p {
+  margin: 15px 0 0;
+  font-size: 0.88rem;
+}
+
+.theory-divisibility-proof > div {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.theory-divisibility-proof article {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--white);
+}
+
+.theory-divisibility-proof article strong {
+  display: block;
+  color: var(--teal-deep);
+  font-size: 0.75rem;
+}
+
+.theory-divisibility-proof article code {
+  display: block;
+  min-height: 46px;
+  margin-top: 13px;
+  overflow-wrap: anywhere;
+  color: var(--navy-900);
+  font-size: 0.76rem;
+}
+
+.theory-divisibility-proof article p {
+  margin-top: 12px;
+  font-size: 0.84rem;
+}
+
+.theory-architecture-subheading,
+.theory-target-heading {
+  border-inline-start: 4px solid var(--teal);
+  padding: 19px 22px;
+  background: rgba(22, 184, 166, 0.075);
+}
+
+.theory-target-heading {
+  border-inline-start-color: var(--amber);
+  background: #fff8e9;
+}
+
+.theory-target-heading > span {
+  color: #93661c;
+}
+
+.theory-runtime-flow,
+.theory-target-flow {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-runtime-flow li,
+.theory-target-flow li {
+  display: grid;
+  min-width: 0;
+  gap: 14px;
+  grid-template-columns: 34px minmax(0, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 17px;
+  background: var(--white);
+}
+
+.theory-runtime-flow li > span,
+.theory-target-flow li > span {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.theory-target-flow li > span {
+  background: #9b6b20;
+}
+
+.theory-runtime-flow h3,
+.theory-target-flow h3 {
+  margin: 0;
+  color: var(--navy-900);
+  font-size: 1rem;
+}
+
+.theory-runtime-flow code,
+.theory-target-flow small {
+  display: block;
+  margin-top: 7px;
+  overflow-wrap: anywhere;
+  color: var(--teal-deep);
+  font-size: 0.76rem;
+}
+
+.theory-target-flow small {
+  margin: 0 0 6px;
+  color: #93661c;
+  font-weight: 800;
+}
+
+.theory-runtime-flow p,
+.theory-target-flow p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+.theory-current-contract p {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+}
+
+.theory-current-contract span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 760;
+}
+
+.theory-current-contract code {
+  color: var(--navy-900);
+  background: #e9f5f3;
+}
+
+.theory-process-boundaries {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.theory-process-boundaries article {
+  border: 1px solid #ebc785;
+  border-radius: 16px;
+  padding: 19px;
+  background: #fffaf0;
+}
+
+.theory-process-boundaries article > span {
+  color: #93661c;
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.theory-process-boundaries h3 {
+  margin: 8px 0;
+  color: var(--navy-900);
+  font-size: 1rem;
+}
+
+.theory-process-boundaries p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.87rem;
+}
+
+/* The beginner route must remain legible without relying on browser zoom. */
+
+.page-hero--theory ~ .math-anchor-section p,
+.page-hero--theory ~ .math-anchor-section li,
+.page-hero--theory ~ .math-anchor-section dd {
+  font-size: max(0.875rem, 14px);
+  line-height: 1.6;
+}
+
+.page-hero--theory ~ .math-anchor-section table th,
+.page-hero--theory ~ .math-anchor-section table td,
+.page-hero--theory ~ .math-anchor-section table caption,
+.page-hero--theory ~ .math-anchor-section summary,
+.page-hero--theory ~ .math-anchor-section dt,
+.page-hero--theory ~ .math-anchor-section code {
+  font-size: max(0.8125rem, 13px);
+}
+
+.page-hero--theory ~ .math-anchor-section span:not(.sr-only),
+.page-hero--theory ~ .math-anchor-section small {
+  font-size: max(0.75rem, 12px);
+}
+
+/* Readability and exact-record accessibility corrections */
+
+.math-contents a,
+.symmetry-vocabulary-grid p,
+.symmetry-vocabulary-grid code,
+.cayley-result > p:not(.cayley-result__equation) {
+  font-size: max(0.78rem, 12px);
+}
+
+.orientation-witness__records code {
+  overflow: visible;
+  overflow-wrap: anywhere;
+  text-overflow: clip;
+  white-space: normal;
+}
+
 /* Responsive */
 
 @media (max-width: 1300px) {
@@ -4766,6 +6729,12 @@ html[dir="rtl"] .operator-card__mark {
   }
   .symmetry-explorer__results {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .theory-evidence-ladder {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .theory-evidence-ladder article:last-child {
+    grid-column: span 2;
   }
 }
 
@@ -4947,6 +6916,43 @@ html[dir="rtl"] .operator-card__mark {
   .claim-table__header,
   .claim-table__row {
     min-width: 790px;
+  }
+  .home-theory-bridge__steps,
+  .theory-first-principles,
+  .theory-p0-grid,
+  .theory-map-types,
+  .theory-symmetry-example,
+  .theory-next__links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .home-theory-bridge__steps article:last-child,
+  .theory-first-principles article:last-child,
+  .theory-p0-grid article:last-child,
+  .theory-map-types article:last-child,
+  .theory-symmetry-example article:last-child,
+  .theory-next__links a:last-child {
+    grid-column: 1 / -1;
+  }
+  .theory-dial-grid,
+  .theory-law-grid,
+  .theory-program-grid,
+  .theory-map-grid,
+  .theory-current-target,
+  .theory-tutor__workspace {
+    grid-template-columns: 1fr;
+  }
+  .theory-divisibility-proof > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .theory-tutor__replay {
+    border-inline-end: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .theory-evidence-ladder {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .theory-evidence-ladder article:last-child {
+    grid-column: 1 / -1;
   }
 }
 
@@ -5296,6 +7302,103 @@ html[dir="rtl"] .operator-card__mark {
   }
   .math-evidence-link .button {
     width: 100%;
+  }
+  .theory-hero__path {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .theory-hero__path svg {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+  html[dir="rtl"] .theory-hero__path svg {
+    transform: rotate(90deg);
+  }
+  .home-theory-bridge__steps,
+  .theory-first-principles,
+  .theory-p0-grid,
+  .theory-map-types,
+  .theory-symmetry-example,
+  .theory-next__links,
+  .theory-l3-tables,
+  .theory-burnside-simple,
+  .theory-evidence-ladder,
+  .theory-misconceptions,
+  .theory-tutor__controls {
+    grid-template-columns: 1fr;
+  }
+  .home-theory-bridge__steps article:last-child,
+  .theory-first-principles article:last-child,
+  .theory-p0-grid article:last-child,
+  .theory-map-types article:last-child,
+  .theory-symmetry-example article:last-child,
+  .theory-next__links a:last-child,
+  .theory-evidence-ladder article:last-child {
+    grid-column: auto;
+  }
+  .theory-running-example {
+    grid-template-columns: 1fr;
+  }
+  .theory-dial {
+    gap: 6px;
+  }
+  .theory-dial strong {
+    width: 43px;
+    height: 43px;
+  }
+  .theory-tutor__topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .theory-tutor__controls,
+  .theory-tutor__workspace > article {
+    padding: 18px;
+  }
+  .theory-tutor__families {
+    grid-template-columns: 1fr;
+  }
+  .theory-object-card dl div,
+  .theory-tutor__record div,
+  .theory-exact-witness div,
+  .theory-release-witness dl div,
+  .theory-glossary details > div {
+    grid-template-columns: 1fr;
+  }
+  .theory-count-equation {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .theory-architecture-stack article {
+    align-items: start;
+    grid-template-columns: 34px minmax(0, 1fr);
+  }
+  .theory-two-towers__grid,
+  .theory-translation-bridge__cards,
+  .theory-runtime-flow,
+  .theory-target-flow,
+  .theory-process-boundaries,
+  .theory-divisibility-proof > div {
+    grid-template-columns: 1fr;
+  }
+  .theory-translation-bridge__failure {
+    grid-column: auto;
+  }
+  .theory-two-towers__full {
+    grid-column: auto;
+  }
+  .theory-identity-proof li {
+    grid-template-columns: 1fr;
+  }
+  .theory-identity-proof,
+  .theory-divisibility-proof,
+  .theory-orbit-bridge {
+    padding: 18px;
+  }
+  .theory-architecture-stack article > svg {
+    display: none;
+  }
+  .theory-next h2 {
+    font-size: clamp(2rem, 11vw, 3.1rem);
   }
 }
 

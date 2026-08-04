@@ -1,20 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Languages, Menu, X } from "lucide-react";
 import { siteContent } from "../../content/site";
-import { localeConfig, locales, useI18n, type Locale } from "../../i18n/I18nContext";
+import { localeConfig, locales, parseLocalizedPath, useI18n, type Locale } from "../../i18n/I18nContext";
 import { Logo } from "./Logo";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
   const { href, languageHref, locale, t } = useI18n();
+  const currentRoute = parseLocalizedPath(window.location.pathname).route;
 
   useEffect(() => {
     const closeOnEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setIsOpen(false);
+      if (event.key === "Escape" && isOpen) {
+        setIsOpen(false);
+        menuButtonRef.current?.focus();
+      }
     };
     window.addEventListener("keydown", closeOnEscape);
     return () => window.removeEventListener("keydown", closeOnEscape);
-  }, []);
+  }, [isOpen]);
 
   return (
     <header className="site-header">
@@ -27,7 +32,11 @@ export function Header() {
         </a>
         <nav className="site-header__desktop" aria-label={t("Primary navigation")}>
           {siteContent.navigation.map((item) => (
-            <a key={item.label} href={href(item.href)}>
+            <a
+              key={item.label}
+              href={href(item.href)}
+              aria-current={!item.href.includes("#") && currentRoute === item.href ? "page" : undefined}
+            >
               {t(item.label)}
             </a>
           ))}
@@ -55,6 +64,7 @@ export function Header() {
           {t("Request evaluation")} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
         </a>
         <button
+          ref={menuButtonRef}
           className="icon-button site-header__menu"
           type="button"
           aria-label={isOpen ? t("Close navigation") : t("Open navigation")}
@@ -65,18 +75,25 @@ export function Header() {
           {isOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
         </button>
       </div>
-      <div id="mobile-navigation" className={`mobile-nav ${isOpen ? "mobile-nav--open" : ""}`}>
-        <nav className="shell" aria-label={t("Mobile navigation")}>
-          {siteContent.navigation.map((item) => (
-            <a key={item.label} href={href(item.href)} onClick={() => setIsOpen(false)}>
-              {t(item.label)}
+      {isOpen && (
+        <div id="mobile-navigation" className="mobile-nav mobile-nav--open">
+          <nav className="shell" aria-label={t("Mobile navigation")}>
+            {siteContent.navigation.map((item) => (
+              <a
+                key={item.label}
+                href={href(item.href)}
+                aria-current={!item.href.includes("#") && currentRoute === item.href ? "page" : undefined}
+                onClick={() => setIsOpen(false)}
+              >
+                {t(item.label)}
+              </a>
+            ))}
+            <a className="button button--primary" href={href("/#evaluation")} onClick={() => setIsOpen(false)}>
+              {t("Request evaluation")} <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
-          ))}
-          <a className="button button--primary" href={href("/#evaluation")} onClick={() => setIsOpen(false)}>
-            {t("Request evaluation")} <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
-          </a>
-        </nav>
-      </div>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
