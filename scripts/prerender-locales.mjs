@@ -19,6 +19,12 @@ const locales = {
         description:
           "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.",
       },
+      math: {
+        path: "math",
+        title: "GALO Mathematics — PLUS and STAR Cayley Tables",
+        description:
+          "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.",
+      },
       evidence: {
         path: "evidence",
         title: "Evidence — GALO AI",
@@ -45,6 +51,12 @@ const locales = {
         description:
           "GALO — самостоятельная исследовательская архитектура для явного состояния мира, типизированного исполнения и воспроизведения, подтверждаемого протоколами исполнения.",
       },
+      math: {
+        path: "math",
+        title: "Математика GALO — таблицы Кэли PLUS и STAR",
+        description:
+          "Изучите конечные таблицы Кэли PLUS и STAR, точные формулы, ориентации исполнения и раскрытые границы формального ядра GALO.",
+      },
       evidence: {
         path: "evidence",
         title: "Доказательства — GALO AI",
@@ -70,6 +82,11 @@ const locales = {
         title: "GALO AI — 显式世界状态与可重放执行",
         description: "GALO 是一套面向显式世界状态、类型化执行与回执支撑重放的独立研究架构。",
       },
+      math: {
+        path: "math",
+        title: "GALO 数学 — PLUS 与 STAR 凯莱表",
+        description: "探索有限的 PLUS 与 STAR 凯莱表、精确公式、执行方向以及 GALO 形式内核已披露的边界。",
+      },
       evidence: {
         path: "evidence",
         title: "证据 — GALO AI",
@@ -93,6 +110,12 @@ const locales = {
         title: "GALO AI — حالة عالم صريحة وتنفيذ قابل لإعادة التشغيل",
         description:
           "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ.",
+      },
+      math: {
+        path: "math",
+        title: "رياضيات GALO — جدولا كايلي PLUS وSTAR",
+        description:
+          "استكشف جدولي كايلي المحدودين PLUS وSTAR، والصيغ الدقيقة، واتجاهات التنفيذ، والحدود المعلنة للنواة الشكلية في GALO.",
       },
       evidence: {
         path: "evidence",

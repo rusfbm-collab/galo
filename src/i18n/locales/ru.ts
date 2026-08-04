@@ -1,6 +1,8 @@
 import type { TranslationDictionary } from "../translations";
+import { mathRu } from "./math";
 
 export const ru: TranslationDictionary = {
+  ...mathRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

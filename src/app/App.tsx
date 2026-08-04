@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { EvidencePage } from "../pages/EvidencePage";
 import { HomePage } from "../pages/HomePage";
+import { MathematicsPage } from "../pages/MathematicsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
 import {
@@ -25,6 +26,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "Evidence — GALO AI",
     description:
       "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.",
+  },
+  "/math": {
+    title: "GALO Mathematics — PLUS and STAR Cayley Tables",
+    description:
+      "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.",
   },
   "/privacy": {
     title: "Privacy — GALO AI",
@@ -114,6 +120,7 @@ export function App() {
     <I18nProvider locale={locale}>
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
+      {route === "/math" && <MathematicsPage />}
       {route === "/evidence" && <EvidencePage />}
       {route === "/privacy" && <PrivacyPage />}
       {route === "/404" && <NotFoundPage />}

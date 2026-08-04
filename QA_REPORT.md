@@ -17,34 +17,26 @@ That command produced the following terminal results:
 
 | Check                         | Result                                                                             |
 | ----------------------------- | ---------------------------------------------------------------------------------- |
-| Source claim firewall         | PASS — 24 public-source files, 0 forbidden matches, 20 required boundaries present |
+| Source claim firewall         | PASS — 27 public-source files, 0 forbidden matches, 20 required boundaries present |
 | ESLint                        | PASS                                                                               |
 | TypeScript strict build       | PASS                                                                               |
-| Vitest / Testing Library      | PASS — 1 file, 16 tests                                                            |
-| Vite build                    | PASS — 1,589 modules                                                               |
-| Localized HTML prerender      | PASS — 12 route entries                                                            |
-| Compiled-asset claim firewall | PASS — 21 local artifacts, 0 forbidden matches                                     |
+| Vitest / Testing Library      | PASS — 2 files, 23 tests                                                           |
+| Vite build                    | PASS — 1,593 modules                                                               |
+| Localized HTML prerender      | PASS — 16 route entries                                                            |
+| Compiled-asset claim firewall | PASS — 25 local artifacts, 0 forbidden matches                                     |
 | Prettier                      | PASS — all selected release files                                                  |
 
 Final static payload:
 
 ```text
 dist/index.html                   1.65 kB | gzip   0.70 kB
-dist/assets/index-B-4BPpD4.css   52.37 kB | gzip  11.83 kB
-dist/assets/index-CZ7nTfMH.js   361.35 kB | gzip 111.60 kB
+dist/assets/index-LHDMZyPD.css   66.57 kB | gzip  14.31 kB
+dist/assets/index-DzKygxHe.js   409.69 kB | gzip 127.27 kB
 ```
-
-The clean published tree produced this GitHub-runner payload:
-
-```text
-dist/index.html                   1.65 kB | gzip   0.70 kB
-dist/assets/index-O7NtI_-g.css   46.45 kB | gzip  10.46 kB
-dist/assets/index-BmE3tMn1.js   361.35 kB | gzip 111.60 kB
-```
-
-Its compiled-asset firewall scanned 18 published artifacts with 0 forbidden matches. The local count includes three unrelated starter SVGs that were intentionally excluded from the GitHub allowlist.
 
 The compiled-asset firewall also checks that TODO_CONFIRM is absent from the browser artifact. DOM tests verify the confirmed `rusfbm@gmail.com` contact, localized evaluation subjects, locale-preserving routes, metadata, RTL direction, and unchanged receipt payload fields.
+
+The mathematics tests exhaustively derive every PLUS and STAR cell across L1–L7, verify PLUS group contracts, verify STAR reset/right-identity contracts and nonassociativity, and independently reconcile `Σn² = 140` with `4 × 140 = 560` typed cells.
 
 ## Content and claim verification
 
@@ -61,11 +53,14 @@ The public interface distinguishes architecture, implemented bounded mechanics, 
 
 A cloud-browser review was completed at a 1,363 × 936 desktop viewport across English, Russian, Simplified Chinese, and Arabic.
 
-- Home, Evidence, Privacy, custom 404, localized URL prefixes, canonical URLs, reciprocal language alternates, and section anchors rendered.
+- Home, Mathematics, Evidence, Privacy, custom 404, localized URL prefixes, canonical URLs, reciprocal language alternates, and section anchors rendered.
+- The Mathematics route was inspected in English, Russian, Simplified Chinese, and Arabic. PLUS/STAR and L1–L7 controls, selectable cells, formulas, the 560 invariant, and the direct LEFT/RIGHT witness rendered.
+- The explorer was switched to STAR/L7 and returned the exact selected witness `STAR_7(P0, P6) = P0` with a 7 × 7 table.
+- Arabic prose remained RTL while Cayley tables, formulas, pole labels, and typed cell identifiers remained LTR.
 - Hero, current-versus-target architecture, Abu Dhabi plan, and receipt explorer were visually inspected.
 - Receipt step navigation, reset, and terminal BOUNDARY state worked.
 - The Evidence page exposed the 10-row public claim matrix in LTR and RTL layouts.
-- The language switch preserved the current page when changing from Arabic Evidence to Chinese Evidence.
+- The language switch preserved `/math#cayley-tables` when changing from Arabic to Simplified Chinese.
 - Same-page target resolution is covered by an automated DOM test.
 - No site-originated console errors were observed. Browser-extension metadata messages were excluded from the site result.
 - The confirmed evaluation email is public. Unconfirmed social, partner-logo, and download links remain hidden.
@@ -89,9 +84,9 @@ Formal Lighthouse scores and assistive-technology manual testing were NOT_RUN in
 - Nginx includes SPA fallback, direct healthz, immutable hashed assets, no-cache HTML, gzip, and security headers.
 - GitHub Actions repeats formatting, lint, typecheck, both claim firewalls, tests, static build, container build, and route smoke checks on main and pull requests.
 
-Docker is not installed in the local review environment (command not found, exit code 127). This local limitation is closed by the published operational witness: GitHub Actions run 30869804408 built the production image and completed the container smoke test successfully. Direct Nginx requests returned HTTP 200 for `/evidence`, `/privacy`, `/outside-scope`, `/ru`, `/zh/evidence`, and `/ar/privacy`; `/healthz` also passed before the route checks.
+Docker is not installed in the local review environment (command not found, exit code 127). GitHub Actions is the authoritative operational contour: it builds the production image and smoke-tests `/healthz`, English/Russian/Chinese/Arabic Mathematics routes, the existing localized routes, and an unknown fallback path on every push to `main`.
 
-The remaining deployment witness is the first Amvera image build followed by TLS/domain checks for `aigalo.com`, all 12 localized routes, and an unknown route.
+The remaining deployment witness is the first Amvera image build followed by TLS/domain checks for `aigalo.com`, all 16 localized routes, and an unknown route.
 
 ## Intentionally unresolved public data
 

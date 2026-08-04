@@ -4,7 +4,7 @@ import { translations } from "./translations";
 
 export const locales = ["en", "ru", "zh", "ar"] as const;
 export type Locale = (typeof locales)[number];
-export type PageRoute = "/" | "/evidence" | "/privacy" | "/404";
+export type PageRoute = "/" | "/math" | "/evidence" | "/privacy" | "/404";
 
 export const localeConfig: Record<
   Locale,
@@ -49,7 +49,8 @@ export function parseLocalizedPath(pathname: string): { locale: Locale; route: P
   const locale: Locale = isLocale(segments[0]) ? segments[0] : "en";
   const routeSegments = locale === "en" ? segments : segments.slice(1);
   const rawRoute = routeSegments.length ? `/${routeSegments.join("/")}` : "/";
-  const route: PageRoute = rawRoute === "/" || rawRoute === "/evidence" || rawRoute === "/privacy" ? rawRoute : "/404";
+  const route: PageRoute =
+    rawRoute === "/" || rawRoute === "/math" || rawRoute === "/evidence" || rawRoute === "/privacy" ? rawRoute : "/404";
 
   return { locale, route, rawRoute };
 }
@@ -64,6 +65,11 @@ export function localizedPath(locale: Locale, canonicalHref: string): string {
   const normalizedPath = pathPart === "/" ? "" : `/${pathPart.replace(/^\/+|\/+$/g, "")}`;
   const localized = `${prefix}${normalizedPath}` || "/";
   return hash ? `${localized}#${hash}` : localized;
+}
+
+export function switchLocalePath(targetLocale: Locale, pathname: string, hash: string): string {
+  const { rawRoute } = parseLocalizedPath(pathname);
+  return `${localizedPath(targetLocale, rawRoute)}${hash}`;
 }
 
 export function I18nProvider({ locale, children }: { locale: Locale; children: ReactNode }) {
@@ -89,12 +95,7 @@ export function I18nProvider({ locale, children }: { locale: Locale; children: R
       direction: localeConfig[locale].direction,
       t,
       href: (canonicalHref) => localizedPath(locale, canonicalHref),
-      languageHref: (targetLocale) => {
-        const { rawRoute } = parseLocalizedPath(window.location.pathname);
-        const canonicalRoute = rawRoute === "/" ? "/" : rawRoute;
-        const localized = localizedPath(targetLocale, canonicalRoute);
-        return `${localized}${window.location.hash}`;
-      },
+      languageHref: (targetLocale) => switchLocalePath(targetLocale, window.location.pathname, window.location.hash),
     };
   }, [locale]);
 

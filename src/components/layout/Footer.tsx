@@ -18,6 +18,7 @@ export function Footer() {
         </div>
         <div className="footer__links" aria-label={t("Footer links")}>
           <a href={href("/#architecture")}>{t("Architecture")}</a>
+          <a href={href("/math")}>{t("Mathematics")}</a>
           <a href={href("/evidence")}>{t("Evidence")}</a>
           <a href={href("/#evaluation")}>{t("Evaluation")}</a>
           <a href={href("/privacy")}>{t("Privacy")}</a>

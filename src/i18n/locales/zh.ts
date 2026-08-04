@@ -1,6 +1,8 @@
 import type { TranslationDictionary } from "../translations";
+import { mathZh } from "./math";
 
 export const zh: TranslationDictionary = {
+  ...mathZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

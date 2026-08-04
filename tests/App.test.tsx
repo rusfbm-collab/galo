@@ -7,6 +7,7 @@ import {
   localizedPath,
   parseLocalizedPath,
   resetMissingTranslations,
+  switchLocalePath,
 } from "../src/i18n/I18nContext";
 
 function setPath(path: string) {
@@ -106,6 +107,23 @@ describe("GALO public site", () => {
     expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
   });
 
+  it("renders the mathematics route and computes selectable Cayley cells", async () => {
+    const user = userEvent.setup();
+    setPath("/math");
+    render(<App />);
+
+    expect(screen.getByRole("heading", { level: 1, name: "The mathematics beneath GALO AI." })).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: "PLUS Cayley table at L3" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "PLUS at L3: P1 with P2 equals P0" })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("tab", { name: /STAR/ }));
+    await user.click(screen.getByRole("button", { name: "STAR at L3: P0 with P2 equals P0" }));
+
+    expect(screen.getByRole("table", { name: "STAR Cayley table at L3" })).toBeInTheDocument();
+    expect(document.querySelector(".cayley-result__equation")).toHaveTextContent("STAR3(P0, P2) = P0");
+    expect(screen.getByText("RESET ROW")).toBeInTheDocument();
+  });
+
   it("renders privacy and the custom 404", () => {
     setPath("/privacy");
     const privacy = render(<App />);
@@ -159,6 +177,15 @@ describe("GALO public site", () => {
     expect(screen.getByRole("link", { name: "rusfbm@gmail.com" })).toBeInTheDocument();
   });
 
+  it("renders the Arabic mathematics route in RTL while keeping tables left-to-right", () => {
+    setPath("/ar/math");
+    render(<App />);
+    expect(document.documentElement).toHaveAttribute("lang", "ar");
+    expect(document.documentElement).toHaveAttribute("dir", "rtl");
+    expect(document.querySelector(".cayley-table-wrap")).toHaveAttribute("dir", "ltr");
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/ar/math");
+  });
+
   it("localizes privacy and 404 pages without losing the locale prefix", () => {
     setPath("/ru/privacy");
     const privacy = render(<App />);
@@ -174,14 +201,17 @@ describe("GALO public site", () => {
     expect(localizedPath("en", "/evidence")).toBe("/evidence");
     expect(localizedPath("ru", "/#receipt")).toBe("/ru#receipt");
     expect(localizedPath("zh", "/privacy")).toBe("/zh/privacy");
+    expect(localizedPath("ar", "/math#cayley-tables")).toBe("/ar/math#cayley-tables");
     expect(parseLocalizedPath("/ar/evidence/")).toEqual({ locale: "ar", route: "/evidence", rawRoute: "/evidence" });
+    expect(parseLocalizedPath("/ru/math/")).toEqual({ locale: "ru", route: "/math", rawRoute: "/math" });
     expect(parseLocalizedPath("/ru/not-real")).toEqual({ locale: "ru", route: "/404", rawRoute: "/not-real" });
+    expect(switchLocalePath("zh", "/ar/math", "#cayley-tables")).toBe("/zh/math#cayley-tables");
   });
 
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/math", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();
