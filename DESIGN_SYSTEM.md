@@ -56,6 +56,10 @@ The home route opens with three named reader routes — decide, verify, understa
 
 The Cayley table is named as the foundation in all three, so a reader who arrives at any of them learns the same thing about what the project is made of.
 
+## Surfaces inside inverted sections
+
+`.section--navy` and `.section--dark` set `color: var(--white)` on everything inside them. Any card that keeps its own light background inside such a section must therefore set its own text colour as well; inheriting produces white text on a white card, which is invisible without being detectably broken. The corrected-misreading cards are the canonical case, and the rule applies to every future component that carries a light surface into an inverted section.
+
 ## Illustration layer
 
 Diagrams are drawn as inline SVG or as real tables, never as bitmaps, so they stay sharp, translatable, and readable by assistive technology. Every figure carries a caption, an `<svg><title>` and `<desc>` pair or a table caption, a direct text label on every mark, and — where the drawing could be over-read — an explicit boundary line.
