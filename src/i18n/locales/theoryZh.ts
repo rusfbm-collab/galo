@@ -751,7 +751,7 @@ export const theoryZh: TranslationDictionary = {
   "P0 resets to P0, while P1 wraps to P0 because 1+2≡0 (mod 3); two sources therefore share P0 and the image has rank 2.":
     "P0 因重置而映到 P0；P1 则因 1+2≡0 (mod 3) 循环回 P0。因此两个源状态共享输出 P0，像的秩为 2。",
 
-  // School mathematics lessons: finite states and typed transitions
+  // Concept lessons: finite states and typed transitions
   "Think of the labelled seats on one small carousel: the carrier is the complete list of seats that exist.":
     "把它想成小型旋转木马上带编号的座位：载体集就是所有实际存在座位的完整清单。",
   "Q_n={P0,…,P_(n−1)} and |Q_n|=n.": "Q_n={P0,…,P_(n−1)} 且 |Q_n|=n。",
@@ -901,7 +901,7 @@ export const theoryZh: TranslationDictionary = {
   "L3 STAR: row P2, column P0 → P2.": "L3 STAR：第 P2 行、第 P0 列 → P2。",
   "STAR_RIGHT(P0,P2)=STAR_3(P2,P0)=P2.": "STAR_RIGHT(P0,P2)=STAR_3(P2,P0)=P2。",
 
-  // School mathematics lessons: counts, programs, and symmetries
+  // Concept lessons: counts, programs, and symmetries
   "Typed catalogue count": "类型化目录计数",
   "Count an inventory by addresses: input squares first, rule books second, and role labels third.":
     "按地址清点目录：先数输入方格，再数规则手册，最后数角色标签。",
@@ -1235,7 +1235,7 @@ export const theoryZh: TranslationDictionary = {
   "n∤m is the negation of n|m; x∈∅ is always false; Δ_X={(x,x)|x∈X}.":
     "n∤m 是 n|m 的否定；x∈∅ 恒为假；Δ_X={(x,x)|x∈X}。",
 
-  // School mathematics lessons: foundational algebraic vocabulary
+  // Concept lessons: foundational algebraic vocabulary
   "Residue class": "剩余类",
   "A residue class is a basket holding all integers that land on the same dial mark.":
     "剩余类像一个篮子，装着所有落在同一表盘刻度上的整数。",
@@ -1485,7 +1485,7 @@ export const theoryZh: TranslationDictionary = {
     "这 5 个有序对轨道既不是 2 个极轨道，也不是恢复四个运算族标签后的 20 个类型化轨道。",
   "Orbit sizes 1+2+2+2+2=9 exhaust the L3 ordered-pair table.": "轨道大小 1+2+2+2+2=9 穷尽了 L3 有序对表。",
   "Burnside: (9+1)/2=5; typed at L3: 4×5=20.": "伯恩赛德引理：(9+1)/2=5；L3 类型化后：4×5=20。",
-  "Current V4 school replay": "当前 V4 的课堂推演",
+  "Current V4 step-by-step replay": "当前 V4 的逐步推演",
   "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
     "设想一个封闭卡片目录：识别两张精确请求卡中的一张，丢弃禁止的卡片类型，选择一个奇偶书架，以可复现方式排序，并只使用一张卡一次。",
   "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":
@@ -1501,7 +1501,7 @@ export const theoryZh: TranslationDictionary = {
   "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.":
     "108=4Σ_(n=2)^7n；1,204=556+6·108；880=556+3·108；440=880/2。",
 
-  // Remaining school symbol-legend readings and meanings
+  // Remaining symbol-legend readings and meanings
   "x belongs to X": "x 属于 X",
   "The object x is an element of the set X.": "对象 x 是集合 X 的一个元素。",
   "A implies B": "A 推出 B",
@@ -1540,7 +1540,7 @@ export const theoryZh: TranslationDictionary = {
   "the exponential of z": "z 的指数函数值",
   "Here it produces unit-circle phases such as exp(2πisk/n).": "这里它产生形如 exp(2πisk/n) 的单位圆相位。",
 
-  // Strengthened school definitions and lesson-card interface
+  // Strengthened definitions and lesson-card interface
   "z is a left zero when z★x=z for every x; for STAR at n≥2, the unique left zero is z=P0.":
     "若对每个 x 都有 z★x=z，则 z 是左零元；对于 n≥2 的 STAR，唯一的左零元是 z=P0。",
   "The first branch gives P0★x=P0. If z=P_k is nonzero, choose x=P_(n−k): then z★x=P0≠z, so no nonzero pole is a left zero.":
@@ -1569,14 +1569,14 @@ export const theoryZh: TranslationDictionary = {
     "打开一个术语，查看完整的七部分讲解和两项独立核验。",
   "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.":
     "每个条目都从类比过渡到精确定义，演算一个小例子，解释命题为什么成立，指出一个常见错误，并核对表格通道与公式通道是否一致。",
-  "School proof notebook": "基础数学证明笔记",
-  "SCHOOL PROOF NOTEBOOK": "基础数学证明笔记",
+  "Step-by-step proof notebook": "逐步证明笔记",
+  "STEP-BY-STEP PROOF NOTEBOOK": "逐步证明笔记",
   "Advanced words become manageable when every claim follows the same seven questions.":
     "当每条命题都回答同样的七个问题时，高阶术语也会变得容易理解。",
   "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.":
     "请按顺序打开卡片：先看类比，再读精确定义，重演小例子，检查成立理由，排除常见错误，最后确认表格与公式一致。",
-  "School symmetry notebook": "基础对称性笔记",
-  "SCHOOL SYMMETRY NOTEBOOK": "基础对称性笔记",
+  "Step-by-step symmetry notebook": "逐步对称性笔记",
+  "STEP-BY-STEP SYMMETRY NOTEBOOK": "逐步对称性笔记",
   "Treat a symmetry as a rule-preserving relabelling before counting anything.":
     "在开始计数之前，先把对称性理解为保持运算律的重新标记。",
   "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.":

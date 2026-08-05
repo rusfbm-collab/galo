@@ -7,6 +7,7 @@ import { NotFoundPage } from "../pages/NotFoundPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
 import { SymmetryPage } from "../pages/SymmetryPage";
 import { TheoryPage } from "../pages/TheoryPage";
+import { ThinkingPage } from "../pages/ThinkingPage";
 import {
   I18nProvider,
   localeConfig,
@@ -34,6 +35,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "GALO Theory for Beginners — From States to Verified Execution",
     description:
       "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
+  },
+  "/thinking": {
+    title: "How GALO Thinks — The Decision Procedure, Stage by Stage",
+    description:
+      "The GALO thinking schemes: the nine stages of one thought, the five refusal gates, the narrowing from 1,204 candidates to one, the one-step state cycle, and what is carried between runs.",
   },
   "/vs-llm": {
     title: "GALO AI and Language Models — What Is Actually Different",
@@ -139,6 +145,7 @@ export function App() {
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
       {route === "/theory" && <TheoryPage />}
+      {route === "/thinking" && <ThinkingPage />}
       {route === "/vs-llm" && <ComparisonPage />}
       {route === "/math" && <MathematicsPage />}
       {route === "/symmetry" && <SymmetryPage />}

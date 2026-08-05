@@ -1,4 +1,4 @@
-import { schoolMathLessons } from "./theory";
+import { conceptLessons } from "./theory";
 
 export type TermDeepDive = {
   term: string;
@@ -10,7 +10,7 @@ export type TermDeepDive = {
 };
 
 /**
- * A plain-language layer in front of the seven-part school lesson. Each entry
+ * A plain-language layer in front of the seven-part concept lesson. Each entry
  * answers the four questions a first-time reader actually asks before the exact
  * definition becomes readable.
  */
@@ -105,7 +105,7 @@ export const termDeepDives: readonly TermDeepDive[] = [
   {
     term: "Cayley table",
     inOneLine: "A Cayley table lists the result of a two-input rule for every possible pair of inputs.",
-    picture: "The times table from school, but written for any two-input rule instead of multiplication.",
+    picture: "The times table you already know, but written for any two-input rule instead of multiplication.",
     whyGalo:
       "A finite table can be checked exhaustively. Nothing has to be trusted, sampled or estimated: every cell is either right or wrong, and the site regenerates them rather than quoting them.",
     whereYouMeetIt: "The L3 tables, the coloured field illustration, and the table channel of every glossary entry.",
@@ -186,7 +186,7 @@ export const termDeepDives: readonly TermDeepDive[] = [
       "Most confusion about a research system comes from quoting one layer while the reader assumes another. Keeping them apart is the reason this site exists in its current form.",
     whereYouMeetIt:
       "The four tracks on the evidence page, the FORMAL / CURRENT V4 / TARGET tags, and the claim matrix.",
-    related: ["Receipt", "Boundary", "Current V4 school replay"],
+    related: ["Receipt", "Boundary", "Current V4 step-by-step replay"],
   },
   {
     term: "Carrier",
@@ -401,7 +401,7 @@ export const termDeepDives: readonly TermDeepDive[] = [
     related: ["Embedding", "Homomorphism", "Level"],
   },
   {
-    term: "Current V4 school replay",
+    term: "Current V4 step-by-step replay",
     inOneLine: "The whole current engine written out as one worked pass, from accepted input to recorded receipt.",
     picture:
       "A sealed card catalogue: recognise one of two request cards, discard the forbidden card types, pick one shelf, sort reproducibly, and use one card once.",
@@ -416,7 +416,7 @@ export const termDeepDiveFields = ["inOneLine", "picture", "whyGalo", "whereYouM
 
 export const termDeepDiveByTerm = new Map(termDeepDives.map((entry) => [entry.term, entry]));
 
-export const termLessonByTerm = new Map(schoolMathLessons.map((lesson) => [lesson.term, lesson]));
+export const termLessonByTerm = new Map(conceptLessons.map((lesson) => [lesson.term, lesson]));
 
 export const termChapterLabel = {
   theory: "Theory chapter",

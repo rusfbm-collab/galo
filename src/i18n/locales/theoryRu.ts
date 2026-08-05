@@ -1449,14 +1449,14 @@ export const theoryRu: TranslationDictionary = {
     "Откройте термин, чтобы увидеть полное объяснение из семи частей и две независимые проверки.",
   "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.":
     "Каждая статья идёт от аналогии к точному определению, разбирает малый пример, объясняет истинность утверждения, указывает типичную ошибку и согласует проверку по таблице с проверкой по формуле.",
-  "School proof notebook": "Школьная тетрадь доказательств",
-  "SCHOOL PROOF NOTEBOOK": "ШКОЛЬНАЯ ТЕТРАДЬ ДОКАЗАТЕЛЬСТВ",
+  "Step-by-step proof notebook": "Пошаговая тетрадь доказательств",
+  "STEP-BY-STEP PROOF NOTEBOOK": "ПОШАГОВАЯ ТЕТРАДЬ ДОКАЗАТЕЛЬСТВ",
   "Advanced words become manageable when every claim follows the same seven questions.":
     "Сложные термины становятся понятнее, когда каждое утверждение отвечает на одни и те же семь вопросов.",
   "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.":
     "Читайте карточку по порядку: начните с аналогии, прочитайте точное определение, воспроизведите малый пример, разберите обоснование, отвергните типичную ошибку и согласуйте таблицу с формулой.",
-  "School symmetry notebook": "Школьная тетрадь симметрий",
-  "SCHOOL SYMMETRY NOTEBOOK": "ШКОЛЬНАЯ ТЕТРАДЬ СИММЕТРИЙ",
+  "Step-by-step symmetry notebook": "Пошаговая тетрадь симметрий",
+  "STEP-BY-STEP SYMMETRY NOTEBOOK": "ПОШАГОВАЯ ТЕТРАДЬ СИММЕТРИЙ",
   "Treat a symmetry as a rule-preserving relabelling before counting anything.":
     "Прежде чем что-либо считать, рассматривайте симметрию как переименование, сохраняющее правила.",
   "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.":
@@ -1652,7 +1652,7 @@ export const theoryRu: TranslationDictionary = {
     "Размеры орбит 1+2+2+2+2=9 исчерпывают таблицу упорядоченных пар L3.",
   "Burnside: (9+1)/2=5; typed at L3: 4×5=20.": "Бёрнсайд: (9+1)/2=5; типизированных на L3: 4×5=20.",
 
-  "Current V4 school replay": "Школьное воспроизведение Current V4",
+  "Current V4 step-by-step replay": "Пошаговое воспроизведение Current V4",
   "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
     "Представьте закрытый карточный каталог: распознайте одну из двух точных карточек запроса, отбросьте запрещённые виды, выберите полку чётности, воспроизводимо отсортируйте и один раз используйте одну карточку.",
   "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":

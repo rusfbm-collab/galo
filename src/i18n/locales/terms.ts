@@ -67,8 +67,8 @@ export const termsRu: TranslationDictionary = {
     "Идентификаторы вида L3:STAR_LEFT:P0:P2, подсчёт 560 координат и пошаговая лаборатория переходов.",
   "A Cayley table lists the result of a two-input rule for every possible pair of inputs.":
     "Таблица Кэли перечисляет результат правила с двумя входами для каждой возможной пары входов.",
-  "The times table from school, but written for any two-input rule instead of multiplication.":
-    "Школьная таблица умножения, но записанная для любого правила с двумя входами, а не только для умножения.",
+  "The times table you already know, but written for any two-input rule instead of multiplication.":
+    "Хорошо знакомая таблица умножения, но записанная для любого правила с двумя входами, а не только для умножения.",
   "A finite table can be checked exhaustively. Nothing has to be trusted, sampled or estimated: every cell is either right or wrong, and the site regenerates them rather than quoting them.":
     "Конечную таблицу можно проверить целиком. Ничего не приходится принимать на веру, выбирать выборочно или оценивать: каждая ячейка либо верна, либо нет, и сайт пересчитывает их, а не цитирует.",
   "The L3 tables, the coloured field illustration, and the table channel of every glossary entry.":
@@ -397,8 +397,8 @@ export const termsZh: TranslationDictionary = {
     "诸如 L3:STAR_LEFT:P0:P2 这样的标识符、560 个坐标的计数，以及那个分步的转换实验室。",
   "A Cayley table lists the result of a two-input rule for every possible pair of inputs.":
     "凯莱表把一条双输入规则在每一对可能输入下的结果全部列出。",
-  "The times table from school, but written for any two-input rule instead of multiplication.":
-    "学校里的乘法表，只不过写给任意的双输入规则，而不只是乘法。",
+  "The times table you already know, but written for any two-input rule instead of multiplication.":
+    "你早已熟悉的乘法表，只不过写给任意的双输入规则，而不只是乘法。",
   "A finite table can be checked exhaustively. Nothing has to be trusted, sampled or estimated: every cell is either right or wrong, and the site regenerates them rather than quoting them.":
     "有限的表格可以被穷尽检查。没有任何东西需要被信任、抽样或估算：每个单元格非对即错，而且本站是重新计算它们，而不是引用它们。",
   "The L3 tables, the coloured field illustration, and the table channel of every glossary entry.":
@@ -729,8 +729,8 @@ export const termsAr: TranslationDictionary = {
     "معرّفات مثل L3:STAR_LEFT:P0:P2، وعدّ الإحداثيات البالغ 560، ومختبر الانتقالات الموجَّه.",
   "A Cayley table lists the result of a two-input rule for every possible pair of inputs.":
     "جدول كايلي يسرد نتيجة قاعدة ذات مدخلين لكل زوج ممكن من المدخلات.",
-  "The times table from school, but written for any two-input rule instead of multiplication.":
-    "جدول الضرب المدرسي، لكنه مكتوب لأي قاعدة ذات مدخلين لا للضرب وحده.",
+  "The times table you already know, but written for any two-input rule instead of multiplication.":
+    "جدول الضرب المألوف لديك، لكنه مكتوب لأي قاعدة ذات مدخلين لا للضرب وحده.",
   "A finite table can be checked exhaustively. Nothing has to be trusted, sampled or estimated: every cell is either right or wrong, and the site regenerates them rather than quoting them.":
     "الجدول المنتهي يمكن فحصه بالكامل. فلا شيء يحتاج إلى ثقة أو معاينة عيّنة أو تقدير: كل خلية إما صحيحة أو خاطئة، والموقع يعيد توليدها بدل أن يقتبسها.",
   "The L3 tables, the coloured field illustration, and the table channel of every glossary entry.":

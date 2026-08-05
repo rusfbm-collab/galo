@@ -25,6 +25,12 @@ const locales = {
         description:
           "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
       },
+      thinking: {
+        path: "thinking",
+        title: "How GALO Thinks — The Decision Procedure, Stage by Stage",
+        description:
+          "The GALO thinking schemes: the nine stages of one thought, the five refusal gates, the narrowing from 1,204 candidates to one, the one-step state cycle, and what is carried between runs.",
+      },
       "vs-llm": {
         path: "vs-llm",
         title: "GALO AI and Language Models — What Is Actually Different",
@@ -75,6 +81,12 @@ const locales = {
         description:
           "Пошаговое введение в GALO: конечные состояния, PLUS и STAR, типизированные переходы, 560 координат, программы, симметрии, отображения уровней, runtime и границы доказательств.",
       },
+      thinking: {
+        path: "thinking",
+        title: "Как мыслит GALO — процедура принятия решения по шагам",
+        description:
+          "Схемы мышления GALO: девять этапов одной мысли, пять шлюзов отказа, сужение от 1 204 кандидатов до одного, одношаговый цикл состояния и то, что переносится между запусками.",
+      },
       "vs-llm": {
         path: "vs-llm",
         title: "GALO AI и языковые модели — в чём именно разница",
@@ -124,6 +136,12 @@ const locales = {
         description:
           "逐步理解 GALO：有限状态、PLUS 与 STAR、类型化转换、560 个坐标、程序、对称性、层级映射、运行时范围与证据边界。",
       },
+      thinking: {
+        path: "thinking",
+        title: "GALO 如何思考 — 逐阶段拆解的决策流程",
+        description:
+          "GALO 的思维图解：一次思考的九个阶段、五道拒绝闸门、从 1,204 个候选收敛到一个、单步状态循环，以及在两次运行之间被带走的东西。",
+      },
       "vs-llm": {
         path: "vs-llm",
         title: "GALO AI 与语言模型 — 究竟差别在哪里",
@@ -168,6 +186,12 @@ const locales = {
         title: "نظرية GALO للمبتدئين — من الحالات إلى التنفيذ القابل للتحقق",
         description:
           "شرح تدريجي لـ GALO: الحالات المنتهية وPLUS وSTAR والانتقالات محددة النوع و560 إحداثيًا والبرامج والتناظرات وخرائط المستويات ونطاق التشغيل وحدود الأدلة.",
+      },
+      thinking: {
+        path: "thinking",
+        title: "كيف يفكّر GALO — إجراء اتخاذ القرار مرحلةً مرحلة",
+        description:
+          "مخططات التفكير في GALO: مراحل الفكرة التسع، وبوابات الرفض الخمس، والتضييق من 1,204 مرشحًا إلى واحد، ودورة الحالة ذات الخطوة الواحدة، وما يُحمل بين التشغيلات.",
       },
       "vs-llm": {
         path: "vs-llm",

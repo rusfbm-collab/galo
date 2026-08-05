@@ -351,11 +351,11 @@ export const theoryEvidenceLadder = [
   },
 ] as const;
 
-export type SchoolMathChapter = "theory" | "mathematics" | "symmetry";
+export type ConceptLessonChapter = "theory" | "mathematics" | "symmetry";
 
-export type SchoolMathLesson = {
+export type ConceptLesson = {
   term: string;
-  chapter: SchoolMathChapter;
+  chapter: ConceptLessonChapter;
   analogy: string;
   exactDefinition: string;
   workedExample: string;
@@ -365,17 +365,17 @@ export type SchoolMathLesson = {
   formulaCheck: string;
 };
 
-type SchoolMathGlossaryEntry = SchoolMathLesson & {
+type ConceptLessonEntry = ConceptLesson & {
   plain: string;
   formal: string;
 };
 
-function schoolMathLesson(entry: SchoolMathLesson): SchoolMathGlossaryEntry {
+function conceptLesson(entry: ConceptLesson): ConceptLessonEntry {
   return { ...entry, plain: entry.analogy, formal: entry.exactDefinition };
 }
 
-export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
-  schoolMathLesson({
+export const conceptLessons: readonly ConceptLessonEntry[] = [
+  conceptLesson({
     term: "Carrier",
     chapter: "theory",
     analogy: "Think of the labelled seats on one small carousel: the carrier is the complete list of seats that exist.",
@@ -387,7 +387,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 row and column headers: P0 | P1 | P2.",
     formulaCheck: "|Q_3|=3.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Pole",
     chapter: "theory",
     analogy: "A pole is one named seat on the carousel, not the whole carousel and not the passenger sitting there.",
@@ -399,7 +399,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3: row P2 and column P2 are addresses labelled by P2, not measured quantities.",
     formulaCheck: "P_(i+kn)=P_i for every integer k.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Level",
     chapter: "theory",
     analogy: "Changing level is like choosing a dial with a different number of marked positions.",
@@ -411,7 +411,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L2 laws have 2×2 tables; L3 laws have 3×3 tables.",
     formulaCheck: "|Q_n|=n and |Q_n×Q_n|=n².",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Binary operation",
     chapter: "theory",
     analogy: "It is a deterministic two-slot machine: insert a left state and a right state, then receive one state.",
@@ -422,7 +422,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "A 2×2 table has four filled body cells and no missing input pair.",
     formulaCheck: "|Q_2×Q_2|=2²=4.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Modulo n",
     chapter: "theory",
     analogy: "Modulo arithmetic is clock arithmetic: after the last mark, counting continues from the first mark.",
@@ -433,7 +433,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 PLUS: row P2, column P2, cell P1.",
     formulaCheck: "(2+2) mod 3=1.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Cayley table",
     chapter: "theory",
     analogy: "It is the multiplication-table idea applied to any finite two-input rule.",
@@ -446,7 +446,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "row P1 · column P2 → P0.",
     formulaCheck: "PLUS_3(P1,P2)=P_((1+2) mod 3)=P0.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "PLUS",
     chapter: "theory",
     analogy: "PLUS rotates a finite dial by the number of steps named by the second pole.",
@@ -459,7 +459,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.",
     formulaCheck: "(1+2) mod 3=0=(2+1) mod 3.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "STAR",
     chapter: "theory",
     analogy: "STAR is a dial with a one-sided emergency latch: a raw-left P0 resets before any movement is calculated.",
@@ -470,7 +470,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 STAR: the P0 row is P0,P0,P0; the P2 row is P2,P0,P1.",
     formulaCheck: "STAR_3(P0,P2)=P0 while STAR_3(P2,P0)=P_((2+0) mod 3)=P2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Left zero",
     chapter: "theory",
     analogy:
@@ -483,7 +483,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "The complete P0 row of every STAR table is constant P0.",
     formulaCheck: "∀j, STAR_n(P0,P_j)=P0.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Right-neutral element",
     chapter: "theory",
     analogy: "A right-neutral element is a do-nothing input only when placed in the right slot.",
@@ -496,7 +496,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "The P0 column of the L3 STAR table reads P0,P1,P2 from top to bottom.",
     formulaCheck: "∀i, STAR_n(P_i,P0)=P_i.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Source state",
     chapter: "theory",
     analogy: "The source is the named starting role in a transition, like the person whose position is being updated.",
@@ -508,7 +508,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "LEFT: row=source; RIGHT: column=source.",
     formulaCheck: "LEFT(P_s,P_a)=F(P_s,P_a); RIGHT(P_s,P_a)=F(P_a,P_s).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Active pole",
     chapter: "theory",
     analogy: "The active pole is the second named role, like the instruction applied to the source.",
@@ -523,7 +523,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "STAR_LEFT uses column P2; STAR_RIGHT uses row P2.",
     formulaCheck: "STAR_LEFT(P0,P2)=P0; STAR_RIGHT(P0,P2)=P2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Typed coordinate",
     chapter: "theory",
     analogy: "It is a postal address for one transition: removing any address field can send you to a different cell.",
@@ -537,7 +537,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 STAR: row P2, column P0 → P2.",
     formulaCheck: "STAR_RIGHT(P0,P2)=STAR_3(P2,P0)=P2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Typed catalogue count",
     chapter: "theory",
     analogy: "Count an inventory by addresses: input squares first, rule books second, and role labels third.",
@@ -548,7 +548,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Per-level typed totals: 4,16,36,64,100,144,196.",
     formulaCheck: "4Σ_(n=1)^7 n²=4·140=560; active L2–L7: 560−4=556.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Rank",
     chapter: "mathematics",
     analogy: "Rank counts how many different destinations a fixed one-input machine can actually reach.",
@@ -560,7 +560,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Read the fixed P2 column for STAR_LEFT and the fixed P2 row for STAR_RIGHT.",
     formulaCheck: "rank(STAR_LEFT(_,P2))=2; rank(STAR_RIGHT(_,P2))=3 at L3.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Reduct and expansion",
     chapter: "mathematics",
     analogy: "The same game board can be studied with one rule book or with both rule books open.",
@@ -572,7 +572,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L2 PLUS P0 row: P0,P1; L2 STAR P0 row: P0,P0.",
     formulaCheck: "signature(G_n)=(2,0); signature(S_n)=(2,0); signature(A_n)=(2,2,0).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Composition",
     chapter: "mathematics",
     analogy:
@@ -586,7 +586,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "First tree lookups: P1★P0=P1, then P1★P1=P2; second tree: P0★P1=P0, then P1★P0=P1.",
     formulaCheck: "C_2=(1/3)binom(4,2)=2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Nonassociative",
     chapter: "mathematics",
     analogy:
@@ -598,7 +598,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "The four L3 table lookups in the two trees return final cells P2 and P1.",
     formulaCheck: "P2≠P1 ⇒ STAR_3 is not associative.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Zero-prefix rule",
     chapter: "mathematics",
     analogy: "In a left-to-right chain, reaching the reset state is like a latch: every later step stays reset.",
@@ -611,7 +611,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L5 STAR: row P2, column P3 → P0; then row P0, column P4 → P0.",
     formulaCheck: "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Stable subset",
     chapter: "mathematics",
     analogy:
@@ -625,7 +625,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 P0 row stays inside {P0}; the P0 column contains P1 and P2 outside {P0}.",
     formulaCheck: "{P0}★Q_3={P0}, but Q_3★{P0}=Q_3.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Congruence",
     chapter: "mathematics",
     analogy: "A congruence allows labels to be merged only when every operation remains well-defined after the merge.",
@@ -638,7 +638,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Compare the L3 cells (P0,P1)→P0 and (P1,P1)→P2 after assuming P0∼P1.",
     formulaCheck: "Con(S_n)={Δ_(Q_n),Q_n×Q_n} for n≥2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Automorphism",
     chapter: "symmetry",
     analogy:
@@ -652,7 +652,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 PLUS: σ(P1⊕P2)=σ(P0)=P0 and σ(P1)⊕σ(P2)=P2⊕P1=P0.",
     formulaCheck: "σ_u(F(x,y))=F(σ_u(x),σ_u(y)).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Group action",
     chapter: "symmetry",
     analogy:
@@ -665,7 +665,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 action rows: u=1 maps 0,1,2 to 0,1,2; u=2 maps them to 0,2,1.",
     formulaCheck: "σ_2∘σ_2=σ_(4 mod 3)=σ_1=id.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Orbit",
     chapter: "symmetry",
     analogy: "An orbit is the list of every place a marker can reach when every allowed symmetry button is tried.",
@@ -678,7 +678,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Apply u=1 and u=2 to P1: the output list is P1,P2.",
     formulaCheck: "Orb(P1)={P_(1·1 mod 3),P_(2·1 mod 3)}={P1,P2}.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Stabilizer",
     chapter: "symmetry",
     analogy: "The stabilizer contains exactly the symmetry buttons that leave a chosen marker in its original place.",
@@ -689,7 +689,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3: u=1 sends P1→P1; u=2 sends P1→P2.",
     formulaCheck: "|U(3)|=2=|Orb(P1)|·|Stab(P1)|=2·1.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Burnside's lemma",
     chapter: "symmetry",
     analogy: "Count symmetry classes by averaging how many objects each symmetry button leaves unmoved.",
@@ -700,7 +700,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 fixed-pole ledger: id→3, swap→1; direct orbit list: {P0}, {P1,P2}.",
     formulaCheck: "(3+1)/2=2; for ordered pairs, (9+1)/2=5.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Affine torsor symmetry",
     chapter: "symmetry",
     analogy:
@@ -714,7 +714,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 STAR compares the original cell (P0,P0)→P0 with the shifted cell (P1,P1)→P2.",
     formulaCheck: "T1(P0★P0)=P1≠P2=T1(P0)★T1(P0).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Inversion orbit",
     chapter: "symmetry",
     analogy: "Inversion pairs a clockwise difference with the equally long counter-clockwise difference on the dial.",
@@ -726,7 +726,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 inversion lookup: 0→0, 1→2, 2→1.",
     formulaCheck: "−(−δ)≡δ (mod n).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Quadratic-residue block",
     chapter: "symmetry",
     analogy:
@@ -739,7 +739,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L5 under u=2: 1→2 and 4→3, so {1,4}→{2,3}.",
     formulaCheck: "QR(5)={1²,2²,3²,4²} mod 5={1,4}.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "CRT boundary",
     chapter: "symmetry",
     analogy:
@@ -753,7 +753,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L6 STAR: row P3, column P1 → P4; coordinate STAR resets the modulo-3 component.",
     formulaCheck: "θ(3★_6 1)=(0,1)≠(0,0)=θ(3)★_coordθ(1).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Character",
     chapter: "symmetry",
     analogy:
@@ -766,7 +766,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 PLUS P1⊕P2=P0 matches ω·ω²=1.",
     formulaCheck: "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Fibrewise aggregate",
     chapter: "symmetry",
     analogy: "Count objects inside labelled drawers first; adding drawer totals does not create one giant drawer.",
@@ -778,7 +778,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Pair-orbit row L1–L7: 1,4,5,10,7,20,9; sum=56.",
     formulaCheck: "4×56=224; 1+1+2+2+4+2+6=18.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Homomorphism",
     chapter: "mathematics",
     analogy:
@@ -791,7 +791,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L2 cell (P1,P1)→P0 maps to L4 cell (P2,P2)→P0 for both laws.",
     formulaCheck: "f(P1⊕_2P1)=P0=P2⊕_4P2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Zero homomorphism",
     chapter: "mathematics",
     analogy: "It is a translation that collapses every source label onto the target's P0.",
@@ -803,7 +803,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Every source table cell maps to target cell (P0,P0)→P0.",
     formulaCheck: "z(F_n(x,y))=P0=F_m(z(x),z(y)).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Embedding",
     chapter: "mathematics",
     analogy: "An embedding places the smaller dial inside the larger one without merging any of its marked positions.",
@@ -816,7 +816,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3→L5 failure: source PLUS(P1,P2)→P0, target PLUS(P1,P2)→P3.",
     formulaCheck: "h(P_i)=P_((u·m/n)i mod m), u∈U(n), when n|m.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Receipt",
     chapter: "theory",
     analogy:
@@ -831,7 +831,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Receipt ledger columns: check_id | scope | expected | got | status.",
     formulaCheck: "PASS + disclosed scope ≠ proof outside that scope.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Boundary",
     chapter: "theory",
     analogy: "A boundary is a clearly marked stop sign showing exactly why a stronger conclusion is not allowed.",
@@ -846,7 +846,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
       "Receipt fields: expected=the divisible-pair tuple; got=[3,5]; the separate preservation counterexample compares P0 with P3.",
     formulaCheck: "φ(PLUS_3(P1,P2))=P0≠P3=PLUS_5(φP1,φP2).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Formal, current, and target layers",
     chapter: "theory",
     analogy:
@@ -862,7 +862,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Layer ledger: FORMAL | CURRENT V4 | TARGET, with a separate status column.",
     formulaCheck: "1,204→880→440 is current selector arithmetic; it is not the 560-coordinate formal derivation.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Symbol legend",
     chapter: "theory",
     analogy:
@@ -877,7 +877,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Legend lookup: symbol | read aloud | meaning in this chapter.",
     formulaCheck: "n∤m is the negation of n|m; x∈∅ is always false; Δ_X={(x,x)|x∈X}.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Residue class",
     chapter: "theory",
     analogy: "A residue class is a basket holding all integers that land on the same dial mark.",
@@ -889,7 +889,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 labels choose the representatives 0,1,2 for the three residue classes.",
     formulaCheck: "[4]_3=[1]_3 because 3|(4−1).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Signature, arity, and constant",
     chapter: "mathematics",
     analogy:
@@ -902,7 +902,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.",
     formulaCheck: "A_n=(Q_n,PLUS_n,STAR_n,P0).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Magma, semigroup, monoid, and group",
     chapter: "mathematics",
     analogy:
@@ -918,7 +918,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 STAR gives (P1★P0)★P1=P2 but P1★(P0★P1)=P1.",
     formulaCheck: "group ⇒ monoid ⇒ semigroup ⇒ magma; the reverse implications need not hold.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Closure",
     chapter: "mathematics",
     analogy: "Closure means the operation never throws you outside the declared game board.",
@@ -929,7 +929,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Every body cell of each L3 table contains one of P0,P1,P2 and no outside symbol.",
     formulaCheck: "PLUS_n,STAR_n:Q_n×Q_n→Q_n.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Associativity",
     chapter: "mathematics",
     analogy: "Associativity asks whether moving parentheses changes the answer while keeping operand order fixed.",
@@ -941,7 +941,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Replay two table lookups for each side of the L3 STAR counterexample.",
     formulaCheck: "(i+j)+k≡i+(j+k) (mod n), but (P1★P0)★P1≠P1★(P0★P1).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Commutativity",
     chapter: "mathematics",
     analogy: "Commutativity asks whether swapping the two input seats leaves the result unchanged.",
@@ -953,7 +953,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "The PLUS table is symmetric across its diagonal; the STAR table is not for n≥2.",
     formulaCheck: "i+j≡j+i (mod n); STAR_n(P0,P1)≠STAR_n(P1,P0).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Identity element",
     chapter: "mathematics",
     analogy: "An identity is a do-nothing input that works from both sides for every element.",
@@ -965,7 +965,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "An identity requires both its row and its column to reproduce the header sequence.",
     formulaCheck: "PLUS_n(P0,P_i)=P_i=PLUS_n(P_i,P0).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Inverse and generator",
     chapter: "mathematics",
     analogy: "An inverse walks back to the origin; a generator can reach every dial mark by repeated steps.",
@@ -977,7 +977,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 PLUS row P1 contains P0 under column P2; powers of P1 cycle through all three poles.",
     formulaCheck: "i+(n−i)≡0 (mod n); ord(P_k)=n/gcd(k,n).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Standard left and right translation",
     chapter: "mathematics",
     analogy:
@@ -989,7 +989,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L_a is row a; R_a is column a.",
     formulaCheck: "STAR_LEFT(_,a)=R_a and STAR_RIGHT(_,a)=L_a.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Image of a function",
     chapter: "mathematics",
     analogy:
@@ -1002,7 +1002,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Fixed P2 STAR column: P0,P0,P1.",
     formulaCheck: "Im(R_P2)={P0,P1}⊂Q_3.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Function, injection, surjection, and bijection",
     chapter: "mathematics",
     analogy:
@@ -1017,7 +1017,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Mapping ledger L2→L4 uses two distinct targets but leaves P1 and P3 unused.",
     formulaCheck: "injective+surjective⇔bijective.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Divisibility and element order",
     chapter: "mathematics",
     analogy:
@@ -1031,7 +1031,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L4 repeated PLUS of P2: P0→P2→P0; L5 every nonzero pole has order 5.",
     formulaCheck: "ord(P_k in C_m)=m/gcd(k,m).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Unit group and Euler totient",
     chapter: "symmetry",
     analogy:
@@ -1043,7 +1043,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Unit ledger L1–L7 has sizes 1,1,2,2,4,2,6.",
     formulaCheck: "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Catalan number and bracket recurrence",
     chapter: "mathematics",
     analogy:
@@ -1056,7 +1056,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "arity 2,3,4,5 → bracketings 1,2,5,14.",
     formulaCheck: "C_3=C_0C_2+C_1C_1+C_2C_0=2+1+2=5.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Equivalence relation and quotient",
     chapter: "mathematics",
     analogy:
@@ -1073,7 +1073,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
       "Test representatives P1 and P2 in the STAR table before trying to define an operation on their merged class.",
     formulaCheck: "[x]★[y]=[x★y] is well-defined only when ∼ is a congruence.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Endomorphism",
     chapter: "symmetry",
     analogy:
@@ -1086,7 +1086,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "L3 endomorphism ledger: zero | identity | swap P1,P2.",
     formulaCheck: "|End(A_3)|=1+|U(3)|=3; |Aut(A_3)|=2.",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Isomorphism versus literal equality",
     chapter: "symmetry",
     analogy: "Two maps can have the same route structure even when their labels and object types are different.",
@@ -1099,7 +1099,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Correspondence table: 1→id; 2→(P1 P2).",
     formulaCheck: "σ_u∘σ_v=σ_(uv mod n).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Torsor and holomorph",
     chapter: "symmetry",
     analogy:
@@ -1113,7 +1113,7 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Check L3 triples before and after T1; corresponding ternary outputs differ by the same shift.",
     formulaCheck: "[F(x),F(y),F(z)]=u(x−y+z)+b=F([x,y,z]).",
   }),
-  schoolMathLesson({
+  conceptLesson({
     term: "Five L3 ordered-pair orbits",
     chapter: "symmetry",
     analogy:
@@ -1128,8 +1128,8 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
     tableCheck: "Orbit sizes 1+2+2+2+2=9 exhaust the L3 ordered-pair table.",
     formulaCheck: "Burnside: (9+1)/2=5; typed at L3: 4×5=20.",
   }),
-  schoolMathLesson({
-    term: "Current V4 school replay",
+  conceptLesson({
+    term: "Current V4 step-by-step replay",
     chapter: "theory",
     analogy:
       "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.",
@@ -1147,9 +1147,9 @@ export const schoolMathLessons: readonly SchoolMathGlossaryEntry[] = [
   }),
 ] as const;
 
-export const theoryGlossary = schoolMathLessons;
+export const theoryGlossary = conceptLessons;
 
-export const schoolMathLessonRequiredFields = [
+export const conceptLessonRequiredFields = [
   "analogy",
   "exactDefinition",
   "workedExample",
@@ -1157,9 +1157,9 @@ export const schoolMathLessonRequiredFields = [
   "commonMistake",
   "tableCheck",
   "formulaCheck",
-] as const satisfies readonly (keyof SchoolMathLesson)[];
+] as const satisfies readonly (keyof ConceptLesson)[];
 
-export const schoolMathLessonUiTranslationKeys = [
+export const conceptLessonUiTranslationKeys = [
   "Intuition / analogy",
   "Exact definition",
   "Worked small-level example",
@@ -1169,22 +1169,22 @@ export const schoolMathLessonUiTranslationKeys = [
   "Formula channel",
   "Open a term for a complete seven-part explanation and two independent checks.",
   "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.",
-  "School proof notebook",
-  "SCHOOL PROOF NOTEBOOK",
+  "Step-by-step proof notebook",
+  "STEP-BY-STEP PROOF NOTEBOOK",
   "Advanced words become manageable when every claim follows the same seven questions.",
   "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.",
-  "School symmetry notebook",
-  "SCHOOL SYMMETRY NOTEBOOK",
+  "Step-by-step symmetry notebook",
+  "STEP-BY-STEP SYMMETRY NOTEBOOK",
   "Treat a symmetry as a rule-preserving relabelling before counting anything.",
   "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.",
 ] as const;
 
-export const schoolMathTranslationKeys = [
+export const conceptLessonTranslationKeys = [
   ...new Set(
-    schoolMathLessons
-      .flatMap((lesson) => [lesson.term, ...schoolMathLessonRequiredFields.map((field) => lesson[field])])
+    conceptLessons
+      .flatMap((lesson) => [lesson.term, ...conceptLessonRequiredFields.map((field) => lesson[field])])
       .concat(theorySymbolLegend.flatMap((item) => [item.reading, item.meaning]))
-      .concat(schoolMathLessonUiTranslationKeys),
+      .concat(conceptLessonUiTranslationKeys),
   ),
 ] as const;
 

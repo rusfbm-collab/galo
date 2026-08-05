@@ -1,21 +1,21 @@
 import { buildCayleyTable } from "../../content/mathematics";
 import { useI18n } from "../../i18n/I18nContext";
 
-const schoolRows = [1, 2, 3];
+const familiarRows = [1, 2, 3];
 const plusTable = buildCayleyTable("PLUS", 3);
 
 /**
- * The multiplication table everyone learned at school, placed beside the L3 PLUS
+ * The multiplication table every reader already knows, placed beside the L3 PLUS
  * table, so the reader can see that a Cayley table is the same familiar object.
  */
-export function SchoolTableBridgeFigure() {
+export function FamiliarTableBridgeFigure() {
   const { t } = useI18n();
 
   return (
     <figure className="galo-figure galo-figure--bridge">
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("YOU HAVE READ ONE OF THESE BEFORE")}</span>
-        <strong>{t("A Cayley table is the school multiplication table, written for a different rule.")}</strong>
+        <strong>{t("A Cayley table is the familiar multiplication table, written for a different rule.")}</strong>
         <span className="galo-figure__note">
           {t(
             "Pick a row, pick a column, read the cell where they cross. That is the whole reading procedure, and it is identical on both sides below.",
@@ -31,7 +31,7 @@ export function SchoolTableBridgeFigure() {
             <thead>
               <tr>
                 <th scope="col">×</th>
-                {schoolRows.map((column) => (
+                {familiarRows.map((column) => (
                   <th key={`sc-${column}`} scope="col">
                     {column}
                   </th>
@@ -39,10 +39,10 @@ export function SchoolTableBridgeFigure() {
               </tr>
             </thead>
             <tbody>
-              {schoolRows.map((row) => (
+              {familiarRows.map((row) => (
                 <tr key={`sr-${row}`}>
                   <th scope="row">{row}</th>
-                  {schoolRows.map((column) => (
+                  {familiarRows.map((column) => (
                     <td key={`s-${row}-${column}`} className={row === 2 && column === 3 ? "is-marked" : undefined}>
                       {row * column}
                     </td>

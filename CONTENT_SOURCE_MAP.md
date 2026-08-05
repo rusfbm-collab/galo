@@ -28,7 +28,8 @@ Current authority: `R5B6A1_3` machine-readable status and receipts. The archive 
 | Academic reference                  | Formal mathematics                   | Numbered definitions and proofs re-derived by the tests  | State each result with a complete proof; never let a finite-algebra theorem stand in for semantics or learning |
 | Plain-language briefing             | Non-technical restatement            | Confirmed site brief and current release status          | Answer without mathematics; state open work as open, and never imply traction, customers, or measured gain     |
 | GALO / language-model comparison    | Mechanism restatement                | Current release contract and published model behaviour   | Compare mechanism and evidence only; never state a benchmark, accuracy, speed, cost, or capability comparison  |
-| Term explanations                   | Formal education + scoped bridge     | Seven-part school lesson plus a plain-language layer     | Analogies stay explicitly subordinate to the exact definition and to the stated boundary                       |
+| Term explanations                   | Formal education + scoped bridge     | Seven-part concept lesson plus a plain-language layer    | Analogies stay explicitly subordinate to the exact definition and to the stated boundary                       |
+| Thinking schemes                    | Mechanism restatement                | Current release contract, selector counts, and receipts  | Every stage carries CURRENT V4 or TARGET; no cognition, understanding, or autonomy is claimed                  |
 | Four work tracks                    | Current status                       | Release contract, replay log, and boundary registry      | Each track states the milestone it reached; a milestone on one track never implies one on another              |
 | Recorded receipt walkthrough        | Sanitized current evidence           | R5B6A1_3 direct selfcheck witnesses                      | Client-side replay; exact closed-ontology and external-origin boundaries                                       |
 | Founder and business plan           | User-provided intent                 | Confirmed site brief                                     | No partner, selection, customer, traction, or legal-status implication                                         |
@@ -43,12 +44,14 @@ Current authority: `R5B6A1_3` machine-readable status and receipts. The archive 
 
 ## Localized route topology
 
-The static build prerenders seven canonical pages in each of four locales, for 28 HTML route entries:
+The static build prerenders eight canonical pages in each of four locales, for 32 HTML route entries:
 
 | Canonical page | English     | Russian        | Simplified Chinese | Arabic         |
 | -------------- | ----------- | -------------- | ------------------ | -------------- |
 | Home           | `/`         | `/ru`          | `/zh`              | `/ar`          |
 | Theory         | `/theory`   | `/ru/theory`   | `/zh/theory`       | `/ar/theory`   |
+| How it thinks  | `/thinking` | `/ru/thinking` | `/zh/thinking`     | `/ar/thinking` |
+| GALO vs LLM    | `/vs-llm`   | `/ru/vs-llm`   | `/zh/vs-llm`       | `/ar/vs-llm`   |
 | Mathematics    | `/math`     | `/ru/math`     | `/zh/math`         | `/ar/math`     |
 | Symmetry       | `/symmetry` | `/ru/symmetry` | `/zh/symmetry`     | `/ar/symmetry` |
 | Evidence       | `/evidence` | `/ru/evidence` | `/zh/evidence`     | `/ar/evidence` |
@@ -68,7 +71,7 @@ Each major concept follows the same learning pattern: plain-language model → e
 
 The route also keeps object classes explicit: a pole is a local finite label; a typed cell is a formal transition address; a descriptor/frontier/handle belongs to the bounded current runtime; a World Atlas is target semantic state; and a receipt is only a scoped execution witness.
 
-The school notebook turns that publication rule into a testable data contract. It contains 59 entries divided into 20 foundations, 23 mathematics lessons, and 16 symmetry lessons. Every entry must provide all seven fields below in every locale:
+The concept notebook turns that publication rule into a testable data contract. It contains 59 entries divided into 20 foundations, 23 mathematics lessons, and 16 symmetry lessons. Every entry must provide all seven fields below in every locale:
 
 1. an intuition or analogy that does not replace the definition;
 2. the exact academic definition, including object types and quantifiers;

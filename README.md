@@ -4,12 +4,12 @@ Multilingual public surface for GALO AI at `https://aigalo.com`. English, Russia
 
 ## Language routes
 
-| Language           | Home  | Theory       | GALO vs LLM  | Mathematics | Symmetry       | Evidence       | Privacy       |
-| ------------------ | ----- | ------------ | ------------ | ----------- | -------------- | -------------- | ------------- |
-| English            | `/`   | `/theory`    | `/vs-llm`    | `/math`     | `/symmetry`    | `/evidence`    | `/privacy`    |
-| Russian            | `/ru` | `/ru/theory` | `/ru/vs-llm` | `/ru/math`  | `/ru/symmetry` | `/ru/evidence` | `/ru/privacy` |
-| Simplified Chinese | `/zh` | `/zh/theory` | `/zh/vs-llm` | `/zh/math`  | `/zh/symmetry` | `/zh/evidence` | `/zh/privacy` |
-| Arabic             | `/ar` | `/ar/theory` | `/ar/vs-llm` | `/ar/math`  | `/ar/symmetry` | `/ar/evidence` | `/ar/privacy` |
+| Language           | Home  | Theory       | How it thinks  | GALO vs LLM  | Mathematics | Symmetry       | Evidence       | Privacy       |
+| ------------------ | ----- | ------------ | -------------- | ------------ | ----------- | -------------- | -------------- | ------------- |
+| English            | `/`   | `/theory`    | `/thinking`    | `/vs-llm`    | `/math`     | `/symmetry`    | `/evidence`    | `/privacy`    |
+| Russian            | `/ru` | `/ru/theory` | `/ru/thinking` | `/ru/vs-llm` | `/ru/math`  | `/ru/symmetry` | `/ru/evidence` | `/ru/privacy` |
+| Simplified Chinese | `/zh` | `/zh/theory` | `/zh/thinking` | `/zh/vs-llm` | `/zh/math`  | `/zh/symmetry` | `/zh/evidence` | `/zh/privacy` |
+| Arabic             | `/ar` | `/ar/theory` | `/ar/thinking` | `/ar/vs-llm` | `/ar/math`  | `/ar/symmetry` | `/ar/evidence` | `/ar/privacy` |
 
 The build writes a localized HTML entry for every route with matching `lang`, direction, canonical URL, and reciprocal `hreflang` metadata. Arabic routes use RTL layout while exact machine tokens, hashes, IDs, metrics, and receipt JSON remain LTR and unchanged.
 
@@ -51,7 +51,7 @@ Expected health response: `ok` with HTTP 200.
 3. Configure the GitHub token or webhook in the Amvera interface. Do not commit a token to this repository.
 4. Keep the target event consistent between GitHub and Amvera. A push to `main` can trigger pull/build automatically.
 5. Amvera reads `amvera.yaml`, builds `Dockerfile`, and routes to container port 80.
-6. Confirm `/healthz`, the 28 localized routes above, and an unknown path after the first deployment.
+6. Confirm `/healthz`, the 32 localized routes above, and an unknown path after the first deployment.
 
 ## GitHub webhook checklist
 
@@ -76,6 +76,7 @@ Expected health response: `ok` with HTTP 200.
 - Confirmed public evaluation contact: `src/content/contact.ts`
 - Public claim matrix: `src/content/publicClaims.ts`
 - GALO / language-model comparison: `src/content/llmComparison.ts`
+- Thinking schemes, refusal gates, and carried state: `src/content/thinking.ts`
 - Internal red-team claim controller: `src/content/claims.ts`
 - Release evidence: `src/content/evidence.ts`
 - Frozen PLUS/STAR formulas and table generator: `src/content/mathematics.ts`

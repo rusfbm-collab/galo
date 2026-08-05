@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight, CircleEqual, Orbit, ShieldAlert } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
 import { UnitGroupFigure } from "../components/diagrams/UnitGroupFigure";
-import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
+import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { SymmetryExplorer } from "../components/math/SymmetryExplorer";
 import { SectionHeading } from "../components/ui/SectionHeading";
@@ -15,13 +15,13 @@ import {
   structuralOrbitCountByBurnside,
   symmetryLevelProfiles,
 } from "../content/mathematics";
-import { schoolMathLessons } from "../content/theory";
+import { conceptLessons } from "../content/theory";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
   { href: "#two-families", label: "Two indexed families" },
   { href: "#vocabulary", label: "Symmetry vocabulary" },
-  { href: "#school-symmetry-notebook", label: "School symmetry notebook" },
+  { href: "#symmetry-notebook", label: "Step-by-step symmetry notebook" },
   { href: "#orbit-lab", label: "Orbit and stabilizer lab" },
   { href: "#level-ledger", label: "L1–L7 symmetry ledger" },
   { href: "#affine-boundary", label: "Affine and STAR boundary" },
@@ -29,7 +29,7 @@ const contents = [
   { href: "#interpretation", label: "Interpretation boundaries" },
 ] as const;
 
-const symmetrySchoolLessons = schoolMathLessons.filter(({ chapter }) => chapter === "symmetry");
+const symmetryLessons = conceptLessons.filter(({ chapter }) => chapter === "symmetry");
 
 export function SymmetryPage() {
   const { direction, href, t } = useI18n();
@@ -212,10 +212,10 @@ export function SymmetryPage() {
         </div>
       </section>
 
-      <section id="school-symmetry-notebook" className="section section--white math-anchor-section">
+      <section id="symmetry-notebook" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("SCHOOL SYMMETRY NOTEBOOK")}
+            eyebrow={t("STEP-BY-STEP SYMMETRY NOTEBOOK")}
             title={t("Treat a symmetry as a rule-preserving relabelling before counting anything.")}
             text={t(
               "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.",
@@ -225,14 +225,14 @@ export function SymmetryPage() {
             <p className="eyebrow">{t("COMPLETE TERM INDEX")}</p>
             <h3>{t("Open any of the 59 terms and read it in full.")}</h3>
             <div className="term-index__row">
-              {symmetrySchoolLessons.map((lesson) => (
+              {symmetryLessons.map((lesson) => (
                 <TermButton key={lesson.term} term={lesson.term} />
               ))}
             </div>
           </div>
           <div className="theory-glossary">
-            {symmetrySchoolLessons.map((lesson, index) => (
-              <SchoolMathLessonCard
+            {symmetryLessons.map((lesson, index) => (
+              <ConceptLessonCard
                 key={lesson.term}
                 lesson={lesson}
                 index={index}

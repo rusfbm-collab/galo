@@ -1512,7 +1512,7 @@ export const theoryAr: TranslationDictionary = {
   "Orbit sizes 1+2+2+2+2=9 exhaust the L3 ordered-pair table.":
     "تستنفد أحجام المدارات 1+2+2+2+2=9 جدول الأزواج المرتبة في L3.",
   "Burnside: (9+1)/2=5; typed at L3: 4×5=20.": "Burnside: (9+1)/2=5؛ ومحدد النوع في L3: ‏4×5=20.",
-  "Current V4 school replay": "إعادة التشغيل المدرسية لـV4 الحالي",
+  "Current V4 step-by-step replay": "إعادة التشغيل خطوة بخطوة لـV4 الحالي",
   "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
     "تخيّل فهرس بطاقات مختومًا: تعرّف إحدى بطاقتي الطلب الدقيقتين، واستبعد أنواع البطاقات المحظورة، واختر رفًا وفق الزوجية أو الفردية، ورتّب ترتيبًا قابلًا للإعادة، ثم استخدم بطاقة واحدة مرة واحدة.",
   "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":
@@ -1573,14 +1573,14 @@ export const theoryAr: TranslationDictionary = {
     "افتح مصطلحًا للحصول على شرح كامل من سبعة أجزاء وفحصين مستقلين.",
   "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.":
     "ينتقل كل مدخل من التشبيه إلى التعريف الدقيق، ويحل مثالًا صغيرًا، ويشرح لماذا يصح الادعاء، ويسمّي خطأً شائعًا، ويوفّق بين قناتَي الجدول والصيغة.",
-  "School proof notebook": "دفتر براهين مدرسي",
-  "SCHOOL PROOF NOTEBOOK": "دفتر البراهين المدرسي",
+  "Step-by-step proof notebook": "دفتر براهين خطوة بخطوة",
+  "STEP-BY-STEP PROOF NOTEBOOK": "دفتر البراهين خطوة بخطوة",
   "Advanced words become manageable when every claim follows the same seven questions.":
     "تصبح الكلمات المتقدمة قابلة للفهم عندما يتبع كل ادعاء الأسئلة السبعة نفسها.",
   "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.":
     "افتح البطاقة بالترتيب: ابدأ بالتشبيه، واقرأ التعريف الدقيق، وأعد المثال الصغير، وافحص السبب، وارفض الخطأ الشائع، واجعل الجدول والصيغة متوافقين.",
-  "School symmetry notebook": "دفتر تناظر مدرسي",
-  "SCHOOL SYMMETRY NOTEBOOK": "دفتر التناظر المدرسي",
+  "Step-by-step symmetry notebook": "دفتر تناظر خطوة بخطوة",
+  "STEP-BY-STEP SYMMETRY NOTEBOOK": "دفتر التناظر خطوة بخطوة",
   "Treat a symmetry as a rule-preserving relabelling before counting anything.":
     "عامل التناظر بوصفه إعادة تسمية تحفظ القواعد قبل أن تعدّ أي شيء.",
   "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.":

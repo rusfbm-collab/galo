@@ -105,7 +105,7 @@ function catalan(index: number): number {
   );
 }
 
-describe("independent school-level reconstruction of the published mathematics", () => {
+describe("independent from-first-principles reconstruction of the published mathematics", () => {
   it("checks all four cyclic-group laws for PLUS on L1-L7", () => {
     for (const level of levels) {
       const values = carrier(level);
@@ -345,7 +345,7 @@ describe("independent school-level reconstruction of the published mathematics",
     }
   });
 
-  it("reconstructs the school Burnside examples at L3 from fixed objects", () => {
+  it("reconstructs the worked Burnside examples at L3 from fixed objects", () => {
     const identity = (value: number) => value;
     const swap = (value: number) => (2 * value) % 3;
     const pointFixCounts = [identity, swap].map(

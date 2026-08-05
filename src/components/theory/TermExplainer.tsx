@@ -1,7 +1,7 @@
 import { X } from "lucide-react";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { termChapterLabel, termDeepDiveByTerm, termLessonByTerm } from "../../content/termDeepDives";
-import { schoolMathLessonRequiredFields } from "../../content/theory";
+import { conceptLessonRequiredFields } from "../../content/theory";
 import { useI18n } from "../../i18n/I18nContext";
 
 const TermExplainerContext = createContext<{ openTerm: (term: string) => void } | null>(null);
@@ -12,7 +12,7 @@ function useTermExplainer() {
   return value;
 }
 
-const lessonFieldLabels: Record<(typeof schoolMathLessonRequiredFields)[number], string> = {
+const lessonFieldLabels: Record<(typeof conceptLessonRequiredFields)[number], string> = {
   analogy: "Intuition / analogy",
   exactDefinition: "Exact definition",
   workedExample: "Worked small-level example",
@@ -112,7 +112,7 @@ function TermDialog({
           <div className="term-modal__formal">
             <p className="eyebrow">{t("Complete definition and two independent checks")}</p>
             <dl>
-              {schoolMathLessonRequiredFields.map((field) => (
+              {conceptLessonRequiredFields.map((field) => (
                 <div key={field} className={`term-modal__field term-modal__field--${field}`}>
                   <dt>{t(lessonFieldLabels[field])}</dt>
                   <dd>{isolateMath(t(lesson[field]))}</dd>

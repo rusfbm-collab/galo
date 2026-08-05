@@ -2,7 +2,7 @@
  * Two non-technical entry layers.
  *
  * `investorBriefing` answers the questions a non-technical reader asks first.
- * `cayleyFoundation` explains, from a school multiplication table upward, why a
+ * `cayleyFoundation` explains, from the familiar multiplication table upward, why a
  * finite Cayley table is the object everything else on this site is built on.
  */
 

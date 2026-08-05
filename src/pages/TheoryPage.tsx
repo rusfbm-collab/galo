@@ -22,10 +22,10 @@ import { ProgramTreeFigure } from "../components/diagrams/ProgramTreeFigure";
 import { ResolutionLossFigure } from "../components/diagrams/ResolutionLossFigure";
 import { RoleOrientationFigure } from "../components/diagrams/RoleOrientationFigure";
 import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
-import { SchoolTableBridgeFigure } from "../components/diagrams/SchoolTableBridgeFigure";
+import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
 import { StarResetFigure } from "../components/diagrams/StarResetFigure";
 import { PageShell } from "../components/layout/PageShell";
-import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
+import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton, TermChips } from "../components/theory/TermExplainer";
 import { TransitionTutor } from "../components/theory/TransitionTutor";
 import { SectionHeading } from "../components/ui/SectionHeading";
@@ -136,7 +136,7 @@ const actionFamilies = [
   },
 ] as const;
 
-const currentV4SchoolLesson = theoryGlossary.find(({ term }) => term === "Current V4 school replay")!;
+const currentV4ReplayLesson = theoryGlossary.find(({ term }) => term === "Current V4 step-by-step replay")!;
 
 export function TheoryPage() {
   const { direction, href, t } = useI18n();
@@ -189,10 +189,10 @@ export function TheoryPage() {
             eyebrow={t("START WITH THE TABLE")}
             title={t("Everything on this site is built on one finite table.")}
             text={t(
-              "Before any talk of architecture, agents, or evidence, there is a table of results for two inputs — the same object you met at school as the multiplication table. If you follow only this section, you will still know what GALO is made of.",
+              "Before any talk of architecture, agents, or evidence, there is a table of results for two inputs — the same object you already know as the multiplication table. If you follow only this section, you will still know what GALO is made of.",
             )}
           />
-          <SchoolTableBridgeFigure />
+          <FamiliarTableBridgeFigure />
 
           <div className="theory-foundation-steps">
             {cayleyFoundation.map((step) => (
@@ -1315,7 +1315,7 @@ export function TheoryPage() {
             ))}
           </ol>
           <div className="theory-glossary">
-            <SchoolMathLessonCard lesson={currentV4SchoolLesson} index={0} open direction={direction} translate={t} />
+            <ConceptLessonCard lesson={currentV4ReplayLesson} index={0} open direction={direction} translate={t} />
           </div>
           <div className="theory-current-contract">
             <p>
@@ -1459,7 +1459,7 @@ export function TheoryPage() {
               </li>
             ))}
           </ol>
-          <TermChips terms={["Formal, current, and target layers", "Current V4 school replay", "Receipt"]} />
+          <TermChips terms={["Formal, current, and target layers", "Current V4 step-by-step replay", "Receipt"]} />
         </div>
       </section>
 
@@ -1604,9 +1604,9 @@ export function TheoryPage() {
           </div>
           <div className="theory-glossary">
             {theoryGlossary
-              .filter((item) => item.term !== currentV4SchoolLesson.term)
+              .filter((item) => item.term !== currentV4ReplayLesson.term)
               .map((item, index) => (
-                <SchoolMathLessonCard
+                <ConceptLessonCard
                   key={item.term}
                   lesson={item}
                   index={index}
@@ -1647,6 +1647,11 @@ export function TheoryPage() {
           <p className="eyebrow eyebrow--cyan">{t("CONTINUE AT YOUR DEPTH")}</p>
           <h2>{t("You now have the conceptual map. Choose the next verification layer.")}</h2>
           <div className="theory-next__links">
+            <a href={href("/thinking")}>
+              <span>{t("The decision procedure")}</span>
+              <strong>{t("Nine stages of one thought, drawn as schemes")}</strong>
+              <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
+            </a>
             <a href={href("/math")}>
               <span>{t("Exact formal kernel")}</span>
               <strong>{t("Tables, 560 coordinates, ranks, programs, and morphisms")}</strong>

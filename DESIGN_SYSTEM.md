@@ -51,7 +51,7 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 The site has three deliberate entry points, and each one is complete on its own.
 
 1. **Plain-language briefing** (home). Six questions a non-technical reader asks first, answered without mathematics or acronyms, followed by the single technical fact worth carrying away: everything below rests on a finite Cayley table.
-2. **Start with the table** (theory). The school multiplication table placed beside the L3 PLUS table, the six-step chain from that table up to a replayable record, and the four properties a finite table has that a trained model does not.
+2. **Start with the table** (theory). The familiar multiplication table placed beside the L3 PLUS table, the six-step chain from that table up to a replayable record, and the four properties a finite table has that a trained model does not.
 3. **Academic reference** (mathematics). Six numbered definitions and eleven numbered propositions with complete proofs, in the form a referee expects. Statements and proof prose are translated; every formal expression stays canonical and left-to-right in all four locales.
 
 The Cayley table is named as the foundation in all three, so a reader who arrives at any of them learns the same thing about what the project is made of.
@@ -73,19 +73,23 @@ Chart colour uses its own validated tokens rather than the brand accents, becaus
 
 Both sets pass a colour-vision-deficiency separation check and a 3:1 contrast check against their own surface. Diagram geometry is authored left-to-right and the SVG keeps that flow in every locale, with each label bidi-isolated so Arabic text still renders in its own direction without escaping its box. Magnitude uses a single seven-step teal ramp (`--ramp-0` … `--ramp-6`), light to dark; colour is never the only encoding, and every coloured cell also prints its exact label.
 
-The figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, the four-track status board, the school-table bridge, the layer stack, the two-machine anatomy, the question-by-question table, the composition loop, the commuting square, the two evaluation trees, the four role orientations, the resolution-loss map, the annotated receipt, and the per-level automorphism chart. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
+The figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, the four-track status board, the familiar-table bridge, the layer stack, the two-machine anatomy, the question-by-question table, the composition loop, the commuting square, the two evaluation trees, the four role orientations, the resolution-loss map, the annotated receipt, the per-level automorphism chart, the nine-stage thought pipeline, the five refusal gates, the one-step state cycle, the three converging runs, and the carried-state bands. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
 
 ## Comparison route
 
 `/vs-llm` is the one page that puts GALO beside a language model. It is written on a single rule: compare mechanism and evidence, never output quality. Every row of the ten-property table states what each object _is_, the breadth row says plainly that a language model is vastly wider, and one of the five corrected misreadings exists solely to state that no head-to-head evaluation has been run. The composition diagram marks the two proposing stages as target architecture so the loop cannot be read as shipped.
 
+## Thinking route
+
+`/thinking` draws the decision procedure itself. One thought is nine numbered stages, and the diagram, the stage cards, and the worked table all carry the same statuses: seven stages are marked `CURRENT V4` and drawn solid, the two that would follow are marked `TARGET` and drawn dashed. Every stage names the single condition that stops the thought there, and the five refusal gates are given codes that end up in the record, so a stop is a result with a cause rather than an absence of output. The worked walkthrough repeats the whole procedure with the release's own values — 1,204, 880, 440, the SHA-256 ordering input, arity 2, route depth 1 — and deliberately leaves the two target stages without a row, because they produce no value today.
+
 ## Term explainer
 
-Any term the reader can meet in the running text is also a chip. A chip opens a modal that gives the plain-language layer first — one line, a familiar picture, why GALO needs it, and where it appears on the site — followed by the complete seven-part school lesson and a set of related terms that can be opened in place. Forty of the fifty-nine terms carry the plain-language layer; the rest open straight to the full lesson. The modal closes on Escape, on backdrop click, and on its close button, and it returns focus to the chip that opened it.
+Any term the reader can meet in the running text is also a chip. A chip opens a modal that gives the plain-language layer first — one line, a familiar picture, why GALO needs it, and where it appears on the site — followed by the complete seven-part concept lesson and a set of related terms that can be opened in place. Forty of the fifty-nine terms carry the plain-language layer; the rest open straight to the full lesson. The modal closes on Escape, on backdrop click, and on its close button, and it returns focus to the chip that opened it.
 
 ## Beginner learning pattern
 
-The 59-entry school notebook uses one consistent seven-part explanation contract across Theory, Mathematics, and Symmetry:
+The 59-entry concept notebook uses one consistent seven-part explanation contract across Theory, Mathematics, and Symmetry:
 
 1. a plain-language analogy that is explicitly subordinate to the mathematics;
 2. the exact mathematical definition;

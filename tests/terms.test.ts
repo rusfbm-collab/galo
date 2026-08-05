@@ -7,14 +7,14 @@ import {
   termTranslationKeys,
   termUiTranslationKeys,
 } from "../src/content/termDeepDives";
-import { schoolMathLessonRequiredFields, schoolMathLessons } from "../src/content/theory";
+import { conceptLessonRequiredFields, conceptLessons } from "../src/content/theory";
 import { translations } from "../src/i18n/translations";
 import { locales } from "../src/i18n/I18nContext";
 
 const translatedLocales = locales.filter((locale) => locale !== "en");
 
 describe("term explanations", () => {
-  it("attaches every deep dive to an existing school lesson", () => {
+  it("attaches every deep dive to an existing concept lesson", () => {
     for (const entry of termDeepDives) {
       expect(termLessonByTerm.get(entry.term), `unknown term ${entry.term}`).toBeDefined();
     }
@@ -22,7 +22,7 @@ describe("term explanations", () => {
   });
 
   it("only cross-links terms that can actually be opened", () => {
-    const known = new Set(schoolMathLessons.map(({ term }) => term));
+    const known = new Set(conceptLessons.map(({ term }) => term));
     for (const entry of termDeepDives) {
       expect(entry.related.length).toBeGreaterThan(0);
       for (const related of entry.related) {
@@ -45,9 +45,9 @@ describe("term explanations", () => {
       ...termTranslationKeys,
       ...termUiTranslationKeys,
       ...Object.values(termChapterLabel),
-      ...schoolMathLessons.flatMap((lesson) => [
+      ...conceptLessons.flatMap((lesson) => [
         lesson.term,
-        ...schoolMathLessonRequiredFields.map((field) => lesson[field]),
+        ...conceptLessonRequiredFields.map((field) => lesson[field]),
       ]),
     ];
 

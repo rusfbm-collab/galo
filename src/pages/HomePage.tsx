@@ -268,6 +268,10 @@ export function HomePage() {
                   "Underneath every diagram, number, and record on this site there is a finite table of results for two inputs — a Cayley table. It is written out completely in advance, so it can be checked entry by entry rather than trusted.",
                 )}
               </p>
+              <a className="text-link" href={href("/thinking")}>
+                {t("Follow one decision from the input to the record")}{" "}
+                <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
             </div>
           </div>
         </div>

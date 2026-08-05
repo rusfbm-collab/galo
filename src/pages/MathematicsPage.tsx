@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight, Braces, Check, GitBranch, ShieldAlert } from "lucide-react";
 import { AcademicAnalysis } from "../components/math/AcademicAnalysis";
 import { CayleyExplorer } from "../components/math/CayleyExplorer";
-import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
+import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
@@ -16,7 +16,7 @@ import {
   structuralOrbitCount,
   towerCounts,
 } from "../content/mathematics";
-import { schoolMathLessons } from "../content/theory";
+import { conceptLessons } from "../content/theory";
 import { useI18n } from "../i18n/I18nContext";
 
 const readingSteps = [
@@ -106,7 +106,7 @@ const mathContents = [
   { href: "#objects", label: "Objects and notation" },
   { href: "#cayley-tables", label: "Cayley tables" },
   { href: "#academic-analysis", label: "Academic reference" },
-  { href: "#school-proof-notebook", label: "School proof notebook" },
+  { href: "#proof-notebook", label: "Step-by-step proof notebook" },
   { href: "#frozen-laws", label: "PLUS and STAR" },
   { href: "#typed-actions", label: "Four action families" },
   { href: "#cells-560", label: "The 560 coordinates" },
@@ -122,7 +122,7 @@ const activeNontrivialTransfers = canonicalScaledEmbeddings.filter(
 
 const l6LeftIteration = iterateStarProduct(6, 2, 6, "LEFT");
 const l6RightIteration = iterateStarProduct(6, 2, 6, "RIGHT");
-const mathematicsSchoolLessons = schoolMathLessons.filter(({ chapter }) => chapter === "mathematics");
+const mathematicsLessons = conceptLessons.filter(({ chapter }) => chapter === "mathematics");
 
 export function MathematicsPage() {
   const { direction, href, t } = useI18n();
@@ -269,10 +269,10 @@ export function MathematicsPage() {
         </div>
       </section>
 
-      <section id="school-proof-notebook" className="section section--paper math-anchor-section">
+      <section id="proof-notebook" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("SCHOOL PROOF NOTEBOOK")}
+            eyebrow={t("STEP-BY-STEP PROOF NOTEBOOK")}
             title={t("Advanced words become manageable when every claim follows the same seven questions.")}
             text={t(
               "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.",
@@ -282,14 +282,14 @@ export function MathematicsPage() {
             <p className="eyebrow">{t("COMPLETE TERM INDEX")}</p>
             <h3>{t("Open any of the 59 terms and read it in full.")}</h3>
             <div className="term-index__row">
-              {mathematicsSchoolLessons.map((lesson) => (
+              {mathematicsLessons.map((lesson) => (
                 <TermButton key={lesson.term} term={lesson.term} />
               ))}
             </div>
           </div>
           <div className="theory-glossary">
-            {mathematicsSchoolLessons.map((lesson, index) => (
-              <SchoolMathLessonCard
+            {mathematicsLessons.map((lesson, index) => (
+              <ConceptLessonCard
                 key={lesson.term}
                 lesson={lesson}
                 index={index}

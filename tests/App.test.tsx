@@ -247,9 +247,9 @@ describe("GALO public site", () => {
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/stored release evidence and was not freshly replayed/i)).toBeInTheDocument();
-    const schoolLessonCards = document.querySelectorAll(".theory-glossary > .school-math-lesson-card");
-    expect(schoolLessonCards).toHaveLength(59);
-    expect(schoolLessonCards[0]?.querySelectorAll(".school-math-lesson__field")).toHaveLength(7);
+    const lessonCards = document.querySelectorAll(".theory-glossary > .concept-lesson-card");
+    expect(lessonCards).toHaveLength(59);
+    expect(lessonCards[0]?.querySelectorAll(".concept-lesson__field")).toHaveLength(7);
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/theory");
 
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.theory-contents a[href^="#"]'))) {
@@ -346,6 +346,51 @@ describe("GALO public site", () => {
       ["/ru/vs-llm", "GALO — не языковая модель и не конкурент ей."],
       ["/zh/vs-llm", "GALO 不是语言模型，也不是它的竞争者。"],
       ["/ar/vs-llm", "GALO ليس نموذج لغة ولا منافسًا له."],
+    ] as const) {
+      setPath(path);
+      const view = render(<App />);
+      expect(screen.getByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
+      view.unmount();
+    }
+  });
+
+  it("gives the thinking schemes their own route with every stage and gate on the page", () => {
+    setPath("/thinking");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "The thinking schemes, drawn stage by stage." }),
+    ).toBeInTheDocument();
+
+    expect(document.querySelector(".galo-figure--pipeline")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--gates")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--loop")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--determinism")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--memory")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--funnel")).toBeInTheDocument();
+
+    expect(document.querySelectorAll(".thinking-stages > article")).toHaveLength(9);
+    expect(document.querySelectorAll(".thinking-stages > article.is-target")).toHaveLength(2);
+    expect(document.querySelectorAll(".thinking-gates > article")).toHaveLength(5);
+    expect(document.querySelectorAll(".thinking-registers > article")).toHaveLength(5);
+    expect(document.querySelectorAll(".thinking-registers > article.is-dropped")).toHaveLength(2);
+    expect(document.querySelectorAll(".thinking-table tbody tr")).toHaveLength(9);
+
+    expect(screen.getByRole("table", { name: /accepted observation/i })).toBeInTheDocument();
+    expect(screen.getByText("GALO thinks the way a person thinks.")).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/thinking");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing thinking target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("carries the thinking route into every locale", () => {
+    for (const [path, heading] of [
+      ["/ru/thinking", "Схемы мышления, нарисованные этап за этапом."],
+      ["/zh/thinking", "思维图解，逐阶段画出来。"],
+      ["/ar/thinking", "مخططات التفكير، مرسومة مرحلةً مرحلة."],
     ] as const) {
       setPath(path);
       const view = render(<App />);
@@ -487,10 +532,10 @@ describe("GALO public site", () => {
     expect(caption).toHaveAttribute("dir", "rtl");
     expect(caption.closest("table")).toHaveAttribute("dir", "ltr");
     expect(document.querySelector(".theory-tutor__formula code")).toHaveAttribute("dir", "ltr");
-    const firstLesson = document.querySelector(".theory-glossary .school-math-lesson");
+    const firstLesson = document.querySelector(".theory-glossary .concept-lesson");
     expect(within(firstLesson as HTMLElement).getByText("قناة الصيغة")).not.toHaveAttribute("dir", "ltr");
     const carrierDefinition = document.querySelector(
-      ".theory-glossary .school-math-lesson__field:nth-child(2) .school-math-lesson__formal",
+      ".theory-glossary .concept-lesson__field:nth-child(2) .concept-lesson__formal",
     );
     expect(firstLesson).toHaveAttribute("dir", "rtl");
     expect(carrierDefinition?.querySelector("bdi")).toHaveAttribute("dir", "ltr");
@@ -515,6 +560,8 @@ describe("GALO public site", () => {
     expect(localizedPath("ar", "/math#cayley-tables")).toBe("/ar/math#cayley-tables");
     expect(localizedPath("zh", "/theory#guided-lab")).toBe("/zh/theory#guided-lab");
     expect(localizedPath("ru", "/vs-llm#dimensions")).toBe("/ru/vs-llm#dimensions");
+    expect(localizedPath("zh", "/thinking#gates")).toBe("/zh/thinking#gates");
+    expect(parseLocalizedPath("/ru/thinking/")).toEqual({ locale: "ru", route: "/thinking", rawRoute: "/thinking" });
     expect(parseLocalizedPath("/ar/vs-llm/")).toEqual({ locale: "ar", route: "/vs-llm", rawRoute: "/vs-llm" });
     expect(localizedPath("ru", "/symmetry#orbit-lab")).toBe("/ru/symmetry#orbit-lab");
     expect(parseLocalizedPath("/ar/evidence/")).toEqual({ locale: "ar", route: "/evidence", rawRoute: "/evidence" });
@@ -528,7 +575,7 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/theory", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/theory", "/thinking", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();
