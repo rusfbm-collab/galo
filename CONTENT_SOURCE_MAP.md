@@ -29,6 +29,7 @@ Current authority: `R5B6A1_3` machine-readable status and receipts. The archive 
 | Plain-language briefing             | Non-technical restatement            | Confirmed site brief and current release status          | Answer without mathematics; state open work as open, and never imply traction, customers, or measured gain     |
 | GALO / language-model comparison    | Mechanism restatement                | Current release contract and published model behaviour   | Compare mechanism and evidence only; never state a benchmark, accuracy, speed, cost, or capability comparison  |
 | Term explanations                   | Formal education + scoped bridge     | Seven-part concept lesson plus a plain-language layer    | Analogies stay explicitly subordinate to the exact definition and to the stated boundary                       |
+| One page per concept                | Formal education + tower example     | The generated tables and the seven-part lesson           | The marked cells are regenerated from the law, so an illustration cannot drift from the mathematics it shows   |
 | Plain-words page                    | Everyday restatement                 | The same release record, said without vocabulary         | Friendly in register only; every limitation in it is the same limitation the evidence page publishes           |
 | Non-technical account               | Business restatement                 | Confirmed site record and current release contract       | No traction, revenue, customer, pilot, or measured result; every scenario stated as hypothetical               |
 | Verification handbook               | Self-audit of the site               | Published statuses, boundary register, and build checks  | Names what cannot be established here, including that no check published here is independent                   |
@@ -47,7 +48,7 @@ Current authority: `R5B6A1_3` machine-readable status and receipts. The archive 
 
 ## Localized route topology
 
-The static build prerenders eleven canonical pages in each of four locales, for 44 HTML route entries:
+The static build prerenders eleven canonical pages plus one page per concept in each of four locales, for 280 HTML route entries. The canonical pages are:
 
 | Canonical page | English      | Russian         | Simplified Chinese | Arabic          |
 | -------------- | ------------ | --------------- | ------------------ | --------------- |

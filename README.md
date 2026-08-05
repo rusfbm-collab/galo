@@ -51,7 +51,7 @@ Expected health response: `ok` with HTTP 200.
 3. Configure the GitHub token or webhook in the Amvera interface. Do not commit a token to this repository.
 4. Keep the target event consistent between GitHub and Amvera. A push to `main` can trigger pull/build automatically.
 5. Amvera reads `amvera.yaml`, builds `Dockerfile`, and routes to container port 80.
-6. Confirm `/healthz`, the 44 localized routes above, and an unknown path after the first deployment.
+6. Confirm `/healthz`, the 280 localized routes above (44 pages plus one page per concept), and an unknown path after the first deployment.
 
 ## GitHub webhook checklist
 
@@ -78,6 +78,7 @@ Expected health response: `ok` with HTTP 200.
 - GALO / language-model comparison: `src/content/llmComparison.ts`
 - Thinking schemes, refusal gates, and carried state: `src/content/thinking.ts`
 - Plain-words page, opening story, and jargon translator: `src/content/plainWords.ts`
+- One page per concept, with the table cells each one lives in: `src/content/termPages.ts`
 - Non-technical account, stage facts, risks, and diligence path: `src/content/investors.ts`
 - Verification tiers, claim anatomy, and audit limits: `src/content/audit.ts`
 - Internal red-team claim controller: `src/content/claims.ts`

@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen, within } from "@testing-library/rea
 import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { App } from "../src/app/App";
+import { termSlugs } from "../src/content/termPages";
 import {
   getMissingTranslations,
   localizedPath,
@@ -258,8 +259,7 @@ describe("GALO public site", () => {
     }
   });
 
-  it("opens a detailed term explanation, follows a related term, and closes it", async () => {
-    const user = userEvent.setup();
+  it("links every term chip to its own page", () => {
     setPath("/theory");
     render(<App />);
 
@@ -271,20 +271,56 @@ describe("GALO public site", () => {
     expect(document.querySelector(".galo-figure--transfer")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--funnel")).toBeInTheDocument();
 
-    const chips = screen.getAllByRole("button", { name: "STAR" });
-    await user.click(chips[0]!);
+    const chips = screen.getAllByRole("link", { name: "STAR" });
+    expect(chips[0]).toHaveAttribute("href", "/term/star");
+    expect(screen.getAllByRole("link", { name: "Left zero" })[0]).toHaveAttribute("href", "/term/left-zero");
 
-    const dialog = screen.getByRole("dialog", { name: "Detailed explanation: STAR" });
-    expect(within(dialog).getByText("In one line")).toBeInTheDocument();
-    expect(dialog.textContent).toContain("a raw-left P0 forces the answer to P0");
-    expect(within(dialog).getByText("Exact definition")).toBeInTheDocument();
-    expect(within(dialog).getByText("Formula channel")).toBeInTheDocument();
+    // Every chip on the page has to resolve to a real term page.
+    const slugs = new Set(termSlugs);
+    for (const chip of Array.from(document.querySelectorAll<HTMLAnchorElement>(".term-chip"))) {
+      const slug = chip.getAttribute("href")?.split("/term/")[1] ?? "";
+      expect(slugs.has(slug), `Chip points at unknown term page ${slug}`).toBe(true);
+    }
+  });
 
-    await user.click(within(dialog).getByRole("button", { name: "Left zero" }));
-    expect(screen.getByRole("dialog", { name: "Detailed explanation: Left zero" })).toBeInTheDocument();
+  it("explains one term on a live table from the tower", () => {
+    setPath("/term/star");
+    render(<App />);
 
-    await user.click(screen.getByRole("button", { name: "Close the explanation" }));
-    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "STAR" })).toBeInTheDocument();
+    expect(document.querySelector(".term-galo")?.textContent).toContain("STAR is the GALO law that can reset");
+    expect(document.querySelector(".term-page__heading")?.textContent).toContain("The marked top row is all P0");
+
+    // The table is regenerated from the law, and the cells this concept lives in
+    // are the ones marked.
+    const table = document.querySelector(".term-table table")!;
+    expect(table.querySelector("caption")?.textContent).toContain("STAR · L3");
+    const markedCells = Array.from(table.querySelectorAll("td.is-marked"));
+    expect(markedCells).toHaveLength(3);
+    expect(markedCells.map((cell) => cell.textContent)).toEqual(["P0", "P0", "P0"]);
+
+    expect(document.querySelectorAll(".term-lesson__field")).toHaveLength(7);
+    expect(screen.getByRole("link", { name: /Left zero/i })).toHaveAttribute("href", "/term/left-zero");
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/term/star");
+  });
+
+  it("gives every one of the 59 terms a page that resolves", () => {
+    expect(termSlugs).toHaveLength(59);
+    for (const slug of termSlugs) {
+      setPath(`/term/${slug}`);
+      const view = render(<App />);
+      expect(document.querySelector(".term-table table"), `No table for ${slug}`).toBeInTheDocument();
+      expect(document.querySelectorAll(".term-lesson__field")).toHaveLength(7);
+      expect(document.querySelector(".term-galo"), `No GALO meaning for ${slug}`).toBeInTheDocument();
+      view.unmount();
+    }
+  });
+
+  it("falls back to the not-found page for an unknown term slug", () => {
+    setPath("/term/not-a-real-term");
+    render(<App />);
+    expect(document.querySelector(".term-table")).not.toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
   });
 
   it("recolours both Cayley fields when the illustrated level changes", async () => {
@@ -301,15 +337,19 @@ describe("GALO public site", () => {
     expect(resetRow?.textContent).toContain("P0P0P0P0P0");
   });
 
-  it("renders the illustrated term explanation in Arabic without breaking direction", async () => {
-    const user = userEvent.setup();
-    setPath("/ar/theory");
+  it("renders a term page in Arabic while the table keeps its own direction", () => {
+    setPath("/ar/term/star");
     render(<App />);
 
-    await user.click(screen.getAllByRole("button", { name: "STAR" })[0]!);
-    const dialog = screen.getByRole("dialog");
-    expect(dialog).toHaveAttribute("dir", "rtl");
-    expect(within(dialog).getByText("في سطر واحد")).toBeInTheDocument();
+    expect(document.documentElement).toHaveAttribute("dir", "rtl");
+    expect(screen.getByRole("heading", { level: 1, name: "STAR" })).toBeInTheDocument();
+    expect(document.querySelector(".term-galo")?.textContent).toContain("قانون GALO القادر على إعادة الضبط");
+
+    // Table geometry stays left-to-right so the row and column headers keep
+    // meaning the same thing in every locale.
+    expect(document.querySelector(".term-table table")).toHaveAttribute("dir", "ltr");
+    expect(document.querySelectorAll(".term-table td.is-marked")).toHaveLength(3);
+    expect(document.querySelectorAll(".term-lesson__field")).toHaveLength(7);
   });
 
   it("gives the language-model comparison its own route with the honest breadth row", () => {
@@ -711,12 +751,26 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/simple", "/investors", "/audit", "/theory", "/thinking", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of [
+        "",
+        "/simple",
+        "/investors",
+        "/audit",
+        "/theory",
+        "/thinking",
+        "/vs-llm",
+        "/math",
+        "/symmetry",
+        "/evidence",
+        "/privacy",
+        "/not-found",
+        ...termSlugs.map((slug) => `/term/${slug}`),
+      ]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();
       }
     }
     expect(getMissingTranslations()).toEqual({});
-  });
+  }, 120000);
 });

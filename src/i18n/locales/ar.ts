@@ -7,6 +7,7 @@ import { comparisonAr } from "./comparison";
 import { termsAr } from "./terms";
 import { audienceAr } from "./audience";
 import { plainAr } from "./plain";
+import { termsPageAr } from "./termPages";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -21,6 +22,7 @@ export const ar: TranslationDictionary = {
   ...thinkingAr,
   ...audienceAr,
   ...plainAr,
+  ...termsPageAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

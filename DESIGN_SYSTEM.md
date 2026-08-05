@@ -103,6 +103,14 @@ The audit route is written against its own site. It sorts every published value 
 
 `/thinking` draws the decision procedure itself. One thought is nine numbered stages, and the diagram, the stage cards, and the worked table all carry the same statuses: seven stages are marked `CURRENT V4` and drawn solid, the two that would follow are marked `TARGET` and drawn dashed. Every stage names the single condition that stops the thought there, and the five refusal gates are given codes that end up in the record, so a stop is a result with a cause rather than an absence of output. The worked walkthrough repeats the whole procedure with the release's own values — 1,204, 880, 440, the SHA-256 ordering input, arity 2, route depth 1 — and deliberately leaves the two target stages without a row, because they produce no value today.
 
+## One page per concept
+
+Every one of the 59 concepts has its own route at `/term/<slug>`, prerendered in all four locales. Term chips are links to those pages rather than buttons that open a dialog: the explanation is the part readers needed most, and a dialog made it unshareable, invisible to search, and unavailable without JavaScript.
+
+Each page answers the two questions the theory chapters left open. First, **where to look**: a real PLUS or STAR table from the tower, regenerated from the law on render, with the cells that concept lives in marked — so an illustration can never drift away from the mathematics it illustrates. Marked cells are teal when the concept is about what the law does and amber when it is about what the law refuses or loses. Second, **what the word means inside GALO** rather than in algebra generally; a test fails if any of the 59 meaning paragraphs forgets to say so.
+
+Below that come the plain-language layer where one exists, the complete seven-part lesson, and the related concepts as links to their own pages.
+
 ## Term explainer
 
 Any term the reader can meet in the running text is also a chip. A chip opens a modal that gives the plain-language layer first — one line, a familiar picture, why GALO needs it, and where it appears on the site — followed by the complete seven-part concept lesson and a set of related terms that can be opened in place. Forty of the fifty-nine terms carry the plain-language layer; the rest open straight to the full lesson. The modal closes on Escape, on backdrop click, and on its close button, and it returns focus to the chip that opened it.

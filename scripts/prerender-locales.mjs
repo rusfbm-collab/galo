@@ -297,6 +297,31 @@ const locales = {
   },
 };
 
+// Term pages are generated one per concept. The slug list is derived from the same
+// source of truth the app uses; tests assert the two derivations agree.
+const conceptSource = await readFile(join(projectRoot, "src/content/theory.ts"), "utf8");
+const conceptTerms = [...conceptSource.matchAll(/^\s{4}term: "(.+?)",$/gm)].map((match) => match[1]);
+const termSlug = (term) =>
+  term
+    .toLowerCase()
+    .replace(/['\u2019]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const termPageTitles = {
+  en: (term) => [`${term} — GALO AI`, `What "${term}" means inside GALO, shown on a live table from the tower.`],
+  ru: (term) => [`${term} — GALO AI`, `Что «${term}» значит внутри GALO — на живой таблице из башни.`],
+  zh: (term) => [`${term} — GALO AI`, `“${term}”在 GALO 内部指什么——用塔中的一张实时表来说明。`],
+  ar: (term) => [`${term} — GALO AI`, `ما الذي يعنيه «${term}» داخل GALO، معروضًا على جدول حي من البرج.`],
+};
+
+for (const [locale, config] of Object.entries(locales)) {
+  for (const term of conceptTerms) {
+    const [title, description] = termPageTitles[locale](term);
+    config.pages[`term-${termSlug(term)}`] = { path: `term/${termSlug(term)}`, title, description };
+  }
+}
+
 function escapeAttribute(value) {
   return value.replaceAll("&", "&amp;").replaceAll('"', "&quot;").replaceAll("<", "&lt;");
 }

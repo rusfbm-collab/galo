@@ -16,6 +16,7 @@ export type PageRoute =
   | "/symmetry"
   | "/evidence"
   | "/privacy"
+  | "/term"
   | "/404";
 
 export const localeConfig: Record<
@@ -55,12 +56,23 @@ function isLocale(value: string | undefined): value is Exclude<Locale, "en"> {
   return value === "ru" || value === "zh" || value === "ar";
 }
 
-export function parseLocalizedPath(pathname: string): { locale: Locale; route: PageRoute; rawRoute: string } {
+export function parseLocalizedPath(pathname: string): {
+  locale: Locale;
+  route: PageRoute;
+  rawRoute: string;
+  /** Present only on /term/<slug>; the page resolves it against the concept list. */
+  slug?: string;
+} {
   const normalized = pathname.replace(/\/+$/, "") || "/";
   const segments = normalized.split("/").filter(Boolean);
   const locale: Locale = isLocale(segments[0]) ? segments[0] : "en";
   const routeSegments = locale === "en" ? segments : segments.slice(1);
   const rawRoute = routeSegments.length ? `/${routeSegments.join("/")}` : "/";
+
+  if (routeSegments.length === 2 && routeSegments[0] === "term" && routeSegments[1]) {
+    return { locale, route: "/term", rawRoute, slug: routeSegments[1] };
+  }
+
   const route: PageRoute =
     rawRoute === "/" ||
     rawRoute === "/simple" ||

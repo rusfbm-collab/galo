@@ -12151,3 +12151,260 @@ html[dir="rtl"] .theory-law-card__symbol {
 .section--paper .theory-next__links a strong {
   color: var(--navy-900);
 }
+
+/* ============================================================
+   One page per term
+   ============================================================ */
+
+.page-hero--term {
+  color: var(--white);
+  background: linear-gradient(140deg, var(--navy-900) 0%, #14415c 100%);
+}
+
+.page-hero--term h1 {
+  max-width: 20ch;
+}
+
+.term-page__heading {
+  max-width: 34ch;
+  margin: 8px 0 0;
+  font-size: clamp(1.5rem, 2.6vw, 2.3rem);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.section--paper .term-page__heading,
+.section--white .term-page__heading {
+  color: var(--navy-900);
+}
+
+/* ---- the marked tables ---- */
+
+.term-tables {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.term-table {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px 22px 16px;
+  background: var(--white);
+}
+
+.term-table table {
+  border-collapse: separate;
+  border-spacing: 4px;
+}
+
+.term-table caption {
+  margin-bottom: 12px;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-align: start;
+}
+
+.term-table th,
+.term-table td {
+  min-width: 46px;
+  border-radius: 9px;
+  padding: 9px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  text-align: center;
+}
+
+.term-table th {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.term-table td {
+  border: 1px solid var(--line);
+  color: var(--navy-900);
+  font-weight: 640;
+}
+
+.term-table th.is-marked {
+  background: rgba(15, 156, 136, 0.16);
+  color: #0b6d5f;
+}
+
+.term-table.is-accent td.is-marked {
+  border-color: var(--chart-1);
+  background: #e4f4f0;
+  color: #0b6d5f;
+  font-weight: 800;
+}
+
+.term-table.is-warn th.is-marked {
+  background: rgba(184, 121, 10, 0.16);
+  color: #8a5d0b;
+}
+
+.term-table.is-warn td.is-marked {
+  border-color: var(--chart-2);
+  background: rgba(232, 169, 58, 0.16);
+  color: #8a5d0b;
+  font-weight: 800;
+}
+
+.term-table figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+/* ---- what it means inside GALO ---- */
+
+.term-galo {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  max-width: 84ch;
+  margin-top: 30px;
+  border: 1px solid var(--teal-deep);
+  border-radius: 22px;
+  padding: 24px 26px;
+  background: rgba(15, 156, 136, 0.06);
+}
+
+.term-galo > svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--teal-deep);
+}
+
+.term-galo h3 {
+  margin: 0 0 8px;
+  font-size: 1.04rem;
+}
+
+.term-galo p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.64;
+}
+
+/* ---- plain layer and the seven-part lesson ---- */
+
+.term-plain {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.term-plain article {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: var(--white);
+}
+
+.term-plain svg {
+  color: var(--teal-deep);
+}
+
+.term-plain h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.term-plain p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.64;
+}
+
+.term-lesson {
+  display: grid;
+  gap: 0;
+  margin: 32px 0 0;
+}
+
+.term-lesson__field {
+  display: grid;
+  grid-template-columns: minmax(170px, 250px) minmax(0, 1fr);
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 4px;
+}
+
+.term-lesson__field:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.term-lesson dt {
+  color: var(--teal-deep);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.term-lesson dd {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.66;
+}
+
+.term-lesson__field--exactDefinition dd,
+.term-lesson__field--tableCheck dd,
+.term-lesson__field--formulaCheck dd {
+  font-family: var(--font-mono);
+  font-size: 0.87rem;
+}
+
+.term-lesson__field--commonMistake {
+  border-inline-start: 3px solid var(--amber);
+  padding-inline-start: 16px;
+}
+
+/* ---- related terms ---- */
+
+.term-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.term-related a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 16px;
+  background: var(--white);
+  color: var(--navy-900);
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+.term-related a:hover {
+  border-color: var(--teal-deep);
+  color: var(--teal-deep);
+}
+
+@media (max-width: 720px) {
+  .term-lesson__field {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .term-tables {
+    gap: 16px;
+  }
+}

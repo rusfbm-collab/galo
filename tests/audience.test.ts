@@ -27,6 +27,10 @@ import {
   plainWordsTranslationKeys,
 } from "../src/content/plainWords";
 import { siteContent } from "../src/content/site";
+import { termDeepDives } from "../src/content/termDeepDives";
+import { termBySlug, termPages, termSlug, termSlugs } from "../src/content/termPages";
+import { conceptLessons } from "../src/content/theory";
+import { galoLevels } from "../src/content/mathematics";
 
 /**
  * The investor and audit routes are the two places where an over-claim would do
@@ -212,5 +216,51 @@ describe("plain words", () => {
     expect(openingStory).toHaveLength(4);
     expect(openingStory.map((beat) => beat.number)).toEqual(["01", "02", "03", "04"]);
     expect(openingStory.at(-1)!.line).toMatch(/nobody can answer/i);
+  });
+});
+
+describe("term pages", () => {
+  it("gives every concept a page whose panels use real levels and laws", () => {
+    const terms = conceptLessons.map((lesson) => lesson.term);
+    expect(Object.keys(termPages).sort()).toEqual([...terms].sort());
+
+    for (const [term, page] of Object.entries(termPages)) {
+      expect(page.panels.length, term).toBeGreaterThan(0);
+      for (const panel of page.panels) {
+        expect(galoLevels, `${term} uses a level outside the tower`).toContain(panel.level);
+        // Marked cells and headers have to exist at that level, or the page would
+        // silently illustrate nothing.
+        for (const [rowIndex, columnIndex] of panel.cells ?? []) {
+          expect(rowIndex, term).toBeLessThan(panel.level);
+          expect(columnIndex, term).toBeLessThan(panel.level);
+        }
+        for (const header of panel.headers ?? []) {
+          expect(header, term).toBeLessThan(panel.level);
+        }
+      }
+    }
+  });
+
+  it("names GALO in the meaning paragraph rather than staying generic", () => {
+    // The complaint these pages answer is that the theory explains algebra and
+    // leaves the reader to guess what it has to do with this project.
+    const generic = Object.entries(termPages).filter(([, page]) => !/GALO/.test(page.inGalo));
+    expect(generic.map(([term]) => term)).toEqual([]);
+  });
+
+  it("keeps slugs unique, lowercase, and url-safe", () => {
+    expect(termSlugs).toHaveLength(conceptLessons.length);
+    expect(new Set(termSlugs).size).toBe(termSlugs.length);
+    for (const slug of termSlugs) {
+      expect(slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+    }
+  });
+
+  it("resolves every related-term link to a page that exists", () => {
+    for (const entry of termDeepDives) {
+      for (const related of entry.related) {
+        expect(termBySlug.get(termSlug(related)), `${entry.term} → ${related}`).toBe(related);
+      }
+    }
   });
 });

@@ -9,6 +9,7 @@ import { NotFoundPage } from "../pages/NotFoundPage";
 import { PlainWordsPage } from "../pages/PlainWordsPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
 import { SymmetryPage } from "../pages/SymmetryPage";
+import { TermPage } from "../pages/TermPage";
 import { TheoryPage } from "../pages/TheoryPage";
 import { ThinkingPage } from "../pages/ThinkingPage";
 import {
@@ -22,6 +23,7 @@ import {
 } from "../i18n/I18nContext";
 import { siteContent } from "../content/site";
 import { publicContact } from "../content/contact";
+import { termBySlug } from "../content/termPages";
 
 const metadata: Record<PageRoute, { title: string; description: string }> = {
   "/": {
@@ -74,6 +76,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     description:
       "Explore the distinct PLUS and STAR symmetry layers, unit automorphisms, affine boundaries, orbits, stabilizers, Burnside counts, and cross-level homomorphisms.",
   },
+  "/term": {
+    title: "GALO AI Term — What It Means in the Tables",
+    description:
+      "One GALO concept explained on a live Cayley table from the tower: where to look, what the word refers to inside GALO, and the complete seven-part definition.",
+  },
   "/privacy": {
     title: "Privacy — GALO AI",
     description: "How the static GALO AI website handles data, cookies, analytics, and external contact links.",
@@ -100,7 +107,9 @@ function DocumentMetadata({ route, rawRoute }: { route: PageRoute; rawRoute: str
   useEffect(() => {
     const config = localeConfig[locale];
     const page = metadata[route];
-    const canonicalRoute = route === "/404" ? rawRoute : route;
+    // A term page is one route with many paths, so its canonical and its language
+    // alternates have to use the path actually being read.
+    const canonicalRoute = route === "/404" || route === "/term" ? rawRoute : route;
     const canonicalPath = localizedPath(locale, canonicalRoute);
     const canonicalUrl = new URL(canonicalPath, siteContent.canonicalUrl).toString();
     const title = t(page.title);
@@ -156,7 +165,7 @@ function DocumentMetadata({ route, rawRoute }: { route: PageRoute; rawRoute: str
 }
 
 export function App() {
-  const { locale, route, rawRoute } = parseLocalizedPath(window.location.pathname);
+  const { locale, route, rawRoute, slug } = parseLocalizedPath(window.location.pathname);
 
   return (
     <I18nProvider locale={locale}>
@@ -171,6 +180,7 @@ export function App() {
       {route === "/math" && <MathematicsPage />}
       {route === "/symmetry" && <SymmetryPage />}
       {route === "/evidence" && <EvidencePage />}
+      {route === "/term" && <TermPage term={slug ? (termBySlug.get(slug) ?? null) : null} />}
       {route === "/privacy" && <PrivacyPage />}
       {route === "/404" && <NotFoundPage />}
     </I18nProvider>
