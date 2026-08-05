@@ -1,8 +1,8 @@
-import { ArrowLeft, ArrowRight, Compass, Eye, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookMarked, Compass, Eye, Sparkles } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
 import { TermTablePanel } from "../components/theory/TermTablePanel";
 import { termChapterLabel, termDeepDiveByTerm, termLessonByTerm } from "../content/termDeepDives";
-import { termPages, termSlug } from "../content/termPages";
+import { termAcademics, termPages, termSlug } from "../content/termPages";
 import { conceptLessonRequiredFields } from "../content/theory";
 import { useI18n } from "../i18n/I18nContext";
 import { NotFoundPage } from "./NotFoundPage";
@@ -36,8 +36,9 @@ export function TermPage({ term }: { term: string | null }) {
   const { href, t } = useI18n();
   const lesson = term ? termLessonByTerm.get(term) : undefined;
   const page = term ? termPages[term] : undefined;
+  const academic = term ? termAcademics[term] : undefined;
 
-  if (!term || !lesson || !page) return <NotFoundPage />;
+  if (!term || !lesson || !page || !academic) return <NotFoundPage />;
 
   const deepDive = termDeepDiveByTerm.get(term);
 
@@ -51,6 +52,33 @@ export function TermPage({ term }: { term: string | null }) {
           <p className="eyebrow eyebrow--cyan">{t(termChapterLabel[lesson.chapter])}</p>
           <h1>{isolateMath(t(term))}</h1>
           <p>{isolateMath(t(deepDive ? deepDive.inOneLine : lesson.analogy))}</p>
+          <div className="term-hero__tags">
+            <span>{t(academic.discipline)}</span>
+            <span className={academic.standing === "Project term, not standard mathematics" ? "is-project" : undefined}>
+              {t(academic.standing)}
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="academic" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <p className="eyebrow">{t("THE DEFINITION AS A MATHEMATICIAN WOULD STATE IT")}</p>
+          <h2 className="term-page__heading">
+            {t("What the word means in mathematics, before it means anything here.")}
+          </h2>
+          <div className="term-academic">
+            <BookMarked size={22} aria-hidden="true" />
+            <div>
+              <code className="term-academic__formal" dir="ltr">
+                {academic.formal}
+              </code>
+              <p>{isolateMath(t(academic.academic))}</p>
+              <p className="term-academic__standing">
+                <b>{t("Standing of the word")}:</b> {t(academic.standing)}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -74,7 +102,7 @@ export function TermPage({ term }: { term: string | null }) {
       </section>
 
       {deepDive && (
-        <section id="plain" className="section section--paper math-anchor-section">
+        <section id="plain" className="section section--white math-anchor-section">
           <div className="shell">
             <p className="eyebrow">{t("BEFORE THE EXACT DEFINITION")}</p>
             <h2 className="term-page__heading">{t("The same thing, without the mathematics.")}</h2>
@@ -99,7 +127,7 @@ export function TermPage({ term }: { term: string | null }) {
         </section>
       )}
 
-      <section id="exact" className="section section--white math-anchor-section">
+      <section id="exact" className="section section--paper math-anchor-section">
         <div className="shell">
           <p className="eyebrow">{t("COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS")}</p>
           <h2 className="term-page__heading">{t("Seven questions, answered in the same order for every term.")}</h2>
@@ -114,7 +142,7 @@ export function TermPage({ term }: { term: string | null }) {
         </div>
       </section>
 
-      <section id="related" className="section section--paper math-anchor-section">
+      <section id="related" className="section section--white math-anchor-section">
         <div className="shell">
           <p className="eyebrow">{t("KEEP GOING")}</p>
           <h2 className="term-page__heading">{t("Terms that only make sense next to this one.")}</h2>

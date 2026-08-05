@@ -111,9 +111,16 @@ Each page answers the two questions the theory chapters left open. First, **wher
 
 Below that come the plain-language layer where one exists, the complete seven-part lesson, and the related concepts as links to their own pages.
 
-## Term explainer
+## Academic layer
 
-Any term the reader can meet in the running text is also a chip. A chip opens a modal that gives the plain-language layer first — one line, a familiar picture, why GALO needs it, and where it appears on the site — followed by the complete seven-part concept lesson and a set of related terms that can be opened in place. Forty of the fifty-nine terms carry the plain-language layer; the rest open straight to the full lesson. The modal closes on Escape, on backdrop click, and on its close button, and it returns focus to the chip that opened it.
+Above everything else on a term page sits the definition as a referee would state it, in `src/content/termPages.ts` under `termAcademics`. Every one of the 59 terms carries four fields:
+
+- **discipline** — which branch the word belongs to: universal algebra, group theory, number theory, combinatorics, sets/maps/relations, or project convention. It is shown as a tag in the hero and pins the literature a reader should reach for.
+- **standing** — whether the word is standard with its standard meaning, standard but narrowed to this setting, or a name the project coined. The fourteen coined words are listed in a test, so promoting one to "standard" has to be a deliberate edit rather than a slip. A coined word's tag is amber, not teal.
+- **formal** — the definition in notation, rendered left-to-right in every locale and deliberately free of prose glue, so the same line serves the Russian, Chinese, and Arabic pages unchanged. A test rejects a formal line with no notation in it, and holds the handful of publication conventions — which have no notation to state — to a compact declaration instead.
+- **academic** — the rigorous statement, translated into all four languages with the terminology each mathematical tradition actually uses: *носитель*, *обеднение и обогащение*, *конгруэнция*, *теорема об орбите и стабилизаторе*; 载体集, 约化与扩充, 同余关系, 轨道–稳定子定理; المجموعة الحاملة, الاختزال والتوسيع, علاقة التطابق, مبرهنة المدار والمثبِّت. Translating the register rather than the words is the point: a Russian reader should recognise the sentence from a textbook, not from a translation of one.
+
+The order on the page is deliberate. The exact definition comes first for the reader who wants it, and the plain-language layers come after, so neither audience has to read the other's version to reach its own.
 
 ## Beginner learning pattern
 

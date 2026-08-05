@@ -289,7 +289,21 @@ describe("GALO public site", () => {
 
     expect(screen.getByRole("heading", { level: 1, name: "STAR" })).toBeInTheDocument();
     expect(document.querySelector(".term-galo")?.textContent).toContain("STAR is the GALO law that can reset");
-    expect(document.querySelector(".term-page__heading")?.textContent).toContain("The marked top row is all P0");
+    expect(document.querySelector("#in-the-table .term-page__heading")?.textContent).toContain(
+      "The marked top row is all P0",
+    );
+
+    // The definition a referee would accept comes first, tagged with the branch
+    // of mathematics it belongs to and with the honest note that the name is ours.
+    expect(document.querySelector(".term-hero__tags")?.textContent).toContain(
+      "Project term, not standard mathematics",
+    );
+    expect(document.querySelector(".term-academic__formal")?.textContent).toContain(
+      "★_n(P_i, P_j) = P_0  (i = 0);  P_((i+j) mod n)  (i ≠ 0)",
+    );
+    expect(document.querySelector("#academic .term-academic p")?.textContent).toContain(
+      "A project name for a binary operation obtained from",
+    );
 
     // The table is regenerated from the law, and the cells this concept lives in
     // are the ones marked.

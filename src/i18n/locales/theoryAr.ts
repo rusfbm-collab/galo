@@ -950,7 +950,7 @@ export const theoryAr: TranslationDictionary = {
     "اقرأ عمود P2 الثابت لـSTAR_LEFT وصف P2 الثابت لـSTAR_RIGHT.",
   "rank(STAR_LEFT(_,P2))=2; rank(STAR_RIGHT(_,P2))=3 at L3.":
     "rank(STAR_LEFT(_,P2))=2؛ rank(STAR_RIGHT(_,P2))=3 عند L3.",
-  "Reduct and expansion": "البنية المختزلة والتوسعة",
+  "Reduct and expansion": "الاختزال والتوسيع",
   "The same game board can be studied with one rule book or with both rule books open.":
     "يمكن دراسة لوحة اللعب نفسها بكتاب قانون واحد أو بكتابَي القانونين معًا.",
   "G_n=(Q_n,PLUS_n,P0), S_n=(Q_n,STAR_n,P0), and A_n=(Q_n,PLUS_n,STAR_n,P0).":
@@ -1002,7 +1002,7 @@ export const theoryAr: TranslationDictionary = {
   "L5 STAR: row P2, column P3 → P0; then row P0, column P4 → P0.":
     "في STAR عند L5: الصف P2 والعمود P3 → P0؛ ثم الصف P0 والعمود P4 → P0.",
   "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.": "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.",
-  "Stable subset": "مجموعة جزئية مستقرة",
+  "Stable subset": "مجموعة جزئية مغلقة (جبر جزئي)",
   "A subset is stable on one side if using one of its members in that slot never sends the result outside the subset.":
     "تكون المجموعة الجزئية مستقرة من أحد الجانبين إذا كان استعمال أي عنصر منها في تلك الخانة لا يرسل النتيجة خارجها.",
   "Right-stable means S★Q_n⊆S; left-stable means Q_n★S⊆S.":
@@ -1151,7 +1151,7 @@ export const theoryAr: TranslationDictionary = {
     "يُرسل P0 إلى العدد العقدي 1، لا إلى العدد العقدي 0؛ ولا يعطي تسمية أمينة ذات نواة تافهة إلا s التي تكون وحدة.",
   "L3 PLUS P1⊕P2=P0 matches ω·ω²=1.": "في PLUS عند L3، توافق P1⊕P2=P0 المعادلة ω·ω²=1.",
   "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).": "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).",
-  "Fibrewise aggregate": "المجموع بحسب الألياف",
+  "Fibrewise aggregate": "الجمع اللِّيفي",
   "Count objects inside labelled drawers first; adding drawer totals does not create one giant drawer.":
     "عُدَّ الكائنات داخل الأدراج المسمّاة أولًا؛ جمع مجاميع الأدراج لا يصنع درجًا عملاقًا واحدًا.",
   "Σ|Aut(A_n)|=18 and 4Σ pair_orbits(n)=224, with level and family tags fixed by the action.":

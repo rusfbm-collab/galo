@@ -28,7 +28,14 @@ import {
 } from "../src/content/plainWords";
 import { siteContent } from "../src/content/site";
 import { termDeepDives } from "../src/content/termDeepDives";
-import { termBySlug, termPages, termSlug, termSlugs } from "../src/content/termPages";
+import {
+  termAcademics,
+  termAcademicTranslationKeys,
+  termBySlug,
+  termPages,
+  termSlug,
+  termSlugs,
+} from "../src/content/termPages";
 import { conceptLessons } from "../src/content/theory";
 import { galoLevels } from "../src/content/mathematics";
 
@@ -262,5 +269,104 @@ describe("term pages", () => {
         expect(termBySlug.get(termSlug(related)), `${entry.term} → ${related}`).toBe(related);
       }
     }
+  });
+});
+
+/**
+ * Each term page carries a definition stated the way a referee would state it,
+ * on top of the plain-language one. These tests pin the properties that make
+ * that layer trustworthy: it covers every term, it declares which branch of
+ * mathematics the word belongs to, it never lets a project coinage pass as a
+ * standard one, and it always shows the formal statement next to the prose.
+ */
+describe("academic register", () => {
+  it("states a rigorous definition for every concept in the glossary", () => {
+    const terms = conceptLessons.map((lesson) => lesson.term);
+    expect(Object.keys(termAcademics).sort()).toEqual([...terms].sort());
+  });
+
+  it("files every term under a named discipline and declares its standing", () => {
+    const disciplines = new Set<string>([
+      "Universal algebra",
+      "Group theory",
+      "Number theory",
+      "Combinatorics",
+      "Sets, maps, and relations",
+      "Project convention",
+    ]);
+    const standings = new Set<string>([
+      "Standard term, standard meaning",
+      "Standard term, narrowed to this setting",
+      "Project term, not standard mathematics",
+    ]);
+
+    for (const [term, entry] of Object.entries(termAcademics)) {
+      expect(disciplines.has(entry.discipline), `${term}: unknown discipline`).toBe(true);
+      expect(standings.has(entry.standing), `${term}: unknown standing`).toBe(true);
+    }
+
+    // Every discipline and every standing has to be used, or the label is dead
+    // weight in the type rather than a distinction a reader can rely on.
+    const usedDisciplines = new Set<string>(Object.values(termAcademics).map((entry) => entry.discipline));
+    const usedStandings = new Set<string>(Object.values(termAcademics).map((entry) => entry.standing));
+    expect([...disciplines].filter((name) => !usedDisciplines.has(name))).toEqual([]);
+    expect([...standings].filter((name) => !usedStandings.has(name))).toEqual([]);
+  });
+
+  it("marks the project's own coinages instead of dressing them as standard names", () => {
+    // These words are ours. Presenting any of them as received mathematical
+    // vocabulary would be the easiest way on this site to mislead a reviewer,
+    // so the list is pinned: promoting one to "standard" has to be deliberate.
+    const coined = Object.entries(termAcademics)
+      .filter(([, entry]) => entry.standing === "Project term, not standard mathematics")
+      .map(([term]) => term)
+      .sort();
+
+    expect(coined).toEqual([
+      "Active pole",
+      "Boundary",
+      "Current V4 step-by-step replay",
+      "Formal, current, and target layers",
+      "Level",
+      "PLUS",
+      "Pole",
+      "Receipt",
+      "STAR",
+      "Source state",
+      "Symbol legend",
+      "Typed catalogue count",
+      "Typed coordinate",
+      "Zero-prefix rule",
+    ]);
+
+    for (const term of coined) {
+      // A coinage may not open by borrowing the authority of the literature.
+      expect(termAcademics[term]!.academic, term).not.toMatch(/^(In mathematics|The standard|By convention in algebra)/i);
+    }
+  });
+
+  it("shows a formal statement beside the prose for every term", () => {
+    const symbolic = /[⊕★=∈≅→↦⇒⊃⊇⊆|{}()×⊬]|Q_n|P_0|Aut|Hom|Z\/nZ/;
+    for (const [term, entry] of Object.entries(termAcademics)) {
+      expect(entry.formal.length, `${term}: no formal statement`).toBeGreaterThan(8);
+      // Mathematical entries state the definition in notation. The handful of
+      // publication conventions have no notation to state, so they declare the
+      // shape of the artefact instead, and are held to being compact.
+      if (entry.discipline === "Project convention") {
+        expect(entry.formal.length, `${term}: declaration should stay compact`).toBeLessThan(90);
+      } else {
+        expect(entry.formal, `${term}: formal line carries no notation`).toMatch(symbolic);
+      }
+      // Prose short enough to be a gloss is not a definition a referee would accept.
+      expect(entry.academic.length, `${term}: definition too thin`).toBeGreaterThan(180);
+      expect(entry.academic.trim().endsWith("."), `${term}: unfinished sentence`).toBe(true);
+    }
+  });
+
+  it("keeps the academic layer in the register of a definition, not of a pitch", () => {
+    const prose = termAcademicTranslationKeys.join(" ");
+    expect(prose).not.toMatch(/\b(revolutionary|breakthrough|state[- ]of[- ]the[- ]art|world[- ]class)\b/i);
+    expect(prose).not.toMatch(/\b(obviously|clearly it follows|trivially true|everyone knows)\b/i);
+    expect(new Set(termAcademicTranslationKeys).size).toBe(termAcademicTranslationKeys.length);
   });
 });

@@ -1022,7 +1022,7 @@ export const theoryRu: TranslationDictionary = {
   "Here it produces unit-circle phases such as exp(2πisk/n).":
     "Здесь она задаёт фазы на единичной окружности, например exp(2πisk/n).",
 
-  "Reduct and expansion": "Редукт и расширение",
+  "Reduct and expansion": "Обеднение и обогащение",
   "The same game board can be studied with one rule book or with both rule books open.":
     "Одно игровое поле можно изучать с одной открытой книгой правил или сразу с обеими.",
   "G_n=(Q_n,PLUS_n,P0), S_n=(Q_n,STAR_n,P0), and A_n=(Q_n,PLUS_n,STAR_n,P0).":
@@ -1078,7 +1078,7 @@ export const theoryRu: TranslationDictionary = {
     "L5 STAR: строка P2, столбец P3 → P0; затем строка P0, столбец P4 → P0.",
   "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.": "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.",
 
-  "Stable subset": "Устойчивое подмножество",
+  "Stable subset": "Замкнутое подмножество (подалгебра)",
   "A subset is stable on one side if using one of its members in that slot never sends the result outside the subset.":
     "Подмножество устойчиво с одной стороны, если использование его элемента в соответствующем слоте никогда не выводит результат за пределы подмножества.",
   "Right-stable means S★Q_n⊆S; left-stable means Q_n★S⊆S.": "Правая устойчивость означает S★Q_n⊆S, а левая — Q_n★S⊆S.",
@@ -1211,7 +1211,7 @@ export const theoryRu: TranslationDictionary = {
   "L5 under u=2: 1→2 and 4→3, so {1,4}→{2,3}.": "На L5 при u=2: 1→2 и 4→3, поэтому {1,4}→{2,3}.",
   "QR(5)={1²,2²,3²,4²} mod 5={1,4}.": "QR(5)={1²,2²,3²,4²} mod 5={1,4}.",
 
-  "CRT boundary": "Граница CRT",
+  "CRT boundary": "Граница китайской теоремы об остатках",
   "A six-position addition dial can be viewed as a two-position dial and a three-position dial together, but STAR's reset watches global zero.":
     "Шестипозиционный циферблат сложения можно рассматривать как двухпозиционный и трёхпозиционный вместе, но сброс STAR следит за глобальным нулём.",
   "CRT gives Z/6Z≅Z/2Z×Z/3Z for addition; it is not a coordinatewise STAR isomorphism.":
@@ -1237,7 +1237,7 @@ export const theoryRu: TranslationDictionary = {
   "L3 PLUS P1⊕P2=P0 matches ω·ω²=1.": "Равенству L3 PLUS P1⊕P2=P0 соответствует ω·ω²=1.",
   "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).": "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).",
 
-  "Fibrewise aggregate": "Сумма по отдельным слоям",
+  "Fibrewise aggregate": "Послойное суммирование",
   "Count objects inside labelled drawers first; adding drawer totals does not create one giant drawer.":
     "Сначала считайте объекты внутри подписанных ящиков: сложение итогов ящиков не превращает их в один гигантский ящик.",
   "Σ|Aut(A_n)|=18 and 4Σ pair_orbits(n)=224, with level and family tags fixed by the action.":
@@ -1550,7 +1550,7 @@ export const theoryRu: TranslationDictionary = {
     "Повторное PLUS с P2 на L4: P0→P2→P0; на L5 каждый ненулевой полюс имеет порядок 5.",
   "ord(P_k in C_m)=m/gcd(k,m).": "ord(P_k в C_m)=m/gcd(k,m).",
 
-  "Unit group and Euler totient": "Группа обратимых классов и функция Эйлера",
+  "Unit group and Euler totient": "Группа обратимых элементов и функция Эйлера",
   "Units are exactly the step sizes that eventually visit every mark instead of getting trapped in a smaller loop.":
     "Обратимые классы — в точности те размеры шага, которые посещают каждую отметку, а не застревают в меньшем цикле.",
   "U(n)={u mod n | gcd(u,n)=1}; |U(n)|=φ(n).": "U(n)={u mod n | gcd(u,n)=1}; |U(n)|=φ(n).",

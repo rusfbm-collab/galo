@@ -12408,3 +12408,76 @@ html[dir="rtl"] .theory-law-card__symbol {
     gap: 16px;
   }
 }
+
+/* ---- academic layer on a term page ---- */
+
+.term-hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.term-hero__tags span {
+  border: 1px solid rgba(160, 195, 215, 0.36);
+  border-radius: 999px;
+  padding: 7px 15px;
+  color: rgba(226, 238, 246, 0.9);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.term-hero__tags span.is-project {
+  border-color: rgba(232, 169, 58, 0.6);
+  color: #f3cd8f;
+}
+
+.term-academic {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  max-width: 92ch;
+  margin-top: 30px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 26px 28px;
+  background: var(--white);
+}
+
+.term-academic > svg {
+  flex: none;
+  margin-top: 4px;
+  color: var(--navy-900);
+}
+
+.term-academic__formal {
+  display: block;
+  overflow-x: auto;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: var(--soft-navy);
+  color: var(--navy-900);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  unicode-bidi: isolate;
+}
+
+.term-academic p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.term-academic__standing {
+  margin-top: 16px !important;
+  border-inline-start: 3px solid var(--teal-deep);
+  padding-inline-start: 14px;
+  color: var(--muted);
+  font-size: 0.92rem !important;
+}
+
+.term-academic__standing b {
+  color: var(--teal-deep);
+}

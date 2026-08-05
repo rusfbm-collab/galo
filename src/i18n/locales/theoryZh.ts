@@ -930,7 +930,7 @@ export const theoryZh: TranslationDictionary = {
     "对 STAR_LEFT 读取固定的 P2 列；对 STAR_RIGHT 读取固定的 P2 行。",
   "rank(STAR_LEFT(_,P2))=2; rank(STAR_RIGHT(_,P2))=3 at L3.":
     "在 L3 中，rank(STAR_LEFT(_,P2))=2；rank(STAR_RIGHT(_,P2))=3。",
-  "Reduct and expansion": "约化与扩张",
+  "Reduct and expansion": "约化与扩充",
   "The same game board can be studied with one rule book or with both rule books open.":
     "同一块游戏板既可以只打开一本规则手册来研究，也可以同时打开两本。",
   "G_n=(Q_n,PLUS_n,P0), S_n=(Q_n,STAR_n,P0), and A_n=(Q_n,PLUS_n,STAR_n,P0).":
@@ -982,7 +982,7 @@ export const theoryZh: TranslationDictionary = {
   "L5 STAR: row P2, column P3 → P0; then row P0, column P4 → P0.":
     "L5 STAR：第 P2 行、第 P3 列 → P0；随后第 P0 行、第 P4 列 → P0。",
   "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0.": "2+3≡0 (mod 5) ⇒ (P2★P3)★P4=P0。",
-  "Stable subset": "稳定子集",
+  "Stable subset": "封闭子集（子代数）",
   "A subset is stable on one side if using one of its members in that slot never sends the result outside the subset.":
     "如果把子集中的成员放进指定一侧的槽后，结果绝不会跑出该子集，就称它在这一侧稳定。",
   "Right-stable means S★Q_n⊆S; left-stable means Q_n★S⊆S.": "右稳定表示 S★Q_n⊆S；左稳定表示 Q_n★S⊆S。",
@@ -1104,7 +1104,7 @@ export const theoryZh: TranslationDictionary = {
     "完整单位群保持这个无序划分，但并不逐一固定每个块。",
   "L5 under u=2: 1→2 and 4→3, so {1,4}→{2,3}.": "L5 在 u=2 下：1→2 且 4→3，所以 {1,4}→{2,3}。",
   "QR(5)={1²,2²,3²,4²} mod 5={1,4}.": "QR(5)={1²,2²,3²,4²} mod 5={1,4}。",
-  "CRT boundary": "CRT 边界",
+  "CRT boundary": "中国剩余定理的边界",
   "A six-position addition dial can be viewed as a two-position dial and a three-position dial together, but STAR's reset watches global zero.":
     "一个 6 位置加法表盘可以看成 2 位置表盘与 3 位置表盘的组合，但 STAR 的重置检查的是全局零。",
   "CRT gives Z/6Z≅Z/2Z×Z/3Z for addition; it is not a coordinatewise STAR isomorphism.":
@@ -1128,7 +1128,7 @@ export const theoryZh: TranslationDictionary = {
     "P0 映到复数 1，而不是复数 0；只有单位元 s 才给出核为平凡子群的忠实标记。",
   "L3 PLUS P1⊕P2=P0 matches ω·ω²=1.": "L3 PLUS 的 P1⊕P2=P0 与 ω·ω²=1 相对应。",
   "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2).": "χ_1(1+2)=exp(2πi)=1=χ_1(1)χ_1(2)。",
-  "Fibrewise aggregate": "逐纤维汇总",
+  "Fibrewise aggregate": "逐纤维求和",
   "Count objects inside labelled drawers first; adding drawer totals does not create one giant drawer.":
     "先清点每个具名抽屉里的对象；把各抽屉总数相加，并不会制造出一个巨型抽屉。",
   "Σ|Aut(A_n)|=18 and 4Σ pair_orbits(n)=224, with level and family tags fixed by the action.":
@@ -1459,7 +1459,7 @@ export const theoryZh: TranslationDictionary = {
     "若不声明所用的等同而直接写 U(n)=Aut(A_n)，就可能混淆指标与函数。",
   "Correspondence table: 1→id; 2→(P1 P2).": "对应表：1→id；2→(P1 P2)。",
   "σ_u∘σ_v=σ_(uv mod n).": "σ_u∘σ_v=σ_(uv mod n)。",
-  "Torsor and holomorph": "挠子与全纯群",
+  "Torsor and holomorph": "挠子与群的全形",
   "A torsor is a dial whose relative differences remain meaningful even after the absolute zero mark is erased.":
     "挠子（群的主齐性空间）就像一个擦去绝对零刻度后，相对差值仍有意义的表盘。",
   "The cyclic torsor uses [x,y,z]=x−y+z; its affine symmetries x↦ux+b form Hol(C_n)=C_n⋊U(n).":

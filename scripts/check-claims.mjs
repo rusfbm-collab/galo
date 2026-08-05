@@ -17,6 +17,7 @@ const sourceRoots = [
   "src/content/plainWords.ts",
   "src/content/site.ts",
   "src/content/termDeepDives.ts",
+  "src/content/termPages.ts",
   "src/content/thinking.ts",
   "src/data/controlled-replay.json",
   "index.html",

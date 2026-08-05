@@ -8,6 +8,7 @@ import { termsRu } from "./terms";
 import { audienceRu } from "./audience";
 import { plainRu } from "./plain";
 import { termsPageRu } from "./termPages";
+import { termAcademicRu } from "./termAcademic";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -23,6 +24,7 @@ export const ru: TranslationDictionary = {
   ...audienceRu,
   ...plainRu,
   ...termsPageRu,
+  ...termAcademicRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
