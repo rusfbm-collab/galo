@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, CircleEqual, Orbit, ShieldAlert } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
 import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
+import { TermButton } from "../components/theory/TermExplainer";
 import { SymmetryExplorer } from "../components/math/SymmetryExplorer";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -219,6 +220,15 @@ export function SymmetryPage() {
               "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.",
             )}
           />
+          <div className="term-index">
+            <p className="eyebrow">{t("COMPLETE TERM INDEX")}</p>
+            <h3>{t("Open any of the 59 terms and read it in full.")}</h3>
+            <div className="term-index__row">
+              {symmetrySchoolLessons.map((lesson) => (
+                <TermButton key={lesson.term} term={lesson.term} />
+              ))}
+            </div>
+          </div>
           <div className="theory-glossary">
             {symmetrySchoolLessons.map((lesson, index) => (
               <SchoolMathLessonCard

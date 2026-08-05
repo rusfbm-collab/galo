@@ -1,5 +1,7 @@
 import { ArrowLeft, Check, Copy, FileCheck2, Fingerprint, ShieldAlert } from "lucide-react";
 import { useState } from "react";
+import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
+import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { releaseEvidence } from "../content/evidence";
 import { publicClaims } from "../content/publicClaims";
@@ -23,10 +25,10 @@ export function EvidencePage() {
             <ArrowLeft className="directional-icon" size={16} aria-hidden="true" /> {t("Home")}
           </a>
           <p className="eyebrow eyebrow--cyan">{t("PUBLIC EVIDENCE LAYER")}</p>
-          <h1>{t("Evidence, scoped precisely.")}</h1>
+          <h1>{t("What already works, and what is being built next.")}</h1>
           <p>
             {t(
-              "This page separates implemented bounded mechanics from architectural targets and claims that remain unproven.",
+              "Work on GALO runs on four tracks at once. This page says plainly how far each track has come, what is running today, and which questions are still open.",
             )}
           </p>
           <div className="release-status">
@@ -104,24 +106,16 @@ export function EvidencePage() {
         <div className="shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">{t("THREE EVIDENCE LAYERS")}</p>
-              <h2>{t("Do not infer runtime capability from formal or historical material.")}</h2>
+              <p className="eyebrow">{t("FOUR TRACKS OF WORK")}</p>
+              <h2>{t("Work runs on four tracks, and each one is at a different stage.")}</h2>
               <p className="section-heading__text">
                 {t(
-                  "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.",
+                  "The mathematical foundation, the compatibility layer, the engine running today, and the target world-model loop advance separately. Each track below states the milestone it has actually reached and what is being worked on next, so progress on one track is never presented as progress on another.",
                 )}
               </p>
             </div>
           </div>
-          <div className="evidence-layer-grid">
-            {releaseEvidence.layers.map((layer, index) => (
-              <article key={layer.name}>
-                <span dir="ltr">0{index + 1}</span>
-                <h3>{t(layer.name)}</h3>
-                <p>{t(layer.detail)}</p>
-              </article>
-            ))}
-          </div>
+          <TrackStatusFigure />
         </div>
       </section>
 
@@ -178,22 +172,10 @@ export function EvidencePage() {
               </p>
             </div>
           </div>
-          <div className="work-ledger">
-            <div className="work-ledger__rows">
-              {releaseEvidence.workLedger.map((row) => (
-                <div key={row.label}>
-                  <span>{t(row.label)}</span>
-                  <strong dir="ltr">{row.value.toLocaleString("en-US")}</strong>
-                </div>
-              ))}
-            </div>
-            <article className="work-ledger__total">
-              <span>{t("Physical total")}</span>
-              <strong dir="ltr">4,802</strong>
-              <code dir="ltr">1,902 + 2,852 + 24 + 24 = 4,802</code>
-              <p>{t("Outcome evaluation and policy update each contribute zero work units in this release.")}</p>
-            </article>
-          </div>
+          <WorkLedgerFigure />
+          <p className="scope-callout">
+            {t("Outcome evaluation and policy update each contribute zero work units in this release.")}
+          </p>
         </div>
       </section>
 
@@ -293,10 +275,10 @@ export function EvidencePage() {
             </p>
           </article>
           <article>
-            <h3>{t("Research archive policy")}</h3>
+            <h3>{t("How older material is handled")}</h3>
             <p>
               {t(
-                "Historical research materials may reflect earlier scopes, experiments, or metrics. They must not be combined with this release without an explicit provenance bridge.",
+                "Older research material can reflect earlier scopes, experiments, or metrics. Building an explicit provenance bridge is open work on the compatibility track; until that bridge exists, older numbers are never merged into this release.",
               )}
             </p>
           </article>

@@ -106,7 +106,11 @@ describe("GALO public site", () => {
   it("renders the evidence route", () => {
     setPath("/evidence");
     render(<App />);
-    expect(screen.getByRole("heading", { level: 1, name: "Evidence, scoped precisely." })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 1, name: "What already works, and what is being built next." }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Work runs on four tracks, and each one is at a different stage.")).toBeInTheDocument();
+    expect(screen.getByText("Target world-model loop")).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
     expect(screen.getByText("4,802")).toBeInTheDocument();
@@ -211,6 +215,60 @@ describe("GALO public site", () => {
     }
   });
 
+  it("opens a detailed term explanation, follows a related term, and closes it", async () => {
+    const user = userEvent.setup();
+    setPath("/theory");
+    render(<App />);
+
+    expect(document.querySelector(".galo-figure--dial")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--star")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--heat")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--count")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--orbit")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--transfer")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--funnel")).toBeInTheDocument();
+
+    const chips = screen.getAllByRole("button", { name: "STAR" });
+    await user.click(chips[0]!);
+
+    const dialog = screen.getByRole("dialog", { name: "Detailed explanation: STAR" });
+    expect(within(dialog).getByText("In one line")).toBeInTheDocument();
+    expect(dialog.textContent).toContain("a raw-left P0 forces the answer to P0");
+    expect(within(dialog).getByText("Exact definition")).toBeInTheDocument();
+    expect(within(dialog).getByText("Formula channel")).toBeInTheDocument();
+
+    await user.click(within(dialog).getByRole("button", { name: "Left zero" }));
+    expect(screen.getByRole("dialog", { name: "Detailed explanation: Left zero" })).toBeInTheDocument();
+
+    await user.click(screen.getByRole("button", { name: "Close the explanation" }));
+    expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+  });
+
+  it("recolours both Cayley fields when the illustrated level changes", async () => {
+    const user = userEvent.setup();
+    setPath("/theory");
+    render(<App />);
+
+    expect(screen.getByRole("table", { name: "PLUS field at L3" })).toBeInTheDocument();
+    const levels = screen.getByRole("group", { name: "Level for both coloured tables" });
+    await user.click(within(levels).getByRole("button", { name: "L5" }));
+    expect(screen.getByRole("table", { name: "STAR field at L5" })).toBeInTheDocument();
+    const resetRow = document.querySelector(".galo-heat__table tr.is-reset-row");
+    expect(resetRow?.querySelectorAll("td")).toHaveLength(5);
+    expect(resetRow?.textContent).toContain("P0P0P0P0P0");
+  });
+
+  it("renders the illustrated term explanation in Arabic without breaking direction", async () => {
+    const user = userEvent.setup();
+    setPath("/ar/theory");
+    render(<App />);
+
+    await user.click(screen.getAllByRole("button", { name: "STAR" })[0]!);
+    const dialog = screen.getByRole("dialog");
+    expect(dialog).toHaveAttribute("dir", "rtl");
+    expect(within(dialog).getByText("في سطر واحد")).toBeInTheDocument();
+  });
+
   it("renders the symmetry route and recomputes cycles, stabilizers, and Burnside counts", async () => {
     const user = userEvent.setup();
     setPath("/symmetry");
@@ -282,7 +340,9 @@ describe("GALO public site", () => {
     setPath("/zh/evidence");
     render(<App />);
     expect(document.documentElement).toHaveAttribute("lang", "zh-CN");
-    expect(screen.getByRole("heading", { level: 1, name: "严格限定范围的证据。" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 1, name: "已经能用的部分，以及接下来正在建设的部分。" }),
+    ).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("通用人工智能")).toBeInTheDocument();
     expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();

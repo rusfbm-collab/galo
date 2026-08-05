@@ -1,6 +1,13 @@
 export type EvidenceStatus =
   "PASS" | "BOUNDARY" | "BLOCKED" | "NOT IMPLEMENTED" | "NOT PROVEN" | "NOT STARTED" | "NOT PRESENT" | "NOT CLAIMED";
 
+export const workTrackMilestones = [
+  "Specified",
+  "Implemented",
+  "Independently re-checked",
+  "Externally validated",
+] as const;
+
 export const releaseEvidence = {
   release: "R5B6A1_3",
   currentApi: "R5B6A1_3_CURRENT_V4",
@@ -40,21 +47,38 @@ export const releaseEvidence = {
     "Receipt-derived phase and occurrence work accounting",
     "Zero Atlas semantic reads, rank effects, and learning writes",
   ],
-  layers: [
+  tracks: [
     {
-      name: "Formal mathematics",
+      name: "Mathematical foundation",
+      state: "Finished and re-derived on every build",
       detail:
-        "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms.",
+        "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms. Every count published here is recomputed from the laws rather than copied from a document.",
+      next: "Extending the formal programming model beyond single-step composition.",
+      reached: 3,
     },
     {
       name: "Compatibility and audit layer",
+      state: "Kept for comparison, not shipped as capability",
       detail:
         "Stored replays and legacy modules retained for comparison. Their APIs and historical experiments are not automatically current runtime capabilities.",
+      next: "Building explicit provenance bridges so older results can be compared without being merged.",
+      reached: 2,
     },
     {
-      name: "Current V4 runtime",
+      name: "Engine running today",
+      state: "Running, and deliberately narrow",
       detail:
         "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.",
+      next: "Widening the accepted input contract and adding multi-step trajectories.",
+      reached: 3,
+    },
+    {
+      name: "Target world-model loop",
+      state: "Specified, and open on purpose",
+      detail:
+        "The explicit World Atlas, adaptive resolution, local revision, and the learning loop exist as a written architecture with named preconditions.",
+      next: "Closing the evidence gates that must precede any persistent learning.",
+      reached: 1,
     },
   ],
   selector: [

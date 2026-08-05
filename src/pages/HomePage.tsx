@@ -334,7 +334,7 @@ export function HomePage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("EVIDENCE")}
-            title={t("Evidence, scoped precisely.")}
+            title={t("What the current numbers actually measure.")}
             text={t(
               "The numbers below describe formal inventory and release reproducibility. None is presented as a measure of intelligence, customer value, or external operational gain.",
             )}

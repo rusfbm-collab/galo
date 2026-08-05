@@ -2,11 +2,15 @@ import type { TranslationDictionary } from "../translations";
 import { mathAr } from "./math";
 import { releaseAr } from "./releaseAr";
 import { theoryAr } from "./theoryAr";
+import { termsAr } from "./terms";
+import { visualsAr } from "./visuals";
 
 export const ar: TranslationDictionary = {
   ...mathAr,
   ...releaseAr,
   ...theoryAr,
+  ...termsAr,
+  ...visualsAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

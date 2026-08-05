@@ -14,7 +14,7 @@ import {
   structuralOrbitCountByBurnside,
   unitMultipliers,
 } from "../src/content/mathematics";
-import { releaseEvidence } from "../src/content/evidence";
+import { releaseEvidence, workTrackMilestones } from "../src/content/evidence";
 import {
   beginnerCountLedger,
   currentV4Flow,
@@ -156,9 +156,11 @@ describe("beginner theory dual-channel safeguards", () => {
     expect(theoryArchitectureLayers.find(({ title }) => title === "Adaptive World Atlas loop")?.detail).toContain(
       "remain target architecture",
     );
-    expect(releaseEvidence.layers.find(({ name }) => name === "Compatibility and audit layer")?.detail).toContain(
+    expect(releaseEvidence.tracks.find(({ name }) => name === "Compatibility and audit layer")?.detail).toContain(
       "not automatically current runtime capabilities",
     );
+    expect(releaseEvidence.tracks.map(({ reached }) => reached)).toEqual([3, 2, 3, 1]);
+    expect(releaseEvidence.tracks.every(({ reached }) => reached < workTrackMilestones.length)).toBe(true);
     expect(releaseEvidence.freshReplay.full).toBe("NOT COMPLETED");
     expect(releaseEvidence.arithmetic.storedFull).toBe(1366);
     expect(releaseEvidence.status).toBe("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES");

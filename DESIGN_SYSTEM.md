@@ -46,6 +46,29 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 4. **Current / Target split:** mechanically verified slice and in-development architecture never share an undifferentiated status surface.
 5. **Theory from zero:** a dedicated long-form route starts with an L3 dial, introduces one object class at a time, and provides optional depth through tables, exact records, glossary disclosures, and links to the academic chapters.
 
+## Illustration layer
+
+Diagrams are drawn as inline SVG or as real tables, never as bitmaps, so they stay sharp, translatable, and readable by assistive technology. Every figure carries a caption, an `<svg><title>` and `<desc>` pair or a table caption, a direct text label on every mark, and — where the drawing could be over-read — an explicit boundary line.
+
+Chart colour uses its own validated tokens rather than the brand accents, because the brand teal and cyan sit too close together to separate a series:
+
+```css
+--chart-1: #0f9c88; /* light surfaces */
+--chart-2: #b8790a;
+--chart-3: #2b7fd6;
+--chart-1: #1faa8c; /* navy and dark surfaces */
+--chart-2: #bd8526;
+--chart-3: #6e8ce2;
+```
+
+Both sets pass a colour-vision-deficiency separation check and a 3:1 contrast check against their own surface. Magnitude uses a single seven-step teal ramp (`--ramp-0` … `--ramp-6`), light to dark; colour is never the only encoding, and every coloured cell also prints its exact label.
+
+The nine figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, and the four-track status board. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
+
+## Term explainer
+
+Any term the reader can meet in the running text is also a chip. A chip opens a modal that gives the plain-language layer first — one line, a familiar picture, why GALO needs it, and where it appears on the site — followed by the complete seven-part school lesson and a set of related terms that can be opened in place. Forty of the fifty-nine terms carry the plain-language layer; the rest open straight to the full lesson. The modal closes on Escape, on backdrop click, and on its close button, and it returns focus to the chip that opened it.
+
 ## Beginner learning pattern
 
 The 59-entry school notebook uses one consistent seven-part explanation contract across Theory, Mathematics, and Symmetry:

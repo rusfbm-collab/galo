@@ -11,8 +11,16 @@ import {
   Route,
   ShieldCheck,
 } from "lucide-react";
+import { CayleyHeatmapFigure } from "../components/diagrams/CayleyHeatmapFigure";
+import { CoordinateCountFigure } from "../components/diagrams/CoordinateCountFigure";
+import { CyclicDialFigure } from "../components/diagrams/CyclicDialFigure";
+import { LevelTransferFigure } from "../components/diagrams/LevelTransferFigure";
+import { OrbitFigure } from "../components/diagrams/OrbitFigure";
+import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
+import { StarResetFigure } from "../components/diagrams/StarResetFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
+import { TermButton, TermChips } from "../components/theory/TermExplainer";
 import { TransitionTutor } from "../components/theory/TransitionTutor";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -275,6 +283,7 @@ export function TheoryPage() {
               </dl>
             </article>
           </div>
+          <CyclicDialFigure level={3} source={1} active={2} />
           <div className="theory-analogy-boundary">
             <CircleAlert size={20} aria-hidden="true" />
             <p>
@@ -284,6 +293,7 @@ export function TheoryPage() {
               )}
             </p>
           </div>
+          <TermChips terms={["Carrier", "Pole", "Level", "Modulo n", "Residue class"]} />
         </div>
       </section>
 
@@ -331,6 +341,7 @@ export function TheoryPage() {
               <p>{t("The reset test examines only the raw-left input. A right P0 does not trigger it.")}</p>
             </article>
           </div>
+          <StarResetFigure />
           <div className="theory-l3-tables">
             <table dir="ltr">
               <caption dir={direction}>{t("Complete L3 PLUS table")}</caption>
@@ -401,6 +412,8 @@ export function TheoryPage() {
               "Consistency check: every displayed table cell is obtained by substituting its row and column indices into the displayed formula. The two channels agree for all nine L3 input pairs.",
             )}
           </p>
+          <CayleyHeatmapFigure />
+          <TermChips terms={["Binary operation", "Cayley table", "PLUS", "STAR", "Closure", "Commutativity"]} />
         </div>
       </section>
 
@@ -478,6 +491,9 @@ export function TheoryPage() {
               )}
             </p>
           </details>
+          <TermChips
+            terms={["Left zero", "Right-neutral element", "Identity element", "Magma, semigroup, monoid, and group"]}
+          />
         </div>
       </section>
 
@@ -653,6 +669,9 @@ export function TheoryPage() {
               </article>
             </div>
           </div>
+          <TermChips
+            terms={["Source state", "Active pole", "Typed coordinate", "Standard left and right translation", "Rank"]}
+          />
         </div>
       </section>
 
@@ -679,6 +698,7 @@ export function TheoryPage() {
               "No statistical estimate is involved. The count is a complete finite enumeration across L1–L7, and each multiplication in the derivation has a different object-level meaning.",
             )}
           />
+          <CoordinateCountFigure />
           <div className="theory-count-equation" dir="ltr">
             <span>Σ_(n=1)^7 n²</span>
             <b>=</b>
@@ -729,6 +749,7 @@ export function TheoryPage() {
               )}
             </p>
           </details>
+          <TermChips terms={["Typed catalogue count", "Typed coordinate", "Signature, arity, and constant"]} />
         </div>
       </section>
 
@@ -790,6 +811,15 @@ export function TheoryPage() {
               "Consistency check: direct table lookup gives P2 for the left tree and P1 for the right tree. The formula and tree evaluation agree.",
             )}
           </p>
+          <TermChips
+            terms={[
+              "Composition",
+              "Nonassociative",
+              "Associativity",
+              "Zero-prefix rule",
+              "Catalan number and bracket recurrence",
+            ]}
+          />
         </div>
       </section>
 
@@ -803,6 +833,7 @@ export function TheoryPage() {
               "At L3, multiplying indices by 2 swaps P1 and P2 while fixing P0. Recompute every PLUS and STAR cell after the swap: the operation tables retain the same structure.",
             )}
           />
+          <OrbitFigure />
           <div className="theory-symmetry-example">
             <article>
               <Orbit size={24} aria-hidden="true" />
@@ -923,6 +954,7 @@ export function TheoryPage() {
               <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
             </a>
           </div>
+          <TermChips terms={["Automorphism", "Group action", "Orbit", "Stabilizer", "Burnside's lemma"]} />
         </div>
       </section>
 
@@ -935,6 +967,7 @@ export function TheoryPage() {
               "A homomorphism must preserve the declared operations. An embedding must additionally keep distinct source poles distinct. Operational transfer can require still more: provenance, alignment, loss, and authorization checks.",
             )}
           />
+          <LevelTransferFigure />
           <div className="theory-map-grid">
             <article className="theory-map-card theory-map-card--pass">
               <span>PASS · {t("nonzero embedding")}</span>
@@ -1135,6 +1168,9 @@ export function TheoryPage() {
               </p>
             </article>
           </div>
+          <TermChips
+            terms={["Homomorphism", "Zero homomorphism", "Embedding", "Divisibility and element order", "Boundary"]}
+          />
         </div>
       </section>
 
@@ -1173,6 +1209,7 @@ export function TheoryPage() {
               )}
             </p>
           </div>
+          <SelectorFunnelFigure />
           <div
             className="theory-runtime-arithmetic-wrap"
             role="region"
@@ -1360,6 +1397,7 @@ export function TheoryPage() {
               </li>
             ))}
           </ol>
+          <TermChips terms={["Formal, current, and target layers", "Current V4 school replay", "Receipt"]} />
         </div>
       </section>
 
@@ -1443,6 +1481,7 @@ export function TheoryPage() {
               )}
             </p>
           </div>
+          <TermChips terms={["Receipt", "Boundary", "Formal, current, and target layers"]} />
           <a className="button button--primary" href={href("/evidence")}>
             {t("Inspect the complete evidence matrix")}{" "}
             <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
@@ -1459,6 +1498,20 @@ export function TheoryPage() {
               "Every entry moves from analogy to exact definition, works a small example, explains why the claim is true, names a common mistake, and reconciles table and formula channels.",
             )}
           />
+          <div className="term-index">
+            <p className="eyebrow">{t("COMPLETE TERM INDEX")}</p>
+            <h3>{t("Open any of the 59 terms and read it in full.")}</h3>
+            <p className="term-index__text">
+              {t(
+                "Every entry is written the same way, so a term you already know teaches you how to read the ones you do not.",
+              )}
+            </p>
+            <div className="term-index__row">
+              {theoryGlossary.map((item) => (
+                <TermButton key={item.term} term={item.term} />
+              ))}
+            </div>
+          </div>
           <div
             className="theory-symbol-legend-wrap"
             role="region"

@@ -79,6 +79,9 @@ Expected health response: `ok` with HTTP 200.
 - Release evidence: `src/content/evidence.ts`
 - Frozen PLUS/STAR formulas and table generator: `src/content/mathematics.ts`
 - Recorded receipt walkthrough: `src/data/controlled-replay.json`
+- Plain-language term explanations: `src/content/termDeepDives.ts`
+- Diagram and chart components: `src/components/diagrams/`
+- Added interface strings must be translated in `src/i18n/locales/` before `npm run test` passes
 
 The confirmed public evaluation address is `rusfbm@gmail.com`. Other unknown personal facts and missing assets remain `null` and are hidden from the interface. Do not add a deck, photo, technical brief, additional contact address, customer, revenue, funding, legal-status, or partnership claim without a direct source.
 

@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, Braces, Check, GitBranch, ShieldAlert } from "lucide-react";
 import { CayleyExplorer } from "../components/math/CayleyExplorer";
 import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
+import { TermButton } from "../components/theory/TermExplainer";
 import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
@@ -250,6 +251,15 @@ export function MathematicsPage() {
               "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.",
             )}
           />
+          <div className="term-index">
+            <p className="eyebrow">{t("COMPLETE TERM INDEX")}</p>
+            <h3>{t("Open any of the 59 terms and read it in full.")}</h3>
+            <div className="term-index__row">
+              {mathematicsSchoolLessons.map((lesson) => (
+                <TermButton key={lesson.term} term={lesson.term} />
+              ))}
+            </div>
+          </div>
           <div className="theory-glossary">
             {mathematicsSchoolLessons.map((lesson, index) => (
               <SchoolMathLessonCard
