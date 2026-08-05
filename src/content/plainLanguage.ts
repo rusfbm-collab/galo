@@ -1,10 +1,53 @@
 /**
- * Two non-technical entry layers.
+ * Non-technical entry layers.
  *
- * `investorBriefing` answers the questions a non-technical reader asks first.
- * `cayleyFoundation` explains, from the familiar multiplication table upward, why a
- * finite Cayley table is the object everything else on this site is built on.
+ * `readerPaths` routes each kind of reader to the three pages that answer their
+ * question and no others. `investorBriefing` answers the questions a
+ * non-technical reader asks first. `cayleyFoundation` explains, from the familiar
+ * multiplication table upward, why a finite Cayley table is the object everything
+ * else on this site is built on.
  */
+
+export type ReaderPath = {
+  audience: string;
+  goal: string;
+  /** Untranslated reading time. */
+  minutes: string;
+  stops: readonly { href: string; label: string }[];
+};
+
+export const readerPaths: readonly ReaderPath[] = [
+  {
+    audience: "You are deciding whether to spend an hour on this",
+    goal: "Find out what the thing is, what exists today, and what would tell you it is not worth more time.",
+    minutes: "15m",
+    stops: [
+      { href: "/investors#one-minute", label: "The whole idea in one minute" },
+      { href: "/investors#risks", label: "Six risks and what would settle each one" },
+      { href: "/investors#diligence", label: "A diligence path you can run yourself" },
+    ],
+  },
+  {
+    audience: "You have to verify a claim, not enjoy it",
+    goal: "Find out exactly what an outsider can establish here, and what the site says cannot be established at all.",
+    minutes: "25m",
+    stops: [
+      { href: "/audit#what-you-can-check", label: "Four tiers of verifiability" },
+      { href: "/audit#eight-questions", label: "Eight questions, answered as they stand today" },
+      { href: "/evidence", label: "The published record and its boundaries" },
+    ],
+  },
+  {
+    audience: "You want the mechanism and then the proofs",
+    goal: "Start from the table everything is built on, follow one decision end to end, and then read the formal statements.",
+    minutes: "60m",
+    stops: [
+      { href: "/theory#cayley-first", label: "Start with the table you already know" },
+      { href: "/thinking", label: "One decision, drawn stage by stage" },
+      { href: "/math#academic-analysis", label: "Numbered definitions and proofs" },
+    ],
+  },
+];
 
 export type PlainAnswer = {
   question: string;
@@ -122,6 +165,7 @@ export const cayleyWhyFinite = [
 
 export const plainLanguageTranslationKeys = [
   ...new Set([
+    ...readerPaths.flatMap((path) => [path.audience, path.goal, ...path.stops.map((stop) => stop.label)]),
     ...investorBriefing.flatMap((entry) => [entry.question, entry.answer, entry.detail]),
     ...cayleyFoundation.flatMap((entry) => [entry.title, entry.text]),
     ...cayleyWhyFinite.flatMap((entry) => [entry.title, entry.text]),

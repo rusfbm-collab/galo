@@ -92,14 +92,14 @@ export function ThinkingPage() {
           <div className="thinking-stages">
             {thoughtStages.map((stage) => (
               <article key={stage.number} className={stage.status === "TARGET" ? "is-target" : undefined}>
-                <header>
+                <div className="thinking-stages__head">
                   <span className="thinking-stages__index" dir="ltr">
                     {stage.number}
                   </span>
                   <span className={`thinking-stages__status is-${stage.status === "TARGET" ? "target" : "current"}`}>
                     <bdi dir="ltr">{stage.status}</bdi>
                   </span>
-                </header>
+                </div>
                 <h3>{t(stage.name)}</h3>
                 <p className="thinking-stages__question">{t(stage.question)}</p>
                 <p className="thinking-stages__happens">{t(stage.happens)}</p>

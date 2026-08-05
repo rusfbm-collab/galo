@@ -5,6 +5,7 @@ import { theoryRu } from "./theoryRu";
 import { academicRuExtra } from "./academic";
 import { comparisonRu } from "./comparison";
 import { termsRu } from "./terms";
+import { audienceRu } from "./audience";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -17,6 +18,7 @@ export const ru: TranslationDictionary = {
   ...comparisonRu,
   ...visualsRu,
   ...thinkingRu,
+  ...audienceRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

@@ -19,6 +19,7 @@ import { LocalRevision } from "../components/diagrams/LocalRevision";
 import { ResolutionLadder } from "../components/diagrams/ResolutionLadder";
 import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
+import { ReaderPaths } from "../components/ui/ReaderPaths";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { releaseEvidence } from "../content/evidence";
 import { getEvaluationContact } from "../content/contact";
@@ -156,7 +157,7 @@ export function HomePage() {
             <h1>{t("AI agents need a world state they can inspect, revise, and replay.")}</h1>
             <p className="hero__lead">
               {t(
-                "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.",
+                "GALO is a standalone research architecture for decision-making systems that hold their state in a small, completely written-out table instead of inside a model nobody can open. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.",
               )}
             </p>
             <div className="hero__status" aria-label={t("Current project status")}>
@@ -168,12 +169,12 @@ export function HomePage() {
               <span>{t("Abu Dhabi relocation planned")}</span>
             </div>
             <div className="hero__actions">
-              <a className="button button--primary" href={href("/theory")}>
-                {t("Understand GALO step by step")}{" "}
+              <a className="button button--primary" href={href("/investors")}>
+                {t("Start with the non-technical account")}{" "}
                 <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
-              <a className="button button--outline-light" href="#plain-language">
-                {t("Read the plain-language briefing")}
+              <a className="button button--outline-light" href="#how-to-read">
+                {t("Three ways to read this site")}
               </a>
             </div>
             <p className="hero__boundary">
@@ -229,6 +230,19 @@ export function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="how-to-read" className="section section--paper home-paths">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THREE WAYS TO READ THIS SITE")}
+            title={t("Nothing here requires mathematics unless you want it.")}
+            text={t(
+              "Most of this site is written for specialists, and that turned out to be a mistake for everybody else. These three routes fix it: pick the one that matches why you are here, follow its three stops in order, and stop when your question is answered.",
+            )}
+          />
+          <ReaderPaths />
         </div>
       </section>
 

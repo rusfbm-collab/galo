@@ -6,6 +6,8 @@ export const locales = ["en", "ru", "zh", "ar"] as const;
 export type Locale = (typeof locales)[number];
 export type PageRoute =
   | "/"
+  | "/investors"
+  | "/audit"
   | "/theory"
   | "/thinking"
   | "/vs-llm"
@@ -60,6 +62,8 @@ export function parseLocalizedPath(pathname: string): { locale: Locale; route: P
   const rawRoute = routeSegments.length ? `/${routeSegments.join("/")}` : "/";
   const route: PageRoute =
     rawRoute === "/" ||
+    rawRoute === "/investors" ||
+    rawRoute === "/audit" ||
     rawRoute === "/theory" ||
     rawRoute === "/thinking" ||
     rawRoute === "/vs-llm" ||

@@ -354,6 +354,97 @@ describe("GALO public site", () => {
     }
   });
 
+  it("routes a non-technical reader through the investor page", () => {
+    setPath("/investors");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "What this is, what exists, and what would tell you it is not worth your time.",
+      }),
+    ).toBeInTheDocument();
+
+    expect(document.querySelectorAll(".one-minute > article")).toHaveLength(3);
+    expect(document.querySelectorAll(".one-minute__facts > article")).toHaveLength(4);
+    expect(document.querySelectorAll(".investor-problems > article")).toHaveLength(4);
+    expect(document.querySelectorAll(".investor-fit > article")).toHaveLength(4);
+    expect(document.querySelectorAll(".stage-facts > article")).toHaveLength(8);
+    expect(document.querySelectorAll(".risk-register > article")).toHaveLength(6);
+    expect(document.querySelectorAll(".diligence-steps > li")).toHaveLength(6);
+    expect(document.querySelectorAll(".not-claimed > li")).toHaveLength(6);
+
+    expect(document.querySelector(".galo-figure--trace")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--stack")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--gatechain")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--diligence")).toBeInTheDocument();
+
+    expect(screen.getAllByText(/No revenue, no funds raised, no customer, no pilot/i).length).toBeGreaterThan(1);
+    expect(screen.getByText(/No organisation named or unnamed has evaluated, piloted, or agreed/i)).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/investors");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing investor target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("tells an auditor what cannot be established from the site", () => {
+    setPath("/audit");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "What a sceptical outsider can establish here, and what nobody can.",
+      }),
+    ).toBeInTheDocument();
+
+    expect(document.querySelectorAll(".audit-tiers > article")).toHaveLength(4);
+    expect(document.querySelector(".audit-tiers > article.is-t4")).toBeInTheDocument();
+    expect(document.querySelectorAll(".claim-chain > li")).toHaveLength(5);
+    expect(document.querySelectorAll(".status-rules > article")).toHaveLength(4);
+    expect(document.querySelectorAll(".audit-questions > article")).toHaveLength(8);
+    expect(document.querySelectorAll(".repro-steps > article")).toHaveLength(5);
+    expect(document.querySelectorAll(".not-claimed > li")).toHaveLength(5);
+
+    expect(document.querySelector(".galo-figure--tiers")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--anatomy")).toBeInTheDocument();
+
+    expect(screen.getByText(/every check published here is run by the project's own build/i)).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/audit");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing audit target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("offers three reader routes on the home page", () => {
+    setPath("/");
+    render(<App />);
+
+    const paths = document.querySelectorAll(".reader-paths > article");
+    expect(paths).toHaveLength(3);
+    expect(paths[0]?.querySelectorAll("ol > li")).toHaveLength(3);
+    expect(screen.getByRole("heading", { level: 2, name: /Nothing here requires mathematics/i })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Start with the non-technical account/i })).toBeInTheDocument();
+  });
+
+  it("carries the investor and audit routes into every locale", () => {
+    for (const [path, heading] of [
+      ["/ru/investors", "Что это такое, что существует и что скажет вам, что это не стоит вашего времени."],
+      ["/zh/investors", "这是什么、有什么，以及什么会告诉你它不值得你花时间。"],
+      ["/ar/audit", "ما الذي يستطيع مراجع خارجي متشكّك إثباته هنا، وما الذي لا يستطيعه أحد."],
+      ["/ru/audit", "Что внешний скептик может здесь установить и чего не может никто."],
+    ] as const) {
+      setPath(path);
+      const view = render(<App />);
+      expect(screen.getByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
+      view.unmount();
+    }
+  });
+
   it("gives the thinking schemes their own route with every stage and gate on the page", () => {
     setPath("/thinking");
     render(<App />);
@@ -561,6 +652,8 @@ describe("GALO public site", () => {
     expect(localizedPath("zh", "/theory#guided-lab")).toBe("/zh/theory#guided-lab");
     expect(localizedPath("ru", "/vs-llm#dimensions")).toBe("/ru/vs-llm#dimensions");
     expect(localizedPath("zh", "/thinking#gates")).toBe("/zh/thinking#gates");
+    expect(localizedPath("ru", "/investors#risks")).toBe("/ru/investors#risks");
+    expect(parseLocalizedPath("/ar/audit/")).toEqual({ locale: "ar", route: "/audit", rawRoute: "/audit" });
     expect(parseLocalizedPath("/ru/thinking/")).toEqual({ locale: "ru", route: "/thinking", rawRoute: "/thinking" });
     expect(parseLocalizedPath("/ar/vs-llm/")).toEqual({ locale: "ar", route: "/vs-llm", rawRoute: "/vs-llm" });
     expect(localizedPath("ru", "/symmetry#orbit-lab")).toBe("/ru/symmetry#orbit-lab");
@@ -575,7 +668,7 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/theory", "/thinking", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/investors", "/audit", "/theory", "/thinking", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();

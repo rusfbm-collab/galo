@@ -48,7 +48,7 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 
 ## Reading order for non-specialists
 
-The site has three deliberate entry points, and each one is complete on its own.
+The home route opens with three named reader routes — decide, verify, understand — each with exactly three stops, because a reader handed nine links follows none of them. Behind those routes the site has three deliberate entry points, and each one is complete on its own.
 
 1. **Plain-language briefing** (home). Six questions a non-technical reader asks first, answered without mathematics or acronyms, followed by the single technical fact worth carrying away: everything below rests on a finite Cayley table.
 2. **Start with the table** (theory). The familiar multiplication table placed beside the L3 PLUS table, the six-step chain from that table up to a replayable record, and the four properties a finite table has that a trained model does not.
@@ -73,11 +73,19 @@ Chart colour uses its own validated tokens rather than the brand accents, becaus
 
 Both sets pass a colour-vision-deficiency separation check and a 3:1 contrast check against their own surface. Diagram geometry is authored left-to-right and the SVG keeps that flow in every locale, with each label bidi-isolated so Arabic text still renders in its own direction without escaping its box. Magnitude uses a single seven-step teal ramp (`--ramp-0` … `--ramp-6`), light to dark; colour is never the only encoding, and every coloured cell also prints its exact label.
 
-The figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, the four-track status board, the familiar-table bridge, the layer stack, the two-machine anatomy, the question-by-question table, the composition loop, the commuting square, the two evaluation trees, the four role orientations, the resolution-loss map, the annotated receipt, the per-level automorphism chart, the nine-stage thought pipeline, the five refusal gates, the one-step state cycle, the three converging runs, and the carried-state bands. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
+The figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, the four-track status board, the familiar-table bridge, the layer stack, the two-machine anatomy, the question-by-question table, the composition loop, the commuting square, the two evaluation trees, the four role orientations, the resolution-loss map, the annotated receipt, the per-level automorphism chart, the nine-stage thought pipeline, the five refusal gates, the one-step state cycle, the three converging runs, the carried-state bands, the three-layer stack placement, the two decision lanes, the four verification tiers, the five-slot claim anatomy, and the four open evidence gates. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
 
 ## Comparison route
 
 `/vs-llm` is the one page that puts GALO beside a language model. It is written on a single rule: compare mechanism and evidence, never output quality. Every row of the ten-property table states what each object _is_, the breadth row says plainly that a language model is vastly wider, and one of the five corrected misreadings exists solely to state that no head-to-head evaluation has been run. The composition diagram marks the two proposing stages as target architecture so the loop cannot be read as shipped.
+
+## Investor and audit routes
+
+`/investors` and `/audit` exist because everything else on the site assumes a specialist. Neither page contains a formula.
+
+The investor route is built around what would normally be omitted: a stage-facts block whose answers are `NO` and `NOT DISCLOSED` as often as `YES`, a fact chip whose value is `0` because no external result has been measured, six risks each carrying the observation that would settle it, and a six-step diligence path whose first five steps need nothing from the project. The four deployment scenarios are marked as hypothetical in the copy and enforced as hypothetical by a test.
+
+The audit route is written against its own site. It sorts every published value into four tiers of verifiability, and the fourth tier — not verifiable from here — is stated as the honest answer rather than hidden. It gives the five slots every published claim has to fill, four rules for reading a status without being misled, eight reviewer questions with the operation that would break each answer, and a closing list of five things a reader cannot establish here, including the independence of the checking itself.
 
 ## Thinking route
 

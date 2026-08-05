@@ -5,6 +5,7 @@ import { theoryAr } from "./theoryAr";
 import { academicArExtra } from "./academic";
 import { comparisonAr } from "./comparison";
 import { termsAr } from "./terms";
+import { audienceAr } from "./audience";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -17,6 +18,7 @@ export const ar: TranslationDictionary = {
   ...comparisonAr,
   ...visualsAr,
   ...thinkingAr,
+  ...audienceAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

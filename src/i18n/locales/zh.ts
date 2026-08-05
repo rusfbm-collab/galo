@@ -5,6 +5,7 @@ import { theoryZh } from "./theoryZh";
 import { academicZhExtra } from "./academic";
 import { comparisonZh } from "./comparison";
 import { termsZh } from "./terms";
+import { audienceZh } from "./audience";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -17,6 +18,7 @@ export const zh: TranslationDictionary = {
   ...comparisonZh,
   ...visualsZh,
   ...thinkingZh,
+  ...audienceZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

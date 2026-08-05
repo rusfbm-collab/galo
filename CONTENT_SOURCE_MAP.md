@@ -29,6 +29,8 @@ Current authority: `R5B6A1_3` machine-readable status and receipts. The archive 
 | Plain-language briefing             | Non-technical restatement            | Confirmed site brief and current release status          | Answer without mathematics; state open work as open, and never imply traction, customers, or measured gain     |
 | GALO / language-model comparison    | Mechanism restatement                | Current release contract and published model behaviour   | Compare mechanism and evidence only; never state a benchmark, accuracy, speed, cost, or capability comparison  |
 | Term explanations                   | Formal education + scoped bridge     | Seven-part concept lesson plus a plain-language layer    | Analogies stay explicitly subordinate to the exact definition and to the stated boundary                       |
+| Non-technical account               | Business restatement                 | Confirmed site record and current release contract       | No traction, revenue, customer, pilot, or measured result; every scenario stated as hypothetical               |
+| Verification handbook               | Self-audit of the site               | Published statuses, boundary register, and build checks  | Names what cannot be established here, including that no check published here is independent                   |
 | Thinking schemes                    | Mechanism restatement                | Current release contract, selector counts, and receipts  | Every stage carries CURRENT V4 or TARGET; no cognition, understanding, or autonomy is claimed                  |
 | Four work tracks                    | Current status                       | Release contract, replay log, and boundary registry      | Each track states the milestone it reached; a milestone on one track never implies one on another              |
 | Recorded receipt walkthrough        | Sanitized current evidence           | R5B6A1_3 direct selfcheck witnesses                      | Client-side replay; exact closed-ontology and external-origin boundaries                                       |
@@ -44,18 +46,20 @@ Current authority: `R5B6A1_3` machine-readable status and receipts. The archive 
 
 ## Localized route topology
 
-The static build prerenders eight canonical pages in each of four locales, for 32 HTML route entries:
+The static build prerenders ten canonical pages in each of four locales, for 40 HTML route entries:
 
-| Canonical page | English     | Russian        | Simplified Chinese | Arabic         |
-| -------------- | ----------- | -------------- | ------------------ | -------------- |
-| Home           | `/`         | `/ru`          | `/zh`              | `/ar`          |
-| Theory         | `/theory`   | `/ru/theory`   | `/zh/theory`       | `/ar/theory`   |
-| How it thinks  | `/thinking` | `/ru/thinking` | `/zh/thinking`     | `/ar/thinking` |
-| GALO vs LLM    | `/vs-llm`   | `/ru/vs-llm`   | `/zh/vs-llm`       | `/ar/vs-llm`   |
-| Mathematics    | `/math`     | `/ru/math`     | `/zh/math`         | `/ar/math`     |
-| Symmetry       | `/symmetry` | `/ru/symmetry` | `/zh/symmetry`     | `/ar/symmetry` |
-| Evidence       | `/evidence` | `/ru/evidence` | `/zh/evidence`     | `/ar/evidence` |
-| Privacy        | `/privacy`  | `/ru/privacy`  | `/zh/privacy`      | `/ar/privacy`  |
+| Canonical page | English      | Russian         | Simplified Chinese | Arabic          |
+| -------------- | ------------ | --------------- | ------------------ | --------------- |
+| Home           | `/`          | `/ru`           | `/zh`              | `/ar`           |
+| For investors  | `/investors` | `/ru/investors` | `/zh/investors`    | `/ar/investors` |
+| For auditors   | `/audit`     | `/ru/audit`     | `/zh/audit`        | `/ar/audit`     |
+| Theory         | `/theory`    | `/ru/theory`    | `/zh/theory`       | `/ar/theory`    |
+| How it thinks  | `/thinking`  | `/ru/thinking`  | `/zh/thinking`     | `/ar/thinking`  |
+| GALO vs LLM    | `/vs-llm`    | `/ru/vs-llm`    | `/zh/vs-llm`       | `/ar/vs-llm`    |
+| Mathematics    | `/math`      | `/ru/math`      | `/zh/math`         | `/ar/math`      |
+| Symmetry       | `/symmetry`  | `/ru/symmetry`  | `/zh/symmetry`     | `/ar/symmetry`  |
+| Evidence       | `/evidence`  | `/ru/evidence`  | `/zh/evidence`     | `/ar/evidence`  |
+| Privacy        | `/privacy`   | `/ru/privacy`   | `/zh/privacy`      | `/ar/privacy`   |
 
 Machine identifiers, formulas, hashes, receipt fields, Cayley tables, and matrices remain canonical and LTR. Translated prose is audited separately in RU, ZH, and RTL Arabic.
 

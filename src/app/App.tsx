@@ -1,7 +1,9 @@
 import { useEffect } from "react";
+import { AuditPage } from "../pages/AuditPage";
 import { ComparisonPage } from "../pages/ComparisonPage";
 import { EvidencePage } from "../pages/EvidencePage";
 import { HomePage } from "../pages/HomePage";
+import { InvestorsPage } from "../pages/InvestorsPage";
 import { MathematicsPage } from "../pages/MathematicsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
@@ -30,6 +32,16 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "Evidence — GALO AI",
     description:
       "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.",
+  },
+  "/investors": {
+    title: "GALO AI for Investors — What Exists, What Does Not, and How to Check",
+    description:
+      "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.",
+  },
+  "/audit": {
+    title: "GALO AI for Auditors — What an Outsider Can Actually Verify",
+    description:
+      "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.",
   },
   "/theory": {
     title: "GALO Theory for Beginners — From States to Verified Execution",
@@ -144,6 +156,8 @@ export function App() {
     <I18nProvider locale={locale}>
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
+      {route === "/investors" && <InvestorsPage />}
+      {route === "/audit" && <AuditPage />}
       {route === "/theory" && <TheoryPage />}
       {route === "/thinking" && <ThinkingPage />}
       {route === "/vs-llm" && <ComparisonPage />}

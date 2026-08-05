@@ -19,6 +19,18 @@ const locales = {
         description:
           "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.",
       },
+      investors: {
+        path: "investors",
+        title: "GALO AI for Investors — What Exists, What Does Not, and How to Check",
+        description:
+          "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.",
+      },
+      audit: {
+        path: "audit",
+        title: "GALO AI for Auditors — What an Outsider Can Actually Verify",
+        description:
+          "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.",
+      },
       theory: {
         path: "theory",
         title: "GALO Theory for Beginners — From States to Verified Execution",
@@ -75,6 +87,18 @@ const locales = {
         description:
           "GALO — самостоятельная исследовательская архитектура для явного состояния мира, типизированного исполнения и воспроизведения, подтверждаемого протоколами исполнения.",
       },
+      investors: {
+        path: "investors",
+        title: "GALO AI для инвесторов — что есть, чего нет и как это проверить",
+        description:
+          "Нетехнический разбор GALO: проблема на языке денег, место объявленного слоя в системе, что работает сегодня, шесть рисков с проверками и путь due diligence, который читатель может пройти без нас.",
+      },
+      audit: {
+        path: "audit",
+        title: "GALO AI для аудиторов — что внешний проверяющий действительно может установить",
+        description:
+          "Четыре уровня проверяемости, пять полей каждого публикуемого утверждения, как читать статус и не быть введённым в заблуждение, восемь вопросов проверяющего, воспроизведение в пять шагов и границы этого сайта.",
+      },
       theory: {
         path: "theory",
         title: "Теория GALO для начинающих — от состояний к верифицированному исполнению",
@@ -130,6 +154,18 @@ const locales = {
         title: "GALO AI — 显式世界状态与可重放执行",
         description: "GALO 是一套面向显式世界状态、类型化执行与回执支撑重放的独立研究架构。",
       },
+      investors: {
+        path: "investors",
+        title: "面向投资人的 GALO AI — 有什么、没有什么、怎么核实",
+        description:
+          "不含数学的 GALO 说明：用钱来讲的问题、这一声明层该放在哪里、今天真正在跑的东西、六项风险及其检验方式，以及一条读者无需我们配合就能自己走完的尽调路径。",
+      },
+      audit: {
+        path: "audit",
+        title: "面向审计者的 GALO AI — 外部人究竟能核实到什么",
+        description:
+          "四级可核实性、每一条公开主张的五个字段、如何读状态而不被误导、审阅者的八个问题、五步复现流程，以及本站的边界。",
+      },
       theory: {
         path: "theory",
         title: "GALO 入门理论 — 从状态到可验证执行",
@@ -180,6 +216,18 @@ const locales = {
         title: "GALO AI — حالة عالم صريحة وتنفيذ قابل لإعادة التشغيل",
         description:
           "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ.",
+      },
+      investors: {
+        path: "investors",
+        title: "GALO AI للمستثمرين — ما هو قائم وما ليس قائمًا وكيف يُتحقَّق منه",
+        description:
+          "عرض غير تقني لـ GALO: المشكلة بلغة المال، وأين تقع الطبقة المعلنة، وما الذي يعمل اليوم، وستة مخاطر مع اختباراتها، ومسار عناية واجبة يستطيع القارئ سلوكه دوننا.",
+      },
+      audit: {
+        path: "audit",
+        title: "GALO AI للمدققين — ما الذي يستطيع مراجع خارجي إثباته فعلًا",
+        description:
+          "أربع درجات لقابلية التحقق، والحقول الخمسة لكل ادعاء منشور، وكيف يُقرأ الحالة دون تضليل، وثمانية أسئلة للمراجع، وإعادة إنتاج من خمس خطوات، وحدود هذا الموقع.",
       },
       theory: {
         path: "theory",
