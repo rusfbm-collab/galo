@@ -19,6 +19,12 @@ const locales = {
         description:
           "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.",
       },
+      simple: {
+        path: "simple",
+        title: "GALO AI in Plain Words — No Jargon, No Formulas",
+        description:
+          "GALO explained the way you would explain it to a friend: the everyday situation it addresses, what it actually does, why a table, what that buys you, and what we cannot yet promise.",
+      },
       investors: {
         path: "investors",
         title: "GALO AI for Investors — What Exists, What Does Not, and How to Check",
@@ -87,6 +93,12 @@ const locales = {
         description:
           "GALO — самостоятельная исследовательская архитектура для явного состояния мира, типизированного исполнения и воспроизведения, подтверждаемого протоколами исполнения.",
       },
+      simple: {
+        path: "simple",
+        title: "GALO AI простыми словами — без терминов и формул",
+        description:
+          "GALO так, как объясняют другу: знакомая ситуация, с которой всё начинается, что мы с ней делаем, при чём тут таблица, что это даёт и чего мы пока не обещаем.",
+      },
       investors: {
         path: "investors",
         title: "GALO AI для инвесторов — что есть, чего нет и как это проверить",
@@ -154,6 +166,12 @@ const locales = {
         title: "GALO AI — 显式世界状态与可重放执行",
         description: "GALO 是一套面向显式世界状态、类型化执行与回执支撑重放的独立研究架构。",
       },
+      simple: {
+        path: "simple",
+        title: "用大白话说 GALO AI — 没有术语，没有公式",
+        description:
+          "像跟朋友解释那样讲 GALO：一个你早就熟悉的情境、我们究竟拿它怎么办、为什么偏偏是一张表、这能带来什么，以及我们还不能承诺什么。",
+      },
       investors: {
         path: "investors",
         title: "面向投资人的 GALO AI — 有什么、没有什么、怎么核实",
@@ -216,6 +234,12 @@ const locales = {
         title: "GALO AI — حالة عالم صريحة وتنفيذ قابل لإعادة التشغيل",
         description:
           "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ.",
+      },
+      simple: {
+        path: "simple",
+        title: "GALO AI بكلام بسيط — بلا مصطلحات ولا صيغ",
+        description:
+          "شرح GALO كما تشرحه لصديق: الموقف المألوف الذي يبدأ منه كل شيء، وما الذي نفعله حياله، ولماذا جدول تحديدًا، وماذا يمنحك ذلك، وما الذي لا نستطيع الوعد به بعد.",
       },
       investors: {
         path: "investors",

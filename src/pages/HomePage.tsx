@@ -154,10 +154,10 @@ export function HomePage() {
         <div className="shell hero__grid">
           <div className="hero__content">
             <p className="eyebrow eyebrow--cyan">{t("RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE")}</p>
-            <h1>{t("AI agents need a world state they can inspect, revise, and replay.")}</h1>
+            <h1>{t("A program decided something. A year later, can anyone still say why?")}</h1>
             <p className="hero__lead">
               {t(
-                "GALO is a standalone research architecture for decision-making systems that hold their state in a small, completely written-out table instead of inside a model nobody can open. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.",
+                "We are building a way for software to answer that question. It writes down everything it is allowed to do before it does anything, picks only from that list, and leaves a note complete enough for a stranger to repeat the step and get the same result. The part that runs today is small and narrow on purpose; persistent learning and external performance remain unproven.",
               )}
             </p>
             <div className="hero__status" aria-label={t("Current project status")}>
@@ -169,12 +169,11 @@ export function HomePage() {
               <span>{t("Abu Dhabi relocation planned")}</span>
             </div>
             <div className="hero__actions">
-              <a className="button button--primary" href={href("/investors")}>
-                {t("Start with the non-technical account")}{" "}
-                <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
+              <a className="button button--primary" href={href("/simple")}>
+                {t("Explain it in plain words")} <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
               <a className="button button--outline-light" href="#how-to-read">
-                {t("Three ways to read this site")}
+                {t("Where should I start?")}
               </a>
             </div>
             <p className="hero__boundary">
@@ -236,10 +235,10 @@ export function HomePage() {
       <section id="how-to-read" className="section section--paper home-paths">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("THREE WAYS TO READ THIS SITE")}
-            title={t("Nothing here requires mathematics unless you want it.")}
+            eyebrow={t("WHERE SHOULD I START?")}
+            title={t("You do not need the mathematics unless you want it.")}
             text={t(
-              "Most of this site is written for specialists, and that turned out to be a mistake for everybody else. These three routes fix it: pick the one that matches why you are here, follow its three stops in order, and stop when your question is answered.",
+              "Most of this site was written for specialists, which was not much help to anyone else. So here are four short routes through it. Pick whichever one sounds like you, follow its three stops in order, and stop as soon as your question is answered — nobody is keeping score.",
             )}
           />
           <ReaderPaths />

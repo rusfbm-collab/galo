@@ -11849,3 +11849,305 @@ html[dir="rtl"] .theory-law-card__symbol {
     gap: 10px;
   }
 }
+
+/* ============================================================
+   Plain-words route
+   ============================================================ */
+
+.page-hero--plain {
+  color: var(--white);
+  background: linear-gradient(140deg, #10344a 0%, var(--navy-800) 100%);
+}
+
+.plain-hero__note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  max-width: 74ch;
+  margin-top: 28px;
+  border: 1px solid rgba(160, 195, 215, 0.3);
+  border-radius: 20px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(226, 238, 246, 0.86);
+  font-size: 0.98rem;
+  line-height: 1.62;
+}
+
+.plain-hero__note svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--cyan);
+}
+
+/* ---- the opening story ---- */
+
+.plain-story {
+  display: grid;
+  gap: 14px;
+  margin: 34px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.plain-story li {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 20px 24px;
+  background: var(--white);
+}
+
+.plain-story li > span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  font-weight: 800;
+}
+
+.plain-story h3 {
+  margin: 0 0 7px;
+  font-size: 1.12rem;
+  line-height: 1.36;
+}
+
+.plain-story p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.66;
+}
+
+.plain-punchline {
+  max-width: 80ch;
+  margin: 26px 0 0;
+  border-inline-start: 4px solid var(--teal-deep);
+  padding-inline-start: 20px;
+  font-size: 1.06rem;
+  font-weight: 560;
+  line-height: 1.62;
+}
+
+/* ---- the idea, in three ---- */
+
+.plain-idea {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.plain-idea article,
+.plain-changes article {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: var(--white);
+}
+
+.plain-idea span,
+.plain-changes span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.plain-idea h3,
+.plain-changes h3 {
+  margin: 0;
+  font-size: 1.06rem;
+  line-height: 1.36;
+}
+
+.plain-idea p,
+.plain-changes p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.64;
+}
+
+/* ---- the timetable analogy ---- */
+
+.plain-analogy {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-top: 26px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 26px 28px;
+  background: var(--white);
+}
+
+.plain-analogy > svg {
+  flex: none;
+  margin-top: 4px;
+  color: var(--teal-deep);
+}
+
+.plain-analogy h3 {
+  margin: 0 0 16px;
+  font-size: 1.12rem;
+  line-height: 1.38;
+}
+
+.plain-analogy__pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.plain-analogy__pair p {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+
+.plain-analogy__pair p.is-ours {
+  border-color: var(--teal-deep);
+  background: rgba(15, 156, 136, 0.06);
+}
+
+.plain-analogy__pair strong {
+  font-size: 0.99rem;
+  font-weight: 720;
+}
+
+.plain-analogy__pair span {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.plain-analogy__foot {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.62;
+}
+
+.plain-changes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+/* ---- the honest list ---- */
+
+.plain-honest {
+  display: grid;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.plain-honest article {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border: 1px solid rgba(160, 195, 215, 0.24);
+  border-radius: 20px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.plain-honest svg {
+  flex: none;
+  margin-top: 4px;
+  color: var(--amber);
+}
+
+.plain-honest h3 {
+  margin: 0 0 6px;
+  color: var(--white);
+  font-size: 1.06rem;
+  line-height: 1.36;
+}
+
+.plain-honest p {
+  margin: 0;
+  color: rgba(226, 238, 246, 0.8);
+  font-size: 0.96rem;
+  line-height: 1.64;
+}
+
+/* ---- jargon translator ---- */
+
+.plain-jargon {
+  display: grid;
+  gap: 0;
+  margin: 34px 0 0;
+}
+
+.plain-jargon > div {
+  display: grid;
+  grid-template-columns: minmax(160px, 240px) minmax(0, 1fr);
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding: 17px 4px;
+}
+
+.plain-jargon > div:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.plain-jargon dt {
+  color: var(--navy-900);
+  font-size: 1rem;
+  font-weight: 720;
+}
+
+.plain-jargon dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.64;
+}
+
+.plain-next {
+  margin-top: 36px;
+}
+
+@media (max-width: 720px) {
+  .plain-story li,
+  .plain-jargon > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .plain-analogy {
+    flex-direction: column;
+  }
+}
+
+/* The next-step link row was designed for inverted sections. On a light surface
+   it has to invert back, or its titles disappear the same way the misreading
+   cards did. */
+.section--white .theory-next__links a,
+.section--paper .theory-next__links a {
+  border-color: var(--line);
+  background: var(--white);
+}
+
+.section--white .theory-next__links a span,
+.section--paper .theory-next__links a span,
+.section--white .theory-next__links a svg,
+.section--paper .theory-next__links a svg {
+  color: var(--teal-deep);
+}
+
+.section--white .theory-next__links a strong,
+.section--paper .theory-next__links a strong {
+  color: var(--navy-900);
+}

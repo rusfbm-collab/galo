@@ -20,6 +20,12 @@ import {
   whereItFits,
 } from "../src/content/investors";
 import { readerPaths } from "../src/content/plainLanguage";
+import {
+  honestAdmissions,
+  jargonTranslations,
+  openingStory,
+  plainWordsTranslationKeys,
+} from "../src/content/plainWords";
 import { siteContent } from "../src/content/site";
 
 /**
@@ -153,7 +159,7 @@ describe("audit entry point", () => {
 
 describe("reader paths", () => {
   it("gives each audience exactly three stops that resolve to real routes", () => {
-    expect(readerPaths).toHaveLength(3);
+    expect(readerPaths).toHaveLength(4);
     const routes = new Set<string>(siteContent.navigation.map((item) => item.href));
     routes.add("/");
     for (const path of readerPaths) {
@@ -164,5 +170,47 @@ describe("reader paths", () => {
         expect(routes.has(route!), `Unknown reader-path route ${route}`).toBe(true);
       }
     }
+  });
+});
+
+describe("plain words", () => {
+  it("keeps every sentence short enough to read out loud", () => {
+    // The whole point of this page is that a newcomer never has to re-read a
+    // sentence. Anything much past forty words is a sign the register slipped
+    // back into the specification voice used elsewhere on the site.
+    for (const line of plainWordsTranslationKeys) {
+      for (const sentence of line.split(/(?<=[.?!])\s+/)) {
+        const words = sentence.trim().split(/\s+/).length;
+        expect(words, `Too long for the plain page: ${sentence}`).toBeLessThanOrEqual(42);
+      }
+    }
+  });
+
+  it("tells the four unwelcome facts in the reader's own language", () => {
+    expect(honestAdmissions).toHaveLength(5);
+    const prose = honestAdmissions.map((entry) => `${entry.line} ${entry.detail}`).join(" ");
+    expect(prose).toMatch(/no revenue, no investment raised, no pilot/i);
+    expect(prose).toMatch(/nobody outside the project has checked it/i);
+    expect(prose).toMatch(/does not replace the chatbots/i);
+    expect(prose).toMatch(/we have not measured that it helps anyone/i);
+  });
+
+  it("translates the jargon a reader will meet on the other pages", () => {
+    expect(jargonTranslations).toHaveLength(10);
+    const words = jargonTranslations.map((entry) => entry.jargon);
+    expect(words).toContain("Cayley table");
+    expect(words).toContain("Receipt");
+    expect(words).toContain("Boundary");
+    expect(words).toContain("PASS / NOT PROVEN");
+    for (const entry of jargonTranslations) {
+      // A plain-language gloss that reuses the jargon has explained nothing.
+      expect(entry.plain.toLowerCase()).not.toContain(entry.jargon.toLowerCase());
+    }
+  });
+
+  it("walks the opening story from the decision to the unanswerable question", () => {
+    expect(openingStory).toHaveLength(4);
+    expect(openingStory.map((beat) => beat.number)).toEqual(["01", "02", "03", "04"]);
+    expect(openingStory.at(-1)!.line).toMatch(/nobody can answer/i);
   });
 });

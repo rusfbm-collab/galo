@@ -32,11 +32,11 @@ export const siteContent = {
     releaseStatus: null as string | null,
   },
   navigation: [
+    { label: "In plain words", href: "/simple" },
     { label: "For investors", href: "/investors" },
     { label: "For auditors", href: "/audit" },
     { label: "Theory", href: "/theory" },
     { label: "How it thinks", href: "/thinking" },
-    { label: "GALO vs LLM", href: "/vs-llm" },
     { label: "Mathematics", href: "/math" },
     { label: "Symmetry", href: "/symmetry" },
     { label: "Evidence", href: "/evidence" },

@@ -6,6 +6,7 @@ import { HomePage } from "../pages/HomePage";
 import { InvestorsPage } from "../pages/InvestorsPage";
 import { MathematicsPage } from "../pages/MathematicsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
+import { PlainWordsPage } from "../pages/PlainWordsPage";
 import { PrivacyPage } from "../pages/PrivacyPage";
 import { SymmetryPage } from "../pages/SymmetryPage";
 import { TheoryPage } from "../pages/TheoryPage";
@@ -32,6 +33,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "Evidence — GALO AI",
     description:
       "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.",
+  },
+  "/simple": {
+    title: "GALO AI in Plain Words — No Jargon, No Formulas",
+    description:
+      "GALO explained the way you would explain it to a friend: the everyday situation it addresses, what it actually does, why a table, what that buys you, and what we cannot yet promise.",
   },
   "/investors": {
     title: "GALO AI for Investors — What Exists, What Does Not, and How to Check",
@@ -156,6 +162,7 @@ export function App() {
     <I18nProvider locale={locale}>
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
+      {route === "/simple" && <PlainWordsPage />}
       {route === "/investors" && <InvestorsPage />}
       {route === "/audit" && <AuditPage />}
       {route === "/theory" && <TheoryPage />}

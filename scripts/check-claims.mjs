@@ -14,6 +14,7 @@ const sourceRoots = [
   "src/content/investors.ts",
   "src/content/llmComparison.ts",
   "src/content/plainLanguage.ts",
+  "src/content/plainWords.ts",
   "src/content/site.ts",
   "src/content/termDeepDives.ts",
   "src/content/thinking.ts",

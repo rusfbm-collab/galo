@@ -58,7 +58,7 @@ The Cayley table is named as the foundation in all three, so a reader who arrive
 
 ## Surfaces inside inverted sections
 
-`.section--navy` and `.section--dark` set `color: var(--white)` on everything inside them. Any card that keeps its own light background inside such a section must therefore set its own text colour as well; inheriting produces white text on a white card, which is invisible without being detectably broken. The corrected-misreading cards are the canonical case, and the rule applies to every future component that carries a light surface into an inverted section.
+`.section--navy` and `.section--dark` set `color: var(--white)` on everything inside them. Any card that keeps its own light background inside such a section must therefore set its own text colour as well; inheriting produces white text on a white card, which is invisible without being detectably broken. The corrected-misreading cards are the canonical case, and the rule applies to every future component that carries a light surface into an inverted section. The reverse holds too: the next-step link row was authored for inverted sections, so on a light one it has to invert its own colours back. Both directions are checked by a contrast sweep over every route in every locale.
 
 ## Illustration layer
 
@@ -82,6 +82,14 @@ The figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured 
 ## Comparison route
 
 `/vs-llm` is the one page that puts GALO beside a language model. It is written on a single rule: compare mechanism and evidence, never output quality. Every row of the ten-property table states what each object _is_, the breadth row says plainly that a language model is vastly wider, and one of the five corrected misreadings exists solely to state that no head-to-head evaluation has been run. The composition diagram marks the two proposing stages as target architecture so the loop cannot be read as shipped.
+
+## Plain-words route
+
+`/simple` is the first item in the navigation and the primary call to action on the home route, because everything else on this site assumes vocabulary a first-time reader does not have.
+
+Its register is a constraint, not a mood. Every sentence has to survive being read out loud on the first attempt — a test caps them at forty-two words — and no term appears without being explained in the same breath. The page opens with an ordinary situation rather than an architecture: a program decided something, six months later somebody asks why, and the person holding the log genuinely cannot answer. Then three sentences of mechanism, one everyday comparison, three consequences, five plainly-worded limitations, and a ten-row translator from the vocabulary used on the other pages back into ordinary language.
+
+Friendliness never widens a claim. Every limitation on this page is the same limitation the evidence page publishes, and a test asserts that the five unwelcome facts are all present.
 
 ## Investor and audit routes
 

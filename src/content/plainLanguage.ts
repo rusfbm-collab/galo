@@ -18,8 +18,18 @@ export type ReaderPath = {
 
 export const readerPaths: readonly ReaderPath[] = [
   {
-    audience: "You are deciding whether to spend an hour on this",
-    goal: "Find out what the thing is, what exists today, and what would tell you it is not worth more time.",
+    audience: "I just want to know what this is",
+    goal: "No terms, no formulas. An everyday situation, what we do about it, and what we cannot promise yet.",
+    minutes: "10m",
+    stops: [
+      { href: "/simple#story", label: "The situation it all starts from" },
+      { href: "/simple#idea", label: "What we actually do about it" },
+      { href: "/simple#honest", label: "What we would rather tell you ourselves" },
+    ],
+  },
+  {
+    audience: "I am deciding whether this deserves an hour",
+    goal: "What exists today, what does not, what could go wrong, and how to check us without asking us anything.",
     minutes: "15m",
     stops: [
       { href: "/investors#one-minute", label: "The whole idea in one minute" },
@@ -28,8 +38,8 @@ export const readerPaths: readonly ReaderPath[] = [
     ],
   },
   {
-    audience: "You have to verify a claim, not enjoy it",
-    goal: "Find out exactly what an outsider can establish here, and what the site says cannot be established at all.",
+    audience: "I came here to check, not to admire",
+    goal: "Exactly what an outsider can establish here — and, just as plainly, what nobody can.",
     minutes: "25m",
     stops: [
       { href: "/audit#what-you-can-check", label: "Four tiers of verifiability" },
@@ -38,8 +48,8 @@ export const readerPaths: readonly ReaderPath[] = [
     ],
   },
   {
-    audience: "You want the mechanism and then the proofs",
-    goal: "Start from the table everything is built on, follow one decision end to end, and then read the formal statements.",
+    audience: "Show me the mechanism, then the proofs",
+    goal: "Start from the table it is all built on, follow one decision end to end, then read the formal statements.",
     minutes: "60m",
     stops: [
       { href: "/theory#cayley-first", label: "Start with the table you already know" },

@@ -6,6 +6,7 @@ import { academicRuExtra } from "./academic";
 import { comparisonRu } from "./comparison";
 import { termsRu } from "./terms";
 import { audienceRu } from "./audience";
+import { plainRu } from "./plain";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -19,6 +20,7 @@ export const ru: TranslationDictionary = {
   ...visualsRu,
   ...thinkingRu,
   ...audienceRu,
+  ...plainRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
@@ -48,7 +50,7 @@ export const ru: TranslationDictionary = {
   "Plans to relocate to Abu Dhabi and build the operating team there if selected.":
     "Планирует переехать в Абу-Даби и в случае отбора сформировать там операционную команду.",
 
-  "RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE": "ИССЛЕДОВАТЕЛЬСКАЯ АРХИТЕКТУРА С ПРОВЕРЯЕМЫМ СОСТОЯНИЕМ АГЕНТА",
+  "RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE": "ИССЛЕДОВАНИЕ · РЕШЕНИЯ, КОТОРЫЕ МОЖНО ПРОВЕРИТЬ",
   "AI agents need a world state they can inspect, revise, and replay.":
     "ИИ-агентам необходимо состояние мира, которое можно проверять, пересматривать и воспроизводить.",
   "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.":

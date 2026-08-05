@@ -20,7 +20,7 @@ describe("GALO public site", () => {
 
   it("renders the problem-led hero and bounded status", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { level: 1, name: /AI agents need a world state/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: /A program decided something/i })).toBeInTheDocument();
     expect(screen.getByText("Working bounded prototype")).toBeInTheDocument();
     expect(screen.getByText(/General AI and external capability superiority are not claimed/i)).toBeInTheDocument();
   });
@@ -354,6 +354,49 @@ describe("GALO public site", () => {
     }
   });
 
+  it("explains the whole thing in plain words with no formula on the page", () => {
+    setPath("/simple");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "What we do, said the way you would say it to a friend." }),
+    ).toBeInTheDocument();
+
+    expect(document.querySelectorAll(".plain-story > li")).toHaveLength(4);
+    expect(document.querySelectorAll(".plain-idea > article")).toHaveLength(3);
+    expect(document.querySelectorAll(".plain-changes > article")).toHaveLength(3);
+    expect(document.querySelectorAll(".plain-honest > article")).toHaveLength(5);
+    expect(document.querySelectorAll(".plain-jargon > div")).toHaveLength(10);
+
+    // The page reuses the two figures a newcomer can read without help, and adds none
+    // of the ones that assume the vocabulary.
+    expect(document.querySelector(".galo-figure--trace")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--bridge")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--tiers")).not.toBeInTheDocument();
+
+    expect(screen.getByText("It is small. Much smaller than it sounds.")).toBeInTheDocument();
+    expect(screen.getByText("It does not replace the chatbots you have used.")).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/simple");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing plain-words target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("carries the plain-words route into every locale", () => {
+    for (const [path, heading] of [
+      ["/ru/simple", "Чем мы занимаемся — так, как рассказали бы это другу."],
+      ["/zh/simple", "我们在做什么——就像跟朋友讲的那样。"],
+      ["/ar/simple", "ما نفعله، مقولًا كما تقوله لصديق."],
+    ] as const) {
+      setPath(path);
+      const view = render(<App />);
+      expect(screen.getByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
+      view.unmount();
+    }
+  });
+
   it("routes a non-technical reader through the investor page", () => {
     setPath("/investors");
     render(<App />);
@@ -420,23 +463,23 @@ describe("GALO public site", () => {
     }
   });
 
-  it("offers three reader routes on the home page", () => {
+  it("offers four reader routes on the home page", () => {
     setPath("/");
     render(<App />);
 
     const paths = document.querySelectorAll(".reader-paths > article");
-    expect(paths).toHaveLength(3);
+    expect(paths).toHaveLength(4);
     expect(paths[0]?.querySelectorAll("ol > li")).toHaveLength(3);
-    expect(screen.getByRole("heading", { level: 2, name: /Nothing here requires mathematics/i })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Start with the non-technical account/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 2, name: /You do not need the mathematics/i })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Explain it in plain words/i })).toBeInTheDocument();
   });
 
   it("carries the investor and audit routes into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/investors", "Что это такое, что существует и что скажет вам, что это не стоит вашего времени."],
+      ["/ru/investors", "Что это, что уже работает и что подскажет, что дальше можно не тратить время."],
       ["/zh/investors", "这是什么、有什么，以及什么会告诉你它不值得你花时间。"],
       ["/ar/audit", "ما الذي يستطيع مراجع خارجي متشكّك إثباته هنا، وما الذي لا يستطيعه أحد."],
-      ["/ru/audit", "Что внешний скептик может здесь установить и чего не может никто."],
+      ["/ru/audit", "Что здесь можно проверить самому — и чего не проверит никто."],
     ] as const) {
       setPath(path);
       const view = render(<App />);
@@ -569,7 +612,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "ИИ-агентам необходимо состояние мира, которое можно проверять, пересматривать и воспроизводить.",
+        name: "Программа приняла решение. Сможет ли кто-нибудь через год объяснить почему?",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -598,7 +641,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "تحتاج أنظمة الذكاء الاصطناعي الوكيلة إلى حالة عالم تستطيع فحصها ومراجعتها وإعادة تشغيلها.",
+        name: "برنامج اتخذ قرارًا. وبعد عام، هل يستطيع أحد أن يقول لماذا؟",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');
@@ -668,7 +711,7 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/investors", "/audit", "/theory", "/thinking", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/simple", "/investors", "/audit", "/theory", "/thinking", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();
