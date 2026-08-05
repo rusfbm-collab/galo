@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { ComparisonPage } from "../pages/ComparisonPage";
 import { EvidencePage } from "../pages/EvidencePage";
 import { HomePage } from "../pages/HomePage";
 import { MathematicsPage } from "../pages/MathematicsPage";
@@ -33,6 +34,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "GALO Theory for Beginners — From States to Verified Execution",
     description:
       "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
+  },
+  "/vs-llm": {
+    title: "GALO AI and Language Models — What Is Actually Different",
+    description:
+      "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.",
   },
   "/math": {
     title: "GALO Mathematics — PLUS and STAR Cayley Tables",
@@ -133,6 +139,7 @@ export function App() {
       <DocumentMetadata route={route} rawRoute={rawRoute} />
       {route === "/" && <HomePage />}
       {route === "/theory" && <TheoryPage />}
+      {route === "/vs-llm" && <ComparisonPage />}
       {route === "/math" && <MathematicsPage />}
       {route === "/symmetry" && <SymmetryPage />}
       {route === "/evidence" && <EvidencePage />}

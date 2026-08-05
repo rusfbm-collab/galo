@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, CircleEqual, Orbit, ShieldAlert } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
+import { UnitGroupFigure } from "../components/diagrams/UnitGroupFigure";
 import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { SymmetryExplorer } from "../components/math/SymmetryExplorer";
@@ -265,6 +266,7 @@ export function SymmetryPage() {
               "Pair orbits are computed inside each fixed level. Multiplying by four keeps the action-family tag fixed; no orbit crosses a level or family boundary.",
             )}
           />
+          <UnitGroupFigure />
           <div
             className="symmetry-level-table-wrap"
             dir="ltr"

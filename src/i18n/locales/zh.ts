@@ -3,6 +3,7 @@ import { mathZh } from "./math";
 import { releaseZh } from "./releaseZh";
 import { theoryZh } from "./theoryZh";
 import { academicZhExtra } from "./academic";
+import { comparisonZh } from "./comparison";
 import { termsZh } from "./terms";
 import { visualsZh } from "./visuals";
 
@@ -12,6 +13,7 @@ export const zh: TranslationDictionary = {
   ...theoryZh,
   ...termsZh,
   ...academicZhExtra,
+  ...comparisonZh,
   ...visualsZh,
   Language: "语言",
   "Skip to content": "跳到正文",

@@ -25,6 +25,12 @@ const locales = {
         description:
           "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
       },
+      "vs-llm": {
+        path: "vs-llm",
+        title: "GALO AI and Language Models — What Is Actually Different",
+        description:
+          "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.",
+      },
       math: {
         path: "math",
         title: "GALO Mathematics — PLUS and STAR Cayley Tables",
@@ -69,6 +75,12 @@ const locales = {
         description:
           "Пошаговое введение в GALO: конечные состояния, PLUS и STAR, типизированные переходы, 560 координат, программы, симметрии, отображения уровней, runtime и границы доказательств.",
       },
+      "vs-llm": {
+        path: "vs-llm",
+        title: "GALO AI и языковые модели — в чём именно разница",
+        description:
+          "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата — сравнение по механизму, без каких-либо утверждений о производительности.",
+      },
       math: {
         path: "math",
         title: "Математика GALO — таблицы Кэли PLUS и STAR",
@@ -112,6 +124,11 @@ const locales = {
         description:
           "逐步理解 GALO：有限状态、PLUS 与 STAR、类型化转换、560 个坐标、程序、对称性、层级映射、运行时范围与证据边界。",
       },
+      "vs-llm": {
+        path: "vs-llm",
+        title: "GALO AI 与语言模型 — 究竟差别在哪里",
+        description: "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度——按机制对比，不作任何性能声称。",
+      },
       math: {
         path: "math",
         title: "GALO 数学 — PLUS 与 STAR 凯莱表",
@@ -151,6 +168,12 @@ const locales = {
         title: "نظرية GALO للمبتدئين — من الحالات إلى التنفيذ القابل للتحقق",
         description:
           "شرح تدريجي لـ GALO: الحالات المنتهية وPLUS وSTAR والانتقالات محددة النوع و560 إحداثيًا والبرامج والتناظرات وخرائط المستويات ونطاق التشغيل وحدود الأدلة.",
+      },
+      "vs-llm": {
+        path: "vs-llm",
+        title: "GALO AI ونماذج اللغة — أين يكمن الفرق فعلًا",
+        description:
+          "كيف يختلف GALO عن نموذج اللغة: الحالة، وطريقة الفحص، وإعادة التشغيل، والتصحيح الموضعي، واتساع النطاق — مقارنة على أساس الآلية دون أي ادعاء عن الأداء.",
       },
       math: {
         path: "math",

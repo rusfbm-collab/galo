@@ -33,6 +33,7 @@ export const siteContent = {
   },
   navigation: [
     { label: "Theory · start here", href: "/theory" },
+    { label: "GALO vs LLM", href: "/vs-llm" },
     { label: "Mathematics", href: "/math" },
     { label: "Symmetry", href: "/symmetry" },
     { label: "Evidence", href: "/evidence" },

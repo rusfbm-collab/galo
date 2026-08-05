@@ -1,5 +1,6 @@
 import { ArrowLeft, Check, Copy, FileCheck2, Fingerprint, ShieldAlert } from "lucide-react";
 import { useState } from "react";
+import { ReceiptAnatomyFigure } from "../components/diagrams/ReceiptAnatomyFigure";
 import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
 import { PageShell } from "../components/layout/PageShell";
@@ -172,6 +173,7 @@ export function EvidencePage() {
               </p>
             </div>
           </div>
+          <ReceiptAnatomyFigure />
           <WorkLedgerFigure />
           <p className="scope-callout">
             {t("Outcome evaluation and policy update each contribute zero work units in this release.")}

@@ -312,6 +312,68 @@ describe("GALO public site", () => {
     expect(within(dialog).getByText("في سطر واحد")).toBeInTheDocument();
   });
 
+  it("gives the language-model comparison its own route with the honest breadth row", () => {
+    setPath("/vs-llm");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "GALO is not a language model, and not a competitor to one." }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: /Property-by-property/i })).toBeInTheDocument();
+    expect(document.querySelectorAll(".comparison-table tbody tr")).toHaveLength(10);
+    expect(screen.getByRole("rowheader", { name: "Breadth today" })).toBeInTheDocument();
+    expect(screen.getByText(/A language model handles open-ended tasks/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/no language understanding at all\. This is the honest shape of the trade/i),
+    ).toBeInTheDocument();
+
+    expect(document.querySelector(".galo-figure--machines")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--answers")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--complement")).toBeInTheDocument();
+
+    expect(screen.getByText("GALO is a replacement for a language model.")).toBeInTheDocument();
+    expect(screen.getByText(/No such comparison is claimed/i)).toBeInTheDocument();
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/vs-llm");
+
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing comparison target #${target}`).toBeInTheDocument();
+    }
+  });
+
+  it("carries the comparison route into every locale", () => {
+    for (const [path, heading] of [
+      ["/ru/vs-llm", "GALO — не языковая модель и не конкурент ей."],
+      ["/zh/vs-llm", "GALO 不是语言模型，也不是它的竞争者。"],
+      ["/ar/vs-llm", "GALO ليس نموذج لغة ولا منافسًا له."],
+    ] as const) {
+      setPath(path);
+      const view = render(<App />);
+      expect(screen.getByRole("heading", { level: 1, name: heading })).toBeInTheDocument();
+      view.unmount();
+    }
+  });
+
+  it("adds the second illustration batch to the theory, evidence, and symmetry routes", () => {
+    setPath("/theory");
+    const theory = render(<App />);
+    expect(document.querySelector(".galo-figure--roles")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--resolution")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--tree")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--square")).toBeInTheDocument();
+    theory.unmount();
+
+    setPath("/evidence");
+    const evidence = render(<App />);
+    expect(document.querySelector(".galo-figure--receipt")).toBeInTheDocument();
+    expect(screen.getByText("check_id")).toBeInTheDocument();
+    evidence.unmount();
+
+    setPath("/symmetry");
+    render(<App />);
+    expect(document.querySelector(".galo-figure--units")).toBeInTheDocument();
+  });
+
   it("renders the symmetry route and recomputes cycles, stabilizers, and Burnside counts", async () => {
     const user = userEvent.setup();
     setPath("/symmetry");
@@ -452,6 +514,8 @@ describe("GALO public site", () => {
     expect(localizedPath("zh", "/privacy")).toBe("/zh/privacy");
     expect(localizedPath("ar", "/math#cayley-tables")).toBe("/ar/math#cayley-tables");
     expect(localizedPath("zh", "/theory#guided-lab")).toBe("/zh/theory#guided-lab");
+    expect(localizedPath("ru", "/vs-llm#dimensions")).toBe("/ru/vs-llm#dimensions");
+    expect(parseLocalizedPath("/ar/vs-llm/")).toEqual({ locale: "ar", route: "/vs-llm", rawRoute: "/vs-llm" });
     expect(localizedPath("ru", "/symmetry#orbit-lab")).toBe("/ru/symmetry#orbit-lab");
     expect(parseLocalizedPath("/ar/evidence/")).toEqual({ locale: "ar", route: "/evidence", rawRoute: "/evidence" });
     expect(parseLocalizedPath("/ru/math/")).toEqual({ locale: "ru", route: "/math", rawRoute: "/math" });
@@ -464,7 +528,7 @@ describe("GALO public site", () => {
   it("has translation coverage for every rendered string in every localized route", () => {
     resetMissingTranslations();
     for (const locale of ["ru", "zh", "ar"]) {
-      for (const route of ["", "/theory", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
+      for (const route of ["", "/theory", "/vs-llm", "/math", "/symmetry", "/evidence", "/privacy", "/not-found"]) {
         setPath(`/${locale}${route}`);
         const view = render(<App />);
         view.unmount();

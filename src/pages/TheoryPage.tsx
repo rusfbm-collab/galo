@@ -12,11 +12,15 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { CayleyHeatmapFigure } from "../components/diagrams/CayleyHeatmapFigure";
+import { CommutingSquareFigure } from "../components/diagrams/CommutingSquareFigure";
 import { CoordinateCountFigure } from "../components/diagrams/CoordinateCountFigure";
 import { CyclicDialFigure } from "../components/diagrams/CyclicDialFigure";
 import { FoundationChainFigure } from "../components/diagrams/FoundationChainFigure";
 import { LevelTransferFigure } from "../components/diagrams/LevelTransferFigure";
 import { OrbitFigure } from "../components/diagrams/OrbitFigure";
+import { ProgramTreeFigure } from "../components/diagrams/ProgramTreeFigure";
+import { ResolutionLossFigure } from "../components/diagrams/ResolutionLossFigure";
+import { RoleOrientationFigure } from "../components/diagrams/RoleOrientationFigure";
 import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
 import { SchoolTableBridgeFigure } from "../components/diagrams/SchoolTableBridgeFigure";
 import { StarResetFigure } from "../components/diagrams/StarResetFigure";
@@ -338,6 +342,7 @@ export function TheoryPage() {
             </article>
           </div>
           <CyclicDialFigure level={3} source={1} active={2} />
+          <ResolutionLossFigure />
           <div className="theory-analogy-boundary">
             <CircleAlert size={20} aria-hidden="true" />
             <p>
@@ -594,6 +599,7 @@ export function TheoryPage() {
               <strong>{t("target")}</strong>
             </div>
           </div>
+          <RoleOrientationFigure />
           <div
             className="theory-action-table-wrap"
             role="region"
@@ -816,6 +822,7 @@ export function TheoryPage() {
               "The target of one cell may feed another cell. For PLUS the grouping does not change the result; for STAR it can. Therefore a list of operands is not a complete STAR program—the brackets are executable structure.",
             )}
           />
+          <ProgramTreeFigure />
           <div className="theory-program-grid">
             <article>
               <span>{t("Left-associated L3 program")}</span>
@@ -1021,6 +1028,7 @@ export function TheoryPage() {
               "A homomorphism must preserve the declared operations. An embedding must additionally keep distinct source poles distinct. Operational transfer can require still more: provenance, alignment, loss, and authorization checks.",
             )}
           />
+          <CommutingSquareFigure />
           <LevelTransferFigure />
           <div className="theory-map-grid">
             <article className="theory-map-card theory-map-card--pass">

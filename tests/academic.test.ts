@@ -6,6 +6,14 @@ import {
   investorBriefing,
   plainLanguageTranslationKeys,
 } from "../src/content/plainLanguage";
+import {
+  comparisonMisreadings,
+  comparisonRows,
+  comparisonTranslationKeys,
+  compositionSteps,
+  galoStrengths,
+  modelStrengths,
+} from "../src/content/llmComparison";
 import { locales } from "../src/i18n/I18nContext";
 import { translations } from "../src/i18n/translations";
 
@@ -71,6 +79,57 @@ describe("academic reference", () => {
     for (const locale of translatedLocales) {
       const dictionary = translations[locale];
       const missing = required.filter((key) => !Object.hasOwn(dictionary, key));
+      expect(missing, `missing ${locale} translations`).toEqual([]);
+    }
+  });
+});
+
+describe("language-model comparison", () => {
+  it("compares ten properties and never states a performance claim", () => {
+    expect(comparisonRows).toHaveLength(10);
+    const forbidden = /\b(faster|cheaper|better than|outperform|beats|superior|more accurate than a language model\b)/i;
+    for (const row of comparisonRows) {
+      expect(row.dimension.trim().length).toBeGreaterThan(4);
+      expect(row.model.trim().length).toBeGreaterThan(40);
+      expect(row.galo.trim().length).toBeGreaterThan(40);
+      expect(`${row.model} ${row.galo}`).not.toMatch(forbidden);
+    }
+  });
+
+  it("keeps the breadth row last and honest about the trade", () => {
+    const last = comparisonRows.at(-1);
+    expect(last?.dimension).toBe("Breadth today");
+    expect(last?.model.toLowerCase()).toContain("enormous");
+    expect(last?.galo.toLowerCase()).toContain("narrow");
+  });
+
+  it("names what a language model can do and GALO cannot", () => {
+    expect(modelStrengths).toHaveLength(4);
+    expect(galoStrengths).toHaveLength(4);
+    expect(modelStrengths.map(({ title }) => title)).toContain("Language and meaning");
+  });
+
+  it("corrects every misreading it raises", () => {
+    expect(comparisonMisreadings).toHaveLength(5);
+    for (const entry of comparisonMisreadings) {
+      expect(entry.claim.trim().length).toBeGreaterThan(20);
+      expect(entry.correction.trim().length).toBeGreaterThan(80);
+    }
+    expect(comparisonMisreadings[1]?.correction).toContain("No such comparison is claimed");
+  });
+
+  it("marks the two proposing stages of the composition as target architecture", () => {
+    expect(compositionSteps).toHaveLength(5);
+    const byActor = Object.fromEntries(compositionSteps.map((step) => [step.number, step]));
+    expect(byActor["01"]?.status).toBe("TARGET");
+    expect(byActor["05"]?.status).toBe("TARGET");
+    expect(compositionSteps.filter((step) => step.status === "CURRENT V4")).toHaveLength(3);
+  });
+
+  it("translates every comparison string into Russian, Chinese, and Arabic", () => {
+    for (const locale of translatedLocales) {
+      const dictionary = translations[locale];
+      const missing = comparisonTranslationKeys.filter((key) => !Object.hasOwn(dictionary, key));
       expect(missing, `missing ${locale} translations`).toEqual([]);
     }
   });

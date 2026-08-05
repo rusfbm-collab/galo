@@ -71,9 +71,13 @@ Chart colour uses its own validated tokens rather than the brand accents, becaus
 --chart-3: #6e8ce2;
 ```
 
-Both sets pass a colour-vision-deficiency separation check and a 3:1 contrast check against their own surface. Magnitude uses a single seven-step teal ramp (`--ramp-0` … `--ramp-6`), light to dark; colour is never the only encoding, and every coloured cell also prints its exact label.
+Both sets pass a colour-vision-deficiency separation check and a 3:1 contrast check against their own surface. Diagram geometry is authored left-to-right and the SVG keeps that flow in every locale, with each label bidi-isolated so Arabic text still renders in its own direction without escaping its box. Magnitude uses a single seven-step teal ramp (`--ramp-0` … `--ramp-6`), light to dark; colour is never the only encoding, and every coloured cell also prints its exact label.
 
-The nine figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, and the four-track status board. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
+The figures are: the cyclic dial, the PLUS/STAR branch comparison, the coloured Cayley fields, the per-level coordinate chart, the narrowing funnel, the work-unit ledger, the L3 orbit map, the level-transfer matrix, the four-track status board, the school-table bridge, the layer stack, the two-machine anatomy, the question-by-question table, the composition loop, the commuting square, the two evaluation trees, the four role orientations, the resolution-loss map, the annotated receipt, and the per-level automorphism chart. The status board deliberately uses named milestones — Specified, Implemented, Independently re-checked, Externally validated — instead of a percentage, because a percentage would imply a measurement nobody has taken.
+
+## Comparison route
+
+`/vs-llm` is the one page that puts GALO beside a language model. It is written on a single rule: compare mechanism and evidence, never output quality. Every row of the ten-property table states what each object _is_, the breadth row says plainly that a language model is vastly wider, and one of the five corrected misreadings exists solely to state that no head-to-head evaluation has been run. The composition diagram marks the two proposing stages as target architecture so the loop cannot be read as shipped.
 
 ## Term explainer
 
@@ -122,4 +126,4 @@ The guided transition laboratory uses two independent result channels. The brows
 
 ## Localized delivery
 
-Six pages — Home, Theory, Mathematics, Symmetry, Evidence, and Privacy — are prerendered in English, Russian, Simplified Chinese, and Arabic. That yields 24 localized HTML entry points with canonical and alternate metadata. Theory prose is independently translated per language; mathematical tokens and machine witnesses remain stable across locales.
+Seven pages — Home, Theory, GALO vs LLM, Mathematics, Symmetry, Evidence, and Privacy — are prerendered in English, Russian, Simplified Chinese, and Arabic. That yields 28 localized HTML entry points with canonical and alternate metadata. Theory prose is independently translated per language; mathematical tokens and machine witnesses remain stable across locales.
