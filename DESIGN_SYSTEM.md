@@ -46,6 +46,16 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 4. **Current / Target split:** mechanically verified slice and in-development architecture never share an undifferentiated status surface.
 5. **Theory from zero:** a dedicated long-form route starts with an L3 dial, introduces one object class at a time, and provides optional depth through tables, exact records, glossary disclosures, and links to the academic chapters.
 
+## Reading order for non-specialists
+
+The site has three deliberate entry points, and each one is complete on its own.
+
+1. **Plain-language briefing** (home). Six questions a non-technical reader asks first, answered without mathematics or acronyms, followed by the single technical fact worth carrying away: everything below rests on a finite Cayley table.
+2. **Start with the table** (theory). The school multiplication table placed beside the L3 PLUS table, the six-step chain from that table up to a replayable record, and the four properties a finite table has that a trained model does not.
+3. **Academic reference** (mathematics). Six numbered definitions and eleven numbered propositions with complete proofs, in the form a referee expects. Statements and proof prose are translated; every formal expression stays canonical and left-to-right in all four locales.
+
+The Cayley table is named as the foundation in all three, so a reader who arrives at any of them learns the same thing about what the project is made of.
+
 ## Illustration layer
 
 Diagrams are drawn as inline SVG or as real tables, never as bitmaps, so they stay sharp, translatable, and readable by assistive technology. Every figure carries a caption, an `<svg><title>` and `<desc>` pair or a table caption, a direct text label on every mark, and — where the drawing could be over-read — an explicit boundary line.

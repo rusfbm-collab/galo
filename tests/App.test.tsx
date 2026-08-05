@@ -121,6 +121,49 @@ describe("GALO public site", () => {
     expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
   });
 
+  it("opens with a plain-language briefing before any mathematics", () => {
+    render(<App />);
+    expect(
+      screen.getByRole("heading", { name: "If you read one section on this site, read this one." }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "What is actually being built?" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "What would change your mind?" })).toBeInTheDocument();
+    expect(screen.getByText(/a finite table of results for two inputs — a Cayley table/i)).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /See the table everything is built on/i })).toHaveAttribute(
+      "href",
+      "/theory#cayley-first",
+    );
+  });
+
+  it("opens the theory route from the Cayley table it is built on", () => {
+    setPath("/theory");
+    render(<App />);
+    expect(
+      screen.getByRole("heading", { name: "Everything on this site is built on one finite table." }),
+    ).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: "Multiplication, three by three" })).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: "PLUS on three positions" })).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--bridge")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--chain")).toBeInTheDocument();
+    expect(document.querySelectorAll(".theory-foundation-steps article")).toHaveLength(6);
+    expect(document.querySelectorAll(".theory-why-finite__grid article")).toHaveLength(4);
+  });
+
+  it("publishes numbered definitions and proofs on the mathematics route", () => {
+    setPath("/math");
+    render(<App />);
+    expect(
+      screen.getByRole("heading", { name: "Definitions, propositions, and proofs in ordinary mathematical form." }),
+    ).toBeInTheDocument();
+    expect(document.querySelectorAll(".academic__item--definition")).toHaveLength(6);
+    expect(document.querySelectorAll(".academic__proof")).toHaveLength(11);
+    expect(
+      screen.getByText("Aut(A_n) ≅ U(n) = (Z/nZ)^×, σ_u(P_i) = P_((ui) mod n), |Aut(A_n)| = φ(n)"),
+    ).toBeInTheDocument();
+    expect(screen.getAllByText("∎").length).toBe(11);
+    expect(screen.getByText(/they are theorems about a finite algebra/i)).toBeInTheDocument();
+  });
+
   it("renders the mathematics route and computes selectable Cayley cells", async () => {
     const user = userEvent.setup();
     setPath("/math");

@@ -2,6 +2,7 @@ import type { TranslationDictionary } from "../translations";
 import { mathZh } from "./math";
 import { releaseZh } from "./releaseZh";
 import { theoryZh } from "./theoryZh";
+import { academicZhExtra } from "./academic";
 import { termsZh } from "./terms";
 import { visualsZh } from "./visuals";
 
@@ -10,6 +11,7 @@ export const zh: TranslationDictionary = {
   ...releaseZh,
   ...theoryZh,
   ...termsZh,
+  ...academicZhExtra,
   ...visualsZh,
   Language: "语言",
   "Skip to content": "跳到正文",

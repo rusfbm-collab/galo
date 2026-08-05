@@ -22,6 +22,7 @@ import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { releaseEvidence } from "../content/evidence";
 import { getEvaluationContact } from "../content/contact";
+import { investorBriefing } from "../content/plainLanguage";
 import { siteContent } from "../content/site";
 import { useI18n } from "../i18n/I18nContext";
 
@@ -171,8 +172,8 @@ export function HomePage() {
                 {t("Understand GALO step by step")}{" "}
                 <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
-              <a className="button button--outline-light" href="#receipt">
-                {t("Inspect a verified receipt")}
+              <a className="button button--outline-light" href="#plain-language">
+                {t("Read the plain-language briefing")}
               </a>
             </div>
             <p className="hero__boundary">
@@ -228,6 +229,47 @@ export function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="plain-language" className="section section--white home-plain">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("IN PLAIN LANGUAGE")}
+            title={t("If you read one section on this site, read this one.")}
+            text={t(
+              "No mathematics, no acronyms. Six questions a non-technical reader asks first, answered in the order they are usually asked.",
+            )}
+            aside={
+              <a className="text-link" href={href("/theory#cayley-first")}>
+                {t("See the table everything is built on")}{" "}
+                <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            }
+          />
+          <div className="home-plain__grid">
+            {investorBriefing.map((item, index) => (
+              <article key={item.question}>
+                <span className="home-plain__index" dir="ltr">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <h3>{t(item.question)}</h3>
+                <p className="home-plain__answer">{t(item.answer)}</p>
+                <p className="home-plain__detail">{t(item.detail)}</p>
+              </article>
+            ))}
+          </div>
+          <div className="home-plain__foundation">
+            <Layers3 size={22} aria-hidden="true" />
+            <div>
+              <strong>{t("The one technical fact worth carrying away")}</strong>
+              <p>
+                {t(
+                  "Underneath every diagram, number, and record on this site there is a finite table of results for two inputs — a Cayley table. It is written out completely in advance, so it can be checked entry by entry rather than trusted.",
+                )}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

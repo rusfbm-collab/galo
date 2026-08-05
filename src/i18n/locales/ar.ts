@@ -2,6 +2,7 @@ import type { TranslationDictionary } from "../translations";
 import { mathAr } from "./math";
 import { releaseAr } from "./releaseAr";
 import { theoryAr } from "./theoryAr";
+import { academicArExtra } from "./academic";
 import { termsAr } from "./terms";
 import { visualsAr } from "./visuals";
 
@@ -10,6 +11,7 @@ export const ar: TranslationDictionary = {
   ...releaseAr,
   ...theoryAr,
   ...termsAr,
+  ...academicArExtra,
   ...visualsAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",

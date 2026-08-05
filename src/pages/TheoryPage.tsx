@@ -14,9 +14,11 @@ import {
 import { CayleyHeatmapFigure } from "../components/diagrams/CayleyHeatmapFigure";
 import { CoordinateCountFigure } from "../components/diagrams/CoordinateCountFigure";
 import { CyclicDialFigure } from "../components/diagrams/CyclicDialFigure";
+import { FoundationChainFigure } from "../components/diagrams/FoundationChainFigure";
 import { LevelTransferFigure } from "../components/diagrams/LevelTransferFigure";
 import { OrbitFigure } from "../components/diagrams/OrbitFigure";
 import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
+import { SchoolTableBridgeFigure } from "../components/diagrams/SchoolTableBridgeFigure";
 import { StarResetFigure } from "../components/diagrams/StarResetFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
@@ -44,10 +46,12 @@ import {
   theoryObjectClasses,
   theorySymbolLegend,
 } from "../content/theory";
+import { cayleyFoundation, cayleyWhyFinite } from "../content/plainLanguage";
 import { releaseEvidence } from "../content/evidence";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
+  { href: "#cayley-first", label: "Start with the table" },
   { href: "#one-sentence", label: "The idea in one sentence" },
   { href: "#states", label: "States, levels, and wraparound" },
   { href: "#plus-star", label: "PLUS and STAR without jargon" },
@@ -156,7 +160,7 @@ export function TheoryPage() {
             <ArrowRight size={16} aria-hidden="true" />
             <span>{t("receipts and boundaries")}</span>
           </div>
-          <a className="button button--primary math-hero__action" href="#one-sentence">
+          <a className="button button--primary math-hero__action" href="#cayley-first">
             {t("Begin with the mental model")} <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
           </a>
         </div>
@@ -175,7 +179,57 @@ export function TheoryPage() {
         </div>
       </nav>
 
-      <section id="one-sentence" className="section section--white math-anchor-section">
+      <section id="cayley-first" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("START WITH THE TABLE")}
+            title={t("Everything on this site is built on one finite table.")}
+            text={t(
+              "Before any talk of architecture, agents, or evidence, there is a table of results for two inputs — the same object you met at school as the multiplication table. If you follow only this section, you will still know what GALO is made of.",
+            )}
+          />
+          <SchoolTableBridgeFigure />
+
+          <div className="theory-foundation-steps">
+            {cayleyFoundation.map((step) => (
+              <article key={step.number}>
+                <span className="theory-foundation-steps__number" dir="ltr">
+                  {step.number}
+                </span>
+                <h3>{t(step.title)}</h3>
+                <p>{t(step.text)}</p>
+                <code dir="ltr">{step.formal}</code>
+              </article>
+            ))}
+          </div>
+
+          <div className="theory-why-finite">
+            <div className="theory-why-finite__heading">
+              <span>{t("WHY A FINITE TABLE AND NOT A MODEL")}</span>
+              <h3>{t("Four properties a table has and a trained model does not.")}</h3>
+              <p>
+                {t(
+                  "This is the entire technical bet. A finite table is a weaker object than a learned model, and that weakness is exactly what makes each of the four properties below hold without exception.",
+                )}
+              </p>
+            </div>
+            <div className="theory-why-finite__grid">
+              {cayleyWhyFinite.map((item) => (
+                <article key={item.title}>
+                  <CircleCheck size={19} aria-hidden="true" />
+                  <h4>{t(item.title)}</h4>
+                  <p>{t(item.text)}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <FoundationChainFigure />
+          <TermChips terms={["Cayley table", "Binary operation", "Carrier", "Closure"]} />
+        </div>
+      </section>
+
+      <section id="one-sentence" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE IDEA IN ONE SENTENCE")}

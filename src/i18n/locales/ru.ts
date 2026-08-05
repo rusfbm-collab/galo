@@ -2,6 +2,7 @@ import type { TranslationDictionary } from "../translations";
 import { mathRu } from "./math";
 import { releaseRu } from "./releaseRu";
 import { theoryRu } from "./theoryRu";
+import { academicRuExtra } from "./academic";
 import { termsRu } from "./terms";
 import { visualsRu } from "./visuals";
 
@@ -10,6 +11,7 @@ export const ru: TranslationDictionary = {
   ...releaseRu,
   ...theoryRu,
   ...termsRu,
+  ...academicRuExtra,
   ...visualsRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",

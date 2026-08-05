@@ -80,6 +80,8 @@ Expected health response: `ok` with HTTP 200.
 - Frozen PLUS/STAR formulas and table generator: `src/content/mathematics.ts`
 - Recorded receipt walkthrough: `src/data/controlled-replay.json`
 - Plain-language term explanations: `src/content/termDeepDives.ts`
+- Academic definitions and proofs: `src/content/academicAnalysis.ts`
+- Non-technical briefing and Cayley foundation: `src/content/plainLanguage.ts`
 - Diagram and chart components: `src/components/diagrams/`
 - Added interface strings must be translated in `src/i18n/locales/` before `npm run test` passes
 

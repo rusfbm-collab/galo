@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight, Braces, Check, GitBranch, ShieldAlert } from "lucide-react";
+import { AcademicAnalysis } from "../components/math/AcademicAnalysis";
 import { CayleyExplorer } from "../components/math/CayleyExplorer";
 import { SchoolMathLessonCard } from "../components/math/SchoolMathLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
@@ -104,6 +105,7 @@ const countSteps = [
 const mathContents = [
   { href: "#objects", label: "Objects and notation" },
   { href: "#cayley-tables", label: "Cayley tables" },
+  { href: "#academic-analysis", label: "Academic reference" },
   { href: "#school-proof-notebook", label: "School proof notebook" },
   { href: "#frozen-laws", label: "PLUS and STAR" },
   { href: "#typed-actions", label: "Four action families" },
@@ -239,6 +241,31 @@ export function MathematicsPage() {
               <p>{t("The P0 row is constant under STAR: P0 is a left reset.")}</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section id="academic-analysis" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("ACADEMIC REFERENCE")}
+            title={t("Definitions, propositions, and proofs in ordinary mathematical form.")}
+            text={t(
+              "This section states the kernel the way a referee would expect to read it: numbered definitions first, then each structural claim with a complete proof. Every statement here is also re-derived by the automated checks that run on each build, so the prose and the machine agree by construction.",
+            )}
+            aside={<span className="math-proof-chip">A_n = (Q_n, PLUS_n, STAR_n, P0)</span>}
+          />
+          <p className="academic__preamble">
+            {t(
+              "Notation is fixed once and used throughout. Positions are written P with a subscript, the level is written L with a subscript, and every formula is displayed left to right in every language of this site.",
+            )}
+          </p>
+          <AcademicAnalysis />
+          <p className="academic__closing">
+            <strong>{t("What these results do not establish:")}</strong>{" "}
+            {t(
+              "they are theorems about a finite algebra. They do not by themselves establish semantics, learning, a trained world model, external operational gain, or general intelligence — each of those needs its own evidence and is listed separately with its current status.",
+            )}
+          </p>
         </div>
       </section>
 
