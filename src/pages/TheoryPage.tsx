@@ -11,19 +11,27 @@ import {
   Route,
   ShieldCheck,
 } from "lucide-react";
+import { AbsorbingGateFigure } from "../components/diagrams/AbsorbingGateFigure";
 import { CayleyHeatmapFigure } from "../components/diagrams/CayleyHeatmapFigure";
+import { CheckCostFigure } from "../components/diagrams/CheckCostFigure";
 import { CommutingSquareFigure } from "../components/diagrams/CommutingSquareFigure";
 import { CoordinateCountFigure } from "../components/diagrams/CoordinateCountFigure";
 import { CyclicDialFigure } from "../components/diagrams/CyclicDialFigure";
 import { FoundationChainFigure } from "../components/diagrams/FoundationChainFigure";
+import { NamedStateFigure } from "../components/diagrams/NamedStateFigure";
+import { ObjectSizeFigure } from "../components/diagrams/ObjectSizeFigure";
 import { LevelTransferFigure } from "../components/diagrams/LevelTransferFigure";
 import { OrbitFigure } from "../components/diagrams/OrbitFigure";
 import { ProgramTreeFigure } from "../components/diagrams/ProgramTreeFigure";
+import { ReaderQuestionFigure } from "../components/diagrams/ReaderQuestionFigure";
+import { ReadingLaneFigure } from "../components/diagrams/ReadingLaneFigure";
 import { ResolutionLossFigure } from "../components/diagrams/ResolutionLossFigure";
 import { RoleOrientationFigure } from "../components/diagrams/RoleOrientationFigure";
 import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
 import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
 import { StarResetFigure } from "../components/diagrams/StarResetFigure";
+import { ThreeShelvesFigure } from "../components/diagrams/ThreeShelvesFigure";
+import { TypedActionMeaningFigure } from "../components/diagrams/TypedActionMeaningFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton, TermChips } from "../components/theory/TermExplainer";
@@ -55,6 +63,7 @@ import { releaseEvidence } from "../content/evidence";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
+  { href: "#orientation", label: "If you are not a mathematician" },
   { href: "#cayley-first", label: "Start with the table" },
   { href: "#one-sentence", label: "The idea in one sentence" },
   { href: "#states", label: "States, levels, and wraparound" },
@@ -183,6 +192,20 @@ export function TheoryPage() {
         </div>
       </nav>
 
+      <section id="orientation" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("BEFORE ANY MATHEMATICS")}
+            title={t("You can follow this chapter without doing any algebra.")}
+            text={t(
+              "The chapter is written twice. Once as mathematics, in order, because that is the only way the claims can be checked. And once as consequences — what each fact would decide for somebody funding, buying, or approving a system. The two readings are set side by side so you can pick one and still reach the end.",
+            )}
+          />
+          <ReadingLaneFigure />
+          <ReaderQuestionFigure />
+        </div>
+      </section>
+
       <section id="cayley-first" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
@@ -229,6 +252,7 @@ export function TheoryPage() {
           </div>
 
           <FoundationChainFigure />
+          <CheckCostFigure />
           <TermChips terms={["Cayley table", "Binary operation", "Carrier", "Closure"]} />
         </div>
       </section>
@@ -341,6 +365,7 @@ export function TheoryPage() {
               </dl>
             </article>
           </div>
+          <NamedStateFigure />
           <CyclicDialFigure level={3} source={1} active={2} />
           <ResolutionLossFigure />
           <div className="theory-analogy-boundary">
@@ -539,6 +564,7 @@ export function TheoryPage() {
               )}
             </p>
           </div>
+          <AbsorbingGateFigure />
           <details className="theory-check">
             <summary>{t("Check your understanding: does right-neutral mean commutative?")}</summary>
             <p>
@@ -600,6 +626,7 @@ export function TheoryPage() {
             </div>
           </div>
           <RoleOrientationFigure />
+          <TypedActionMeaningFigure />
           <div
             className="theory-action-table-wrap"
             role="region"
@@ -759,6 +786,7 @@ export function TheoryPage() {
             )}
           />
           <CoordinateCountFigure />
+          <ObjectSizeFigure />
           <div className="theory-count-equation" dir="ltr">
             <span>Σ_(n=1)^7 n²</span>
             <b>=</b>
@@ -1482,6 +1510,7 @@ export function TheoryPage() {
               </article>
             ))}
           </div>
+          <ThreeShelvesFigure />
           <div className="theory-release-witness">
             <div>
               <span>{t("Current legal release status")}</span>

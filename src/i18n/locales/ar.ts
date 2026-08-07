@@ -9,6 +9,7 @@ import { audienceAr } from "./audience";
 import { plainAr } from "./plain";
 import { termsPageAr } from "./termPages";
 import { termAcademicAr } from "./termAcademic";
+import { theoryFiguresAr } from "./theoryFigures";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -25,6 +26,7 @@ export const ar: TranslationDictionary = {
   ...plainAr,
   ...termsPageAr,
   ...termAcademicAr,
+  ...theoryFiguresAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

@@ -150,6 +150,71 @@ describe("GALO public site", () => {
     expect(document.querySelectorAll(".theory-why-finite__grid article")).toHaveLength(4);
   });
 
+  it("opens the theory chapter with a non-mathematical lane and a reader router", () => {
+    setPath("/theory");
+    render(<App />);
+
+    // The complaint these two figures answer is that the chapter only works for
+    // a reader who is willing to do the algebra in order.
+    expect(document.querySelector("#orientation")).toBeInTheDocument();
+    expect(document.querySelectorAll(".galo-lanes__row.is-maths li")).toHaveLength(5);
+    expect(document.querySelectorAll(".galo-lanes__row.is-business li")).toHaveLength(5);
+    expect(document.querySelector(".galo-lanes__row.is-business li")).toHaveTextContent(
+      "traces back to an object that fits on a page",
+    );
+
+    const cards = document.querySelectorAll(".galo-readers__card");
+    expect(cards).toHaveLength(4);
+    for (const card of Array.from(cards)) {
+      // Every route a card offers has to resolve, and every card has to name the
+      // thing its section will not be able to give the reader.
+      const href = card.querySelector("a")?.getAttribute("href") ?? "";
+      expect(href).toMatch(/^\/(investors|audit|thinking)#[a-z-]+$/);
+      expect(card.querySelector(".galo-readers__cannot")?.textContent ?? "").not.toBe("");
+    }
+  });
+
+  it("draws the investor-facing figures the theory sections were missing", () => {
+    setPath("/theory");
+    render(<App />);
+
+    for (const figure of [
+      ".galo-figure--lanes",
+      ".galo-figure--readers",
+      ".galo-figure--cost",
+      ".galo-figure--named",
+      ".galo-figure--gate",
+      ".galo-figure--typed",
+      ".galo-figure--size",
+      ".galo-figure--shelves",
+    ]) {
+      expect(document.querySelector(figure), `Missing figure ${figure}`).toBeInTheDocument();
+    }
+
+    // The absorbing-state figure is generated from the law, so the marked nodes
+    // and the written-out chains have to agree with STAR at L3.
+    const chains = Array.from(document.querySelectorAll(".galo-figure--gate .galo-figure__stage-notes bdi")).map(
+      (node) => node.textContent,
+    );
+    expect(chains).toEqual(["P1 → P2 → P1 → P2 → P1", "P2 → P1 → P0 → P0 → P0", "P0 → P0 → P0 → P0 → P0"]);
+
+    // One pair, four typed readings: three reach P2 and only STAR_LEFT resets.
+    const targets = Array.from(document.querySelectorAll(".galo-figure--typed .galo-typed__target")).map(
+      (node) => node.textContent,
+    );
+    expect(targets).toEqual(["→ P2", "→ P2", "→ P0", "→ P2"]);
+
+    // The whole declared index is drawn, one mark per coordinate, banded by level.
+    expect(document.querySelectorAll(".galo-figure--size .galo-size__mark")).toHaveLength(560);
+    expect(document.querySelectorAll(".galo-figure--size .galo-size__mark.is-band-6")).toHaveLength(196);
+
+    // Three shelves, and the target shelf keeps the unwelcome statuses on it.
+    expect(document.querySelectorAll(".galo-shelves__shelf")).toHaveLength(3);
+    expect(document.querySelector(".galo-shelves__shelf.is-target")).toHaveTextContent(
+      "Persistent policy learning: NOT STARTED",
+    );
+  });
+
   it("publishes numbered definitions and proofs on the mathematics route", () => {
     setPath("/math");
     render(<App />);

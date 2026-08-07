@@ -5445,6 +5445,8 @@ html[dir="rtl"] .theory-law-card__symbol {
 }
 
 .theory-tutor__table-wrap {
+  min-width: 0;
+  max-width: 100%;
   margin-top: 12px;
   overflow-x: auto;
 }
@@ -7005,7 +7007,7 @@ html[dir="rtl"] .theory-law-card__symbol {
   .theory-map-grid,
   .theory-current-target,
   .theory-tutor__workspace {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .theory-divisibility-proof > div {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -7622,12 +7624,38 @@ html[dir="rtl"] .theory-law-card__symbol {
   unicode-bidi: isolate;
 }
 
+/* Isolated left-to-right maths inside running prose must not be able to widen
+   the page: on a narrow screen a long token wraps instead of pushing the whole
+   section past the viewport. Cells and code blocks keep their own scrollers. */
+bdi {
+  overflow-wrap: anywhere;
+}
+
+code bdi,
+td bdi,
+th bdi,
+caption bdi {
+  overflow-wrap: normal;
+}
+
+/* Icons inside a figure are not the figure. The rule above stretches diagram
+   canvases to the reading width; a lucide glyph has to keep its own size. */
+.galo-figure svg.lucide {
+  flex: none;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
 .galo-figure--star svg,
 .galo-figure--orbit svg,
 .galo-figure--funnel svg,
 .galo-figure--count svg,
 .galo-figure--ledger svg,
-.galo-figure--chain svg {
+.galo-figure--chain svg,
+.galo-figure--gate svg,
+.galo-figure--typed svg,
+.galo-figure--cost svg {
   max-width: 780px;
   margin-inline: auto;
 }
@@ -8187,6 +8215,12 @@ html[dir="rtl"] .theory-law-card__symbol {
 .galo-figure__stage-notes b {
   color: var(--figure-ink);
   font-weight: 700;
+}
+
+/* An LTR formula inside an RTL note still belongs at the paragraph's own start
+   edge; only its internal ordering stays left-to-right. */
+.galo-figure__stage-notes bdi {
+  justify-self: start;
 }
 
 /* ---- work ledger ---- */
@@ -12480,4 +12514,660 @@ html[dir="rtl"] .theory-law-card__symbol {
 
 .term-academic__standing b {
   color: var(--teal-deep);
+}
+
+/* ============================================================
+   Investor-facing illustrations on the theory chapter
+   Prose-heavy figures are laid out in HTML rather than SVG so a
+   long translation wraps instead of escaping its box.
+   ============================================================ */
+
+/* ---- two reading lanes ---- */
+
+.galo-lanes {
+  display: grid;
+  gap: 10px;
+}
+
+.galo-lanes__lane {
+  margin: 0;
+  color: var(--figure-accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.galo-lanes__lane.is-business {
+  margin-top: 14px;
+  color: var(--chart-2);
+}
+
+.galo-lanes__row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.galo-lanes__row li {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  border: 1px solid var(--figure-line);
+  border-radius: 14px;
+  padding: 14px 15px;
+  background: var(--soft-navy);
+}
+
+.section--navy .galo-lanes__row li,
+.section--dark .galo-lanes__row li {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.galo-lanes__row.is-maths li {
+  border-top: 3px solid var(--chart-1);
+}
+
+.galo-lanes__row.is-business li {
+  border-top: 3px solid var(--chart-2);
+  background: var(--white);
+}
+
+.section--navy .galo-lanes__row.is-business li,
+.section--dark .galo-lanes__row.is-business li {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.galo-lanes__index {
+  color: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.galo-lanes__row strong {
+  color: var(--figure-ink);
+  font-size: 0.98rem;
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+.galo-lanes__row.is-business span:not(.galo-lanes__index) {
+  color: var(--figure-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 960px) {
+  .galo-lanes__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .galo-lanes__row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- four readers ---- */
+
+.galo-readers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.galo-readers__card {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  border: 1px solid var(--figure-line);
+  border-radius: 18px;
+  padding: 18px 18px 16px;
+  background: var(--soft-navy);
+}
+
+.section--navy .galo-readers__card,
+.section--dark .galo-readers__card {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.galo-readers__head {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  color: var(--figure-accent);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.galo-readers__card h4 {
+  margin: 0;
+  color: var(--figure-ink);
+  font-size: 1rem;
+  font-weight: 720;
+  line-height: 1.38;
+}
+
+.galo-readers__link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: var(--white);
+  color: var(--navy-900);
+  font-size: 0.87rem;
+  font-weight: 640;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.section--navy .galo-readers__link,
+.section--dark .galo-readers__link {
+  background: rgba(255, 255, 255, 0.08);
+  color: #eaf3f9;
+}
+
+.galo-readers__link:hover,
+.galo-readers__link:focus-visible {
+  outline: 2px solid var(--teal-deep);
+  outline-offset: 2px;
+}
+
+.galo-readers__cannot {
+  display: grid;
+  gap: 3px;
+  margin: 0;
+  border-inline-start: 3px solid var(--amber);
+  padding-inline-start: 12px;
+  color: var(--figure-muted);
+  font-size: 0.83rem;
+  line-height: 1.5;
+}
+
+.galo-readers__cannot b {
+  color: var(--figure-ink);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+/* ---- the whole index drawn in full ---- */
+
+.galo-figure--size svg {
+  max-width: 860px;
+  max-height: 340px;
+  margin-inline: auto;
+}
+
+.galo-figure__legend--bands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: baseline;
+  margin: 18px 0 0;
+  color: var(--figure-muted);
+  font-size: 0.85rem;
+}
+
+.galo-figure__legend--bands span {
+  font-weight: 700;
+}
+
+.galo-figure__legend--bands bdi {
+  font-family: var(--font-mono);
+  color: var(--figure-ink);
+}
+
+.galo-size__mark {
+  fill: var(--ramp-3);
+}
+
+.galo-size__mark.is-band-0 {
+  fill: var(--ramp-1);
+}
+.galo-size__mark.is-band-1 {
+  fill: var(--ramp-2);
+}
+.galo-size__mark.is-band-2 {
+  fill: var(--ramp-3);
+}
+.galo-size__mark.is-band-3 {
+  fill: var(--ramp-4);
+}
+.galo-size__mark.is-band-4 {
+  fill: var(--ramp-5);
+}
+.galo-size__mark.is-band-5 {
+  fill: var(--ramp-6);
+}
+.galo-size__mark.is-band-6 {
+  fill: var(--chart-2);
+}
+
+/* ---- a sentence versus a name ---- */
+
+.galo-named {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 18px;
+  align-items: stretch;
+}
+
+.galo-named__panel {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  border: 1px solid var(--figure-line);
+  border-radius: 18px;
+  padding: 18px;
+  background: var(--soft-navy);
+}
+
+.section--navy .galo-named__panel,
+.section--dark .galo-named__panel {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.galo-named__panel.is-named {
+  border-color: color-mix(in srgb, var(--chart-1) 42%, transparent);
+}
+
+.galo-named__title {
+  margin: 0;
+  color: var(--figure-accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.galo-named__quote {
+  margin: 0;
+  border-inline-start: 3px solid var(--chart-neutral-strong);
+  padding-inline-start: 14px;
+  color: var(--figure-ink);
+  font-size: 1.05rem;
+  font-weight: 620;
+  line-height: 1.45;
+}
+
+.galo-named__label {
+  margin: 6px 0 0;
+  color: var(--figure-muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.galo-named__panel ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-inline-start: 18px;
+  color: var(--figure-muted);
+  font-size: 0.89rem;
+  line-height: 1.5;
+}
+
+.galo-named__positions {
+  padding-inline-start: 0 !important;
+  list-style: none;
+}
+
+.galo-named__positions li {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px 10px;
+  background: var(--white);
+}
+
+.section--navy .galo-named__positions li,
+.section--dark .galo-named__positions li {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.galo-named__positions code {
+  border-radius: 7px;
+  padding: 3px 0;
+  background: var(--soft-navy);
+  color: var(--navy-900);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.galo-named__positions li.is-warn code {
+  background: color-mix(in srgb, var(--amber) 24%, transparent);
+}
+
+.galo-named__positions li.is-accent code {
+  background: color-mix(in srgb, var(--chart-1) 24%, transparent);
+}
+
+.galo-named__record {
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: var(--white);
+  color: var(--navy-900);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.galo-named__verdict {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  font-weight: 660;
+  line-height: 1.5;
+}
+
+.galo-named__verdict.is-warn {
+  color: #8a5c07;
+}
+
+.galo-named__verdict.is-accent {
+  color: var(--teal-deep);
+}
+
+.section--navy .galo-named__verdict.is-warn,
+.section--dark .galo-named__verdict.is-warn {
+  color: #f3cd8f;
+}
+
+.section--navy .galo-named__verdict.is-accent,
+.section--dark .galo-named__verdict.is-accent {
+  color: var(--cyan);
+}
+
+.galo-named__arrow {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  max-width: 132px;
+  color: var(--figure-muted);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.galo-named__arrow::before {
+  content: "→";
+  display: block;
+  margin-bottom: 6px;
+  color: var(--figure-accent);
+  font-size: 1.5rem;
+}
+
+[dir="rtl"] .galo-named__arrow::before {
+  content: "←";
+}
+
+@media (max-width: 900px) {
+  .galo-named {
+    grid-template-columns: 1fr;
+  }
+
+  .galo-named__arrow {
+    max-width: none;
+  }
+
+  .galo-named__arrow::before {
+    content: "↓";
+  }
+
+  [dir="rtl"] .galo-named__arrow::before {
+    content: "↓";
+  }
+}
+
+/* ---- absorbing chains ---- */
+
+.galo-gate__node {
+  fill: var(--white);
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.4;
+}
+
+.section--navy .galo-gate__node,
+.section--dark .galo-gate__node {
+  fill: rgba(255, 255, 255, 0.08);
+}
+
+.galo-gate__node.is-absorbed {
+  fill: var(--chart-2);
+  stroke: var(--chart-2);
+}
+
+.galo-gate__state {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.galo-gate__state.is-absorbed {
+  fill: #fff;
+}
+
+.galo-gate__link {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.4;
+}
+
+.galo-gate__input {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.galo-gate__rowlabel {
+  fill: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* ---- one pair, four typed readings ---- */
+
+.galo-typed__hub {
+  fill: var(--soft-navy);
+  stroke: var(--figure-line);
+}
+
+.section--navy .galo-typed__hub,
+.section--dark .galo-typed__hub {
+  fill: rgba(255, 255, 255, 0.06);
+}
+
+.galo-typed__hublabel {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.galo-typed__hubvalue {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.galo-typed__link {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.4;
+}
+
+.galo-typed__row.is-reset .galo-typed__link {
+  stroke: var(--chart-2);
+  stroke-width: 2;
+}
+
+.galo-typed__row rect {
+  fill: var(--chart-1);
+}
+
+.galo-typed__row.is-reset rect {
+  fill: var(--chart-2);
+}
+
+.galo-typed__family {
+  fill: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.galo-typed__target {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+/* ---- cost of establishing a negative ---- */
+
+.galo-cost__row.is-declared rect {
+  fill: var(--chart-1);
+}
+
+.galo-cost__tag {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  font-weight: 760;
+}
+
+.galo-cost__tag.is-open {
+  fill: var(--chart-neutral-strong);
+}
+
+.galo-cost__edge {
+  stroke: var(--figure-ink);
+  stroke-width: 2;
+}
+
+.galo-cost__edgelabel {
+  fill: var(--figure-muted);
+  font-size: 0.8rem;
+  font-weight: 640;
+}
+
+.galo-cost__edgelabel.is-open {
+  text-anchor: end;
+}
+
+.galo-cost__probe {
+  stroke: var(--chart-3);
+  stroke-width: 2;
+  stroke-dasharray: 4 4;
+}
+
+/* ---- three shelves ---- */
+
+.galo-shelves {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.galo-shelves__shelf {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  border: 1px solid var(--figure-line);
+  border-radius: 18px;
+  padding: 18px;
+  background: var(--soft-navy);
+}
+
+.section--navy .galo-shelves__shelf,
+.section--dark .galo-shelves__shelf {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.galo-shelves__shelf.is-formal {
+  border-top: 3px solid var(--chart-1);
+}
+
+.galo-shelves__shelf.is-current {
+  border-top: 3px solid var(--chart-3);
+}
+
+.galo-shelves__shelf.is-target {
+  border-top: 3px solid var(--chart-2);
+}
+
+.galo-shelves__head {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.galo-shelves__shelf.is-formal .galo-shelves__head {
+  color: var(--chart-1);
+}
+
+.galo-shelves__shelf.is-current .galo-shelves__head {
+  color: var(--chart-3);
+}
+
+.galo-shelves__shelf.is-target .galo-shelves__head {
+  color: var(--chart-2);
+}
+
+.galo-shelves__tag {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.galo-shelves__shelf h4 {
+  margin: 0;
+  color: var(--figure-ink);
+  font-size: 1rem;
+  font-weight: 720;
+  line-height: 1.38;
+}
+
+.galo-shelves__question {
+  margin: 0;
+  color: var(--figure-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.galo-shelves__shelf ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-inline-start: 18px;
+  color: var(--figure-muted);
+  font-size: 0.87rem;
+  line-height: 1.55;
+}
+
+.galo-shelves__shelf li::marker {
+  color: var(--figure-accent);
 }

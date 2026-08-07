@@ -103,6 +103,40 @@ The audit route is written against its own site. It sorts every published value 
 
 `/thinking` draws the decision procedure itself. One thought is nine numbered stages, and the diagram, the stage cards, and the worked table all carry the same statuses: seven stages are marked `CURRENT V4` and drawn solid, the two that would follow are marked `TARGET` and drawn dashed. Every stage names the single condition that stops the thought there, and the five refusal gates are given codes that end up in the record, so a stop is a result with a cause rather than an absence of output. The worked walkthrough repeats the whole procedure with the release's own values — 1,204, 880, 440, the SHA-256 ordering input, arity 2, route depth 1 — and deliberately leaves the two target stages without a row, because they produce no value today.
 
+## Illustrations for a reader who will not do the algebra
+
+The theory chapter is the part of the site most likely to lose somebody who is
+deciding whether to fund, buy, or approve a system rather than to learn the
+mathematics. Eight figures answer that reader in pictures, and each one is
+attached to the section whose mathematics it restates:
+
+| Figure | Section | What it settles |
+| --- | --- | --- |
+| Two reading lanes | `#orientation` | The five stops of the chapter, once as what is proved and once as what it decides |
+| Four readers | `#orientation` | The question each audience arrives with, the section that answers it, and what that section cannot give them |
+| Cost of establishing a negative | `#cayley-first` | Reading a declared list terminates; probing an undeclared space does not |
+| A sentence versus a name | `#states` | The same status as prose with three readings, and as one declared position with one |
+| Absorbing chains | `#p0` | Three histories under STAR: once a chain lands on P0 no later step takes it off |
+| One pair, four typed readings | `#typed-actions` | Why a record carries level, law, and orientation and not only the pair |
+| The whole index drawn in full | `#count-560` | 560 marks, banded by level, with a visible edge |
+| Three shelves | `#evidence-language` | Proved, running today, and merely written down, with nothing carrying between them |
+
+Two rules keep these honest. Anything computed — the chains, the four targets,
+the 560 marks and their per-level bands — is regenerated from `mathematics.ts`
+on render, so a figure cannot drift away from the law it illustrates, and tests
+assert the rendered values. And every figure that states a business consequence
+carries a boundary note in the same frame saying what it is not: no deployment
+has happened, so none of them reports a result.
+
+Prose-heavy figures are laid out in HTML rather than SVG. An SVG `<text>` node
+does not wrap, so a Russian or Arabic label two or three times the length of the
+English one escapes its box; only figures whose labels are short and fixed —
+position names, family codes, numbers — are drawn as SVG.
+
+Lucide icons inside a figure need `.galo-figure svg.lucide` to opt out of the
+canvas rule that stretches diagram SVGs to the reading width, or a 20px glyph
+renders three hundred pixels wide.
+
 ## One page per concept
 
 Every one of the 59 concepts has its own route at `/term/<slug>`, prerendered in all four locales. Term chips are links to those pages rather than buttons that open a dialog: the explanation is the part readers needed most, and a dialog made it unshareable, invisible to search, and unavailable without JavaScript.

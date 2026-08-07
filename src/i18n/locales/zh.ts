@@ -9,6 +9,7 @@ import { audienceZh } from "./audience";
 import { plainZh } from "./plain";
 import { termsPageZh } from "./termPages";
 import { termAcademicZh } from "./termAcademic";
+import { theoryFiguresZh } from "./theoryFigures";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -25,6 +26,7 @@ export const zh: TranslationDictionary = {
   ...plainZh,
   ...termsPageZh,
   ...termAcademicZh,
+  ...theoryFiguresZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",
