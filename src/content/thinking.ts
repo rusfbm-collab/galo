@@ -64,7 +64,7 @@ export const thoughtStages: readonly ThoughtStage[] = [
     happens:
       "All 1,204 committed descriptors are entered — the complete list the release commits to before anything runs.",
     detail:
-      "The list is fixed by the release, not assembled during the run. Nothing can enter it later, and nothing outside it can be executed under any circumstances. That is what makes the next stages a narrowing rather than a search: the answer is known to be inside a finite set that a reviewer can enumerate independently.",
+      "The release fixes the list; the run never assembles it. Nothing joins it afterwards, and nothing outside it executes under any circumstances. So the stages that follow narrow rather than search: the answer is known to sit inside a finite set a reviewer can enumerate alone.",
     stopsWhen: "A requested descriptor is not a member of the committed universe.",
     status: "CURRENT V4",
   },

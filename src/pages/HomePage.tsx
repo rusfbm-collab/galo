@@ -625,7 +625,7 @@ export function HomePage() {
               <h3>{t("Arabic already shipped")}</h3>
               <p>
                 {t(
-                  "This site is delivered in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website, not a deployment, and that is the whole claim.",
+                  "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.",
                 )}
               </p>
             </article>

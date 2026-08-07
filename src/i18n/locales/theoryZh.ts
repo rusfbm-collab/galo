@@ -143,7 +143,7 @@ export const theoryZh: TranslationDictionary = {
   "SOURCE, ACTIVE, LEFT, AND RIGHT": "源状态、活动极、LEFT 与 RIGHT",
   "The operation is fixed; the semantic roles decide where its inputs are placed.":
     "运算律保持不变；语义角色决定输入放在哪一侧。",
-  "Source means the state being transformed. Active means the pole applied to it. LEFT puts source on the raw left; RIGHT puts active on the raw left. The names describe the interface roles, not standard algebraic translation terminology.":
+  "Source means the state being transformed. Active means the pole applied to it. LEFT puts source on the raw left; RIGHT puts active there instead. These names describe interface roles and borrow nothing from the standard vocabulary of algebraic translations.":
     "source 指正在被转换的源状态；active 指施加到它上面的活动极。LEFT 把源状态放在原始左侧，RIGHT 把活动极放在原始左侧。这些名称描述接口中的角色，而不是代数学中左、右平移映射的标准术语。",
   "The four typed action families at source P0 and active P2 on L3":
     "L3 中源状态为 P0、活动极为 P2 时的四个类型化动作族",
@@ -187,7 +187,7 @@ export const theoryZh: TranslationDictionary = {
     "STAR 在原始左侧看到非零极，因此该单元格按模 {level} 的循环加法计算。",
   "The table address is row P{left}, column P{right}; that cell contains P{target}.":
     "表格地址是第 P{left} 行、第 P{right} 列；该单元格包含 P{target}。",
-  "The complete typed address is {cellId}. The target is stored as a result, not hidden in the ID.":
+  "The complete typed address is {cellId}. The target is stored as its own result and never hidden inside the ID.":
     "完整类型化地址是 {cellId}。目标作为结果单独存储，并未隐藏在 ID 中。",
   "Restore the L3 reset example": "恢复 L3 重置示例",
   "Two-channel witness": "双通道核验见证",
@@ -358,7 +358,7 @@ export const theoryZh: TranslationDictionary = {
     "数学目录包含 L1；当前 V4 激活 L2–L7，并将 L1 保持为仅控制层。",
 
   "Finite state alphabet": "有限状态字母表",
-  "L1–L7 provide named finite carriers. A pole is a local state label, not a word meaning or neuron.":
+  "L1–L7 provide named finite carriers. A pole is a local state label — no word meaning attaches to it, and no neuron.":
     "L1–L7 提供具名有限载体。极是局部状态标签，不是词义，也不是神经元。",
   "Frozen transition laws": "冻结状态转换律",
   "PLUS and STAR turn every ordered pair of poles into one exact target pole.":
@@ -471,7 +471,7 @@ export const theoryZh: TranslationDictionary = {
   Receipt: "回执",
   "A machine-readable record of what a bounded execution checked and did.":
     "机器可读记录，说明一次有边界执行检查了什么、执行了什么。",
-  "A receipt is an operational witness, not a mathematical theorem or real-world truth certificate.":
+  "A receipt is an operational witness. It proves no theorem and certifies nothing about the world.":
     "回执是运行见证，不是数学定理，也不是现实世界真理证书。",
   Boundary: "边界",
   "An explicit stop: the available evidence does not authorize the stronger conclusion.":
@@ -539,7 +539,7 @@ export const theoryZh: TranslationDictionary = {
   "Candidate frontier": "候选前沿",
   "The parity-filtered candidates that the deterministic selector is allowed to order.":
     "经过奇偶性筛选、允许确定性选择器排序的候选集合。",
-  "The order is hash-derived, not a semantic judgment, probability, or learned preference.":
+  "The order comes out of a hash. No semantic judgment, probability, or learned preference goes into it.":
     "该次序由哈希导出，不是语义判断、概率或已学习偏好。",
   "One-shot handle": "一次性句柄",
   "A runtime capability bound to one admitted candidate and one bounded use.":
@@ -626,7 +626,7 @@ export const theoryZh: TranslationDictionary = {
     "若该映射是单射，P1 的像必须精确保留其循环阶 n。",
   "A cyclic group of order m contains an element of order n exactly when n divides m.":
     "阶为 m 的循环群当且仅当 n 整除 m 时才含有阶为 n 的元素。",
-  "Therefore the failure is structural, not merely a defect of the same-index candidate.":
+  "The failure is therefore structural. It is not that the same-index candidate happened to fall short.":
     "因此，这一失败来自结构本身，而不只是同指标候选映射的缺陷。",
   "Conversely, when n divides m, scaled maps h(P_i)=P_((u·m/n)i mod m) for unit u modulo n provide the nonzero embeddings; the archived replay selects one canonical scaling.":
     "反过来，当 n 整除 m 时，对任意模 n 的单位元 u，缩放映射 h(P_i)=P_((u·m/n)i mod m) 给出非零嵌入；存档重放只选取其中一个规范缩放。",
@@ -683,7 +683,7 @@ export const theoryZh: TranslationDictionary = {
     "只有建立更强的契约之后，预期的学习循环才会开始。",
   "Every stage below is architectural intent. It must not be read as a current runtime capability, trained system, external result, or authorized learning claim.":
     "下列每个阶段都只是架构意图，不得解读为当前运行时能力、已训练系统、外部结果或获授权的学习声明。",
-  "Accept externally grounded evidence with source custody, not only a bundled finite sample.":
+  "Accept externally grounded evidence with source custody, and stop relying on a bundled finite sample alone.":
     "接收具有来源保管链的外部落地证据，而不只依赖捆绑的有限样本。",
   "Typed domain map": "类型化领域映射",
   "Declare how domain objects and alternatives map into local finite coordinates without assigning universal pole meanings.":
@@ -740,7 +740,7 @@ export const theoryZh: TranslationDictionary = {
   "fixed points of g": "g 的固定点",
   "The objects that the selected transformation g does not move.": "被选变换 g 保持不动的对象。",
   "X modulo the action of G": "X 对 G 作用的轨道商集",
-  "The set of orbits, not ordinary numeric division.": "轨道的集合，而不是普通数值除法。",
+  "The set of orbits. Ordinary numeric division has nothing to do with it.": "轨道的集合，而不是普通数值除法。",
   "PLUS_n(P_i,P_j)=P_((i+j) mod n); (Q_n,PLUS_n) is isomorphic to the cyclic group C_n.":
     "PLUS_n(P_i,P_j)=P_((i+j) mod n)；(Q_n,PLUS_n) 同构于循环群 C_n。",
   "All acted-on objects reachable from one selected object by allowed symmetries.":
@@ -762,7 +762,7 @@ export const theoryZh: TranslationDictionary = {
     "载体集不是智能体所知一切事物的集合；它只是一个有限的局部状态集合。",
   "L3 row and column headers: P0 | P1 | P2.": "L3 的行、列标题：P0 | P1 | P2。",
   "|Q_3|=3.": "|Q_3|=3。",
-  "A pole is one named seat on the carousel, not the whole carousel and not the passenger sitting there.":
+  "A pole is one named seat on the carousel — neither the carousel itself nor whoever is sitting in it.":
     "极是旋转木马上的一个具名座位，既不是整座旋转木马，也不是坐在座位上的乘客。",
   "P_i∈Q_n with 0≤i<n; calculation identifies P_i with residue i modulo n.":
     "P_i∈Q_n 且 0≤i<n；计算时将 P_i 与模 n 的剩余类 i 对应起来。",
@@ -772,7 +772,7 @@ export const theoryZh: TranslationDictionary = {
     "标签与剩余类之间的对应是双射，因此每个极恰有一个计算指标，每个允许的指标也恰好命名一个极。",
   "P2 does not universally mean twice as much, better, later, or more intelligent than P1.":
     "P2 并不普遍表示 P1 的两倍、更好、更晚或更智能。",
-  "L3: row P2 and column P2 are addresses labelled by P2, not measured quantities.":
+  "L3: row P2 and column P2 are addresses labelled by P2. Nothing there was measured.":
     "L3：第 P2 行与第 P2 列是以 P2 标记的地址，而不是测量得到的数量。",
   "P_(i+kn)=P_i for every integer k.": "对每个整数 k，都有 P_(i+kn)=P_i。",
   "Changing level is like choosing a dial with a different number of marked positions.":
@@ -783,7 +783,7 @@ export const theoryZh: TranslationDictionary = {
     "L2 有 {P0,P1}；L3 有 {P0,P1,P2}。P2 在 L3 中局部存在，但在 L2 中不存在。",
   "The subscript n fixes both the number of labels and the modulus used by every operation at that level.":
     "下标 n 同时确定标签数量，以及该层级每个运算所使用的模数。",
-  "A larger level gives more distinctions, not automatically more knowledge, accuracy, or intelligence.":
+  "A larger level buys more distinctions. Knowledge, accuracy, and intelligence do not follow from it.":
     "更大的层级提供更多可区分状态，但不会自动带来更多知识、更高准确度或更强智能。",
   "L2 laws have 2×2 tables; L3 laws have 3×3 tables.": "L2 的运算律使用 2×2 表；L3 的运算律使用 3×3 表。",
   "|Q_n|=n and |Q_n×Q_n|=n².": "|Q_n|=n 且 |Q_n×Q_n|=n²。",
@@ -828,7 +828,7 @@ export const theoryZh: TranslationDictionary = {
   "L3: start at P1, move two steps, and wrap around: P1⊕P2=P0.": "L3：从 P1 出发，移动两步并循环回绕：P1⊕P2=P0。",
   "Addition of residues is closed, associative, and commutative; P0 is the identity and P_(n−i) is the inverse of P_i.":
     "剩余类加法具有封闭性、结合律和交换律；P0 是单位元，P_(n−i) 是 P_i 的逆元。",
-  "PLUS is a finite cyclic law on labels, not ordinary addition of domain meanings or real quantities.":
+  "PLUS is a finite cyclic law on labels. It adds neither domain meanings nor real quantities.":
     "PLUS 是标签上的有限循环运算律，并不是对领域含义或现实数量作普通加法。",
   "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.":
     "L3 PLUS：第 P1 行、第 P2 列的单元格为 P0；第 P2 行、第 P1 列也得到相同单元格值。",
@@ -1028,7 +1028,7 @@ export const theoryZh: TranslationDictionary = {
     "L3：U(3)={1,2}；按钮 1 不作改变，按钮 2 交换 P1,P2。连续按两次按钮 2 后，每个极都回到原位。",
   "Multiplying unit indices corresponds exactly to composing their multiplication permutations.":
     "单位元指标相乘，恰好对应其乘法置换的复合。",
-  "One chosen symmetry is a group element, not the whole acting group and not an orbit.":
+  "One chosen symmetry is a group element — neither the whole acting group nor an orbit.":
     "一个选定的对称变换是群元素，而不是整个作用群，也不是轨道。",
   "L3 action rows: u=1 maps 0,1,2 to 0,1,2; u=2 maps them to 0,2,1.":
     "L3 作用行：u=1 将 0,1,2 映到 0,1,2；u=2 将它们映到 0,2,1。",
@@ -1257,7 +1257,7 @@ export const theoryZh: TranslationDictionary = {
     "在 L2 中，PLUS(P1,P1) 使用两个输入，而符号 P0 命名一个固定元素，不接收任何输入。",
   "Arity counts argument places syntactically; a named constant is exactly a nullary operation.":
     "元数在语法层面计算参数位置；具名常元正是零元运算。",
-  "The tuple (2,2,0) lists arities, not level sizes, tensor dimensions, or learned layer widths.":
+  "The tuple (2,2,0) lists arities. Level sizes, tensor dimensions, and learned layer widths are all something else.":
     "元组 (2,2,0) 列出的是元数，而不是层级大小、张量维数或已学习层的宽度。",
   "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.": "运算清单：PLUS | 2；STAR | 2；P0 | 0。",
   "A_n=(Q_n,PLUS_n,STAR_n,P0).": "A_n=(Q_n,PLUS_n,STAR_n,P0)。",
@@ -1355,7 +1355,7 @@ export const theoryZh: TranslationDictionary = {
   "L_a is row a; R_a is column a.": "L_a 是第 a 行；R_a 是第 a 列。",
   "STAR_LEFT(_,a)=R_a and STAR_RIGHT(_,a)=L_a.": "STAR_LEFT(_,a)=R_a 且 STAR_RIGHT(_,a)=L_a。",
   "Image of a function": "函数的像",
-  "The image is the set of destinations actually reached, not every destination that was available in principle.":
+  "The image is the set of destinations actually reached. Everything merely available in principle stays out of it.":
     "像是实际到达的目标所组成的集合，而不是原则上可用的所有目标。",
   "Im(f)={f(x)|x∈X}; rank(f)=|Im(f)| for a finite transformation.": "Im(f)={f(x)|x∈X}；对有限变换，rank(f)=|Im(f)|。",
   "L3 R_P2 has outputs P0,P0,P1, so Im(R_P2)={P0,P1} and rank=2.":
@@ -1402,7 +1402,7 @@ export const theoryZh: TranslationDictionary = {
     "U(3)={1,2} 且 φ(3)=2；U(4)={1,3}，步长 2 被排除，因为 gcd(2,4)=2。",
   "A residue has a multiplicative inverse modulo n exactly when it is coprime to n.":
     "一个剩余类在模 n 意义下存在乘法逆元，当且仅当它与 n 互素。",
-  "U(n) is a multiplicative group of indices, not the carrier Q_n under PLUS.":
+  "U(n) is a multiplicative group of indices. The carrier Q_n under PLUS is a different object.":
     "U(n) 是指标的乘法群，而不是 PLUS 下的载体集 Q_n。",
   "Unit ledger L1–L7 has sizes 1,1,2,2,4,2,6.": "L1–L7 的单位元清单大小依次为 1,1,2,2,4,2,6。",
   "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).": "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n)。",

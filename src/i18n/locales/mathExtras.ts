@@ -43,7 +43,7 @@ export const mathExtraRu: TranslationDictionary = {
     "Каждая пара «строка–столбец» — одна входная координата бинарного закона Кэли. Порядок сохраняется, даже если результаты совпадают.",
   "FINITE TRANSFORMATIONS AND SYMMETRY": "КОНЕЧНЫЕ ПРЕОБРАЗОВАНИЯ И СИММЕТРИЯ",
   "FOUR TYPED ACTION FAMILIES": "ЧЕТЫРЕ ТИПИЗИРОВАННЫХ СЕМЕЙСТВА ДЕЙСТВИЙ",
-  "Fixing the family and active pole turns the source-to-target slice into a unary transformation. Those transformations compose into routes; the 560 coordinates are their atomic graph records, not the routes themselves.":
+  "Fix the family and the active pole and the source-to-target slice becomes a unary transformation. Such transformations compose into routes, while the 560 coordinates are the atomic records of their graphs — the routes are something else.":
     "Фиксация семейства и активного полюса превращает срез отображения «исходное состояние → целевое состояние» в унарное преобразование. Такие преобразования компонуются в маршруты; 560 координат — атомарные записи их графиков, а не сами маршруты.",
   "For a declared map φ: Q_n → Q_m and every tested family F, the following square must commute:":
     "Для заданного отображения φ: Q_n → Q_m и каждого проверяемого семейства F следующая диаграмма должна быть коммутативной:",
@@ -177,7 +177,7 @@ export const mathExtraZh: TranslationDictionary = {
     "每个“行—列”对都是二元凯莱运算律的一个输入坐标。即使输出相同，顺序仍会保留。",
   "FINITE TRANSFORMATIONS AND SYMMETRY": "有限变换与对称性",
   "FOUR TYPED ACTION FAMILIES": "四个类型化动作族",
-  "Fixing the family and active pole turns the source-to-target slice into a unary transformation. Those transformations compose into routes; the 560 coordinates are their atomic graph records, not the routes themselves.":
+  "Fix the family and the active pole and the source-to-target slice becomes a unary transformation. Such transformations compose into routes, while the 560 coordinates are the atomic records of their graphs — the routes are something else.":
     "固定动作族和活动极后，从源到目标的切片就成为一元变换。这些变换可组合成路径；560 个坐标是它们的原子图记录，而不是路径本身。",
   "For a declared map φ: Q_n → Q_m and every tested family F, the following square must commute:":
     "对于声明的映射 φ: Q_n → Q_m 以及每个受检动作族 F，下列方块必须可交换：",
@@ -307,7 +307,7 @@ export const mathExtraAr: TranslationDictionary = {
     "كل زوج صف وعمود هو إحداثي إدخال واحد لقانون كايلي ثنائي. ويُحتفظ بالترتيب حتى عندما تتطابق المخرجات.",
   "FINITE TRANSFORMATIONS AND SYMMETRY": "التحويلات المنتهية والتناظر",
   "FOUR TYPED ACTION FAMILIES": "عائلات الإجراءات الأربع محددة الأنواع",
-  "Fixing the family and active pole turns the source-to-target slice into a unary transformation. Those transformations compose into routes; the 560 coordinates are their atomic graph records, not the routes themselves.":
+  "Fix the family and the active pole and the source-to-target slice becomes a unary transformation. Such transformations compose into routes, while the 560 coordinates are the atomic records of their graphs — the routes are something else.":
     "يحوّل تثبيت العائلة والقطب النشط شريحة المصدر إلى الهدف إلى تحويل أحادي. وتتركب هذه التحويلات في مسارات؛ أما الإحداثيات الـ560 فهي سجلاتها البيانية الذرية وليست المسارات نفسها.",
   "For a declared map φ: Q_n → Q_m and every tested family F, the following square must commute:":
     "بالنسبة إلى تطبيق معلن φ: Q_n → Q_m ولكل عائلة مختبرة F، يجب أن يكون المربع الآتي تبادليًا:",

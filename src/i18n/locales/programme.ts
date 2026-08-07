@@ -127,7 +127,7 @@ export const programmeRu: TranslationDictionary = {
     "Как далеко достаёт каждая проверка",
   "How to use it against us":
     "Как проверить нас по этому документу",
-  "Implemented, not planned. This site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if any rendered string is missing a translation. It is a website rather than a product deployment, and that is the whole of the claim.":
+  "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
     "Уже сделано, а не в планах. Сайт работает на английском, русском, китайском и арабском, с правосторонней вёрсткой; если хоть одна строка осталась без перевода, сборка падает. Это сайт, а не продукт в эксплуатации — больше мы ничего и не говорим.",
   "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
     "Открыть операционную компанию и перевезти рабочую базу основателя в Абу-Даби.",
@@ -161,7 +161,7 @@ export const programmeRu: TranslationDictionary = {
     "Никто со стороны. Все повторы, все выкладки и все опубликованные подсчёты сделала та же сторона, которой выгодно, чтобы они оказались верны. Так честно выглядит наша доказательная база на сегодня.",
   "None":
     "Нет",
-  "None of the three. Not one signed, not one verbal, not one in negotiation.":
+  "None of the three. Nothing signed, nothing verbal, nothing in negotiation.":
     "Ни одного из трёх — ни подписанного, ни устного, ни в переговорах.",
   "None. Every check published on this site was run by the project on its own work. This is the single largest gap in the dossier, and the second milestone below exists only to close it.":
     "Нет. Всё, что проверено на этом сайте, проверил сам проект и на своей же работе. Это самый крупный пробел в досье, и второе обязательство ниже придумано, только чтобы его закрыть.",
@@ -255,7 +255,7 @@ export const programmeRu: TranslationDictionary = {
     "Отрицательные пункты не задвинуты вниз. Досье, где сначала идут три сильные стороны, а шесть провалов уходят в сноску, рассчитано на невнимательного читателя. Это — на внимательного.",
   "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.":
     "Дальше нужны компания, двое технических сотрудников, партнёры, готовые дать свои данные, и рецензенты, которым интересно сломать математику. Ниже — что будет сделано за первые двенадцать месяцев и по чему будет видно, что пункт провален.",
-  "The published replays were executed on a standard CPython 3.12.13 interpreter, not on specialised hardware, because a replay is a finite enumeration rather than an inference pass.":
+  "The published replays ran on a standard CPython 3.12.13 interpreter, with no specialised hardware anywhere in the loop, because a replay enumerates a finite set instead of making an inference pass.":
     "Опубликованные повторы шли на обычном интерпретаторе CPython 3.12.13, без специального железа: повтор — это конечный перебор, а не проход вывода.",
   "The re-derivation is carried out by the project, or is carried out externally and then not published because it went badly.":
     "Выкладки сделал сам проект — или их сделали снаружи, но не опубликовали, потому что вышло плохо.",
@@ -279,7 +279,7 @@ export const programmeRu: TranslationDictionary = {
     "Так устроен текущий релиз по его же самопроверкам. Это не сертификат по хранению данных и не аудит безопасности — ни того, ни другого никто не делал.",
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
     "Страница написана, чтобы первый разговор начинался с открытых вопросов, а не с уже закрытых. Двенадцать пунктов оценки, шесть отрицательных. Двенадцать месяцев обязательств, у каждого — условие провала. Шесть вопросов, на которых нас будут дожимать, с ответами на сегодня, а не с теми, какие нам хотелось бы дать.",
-  "This site is delivered in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website, not a deployment, and that is the whole claim.":
+  "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
     "Сайт идёт на арабском с правосторонней вёрсткой, и если хоть одна строка осталась без перевода, сборка падает. Это сайт, а не продукт в эксплуатации, — больше мы ничего и не говорим.",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
     "Три пункта закрыты, три пусты, остальные наполовину или не раскрыты. Так честно выглядит исследовательский проект на стадии pre-seed. Любая другая подача стоила бы нам первого часа первой встречи.",
@@ -448,7 +448,7 @@ export const programmeZh: TranslationDictionary = {
     "每一类核查能推到多远",
   "How to use it against us":
     "如何用它来对付我们",
-  "Implemented, not planned. This site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if any rendered string is missing a translation. It is a website rather than a product deployment, and that is the whole of the claim.":
+  "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
     "已经实现，而不是列入计划。本站以英语、俄语、汉语和阿拉伯语运行，并采用从右至左的版式；只要有一条被渲染的字符串缺少译文，测试就会让构建失败。这是一个网站，而不是产品部署，而这也就是全部的主张。",
   "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
     "注册运营公司，并把创始人的工作基地迁至阿布扎比。",
@@ -482,7 +482,7 @@ export const programmeZh: TranslationDictionary = {
     "项目之外无人核实。每一次重放、每一次证明的重新推导、每一个已发布的计数，都出自同一方之手，而这一方正是这些结果为真时的受益者。这就是对今天证据基础的如实描述。",
   "None":
     "无",
-  "None of the three. Not one signed, not one verbal, not one in negotiation.":
+  "None of the three. Nothing signed, nothing verbal, nothing in negotiation.":
     "三者一个也没有。没有已签署的，没有口头的，也没有在谈的。",
   "None. Every check published on this site was run by the project on its own work. This is the single largest gap in the dossier, and the second milestone below exists only to close it.":
     "没有。本站发布的每一项检查，都是本项目对自己的工作所做的。这是整份档案中最大的缺口，下面第二项承诺的存在就只为堵上它。",
@@ -576,7 +576,7 @@ export const programmeZh: TranslationDictionary = {
     "否定的条目并没有被放到最后。一份把三项长处放在前面、把六处缺失塞进脚注的档案，是一份并不指望被仔细阅读的档案；而这一份指望。",
   "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.":
     "下一阶段需要一个法律实体、两名技术员工、愿意带来自有数据的评估合作方，以及有兴趣攻击这套数学的审阅者。下面是头十二个月里会被建成的东西，每一项都附有能显示该承诺未被兑现的那个观察。",
-  "The published replays were executed on a standard CPython 3.12.13 interpreter, not on specialised hardware, because a replay is a finite enumeration rather than an inference pass.":
+  "The published replays ran on a standard CPython 3.12.13 interpreter, with no specialised hardware anywhere in the loop, because a replay enumerates a finite set instead of making an inference pass.":
     "已发布的重放是在标准的 CPython 3.12.13 解释器上执行的，而不是在专用硬件上，因为一次重放是有限的枚举，而不是一次推理过程。",
   "The re-derivation is carried out by the project, or is carried out externally and then not published because it went badly.":
     "重新推导由本项目自己完成；或者由外部完成，却因为结果不好而没有发布。",
@@ -600,7 +600,7 @@ export const programmeZh: TranslationDictionary = {
     "这是当前版本按其自检所具有的性质，既不是数据驻留认证，也不是安全审计。这两样都没有人做过。",
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
     "本页的存在，是为了让第一次交谈从开放的问题开始，而不是从已经封闭的问题开始。十二条评估条目，其中六条为否定。十二个月的承诺，每一项都带有能显示其未兑现的那个观察。以及我们预计会被追问的六个问题，答案是它们今天的样子，而不是我们希望的样子。",
-  "This site is delivered in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website, not a deployment, and that is the whole claim.":
+  "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
     "本站以从右至左的版式交付阿拉伯语版本，并且只要有一条被渲染的字符串缺少译文，构建就会失败。这是一个网站，不是一次部署，而这就是全部的主张。",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
     "三条已确立，三条完全缺失，其余为部分或未披露。一个种子前的研究项目如实呈现出来就是这个分布；换成别的呈现方式，无非是白白搭上第一次会面的头一个小时。",
@@ -769,7 +769,7 @@ export const programmeAr: TranslationDictionary = {
     "إلى أي مدى يصل كل نوع من الفحص",
   "How to use it against us":
     "كيف تستعمله ضدّنا",
-  "Implemented, not planned. This site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if any rendered string is missing a translation. It is a website rather than a product deployment, and that is the whole of the claim.":
+  "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
     "منجَزٌ لا مخطَّط له. يعمل هذا الموقع بالإنجليزية والروسية والصينية والعربية بتخطيطٍ من اليمين إلى اليسار، ويُسقط اختبارٌ عمليةَ البناء إذا خلت أي سلسلة معروضة من ترجمتها. وهو موقعٌ لا نشرُ منتج، وهذا كل ما يُدَّعى.",
   "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
     "تأسيس الشركة العاملة ونقل قاعدة عمل المؤسِّس إلى أبوظبي.",
@@ -803,7 +803,7 @@ export const programmeAr: TranslationDictionary = {
     "لا أحد من خارج المشروع. فكل إعادة تشغيل، وكل إعادة اشتقاق لبرهان، وكل عدد منشور، أنتجه الطرف نفسه الذي يستفيد من صحّتها. وهذا هو الوصف الأمين لقاعدة الأدلّة اليوم.",
   "None":
     "لا شيء",
-  "None of the three. Not one signed, not one verbal, not one in negotiation.":
+  "None of the three. Nothing signed, nothing verbal, nothing in negotiation.":
     "لا واحدٌ من الثلاثة. لا موقَّع ولا شفهي ولا قيد التفاوض.",
   "None. Every check published on this site was run by the project on its own work. This is the single largest gap in the dossier, and the second milestone below exists only to close it.":
     "لا شيء. فكل فحص منشور في هذا الموقع أجراه المشروع على عمله هو. وهذه أكبر ثغرة في الملف، ولم يوضع الالتزام الثاني أدناه إلّا لسدّها.",
@@ -897,7 +897,7 @@ export const programmeAr: TranslationDictionary = {
     "البنود السلبية ليست في الأسفل. فالملفّ الذي يقدّم مواطن قوّته الثلاث ويخبّئ غياباته الستّ في حاشية ملفٌّ لا يتوقّع أن يُقرأ بعناية؛ وهذا الملف يتوقّع ذلك.",
   "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.":
     "تحتاج المرحلة التالية إلى كيان قانوني، وموظَّفَين تقنيَّين، وشركاء تقييم مستعدّين لإحضار بياناتهم، ومراجعين يهمّهم مهاجمة الرياضيات. وفي ما يلي ما سيُبنى في الأشهر الاثني عشر الأولى، مع الملاحظة التي تُظهر إخفاق كل التزام.",
-  "The published replays were executed on a standard CPython 3.12.13 interpreter, not on specialised hardware, because a replay is a finite enumeration rather than an inference pass.":
+  "The published replays ran on a standard CPython 3.12.13 interpreter, with no specialised hardware anywhere in the loop, because a replay enumerates a finite set instead of making an inference pass.":
     "نُفِّذت إعادات التشغيل المنشورة على مفسِّر CPython 3.12.13 قياسي لا على عتادٍ متخصّص، لأنّ إعادة التشغيل إحصاءٌ منتهٍ لا تمريرةُ استدلال.",
   "The re-derivation is carried out by the project, or is carried out externally and then not published because it went badly.":
     "أن يُجري المشروعُ إعادةَ الاشتقاق بنفسه، أو أن تُجرى من الخارج ثم لا تُنشر لأنّها جاءت سيّئة.",
@@ -921,7 +921,7 @@ export const programmeAr: TranslationDictionary = {
     "هذه خاصية للإصدار الحالي بحسب فحوصه الذاتية، لا شهادةَ إقامةِ بيانات ولا مراجعةَ أمن. ولم يُجرِ أحدٌ أياً منهما.",
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
     "وُجدت هذه الصفحة كي يبدأ الحديث الأول من الأسئلة المفتوحة لا من المغلقة. اثنا عشر بنداً للتقييم، ستّة منها سلبية. واثنا عشر شهراً من الالتزامات، لكلٍّ منها الملاحظة التي تُظهر إخفاقه. وستّة أسئلة نتوقّع أن نُساءل عنها، بأجوبتها كما هي اليوم لا كما نودّ أن تكون.",
-  "This site is delivered in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website, not a deployment, and that is the whole claim.":
+  "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
     "يُسلَّم هذا الموقع بالعربية بتخطيطٍ من اليمين إلى اليسار، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. وهو موقعٌ لا نشرٌ، وهذا هو الادّعاء كلّه.",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
     "ثلاثة بنود ثابتة، وثلاثة غائبة تماماً، والباقي جزئي أو غير مُفصَح عنه. وهكذا يبدو مشروعٌ بحثيّ ما قبل التأسيس إذا صُوِّر بصدق؛ وأي عرضٍ آخر لن يكلّف إلّا الساعة الأولى من الاجتماع الأول.",

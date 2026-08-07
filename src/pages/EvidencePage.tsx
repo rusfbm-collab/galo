@@ -97,7 +97,7 @@ export function EvidencePage() {
             <article>
               <span>{t("Fresh FULL")}</span>
               <strong>{releaseEvidence.freshReplay.full}</strong>
-              <p>{t("The 1,366/1,366 FULL result is a stored release receipt, not a fresh replay result.")}</p>
+              <p>{t("The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.")}</p>
             </article>
           </div>
         </div>
@@ -125,7 +125,7 @@ export function EvidencePage() {
           <div className="section-heading section-heading--light">
             <div>
               <p className="eyebrow">{t("CURRENT V4 SELECTOR")}</p>
-              <h2>{t("A closed deterministic selector, not a learned reasoner.")}</h2>
+              <h2>{t("A closed deterministic selector. Nothing about it was learned.")}</h2>
               <p className="section-heading__text">
                 {t(
                   "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.",

@@ -228,7 +228,7 @@ export const comparisonRu: TranslationDictionary = {
     "Ядро — конечная алгебра с доказанной структурой, а текущая среда исполнения — её ограниченный срез. Больше ли вся архитектура, чем движок правил, решает целевой контур модели мира, который специфицирован и не реализован.",
   "The law is fixed; the orientation decides which role picks the row.":
     "Закон зафиксирован; ориентация решает, какая роль выбирает строку.",
-  "The left column lists things the GALO kernel cannot do at all. The right column lists properties, not results: they describe what can be asked of the layer, not how well it performs on any task.":
+  "The left column lists what the GALO kernel cannot do at all. The right column lists properties rather than results: they say what the layer can be asked for, and say nothing about how well it does any task.":
     "В левом столбце перечислено то, чего ядро GALO не умеет вовсе. В правом — свойства, а не результаты: они описывают, что можно спросить со слоя, а не насколько хорошо он справляется с какой-либо задачей.",
   "The left tree groups the first two operands and evaluates to P2. The right tree groups the last two operands and evaluates to P1. The operands and their order are identical in both.":
     "Левое дерево группирует первые два операнда и вычисляется в P2. Правое группирует последние два и вычисляется в P1. Операнды и их порядок в обоих одинаковы.",
@@ -569,7 +569,7 @@ export const comparisonZh: TranslationDictionary = {
   "The kernel is a finite algebra with proved structure, and the current runtime is a bounded slice of it. Whether the whole architecture amounts to more than a rule engine is decided by the target world-model loop, which is specified and not implemented.":
     "内核是一个具备已证明结构的有限代数，而当前运行时是它的一个受限切片。整套架构是否不止是一个规则引擎，取决于那个目标世界模型闭环，而它只被规格化、尚未实现。",
   "The law is fixed; the orientation decides which role picks the row.": "法则是固定的；方向决定了由哪个角色来挑选行。",
-  "The left column lists things the GALO kernel cannot do at all. The right column lists properties, not results: they describe what can be asked of the layer, not how well it performs on any task.":
+  "The left column lists what the GALO kernel cannot do at all. The right column lists properties rather than results: they say what the layer can be asked for, and say nothing about how well it does any task.":
     "左栏列出的是 GALO 内核完全做不到的事。右栏列出的是性质，而不是成绩：它们描述的是可以向这一层要求什么，而不是它在任何任务上表现得多好。",
   "The left tree groups the first two operands and evaluates to P2. The right tree groups the last two operands and evaluates to P1. The operands and their order are identical in both.":
     "左边那棵树把前两个操作数分为一组，求值得到 P2。右边那棵把后两个分为一组，求值得到 P1。两者的操作数及其顺序完全相同。",
@@ -914,7 +914,7 @@ export const comparisonAr: TranslationDictionary = {
     "النواة جبر منتهٍ ذو بنية مبرهنة، وبيئة التشغيل الحالية شريحة مقيَّدة منه. أما كون البنية كلها أكثر من محرّك قواعد فتقرره حلقة نموذج العالم المستهدفة، وهي مُواصَفة وغير منفَّذة.",
   "The law is fixed; the orientation decides which role picks the row.":
     "القانون ثابت، والاتجاه يقرر أي دور يختار الصف.",
-  "The left column lists things the GALO kernel cannot do at all. The right column lists properties, not results: they describe what can be asked of the layer, not how well it performs on any task.":
+  "The left column lists what the GALO kernel cannot do at all. The right column lists properties rather than results: they say what the layer can be asked for, and say nothing about how well it does any task.":
     "يسرد العمود الأيسر أشياء لا تستطيعها نواة GALO إطلاقًا. ويسرد العمود الأيمن خصائص لا نتائج: فهي تصف ما يمكن مطالبة الطبقة به، لا مدى جودة أدائها في أي مهمة.",
   "The left tree groups the first two operands and evaluates to P2. The right tree groups the last two operands and evaluates to P1. The operands and their order are identical in both.":
     "تجمع الشجرة اليسرى المعاملين الأولين وتُحسب إلى P2. وتجمع اليمنى المعاملين الأخيرين وتُحسب إلى P1. والمعاملات وترتيبها متطابقة في كلتيهما.",

@@ -138,7 +138,7 @@ export const theoryAr: TranslationDictionary = {
   "SOURCE, ACTIVE, LEFT, AND RIGHT": "المصدر والقطب النشط وLEFT وRIGHT",
   "The operation is fixed; the semantic roles decide where its inputs are placed.":
     "العملية ثابتة، والأدوار الدلالية هي التي تحدد موضع مُدخليها.",
-  "Source means the state being transformed. Active means the pole applied to it. LEFT puts source on the raw left; RIGHT puts active on the raw left. The names describe the interface roles, not standard algebraic translation terminology.":
+  "Source means the state being transformed. Active means the pole applied to it. LEFT puts source on the raw left; RIGHT puts active there instead. These names describe interface roles and borrow nothing from the standard vocabulary of algebraic translations.":
     "تعني حالة المصدر الحالة التي يجري تحويلها، ويعني القطب النشط القطب المطبَّق عليها. يضع LEFT حالة المصدر في موضع المُعامل الأيسر الخام، ويضع RIGHT القطب النشط في ذلك الموضع. يصف الاسمان دوري الواجهة، لا المصطلحين القياسيين للترجمات الجبرية.",
   "The four typed action families at source P0 and active P2 on L3":
     "عائلات الإجراءات الأربع محددة النوع عند حالة المصدر P0 والقطب النشط P2 في L3",
@@ -177,7 +177,7 @@ export const theoryAr: TranslationDictionary = {
     "يرى STAR قطبًا غير صفري في موضع المُعامل الأيسر الخام، ولذلك تتبع هذه الخلية الجمع الدوري بترديد {level}.",
   "The table address is row P{left}, column P{right}; that cell contains P{target}.":
     "عنوان الجدول هو الصف P{left} والعمود P{right}؛ وتحتوي تلك الخلية P{target}.",
-  "The complete typed address is {cellId}. The target is stored as a result, not hidden in the ID.":
+  "The complete typed address is {cellId}. The target is stored as its own result and never hidden inside the ID.":
     "العنوان الكامل المحدد النوع هو {cellId}. ويُخزَّن الهدف بوصفه نتيجة، ولا يُخفى داخل المعرّف.",
   "Restore the L3 reset example": "أعِد مثال إعادة الضبط عند L3 إلى حالته الأصلية",
   "Two-channel witness": "شاهد ثنائي القناة",
@@ -286,7 +286,7 @@ export const theoryAr: TranslationDictionary = {
   "The mathematics supplies exact finite structure. The current V4 release uses only a bounded deterministic execution slice. The wider World Atlas and persistent learning loop remain an architectural target.":
     "توفر الرياضيات بنية منتهية دقيقة. ولا يستخدم إصدار V4 الحالي إلا شريحة تنفيذ حتمية ومحدودة. أما World Atlas الأوسع وحلقة التعلّم المستديم فيظلان هدفًا معماريًا.",
   "Finite state alphabet": "أبجدية حالات منتهية",
-  "L1–L7 provide named finite carriers. A pole is a local state label, not a word meaning or neuron.":
+  "L1–L7 provide named finite carriers. A pole is a local state label — no word meaning attaches to it, and no neuron.":
     "توفر L1–L7 حوامل منتهية مسمّاة. والقطب تسمية حالة محلية، لا معنى كلمة ولا عصبون.",
   "Frozen transition laws": "قوانين انتقال مجمّدة",
   "PLUS and STAR turn every ordered pair of poles into one exact target pole.":
@@ -452,7 +452,7 @@ export const theoryAr: TranslationDictionary = {
   Receipt: "إيصال تنفيذ",
   "A machine-readable record of what a bounded execution checked and did.":
     "سجل قابل للقراءة الآلية لما فحصه التنفيذ المحدود وما فعله.",
-  "A receipt is an operational witness, not a mathematical theorem or real-world truth certificate.":
+  "A receipt is an operational witness. It proves no theorem and certifies nothing about the world.":
     "إيصال التنفيذ شاهد تشغيلي، لا مبرهنة رياضية ولا شهادة حقيقة عن العالم الواقعي.",
   Boundary: "حدّ",
   "An explicit stop: the available evidence does not authorize the stronger conclusion.":
@@ -521,7 +521,7 @@ export const theoryAr: TranslationDictionary = {
     "قد تكون الواصفة غير قابلة للتنفيذ، وهي ليست مفهومًا متعلَّمًا ولا فعلًا مكتملًا.",
   "The parity-filtered candidates that the deterministic selector is allowed to order.":
     "المرشحون المرشَّحون وفق الزوجية أو الفردية الذين يجوز للمحدِّد الحتمي ترتيبهم.",
-  "The order is hash-derived, not a semantic judgment, probability, or learned preference.":
+  "The order comes out of a hash. No semantic judgment, probability, or learned preference goes into it.":
     "يُشتق الترتيب من قيمة التجزئة، وليس حكمًا دلاليًا ولا احتمالًا ولا تفضيلًا متعلَّمًا.",
   "A runtime capability bound to one admitted candidate and one bounded use.":
     "قدرة في وقت التشغيل مرتبطة بمرشح واحد مقبول وباستخدام واحد محدود.",
@@ -573,7 +573,7 @@ export const theoryAr: TranslationDictionary = {
   "Every object reachable from x under the declared group action.": "كل كائن يمكن بلوغه من x تحت فعل الزمرة المعلن.",
   "Every group element that leaves x fixed.": "كل عنصر من الزمرة يثبّت x.",
   "The objects that the selected transformation g does not move.": "الكائنات التي لا يحركها التحويل المختار g.",
-  "The set of orbits, not ordinary numeric division.": "مجموعة المدارات، لا قسمة عددية عادية.",
+  "The set of orbits. Ordinary numeric division has nothing to do with it.": "مجموعة المدارات، لا قسمة عددية عادية.",
 
   "COMPLETE NONEXISTENCE PROOF · n≥2": "برهان كامل لعدم الوجود · n≥2",
   "No other pole can secretly be a two-sided identity.":
@@ -649,7 +649,7 @@ export const theoryAr: TranslationDictionary = {
     "إذا كان التطبيق حقنيًا، وجب أن تحتفظ صورة P1 برتبتها الدورية الدقيقة n.",
   "A cyclic group of order m contains an element of order n exactly when n divides m.":
     "تحتوي زمرة دورية رتبتها m عنصرًا رتبته n إذا وفقط إذا كانت n تقسم m.",
-  "Therefore the failure is structural, not merely a defect of the same-index candidate.":
+  "The failure is therefore structural. It is not that the same-index candidate happened to fall short.":
     "لذلك فالفشل بنيوي، وليس مجرد عيب في التطبيق المرشح المحافظ على الفهرس.",
   "Conversely, when n divides m, scaled maps h(P_i)=P_((u·m/n)i mod m) for unit u modulo n provide the nonzero embeddings; the archived replay selects one canonical scaling.":
     "وبالعكس، عندما تقسم n العدد m، تعطي التطبيقات المحجَّمة h(P_i)=P_((u·m/n)i mod m)، حيث u وحدة بترديد n، التضمينات غير الصفرية؛ وتختار إعادة التشغيل المؤرشفة تحجيمًا معياريًا واحدًا.",
@@ -707,7 +707,7 @@ export const theoryAr: TranslationDictionary = {
     "لا تبدأ حلقة التعلّم المقصودة إلا بعد وجود عقود أقوى.",
   "Every stage below is architectural intent. It must not be read as a current runtime capability, trained system, external result, or authorized learning claim.":
     "كل مرحلة أدناه مقصد معماري. ويجب ألا تُفهم بوصفها قدرة حالية في وقت التشغيل، أو نظامًا مدرَّبًا، أو نتيجة خارجية، أو ادعاءً مفوَّضًا بالتعلّم.",
-  "Accept externally grounded evidence with source custody, not only a bundled finite sample.":
+  "Accept externally grounded evidence with source custody, and stop relying on a bundled finite sample alone.":
     "اقبل دليلًا مستندًا إلى مرجع خارجي مع حفظ عهدة المصدر، لا مجرد عينة منتهية مضمَّنة.",
   "Typed domain map": "تطبيق مجال محدد النوع",
   "Declare how domain objects and alternatives map into local finite coordinates without assigning universal pole meanings.":
@@ -778,7 +778,7 @@ export const theoryAr: TranslationDictionary = {
     "الحامل ليس مجموعة كل ما يعرفه الوكيل؛ بل هو مجموعة منتهية واحدة من الحالات المحلية.",
   "L3 row and column headers: P0 | P1 | P2.": "عناوين صفوف وأعمدة L3 هي: P0 | P1 | P2.",
   "|Q_3|=3.": "|Q_3|=3.",
-  "A pole is one named seat on the carousel, not the whole carousel and not the passenger sitting there.":
+  "A pole is one named seat on the carousel — neither the carousel itself nor whoever is sitting in it.":
     "القطب مقعد واحد مسمّى على الدوّامة، وليس الدوّامة كلها ولا الراكب الجالس عليه.",
   "P_i∈Q_n with 0≤i<n; calculation identifies P_i with residue i modulo n.":
     "P_i∈Q_n مع 0≤i<n؛ وفي الحساب يمثّل P_i فئة الباقي i بترديد n.",
@@ -788,7 +788,7 @@ export const theoryAr: TranslationDictionary = {
     "المقابلة بين التسميات وفئات البواقي تقابلية؛ لذلك لكل قطب فهرس حسابي واحد، وكل فهرس مسموح يسمّي قطبًا واحدًا.",
   "P2 does not universally mean twice as much, better, later, or more intelligent than P1.":
     "لا يعني P2 على نحو عالمي مقدارًا يساوي ضعفي P1، ولا أنه أفضل أو أحدث أو أكثر ذكاءً منه.",
-  "L3: row P2 and column P2 are addresses labelled by P2, not measured quantities.":
+  "L3: row P2 and column P2 are addresses labelled by P2. Nothing there was measured.":
     "في L3، الصف P2 والعمود P2 عنوانان يحملان التسمية P2، وليسا كميتين مقاستين.",
   "P_(i+kn)=P_i for every integer k.": "P_(i+kn)=P_i لكل عدد صحيح k.",
   "Changing level is like choosing a dial with a different number of marked positions.":
@@ -799,7 +799,7 @@ export const theoryAr: TranslationDictionary = {
     "يحتوي L2 على {P0,P1}، ويحتوي L3 على {P0,P1,P2}. يوجد P2 محليًا في L3، ولا يوجد في L2.",
   "The subscript n fixes both the number of labels and the modulus used by every operation at that level.":
     "يثبّت الرمز السفلي n عدد التسميات ومعيار الترديد الذي تستخدمه كل عملية في ذلك المستوى.",
-  "A larger level gives more distinctions, not automatically more knowledge, accuracy, or intelligence.":
+  "A larger level buys more distinctions. Knowledge, accuracy, and intelligence do not follow from it.":
     "يتيح المستوى الأكبر تمييزات أكثر، لكنه لا يعني تلقائيًا معرفة أو دقة أو ذكاءً أكبر.",
   "L2 laws have 2×2 tables; L3 laws have 3×3 tables.": "لقانوني L2 جدولان 2×2، ولقانوني L3 جدولان 3×3.",
   "|Q_n|=n and |Q_n×Q_n|=n².": "|Q_n|=n و|Q_n×Q_n|=n².",
@@ -846,7 +846,7 @@ export const theoryAr: TranslationDictionary = {
     "في L3: ابدأ عند P1، وتحرك خطوتين، ثم التف حول القرص: P1⊕P2=P0.",
   "Addition of residues is closed, associative, and commutative; P0 is the identity and P_(n−i) is the inverse of P_i.":
     "جمع فئات البواقي مغلق وتجميعي وتبديلي؛ وP0 هو العنصر المحايد، وP_(n−i) هو معكوس P_i.",
-  "PLUS is a finite cyclic law on labels, not ordinary addition of domain meanings or real quantities.":
+  "PLUS is a finite cyclic law on labels. It adds neither domain meanings nor real quantities.":
     "PLUS قانون دوري منتهٍ على التسميات، وليست جمعًا عاديًا لمعاني المجال أو لكميات حقيقية.",
   "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.":
     "في PLUS عند L3: الصف P1 والعمود P2 يعطيان P0؛ والصف P2 والعمود P1 يعطيان قيمة الخلية نفسها.",
@@ -1049,7 +1049,7 @@ export const theoryAr: TranslationDictionary = {
     "في L3: ‏U(3)={1,2}؛ الزر 1 لا يغيّر شيئًا، والزر 2 يبدّل P1,P2. ويعيد ضغط الزر 2 مرتين كل قطب إلى موضعه.",
   "Multiplying unit indices corresponds exactly to composing their multiplication permutations.":
     "يطابق ضرب فهارس الوحدات تمامًا تركيب تبديلاتها الناتجة من الضرب.",
-  "One chosen symmetry is a group element, not the whole acting group and not an orbit.":
+  "One chosen symmetry is a group element — neither the whole acting group nor an orbit.":
     "التناظر المختار الواحد عنصر من الزمرة، وليس الزمرة الفاعلة كلها ولا مدارًا.",
   "L3 action rows: u=1 maps 0,1,2 to 0,1,2; u=2 maps them to 0,2,1.":
     "صفا فعل L3: ترسل u=1 القيم 0,1,2 إلى 0,1,2؛ وترسل u=2 القيم نفسها إلى 0,2,1.",
@@ -1279,7 +1279,7 @@ export const theoryAr: TranslationDictionary = {
     "في L2 تستخدم PLUS(P1,P1) مُدخلين، بينما يسمّي الرمز P0 عنصرًا ثابتًا واحدًا ولا يقبل أي مُدخل.",
   "Arity counts argument places syntactically; a named constant is exactly a nullary operation.":
     "تعدّ الأرية مواضع الوسائط في الصياغة؛ والثابت المسمّى هو بالضبط عملية صفرية الأرية.",
-  "The tuple (2,2,0) lists arities, not level sizes, tensor dimensions, or learned layer widths.":
+  "The tuple (2,2,0) lists arities. Level sizes, tensor dimensions, and learned layer widths are all something else.":
     "تسرد الثلاثية (2,2,0) أريات العمليات، لا أحجام المستويات ولا أبعاد الموترات ولا عروض الطبقات المتعلَّمة.",
   "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.": "سجل العمليات: PLUS | 2؛ STAR | 2؛ P0 | 0.",
   "A_n=(Q_n,PLUS_n,STAR_n,P0).": "A_n=(Q_n,PLUS_n,STAR_n,P0).",
@@ -1378,7 +1378,7 @@ export const theoryAr: TranslationDictionary = {
   "L_a is row a; R_a is column a.": "L_a هو الصف a؛ وR_a هو العمود a.",
   "STAR_LEFT(_,a)=R_a and STAR_RIGHT(_,a)=L_a.": "STAR_LEFT(_,a)=R_a وSTAR_RIGHT(_,a)=L_a.",
   "Image of a function": "صورة الدالة",
-  "The image is the set of destinations actually reached, not every destination that was available in principle.":
+  "The image is the set of destinations actually reached. Everything merely available in principle stays out of it.":
     "الصورة مجموعة الوجهات التي بُلِغت فعلًا، لا كل وجهة كانت متاحة من حيث المبدأ.",
   "Im(f)={f(x)|x∈X}; rank(f)=|Im(f)| for a finite transformation.":
     "Im(f)={f(x)|x∈X}؛ وللتحويل المنتهي rank(f)=|Im(f)|.",
@@ -1426,7 +1426,7 @@ export const theoryAr: TranslationDictionary = {
     "U(3)={1,2} وφ(3)=2؛ أما U(4)={1,3} وتُستبعد الخطوة 2 لأن gcd(2,4)=2.",
   "A residue has a multiplicative inverse modulo n exactly when it is coprime to n.":
     "لفئة باقٍ معكوس ضربي بترديد n بالضبط عندما تكون أولية نسبيًا مع n.",
-  "U(n) is a multiplicative group of indices, not the carrier Q_n under PLUS.":
+  "U(n) is a multiplicative group of indices. The carrier Q_n under PLUS is a different object.":
     "U(n) زمرة ضرب لفهارس، وليست الحامل Q_n تحت PLUS.",
   "Unit ledger L1–L7 has sizes 1,1,2,2,4,2,6.": "أحجام زمرة الوحدات في سجل L1–L7 هي 1,1,2,2,4,2,6.",
   "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).": "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).",

@@ -36,7 +36,7 @@ export function LearningGateFigure() {
         <strong>{t("Four open conditions stand between today and any persistent learning.")}</strong>
         <span className="galo-figure__note">
           {t(
-            "Each row is taken from the published boundary register with the status it actually carries. None of them is closed today, which is why persistent policy learning is published as not started rather than as coming soon.",
+            "Every row comes from the published boundary register with the status it really has. Not one is closed today. That is the reason persistent policy learning appears as not started, and not as coming soon.",
           )}
         </span>
       </figcaption>

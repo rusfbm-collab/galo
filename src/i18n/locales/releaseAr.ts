@@ -10,7 +10,7 @@ export const releaseAr: TranslationDictionary = {
     "يوجد في V4 الحالية 880 واصفًا قابلًا للتنفيذ؛ ويكشف كل واحد من نمطي المصدر الثابتين جبهة من 440 مرشّحًا.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "شريحة تنفيذ ثنائية أحادية الخطوة على L2–L7، ذات نمطي مصدر مغلقين وأربعة أنواع من الأفعال القابلة للتنفيذ؛ أما L1 فللضبط فقط.",
-  "A closed deterministic selector, not a learned reasoner.": "مُحدِّد حتمي مغلق، وليس آلية استدلال متعلّمة.",
+  "A closed deterministic selector. Nothing about it was learned.": "مُحدِّد حتمي مغلق، وليس آلية استدلال متعلّمة.",
   "A current trained Atlas is not present.": "لا يوجد Atlas حالي مدرَّب.",
   "A durable trusted manifest head beyond process-local checks.":
     "رأس manifest موثوق ودائم يتجاوز الفحوص المحلية ضمن العملية.",
@@ -109,7 +109,7 @@ export const releaseAr: TranslationDictionary = {
     "أُبقيت إعادات التشغيل المحفوظة والوحدات القديمة للمقارنة. ولا تصبح واجهات API الخاصة بها وتجاربها التاريخية تلقائيًا قدرات لبيئة التشغيل الحالية.",
   "THREE EVIDENCE LAYERS": "ثلاث طبقات للأدلة",
   "Terminal release status preserved with disclosed boundaries": "حُفظت الحالة النهائية للإصدار مع الحدود المعلنة",
-  "The 1,366/1,366 FULL result is a stored release receipt, not a fresh replay result.":
+  "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
     "نتيجة FULL البالغة 1,366/1,366 هي إيصال إصدار محفوظ، وليست نتيجة إعادة تشغيل جديدة.",
   "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
     "نتيجة FULL البالغة 1,366/1,366 دليل إصدار محفوظ؛ ولم يُشغَّل FULL جديد في هذه المراجعة.",
@@ -127,7 +127,7 @@ export const releaseAr: TranslationDictionary = {
     "المجموع الفعلي عدد داخلي لمعرّفات وحدات العمل في الإيصالات. وهو ليس زمنًا منقضيًا، ولا FLOPS، ولا طاقة، ولا وفرًا في التكلفة، ولا تسريعًا، ولا نتيجة سببية، ولا مكسبًا تشغيليًا خارجيًا.",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
     "يفصل الإصدار بوضوح بين الرياضيات وأدلة التوافق وواجهة API القابلة للتنفيذ حاليًا. ولا يُرقّى قول من طبقة إلى أخرى ضمنًا.",
-  "The selector accepts two fixed source patterns, not arbitrary natural-language observations.":
+  "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
     "يقبل المُحدِّد نمطي مصدر ثابتين، لا ملاحظات تعسفية باللغة الطبيعية.",
   "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
     "يتعرف المُحدِّد نمطي مصدر لا غير، ويرشّح كونًا منتهيًا مُثبّتًا بحسب الزوجية، ثم يطبّق دالة تجزئة على الملاحظة ومعرّف المرشح والرتبة التعدادية لإنتاج ترتيب حتمي. ولا تؤثر حالة Atlas في النتيجة.",

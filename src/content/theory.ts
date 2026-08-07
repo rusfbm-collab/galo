@@ -59,7 +59,7 @@ export const theoryObjectClasses = [
     layer: "CURRENT V4",
     exact: "440 candidates for one accepted pattern",
     meaning: "The parity-filtered candidates that the deterministic selector is allowed to order.",
-    boundary: "The order is hash-derived, not a semantic judgment, probability, or learned preference.",
+    boundary: "The order comes out of a hash. No semantic judgment, probability, or learned preference goes into it.",
   },
   {
     object: "One-shot handle",
@@ -118,7 +118,7 @@ export const theorySymbolLegend = [
     reading: "fixed points of g",
     meaning: "The objects that the selected transformation g does not move.",
   },
-  { symbol: "X/G", reading: "X modulo the action of G", meaning: "The set of orbits, not ordinary numeric division." },
+  { symbol: "X/G", reading: "X modulo the action of G", meaning: "The set of orbits. Ordinary numeric division has nothing to do with it." },
   { symbol: "x∈X", reading: "x belongs to X", meaning: "The object x is an element of the set X." },
   { symbol: "A⇒B", reading: "A implies B", meaning: "Whenever A is true, B must also be true." },
   {
@@ -240,7 +240,7 @@ export const targetArchitectureFlow = [
   {
     title: "Authenticated observation",
     status: "TARGET · NOT PROVEN",
-    detail: "Accept externally grounded evidence with source custody, not only a bundled finite sample.",
+    detail: "Accept externally grounded evidence with source custody, and stop relying on a bundled finite sample alone.",
   },
   {
     title: "Typed domain map",
@@ -286,7 +286,7 @@ export const theoryArchitectureLayers = [
     number: "01",
     title: "Finite state alphabet",
     status: "FORMAL",
-    detail: "L1–L7 provide named finite carriers. A pole is a local state label, not a word meaning or neuron.",
+    detail: "L1–L7 provide named finite carriers. A pole is a local state label — no word meaning attaches to it, and no neuron.",
   },
   {
     number: "02",
@@ -390,13 +390,13 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
   conceptLesson({
     term: "Pole",
     chapter: "theory",
-    analogy: "A pole is one named seat on the carousel, not the whole carousel and not the passenger sitting there.",
+    analogy: "A pole is one named seat on the carousel — neither the carousel itself nor whoever is sitting in it.",
     exactDefinition: "P_i∈Q_n with 0≤i<n; calculation identifies P_i with residue i modulo n.",
     workedExample: "L3: P2 is the label with calculation index 2; one further PLUS step reaches P0.",
     whyTrue:
       "The label-to-residue correspondence is a bijection, so every pole has one calculation index and every allowed index names one pole.",
     commonMistake: "P2 does not universally mean twice as much, better, later, or more intelligent than P1.",
-    tableCheck: "L3: row P2 and column P2 are addresses labelled by P2, not measured quantities.",
+    tableCheck: "L3: row P2 and column P2 are addresses labelled by P2. Nothing there was measured.",
     formulaCheck: "P_(i+kn)=P_i for every integer k.",
   }),
   conceptLesson({
@@ -407,7 +407,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     workedExample: "L2 has {P0,P1}; L3 has {P0,P1,P2}. P2 exists locally at L3 but not at L2.",
     whyTrue: "The subscript n fixes both the number of labels and the modulus used by every operation at that level.",
     commonMistake:
-      "A larger level gives more distinctions, not automatically more knowledge, accuracy, or intelligence.",
+      "A larger level buys more distinctions. Knowledge, accuracy, and intelligence do not follow from it.",
     tableCheck: "L2 laws have 2×2 tables; L3 laws have 3×3 tables.",
     formulaCheck: "|Q_n|=n and |Q_n×Q_n|=n².",
   }),
@@ -455,7 +455,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     whyTrue:
       "Addition of residues is closed, associative, and commutative; P0 is the identity and P_(n−i) is the inverse of P_i.",
     commonMistake:
-      "PLUS is a finite cyclic law on labels, not ordinary addition of domain meanings or real quantities.",
+      "PLUS is a finite cyclic law on labels. It adds neither domain meanings nor real quantities.",
     tableCheck: "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.",
     formulaCheck: "(1+2) mod 3=0=(2+1) mod 3.",
   }),
@@ -661,7 +661,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     workedExample:
       "L3: U(3)={1,2}; button 1 does nothing and button 2 swaps P1,P2. Pressing button 2 twice returns every pole.",
     whyTrue: "Multiplying unit indices corresponds exactly to composing their multiplication permutations.",
-    commonMistake: "One chosen symmetry is a group element, not the whole acting group and not an orbit.",
+    commonMistake: "One chosen symmetry is a group element — neither the whole acting group nor an orbit.",
     tableCheck: "L3 action rows: u=1 maps 0,1,2 to 0,1,2; u=2 maps them to 0,2,1.",
     formulaCheck: "σ_2∘σ_2=σ_(4 mod 3)=σ_1=id.",
   }),
@@ -898,7 +898,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     workedExample:
       "At L2, PLUS(P1,P1) uses two inputs, while the symbol P0 names one fixed element and accepts no inputs.",
     whyTrue: "Arity counts argument places syntactically; a named constant is exactly a nullary operation.",
-    commonMistake: "The tuple (2,2,0) lists arities, not level sizes, tensor dimensions, or learned layer widths.",
+    commonMistake: "The tuple (2,2,0) lists arities. Level sizes, tensor dimensions, and learned layer widths are all something else.",
     tableCheck: "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.",
     formulaCheck: "A_n=(Q_n,PLUS_n,STAR_n,P0).",
   }),
@@ -993,7 +993,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     term: "Image of a function",
     chapter: "mathematics",
     analogy:
-      "The image is the set of destinations actually reached, not every destination that was available in principle.",
+      "The image is the set of destinations actually reached. Everything merely available in principle stays out of it.",
     exactDefinition: "Im(f)={f(x)|x∈X}; rank(f)=|Im(f)| for a finite transformation.",
     workedExample: "L3 R_P2 has outputs P0,P0,P1, so Im(R_P2)={P0,P1} and rank=2.",
     whyTrue: "List all outputs and remove repetitions; the remaining distinct values are exactly the image.",
@@ -1039,7 +1039,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     exactDefinition: "U(n)={u mod n | gcd(u,n)=1}; |U(n)|=φ(n).",
     workedExample: "U(3)={1,2} and φ(3)=2; U(4)={1,3} while step 2 is excluded because gcd(2,4)=2.",
     whyTrue: "A residue has a multiplicative inverse modulo n exactly when it is coprime to n.",
-    commonMistake: "U(n) is a multiplicative group of indices, not the carrier Q_n under PLUS.",
+    commonMistake: "U(n) is a multiplicative group of indices. The carrier Q_n under PLUS is a different object.",
     tableCheck: "Unit ledger L1–L7 has sizes 1,1,2,2,4,2,6.",
     formulaCheck: "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).",
   }),

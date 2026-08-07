@@ -185,7 +185,7 @@ export function SymmetryPage() {
               <h3>{t("Orbit")}</h3>
               <p>
                 {t(
-                  "All points reachable from one point under the whole acting group. An orbit is a subset, not a new state or a probability class.",
+                  "All the points one point can reach under the whole acting group. An orbit is a subset — neither a new state nor a probability class.",
                 )}
               </p>
               <code dir="ltr">Orb(x)={`{g·x | g∈G}`}</code>
@@ -308,7 +308,7 @@ export function SymmetryPage() {
             <article>
               <span>{t("Aggregate automorphism-map count")}</span>
               <code dir="ltr">Σ_(n=1)^7 |Aut(A_n)| = 1+1+2+2+4+2+6 = {sameLevelAutomorphismCount}</code>
-              <p>{t("Eighteen is a sum over seven local groups, not the order of a global automorphism group.")}</p>
+              <p>{t("Eighteen sums seven local groups. No global automorphism group has that order.")}</p>
             </article>
             <article>
               <span>{t("Fibrewise typed-orbit count")}</span>
@@ -337,7 +337,7 @@ export function SymmetryPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("POINTED AUTOMORPHISMS VS AFFINE TORSOR SYMMETRIES")}
-            title={t("Hol(C_n) belongs to the PLUS torsor, not to STAR automorphisms.")}
+            title={t("Hol(C_n) belongs to the PLUS torsor. STAR automorphisms have nothing to do with it.")}
           />
           <div className="affine-boundary-grid">
             <article>
@@ -353,10 +353,10 @@ export function SymmetryPage() {
             <article>
               <span>{t("Exact STAR failure")}</span>
               <code dir="ltr">T_b(0★0)=b ≠ 2b=T_b(0)★T_b(0), b≠0</code>
-              <p>{t("The inequality holds for every nonzero residue b, not merely in a generic case.")}</p>
+              <p>{t("The inequality holds for every nonzero residue b, and not just in a generic case.")}</p>
             </article>
             <article>
-              <span>{t("Inversion orbits, not physical mirrors")}</span>
+              <span>{t("Inversion orbits, no physical mirrors")}</span>
               <code dir="ltr">
                 δ ↦ −δ · L7:{" "}
                 {inversionOrbits(7)
@@ -394,7 +394,7 @@ export function SymmetryPage() {
               <code dir="ltr">χ_s(k)=exp(2πisk/n), s∈Z_n</code>
               <p>
                 {t(
-                  "All s define characters of C_n; only unit s give faithful labels. In a phase model P0 maps to complex 1, not complex 0.",
+                  "Every s defines a character of C_n, and only the units give faithful labels. In a phase model P0 lands on complex 1; complex 0 is where it never goes.",
                 )}
               </p>
             </article>

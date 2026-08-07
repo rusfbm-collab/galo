@@ -22,7 +22,7 @@ export const audienceRu: TranslationDictionary = {
   "A log line proves an action occurred. It rarely proves that the action was inside a boundary somebody declared beforehand, which is the thing a reviewer actually needs to establish.":
     "Строка журнала доказывает, что действие было. Она почти никогда не доказывает, что оно уложилось в границу, объявленную заранее, — а проверяющему нужно именно это.",
   "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.":
-    "Нетехнический разбор GALO: проблема на языке денег, место объявленного слоя в системе, что работает сегодня, шесть рисков с проверками и путь due diligence, который читатель может пройти без нас.",
+    "Нетехнический разбор GALO: в чём проблема на языке денег, где в системе стоит объявленный слой, что работает сегодня, шесть рисков с проверками и путь due diligence, который читатель пройдёт без нас.",
   "A persistent trusted head, operating-system capability isolation, a fresh full replay on the blocked runtime, arbitrary free-text behaviour, external gain, and persistent policy.":
     "Постоянная доверенная голова манифеста, изоляция возможностей на уровне операционной системы, свежий полный повтор на заблокированной среде исполнения, поведение на произвольном свободном тексте, внешний выигрыш и персистентная политика.",
   "A probability is not something a reviewer can argue with.":
@@ -90,16 +90,16 @@ export const audienceRu: TranslationDictionary = {
   "Define one bounded problem, then have both approaches answer the same reviewer question and compare what each can actually show.":
     "Определите одну ограниченную задачу, а затем дайте обоим подходам ответить на один и тот же вопрос проверяющего и сравните, что каждый реально может показать.",
   "Disputes become unresolvable rather than expensive, which is worse: they end in policy instead of in a fix.":
-    "Споры становятся не дорогими, а неразрешимыми, и это хуже: они заканчиваются регламентом, а не исправлением.",
+    "Споры становятся не дорогими, а неразрешимыми, и это хуже: кончаются они новым регламентом, а не исправленной ошибкой.",
   "EIGHT QUESTIONS, ANSWERED AS THEY STAND":
     "ВОСЕМЬ ВОПРОСОВ — И ОТВЕТЫ НА СЕГОДНЯ",
   "Each answer is followed by the operation that would confirm or break it. If an answer and its check ever disagree, the check wins and the answer is the thing that has to change.":
     "За каждым ответом идёт операция, которая его подтвердит или сломает. Если ответ и проверка когда-нибудь разойдутся, побеждает проверка, а меняться должен ответ.",
   "Each one is a real limit of this site rather than a limit of the underlying idea.":
-    "Каждое из них — реальная граница этого сайта, а не границы самой идеи.",
+    "Каждая из них — граница этого сайта. У самой идеи границы другие.",
   "Each one is published with its own status on the evidence page. Ask for any of them to be demonstrated and expect the answer to match the published status exactly.":
     "Каждая опубликована со своим статусом на странице доказательств. Попросите продемонстрировать любую из них и ожидайте, что ответ в точности совпадёт с опубликованным статусом.",
-  "Each row is taken from the published boundary register with the status it actually carries. None of them is closed today, which is why persistent policy learning is published as not started rather than as coming soon.":
+  "Every row comes from the published boundary register with the status it really has. Not one is closed today. That is the reason persistent policy learning appears as not started, and not as coming soon.":
     "Каждая строка взята из опубликованного реестра границ вместе с её настоящим статусом. Сегодня не закрыта ни одна — потому и написано, что персистентное обучение политики не начато, а не что оно «вот-вот будет».",
   "Each step is something a sceptical reader can do alone, in the stated time, using only what is published. The sixth step is the one that needs a decision from you, because it is the measurement nobody has made yet.":
     "Каждый шаг скептичный читатель делает сам, за указанное время и только по опубликованному. Шестой — единственный, где решать вам, потому что это измерение, которого пока не сделал никто.",
@@ -112,7 +112,7 @@ export const audienceRu: TranslationDictionary = {
   "Every Cayley table, every per-level count, and the 560 oriented typed coordinates.":
     "Каждая таблица Кэли, каждый поуровневый подсчёт и 560 ориентированных типизированных координат.",
   "Every card below describes a cost that organisations already pay and rarely put on a line item, because it arrives as senior time, delay, and disputes that end without resolution.":
-    "Каждая карточка ниже описывает издержку, которую организации уже несут и почти никогда не выносят в отдельную строку бюджета, потому что она приходит как время старших сотрудников, задержки и споры, заканчивающиеся ничем.",
+    "Каждая карточка ниже — про издержку, которую компании уже платят и почти никогда не выносят в отдельную строку бюджета: она приходит временем старших сотрудников, задержками и спорами, которые кончаются ничем.",
   "Every review starts by rebuilding the boundary from memory, and two honest people can rebuild it differently.":
     "Каждая проверка начинается с восстановления границы по памяти, и два честных человека восстановят её по-разному.",
   "Every step below has an expected result, so a disagreement lands on a specific line.":
@@ -156,7 +156,7 @@ export const audienceRu: TranslationDictionary = {
   "For investors":
     "Инвесторам",
   "Four horizontal bars. The longest is recomputed in the page you are reading, then reproducible from the published source, then recorded earlier and republished, and the shortest is not verifiable from this site at all.":
-    "Четыре горизонтальные полосы. Самая длинная — пересчитано прямо на читаемой странице, затем воспроизводимо из опубликованного исходного кода, затем записано ранее и переопубликовано, а самая короткая — не проверяемо с этого сайта вообще.",
+    "Четыре горизонтальные полосы. Самая длинная — пересчитывается прямо на открытой странице; следующая — воспроизводится из опубликованного кода; следующая — записано раньше и переопубликовано; самая короткая — с этого сайта не проверяется вовсе.",
   "Four open conditions stand between today and any persistent learning.":
     "Между сегодняшним днём и любым обучением стоят четыре незакрытых условия.",
   "Four open preconditions leading to a closed gate":
@@ -198,7 +198,7 @@ export const audienceRu: TranslationDictionary = {
   "If the answer to why did it do that is a distribution over possibilities, the conversation has nowhere to go. There is no specific place to point at and disagree.":
     "Если ответом на вопрос «почему оно так поступило» служит распределение по вариантам, разговору некуда идти. Нет конкретного места, на которое можно указать и не согласиться.",
   "If you have to verify rather than decide":
-    "Если вам надо проверять, а не решать",
+    "Если ваше дело — проверять, а не решать",
   "If you read nothing else on this site, read this section. The three sentences say what the thing is; the four numbers underneath say how small it currently is, including the number that is zero.":
     "Если вы не прочитаете на этом сайте больше ничего, прочитайте этот раздел. Три фразы говорят, что это такое; четыре числа под ними говорят, насколько это пока мало, включая то число, которое равно нулю.",
   "If you want the mechanism":
@@ -222,19 +222,19 @@ export const audienceRu: TranslationDictionary = {
   "Is there something running?":
     "Есть ли что-то работающее?",
   "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: regulated operations, long-running automation, and anything a reviewer has to sign.":
-    "Это нацелено на работу, где дорогой отказ — не неверный ответ, а неверный ответ, который никто не может проследить: регулируемые операции, долго работающая автоматизация и всё, под чем проверяющему приходится подписываться.",
+    "Это про работу, где дорого обходится не сам неверный ответ, а неверный ответ, который невозможно проследить: регулируемые операции, автоматизация, работающая годами, и всё, под чем проверяющему приходится ставить подпись.",
   "It is founder-led. Team size, employment history, and legal structure are not disclosed on this site.":
     "Работа ведётся основателем. Размер команды, трудовая история и юридическая структура на этом сайте не раскрываются.",
   "It means a required condition was missing, blocked, or outside the tested scope. Treated as a pass, it would be the single most misleading line on the page, so it is given its own status and its own colour.":
     "Это значит, что требуемое условие отсутствовало, было заблокировано или лежало вне протестированной области. Принятый за прохождение, он стал бы самой вводящей в заблуждение строкой на странице, поэтому у него собственный статус и собственный цвет.",
-  "It says nobody has established the thing here, not that the thing is false. It is published so that the absence is visible rather than inferred from silence.":
+  "It says nobody established the thing here. It does not say the thing is false. We publish it so the gap is visible instead of being guessed at from our silence.":
     "Это значит, что здесь никто ничего не установил, а не что утверждение ложно. Мы это публикуем, чтобы пробел был виден, а не додумывался из нашего молчания.",
   "It stops at a named gate and writes that gate into the record. There is no fallback branch and no best-effort answer.":
     "Он останавливается на названном шлюзе и вписывает этот шлюз в протокол. Запасной ветви нет, и ответа «как получится» тоже нет.",
   "Key-person concentration.":
     "Всё держится на одном человеке.",
   "Logs record what happened, not what was allowed.":
-    "Журналы фиксируют, что произошло, а не что было разрешено.",
+    "Журналы фиксируют, что произошло. Что было разрешено — не фиксируют.",
   "Long-running agent automation":
     "Автоматика, которая работает неделями без присмотра",
   "Membership in the permitted set becomes a property of the layer rather than a hope about the model, and an attempt outside it is refused and recorded instead of executed.":
@@ -270,7 +270,7 @@ export const audienceRu: TranslationDictionary = {
   "Not a replacement for anything. The part in the middle that has to be defensible.":
     "Ничего не заменяет. Это средняя часть — та, которая должна выдерживать вопросы.",
   "Not disclosed on this site. Treat it as an open diligence item rather than as a settled one.":
-    "На этом сайте не раскрывается. Считайте это открытым пунктом проверки, а не решённым.",
+    "На сайте не раскрывается. Считайте этот пункт проверки открытым: закрытым он не стал.",
   "Not verifiable from this site at all":
     "Вообще не проверяемо с этого сайта",
   "Nothing here has been checked by anyone outside the project.":
@@ -322,7 +322,7 @@ export const audienceRu: TranslationDictionary = {
   "Recorded earlier, published with its scope":
     "Записано ранее и опубликовано вместе со своей областью действия",
   "Regeneration from the law, an exhaustive enumeration, a fingerprint comparison, or a replay. The operation is stated so a reader can run it rather than believe it.":
-    "Регенерация по закону, исчерпывающее перечисление, сверка отпечатка или воспроизведение. Операция названа, чтобы читатель мог её выполнить, а не поверить в неё.",
+    "Вывод по закону, исчерпывающее перечисление, сверка отпечатка или воспроизведение. Операция названа затем, чтобы читатель её проделал, а не поверил на слово.",
   "Regulated back-office operations":
     "Операции под надзором регулятора",
   "Replay a stored receipt and compare its fields with the record.":
@@ -414,7 +414,7 @@ export const audienceRu: TranslationDictionary = {
   "The page you are reading regenerates the value from the stated law rather than quoting it from a document. If the law and the number disagreed, the page would show the disagreement.":
     "Страница, которую вы читаете, выводит значение по объявленному закону, а не берёт его из документа. Разойдись закон с числом — страница показала бы это расхождение.",
   "The problem, in money rather than mathematics":
-    "Проблема на языке денег, а не математики",
+    "Проблема на языке денег, без математики",
   "The published record":
     "Опубликованная запись",
   "The published record and its boundaries":
@@ -428,7 +428,7 @@ export const audienceRu: TranslationDictionary = {
   "The short answers, including the ones that are simply no.":
     "Короткие ответы — в том числе те, где ответ просто «нет».",
   "The state, the permitted set, the ordering input, and the executed action are all in one record. Answering the question is reading a document, not running an investigation.":
-    "Где программа стояла, что ей было разрешено, как она выбирала и что в итоге сделала — всё в одной записи. Ответить на вопрос значит прочитать бумагу, а не начинать расследование.",
+    "Где программа стояла, что ей было разрешено, как выбирала и что в итоге сделала — всё в одной записи. Чтобы ответить на вопрос, достаточно её прочитать; расследование не понадобится.",
   "The stored FULL receipt reporting 1,366 of 1,366 regression checks.":
     "Сохранённый протокол FULL: 1 366 проверок из 1 366.",
   "The system that actually moves money, machinery, or a case file":
@@ -460,7 +460,7 @@ export const audienceRu: TranslationDictionary = {
   "This is the missing evidence. Until such a test is specified and run, no claim about external value can be made in either direction.":
     "Это и есть недостающее доказательство. Пока такой тест не определён и не проведён, ни одно утверждение о внешней ценности не может быть сделано ни в ту, ни в другую сторону.",
   "This is the section most sites do not publish. Each answer is written the way it would have to be written in a data room, and where the honest answer is not disclosed, it says not disclosed rather than something warmer.":
-    "Этот раздел большинство сайтов не публикует. Каждый ответ написан так, как его пришлось бы написать в комнате данных, и там, где честный ответ — «не раскрывается», так и написано, а не что-то потеплее.",
+    "Такой раздел большинство сайтов не публикует. Каждый ответ написан так, как пришлось бы писать его в комнате данных: где честный ответ «не раскрывается», там это и стоит, без смягчений.",
   "This is the whole editorial rule of the site, drawn once. It is also the fastest way to audit us: take any sentence that sounds like an assertion and try to fill in the five slots from what is on the page.":
     "Это всё редакционное правило сайта, нарисованное один раз. Это же и самый быстрый способ нас проверить: возьмите любое предложение, похожее на утверждение, и попробуйте заполнить пять полей по тому, что есть на странице.",
   "This page is written against its own site. It says which published values you can recompute in front of you, which ones are merely stored, and which ones cannot be settled from here at all — because a verification page that never says no is not a verification page.":
@@ -562,7 +562,7 @@ export const audienceRu: TranslationDictionary = {
   "You are deciding whether to spend an hour on this":
     "Вы решаете, стоит ли тратить на это час",
   "You cannot establish a fresh full replay on the runtime that was unavailable; that is published as blocked, not as a pass.":
-    "Вы не можете установить свежий полный повтор в среде, которой не было под рукой; это опубликовано как заблокированное, а не как пройденное.",
+    "Свежий полный повтор в среде, которой не было под рукой, вы не установите. Он и опубликован как заблокированный — не как пройденный.",
   "You cannot establish any external operational result, because no such measurement has been made by anybody.":
     "Вы не можете установить никакой внешний операционный результат, потому что такого измерения никто не проводил.",
   "You cannot establish from this site that the engine behaves well on any input outside its two accepted patterns, because it does not accept any.":
@@ -572,7 +572,7 @@ export const audienceRu: TranslationDictionary = {
   "You cannot establish operating-system level isolation of the executing process; that is published as not proven.":
     "Вы не можете установить изоляцию исполняющегося процесса на уровне операционной системы; это опубликовано как недоказанное.",
   "You have to verify a claim, not enjoy it":
-    "Вам нужно проверить утверждение, а не восхититься им",
+    "Вам нужно проверить утверждение, а не полюбоваться им",
   "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.":
     "Вы получаете 1 204 зафиксированных, 880 исполнимых и фронт из 440 кандидатов для одного принимаемого шаблона.",
   "You reach 560 across L1–L7, of which 556 are active in the runtime range.":
@@ -730,7 +730,7 @@ export const audienceZh: TranslationDictionary = {
     "这里每一条都是本站的实际限制，而不是这个想法本身的限制。",
   "Each one is published with its own status on the evidence page. Ask for any of them to be demonstrated and expect the answer to match the published status exactly.":
     "每一条都在证据页上带着自己的状态公开。你可以要求演示其中任何一条，并预期得到的回答与公开的状态完全一致。",
-  "Each row is taken from the published boundary register with the status it actually carries. None of them is closed today, which is why persistent policy learning is published as not started rather than as coming soon.":
+  "Every row comes from the published boundary register with the status it really has. Not one is closed today. That is the reason persistent policy learning appears as not started, and not as coming soon.":
     "每一行都取自公开的边界登记册，并带着它实际持有的状态。今天没有一条是关闭的——正因如此，持久策略学习被公布为“尚未开始”，而不是“即将推出”。",
   "Each step is something a sceptical reader can do alone, in the stated time, using only what is published. The sixth step is the one that needs a decision from you, because it is the measurement nobody has made yet.":
     "每一步都是一位持怀疑态度的读者可以独自完成的，用的时间就是标注的时间，用的材料只有已公开的东西。第六步是唯一需要你来作决定的，因为那是至今没人做过的测量。",
@@ -858,7 +858,7 @@ export const audienceZh: TranslationDictionary = {
     "工作由创始人主导。团队规模、任职经历与法律架构，本站不予披露。",
   "It means a required condition was missing, blocked, or outside the tested scope. Treated as a pass, it would be the single most misleading line on the page, so it is given its own status and its own colour.":
     "它的意思是：某个必要条件缺失、被阻塞，或落在被测范围之外。要是把它当成通过，它会是页面上最具误导性的一行——所以它有自己的状态和自己的颜色。",
-  "It says nobody has established the thing here, not that the thing is false. It is published so that the absence is visible rather than inferred from silence.":
+  "It says nobody established the thing here. It does not say the thing is false. We publish it so the gap is visible instead of being guessed at from our silence.":
     "它说的是：这里没有人确立过这件事，而不是这件事是假的。把它写出来，是为了让“缺席”被看见，而不是从沉默中被推断。",
   "It stops at a named gate and writes that gate into the record. There is no fallback branch and no best-effort answer.":
     "它会在一道具名的闸门处停下，并把这道闸门写进记录。没有兜底分支，也没有“尽力而为”的答案。",
@@ -1361,7 +1361,7 @@ export const audienceAr: TranslationDictionary = {
     "كل واحدة منها حدٌّ حقيقي لهذا الموقع لا حدٌّ للفكرة نفسها.",
   "Each one is published with its own status on the evidence page. Ask for any of them to be demonstrated and expect the answer to match the published status exactly.":
     "كل واحدة منشورة بحالتها الخاصة في صفحة الأدلة. اطلب إثبات أي منها وتوقّع أن يطابق الجواب الحالة المنشورة تمامًا.",
-  "Each row is taken from the published boundary register with the status it actually carries. None of them is closed today, which is why persistent policy learning is published as not started rather than as coming soon.":
+  "Every row comes from the published boundary register with the status it really has. Not one is closed today. That is the reason persistent policy learning appears as not started, and not as coming soon.":
     "كل صف مأخوذ من سجل الحدود المنشور بالحالة التي يحملها فعلًا. ولا واحدة منها مغلقة اليوم، ولهذا يُنشر التعلّم المستديم للسياسة بوصفه لم يبدأ لا بوصفه قريبًا.",
   "Each step is something a sceptical reader can do alone, in the stated time, using only what is published. The sixth step is the one that needs a decision from you, because it is the measurement nobody has made yet.":
     "كل خطوة شيء يستطيع قارئ متشكّك فعله وحده، في الوقت المذكور، وبما هو منشور فقط. والخطوة السادسة وحدها تحتاج قرارًا منك، لأنها القياس الذي لم يجرِه أحد بعد.",
@@ -1489,7 +1489,7 @@ export const audienceAr: TranslationDictionary = {
     "العمل يقوده المؤسس. وحجم الفريق وتاريخ العمل والهيكل القانوني غير مُفصح عنها في هذا الموقع.",
   "It means a required condition was missing, blocked, or outside the tested scope. Treated as a pass, it would be the single most misleading line on the page, so it is given its own status and its own colour.":
     "معناه أن شرطًا مطلوبًا كان غائبًا أو محجوبًا أو خارج النطاق المختبَر. ولو عُدّ نجاحًا لكان أكثر سطر مضلِّل في الصفحة، ولذلك أُعطي حالته الخاصة ولونه الخاص.",
-  "It says nobody has established the thing here, not that the thing is false. It is published so that the absence is visible rather than inferred from silence.":
+  "It says nobody established the thing here. It does not say the thing is false. We publish it so the gap is visible instead of being guessed at from our silence.":
     "يقول إن أحدًا لم يثبت الأمر هنا، لا إن الأمر باطل. ويُنشر ليكون الغياب مرئيًّا لا مُستنتَجًا من الصمت.",
   "It stops at a named gate and writes that gate into the record. There is no fallback branch and no best-effort answer.":
     "يتوقف عند بوابة مسمّاة ويكتبها في السجل. لا فرع احتياطي ولا جواب على قدر المستطاع.",

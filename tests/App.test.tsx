@@ -116,7 +116,7 @@ describe("GALO public site", () => {
     expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
     expect(screen.getByText("4,802")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
-    expect(screen.getByText(/closed deterministic selector, not a learned reasoner/i)).toBeInTheDocument();
+    expect(screen.getByText(/closed deterministic selector\. Nothing about it was learned/i)).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Public claim matrix" })).toBeInTheDocument();
     expect(screen.getByText("NOT PRESENT")).toBeInTheDocument();
     expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
@@ -761,7 +761,7 @@ describe("GALO public site", () => {
       screen.getByRole("heading", { level: 1, name: "Symmetries of the PLUS and STAR families." }),
     ).toBeInTheDocument();
     expect(screen.getByText("enumeration=224 · Burnside=224")).toBeInTheDocument();
-    expect(screen.getByText(/Eighteen is a sum over seven local groups/i)).toBeInTheDocument();
+    expect(screen.getByText(/Eighteen sums seven local groups/i)).toBeInTheDocument();
     expect(screen.getByText(/u=2: \{1,4\} → \{2,3\}/i)).toBeInTheDocument();
 
     const controls = screen.getByLabelText("Symmetry explorer controls");

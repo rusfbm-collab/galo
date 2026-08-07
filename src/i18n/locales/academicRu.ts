@@ -140,8 +140,8 @@ export const academicRu: TranslationDictionary = {
   "A rule assigning each group element a permutation, with the identity acting trivially and products acting by composition.":
     "Правило, сопоставляющее каждому элементу группы перестановку: единица действует тождественно, а произведению соответствует композиция.",
   Orbit: "Орбита",
-  "All points reachable from one point under the whole acting group. An orbit is a subset, not a new state or a probability class.":
-    "Все точки, получаемые из одной точки действием всей группы. Орбита — подмножество, а не новое состояние или вероятностный класс.",
+  "All the points one point can reach under the whole acting group. An orbit is a subset — neither a new state nor a probability class.":
+    "Все точки, куда попадает одна точка под действием всей группы. Орбита — это подмножество; ни нового состояния, ни вероятностного класса тут нет.",
   Stabilizer: "Стабилизатор",
   "The subgroup of transformations that leave one selected point fixed. Orbit–stabilizer relates local symmetry to orbit size.":
     "Подгруппа преобразований, оставляющих выбранную точку неподвижной. Теорема об орбите и стабилизаторе связывает локальную симметрию с размером орбиты.",
@@ -161,8 +161,8 @@ export const academicRu: TranslationDictionary = {
   "Cycle notation lists every pole exactly once; one-cycles are fixed points.":
     "Цикловая запись перечисляет каждый полюс ровно один раз; одноэлементные циклы — неподвижные точки.",
   "Carrier orbit": "Орбита элемента носителя",
-  "The orbit contains every image of the selected pole under all units, not only the selected unit.":
-    "Орбита содержит все образы выбранного полюса при действии всех обратимых классов, а не только выбранного.",
+  "The orbit holds every image of the selected pole under all the units, and not just under the one that was selected.":
+    "Орбита собирает все образы выбранного полюса под действием всех обратимых классов — не одного лишь выбранного.",
   "Ordered-pair orbit": "Орбита упорядоченной пары",
   "The same multiplier acts diagonally on source and active; level and family remain fixed.":
     "Один и тот же множитель действует диагонально на источник и активный полюс; уровень и семейство фиксированы.",
@@ -177,8 +177,8 @@ export const academicRu: TranslationDictionary = {
   "Pair orbits are computed inside each fixed level. Multiplying by four keeps the action-family tag fixed; no orbit crosses a level or family boundary.":
     "Орбиты пар вычисляются внутри каждого фиксированного уровня. Множитель четыре сохраняет метку семейства действий; ни одна орбита не пересекает границы уровня или семейства.",
   "Aggregate automorphism-map count": "Суммарное число отображений-автоморфизмов",
-  "Eighteen is a sum over seven local groups, not the order of a global automorphism group.":
-    "Восемнадцать — сумма по семи локальным группам, а не порядок глобальной группы автоморфизмов.",
+  "Eighteen sums seven local groups. No global automorphism group has that order.":
+    "Восемнадцать — сумма по семи локальным группам. Порядок глобальной группы автоморфизмов тут ни при чём.",
   "Fibrewise typed-orbit count": "Послойное число типизированных орбит",
   "The four family tags stay separate. Direct traversal and Burnside's lemma must return the same total.":
     "Четыре метки семейств остаются раздельными. Прямой обход и лемма Бёрнсайда должны дать одинаковую сумму.",
@@ -186,24 +186,24 @@ export const academicRu: TranslationDictionary = {
   "Equality is a consistency witness for the finite action; it does not authorize semantic merging.":
     "Равенство подтверждает согласованность конечного действия, но не разрешает семантическое объединение.",
   "POINTED AUTOMORPHISMS VS AFFINE TORSOR SYMMETRIES": "АВТОМОРФИЗМЫ С ВЫДЕЛЕННОЙ ТОЧКОЙ И АФФИННЫЕ СИММЕТРИИ ТОРСОРА",
-  "Hol(C_n) belongs to the PLUS torsor, not to STAR automorphisms.":
-    "Hol(C_n) относится к PLUS-торсору, а не к STAR-автоморфизмам.",
+  "Hol(C_n) belongs to the PLUS torsor. STAR automorphisms have nothing to do with it.":
+    "Hol(C_n) — про PLUS-торсор. К STAR-автоморфизмам он отношения не имеет.",
   "Pointed automorphism": "Автоморфизм с выделенной точкой",
   "It preserves PLUS, STAR, and P0 for every unit u.": "Он сохраняет PLUS, STAR и P0 для каждого u∈U(n).",
   "Affine torsor map": "Аффинное отображение торсора",
   "For b≠0 it does not fix P0, so it is not an automorphism of the pointed cyclic group.":
     "При b≠0 оно не фиксирует P0 и потому не является автоморфизмом циклической группы с выделенной точкой.",
   "Exact STAR failure": "Точный контрпример для STAR",
-  "The inequality holds for every nonzero residue b, not merely in a generic case.":
-    "Неравенство выполняется для каждого ненулевого класса b, а не только в общем случае.",
-  "Inversion orbits, not physical mirrors": "Орбиты инверсии, а не физические зеркала",
+  "The inequality holds for every nonzero residue b, and not just in a generic case.":
+    "Неравенство верно для каждого ненулевого класса b, а не только «вообще говоря».",
+  "Inversion orbits, no physical mirrors": "Орбиты инверсии; физических зеркал тут нет",
   "These are orbits of the involution on differences; they do not encode time, causality, or spatial reflection.":
     "Это орбиты инволюции на разностях; они не кодируют время, причинность или пространственное отражение.",
   "Quadratic-residue nuance": "Уточнение о квадратичных вычетах",
   "The quadratic-residue subgroup preserves each block; the full unit group preserves only the unordered two-block partition and may swap its blocks.":
     "Подгруппа квадратичных вычетов сохраняет каждый блок; полная группа единиц сохраняет лишь неупорядоченное разбиение на два блока и может менять блоки местами.",
   "Characters and faithful phase labels": "Характеры и точные фазовые параметризации",
-  "All s define characters of C_n; only unit s give faithful labels. In a phase model P0 maps to complex 1, not complex 0.":
+  "Every s defines a character of C_n, and only the units give faithful labels. In a phase model P0 lands on complex 1; complex 0 is where it never goes.":
     "Каждый s задаёт характер C_n; только обратимые s дают точные параметризации. В фазовой модели P0 переходит в комплексное число 1, а не в комплексный нуль.",
   "CROSS-LEVEL HOMOMORPHISMS": "МЕЖУРОВНЕВЫЕ ГОМОМОРФИЗМЫ",
   "PLUS and STAR have different homomorphism counts.": "PLUS и STAR имеют разные числа гомоморфизмов.",

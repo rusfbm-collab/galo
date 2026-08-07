@@ -10,13 +10,13 @@ export const releaseRu: TranslationDictionary = {
     "В текущей V4 исполняемыми являются 880 дескрипторов; каждому из двух фиксированных исходных шаблонов соответствует фронтир из 440 кандидатов.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "Бинарный одношаговый контур исполнения L2–L7 с двумя замкнутыми исходными шаблонами и четырьмя исполняемыми видами действий; L1 используется только для контроля.",
-  "A closed deterministic selector, not a learned reasoner.":
-    "Замкнутый детерминированный селектор, а не обученный механизм рассуждения.",
+  "A closed deterministic selector. Nothing about it was learned.":
+    "Замкнутый детерминированный селектор. Обучением тут и не пахнет.",
   "A current trained Atlas is not present.": "Текущий обученный Atlas отсутствует.",
   "A durable trusted manifest head beyond process-local checks.":
     "Устойчиво сохраняемая доверенная вершина манифеста за пределами проверок, локальных для процесса.",
   "A legacy relational-KG research artifact exists in compatibility history, but it is not the current V4 selector, has no proven strong-control advantage, and is not presented as a current trained Atlas.":
-    "В истории совместимости имеется исследовательский артефакт прежней реляционной KG, однако он не является текущим селектором V4, не имеет доказанного преимущества над строгим контролем и не представляется как текущий обученный Atlas.",
+    "В истории совместимости остался исследовательский артефакт прежней реляционной KG. Это не текущий селектор V4, преимущества над строгим контролем у него не доказано, и за нынешний обученный Atlas мы его не выдаём.",
   "Add multi-step execution": "Добавить многошаговое исполнение",
   "Arbitrary free-text semantic noninterference": "Семантическое невлияние произвольного текста в свободной форме",
   "Atlas influence": "Влияние Atlas",
@@ -120,8 +120,8 @@ export const releaseRu: TranslationDictionary = {
   "THREE EVIDENCE LAYERS": "ТРИ СЛОЯ ДОКАЗАТЕЛЬСТВ",
   "Terminal release status preserved with disclosed boundaries":
     "Терминальный статус выпуска сохранён с явно раскрытыми границами",
-  "The 1,366/1,366 FULL result is a stored release receipt, not a fresh replay result.":
-    "Результат FULL 1,366/1,366 является сохранённым протоколом выпуска, а не результатом свежего воспроизведения.",
+  "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
+    "Результат FULL 1,366/1,366 — это сохранённый протокол выпуска. Свежего воспроизведения за ним нет.",
   "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
     "Результат FULL 1,366/1,366 является сохранённым доказательством выпуска; свежий FULL в рамках этого анализа не запускался.",
   "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms.":
@@ -138,8 +138,8 @@ export const releaseRu: TranslationDictionary = {
     "Физический итог — это внутреннее число идентификаторов единиц работы в протоколах. Он не является истекшим временем, числом FLOPS, энергией, экономией затрат, ускорением, причинным результатом или внешним операционным выигрышем.",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
     "В выпуске явно разделены математика, доказательства совместимости и текущий исполняемый API. Утверждение одного слоя не переносится неявно в другой.",
-  "The selector accepts two fixed source patterns, not arbitrary natural-language observations.":
-    "Селектор принимает два фиксированных исходных шаблона, а не произвольные наблюдения на естественном языке.",
+  "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
+    "Селектор принимает два фиксированных исходных шаблона. Произвольный текст на естественном языке он не берёт.",
   "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
     "Селектор распознаёт ровно два исходных шаблона, фильтрует зафиксированный конечный универсум по чётности и хеширует наблюдение, ID кандидата и порядковый номер, получая детерминированный порядок. Состояние Atlas не влияет на результат.",
   "This deterministic walkthrough uses sanitized identifiers from the current V4 direct selfcheck. It distinguishes two fixed source patterns, but it does not accept arbitrary observations, generate a semantic answer, or learn.":

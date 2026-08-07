@@ -17,7 +17,7 @@ export const thinkingRu: TranslationDictionary = {
   "A precondition of the bounded action is unmet, and the refusal itself is recorded.":
     "Не выполнено предусловие ограниченного действия, и сам отказ записывается.",
   "A preference would have to be learned, stored, and trusted. A hash over recorded values needs none of those: it can be recomputed from the receipt alone, by someone who has no access to the machine and no reason to trust its operator.":
-    "Предпочтение пришлось бы обучить, сохранить и принять на веру. Хешу по записанным значениям ничего из этого не нужно: его можно пересчитать по одному лишь протоколу — человеком, у которого нет доступа к машине и нет причин доверять её оператору.",
+    "Предпочтение надо было бы обучить, где-то хранить и принять на веру. Хешу от записанных значений ничего этого не нужно: его пересчитает по одному протоколу человек, у которого нет доступа к машине и нет причин верить её оператору.",
   "A procedure that can stop is more useful than one that always answers.":
     "Процедура, которая умеет остановиться, полезнее той, которая всегда что-то отвечает.",
   "A refusal is a recorded outcome with a named gate. The design prefers a stop that can be pointed at over an answer that cannot be traced.":
@@ -25,7 +25,7 @@ export const thinkingRu: TranslationDictionary = {
   "A refusal means the system failed.": "Отказ означает, что система не справилась.",
   "A requested descriptor is not a member of the committed universe.":
     "Запрошенный дескриптор не входит в зафиксированную вселенную.",
-  "A search explores an open space and reports the best thing it found. This is the opposite: the space is closed before the run starts, each cut is a rule anyone can read, and the last step is an ordering that can be recomputed. That is why the outcome is arguable rather than merely plausible.":
+  "A search wanders an open space and reports the best thing it turned up. Here the space is closed before the run starts, every cut is a rule anyone can read, and the last step is an ordering that can be recomputed. So the outcome can be argued with, not merely found plausible.":
     "Поиск бродит по открытому пространству и сообщает о лучшем, что нашёл. Здесь всё наоборот: пространство закрыто ещё до запуска, каждое сужение — правило, которое любой может прочитать, а последний шаг — порядок, поддающийся пересчёту. Поэтому исход можно оспорить, а не просто счесть правдоподобным.",
   "A single action of arity 2 executes at route depth 1, and a receipt records the checks, the work units, and the outcome.":
     "Выполняется одно действие арности 2 на глубине маршрута 1, а протокол исполнения записывает проверки, единицы работы и исход.",
@@ -129,7 +129,7 @@ export const thinkingRu: TranslationDictionary = {
   "One candidate is bound to a single process-local use. A second use is refused by the sequence check.":
     "Один кандидат привязывается к единственному использованию в пределах процесса. Повторное использование отклоняется проверкой последовательности.",
   "One input reaches the engine and is treated as a candidate for matching, never as text to interpret.":
-    "Один вход доходит до движка и рассматривается как кандидат на сопоставление, а не как текст для истолкования.",
+    "Один вход доходит до движка. Его берут как кандидата на сопоставление; истолковывать там нечего.",
   "One label from the declared carrier, such as P2 at L3.": "Одна метка из объявленного носителя, например P2 на L3.",
   "One run, one accepted input, one bounded action. Every value in the right-hand column is either fixed by the release or recomputed on this site from the laws, so a reader who disagrees with a number has a specific place to point at.":
     "Один запуск, один принятый вход, одно ограниченное действие. Каждое значение в правом столбце либо задано выпуском, либо пересчитано на этом сайте из законов, так что читатель, не согласный с числом, знает, куда именно указать.",
@@ -156,12 +156,12 @@ export const thinkingRu: TranslationDictionary = {
   "The candidate sits on the parity half that the matched pattern did not select.":
     "Кандидат лежит на той половине по чётности, которую совпавший шаблон не выбрал.",
   "The candidate the order selects is bound to one process-local use. Using it a second time is refused by the sequence check rather than silently allowed.":
-    "Кандидат, которого выбирает порядок, привязывается к одному использованию в пределах процесса. Повторное использование отклоняется проверкой последовательности, а не разрешается молча.",
+    "Кандидата, которого выбрал порядок, привязывают к одному использованию внутри процесса. Второй раз его отклонит проверка последовательности — молча пропустить не выйдет.",
   "The candidate universe is opened": "Открывается вселенная кандидатов",
   "The candidate's action kind is outside the four kinds the release makes executable.":
     "Вид действия кандидата не входит в четыре вида, которые выпуск делает исполнимыми.",
   "The committed universe is entered in full. It was fixed by the release, not assembled during the run.":
-    "Зафиксированная вселенная берётся целиком. Её определил выпуск, а не сборка во время запуска.",
+    "Зафиксированную вселенную берут целиком. Её задал выпуск; во время запуска её никто не собирает.",
   "The current engine performs one bounded step per run at route depth 1. Multi-step trajectories are named open work on the evidence page.":
     "Текущий движок выполняет за запуск один ограниченный шаг на глубине маршрута 1. Многошаговые траектории названы открытой работой на странице доказательств.",
   "The current position": "Текущая позиция",
@@ -187,8 +187,8 @@ export const thinkingRu: TranslationDictionary = {
   "The ledger is read by people and by replay tooling, not by the engine's decision path. It never feeds back into the ordering of a later run.":
     "Журнал читают люди и инструменты воспроизведения, а не путь принятия решения внутри движка. Он никогда не влияет на порядок в более позднем запуске.",
   "The level would be chosen in response to the situation instead of being declared in advance.":
-    "Уровень выбирался бы в ответ на ситуацию, а не объявлялся заранее.",
-  "The list is fixed by the release, not assembled during the run. Nothing can enter it later, and nothing outside it can be executed under any circumstances. That is what makes the next stages a narrowing rather than a search: the answer is known to be inside a finite set that a reviewer can enumerate independently.":
+    "Уровень подбирался бы под ситуацию, а не объявлялся заранее.",
+  "The release fixes the list; the run never assembles it. Nothing joins it afterwards, and nothing outside it executes under any circumstances. So the stages that follow narrow rather than search: the answer is known to sit inside a finite set a reviewer can enumerate alone.":
     "Список задаёт выпуск, а не сборка на ходу. Попасть в него позже нельзя, а исполнить что-то вне его нельзя ни при каких обстоятельствах. Поэтому дальше идёт сужение, а не поиск: ответ заведомо лежит в конечном множестве, которое проверяющий перечислит сам.",
   "The loop runs continuously until it is satisfied.": "Цикл крутится непрерывно, пока не будет удовлетворён.",
   "The matched pattern selects one parity half, so the other half is never even offered for ordering.":
@@ -210,10 +210,10 @@ export const thinkingRu: TranslationDictionary = {
   "The question it answers": "Вопрос, на который он отвечает",
   "The receipt ledger": "Журнал протоколов исполнения",
   "The recorded outcome would update an explicit world model, entry by entry, rather than a set of weights.":
-    "Записанный исход обновлял бы явную модель мира — запись за записью, а не набор весов.",
+    "Записанный исход правил бы явную модель мира — запись за записью. Никаких весов.",
   "The recorded result, and the start of the next run": "Записанный результат и начало следующего запуска",
   "The run ends here. There is no second step inside the same run, no revision of the earlier stages, and no write back into any learned store: semantic reads, rank effects, and learning writes are all zero. The receipt is the deliverable, and it is what someone else replays.":
-    "Здесь запуск заканчивается. Внутри того же запуска нет ни второго шага, ни пересмотра предыдущих этапов, ни записи обратно в какое-либо выученное хранилище: семантические чтения, влияния на ранжирование и записи обучения равны нулю. Протокол исполнения и есть результат, и именно его воспроизводит кто-то другой.",
+    "Здесь запуск кончается. Второго шага внутри него нет, к прежним этапам никто не возвращается, и обратно в выученное хранилище ничего не пишется: семантические чтения, влияния на ранжирование и записи обучения — нули. Результат и есть протокол исполнения; его-то и воспроизводит кто-то другой.",
   "The same thought with real values": "Та же мысль с реальными значениями",
   "The second use is refused by the sequence check, and the attempt appears in the record.":
     "Повторное использование отклоняется проверкой последовательности, а попытка попадает в протокол.",
@@ -241,7 +241,7 @@ export const thinkingRu: TranslationDictionary = {
   "This page opens the decision procedure and shows every stage of it: what arrives, what is checked, what narrows, what executes, and what is written down. It is deliberately mechanical, because the whole point of the design is that a reader can follow the same path the engine followed and arrive at the same place.":
     "Эта страница раскрывает процедуру принятия решения и показывает каждый её этап: что приходит, что проверяется, что сужается, что исполняется и что записывается. Она намеренно механистична, потому что весь смысл замысла в том, чтобы читатель мог пройти тем же путём, что и движок, и прийти в то же место.",
   "This stage is written architecture with named preconditions, and it does not run today. Its point is that a revision would be a named edit to a named entry, so a reviewer could ask which entry changed, why, and on the strength of which receipt — the question that cannot be put to a fitted parameter.":
-    "Этот этап — записанная архитектура с названными предусловиями, и сегодня он не выполняется. Его смысл в том, что пересмотр был бы именованной правкой именованной записи, так что проверяющий мог бы спросить, какая запись изменилась, почему и на основании какого протокола исполнения — вопрос, который невозможно задать подогнанному параметру.",
+    "Этот этап — записанная архитектура с названными предусловиями; сегодня он не работает. Смысл его вот в чём: пересмотр был бы именованной правкой именованной записи, и проверяющий мог бы спросить, какая запись изменилась, почему и по какому протоколу. Подогнанному параметру такого вопроса не задать.",
   "Three parallel lanes labelled run 1, run 2, and run 3. Each lane passes through the same observation, the same hash, and the same ordinal, and all three converge on a single box marked with an equals sign and the word receipt.":
     "Три параллельные дорожки с подписями run 1, run 2 и run 3. Каждая проходит через одно и то же наблюдение, тот же хеш и тот же порядковый номер, и все три сходятся в один блок, помеченный знаком равенства и словом receipt.",
   "Three registers are carried forward. Two familiar ones are not.":
@@ -278,7 +278,7 @@ export const thinkingRu: TranslationDictionary = {
   "Which of those am I actually permitted to do?": "Что из этого мне действительно разрешено делать?",
   "Which single candidate do I take, and can I prove I would take it again?":
     "Какого одного кандидата я беру и смогу ли доказать, что взял бы его снова?",
-  "Why a hash and not a preference": "Почему хеш, а не предпочтение",
+  "Why a hash and not a preference": "Почему хеш, а не чьё-то предпочтение",
   "Why a parity half, of all things": "Почему именно половина по чётности",
   "Why only four kinds execute": "Почему исполнимы только четыре вида",
   "Why the universe is fixed in advance": "Почему вселенная фиксируется заранее",
@@ -321,7 +321,7 @@ export const thinkingZh: TranslationDictionary = {
     "拒绝是一个带有具名闸门的、被记录下来的结果。这套设计宁可要一个能指着说清楚的停止，也不要一个无从追溯的答案。",
   "A refusal means the system failed.": "拒绝意味着系统失败了。",
   "A requested descriptor is not a member of the committed universe.": "被请求的描述符不属于已承诺的宇宙。",
-  "A search explores an open space and reports the best thing it found. This is the opposite: the space is closed before the run starts, each cut is a rule anyone can read, and the last step is an ordering that can be recomputed. That is why the outcome is arguable rather than merely plausible.":
+  "A search wanders an open space and reports the best thing it turned up. Here the space is closed before the run starts, every cut is a rule anyone can read, and the last step is an ordering that can be recomputed. So the outcome can be argued with, not merely found plausible.":
     "搜索会在一个开放空间里探索，并报告它找到的最好的东西。这里恰好相反：空间在运行开始之前就已封闭，每一次收缩都是任何人都能读到的规则，最后一步是一个可以重新算出来的顺序。正因如此，结果是可以被反驳的，而不只是看起来合理。",
   "A single action of arity 2 executes at route depth 1, and a receipt records the checks, the work units, and the outcome.":
     "一个元数为 2 的动作在路由深度 1 上执行，回执记录下检查项、工作单位与结果。",
@@ -481,7 +481,7 @@ export const thinkingZh: TranslationDictionary = {
     "账本是给人和重放工具读的，不是给引擎的决策路径读的。它绝不会反过来影响后来某次运行的顺序。",
   "The level would be chosen in response to the situation instead of being declared in advance.":
     "层级将根据情境来选择，而不是事先声明。",
-  "The list is fixed by the release, not assembled during the run. Nothing can enter it later, and nothing outside it can be executed under any circumstances. That is what makes the next stages a narrowing rather than a search: the answer is known to be inside a finite set that a reviewer can enumerate independently.":
+  "The release fixes the list; the run never assembles it. Nothing joins it afterwards, and nothing outside it executes under any circumstances. So the stages that follow narrow rather than search: the answer is known to sit inside a finite set a reviewer can enumerate alone.":
     "这份清单由发布版确定，而不是在运行途中拼出来的。之后没有任何东西能加进去，清单之外的东西在任何情况下都不可能被执行。正因如此，后面的阶段是收窄而不是搜索：答案确定就在一个有限集合之内，而审阅者可以自己把这个集合枚举出来。",
   "The loop runs continuously until it is satisfied.": "这个循环会一直转下去，直到它满意为止。",
   "The matched pattern selects one parity half, so the other half is never even offered for ordering.":
@@ -611,7 +611,7 @@ export const thinkingAr: TranslationDictionary = {
   "A refusal means the system failed.": "الرفض يعني أن النظام أخفق.",
   "A requested descriptor is not a member of the committed universe.":
     "الواصف المطلوب ليس عضوًا في الكون المُلتزَم به.",
-  "A search explores an open space and reports the best thing it found. This is the opposite: the space is closed before the run starts, each cut is a rule anyone can read, and the last step is an ordering that can be recomputed. That is why the outcome is arguable rather than merely plausible.":
+  "A search wanders an open space and reports the best thing it turned up. Here the space is closed before the run starts, every cut is a rule anyone can read, and the last step is an ordering that can be recomputed. So the outcome can be argued with, not merely found plausible.":
     "البحث يستكشف فضاءً مفتوحًا ويبلّغ عن أفضل ما وجده. وهنا العكس تمامًا: الفضاء مغلق قبل بدء التشغيل، وكل تضييق قاعدة يستطيع أي أحد قراءتها، والخطوة الأخيرة ترتيب يمكن إعادة حسابه. ولهذا تكون النتيجة قابلة للمجادلة لا مجرد معقولة.",
   "A single action of arity 2 executes at route depth 1, and a receipt records the checks, the work units, and the outcome.":
     "يُنفَّذ فعل واحد أُحادي التشغيل برتبة مدخلين عند عمق مسار 1، ويسجّل الإيصال الفحوص ووحدات العمل والنتيجة.",
@@ -771,7 +771,7 @@ export const thinkingAr: TranslationDictionary = {
     "السجل يقرؤه الناس وأدوات إعادة التشغيل، لا مسار القرار داخل المحرك. ولا يعود ليؤثر في ترتيب تشغيل لاحق.",
   "The level would be chosen in response to the situation instead of being declared in advance.":
     "كان المستوى سيُختار استجابةً للموقف بدل أن يُعلَن مسبقًا.",
-  "The list is fixed by the release, not assembled during the run. Nothing can enter it later, and nothing outside it can be executed under any circumstances. That is what makes the next stages a narrowing rather than a search: the answer is known to be inside a finite set that a reviewer can enumerate independently.":
+  "The release fixes the list; the run never assembles it. Nothing joins it afterwards, and nothing outside it executes under any circumstances. So the stages that follow narrow rather than search: the answer is known to sit inside a finite set a reviewer can enumerate alone.":
     "القائمة يحدّدها الإصدار ولا تُجمَّع أثناء التشغيل. لا شيء يمكن أن يدخلها لاحقًا، ولا شيء خارجها يمكن تنفيذه بأي حال. وهذا ما يجعل المراحل التالية تضييقًا لا بحثًا: فالجواب معروف أنه داخل مجموعة منتهية يستطيع المراجع تعدادها بنفسه.",
   "The loop runs continuously until it is satisfied.": "الحلقة تدور باستمرار حتى تقتنع.",
   "The matched pattern selects one parity half, so the other half is never even offered for ordering.":

@@ -127,7 +127,7 @@ export const theoryRu: TranslationDictionary = {
   active: "активный полюс",
   "The operation is fixed; the semantic roles decide where its inputs are placed.":
     "Операция фиксирована; семантические роли определяют размещение её входов.",
-  "Source means the state being transformed. Active means the pole applied to it. LEFT puts source on the raw left; RIGHT puts active on the raw left. The names describe the interface roles, not standard algebraic translation terminology.":
+  "Source means the state being transformed. Active means the pole applied to it. LEFT puts source on the raw left; RIGHT puts active there instead. These names describe interface roles and borrow nothing from the standard vocabulary of algebraic translations.":
     "Source обозначает преобразуемое исходное состояние, а active — применяемый к нему активный полюс. LEFT помещает source в непосредственную левую позицию, а RIGHT помещает туда active. Эти имена описывают роли интерфейса, а не стандартные названия алгебраических трансляций.",
   "The four typed action families at source P0 and active P2 on L3":
     "Четыре типизированных семейства действий на L3 при source=P0 и active=P2",
@@ -177,7 +177,7 @@ export const theoryRu: TranslationDictionary = {
     "STAR обнаруживает ненулевой непосредственный левый полюс, поэтому эта ячейка вычисляется циклическим сложением по модулю {level}.",
   "The table address is row P{left}, column P{right}; that cell contains P{target}.":
     "Адрес в таблице: строка P{left}, столбец P{right}; в этой ячейке находится P{target}.",
-  "The complete typed address is {cellId}. The target is stored as a result, not hidden in the ID.":
+  "The complete typed address is {cellId}. The target is stored as its own result and never hidden inside the ID.":
     "Полный типизированный адрес — {cellId}. Цель хранится как результат и не кодируется скрыто в ID.",
   "Restore the L3 reset example": "Восстановить пример сброса на L3",
   "Two-channel witness": "Двухканальный свидетель",
@@ -286,8 +286,8 @@ export const theoryRu: TranslationDictionary = {
   "The mathematics supplies exact finite structure. The current V4 release uses only a bounded deterministic execution slice. The wider World Atlas and persistent learning loop remain an architectural target.":
     "Математика задаёт точную конечную структуру. Текущий выпуск V4 использует только ограниченный детерминированный слой исполнения. Более широкий World Atlas и сохраняемый цикл обучения остаются целевой архитектурой.",
   "Finite state alphabet": "Конечный алфавит состояний",
-  "L1–L7 provide named finite carriers. A pole is a local state label, not a word meaning or neuron.":
-    "L1–L7 задают именованные конечные носители. Полюс — локальная метка состояния, а не значение слова или нейрон.",
+  "L1–L7 provide named finite carriers. A pole is a local state label — no word meaning attaches to it, and no neuron.":
+    "L1–L7 задают именованные конечные носители. Полюс — локальная метка состояния; ни значением слова, ни нейроном он не является.",
   "Frozen transition laws": "Зафиксированные законы переходов",
   "PLUS and STAR turn every ordered pair of poles into one exact target pole.":
     "PLUS и STAR переводят каждую упорядоченную пару полюсов в один точно определённый целевой полюс.",
@@ -333,7 +333,7 @@ export const theoryRu: TranslationDictionary = {
   "Frontier per source pattern": "Множество кандидатов для одного шаблона источника",
   "Deterministically ordered candidates": "Детерминированно упорядоченные кандидаты",
   "Accepted source patterns": "Принимаемые шаблоны источника",
-  "Fixed patterns, not arbitrary text": "Фиксированные шаблоны, а не произвольный текст",
+  "Fixed patterns, not arbitrary text": "Фиксированные шаблоны, произвольного текста нет",
   "Arity / route depth": "Арность / глубина маршрута",
   "Binary, one-step current contour": "Текущий бинарный одношаговый контур",
 
@@ -457,7 +457,7 @@ export const theoryRu: TranslationDictionary = {
   Receipt: "Протокол исполнения",
   "A machine-readable record of what a bounded execution checked and did.":
     "Машиночитаемая запись того, что проверило и выполнило ограниченное исполнение.",
-  "A receipt is an operational witness, not a mathematical theorem or real-world truth certificate.":
+  "A receipt is an operational witness. It proves no theorem and certifies nothing about the world.":
     "Протокол исполнения — операционный свидетель, а не математическая теорема и не сертификат истинности в реальном мире.",
   Boundary: "Граница",
   "An explicit stop: the available evidence does not authorize the stronger conclusion.":
@@ -508,7 +508,7 @@ export const theoryRu: TranslationDictionary = {
   "The beginner chapter explains every symbol, reconstructs transitions independently from tables and formulas, and keeps the formal model separate from the current runtime and target learning architecture.":
     "Вводная глава объясняет каждый символ, независимо восстанавливает переходы по таблицам и формулам и отделяет формальную модель от текущей среды исполнения и целевой обучающей архитектуры.",
   "The beginner chapter introduces the main symbols with a reading legend, reconstructs transitions independently from tables and formulas, and keeps the formal model separate from the current runtime and target learning architecture.":
-    "Вводная глава знакомит с основными символами и поясняет их чтение, независимо восстанавливает переходы по таблицам и формулам и отделяет формальную модель от текущей среды исполнения и целевой обучающей архитектуры.",
+    "Вводная глава разбирает основные символы и показывает, как их читать, заново выводит переходы двумя путями — по таблицам и по формулам — и разводит формальную модель, нынешнюю среду исполнения и целевую обучающую архитектуру.",
   "Open the guided theory": "Открыть пошаговую теорию",
   "Name the finite states": "Задайте имена конечным состояниям",
   "A level L_n declares exactly n local labels P0 through P_(n−1).":
@@ -563,7 +563,7 @@ export const theoryRu: TranslationDictionary = {
   "Candidate frontier": "Множество доступных кандидатов",
   "The parity-filtered candidates that the deterministic selector is allowed to order.":
     "Кандидаты, отфильтрованные по чётности, которые разрешено упорядочивать детерминированному селектору.",
-  "The order is hash-derived, not a semantic judgment, probability, or learned preference.":
+  "The order comes out of a hash. No semantic judgment, probability, or learned preference goes into it.":
     "Порядок выводится из хеша, а не из семантического суждения, вероятности или обученного предпочтения.",
   "One-shot handle": "Одноразовый дескриптор исполнения",
   "A runtime capability bound to one admitted candidate and one bounded use.":
@@ -654,8 +654,8 @@ export const theoryRu: TranslationDictionary = {
     "Если отображение инъективно, образ P1 должен сохранять его точный циклический порядок n.",
   "A cyclic group of order m contains an element of order n exactly when n divides m.":
     "Циклическая группа порядка m содержит элемент порядка n в точности тогда, когда n делит m.",
-  "Therefore the failure is structural, not merely a defect of the same-index candidate.":
-    "Следовательно, отказ имеет структурную природу, а не является лишь недостатком кандидата с сохранением индексов.",
+  "The failure is therefore structural. It is not that the same-index candidate happened to fall short.":
+    "Значит, отказ структурный. Дело не в том, что кандидату чего-то не хватило при сохранении индексов.",
   "Conversely, when n divides m, scaled maps h(P_i)=P_((u·m/n)i mod m) for unit u modulo n provide the nonzero embeddings; the archived replay selects one canonical scaling.":
     "Обратно, когда n делит m, масштабированные отображения h(P_i)=P_((u·m/n)i mod m), где u — обратимый класс по модулю n, задают ненулевые вложения; архивное воспроизведение выбирает одно каноническое масштабирование.",
   "COMPATIBILITY_ONLY:": "COMPATIBILITY_ONLY:",
@@ -712,8 +712,8 @@ export const theoryRu: TranslationDictionary = {
     "Предполагаемый цикл обучения начинается только после появления более строгих контрактов.",
   "Every stage below is architectural intent. It must not be read as a current runtime capability, trained system, external result, or authorized learning claim.":
     "Каждый приведённый ниже этап является архитектурным намерением. Его нельзя считать текущей возможностью среды исполнения, обученной системой, внешним результатом или разрешённым утверждением об обучении.",
-  "Accept externally grounded evidence with source custody, not only a bundled finite sample.":
-    "Принимать внешне обоснованные доказательства с контролем происхождения источника, а не только встроенную конечную выборку.",
+  "Accept externally grounded evidence with source custody, and stop relying on a bundled finite sample alone.":
+    "Принимать доказательства, обоснованные снаружи, с контролем происхождения источника — а не одну лишь встроенную конечную выборку.",
   "Typed domain map": "Типизированное отображение предметной области",
   "Declare how domain objects and alternatives map into local finite coordinates without assigning universal pole meanings.":
     "Объявить, как предметные объекты и альтернативы отображаются в локальные конечные координаты, не приписывая полюсам универсальных смыслов.",
@@ -772,7 +772,7 @@ export const theoryRu: TranslationDictionary = {
   "The objects that the selected transformation g does not move.":
     "Объекты, которые выбранное преобразование g оставляет неподвижными.",
   "X modulo the action of G": "X по модулю действия G",
-  "The set of orbits, not ordinary numeric division.": "Множество орбит, а не обычное числовое деление.",
+  "The set of orbits. Ordinary numeric division has nothing to do with it.": "Множество орбит. С обычным делением чисел это не связано.",
   "All acted-on objects reachable from one selected object by allowed symmetries.":
     "Все объекты действия, достижимые из одного выбранного объекта посредством допустимых симметрий.",
   "The symmetries that leave one selected acted-on object unchanged.":
@@ -793,8 +793,8 @@ export const theoryRu: TranslationDictionary = {
   "L3 row and column headers: P0 | P1 | P2.": "Заголовки строк и столбцов L3: P0 | P1 | P2.",
   "|Q_3|=3.": "|Q_3|=3.",
 
-  "A pole is one named seat on the carousel, not the whole carousel and not the passenger sitting there.":
-    "Полюс — это одно именованное место на карусели, а не вся карусель и не сидящий на нём пассажир.",
+  "A pole is one named seat on the carousel — neither the carousel itself nor whoever is sitting in it.":
+    "Полюс — одно именованное место на карусели. Ни сама карусель, ни пассажир, который на нём сидит.",
   "P_i∈Q_n with 0≤i<n; calculation identifies P_i with residue i modulo n.":
     "P_i∈Q_n при 0≤i<n; в вычислениях P_i соответствует классу вычетов i по модулю n.",
   "L3: P2 is the label with calculation index 2; one further PLUS step reaches P0.":
@@ -803,8 +803,8 @@ export const theoryRu: TranslationDictionary = {
     "Соответствие между метками и классами вычетов биективно: у каждого полюса один вычислительный индекс, а каждый допустимый индекс называет один полюс.",
   "P2 does not universally mean twice as much, better, later, or more intelligent than P1.":
     "P2 не означает универсально «вдвое больше», «лучше», «позже» или «умнее», чем P1.",
-  "L3: row P2 and column P2 are addresses labelled by P2, not measured quantities.":
-    "L3: строка P2 и столбец P2 — адреса с меткой P2, а не измеренные величины.",
+  "L3: row P2 and column P2 are addresses labelled by P2. Nothing there was measured.":
+    "L3: строка P2 и столбец P2 — это адреса с меткой P2. Измерять тут нечего.",
   "P_(i+kn)=P_i for every integer k.": "P_(i+kn)=P_i для любого целого k.",
 
   "Changing level is like choosing a dial with a different number of marked positions.":
@@ -815,7 +815,7 @@ export const theoryRu: TranslationDictionary = {
     "В L2 есть {P0,P1}, а в L3 — {P0,P1,P2}. P2 локально существует в L3, но не в L2.",
   "The subscript n fixes both the number of labels and the modulus used by every operation at that level.":
     "Нижний индекс n задаёт и число меток, и модуль, используемый каждой операцией этого уровня.",
-  "A larger level gives more distinctions, not automatically more knowledge, accuracy, or intelligence.":
+  "A larger level buys more distinctions. Knowledge, accuracy, and intelligence do not follow from it.":
     "Более высокий уровень даёт больше различимых состояний, но не автоматически больше знаний, точности или интеллекта.",
   "L2 laws have 2×2 tables; L3 laws have 3×3 tables.": "Законы L2 имеют таблицы 2×2, а законы L3 — таблицы 3×3.",
   "|Q_n|=n and |Q_n×Q_n|=n².": "|Q_n|=n и |Q_n×Q_n|=n².",
@@ -867,8 +867,8 @@ export const theoryRu: TranslationDictionary = {
     "L3: начните в P1, сделайте два шага с циклическим переходом: P1⊕P2=P0.",
   "Addition of residues is closed, associative, and commutative; P0 is the identity and P_(n−i) is the inverse of P_i.":
     "Сложение классов вычетов замкнуто, ассоциативно и коммутативно; P0 — нейтральный элемент, а P_(n−i) — обратный к P_i.",
-  "PLUS is a finite cyclic law on labels, not ordinary addition of domain meanings or real quantities.":
-    "PLUS — конечный циклический закон для меток, а не обычное сложение предметных смыслов или реальных величин.",
+  "PLUS is a finite cyclic law on labels. It adds neither domain meanings nor real quantities.":
+    "PLUS — конечный циклический закон для меток. Складывать смыслы или реальные величины он не умеет.",
   "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.":
     "L3 PLUS: строка P1, столбец P2 дают ячейку P0; строка P2 и столбец P1 дают то же значение.",
   "(1+2) mod 3=0=(2+1) mod 3.": "(1+2) mod 3=0=(2+1) mod 3.",
@@ -1127,8 +1127,8 @@ export const theoryRu: TranslationDictionary = {
     "L3: U(3)={1,2}; кнопка 1 ничего не меняет, а кнопка 2 переставляет P1,P2. Двойное нажатие кнопки 2 возвращает каждый полюс.",
   "Multiplying unit indices corresponds exactly to composing their multiplication permutations.":
     "Умножение индексов обратимых классов точно соответствует композиции задаваемых ими перестановок умножения.",
-  "One chosen symmetry is a group element, not the whole acting group and not an orbit.":
-    "Одна выбранная симметрия — элемент группы, а не вся действующая группа и не орбита.",
+  "One chosen symmetry is a group element — neither the whole acting group nor an orbit.":
+    "Одна выбранная симметрия — элемент группы. Не вся действующая группа и не орбита.",
   "L3 action rows: u=1 maps 0,1,2 to 0,1,2; u=2 maps them to 0,2,1.":
     "Строки действия L3: u=1 отображает 0,1,2 в 0,1,2; u=2 — в 0,2,1.",
   "σ_2∘σ_2=σ_(4 mod 3)=σ_1=id.": "σ_2∘σ_2=σ_(4 mod 3)=σ_1=id.",
@@ -1376,7 +1376,7 @@ export const theoryRu: TranslationDictionary = {
     "На L2 операция PLUS(P1,P1) использует два входа, а символ P0 называет один фиксированный элемент и не принимает входов.",
   "Arity counts argument places syntactically; a named constant is exactly a nullary operation.":
     "Арность считает места аргументов в записи; именованная константа — в точности нульарная операция.",
-  "The tuple (2,2,0) lists arities, not level sizes, tensor dimensions, or learned layer widths.":
+  "The tuple (2,2,0) lists arities. Level sizes, tensor dimensions, and learned layer widths are all something else.":
     "Кортеж (2,2,0) перечисляет арности, а не размеры уровней, размерности тензоров или ширины обученных слоёв.",
   "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.": "Реестр операций: PLUS | 2; STAR | 2; P0 | 0.",
   "A_n=(Q_n,PLUS_n,STAR_n,P0).": "A_n=(Q_n,PLUS_n,STAR_n,P0).",
@@ -1507,8 +1507,8 @@ export const theoryRu: TranslationDictionary = {
   "STAR_LEFT(_,a)=R_a and STAR_RIGHT(_,a)=L_a.": "STAR_LEFT(_,a)=R_a и STAR_RIGHT(_,a)=L_a.",
 
   "Image of a function": "Образ функции",
-  "The image is the set of destinations actually reached, not every destination that was available in principle.":
-    "Образ — множество действительно достигнутых целей, а не всех целей, доступных в принципе.",
+  "The image is the set of destinations actually reached. Everything merely available in principle stays out of it.":
+    "Образ — это цели, до которых действительно дошли. Те, что доступны в принципе, сюда не входят.",
   "Im(f)={f(x)|x∈X}; rank(f)=|Im(f)| for a finite transformation.":
     "Im(f)={f(x)|x∈X}; для конечного преобразования rank(f)=|Im(f)|.",
   "L3 R_P2 has outputs P0,P0,P1, so Im(R_P2)={P0,P1} and rank=2.":
@@ -1552,14 +1552,14 @@ export const theoryRu: TranslationDictionary = {
 
   "Unit group and Euler totient": "Группа обратимых элементов и функция Эйлера",
   "Units are exactly the step sizes that eventually visit every mark instead of getting trapped in a smaller loop.":
-    "Обратимые классы — в точности те размеры шага, которые посещают каждую отметку, а не застревают в меньшем цикле.",
+    "Обратимые классы — ровно те размеры шага, которыми обходишь все отметки и не застреваешь в меньшем цикле.",
   "U(n)={u mod n | gcd(u,n)=1}; |U(n)|=φ(n).": "U(n)={u mod n | gcd(u,n)=1}; |U(n)|=φ(n).",
   "U(3)={1,2} and φ(3)=2; U(4)={1,3} while step 2 is excluded because gcd(2,4)=2.":
     "U(3)={1,2} и φ(3)=2; U(4)={1,3}, а шаг 2 исключён, поскольку gcd(2,4)=2.",
   "A residue has a multiplicative inverse modulo n exactly when it is coprime to n.":
     "Класс вычетов имеет мультипликативный обратный по модулю n тогда и только тогда, когда он взаимно прост с n.",
-  "U(n) is a multiplicative group of indices, not the carrier Q_n under PLUS.":
-    "U(n) — мультипликативная группа индексов, а не носитель Q_n относительно PLUS.",
+  "U(n) is a multiplicative group of indices. The carrier Q_n under PLUS is a different object.":
+    "U(n) — мультипликативная группа индексов. Носитель Q_n относительно PLUS — совсем другое.",
   "Unit ledger L1–L7 has sizes 1,1,2,2,4,2,6.": "Размеры в реестре обратимых классов L1–L7: 1,1,2,2,4,2,6.",
   "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).": "u∈U(n)⇔gcd(u,n)=1⇔∃v:uv≡1 (mod n).",
 
@@ -1573,7 +1573,7 @@ export const theoryRu: TranslationDictionary = {
   "Choose the root split; left and right subtree shapes are independent, so their counts multiply and all split positions add.":
     "Выберите разделение в корне; формы левого и правого поддеревьев независимы, поэтому их числа перемножаются, а результаты по всем местам разделения складываются.",
   "Catalan counts tree shapes with fixed operand order; it does not count permutations of operands.":
-    "Число Каталана считает формы деревьев при фиксированном порядке операндов, а не перестановки операндов.",
+    "Число Каталана считает формы деревьев при фиксированном порядке операндов. Перестановки самих операндов оно не считает.",
   "arity 2,3,4,5 → bracketings 1,2,5,14.": "арность 2,3,4,5 → число расстановок скобок 1,2,5,14.",
   "C_3=C_0C_2+C_1C_1+C_2C_0=2+1+2=5.": "C_3=C_0C_2+C_1C_1+C_2C_0=2+1+2=5.",
 
@@ -1677,7 +1677,7 @@ export const theoryRu: TranslationDictionary = {
   "P_i★P0=P_i for every i. Conversely, if e=P_k were right-neutral, P1★P_k=P1 would force 1+k≡1 (mod n), hence k≡0 and e=P0.":
     "P_i★P0=P_i для каждого i. Обратно, если бы e=P_k был правым нейтральным элементом, из P1★P_k=P1 следовало бы 1+k≡1 (mod n), откуда k≡0 и e=P0.",
   "An equivalence ∼ is a congruence when it is compatible with every named operation: x∼x' and y∼y' imply F(x,y)∼F(x',y') for each F; use STAR for S_n and both PLUS and STAR for A_n.":
-    "Отношение эквивалентности ∼ является конгруэнцией, если оно совместимо с каждой именованной операцией: из x∼x' и y∼y' следует F(x,y)∼F(x',y') для каждой F; для S_n проверяется STAR, а для A_n — и PLUS, и STAR.",
+    "Отношение эквивалентности ∼ называют конгруэнцией, когда оно согласовано с каждой именованной операцией: из x∼x' и y∼y' следует F(x,y)∼F(x',y') для любой F. Для S_n проверяют STAR, для A_n — и PLUS, и STAR.",
   "A character is a group homomorphism C_n→C×; χ_s(k)=exp(2πisk/n), so χ_s(k+ℓ)=χ_s(k)χ_s(ℓ). It is faithful exactly when gcd(s,n)=1.":
     "Характер — гомоморфизм групп C_n→C×; χ_s(k)=exp(2πisk/n), поэтому χ_s(k+ℓ)=χ_s(k)χ_s(ℓ). Он точен тогда и только тогда, когда gcd(s,n)=1.",
   "f:A_n→A_m is a homomorphism when f(P0)=P0 and f(F_n(x,y))=F_m(f(x),f(y)) for every x,y and each F∈{PLUS,STAR}.":

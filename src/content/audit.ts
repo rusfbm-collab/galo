@@ -123,7 +123,7 @@ export const statusRules: readonly StatusRule[] = [
   {
     code: "S4",
     rule: "NOT PROVEN is a statement about evidence, not about falsity.",
-    text: "It says nobody has established the thing here, not that the thing is false. It is published so that the absence is visible rather than inferred from silence.",
+    text: "It says nobody established the thing here. It does not say the thing is false. We publish it so the gap is visible instead of being guessed at from our silence.",
   },
 ];
 

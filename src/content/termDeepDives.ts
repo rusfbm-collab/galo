@@ -160,7 +160,7 @@ export const termDeepDives: readonly TermDeepDive[] = [
     picture:
       "A laboratory notebook page: which experiment, which inputs, which result — written down while it happened.",
     whyGalo:
-      "A claim without a receipt cannot be re-run by somebody who does not trust the person making it. GALO treats that as a defect in the claim, not a detail of the paperwork.",
+      "Somebody who does not trust the person making a claim cannot re-run it without a receipt. GALO treats that as a defect in the claim itself, and not as a detail of the paperwork.",
     whereYouMeetIt:
       "The recorded walkthrough on the home page, the work ledger, and every check identifier shown on this site.",
     related: ["Boundary", "Formal, current, and target layers"],
@@ -204,7 +204,7 @@ export const termDeepDives: readonly TermDeepDive[] = [
     picture:
       "Every moment the clock hand points at three: three today, three next week, fifteen hundred hours. One mark, many moments.",
     whyGalo:
-      "It explains how a label can carry exact arithmetic without pretending to be a quantity. The label stands for a class, not for a size.",
+      "It explains how a label can do exact arithmetic without pretending to be a quantity: the label stands for a class, and a class has no size.",
     whereYouMeetIt: "The correspondence between P_i and the remainder i, and every wraparound in the tables.",
     related: ["Modulo n", "Pole", "Level"],
   },

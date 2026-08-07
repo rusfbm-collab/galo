@@ -55,7 +55,7 @@ export const assessmentTable: readonly AssessmentRow[] = [
   {
     dimension: "Delivery in Arabic",
     answerToday:
-      "Implemented, not planned. This site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if any rendered string is missing a translation. It is a website rather than a product deployment, and that is the whole of the claim.",
+      "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.",
     status: "ESTABLISHED",
     whereToCheck: "/audit#what-you-can-check",
   },
@@ -75,7 +75,7 @@ export const assessmentTable: readonly AssessmentRow[] = [
   },
   {
     dimension: "Customer, pilot, or letter of intent",
-    answerToday: "None of the three. Not one signed, not one verbal, not one in negotiation.",
+    answerToday: "None of the three. Nothing signed, nothing verbal, nothing in negotiation.",
     status: "NONE",
     whereToCheck: "/investors#state-of-play",
   },
@@ -155,7 +155,7 @@ export const regionFit: readonly RegionFit[] = [
   {
     claim: "Replay runs on an ordinary interpreter",
     mechanism:
-      "The published replays were executed on a standard CPython 3.12.13 interpreter, not on specialised hardware, because a replay is a finite enumeration rather than an inference pass.",
+      "The published replays ran on a standard CPython 3.12.13 interpreter, with no specialised hardware anywhere in the loop, because a replay enumerates a finite set instead of making an inference pass.",
     limit:
       "No timing, cost, throughput, or efficiency figure has been measured, and none is claimed. That a thing runs is not a statement about what it costs to run.",
   },

@@ -159,7 +159,7 @@ export function ComparisonPage() {
             eyebrow={t("WHAT EACH ONE IS GOOD AT")}
             title={t("Both lists are short, and both are honest.")}
             text={t(
-              "The left column lists things the GALO kernel cannot do at all. The right column lists properties, not results: they describe what can be asked of the layer, not how well it performs on any task.",
+              "The left column lists what the GALO kernel cannot do at all. The right column lists properties rather than results: they say what the layer can be asked for, and say nothing about how well it does any task.",
             )}
           />
           <div className="comparison-strengths">

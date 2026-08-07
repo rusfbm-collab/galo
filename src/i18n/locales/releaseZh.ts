@@ -53,7 +53,7 @@ export const releaseZh: TranslationDictionary = {
   "Blocked because the required runtime was unavailable; no pass is claimed.":
     "由于所需运行时不可用而受阻；不声明该项通过。",
   "Arbitrary free-text semantic noninterference": "任意自由文本的语义非干扰性",
-  "The selector accepts two fixed source patterns, not arbitrary natural-language observations.":
+  "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
     "该选择器仅接受两个固定来源模式，不接受任意自然语言观测。",
   "External outcome and operational gain": "外部结果与运行增益",
   "Internal work-unit accounting is not a speedup, causal outcome, customer value, or external gain result.":
@@ -71,14 +71,14 @@ export const releaseZh: TranslationDictionary = {
   "Fresh STATIC": "本次新执行的 STATIC",
   "Fresh FAST": "本次新执行的 FAST",
   "Fresh FULL": "本次新执行的 FULL",
-  "The 1,366/1,366 FULL result is a stored release receipt, not a fresh replay result.":
+  "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
     "1,366/1,366 的 FULL 结果来自存档发布回执，并非本次新执行的重放结果。",
   "THREE EVIDENCE LAYERS": "三层证据",
   "Do not infer runtime capability from formal or historical material.": "不得从形式材料或历史材料推断当前运行时能力。",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
     "该版本明确区分数学层、兼容性证据层与当前可执行 API。任何一层中的陈述都不会被无提示地提升为另一层中的陈述。",
   "CURRENT V4 SELECTOR": "当前 V4 选择器",
-  "A closed deterministic selector, not a learned reasoner.": "封闭的确定性选择器，而非学习型推理器。",
+  "A closed deterministic selector. Nothing about it was learned.": "封闭的确定性选择器，而非学习型推理器。",
   "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
     "该选择器恰好识别两个来源模式，按奇偶性筛选已提交的有限全集，并对观测、候选 ID 与序号进行哈希以生成确定性次序。Atlas 状态不影响结果。",
   "Source ontology": "来源本体",

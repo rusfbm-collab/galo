@@ -74,8 +74,8 @@ export const mathRu: TranslationDictionary = {
     "Бинарная таблица не переопределяется для LEFT или RIGHT. Семейство определяет, как исходный и активный полюса подаются одному и тому же зафиксированному оператору.",
   "source then active": "сначала исходный, затем активный",
   "active then source": "сначала активный, затем исходный",
-  "Orientation changes operand placement, not the Cayley law.":
-    "Ориентация меняет размещение операндов, а не закон Кэли.",
+  "Orientation changes where the operands sit. The Cayley law is untouched.":
+    "Ориентация меняет размещение операндов. Закон Кэли остаётся прежним.",
   "Direct L3 orientation witness": "Прямой свидетель ориентации на L3",
   "PLUS returns the same target because it is commutative, while STAR orientation changes the target. The typed identities remain distinct in both cases.":
     "PLUS возвращает одну и ту же цель благодаря коммутативности, тогда как ориентация STAR меняет цель. В обоих случаях типизированные идентичности остаются различными.",
@@ -90,8 +90,8 @@ export const mathRu: TranslationDictionary = {
   "Typed cells": "Типизированные ячейки",
   Total: "Итого",
   "Exact invariant": "Точный инвариант",
-  "This count is a formal registry size, not a count of semantic concepts and not an intelligence metric.":
-    "Это размер формального реестра, а не число семантических понятий и не метрика интеллекта.",
+  "The count measures the size of a formal registry. It counts no semantic concepts, and it is not an intelligence metric.":
+    "Это размер формального реестра. Не число смыслов и не мера интеллекта.",
   "A higher level is not more intelligent. Pole labels are local to a frame and have no fixed global meaning.":
     "Более высокий уровень не является более интеллектуальным. Метки полюсов локальны для фрейма и не имеют фиксированного глобального смысла.",
   "A binary Cayley operation on Q_n does not make the carrier L2. Every level L1–L7 has binary PLUS and STAR laws.":
@@ -190,7 +190,7 @@ export const mathZh: TranslationDictionary = {
     "LEFT 或 RIGHT 不会重新定义二元表。动作族只决定源状态与活动极如何放入同一个冻结运算。",
   "source then active": "先源状态，后活动极",
   "active then source": "先活动极，后源状态",
-  "Orientation changes operand placement, not the Cayley law.": "执行方向改变操作数的放置次序，而不改变凯莱运算律。",
+  "Orientation changes where the operands sit. The Cayley law is untouched.": "执行方向改变操作数的放置次序，而不改变凯莱运算律。",
   "Direct L3 orientation witness": "L3 方向的直接见证",
   "PLUS returns the same target because it is commutative, while STAR orientation changes the target. The typed identities remain distinct in both cases.":
     "PLUS 因满足交换律而返回相同目标，STAR 的执行方向则会改变目标；两种情况下，类型化身份都保持不同。",
@@ -204,7 +204,7 @@ export const mathZh: TranslationDictionary = {
   "Typed cells": "类型化单元格",
   Total: "合计",
   "Exact invariant": "精确不变量",
-  "This count is a formal registry size, not a count of semantic concepts and not an intelligence metric.":
+  "The count measures the size of a formal registry. It counts no semantic concepts, and it is not an intelligence metric.":
     "这一数值表示形式化登记表的规模，并非语义概念数量，也不是智能指标。",
   "A higher level is not more intelligent. Pole labels are local to a frame and have no fixed global meaning.":
     "更高层级并不意味着更高智能。极标签只在局部框架内有效，没有固定的全局含义。",
@@ -302,7 +302,7 @@ export const mathAr: TranslationDictionary = {
     "لا يُعاد تعريف الجدول الثنائي من أجل LEFT أو RIGHT. تحدد العائلة كيفية وضع القطب المصدر والقطب النشط في العملية المجمّدة نفسها.",
   "source then active": "المصدر ثم النشط",
   "active then source": "النشط ثم المصدر",
-  "Orientation changes operand placement, not the Cayley law.": "يغيّر الاتجاه موضع المُعاملات، لا قانون كايلي.",
+  "Orientation changes where the operands sit. The Cayley law is untouched.": "يغيّر الاتجاه موضع المُعاملات، لا قانون كايلي.",
   "Direct L3 orientation witness": "شاهد مباشر للاتجاه عند L3",
   "PLUS returns the same target because it is commutative, while STAR orientation changes the target. The typed identities remain distinct in both cases.":
     "تعيد PLUS الهدف نفسه لأنها تبادلية، بينما يغيّر اتجاه STAR الهدف. وتظل الهويات محددة الأنواع متميزة في الحالتين.",
@@ -317,7 +317,7 @@ export const mathAr: TranslationDictionary = {
   "Typed cells": "الخلايا محددة الأنواع",
   Total: "المجموع",
   "Exact invariant": "الثابت الدقيق",
-  "This count is a formal registry size, not a count of semantic concepts and not an intelligence metric.":
+  "The count measures the size of a formal registry. It counts no semantic concepts, and it is not an intelligence metric.":
     "هذا العدد هو حجم سجل شكلي، وليس عددًا للمفاهيم الدلالية ولا مقياسًا للذكاء.",
   "A higher level is not more intelligent. Pole labels are local to a frame and have no fixed global meaning.":
     "المستوى الأعلى ليس أكثر ذكاءً. تسميات الأقطاب محلية داخل الإطار وليس لها معنى عالمي ثابت.",

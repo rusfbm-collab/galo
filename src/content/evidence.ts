@@ -129,7 +129,7 @@ export const releaseEvidence = {
     {
       label: "Arbitrary free-text semantic noninterference",
       status: "NOT PROVEN" as EvidenceStatus,
-      detail: "The selector accepts two fixed source patterns, not arbitrary natural-language observations.",
+      detail: "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.",
     },
     {
       label: "External outcome and operational gain",

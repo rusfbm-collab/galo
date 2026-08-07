@@ -139,7 +139,7 @@ export const academicAr: TranslationDictionary = {
   "A rule assigning each group element a permutation, with the identity acting trivially and products acting by composition.":
     "قاعدة تسند إلى كل عنصر من الزمرة تبديلًا؛ يفعل عنصر الهوية فعلًا محايدًا، وتفعل الجداءات بالتركيب.",
   Orbit: "مدار",
-  "All points reachable from one point under the whole acting group. An orbit is a subset, not a new state or a probability class.":
+  "All the points one point can reach under the whole acting group. An orbit is a subset — neither a new state nor a probability class.":
     "كل النقاط التي يمكن بلوغها من نقطة واحدة تحت فعل الزمرة كاملة. المدار مجموعة جزئية، لا حالة جديدة ولا فئة احتمالية.",
   Stabilizer: "مثبّت",
   "The subgroup of transformations that leave one selected point fixed. Orbit–stabilizer relates local symmetry to orbit size.":
@@ -159,7 +159,7 @@ export const academicAr: TranslationDictionary = {
   "Cycle notation lists every pole exactly once; one-cycles are fixed points.":
     "يسرد ترميز الدورات كل قطب مرة واحدة بالضبط؛ والدورات الأحادية نقاط ثابتة.",
   "Carrier orbit": "مدار عنصر الحامل",
-  "The orbit contains every image of the selected pole under all units, not only the selected unit.":
+  "The orbit holds every image of the selected pole under all the units, and not just under the one that was selected.":
     "يحتوي المدار كل صور القطب المختار تحت جميع الوحدات، لا تحت الوحدة المختارة وحدها.",
   "Ordered-pair orbit": "مدار زوج مرتب",
   "The same multiplier acts diagonally on source and active; level and family remain fixed.":
@@ -175,7 +175,7 @@ export const academicAr: TranslationDictionary = {
   "Pair orbits are computed inside each fixed level. Multiplying by four keeps the action-family tag fixed; no orbit crosses a level or family boundary.":
     "تُحسب مدارات الأزواج داخل كل مستوى ثابت. ويحافظ الضرب في أربعة على وسم عائلة الفعل؛ فلا يعبر أي مدار حدود مستوى أو عائلة.",
   "Aggregate automorphism-map count": "العدد الكلي لتطبيقات التشاكل الذاتي",
-  "Eighteen is a sum over seven local groups, not the order of a global automorphism group.":
+  "Eighteen sums seven local groups. No global automorphism group has that order.":
     "العدد 18 مجموع رتب سبع زمر محلية، وليس رتبة زمرة تشاكلات ذاتية عالمية.",
   "Fibrewise typed-orbit count": "عدد المدارات محددة النوع على كل ليف",
   "The four family tags stay separate. Direct traversal and Burnside's lemma must return the same total.":
@@ -185,7 +185,7 @@ export const academicAr: TranslationDictionary = {
     "المساواة شاهد اتساق للفعل المنتهي؛ ولا تفوّض دمج الدلالات.",
   "POINTED AUTOMORPHISMS VS AFFINE TORSOR SYMMETRIES":
     "التشاكلات الذاتية ذات النقطة المعينة مقابل تناظرات الفضاء المتجانس الرئيسي الأفينية",
-  "Hol(C_n) belongs to the PLUS torsor, not to STAR automorphisms.":
+  "Hol(C_n) belongs to the PLUS torsor. STAR automorphisms have nothing to do with it.":
     "ينتمي Hol(C_n) إلى فضاء PLUS المتجانس الرئيسي، لا إلى تشاكلات STAR الذاتية.",
   "Pointed automorphism": "تشاكل ذاتي ذو نقطة معينة",
   "It preserves PLUS, STAR, and P0 for every unit u.": "يحفظ PLUS وSTAR وP0 لكل وحدة u.",
@@ -193,16 +193,16 @@ export const academicAr: TranslationDictionary = {
   "For b≠0 it does not fix P0, so it is not an automorphism of the pointed cyclic group.":
     "عندما b≠0 لا يثبت P0؛ لذا فليس تشاكلًا ذاتيًا للزمرة الدورية ذات النقطة المعينة.",
   "Exact STAR failure": "فشل STAR الدقيق",
-  "The inequality holds for every nonzero residue b, not merely in a generic case.":
+  "The inequality holds for every nonzero residue b, and not just in a generic case.":
     "تتحقق اللامساواة لكل فئة باقٍ غير صفرية b، لا في حالة عامة فحسب.",
-  "Inversion orbits, not physical mirrors": "مدارات المعكوس، لا مرايا فيزيائية",
+  "Inversion orbits, no physical mirrors": "مدارات المعكوس، لا مرايا فيزيائية",
   "These are orbits of the involution on differences; they do not encode time, causality, or spatial reflection.":
     "هذه مدارات الانقلاب على الفروق؛ ولا ترمّز الزمن أو السببية أو الانعكاس المكاني.",
   "Quadratic-residue nuance": "دقة البواقي التربيعية",
   "The quadratic-residue subgroup preserves each block; the full unit group preserves only the unordered two-block partition and may swap its blocks.":
     "تحفظ زمرة البواقي التربيعية الجزئية كل كتلة؛ أما زمرة الوحدات الكاملة فلا تحفظ إلا التقسيم غير المرتب إلى كتلتين وقد تبدلهما.",
   "Characters and faithful phase labels": "المحارف ووسوم الطور الأمينة",
-  "All s define characters of C_n; only unit s give faithful labels. In a phase model P0 maps to complex 1, not complex 0.":
+  "Every s defines a character of C_n, and only the units give faithful labels. In a phase model P0 lands on complex 1; complex 0 is where it never goes.":
     "تعرّف جميع قيم s محارف لـ C_n؛ ولا تعطي وسومًا أمينة إلا قيم s القابلة للعكس. وفي نموذج الطور يقابل P0 العدد المركب 1، لا الصفر المركب.",
   "CROSS-LEVEL HOMOMORPHISMS": "التشاكلات بين المستويات",
   "PLUS and STAR have different homomorphism counts.": "يختلف عدد التشاكلات في PLUS عنه في STAR.",

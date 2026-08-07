@@ -196,7 +196,7 @@ export function ThinkingPage() {
             eyebrow={t("NARROWING, NOT SEARCHING")}
             title={t("The candidate is not found. It is what remains after four declared cuts.")}
             text={t(
-              "A search explores an open space and reports the best thing it found. This is the opposite: the space is closed before the run starts, each cut is a rule anyone can read, and the last step is an ordering that can be recomputed. That is why the outcome is arguable rather than merely plausible.",
+              "A search wanders an open space and reports the best thing it turned up. Here the space is closed before the run starts, every cut is a rule anyone can read, and the last step is an ordering that can be recomputed. So the outcome can be argued with, not merely found plausible.",
             )}
           />
           <SelectorFunnelFigure />

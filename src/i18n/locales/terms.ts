@@ -68,9 +68,9 @@ export const termsRu: TranslationDictionary = {
   "A Cayley table lists the result of a two-input rule for every possible pair of inputs.":
     "Таблица Кэли перечисляет результат правила с двумя входами для каждой возможной пары входов.",
   "The times table you already know, but written for any two-input rule instead of multiplication.":
-    "Хорошо знакомая таблица умножения, но записанная для любого правила с двумя входами, а не только для умножения.",
+    "Хорошо знакомая таблица умножения, только записанная для любого правила с двумя входами.",
   "A finite table can be checked exhaustively. Nothing has to be trusted, sampled or estimated: every cell is either right or wrong, and the site regenerates them rather than quoting them.":
-    "Конечную таблицу можно проверить целиком. Ничего не приходится принимать на веру, выбирать выборочно или оценивать: каждая ячейка либо верна, либо нет, и сайт пересчитывает их, а не цитирует.",
+    "Конечную таблицу проверяют целиком. Ничего не надо брать на веру, выбирать наугад или прикидывать: каждая клетка либо верна, либо нет, и сайт их пересчитывает, а не переписывает откуда-то.",
   "The L3 tables, the coloured field illustration, and the table channel of every glossary entry.":
     "Таблицы L3, раскрашенная иллюстрация-поле и табличный канал каждой словарной статьи.",
   "An automorphism is a reversible renaming of every position that leaves every rule intact.":
@@ -109,14 +109,14 @@ export const termsRu: TranslationDictionary = {
     "Протокол — машиночитаемая запись того, что один ограниченный запуск проверил, выполнил и чем завершился.",
   "A laboratory notebook page: which experiment, which inputs, which result — written down while it happened.":
     "Страница лабораторного журнала: какой эксперимент, какие входные данные, какой результат — записанные в момент, когда это происходило.",
-  "A claim without a receipt cannot be re-run by somebody who does not trust the person making it. GALO treats that as a defect in the claim, not a detail of the paperwork.":
+  "Somebody who does not trust the person making a claim cannot re-run it without a receipt. GALO treats that as a defect in the claim itself, and not as a detail of the paperwork.":
     "Утверждение без протокола не перезапустит тот, кто не верит автору на слово. Для GALO это изъян самого утверждения, а не мелочь в оформлении.",
   "The recorded walkthrough on the home page, the work ledger, and every check identifier shown on this site.":
     "Записанный разбор на главной странице, реестр единиц работы и каждый идентификатор проверки на этом сайте.",
   "A boundary is an explicit statement that a stronger conclusion is not available yet, together with the reason.":
     "Граница — явное заявление о том, что более сильный вывод пока недоступен, вместе с причиной.",
   "A sign saying the bridge ends here — not a detour sign pretending the road continues.":
-    "Знак, сообщающий, что мост здесь заканчивается, а не указатель объезда, делающий вид, будто дорога продолжается.",
+    "Знак «мост кончился». Не указатель объезда, который делает вид, будто дорога идёт дальше.",
   "The fastest way to lose a technical reader is to blur the edge of the evidence. Marking the edge is what makes everything inside it worth reading.":
     "Быстрее всего технического читателя теряют, когда размывают край доказательств. Обозначенный край — именно то, ради чего стоит читать всё, что внутри него.",
   "Every BOUNDARY status, the open-boundaries column, and the status field of the public claim matrix.":
@@ -141,8 +141,8 @@ export const termsRu: TranslationDictionary = {
     "Класс вычетов — целое семейство чисел, которые после замыкания попадают в одну и ту же позицию.",
   "Every moment the clock hand points at three: three today, three next week, fifteen hundred hours. One mark, many moments.":
     "Все моменты, когда стрелка указывает на тройку: сегодня, через неделю, в пятнадцать часов. Одна метка — много моментов.",
-  "It explains how a label can carry exact arithmetic without pretending to be a quantity. The label stands for a class, not for a size.":
-    "Это объясняет, как метка может нести точную арифметику, не притворяясь величиной: метка обозначает класс, а не размер.",
+  "It explains how a label can do exact arithmetic without pretending to be a quantity: the label stands for a class, and a class has no size.":
+    "Отсюда видно, откуда у метки точная арифметика без всякого притворства величиной: метка называет класс, а размера у неё нет.",
   "The correspondence between P_i and the remainder i, and every wraparound in the tables.":
     "Соответствие между P_i и остатком i, а также каждое замыкание в таблицах.",
   "A binary operation turns exactly two inputs into exactly one output, with no gaps and no choices.":
@@ -186,7 +186,7 @@ export const termsRu: TranslationDictionary = {
   "PLUS reaches the top rung; STAR stops on the first one, and the site says so wherever it matters.":
     "PLUS доходит до верхней ступени; STAR останавливается на первой, и сайт говорит об этом всюду, где это важно.",
   "The source is the position a transition starts from, tracked as a named role rather than as a slot.":
-    "Источник — позиция, с которой начинается переход; он отслеживается как именованная роль, а не как слот.",
+    "Источник — позиция, с которой начинается переход. Его ведут как именованную роль, а слот тут ни при чём.",
   "On a delivery record the sender stays the sender, even when the form rearranges its fields.":
     "В накладной отправитель остаётся отправителем, даже если бланк переставит поля местами.",
   "Roles survive rearrangement and slots do not. Keeping the role is how provenance stays attached to a result.":
@@ -439,7 +439,7 @@ export const termsZh: TranslationDictionary = {
     "回执是一条机器可读的记录，写明某一次受限运行检查了什么、执行了什么、得出了什么结论。",
   "A laboratory notebook page: which experiment, which inputs, which result — written down while it happened.":
     "实验记录本上的一页：哪个实验、哪些输入、什么结果——在事情发生的当下写下来。",
-  "A claim without a receipt cannot be re-run by somebody who does not trust the person making it. GALO treats that as a defect in the claim, not a detail of the paperwork.":
+  "Somebody who does not trust the person making a claim cannot re-run it without a receipt. GALO treats that as a defect in the claim itself, and not as a detail of the paperwork.":
     "没有回执的主张，无法被一个不信任提出者的人重新运行。GALO 把这看作主张本身的缺陷，而不是文书上的细节。",
   "The recorded walkthrough on the home page, the work ledger, and every check identifier shown on this site.":
     "首页上那次已记录的走查、工作单元台账，以及本站出现的每一个检查标识。",
@@ -471,7 +471,7 @@ export const termsZh: TranslationDictionary = {
     "同余类是一整族整数：它们在绕回之后都落在同一个位置上。",
   "Every moment the clock hand points at three: three today, three next week, fifteen hundred hours. One mark, many moments.":
     "指针指向三点的每一个时刻：今天的三点、下周的三点、十五时。一个刻度，许多时刻。",
-  "It explains how a label can carry exact arithmetic without pretending to be a quantity. The label stands for a class, not for a size.":
+  "It explains how a label can do exact arithmetic without pretending to be a quantity: the label stands for a class, and a class has no size.":
     "这解释了标签为何能承载精确的算术，却不必假装自己是一个数量：标签代表的是一个类，而不是一个大小。",
   "The correspondence between P_i and the remainder i, and every wraparound in the tables.":
     "P_i 与余数 i 之间的对应关系，以及表格中的每一次绕回。",
@@ -771,7 +771,7 @@ export const termsAr: TranslationDictionary = {
     "الإيصال سجل مقروء آليًا لما فحصه تشغيل مقيَّد واحد وما نفّذه وما انتهى إليه.",
   "A laboratory notebook page: which experiment, which inputs, which result — written down while it happened.":
     "صفحة من دفتر مختبر: أي تجربة، وأي مدخلات، وأي نتيجة — مكتوبة لحظة حدوثها.",
-  "A claim without a receipt cannot be re-run by somebody who does not trust the person making it. GALO treats that as a defect in the claim, not a detail of the paperwork.":
+  "Somebody who does not trust the person making a claim cannot re-run it without a receipt. GALO treats that as a defect in the claim itself, and not as a detail of the paperwork.":
     "الادعاء بلا إيصال لا يستطيع من لا يثق بصاحبه إعادة تشغيله. ويعدّ GALO ذلك عيبًا في الادعاء نفسه لا تفصيلًا إداريًا.",
   "The recorded walkthrough on the home page, the work ledger, and every check identifier shown on this site.":
     "الجولة المسجَّلة في الصفحة الرئيسية، ودفتر وحدات العمل، وكل معرّف فحص يظهر في هذا الموقع.",
@@ -803,7 +803,7 @@ export const termsAr: TranslationDictionary = {
     "فئة البواقي هي عائلة كاملة من الأعداد الصحيحة تقع كلها على الموضع نفسه بعد الالتفاف.",
   "Every moment the clock hand points at three: three today, three next week, fifteen hundred hours. One mark, many moments.":
     "كل لحظة يشير فيها عقرب الساعة إلى الثالثة: اليوم، والأسبوع القادم، والساعة الخامسة عشرة. علامة واحدة ولحظات كثيرة.",
-  "It explains how a label can carry exact arithmetic without pretending to be a quantity. The label stands for a class, not for a size.":
+  "It explains how a label can do exact arithmetic without pretending to be a quantity: the label stands for a class, and a class has no size.":
     "هذا يفسّر كيف تحمل التسمية حسابًا دقيقًا دون أن تدّعي أنها كمية: فالتسمية تمثل فئة لا مقدارًا.",
   "The correspondence between P_i and the remainder i, and every wraparound in the tables.":
     "التناظر بين P_i والباقي i، وكل التفاف في الجداول.",

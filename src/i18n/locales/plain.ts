@@ -42,13 +42,13 @@ export const plainRu: TranslationDictionary = {
   "GALO AI in Plain Words — No Jargon, No Formulas":
     "GALO AI простыми словами — без терминов и формул",
   "GALO explained the way you would explain it to a friend: the everyday situation it addresses, what it actually does, why a table, what that buys you, and what we cannot yet promise.":
-    "GALO так, как объясняют другу: знакомая ситуация, с которой всё начинается, что мы с ней делаем, при чём тут таблица, что это даёт и чего мы пока не обещаем.",
+    "GALO так, как объясняют другу: с какой знакомой ситуации всё начинается, что мы с ней делаем, при чём тут таблица, что это даёт и чего мы пока не обещаем.",
   "How many different squares there are. More squares means finer distinctions and more to keep track of.":
     "Сколько всего клеток. Больше клеток — тоньше различия, но и следить приходится за бо́льшим.",
   "I am deciding whether this deserves an hour":
     "Решаю, стоит ли это моего часа",
   "I came here to check, not to admire":
-    "Я пришёл проверять, а не восхищаться",
+    "Я пришёл проверять, а не любоваться",
   "I just want to know what this is":
     "Просто хочу понять, что это",
   "If you are weighing it up":
@@ -130,7 +130,7 @@ export const plainRu: TranslationDictionary = {
   "That gap at the end — where an honest person genuinely cannot answer a fair question — is the thing this project is about. Not making programs smarter. Making them able to account for themselves afterwards.":
     "Вот эта дыра в конце — когда честный человек искренне не может ответить на справедливый вопрос — и есть то, чем занят этот проект. Не сделать программы умнее. Сделать так, чтобы они потом могли за себя отчитаться.",
   "That is genuinely the whole idea. Everything else on this site — the tables, the counts, the proofs — exists to make those three sentences actually true rather than merely promised.":
-    "Это и правда вся идея. Всё остальное на сайте — таблицы, подсчёты, доказательства — нужно только для того, чтобы эти три предложения были правдой, а не обещанием.",
+    "Это и правда вся идея. Всё остальное на сайте — таблицы, подсчёты, доказательства — нужно затем, чтобы эти три предложения были правдой, а не обещанием.",
   "That test has not been run, by us or by anybody else. Until it is, we do not say the words — and you should treat anyone who does say them with suspicion.":
     "Такой проверки не проводил никто — ни мы, ни кто-либо ещё. Пока её нет, мы этих слов не говорим. И к тем, кто их говорит, стоит отнестись настороженно.",
   "The complete list of things the program is allowed to do, written before it starts. Nothing gets added to it later.":

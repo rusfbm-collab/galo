@@ -136,7 +136,7 @@ export const academicZh: TranslationDictionary = {
   "A rule assigning each group element a permutation, with the identity acting trivially and products acting by composition.":
     "给每个群元素指定一个置换的规则；单位元按恒等置换作用，乘积按复合作用。",
   Orbit: "轨道",
-  "All points reachable from one point under the whole acting group. An orbit is a subset, not a new state or a probability class.":
+  "All the points one point can reach under the whole acting group. An orbit is a subset — neither a new state nor a probability class.":
     "由整个作用群从一点可达的全部点。轨道是子集，不是新状态，也不是概率类别。",
   Stabilizer: "稳定子",
   "The subgroup of transformations that leave one selected point fixed. Orbit–stabilizer relates local symmetry to orbit size.":
@@ -156,7 +156,7 @@ export const academicZh: TranslationDictionary = {
   "Cycle notation lists every pole exactly once; one-cycles are fixed points.":
     "循环记号恰好列出每个极一次；一循环就是不动点。",
   "Carrier orbit": "载体元素轨道",
-  "The orbit contains every image of the selected pole under all units, not only the selected unit.":
+  "The orbit holds every image of the selected pole under all the units, and not just under the one that was selected.":
     "该轨道包含所选极在所有单位作用下的像，而不仅是当前所选单位的像。",
   "Ordered-pair orbit": "有序对轨道",
   "The same multiplier acts diagonally on source and active; level and family remain fixed.":
@@ -172,7 +172,7 @@ export const academicZh: TranslationDictionary = {
   "Pair orbits are computed inside each fixed level. Multiplying by four keeps the action-family tag fixed; no orbit crosses a level or family boundary.":
     "有序对轨道在每个固定层级内计算。乘以四时，各动作族标签保持不变；任何轨道都不会跨越层级或族的边界。",
   "Aggregate automorphism-map count": "自同构映射总数",
-  "Eighteen is a sum over seven local groups, not the order of a global automorphism group.":
+  "Eighteen sums seven local groups. No global automorphism group has that order.":
     "18 是七个局部群阶的总和，不是某个全局自同构群的阶。",
   "Fibrewise typed-orbit count": "逐纤维类型化轨道数",
   "The four family tags stay separate. Direct traversal and Burnside's lemma must return the same total.":
@@ -181,7 +181,7 @@ export const academicZh: TranslationDictionary = {
   "Equality is a consistency witness for the finite action; it does not authorize semantic merging.":
     "该等式是有限作用的一致性见证，并不授权合并语义。",
   "POINTED AUTOMORPHISMS VS AFFINE TORSOR SYMMETRIES": "指定点自同构与挠子的仿射对称性",
-  "Hol(C_n) belongs to the PLUS torsor, not to STAR automorphisms.":
+  "Hol(C_n) belongs to the PLUS torsor. STAR automorphisms have nothing to do with it.":
     "Hol(C_n) 属于 PLUS 挠子的对称层，而不属于 STAR 自同构。",
   "Pointed automorphism": "指定点自同构",
   "It preserves PLUS, STAR, and P0 for every unit u.": "对每个单位 u，它都保持 PLUS、STAR 和 P0。",
@@ -189,16 +189,16 @@ export const academicZh: TranslationDictionary = {
   "For b≠0 it does not fix P0, so it is not an automorphism of the pointed cyclic group.":
     "当 b≠0 时它不固定 P0，因此不是指定点循环群的自同构。",
   "Exact STAR failure": "精确的 STAR 反例",
-  "The inequality holds for every nonzero residue b, not merely in a generic case.":
+  "The inequality holds for every nonzero residue b, and not just in a generic case.":
     "该不等式对每个非零剩余类 b 都成立，而不只是一般情形。",
-  "Inversion orbits, not physical mirrors": "反演轨道，而非物理镜像",
+  "Inversion orbits, no physical mirrors": "反演轨道，而非物理镜像",
   "These are orbits of the involution on differences; they do not encode time, causality, or spatial reflection.":
     "这些是差值上的对合轨道；它们不编码时间、因果关系或空间反射。",
   "Quadratic-residue nuance": "二次剩余的细节",
   "The quadratic-residue subgroup preserves each block; the full unit group preserves only the unordered two-block partition and may swap its blocks.":
     "二次剩余子群保持每个块；完整单位群只保持无序的两块划分，并可能交换两个块。",
   "Characters and faithful phase labels": "特征标与忠实相位标记",
-  "All s define characters of C_n; only unit s give faithful labels. In a phase model P0 maps to complex 1, not complex 0.":
+  "Every s defines a character of C_n, and only the units give faithful labels. In a phase model P0 lands on complex 1; complex 0 is where it never goes.":
     "每个 s 都定义 C_n 的特征标；只有可逆的 s 给出忠实标记。在相位模型中，P0 映到复数 1，而不是复数 0。",
   "CROSS-LEVEL HOMOMORPHISMS": "跨层同态",
   "PLUS and STAR have different homomorphism counts.": "PLUS 与 STAR 的同态数不同。",

@@ -1288,7 +1288,7 @@ export function TheoryPage() {
               <article>
                 <strong>04</strong>
                 <code dir="ltr">3 ∤ 5 ⇒ Emb(A_3,A_5)=∅</code>
-                <p>{t("Therefore the failure is structural, not merely a defect of the same-index candidate.")}</p>
+                <p>{t("The failure is therefore structural. It is not that the same-index candidate happened to fall short.")}</p>
               </article>
             </div>
             <p>
@@ -1368,7 +1368,7 @@ export function TheoryPage() {
           </div>
           <div className="theory-architecture-subheading">
             <span>{t("CURRENT V4 · EXACT REPLAYABLE PIPELINE")}</span>
-            <h3>{t("A closed deterministic selector, not a learned reasoner.")}</h3>
+            <h3>{t("A closed deterministic selector. Nothing about it was learned.")}</h3>
             <p>
               {t(
                 "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.",
