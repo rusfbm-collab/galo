@@ -21,12 +21,12 @@ export const thinkingRu: TranslationDictionary = {
   "A procedure that can stop is more useful than one that always answers.":
     "Процедура, которая умеет остановиться, полезнее той, которая всегда что-то отвечает.",
   "A refusal is a recorded outcome with a named gate. The design prefers a stop that can be pointed at over an answer that cannot be traced.":
-    "Отказ — это записанный исход с названным шлюзом. Замысел предпочитает остановку, на которую можно указать, ответу, который невозможно проследить.",
+    "Отказ — записанный исход с названным шлюзом. Остановка, на которую можно показать пальцем, для нас лучше ответа, который невозможно проследить.",
   "A refusal means the system failed.": "Отказ означает, что система не справилась.",
   "A requested descriptor is not a member of the committed universe.":
     "Запрошенный дескриптор не входит в зафиксированную вселенную.",
   "A search explores an open space and reports the best thing it found. This is the opposite: the space is closed before the run starts, each cut is a rule anyone can read, and the last step is an ordering that can be recomputed. That is why the outcome is arguable rather than merely plausible.":
-    "Поиск исследует открытое пространство и сообщает о лучшем, что нашёл. Здесь всё наоборот: пространство закрыто ещё до запуска, каждое сужение — правило, которое любой может прочитать, а последний шаг — порядок, который можно пересчитать. Именно поэтому исход можно оспорить, а не просто счесть правдоподобным.",
+    "Поиск бродит по открытому пространству и сообщает о лучшем, что нашёл. Здесь всё наоборот: пространство закрыто ещё до запуска, каждое сужение — правило, которое любой может прочитать, а последний шаг — порядок, поддающийся пересчёту. Поэтому исход можно оспорить, а не просто счесть правдоподобным.",
   "A single action of arity 2 executes at route depth 1, and a receipt records the checks, the work units, and the outcome.":
     "Выполняется одно действие арности 2 на глубине маршрута 1, а протокол исполнения записывает проверки, единицы работы и исход.",
   "A step would require reading meaning, changing a ranking, or writing something learned.":
@@ -34,7 +34,7 @@ export const thinkingRu: TranslationDictionary = {
   "A thought is nine stages, and each one hands a named object to the next.":
     "Мысль состоит из девяти этапов, и каждый передаёт следующему именованный объект.",
   "A thought travels the lane from left to right and has to clear every gate. Failing one is not an error condition to be recovered from: the run stops, and the gate that stopped it is written down, which is why a refusal can be argued with afterwards.":
-    "Мысль идёт по дорожке слева направо и обязана пройти каждый шлюз. Не пройти шлюз — это не сбой, из которого надо выходить: запуск останавливается, а остановивший шлюз записывается, и именно поэтому с отказом можно спорить впоследствии.",
+    "Мысль идёт по дорожке слева направо и обязана пройти каждый шлюз. Не пройти шлюз — не сбой, из которого надо выкарабкиваться: запуск встаёт, а шлюз, который его остановил, попадает в запись. Потому с отказом и можно спорить потом.",
   "A written-out procedure with declared stages, declared limits, and a record at the end of it.":
     "Прописанная процедура с объявленными этапами, объявленными пределами и записью в конце.",
   "All 1,204 committed descriptors are entered — the complete list the release commits to before anything runs.":
@@ -48,7 +48,7 @@ export const thinkingRu: TranslationDictionary = {
   "An upper band with three solid boxes labelled position, boundary, and ledger, and a lower band drawn with a dashed border containing two boxes labelled weights and preference, each marked with a cross.":
     "Верхняя полоса с тремя сплошными блоками — позиция, граница и журнал — и нижняя полоса с пунктирной рамкой, внутри которой два блока, помеченных крестом: веса и предпочтение.",
   "At L3 the carrier is exactly {P0, P1, P2}; at L7 it is exactly seven labels. The position is the whole of the engine's state — there is no second, hidden state alongside it. This is why the state can be printed in full into a record instead of being summarised.":
-    "На L3 носитель — это в точности {P0, P1, P2}; на L7 — ровно семь меток. Позиция и есть всё состояние движка: рядом с ней нет второго, скрытого состояния. Именно поэтому состояние можно целиком выписать в протокол, а не пересказывать.",
+    "На L3 носитель — это в точности {P0, P1, P2}, на L7 — ровно семь меток. Позиция и есть всё состояние движка: второго, скрытого, рядом нет. Поэтому состояние выписывают в протокол целиком, а не пересказывают.",
   "Because the ordering input is observation, candidate ID, and ordinal, an earlier run cannot make a later run prefer anything. learning_writes stays at zero.":
     "Поскольку на вход порядка идут наблюдение, идентификатор кандидата и порядковый номер, ранний запуск не может заставить более поздний что-либо предпочесть. learning_writes остаётся нулём.",
   "Both cuts are written into the release contract rather than decided during the run. Only four action kinds are executable at all; the remaining descriptors stay inert by construction. The parity half is fixed by whichever of the two patterns matched at stage 02, so the same input always reaches the same frontier.":
@@ -57,7 +57,7 @@ export const thinkingRu: TranslationDictionary = {
   "Declared filters narrow the set": "Объявленные фильтры сужают набор",
   "Do I need finer distinctions for what comes next?": "Нужны ли мне более тонкие различия для того, что будет дальше?",
   "Each gate below is a condition written into the release, not a runtime judgement. When a gate holds, the thought continues; when it does not, the run stops and the gate's code goes into the record, so the stop can be examined afterwards by someone who was not there.":
-    "Каждый шлюз ниже — это условие, прописанное в выпуске, а не решение, принимаемое во время работы. Если условие выполняется, мысль идёт дальше; если нет, запуск останавливается и код шлюза попадает в протокол, так что остановку сможет разобрать тот, кого при этом не было.",
+    "Каждый шлюз ниже — условие, прописанное в выпуске, а не решение, принимаемое на ходу. Условие выполняется — мысль идёт дальше; не выполняется — запуск встаёт, а код шлюза уходит в протокол, и остановку разберёт тот, кого при этом не было.",
   "Each one is written in the strongest form somebody might repeat it, and then corrected.":
     "Каждое из них записано в самой сильной форме, в какой его могли бы повторить, и затем исправлено.",
   "Each thought teaches GALO something.": "Каждая мысль чему-то учит GALO.",
@@ -70,7 +70,7 @@ export const thinkingRu: TranslationDictionary = {
   "Everything the engine still holds after a run can be printed out in full.":
     "Всё, что движок продолжает держать после запуска, можно выписать целиком.",
   "Everything the engine still holds after a run can be printed out in full. That is what makes a later disagreement resolvable: two runs can be compared register by register instead of being argued about.":
-    "Всё, что движок продолжает держать после запуска, можно выписать целиком. Именно это делает будущее разногласие разрешимым: два запуска можно сравнить регистр за регистром, а не спорить о них.",
+    "Всё, что движок держит после запуска, выписывается целиком. Поэтому будущий спор разрешим: два запуска сравнивают регистр за регистром, а не обсуждают.",
   "Five gates, each with a name that ends up in the record.":
     "Пять шлюзов, и у каждого есть имя, которое попадает в протокол.",
   "Five refusal gates along one execution lane": "Пять шлюзов отказа вдоль одной дорожки исполнения",
@@ -96,7 +96,7 @@ export const thinkingRu: TranslationDictionary = {
   "Kind not executable": "Вид действия неисполним",
   "Learned weights": "Выученные веса",
   "Learning writes are held at zero. Revising an explicit world model is stage 08, and stage 08 is target architecture rather than shipped behaviour.":
-    "Записи обучения удерживаются на нуле. Пересмотр явной модели мира — это этап 08, а этап 08 относится к целевой архитектуре, а не к отгруженному поведению.",
+    "Записи обучения держатся на нуле. Пересмотр явной модели мира — этап 08, а этап 08 относится к целевой архитектуре, а не к тому, что отгружено.",
   "Level, laws, executable kinds, arity, route depth, and accepted patterns.":
     "Уровень, законы, исполнимые виды действий, арность, глубина маршрута и принимаемые шаблоны.",
   "MEMORY, STATED EXACTLY": "ПАМЯТЬ, НАЗВАННАЯ ТОЧНО",
@@ -189,7 +189,7 @@ export const thinkingRu: TranslationDictionary = {
   "The level would be chosen in response to the situation instead of being declared in advance.":
     "Уровень выбирался бы в ответ на ситуацию, а не объявлялся заранее.",
   "The list is fixed by the release, not assembled during the run. Nothing can enter it later, and nothing outside it can be executed under any circumstances. That is what makes the next stages a narrowing rather than a search: the answer is known to be inside a finite set that a reviewer can enumerate independently.":
-    "Список задан выпуском, а не собирается во время запуска. Ничто не может попасть в него позже, и ничто вне него не может быть исполнено ни при каких обстоятельствах. Именно это делает следующие этапы сужением, а не поиском: ответ заведомо лежит внутри конечного множества, которое проверяющий может перечислить самостоятельно.",
+    "Список задаёт выпуск, а не сборка на ходу. Попасть в него позже нельзя, а исполнить что-то вне его нельзя ни при каких обстоятельствах. Поэтому дальше идёт сужение, а не поиск: ответ заведомо лежит в конечном множестве, которое проверяющий перечислит сам.",
   "The loop runs continuously until it is satisfied.": "Цикл крутится непрерывно, пока не будет удовлетворён.",
   "The matched pattern selects one parity half, so the other half is never even offered for ordering.":
     "Совпавший шаблон выбирает одну половину по чётности, поэтому вторая половина вообще не предлагается к упорядочиванию.",
@@ -200,7 +200,7 @@ export const thinkingRu: TranslationDictionary = {
   "The operand the admitted candidate supplies": "Операнд, который даёт допущенный кандидат",
   "The order is derived and one handle is bound": "Выводится порядок и привязывается один дескриптор",
   "The order over candidates is a hash of values that are all written down: the observation, the candidate identifier, and the ordinal. Nothing in it comes from the machine, the clock, or anything an earlier run left behind, so the sequence is the same wherever it is recomputed.":
-    "Порядок над кандидатами — это хеш от значений, которые все записаны: наблюдение, идентификатор кандидата и порядковый номер. В нём нет ничего от машины, от часов или от того, что оставил предыдущий запуск, поэтому последовательность одинакова везде, где её пересчитывают.",
+    "Порядок кандидатов задаёт хеш от записанных значений: наблюдение, идентификатор кандидата и порядковый номер. Ни машины, ни часов, ни следов предыдущего запуска в нём нет, поэтому последовательность везде выходит одна и та же.",
   "The other kind of machine": "Машина другого рода",
   "The pattern alpha,beta selects the LEFT role and the even enumeration parity; gamma,delta selects RIGHT and odd. There is no third branch and no fallback branch. An unmatched input produces a refusal with a named reason rather than a best guess, which is the first and largest difference between this procedure and an open-ended one.":
     "Шаблон alpha,beta выбирает роль LEFT и чётное перечисление; gamma,delta — RIGHT и нечётное. Третьей ветви нет, запасной ветви тоже нет. Несовпавший вход даёт отказ с названной причиной, а не наилучшую догадку, и это первое и самое крупное отличие данной процедуры от открытой.",

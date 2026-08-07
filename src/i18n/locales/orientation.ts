@@ -4,95 +4,95 @@ export const orientationRu: TranslationDictionary = {
   "Start here if you are not a mathematician":
     "Начните здесь, если вы не математик",
   "A chapter that leaves you impressed but unable to state anything precisely has failed. These are the four claims this one is for, and next to each is the operation that settles it — all four are cheap enough to do while reading.":
-    "Глава, после которой остаётся впечатление, но нечего сказать точно, свою задачу не выполнила. Вот четыре утверждения, ради которых написана эта, а рядом с каждым — действие, которое его решает; все четыре достаточно дёшевы, чтобы проделать их по ходу чтения.",
+    "Если после главы остаётся впечатление, но сказать точно нечего, глава написана зря. Вот четыре фразы, ради которых написана эта, а рядом с каждой — действие, которое её подтверждает. Все четыре можно проделать прямо по ходу чтения.",
   "A finite list of named things, plus one rule for combining two of them, is a table.":
-    "Конечный список именованных вещей плюс одно правило, соединяющее две из них, — это таблица.",
+    "Конечный список названных вещей плюс одно правило, как соединить любые две, — это и есть таблица.",
   "A grid of ready answers. Pick a row, pick a column, read the cell where they cross. Nothing is worked out while you wait — every answer is already written in.":
-    "Сетка готовых ответов. Выбираете строку, выбираете столбец, читаете клетку на пересечении. Ничего не вычисляется, пока вы ждёте, — каждый ответ уже вписан.",
+    "Сетка готовых ответов. Берёте строку, берёте столбец, читаете клетку на пересечении. Ничего не считается на ходу: каждый ответ уже вписан заранее.",
   "A list written in advance has to be finite, and every entry has to have a name.":
-    "Список, написанный заранее, обязан быть конечным, и у каждой записи должно быть имя.",
+    "Список, написанный заранее, обязан быть конечным, и у каждой строчки в нём должно быть имя.",
   "A sentence saying where a claim stops. When you meet one, it is not the project hedging — it is the edge of what was actually checked, written down so you do not have to guess it.":
-    "Фраза, говорящая, где утверждение кончается. Встретив её, знайте: это не осторожничанье проекта, а край того, что действительно проверено, записанный, чтобы вам не пришлось его угадывать.",
+    "Фраза о том, где наше утверждение заканчивается. Это не осторожность ради осторожности, а край действительно проверенного, записанный, чтобы вам не пришлось его угадывать.",
   "Add the seven per-level numbers yourself. They are printed, and they come to 560.":
-    "Сложите семь чисел по уровням сами. Они напечатаны, и в сумме дают 560.",
+    "Сложите семь чисел по уровням сами. Они напечатаны рядом, и в сумме выходит 560.",
   "Anywhere a state is shown.":
     "Везде, где показано состояние.",
   "At the end of most sections, in its own frame.":
-    "В конце большинства разделов, в собственной рамке.",
+    "В конце почти каждого раздела, отдельной врезкой.",
   "Describing each state in a sentence. A sentence has more than one reading, and the readings drift apart the moment the people who wrote it are no longer in the room.":
-    "Описывать каждое состояние фразой. У фразы больше одного прочтения, и прочтения расходятся ровно тогда, когда написавших её уже нет в комнате.",
+    "Описывать каждое состояние словами. У фразы всегда больше одного прочтения, и расходиться они начинают ровно тогда, когда автора уже нет рядом и спросить не у кого.",
   "Every grid in this chapter is one of these.":
     "Каждая сетка в этой главе — одна из них.",
   "Everything published here rests on one finite table, and I have looked at it.":
-    "Всё опубликованное здесь опирается на одну конечную таблицу, и я в неё заглянул.",
+    "Всё, что здесь опубликовано, держится на одной конечной таблице, и я в неё заглянул.",
   "Finite, so that reading all of it is a task that ends. Named, so that two people reading the same record six months apart resolve it the same way.":
-    "Конечным — чтобы прочитать его целиком было задачей, которая кончается. Именованным — чтобы двое, читающие одну и ту же запись с разницей в полгода, разрешили её одинаково.",
+    "Конечным — чтобы прочитать его до конца было делом, у которого есть конец. С именами — чтобы двое, открывшие одну и ту же запись с разницей в полгода, поняли её одинаково.",
   "Four sentences, each with the check that settles it.":
-    "Четыре фразы, и у каждой — проверка, которая её решает.",
+    "Четыре фразы, и у каждой — проверка, которая её подтверждает.",
   "Four steps from “why did it do that?” to a grid of letters.":
-    "Четыре шага от «почему оно так сделало?» до сетки букв.",
+    "Четыре шага от «почему оно так сделало?» до сетки из букв.",
   "Go to the check":
     "Перейти к проверке",
   "HOW A QUESTION TURNS INTO A TABLE":
     "КАК ВОПРОС ПРЕВРАЩАЕТСЯ В ТАБЛИЦУ",
   "How many positions are available. Level three has three of them, level seven has seven. Choosing a level is choosing how many cases you are able to tell apart at all.":
-    "Сколько позиций доступно. На третьем уровне их три, на седьмом — семь. Выбрать уровень значит выбрать, сколько случаев вы вообще способны различить.",
+    "Сколько позиций доступно. На третьем уровне их три, на седьмом — семь. Выбирая уровень, вы выбираете, сколько случаев вообще сможете отличить друг от друга.",
   "I can tell a theorem apart from a running system apart from a plan.":
     "Я отличаю теорему от работающей системы, а работающую систему — от плана.",
   "I know what this project does not claim, because it is listed rather than left out.":
-    "Я знаю, чего этот проект не заявляет, потому что это перечислено, а не опущено.",
+    "Я знаю, чего этот проект не обещает, потому что это перечислено, а не обойдено молчанием.",
   "Instead of":
-    "Вместо того чтобы",
+    "А не",
   "Keeping a longer log. A longer log records more of what happened. It still records nothing about what the program was allowed to do that day, which is the half of the question that matters.":
-    "Вести более подробный журнал. Более подробный журнал фиксирует больше того, что произошло. О том, что программе было позволено в тот день, он по-прежнему не говорит ничего — а это ровно та половина вопроса, которая и важна.",
+    "Вести более подробный журнал. Подробный журнал запишет больше того, что случилось, — и по-прежнему ни слова о том, что программе в тот день было позволено. А это как раз та половина вопроса, ради которой всё и затевалось.",
   "Not a plausible answer. The same answer — from the engineer today, from an auditor next year, and from whoever inherits the system after both of them have left.":
-    "Не правдоподобный ответ. Тот же самый ответ — от инженера сегодня, от аудитора через год и от того, кому система достанется, когда обоих уже не будет.",
+    "Не правдоподобный ответ, а один и тот же: у инженера сегодня, у аудитора через год и у того, кому система достанется, когда ни первого, ни второго уже не будет.",
   "Nothing above says the table is a good answer, only that it is the shape an answer has to have. Whether this particular table is useful for any particular job is a separate question, and this site does not claim to have settled it.":
-    "Ничто из сказанного выше не утверждает, что таблица — хороший ответ; сказано лишь, какую форму ответ обязан иметь. Полезна ли именно эта таблица именно для этой задачи — отдельный вопрос, и сайт не заявляет, что решил его.",
+    "Ничто из сказанного выше не говорит, что таблица — хороший ответ. Сказано только, какую форму ответ обязан иметь. Подходит ли эта таблица для конкретной задачи — вопрос отдельный, и сайт не берётся его решать.",
   "Nothing. This is the point where the requirements run out and the mathematics begins, and it is the only reason there is any mathematics here.":
-    "Ничем. Здесь требования заканчиваются и начинается математика — и это единственная причина, по которой она здесь вообще есть.",
+    "Ничем. Здесь требования кончаются и начинается математика — и это единственная причина, по которой она тут вообще есть.",
   "One position out of a declared list, written P0, P1, P2 and so on. It is a name, not a quantity: P2 is not larger than P1, and no sentence on this site treats it as though it were.":
-    "Одна позиция из объявленного списка, обозначаемая P0, P1, P2 и так далее. Это имя, а не величина: P2 не больше, чем P1, и ни одна фраза на сайте не обращается с ним так, будто больше.",
+    "Одна позиция из объявленного списка: P0, P1, P2 и так далее. Это имя, а не величина. P2 не больше, чем P1, и ни одна фраза на сайте с ним так не обращается.",
   "Open the two grids and read a single cell. That is the whole reading procedure, at every level.":
-    "Откройте две сетки и прочитайте одну-единственную клетку. Это и есть вся процедура чтения — на любом уровне.",
+    "Откройте две сетки и прочитайте одну клетку. Вот и вся процедура чтения, на любом уровне.",
   "Read the six non-claims. Every one of them begins with the word No.":
-    "Прочитайте шесть незаявленных пунктов. Каждый начинается со слова «нет».",
+    "Прочитайте шесть пунктов о том, чего мы не обещаем. Каждый начинается со слова «нет».",
   "Reconstructing the list afterwards. A list assembled after the fact is an argument about the past. It can be made to fit whatever happened, which is exactly why nobody has to believe it.":
-    "Восстанавливать список задним числом. Список, собранный постфактум, — это рассуждение о прошлом. Его можно подогнать под что угодно случившееся, а потому никто и не обязан ему верить.",
+    "Собирать список задним числом. Список, составленный после, — это уже рассуждение о прошлом: его можно подогнать под что угодно, а потому верить ему никто не обязан.",
   "SIX WORDS, EXPLAINED ONCE":
     "ШЕСТЬ СЛОВ, ОБЪЯСНЁННЫХ ОДИН РАЗ",
   "So the list of things the program could have done has to exist before it runs.":
-    "Значит, список того, что программа могла сделать, должен существовать до её запуска.",
+    "Значит, список того, что программа могла сделать, должен появиться до её запуска.",
   "Somebody has to be able to ask why, and get the same answer twice.":
-    "Кто-то должен уметь спросить «почему» и получить один и тот же ответ дважды.",
+    "Кто-то должен иметь возможность спросить «почему» и дважды получить один и тот же ответ.",
   "Take any statement on this site and find which of the three shelves it was placed on.":
-    "Возьмите любое утверждение на сайте и найдите, на какую из трёх полок оно положено.",
+    "Возьмите любую фразу на сайте и посмотрите, на какой из трёх полок она лежит.",
   "That table is the whole object. Everything else on this site — the counts, the receipts, the boundaries — is something read off it or proved about it.":
-    "Эта таблица и есть весь объект. Всё остальное на сайте — подсчёты, квитанции, границы — либо считывается с неё, либо доказывается о ней.",
+    "Эта таблица и есть весь объект. Всё остальное на сайте — подсчёты, квитанции, границы — либо считано с неё, либо про неё доказано.",
   "The chapter uses these constantly and never stops to define them again.":
-    "Глава пользуется ими постоянно и больше нигде не останавливается, чтобы их определить.",
+    "Глава пользуется ими постоянно и больше нигде не останавливается, чтобы объяснить.",
   "The first of the two grids, everywhere they appear in pairs.":
-    "Первая из двух сеток — всюду, где они идут парами.",
+    "Первая из двух сеток — везде, где они идут парой.",
   "The first of two rules for combining two positions. It counts forward and wraps around at the end, the way a clock face returns to twelve.":
-    "Первое из двух правил, соединяющих две позиции. Оно просто считает вперёд и заворачивает в конце — как циферблат возвращается к двенадцати.",
+    "Первое из двух правил, как соединить две позиции. Оно просто считает вперёд, а в конце заворачивает — как стрелка возвращается к двенадцати.",
   "The mathematics on this site is not a preference. It is what is left after four requirements, each of which rules out the obvious alternative. If you disagree with a step, you have found the exact place where you would disagree with the whole project.":
-    "Математика на этом сайте — не предпочтение. Это то, что остаётся после четырёх требований, каждое из которых отсекает очевидную альтернативу. Если вы не согласны с каким-то шагом, вы нашли ровно то место, где расходитесь со всем проектом.",
+    "Математика здесь не от любви к математике. Это то, что остаётся после четырёх требований, и каждое из них отсекает очевидную альтернативу. Если вы не согласны с каким-то шагом, вы нашли точное место, где расходитесь со всем проектом.",
   "The number 560 is a count, not an estimate, and I know what it counts.":
-    "Число 560 — это подсчёт, а не оценка, и я знаю, что оно считает.",
+    "560 — это подсчёт, а не оценка, и я знаю, что именно посчитано.",
   "The second grid, and the reason most of the interesting properties exist.":
     "Вторая сетка — и причина, по которой существует большинство интересных свойств.",
   "The second rule. Identical to the first, with one exception: one position swallows everything. Start a step there and you finish there, whatever the other input was.":
-    "Второе правило. Такое же, как первое, с одним исключением: одна позиция всё поглощает. Начните шаг с неё — и закончите на ней же, каким бы ни был второй вход.",
+    "Второе правило. Такое же, как первое, с одной поправкой: одна позиция всё поглощает. Начали шаг с неё — на ней и закончите, что бы ни стояло вторым.",
   "This is the whole vocabulary. If a later section loses you, it is almost always one of these six words doing the work — open its page and the sentence usually resolves. Every word here has a page of its own with a real table from the tower and a worked example.":
-    "Это весь словарь. Если дальше какой-то раздел вас потеряет, почти всегда работу делает одно из этих шести слов — откройте его страницу, и фраза обычно распутывается. У каждого слова здесь есть своя страница с настоящей таблицей из башни и разобранным примером.",
+    "Это весь словарь. Если дальше какой-то раздел вас потеряет, дело почти всегда в одном из этих шести слов: откройте его страницу, и фраза распутается. У каждого слова здесь своя страница — с настоящей таблицей из башни и разобранным примером.",
   "This opening is written for somebody who has to decide whether this is worth funding, buying, or signing off on, and who is not going to work through the algebra to find out. It answers four things before the chapter starts: why there is mathematics here at all, what the six recurring words mean, which parts you can skip, and what you will be able to say once you are done.":
-    "Это вступление написано для того, кому предстоит решить, стоит ли это финансировать, покупать или подписывать, и кто ради этого не станет разбирать алгебру. Оно отвечает на четыре вопроса ещё до начала главы: зачем здесь вообще математика, что означают шесть постоянно встречающихся слов, какие части можно пропустить и что вы сможете сказать, дочитав.",
+    "Это вступление для того, кому предстоит решить, стоит ли это финансировать, покупать или подписывать, и кто ради этого не сядет разбирать алгебру. Оно отвечает на четыре вопроса ещё до начала главы: зачем здесь вообще математика, что значат шесть слов, которые дальше повторяются без конца, что можно пропустить и что вы сможете сказать, когда дочитаете.",
   "WHAT YOU WILL BE ABLE TO SAY":
     "ЧТО ВЫ СМОЖЕТЕ СКАЗАТЬ",
   "Written L1 through L7.":
     "Пишется от L1 до L7.",
   "Written down in advance, and complete: not the things it did, and not the things somebody remembers considering, but every option that was on the table at that moment.":
-    "Записанным заранее и полным: не тем, что она сделала, и не тем, что кто-то помнит как рассматривавшееся, а каждым вариантом, который в тот момент был на столе.",
+    "Заранее и целиком: не то, что программа сделала, и не то, что кто-то помнит как обсуждавшееся, а каждый вариант, лежавший в тот момент на столе.",
 };
 
 export const orientationZh: TranslationDictionary = {

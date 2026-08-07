@@ -2,7 +2,7 @@ import type { TranslationDictionary } from "../translations";
 
 export const theoryFiguresRu: TranslationDictionary = {
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one per level of the tower, and the bands widen because each level contributes four times the square of its size.":
-    "Прямоугольная сетка из 560 маленьких квадратов в 40 столбцов. Квадраты закрашены семью полосами, по одной на уровень башни, и полосы расширяются, потому что каждый уровень даёт вчетверо больше квадрата своего размера.",
+    "Прямоугольная сетка из 560 квадратиков в 40 столбцов. Квадратики раскрашены семью полосами, по одной на каждый уровень башни; полосы к низу шире, потому что каждый уровень даёт вчетверо больше квадрата своего размера.",
   "Marks per level, from L1 to L7":
     "Меток на уровень, от L1 до L7",
   "1,204 committed descriptors, 880 of them executable, 440 on the selected pattern frontier":
@@ -12,33 +12,33 @@ export const theoryFiguresRu: TranslationDictionary = {
   "560 oriented typed transition coordinates, obtained by counting each level and adding":
     "560 ориентированных типизированных координат перехода, полученных сложением подсчётов по уровням",
   "A bounded bar beside an unbounded one":
-    "Ограниченная полоса рядом с неограниченной",
+    "Полоса с краем рядом с полосой без края",
   "A deterministic selector for exactly two fixed source patterns, with a hash-derived order":
     "Детерминированный селектор ровно для двух фиксированных исходных шаблонов, с порядком, выведенным из хеша",
   "A grid of 560 marks, one per declared coordinate":
     "Сетка из 560 меток, по одной на каждую объявленную координату",
   "A guarantee about a real approval process. It says that if a system encodes its stop as this position, the stop survives the rest of the chain — not that any system has been built that way.":
-    "Гарантией относительно реального процесса согласования. Схема говорит: если система кодирует свой стоп именно этой позицией, стоп переживёт остаток цепочки, — а не то, что такая система построена.",
+    "Гарантией для настоящего согласования. Схема говорит одно: если система обозначит свой стоп именно этой позицией, стоп продержится до конца цепочки. Она не говорит, что такая система построена.",
   "A legal or regulatory opinion. The record is an engineering artefact, not an assurance.":
-    "Юридическим или регуляторным заключением. Запись — инженерный артефакт, а не заверение.",
+    "Юридическим или регуляторным заключением. Запись — инженерный документ, а не заверение.",
   "A live engine. The site recomputes from published formulas; it does not execute the release.":
-    "Работающим движком. Сайт пересчитывает по опубликованным формулам; он не исполняет релиз.",
+    "Работающим движком. Сайт пересчитывает по опубликованным формулам и релиз не запускает.",
   "A property of the law itself: P0 is the unique left zero of STAR, so any step taken from P0 lands on P0 again.":
     "Свойством самого закона: P0 — единственный левый нуль STAR, поэтому любой шаг из P0 снова приводит в P0.",
   "A reader who takes one line from the first shelf and reads it as a property of the third has been misled, and this site treats that as its own error rather than the reader's.":
-    "Читатель, который возьмёт строку с первой полки и прочтёт её как свойство третьей, будет введён в заблуждение, и сайт считает это своей ошибкой, а не ошибкой читателя.",
+    "Если читатель возьмёт строку с первой полки и прочтёт её как свойство третьей, его ввели в заблуждение. Мы считаем это своей ошибкой, а не его.",
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one band per level of the tower, and the last band ends part-way through its row because the count is exact rather than rounded.":
-    "Прямоугольная сетка из 560 маленьких квадратов в 40 столбцов. Квадраты закрашены семью полосами, по одной на уровень башни, и последняя полоса обрывается посреди строки, потому что число точное, а не округлённое.",
+    "Прямоугольная сетка из 560 квадратиков в 40 столбцов. Квадратики раскрашены семью полосами, по одной на каждый уровень башни; последняя полоса обрывается посреди строки, потому что число точное, а не округлённое.",
   "A refusal holds for the rest of the chain instead of being re-argued at each step.":
-    "Отказ действует на весь остаток цепочки, а не переобсуждается на каждом шаге.",
+    "Отказ держится до конца цепочки, его не переобсуждают на каждом шаге.",
   "A sentence has several readings. A named position has one.":
-    "У фразы несколько прочтений. У именованной позиции — одно.",
+    "У фразы прочтений несколько. У названной позиции — одно.",
   "A single box on the left holds the pair P0 and P2. Four curved connectors fan out to four labelled rows, one per action family. Three rows end on the target P2 and one row, STAR_LEFT, ends on P0.":
-    "Слева одна рамка с парой P0 и P2. Четыре дуги расходятся от неё к четырём подписанным строкам, по одной на семейство действий. Три строки заканчиваются целью P2, а одна — STAR_LEFT — заканчивается на P0.",
+    "Слева рамка с парой P0 и P2. От неё расходятся четыре дуги к четырём подписанным строкам — по одной на семейство действий. Три строки приходят в P2, а одна, STAR_LEFT, приходит в P0.",
   "A small index is not a better index. It is a checkable one: the claim here is about what a reviewer can finish reading, not about capability.":
-    "Маленький индекс — не лучший индекс. Он проверяемый: утверждение здесь о том, что рецензент способен дочитать до конца, а не о возможностях.",
+    "Маленький индекс — не лучший индекс, а проверяемый. Речь о том, что рецензент способен дочитать его до конца, а не о том, на что этот индекс годится.",
   "A status is one declared name, not a paragraph somebody has to interpret.":
-    "Статус — одно объявленное имя, а не абзац, который кому-то придётся истолковывать.",
+    "Статус — это одно объявленное имя, а не абзац, который кому-то придётся толковать.",
   "A trained Atlas is not present in this release":
     "Обученный Atlas в этом релизе отсутствует",
   "A zero homomorphism exists between every pair of levels, so no pair is unreachable":
@@ -50,77 +50,77 @@ export const theoryFiguresRu: TranslationDictionary = {
   "An investor":
     "Инвестор",
   "Any revenue, customer, pilot, or measured result — there are none to show.":
-    "Никакой выручки, клиента, пилота или измеренного результата — их попросту нет.",
+    "Никакой выручки, клиента, пилота или измеренного результата: их просто нет.",
   "Approved by the reviewer, but not yet by the committee.":
-    "Одобрено рецензентом, но ещё не комитетом.",
+    "Одобрено рецензентом, но комитет ещё не смотрел.",
   "Approved in principle, pending the second signature.":
     "Одобрено в принципе, до второй подписи.",
   "Approved, and the payment can be released today.":
-    "Одобрено, платёж можно провести сегодня.",
+    "Одобрено, платёж можно проводить сегодня.",
   "Atlas semantic reads, rank effects, and learning writes are all zero":
     "Семантические чтения Atlas, влияния на ранг и записи обучения — все нулевые",
   "BEFORE ANY MATHEMATICS":
     "ДО ВСЯКОЙ МАТЕМАТИКИ",
   "Below, the same source and active pole are read under each of the four declared action families. Two of the readings disagree with the other two. That is why a record carries level, law, and orientation alongside the pair — without them the line does not determine its own result, and an auditor is left reconstructing intent.":
-    "Ниже одни и те же источник и активный полюс прочитаны в каждом из четырёх объявленных семейств действий. Два прочтения расходятся с двумя другими. Именно поэтому запись несёт уровень, закон и ориентацию рядом с парой: без них строка не определяет собственный результат, и аудитору остаётся домысливать намерение.",
+    "Ниже один и тот же источник и один и тот же активный полюс прочитаны в каждом из четырёх объявленных семейств действий. Два прочтения расходятся с двумя другими. Поэтому в записи рядом с парой стоят уровень, закон и ориентация: без них строка не задаёт собственный результат, и аудитору остаётся домысливать, что имелось в виду.",
   "Checking the index is a finite reading task rather than a sampling exercise.":
-    "Проверка индекса — конечная задача на чтение, а не выборочное обследование.",
+    "Проверить индекс — работа на чтение, у которой есть конец, а не выборочная сверка.",
   "Coordinates outside this picture. A behaviour that is not one of these marks is not something the declared layer can do at all.":
-    "Координат за пределами этой картинки. Поведение, которого нет среди этих меток, объявленный слой вообще не может выполнить.",
+    "Координат за пределами этой картинки. Чего нет среди этих меток, того объявленный слой сделать не может вообще.",
   "Does not terminate. A reviewer can say the behaviour was not observed in the cases tried, which is a different and weaker sentence.":
-    "Не завершается. Рецензент может сказать, что в опробованных случаях поведение не наблюдалось, — а это другое и более слабое утверждение.",
+    "Не заканчивается. Рецензент может сказать, что в опробованных случаях такого не встретил, — а это совсем другое и куда более слабое утверждение.",
   "Does the mathematics say what the site says it says?":
-    "Говорит ли математика то, что сайт приписывает ей?",
+    "Правда ли математика говорит то, что ей приписывает сайт?",
   "Every mathematical fact below has a second reading that needs no mathematics.":
-    "У каждого математического факта ниже есть второе прочтение, которому математика не нужна.",
+    "У каждого математического факта ниже есть второе прочтение, для которого математика не нужна.",
   "Every target above is recomputed from the law on render. If a law changed, the picture would change with it rather than keep agreeing with a caption written earlier.":
-    "Каждая цель выше пересчитывается по закону при отрисовке. Если бы закон изменился, картинка изменилась бы вместе с ним, а не продолжала бы совпадать с подписью, написанной раньше.",
+    "Каждая цель наверху пересчитывается по закону при отрисовке страницы. Изменись закон — изменится и картинка, а не останется совпадать с подписью, сделанной когда-то раньше.",
   "Everything published traces back to an object that fits on a page.":
-    "Всё опубликованное восходит к объекту, который помещается на одну страницу.",
+    "Всё опубликованное сводится к объекту, который умещается на одной странице.",
   "External operational gain has not been measured, in any deployment, by anyone":
     "Внешний операционный выигрыш не измерен — ни в одном развёртывании и никем",
   "FOUR READERS, FOUR DIFFERENT QUESTIONS":
     "ЧЕТЫРЕ ЧИТАТЕЛЯ, ЧЕТЫРЕ РАЗНЫХ ВОПРОСА",
   "Find your question, then jump straight to the part that answers it.":
-    "Найдите свой вопрос и переходите сразу к той части, которая на него отвечает.",
+    "Найдите свой вопрос и переходите сразу к разделу, где на него отвечают.",
   "Four tiers of verifiability and five reproduction steps with expected results":
     "Четыре уровня проверяемости и пять шагов воспроизведения с ожидаемыми результатами",
   "If the set of possible behaviours is written down in advance, ruling one out means reading a finite list to the end, and the reading either finds it or does not. If the set is not written down in advance, the same question can only be probed by trying cases, and the answer carries whatever confidence the number of tries supports.":
-    "Если множество возможных поведений выписано заранее, исключить одно из них — значит дочитать конечный список до конца, и чтение либо находит его, либо нет. Если множество заранее не выписано, тот же вопрос можно только зондировать пробами, и ответ несёт ровно ту уверенность, которую поддерживает число проб.",
+    "Если список возможных действий выписан заранее, исключить одно из них — значит дочитать конечный список до конца: оно там либо есть, либо нет. Если список заранее не выписан, тот же вопрос можно только прощупывать пробами, и уверенность в ответе ровно такая, какую даёт число проб.",
   "If this refused an action, what would I be handed?":
-    "Если бы система отказала в действии, что мне выдадут на руки?",
+    "Если система откажет в действии, что мне дадут на руки?",
   "If you are not a mathematician":
     "Если вы не математик",
   "Independence. Every check published here was run by the project on its own work.":
-    "Независимость. Каждая опубликованная здесь проверка выполнена самим проектом над собственной работой.",
+    "Независимость. Всё, что здесь опубликовано, проверил сам проект и на своей же работе.",
   "Lawful relabellings per level are counted by Euler's totient, and the count does not grow":
     "Число законных переобозначений на каждом уровне даётся функцией Эйлера и не растёт вместе с уровнем",
   "Limits stated in the same sentence":
-    "Границы названы в том же предложении",
+    "Границы названы в той же фразе",
   "Most of the confusion this site has to avoid comes from one move: letting a theorem stand in for a running system, or a running system stand in for a plan. Every statement published here is placed on exactly one of the three shelves below, and the placement is part of the statement.":
-    "Почти вся путаница, которой сайту приходится избегать, идёт от одного приёма: позволить теореме занять место работающей системы, а работающей системе — место плана. Каждое опубликованное здесь утверждение положено ровно на одну из трёх полок ниже, и место на полке — часть самого утверждения.",
+    "Почти вся путаница, которой сайту приходится избегать, идёт от одного приёма: подменить работающую систему теоремой, а план — работающей системой. Каждая фраза здесь лежит ровно на одной из трёх полок ниже, и полка — часть самой фразы.",
   "Most systems of this kind cannot be drawn, because there is no complete list to draw. Here the list is complete by construction, so the picture has an edge — and the edge is the whole argument for why a reviewer can read the index instead of sampling it.":
-    "Большинство систем такого рода нарисовать нельзя, потому что рисовать нечего: полного списка не существует. Здесь список полон по построению, поэтому у картинки есть край — и этот край и есть весь довод в пользу того, что рецензент может прочитать индекс, а не обследовать его выборочно.",
+    "Большинство систем такого рода нарисовать нельзя: рисовать нечего, полного списка не существует. Здесь список полон по построению, поэтому у картинки есть край. Этот край и есть весь довод в пользу того, что индекс можно прочитать целиком, а не проверять выборочно.",
   "ONE PAIR OF POSITIONS, FOUR DIFFERENT RESULTS":
-    "ОДНА ПАРА ПОЗИЦИЙ, ЧЕТЫРЕ РАЗНЫХ РЕЗУЛЬТАТА",
+    "ОДНА ПАРА ПОЗИЦИЙ — ЧЕТЫРЕ РАЗНЫХ РЕЗУЛЬТАТА",
   "Observed in the release that exists today":
-    "Наблюдается в релизе, который существует сегодня",
+    "Видно в релизе, который существует сегодня",
   "Once a chain lands on P0, no later step takes it off.":
-    "Как только цепочка попадает в P0, ни один последующий шаг её оттуда не выводит.",
+    "Как только цепочка попала в P0, оттуда её не выводит уже ни один шаг.",
   "One finite table":
     "Одна конечная таблица",
   "One of them finishes. The other one stops when the budget does.":
-    "Одна из них заканчивается. Другая останавливается тогда, когда кончается бюджет.",
+    "Одна из них заканчивается. Вторая останавливается тогда, когда кончаются деньги.",
   "One pair fanning out into four typed readings":
     "Одна пара, расходящаяся в четыре типизированных прочтения",
   "One reading, and it is the same reading for everyone who opens the record.":
-    "Одно прочтение, и оно одинаково для всех, кто откроет запись.",
+    "Прочтение одно, и оно одинаково у всех, кто откроет запись.",
   "One row resets":
     "Одна строка обнуляет",
   "One thought in nine stages, seven of which run in the current release":
-    "Одна мысль в девяти стадиях, семь из которых работают в текущем релизе",
+    "Одна мысль в девяти стадиях; семь из них работают в текущем релизе",
   "Oriented typed transition coordinates. The number is reached by counting each level and adding the counts, not by estimating.":
-    "Ориентированных типизированных координат перехода. Число получено сложением подсчётов по уровням, а не оценкой.",
+    "Ориентированных типизированных координат перехода. Число получено сложением подсчётов по уровням, а не прикидкой.",
   "P0 is the unique left zero and unique right-neutral element of STAR for every level above one":
     "P0 — единственный левый нуль и единственный правый нейтральный элемент STAR на каждом уровне выше первого",
   "Persistent policy learning: NOT STARTED":
@@ -130,7 +130,7 @@ export const theoryFiguresRu: TranslationDictionary = {
   "Positions carry names":
     "У позиций есть имена",
   "Probing an undeclared space":
-    "Зондирование необъявленного пространства",
+    "Прощупывание необъявленного пространства",
   "Proved, and re-derived by the tests on every build":
     "Доказано и заново выводится тестами при каждой сборке",
   "Proved, running today, and merely written down are three different things.":
@@ -138,7 +138,7 @@ export const theoryFiguresRu: TranslationDictionary = {
   "Reading a declared list":
     "Чтение объявленного списка",
   "Readings a later reviewer has to choose between":
-    "Прочтения, между которыми придётся выбирать позднейшему рецензенту",
+    "Прочтения, между которыми придётся выбирать тому, кто откроет запись позже",
   "Sequencing, rollback, and revocation evidence is process-local rather than persistent":
     "Свидетельства о последовательности, откате и отзыве локальны для процесса, а не персистентны",
   "Someone signing off":
@@ -148,23 +148,23 @@ export const theoryFiguresRu: TranslationDictionary = {
   "THE ENTIRE DECLARED INDEX, DRAWN IN FULL":
     "ВЕСЬ ОБЪЯВЛЕННЫЙ ИНДЕКС, НАРИСОВАННЫЙ ЦЕЛИКОМ",
   "THREE SHELVES, AND NOTHING CARRIES BETWEEN THEM":
-    "ТРИ ПОЛКИ, И НИЧЕГО МЕЖДУ НИМИ НЕ ПЕРЕНОСИТСЯ",
+    "ТРИ ПОЛКИ, И МЕЖДУ НИМИ НИЧЕГО НЕ ПЕРЕХОДИТ",
   "TWO WAYS TO ESTABLISH THAT SOMETHING CANNOT HAPPEN":
-    "ДВА СПОСОБА УСТАНОВИТЬ, ЧТО ЧЕГО-ТО ПРОИЗОЙТИ НЕ МОЖЕТ",
+    "ДВА СПОСОБА УБЕДИТЬСЯ, ЧТО ЧЕГО-ТО ПРОИЗОЙТИ НЕ МОЖЕТ",
   "TWO WAYS TO READ THE SAME CHAPTER":
     "ДВА СПОСОБА ПРОЧИТАТЬ ОДНУ И ТУ ЖЕ ГЛАВУ",
   "Terminates. A reviewer can say the coordinate is absent because the whole index was read, and a second reviewer gets the same answer.":
-    "Завершается. Рецензент может сказать, что координата отсутствует, потому что индекс прочитан целиком, — и второй рецензент получит тот же ответ.",
+    "Заканчивается. Рецензент может сказать, что координаты там нет, потому что прочитал индекс целиком, — и второй рецензент получит тот же ответ.",
   "The active pole picks the row instead, so the reset row is never entered.":
-    "Строку выбирает активный полюс, поэтому в обнуляющую строку заход не происходит.",
+    "Строку выбирает активный полюс, поэтому в обнуляющую строку заход не попадает.",
   "The chapter is written twice. Once as mathematics, in order, because that is the only way the claims can be checked. And once as consequences — what each fact would decide for somebody funding, buying, or approving a system. The two readings are set side by side so you can pick one and still reach the end.":
-    "Глава написана дважды. Один раз как математика, по порядку, потому что только так утверждения можно проверить. И один раз как следствия — что каждый факт решает для того, кто финансирует, покупает или согласовывает систему. Оба прочтения идут рядом, так что можно выбрать одно и всё равно дойти до конца.",
+    "Глава написана дважды. Один раз как математика, по порядку, потому что иначе утверждения не проверить. И один раз как следствия: что каждый факт решает для того, кто финансирует, покупает или согласовывает систему. Оба текста идут рядом, так что можно выбрать один и всё равно дойти до конца.",
   "The five slots every published claim has to fill, and the shape of a receipt":
     "Пять слотов, которые обязано заполнить каждое опубликованное утверждение, и устройство квитанции",
   "The lower lane says what the property would decide wherever a layer of this shape were deployed. Nothing has been deployed, so none of it reports a result.":
-    "Нижняя полоса говорит, что это свойство решало бы там, где слой такой формы был бы развёрнут. Ничего не развёрнуто, поэтому ничего из перечисленного не сообщает о результате.",
+    "Нижняя полоса говорит, что это свойство решало бы там, где слой такой формы развернули. Ничего не развёрнуто, поэтому ни одна строчка здесь не сообщает о результате.",
   "The roles swap axes. Addition does not notice, so the target is unchanged.":
-    "Роли меняются осями. Сложение этого не замечает, поэтому цель не меняется.",
+    "Роли меняются осями. Сложение этого не замечает, и цель остаётся прежней.",
   "The source picks the row, and this source is the one row that resets.":
     "Строку выбирает источник, а этот источник — та самая единственная обнуляющая строка.",
   "The stage facts, the six risks, and the six-step diligence path":
@@ -172,31 +172,31 @@ export const theoryFiguresRu: TranslationDictionary = {
   "The status as a sentence":
     "Статус как фраза",
   "The status as one of a declared list":
-    "Статус как элемент объявленного списка",
+    "Статус как пункт объявленного списка",
   "The three meanings attached to the names are an illustration, not part of the mathematics. GALO fixes how many positions exist and how they combine; what each one means in a given deployment is somebody else's declaration.":
-    "Три смысла, приписанные именам, — иллюстрация, а не часть математики. GALO фиксирует, сколько позиций существует и как они складываются; что каждая из них означает в конкретном развёртывании, объявляет кто-то другой.",
+    "Три смысла у имён — это пример, а не часть математики. GALO задаёт, сколько позиций есть и как они складываются; что каждая значит в конкретной системе, объявляет кто-то другой.",
   "The two positions are not enough to know what happened. The type is the rest of the record.":
-    "Двух позиций мало, чтобы знать, что произошло. Тип — это остальная часть записи.",
+    "Двух позиций мало, чтобы понять, что случилось. Тип — это остальная часть записи.",
   "The upper lane is what the chapter proves. The lower lane is what that same fact decides for somebody funding, buying, or signing off on a system. Follow whichever lane you need — the five stops are the same either way.":
-    "Верхняя полоса — то, что глава доказывает. Нижняя — что тот же факт решает для того, кто финансирует, покупает или подписывает систему. Идите по той полосе, которая вам нужна: пять остановок одни и те же.",
+    "Верхняя полоса — то, что глава доказывает. Нижняя — что тот же факт решает для того, кто финансирует, покупает или подписывает систему. Идите по нужной вам: остановок всё равно пять, и они одни и те же.",
   "This chapter builds the mathematics in order, which is the right order for learning it and the wrong order for most people who open it. Each card below names a question, the section that answers it, and — in the same card — the thing that section cannot give you.":
-    "Эта глава строит математику по порядку — правильный порядок, чтобы её выучить, и неправильный для большинства тех, кто её открывает. Каждая карточка ниже называет вопрос, раздел, который на него отвечает, и — в той же карточке — то, чего этот раздел вам дать не сможет.",
+    "Глава строит математику по порядку. Для того, кто хочет её выучить, порядок правильный; для большинства открывающих — нет. Каждая карточка ниже называет вопрос, раздел с ответом и тут же — то, чего этот раздел вам не даст.",
   "This is a statement about how each claim is established, not about which system is more useful. A declared list can be small and still be the wrong list, and nothing here says otherwise.":
-    "Это утверждение о том, как устанавливается каждое из утверждений, а не о том, какая система полезнее. Объявленный список может быть маленьким и при этом неверным, и ничто здесь не говорит обратного.",
+    "Это сказано о том, как добывается каждое из двух утверждений, а не о том, какая система полезнее. Объявленный список может быть маленьким и при этом неверным, и ничто здесь этого не отрицает.",
   "This is all of it. Every mark below is one coordinate, and there are no others.":
-    "Это всё. Каждая метка ниже — одна координата, и других нет.",
+    "Это всё. Каждая метка ниже — одна координата, других нет.",
   "This is the first substitution the theory makes, and every later property depends on it. Nothing is gained in expressive power — a great deal of it is given up. What is bought is that two readers, months apart, resolve the same record the same way.":
-    "Это первая подстановка, которую делает теория, и от неё зависит каждое последующее свойство. В выразительной силе ничего не приобретается — очень многое отдаётся. Взамен покупается то, что два читателя, разделённые месяцами, разрешат одну и ту же запись одинаково.",
+    "Это первая подмена, которую делает теория, и от неё зависят все остальные свойства. В выразительности мы ничего не выигрываем — наоборот, отдаём многое. Взамен получаем вот что: двое читателей, между которыми месяцы, поймут одну и ту же запись одинаково.",
   "Three chains of STAR steps at level three":
     "Три цепочки шагов STAR на третьем уровне",
   "Three histories, four STAR steps each, differing only in where they start. Every node below is recomputed from the law when the page renders. The commercial reading is the plain one: a stop stays a stop, and it cannot be quietly outweighed by whatever arrives next.":
-    "Три истории по четыре шага STAR, различающиеся только тем, откуда они начинаются. Каждый узел ниже пересчитывается по закону при отрисовке страницы. Коммерческое прочтение самое простое: стоп остаётся стопом, и его нельзя молча перевесить тем, что придёт следом.",
+    "Три истории по четыре шага STAR, различаются только тем, откуда начинаются. Каждый узел пересчитывается по закону при отрисовке страницы. Деловой смысл простой: стоп остаётся стопом, и его не перевесит молча то, что придёт следом.",
   "Three readings, and the record does not say which one was meant.":
-    "Три прочтения, и запись не говорит, какое имелось в виду.",
+    "Прочтения три, а запись не говорит, какое имелось в виду.",
   "Three rows of five linked nodes. The first row never reaches P0. The second row reaches P0 at its second step and stays on P0 for the rest of the row. The third row starts on P0 and stays there. Each link is labelled with the input applied at that step.":
-    "Три ряда по пять связанных узлов. Первый ряд никогда не достигает P0. Второй ряд достигает P0 на втором шаге и остаётся на P0 до конца ряда. Третий ряд начинается на P0 и там же остаётся. Каждая связь подписана входом, применённым на этом шаге.",
+    "Три ряда по пять связанных узлов. Первый ряд до P0 не доходит. Второй попадает в P0 на втором шаге и остаётся там до конца ряда. Третий начинается с P0 и с него же не сходит. Каждая связь подписана входом, который применили на этом шаге.",
   "Two horizontal bars. The upper bar is solid, ends at a marked edge, and is labelled as a complete enumeration of 560 coordinates. The lower bar has no right-hand edge and fades out, and is labelled as sampling that stops when the testing budget stops.":
-    "Две горизонтальные полосы. Верхняя сплошная, обрывается на отмеченном крае и подписана как полный перебор 560 координат. У нижней правого края нет, она растворяется, и подписана как выборка, которая прекращается вместе с бюджетом на проверку.",
+    "Две горизонтальные полосы. Верхняя сплошная, обрывается на отмеченном крае, подписана как полный перебор 560 координат. У нижней правого края нет, она растворяется, и подписана как выборка, которая кончается вместе с бюджетом на проверку.",
   "WHAT AN ABSORBING STATE BUYS":
     "ЧТО ДАЁТ ПОГЛОЩАЮЩЕЕ СОСТОЯНИЕ",
   "WHY THE THEORY BEGINS BY NAMING THINGS":
@@ -204,15 +204,15 @@ export const theoryFiguresRu: TranslationDictionary = {
   "What does the engine actually do on one input?":
     "Что движок на самом деле делает с одним входом?",
   "What does the shipped engine actually do?":
-    "Что делает поставленный движок?",
+    "Что умеет движок, который уже поставлен?",
   "What exists today, and what is still a plan?":
-    "Что существует сегодня, а что пока план?",
+    "Что есть сегодня, а что пока только план?",
   "What is not proven is written down rather than left out.":
-    "Недоказанное записано, а не опущено.",
+    "Недоказанное записано, а не обойдено молчанием.",
   "What it will not give you":
     "Чего он вам не даст",
   "What the record carries":
-    "Что несёт запись",
+    "Что попадает в запись",
   "What this is":
     "Что это такое",
   "What this is not":
@@ -220,7 +220,7 @@ export const theoryFiguresRu: TranslationDictionary = {
   "What would have to be true for the plan to hold?":
     "Что должно оказаться правдой, чтобы план сошёлся?",
   "Which published values can I check myself, and how far does each check reach?":
-    "Какие опубликованные значения я могу проверить сам и как далеко достаёт каждая проверка?",
+    "Какие из опубликованных значений я могу проверить сам и как далеко достаёт каждая проверка?",
   "Written down, not built":
     "Записано, но не построено",
   "You can follow this chapter without doing any algebra.":
@@ -230,15 +230,15 @@ export const theoryFiguresRu: TranslationDictionary = {
   "declare the list first":
     "сначала объявите список",
   "reaches the reset row at step two":
-    "достигает обнуляющей строки на втором шаге",
+    "попадает в обнуляющую строку на втором шаге",
   "refused":
     "отказано",
   "sampling stops when the budget does":
-    "выборка прекращается вместе с бюджетом",
+    "выборка кончается вместе с бюджетом",
   "starts away from the reset row":
-    "начинается вдали от обнуляющей строки",
+    "начинается далеко от обнуляющей строки",
   "starts on the reset row":
-    "начинается на обнуляющей строке",
+    "начинается с обнуляющей строки",
   "the list ends here":
     "здесь список кончается",
   "waiting for a second signature":
@@ -248,7 +248,7 @@ export const theoryFiguresRu: TranslationDictionary = {
   "what the chapter proves":
     "что доказывает глава",
   "“The request was approved.”":
-    "«Заявка была одобрена.»",
+    "«Заявка одобрена.»",
 };
 
 export const theoryFiguresZh: TranslationDictionary = {

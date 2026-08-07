@@ -4,7 +4,7 @@ export const termsPageRu: TranslationDictionary = {
   "A GALO level embeds in another only when its size divides. That is a fact of arithmetic, and it limits which transfers are possible.":
     "Уровень GALO вкладывается в другой, только если его размер делит размер того. Это факт арифметики, и он ограничивает, какие переносы вообще возможны.",
   "A GALO program is exactly this chaining. Today the engine performs one link per run; longer chains are written architecture.":
-    "Программа GALO — это ровно такая цепочка. Сегодня движок делает одно звено за запуск; более длинные цепочки — записанная архитектура.",
+    "Программа GALO и есть такая цепочка. Сегодня движок делает за запуск одно звено; цепочки длиннее пока существуют только на бумаге.",
   "A GALO program that begins with this prefix is pinned for the rest of its length. Detecting that early is a cheap, exact check.":
     "Программа GALO, начинающаяся с такого префикса, до конца остаётся прижатой. Заметить это заранее — дешёвая и точная проверка.",
   "A character assigns each label a value so that the table's additions become ordinary multiplications.":
@@ -16,19 +16,19 @@ export const termsPageRu: TranslationDictionary = {
   "A map between the two tables is lawful when combining before mapping and mapping before combining land on the same cell.":
     "Отображение между двумя таблицами законно, когда «сложить, потом перевести» и «перевести, потом сложить» приводят в одну и ту же клетку.",
   "A pole is one named position from the declared list. GALO's whole changing state at any moment is exactly one of these names.":
-    "Полюс — это одна именованная позиция из объявленного списка. Всё изменяемое состояние GALO в любой момент — это ровно одно такое имя.",
+    "Полюс — одна именованная позиция из объявленного списка. Всё изменяемое состояние GALO в любой момент укладывается ровно в одно такое имя.",
   "A quotient is a coarser GALO state that is still lawful. It is the formal version of deliberately looking at less.":
-    "Фактор — это более грубое состояние GALO, которое всё ещё законно. Формальная версия сознательного решения смотреть на меньшее.",
+    "Фактор — более грубое состояние GALO, которое всё ещё остаётся законным. Так формально выглядит решение сознательно смотреть на меньшее.",
   "A stable subset is a smaller world GALO cannot escape from. It is how a narrower scope can be carved out and still be exact.":
-    "Устойчивое подмножество — это меньший мир, из которого GALO не может выйти. Так вырезается более узкая область, остающаяся точной.",
+    "Замкнутое подмножество — меньший мир, из которого GALO выйти не может. Так вырезают более узкую область, и она остаётся точной.",
   "All 59 terms in one place":
     "Все 59 терминов в одном месте",
   "All terms":
     "Все термины",
   "An action is what lets GALO count distinct situations rather than distinct names. Two names moved onto each other were never two situations.":
-    "Действие — это то, что позволяет GALO считать разные ситуации, а не разные имена. Два имени, переводимые друг в друга, никогда не были двумя ситуациями.",
+    "Действие позволяет GALO считать разные ситуации, а не разные имена. Два имени, переводимых друг в друга, никогда и не были двумя ситуациями.",
   "An orbit is a group of GALO positions that are genuinely interchangeable. Orbits, not labels, are what should be counted.":
-    "Орбита — это группа позиций GALO, которые по-настоящему взаимозаменяемы. Считать нужно орбиты, а не метки.",
+    "Орбита собирает позиции GALO, которые по-настоящему взаимозаменяемы. Считать надо орбиты, а не метки.",
   "At level seven every label except P0 is marked, because seven is prime and everything below it is coprime to it.":
     "На седьмом уровне отмечены все метки, кроме P0, потому что семь — простое число и всё меньшее с ним взаимно просто.",
   "At prime levels this block structure decides how GALO's positions can be grouped. It is a fact about the level, not a design choice.":
@@ -54,7 +54,7 @@ export const termsPageRu: TranslationDictionary = {
   "Choosing a level in GALO is choosing how finely situations are told apart. A bigger level distinguishes more but costs more to declare and check.":
     "Выбрать уровень в GALO — значит выбрать, насколько тонко различаются ситуации. Больший уровень различает больше, но и объявлять и проверять его дороже.",
   "Closure is why GALO cannot invent a state. It is the property that makes the complete check finite.":
-    "Замкнутость — причина, по которой GALO не может выдумать состояние. Именно это свойство делает полную проверку конечной.",
+    "Из-за замкнутости GALO не может выдумать состояние. Она же делает полную проверку конечной.",
   "Collect the distinct answers a fixed left operand can produce. The marked row produces exactly one.":
     "Соберите разные ответы, которые может дать фиксированный левый операнд. Отмеченная строка даёт ровно один.",
   "Composite levels split in GALO and prime levels do not. That is a hard boundary on what a single level can express.":
@@ -64,9 +64,9 @@ export const termsPageRu: TranslationDictionary = {
   "Endomorphisms are how GALO models losing detail without leaving the level. Automorphisms are the reversible ones among them.":
     "Эндоморфизмы — это то, как GALO описывает потерю подробности без выхода за уровень. Автоморфизмы — обратимые среди них.",
   "Every answer in the grid is itself one of the row labels. Nothing new ever appears.":
-    "Каждый ответ в сетке — это опять одна из меток строк. Ничего нового не появляется никогда.",
+    "Любой ответ в сетке — снова одна из меток строк. Ничего нового там не появляется.",
   "Every step GALO takes is one binary operation: the position it is standing on, plus the operand the admitted action supplies.":
-    "Каждый шаг GALO — это одна двухместная операция: позиция, на которой он стоит, плюс операнд, который даёт допущенное действие.",
+    "Каждый шаг GALO — одна двухместная операция: позиция, на которой он стоит, плюс операнд из допущенного действия.",
   "Every term opens a page with a worked table.":
     "Каждый термин открывает страницу с разобранной таблицей.",
   "Everything you need to read this grid is in the labels and the two symbols above it. There is no hidden notation.":
@@ -86,9 +86,9 @@ export const termsPageRu: TranslationDictionary = {
   "GALO has no privileged position under PLUS alone. Only when STAR is added does P0 become special, and the site keeps those two facts apart.":
     "Под одним PLUS у GALO нет привилегированной позиции. P0 становится особым только когда добавляется STAR, и сайт держит эти два факта порознь.",
   "GALO is the expansion: both laws together. Statements proved about PLUS alone do not automatically hold once STAR is added back.":
-    "GALO — это расширение: оба закона вместе. Утверждения, доказанные про один PLUS, не переносятся автоматически, когда STAR возвращают на место.",
+    "GALO берёт оба закона сразу. Что доказано про один PLUS, не переносится само собой, когда STAR возвращают на место.",
   "GALO positions are residue classes underneath their names. That is what makes the wrap-around exact instead of approximate.":
-    "Позиции GALO под своими именами — это классы вычетов. Именно это делает заворот точным, а не приблизительным.",
+    "За именами позиций GALO стоят классы вычетов. Поэтому заворот точен, а не приблизителен.",
   "GALO publishes its boundaries as named lines. Past them we do not know, and the site says so rather than staying quiet.":
     "GALO публикует свои границы как именованные строки. Дальше них мы не знаем — и сайт это говорит, а не молчит.",
   "GALO reads the source state at the start of every run. It is the whole of the mutable state, so it can be printed into the record in full.":
@@ -112,9 +112,9 @@ export const termsPageRu: TranslationDictionary = {
   "Imagine renaming the labels and rewriting the table. If the grid comes out identical, the renaming was an automorphism.":
     "Представьте, что вы переименовали метки и переписали таблицу. Если сетка вышла точно такой же — переименование было автоморфизмом.",
   "In GALO the carrier is the complete set of positions the engine may ever be in during a run. Declaring it is the first thing a level does.":
-    "В GALO носитель — это полный набор позиций, в которых движок вообще может оказаться за запуск. Объявить его — первое, что делает уровень.",
+    "Носитель в GALO — полный набор позиций, в которых движок может оказаться за запуск. Объявить его — первое, что делает уровень.",
   "In GALO this is the only way a step can discard what it was given. It is declared in the law, not decided at runtime.":
-    "В GALO это единственный способ, которым шаг может отбросить то, что ему дали. Он объявлен в законе, а не решается на ходу.",
+    "Только так шаг в GALO может отбросить то, что ему дали. Это объявлено в законе, а не решается на ходу.",
   "Inversion is the smallest non-trivial symmetry GALO has at most levels, and it is often the only one.":
     "Инверсия — самая маленькая нетривиальная симметрия, которая есть у GALO на большинстве уровней, и часто единственная.",
   "KEEP GOING":
@@ -148,7 +148,7 @@ export const termsPageRu: TranslationDictionary = {
   "PLUS alone gives GALO no natural origin. STAR supplies one, and that is precisely what the second law is for.":
     "Один PLUS не даёт GALO естественного начала отсчёта. STAR его даёт — ровно за этим второй закон и нужен.",
   "PLUS is the GALO law that keeps moving. Used alone it can reach every position from every position, which is why the second law exists.":
-    "PLUS — это закон GALO, который всё время движется. В одиночку он достаёт из любой позиции до любой, поэтому и существует второй закон.",
+    "PLUS — тот закон GALO, который всё время движется. В одиночку он дотягивается из любой позиции до любой, поэтому и понадобился второй.",
   "Put the marked labels in one bucket and the others in a second. The table still works on buckets.":
     "Положите отмеченные метки в одно ведро, остальные — во второе. Таблица продолжит работать на вёдрах.",
   "Rank tells GALO how many positions are actually reachable through a law. A low rank means a step throws information away.":
@@ -166,7 +166,7 @@ export const termsPageRu: TranslationDictionary = {
   "Row P2, column P2. Two plus two would be four, but there is no P4 here, so the count wraps round to P1.":
     "Строка P2, столбец P2. Два плюс два было бы четыре, но P4 здесь нет, поэтому счёт заворачивается на P1.",
   "STAR is the GALO law that can reset. That asymmetry is what makes a step order-sensitive, and order-sensitivity is what makes programs meaningful.":
-    "STAR — это закон GALO, который умеет сбрасывать. Именно эта асимметрия делает шаг чувствительным к порядку, а чувствительность к порядку делает программы осмысленными.",
+    "STAR — тот закон GALO, который умеет сбрасывать. Асимметрия делает шаг чувствительным к порядку, а из чувствительности к порядку и получаются осмысленные программы.",
   "Send absolutely everything to P0. It is dull, it loses everything, and it is always lawful.":
     "Отправьте вообще всё в P0. Скучно, теряется всё — и при этом всегда законно.",
   "Seven questions, answered in the same order for every term.":
@@ -204,21 +204,21 @@ export const termsPageRu: TranslationDictionary = {
   "The marked labels are being moved around by the relabellings, while the table underneath stays fixed.":
     "Отмеченные метки переставляются переименованиями, а таблица под ними остаётся неподвижной.",
   "The marked labels are the squares modulo five. They form a block the symmetries keep together.":
-    "Отмеченные метки — это квадраты по модулю пять. Они образуют блок, который симметрии держат вместе.",
+    "Отмеченные метки — квадраты по модулю пять. Они образуют блок, который симметрии держат вместе.",
   "The marked row and column repeat the labels unchanged. P0 leaves everything alone from either side.":
     "Отмеченные строка и столбец повторяют метки без изменений. P0 не трогает ничего ни с одной стороны.",
   "The marked row hits every label exactly once, so it is a bijection. The same row in STAR would not be.":
     "Отмеченная строка попадает в каждую метку ровно один раз — значит, это биекция. Та же строка в STAR ею не была бы.",
   "The marked row label is the source: the position the step starts from, before anything is applied.":
-    "Отмеченная метка строки — это исходная позиция: та, с которой шаг начинается, до всего остального.",
+    "Отмеченная метка строки — исходная позиция: та, с которой шаг начинается, до всего остального.",
   "The marked row shows PLUS from P1: each answer is one step further round the ring, and it never gets stuck.":
     "Отмеченная строка показывает PLUS из P1: каждый ответ на шаг дальше по кругу, и он никогда не застревает.",
   "The marked top row is all P0. When the left input is P0, STAR answers P0 whatever the right input says.":
     "Отмеченная верхняя строка — сплошь P0. Когда левый вход равен P0, STAR отвечает P0, что бы ни говорил правый.",
   "The 560 GALO publishes is this count carried across the whole tower. It is a size, not a score, and it says nothing about capability.":
-    "560, которые публикует GALO, — это тот же счёт, перенесённый на всю башню. Это размер, а не оценка, и он ничего не говорит о возможностях.",
+    "560, которые публикует GALO, — тот же счёт, распространённый на всю башню. Это размер, а не оценка, и о возможностях он не говорит ничего.",
   "The receipt is GALO's deliverable. It is what a stranger replays, and it is the reason a decision can be argued with afterwards.":
-    "Протокол исполнения — это то, что GALO отдаёт наружу. Именно его воспроизводит посторонний, и именно поэтому с решением можно спорить потом.",
+    "Протокол исполнения GALO отдаёт наружу. Его воспроизводит посторонний — потому с решением и можно спорить потом.",
   "The same P0 behaves in two different ways depending on which side it sits. GALO records which side each operand was on, precisely because of this.":
     "Один и тот же P0 ведёт себя по-разному в зависимости от того, с какой стороны он стоит. Именно поэтому GALO записывает, с какой стороны был каждый операнд.",
   "The same row and column in both tables. Same address, different law — so they are two different coordinates, not one.":
@@ -246,11 +246,11 @@ export const termsPageRu: TranslationDictionary = {
   "These tables are the formal layer. What the engine actually runs is narrower, and what is planned is narrower still in evidence.":
     "Эти таблицы — формальный слой. То, что реально работает в движке, уже; а то, что запланировано, ещё уже в смысле доказательств.",
   "This is the arithmetic GALO uses to publish orbit counts. It replaces guessing with a calculation anyone can redo.":
-    "Это та арифметика, которой GALO пользуется, публикуя число орбит. Она заменяет догадку расчётом, который каждый может повторить.",
+    "На этой арифметике GALO и публикует число орбит. Догадку она заменяет расчётом, который каждый может повторить.",
   "This is the only way GALO may carry a result from one level to another. Anything failing the test is refused, not approximated.":
-    "Это единственный способ, которым GALO может перенести результат с одного уровня на другой. Всё, что не проходит проверку, отклоняется, а не приближается.",
+    "Только так GALO переносит результат с уровня на уровень. Что не проходит проверку, отклоняют, а не подгоняют.",
   "This is the position GALO stands on after the step, and the position the next run would start from.":
-    "Это позиция, на которой GALO стоит после шага, и позиция, с которой начался бы следующий запуск.",
+    "На этой позиции GALO остаётся после шага, и с неё же начался бы следующий запуск.",
   "This is the whole of GALO's shipped behaviour: one bounded step, then a stop. Everything larger is written architecture.":
     "Это всё отгруженное поведение GALO: один ограниченный шаг, потом остановка. Всё, что больше, — записанная архитектура.",
   "This object is the foundation of GALO. Everything else on the site — the counts, the receipts, the proofs — exists to make these grids checkable.":
@@ -260,7 +260,7 @@ export const termsPageRu: TranslationDictionary = {
   "Two fits inside four without collisions, so the small table can be found intact inside the big one.":
     "Двойка помещается в четвёрку без столкновений, поэтому маленькую таблицу можно найти внутри большой целиком.",
   "Two inputs per cell is the arity. Two laws plus the named P0 is the whole signature.":
-    "Два входа на клетку — это арность. Два закона плюс именованный P0 — это вся сигнатура.",
+    "Два входа на клетку дают арность. Два закона плюс именованный P0 составляют всю сигнатуру.",
   "Two tables can behave identically while their labels differ. Same structure is not the same as same names.":
     "Две таблицы могут вести себя одинаково, а метки при этом разные. Одинаковая структура — не то же самое, что одинаковые имена.",
   "Two tables of the same rule, two by two and four by four. The level is simply how many positions there are.":

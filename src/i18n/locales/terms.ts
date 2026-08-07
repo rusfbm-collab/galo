@@ -2,9 +2,9 @@ import type { TranslationDictionary } from "../translations";
 
 export const termsRu: TranslationDictionary = {
   "A pole is one named position a level is allowed to be in — nothing more and nothing less.":
-    "Полюс — это одна именованная позиция, в которой уровню разрешено находиться, не больше и не меньше.",
+    "Полюс — одна именованная позиция, в которой уровню разрешено находиться. Не больше и не меньше.",
   "Think of the floor indicator in a lift. Floor 2 is a position, not a quantity of anything; it only tells you where the lift is right now.":
-    "Представьте указатель этажа в лифте. Этаж 2 — это позиция, а не количество чего-либо; он лишь говорит, где лифт находится прямо сейчас.",
+    "Представьте указатель этажа в лифте. Этаж 2 — позиция, а не количество чего-либо: он просто говорит, где лифт сейчас.",
   "GALO refuses to hide its state inside an opaque vector. If a state can be named, it can be printed into a receipt, compared with an earlier run, and disputed by a reviewer who does not trust you.":
     "GALO принципиально не прячет своё состояние в непрозрачном векторе. Если состояние можно назвать, его можно записать в протокол, сравнить с прошлым запуском и оспорить, даже если вы не доверяете автору.",
   "Every table cell, every typed coordinate, and every recorded receipt on this site is written in poles.":
@@ -14,7 +14,7 @@ export const termsRu: TranslationDictionary = {
   "It is the difference between a three-way switch and a seven-position dial. The dial is not cleverer; it simply has more positions to tell apart.":
     "Это разница между трёхпозиционным переключателем и семипозиционным диском. Диск не умнее — у него просто больше позиций, которые можно различить.",
   "Resolution should be a decision, not an accident. Writing the level down turns the need for a finer distinction into a statement that someone else can check.":
-    "Разрешение должно быть решением, а не случайностью. Записанный уровень превращает потребность в более тонком различии в утверждение, которое можно проверить.",
+    "Разрешение должно выбираться, а не получаться само собой. Записанный уровень превращает нужду в более тонком различии в проверяемое утверждение.",
   "Levels L1 through L7 appear in every table, in the 560-coordinate count, and in the rules for moving between levels.":
     "Уровни от L1 до L7 встречаются во всех таблицах, в подсчёте 560 координат и в правилах перехода между уровнями.",
   "Modulo n means counting that wraps: after the last position you are back at the first.":
@@ -54,7 +54,7 @@ export const termsRu: TranslationDictionary = {
   "Advancing by zero steps: you stay exactly where you already were.":
     "Продвижение на ноль шагов: вы остаётесь ровно там, где были.",
   "It is the half of an identity that STAR genuinely has. Naming it precisely blocks the much stronger and false claim that STAR has an identity element.":
-    "Это та половина нейтрального элемента, которая у STAR действительно есть. Точное название блокирует куда более сильное и ложное утверждение, будто у STAR есть нейтральный элемент.",
+    "У STAR есть только эта половина нейтрального элемента. Точное имя закрывает дорогу куда более сильному и ложному выводу, будто нейтральный элемент у STAR есть целиком.",
   "P0 is the unique right-neutral element of STAR; together with the left-zero property it is why STAR has no two-sided identity.":
     "P0 — единственный правый нейтральный элемент STAR; вместе со свойством левого нуля именно поэтому у STAR нет двустороннего нейтрального элемента.",
   "A typed coordinate is the full address of one transition: level, law family, source role, and active role.":
@@ -78,7 +78,7 @@ export const termsRu: TranslationDictionary = {
   "Relabelling the keys and the locks of a building at the same time. Every key still opens exactly the door it opened before.":
     "Одновременно перемаркировать все ключи и все замки в здании. Каждый ключ по-прежнему открывает ровно ту дверь, что и раньше.",
   "It separates distinctions that are structural from distinctions that are only a naming convention — an honesty check on what the mathematics really says.":
-    "Он отделяет различия структурные от различий, которые всего лишь соглашение об именах, — это проверка на честность того, что математика действительно утверждает.",
+    "Он отделяет структурные различия от тех, что держатся на одном лишь соглашении об именах. Проверка на честность: что математика говорит на самом деле.",
   "The unit multipliers, the eighteen same-level automorphisms summed over L1–L7, and the whole symmetry chapter.":
     "Единичные множители, восемнадцать одноуровневых автоморфизмов в сумме по L1–L7 и вся глава о симметриях.",
   "An orbit collects everything one object can be turned into by the allowed symmetries.":
@@ -98,7 +98,7 @@ export const termsRu: TranslationDictionary = {
   "The L2→L4 pass, the L3→L5 rejection, and the zero map that exists between every pair of levels.":
     "Успешный переход L2→L4, отклонение L3→L5 и нулевое отображение, существующее для любой пары уровней.",
   "An embedding is a homomorphism that also keeps distinct positions distinct.":
-    "Вложение — это гомоморфизм, который вдобавок сохраняет различие между различными позициями.",
+    "Вложение — гомоморфизм, который вдобавок не склеивает разные позиции.",
   "Fitting a small cog inside a large one. It meshes only when the teeth line up exactly; otherwise it does not fit at all.":
     "Посадить маленькую шестерню внутрь большой. Она входит, только если зубцы совпадают точно; иначе не входит вовсе.",
   "It is the exact condition for carrying a finer state into a coarser system without quietly losing a distinction that a decision depended on.":
@@ -110,7 +110,7 @@ export const termsRu: TranslationDictionary = {
   "A laboratory notebook page: which experiment, which inputs, which result — written down while it happened.":
     "Страница лабораторного журнала: какой эксперимент, какие входные данные, какой результат — записанные в момент, когда это происходило.",
   "A claim without a receipt cannot be re-run by somebody who does not trust the person making it. GALO treats that as a defect in the claim, not a detail of the paperwork.":
-    "Утверждение без протокола не может быть перезапущено тем, кто не доверяет автору. GALO считает это дефектом самого утверждения, а не мелочью в оформлении.",
+    "Утверждение без протокола не перезапустит тот, кто не верит автору на слово. Для GALO это изъян самого утверждения, а не мелочь в оформлении.",
   "The recorded walkthrough on the home page, the work ledger, and every check identifier shown on this site.":
     "Записанный разбор на главной странице, реестр единиц работы и каждый идентификатор проверки на этом сайте.",
   "A boundary is an explicit statement that a stronger conclusion is not available yet, together with the reason.":
@@ -166,7 +166,7 @@ export const termsRu: TranslationDictionary = {
   "Socks then shoes is not the same as shoes then socks. Some orders matter and some do not.":
     "Сначала носки, потом ботинки — не то же самое, что сначала ботинки, потом носки. Иногда порядок важен, иногда нет.",
   "PLUS commutes and STAR does not. That single difference is what makes role placement a real decision instead of bookkeeping.":
-    "PLUS коммутативен, а STAR — нет. Именно это различие превращает размещение ролей в настоящее решение, а не в формальность.",
+    "PLUS коммутативен, STAR — нет. Из-за этого расстановка ролей становится настоящим решением, а не формальностью.",
   "The PLUS table is mirror-symmetric across its diagonal; the STAR table visibly is not.":
     "Таблица PLUS зеркально симметрична относительно диагонали; таблица STAR явно нет.",
   "An identity element leaves every input unchanged, and it must do so from both sides.":
@@ -238,7 +238,7 @@ export const termsRu: TranslationDictionary = {
   "A recipe in which the contents of one bowl become an ingredient in the next bowl.":
     "Рецепт, в котором содержимое одной миски становится ингредиентом в следующей.",
   "A single step is one cell; a plan is a tree. Writing the tree down is what turns a sequence of actions into something auditable.":
-    "Один шаг — это одна ячейка; план — это дерево. Записанное дерево и превращает последовательность действий в нечто проверяемое.",
+    "Один шаг — одна клетка, план — дерево. Пока дерево не записано, последовательность действий проверить нельзя.",
   "The two bracketed L3 programs, and the boundary stating that the current engine executes one step and not a tree.":
     "Две программы на L3 со скобками и граница, гласящая, что текущий движок исполняет один шаг, а не дерево.",
   "Nonassociative means the brackets matter: regrouping the same inputs can change the answer.":

@@ -12,65 +12,65 @@ export const programmeRu: TranslationDictionary = {
   "Months 9–12":
     "Месяцы 9–12",
   "12-MONTH PLAN, WRITTEN TO BE MARKED":
-    "ПЛАН НА 12 МЕСЯЦЕВ, НАПИСАННЫЙ ТАК, ЧТОБЫ ЕГО МОЖНО БЫЛО ОТМЕТИТЬ",
+    "ПЛАН НА 12 МЕСЯЦЕВ, ПО КОТОРОМУ НАС МОЖНО ПРОВЕРИТЬ",
   "A base to incorporate in, hire from, and operate from for the twelve months above.":
-    "База, где можно зарегистрировать компанию, нанимать и работать все двенадцать месяцев, описанных выше.",
+    "Место, где можно открыть компанию, нанимать людей и работать все двенадцать месяцев, о которых идёт речь ниже.",
   "A bounded evaluation on a partner's data, with the success condition agreed in writing beforehand, that comes back negative — published as it came back. That is what the fourth and fifth milestones are for.":
-    "Ограниченная оценка на данных партнёра, с условием успеха, согласованным письменно заранее, которая возвращается отрицательной — и публикуется в том виде, в каком вернулась. Именно для этого существуют четвёртое и пятое обязательства.",
+    "Ограниченная проверка на данных партнёра, где критерий успеха записан заранее, даёт отрицательный результат — и мы публикуем его как есть. Ради этого и придуманы четвёртое и пятое обязательства.",
   "A customer commitment made on our behalf, or pressure applied to anyone to run a pilot.":
-    "Обязательства клиента, взятого за нас, или давления на кого-либо ради запуска пилота.",
+    "Обещаний от имени клиента и давления на кого бы то ни было ради пилота.",
   "A decision somebody can be made to answer for":
-    "Решение, за которое кто-то может ответить",
+    "Решение, за которое есть с кого спросить",
   "A localized website is not a localized product. It shows that the discipline exists and is enforced, not that any Arabic-language deployment has been made.":
-    "Локализованный сайт — не локализованный продукт. Он показывает, что дисциплина существует и соблюдается, а не то, что сделано какое-либо развёртывание на арабском.",
+    "Сайт на арабском — ещё не продукт на арабском. Он показывает, что правило соблюдается, а про развёртывания на арабском мы ничего не говорим.",
   "A measurement is produced and only a favourable one reaches the public record.":
-    "Измерение проведено, а в публичную запись попало только благоприятное.",
+    "Измерение сделано, но в публичный доступ попало только удачное.",
   "A page addressed to a programme is the easiest place on a website to imply a connection that has not happened. So the statement is made once, plainly, and the build refuses to ship without it.":
-    "Страница, обращённая к программе, — самое лёгкое место на сайте, чтобы намекнуть на связь, которой не было. Поэтому заявление сделано один раз, прямо, и сборка отказывается выходить без него.",
+    "Страница, обращённая к программе, — самое удобное место, чтобы намекнуть на связь, которой нет. Поэтому мы говорим об этом прямо и один раз, а сборка сайта не выходит без этой фразы.",
   "A plan is a wish until somebody can tell whether it happened. Every milestone here carries its own failure condition, so this table can be kept and used against the project a year from now.":
-    "План остаётся пожеланием, пока никто не может сказать, случился он или нет. У каждого обязательства здесь есть собственное условие невыполнения, поэтому эту таблицу можно сохранить и через год предъявить проекту.",
+    "Пока никто не может сказать, сбылся план или нет, это не план, а пожелание. У каждого пункта здесь есть условие провала, так что таблицу можно сохранить и через год предъявить нам.",
   "A public endorsement, a logo, or a quotation to reuse in future material.":
-    "Публичного одобрения, логотипа или цитаты для повторного использования в будущих материалах.",
+    "Публичного одобрения, логотипа и цитаты, которую потом можно вставить в презентацию.",
   "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
-    "Релиз существует и воспроизводится. Свежие повторы STATIC и FAST проходят на обычном интерпретаторе CPython 3.12.13, и зафиксированы 1 366 из 1 366 сохранённых проверок FULL по 131 модулю.",
+    "Релиз есть, и он воспроизводится. Свежие повторы STATIC и FAST проходят на обычном интерпретаторе CPython 3.12.13; по 131 модулю сохранено 1 366 из 1 366 проверок FULL.",
   "A running artefact exists":
-    "Работающий артефакт существует",
+    "Есть работающий артефакт",
   "AFFILIATION":
     "АФФИЛИАЦИЯ",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT":
     "ДОСЬЕ ЗАЯВКИ · НЕ ОБЪЯВЛЕНИЕ",
   "Abu Dhabi is the planned operating base — stated as intent, not as a done thing.":
-    "Абу-Даби — планируемая операционная база; это заявленное намерение, а не свершившийся факт.",
+    "Абу-Даби — планируемая база. Пока это намерение, а не свершившийся факт.",
   "Affiliation":
     "Аффилиация",
   "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
-    "Досье заявки, подготовленное для оценки: двенадцать строк текущего состояния, шесть из них отрицательные; четыре довода о региональном соответствии с их пределами; двенадцать месяцев обязательств, у каждого — условие невыполнения; и шесть вопросов, по которым мы ожидаем давления. Аффилиация с Hub71 не заявляется и не подразумевается.",
+    "Досье заявки, подготовленное для оценки: двенадцать пунктов о том, как обстоит дело, шесть из них отрицательные; четыре довода о том, почему работа подходит региону, и предел каждого из них; двенадцать месяцев обязательств с условиями провала; шесть вопросов, на которых нас будут дожимать. Аффилиация с Hub71 не заявляется и не подразумевается.",
   "An introduction that would be presented anywhere as validation of the technical claims.":
-    "Знакомства, которое где-либо было бы представлено как подтверждение технических утверждений.",
+    "Знакомства, которое где-нибудь выдадут за подтверждение наших технических выводов.",
   "Anybody's signature on a claim that this site has not itself established.":
-    "Чьей-либо подписи под утверждением, которого сам этот сайт не установил.",
+    "Чьей-либо подписи под тем, что сайт сам не доказал.",
   "Arabic already shipped":
-    "Арабский уже выпущен",
+    "Арабский уже сделан",
   "Arabic is already shipped, not scheduled":
-    "Арабский уже выпущен, а не запланирован",
+    "Арабский уже сделан, а не обещан",
   "Asked for":
-    "О чём просим",
+    "О чём мы просим",
   "Assessment dossier":
     "Досье заявки",
   "Assessment lines":
-    "Строки оценки",
+    "Пункты оценки",
   "Assessment lines, with the status each one currently supports":
-    "Строки оценки и статус, который каждая из них сейчас выдерживает",
+    "Пункты оценки и статус, который каждый из них сегодня выдерживает",
   "Because the set of things the engine could have done is declared before it runs, a record can name the exact coordinate that was taken and the exact ones that were available. That is the form an answer has to have when a supervisor, a court, or a counterparty asks why six months later.":
-    "Поскольку множество того, что движок мог сделать, объявлено до запуска, запись может назвать и взятую координату, и все доступные тогда. Именно такую форму должен иметь ответ, когда через полгода надзорный орган, суд или контрагент спрашивают «почему».",
+    "Всё, что движок мог сделать, объявлено до того, как он запустился. Поэтому в записи видно и выбранную координату, и все, что были доступны рядом. Такого ответа и ждут, когда через полгода приходят с вопросом «почему» — надзорный орган, суд или контрагент.",
   "Because they answer different questions. A language model proposes; a declared finite layer decides what it is allowed to admit and writes down why. No head-to-head evaluation of the two has been run, and this project does not claim one would favour it.":
-    "Потому что они отвечают на разные вопросы. Языковая модель предлагает; объявленный конечный слой решает, что он вправе допустить, и записывает почему. Прямого сопоставления этих двух не проводилось, и проект не утверждает, что оно оказалось бы в его пользу.",
+    "Они отвечают на разные вопросы. Языковая модель предлагает, а объявленный конечный слой решает, что можно пропустить, и записывает основание. Напрямую их никто не сравнивал, и мы не беремся утверждать, что сравнение вышло бы в нашу пользу.",
   "Capital raised":
     "Привлечённый капитал",
   "Capitalisation table":
     "Таблица капитализации",
   "Check":
-    "Проверка",
+    "Где проверить",
   "Customer, pilot, or letter of intent":
     "Клиент, пилот или письмо о намерениях",
   "DOCUMENT CONTROL":
@@ -80,109 +80,109 @@ export const programmeRu: TranslationDictionary = {
   "Document control":
     "Управление документом",
   "Does any of this help anyone?":
-    "Помогает ли это хоть кому-нибудь?",
+    "Помогает ли это хоть кому-то?",
   "Dossier navigation":
     "Навигация по досье",
   "Each claim below is followed by what it does not reach. A fit argument without its limit is a sales argument, and it does not survive the first technical reviewer.":
-    "За каждым утверждением ниже идёт то, чего оно не достаёт. Довод о соответствии без своего предела — это довод продавца, и он не переживает первого технического рецензента.",
+    "У каждого довода ниже сразу сказано, куда он не дотягивает. Довод без предела — это довод продавца, и первый же технический рецензент его снимет.",
   "Each commitment carries the observation that would show it was missed.":
-    "У каждого обязательства есть наблюдение, которое покажет, что оно не выполнено.",
+    "У каждого пункта есть условие, по которому будет видно, что он провален.",
   "Every engineering statement on this site is the work of one person. Two first hires are named in the plan and neither has been made.":
-    "Каждое инженерное утверждение на этом сайте — работа одного человека. Двое первых сотрудников названы в плане, и ни один из них не нанят.",
+    "Всё, что написано на сайте про инженерную часть, сделал один человек. Первые двое сотрудников в плане названы, но ни один ещё не нанят.",
   "Every figure quoted above is generated from the same release record the rest of the site is generated from, so this page cannot drift away from the evidence pages while looking as though it agrees with them.":
-    "Каждая цифра, приведённая выше, порождается из той же записи релиза, из которой порождается остальной сайт, поэтому эта страница не может разойтись со страницами доказательств, продолжая выглядеть согласованной с ними.",
+    "Все цифры выше берутся из той же записи релиза, что и остальной сайт. Поэтому эта страница не может незаметно разойтись со страницами доказательств и при этом выглядеть как согласованная с ними.",
   "Everything an assessor would ask, answered before the meeting.":
-    "Всё, о чём спросит оценивающий, отвечено до встречи.",
+    "Всё, о чём спросят на оценке, отвечено заранее.",
   "FIT, WITH THE LIMIT ATTACHED":
-    "СООТВЕТСТВИЕ, С ПРИЛОЖЕННЫМ ПРЕДЕЛОМ",
+    "ПОЧЕМУ ПОДХОДИТ — И ГДЕ ПРЕДЕЛ",
   "Facts not published on a website":
-    "Факты, которых нет на сайте",
+    "Чего на сайте нет",
   "Fewer than two full-time technical people are employed at month nine.":
-    "На девятом месяце занято меньше двух технических специалистов на полной ставке.",
+    "На девятом месяце в штате меньше двух технических специалистов на полной ставке.",
   "Financial statements":
     "Финансовая отчётность",
   "Five commitments, each with the observation that would show it was missed.":
-    "Пять обязательств, у каждого — наблюдение, которое покажет, что оно не выполнено.",
+    "Пять обязательств, и у каждого — условие, по которому будет видно, что оно провалено.",
   "Founder identity documents, education, and employment history":
-    "Документы, удостоверяющие личность основателя, образование и трудовой путь",
+    "Документы основателя: личность, образование, трудовой путь",
   "Founder only":
     "Только основатель",
   "Founder only. Two first hires are named in the plan below and neither has been made, so every engineering statement on this site is the work of one person.":
-    "Только основатель. Двое первых сотрудников названы в плане ниже, и ни один из них не нанят, поэтому каждое инженерное утверждение на этом сайте — работа одного человека.",
+    "Только основатель. Первые двое сотрудников названы в плане ниже, но ни один ещё не нанят, так что вся инженерная часть сайта — работа одного человека.",
   "Four facts an assessor will want that are not published here.":
-    "Четыре факта, которые понадобятся оценивающему и которых здесь нет.",
+    "Четыре вещи, которые понадобятся на оценке и которых здесь нет.",
   "Four reasons the work is shaped like the region's problems.":
-    "Четыре причины, по которым работа устроена как задачи региона.",
+    "Четыре причины, по которым работа отвечает задачам региона.",
   "Four things asked for, and four deliberately not asked for.":
-    "Четыре вещи, о которых просим, и четыре, о которых сознательно не просим.",
+    "Четыре вещи, о которых мы просим, и четыре, о которых просить не станем.",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits":
-    "Досье заявки GALO AI — строки оценки, обязательства и границы",
+    "Досье заявки GALO AI — пункты оценки, обязательства и границы",
   "GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or any of its partners. This page is an application dossier prepared by the project. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
-    "GALO AI не аффилирован с Hub71 и с кем-либо из её партнёров, не одобрен, не поддержан и не отобран ими. Эта страница — досье заявки, подготовленное самим проектом. Она не сообщает ни о каком решении, ни о каких отношениях и ни о каком исходе, и ничто на ней не следует читать как таковое.",
+    "GALO AI не аффилирован с Hub71 и её партнёрами: нас не одобряли, не поддерживали и не отбирали. Эта страница — досье заявки, которое проект составил сам. В ней нет ни решения, ни отношений, ни исхода, и читать её как сообщение о чём-то подобном не следует.",
   "Have the mathematics re-derived and attacked by somebody outside the project, and publish the result unedited.":
-    "Дать кому-то за пределами проекта заново вывести и атаковать математику и опубликовать результат без правок.",
+    "Отдать математику человеку со стороны — пусть выведет заново и попробует сломать — и опубликовать его выводы без правок.",
   "Hire a systems engineer and a research and evaluation engineer, both full-time.":
-    "Нанять системного инженера и инженера по исследованиям и оценке, обоих на полную ставку.",
+    "Взять системного инженера и инженера по исследованиям и оценке, обоих на полную ставку.",
   "How far each kind of check reaches":
-    "Насколько далеко достаёт каждый вид проверки",
+    "Как далеко достаёт каждая проверка",
   "How to use it against us":
-    "Как использовать это против нас",
+    "Как проверить нас по этому документу",
   "Implemented, not planned. This site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if any rendered string is missing a translation. It is a website rather than a product deployment, and that is the whole of the claim.":
-    "Реализовано, а не запланировано. Сайт работает на английском, русском, китайском и арабском с правосторонней вёрсткой, и тест обрушивает сборку, если хотя бы одна отрисованная строка осталась без перевода. Это сайт, а не развёртывание продукта, и это всё, что утверждается.",
+    "Уже сделано, а не в планах. Сайт работает на английском, русском, китайском и арабском, с правосторонней вёрсткой; если хоть одна строка осталась без перевода, сборка падает. Это сайт, а не продукт в эксплуатации — больше мы ничего и не говорим.",
   "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
-    "Зарегистрировать операционную компанию и перенести рабочую базу основателя в Абу-Даби.",
+    "Открыть операционную компанию и перевезти рабочую базу основателя в Абу-Даби.",
   "Independent verification":
     "Независимая проверка",
   "Intellectual-property assignment and ownership position":
-    "Передача и принадлежность интеллектуальной собственности",
+    "Права на интеллектуальную собственность: передача и владелец",
   "Introductions to organisations able to define a bounded evaluation on their own data, with a success condition they write themselves.":
-    "Знакомства с организациями, способными определить ограниченную оценку на собственных данных, с условием успеха, которое они пишут сами.",
+    "Знакомства с теми, кто способен поставить ограниченную проверку на своих данных и сам написать критерий успеха.",
   "It does not describe any programme, its criteria, its tracks, or its terms. Nothing in this project can verify those, and repeating them second-hand would be the exact unseriousness this page exists to avoid.":
-    "Он не описывает ни одну программу, её критерии, направления или условия. Проверить их в рамках проекта нельзя, а пересказывать с чужих слов — ровно та несерьёзность, ради избежания которой страница и написана.",
+    "Он ничего не говорит о самой программе — ни о критериях, ни о направлениях, ни об условиях. Проверить это мы не можем, а пересказывать с чужих слов — та самая несерьёзность, от которой страница и написана.",
   "It states what exists, what does not, and how to check both, at the level of detail a diligence call would otherwise consume. Every line links to the page that carries its evidence.":
-    "Он излагает, что существует, чего нет и как проверить и то и другое — с той подробностью, которую иначе съел бы созвон по due diligence. Каждая строка ведёт на страницу, где лежит её доказательство.",
+    "Он говорит, что есть, чего нет и как проверить и то и другое, — с той подробностью, на которую иначе ушёл бы целый созвон по due diligence. От каждого пункта ведёт ссылка туда, где лежит доказательство.",
   "Limit":
     "Предел",
   "Missed if":
-    "Не выполнено, если",
+    "Провалено, если",
   "No capital has been raised and there are no external shareholders, so there is nothing to show.":
-    "Капитал не привлекался, внешних акционеров нет, поэтому показывать нечего.",
+    "Денег не привлекали, посторонних акционеров нет — показывать нечего.",
   "No incorporated entity exists at the end of the quarter, or the founder is not working from the city.":
-    "К концу квартала нет зарегистрированного юридического лица либо основатель не работает из этого города.",
+    "К концу квартала компания не открыта либо основатель работает не отсюда.",
   "No operating company has been incorporated and no revenue has been recognised.":
-    "Операционная компания не зарегистрирована, выручка не признана.",
+    "Компания не открыта, выручки нет.",
   "No regulator, supervisory authority, or standards body has reviewed any of this, and no regulated deployment exists. The shape of the answer is established; its acceptance by anyone is not.":
-    "Ни регулятор, ни надзорный орган, ни орган по стандартизации это не рассматривали, и регулируемого развёртывания не существует. Форма ответа установлена; чьё-либо согласие с ней — нет.",
+    "Ни регулятор, ни надзорный орган, ни орган по стандартизации ничего из этого не смотрели, и в регулируемой среде это нигде не работает. Форма ответа есть; согласия с ней пока ни у кого нет.",
   "No relationship is being claimed here, and none exists.":
-    "Здесь не заявляется никаких отношений, и их не существует.",
+    "Никаких отношений здесь не заявлено, да их и нет.",
   "No timing, cost, throughput, or efficiency figure has been measured, and none is claimed. That a thing runs is not a statement about what it costs to run.":
-    "Ни время, ни стоимость, ни пропускная способность, ни эффективность не измерялись, и ничего из этого не заявляется. То, что нечто работает, ничего не говорит о том, во что обходится его работа.",
+    "Ни время, ни стоимость, ни пропускную способность, ни эффективность мы не мерили и ничего о них не говорим. То, что вещь работает, ещё не говорит, во что обходится её работа.",
   "Nobody outside the project. Every replay, every proof re-derivation, and every published count was produced by the same party that benefits from them being right. That is the honest description of the evidence base today.":
-    "Никто за пределами проекта. Каждый повтор, каждый повторный вывод доказательства и каждый опубликованный подсчёт произведены той же стороной, которой выгодно, чтобы они оказались верны. Это честное описание доказательной базы на сегодня.",
+    "Никто со стороны. Все повторы, все выкладки и все опубликованные подсчёты сделала та же сторона, которой выгодно, чтобы они оказались верны. Так честно выглядит наша доказательная база на сегодня.",
   "None":
     "Нет",
   "None of the three. Not one signed, not one verbal, not one in negotiation.":
-    "Ни одного из трёх. Ни подписанного, ни устного, ни в переговорах.",
+    "Ни одного из трёх — ни подписанного, ни устного, ни в переговорах.",
   "None. Every check published on this site was run by the project on its own work. This is the single largest gap in the dossier, and the second milestone below exists only to close it.":
-    "Нет. Каждая проверка, опубликованная на этом сайте, выполнена самим проектом над собственной работой. Это самый крупный пробел в досье, и второе обязательство ниже существует только для того, чтобы его закрыть.",
+    "Нет. Всё, что проверено на этом сайте, проверил сам проект и на своей же работе. Это самый крупный пробел в досье, и второе обязательство ниже придумано, только чтобы его закрыть.",
   "None. No angel round, no grant, no accelerator cheque, no convertible. The work to date was self-funded.":
-    "Нет. Ни ангельского раунда, ни гранта, ни чека акселератора, ни конвертируемого займа. Вся работа к настоящему моменту велась на собственные средства.",
+    "Нет. Ни ангельского раунда, ни гранта, ни чека от акселератора, ни конвертируемого займа. Всё сделано на свои.",
   "None. The project has never invoiced anyone.":
-    "Нет. Проект никогда никому не выставлял счёт.",
+    "Нет. Проект ни разу никому не выставлял счёт.",
   "Not asked for":
-    "О чём не просим",
+    "О чём просить не станем",
   "Not incorporated. Incorporation is the first milestone below rather than a completed step, and until it happens there is no entity to contract with.":
-    "Не зарегистрирована. Регистрация — первое обязательство ниже, а не пройденный шаг; пока её нет, заключать договор не с кем.",
+    "Не открыта. Регистрация — первый пункт плана ниже, а не пройденный этап; пока её нет, договор заключать не с кем.",
   "Not measured. No benchmark, customer outcome, or operational comparison exists, in any deployment, run by anyone. No figure is available to quote because none was produced.":
-    "Не измерен. Ни бенчмарка, ни результата у клиента, ни операционного сравнения не существует — ни в одном развёртывании и ни у кого. Цифры для цитирования нет, потому что она не была получена.",
+    "Не измерен. Нет ни бенчмарка, ни результата у клиента, ни сравнения в работе — нигде и ни у кого. Цифры, которую можно процитировать, нет, потому что её никто не получал.",
   "Not on this site":
-    "Не на этом сайте",
+    "Нет на сайте",
   "Not published on this site. Assignment records and the ownership position are provided directly to an assessing party on request.":
-    "На этом сайте не публикуется. Документы о передаче прав и позиция по принадлежности предоставляются оценивающей стороне напрямую по запросу.",
+    "На сайте не публикуем. Документы о передаче прав и сведения о владельце передаём напрямую тому, кто проводит оценку, по запросу.",
   "Not yet incorporated":
-    "Ещё не зарегистрирована",
+    "Компания не открыта",
   "Nothing is trained, so nothing has to leave":
-    "Ничто не обучается, поэтому ничему не нужно уезжать",
+    "Ничему не учимся — значит, ничему и не нужно уезжать",
   "OUTCOME REPORTED":
     "СООБЩАЕМЫЙ ИСХОД",
   "Open":
@@ -190,135 +190,135 @@ export const programmeRu: TranslationDictionary = {
   "Operating company":
     "Операционная компания",
   "Ownership of the intellectual property":
-    "Принадлежность интеллектуальной собственности",
+    "Владелец интеллектуальной собственности",
   "Properties of a finite algebraic structure, each with a complete proof re-derived by the test suite: the two laws, the one-sided roles of the distinguished element, the count of 560 oriented typed coordinates, which levels map into which, and how many lawful relabellings each level has. Nothing about the world, nothing about usefulness, and nothing about anybody's operations.":
-    "Свойства конечной алгебраической структуры, каждое с полным доказательством, заново выводимым тестами: два закона, односторонние роли выделенного элемента, подсчёт 560 ориентированных типизированных координат, какие уровни куда отображаются и сколько законных переобозначений у каждого уровня. Ничего о мире, ничего о полезности и ничего о чьих-либо операциях.",
+    "Свойства конечной алгебраической структуры, каждое с полным доказательством, которое заново выводят тесты: два закона, односторонние роли выделенного элемента, подсчёт 560 ориентированных типизированных координат, какие уровни куда вкладываются и сколько законных переобозначений у каждого уровня. Ни слова о мире, о пользе и о чьей-либо работе.",
   "Provided directly to an assessing party on request, under a mutual non-disclosure agreement.":
-    "Предоставляется оценивающей стороне напрямую по запросу, по взаимному соглашению о неразглашении.",
+    "Передаём напрямую тому, кто проводит оценку, по запросу и под взаимное соглашение о неразглашении.",
   "Provided directly to an assessing party on request.":
-    "Предоставляется оценивающей стороне напрямую по запросу.",
+    "Передаём напрямую тому, кто проводит оценку, по запросу.",
   "Publish the first measurement of external operational effect, whatever it turns out to be.":
-    "Опубликовать первое измерение внешнего операционного эффекта, каким бы оно ни оказалось.",
+    "Опубликовать первое измерение внешнего эффекта — каким бы оно ни вышло.",
   "READ THIS FIRST":
     "СНАЧАЛА ПРОЧТИТЕ ЭТО",
   "RELEASE OF RECORD":
     "РЕЛИЗ, НА КОТОРЫЙ ССЫЛАЕМСЯ",
   "Read the full assessment dossier":
-    "Прочитать полное досье оценки",
+    "Открыть полное досье",
   "Release of record":
     "Релиз, на который ссылаемся",
   "Release record and boundaries":
     "Запись релиза и границы",
   "Relocation and base of operations":
-    "Переезд и операционная база",
+    "Переезд и база",
   "Replay runs on an ordinary interpreter":
-    "Повтор запускается на обычном интерпретаторе",
+    "Повтор идёт на обычном интерпретаторе",
   "Revenue":
     "Выручка",
   "Run one bounded evaluation on a partner's own data, with the success condition agreed in writing before the run.":
-    "Провести одну ограниченную оценку на собственных данных партнёра, с условием успеха, согласованным письменно до запуска.",
+    "Провести одну ограниченную проверку на данных партнёра, записав критерий успеха до запуска.",
   "STAGE":
     "СТАДИЯ",
   "Six numbered definitions and eleven numbered propositions with complete proofs. The test suite re-derives every published count on each build, so a wrong number fails the build rather than reaching the page.":
-    "Шесть нумерованных определений и одиннадцать нумерованных утверждений с полными доказательствами. Тесты заново выводят каждый опубликованный подсчёт при каждой сборке, поэтому неверное число обрушивает сборку, а не попадает на страницу.",
+    "Шесть нумерованных определений и одиннадцать нумерованных утверждений, все с доказательствами. Тесты при каждой сборке выводят заново каждый опубликованный подсчёт, так что неверное число роняет сборку и до страницы не доходит.",
   "Six questions we expect to be pressed on":
-    "Шесть вопросов, по которым мы ожидаем давления",
+    "Шесть вопросов, на которых нас будут дожимать",
   "Six questions we expect to be pressed on, answered as they stand.":
-    "Шесть вопросов, по которым мы ожидаем давления, — с ответами, какие они есть.",
+    "Шесть вопросов, на которых нас будут дожимать, — и ответы на сегодня.",
   "Stage, risks, and diligence path":
     "Стадия, риски и путь due diligence",
   "Stated, not executed. The founder intends to relocate to Abu Dhabi and build the operating team there. Intent is not residency, and this line stays at this status until an entity and a visa exist.":
-    "Заявлено, но не исполнено. Основатель намерен переехать в Абу-Даби и собрать там операционную команду. Намерение — не резидентство, и эта строка остаётся в этом статусе, пока не появятся юридическое лицо и виза.",
+    "Заявлено, но не сделано. Основатель собирается переехать в Абу-Даби и собрать там команду. Намерение — ещё не резидентство, и статус здесь не изменится, пока не появятся компания и виза.",
   "THE ASK, IN BOTH DIRECTIONS":
-    "ПРОСЬБА, В ОБЕ СТОРОНЫ",
+    "О ЧЁМ ПРОСИМ И О ЧЁМ НЕТ",
   "THE HARD PART OF THE CONVERSATION":
     "ТРУДНАЯ ЧАСТЬ РАЗГОВОРА",
   "THE STATE OF PLAY, LINE BY LINE":
-    "ПОЛОЖЕНИЕ ДЕЛ, СТРОКА ЗА СТРОКОЙ",
+    "КАК ОБСТОИТ ДЕЛО, ПУНКТ ЗА ПУНКТОМ",
   "TWELVE MONTHS, WRITTEN TO BE MARKED":
-    "ДВЕНАДЦАТЬ МЕСЯЦЕВ, НАПИСАННЫХ ТАК, ЧТОБЫ ИХ МОЖНО БЫЛО ОТМЕТИТЬ",
+    "ДВЕНАДЦАТЬ МЕСЯЦЕВ, ПО КОТОРЫМ НАС МОЖНО ПРОВЕРИТЬ",
   "Take one published count and recompute it, or take one proposition and look for a counterexample. If 560 is wrong, or a proposition fails at any level, the foundation is wrong and nothing built on it survives. The whole index is small enough to check by hand.":
-    "Возьмите один опубликованный подсчёт и пересчитайте его — или возьмите одно утверждение и поищите контрпример. Если 560 неверно или утверждение падает на каком-то уровне, основание неверно, и ничто построенное на нём не выживет. Весь индекс достаточно мал, чтобы проверить его вручную.",
+    "Возьмите любой опубликованный подсчёт и пересчитайте — или возьмите любое утверждение и поищите контрпример. Если 560 не сходится или утверждение падает хотя бы на одном уровне, рушится основание, а вместе с ним и всё остальное. Индекс достаточно мал, чтобы проверить его руками.",
   "Take the twelve-month table, keep it, and come back with it. Each milestone carries the observation that would show it was missed, so the document can be marked rather than believed.":
-    "Возьмите таблицу на двенадцать месяцев, сохраните её и вернитесь с ней. У каждого обязательства есть наблюдение, которое покажет, что оно не выполнено, — поэтому документ можно отмечать, а не принимать на веру.",
+    "Заберите таблицу на двенадцать месяцев, сохраните и вернитесь с ней. У каждого пункта есть условие провала, поэтому документ можно проверять, а не принимать на веру.",
   "Team":
     "Команда",
   "Technical reviewers with an interest in attacking the mathematics rather than confirming it.":
-    "Технические рецензенты, которым интересно атаковать математику, а не подтверждать её.",
+    "Технических рецензентов, которым интересно сломать математику, а не подтвердить её.",
   "The current release performs no learning: Atlas semantic reads, rank effects, and learning writes are all zero, and the artefact is a declared table rather than a fitted model. There is no training corpus to move, host, or lose.":
-    "Текущий релиз не выполняет обучения: семантические чтения Atlas, влияния на ранг и записи обучения — все нулевые, а артефакт представляет собой объявленную таблицу, а не подогнанную модель. Обучающего корпуса, который нужно было бы перемещать, размещать или потерять, нет.",
+    "Текущий релиз ничему не учится: семантические чтения Atlas, влияния на ранг и записи обучения — нули, а артефакт — объявленная таблица, а не подогнанная модель. Никакого обучающего корпуса, который надо было бы возить, хранить или потерять.",
   "The evidence behind every line above":
-    "Доказательства за каждой строкой выше",
+    "Доказательства ко всем пунктам выше",
   "The mathematics is stated and checkable":
-    "Математика изложена и проверяема",
+    "Математика выписана и проверяема",
   "The negative lines are not at the bottom. A dossier that puts its three strengths first and its six absences in a footnote is a dossier that expects not to be read carefully, and this one does.":
-    "Отрицательные строки стоят не внизу. Досье, которое ставит три сильные стороны первыми, а шесть отсутствий прячет в сноску, — это досье, которое не рассчитывает на внимательное чтение; это рассчитывает.",
+    "Отрицательные пункты не задвинуты вниз. Досье, где сначала идут три сильные стороны, а шесть провалов уходят в сноску, рассчитано на невнимательного читателя. Это — на внимательного.",
   "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.":
-    "Следующему этапу нужны юридическое лицо, двое технических сотрудников, партнёры по оценке, готовые принести собственные данные, и рецензенты, которым интересно атаковать математику. Ниже — что было бы построено за первые двенадцать месяцев, с наблюдением, которое покажет невыполнение каждого обязательства.",
+    "Дальше нужны компания, двое технических сотрудников, партнёры, готовые дать свои данные, и рецензенты, которым интересно сломать математику. Ниже — что будет сделано за первые двенадцать месяцев и по чему будет видно, что пункт провален.",
   "The published replays were executed on a standard CPython 3.12.13 interpreter, not on specialised hardware, because a replay is a finite enumeration rather than an inference pass.":
-    "Опубликованные повторы выполнялись на обычном интерпретаторе CPython 3.12.13, а не на специализированном оборудовании, потому что повтор — это конечный перебор, а не проход вывода.",
+    "Опубликованные повторы шли на обычном интерпретаторе CPython 3.12.13, без специального железа: повтор — это конечный перебор, а не проход вывода.",
   "The re-derivation is carried out by the project, or is carried out externally and then not published because it went badly.":
-    "Повторный вывод сделан самим проектом — либо сделан снаружи и не опубликован, потому что оказался неудачным.",
+    "Выкладки сделал сам проект — или их сделали снаружи, но не опубликовали, потому что вышло плохо.",
   "The same picture in business terms":
-    "Та же картина в терминах бизнеса",
+    "То же самое, но на языке бизнеса",
   "The second list matters more than the first. It fixes in advance what could otherwise be read into an introduction, a meeting, or a logo appearing next to ours.":
-    "Второй список важнее первого. Он заранее закрепляет то, что иначе можно было бы вычитать из знакомства, встречи или логотипа, оказавшегося рядом с нашим.",
+    "Второй список важнее первого. Он заранее закрывает то, что иначе можно вычитать из знакомства, встречи или логотипа, оказавшегося рядом с нашим.",
   "The success condition is written after the results are seen, or the data used is ours rather than a partner's.":
-    "Условие успеха написано после того, как результаты увидены, либо использованы наши данные, а не партнёрские.",
+    "Критерий успеха дописали, уже увидев результат, — или взяли наши данные вместо партнёрских.",
   "The time to be measured against the five milestones above, and to be dropped if they are missed.":
-    "Время, чтобы нас измерили по пяти обязательствам выше — и отсеяли, если они не выполнены.",
+    "Времени, чтобы нас проверили по пяти пунктам выше — и отсеяли, если они провалены.",
   "The verification handbook":
-    "Руководство по проверке",
+    "Как мы проверяем себя",
   "The whole site is delivered in Arabic with right-to-left layout, with mathematical notation isolated so it stays readable, and the build fails if a single rendered string lacks its translation. An assessor can check this in one click by switching the language.":
-    "Весь сайт поставляется на арабском с правосторонней вёрсткой, математическая нотация изолирована так, что остаётся читаемой, и сборка падает, если хотя бы одна отрисованная строка осталась без перевода. Оценивающий проверяет это одним щелчком — переключением языка.",
+    "Весь сайт идёт на арабском с правосторонней вёрсткой; математика вынесена так, что остаётся читаемой, и если хоть одна строка осталась без перевода, сборка падает. Проверяется одним щелчком — переключением языка.",
   "There is no operating company today, so there is nothing to contract with. Incorporation is the first milestone below rather than a completed step.":
-    "Операционной компании сегодня нет, поэтому заключать договор не с кем. Регистрация — первое обязательство ниже, а не пройденный шаг.",
+    "Компании сегодня нет, поэтому договор заключать не с кем. Регистрация — первый пункт плана ниже, а не пройденный этап.",
   "These are the questions that decide the meeting. Answering them here costs the advantage of a rehearsed reply and gains the only thing worth more: the assessor can check the answers before spending an hour on them.":
-    "Именно эти вопросы решают исход встречи. Ответить на них здесь — значит потерять преимущество отрепетированной реплики и получить единственное, что стоит дороже: оценивающий может проверить ответы до того, как потратит на них час.",
+    "Эти вопросы и решают исход встречи. Отвечая на них здесь, мы теряем заготовленную реплику и получаем взамен большее: ответы можно проверить до того, как тратить на них час.",
   "This is a property of the current release described by its own selfchecks, not a data-residency certification and not a security review. Neither has been carried out by anyone.":
-    "Это свойство текущего релиза по его же самопроверкам, а не сертификация по резидентности данных и не аудит безопасности. Ни того, ни другого никто не проводил.",
+    "Так устроен текущий релиз по его же самопроверкам. Это не сертификат по хранению данных и не аудит безопасности — ни того, ни другого никто не делал.",
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
-    "Эта страница существует, чтобы первый разговор начинался с открытых вопросов, а не с закрытых. Двенадцать строк оценки, шесть из них отрицательные. Двенадцать месяцев обязательств, у каждого — наблюдение, которое покажет невыполнение. Шесть вопросов, по которым мы ожидаем давления, с ответами, какие они сегодня, а не какими нам хотелось бы их видеть.",
+    "Страница написана, чтобы первый разговор начинался с открытых вопросов, а не с уже закрытых. Двенадцать пунктов оценки, шесть отрицательных. Двенадцать месяцев обязательств, у каждого — условие провала. Шесть вопросов, на которых нас будут дожимать, с ответами на сегодня, а не с теми, какие нам хотелось бы дать.",
   "This site is delivered in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website, not a deployment, and that is the whole claim.":
-    "Этот сайт поставляется на арабском с правосторонней вёрсткой, и сборка падает, если хотя бы одна отрисованная строка осталась без перевода. Это сайт, а не развёртывание, и это всё утверждение целиком.",
+    "Сайт идёт на арабском с правосторонней вёрсткой, и если хоть одна строка осталась без перевода, сборка падает. Это сайт, а не продукт в эксплуатации, — больше мы ничего и не говорим.",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
-    "Три строки установлены, три отсутствуют полностью, остальные частичны или не раскрыты. Именно так честно выглядит доклиентский исследовательский проект; любая другая подача стоила бы только первого часа первой встречи.",
+    "Три пункта закрыты, три пусты, остальные наполовину или не раскрыты. Так честно выглядит исследовательский проект на стадии pre-seed. Любая другая подача стоила бы нам первого часа первой встречи.",
   "Twelve lines an assessor works through":
-    "Двенадцать строк, которые проходит оценивающий",
+    "Двенадцать пунктов, через которые пройдут на оценке",
   "Twelve lines an assessor works through. Six of them are negative.":
-    "Двенадцать строк, которые проходит оценивающий. Шесть из них отрицательные.",
+    "Двенадцать пунктов, через которые пройдут на оценке. Шесть из них отрицательные.",
   "Twelve months, with failure conditions":
-    "Двенадцать месяцев с условиями невыполнения",
+    "Двенадцать месяцев с условиями провала",
   "Two of them are withheld on purpose and two of them do not exist yet. Saying which is which is the point: an absence with no explanation reads the same as something being hidden.":
-    "Два из них не раскрываются намеренно, а двух ещё не существует. Сказать, что есть что, и есть суть: отсутствие без объяснения читается так же, как что-то скрываемое.",
+    "Две вещи мы не раскрываем намеренно, а двух других пока просто не существует. Сказать, что где, и есть смысл: молчание без объяснения читается так же, как утаивание.",
   "Unknown, and stated as unknown everywhere it could be misread. Nothing has been measured against any alternative or against doing nothing at all. Anyone claiming otherwise on our behalf would be going beyond what this project can support.":
-    "Неизвестно, и это названо неизвестным всюду, где могло бы быть прочитано иначе. Ничего не измерялось ни против какой альтернативы, ни против бездействия. Всякий, кто утверждает обратное от нашего имени, выходит за пределы того, что проект может поддержать.",
+    "Неизвестно — и так и написано везде, где иначе можно понять превратно. Мы не сравнивали это ни с одной альтернативой и даже с бездействием. Если кто-то говорит обратное от нашего имени, он говорит больше, чем проект может подтвердить.",
   "WHAT A WEBSITE IS THE WRONG PLACE FOR":
-    "ДЛЯ ЧЕГО САЙТ — НЕПОДХОДЯЩЕЕ МЕСТО",
+    "ЧЕГО НЕ КЛАДУТ НА САЙТ",
   "What has actually been proved?":
-    "Что на самом деле доказано?",
+    "Что доказано на самом деле?",
   "What is asked for, and what is not":
     "О чём просим и о чём нет",
   "What is the fastest way to disprove the technical claim?":
-    "Как быстрее всего опровергнуть техническое утверждение?",
+    "Как быстрее всего опровергнуть техническую часть?",
   "What it deliberately avoids":
-    "Чего он сознательно избегает",
+    "Чего он намеренно не делает",
   "What this document does":
     "Что делает этот документ",
   "What this document is":
     "Что это за документ",
   "What this document is pinned to, and who answers for it.":
-    "К чему привязан этот документ и кто за него отвечает.",
+    "На чём держится этот документ и кто за него отвечает.",
   "What would make the founder stop?":
-    "Что заставило бы основателя остановиться?",
+    "Что заставит основателя остановиться?",
   "Where it stands today":
     "Как обстоит дело сегодня",
   "Who has checked this?":
     "Кто это проверял?",
   "Why the work is shaped like the region's problems":
-    "Почему работа устроена как задачи региона",
+    "Почему работа отвечает задачам региона",
   "Why would a finite algebra matter when language models exist?":
-    "Зачем нужна конечная алгебра, когда есть языковые модели?",
+    "Зачем конечная алгебра, если есть языковые модели?",
 };
 
 export const programmeZh: TranslationDictionary = {

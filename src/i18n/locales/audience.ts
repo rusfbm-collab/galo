@@ -20,7 +20,7 @@ export const audienceRu: TranslationDictionary = {
   "A horizontal line with six numbered stops. The first five are marked with short time boxes of thirty minutes to one day; the sixth is marked one week and is drawn as the point where a decision is required.":
     "Горизонтальная линия с шестью пронумерованными остановками. Первые пять помечены короткими интервалами от тридцати минут до одного дня; шестая помечена неделей и нарисована как точка, где нужно решение.",
   "A log line proves an action occurred. It rarely proves that the action was inside a boundary somebody declared beforehand, which is the thing a reviewer actually needs to establish.":
-    "Строка журнала доказывает, что действие произошло. Она редко доказывает, что действие было внутри границы, которую кто-то объявил заранее, — а именно это и нужно установить проверяющему.",
+    "Строка журнала доказывает, что действие было. Она почти никогда не доказывает, что оно уложилось в границу, объявленную заранее, — а проверяющему нужно именно это.",
   "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.":
     "Нетехнический разбор GALO: проблема на языке денег, место объявленного слоя в системе, что работает сегодня, шесть рисков с проверками и путь due diligence, который читатель может пройти без нас.",
   "A persistent trusted head, operating-system capability isolation, a fresh full replay on the blocked runtime, arbitrary free-text behaviour, external gain, and persistent policy.":
@@ -28,7 +28,7 @@ export const audienceRu: TranslationDictionary = {
   "A probability is not something a reviewer can argue with.":
     "С вероятностью не поспоришь.",
   "A published count that does not reproduce, a status quoted without its scope, or a stored result presented as a fresh one.":
-    "Опубликованное число, которое не воспроизводится; статус, процитированный без области действия; или сохранённый результат, поданный как свежий.",
+    "Опубликованное число, которое не сходится при пересчёте; статус, вырванный из области действия; сохранённый результат, поданный как свежий.",
   "A result on one layer does not transfer to another.":
     "Результат на одном слое не переносится на другой.",
   "A result produced at a stated time under stated conditions, republished without being re-run. It is evidence about that run and about nothing else.":
@@ -56,7 +56,7 @@ export const audienceRu: TranslationDictionary = {
   "Anything that proposes: a model, a rule engine, or a person":
     "Тот, кто предлагает: модель, набор правил или человек",
   "Anything that would need data we do not hold, a runtime we could not run, or an evaluator who is not us. These are listed rather than quietly omitted.":
-    "Всё, для чего понадобились бы данные, которых у нас нет, среда исполнения, которую мы не смогли запустить, или оценщик, который не мы. Это перечислено, а не тихо опущено.",
+    "Всё, для чего нужны данные, которых у нас нет, среда, которую мы не смогли запустить, или проверяющий, который не мы. Мы это перечисляем, а не убираем с глаз.",
   "Ask for the release archive and check its fingerprint against the one published here.":
     "Запросите архив выпуска и сверьте его отпечаток с опубликованным здесь.",
   "Ask what a second person would have to read to become productive, and how long that took the last time somebody tried.":
@@ -76,7 +76,7 @@ export const audienceRu: TranslationDictionary = {
   "Can one decision be reproduced by somebody who was not there?":
     "Может ли одно решение воспроизвести тот, кого при этом не было?",
   "Checks, work units, and outcome agree. A disagreement is a specific line you can name rather than a general doubt.":
-    "Проверки, единицы работы и исход совпадают. Расхождение — это конкретная строка, которую можно назвать, а не общее сомнение.",
+    "Проверки, единицы работы и исход сходятся. Расхождение — это конкретная строка, на которую можно показать пальцем, а не общее ощущение, что что-то не так.",
   "Compare the archive fingerprint you were sent with the one published here.":
     "Сверьте отпечаток присланного вам архива с опубликованным здесь.",
   "Correcting one belief should not mean retraining everything.":
@@ -100,9 +100,9 @@ export const audienceRu: TranslationDictionary = {
   "Each one is published with its own status on the evidence page. Ask for any of them to be demonstrated and expect the answer to match the published status exactly.":
     "Каждая опубликована со своим статусом на странице доказательств. Попросите продемонстрировать любую из них и ожидайте, что ответ в точности совпадёт с опубликованным статусом.",
   "Each row is taken from the published boundary register with the status it actually carries. None of them is closed today, which is why persistent policy learning is published as not started rather than as coming soon.":
-    "Каждая строка взята из опубликованного реестра границ с тем статусом, который она действительно несёт. Ни одна из них сегодня не закрыта — именно поэтому персистентное обучение политики опубликовано как не начатое, а не как «скоро будет».",
+    "Каждая строка взята из опубликованного реестра границ вместе с её настоящим статусом. Сегодня не закрыта ни одна — потому и написано, что персистентное обучение политики не начато, а не что оно «вот-вот будет».",
   "Each step is something a sceptical reader can do alone, in the stated time, using only what is published. The sixth step is the one that needs a decision from you, because it is the measurement nobody has made yet.":
-    "Каждый шаг — это то, что скептичный читатель может сделать в одиночку, за указанное время, пользуясь только опубликованным. Шестой шаг — единственный, где нужно ваше решение, потому что это измерение, которое пока никто не провёл.",
+    "Каждый шаг скептичный читатель делает сам, за указанное время и только по опубликованному. Шестой — единственный, где решать вам, потому что это измерение, которого пока не сделал никто.",
   "Eight questions, answered as they stand":
     "Восемь вопросов — и ответы на сегодня",
   "Eight questions, answered as they stand today":
@@ -146,9 +146,9 @@ export const audienceRu: TranslationDictionary = {
   "Five sentences that a reviewer would otherwise have to discover by exhaustion.":
     "Пять фраз, до которых иначе пришлось бы додумываться самому.",
   "Five slots, and a sentence that cannot fill them is not published as a claim.":
-    "Пять полей. Фраза, которая их не заполняет, утверждением здесь не считается.",
+    "Пять полей. Фраза, которая их не заполняет, за утверждение здесь не сходит.",
   "Five slots. A statement that cannot fill all five is not published as a claim.":
-    "Пять полей. Если хоть одно пустует — это не утверждение, и мы его не публикуем.",
+    "Пять полей. Если пустует хоть одно — это не утверждение, и мы его не публикуем.",
   "For auditors":
     "Аудиторам",
   "For example":
@@ -180,9 +180,9 @@ export const audienceRu: TranslationDictionary = {
   "GALO AI for Investors — What Exists, What Does Not, and How to Check":
     "GALO AI для инвесторов — что есть, чего нет и как это проверить",
   "GALO is a standalone research architecture for decision-making systems that hold their state in a small, completely written-out table instead of inside a model nobody can open. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.":
-    "GALO — самостоятельная исследовательская архитектура для систем принятия решений, которые держат своё состояние в небольшой, полностью выписанной таблице, а не внутри модели, которую никто не может открыть. Текущий выпуск верифицирует конечный слой исполнения; персистентное обучение и внешняя производительность остаются недоказанными.",
+    "GALO — самостоятельная исследовательская архитектура для систем принятия решений. Их состояние лежит в небольшой, полностью выписанной таблице, а не внутри модели, которую никто не может открыть. Текущий выпуск проверяет конечный слой исполнения; персистентное обучение и внешняя производительность остаются недоказанными.",
   "GALO is a way for a decision-making system to keep its state in a small written-out table instead of inside a model nobody can open.":
-    "GALO — это способ для системы принятия решений держать своё состояние в небольшой выписанной таблице, а не внутри модели, которую никто не может открыть.",
+    "GALO — это способ держать состояние системы принятия решений в небольшой выписанной таблице, а не внутри модели, которую никто не может открыть.",
   "HOW FAR EACH KIND OF EVIDENCE REACHES":
     "НАСКОЛЬКО ДАЛЕКО ДОСТАЁТ КАЖДЫЙ ВИД ДОКАЗАТЕЛЬСТВА",
   "HOW TO READ A STATUS WITHOUT BEING MISLED":
@@ -228,7 +228,7 @@ export const audienceRu: TranslationDictionary = {
   "It means a required condition was missing, blocked, or outside the tested scope. Treated as a pass, it would be the single most misleading line on the page, so it is given its own status and its own colour.":
     "Это значит, что требуемое условие отсутствовало, было заблокировано или лежало вне протестированной области. Принятый за прохождение, он стал бы самой вводящей в заблуждение строкой на странице, поэтому у него собственный статус и собственный цвет.",
   "It says nobody has established the thing here, not that the thing is false. It is published so that the absence is visible rather than inferred from silence.":
-    "Это говорит, что здесь никто этого не установил, а не что это неверно. Публикуется, чтобы отсутствие было видно, а не выводилось из молчания.",
+    "Это значит, что здесь никто ничего не установил, а не что утверждение ложно. Мы это публикуем, чтобы пробел был виден, а не додумывался из нашего молчания.",
   "It stops at a named gate and writes that gate into the record. There is no fallback branch and no best-effort answer.":
     "Он останавливается на названном шлюзе и вписывает этот шлюз в протокол. Запасной ветви нет, и ответа «как получится» тоже нет.",
   "Key-person concentration.":
@@ -238,13 +238,13 @@ export const audienceRu: TranslationDictionary = {
   "Long-running agent automation":
     "Автоматика, которая работает неделями без присмотра",
   "Membership in the permitted set becomes a property of the layer rather than a hope about the model, and an attempt outside it is refused and recorded instead of executed.":
-    "Членство в разрешённом множестве становится свойством слоя, а не надеждой на модель, и попытка выйти за него отклоняется и записывается, а не исполняется.",
+    "Принадлежность к разрешённому множеству становится свойством слоя, а не надеждой на модель: попытку выйти за него отклоняют и записывают, а не выполняют.",
   "Model governance and assurance":
     "Контроль над моделями и отчётность перед регулятором",
   "Most of this site is written for specialists, and that turned out to be a mistake for everybody else. These three routes fix it: pick the one that matches why you are here, follow its three stops in order, and stop when your question is answered.":
     "Большая часть этого сайта написана для специалистов, и для всех остальных это оказалось ошибкой. Эти три маршрута её исправляют: выберите тот, что соответствует причине вашего прихода, пройдите три его остановки по порядку и остановитесь, когда получите ответ на свой вопрос.",
   "NOT PROVEN is a statement about evidence, not about falsity.":
-    "NOT PROVEN — это утверждение о доказательствах, а не о ложности.",
+    "NOT PROVEN говорит о доказательствах, а не о том, что утверждение ложно.",
   "No benchmark, accuracy, speed, or cost comparison against any other system.":
     "Никакого сравнения по бенчмарку, точности, скорости или стоимости с какой бы то ни было другой системой.",
   "No benchmark, customer outcome, or operational gain has been measured. That number is zero and is printed here on purpose.":
@@ -260,7 +260,7 @@ export const audienceRu: TranslationDictionary = {
   "No trained model of the world; the current engine performs zero learning writes.":
     "Никакой обученной модели мира; текущий движок делает ноль записей обучения.",
   "No. Every published number is recomputed by this site's own build. Independent re-checking is the milestone two of the four work tracks have not reached.":
-    "Нет. Каждое опубликованное число пересчитывается сборкой самого этого сайта. Независимая перепроверка — это как раз тот рубеж, которого два из четырёх направлений работы ещё не достигли.",
+    "Нет. Каждое опубликованное число пересчитывает сборка этого же сайта. Независимая перепроверка — как раз тот рубеж, до которого два направления работы из четырёх ещё не дошли.",
   "No. Semantic reads, rank effects, and learning writes are all held at zero, and no trained world model is present.":
     "Нет. Семантические чтения, влияния на ранжирование и записи обучения удерживаются на нуле, и обученной модели мира нет.",
   "No. There is a finished formal kernel, a running engine slice built on it, and a written architecture for the parts that do not exist yet.":
@@ -276,7 +276,7 @@ export const audienceRu: TranslationDictionary = {
   "Nothing here has been checked by anyone outside the project.":
     "Ничего из этого никто со стороны не проверял.",
   "Nothing here replaces the layer above it or the layer below it. The claim is narrower and more boring than that: the middle band is the part a reviewer has to be able to argue with, so it is the part that is written out in advance.":
-    "Ничто здесь не заменяет ни слой сверху, ни слой снизу. Утверждение уже и скучнее: средняя полоса — это та часть, с которой проверяющий должен уметь спорить, поэтому именно она выписана заранее.",
+    "Ничто здесь не заменяет ни слой сверху, ни слой снизу. Мы говорим о более узком и скучном: средняя полоса — та часть, с которой проверяющий должен уметь спорить, поэтому её и выписывают заранее.",
   "Nothing here requires mathematics unless you want it.":
     "Здесь ничего не требует математики, если вы сами её не захотите.",
   "Nothing is accumulated between runs. Two runs on the same input behave identically, a year apart.":
@@ -284,7 +284,7 @@ export const audienceRu: TranslationDictionary = {
   "One decision, drawn stage by stage":
     "Одно решение, нарисованное этап за этапом",
   "One sentence, in publishable form, with no adjective that a reader could interpret two ways. A claim that cannot be written this way is not published.":
-    "Одно предложение в публикуемой форме, без единого прилагательного, которое читатель мог бы понять двояко. Утверждение, которое так не записывается, не публикуется.",
+    "Одно предложение в публикуемой форме, без единого прилагательного, которое можно понять двояко. Что так не записывается, того мы не публикуем.",
   "Open the evidence page and sort every line into PASS, BOUNDARY, and NOT PROVEN.":
     "Откройте страницу доказательств и разложите каждую строку на PASS, BOUNDARY и NOT PROVEN.",
   "Open the evidence page: each of the four work tracks names its own state and the milestone it has actually reached, and none of them borrows a milestone from another.":
@@ -310,7 +310,7 @@ export const audienceRu: TranslationDictionary = {
   "Read the five refusal gates on the thinking page, then look for the corresponding refusal fields in the receipt structure.":
     "Прочитайте пять шлюзов отказа на странице о мышлении, а затем найдите соответствующие поля отказа в структуре протокола исполнения.",
   "Read the four situations below as descriptions of shape, not as pipeline. None of them is a deployment, a pilot, a customer, or a conversation, and none is presented as one.":
-    "Читайте четыре ситуации ниже как описание формы, а не как воронку продаж. Ни одна из них не является внедрением, пилотом, клиентом или разговором, и ни одна не подаётся как таковая.",
+    "Четыре ситуации ниже описывают форму, а не воронку продаж. Ни одна из них не внедрение, не пилот, не клиент и даже не разговор, и подавать их так мы не станем.",
   "Read the plain-language briefing and the thinking schemes, and nothing else.":
     "Прочитайте страницу «Простыми словами» и схемы мышления — и больше пока ничего.",
   "Recompute one published count yourself from the stated laws. It is an afternoon of work, and it is the cheapest disproof available.":
@@ -350,7 +350,7 @@ export const audienceRu: TranslationDictionary = {
   "Sort every number on this site into one of four boxes before you argue about any of them.":
     "Прежде чем спорить о цифрах, разложите их по четырём полкам.",
   "Start from the table everything is built on, follow one decision end to end, and then read the formal statements.":
-    "Начните с таблицы, на которой всё построено, проследите одно решение от начала до конца, а затем прочитайте формальные утверждения.",
+    "Начните с таблицы, на которой всё держится, проследите одно решение от начала до конца, а потом читайте формальные утверждения.",
   "Start with the non-technical account":
     "Начните с объяснения простыми словами",
   "Start with the table you already know":
@@ -374,13 +374,13 @@ export const audienceRu: TranslationDictionary = {
   "Take the two published laws and generate the tables for one level yourself.":
     "Возьмите два опубликованных закона и сами постройте таблицы для одного уровня.",
   "The action happened and was logged. What was permitted at that moment, and why this option rather than another, has to be rebuilt from memory, from code that has since changed, and from people who have moved on.":
-    "Действие произошло и попало в журнал. Что было разрешено в тот момент и почему выбран именно этот вариант, приходится восстанавливать по памяти, по коду, который с тех пор изменился, и по людям, которые уже ушли.",
+    "Действие случилось и попало в журнал. А вот что было разрешено в тот момент и почему выбрали именно это — приходится восстанавливать по памяти, по коду, который с тех пор переписали, и по людям, которые давно ушли.",
   "The bar length is not importance. It is how far the claim travels without trust: how many people, with what access, could establish it for themselves. A claim in the bottom tier is not weak — it is simply not something this site can settle.":
-    "Длина полосы — не важность. Это то, насколько далеко утверждение доходит без доверия: сколько людей и с каким доступом смогли бы установить его самостоятельно. Утверждение в нижнем уровне не слабое — просто этот сайт не может его решить.",
+    "Длина полосы — не про важность. Она про то, как далеко утверждение доходит без доверия: сколько людей и с каким доступом смогли бы установить его сами. Утверждение из нижнего уровня не слабое — просто этот сайт его не решает.",
   "The state carried between runs would be three named registers that can be printed and compared, so drift becomes something you measure rather than something you notice late.":
-    "Состояние, переносимое между запусками, было бы тремя именованными регистрами, которые можно выписать и сравнить, так что дрейф становится тем, что вы измеряете, а не тем, что замечаете поздно.",
+    "Состояние, которое переходит из запуска в запуск, было бы тремя именованными регистрами: их можно выписать и сравнить, и тогда дрейф становится тем, что вы измеряете, а не тем, что замечаете слишком поздно.",
   "The cheapest way to find out whether a claim discipline is real is to attack the numbers, not the story. The path below is ordered by cost, and the first disproof available is also the fastest one.":
-    "Самый дешёвый способ выяснить, настоящая ли дисциплина утверждений, — атаковать числа, а не рассказ. Путь ниже упорядочен по стоимости, и первое доступное опровержение — оно же самое быстрое.",
+    "Дешевле всего понять, настоящая ли у нас дисциплина утверждений, атакой на числа, а не на рассказ. Путь ниже выстроен по стоимости, и первое же доступное опровержение — самое быстрое.",
   "The claim-discipline scan, the test suite, and the localized route generation.":
     "Сканирование дисциплины утверждений, набор тестов и генерация локализованных маршрутов.",
   "The complete list is written before anything runs, which is what makes a full check possible instead of a sample.":
@@ -402,7 +402,7 @@ export const audienceRu: TranslationDictionary = {
   "The formal mathematics, the compatibility record, and the engine running today are separate layers. A proof about the algebra says nothing about the runtime, and a passing runtime check proves nothing about the algebra.":
     "Формальная математика, запись совместимости и работающий сегодня движок — это разные слои. Доказательство об алгебре ничего не говорит о среде исполнения, а пройденная проверка среды исполнения ничего не доказывает об алгебре.",
   "The level, the release, the accepted input contract, and the runtime. A claim quoted without its scope is the most common way a record on this site could be misused.":
-    "Уровень, выпуск, принимаемый входной контракт и среда исполнения. Утверждение, процитированное без области действия, — самый частый способ, которым запись с этого сайта может быть использована неверно.",
+    "Уровень, выпуск, принимаемый входной контракт и среда исполнения. Утверждение, вырванное из области действия, — самый частый способ неверно воспользоваться записью с этого сайта.",
   "The list a reader would otherwise have to assemble by noticing absences.":
     "Список, который иначе пришлось бы собирать по умолчаниям.",
   "The mechanism being audited":
@@ -410,9 +410,9 @@ export const audienceRu: TranslationDictionary = {
   "The narrow scope may never widen.":
     "Узкий кусок может так и не вырасти.",
   "The open-ended system keeps proposing; the declared layer keeps the part that has to be defensible, and the boundary between them is written rather than argued.":
-    "Открытая система продолжает предлагать; объявленный слой держит ту часть, которая должна выдерживать возражения, и граница между ними записана, а не обсуждается.",
+    "Открытая система продолжает предлагать; объявленный слой держит ту часть, которая должна выдерживать возражения. Граница между ними записана, а не обсуждается каждый раз заново.",
   "The page you are reading regenerates the value from the stated law rather than quoting it from a document. If the law and the number disagreed, the page would show the disagreement.":
-    "Страница, которую вы читаете, регенерирует значение по объявленному закону, а не цитирует его из документа. Если бы закон и число разошлись, страница показала бы это расхождение.",
+    "Страница, которую вы читаете, выводит значение по объявленному закону, а не берёт его из документа. Разойдись закон с числом — страница показала бы это расхождение.",
   "The problem, in money rather than mathematics":
     "Проблема на языке денег, а не математики",
   "The published record":
@@ -434,7 +434,7 @@ export const audienceRu: TranslationDictionary = {
   "The system that actually moves money, machinery, or a case file":
     "То, что реально двигает деньги, технику или дело человека",
   "The tier is not a measure of importance. It answers one question: how many people, with what access, could establish this without trusting the project? A claim in the last tier is not weaker — it is outside what this site can settle.":
-    "Уровень — это не мера важности. Он отвечает на один вопрос: сколько людей и с каким доступом смогли бы установить это, не доверяя проекту? Утверждение в последнем уровне не слабее — оно вне того, что этот сайт может решить.",
+    "Уровень — не мера важности. Он отвечает на один вопрос: сколько людей и с каким доступом смогли бы установить это, не веря нам на слово? Утверждение из последнего уровня не слабее — оно просто вне того, что решает этот сайт.",
   "The two strings are identical, or the artefact is not the one this site describes.":
     "Две строки совпадают — иначе этот артефакт не тот, который описывает сайт.",
   "The value may be real and still unpriceable.":
@@ -452,7 +452,7 @@ export const audienceRu: TranslationDictionary = {
   "These four are illustrations of where the shape fits, written by us. No organisation named or unnamed has evaluated, piloted, or agreed to anything, and nothing on this site should be read as implying otherwise.":
     "Эти четыре — иллюстрации того, куда подходит эта форма, написанные нами. Ни одна организация, названная или неназванная, ничего не оценивала, не пилотировала и ни на что не соглашалась, и ничто на сайте не следует читать как намёк на обратное.",
   "These rules exist because the most likely way this site could mislead somebody is not a false statement. It is a true statement quoted without the scope that makes it true.":
-    "Эти правила существуют потому, что вероятнее всего этот сайт введёт кого-то в заблуждение не ложным утверждением, а истинным утверждением, процитированным без области действия, которая и делает его истинным.",
+    "Правила есть потому, что вероятнее всего этот сайт введёт кого-то в заблуждение не ложью, а правдой, вырванной из области действия, которая эту правду и делает правдой.",
   "This is both the editorial rule and the fastest audit of it. Take any assertion on this site, try to fill in the five slots from what is on the page, and treat a slot you cannot fill as a finding.":
     "Это одновременно редакционное правило и самая быстрая его проверка. Возьмите любое утверждение на этом сайте, попробуйте заполнить пять полей по тому, что есть на странице, и считайте незаполнимое поле находкой.",
   "This is deliberately mechanical. A reviewer should be able to work through it without a conversation, and should end holding either five matches or one named mismatch.":
@@ -464,7 +464,7 @@ export const audienceRu: TranslationDictionary = {
   "This is the whole editorial rule of the site, drawn once. It is also the fastest way to audit us: take any sentence that sounds like an assertion and try to fill in the five slots from what is on the page.":
     "Это всё редакционное правило сайта, нарисованное один раз. Это же и самый быстрый способ нас проверить: возьмите любое предложение, похожее на утверждение, и попробуйте заполнить пять полей по тому, что есть на странице.",
   "This page is written against its own site. It says which published values you can recompute in front of you, which ones are merely stored, and which ones cannot be settled from here at all — because a verification page that never says no is not a verification page.":
-    "Эта страница написана против собственного сайта. Она говорит, какие опубликованные значения вы можете пересчитать прямо перед собой, какие просто сохранены, а какие вообще нельзя решить отсюда, — потому что страница проверки, которая никогда не говорит «нет», проверкой не является.",
+    "Эта страница написана против собственного сайта. Она говорит, какие значения вы пересчитаете прямо сейчас, какие просто лежат в архиве, а какие отсюда не решаются вовсе. Страница проверки, которая ни разу не говорит «нет», — не страница проверки.",
   "Three full-width bands. The top band is anything that proposes an action. The middle band, highlighted, admits or refuses the proposal, executes inside a contract, and writes a record. The bottom band is the system that carries out the consequence. Arrows run down from each band to the next and back up again.":
     "Три полосы во всю ширину. Верхняя — всё, что предлагает действие. Средняя, выделенная, допускает или отклоняет предложение, исполняет внутри контракта и пишет запись. Нижняя — система, которая доводит последствие до конца. Стрелки идут вниз от каждой полосы к следующей и обратно вверх.",
   "Three sentences, and then the four numbers that qualify them.":
@@ -478,7 +478,7 @@ export const audienceRu: TranslationDictionary = {
   "Two decision lanes ending in a question mark and in a record":
     "Две дорожки решения, заканчивающиеся вопросительным знаком и записью",
   "Two horizontal lanes with four numbered stops each: the situation, the decision, the action, and the question asked months later. The upper lane ends at a question mark; the lower lane ends at a record that can be read.":
-    "Две горизонтальные дорожки по четыре пронумерованные остановки: ситуация, решение, действие и вопрос, заданный спустя месяцы. Верхняя дорожка заканчивается вопросительным знаком; нижняя — записью, которую можно прочитать.",
+    "Две горизонтальные дорожки по четыре пронумерованные остановки: ситуация, решение, действие и вопрос, заданный спустя месяцы. Верхняя заканчивается вопросительным знаком, нижняя — записью, которую можно прочитать.",
   "Two identical decisions. The difference shows up when somebody asks why.":
     "Два одинаковых решения. Разница проявляется, когда кто-то спрашивает почему.",
   "Use the four verification tiers above. Anything in the stored tier is evidence about one earlier run and must not be read as a fresh result.":
@@ -562,7 +562,7 @@ export const audienceRu: TranslationDictionary = {
   "You are deciding whether to spend an hour on this":
     "Вы решаете, стоит ли тратить на это час",
   "You cannot establish a fresh full replay on the runtime that was unavailable; that is published as blocked, not as a pass.":
-    "Вы не можете установить свежий полный повтор на среде исполнения, которая была недоступна; это опубликовано как заблокированное, а не как пройденное.",
+    "Вы не можете установить свежий полный повтор в среде, которой не было под рукой; это опубликовано как заблокированное, а не как пройденное.",
   "You cannot establish any external operational result, because no such measurement has been made by anybody.":
     "Вы не можете установить никакой внешний операционный результат, потому что такого измерения никто не проводил.",
   "You cannot establish from this site that the engine behaves well on any input outside its two accepted patterns, because it does not accept any.":
@@ -572,7 +572,7 @@ export const audienceRu: TranslationDictionary = {
   "You cannot establish operating-system level isolation of the executing process; that is published as not proven.":
     "Вы не можете установить изоляцию исполняющегося процесса на уровне операционной системы; это опубликовано как недоказанное.",
   "You have to verify a claim, not enjoy it":
-    "Вам нужно проверить утверждение, а не насладиться им",
+    "Вам нужно проверить утверждение, а не восхититься им",
   "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.":
     "Вы получаете 1 204 зафиксированных, 880 исполнимых и фронт из 440 кандидатов для одного принимаемого шаблона.",
   "You reach 560 across L1–L7, of which 556 are active in the runtime range.":

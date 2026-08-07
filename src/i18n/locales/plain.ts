@@ -14,7 +14,7 @@ export const plainRu: TranslationDictionary = {
   "All the numbers on this site are recalculated by our own code. That is honest, but it is not the same as independent — and we would rather you knew that from us.":
     "Все цифры на этом сайте пересчитывает наш собственный код. Это честно, но это не то же самое, что независимая проверка, — и лучше вы услышите это от нас.",
   "An honest line saying where our claim stops. Past that line we do not know, and we say so instead of staying quiet.":
-    "Честная строчка о том, где наше утверждение заканчивается. Дальше мы не знаем — и говорим об этом, а не молчим.",
+    "Честная строчка о том, где наши слова заканчиваются. Дальше мы не знаем — и говорим об этом вслух.",
   "And every step leaves a note anyone can re-read":
     "И после каждого шага остаётся запись, которую можно перечитать",
   "Asking someone who travels a lot":
@@ -24,7 +24,7 @@ export const plainRu: TranslationDictionary = {
   "Because you already know how to read one, and so does everyone else.":
     "Потому что вы уже умеете её читать. И все остальные тоже.",
   "Before it does anything, it lists every action it is allowed to take. Not a description in words — an actual list. If something is not on the list, it cannot happen. Not because it is forbidden, but because there is nowhere for it to come from.":
-    "Прежде чем что-то сделать, она перечисляет всё, что ей вообще разрешено. Не описывает словами — именно перечисляет, списком. Чего в списке нет, того и не случится: не потому что запрещено, а потому что взяться неоткуда.",
+    "Прежде чем что-то сделать, она выписывает всё, что ей вообще разрешено. Не описывает словами, а перечисляет списком. Чего в списке нет, того и не будет: не потому что запрещено, а потому что взяться неоткуда.",
   "Current V4 / Target":
     "Current V4 / Target",
   "Descriptor":
@@ -34,7 +34,7 @@ export const plainRu: TranslationDictionary = {
   "Every one of these is a real limitation, written the way we would say it across a table. If any of them changes, it changes on the evidence page first.":
     "Каждый пункт — настоящее ограничение, сказанное так, как мы сказали бы его вам за столом. Если что-то из этого изменится, оно сначала изменится на странице доказательств.",
   "Exactly what an outsider can establish here — and, just as plainly, what nobody can.":
-    "Ровно то, что внешний человек может здесь установить, — и так же прямо то, чего не может никто.",
+    "Что внешний человек здесь действительно установит — и, так же прямо, чего не установит никто.",
   "Explain it in plain words":
     "Объясните простыми словами",
   "Five things we would rather you heard from us than found out later.":
@@ -94,7 +94,7 @@ export const plainRu: TranslationDictionary = {
   "None of them is exciting on its own. Together they are the reason to bother.":
     "По отдельности ни одна из трёх не впечатляет. Вместе — это и есть причина всё это затевать.",
   "Not a log line saying what happened. A note complete enough that a stranger can repeat the same steps a year later and land on exactly the same result, without asking us anything.":
-    "Не строчка в журнале о том, что произошло. А запись, по которой посторонний человек через год повторит те же шаги и получит ровно тот же результат, ничего у нас не спрашивая.",
+    "Не строчка в журнале о том, что произошло, а запись, по которой посторонний человек через год повторит те же шаги и получит тот же результат, ничего у нас не спрашивая.",
   "Not sample it, not test it here and there — go through every possibility one by one, because there is a fixed number of them and the number is small enough to finish.":
     "Не выборочно, не «проверили тут и там», а перебрать все варианты по одному — потому что их конечное число и оно достаточно маленькое, чтобы дойти до конца.",
   "One entry on that list. One possible action.":

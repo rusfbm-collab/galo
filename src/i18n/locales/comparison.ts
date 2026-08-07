@@ -25,7 +25,7 @@ export const comparisonRu: TranslationDictionary = {
     "Записи достаточно, чтобы воспроизвести запуск на другой машине и сравнить ячейка за ячейкой, без доступа к исходной системе.",
   "A record is written": "Записывается протокол",
   "A refusal carries its reason, so the proposing system can revise rather than retry blindly.":
-    "Отказ несёт свою причину, поэтому предлагающая система может исправить предложение, а не повторять его вслепую.",
+    "Вместе с отказом приходит причина, так что предлагающая система может исправить предложение, а не повторять его вслепую.",
   "A relabelling is lawful when it preserves both laws and the named constant. The number of them at level n is the count of indices coprime to n, so L5 and L7 admit more than L6 does despite being smaller.":
     "Переименование допустимо, когда оно сохраняет оба закона и именованную константу. Их число на уровне n равно количеству индексов, взаимно простых с n, поэтому у L5 и L7 их больше, чем у L6, хотя они меньше.",
   "A table written out before anything runs. The rule that produced an output is a specific cell somebody can open and read.":
@@ -236,7 +236,7 @@ export const comparisonRu: TranslationDictionary = {
     "Путь одного шага через языковую модель и через GALO",
   "The proposal is revised": "Предложение пересматривается",
   "The record names the exact coordinate that fired. The explanation is the mechanism, not a description of it.":
-    "Запись называет точную координату, которая сработала. Объяснение — это сам механизм, а не его описание.",
+    "Запись называет точную координату, которая сработала. Объяснением служит сам механизм, а не рассказ о нём.",
   "The same input twice": "Один и тот же вход дважды",
   "The same question put to each system": "Один и тот же вопрос, заданный каждой системе",
   "The sum across the seven levels is {total}. That is a total of seven separate local groups, not the order of one group.":
