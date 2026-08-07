@@ -23,6 +23,7 @@ import { ReaderPaths } from "../components/ui/ReaderPaths";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { releaseEvidence } from "../content/evidence";
 import { getEvaluationContact } from "../content/contact";
+import { twelveMonths } from "../content/programme";
 import { investorBriefing } from "../content/plainLanguage";
 import { siteContent } from "../content/site";
 import { useI18n } from "../i18n/I18nContext";
@@ -595,69 +596,64 @@ export function HomePage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("WHY ABU DHABI")}
-            title={t("Abu Dhabi is GALO’s planned operating base — not a satellite office.")}
+            title={t("Abu Dhabi is the planned operating base — stated as intent, not as a done thing.")}
             text={t(
-              "The next stage needs technical evaluation partners, company formation, focused hiring, and access to a serious AI infrastructure ecosystem in one place.",
+              "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.",
             )}
           />
           <div className="abu-grid">
             <article>
               <span>01</span>
-              <h3>{t("AI ecosystem")}</h3>
+              <h3>{t("Not yet incorporated")}</h3>
               <p>
                 {t(
-                  "Access to research, compute, engineering, and infrastructure relationships relevant to a private technical evaluation.",
+                  "There is no operating company today, so there is nothing to contract with. Incorporation is the first milestone below rather than a completed step.",
                 )}
               </p>
             </article>
             <article>
               <span>02</span>
-              <h3>{t("Market access")}</h3>
+              <h3>{t("Founder only")}</h3>
               <p>
                 {t(
-                  "Proximity to enterprise, government, and sovereign-AI teams able to define bounded partner-owned settings.",
+                  "Every engineering statement on this site is the work of one person. Two first hires are named in the plan and neither has been made.",
                 )}
               </p>
             </article>
             <article>
               <span>03</span>
-              <h3>{t("Company building")}</h3>
+              <h3>{t("Arabic already shipped")}</h3>
               <p>
                 {t(
-                  "A base for incorporation, relocation, hiring, legal operations, finance, and the next fundraising evidence.",
+                  "This site is delivered in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website, not a deployment, and that is the whole claim.",
                 )}
               </p>
             </article>
           </div>
           <div className="twelve-month-plan">
             <div>
-              <p className="eyebrow">{t("12-MONTH CONTRIBUTION PLAN")}</p>
-              <h3>{t("Build the external-evidence layer from Abu Dhabi.")}</h3>
+              <p className="eyebrow">{t("12-MONTH PLAN, WRITTEN TO BE MARKED")}</p>
+              <h3>{t("Each commitment carries the observation that would show it was missed.")}</h3>
             </div>
             <ol>
-              <li>
-                <span>01</span>
-                {t("Relocate the founder and establish the operating company")}
-              </li>
-              <li>
-                <span>02</span>
-                {t("Hire a founding systems engineer and research/evaluation engineer")}
-              </li>
-              <li>
-                <span>03</span>
-                {t("Release a private Runtime and World Atlas alpha")}
-              </li>
-              <li>
-                <span>04</span>
-                {t("Complete two partner-grade technical evaluations")}
-              </li>
-              <li>
-                <span>05</span>
-                {t("Target one committed or paid pilot and prepare seed evidence")}
-              </li>
+              {twelveMonths.map((milestone, index) => (
+                <li key={milestone.window}>
+                  <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
+                  <div>
+                    <strong>{t(milestone.deliverable)}</strong>
+                    <small>
+                      <b>{t("Missed if")}</b> {t(milestone.wouldFailIf)}
+                    </small>
+                  </div>
+                </li>
+              ))}
             </ol>
           </div>
           <p className="endorsement-note">{t("No programme selection, partnership, or endorsement is implied.")}</p>
+          <a className="button button--ghost abu-dossier-link" href={href("/hub71")}>
+            {t("Read the full assessment dossier")}{" "}
+            <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
+          </a>
         </div>
       </section>
 

@@ -136,6 +136,46 @@ describe("GALO public site", () => {
     );
   });
 
+  it("renders the assessment dossier as a document, with its absences visible", () => {
+    setPath("/hub71");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Everything an assessor would ask, answered before the meeting." }),
+    ).toBeInTheDocument();
+
+    // The non-affiliation statement is the first thing the page settles.
+    expect(document.querySelector(".programme-affiliation")?.textContent).toContain(
+      "not affiliated with, endorsed by, backed by, or selected by Hub71",
+    );
+    expect(document.querySelector(".programme-hero__strip")?.textContent).toContain("AFFILIATION");
+
+    // Twelve assessment lines, and the six negative ones are rendered as such
+    // rather than being softened into prose.
+    const rows = document.querySelectorAll(".programme-table tbody tr");
+    expect(rows).toHaveLength(12);
+    const statuses = Array.from(document.querySelectorAll(".programme-status")).map((node) => node.textContent);
+    expect(statuses.filter((status) => status === "NONE")).toHaveLength(3);
+    expect(statuses.filter((status) => status === "NOT ESTABLISHED")).toHaveLength(3);
+    expect(document.querySelectorAll(".programme-status.is-negative")).toHaveLength(6);
+
+    // Five commitments, each carrying its own failure condition.
+    expect(document.querySelectorAll(".programme-months li")).toHaveLength(5);
+    expect(document.querySelectorAll(".programme-months__fail")).toHaveLength(5);
+
+    expect(document.querySelectorAll(".programme-fit__limit")).toHaveLength(4);
+    expect(document.querySelectorAll(".programme-questions > div")).toHaveLength(6);
+    expect(document.querySelectorAll(".programme-withheld article")).toHaveLength(4);
+
+    // Document control pins the page to the same release record as the rest of
+    // the site, and states the legal position rather than leaving it blank.
+    const control = document.querySelector(".programme-control");
+    expect(control).toHaveTextContent("R5B6A1_3");
+    expect(control).toHaveTextContent("NOT INCORPORATED");
+    expect(control).toHaveTextContent("rusfbm@gmail.com");
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/hub71");
+  });
+
   it("opens the theory route from the Cayley table it is built on", () => {
     setPath("/theory");
     render(<App />);
@@ -875,6 +915,7 @@ describe("GALO public site", () => {
         "/simple",
         "/investors",
         "/audit",
+        "/hub71",
         "/theory",
         "/thinking",
         "/vs-llm",

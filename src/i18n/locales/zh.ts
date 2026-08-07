@@ -11,6 +11,7 @@ import { termsPageZh } from "./termPages";
 import { termAcademicZh } from "./termAcademic";
 import { theoryFiguresZh } from "./theoryFigures";
 import { orientationZh } from "./orientation";
+import { programmeZh } from "./programme";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -29,6 +30,7 @@ export const zh: TranslationDictionary = {
   ...termAcademicZh,
   ...theoryFiguresZh,
   ...orientationZh,
+  ...programmeZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

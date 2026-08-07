@@ -9,6 +9,7 @@ export type PageRoute =
   | "/simple"
   | "/investors"
   | "/audit"
+  | "/hub71"
   | "/theory"
   | "/thinking"
   | "/vs-llm"
@@ -78,6 +79,7 @@ export function parseLocalizedPath(pathname: string): {
     rawRoute === "/simple" ||
     rawRoute === "/investors" ||
     rawRoute === "/audit" ||
+    rawRoute === "/hub71" ||
     rawRoute === "/theory" ||
     rawRoute === "/thinking" ||
     rawRoute === "/vs-llm" ||

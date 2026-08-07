@@ -103,6 +103,46 @@ The audit route is written against its own site. It sorts every published value 
 
 `/thinking` draws the decision procedure itself. One thought is nine numbered stages, and the diagram, the stage cards, and the worked table all carry the same statuses: seven stages are marked `CURRENT V4` and drawn solid, the two that would follow are marked `TARGET` and drawn dashed. Every stage names the single condition that stops the thought there, and the five refusal gates are given codes that end up in the record, so a stop is a result with a cause rather than an absence of output. The worked walkthrough repeats the whole procedure with the release's own values — 1,204, 880, 440, the SHA-256 ordering input, arity 2, route depth 1 — and deliberately leaves the two target stages without a row, because they produce no value today.
 
+## Assessment dossier
+
+`/hub71` is the only page addressed to a single reader: somebody at an Abu Dhabi
+technology programme deciding whether an applicant is worth a meeting. It is
+built as a document rather than a page, and three rules keep it one.
+
+**Nothing about the addressee is described.** The dossier does not state Hub71's
+programmes, criteria, tracks, incentives, or terms. Nothing in this project can
+verify those, and repeating them second-hand would be exactly the unseriousness
+the page exists to avoid. Hub71 is named in one place only: the non-affiliation
+statement.
+
+**No relationship is implied, and the build enforces it.** The statement — that
+GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or
+any of its partners, and that the page reports no decision, relationship, or
+outcome — is a required boundary in `scripts/check-claims.mjs` in all four
+languages. Eight affiliation shapes ("Hub71 portfolio", "member of Hub71",
+"accepted into Hub71", …) are forbidden phrases, chosen so that none of them can
+occur inside the non-affiliation sentence itself.
+
+**Every commitment carries its failure condition.** The twelve-month table
+states, next to each deliverable, the observation that would show it was missed
+— including the two that could most easily be dropped quietly: an outside
+re-derivation of the mathematics, and publishing the first external measurement
+whichever way it comes out. A milestone without a failure condition is a wish,
+and a test asserts all five have one.
+
+The page's shape follows from that: twelve assessment lines with six of them
+negative and the first negative one above the halfway point; four regional-fit
+claims each followed by what it does not reach; the ask stated in both
+directions, with the "not asked for" list the longer-lived half; six hard
+questions answered as they stand; four facts a website is the wrong place for,
+separated into withheld and non-existent; and a document-control block pinned to
+the same release record as the evidence pages. Status is never colour alone —
+`ESTABLISHED`, `PARTIAL`, `NONE`, `NOT ESTABLISHED`, `STATED, NOT DONE`, and
+`NOT DISCLOSED` are printed as text on every row.
+
+The home route's Abu Dhabi section shares the twelve-month data with this page
+rather than restating it, so the plan cannot drift between the two.
+
 ## Theory chapter orientation
 
 `/theory#orientation` is the first section of the chapter and the first of the

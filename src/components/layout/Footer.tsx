@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { publicContact } from "../../content/contact";
+import { releaseEvidence } from "../../content/evidence";
 import { siteContent } from "../../content/site";
 import { useI18n } from "../../i18n/I18nContext";
 import { Logo } from "./Logo";
@@ -22,6 +23,7 @@ export function Footer() {
           <a href={href("/math")}>{t("Mathematics")}</a>
           <a href={href("/symmetry")}>{t("Symmetry")}</a>
           <a href={href("/evidence")}>{t("Evidence")}</a>
+          <a href={href("/hub71")}>{t("Assessment dossier")}</a>
           <a href={href("/#evaluation")}>{t("Evaluation")}</a>
           <a href={href("/privacy")}>{t("Privacy")}</a>
           <a className="email-link" href={`mailto:${publicContact.evaluationEmail}`}>
@@ -40,6 +42,12 @@ export function Footer() {
           {t(
             "Working bounded prototype. Persistent learning, external operational gain, General AI, commercial traction, and programme selection are not claimed.",
           )}
+        </p>
+        <p className="footer__record">
+          <span>{t("Release of record")}</span>
+          <bdi dir="ltr">{releaseEvidence.release}</bdi>
+          <span>{t("Affiliation")}</span>
+          <bdi dir="ltr">NONE</bdi>
         </p>
       </div>
     </footer>

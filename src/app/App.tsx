@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { AuditPage } from "../pages/AuditPage";
+import { Hub71Page } from "../pages/Hub71Page";
 import { ComparisonPage } from "../pages/ComparisonPage";
 import { EvidencePage } from "../pages/EvidencePage";
 import { HomePage } from "../pages/HomePage";
@@ -50,6 +51,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "GALO AI for Auditors — What an Outsider Can Actually Verify",
     description:
       "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.",
+  },
+  "/hub71": {
+    title: "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits",
+    description:
+      "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.",
   },
   "/theory": {
     title: "GALO Theory for Beginners — From States to Verified Execution",
@@ -174,6 +180,7 @@ export function App() {
       {route === "/simple" && <PlainWordsPage />}
       {route === "/investors" && <InvestorsPage />}
       {route === "/audit" && <AuditPage />}
+      {route === "/hub71" && <Hub71Page />}
       {route === "/theory" && <TheoryPage />}
       {route === "/thinking" && <ThinkingPage />}
       {route === "/vs-llm" && <ComparisonPage />}

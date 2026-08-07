@@ -31,6 +31,12 @@ const locales = {
         description:
           "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.",
       },
+      hub71: {
+        path: "hub71",
+        title: "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits",
+        description:
+          "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.",
+      },
       audit: {
         path: "audit",
         title: "GALO AI for Auditors — What an Outsider Can Actually Verify",
@@ -105,6 +111,12 @@ const locales = {
         description:
           "Нетехнический разбор GALO: проблема на языке денег, место объявленного слоя в системе, что работает сегодня, шесть рисков с проверками и путь due diligence, который читатель может пройти без нас.",
       },
+      hub71: {
+        path: "hub71",
+        title: "Досье заявки GALO AI — строки оценки, обязательства и границы",
+        description:
+          "Досье заявки, подготовленное для оценки: двенадцать строк текущего состояния, шесть из них отрицательные; четыре довода о региональном соответствии с их пределами; двенадцать месяцев обязательств, у каждого — условие невыполнения; и шесть вопросов, по которым мы ожидаем давления. Аффилиация с Hub71 не заявляется и не подразумевается.",
+      },
       audit: {
         path: "audit",
         title: "GALO AI для аудиторов — что внешний проверяющий действительно может установить",
@@ -178,6 +190,12 @@ const locales = {
         description:
           "不含数学的 GALO 说明：用钱来讲的问题、这一声明层该放在哪里、今天真正在跑的东西、六项风险及其检验方式，以及一条读者无需我们配合就能自己走完的尽调路径。",
       },
+      hub71: {
+        path: "hub71",
+        title: "GALO AI 申请档案 — 评估条目、里程碑与边界",
+        description:
+          "为评估而准备的申请档案：十二条现状条目，其中六条为否定；四项区域契合主张，各附其限度；十二个月的承诺，每一项都带有未达成的判定条件；以及我们预计会被追问的六个问题。不声称也不暗示与 Hub71 存在任何隶属关系。",
+      },
       audit: {
         path: "audit",
         title: "面向审计者的 GALO AI — 外部人究竟能核实到什么",
@@ -246,6 +264,12 @@ const locales = {
         title: "GALO AI للمستثمرين — ما هو قائم وما ليس قائمًا وكيف يُتحقَّق منه",
         description:
           "عرض غير تقني لـ GALO: المشكلة بلغة المال، وأين تقع الطبقة المعلنة، وما الذي يعمل اليوم، وستة مخاطر مع اختباراتها، ومسار عناية واجبة يستطيع القارئ سلوكه دوننا.",
+      },
+      hub71: {
+        path: "hub71",
+        title: "ملف طلب GALO AI — بنود التقييم والالتزامات والحدود",
+        description:
+          "ملف طلب أُعدّ للتقييم: اثنا عشر بنداً تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهراً من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
       },
       audit: {
         path: "audit",

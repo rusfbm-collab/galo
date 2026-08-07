@@ -11,6 +11,7 @@ import { termsPageRu } from "./termPages";
 import { termAcademicRu } from "./termAcademic";
 import { theoryFiguresRu } from "./theoryFigures";
 import { orientationRu } from "./orientation";
+import { programmeRu } from "./programme";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -29,6 +30,7 @@ export const ru: TranslationDictionary = {
   ...termAcademicRu,
   ...theoryFiguresRu,
   ...orientationRu,
+  ...programmeRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
