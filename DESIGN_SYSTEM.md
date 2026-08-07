@@ -103,6 +103,39 @@ The audit route is written against its own site. It sorts every published value 
 
 `/thinking` draws the decision procedure itself. One thought is nine numbered stages, and the diagram, the stage cards, and the worked table all carry the same statuses: seven stages are marked `CURRENT V4` and drawn solid, the two that would follow are marked `TARGET` and drawn dashed. Every stage names the single condition that stops the thought there, and the five refusal gates are given codes that end up in the record, so a stop is a result with a cause rather than an absence of output. The worked walkthrough repeats the whole procedure with the release's own values — 1,204, 880, 440, the SHA-256 ordering input, arity 2, route depth 1 — and deliberately leaves the two target stages without a row, because they produce no value today.
 
+## Theory chapter orientation
+
+`/theory#orientation` is the first section of the chapter and the first of the
+two hero buttons, because the chapter's own order — build the mathematics one
+verified step at a time — is the right order for learning it and the wrong order
+for somebody deciding whether to fund or approve it. The section answers four
+things before the chapter starts, in this order:
+
+1. **Why there is mathematics here at all.** Four steps from "why did it do
+   that?" to a grid of letters, each forced by the one above it and each naming
+   the ordinary-looking alternative it rules out — a longer log, a list
+   reconstructed afterwards, a state described in a sentence. The mathematics
+   arrives as a consequence rather than as a preference, and a reader who
+   disagrees with a step has located the exact point where they disagree with
+   the project. Its own boundary note says the steps establish the shape an
+   answer must have, not that this table is the right one for any given job.
+2. **Two reading lanes.** The five stops of the chapter, once as what is proved
+   and once as what the same fact decides for a buyer.
+3. **Six words, explained once.** The entire vocabulary the chapter then uses
+   without re-defining: Cayley table, pole, level, PLUS, STAR, boundary. Each
+   card gives a plain sentence, says where the word will appear, and links to
+   that word's own page with a real table from the tower.
+4. **Four readers.** The question each audience arrives with, the section that
+   answers it, and what that section cannot give them.
+5. **What you will be able to say.** Four first-person claims, each with the
+   check that settles it and a link straight to it. A chapter that leaves a
+   reader impressed but unable to state anything precisely has failed, and this
+   block is what the section is measured against.
+
+Strings live in `src/content/orientation.ts` under the file's own rule: no
+symbol, no operation, and no term that is not explained in the same sentence.
+The claims are the same claims made elsewhere — only the vocabulary changes.
+
 ## Illustrations for a reader who will not do the algebra
 
 The theory chapter is the part of the site most likely to lose somebody who is

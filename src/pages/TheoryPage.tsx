@@ -5,6 +5,7 @@ import {
   Braces,
   CircleAlert,
   CircleCheck,
+  Eye,
   FileCheck2,
   Layers3,
   Orbit,
@@ -25,6 +26,7 @@ import { OrbitFigure } from "../components/diagrams/OrbitFigure";
 import { ProgramTreeFigure } from "../components/diagrams/ProgramTreeFigure";
 import { ReaderQuestionFigure } from "../components/diagrams/ReaderQuestionFigure";
 import { ReadingLaneFigure } from "../components/diagrams/ReadingLaneFigure";
+import { WhyMathematicsFigure } from "../components/diagrams/WhyMathematicsFigure";
 import { ResolutionLossFigure } from "../components/diagrams/ResolutionLossFigure";
 import { RoleOrientationFigure } from "../components/diagrams/RoleOrientationFigure";
 import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
@@ -58,8 +60,10 @@ import {
   theoryObjectClasses,
   theorySymbolLegend,
 } from "../content/theory";
+import { afterThisChapter, chapterVocabulary } from "../content/orientation";
 import { cayleyFoundation, cayleyWhyFinite } from "../content/plainLanguage";
 import { releaseEvidence } from "../content/evidence";
+import { termSlug } from "../content/termPages";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
@@ -173,9 +177,15 @@ export function TheoryPage() {
             <ArrowRight size={16} aria-hidden="true" />
             <span>{t("receipts and boundaries")}</span>
           </div>
-          <a className="button button--primary math-hero__action" href="#cayley-first">
-            {t("Begin with the mental model")} <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
-          </a>
+          <div className="theory-hero__actions">
+            <a className="button button--primary math-hero__action" href="#orientation">
+              {t("Start here if you are not a mathematician")}{" "}
+              <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
+            </a>
+            <a className="button button--outline-light math-hero__action" href="#cayley-first">
+              {t("Begin with the mental model")} <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -198,11 +208,77 @@ export function TheoryPage() {
             eyebrow={t("BEFORE ANY MATHEMATICS")}
             title={t("You can follow this chapter without doing any algebra.")}
             text={t(
-              "The chapter is written twice. Once as mathematics, in order, because that is the only way the claims can be checked. And once as consequences — what each fact would decide for somebody funding, buying, or approving a system. The two readings are set side by side so you can pick one and still reach the end.",
+              "This opening is written for somebody who has to decide whether this is worth funding, buying, or signing off on, and who is not going to work through the algebra to find out. It answers four things before the chapter starts: why there is mathematics here at all, what the six recurring words mean, which parts you can skip, and what you will be able to say once you are done.",
             )}
           />
+
+          <WhyMathematicsFigure />
           <ReadingLaneFigure />
+
+          <div className="orientation-block">
+            <div className="orientation-block__head">
+              <span>{t("SIX WORDS, EXPLAINED ONCE")}</span>
+              <h3>{t("The chapter uses these constantly and never stops to define them again.")}</h3>
+              <p>
+                {t(
+                  "This is the whole vocabulary. If a later section loses you, it is almost always one of these six words doing the work — open its page and the sentence usually resolves. Every word here has a page of its own with a real table from the tower and a worked example.",
+                )}
+              </p>
+            </div>
+            <div className="orientation-vocab">
+              {chapterVocabulary.map((entry) => (
+                <article key={entry.term}>
+                  <h4>
+                    <a href={href(`/term/${termSlug(entry.term)}`)}>
+                      <span>{isolateLtrTokens(t(entry.term), ["PLUS", "STAR"])}</span>
+                      <ArrowRight className="directional-icon" size={15} aria-hidden="true" />
+                    </a>
+                  </h4>
+                  <p>
+                    {isolateLtrTokens(t(entry.plain), ["P0,", "P1,", "P2", "P1", "L1", "L7", "PLUS", "STAR"])}
+                  </p>
+                  <p className="orientation-vocab__where">
+                    <Eye size={14} aria-hidden="true" />
+                    <span>{isolateLtrTokens(t(entry.whereYouMeetIt), ["L1", "L7"])}</span>
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+
           <ReaderQuestionFigure />
+
+          <div className="orientation-block">
+            <div className="orientation-block__head">
+              <span>{t("WHAT YOU WILL BE ABLE TO SAY")}</span>
+              <h3>{t("Four sentences, each with the check that settles it.")}</h3>
+              <p>
+                {t(
+                  "A chapter that leaves you impressed but unable to state anything precisely has failed. These are the four claims this one is for, and next to each is the operation that settles it — all four are cheap enough to do while reading.",
+                )}
+              </p>
+            </div>
+            <ol className="orientation-takeaways">
+              {afterThisChapter.map((entry, index) => (
+                <li key={entry.claim}>
+                  <span className="orientation-takeaways__number" dir="ltr">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <p className="orientation-takeaways__claim">{t(entry.claim)}</p>
+                    <p className="orientation-takeaways__check">
+                      <CircleCheck size={15} aria-hidden="true" />
+                      <span>{isolateLtrTokens(t(entry.check), ["560"])}</span>
+                    </p>
+                    <a href={href(entry.href)}>
+                      {t("Go to the check")}
+                      <ArrowRight className="directional-icon" size={14} aria-hidden="true" />
+                    </a>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </section>
 

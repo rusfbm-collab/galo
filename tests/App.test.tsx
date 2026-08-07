@@ -174,6 +174,46 @@ describe("GALO public site", () => {
     }
   });
 
+  it("carries the non-specialist from the question to the table, the words, and the takeaways", () => {
+    setPath("/theory");
+    render(<App />);
+
+    // The hero offers the non-mathematical entry first, and it lands in the
+    // section that was added for it.
+    const start = screen.getByRole("link", { name: /Start here if you are not a mathematician/i });
+    expect(start).toHaveAttribute("href", "#orientation");
+
+    // Four forced steps from "why did it do that" to a grid, each naming the
+    // alternative it rules out, so the mathematics arrives as a consequence.
+    const steps = document.querySelectorAll(".galo-bridge-steps li");
+    expect(steps).toHaveLength(4);
+    for (const step of Array.from(steps)) {
+      expect(step.querySelector("h4")?.textContent ?? "").not.toBe("");
+      expect(step.querySelector(".galo-bridge-steps__instead")?.textContent ?? "").not.toBe("");
+    }
+    expect(steps[0]).toHaveTextContent("get the same answer twice");
+    expect(steps[3]).toHaveTextContent("is a table");
+
+    // Six words, each linking to a term page that exists.
+    const words = document.querySelectorAll(".orientation-vocab article");
+    expect(words).toHaveLength(6);
+    const slugs = new Set(termSlugs);
+    for (const word of Array.from(words)) {
+      const slug = word.querySelector("h4 a")?.getAttribute("href")?.split("/term/")[1] ?? "";
+      expect(slugs.has(slug), `Vocabulary card points at unknown term page ${slug}`).toBe(true);
+      expect(word.querySelector(".orientation-vocab__where")?.textContent ?? "").not.toBe("");
+    }
+
+    // Four takeaways, each with a check and a link to the section that settles it.
+    const takeaways = document.querySelectorAll(".orientation-takeaways li");
+    expect(takeaways).toHaveLength(4);
+    for (const item of Array.from(takeaways)) {
+      expect(item.querySelector(".orientation-takeaways__check")?.textContent ?? "").not.toBe("");
+      const href = item.querySelector("a")?.getAttribute("href") ?? "";
+      expect(href).toMatch(/^\/(theory|investors)#[a-z0-9-]+$/);
+    }
+  });
+
   it("draws the investor-facing figures the theory sections were missing", () => {
     setPath("/theory");
     render(<App />);

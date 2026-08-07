@@ -13,6 +13,7 @@ const sourceRoots = [
   "src/content/evidence.ts",
   "src/content/investors.ts",
   "src/content/llmComparison.ts",
+  "src/content/orientation.ts",
   "src/content/plainLanguage.ts",
   "src/content/plainWords.ts",
   "src/content/site.ts",
