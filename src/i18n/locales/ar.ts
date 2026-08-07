@@ -12,6 +12,7 @@ import { termAcademicAr } from "./termAcademic";
 import { theoryFiguresAr } from "./theoryFigures";
 import { orientationAr } from "./orientation";
 import { programmeAr } from "./programme";
+import { aiBasicsAr } from "./aiBasics";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -31,6 +32,7 @@ export const ar: TranslationDictionary = {
   ...theoryFiguresAr,
   ...orientationAr,
   ...programmeAr,
+  ...aiBasicsAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

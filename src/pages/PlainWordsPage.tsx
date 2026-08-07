@@ -1,8 +1,10 @@
-import { ArrowLeft, ArrowRight, Coffee, HandHeart, Train } from "lucide-react";
+import { ArrowLeft, ArrowRight, Coffee, HandHeart, MessageSquareOff, Train } from "lucide-react";
 import { DecisionTraceFigure } from "../components/diagrams/DecisionTraceFigure";
+import { TwoWaysToDecideFigure } from "../components/diagrams/TwoWaysToDecideFigure";
 import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import { aiWords, notWhatYouThink } from "../content/aiBasics";
 import {
   honestAdmissions,
   jargonTranslations,
@@ -14,11 +16,13 @@ import {
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
+  { href: "#not-ai", label: "If you do not work with AI at all" },
   { href: "#story", label: "A situation you already know" },
   { href: "#idea", label: "What we actually do about it" },
   { href: "#table", label: "Why a table, of all things" },
   { href: "#changes", label: "What that buys you" },
   { href: "#honest", label: "What we would rather tell you ourselves" },
+  { href: "#ai-words", label: "The AI words everyone uses" },
   { href: "#jargon", label: "The words, translated" },
 ] as const;
 
@@ -62,6 +66,28 @@ export function PlainWordsPage() {
           </div>
         </div>
       </nav>
+
+      <section id="not-ai" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("START HERE IF AI IS NOT YOUR FIELD")}
+            title={t("You do not need to know anything about artificial intelligence to read this page.")}
+            text={t(
+              "Most people meet AI as a chat window that answers questions. That is one kind, and it is not this. Before anything else, here are the four things a reader usually assumes on arriving, and what is actually true.",
+            )}
+          />
+          <div className="plain-misconceptions">
+            {notWhatYouThink.map((entry) => (
+              <article key={entry.assumption}>
+                <MessageSquareOff size={19} aria-hidden="true" />
+                <p className="plain-misconceptions__assumption">{t(entry.assumption)}</p>
+                <p className="plain-misconceptions__reality">{t(entry.reality)}</p>
+              </article>
+            ))}
+          </div>
+          <TwoWaysToDecideFigure />
+        </div>
+      </section>
 
       <section id="story" className="section section--white math-anchor-section">
         <div className="shell">
@@ -190,6 +216,30 @@ export function PlainWordsPage() {
                   <h3>{t(entry.line)}</h3>
                   <p>{t(entry.detail)}</p>
                 </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="ai-words" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THE AI WORDS EVERYONE USES")}
+            title={t("Twelve words from the AI world, each in one sentence.")}
+            text={t(
+              "These are not our words — they belong to the whole industry, and every article you read uses them as though you already know them. Each one below gets a plain sentence and a note on why it turns up here at all.",
+            )}
+          />
+          <div className="plain-aiwords">
+            {aiWords.map((entry) => (
+              <article key={entry.word}>
+                <h3>{t(entry.word)}</h3>
+                <p>{t(entry.plain)}</p>
+                <p className="plain-aiwords__why">
+                  <b>{t("Why it turns up here")}</b>
+                  {t(entry.whyHere)}
+                </p>
               </article>
             ))}
           </div>

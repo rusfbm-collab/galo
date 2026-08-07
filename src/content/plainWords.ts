@@ -1,3 +1,5 @@
+import { aiBasicsTranslationKeys } from "./aiBasics";
+
 /**
  * The friendliest page on the site.
  *
@@ -187,6 +189,7 @@ export const jargonTranslations: readonly Translation[] = [
 ];
 
 export const plainWordsTranslationKeys = [
+  ...aiBasicsTranslationKeys,
   ...new Set([
     ...openingStory.flatMap((beat) => [beat.line, beat.detail]),
     ...plainIdea.flatMap((entry) => [entry.title, entry.text]),

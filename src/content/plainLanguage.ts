@@ -19,10 +19,10 @@ export type ReaderPath = {
 export const readerPaths: readonly ReaderPath[] = [
   {
     audience: "I just want to know what this is",
-    goal: "No terms, no formulas. An everyday situation, what we do about it, and what we cannot promise yet.",
-    minutes: "10m",
+    goal: "No terms, no formulas, and nothing about artificial intelligence you are expected to know already.",
+    minutes: "12m",
     stops: [
-      { href: "/simple#story", label: "The situation it all starts from" },
+      { href: "/simple#not-ai", label: "Start here if AI is not your field" },
       { href: "/simple#idea", label: "What we actually do about it" },
       { href: "/simple#honest", label: "What we would rather tell you ourselves" },
     ],

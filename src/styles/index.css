@@ -14076,3 +14076,176 @@ caption bdi {
     align-items: baseline;
   }
 }
+
+/* ============================================================
+   Plain-words page: for a reader who does not work with AI
+   ============================================================ */
+
+.plain-misconceptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.plain-misconceptions article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 21px;
+  background: var(--soft-navy);
+}
+
+.plain-misconceptions svg {
+  color: var(--chart-2);
+}
+
+.plain-misconceptions__assumption {
+  margin: 0;
+  color: var(--navy-900);
+  font-size: 1.06rem;
+  font-weight: 720;
+  line-height: 1.4;
+}
+
+.plain-misconceptions__reality {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.62;
+}
+
+.plain-aiwords {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.plain-aiwords article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 21px 22px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(7, 32, 49, 0.05);
+}
+
+.plain-aiwords h3 {
+  margin: 0;
+  color: var(--teal-deep);
+  font-size: 1.1rem;
+  font-weight: 760;
+}
+
+.plain-aiwords p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.62;
+}
+
+.plain-aiwords__why {
+  display: grid;
+  gap: 4px;
+  border-top: 1px solid var(--line);
+  padding-top: 11px;
+  color: var(--muted) !important;
+  font-size: 0.88rem !important;
+}
+
+.plain-aiwords__why b {
+  color: var(--navy-900);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ---- the same three steps, two ways ---- */
+
+.two-ways {
+  display: grid;
+  gap: 0;
+  margin-top: 8px;
+}
+
+.two-ways__head,
+.two-ways__row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.two-ways__head {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--figure-line);
+}
+
+.two-ways__head span {
+  grid-column: auto;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.two-ways__head span:first-child {
+  grid-column: 2;
+  color: var(--chart-neutral-strong);
+}
+
+.two-ways__head span.is-here {
+  color: var(--figure-accent);
+}
+
+.two-ways__row {
+  border-bottom: 1px solid var(--figure-line);
+  padding: 18px 0;
+}
+
+.two-ways__number {
+  color: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 780;
+}
+
+.two-ways__usual,
+.two-ways__here {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.62;
+}
+
+.two-ways__usual {
+  color: var(--figure-muted);
+}
+
+.two-ways__here {
+  border-inline-start: 3px solid var(--chart-1);
+  padding-inline-start: 15px;
+  color: var(--figure-ink);
+  font-weight: 620;
+}
+
+@media (max-width: 760px) {
+  .two-ways__head {
+    display: none;
+  }
+
+  .two-ways__row {
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+  }
+
+  .two-ways__usual,
+  .two-ways__here {
+    grid-column: 2;
+  }
+}

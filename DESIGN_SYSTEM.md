@@ -91,6 +91,32 @@ Its register is a constraint, not a mood. Every sentence has to survive being re
 
 Friendliness never widens a claim. Every limitation on this page is the same limitation the evidence page publishes, and a test asserts that the five unwelcome facts are all present.
 
+## For a reader who does not work with AI
+
+The plain-words page dropped the mathematics but kept the field's vocabulary:
+model, training, hallucination, deterministic, benchmark. A reader outside AI
+still had nothing to stand on. Two sections at `/simple` fix that, and they are
+the first and last things on the page.
+
+`#not-ai` opens the page. Four cards state what a reader arriving from a chat
+window reasonably assumes — another chatbot, a ChatGPT replacement, something
+smarter or faster, something already in use — and answers each one flatly.
+Three of the four answers begin with "No."; the fourth is the one where the
+honest answer is that nothing was measured, and a test pins that split.
+
+Below them, the same three steps drawn twice: how nearly every AI system is put
+together, and how this one is. The left column describes construction and never
+performance — a test rejects "worse", "unreliable", "is slower" and their
+relatives — and the figure closes by saying plainly that the left column is not
+a criticism.
+
+`#ai-words` closes the page with twelve words from the industry, not from this
+project: model, training, large language model, hallucination, deterministic,
+reproducible, black box, audit trail, benchmark, agent, inference, open source.
+Each gets one plain sentence and a note on why it turns up here at all. A test
+rejects a gloss that reuses the word it defines, and the strings are folded into
+the plain-page sentence-length check, so the register cannot drift back.
+
 ## Investor and audit routes
 
 `/investors` and `/audit` exist because everything else on the site assumes a specialist. Neither page contains a formula.

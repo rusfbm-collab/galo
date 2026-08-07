@@ -8,6 +8,7 @@ const sourceRoots = [
   "src/app",
   "src/i18n",
   "src/content/academicAnalysis.ts",
+  "src/content/aiBasics.ts",
   "src/content/audit.ts",
   "src/content/contact.ts",
   "src/content/evidence.ts",
