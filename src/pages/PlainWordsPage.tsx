@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Coffee, HandHeart, MessageSquareOff, Train } from "lucide-react";
+import { ArrowLeft, ArrowRight, Coffee, HandHeart, MessageSquareOff, Signpost, Train } from "lucide-react";
 import { DecisionTraceFigure } from "../components/diagrams/DecisionTraceFigure";
 import { TwoWaysToDecideFigure } from "../components/diagrams/TwoWaysToDecideFigure";
 import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
@@ -13,10 +13,12 @@ import {
   timetableComparison,
   whatChanges,
 } from "../content/plainWords";
+import { plainNeighbours } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
   { href: "#not-ai", label: "If you do not work with AI at all" },
+  { href: "#neighbours", label: "Three things this sits next to" },
   { href: "#story", label: "A situation you already know" },
   { href: "#idea", label: "What we actually do about it" },
   { href: "#table", label: "Why a table, of all things" },
@@ -86,6 +88,33 @@ export function PlainWordsPage() {
             ))}
           </div>
           <TwoWaysToDecideFigure />
+        </div>
+      </section>
+
+      <section id="neighbours" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THREE THINGS THIS SITS NEXT TO")}
+            title={t("Other people have been at this for a long time, and some of them are further along.")}
+            text={t(
+              "A page like this usually skips the neighbours, which is how a reader ends up thinking nobody else has had the idea. Three of them, then, in ordinary words — and the middle one is the awkward one, so it is the one worth reading twice.",
+            )}
+          />
+          <div className="plain-neighbours">
+            {plainNeighbours.map((entry) => (
+              <article key={entry.what}>
+                <Signpost size={19} aria-hidden="true" />
+                <h3>{t(entry.what)}</h3>
+                <p>{t(entry.plain)}</p>
+              </article>
+            ))}
+          </div>
+          <p className="section-followup">
+            <a className="text-link" href={href("/vs-llm#landscape")}>
+              {t("The same comparison in full, with nine families named")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
         </div>
       </section>
 

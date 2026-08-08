@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { headlineClaims } from "../src/content/headlineClaims";
-import { landscapeRows, landscapeStanding, landscapeVerdicts } from "../src/content/landscape";
+import { landscapeRows, landscapeStanding, landscapeVerdicts, plainNeighbours } from "../src/content/landscape";
 
 /**
  * The landscape section names other people's systems, which is the one place on
@@ -66,6 +66,25 @@ describe("the wider field", () => {
   });
 });
 
+describe("the same comparison for a reader outside the field", () => {
+  it("gives three neighbours and no product jargon", () => {
+    expect(plainNeighbours).toHaveLength(3);
+    for (const entry of plainNeighbours) {
+      expect(entry.what.length).toBeGreaterThan(20);
+      expect(entry.plain.length).toBeGreaterThan(150);
+      // Vocabulary the plain page has not earned the right to use.
+      expect(entry.plain).not.toMatch(/\b(inference|ontolog\w+|entailment|neuro-symbolic|SMT|corpus)\b/i);
+      expect(entry.plain).not.toMatch(PERFORMANCE_WORDS);
+    }
+  });
+
+  it("keeps the awkward neighbour awkward", () => {
+    const rulebook = plainNeighbours[1]!;
+    expect(rulebook.plain).toMatch(/decades old, and it works/i);
+    expect(rulebook.plain).toMatch(/not running yet/i);
+  });
+});
+
 describe("the headline, taken apart", () => {
   it("answers for each word of the headline", () => {
     expect(headlineClaims.map((claim) => claim.word)).toEqual(["Allowed", "Decide", "Show"]);
@@ -87,6 +106,16 @@ describe("the headline, taken apart", () => {
     expect(mechanisms).toContain("880");
     expect(mechanisms).toContain("440");
     expect(mechanisms).toContain("4,802");
+  });
+
+  it("gives a sceptic an action for each promise, phrased as an instruction", () => {
+    for (const claim of headlineClaims) {
+      expect(claim.auditStep.length).toBeGreaterThan(100);
+      expect(claim.auditStep).toMatch(/^(Enumerate|Run|Take)\b/);
+    }
+    const steps = headlineClaims.map((claim) => claim.auditStep).join(" ");
+    expect(steps).toMatch(/falsifies the claim/i);
+    expect(steps).toMatch(/cannot settle from here/i);
   });
 
   it("never states a limit softer than the claim it sits beside", () => {

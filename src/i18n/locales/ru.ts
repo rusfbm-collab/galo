@@ -15,6 +15,7 @@ import { programmeRu } from "./programme";
 import { aiBasicsRu } from "./aiBasics";
 import { heroArchRu } from "./heroArch";
 import { landscapeRu } from "./landscape";
+import { fieldRu } from "./field";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -37,6 +38,7 @@ export const ru: TranslationDictionary = {
   ...aiBasicsRu,
   ...heroArchRu,
   ...landscapeRu,
+  ...fieldRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
@@ -56,8 +58,8 @@ export const ru: TranslationDictionary = {
   Privacy: "Конфиденциальность",
   Home: "На главную",
   "GALO technical evaluation": "Техническая оценка GALO",
-  "Standalone research architecture for explicit world state and bounded, replayable execution.":
-    "Самостоятельная исследовательская архитектура для явного состояния мира и ограниченного воспроизводимого исполнения.",
+  "Research architecture for decisions that have to be defensible afterwards: what was permitted, what was chosen, and a record anyone can replay.":
+    "Исследовательская архитектура для решений, которые потом придётся защищать: что было разрешено, что выбрано и запись, которую любой может повторить.",
   "Working bounded prototype. Persistent learning, external operational gain, General AI, commercial traction, and programme selection are not claimed.":
     "Рабочий ограниченный прототип. GALO не заявляет о персистентном обучении, доказанном внешнем операционном выигрыше, General AI, коммерческой востребованности или отборе в программу.",
   "Founder & Chief Architect": "Основатель и главный архитектор",

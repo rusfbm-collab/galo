@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Ban, CircleAlert, FileText, Landmark, ShieldAlert, Target } from "lucide-react";
+import { ArrowLeft, ArrowRight, Ban, CircleAlert, FileText, Landmark, Scale, ShieldAlert, Target } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { publicContact } from "../content/contact";
@@ -13,6 +13,7 @@ import {
   regionFit,
   twelveMonths,
 } from "../content/programme";
+import { landscapeStanding } from "../content/landscape";
 import { siteContent } from "../content/site";
 import { useI18n } from "../i18n/I18nContext";
 
@@ -20,6 +21,7 @@ const contents = [
   { href: "#standing", label: "What this document is" },
   { href: "#assessment", label: "Twelve lines an assessor works through" },
   { href: "#region", label: "Why the work is shaped like the region's problems" },
+  { href: "#field", label: "How this reads against the field" },
   { href: "#twelve-months", label: "Twelve months, with failure conditions" },
   { href: "#ask", label: "What is asked for, and what is not" },
   { href: "#pressed", label: "Six questions we expect to be pressed on" },
@@ -210,6 +212,45 @@ export function Hub71Page() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="field" className="section section--paper">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("HOW THIS READS AGAINST THE FIELD")}
+            title={t("An assessment line is worth little without something to measure it against.")}
+            text={t(
+              "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — nine families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.",
+            )}
+          />
+          <div className="landscape-standing">
+            <div className="landscape-standing__head">
+              <Scale size={20} aria-hidden="true" />
+              <div>
+                <strong>{t("What every one of those has, and this project does not")}</strong>
+                <p>
+                  {t(
+                    "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.",
+                  )}
+                </p>
+              </div>
+            </div>
+            <ul>
+              {landscapeStanding.map((row) => (
+                <li key={row.they}>
+                  <span className="landscape-standing__them">{t(row.they)}</span>
+                  <span className="landscape-standing__us">{t(row.us)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <p className="section-followup">
+            <a className="text-link" href={href("/vs-llm#landscape")}>
+              {t("See all nine families, named, with what each one lets an outsider check")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
         </div>
       </section>
 

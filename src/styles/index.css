@@ -332,7 +332,9 @@ svg {
   flex: 1;
   align-items: center;
   justify-content: center;
-  gap: clamp(8px, 0.9vw, 14px);
+  /* Nine items, and Russian sets the longest labels: the gap has to give before
+     the row does. */
+  gap: clamp(5px, 0.62vw, 12px);
 }
 
 .site-header__desktop a {
@@ -6759,6 +6761,18 @@ html[dir="rtl"] .theory-law-card__symbol {
 }
 
 /* Responsive */
+
+/* Between the 1300px collapse point and a comfortable desktop the nine nav
+   labels are tight, and Russian sets the longest ones: give up letter room
+   before the header row breaks. */
+@media (max-width: 1500px) {
+  .site-header__desktop {
+    gap: 6px;
+  }
+  .site-header__desktop a {
+    font-size: 0.75rem;
+  }
+}
 
 @media (max-width: 1300px) {
   .site-header__desktop,
@@ -14522,4 +14536,114 @@ caption bdi {
     grid-template-columns: 1fr;
     gap: 6px;
   }
+}
+
+/* ---------------------------------------------------------------------------
+   Three promises, each with the action that would break it (/audit)
+   --------------------------------------------------------------------------- */
+
+.promise-checks {
+  display: grid;
+  gap: 14px;
+  margin: 34px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promise-checks li {
+  display: grid;
+  align-items: start;
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px 26px;
+  background: var(--white);
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.promise-checks__index {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.promise-checks li strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.promise-checks__step,
+.promise-checks__limit {
+  display: flex;
+  gap: 10px;
+  font-size: 0.94rem;
+  line-height: 1.64;
+}
+
+.promise-checks__step {
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+
+.promise-checks__step svg {
+  flex: none;
+  margin-top: 4px;
+  color: var(--teal-deep);
+}
+
+.promise-checks__limit {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  color: var(--muted);
+}
+
+.promise-checks__limit svg {
+  flex: none;
+  margin-top: 4px;
+  color: #9a6b12;
+}
+
+/* ---------------------------------------------------------------------------
+   The three neighbours, in plain words (/simple)
+   --------------------------------------------------------------------------- */
+
+.plain-neighbours {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 34px;
+}
+
+.plain-neighbours article {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 24px 26px;
+  background: var(--white);
+}
+
+.plain-neighbours svg {
+  color: var(--teal-deep);
+}
+
+.plain-neighbours h3 {
+  color: var(--ink);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.plain-neighbours p {
+  color: var(--muted);
+  font-size: 0.97rem;
+  line-height: 1.68;
+}
+
+.section-followup {
+  margin-top: 24px;
 }

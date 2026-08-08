@@ -15,6 +15,7 @@ import { programmeAr } from "./programme";
 import { aiBasicsAr } from "./aiBasics";
 import { heroArchAr } from "./heroArch";
 import { landscapeAr } from "./landscape";
+import { fieldAr } from "./field";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -37,6 +38,7 @@ export const ar: TranslationDictionary = {
   ...aiBasicsAr,
   ...heroArchAr,
   ...landscapeAr,
+  ...fieldAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",
@@ -56,8 +58,8 @@ export const ar: TranslationDictionary = {
   Privacy: "الخصوصية",
   Home: "الرئيسية",
   "GALO technical evaluation": "التقييم التقني لـ GALO",
-  "Standalone research architecture for explicit world state and bounded, replayable execution.":
-    "بنية بحثية مستقلة لحالة عالم صريحة وتنفيذ مقيّد قابل لإعادة التشغيل.",
+  "Research architecture for decisions that have to be defensible afterwards: what was permitted, what was chosen, and a record anyone can replay.":
+    "بنية بحثية للقرارات التي يلزم الدفاع عنها لاحقاً: ما كان مسموحاً، وما الذي اختير، وسجلّ يستطيع أي شخص أن يعيده.",
   "Working bounded prototype. Persistent learning, external operational gain, General AI, commercial traction, and programme selection are not claimed.":
     "نموذج أولي عامل ومحدود النطاق. لا ندّعي وجود تعلّم مستديم، أو مكسب تشغيلي خارجي، أو ذكاء اصطناعي عام، أو زخم تجاري، أو اختيار ضمن أي برنامج.",
   "Founder & Chief Architect": "المؤسس وكبير مهندسي البنية",

@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Ban, CircleAlert, Compass } from "lucide-react";
+import { ArrowLeft, ArrowRight, Ban, CircleAlert, Compass, Scale } from "lucide-react";
 import { DecisionTraceFigure } from "../components/diagrams/DecisionTraceFigure";
 import { DiligenceTimelineFigure } from "../components/diagrams/DiligenceTimelineFigure";
 import { LearningGateFigure } from "../components/diagrams/LearningGateFigure";
@@ -15,6 +15,7 @@ import {
   stageFacts,
   whereItFits,
 } from "../content/investors";
+import { landscapeStanding, landscapeVerdicts } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
@@ -22,6 +23,7 @@ const contents = [
   { href: "#problem", label: "The problem, in money rather than mathematics" },
   { href: "#where-it-fits", label: "Where a layer like this would sit" },
   { href: "#state-of-play", label: "What exists today, stated plainly" },
+  { href: "#field", label: "Who else is doing this, and where we stand" },
   { href: "#risks", label: "Six risks and what would settle each" },
   { href: "#diligence", label: "A diligence path you can run yourself" },
   { href: "#not-claimed", label: "What is not being claimed" },
@@ -183,6 +185,55 @@ export function InvestorsPage() {
             ))}
           </div>
           <LearningGateFigure />
+        </div>
+      </section>
+
+      <section id="field" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHO ELSE IS DOING THIS")}
+            title={t("The question is not whether anyone else has thought of this. Several fields have.")}
+            text={t(
+              "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.",
+            )}
+          />
+          <div className="landscape-verdicts">
+            {landscapeVerdicts.map((row) => (
+              <article key={row.question}>
+                <h3>{t(row.question)}</h3>
+                <p>{t(row.answer)}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="landscape-standing">
+            <div className="landscape-standing__head">
+              <Scale size={20} aria-hidden="true" />
+              <div>
+                <strong>{t("What every one of those has, and this project does not")}</strong>
+                <p>
+                  {t(
+                    "This is the part of the comparison that costs us something. Read it before the risk register rather than after it.",
+                  )}
+                </p>
+              </div>
+            </div>
+            <ul>
+              {landscapeStanding.map((row) => (
+                <li key={row.they}>
+                  <span className="landscape-standing__them">{t(row.they)}</span>
+                  <span className="landscape-standing__us">{t(row.us)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <p className="section-followup">
+            <a className="text-link" href={href("/vs-llm#landscape")}>
+              {t("See all nine families, named, with what each one lets an outsider check")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
         </div>
       </section>
 

@@ -213,6 +213,10 @@ describe("GALO public site", () => {
     expect(statuses.filter((status) => status === "NOT ESTABLISHED")).toHaveLength(3);
     expect(document.querySelectorAll(".programme-status.is-negative")).toHaveLength(6);
 
+    // The dossier states its position against the field rather than only against itself.
+    expect(document.querySelectorAll("#field .landscape-standing li")).toHaveLength(4);
+    expect(document.querySelector("#field")?.textContent).toMatch(/nine families/i);
+
     // Five commitments, each carrying its own failure condition.
     expect(document.querySelectorAll(".programme-months li")).toHaveLength(5);
     expect(document.querySelectorAll(".programme-months__fail")).toHaveLength(5);
@@ -623,6 +627,9 @@ describe("GALO public site", () => {
     ).toBeInTheDocument();
 
     expect(document.querySelectorAll(".plain-story > li")).toHaveLength(4);
+    expect(document.querySelectorAll(".plain-neighbours > article")).toHaveLength(3);
+    expect(screen.getByRole("heading", { level: 3, name: "The rule books a bank already runs on" })).toBeInTheDocument();
+
     expect(document.querySelectorAll(".plain-idea > article")).toHaveLength(3);
     expect(document.querySelectorAll(".plain-changes > article")).toHaveLength(3);
     expect(document.querySelectorAll(".plain-honest > article")).toHaveLength(5);
@@ -673,6 +680,11 @@ describe("GALO public site", () => {
     expect(document.querySelectorAll(".investor-problems > article")).toHaveLength(4);
     expect(document.querySelectorAll(".investor-fit > article")).toHaveLength(4);
     expect(document.querySelectorAll(".stage-facts > article")).toHaveLength(8);
+    // The field section: the three specialist answers, and the four lines that cost us.
+    expect(document.querySelectorAll("#field .landscape-verdicts > article")).toHaveLength(3);
+    expect(document.querySelectorAll("#field .landscape-standing li")).toHaveLength(4);
+    expect(document.querySelector("#field")?.textContent).toMatch(/no benchmark has been run/i);
+
     expect(document.querySelectorAll(".risk-register > article")).toHaveLength(6);
     expect(document.querySelectorAll(".diligence-steps > li")).toHaveLength(6);
     expect(document.querySelectorAll(".not-claimed > li")).toHaveLength(6);
@@ -705,6 +717,15 @@ describe("GALO public site", () => {
 
     expect(document.querySelectorAll(".audit-tiers > article")).toHaveLength(4);
     expect(document.querySelector(".audit-tiers > article.is-t4")).toBeInTheDocument();
+    // Each headline promise carries the action that would refute it.
+    const promises = document.querySelectorAll(".promise-checks > li");
+    expect(promises).toHaveLength(3);
+    promises.forEach((promise) => {
+      expect(promise.querySelector(".promise-checks__step")?.textContent ?? "").not.toHaveLength(0);
+      expect(promise.querySelector(".promise-checks__limit")?.textContent ?? "").not.toHaveLength(0);
+    });
+    expect(screen.getByText(/falsifies the claim outright/i)).toBeInTheDocument();
+
     expect(document.querySelectorAll(".claim-chain > li")).toHaveLength(5);
     expect(document.querySelectorAll(".status-rules > article")).toHaveLength(4);
     expect(document.querySelectorAll(".audit-questions > article")).toHaveLength(8);

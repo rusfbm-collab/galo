@@ -15,6 +15,7 @@ import { programmeZh } from "./programme";
 import { aiBasicsZh } from "./aiBasics";
 import { heroArchZh } from "./heroArch";
 import { landscapeZh } from "./landscape";
+import { fieldZh } from "./field";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -37,6 +38,7 @@ export const zh: TranslationDictionary = {
   ...aiBasicsZh,
   ...heroArchZh,
   ...landscapeZh,
+  ...fieldZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",
@@ -56,8 +58,8 @@ export const zh: TranslationDictionary = {
   Privacy: "隐私",
   Home: "首页",
   "GALO technical evaluation": "GALO 技术评估申请",
-  "Standalone research architecture for explicit world state and bounded, replayable execution.":
-    "一套面向显式世界状态以及受限、可重放执行的独立研究架构。",
+  "Research architecture for decisions that have to be defensible afterwards: what was permitted, what was chosen, and a record anyone can replay.":
+    "一套面向「事后必须站得住脚的决策」的研究架构：当时允许什么、选了什么，以及一份任何人都能照着重跑的记录。",
   "Working bounded prototype. Persistent learning, external operational gain, General AI, commercial traction, and programme selection are not claimed.":
     "可运行的有限范围原型。不声称已实现持续学习、外部运行增益、通用人工智能、商业进展或项目入选。",
   "Founder & Chief Architect": "创始人兼首席架构师",

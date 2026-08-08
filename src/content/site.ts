@@ -37,6 +37,7 @@ export const siteContent = {
     { label: "For auditors", href: "/audit" },
     { label: "Theory", href: "/theory" },
     { label: "How it thinks", href: "/thinking" },
+    { label: "Comparison", href: "/vs-llm" },
     { label: "Mathematics", href: "/math" },
     { label: "Symmetry", href: "/symmetry" },
     { label: "Evidence", href: "/evidence" },

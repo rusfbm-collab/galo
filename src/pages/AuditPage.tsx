@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Ban, ClipboardCheck, ScanSearch } from "lucide-react";
+import { ArrowLeft, ArrowRight, Ban, ClipboardCheck, CircleAlert, ScanSearch } from "lucide-react";
 import { ClaimAnatomyFigure } from "../components/diagrams/ClaimAnatomyFigure";
 import { VerificationTierFigure } from "../components/diagrams/VerificationTierFigure";
 import { PageShell } from "../components/layout/PageShell";
@@ -11,10 +11,12 @@ import {
   statusRules,
   verificationTiers,
 } from "../content/audit";
+import { headlineClaims } from "../content/headlineClaims";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
   { href: "#what-you-can-check", label: "Four tiers of verifiability" },
+  { href: "#three-promises", label: "The three promises, and how to break each" },
   { href: "#anatomy", label: "The shape of every published claim" },
   { href: "#reading-a-status", label: "How to read a status without being misled" },
   { href: "#eight-questions", label: "Eight questions, answered as they stand" },
@@ -95,7 +97,37 @@ export function AuditPage() {
         </div>
       </section>
 
-      <section id="anatomy" className="section section--paper math-anchor-section">
+      <section id="three-promises" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THE THREE PROMISES, AND HOW TO BREAK EACH")}
+            title={t("The front page makes three claims. Each one has an action that would refute it.")}
+            text={t(
+              "A claim nobody can falsify is not evidence, it is advertising. Below, each promise from the headline is paired with the specific thing a sceptic does to settle it, and with the part that no action available here can settle at all.",
+            )}
+          />
+          <ol className="promise-checks">
+            {headlineClaims.map((claim, index) => (
+              <li key={claim.word}>
+                <span className="promise-checks__index" dir="ltr">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <strong>{t(claim.claim)}</strong>
+                  <p className="promise-checks__step">
+                    <ClipboardCheck size={16} aria-hidden="true" /> {t(claim.auditStep)}
+                  </p>
+                  <p className="promise-checks__limit">
+                    <CircleAlert size={16} aria-hidden="true" /> {t(claim.limit)}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section id="anatomy" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE SHAPE OF EVERY PUBLISHED CLAIM")}

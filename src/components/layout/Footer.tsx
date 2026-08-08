@@ -14,7 +14,9 @@ export function Footer() {
         <div>
           <Logo inverted />
           <p className="footer__statement">
-            {t("Standalone research architecture for explicit world state and bounded, replayable execution.")}
+            {t(
+              "Research architecture for decisions that have to be defensible afterwards: what was permitted, what was chosen, and a record anyone can replay.",
+            )}
           </p>
         </div>
         <div className="footer__links" aria-label={t("Footer links")}>

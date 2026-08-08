@@ -170,7 +170,38 @@ export const landscapeVerdicts: readonly LandscapeVerdict[] = [
   },
 ] as const;
 
+export type PlainNeighbour = {
+  /** What the reader already knows, named without vocabulary. */
+  what: string;
+  /** How it works and where this sits next to it, in words used out loud. */
+  plain: string;
+};
+
+/**
+ * The same comparison for somebody who has never heard of any of it. Three
+ * neighbours instead of nine families, no product names except the one everybody
+ * has used, and the last one is the awkward one on purpose.
+ */
+export const plainNeighbours: readonly PlainNeighbour[] = [
+  {
+    what: "The chatbots you have already used",
+    plain:
+      "You type a question, it writes an answer. Ask it afterwards why it answered that way and it will write you a reason, but the reason is composed after the fact by the same machinery. GALO cannot read your sentence at all — it works on a short list of permitted moves and writes down which one it took.",
+  },
+  {
+    what: "The rule books a bank already runs on",
+    plain:
+      "When a loan is declined, somewhere there is a rulebook and somebody can point at the rule that fired. That is the same instinct as this project, it is decades old, and it works. The fair question is what GALO adds — and the honest answer is that the part which adds something is the part that is not running yet.",
+  },
+  {
+    what: "The proof checkers mathematicians use",
+    plain:
+      "Software that refuses to accept a proof it cannot check line by line. It is stricter than anything claimed here. It also never does anything: it checks statements, it does not decide, spend, or act. That is the gap this project is trying to stand in.",
+  },
+] as const;
+
 export const landscapeTranslationKeys = [
+  ...plainNeighbours.flatMap((row) => [row.what, row.plain]),
   ...landscapeRows.flatMap((row) => [row.family, row.examples, row.decidedBy, row.checkable, row.relation]),
   ...landscapeStanding.flatMap((row) => [row.they, row.us]),
   ...landscapeVerdicts.flatMap((row) => [row.question, row.answer]),
