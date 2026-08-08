@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Languages, Menu, X } from "lucide-react";
+import { siteMap } from "../../content/navigation";
 import { siteContent } from "../../content/site";
 import { localeConfig, locales, parseLocalizedPath, useI18n, type Locale } from "../../i18n/I18nContext";
 import { Logo } from "./Logo";
@@ -77,16 +78,24 @@ export function Header() {
       </div>
       {isOpen && (
         <div id="mobile-navigation" className="mobile-nav mobile-nav--open">
+          {/* Grouped rather than flat: on a phone the whole site fits in one
+              menu, and twelve undifferentiated links do not help anybody
+              choose. */}
           <nav className="shell" aria-label={t("Mobile navigation")}>
-            {siteContent.navigation.map((item) => (
-              <a
-                key={item.label}
-                href={href(item.href)}
-                aria-current={!item.href.includes("#") && currentRoute === item.href ? "page" : undefined}
-                onClick={() => setIsOpen(false)}
-              >
-                {t(item.label)}
-              </a>
+            {siteMap.map((group) => (
+              <div key={group.title} className="mobile-nav__group">
+                <h2>{t(group.title)}</h2>
+                {group.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={href(link.href)}
+                    aria-current={currentRoute === link.href ? "page" : undefined}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {t(link.label)}
+                  </a>
+                ))}
+              </div>
             ))}
             <a className="button button--primary" href={href("/#evaluation")} onClick={() => setIsOpen(false)}>
               {t("Request evaluation")} <ArrowRight className="directional-icon" size={18} aria-hidden="true" />

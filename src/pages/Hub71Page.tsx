@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowRight, Ban, CircleAlert, FileText, Landmark, Scale, ShieldAlert, Target } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { publicContact } from "../content/contact";
 import { releaseEvidence } from "../content/evidence";
@@ -76,20 +77,9 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Dossier navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Dossier navigation" items={contents} />
 
-      <section id="standing" className="section section--white">
+      <section id="standing" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("READ THIS FIRST")}
@@ -134,7 +124,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="assessment" className="section section--paper">
+      <section id="assessment" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE STATE OF PLAY, LINE BY LINE")}
@@ -190,7 +180,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="region" className="section section--white">
+      <section id="region" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("FIT, WITH THE LIMIT ATTACHED")}
@@ -215,7 +205,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="field" className="section section--paper">
+      <section id="field" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("HOW THIS READS AGAINST THE FIELD")}
@@ -254,7 +244,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="twelve-months" className="section section--navy">
+      <section id="twelve-months" className="section section--navy math-anchor-section">
         <div className="shell">
           <SectionHeading
             light
@@ -284,7 +274,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="ask" className="section section--white">
+      <section id="ask" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE ASK, IN BOTH DIRECTIONS")}
@@ -314,7 +304,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="pressed" className="section section--paper">
+      <section id="pressed" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE HARD PART OF THE CONVERSATION")}
@@ -337,7 +327,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="withheld" className="section section--white">
+      <section id="withheld" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("WHAT A WEBSITE IS THE WRONG PLACE FOR")}
@@ -360,7 +350,7 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="control" className="section section--dark">
+      <section id="control" className="section section--dark math-anchor-section">
         <div className="shell">
           <SectionHeading
             light

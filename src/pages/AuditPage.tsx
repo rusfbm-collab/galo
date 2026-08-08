@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowRight, Ban, ClipboardCheck, CircleAlert, ScanSearch } f
 import { ClaimAnatomyFigure } from "../components/diagrams/ClaimAnatomyFigure";
 import { VerificationTierFigure } from "../components/diagrams/VerificationTierFigure";
 import { PageShell } from "../components/layout/PageShell";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
   auditLimits,
@@ -56,18 +57,7 @@ export function AuditPage() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Audit chapter navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Audit chapter navigation" items={contents} />
 
       <section id="what-you-can-check" className="section section--white math-anchor-section">
         <div className="shell">

@@ -4,6 +4,7 @@ import { DiligenceTimelineFigure } from "../components/diagrams/DiligenceTimelin
 import { LearningGateFigure } from "../components/diagrams/LearningGateFigure";
 import { StackPlacementFigure } from "../components/diagrams/StackPlacementFigure";
 import { PageShell } from "../components/layout/PageShell";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
   businessProblem,
@@ -57,18 +58,7 @@ export function InvestorsPage() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Investor chapter navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Investor chapter navigation" items={contents} />
 
       <section id="one-minute" className="section section--white math-anchor-section">
         <div className="shell">

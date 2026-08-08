@@ -3,6 +3,7 @@ import { DecisionTraceFigure } from "../components/diagrams/DecisionTraceFigure"
 import { TwoWaysToDecideFigure } from "../components/diagrams/TwoWaysToDecideFigure";
 import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
 import { PageShell } from "../components/layout/PageShell";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { aiWords, notWhatYouThink } from "../content/aiBasics";
 import {
@@ -56,18 +57,7 @@ export function PlainWordsPage() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Plain-words chapter navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Plain-words chapter navigation" items={contents} />
 
       <section id="not-ai" className="section section--white math-anchor-section">
         <div className="shell">

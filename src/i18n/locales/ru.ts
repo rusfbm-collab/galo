@@ -16,6 +16,7 @@ import { aiBasicsRu } from "./aiBasics";
 import { heroArchRu } from "./heroArch";
 import { landscapeRu } from "./landscape";
 import { fieldRu } from "./field";
+import { navigationRu } from "./navigation";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -39,6 +40,7 @@ export const ru: TranslationDictionary = {
   ...heroArchRu,
   ...landscapeRu,
   ...fieldRu,
+  ...navigationRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

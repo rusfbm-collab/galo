@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { publicContact } from "../../content/contact";
 import { releaseEvidence } from "../../content/evidence";
+import { siteMap } from "../../content/navigation";
 import { siteContent } from "../../content/site";
 import { useI18n } from "../../i18n/I18nContext";
 import { Logo } from "./Logo";
@@ -11,23 +12,13 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="shell footer__grid">
-        <div>
+        <div className="footer__identity">
           <Logo inverted />
           <p className="footer__statement">
             {t(
               "Research architecture for decisions that have to be defensible afterwards: what was permitted, what was chosen, and a record anyone can replay.",
             )}
           </p>
-        </div>
-        <div className="footer__links" aria-label={t("Footer links")}>
-          <a href={href("/#architecture")}>{t("Architecture")}</a>
-          <a href={href("/theory")}>{t("Theory · start here")}</a>
-          <a href={href("/math")}>{t("Mathematics")}</a>
-          <a href={href("/symmetry")}>{t("Symmetry")}</a>
-          <a href={href("/evidence")}>{t("Evidence")}</a>
-          <a href={href("/hub71")}>{t("Assessment dossier")}</a>
-          <a href={href("/#evaluation")}>{t("Evaluation")}</a>
-          <a href={href("/privacy")}>{t("Privacy")}</a>
           <a className="email-link" href={`mailto:${publicContact.evaluationEmail}`}>
             <bdi dir="ltr">{publicContact.evaluationEmail}</bdi>
           </a>
@@ -37,6 +28,24 @@ export function Footer() {
             </a>
           )}
         </div>
+
+        {/* The full site map, because the header has room for nine links and the
+            site has more pages than that. */}
+        <nav className="footer__map" aria-label={t("Footer links")}>
+          {siteMap.map((group) => (
+            <div key={group.title}>
+              <h2>{t(group.title)}</h2>
+              <ul>
+                {group.links.map((link) => (
+                  <li key={link.href}>
+                    <a href={href(link.href)}>{t(link.label)}</a>
+                    <span>{t(link.hint)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </nav>
       </div>
       <div className="shell footer__bottom">
         <p>© {new Date().getFullYear()} GALO AI</p>
@@ -50,6 +59,7 @@ export function Footer() {
           <bdi dir="ltr">{releaseEvidence.release}</bdi>
           <span>{t("Affiliation")}</span>
           <bdi dir="ltr">NONE</bdi>
+          <a href={href("/privacy")}>{t("Privacy")}</a>
         </p>
       </div>
     </footer>

@@ -7,6 +7,7 @@ import { ThoughtLoopFigure } from "../components/diagrams/ThoughtLoopFigure";
 import { ThoughtPipelineFigure } from "../components/diagrams/ThoughtPipelineFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { TermChips } from "../components/theory/TermExplainer";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
   memoryRegisters,
@@ -65,18 +66,7 @@ export function ThinkingPage() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Thinking chapter navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Thinking chapter navigation" items={contents} />
 
       <section id="one-thought" className="section section--white math-anchor-section">
         <div className="shell">

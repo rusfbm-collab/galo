@@ -352,6 +352,23 @@ svg {
   color: var(--white);
 }
 
+/* The page you are on, marked rather than merely announced. */
+.site-header__desktop a[aria-current="page"] {
+  position: relative;
+  color: var(--white);
+}
+
+.site-header__desktop a[aria-current="page"]::after {
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  left: 0;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--teal);
+  content: "";
+}
+
 .site-header__menu {
   display: none;
 }
@@ -2152,7 +2169,7 @@ html[lang="ar"] .claim-table__row {
 .footer__grid {
   display: grid;
   gap: 50px;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(230px, 0.85fr) minmax(0, 2.15fr);
   padding-block: 65px;
 }
 
@@ -2161,26 +2178,6 @@ html[lang="ar"] .claim-table__row {
   margin: 22px 0 0;
   color: #7890a1;
   font-size: 0.82rem;
-}
-
-.footer__links {
-  display: grid;
-  align-content: start;
-  gap: 8px 28px;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.footer__links a {
-  display: inline-flex;
-  min-height: 40px;
-  align-items: center;
-  gap: 6px;
-  color: #a9bbc8;
-  font-size: 0.76rem;
-}
-
-.footer__links a:hover {
-  color: var(--white);
 }
 
 .footer__bottom {
@@ -2779,12 +2776,17 @@ html[lang="ar"] .claim-table__row {
   unicode-bidi: isolate;
 }
 
-.math-anchor-section,
-#cayley-tables {
-  scroll-margin-top: 92px;
+/* html already carries scroll-padding-top for the sticky header; on the long
+   pages an anchor has to clear the sticky chapter bar underneath it as well,
+   and this margin adds exactly that. */
+.math-anchor-section {
+  scroll-margin-top: 88px;
 }
 
 .math-contents {
+  position: sticky;
+  z-index: 40;
+  top: 72px;
   border-bottom: 1px solid var(--line);
   background: var(--white);
 }
@@ -2805,24 +2807,53 @@ html[lang="ar"] .claim-table__row {
   text-transform: uppercase;
 }
 
-.math-contents .shell > div {
-  display: grid;
-  gap: 6px;
-  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+.math-contents__track {
+  display: flex;
+  overflow-x: auto;
+  gap: 4px;
+  padding-block: 4px;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+
+.math-contents__track::-webkit-scrollbar {
+  display: none;
 }
 
 .math-contents a {
+  position: relative;
   display: flex;
-  min-width: 0;
-  min-height: 46px;
+  min-height: 42px;
+  flex: none;
   align-items: center;
   gap: 8px;
-  border-inline-start: 1px solid var(--line);
+  border-radius: 9px;
   padding-inline: 13px;
   color: var(--muted);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 720;
   line-height: 1.25;
+  scroll-snap-align: start;
+  scroll-margin-inline: 8px;
+  white-space: nowrap;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease;
+}
+
+.math-contents a:hover {
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+  color: var(--ink);
+}
+
+/* The section actually being read. */
+.math-contents a[aria-current="true"] {
+  background: color-mix(in srgb, var(--teal) 13%, transparent);
+  color: var(--teal-deep);
+}
+
+.math-contents a[aria-current="true"] bdi {
+  color: var(--teal-deep);
 }
 
 .math-contents a:hover {
@@ -4779,10 +4810,6 @@ html[dir="rtl"] .operator-card__mark {
 .theory-hero__path svg {
   flex: 0 0 auto;
   color: var(--cyan);
-}
-
-.theory-contents .shell > div {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .theory-first-principles,
@@ -6774,6 +6801,22 @@ html[dir="rtl"] .theory-law-card__symbol {
   }
 }
 
+/* On a phone the bar has to earn its height: the heading goes, the chips stay. */
+@media (max-width: 720px) {
+  .math-contents .shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    padding-block: 6px;
+  }
+  .math-contents .shell > span {
+    display: none;
+  }
+  .math-contents a {
+    min-height: 40px;
+    font-size: 0.68rem;
+  }
+}
+
 @media (max-width: 1300px) {
   .site-header__desktop,
   .site-header__cta {
@@ -6796,7 +6839,8 @@ html[dir="rtl"] .theory-law-card__symbol {
     transition: max-height 220ms ease;
   }
   .mobile-nav--open {
-    max-height: 560px;
+    max-height: 920px;
+    overflow-y: auto;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
   .mobile-nav nav {
@@ -6811,6 +6855,21 @@ html[dir="rtl"] .theory-law-card__symbol {
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     color: #adbfcb;
     font-size: 0.82rem;
+  }
+  .mobile-nav a[aria-current="page"] {
+    color: var(--teal);
+    font-weight: 750;
+  }
+  .mobile-nav__group {
+    padding-block: 6px;
+  }
+  .mobile-nav__group h2 {
+    padding-block: 10px 4px;
+    color: #6f899b;
+    font-size: 0.58rem;
+    font-weight: 850;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
   .mobile-nav .button {
     margin-top: 12px;
@@ -7319,7 +7378,7 @@ html[dir="rtl"] .theory-law-card__symbol {
     flex-direction: column;
     gap: 2px;
   }
-  .footer__links {
+  .footer__map {
     grid-template-columns: 1fr;
   }
   .page-hero .shell {
@@ -14646,4 +14705,236 @@ caption bdi {
 
 .section-followup {
   margin-top: 24px;
+}
+
+/* ---------------------------------------------------------------------------
+   Navigation: the site map in the footer, the grouped mobile menu, the 404 map,
+   previous/next through the terms, and the way back up a long page
+   --------------------------------------------------------------------------- */
+
+.footer__identity {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  justify-items: start;
+}
+
+.footer__map {
+  display: grid;
+  align-content: start;
+  gap: 30px 34px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1080px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer__map {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.footer__map h2 {
+  margin-bottom: 12px;
+  color: var(--teal);
+  font-size: 0.6rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.footer__map ul {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__map li {
+  display: grid;
+  gap: 2px;
+}
+
+.footer__map a {
+  color: #dbe6ee;
+  font-size: 0.88rem;
+  font-weight: 620;
+}
+
+.footer__map a:hover {
+  color: var(--white);
+}
+
+.footer__map span {
+  color: #8ba0ae;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.footer__record a {
+  color: #8ba0ae;
+  text-decoration: underline;
+}
+
+.footer__record a:hover {
+  color: var(--white);
+}
+
+.not-found__heading {
+  max-width: 20ch;
+  margin-bottom: 30px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.2;
+}
+
+.not-found__map {
+  display: grid;
+  gap: 26px 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.not-found__map h3 {
+  margin-bottom: 14px;
+  color: var(--teal-deep);
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.not-found__map ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.not-found__map a {
+  display: grid;
+  gap: 3px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  transition: border-color 160ms ease;
+}
+
+.not-found__map a:hover {
+  border-color: var(--teal);
+}
+
+.not-found__map strong {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.not-found__map span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.term-steps {
+  display: grid;
+  align-items: center;
+  gap: 14px;
+  margin: 34px 0 30px;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+}
+
+.term-steps__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 18px;
+  transition: border-color 160ms ease;
+}
+
+.term-steps__link:hover {
+  border-color: var(--teal);
+}
+
+.term-steps__link.is-next {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.term-steps__link svg {
+  flex: none;
+  color: var(--teal-deep);
+}
+
+.term-steps__link small {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.term-steps__link strong {
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.term-steps__position {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.back-to-top {
+  position: fixed;
+  z-index: 45;
+  right: 22px;
+  bottom: 22px;
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(6, 23, 36, 0.92);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.24);
+  color: var(--white);
+  backdrop-filter: blur(10px);
+}
+
+.back-to-top:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+[dir="rtl"] .back-to-top {
+  right: auto;
+  left: 22px;
+}
+
+@media (max-width: 760px) {
+  .term-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .term-steps__position {
+    order: -1;
+  }
+
+  .term-steps__link.is-next {
+    justify-content: space-between;
+  }
 }

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { BackToTop } from "../ui/BackToTop";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -11,6 +12,7 @@ export function PageShell({ children }: PageShellProps) {
     <>
       <Header />
       <main id="main-content">{children}</main>
+      <BackToTop />
       <Footer />
     </>
   );

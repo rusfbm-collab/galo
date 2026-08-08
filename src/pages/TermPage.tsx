@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight, BookMarked, Compass, Eye, Sparkles } from "lucid
 import { PageShell } from "../components/layout/PageShell";
 import { TermTablePanel } from "../components/theory/TermTablePanel";
 import { termChapterLabel, termDeepDiveByTerm, termLessonByTerm } from "../content/termDeepDives";
-import { termAcademics, termPages, termSlug } from "../content/termPages";
+import { termAcademics, termBySlug, termPages, termSlug, termSlugs } from "../content/termPages";
 import { conceptLessonRequiredFields } from "../content/theory";
 import { useI18n } from "../i18n/I18nContext";
 import { NotFoundPage } from "./NotFoundPage";
@@ -41,6 +41,14 @@ export function TermPage({ term }: { term: string | null }) {
   if (!term || !lesson || !page || !academic) return <NotFoundPage />;
 
   const deepDive = termDeepDiveByTerm.get(term);
+
+  // Fifty-nine terms in a fixed order: a reader working through them should not
+  // have to go back to the glossary between every two.
+  const slug = termSlug(term);
+  const position = termSlugs.indexOf(slug);
+  const previousTerm = position > 0 ? termBySlug.get(termSlugs[position - 1]!) : undefined;
+  const nextTerm =
+    position >= 0 && position < termSlugs.length - 1 ? termBySlug.get(termSlugs[position + 1]!) : undefined;
 
   return (
     <PageShell>
@@ -154,6 +162,34 @@ export function TermPage({ term }: { term: string | null }) {
               </a>
             ))}
           </div>
+          <nav className="term-steps" aria-label={t("Term navigation")}>
+            {previousTerm ? (
+              <a className="term-steps__link" href={href(`/term/${termSlug(previousTerm)}`)} rel="prev">
+                <ArrowLeft className="directional-icon" size={16} aria-hidden="true" />
+                <span>
+                  <small>{t("Previous term")}</small>
+                  <strong>{isolateMath(t(previousTerm))}</strong>
+                </span>
+              </a>
+            ) : (
+              <span />
+            )}
+            <span className="term-steps__position" dir="ltr">
+              {`${position + 1} / ${termSlugs.length}`}
+            </span>
+            {nextTerm ? (
+              <a className="term-steps__link is-next" href={href(`/term/${termSlug(nextTerm)}`)} rel="next">
+                <span>
+                  <small>{t("Next term")}</small>
+                  <strong>{isolateMath(t(nextTerm))}</strong>
+                </span>
+                <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            ) : (
+              <span />
+            )}
+          </nav>
+
           <div className="theory-next__links comparison-next">
             <a href={href("/theory#glossary")}>
               <span>{t("The full list")}</span>

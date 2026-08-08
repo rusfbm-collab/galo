@@ -38,6 +38,7 @@ import { PageShell } from "../components/layout/PageShell";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton, TermChips } from "../components/theory/TermExplainer";
 import { TransitionTutor } from "../components/theory/TransitionTutor";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
   canonicalTypedCellCount,
@@ -183,24 +184,18 @@ export function TheoryPage() {
               <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
             </a>
             <a className="button button--outline-light math-hero__action" href="#cayley-first">
-              {t("Begin with the mental model")} <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
+              {t("Begin with the mental model")}{" "}
+              <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
             </a>
           </div>
         </div>
       </section>
 
-      <nav className="math-contents theory-contents" aria-label={t("Beginner theory chapter navigation")}>
-        <div className="shell">
-          <span>{t("Build the theory in this order")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents
+        label="Build the theory in this order"
+        ariaLabel="Beginner theory chapter navigation"
+        items={contents}
+      />
 
       <section id="orientation" className="section section--white math-anchor-section">
         <div className="shell">
@@ -234,9 +229,7 @@ export function TheoryPage() {
                       <ArrowRight className="directional-icon" size={15} aria-hidden="true" />
                     </a>
                   </h4>
-                  <p>
-                    {isolateLtrTokens(t(entry.plain), ["P0,", "P1,", "P2", "P1", "L1", "L7", "PLUS", "STAR"])}
-                  </p>
+                  <p>{isolateLtrTokens(t(entry.plain), ["P0,", "P1,", "P2", "P1", "L1", "L7", "PLUS", "STAR"])}</p>
                   <p className="orientation-vocab__where">
                     <Eye size={14} aria-hidden="true" />
                     <span>{isolateLtrTokens(t(entry.whereYouMeetIt), ["L1", "L7"])}</span>
@@ -1288,7 +1281,11 @@ export function TheoryPage() {
               <article>
                 <strong>04</strong>
                 <code dir="ltr">3 ∤ 5 ⇒ Emb(A_3,A_5)=∅</code>
-                <p>{t("The failure is therefore structural. It is not that the same-index candidate happened to fall short.")}</p>
+                <p>
+                  {t(
+                    "The failure is therefore structural. It is not that the same-index candidate happened to fall short.",
+                  )}
+                </p>
               </article>
             </div>
             <p>

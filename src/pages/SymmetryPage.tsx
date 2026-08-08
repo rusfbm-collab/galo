@@ -4,6 +4,7 @@ import { UnitGroupFigure } from "../components/diagrams/UnitGroupFigure";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { SymmetryExplorer } from "../components/math/SymmetryExplorer";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
   enumerateStarHomomorphisms,
@@ -56,18 +57,7 @@ export function SymmetryPage() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Symmetry chapter navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {contents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Symmetry chapter navigation" items={contents} />
 
       <section id="two-families" className="section section--white math-anchor-section">
         <div className="shell">

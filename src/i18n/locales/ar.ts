@@ -16,6 +16,7 @@ import { aiBasicsAr } from "./aiBasics";
 import { heroArchAr } from "./heroArch";
 import { landscapeAr } from "./landscape";
 import { fieldAr } from "./field";
+import { navigationAr } from "./navigation";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -39,6 +40,7 @@ export const ar: TranslationDictionary = {
   ...heroArchAr,
   ...landscapeAr,
   ...fieldAr,
+  ...navigationAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

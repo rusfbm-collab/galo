@@ -5,6 +5,7 @@ import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
+import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
   canonicalScaledEmbeddings,
@@ -153,18 +154,7 @@ export function MathematicsPage() {
         </div>
       </section>
 
-      <nav className="math-contents" aria-label={t("Mathematics chapter navigation")}>
-        <div className="shell">
-          <span>{t("On this page")}</span>
-          <div>
-            {mathContents.map((item, index) => (
-              <a key={item.href} href={item.href}>
-                <bdi dir="ltr">{String(index + 1).padStart(2, "0")}</bdi> {t(item.label)}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+      <PageContents label="On this page" ariaLabel="Mathematics chapter navigation" items={mathContents} />
 
       <section id="objects" className="section section--white math-anchor-section">
         <div className="shell">
@@ -200,7 +190,7 @@ export function MathematicsPage() {
         </div>
       </section>
 
-      <section id="cayley-tables" className="section section--paper math-explorer-section">
+      <section id="cayley-tables" className="section section--paper math-explorer-section math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("INTERACTIVE CAYLEY EXPLORER")}

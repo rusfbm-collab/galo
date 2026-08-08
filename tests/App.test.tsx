@@ -136,6 +136,84 @@ describe("GALO public site", () => {
     expect(screen.queryByText(/Public evaluation contact is pending founder confirmation/i)).not.toBeInTheDocument();
   });
 
+  it("puts every page in the footer, grouped, and marks the page you are on", () => {
+    setPath("/audit");
+    render(<App />);
+
+    const footer = screen.getByRole("contentinfo");
+    const map = within(footer).getByRole("navigation", { name: "Footer links" });
+    expect(map.querySelectorAll("h2")).toHaveLength(3);
+    for (const route of [
+      "/",
+      "/simple",
+      "/vs-llm",
+      "/investors",
+      "/audit",
+      "/hub71",
+      "/evidence",
+      "/theory",
+      "/thinking",
+      "/math",
+      "/symmetry",
+    ]) {
+      expect(map.querySelector(`a[href="${route}"]`), `Footer is missing ${route}`).toBeInTheDocument();
+    }
+    // Every entry carries a line saying what that page settles.
+    expect(map.querySelectorAll("li > span")).toHaveLength(11);
+
+    const header = screen.getByRole("navigation", { name: "Primary navigation" });
+    expect(header.querySelector('a[aria-current="page"]')).toHaveAttribute("href", "/audit");
+  });
+
+  it("opens the mobile menu grouped, with the whole site in it", () => {
+    render(<App />);
+    fireEvent.click(screen.getByRole("button", { name: /Open navigation/i }));
+
+    const menu = screen.getByRole("navigation", { name: "Mobile navigation" });
+    expect(menu.querySelectorAll(".mobile-nav__group")).toHaveLength(3);
+    expect(menu.querySelectorAll("a:not(.button)")).toHaveLength(11);
+    expect(menu.querySelector('a[href="/hub71"]')).toBeInTheDocument();
+  });
+
+  it("answers a dead end with the whole site rather than two buttons", () => {
+    setPath("/outside-scope");
+    render(<App />);
+
+    const map = screen.getByRole("navigation", { name: "All pages" });
+    expect(map.querySelectorAll("h3")).toHaveLength(3);
+    expect(map.querySelectorAll("a")).toHaveLength(11);
+    expect(screen.getByText("Whatever you were looking for, it is one of these.")).toBeInTheDocument();
+  });
+
+  it("gives the long pages a chapter bar whose targets all exist", () => {
+    for (const route of [
+      "/simple",
+      "/investors",
+      "/audit",
+      "/hub71",
+      "/theory",
+      "/thinking",
+      "/vs-llm",
+      "/math",
+      "/symmetry",
+    ]) {
+      setPath(route);
+      const view = render(<App />);
+      const bar = document.querySelector(".math-contents");
+      expect(bar, `No chapter bar on ${route}`).toBeInTheDocument();
+      for (const link of Array.from(bar!.querySelectorAll<HTMLAnchorElement>("a"))) {
+        const target = link.getAttribute("href")?.slice(1) ?? "";
+        const section = document.getElementById(target);
+        expect(section, `${route} chapter bar points at missing #${target}`).toBeInTheDocument();
+        // The target has to clear the sticky header and the bar itself.
+        expect(section?.classList.contains("math-anchor-section"), `${route} #${target} lacks the anchor offset`).toBe(
+          true,
+        );
+      }
+      view.unmount();
+    }
+  });
+
   it("provides semantic landmarks and mobile navigation control", () => {
     render(<App />);
     expect(screen.getByRole("banner")).toBeInTheDocument();
@@ -498,9 +576,7 @@ describe("GALO public site", () => {
 
     // The definition a referee would accept comes first, tagged with the branch
     // of mathematics it belongs to and with the honest note that the name is ours.
-    expect(document.querySelector(".term-hero__tags")?.textContent).toContain(
-      "Project term, not standard mathematics",
-    );
+    expect(document.querySelector(".term-hero__tags")?.textContent).toContain("Project term, not standard mathematics");
     expect(document.querySelector(".term-academic__formal")?.textContent).toContain(
       "★_n(P_i, P_j) = P_0  (i = 0);  P_((i+j) mod n)  (i ≠ 0)",
     );
@@ -517,7 +593,23 @@ describe("GALO public site", () => {
     expect(markedCells.map((cell) => cell.textContent)).toEqual(["P0", "P0", "P0"]);
 
     expect(document.querySelectorAll(".term-lesson__field")).toHaveLength(7);
-    expect(screen.getByRole("link", { name: /Left zero/i })).toHaveAttribute("href", "/term/left-zero");
+    expect(within(document.querySelector(".term-related")!).getByRole("link", { name: /Left zero/i })).toHaveAttribute(
+      "href",
+      "/term/left-zero",
+    );
+
+    // Fifty-nine terms in a fixed order, walkable without returning to the glossary.
+    const steps = document.querySelector(".term-steps")!;
+    expect(steps.querySelector(".term-steps__position")?.textContent).toMatch(/^\d+ \/ 59$/);
+    expect(within(steps as HTMLElement).getByRole("link", { name: /Previous term/i })).toHaveAttribute(
+      "href",
+      expect.stringContaining("/term/"),
+    );
+    expect(within(steps as HTMLElement).getByRole("link", { name: /Next term/i })).toHaveAttribute(
+      "href",
+      expect.stringContaining("/term/"),
+    );
+
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/term/star");
   });
 
@@ -628,7 +720,9 @@ describe("GALO public site", () => {
 
     expect(document.querySelectorAll(".plain-story > li")).toHaveLength(4);
     expect(document.querySelectorAll(".plain-neighbours > article")).toHaveLength(3);
-    expect(screen.getByRole("heading", { level: 3, name: "The rule books a bank already runs on" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 3, name: "The rule books a bank already runs on" }),
+    ).toBeInTheDocument();
 
     expect(document.querySelectorAll(".plain-idea > article")).toHaveLength(3);
     expect(document.querySelectorAll(".plain-changes > article")).toHaveLength(3);
