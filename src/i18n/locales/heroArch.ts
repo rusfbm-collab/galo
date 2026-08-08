@@ -1,8 +1,9 @@
 import type { TranslationDictionary } from "../translations";
 
 export const heroArchRu: TranslationDictionary = {
-  "A DECISION LAYER BUILT TO BE CHECKED AFTERWARDS":
-    "СЛОЙ ПРИНЯТИЯ РЕШЕНИЙ, КОТОРЫЙ МОЖНО ПРОВЕРИТЬ ПОТОМ",
+  "AI that has to show why it was allowed to decide.":
+    "Искусственный интеллект, обязанный показать, почему он имел право так решить.",
+  "BUILT FOR DECISIONS THAT GET AUDITED": "ДЛЯ РЕШЕНИЙ, КОТОРЫЕ ПОТОМ ПРОВЕРЯЮТ",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. Not built.":
     "План, записанный деревом шагов, а не одним ходом: всё дерево можно осмотреть до того, как хоть что-то запустится. Не построено.",
   "An explicit, readable picture of what the system currently believes about the world. No trained Atlas exists in this release.":
@@ -23,21 +24,20 @@ export const heroArchRu: TranslationDictionary = {
     "Одна строчка из списка выбирается и привязывается к единственному использованию. Попытка воспользоваться ею второй раз отклоняется и записывается, а не проходит молча.",
   "Six stages that are written down and not built. None of them runs in the current release.":
     "Шесть этапов, которые записаны, но не построены. Ни один из них в текущем выпуске не работает.",
-  "Software that records what it was allowed to do, and which option it took.":
-    "Программа, которая записывает, что ей было разрешено и какой вариант она выбрала.",
+  "In most AI systems the explanation is written after the decision, by the same machinery that made it. GALO is built the other way round: the list of permitted actions closes before anything runs, the choice comes only from that list, and what is left afterwards is a record a stranger can replay to the same result — what was open, what was taken, what was refused. Today that runs inside one small declared scope: no learning, and no measured advantage outside the project.":
+    "В большинстве систем искусственного интеллекта объяснение пишется уже после решения — и тем же механизмом, который это решение принял. GALO устроен наоборот: список разрешённых действий закрывается до запуска, выбор идёт только из него, а после остаётся запись, по которой посторонний человек повторит шаг и получит тот же результат: что было доступно, что выбрано, что отклонено. Пока всё это работает внутри одной небольшой объявленной области: без обучения и без измеренного преимущества за пределами проекта.",
   "Splitting one goal into smaller steps that can be checked separately. Written down, not built.":
     "Разбить одну цель на шаги поменьше, каждый из которых можно проверить отдельно. Записано, но не построено.",
   "The action runs once, inside a limit set in advance. There is no second attempt and no way to spend more than was budgeted.":
     "Действие выполняется один раз и в пределах заранее заданного лимита. Второй попытки нет, и потратить больше отведённого невозможно.",
   "The step leaves a written record: what was checked, what ran, what came out. It is what you would hand to somebody who asks.":
     "После шага остаётся запись: что проверили, что выполнили, что вышло. Именно её вы и протянете тому, кто спрашивает.",
-  "When a program declines a claim, holds a payment, or reroutes an order, the log says what happened and almost never what was permitted at the time. GALO fixes the list of permitted actions before anything runs, picks only from that list, and leaves a record a stranger can repeat to the same result. What runs today is deliberately narrow: no learning, and no measured result outside the project.":
-    "Когда программа отказывает в заявке, задерживает платёж или перенаправляет заказ, в журнале написано, что произошло, — и почти никогда, что в тот момент было разрешено. GALO фиксирует список разрешённых действий до запуска, выбирает только из него и оставляет запись, по которой посторонний повторит шаг и получит тот же результат. То, что работает сегодня, намеренно узко: обучения нет, измеренного результата за пределами проекта тоже.",
 };
 
 export const heroArchZh: TranslationDictionary = {
-  "A DECISION LAYER BUILT TO BE CHECKED AFTERWARDS":
-    "一个可以事后核查的决策层",
+  "AI that has to show why it was allowed to decide.":
+    "必须说明自己凭什么有权作出该决定的人工智能。",
+  "BUILT FOR DECISIONS THAT GET AUDITED": "为事后要被审计的决策而建",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. Not built.":
     "把计划写成一棵步骤树，而不是单独一步：整棵树在任何一步开跑之前都可以先看一遍。尚未建成。",
   "An explicit, readable picture of what the system currently believes about the world. No trained Atlas exists in this release.":
@@ -58,21 +58,20 @@ export const heroArchZh: TranslationDictionary = {
     "从清单中选出一条，并把它绑定到一次使用上。想再用第二次会被拒绝并记录在案，不会悄悄通过。",
   "Six stages that are written down and not built. None of them runs in the current release.":
     "六个阶段，写下来了，但尚未建成。它们在当前版本中一个也不运行。",
-  "Software that records what it was allowed to do, and which option it took.":
-    "一个会记录下「自己被允许做什么、又选了哪一项」的程序。",
+  "In most AI systems the explanation is written after the decision, by the same machinery that made it. GALO is built the other way round: the list of permitted actions closes before anything runs, the choice comes only from that list, and what is left afterwards is a record a stranger can replay to the same result — what was open, what was taken, what was refused. Today that runs inside one small declared scope: no learning, and no measured advantage outside the project.":
+    "在大多数人工智能系统里，解释是在决定作出之后，由作出该决定的同一套机制补写出来的。GALO 反着来：允许执行的动作清单在运行之前就已封闭，选择只能从这份清单里作出，事后留下的是一份记录——当时有哪些选项、选了哪一项、拒掉了哪些——陌生人照着重跑一遍就能得到同样的结果。目前这一切只在一个很小的、已声明的范围内运行：不学习，项目之外也没有任何测得的优势。",
   "Splitting one goal into smaller steps that can be checked separately. Written down, not built.":
     "把一个目标拆成若干更小、可以分别核查的步骤。写下来了，但尚未建成。",
   "The action runs once, inside a limit set in advance. There is no second attempt and no way to spend more than was budgeted.":
     "动作只执行一次，并且在事先设定的额度之内。没有第二次机会，也无法超支。",
   "The step leaves a written record: what was checked, what ran, what came out. It is what you would hand to somebody who asks.":
     "这一步之后留下一份记录：核查了什么、执行了什么、结果如何。有人问起时，你递出去的就是它。",
-  "When a program declines a claim, holds a payment, or reroutes an order, the log says what happened and almost never what was permitted at the time. GALO fixes the list of permitted actions before anything runs, picks only from that list, and leaves a record a stranger can repeat to the same result. What runs today is deliberately narrow: no learning, and no measured result outside the project.":
-    "当程序拒掉一份申请、扣住一笔付款或改派一个订单时，日志写的是发生了什么，几乎从不写当时允许什么。GALO 在运行之前先把允许的动作定成清单，只从清单里挑，并留下一份记录，外人照着重做一遍就能得到同样的结果。今天在跑的部分是刻意做窄的：不学习，项目之外也没有任何测得的结果。",
 };
 
 export const heroArchAr: TranslationDictionary = {
-  "A DECISION LAYER BUILT TO BE CHECKED AFTERWARDS":
-    "طبقة قرار مبنيّة لتُفحص لاحقاً",
+  "AI that has to show why it was allowed to decide.":
+    "ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر.",
+  "BUILT FOR DECISIONS THAT GET AUDITED": "مبنيّ لقرارات تخضع للتدقيق لاحقاً",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. Not built.":
     "خطة مكتوبة على هيئة شجرة خطوات لا خطوة واحدة، بحيث يمكن فحص الخطة كلّها قبل أن ينطلق أي جزء منها. غير مبنيّ.",
   "An explicit, readable picture of what the system currently believes about the world. No trained Atlas exists in this release.":
@@ -93,14 +92,12 @@ export const heroArchAr: TranslationDictionary = {
     "يُنتقى بند واحد من تلك القائمة ويُربط باستعمال وحيد. ومحاولة استعماله مرّة ثانية تُرفض وتُدوَّن، ولا تمرّ في صمت.",
   "Six stages that are written down and not built. None of them runs in the current release.":
     "ستّ مراحل مكتوبة وغير مبنيّة. ولا تعمل أيٌّ منها في الإصدار الحالي.",
-  "Software that records what it was allowed to do, and which option it took.":
-    "برمجيات تدوّن ما كان مسموحاً لها وأي خيار اتّخذت.",
+  "In most AI systems the explanation is written after the decision, by the same machinery that made it. GALO is built the other way round: the list of permitted actions closes before anything runs, the choice comes only from that list, and what is left afterwards is a record a stranger can replay to the same result — what was open, what was taken, what was refused. Today that runs inside one small declared scope: no learning, and no measured advantage outside the project.":
+    "في معظم أنظمة الذكاء الاصطناعي يُكتب التفسير بعد القرار، وبالآلية نفسها التي اتّخذته. أمّا GALO فمبنيّ على الترتيب المعاكس: قائمة الأفعال المسموح بها تُغلق قبل أي تشغيل، والاختيار لا يجري إلّا منها، ويبقى بعدها سجلّ يعيد به غريبٌ الخطوةَ فيبلغ النتيجة نفسها: ما الذي كان متاحاً، وما الذي اختير، وما الذي رُفض. وهذا كلّه يعمل اليوم داخل نطاق واحد صغير ومعلَن: بلا تعلّم، وبلا أي أفضلية مقيسة خارج المشروع.",
   "Splitting one goal into smaller steps that can be checked separately. Written down, not built.":
     "تقسيم هدف واحد إلى خطوات أصغر يمكن فحص كلٍّ منها على حدة. مكتوب وغير مبنيّ.",
   "The action runs once, inside a limit set in advance. There is no second attempt and no way to spend more than was budgeted.":
     "يُنفَّذ الفعل مرّة واحدة وضمن حدٍّ موضوع سلفاً. لا محاولة ثانية ولا سبيل إلى إنفاق أكثر ممّا خُصِّص.",
   "The step leaves a written record: what was checked, what ran, what came out. It is what you would hand to somebody who asks.":
     "تخلّف الخطوة سجلاً مكتوباً: ما جرى فحصه، وما نُفِّذ، وما خرج. وهو ما تناوله لمن يسأل.",
-  "When a program declines a claim, holds a payment, or reroutes an order, the log says what happened and almost never what was permitted at the time. GALO fixes the list of permitted actions before anything runs, picks only from that list, and leaves a record a stranger can repeat to the same result. What runs today is deliberately narrow: no learning, and no measured result outside the project.":
-    "حين يرفض برنامجٌ طلباً أو يحجز دفعة أو يحوّل مسار طلبية، يقول السجل ما حدث ولا يكاد يقول ما كان مسموحاً حينها. يثبّت GALO قائمة الأفعال المسموح بها قبل أي تشغيل، ولا يختار إلّا منها، ويخلّف سجلاً يعيد به غريبٌ الخطوةَ فيبلغ النتيجة نفسها. وما يعمل اليوم ضيّق عن عمد: لا تعلّم، ولا نتيجة مقيسة خارج المشروع.",
 };

@@ -435,10 +435,10 @@ export const ru: TranslationDictionary = {
   "Return home": "Вернуться на главную",
   "View evidence": "Открыть доказательства",
 
-  "GALO AI — Explicit World State and Replayable Execution":
-    "GALO AI — Явное состояние мира и воспроизводимое исполнение",
-  "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.":
-    "GALO — самостоятельная исследовательская архитектура для явного состояния мира, типизированного исполнения и воспроизведения, подтверждаемого протоколами исполнения.",
+  "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.":
+    "Исследовательская архитектура стадии pre-seed для решений, которые потом проверяют: список разрешённых действий закрывается до запуска, а после каждого запуска остаётся запись, по которой любой повторит шаг и получит тот же результат.",
+  "GALO AI — AI That Has to Show Why It Was Allowed to Decide":
+    "GALO AI — искусственный интеллект, обязанный показать, почему он имел право решить",
   "Evidence — GALO AI": "Доказательства — GALO AI",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "Изучите реализованные ограниченные механизмы GALO, неизменяемый отпечаток выпуска, матрицу публичных утверждений и раскрытые границы исследования.",

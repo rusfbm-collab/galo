@@ -425,9 +425,10 @@ export const ar: TranslationDictionary = {
   "Return home": "العودة إلى الرئيسية",
   "View evidence": "عرض الأدلة",
 
-  "GALO AI — Explicit World State and Replayable Execution": "GALO AI — حالة عالم صريحة وتنفيذ قابل لإعادة التشغيل",
-  "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.":
-    "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ.",
+  "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.":
+    "بنية بحثية في مرحلة pre-seed لقرارات تخضع للتدقيق لاحقاً: الأفعال المسموح بها تُثبَّت قبل أي تشغيل، ويخلّف كل تشغيل سجلاً يستطيع أي شخص أن يعيده فيبلغ النتيجة نفسها.",
+  "GALO AI — AI That Has to Show Why It Was Allowed to Decide":
+    "GALO AI — ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر",
   "Evidence — GALO AI": "GALO AI — الأدلة وحدود الادعاءات",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "الأدلة العامة وحدود الادعاءات للإصدار البحثي الحالي من GALO.",

@@ -28,9 +28,9 @@ import { termBySlug } from "../content/termPages";
 
 const metadata: Record<PageRoute, { title: string; description: string }> = {
   "/": {
-    title: "GALO AI — Explicit World State and Replayable Execution",
+    title: "GALO AI — AI That Has to Show Why It Was Allowed to Decide",
     description:
-      "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.",
+      "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.",
   },
   "/evidence": {
     title: "Evidence — GALO AI",

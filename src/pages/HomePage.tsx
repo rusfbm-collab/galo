@@ -154,11 +154,11 @@ export function HomePage() {
       <section className="hero">
         <div className="shell hero__grid">
           <div className="hero__content">
-            <p className="eyebrow eyebrow--cyan">{t("A DECISION LAYER BUILT TO BE CHECKED AFTERWARDS")}</p>
-            <h1>{t("Software that records what it was allowed to do, and which option it took.")}</h1>
+            <p className="eyebrow eyebrow--cyan">{t("BUILT FOR DECISIONS THAT GET AUDITED")}</p>
+            <h1>{t("AI that has to show why it was allowed to decide.")}</h1>
             <p className="hero__lead">
               {t(
-                "When a program declines a claim, holds a payment, or reroutes an order, the log says what happened and almost never what was permitted at the time. GALO fixes the list of permitted actions before anything runs, picks only from that list, and leaves a record a stranger can repeat to the same result. What runs today is deliberately narrow: no learning, and no measured result outside the project.",
+                "In most AI systems the explanation is written after the decision, by the same machinery that made it. GALO is built the other way round: the list of permitted actions closes before anything runs, the choice comes only from that list, and what is left afterwards is a record a stranger can replay to the same result — what was open, what was taken, what was refused. Today that runs inside one small declared scope: no learning, and no measured advantage outside the project.",
               )}
             </p>
             <div className="hero__status" aria-label={t("Current project status")}>

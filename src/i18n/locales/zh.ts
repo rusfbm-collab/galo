@@ -414,9 +414,9 @@ export const zh: TranslationDictionary = {
   "Return home": "返回首页",
   "View evidence": "查看证据",
 
-  "GALO AI — Explicit World State and Replayable Execution": "GALO AI — 显式世界状态与可重放执行",
-  "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.":
-    "GALO 是一套面向显式世界状态、类型化执行与回执支撑重放的独立研究架构。",
+  "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.":
+    "一套面向「事后要被审计的决策」的 pre-seed 阶段研究架构：允许执行的动作在运行之前就已定死，每一次运行都留下任何人都能照着重跑、并得到同一结果的记录。",
+  "GALO AI — AI That Has to Show Why It Was Allowed to Decide": "GALO AI — 必须说明自己凭什么有权作出该决定的人工智能",
   "Evidence — GALO AI": "证据 — GALO AI",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "查看 GALO 已实现的有限机制、不可变发布指纹、公开声明矩阵及已披露的研究边界。",

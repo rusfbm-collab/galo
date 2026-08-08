@@ -15,9 +15,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — Explicit World State and Replayable Execution",
+        title: "GALO AI — AI That Has to Show Why It Was Allowed to Decide",
         description:
-          "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay.",
+          "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.",
       },
       simple: {
         path: "simple",
@@ -95,9 +95,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — Явное состояние мира и воспроизводимое исполнение",
+        title: "GALO AI — искусственный интеллект, обязанный показать, почему он имел право решить",
         description:
-          "GALO — самостоятельная исследовательская архитектура для явного состояния мира, типизированного исполнения и воспроизведения, подтверждаемого протоколами исполнения.",
+          "Исследовательская архитектура стадии pre-seed для решений, которые потом проверяют: список разрешённых действий закрывается до запуска, а после каждого запуска остаётся запись, по которой любой повторит шаг и получит тот же результат.",
       },
       simple: {
         path: "simple",
@@ -175,8 +175,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — 显式世界状态与可重放执行",
-        description: "GALO 是一套面向显式世界状态、类型化执行与回执支撑重放的独立研究架构。",
+        title: "GALO AI — 必须说明自己凭什么有权作出该决定的人工智能",
+        description:
+          "一套面向「事后要被审计的决策」的 pre-seed 阶段研究架构：允许执行的动作在运行之前就已定死，每一次运行都留下任何人都能照着重跑、并得到同一结果的记录。",
       },
       simple: {
         path: "simple",
@@ -249,9 +250,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — حالة عالم صريحة وتنفيذ قابل لإعادة التشغيل",
+        title: "GALO AI — ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر",
         description:
-          "GALO هي بنية بحثية مستقلة لحالة عالم صريحة، وتنفيذ محدد الأنواع، وإعادة تشغيل مدعومة بإيصالات التنفيذ.",
+          "بنية بحثية في مرحلة pre-seed لقرارات تخضع للتدقيق لاحقاً: الأفعال المسموح بها تُثبَّت قبل أي تشغيل، ويخلّف كل تشغيل سجلاً يستطيع أي شخص أن يعيده فيبلغ النتيجة نفسها.",
       },
       simple: {
         path: "simple",

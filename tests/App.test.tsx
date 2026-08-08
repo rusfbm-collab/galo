@@ -21,7 +21,7 @@ describe("GALO public site", () => {
 
   it("renders the problem-led hero and bounded status", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { level: 1, name: /records what it was allowed to do/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: /why it was allowed to decide/i })).toBeInTheDocument();
     expect(screen.getByText("Working bounded prototype")).toBeInTheDocument();
     expect(screen.getByText(/General AI and external capability superiority are not claimed/i)).toBeInTheDocument();
   });
@@ -835,7 +835,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Программа, которая записывает, что ей было разрешено и какой вариант она выбрала.",
+        name: "Искусственный интеллект, обязанный показать, почему он имел право так решить.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -864,7 +864,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "برمجيات تدوّن ما كان مسموحاً لها وأي خيار اتّخذت.",
+        name: "ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');
