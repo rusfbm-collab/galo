@@ -954,44 +954,107 @@ html[lang="ar"] .claim-table__row {
   letter-spacing: -0.04em;
 }
 
-.architecture-lane ol {
+.architecture-lane__header p {
+  max-width: 460px;
+  margin: 12px 0 0;
+  color: rgba(226, 238, 246, 0.72);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.architecture-lane--target .architecture-lane__header p {
+  color: var(--muted);
+}
+
+.architecture-lane__steps {
   display: grid;
   gap: 8px;
-  margin: 32px 0 0;
+  margin: 28px 0 0;
   padding: 0;
   list-style: none;
 }
 
-.architecture-lane li {
-  display: grid;
-  min-height: 56px;
-  align-items: center;
-  gap: 13px;
-  grid-template-columns: 30px 1fr auto;
+.architecture-lane__steps > li {
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 13px;
-  padding: 11px 14px;
   background: rgba(255, 255, 255, 0.04);
 }
 
-.architecture-lane--target li {
+.architecture-lane--target .architecture-lane__steps > li {
   border-color: var(--line);
   background: var(--white);
 }
 
-.architecture-lane li > span {
+.architecture-lane__steps summary {
+  display: grid;
+  min-height: 54px;
+  align-items: center;
+  gap: 13px;
+  grid-template-columns: 30px 1fr auto;
+  padding: 11px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.architecture-lane__steps summary::-webkit-details-marker {
+  display: none;
+}
+
+.architecture-lane__steps summary:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: -2px;
+  border-radius: 13px;
+}
+
+.architecture-lane__number {
   color: var(--teal);
   font-family: var(--font-mono);
   font-size: 0.62rem;
 }
 
-.architecture-lane li strong {
-  font-size: 0.84rem;
-  font-weight: 680;
+.architecture-lane--target .architecture-lane__number {
+  color: var(--teal-deep);
 }
 
-.architecture-lane li svg {
+.architecture-lane__steps summary strong {
+  font-size: 0.86rem;
+  font-weight: 680;
+  line-height: 1.35;
+}
+
+.architecture-lane__steps summary svg {
+  flex: none;
   color: #648093;
+  transition: transform 0.16s ease;
+}
+
+.architecture-lane__steps details[open] .architecture-lane__chevron {
+  transform: rotate(180deg);
+}
+
+.architecture-lane__steps details > p {
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 13px 14px 15px 57px;
+  color: rgba(226, 238, 246, 0.78);
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+
+[dir="rtl"] .architecture-lane__steps details > p {
+  padding: 13px 57px 15px 14px;
+}
+
+.architecture-lane--target .architecture-lane__steps details > p {
+  border-top-color: var(--line);
+  color: var(--muted);
+}
+
+.architecture-lane__note {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .architecture-lane--target > p {

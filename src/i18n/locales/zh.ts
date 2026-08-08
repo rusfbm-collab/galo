@@ -13,6 +13,7 @@ import { theoryFiguresZh } from "./theoryFigures";
 import { orientationZh } from "./orientation";
 import { programmeZh } from "./programme";
 import { aiBasicsZh } from "./aiBasics";
+import { heroArchZh } from "./heroArch";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -33,6 +34,7 @@ export const zh: TranslationDictionary = {
   ...orientationZh,
   ...programmeZh,
   ...aiBasicsZh,
+  ...heroArchZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

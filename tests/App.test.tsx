@@ -21,7 +21,7 @@ describe("GALO public site", () => {
 
   it("renders the problem-led hero and bounded status", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { level: 1, name: /A program decided something/i })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: /records what it was allowed to do/i })).toBeInTheDocument();
     expect(screen.getByText("Working bounded prototype")).toBeInTheDocument();
     expect(screen.getByText(/General AI and external capability superiority are not claimed/i)).toBeInTheDocument();
   });
@@ -42,6 +42,30 @@ describe("GALO public site", () => {
     expect(
       screen.getByText(/Observation-conditioned structural reasoning and persistent learning are not implemented/i),
     ).toBeInTheDocument();
+  });
+
+  it("makes every architecture stage open, because a chevron that does nothing reads as broken", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    const stages = Array.from(document.querySelectorAll<HTMLDetailsElement>(".architecture-lane__steps details"));
+    expect(stages).toHaveLength(11);
+    for (const stage of stages) {
+      // Every row has a real explanation behind it rather than a bare label.
+      expect(stage.querySelector("summary")).toBeInTheDocument();
+      expect((stage.querySelector("p")?.textContent ?? "").length, stage.textContent ?? "").toBeGreaterThan(60);
+      expect(stage.open).toBe(false);
+    }
+
+    await user.click(stages[0]!.querySelector("summary")!);
+    expect(stages[0]!.open).toBe(true);
+    expect(stages[0]!).toHaveTextContent("the complete list of actions the engine is allowed to take is fixed");
+
+    // The six target stages each say plainly that they do not run today.
+    const target = stages.slice(5);
+    expect(target).toHaveLength(6);
+    const targetProse = target.map((stage) => stage.querySelector("p")?.textContent ?? "").join(" ");
+    expect(targetProse).toMatch(/does not run|Not built|not started|No trained Atlas/i);
   });
 
   it("replays the receipt deterministically", async () => {
@@ -811,7 +835,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Программа приняла решение. Сможет ли кто-нибудь через год объяснить почему?",
+        name: "Программа, которая записывает, что ей было разрешено и какой вариант она выбрала.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -840,7 +864,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "برنامج اتخذ قرارًا. وبعد عام، هل يستطيع أحد أن يقول لماذا؟",
+        name: "برمجيات تدوّن ما كان مسموحاً لها وأي خيار اتّخذت.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

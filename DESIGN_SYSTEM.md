@@ -44,7 +44,8 @@ Status is never communicated by color alone: `PASS`, `BOUNDARY`, `REJECT`, and `
 2. **Receipt stack:** observation envelope, committed universe, bound handle, execution receipt, and work ledger.
 3. **Local revision:** one local hypothesis changes while neighbouring cards stay unchanged.
 4. **Current / Target split:** mechanically verified slice and in-development architecture never share an undifferentiated status surface.
-5. **Theory from zero:** a dedicated long-form route starts with an L3 dial, introduces one object class at a time, and provides optional depth through tables, exact records, glossary disclosures, and links to the academic chapters.
+5. **Architecture lanes:** two lists of stages that actually open. Each row is a `<details>` whose summary carries the stage name and whose body explains it without project vocabulary, because a row with a chevron and no behaviour reads as a broken accordion — which is exactly how the earlier version was reported. The six target stages each state in their own body that they do not run today.
+6. **Theory from zero:** a dedicated long-form route starts with an L3 dial, introduces one object class at a time, and provides optional depth through tables, exact records, glossary disclosures, and links to the academic chapters.
 
 ## Reading order for non-specialists
 

@@ -154,11 +154,11 @@ export function HomePage() {
       <section className="hero">
         <div className="shell hero__grid">
           <div className="hero__content">
-            <p className="eyebrow eyebrow--cyan">{t("RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE")}</p>
-            <h1>{t("A program decided something. A year later, can anyone still say why?")}</h1>
+            <p className="eyebrow eyebrow--cyan">{t("A DECISION LAYER BUILT TO BE CHECKED AFTERWARDS")}</p>
+            <h1>{t("Software that records what it was allowed to do, and which option it took.")}</h1>
             <p className="hero__lead">
               {t(
-                "We are building a way for software to answer that question. It writes down everything it is allowed to do before it does anything, picks only from that list, and leaves a note complete enough for a stranger to repeat the step and get the same result. The part that runs today is small and narrow on purpose; persistent learning and external performance remain unproven.",
+                "When a program declines a claim, holds a payment, or reroutes an order, the log says what happened and almost never what was permitted at the time. GALO fixes the list of permitted actions before anything runs, picks only from that list, and leaves a record a stranger can repeat to the same result. What runs today is deliberately narrow: no learning, and no measured result outside the project.",
               )}
             </p>
             <div className="hero__status" aria-label={t("Current project status")}>
