@@ -14938,3 +14938,288 @@ caption bdi {
     justify-content: space-between;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Six mathematical figures: the Latin-square test, the disagreement map, the
+   associativity counterexample, the sub-collection lattice, position orders,
+   and the double orbit count
+   --------------------------------------------------------------------------- */
+
+.galo-swatch--series-3 {
+  background: var(--chart-3);
+}
+
+.galo-figure--latin svg,
+.galo-figure--difference svg,
+.galo-figure--assoc svg,
+.galo-figure--lattice svg,
+.galo-figure--orders svg,
+.galo-figure--burnside svg {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+/* ---- Latin-square test ---- */
+
+.galo-latin__title {
+  fill: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.galo-latin__head {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.galo-latin__cell {
+  fill: color-mix(in srgb, var(--chart-1) 10%, transparent);
+  stroke: var(--figure-line);
+  stroke-width: 1;
+}
+
+.galo-latin__cell.is-repeated {
+  fill: color-mix(in srgb, var(--chart-2) 20%, transparent);
+  stroke: var(--chart-2);
+}
+
+.galo-latin__value {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 620;
+}
+
+.galo-latin__mark {
+  fill: var(--chart-1);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.galo-latin__mark.is-bad {
+  fill: var(--chart-2);
+}
+
+/* ---- disagreement map ---- */
+
+.galo-diff__cell {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1;
+}
+
+.galo-diff__cell.is-different {
+  fill: var(--chart-1);
+  stroke: var(--chart-1);
+}
+
+.galo-diff__level {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.galo-diff__count {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+}
+
+/* ---- associativity counterexample ---- */
+
+.galo-assoc__bracket {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 640;
+}
+
+.galo-assoc__node {
+  fill: color-mix(in srgb, var(--chart-1) 12%, transparent);
+  stroke: var(--chart-1);
+  stroke-width: 1.4;
+}
+
+.galo-assoc__node.is-result {
+  fill: color-mix(in srgb, var(--chart-2) 16%, transparent);
+  stroke: var(--chart-2);
+  stroke-width: 2;
+}
+
+.galo-assoc__value {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.galo-assoc__step {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+}
+
+.galo-assoc__arrow {
+  marker-end: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-dasharray: 4 5;
+  stroke-width: 1.5;
+}
+
+.galo-assoc__verdict {
+  fill: var(--chart-2);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+/* ---- sub-collection lattice ---- */
+
+.galo-lattice__edge {
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.5;
+}
+
+.galo-lattice__node {
+  fill: color-mix(in srgb, var(--chart-1) 10%, transparent);
+  stroke: var(--chart-1);
+  stroke-width: 1.3;
+}
+
+.galo-lattice__node.is-whole {
+  fill: color-mix(in srgb, var(--chart-1) 22%, transparent);
+  stroke-width: 2;
+}
+
+.galo-lattice__members {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 620;
+}
+
+.galo-lattice__step {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+}
+
+.galo-lattice__strip {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.galo-lattice__strip div {
+  display: grid;
+  gap: 3px;
+  justify-items: center;
+  border: 1px solid var(--figure-line);
+  border-radius: 12px;
+  padding: 12px 6px;
+}
+
+.galo-lattice__strip strong {
+  color: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.galo-lattice__strip span {
+  color: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+}
+
+.galo-lattice__strip small {
+  color: var(--figure-muted);
+  font-size: 0.56rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.galo-lattice__strip b {
+  color: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+}
+
+/* ---- position orders ---- */
+
+.galo-orders__level {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.galo-orders__tile {
+  fill: color-mix(in srgb, var(--chart-2) 16%, transparent);
+  stroke: var(--chart-2);
+  stroke-width: 1.2;
+}
+
+.galo-orders__tile.is-full {
+  fill: color-mix(in srgb, var(--chart-1) 16%, transparent);
+  stroke: var(--chart-1);
+}
+
+.galo-orders__tile.is-home {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-dasharray: 4 4;
+}
+
+.galo-orders__step {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+}
+
+.galo-orders__order {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.galo-orders__absent {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+/* ---- double orbit count ---- */
+
+.galo-burnside__bar.is-enumerated {
+  fill: var(--chart-1);
+}
+
+.galo-burnside__bar.is-averaged {
+  fill: var(--chart-3);
+}
+
+.galo-burnside__value {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.galo-burnside__level {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+@media (max-width: 760px) {
+  .galo-lattice__strip {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

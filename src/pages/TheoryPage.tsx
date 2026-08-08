@@ -38,6 +38,7 @@ import { PageShell } from "../components/layout/PageShell";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton, TermChips } from "../components/theory/TermExplainer";
 import { TransitionTutor } from "../components/theory/TransitionTutor";
+import { DifferenceMapFigure } from "../components/diagrams/DifferenceMapFigure";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -566,6 +567,7 @@ export function TheoryPage() {
             )}
           </p>
           <CayleyHeatmapFigure />
+          <DifferenceMapFigure />
           <TermChips terms={["Binary operation", "Cayley table", "PLUS", "STAR", "Closure", "Commutativity"]} />
         </div>
       </section>

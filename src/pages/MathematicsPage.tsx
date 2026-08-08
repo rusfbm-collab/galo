@@ -5,6 +5,8 @@ import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
+import { AssociativityFigure } from "../components/diagrams/AssociativityFigure";
+import { LatinSquareFigure } from "../components/diagrams/LatinSquareFigure";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -231,6 +233,7 @@ export function MathematicsPage() {
               <p>{t("The P0 row is constant under STAR: P0 is a left reset.")}</p>
             </article>
           </div>
+          <LatinSquareFigure />
         </div>
       </section>
 
@@ -738,6 +741,7 @@ export function MathematicsPage() {
               </p>
             </article>
           </div>
+          <AssociativityFigure />
         </div>
       </section>
 

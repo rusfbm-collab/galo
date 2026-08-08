@@ -224,6 +224,35 @@ describe("GALO public site", () => {
     expect(menu).toHaveAttribute("aria-expanded", "true");
   });
 
+  it("draws the six new mathematical figures on the pages that argue for them", () => {
+    setPath("/math");
+    const maths = render(<App />);
+    expect(document.querySelector(".galo-figure--latin")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--assoc")).toBeInTheDocument();
+    // The Latin-square panels: two five-by-five grids drawn from the tables.
+    expect(document.querySelectorAll(".galo-figure--latin rect.galo-latin__cell")).toHaveLength(50);
+    // STAR's reset row is the only one flagged, and it flags all five of its cells.
+    expect(document.querySelectorAll(".galo-figure--latin rect.is-repeated")).toHaveLength(5);
+    maths.unmount();
+
+    setPath("/theory");
+    const theory = render(<App />);
+    expect(document.querySelector(".galo-figure--difference")).toBeInTheDocument();
+    // Twenty-one disagreeing cells across the seven levels.
+    expect(document.querySelectorAll(".galo-figure--difference rect.is-different")).toHaveLength(21);
+    theory.unmount();
+
+    setPath("/symmetry");
+    render(<App />);
+    expect(document.querySelector(".galo-figure--lattice")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--orders")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--burnside")).toBeInTheDocument();
+    // Four rings at L6, thirteen position tiles across L6 and L7, seven bar pairs.
+    expect(document.querySelectorAll(".galo-lattice__node")).toHaveLength(4);
+    expect(document.querySelectorAll(".galo-orders__tile")).toHaveLength(13);
+    expect(document.querySelectorAll(".galo-burnside__bar")).toHaveLength(14);
+  });
+
   it("keeps every same-page navigation target resolvable", () => {
     render(<App />);
     const samePageLinks = Array.from(document.querySelectorAll<HTMLAnchorElement>('a[href^="#"], a[href^="/#"]'));

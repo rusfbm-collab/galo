@@ -4,6 +4,9 @@ import { UnitGroupFigure } from "../components/diagrams/UnitGroupFigure";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton } from "../components/theory/TermExplainer";
 import { SymmetryExplorer } from "../components/math/SymmetryExplorer";
+import { BurnsideCheckFigure } from "../components/diagrams/BurnsideCheckFigure";
+import { ElementOrderFigure } from "../components/diagrams/ElementOrderFigure";
+import { SubgroupLatticeFigure } from "../components/diagrams/SubgroupLatticeFigure";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -244,6 +247,7 @@ export function SymmetryPage() {
             text={t("Every result is recomputed from multiplication by units modulo n in this browser.")}
           />
           <SymmetryExplorer />
+          <BurnsideCheckFigure />
         </div>
       </section>
 
@@ -257,6 +261,8 @@ export function SymmetryPage() {
             )}
           />
           <UnitGroupFigure />
+          <ElementOrderFigure />
+          <SubgroupLatticeFigure />
           <div
             className="symmetry-level-table-wrap"
             dir="ltr"
