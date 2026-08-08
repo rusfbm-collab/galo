@@ -14,6 +14,7 @@ import { orientationAr } from "./orientation";
 import { programmeAr } from "./programme";
 import { aiBasicsAr } from "./aiBasics";
 import { heroArchAr } from "./heroArch";
+import { landscapeAr } from "./landscape";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -35,6 +36,7 @@ export const ar: TranslationDictionary = {
   ...programmeAr,
   ...aiBasicsAr,
   ...heroArchAr,
+  ...landscapeAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

@@ -59,7 +59,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI and Language Models — What Is Actually Different",
         description:
-          "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.",
+          "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.",
       },
       math: {
         path: "math",
@@ -139,7 +139,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI и языковые модели — в чём именно разница",
         description:
-          "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата — сравнение по механизму, без каких-либо утверждений о производительности.",
+          "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата, — и где он стоит относительно девяти названных семейств систем, которые тоже пытаются построить искусственный интеллект.",
       },
       math: {
         path: "math",
@@ -218,7 +218,8 @@ const locales = {
       "vs-llm": {
         path: "vs-llm",
         title: "GALO AI 与语言模型 — 究竟差别在哪里",
-        description: "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度——按机制对比，不作任何性能声称。",
+        description:
+          "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度；以及它相对于另外九类同样在尝试造出人工智能的系统处在什么位置。",
       },
       math: {
         path: "math",
@@ -294,7 +295,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI ونماذج اللغة — أين يكمن الفرق فعلًا",
         description:
-          "كيف يختلف GALO عن نموذج اللغة: الحالة، وطريقة الفحص، وإعادة التشغيل، والتصحيح الموضعي، واتساع النطاق — مقارنة على أساس الآلية دون أي ادعاء عن الأداء.",
+          "كيف يختلف GALO عن نموذج اللغة — الحالة وطريقة الفحص وإعادة التشغيل والتصحيح الموضعي واتساع النطاق — وأين يقف من تسع عائلات مسمّاة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
       },
       math: {
         path: "math",

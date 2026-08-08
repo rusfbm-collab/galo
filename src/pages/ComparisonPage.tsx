@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, CircleAlert, CircleCheck, Sparkles, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, CircleAlert, CircleCheck, Scale, Sparkles, ShieldCheck } from "lucide-react";
 import { AnswerPathFigure } from "../components/diagrams/AnswerPathFigure";
 import { ComplementFigure } from "../components/diagrams/ComplementFigure";
 import { TwoMachinesFigure } from "../components/diagrams/TwoMachinesFigure";
@@ -6,6 +6,7 @@ import { PageShell } from "../components/layout/PageShell";
 import { TermChips } from "../components/theory/TermExplainer";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { comparisonMisreadings, comparisonRows, galoStrengths, modelStrengths } from "../content/llmComparison";
+import { landscapeRows, landscapeStanding, landscapeVerdicts } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
@@ -13,6 +14,7 @@ const contents = [
   { href: "#anatomy", label: "Two anatomies, side by side" },
   { href: "#dimensions", label: "Ten dimensions compared" },
   { href: "#strengths", label: "What each one is good at" },
+  { href: "#landscape", label: "The wider field, nine families" },
   { href: "#together", label: "How they could work together" },
   { href: "#misreadings", label: "Five misreadings" },
 ] as const;
@@ -192,7 +194,74 @@ export function ComparisonPage() {
         </div>
       </section>
 
-      <section id="together" className="section section--paper math-anchor-section">
+      <section id="landscape" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THE WIDER FIELD")}
+            title={t("Nine families of system that are also trying to build artificial intelligence.")}
+            text={t(
+              "Chatbots are not the only thing GALO should be compared with, and they are not the comparison a specialist would reach for. Each family below is named, described by how it is built and by what an outsider can check afterwards, and followed by where this project stands relative to it — including the places where it stands behind.",
+            )}
+          />
+          <div className="landscape-grid">
+            {landscapeRows.map((row) => (
+              <article key={row.family} className="landscape-card">
+                <h3>{t(row.family)}</h3>
+                <p className="landscape-card__examples">
+                  <bdi dir="ltr">{t(row.examples)}</bdi>
+                </p>
+                <dl>
+                  <div>
+                    <dt>{t("Decided by")}</dt>
+                    <dd>{t(row.decidedBy)}</dd>
+                  </div>
+                  <div>
+                    <dt>{t("Checkable afterwards")}</dt>
+                    <dd>{t(row.checkable)}</dd>
+                  </div>
+                  <div className="is-relation">
+                    <dt>{t("Relative to GALO")}</dt>
+                    <dd>{t(row.relation)}</dd>
+                  </div>
+                </dl>
+              </article>
+            ))}
+          </div>
+
+          <div className="landscape-standing">
+            <div className="landscape-standing__head">
+              <Scale size={20} aria-hidden="true" />
+              <div>
+                <strong>{t("What every family above has, and this project does not")}</strong>
+                <p>
+                  {t(
+                    "A comparison that only ran in our favour would not be worth printing. These four lines are the ones an assessor should hold against us.",
+                  )}
+                </p>
+              </div>
+            </div>
+            <ul>
+              {landscapeStanding.map((row) => (
+                <li key={row.they}>
+                  <span className="landscape-standing__them">{t(row.they)}</span>
+                  <span className="landscape-standing__us">{t(row.us)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="landscape-verdicts">
+            {landscapeVerdicts.map((row) => (
+              <article key={row.question}>
+                <h3>{t(row.question)}</h3>
+                <p>{t(row.answer)}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="together" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("HOW THEY COULD WORK TOGETHER")}

@@ -70,7 +70,7 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
   "/vs-llm": {
     title: "GALO AI and Language Models — What Is Actually Different",
     description:
-      "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.",
+      "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.",
   },
   "/math": {
     title: "GALO Mathematics — PLUS and STAR Cayley Tables",

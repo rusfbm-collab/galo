@@ -14,6 +14,7 @@ import { orientationZh } from "./orientation";
 import { programmeZh } from "./programme";
 import { aiBasicsZh } from "./aiBasics";
 import { heroArchZh } from "./heroArch";
+import { landscapeZh } from "./landscape";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -35,6 +36,7 @@ export const zh: TranslationDictionary = {
   ...programmeZh,
   ...aiBasicsZh,
   ...heroArchZh,
+  ...landscapeZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

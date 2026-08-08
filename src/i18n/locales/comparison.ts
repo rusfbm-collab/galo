@@ -108,8 +108,8 @@ export const comparisonRu: TranslationDictionary = {
   "HOW THE TWO COULD FIT TOGETHER": "КАК ДВА ПОДХОДА МОГЛИ БЫ СОЧЕТАТЬСЯ",
   "HOW THEY COULD WORK TOGETHER": "КАК ОНИ МОГЛИ БЫ РАБОТАТЬ ВМЕСТЕ",
   "Has every possible case been checked?": "Проверены ли все возможные случаи?",
-  "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.":
-    "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата — сравнение по механизму, без каких-либо утверждений о производительности.",
+  "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.":
+    "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата, — и где он стоит относительно девяти названных семейств систем, которые тоже пытаются построить искусственный интеллект.",
   "How they could work together": "Как они могли бы работать вместе",
   "How you check it": "Как это проверяется",
   "Identical by construction. The result is a table lookup, and the ordering of candidates comes from a hash rather than a preference.":
@@ -455,8 +455,8 @@ export const comparisonZh: TranslationDictionary = {
   "HOW THE TWO COULD FIT TOGETHER": "两者可以如何配合",
   "HOW THEY COULD WORK TOGETHER": "它们可以如何协同工作",
   "Has every possible case been checked?": "是否所有可能的情形都被检查过？",
-  "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.":
-    "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度——按机制对比，不作任何性能声称。",
+  "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.":
+    "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度；以及它相对于另外九类同样在尝试造出人工智能的系统处在什么位置。",
   "How they could work together": "它们可以如何协同工作",
   "How you check it": "如何检查它",
   "Identical by construction. The result is a table lookup, and the ordering of candidates comes from a hash rather than a preference.":
@@ -795,8 +795,8 @@ export const comparisonAr: TranslationDictionary = {
   "HOW THE TWO COULD FIT TOGETHER": "كيف يمكن أن يتكامل الاثنان",
   "HOW THEY COULD WORK TOGETHER": "كيف يمكن أن يعملا معًا",
   "Has every possible case been checked?": "هل فُحصت كل الحالات الممكنة؟",
-  "How GALO differs from a language model: state, checking, replay, correction, and breadth, compared on mechanism rather than on any performance claim.":
-    "كيف يختلف GALO عن نموذج اللغة: الحالة، وطريقة الفحص، وإعادة التشغيل، والتصحيح الموضعي، واتساع النطاق — مقارنة على أساس الآلية دون أي ادعاء عن الأداء.",
+  "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.":
+    "كيف يختلف GALO عن نموذج اللغة — الحالة وطريقة الفحص وإعادة التشغيل والتصحيح الموضعي واتساع النطاق — وأين يقف من تسع عائلات مسمّاة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
   "How they could work together": "كيف يمكن أن يعملا معًا",
   "How you check it": "كيف تفحصه",
   "Identical by construction. The result is a table lookup, and the ordering of candidates comes from a hash rather than a preference.":

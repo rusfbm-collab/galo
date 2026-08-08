@@ -2,6 +2,7 @@ import {
   ArrowRight,
   Braces,
   Building2,
+  CircleAlert,
   Check,
   CircleDot,
   Database,
@@ -17,12 +18,14 @@ import {
 import { ArchitectureFlow } from "../components/diagrams/ArchitectureFlow";
 import { LocalRevision } from "../components/diagrams/LocalRevision";
 import { ResolutionLadder } from "../components/diagrams/ResolutionLadder";
+import { StateTowers } from "../components/diagrams/StateTowers";
 import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { releaseEvidence } from "../content/evidence";
 import { getEvaluationContact } from "../content/contact";
+import { headlineClaims } from "../content/headlineClaims";
 import { twelveMonths } from "../content/programme";
 import { investorBriefing } from "../content/plainLanguage";
 import { siteContent } from "../content/site";
@@ -171,7 +174,8 @@ export function HomePage() {
             </div>
             <div className="hero__actions">
               <a className="button button--primary" href={href("/simple")}>
-                {t("Explain it in plain words")} <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
+                {t("Explain it in plain words")}{" "}
+                <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
               <a className="button button--outline-light" href="#how-to-read">
                 {t("Where should I start?")}
@@ -184,17 +188,15 @@ export function HomePage() {
             </p>
           </div>
 
-          <div className="hero-visual" aria-label={t("Layered resolution and receipt visual")}>
+          <div className="hero-visual" aria-label={t("The seven levels, and one execution receipt")}>
             <div className="hero-visual__topline">
-              <span>{t("WORLD STATE / RESOLUTION")}</span>
+              <span>
+                {t("SEVEN LEVELS")} <bdi dir="ltr">L1 → L7</bdi>
+              </span>
               <strong>{t("DECLARED SCOPE")}</strong>
             </div>
-            <div className="hero-visual__frames" aria-hidden="true">
-              {["L7", "L6", "L5", "L4", "L3", "L2"].map((level, index) => (
-                <div key={level} className={`hero-frame hero-frame--${index}`}>
-                  <span>{level}</span>
-                </div>
-              ))}
+            <div className="hero-visual__towers">
+              <StateTowers />
             </div>
             <div className="hero-visual__receipt">
               <span className="status status--pass" dir="ltr">
@@ -214,7 +216,7 @@ export function HomePage() {
               </div>
             </div>
             <div className="hero-visual__caption">
-              <span>{t("Illustrative target resolution ladder")}</span>
+              <span>{t("Level n declares n states; every tower stands on P0")}</span>
               <span>{t("Receipt chain intact")}</span>
             </div>
           </div>
@@ -230,6 +232,33 @@ export function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="the-claim" className="section section--white">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THE HEADLINE, TAKEN APART")}
+            title={t("A headline is a claim. Here is what backs each word of it, and where it stops.")}
+            text={t(
+              "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.",
+            )}
+          />
+          <div className="headline-claims">
+            {headlineClaims.map((claim) => (
+              <article key={claim.word} className="headline-claim">
+                <span className="headline-claim__word">{t(claim.word)}</span>
+                <p className="headline-claim__claim">{t(claim.claim)}</p>
+                <p className="headline-claim__mechanism">{t(claim.mechanism)}</p>
+                <p className="headline-claim__limit">
+                  <CircleAlert size={16} aria-hidden="true" /> {t(claim.limit)}
+                </p>
+                <a className="text-link" href={href(claim.href)}>
+                  {t(claim.hrefLabel)} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+                </a>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

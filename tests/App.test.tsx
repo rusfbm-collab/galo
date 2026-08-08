@@ -26,6 +26,36 @@ describe("GALO public site", () => {
     expect(screen.getByText(/General AI and external capability superiority are not claimed/i)).toBeInTheDocument();
   });
 
+  it("draws the seven levels as seven towers whose heights come from the mathematics", () => {
+    render(<App />);
+    const towers = document.querySelector(".hero-towers");
+    expect(towers).toBeInTheDocument();
+
+    // One group per level, and level n holds exactly n blocks.
+    const groups = towers?.querySelectorAll("g") ?? [];
+    expect(groups).toHaveLength(7);
+    groups.forEach((group, index) => {
+      expect(group.querySelectorAll("rect")).toHaveLength(index + 1);
+    });
+
+    // The foot of every tower is P0, the state present at every level.
+    expect(towers?.querySelectorAll("rect.is-floor")).toHaveLength(7);
+    expect(towers?.querySelectorAll(".hero-towers__pole")).toHaveLength(7);
+  });
+
+  it("takes the headline apart, with the limit in the same card as the claim", () => {
+    render(<App />);
+    const cards = document.querySelectorAll(".headline-claim");
+    expect(cards).toHaveLength(3);
+    cards.forEach((card) => {
+      expect(card.querySelector(".headline-claim__mechanism")?.textContent ?? "").not.toHaveLength(0);
+      expect(card.querySelector(".headline-claim__limit")?.textContent ?? "").not.toHaveLength(0);
+      expect(card.querySelector("a")).toHaveAttribute("href");
+    });
+    expect(screen.getByText(/The list of permitted actions is closed before the run/i)).toBeInTheDocument();
+    expect(screen.getByText(/fresh FULL was not run/i)).toBeInTheDocument();
+  });
+
   it("shows exact evidence numbers with scope captions", () => {
     render(<App />);
     expect(screen.getByText("560")).toBeInTheDocument();
@@ -553,6 +583,13 @@ describe("GALO public site", () => {
     expect(document.querySelector(".galo-figure--machines")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--answers")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--complement")).toBeInTheDocument();
+
+    expect(document.querySelectorAll(".landscape-card")).toHaveLength(9);
+    expect(screen.getByRole("heading", { level: 3, name: "Proof assistants" })).toBeInTheDocument();
+    expect(screen.getByText("Lean and mathlib, Rocq (formerly Coq), Isabelle/HOL")).toBeInTheDocument();
+    expect(screen.getByText(/Stronger verification than GALO claims anywhere/i)).toBeInTheDocument();
+    expect(document.querySelectorAll(".landscape-standing li")).toHaveLength(4);
+    expect(screen.getByText(/No benchmark has been run/i)).toBeInTheDocument();
 
     expect(screen.getByText("GALO is a replacement for a language model.")).toBeInTheDocument();
     expect(screen.getByText(/No such comparison is claimed/i)).toBeInTheDocument();
