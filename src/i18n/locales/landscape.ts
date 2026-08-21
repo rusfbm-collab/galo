@@ -304,59 +304,59 @@ export const landscapeZh: TranslationDictionary = {
 
 export const landscapeAr: TranslationDictionary = {
   "A citation shows where text came from. A receipt shows what was permitted and what was chosen. They answer different questions and are not substitutes.":
-    "الاستشهاد يبيّن من أين جاء النصّ، والإيصال يبيّن ما كان مسموحاً وما الذي اختير. سؤالان مختلفان، ولا يغني أحدهما عن الآخر.",
+    "الاستشهاد يبيّن من أين جاء النصّ، والإيصال يبيّن ما كان مسموحًا وما الذي اختير. سؤالان مختلفان، ولا يغني أحدهما عن الآخر.",
   "A comparison that only ran in our favour would not be worth printing. These four lines are the ones an assessor should hold against us.":
     "مقارنة تصبّ في مصلحتنا وحدها لا تستحقّ النشر. وهذه الأسطر الأربعة هي ما ينبغي للجهة المقيِّمة أن تحاسبنا عليه.",
   "A declared model and a decision procedure over it. The answer is a proof, a counterexample, or an honest failure to decide.":
     "نموذج معلَن وإجراء قرار يعمل فوقه. والنتيجة إمّا برهان، أو مثال مضاد، أو إقرار صريح بالعجز عن الحسم.",
   "A different class of object. These read language and answer open-ended questions; the GALO engine does neither, and is narrower than any of them by a very wide margin.":
-    "صنف آخر من الأشياء. هذه الأنظمة تقرأ اللغة وتجيب عن أسئلة مفتوحة، ومحرّك GALO لا يفعل أيّاً من ذلك، وهو أضيق منها جميعاً بفارق كبير.",
+    "صنف آخر من الأشياء. هذه الأنظمة تقرأ اللغة وتجيب عن أسئلة مفتوحة، ومحرّك GALO لا يفعل أيًّا من ذلك، وهو أضيق منها جميعًا بفارق كبير.",
   "A headline is a claim. Here is what backs each word of it, and where it stops.":
     "العنوان دعوى. وهنا ما يسند كل كلمة فيه، وأين يتوقّف.",
   "A learned component proposes candidates and a formal component admits or rejects them. Only admitted candidates count.":
     "جزء متعلِّم يقترح المرشّحين، وجزء صوريّ يقبلهم أو يردّهم. ولا يُحتسب إلّا ما قُبِل.",
   "A model plans and calls tools; the surrounding code decides which tools exist. Permission is usually expressed in the prompt and in the code around it.":
-    "النموذج يخطّط ويستدعي الأدوات، والشيفرة المحيطة هي التي تقرّر أي الأدوات موجود أصلاً. والإذن يُعبَّر عنه عادةً داخل التوجيه وفي الشيفرة المحيطة به.",
+    "النموذج يخطّط ويستدعي الأدوات، والشيفرة المحيطة هي التي تقرّر أي الأدوات موجود أصلًا. والإذن يُعبَّر عنه عادةً داخل التوجيه وفي الشيفرة المحيطة به.",
   "A person writes a proof and a small trusted kernel accepts or rejects it. Nothing is accepted that the kernel cannot check.":
     "يكتب الإنسانُ البرهان، ويقبله أو يردّه نواةٌ صغيرة موثوقة. ولا يُقبل شيء تعجز النواة عن فحصه.",
   "A search index chooses passages and a language model writes the answer. Retrieval is inspectable; the step from passage to wording is not.":
     "فهرس البحث ينتقي المقاطع، ونموذج اللغة يصوغ الجواب. الانتقاء قابل للفحص، أمّا الانتقال من المقطع إلى الصياغة فلا.",
   "A stranger can repeat the run without asking us for anything, and compare it step by step.":
-    "يستطيع شخص غريب أن يعيد التشغيل دون أن يطلب منّا شيئاً، وأن يقارنه خطوةً بخطوة.",
+    "يستطيع شخص غريب أن يعيد التشغيل دون أن يطلب منّا شيئًا، وأن يقارنه خطوةً بخطوة.",
   "A trace of the calls that were made. The set of calls that were available but not made is typically not recorded anywhere.":
-    "أثرٌ للاستدعاءات التي جرت فعلاً. أمّا مجموعة الاستدعاءات التي كانت متاحة ولم تُستخدم فلا تُدوَّن عادةً في أي مكان.",
+    "أثرٌ للاستدعاءات التي جرت فعلًا. أمّا مجموعة الاستدعاءات التي كانت متاحة ولم تُستخدم فلا تُدوَّن عادةً في أي مكان.",
   "Agent frameworks and tool orchestration": "أُطر الوكلاء وتنسيق الأدوات",
   "Aggregate behaviour on benchmark suites, and whatever the provider chooses to publish about training and evaluation. Individual outputs are checked by inspection, not by construction.":
     "السلوك الإجمالي على مجموعات القياس، وما تختار الجهة المطوِّرة نشره عن التدريب والتقييم. أمّا المخرجات الفردية فتُفحص بالمعاينة لا بالبناء.",
   Allowed: "مسموح",
   "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
-    "مسموح، واختار، وأظهر — ثلاثة وعود، ومن حقّ القارئ أن يسأل عمّا يسند كلّاً منها. كل بطاقة تسمّي الآلية الموجودة اليوم، والصفحة التي يمكنك أن تتحقّق فيها بنفسك، والجزء الذي لم يُستحقّ بعد. والحدود مكتوبة في البطاقة نفسها لا في حاشية.",
+    "مسموح، واختار، وأظهر — ثلاثة وعود، ومن حقّ القارئ أن يسأل عمّا يسند كلًّا منها. كل بطاقة تسمّي الآلية الموجودة اليوم، والصفحة التي يمكنك أن تتحقّق فيها بنفسك، والجزء الذي لم يُستحقّ بعد. والحدود مكتوبة في البطاقة نفسها لا في حاشية.",
   "AlphaZero, AlphaGeometry, AlphaProof, FunSearch and related work":
     "AlphaZero وAlphaGeometry وAlphaProof وFunSearch والأعمال المتّصلة بها",
   "An explicit working memory and a decision cycle over declared production rules, designed to model how deliberation is structured.":
     "ذاكرة عمل صريحة ودورة قرار فوق قواعد إنتاج معلَنة، مصمَّمة لمحاكاة بنية التفكير المتأنّي نفسها.",
   "Chatbots are not the only thing GALO should be compared with, and they are not the comparison a specialist would reach for. Each family below is named, described by how it is built and by what an outsider can check afterwards, and followed by where this project stands relative to it — including the places where it stands behind.":
-    "ليست روبوتات الدردشة هي كلّ ما ينبغي أن يُقاس عليه GALO، ولا هي المقارنة التي يلجأ إليها المختصّ. كل عائلة أدناه مذكورة باسمها، وموصوفة بكيفية بنائها وبما يستطيع الغريب أن يفحصه لاحقاً، ثمّ يُقال أين يقف هذا المشروع منها — بما في ذلك المواضع التي يقف فيها خلفها.",
-  "Checkable afterwards": "ما يمكن فحصه لاحقاً",
+    "ليست روبوتات الدردشة هي كلّ ما ينبغي أن يُقاس عليه GALO، ولا هي المقارنة التي يلجأ إليها المختصّ. كل عائلة أدناه مذكورة باسمها، وموصوفة بكيفية بنائها وبما يستطيع الغريب أن يفحصه لاحقًا، ثمّ يُقال أين يقف هذا المشروع منها — بما في ذلك المواضع التي يقف فيها خلفها.",
+  "Checkable afterwards": "ما يمكن فحصه لاحقًا",
   "Cognitive architectures": "البنى المعرفية",
   "Cyc, Wikidata, OWL and RDF reasoners, enterprise knowledge graphs":
     "Cyc وWikidata ومحرّكات استدلال OWL وRDF ورسوم المعرفة المؤسسية",
   Decide: "اختار",
   "Decided by": "ما الذي يحدّد النتيجة",
   "Declared operators with preconditions and effects. A plan or a decision path can be printed and read line by line.":
-    "مشغّلات معلَنة بشروط مسبقة وآثار. ويمكن طباعة الخطة أو مسار القرار وقراءته سطراً سطراً.",
+    "مشغّلات معلَنة بشروط مسبقة وآثار. ويمكن طباعة الخطة أو مسار القرار وقراءته سطرًا سطرًا.",
   "Deployed and used by people outside the team that built them": "منشورة ويستعملها أناس من خارج الفريق الذي بناها",
   "Each step leaves a receipt, 4,802 internal work-unit identifiers are reconciled against their parts, and the bundled finite sample verifies against a release-pinned public key.":
-    "تخلّف كل خطوة إيصالاً، وتُطابَق 4٬802 من معرّفات وحدات العمل الداخلية مع أجزائها، وتُتحقَّق العيّنة المنتهية المرفقة بمفتاح عامّ مثبَّت في الإصدار.",
+    "تخلّف كل خطوة إيصالًا، وتُطابَق 4٬802 من معرّفات وحدات العمل الداخلية مع أجزائها، وتُتحقَّق العيّنة المنتهية المرفقة بمفتاح عامّ مثبَّت في الإصدار.",
   "Everything, to a standard nothing else in this table reaches. Anyone can re-run the checker on the same proof.":
     "كل شيء، وبمعيار لا يبلغه سواها في هذا الجدول. وبإمكان أي شخص أن يعيد تشغيل المدقّق على البرهان نفسه.",
   "Explicit state, which GALO also wants. What is missing there is the execution side: a budget, a single-use handle, and a record of the action that followed.":
-    "حالة صريحة، وهو ما يريده GALO أيضاً. والناقص هناك هو جانب التنفيذ: حدّ للإنفاق، ومقبض يُستعمل مرّة واحدة، وسجلّ للفعل الذي تلا ذلك.",
-  "Follow one decision from input to record": "تتبّع قراراً واحداً من المُدخَل إلى السجلّ",
+    "حالة صريحة، وهو ما يريده GALO أيضًا. والناقص هناك هو جانب التنفيذ: حدّ للإنفاق، ومقبض يُستعمل مرّة واحدة، وسجلّ للفعل الذي تلا ذلك.",
+  "Follow one decision from input to record": "تتبّع قرارًا واحدًا من المُدخَل إلى السجلّ",
   "For each of the two fixed source patterns the selector narrows a 440-candidate frontier to one, in an order fixed by a hash rather than by a preference. The same input gives the same choice on any machine.":
-    "لكلٍّ من نمطَي المصدر الثابتين، يضيّق المنتقي جبهةً من 440 مرشّحاً إلى مرشّح واحد، بترتيب تحدّده دالّة تجزئة لا تفضيلٌ ما. والمُدخَل نفسه يعطي الاختيار نفسه على أي جهاز.",
+    "لكلٍّ من نمطَي المصدر الثابتين، يضيّق المنتقي جبهةً من 440 مرشّحًا إلى مرشّح واحد، بترتيب تحدّده دالّة تجزئة لا تفضيلٌ ما. والمُدخَل نفسه يعطي الاختيار نفسه على أي جهاز.",
   "For the slice that runs today, that is a fair question and the honest answer is that a rule engine would cover much of it. The argument for the algebra is about what comes next — the level ladder and local revision — and that argument is not yet backed by a running system.":
-    "بالنسبة للشريحة التي تعمل اليوم، السؤال وجيه، والجواب الأمين أنّ محرّك قواعد كان ليغطّي جزءاً كبيراً منها. أمّا حجّة الجبر فتتعلّق بالخطوة التالية — سلّم المستويات والمراجعة الموضعية — وهذه الحجّة لا يسندها بعدُ نظام يعمل.",
+    "بالنسبة للشريحة التي تعمل اليوم، السؤال وجيه، والجواب الأمين أنّ محرّك قواعد كان ليغطّي جزءًا كبيرًا منها. أمّا حجّة الجبر فتتعلّق بالخطوة التالية — سلّم المستويات والمراجعة الموضعية — وهذه الحجّة لا يسندها بعدُ نظام يعمل.",
   "GPT, Claude, Gemini, Llama, Mistral, Qwen": "GPT وClaude وGemini وLlama وMistral وQwen",
   "Internal proofs and a public site. No external review of the mathematics has taken place.":
     "براهين داخلية وموقع عامّ. ولم تخضع الرياضيات لأي مراجعة خارجية.",
@@ -365,7 +365,7 @@ export const landscapeAr: TranslationDictionary = {
   "LangChain, LlamaIndex, autonomous-agent loops, MCP tool servers":
     "LangChain وLlamaIndex وحلقات الوكلاء الذاتية وخوادم أدوات MCP",
   "Large language models": "نماذج اللغة الكبيرة",
-  "Lean and mathlib, Rocq (formerly Coq), Isabelle/HOL": "Lean وmathlib، وRocq (المعروف سابقاً بـCoq)، وIsabelle/HOL",
+  "Lean and mathlib, Rocq (formerly Coq), Isabelle/HOL": "Lean وmathlib، وRocq (المعروف سابقًا بـCoq)، وIsabelle/HOL",
   "Learned proposer with a formal checker": "مُقترِح متعلِّم مع مدقّق صوريّ",
   "Level n declares n states; every tower stands on P0": "المستوى n يعلن n حالات، وكل برج يقوم على P0",
   "Measured against public benchmarks, with results others can dispute": "مقيسة على معايير عامّة، ونتائجها قابلة للطعن",
@@ -398,8 +398,8 @@ export const landscapeAr: TranslationDictionary = {
   "Soar, ACT-R, Sigma, OpenCog Hyperon": "Soar وACT-R وSigma وOpenCog Hyperon",
   "Solvers and model checkers": "الحلّالات ومدقّقات النماذج",
   "Stronger verification than GALO claims anywhere. They check statements in a formal language; they do not observe a situation, act under a budget, or produce an execution record.":
-    "تحقّقٌ أشدّ ممّا يدّعيه GALO في أي موضع. فهي تفحص عبارات مكتوبة بلغة صورية، ولا تراقب موقفاً، ولا تتصرّف ضمن حدّ إنفاق، ولا تخلّف سجلّ تنفيذ.",
-  "THE HEADLINE, TAKEN APART": "العنوان مفكَّكاً",
+    "تحقّقٌ أشدّ ممّا يدّعيه GALO في أي موضع. فهي تفحص عبارات مكتوبة بلغة صورية، ولا تراقب موقفًا، ولا تتصرّف ضمن حدّ إنفاق، ولا تخلّف سجلّ تنفيذ.",
+  "THE HEADLINE, TAKEN APART": "العنوان مفكَّكًا",
   "THE WIDER FIELD": "الميدان الأوسع",
   "Teams, funding, and years of engineering behind them": "خلفها فرق وتمويل وسنوات من العمل الهندسي",
   "The admitted result, against the checker's rules. The proposal step remains learned and is not itself checkable.":
@@ -409,11 +409,11 @@ export const landscapeAr: TranslationDictionary = {
   "The closest thing to a direct overlap in practice. GALO's difference is that the permitted set is declared, enumerated and closed before the run, and appears in the record next to the choice.":
     "أقرب تداخل عمليّ في الواقع. والفارق في GALO أنّ مجموعة المسموح به معلَنة ومعدودة ومغلقة قبل التشغيل، وأنّها تظهر في السجلّ إلى جانب الاختيار.",
   "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.":
-    "يضمّ الكون المعلَن 1٬204 واصفاً، منها 880 قابلة للتنفيذ، ويُعدّ بأكمله في كل عملية بناء. والفعل غير المدرَج لا يمكن اتخاذه، بل تُرفض المحاولة وتُدوَّن.",
+    "يضمّ الكون المعلَن 1٬204 واصفًا، منها 880 قابلة للتنفيذ، ويُعدّ بأكمله في كل عملية بناء. والفعل غير المدرَج لا يمكن اتخاذه، بل تُرفض المحاولة وتُدوَّن.",
   "The ingredients are not. Declared operators, explicit state, checkers admitting a proposer's candidates — each has a literature. What is claimed as ours is the specific kernel: a finite algebra whose levels, laws and symmetries are proved out, with typed execution and receipts sitting directly on it.":
     "المكوّنات ليست جديدة. المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ منها أدبياتها. أمّا ما ندّعيه لأنفسنا فهو النواة بعينها: جبر منتهٍ بُرهنت مستوياته وقوانينه وتناظراته، ويقوم فوقه مباشرةً تنفيذ محدَّد الأنواع وإيصالات.",
   "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.":
-    "القائمة صغيرة ومعلَنة يدوياً. وإلى أي مدى يمكن توسيعها قبل أن يفقد الإعلانُ عمليّته، فذلك عمل مفتوح لا مسألة محسومة.",
+    "القائمة صغيرة ومعلَنة يدويًا. وإلى أي مدى يمكن توسيعها قبل أن يفقد الإعلانُ عمليّته، فذلك عمل مفتوح لا مسألة محسومة.",
   "The list of permitted actions is closed before the run, not reconstructed after it.":
     "قائمة الأفعال المسموح بها تُغلق قبل التشغيل، ولا تُستعاد بعده.",
   "The model, the property, and the counterexample. These are used in industry precisely because the result survives an audit.":
@@ -421,7 +421,7 @@ export const landscapeAr: TranslationDictionary = {
   "The nearest architectural relative, and the honest comparison hurts: this composition is exactly what GALO's target architecture describes, and these systems are built, published and evaluated while GALO's version is written down and not implemented.":
     "أقرب قريب معماريّ، والمقارنة الأمينة هنا موجعة: هذا التركيب هو بعينه ما تصفه البنية المستهدفة لـGALO، غير أنّ تلك الأنظمة مبنيّة ومنشورة ومقيَّمة، بينما نسخة GALO مكتوبة وغير منفَّذة.",
   "The proposer-and-checker line of work. It shares the composition GALO's architecture describes, it is further along in every practical sense, and it is the comparison a reader should press us on rather than the comparison with chatbots.":
-    "خطّ العمل القائم على مُقترِحٍ ومدقّق. فهو يشترك في التركيب الذي تصفه بنية GALO، وهو أبعد شوطاً بكل مقياس عمليّ، وهذه هي المقارنة التي ينبغي للقارئ أن يضغط علينا بها، لا المقارنة بروبوتات الدردشة.",
+    "خطّ العمل القائم على مُقترِحٍ ومدقّق. فهو يشترك في التركيب الذي تصفه بنية GALO، وهو أبعد شوطًا بكل مقياس عمليّ، وهذه هي المقارنة التي ينبغي للقارئ أن يضغط علينا بها، لا المقارنة بروبوتات الدردشة.",
   "The record names the option that was taken and the options that were open at that moment.":
     "يسمّي السجلّ الخيار الذي اتُّخذ والخيارات التي كانت متاحة في تلك اللحظة.",
   "The rule that fired and the memory it fired on. Decades of published research sit behind these systems.":
@@ -436,7 +436,7 @@ export const landscapeAr: TranslationDictionary = {
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "لا تفضيل متعلَّم ولا تعليل بلغة طبيعية. يختار المحرّك داخل مجموعة معلَنة، ولا يحكم على ما كان ينبغي أن تحتويه تلك المجموعة.",
   "Vector search over documents feeding a model — the pattern behind most enterprise assistants":
-    "بحث متّجهيّ في الوثائق يُغذّي نموذجاً — وهو النمط الذي بُني عليه معظم المساعدين المؤسسيين",
+    "بحث متّجهيّ في الوثائق يُغذّي نموذجًا — وهو النمط الذي بُني عليه معظم المساعدين المؤسسيين",
   "What every family above has, and this project does not": "ما تملكه كل عائلة أعلاه ولا يملكه هذا المشروع",
   "What is published is stored release evidence; fresh FULL was not run. External operational gain is not measured, and nothing here is a benchmark result.":
     "المنشور هو أدلّة الإصدار المخزَّنة، ولم يُجرَ تشغيل FULL جديد. والمكسب التشغيلي الخارجي غير مقيس، وليس في هذا الموضع أي نتيجة قياس معياريّ.",

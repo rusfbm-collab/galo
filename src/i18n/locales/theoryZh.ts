@@ -55,7 +55,7 @@ export const theoryZh: TranslationDictionary = {
   "START HERE · NO ADVANCED MATHEMATICS REQUIRED": "从这里开始 · 无需高等数学基础",
   "GALO theory, explained from the first state transition.": "从第一次状态转换开始理解 GALO 理论。",
   "This guided chapter starts with a three-state dial and builds the theory one verified step at a time. Every key idea is shown in plain language, as a formula, as a finite table, and with an explicit limit on what it proves.":
-    "本引导章节从一个三状态刻度盘出发，逐步建立理论，并在每一步进行核验。每个关键概念都同时以通俗语言、公式和有限表格呈现，并明确说明它能够证明什么、不能证明什么。",
+    "这一章从一个三状态刻度盘出发，一步一步把理论搭起来，每一步都核验过。每个关键概念都同时以通俗语言、公式和有限表格呈现，并明确说明它能够证明什么、不能证明什么。",
   "Learning path": "学习路径",
   "named states": "具名状态",
   "exact transitions": "精确转换",

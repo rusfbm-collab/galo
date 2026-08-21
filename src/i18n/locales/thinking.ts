@@ -696,7 +696,7 @@ export const thinkingAr: TranslationDictionary = {
   "No parameter is fitted, adjusted, or accumulated. Two runs separated by a thousand other runs behave identically on the same input.":
     "لا يُلائَم أي وسيط ولا يُعدَّل ولا يتراكم. وتشغيلان يفصل بينهما ألف تشغيل آخر يتصرفان بالطريقة نفسها على المدخل نفسه.",
   "Nothing in the previous section is a metaphor, so here it is with the numbers filled in.":
-    "لا شيء في القسم السابق استعارة، فها هو نفسه بالأرقام مملوءة.",
+    "لا شيء في القسم السابق استعارة، وهذا هو نفسه بعد ملء الأرقام.",
   "Nothing is executed and no candidate is opened. The refusal names the gate that stopped it.":
     "لا يُنفَّذ شيء ولا يُفتح أي مرشح. والرفض يسمّي البوابة التي أوقفته.",
   "Nothing is scored. The order is derived from a hash of recorded values, which is why a reviewer can recompute it and reach the same candidate.":
@@ -758,7 +758,7 @@ export const thinkingAr: TranslationDictionary = {
   "The first of the two accepted patterns matched, which fixes both the operand role and the enumeration parity.":
     "طابق أول النمطين المقبولين، وهو ما يثبّت دور المعامل وتكافؤ التعداد معًا.",
   "The five things a page about thinking is most likely to be taken to mean.":
-    "الأشياء الخمسة التي يُرجَّح أن تُفهم منها صفحة عن التفكير.",
+    "خمسة معانٍ يُرجَّح أن تُحمَل عليها صفحةٌ عن التفكير.",
   "The handle has already been spent, rolled back, or revoked.": "المقبض استُهلك سلفًا أو جرى التراجع عنه أو أُبطل.",
   "The input is held as an opaque value. Nothing is inferred from it before it is matched.":
     "يُحتفظ بالمدخل كقيمة معتمة. ولا يُستنتج منه شيء قبل مطابقته.",

@@ -105,14 +105,14 @@ export const fieldZh: TranslationDictionary = {
 
 export const fieldAr: TranslationDictionary = {
   "A claim nobody can falsify is not evidence, it is advertising. Below, each promise from the headline is paired with the specific thing a sceptic does to settle it, and with the part that no action available here can settle at all.":
-    "الدعوى التي لا يمكن دحضها ليست دليلاً بل إعلاناً. وفي ما يلي يقترن كل وعد من وعود العنوان بالفعل المحدَّد الذي يحسمه به المشكِّك، وبالجزء الذي لا يحسمه أي فعل متاح هنا.",
+    "الدعوى التي لا يمكن دحضها ليست دليلًا بل إعلانًا. وفي ما يلي يقترن كل وعد من وعود العنوان بالفعل المحدَّد الذي يحسمه به المشكِّك، وبالجزء الذي لا يحسمه أي فعل متاح هنا.",
   "A page like this usually skips the neighbours, which is how a reader ends up thinking nobody else has had the idea. Three of them, then, in ordinary words — and the middle one is the awkward one, so it is the one worth reading twice.":
-    "صفحة كهذه تتجاوز الجيران عادةً، فينصرف القارئ وفي ذهنه أنّ أحداً لم يفكّر في هذا من قبل. إذاً ثلاثة منهم، بكلام عادي — وأوسطهم هو المحرج، ولذلك يستحقّ قراءتين.",
+    "صفحة كهذه تتجاوز الجيران عادةً، فينصرف القارئ وفي ذهنه أنّ أحدًا لم يفكّر في هذا من قبل. إذًا ثلاثة منهم، بكلام عادي — وأوسطهم هو المحرج، ولذلك يستحقّ قراءتين.",
   "An assessment line is worth little without something to measure it against.":
     "سطر التقييم قليل القيمة ما لم يكن هناك ما يُقاس عليه.",
   Comparison: "المقارنة",
   "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.":
-    "المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ من ذلك أدبياته، وفي معظم الحالات برمجيات تعمل فعلاً. وينبغي للمستثمر أن يعرف ذلك قبل أن يقرّر ما الذي يُموَّل هنا حقاً، ولهذا فالأجوبة الثلاثة أدناه هي نفسها التي كنّا سنقولها في الاجتماع.",
+    "المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ من ذلك أدبياته، وفي معظم الحالات برمجيات تعمل فعلًا. وينبغي للمستثمر أن يعرف ذلك قبل أن يقرّر ما الذي يُموَّل هنا حقًا، ولهذا فالأجوبة الثلاثة أدناه هي نفسها التي كنّا سنقولها في الاجتماع.",
   "Enumerate the declared universe yourself and count it. The published figures are 1,204 and 880; a different count is a finding you can name and we would have to answer.":
     "عُدّ الكون المعلَن بنفسك بعد أن تسرده. الرقمان المنشوران هما 1٬204 و880، وأي عدد مختلف ملاحظةٌ يمكنك تسميتها ويلزمنا أن نجيب عنها.",
   "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.":
@@ -120,36 +120,36 @@ export const fieldAr: TranslationDictionary = {
   "HOW THIS READS AGAINST THE FIELD": "كيف يُقرأ هذا في سياق الميدان",
   "How this reads against the field": "كيف يُقرأ هذا في سياق الميدان",
   "Other people have been at this for a long time, and some of them are further along.":
-    "انشغل آخرون بهذا منذ زمن طويل، وبعضهم قطع شوطاً أبعد.",
+    "انشغل آخرون بهذا منذ زمن طويل، وبعضهم قطع شوطًا أبعد.",
   "Run the same source pattern twice on different machines and compare the chosen candidate. Anything but an identical result falsifies the claim outright.":
-    "شغِّل نمط المصدر نفسه مرّتين على جهازين مختلفين وقارن المرشّح المختار. وأي نتيجة غير متطابقة تُسقط الدعوى فوراً.",
+    "شغِّل نمط المصدر نفسه مرّتين على جهازين مختلفين وقارن المرشّح المختار. وأي نتيجة غير متطابقة تُسقط الدعوى فورًا.",
   "See all twelve families, named, with what each one lets an outsider check":
     "انظر العائلات الاثنتي عشرة كلّها بأسمائها، وما يتيح كلٌّ منها للغريب أن يفحصه",
   "Software that refuses to accept a proof it cannot check line by line. It is stricter than anything claimed here. It also never does anything: it checks statements, it does not decide, spend, or act. That is the gap this project is trying to stand in.":
-    "برمجيات ترفض قبول أي برهان لا تستطيع فحصه سطراً سطراً. وهي أشدّ صرامةً من كل ما يُدّعى هنا. وهي في الوقت نفسه لا تفعل شيئاً: تفحص العبارات، ولا تقرّر ولا تنفق ولا تتصرّف. وفي هذه الفجوة بالذات يحاول هذا المشروع أن يقف.",
+    "برمجيات ترفض قبول أي برهان لا تستطيع فحصه سطرًا سطرًا. وهي أشدّ صرامةً من كل ما يُدّعى هنا. وهي في الوقت نفسه لا تفعل شيئًا: تفحص العبارات، ولا تقرّر ولا تنفق ولا تتصرّف. وفي هذه الفجوة بالذات يحاول هذا المشروع أن يقف.",
   "THE THREE PROMISES, AND HOW TO BREAK EACH": "الوعود الثلاثة وكيف يُكسر كلٌّ منها",
   "THREE THINGS THIS SITS NEXT TO": "ثلاثة أشياء يقف هذا بجوارها",
   "Take a published receipt, replay it, and compare it field by field. What you cannot settle from here is a fresh full run, because that evidence is stored rather than live.":
-    "خذ إيصالاً منشوراً وأعِد تشغيله وقارنه حقلاً بحقل. وما لا يمكنك حسمه من هنا هو تشغيل كامل جديد، لأنّ ذلك الدليل مخزَّن لا حيّ.",
+    "خذ إيصالًا منشورًا وأعِد تشغيله وقارنه حقلًا بحقل. وما لا يمكنك حسمه من هنا هو تشغيل كامل جديد، لأنّ ذلك الدليل مخزَّن لا حيّ.",
   "The chatbots you have already used": "روبوتات الدردشة التي استعملتها بالفعل",
   "The front page makes three claims. Each one has an action that would refute it.":
     "تطرح الصفحة الأولى ثلاث دعاوى. ولكلٍّ منها فعلٌ يدحضها.",
   "The proof checkers mathematicians use": "مدقّقات البراهين التي يستعملها الرياضيون",
   "The question is not whether anyone else has thought of this. Several fields have.":
     "ليس السؤال هل فكّر أحد آخر في هذا. لقد فكّر فيه غير ميدان.",
-  "The rule books a bank already runs on": "أدلّة القواعد التي يعمل بها المصرف أصلاً",
+  "The rule books a bank already runs on": "أدلّة القواعد التي يعمل بها المصرف أصلًا",
   "The same comparison in full, with twelve families named": "المقارنة نفسها كاملةً، باثنتي عشرة عائلة مذكورة بأسمائها",
   "The three promises, and how to break each": "الوعود الثلاثة وكيف يُكسر كلٌّ منها",
   "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — twelve families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
-    "تقول الأسطر الاثنا عشر أعلاه ما ثبت وما لم يثبت داخل هذا المشروع. أمّا هذا القسم فيقول الأصعب: كيف تُقرأ الأسطر نفسها بجوار نماذج اللغة، وأُطر الوكلاء، ومساعدات البرهان، والحلّالات، وأعمال المُقترِح والمدقّق، ورسوم المعرفة، والبنى المعرفية، ومحرّكات القواعد — اثنتا عشرة عائلة تحاول هي الأخرى بناء ذكاء اصطناعي، وكلٌّ منها أبعد شوطاً من الناحية العملية.",
+    "تقول الأسطر الاثنا عشر أعلاه ما ثبت وما لم يثبت داخل هذا المشروع. أمّا هذا القسم فيقول الأصعب: كيف تُقرأ الأسطر نفسها بجوار نماذج اللغة، وأُطر الوكلاء، ومساعدات البرهان، والحلّالات، وأعمال المُقترِح والمدقّق، ورسوم المعرفة، والبنى المعرفية، ومحرّكات القواعد — اثنتا عشرة عائلة تحاول هي الأخرى بناء ذكاء اصطناعي، وكلٌّ منها أبعد شوطًا من الناحية العملية.",
   "This is the part of the comparison that costs us something. Read it before the risk register rather than after it.":
-    "هذا هو الجزء من المقارنة الذي يكلّفنا شيئاً. اقرأه قبل سجلّ المخاطر لا بعده.",
+    "هذا هو الجزء من المقارنة الذي يكلّفنا شيئًا. اقرأه قبل سجلّ المخاطر لا بعده.",
   "Three things this sits next to": "ثلاثة أشياء يقف هذا بجوارها",
   "WHO ELSE IS DOING THIS": "من غيرنا يشتغل بهذا",
   "What every one of those has, and this project does not": "ما يملكه كلٌّ منهم ولا يملكه هذا المشروع",
   "When a loan is declined, somewhere there is a rulebook and somebody can point at the rule that fired. That is the same instinct as this project, it is decades old, and it works. The fair question is what GALO adds — and the honest answer is that the part which adds something is the part that is not running yet.":
-    "حين يُرفض قرض، يوجد في مكان ما دليل قواعد ويستطيع شخص أن يشير إلى القاعدة التي أُطلقت. تلك هي الغريزة نفسها التي هنا، وعمرها عقود، وهي تؤدّي عملها. والسؤال المنصف هو: ماذا يضيف GALO؟ والجواب الأمين أنّ الجزء الذي يضيف شيئاً هو بالذات الجزء الذي لا يعمل بعد.",
+    "حين يُرفض قرض، يوجد في مكان ما دليل قواعد ويستطيع شخص أن يشير إلى القاعدة التي أُطلقت. تلك هي الغريزة نفسها التي هنا، وعمرها عقود، وهي تؤدّي عملها. والسؤال المنصف هو: ماذا يضيف GALO؟ والجواب الأمين أنّ الجزء الذي يضيف شيئًا هو بالذات الجزء الذي لا يعمل بعد.",
   "Who else is doing this, and where we stand": "من غيرنا يشتغل بهذا، وأين نقف نحن",
   "You type a question, it writes an answer. Ask it afterwards why it answered that way and it will write you a reason, but the reason is composed after the fact by the same machinery. GALO cannot read your sentence at all — it works on a short list of permitted moves and writes down which one it took.":
-    "تكتب سؤالاً فيكتب جواباً. واسأله بعد ذلك لماذا أجاب هكذا فسيكتب لك سبباً، غير أنّ السبب تؤلّفه بعد الواقعة الآليةُ نفسها. أمّا GALO فلا يستطيع قراءة جملتك أصلاً: إنّه يعمل على قائمة قصيرة من الحركات المسموح بها، ويدوّن أيّها اتّخذ.",
+    "تكتب سؤالًا فيكتب جوابًا. واسأله بعد ذلك لماذا أجاب هكذا فسيكتب لك سببًا، غير أنّ السبب تؤلّفه بعد الواقعة الآليةُ نفسها. أمّا GALO فلا يستطيع قراءة جملتك أصلًا: إنّه يعمل على قائمة قصيرة من الحركات المسموح بها، ويدوّن أيّها اتّخذ.",
 };

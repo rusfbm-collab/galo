@@ -111,7 +111,7 @@ export const zh: TranslationDictionary = {
 
   "THE PROBLEM": "问题",
   "Agentic AI is moving faster than its reasoning state can be governed.":
-    "智能体式 AI 的发展速度超过了其推理状态可被治理的速度。",
+    "智能体式 AI 跑得越来越快，能管住它推理状态的手段却没跟上。",
   "Models can produce increasingly capable outputs, while the authoritative state behind long-running decisions can remain implicit, transient, or difficult to revise locally.":
     "模型可以生成能力越来越强的输出，但长期决策所依据的权威状态仍可能是隐式、短暂的，或难以进行局部修正。",
   "Implicit world state": "隐式世界状态",
@@ -431,7 +431,7 @@ export const zh: TranslationDictionary = {
   "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
     "一套通用的可验证世界模型与自主性架构，其第一个产品是工业决策保障。有限范围的学习结果连同负面结果一并公开；由合作方掌控的有效性尚未证明，工业自主性也未获授权。",
   "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
-    "GALO AI — 面向私有 AI 与工业自主性的可验证世界模型",
+    "GALO AI — 可验证的世界模型，面向私有 AI 与工业自主",
   "Evidence — GALO AI": "证据 — GALO AI",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "查看 GALO 已实现的有限机制、不可变发布指纹、公开声明矩阵及已披露的研究边界。",

@@ -217,23 +217,23 @@ export const aiBasicsZh: TranslationDictionary = {
 
 export const aiBasicsAr: TranslationDictionary = {
   "No terms, no formulas, and nothing about artificial intelligence you are expected to know already.":
-    "بلا مصطلحات ولا صيغ، ولا شيء عن الذكاء الاصطناعي يُفترض أنّك تعرفه سلفاً.",
+    "بلا مصطلحات ولا صيغ، ولا شيء عن الذكاء الاصطناعي يُفترض أنّك تعرفه سلفًا.",
   "Start here if AI is not your field": "ابدأ من هنا إن لم يكن الذكاء الاصطناعي مجالك",
   "A model trained on an enormous amount of text, which produces the next word over and over until a reply appears. ChatGPT and its relatives are these.":
     "نموذج مدرَّب على كمّ هائل من النصوص: يُخرج الكلمة التالية ثم التالية حتى يتكوّن ردّ. وهكذا صُنع ChatGPT وأقرانه.",
   "A program that does not just answer, but acts: books something, sends something, changes something. The consequences leave the screen.":
-    "برنامج لا يكتفي بالجواب بل يفعل: يحجز شيئاً، يرسل شيئاً، يغيّر شيئاً. والعواقب تخرج من حدود الشاشة.",
+    "برنامج لا يكتفي بالجواب بل يفعل: يحجز شيئًا، يرسل شيئًا، يغيّر شيئًا. والعواقب تخرج من حدود الشاشة.",
   "A program whose insides can be looked at but not understood: you can see all the numbers and still not be able to say why it chose what it chose.":
     "برنامج يمكن النظر في داخله ولا يمكن فهمه: كل الأرقام أمامك، ومع ذلك يتعذّر عليك قول لماذا اختار ما اختار.",
   "A standard set of tasks used to compare systems, the way a fixed route is used to compare cars. A number from one is only as good as the route it was measured on.":
     "مجموعة مهامّ قياسية تُقارَن بها الأنظمة، كما يُقارَن بين السيارات على مسار واحد. والرقم الخارج منها لا يساوي أكثر ممّا يساويه المسار نفسه.",
   "A very large pile of numbers that a program uses to produce an answer. Nobody wrote those numbers by hand; they came out of a process, and no single one of them means anything on its own.":
-    "كومة ضخمة من الأرقام يستخرج منها البرنامج جواباً. لم يكتب أحدٌ هذه الأرقام بيده: خرجت من عملية، ولا يعني أيٌّ منها بمفرده شيئاً.",
+    "كومة ضخمة من الأرقام يستخرج منها البرنامج جوابًا. لم يكتب أحدٌ هذه الأرقام بيده: خرجت من عملية، ولا يعني أيٌّ منها بمفرده شيئًا.",
   "A written record complete enough that somebody who was not there can reconstruct what happened, and check it.":
-    "أثرٌ مكتوب كامل بما يكفي ليعيد من لم يكن حاضراً بناء ما جرى ويفحصه.",
+    "أثرٌ مكتوب كامل بما يكفي ليعيد من لم يكن حاضرًا بناء ما جرى ويفحصه.",
   Agent: "وكيل",
   "Almost every AI product you have used is one. GALO is not, and most of this site is about that difference.":
-    "كل ما استعملته تقريباً من منتجات الذكاء الاصطناعي نموذج. أمّا GALO فليس كذلك، ومعظم هذا الموقع عن هذا الفرق.",
+    "كل ما استعملته تقريبًا من منتجات الذكاء الاصطناعي نموذج. أمّا GALO فليس كذلك، ومعظم هذا الموقع عن هذا الفرق.",
   "Ask why later, and the honest answer is that the numbers came out that way. Nobody can point at the reason.":
     "اسأل بعد ذلك «لماذا» فيكون الجواب الأمين: هكذا خرجت الأرقام. ولا أحد يستطيع أن يشير إلى السبب.",
   "Ask why later, and the record names which entry was picked and which others were available at that moment.":
@@ -244,36 +244,36 @@ export const aiBasicsAr: TranslationDictionary = {
   Deterministic: "الحتمية",
   "Every 'receipt' on this site is one of these.": "كل «إيصال» في هذا الموقع هو هذا بعينه.",
   "GALO does no training at all today. That is unusual enough that people assume it is a mistake.":
-    "لا يتعلّم GALO شيئاً اليوم. وهذا غير مألوف إلى حدّ أنّ الناس يحسبونه خطأً.",
+    "لا يتعلّم GALO شيئًا اليوم. وهذا غير مألوف إلى حدّ أنّ الناس يحسبونه خطأً.",
   "GALO has no equivalent step, because there is nothing trained to run.":
     "لا يوجد لدى GALO ما يقابل هذه الخطوة: لم يُدرَّب شيء، فليس ثمّة ما يُشغَّل.",
   "GALO is deterministic. That is what lets somebody else repeat a decision and get exactly what we got.":
     "‏GALO حتمي. ولهذا يستطيع شخص من الخارج أن يعيد القرار نفسه فيبلغ بالضبط ما بلغناه.",
   Hallucination: "الهلوسة",
-  "If you do not work with AI at all": "إن لم يكن الذكاء الاصطناعي مجالك أصلاً",
+  "If you do not work with AI at all": "إن لم يكن الذكاء الاصطناعي مجالك أصلًا",
   Inference: "الاستدلال",
   "It is already in use somewhere.": "لا شكّ أنّه يعمل في مكان ما.",
   "It is smarter, or safer, or faster.": "إذن فهو أذكى أو أأمن أو أسرع.",
   "It is the ordinary state of affairs in AI, and the thing we are trying not to build.":
-    "هكذا يُبنى كل شيء تقريباً في الذكاء الاصطناعي، وهذا بعينه ما نحاول ألّا نبنيه.",
+    "هكذا يُبنى كل شيء تقريبًا في الذكاء الاصطناعي، وهذا بعينه ما نحاول ألّا نبنيه.",
   "It is what most people mean by AI, so it is the thing we are constantly being compared with.":
-    "هذا ما يقصده معظم الناس بكلمة «ذكاء اصطناعي»، ولذلك تُعقد المقارنة بيننا وبينه دائماً.",
+    "هذا ما يقصده معظم الناس بكلمة «ذكاء اصطناعي»، ولذلك تُعقد المقارنة بيننا وبينه دائمًا.",
   "It must be trying to replace ChatGPT.": "إذن فأنتم تحاولون أن تحلّوا محلّ ChatGPT.",
   "Large language model": "نموذج لغوي كبير",
   Model: "نموذج",
   "Most people meet AI as a chat window that answers questions. That is one kind, and it is not this. Before anything else, here are the four things a reader usually assumes on arriving, and what is actually true.":
-    "الذكاء الاصطناعي عند معظم الناس نافذةُ محادثة تجيب عن الأسئلة. ذاك صنفٌ منه، وليس هو المقصود هنا. وقبل كل شيء، إليك أربعة أمور يفترضها القارئ عادةً حين يفتح هذه الصفحة، وما هو صحيح فعلاً.",
+    "الذكاء الاصطناعي عند معظم الناس نافذةُ محادثة تجيب عن الأسئلة. ذاك صنفٌ منه، وليس هو المقصود هنا. وقبل كل شيء، إليك أربعة أمور يفترضها القارئ عادةً حين يفتح هذه الصفحة، وما هو صحيح فعلًا.",
   "No. It does not write text, hold a conversation, or answer questions. Ask it something in words and nothing happens — it has no way to read a sentence.":
-    "لا. فهو لا يكتب نصّاً ولا يحاور ولا يجيب عن أسئلة. اسأله بالكلام فلن يحدث شيء: قراءة الجُمل ليست في وسعه.",
+    "لا. فهو لا يكتب نصًّا ولا يحاور ولا يجيب عن أسئلة. اسأله بالكلام فلن يحدث شيء: قراءة الجُمل ليست في وسعه.",
   "No. The two do different jobs and could sit next to each other: one proposes what to do, the other decides whether that is allowed and writes down why.":
-    "لا. فعملهما مختلف ويمكن أن يقفا جنباً إلى جنب: أحدهما يقترح ما يُفعل، والآخر يقرّر هل يجوز ويدوّن السبب.",
+    "لا. فعملهما مختلف ويمكن أن يقفا جنبًا إلى جنب: أحدهما يقترح ما يُفعل، والآخر يقرّر هل يجوز ويدوّن السبب.",
   "No. There is no customer, no pilot, and no deployment. What exists is a working piece of software and the mathematics under it.":
     "لا. لا عميل ولا تجربة رائدة ولا نشر. الموجود برنامج يعمل والرياضيات التي تحته.",
   "Open source": "المصدر المفتوح",
   "Publishing the mathematics is not the same as this, and we try never to blur the two.":
     "نشر الرياضيات ليس هو هذا، ونحرص على ألّا نخلط بين الأمرين.",
   "Read the left column first — that is how nearly every AI system you have heard of is put together. The right column is the same three steps done differently. Neither column says anything about which gives better answers.":
-    "اقرأ العمود الأيسر أولاً: هكذا يُركَّب كل نظام ذكاء اصطناعي سمعت به تقريباً. والعمود الأيمن هو الخطوات الثلاث نفسها بطريقة أخرى. ولا يقول أيٌّ من العمودين أين الأجوبة أفضل.",
+    "اقرأ العمود الأيسر أولًا: هكذا يُركَّب كل نظام ذكاء اصطناعي سمعت به تقريبًا. والعمود الأيمن هو الخطوات الثلاث نفسها بطريقة أخرى. ولا يقول أيٌّ من العمودين أين الأجوبة أفضل.",
   Reproducible: "قابلية إعادة الإنتاج",
   "START HERE IF AI IS NOT YOUR FIELD": "ابدأ من هنا إن لم يكن الذكاء الاصطناعي مجالك",
   "Same question, same answer, every single time. A clock behaves that way; a dice roll does not.":
@@ -282,24 +282,24 @@ export const aiBasicsAr: TranslationDictionary = {
     "يُعرض على البرنامج ملايين الأمثلة ويُترك ليعدّل أرقامه بنفسه حتى تبدو أجوبته صحيحة في الغالب. ولا يقرّر أحدٌ كم ينبغي أن يكون أيُّ رقم بعينه.",
   "So it is another chatbot.": "إذن فهذا مجرّد روبوت محادثة آخر.",
   "Somebody who does not trust you can run the same thing themselves and get the same result, without asking you for anything.":
-    "من لا يصدّقك يستطيع أن يفعل الشيء نفسه بنفسه فيبلغ النتيجة نفسها، دون أن يطلب منك شيئاً.",
+    "من لا يصدّقك يستطيع أن يفعل الشيء نفسه بنفسه فيبلغ النتيجة نفسها، دون أن يطلب منك شيئًا.",
   "Somebody writes down every position the program is allowed to be in. There are not many, and the list is finished before anything runs.":
-    "يكتب أحدٌ سلفاً كل المواضع المسموح للبرنامج أن يكون فيها. وهي قليلة، والقائمة تامّة قبل أن يعمل أي شيء.",
+    "يكتب أحدٌ سلفًا كل المواضع المسموح للبرنامج أن يكون فيها. وهي قليلة، والقائمة تامّة قبل أن يعمل أي شيء.",
   "THE AI WORDS EVERYONE USES": "كلمات الذكاء الاصطناعي التي يستعملها الجميع",
   "THE SAME THREE STEPS, TWO DIFFERENT WAYS": "الخطوات الثلاث نفسها بطريقتين مختلفتين",
   "The AI words everyone uses": "كلمات الذكاء الاصطناعي التي يستعملها الجميع",
   "The instructions a program is built from are published, so anyone can read them and run them.":
     "التعليمات التي بُني منها البرنامج منشورة: يستطيع أي أحد قراءتها وتشغيلها.",
   "The left column is not a criticism. Building things that way is how the useful AI of the last few years got built, and it does things the right column cannot do at all.":
-    "العمود الأيسر ليس مأخذاً على أحد. فهكذا بُني كل الذكاء الاصطناعي النافع في السنوات الأخيرة، وهو يفعل ما لا يستطيعه العمود الأيمن أصلاً.",
+    "العمود الأيسر ليس مأخذًا على أحد. فهكذا بُني كل الذكاء الاصطناعي النافع في السنوات الأخيرة، وهو يفعل ما لا يستطيعه العمود الأيمن أصلًا.",
   "The moment a trained program actually produces an answer, as opposed to the time it spent being trained.":
-    "اللحظة التي يُخرج فيها البرنامج المدرَّب جواباً، في مقابل الزمن الذي قضاه في التدريب.",
+    "اللحظة التي يُخرج فيها البرنامج المدرَّب جوابًا، في مقابل الزمن الذي قضاه في التدريب.",
   "The program is shown millions of examples until its answers usually look right.":
     "يُعرض على البرنامج ملايين الأمثلة حتى تبدو أجوبته صحيحة في الغالب.",
   "The usual way": "الطريقة المعتادة",
   "The way here": "الطريقة هنا",
   "These are not our words — they belong to the whole industry, and every article you read uses them as though you already know them. Each one below gets a plain sentence and a note on why it turns up here at all.":
-    "ليست هذه كلماتنا، بل كلمات القطاع كلّه، وكل مقال تقرؤه يستعملها كأنّك تعرفها سلفاً. ولكل كلمة أدناه جملةٌ بسيطة وملاحظةٌ عن سبب ورودها هنا أصلاً.",
+    "ليست هذه كلماتنا، بل كلمات القطاع كلّه، وكل مقال تقرؤه يستعملها كأنّك تعرفها سلفًا. ولكل كلمة أدناه جملةٌ بسيطة وملاحظةٌ عن سبب ورودها هنا أصلًا.",
   "This is the failure people fear most, and the reason 'why did it say that?' matters.":
     "هذا أكثر ما يُخشى، ومنه يأتي سؤال «لماذا قال ذلك».",
   "This is the property the whole project is organised around.": "حول هذه الخاصية بُني المشروع كلّه.",
@@ -307,17 +307,17 @@ export const aiBasicsAr: TranslationDictionary = {
   "Twelve words from the AI world, each in one sentence.":
     "اثنتا عشرة كلمة من عالم الذكاء الاصطناعي، كلٌّ منها في جملة واحدة.",
   "We have not measured any of that, so we say none of it. What we can say is narrower: this thing can be checked afterwards, and most cannot.":
-    "لم نقس شيئاً من ذلك، فلا نقول شيئاً منه. وما نستطيع قوله أضيق: هذا الشيء يمكن فحصه لاحقاً، ومعظم الأشياء لا يمكن.",
+    "لم نقس شيئًا من ذلك، فلا نقول شيئًا منه. وما نستطيع قوله أضيق: هذا الشيء يمكن فحصه لاحقًا، ومعظم الأشياء لا يمكن.",
   "We have not run one. Where a site like this would normally show a chart, we say so instead.":
-    "لم نُجرِه. وحيث يضع موقعٌ كهذا رسماً بيانياً عادةً، نقول ذلك صراحةً.",
+    "لم نُجرِه. وحيث يضع موقعٌ كهذا رسمًا بيانيًا عادةً، نقول ذلك صراحةً.",
   "When a program can act, 'why did it do that?' stops being an academic question.":
-    "حين يصبح البرنامج قادراً على الفعل، يكفّ سؤال «لماذا فعل ذلك» عن أن يكون سؤالاً أكاديمياً.",
+    "حين يصبح البرنامج قادرًا على الفعل، يكفّ سؤال «لماذا فعل ذلك» عن أن يكون سؤالًا أكاديميًا.",
   "When a program states something false with complete confidence, in the same tone it uses for things that are true. It is not lying; it has no way to tell the two apart.":
-    "حين يقول البرنامج شيئاً غير صحيح بثقة تامّة، بالنبرة نفسها التي يقول بها الصحيح. وهو لا يكذب: لا وسيلة لديه للتمييز بينهما.",
+    "حين يقول البرنامج شيئًا غير صحيح بثقة تامّة، بالنبرة نفسها التي يقول بها الصحيح. وهو لا يكذب: لا وسيلة لديه للتمييز بينهما.",
   "When a question arrives, an answer comes out of that pile of numbers.":
     "يأتي السؤال فيخرج الجواب من تلك الكومة من الأرقام.",
   "When something arrives, the program picks one entry from the written list. It cannot invent an entry that is not on it.":
-    "يَرِد شيء فيأخذ البرنامج بنداً واحداً من القائمة المكتوبة. ولا يستطيع اختلاق بند ليس فيها.",
+    "يَرِد شيء فيأخذ البرنامج بندًا واحدًا من القائمة المكتوبة. ولا يستطيع اختلاق بند ليس فيها.",
   "Where the answer comes from, and what is left over afterwards.": "من أين يأتي الجواب وماذا يبقى بعده.",
   "Why it turns up here": "لماذا ترد هنا",
   "You do not need to know anything about artificial intelligence to read this page.":

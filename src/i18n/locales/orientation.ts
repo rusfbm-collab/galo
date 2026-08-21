@@ -170,15 +170,15 @@ export const orientationZh: TranslationDictionary = {
 export const orientationAr: TranslationDictionary = {
   "Start here if you are not a mathematician": "ابدأ من هنا إن لم تكن عالِم رياضيات",
   "A chapter that leaves you impressed but unable to state anything precisely has failed. These are the four claims this one is for, and next to each is the operation that settles it — all four are cheap enough to do while reading.":
-    "الفصل الذي يترك القارئ معجَباً وعاجزاً عن قول شيء بدقّة فصلٌ أخفق. وهذه هي الدعاوى الأربع التي كُتب من أجلها هذا الفصل، وإلى جانب كلٍّ منها العملية التي تحسمها؛ وأربعتها أرخص من أن تؤجَّل إلى ما بعد القراءة.",
+    "الفصل الذي يترك القارئ معجَبًا وعاجزًا عن قول شيء بدقّة فصلٌ أخفق. وهذه هي الدعاوى الأربع التي كُتب من أجلها هذا الفصل، وإلى جانب كلٍّ منها العملية التي تحسمها؛ وأربعتها أرخص من أن تؤجَّل إلى ما بعد القراءة.",
   "A finite list of named things, plus one rule for combining two of them, is a table.":
     "قائمة منتهية من أشياء مسمّاة، مع قاعدة واحدة تجمع اثنين منها، هي جدول.",
   "A grid of ready answers. Pick a row, pick a column, read the cell where they cross. Nothing is worked out while you wait — every answer is already written in.":
-    "شبكة من الأجوبة الجاهزة. تختار سطراً وتختار عموداً وتقرأ الخلية عند تقاطعهما. لا شيء يُحسَب وأنت تنتظر — فكل جواب مكتوبٌ سلفاً.",
+    "شبكة من الأجوبة الجاهزة. تختار سطرًا وتختار عمودًا وتقرأ الخلية عند تقاطعهما. لا شيء يُحسَب وأنت تنتظر — فكل جواب مكتوبٌ سلفًا.",
   "A list written in advance has to be finite, and every entry has to have a name.":
-    "القائمة المكتوبة سلفاً يلزم أن تكون منتهية، ويلزم أن يكون لكل بند فيها اسم.",
+    "القائمة المكتوبة سلفًا يلزم أن تكون منتهية، ويلزم أن يكون لكل بند فيها اسم.",
   "A sentence saying where a claim stops. When you meet one, it is not the project hedging — it is the edge of what was actually checked, written down so you do not have to guess it.":
-    "جملة تقول أين ينتهي الادّعاء. وحين تصادفها فاعلم أنّها ليست تحوُّطاً من المشروع، بل هي حافّة ما جرى فحصه فعلاً، مكتوبةً كي لا تضطر إلى تخمينها.",
+    "جملة تقول أين ينتهي الادّعاء. وحين تصادفها فاعلم أنّها ليست تحوُّطًا من المشروع، بل هي حافّة ما جرى فحصه فعلًا، مكتوبةً كي لا تضطر إلى تخمينها.",
   "Add the seven per-level numbers yourself. They are printed, and they come to 560.":
     "اجمع بنفسك الأعداد السبعة الخاصة بالمستويات. فهي مطبوعة، ومجموعها 560.",
   "Anywhere a state is shown.": "في كل موضع تُعرض فيه حالة.",
@@ -195,16 +195,16 @@ export const orientationAr: TranslationDictionary = {
   "Go to the check": "انتقل إلى الفحص",
   "HOW A QUESTION TURNS INTO A TABLE": "كيف يتحوّل سؤالٌ إلى جدول",
   "How many positions are available. Level three has three of them, level seven has seven. Choosing a level is choosing how many cases you are able to tell apart at all.":
-    "كم موضعاً متاح. عند المستوى الثالث ثلاثة، وعند السابع سبعة. واختيارُ المستوى هو اختيارُ عدد الحالات التي تستطيع التمييز بينها أصلاً.",
+    "كم موضعًا متاح. عند المستوى الثالث ثلاثة، وعند السابع سبعة. واختيارُ المستوى هو اختيارُ عدد الحالات التي تستطيع التمييز بينها أصلًا.",
   "I can tell a theorem apart from a running system apart from a plan.":
     "أميّز المبرهنة من النظام العامل، والنظامَ العامل من الخطة.",
   "I know what this project does not claim, because it is listed rather than left out.":
     "أعرف ما لا يدّعيه هذا المشروع، لأنّه مذكورٌ لا محذوف.",
-  "Instead of": "بدلاً من أن",
+  "Instead of": "بدلًا من أن",
   "Keeping a longer log. A longer log records more of what happened. It still records nothing about what the program was allowed to do that day, which is the half of the question that matters.":
-    "أن تحتفظ بسجلّ أطول. السجل الأطول يدوّن مزيداً ممّا حدث، ولا يدوّن مع ذلك شيئاً عمّا كان مسموحاً للبرنامج فعله ذلك اليوم، وهو النصف الذي عليه المدار من السؤال.",
+    "أن تحتفظ بسجلّ أطول. السجل الأطول يدوّن مزيدًا ممّا حدث، ولا يدوّن مع ذلك شيئًا عمّا كان مسموحًا للبرنامج فعله ذلك اليوم، وهو النصف الذي عليه المدار من السؤال.",
   "Not a plausible answer. The same answer — from the engineer today, from an auditor next year, and from whoever inherits the system after both of them have left.":
-    "لا جواباً معقولاً، بل الجوابَ نفسه — من المهندس اليوم، ومن المراجع بعد عام، وممّن يرث النظام بعد رحيلهما معاً.",
+    "لا جوابًا معقولًا، بل الجوابَ نفسه — من المهندس اليوم، ومن المراجع بعد عام، وممّن يرث النظام بعد رحيلهما معًا.",
   "Nothing above says the table is a good answer, only that it is the shape an answer has to have. Whether this particular table is useful for any particular job is a separate question, and this site does not claim to have settled it.":
     "لا شيء ممّا سبق يقول إنّ الجدول جوابٌ جيّد، بل يقول فقط أي شكلٍ يلزم أن يتّخذه الجواب. أمّا هل هذا الجدول بعينه نافعٌ لعملٍ بعينه فسؤالٌ منفصل، ولا يدّعي هذا الموقع أنّه حسمه.",
   "Nothing. This is the point where the requirements run out and the mathematics begins, and it is the only reason there is any mathematics here.":
@@ -216,7 +216,7 @@ export const orientationAr: TranslationDictionary = {
   "Read the six non-claims. Every one of them begins with the word No.":
     "اقرأ الدعاوى الستّ المنفيّة. كلٌّ منها يبدأ بكلمة «لا».",
   "Reconstructing the list afterwards. A list assembled after the fact is an argument about the past. It can be made to fit whatever happened, which is exactly why nobody has to believe it.":
-    "أن تعيد بناء القائمة لاحقاً. فالقائمة المجموعة بعد وقوع الحدث حجاجٌ عن الماضي: يمكن تطويعها لتوافق أيّ شيء جرى، ولهذا بعينه لا يلزم أحداً تصديقها.",
+    "أن تعيد بناء القائمة لاحقًا. فالقائمة المجموعة بعد وقوع الحدث حجاجٌ عن الماضي: يمكن تطويعها لتوافق أيّ شيء جرى، ولهذا بعينه لا يلزم أحدًا تصديقها.",
   "SIX WORDS, EXPLAINED ONCE": "ستّ كلمات، تُشرح مرّة واحدة",
   "So the list of things the program could have done has to exist before it runs.":
     "إذن يلزم أن تكون قائمة ما كان بوسع البرنامج فعله موجودةً قبل أن يعمل.",
@@ -228,11 +228,11 @@ export const orientationAr: TranslationDictionary = {
     "هذا الجدول هو الكائن كلّه. وكل ما عداه في الموقع — الأعداد والإيصالات والحدود — إمّا مقروءٌ منه وإمّا مبرهَنٌ عنه.",
   "The chapter uses these constantly and never stops to define them again.":
     "يستعملها الفصل باستمرار ولا يتوقّف بعد ذلك لتعريفها من جديد.",
-  "The first of the two grids, everywhere they appear in pairs.": "أولى الشبكتين، حيثما وردتا معاً.",
+  "The first of the two grids, everywhere they appear in pairs.": "أولى الشبكتين، حيثما وردتا معًا.",
   "The first of two rules for combining two positions. It counts forward and wraps around at the end, the way a clock face returns to twelve.":
     "أولى قاعدتين تجمعان موضعين. وهي تَعُدّ إلى الأمام لا غير، ثم تلتفّ عند النهاية كما تعود عقارب الساعة إلى الثانية عشرة.",
   "The mathematics on this site is not a preference. It is what is left after four requirements, each of which rules out the obvious alternative. If you disagree with a step, you have found the exact place where you would disagree with the whole project.":
-    "الرياضيات في هذا الموقع ليست تفضيلاً، بل هي ما يتبقّى بعد أربعة متطلّبات، يستبعد كلٌّ منها البديلَ الظاهر. وإن اعترضتَ على خطوة منها فقد وجدتَ بالضبط الموضعَ الذي تختلف فيه مع المشروع كلّه.",
+    "الرياضيات في هذا الموقع ليست تفضيلًا، بل هي ما يتبقّى بعد أربعة متطلّبات، يستبعد كلٌّ منها البديلَ الظاهر. وإن اعترضتَ على خطوة منها فقد وجدتَ بالضبط الموضعَ الذي تختلف فيه مع المشروع كلّه.",
   "The number 560 is a count, not an estimate, and I know what it counts.":
     "العدد 560 عدٌّ لا تقدير، وأنا أعرف ما الذي يَعُدّه.",
   "The second grid, and the reason most of the interesting properties exist.":
@@ -240,11 +240,11 @@ export const orientationAr: TranslationDictionary = {
   "The second rule. Identical to the first, with one exception: one position swallows everything. Start a step there and you finish there, whatever the other input was.":
     "القاعدة الثانية. مطابقة للأولى إلّا في أمر واحد: موضعٌ واحد يبتلع كل شيء. ابدأ منه خطوةً تنتهِ عنده مهما كان المُدخَل الآخر.",
   "This is the whole vocabulary. If a later section loses you, it is almost always one of these six words doing the work — open its page and the sentence usually resolves. Every word here has a page of its own with a real table from the tower and a worked example.":
-    "هذه هي المفردات كلّها. وإذا أضاعك قسمٌ لاحق، فالعامل في ذلك غالباً إحدى هذه الكلمات الستّ — افتح صفحتها وغالباً ما تنحلّ الجملة. ولكل كلمة هنا صفحةٌ خاصة بها فيها جدول حقيقي من البرج ومثالٌ مشروح.",
+    "هذه هي المفردات كلّها. وإذا أضاعك قسمٌ لاحق، فالعامل في ذلك غالبًا إحدى هذه الكلمات الستّ — افتح صفحتها وغالبًا ما تنحلّ الجملة. ولكل كلمة هنا صفحةٌ خاصة بها فيها جدول حقيقي من البرج ومثالٌ مشروح.",
   "This opening is written for somebody who has to decide whether this is worth funding, buying, or signing off on, and who is not going to work through the algebra to find out. It answers four things before the chapter starts: why there is mathematics here at all, what the six recurring words mean, which parts you can skip, and what you will be able to say once you are done.":
-    "كُتبت هذه الافتتاحية لمن عليه أن يقرّر هل يستحقّ هذا تمويلاً أو شراءً أو توقيعاً، ولن يخوض في الجبر ليعرف. وهي تجيب عن أربعة أمور قبل أن يبدأ الفصل: لماذا توجد رياضيات هنا أصلاً، وما الذي تعنيه الكلمات الستّ المتكرّرة، وأي الأجزاء يمكن تخطّيها، وماذا ستكون قادراً على قوله حين تفرغ.",
-  "WHAT YOU WILL BE ABLE TO SAY": "ماذا ستكون قادراً على قوله",
+    "كُتبت هذه الافتتاحية لمن عليه أن يقرّر هل يستحقّ هذا تمويلًا أو شراءً أو توقيعًا، ولن يخوض في الجبر ليعرف. وهي تجيب عن أربعة أمور قبل أن يبدأ الفصل: لماذا توجد رياضيات هنا أصلًا، وما الذي تعنيه الكلمات الستّ المتكرّرة، وأي الأجزاء يمكن تخطّيها، وماذا ستكون قادرًا على قوله حين تفرغ.",
+  "WHAT YOU WILL BE ABLE TO SAY": "ماذا ستكون قادرًا على قوله",
   "Written L1 through L7.": "يُكتب من L1 إلى L7.",
   "Written down in advance, and complete: not the things it did, and not the things somebody remembers considering, but every option that was on the table at that moment.":
-    "مكتوبةً سلفاً وتامّةً: لا ما فعله، ولا ما يتذكّر أحدٌ أنّه نُظر فيه، بل كلّ خيار كان مطروحاً في تلك اللحظة.",
+    "مكتوبةً سلفًا وتامّةً: لا ما فعله، ولا ما يتذكّر أحدٌ أنّه نُظر فيه، بل كلّ خيار كان مطروحًا في تلك اللحظة.",
 };

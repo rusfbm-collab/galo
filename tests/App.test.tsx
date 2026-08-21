@@ -893,7 +893,7 @@ describe("GALO public site", () => {
     for (const [path, heading] of [
       ["/ru/simple", "Чем мы занимаемся — так, как рассказали бы это другу."],
       ["/zh/simple", "我们在做什么——就像跟朋友讲的那样。"],
-      ["/ar/simple", "ما نفعله، مقولًا كما تقوله لصديق."],
+      ["/ar/simple", "ما نفعله، بالطريقة التي تحكيه بها لصديق."],
     ] as const) {
       setPath(path);
       const view = render(<App />);
@@ -996,7 +996,7 @@ describe("GALO public site", () => {
   it("carries the investor and audit routes into every locale", () => {
     for (const [path, heading] of [
       ["/ru/investors", "Что это такое, что уже работает — и по каким признакам сюда можно больше не возвращаться."],
-      ["/zh/investors", "这是什么、有什么，以及什么会告诉你它不值得你花时间。"],
+      ["/zh/investors", "这是什么、已经有什么，以及什么信号说明可以不必再看下去。"],
       ["/ar/audit", "ما الذي يستطيع مراجع خارجي متشكّك إثباته هنا، وما الذي لا يستطيعه أحد."],
       ["/ru/audit", "Что здесь можно проверить самому — и чего не проверит никто."],
     ] as const) {
@@ -1121,7 +1121,7 @@ describe("GALO public site", () => {
     for (const [path, heading, direction] of [
       ["/ru/symmetry", "Какие переименования оставляют каждое правило ровно там, где оно было.", "ltr"],
       ["/zh/symmetry", "哪些改名能把每一条规则都原封不动留在原处。", "ltr"],
-      ["/ar/symmetry", "أيّ إعادات التسمية تُبقي كلّ قاعدة في موضعها تماماً.", "rtl"],
+      ["/ar/symmetry", "أيّ إعادات التسمية تُبقي كلّ قاعدة في موضعها تمامًا.", "rtl"],
     ] as const) {
       setPath(path);
       const view = render(<App />);
@@ -1182,7 +1182,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "نموذج عالم قابل للتحقّق للذكاء الاصطناعي الخاص والاستقلالية الصناعية.",
+        name: "نموذج عالم قابل للتحقّق: ذكاء اصطناعي خاصّ واستقلالية صناعية.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

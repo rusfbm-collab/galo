@@ -372,7 +372,7 @@ export const theoryFiguresZh: TranslationDictionary = {
 
 export const theoryFiguresAr: TranslationDictionary = {
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one per level of the tower, and the bands widen because each level contributes four times the square of its size.":
-    "شبكة مستطيلة من 560 مربّعاً صغيراً مرتَّبة في 40 عموداً. المربّعات ملوَّنة في سبعة نطاقات، نطاقٌ لكل مستوى من البرج، وتتّسع النطاقات لأنّ كل مستوى يُسهم بأربعة أمثال مربّع حجمه.",
+    "شبكة مستطيلة من 560 مربّعًا صغيرًا مرتَّبة في 40 عمودًا. المربّعات ملوَّنة في سبعة نطاقات، نطاقٌ لكل مستوى من البرج، وتتّسع النطاقات لأنّ كل مستوى يُسهم بأربعة أمثال مربّع حجمه.",
   "Marks per level, from L1 to L7": "عدد العلامات في كل مستوى، من L1 إلى L7",
   "1,204 committed descriptors, 880 of them executable, 440 on the selected pattern frontier":
     "‏1,204 واصفة معلَنة، منها 880 قابلة للتنفيذ و440 على حدّ النمط المختار",
@@ -384,17 +384,17 @@ export const theoryFiguresAr: TranslationDictionary = {
     "منتقٍ حتمي لنمطين مصدريين ثابتين بالضبط، بترتيب مشتقّ من قيمة تجزئة",
   "A grid of 560 marks, one per declared coordinate": "شبكة من 560 علامة، علامة لكل إحداثية معلَنة",
   "A guarantee about a real approval process. It says that if a system encodes its stop as this position, the stop survives the rest of the chain — not that any system has been built that way.":
-    "ضماناً بشأن مسار موافقة حقيقي. إنّها تقول: إذا رمّز نظامٌ توقُّفَه بهذا الموضع بعينه، فإنّ التوقُّف يصمد في بقية السلسلة — لا أنّ نظاماً كهذا قد بُني بالفعل.",
+    "ضمانًا بشأن مسار موافقة حقيقي. إنّها تقول: إذا رمّز نظامٌ توقُّفَه بهذا الموضع بعينه، فإنّ التوقُّف يصمد في بقية السلسلة — لا أنّ نظامًا كهذا قد بُني بالفعل.",
   "A legal or regulatory opinion. The record is an engineering artefact, not an assurance.":
-    "رأياً قانونياً أو تنظيمياً. فالسجل مصنوعٌ هندسي لا شهادةَ ضمان.",
+    "رأيًا قانونيًا أو تنظيميًا. فالسجل مصنوعٌ هندسي لا شهادةَ ضمان.",
   "A live engine. The site recomputes from published formulas; it does not execute the release.":
-    "محرّكاً حيّاً. فالموقع يعيد الحساب انطلاقاً من الصيغ المنشورة، ولا ينفّذ الإصدار.",
+    "محرّكًا حيًّا. فالموقع يعيد الحساب انطلاقًا من الصيغ المنشورة، ولا ينفّذ الإصدار.",
   "A property of the law itself: P0 is the unique left zero of STAR, so any step taken from P0 lands on P0 again.":
     "خاصيةً للقانون نفسه: العنصر P0 هو الصفر الأيسر الوحيد للعملية STAR، ولذلك تعود أي خطوة تنطلق من P0 إلى P0 من جديد.",
   "A reader who takes one line from the first shelf and reads it as a property of the third has been misled, and this site treats that as its own error rather than the reader's.":
-    "القارئ الذي يأخذ سطراً من الرفّ الأول ويقرؤه بوصفه خاصية للرفّ الثالث قد ضُلِّل، ويعدّ هذا الموقع ذلك خطأه هو لا خطأ القارئ.",
+    "القارئ الذي يأخذ سطرًا من الرفّ الأول ويقرؤه بوصفه خاصية للرفّ الثالث قد ضُلِّل، ويعدّ هذا الموقع ذلك خطأه هو لا خطأ القارئ.",
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one band per level of the tower, and the last band ends part-way through its row because the count is exact rather than rounded.":
-    "شبكة مستطيلة من 560 مربّعاً صغيراً مرتَّبة في 40 عموداً. المربّعات ملوَّنة في سبعة نطاقات، نطاقٌ لكل مستوى من البرج، وينتهي النطاق الأخير في منتصف سطره لأنّ العدد مضبوط لا مقرَّب.",
+    "شبكة مستطيلة من 560 مربّعًا صغيرًا مرتَّبة في 40 عمودًا. المربّعات ملوَّنة في سبعة نطاقات، نطاقٌ لكل مستوى من البرج، وينتهي النطاق الأخير في منتصف سطره لأنّ العدد مضبوط لا مقرَّب.",
   "A refusal holds for the rest of the chain instead of being re-argued at each step.":
     "الرفض يسري على بقية السلسلة بدل أن يُعاد الجدال فيه عند كل خطوة.",
   "A sentence has several readings. A named position has one.":
@@ -402,7 +402,7 @@ export const theoryFiguresAr: TranslationDictionary = {
   "A single box on the left holds the pair P0 and P2. Four curved connectors fan out to four labelled rows, one per action family. Three rows end on the target P2 and one row, STAR_LEFT, ends on P0.":
     "على اليسار مربّع واحد يحوي الزوج P0 و‏P2. تتفرّع منه أربعة وصلات منحنية إلى أربعة صفوف معنونة، صفٌّ لكل عائلة فعل. ثلاثة صفوف تنتهي عند الهدف P2، وصفٌّ واحد هو STAR_LEFT ينتهي عند P0.",
   "A small index is not a better index. It is a checkable one: the claim here is about what a reviewer can finish reading, not about capability.":
-    "الفهرس الصغير ليس فهرساً أفضل، بل فهرسٌ قابل للفحص: والادّعاء هنا يتعلّق بما يستطيع المراجع أن يُنهي قراءته، لا بالقدرة.",
+    "الفهرس الصغير ليس فهرسًا أفضل، بل فهرسٌ قابل للفحص: والادّعاء هنا يتعلّق بما يستطيع المراجع أن يُنهي قراءته، لا بالقدرة.",
   "A status is one declared name, not a paragraph somebody has to interpret.":
     "الحالة اسمٌ واحد معلَن، لا فقرةٌ يتعيّن على أحدٍ تأويلها.",
   "A trained Atlas is not present in this release": "لا يوجد Atlas مدرَّب في هذا الإصدار",
@@ -420,11 +420,11 @@ export const theoryFiguresAr: TranslationDictionary = {
     "قراءات Atlas الدلالية وتأثيرات الرتبة وكتابات التعلّم كلّها صفر",
   "BEFORE ANY MATHEMATICS": "قبل أي رياضيات",
   "Below, the same source and active pole are read under each of the four declared action families. Two of the readings disagree with the other two. That is why a record carries level, law, and orientation alongside the pair — without them the line does not determine its own result, and an auditor is left reconstructing intent.":
-    "في ما يلي، يُقرأ المصدر نفسه والقطب الفاعل نفسه تحت كلٍّ من عائلات الأفعال الأربع المعلَنة. وقراءتان منها تخالفان القراءتين الأُخريَين. ولهذا يحمل السجل المستوى والقانون والتوجيه إلى جانب الزوج: فبدونها لا يحدّد السطر نتيجته بنفسه، ويُترك المراجع يعيد بناء النيّة تخميناً.",
+    "في ما يلي، يُقرأ المصدر نفسه والقطب الفاعل نفسه تحت كلٍّ من عائلات الأفعال الأربع المعلَنة. وقراءتان منها تخالفان القراءتين الأُخريَين. ولهذا يحمل السجل المستوى والقانون والتوجيه إلى جانب الزوج: فبدونها لا يحدّد السطر نتيجته بنفسه، ويُترك المراجع يعيد بناء النيّة تخمينًا.",
   "Checking the index is a finite reading task rather than a sampling exercise.":
     "فحص الفهرس مهمّة قراءة منتهية، لا عمليةَ معاينة بالعيّنة.",
   "Coordinates outside this picture. A behaviour that is not one of these marks is not something the declared layer can do at all.":
-    "إحداثيات خارج هذه الصورة. فالسلوك الذي لا يوافق إحدى هذه العلامات ليس شيئاً تستطيع الطبقة المعلَنة فعله أصلاً.",
+    "إحداثيات خارج هذه الصورة. فالسلوك الذي لا يوافق إحدى هذه العلامات ليس شيئًا تستطيع الطبقة المعلَنة فعله أصلًا.",
   "Does not terminate. A reviewer can say the behaviour was not observed in the cases tried, which is a different and weaker sentence.":
     "لا ينتهي. وأقصى ما يستطيع المراجع قولَه أنّ السلوك لم يُلاحَظ في الحالات المجرَّبة، وهذه عبارة أخرى وأضعف.",
   "Does the mathematics say what the site says it says?": "هل تقول الرياضيات ما ينسبه إليها الموقع؟",
@@ -442,7 +442,7 @@ export const theoryFiguresAr: TranslationDictionary = {
   "Four tiers of verifiability and five reproduction steps with expected results":
     "أربع مراتب من القابلية للتحقق، وخمس خطوات لإعادة الإنتاج مع نتائجها المتوقَّعة",
   "If the set of possible behaviours is written down in advance, ruling one out means reading a finite list to the end, and the reading either finds it or does not. If the set is not written down in advance, the same question can only be probed by trying cases, and the answer carries whatever confidence the number of tries supports.":
-    "إذا كانت مجموعة السلوكات الممكنة مكتوبةً سلفاً، فاستبعاد أحدها يعني قراءة قائمة منتهية حتى آخرها، والقراءة إمّا تجده وإمّا لا. أمّا إذا لم تكن المجموعة مكتوبةً سلفاً، فلا سبيل إلى السؤال نفسه إلّا سبر الحالات واحدةً واحدة، ولا يحمل الجواب من الثقة إلّا ما يسنده عدد المحاولات.",
+    "إذا كانت مجموعة السلوكات الممكنة مكتوبةً سلفًا، فاستبعاد أحدها يعني قراءة قائمة منتهية حتى آخرها، والقراءة إمّا تجده وإمّا لا. أمّا إذا لم تكن المجموعة مكتوبةً سلفًا، فلا سبيل إلى السؤال نفسه إلّا سبر الحالات واحدةً واحدة، ولا يحمل الجواب من الثقة إلّا ما يسنده عدد المحاولات.",
   "If this refused an action, what would I be handed?": "لو رفض هذا النظام إجراءً ما، فما الذي سأُعطاه؟",
   "If you are not a mathematician": "إن لم تكن عالِم رياضيات",
   "Independence. Every check published here was run by the project on its own work.":
@@ -483,16 +483,16 @@ export const theoryFiguresAr: TranslationDictionary = {
     "أدلّة التسلسل والتراجع والإبطال محليةٌ بالنسبة إلى العملية، لا مستديمة",
   "Someone signing off": "من يوقّع بالموافقة",
   "Stored release evidence; fresh FULL was not run": "أدلّة الإصدار المخزَّنة؛ ولم يُشغَّل FULL جديد",
-  "THE ENTIRE DECLARED INDEX, DRAWN IN FULL": "الفهرس المعلَن بأكمله، مرسوماً كاملاً",
+  "THE ENTIRE DECLARED INDEX, DRAWN IN FULL": "الفهرس المعلَن بأكمله، مرسومًا كاملًا",
   "THREE SHELVES, AND NOTHING CARRIES BETWEEN THEM": "ثلاثة رفوف، ولا ينتقل شيء بينها",
-  "TWO WAYS TO ESTABLISH THAT SOMETHING CANNOT HAPPEN": "طريقتان لإثبات أنّ شيئاً ما لا يمكن أن يحدث",
+  "TWO WAYS TO ESTABLISH THAT SOMETHING CANNOT HAPPEN": "طريقتان لإثبات أنّ شيئًا ما لا يمكن أن يحدث",
   "TWO WAYS TO READ THE SAME CHAPTER": "طريقتان لقراءة الفصل نفسه",
   "Terminates. A reviewer can say the coordinate is absent because the whole index was read, and a second reviewer gets the same answer.":
     "ينتهي. ويستطيع المراجع أن يقول إنّ الإحداثية غائبة لأنّ الفهرس قُرئ بأكمله — وسيبلغ مراجعٌ ثانٍ الجوابَ نفسه.",
   "The active pole picks the row instead, so the reset row is never entered.":
-    "القطب الفاعل هو الذي يختار السطر، ولذلك لا يُدخَل سطر التصفير أبداً.",
+    "القطب الفاعل هو الذي يختار السطر، ولذلك لا يُدخَل سطر التصفير أبدًا.",
   "The chapter is written twice. Once as mathematics, in order, because that is the only way the claims can be checked. And once as consequences — what each fact would decide for somebody funding, buying, or approving a system. The two readings are set side by side so you can pick one and still reach the end.":
-    "كُتب هذا الفصل مرّتين. مرّةً بوصفه رياضيات، مرتَّبةً بترتيبها، لأنّ هذا هو السبيل الوحيد إلى فحص الدعاوى. ومرّةً بوصفه نتائج — أي ما تقرّره كل واقعة لمن يموّل نظاماً أو يشتريه أو يوافق عليه. والقراءتان موضوعتان جنباً إلى جنب حتى تختار إحداهما وتبلغ النهاية مع ذلك.",
+    "كُتب هذا الفصل مرّتين. مرّةً بوصفه رياضيات، مرتَّبةً بترتيبها، لأنّ هذا هو السبيل الوحيد إلى فحص الدعاوى. ومرّةً بوصفه نتائج — أي ما تقرّره كل واقعة لمن يموّل نظامًا أو يشتريه أو يوافق عليه. والقراءتان موضوعتان جنبًا إلى جنب حتى تختار إحداهما وتبلغ النهاية مع ذلك.",
   "The five slots every published claim has to fill, and the shape of a receipt":
     "الخانات الخمس التي يلزم أن تملأها كل دعوى منشورة، وشكل الإيصال",
   "The lower lane says what the property would decide wherever a layer of this shape were deployed. Nothing has been deployed, so none of it reports a result.":
@@ -504,15 +504,15 @@ export const theoryFiguresAr: TranslationDictionary = {
   "The stage facts, the six risks, and the six-step diligence path":
     "وقائع المرحلة، والمخاطر الستّ، ومسار العناية الواجبة في ست خطوات",
   "The status as a sentence": "الحالة بوصفها جملة",
-  "The status as one of a declared list": "الحالة بوصفها بنداً من قائمة معلَنة",
+  "The status as one of a declared list": "الحالة بوصفها بندًا من قائمة معلَنة",
   "The three meanings attached to the names are an illustration, not part of the mathematics. GALO fixes how many positions exist and how they combine; what each one means in a given deployment is somebody else's declaration.":
-    "المعاني الثلاثة المقرونة بالأسماء توضيحٌ لا جزءٌ من الرياضيات. فـGALO يثبّت كم موضعاً يوجد وكيف تتركّب؛ أمّا ما يعنيه كل موضع في نشرٍ بعينه فإعلانُ شخصٍ آخر.",
+    "المعاني الثلاثة المقرونة بالأسماء توضيحٌ لا جزءٌ من الرياضيات. فـGALO يثبّت كم موضعًا يوجد وكيف تتركّب؛ أمّا ما يعنيه كل موضع في نشرٍ بعينه فإعلانُ شخصٍ آخر.",
   "The two positions are not enough to know what happened. The type is the rest of the record.":
     "الموضعان لا يكفيان لمعرفة ما جرى. والتصنيف هو بقية السجل.",
   "The upper lane is what the chapter proves. The lower lane is what that same fact decides for somebody funding, buying, or signing off on a system. Follow whichever lane you need — the five stops are the same either way.":
-    "المسار العلوي هو ما يبرهنه الفصل. والمسار السفلي هو ما تقرّره الواقعة نفسها لمن يموّل نظاماً أو يشتريه أو يوقّع عليه. فاتّبع المسار الذي تحتاجه — فالمحطّات الخمس هي هي في الحالتين.",
+    "المسار العلوي هو ما يبرهنه الفصل. والمسار السفلي هو ما تقرّره الواقعة نفسها لمن يموّل نظامًا أو يشتريه أو يوقّع عليه. فاتّبع المسار الذي تحتاجه — فالمحطّات الخمس هي هي في الحالتين.",
   "This chapter builds the mathematics in order, which is the right order for learning it and the wrong order for most people who open it. Each card below names a question, the section that answers it, and — in the same card — the thing that section cannot give you.":
-    "يبني هذا الفصل الرياضيات بترتيبها، وهو الترتيب الصحيح لتعلّمها والخاطئ لمعظم من يفتحه. وكل بطاقة أدناه تسمّي سؤالاً، والقسمَ الذي يجيب عنه، وتذكر في البطاقة نفسها ما لا يستطيع ذلك القسم أن يمنحك إيّاه.",
+    "يبني هذا الفصل الرياضيات بترتيبها، وهو الترتيب الصحيح لتعلّمها والخاطئ لمعظم من يفتحه. وكل بطاقة أدناه تسمّي سؤالًا، والقسمَ الذي يجيب عنه، وتذكر في البطاقة نفسها ما لا يستطيع ذلك القسم أن يمنحك إيّاه.",
   "This is a statement about how each claim is established, not about which system is more useful. A declared list can be small and still be the wrong list, and nothing here says otherwise.":
     "هذه عبارة عن كيفية إثبات كل دعوى، لا عن أي النظامين أنفع. فالقائمة المعلَنة قد تكون صغيرة وخاطئة في آن، ولا شيء هنا يقول خلاف ذلك.",
   "This is all of it. Every mark below is one coordinate, and there are no others.":
@@ -521,7 +521,7 @@ export const theoryFiguresAr: TranslationDictionary = {
     "هذه أول مبادلة تجريها النظرية، وعليها تتوقّف كل خاصية تالية. ولا يُكتسب شيء في القدرة التعبيرية — بل يُتنازَل عن الكثير منها. والذي يُشترى بذلك أنّ قارئين يفصل بينهما شهور يفكّان السجل نفسه الفكَّ نفسه.",
   "Three chains of STAR steps at level three": "ثلاث سلاسل من خطوات STAR عند المستوى الثالث",
   "Three histories, four STAR steps each, differing only in where they start. Every node below is recomputed from the law when the page renders. The commercial reading is the plain one: a stop stays a stop, and it cannot be quietly outweighed by whatever arrives next.":
-    "ثلاثة تواريخ، في كلٍّ منها أربع خطوات STAR، لا تختلف إلّا في نقطة الانطلاق. وكل عقدة أدناه يُعاد حسابها من القانون عند عرض الصفحة. أمّا القراءة التجارية فبسيطة: التوقُّف يبقى توقُّفاً، ولا يمكن أن يرجّح عليه ما يأتي بعده في صمت.",
+    "ثلاثة تواريخ، في كلٍّ منها أربع خطوات STAR، لا تختلف إلّا في نقطة الانطلاق. وكل عقدة أدناه يُعاد حسابها من القانون عند عرض الصفحة. أمّا القراءة التجارية فبسيطة: التوقُّف يبقى توقُّفًا، ولا يمكن أن يرجّح عليه ما يأتي بعده في صمت.",
   "Three readings, and the record does not say which one was meant.": "ثلاث قراءات، والسجل لا يقول أيَّها كان المقصود.",
   "Three rows of five linked nodes. The first row never reaches P0. The second row reaches P0 at its second step and stays on P0 for the rest of the row. The third row starts on P0 and stays there. Each link is labelled with the input applied at that step.":
     "ثلاثة صفوف، في كلٍّ منها خمس عقد متّصلة. الصف الأول لا يبلغ P0 قطّ. والصف الثاني يبلغ P0 عند خطوته الثانية ويبقى عليه في بقية الصف. والصف الثالث يبدأ من P0 ويبقى فيه. وكل وصلة معنونة بالمُدخَل المطبَّق في تلك الخطوة.",
@@ -529,7 +529,7 @@ export const theoryFiguresAr: TranslationDictionary = {
     "شريطان أفقيان. الشريط العلوي مصمَت، ينتهي عند حافّة معلَّمة، وعنوانه إحصاءٌ تامّ لـ560 إحداثية. والشريط السفلي بلا حافّة يمنى ويتلاشى، وعنوانه معاينةٌ بالعيّنة تتوقّف حين تتوقّف ميزانية الاختبار.",
   "WHAT AN ABSORBING STATE BUYS": "ماذا تشتري الحالة الماصّة",
   "WHY THE THEORY BEGINS BY NAMING THINGS": "لماذا تبدأ النظرية بالتسمية",
-  "What does the engine actually do on one input?": "ما الذي يفعله المحرّك فعلاً بمُدخَل واحد؟",
+  "What does the engine actually do on one input?": "ما الذي يفعله المحرّك فعلًا بمُدخَل واحد؟",
   "What does the shipped engine actually do?": "ما الذي يفعله المحرّك المسلَّم؟",
   "What exists today, and what is still a plan?": "ما الموجود اليوم، وما الذي لا يزال خطة؟",
   "What is not proven is written down rather than left out.": "ما لم يُبرهَن مكتوبٌ لا محذوف.",
@@ -537,17 +537,17 @@ export const theoryFiguresAr: TranslationDictionary = {
   "What the record carries": "ما الذي يحمله السجل",
   "What this is": "ما هذا",
   "What this is not": "ما ليس هذا",
-  "What would have to be true for the plan to hold?": "ما الذي يلزم أن يكون صحيحاً لتستقيم الخطة؟",
+  "What would have to be true for the plan to hold?": "ما الذي يلزم أن يكون صحيحًا لتستقيم الخطة؟",
   "Which published values can I check myself, and how far does each check reach?":
     "أي القيم المنشورة أستطيع فحصها بنفسي، وإلى أي مدى يصل كل فحص؟",
   "Written down, not built": "مكتوب، لا مبنيّ",
   "You can follow this chapter without doing any algebra.": "يمكنك متابعة هذا الفصل دون أن تُجري أي جبر.",
   "cleared for release": "مُجاز للصرف",
-  "declare the list first": "أعلِن القائمة أولاً",
+  "declare the list first": "أعلِن القائمة أولًا",
   "reaches the reset row at step two": "يبلغ سطر التصفير عند الخطوة الثانية",
   refused: "مرفوض",
   "sampling stops when the budget does": "المعاينة تتوقّف حين تنفد الميزانية",
-  "starts away from the reset row": "ينطلق بعيداً عن سطر التصفير",
+  "starts away from the reset row": "ينطلق بعيدًا عن سطر التصفير",
   "starts on the reset row": "ينطلق من سطر التصفير",
   "the list ends here": "هنا تنتهي القائمة",
   "waiting for a second signature": "بانتظار التوقيع الثاني",

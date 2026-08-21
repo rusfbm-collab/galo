@@ -310,7 +310,7 @@ export const plainZh: TranslationDictionary = {
   "You can argue about it properly": "可以就事论事地争论",
   "You can check it": "可以核实",
   "You can repeat it": "可以重做一遍",
-  "You do not need the mathematics unless you want it.": "除非你自己想要，你并不需要那些数学。",
+  "You do not need the mathematics unless you want it.": "数学部分可以不看，除非你自己想看。",
   "You will usually get a good answer, and quickly. But if the answer turns out wrong, there is nothing to check — you can only ask again and hope.":
     "通常你会得到一个不错的答案，而且很快。可要是这个答案后来错了，你没有东西可以查——只能再问一次，然后指望它对。",
   "Your application was declined. A payment was held. A shipment was rerouted. Nobody typed that decision by hand — a piece of software made it, and it moved on to the next one.":
@@ -439,7 +439,7 @@ export const plainAr: TranslationDictionary = {
     "هذه الكلمات العشر تصنع معظم الالتباس. على اليسار ما تقوله الصفحات الأخرى، وعلى اليمين ما يعنيه فعلًا.",
   "They genuinely do not know. The information was never written down, and by now the program has been updated twice and the people who built it have moved on.":
     "هم حقًّا لا يعرفون. فالمعلومة لم تُدوَّن أصلًا، وقد جرى تحديث البرنامج مرتين منذ ذلك الحين، ومن بنوه انتقلوا إلى أماكن أخرى.",
-  "Three things become possible that usually are not.": "تصبح ثلاثة أمور ممكنة، وهي عادةً ليست كذلك.",
+  "Three things become possible that usually are not.": "ثلاثة أمور تصير ممكنة، وهي في العادة ليست كذلك.",
   "Today the working part handles two kinds of request and takes one step at a time. That is genuinely all. Everything bigger is written down as a plan, and we say so wherever it comes up.":
     "الجزء العامل اليوم يفهم نوعين من الطلبات ويخطو خطوة واحدة في المرة. هذا كل شيء حقًّا. وكل ما هو أكبر مكتوب بوصفه خطة، ونقول ذلك في كل موضع يرد فيه.",
   "WHAT THAT BUYS YOU": "ماذا يمنحك ذلك",
@@ -456,7 +456,7 @@ export const plainAr: TranslationDictionary = {
     "ما يعمل اليوم، مقابل ما هو خطة فقط. نفصل بينهما في كل موضع، لأن خلطهما هو ما يُضلّل الناس.",
   "What that buys you": "ماذا يمنحك ذلك",
   "What we actually do about it": "ما الذي نفعله حياله",
-  "What we do, said the way you would say it to a friend.": "ما نفعله، مقولًا كما تقوله لصديق.",
+  "What we do, said the way you would say it to a friend.": "ما نفعله، بالطريقة التي تحكيه بها لصديق.",
   "What we would rather tell you ourselves": "ما نفضّل أن نقوله نحن",
   "When people hear that the whole thing rests on a table, they assume something is being simplified for their benefit. It is not. The table really is the foundation, and you learned how to use one at about the age of eight.":
     "حين يسمع الناس أن كل شيء يقوم على جدول، يظنون أن الأمر بُسِّط من أجلهم. وليس كذلك. الجدول هو الأساس فعلًا — وقد تعلّمت استعماله في نحو الثامنة من عمرك.",

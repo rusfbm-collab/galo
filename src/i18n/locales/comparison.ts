@@ -907,7 +907,7 @@ export const comparisonAr: TranslationDictionary = {
   "The digest that lets somebody else confirm they are looking at this exact record and not a similar one.":
     "الملخص الذي يتيح لشخص آخر أن يتأكد أنه ينظر إلى هذا السجل بعينه لا إلى سجل مشابه.",
   "The five things this page is most likely to be taken to mean.":
-    "الأشياء الخمسة التي يُرجَّح أن تُفهَم هذه الصفحة على أنها تعنيها.",
+    "خمسة معانٍ يُرجَّح أن تُحمَل عليها هذه الصفحة.",
   "The formal statements": "العبارات الشكلية",
   "The interesting configuration is not one against the other.": "التكوين المثير للاهتمام ليس أحدهما ضد الآخر.",
   "The kernel is a finite algebra with proved structure, and the current runtime is a bounded slice of it. Whether the whole architecture amounts to more than a rule engine is decided by the target world-model loop, which is specified and not implemented.":

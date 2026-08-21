@@ -898,7 +898,7 @@ export const audienceZh: TranslationDictionary = {
   "Watch the accepted input contract. If it is still exactly two fixed patterns after the next block of work, the concern is real.":
     "盯住被接受的输入契约。如果在下一段工作做完之后，它仍然恰好是两个固定模式，那这份担心就是真的。",
   "What a sceptical outsider can establish here, and what nobody can.":
-    "一个持怀疑态度的外部人在这里能确立什么，以及什么是谁都确立不了的。",
+    "一个存疑的外人在这里能坐实什么，又有什么是谁都坐实不了的。",
   "What an outsider can actually establish": "外部人究竟能确立到什么",
   "What cannot be established from here": "在这里无法确立什么",
   "What did the check return?": "检查返回了什么？",
@@ -915,7 +915,7 @@ export const audienceZh: TranslationDictionary = {
   "What operation decides it?": "由哪一个操作来决定？",
   "What stage is this?": "这处在什么阶段？",
   "What this is, what exists, and what would tell you it is not worth your time.":
-    "这是什么、有什么，以及什么会告诉你它不值得你花时间。",
+    "这是什么、已经有什么，以及什么信号说明可以不必再看下去。",
   "What this page gives you": "这一页给你什么",
   "What would a failed audit look like here?": "在这里，一次失败的审计会是什么样子？",
   "What would settle it": "什么能了结这个问题",
@@ -1109,7 +1109,7 @@ export const audienceAr: TranslationDictionary = {
     "خمسة مربعات في صف مربوطة بأسهم وموسومة claim وscope وartifact وcheck وstatus. كل مربع مرقّم، والأخير يسرد الحالات الست التي قد يعيدها الفحص.",
   "Five of the six steps cost less than one meeting.": "خمس من الخطوات الست تكلّف أقل من اجتماع واحد.",
   "Five sentences that a reviewer would otherwise have to discover by exhaustion.":
-    "خمس جمل كان على المراجع أن يكتشفها بالاستقصاء لولاها.",
+    "خمس جمل، لولاها لما عرفها المراجع إلا بالاستقصاء.",
   "Five slots, and a sentence that cannot fill them is not published as a claim.":
     "خمسة حقول، والجملة التي لا تملؤها لا تُنشر بوصفها ادعاءً.",
   "Five slots. A statement that cannot fill all five is not published as a claim.":
@@ -1309,7 +1309,7 @@ export const audienceAr: TranslationDictionary = {
   "The level, the release, the accepted input contract, and the runtime. A claim quoted without its scope is the most common way a record on this site could be misused.":
     "المستوى، والإصدار، وعقد المدخلات المقبول، وبيئة التشغيل. والادعاء المقتبس دون نطاقه هو أشيع طريقة قد يُساء بها استعمال سجل من هذا الموقع.",
   "The list a reader would otherwise have to assemble by noticing absences.":
-    "قائمة كان على القارئ أن يجمعها بملاحظة الغيابات لولاها.",
+    "قائمة، لولاها لاضطُرّ القارئ إلى تجميعها من ملاحظة ما هو غائب.",
   "The mechanism being audited": "الآلية موضع التدقيق",
   "The narrow scope may never widen.": "النطاق الضيق قد لا يتسع أبدًا.",
   "The open-ended system keeps proposing; the declared layer keeps the part that has to be defensible, and the boundary between them is written rather than argued.":
@@ -1400,7 +1400,7 @@ export const audienceAr: TranslationDictionary = {
   "What operation decides it?": "أي عملية تحسمه؟",
   "What stage is this?": "في أي مرحلة هذا؟",
   "What this is, what exists, and what would tell you it is not worth your time.":
-    "ما هذا، وما القائم، وما الذي سيخبرك بأنه لا يستحق وقتك.",
+    "ما هذا، وما الذي يعمل فعلًا، وما الذي يخبرك أنّه لا يستحقّ وقتك.",
   "What this page gives you": "ما تعطيه هذه الصفحة",
   "What would a failed audit look like here?": "كيف يبدو تدقيق فاشل هنا؟",
   "What would settle it": "ما الذي يحسمه",

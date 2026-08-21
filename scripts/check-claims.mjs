@@ -76,6 +76,7 @@ const forbidden = [
   "جاهز للإنتاج",
   "مدعوم من Hub71",
   "لا يهلوس أبداً",
+  "لا يهلوس أبدًا",
   "STAR is closed and has right identity P0",
   "STAR замкнут и имеет правую единицу P0",
   "no homomorphism L3→L5",

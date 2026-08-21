@@ -57,7 +57,7 @@ export const theoryAr: TranslationDictionary = {
   "START HERE · NO ADVANCED MATHEMATICS REQUIRED": "ابدأ هنا · لا تُشترط رياضيات متقدمة",
   "GALO theory, explained from the first state transition.": "نظرية GALO مشروحة ابتداءً من أول انتقال حالة.",
   "This guided chapter starts with a three-state dial and builds the theory one verified step at a time. Every key idea is shown in plain language, as a formula, as a finite table, and with an explicit limit on what it proves.":
-    "يبدأ هذا الفصل الموجَّه بقرص ذي ثلاث حالات، ثم يبني النظرية خطوةً متحقَّقًا منها في كل مرة. وتُعرض كل فكرة أساسية بلغة مبسطة، وبصيغة، وبجدول منتهٍ، مع حدّ صريح لما تثبته.",
+    "يبدأ هذا الفصل الموجَّه بقرص ذي ثلاث حالات، ثم يبني النظرية خطوةً خطوة، وكلُّ خطوة متحقَّق منها. وتُعرض كل فكرة أساسية بلغة مبسطة، وبصيغة، وبجدول منتهٍ، مع حدّ صريح لما تثبته.",
   "Learning path": "مسار التعلّم",
   "named states": "حالات مسمّاة",
   "exact transitions": "انتقالات دقيقة",

@@ -314,7 +314,7 @@ export const programmeZh: TranslationDictionary = {
   "Founder only. Two first hires are named in the plan below and neither has been made, so every engineering statement on this site is the work of one person.":
     "只有创始人。下面的计划中点名了最先要招的两个人，两人一个都还没到位，因此本站的每一条工程陈述都出自一个人之手。",
   "Four facts an assessor will want that are not published here.": "评估者会需要、但本站并未发布的四项事实。",
-  "Four reasons the work is shaped like the region's problems.": "这项工作在形态上契合本地区问题的四个理由。",
+  "Four reasons the work is shaped like the region's problems.": "这项工作为什么正好对得上本地区的问题——四个理由。",
   "Four things asked for, and four deliberately not asked for.": "我们请求的四件事，以及我们刻意不请求的四件事。",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits": "GALO AI 申请档案 — 评估条目、里程碑与边界",
   "GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or any of its partners. This page is an application dossier prepared by the project. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
@@ -440,7 +440,7 @@ export const programmeZh: TranslationDictionary = {
   "This is a property of the current release described by its own selfchecks, not a data-residency certification and not a security review. Neither has been carried out by anyone.":
     "这是当前版本按其自检所具有的性质，既不是数据驻留认证，也不是安全审计。这两样都没有人做过。",
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
-    "本页的存在，是为了让第一次交谈从开放的问题开始，而不是从已经封闭的问题开始。十二条评估条目，其中六条为否定。十二个月的承诺，每一项都带有能显示其未兑现的那个观察。以及我们预计会被追问的六个问题，答案是它们今天的样子，而不是我们希望的样子。",
+    "本页的存在，是为了让第一次交谈从开放的问题开始，而不是从已经封闭的问题开始。十二条评估条目，其中六条为否定。十二个月的承诺，每一项都写明：什么情况算没做到。以及我们预计会被追问的六个问题，答案是它们今天的样子，而不是我们希望的样子。",
   "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
     "本站以从右至左的版式交付阿拉伯语版本，并且只要有一条被渲染的字符串缺少译文，构建就会失败。这是一个网站，不是一次部署，而这就是全部的主张。",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
@@ -463,7 +463,7 @@ export const programmeZh: TranslationDictionary = {
   "What would make the founder stop?": "什么会让创始人停下来？",
   "Where it stands today": "今天的状况",
   "Who has checked this?": "这些由谁核实过？",
-  "Why the work is shaped like the region's problems": "这项工作为什么在形态上契合本地区的问题",
+  "Why the work is shaped like the region's problems": "这项工作为什么正好对得上本地区的问题",
   "Why would a finite algebra matter when language models exist?": "既然已经有了语言模型，有限代数还有什么意义？",
 };
 
@@ -473,16 +473,16 @@ export const programmeAr: TranslationDictionary = {
   "Months 3–9": "الأشهر ٣–٩",
   "Months 6–12": "الأشهر ٦–١٢",
   "Months 9–12": "الأشهر ٩–١٢",
-  "12-MONTH PLAN, WRITTEN TO BE MARKED": "خطة اثني عشر شهراً، مكتوبةٌ لتُؤشَّر بنودها",
+  "12-MONTH PLAN, WRITTEN TO BE MARKED": "خطة اثني عشر شهرًا، مكتوبةٌ لتُؤشَّر بنودها",
   "A base to incorporate in, hire from, and operate from for the twelve months above.":
-    "قاعدةٌ للتأسيس والتوظيف والعمل طوال الاثني عشر شهراً المذكورة أعلاه.",
+    "قاعدةٌ للتأسيس والتوظيف والعمل طوال الاثني عشر شهرًا المذكورة أعلاه.",
   "A bounded evaluation on a partner's data, with the success condition agreed in writing beforehand, that comes back negative — published as it came back. That is what the fourth and fifth milestones are for.":
     "تقييمٌ محدود على بيانات شريك، بشرط نجاحٍ متَّفق عليه كتابةً قبل التنفيذ، يعود بنتيجة سلبية — ويُنشر كما عاد. ولهذا بعينه وُضع الالتزامان الرابع والخامس.",
   "A customer commitment made on our behalf, or pressure applied to anyone to run a pilot.":
     "التزامٍ من عميل يُؤخذ نيابةً عنّا، أو ضغطٍ يُمارَس على أحدٍ لإجراء تجربة رائدة.",
   "A decision somebody can be made to answer for": "قرارٌ يمكن مساءلة أحدٍ عنه",
   "A localized website is not a localized product. It shows that the discipline exists and is enforced, not that any Arabic-language deployment has been made.":
-    "الموقع المعرَّب ليس منتجاً معرَّباً. إنّه يبيّن أنّ الانضباط قائمٌ ومُلزِم، لا أنّ نشراً باللغة العربية قد تمّ.",
+    "الموقع المعرَّب ليس منتجًا معرَّبًا. إنّه يبيّن أنّ الانضباط قائمٌ ومُلزِم، لا أنّ نشرًا باللغة العربية قد تمّ.",
   "A measurement is produced and only a favourable one reaches the public record.":
     "أُجري القياس ولم يبلغ السجل العلني إلّا القياس المؤاتي.",
   "A page addressed to a programme is the easiest place on a website to imply a connection that has not happened. So the statement is made once, plainly, and the build refuses to ship without it.":
@@ -492,17 +492,17 @@ export const programmeAr: TranslationDictionary = {
   "A public endorsement, a logo, or a quotation to reuse in future material.":
     "تأييدٍ علني أو شعارٍ أو اقتباسٍ يُعاد استعماله في موادّ لاحقة.",
   "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
-    "الإصدار موجود ويُعاد إنتاجه. تنجح إعادات التشغيل الحديثة STATIC وFAST على مفسِّر CPython 3.12.13 قياسي، ومسجَّلٌ 1,366 من 1,366 فحصاً مخزَّناً من نوع FULL عبر 131 وحدة.",
+    "الإصدار موجود ويُعاد إنتاجه. تنجح إعادات التشغيل الحديثة STATIC وFAST على مفسِّر CPython 3.12.13 قياسي، ومسجَّلٌ 1,366 من 1,366 فحصًا مخزَّنًا من نوع FULL عبر 131 وحدة.",
   "A running artefact exists": "يوجد مصنوعٌ يعمل",
   AFFILIATION: "الارتباط",
-  "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلاناً",
+  "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلانًا",
   "Abu Dhabi is the planned operating base — stated as intent, not as a done thing.":
     "أبوظبي هي قاعدة التشغيل المزمعة؛ وهذه نيّةٌ معلَنة لا أمرٌ منجَز.",
   Affiliation: "الارتباط",
   "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
-    "ملف طلب أُعدّ للتقييم: اثنا عشر بنداً تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهراً من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+    "ملف طلب أُعدّ للتقييم: اثنا عشر بندًا تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
   "An introduction that would be presented anywhere as validation of the technical claims.":
-    "تعارفٍ يُقدَّم في أي مكان بوصفه تصديقاً على الدعاوى التقنية.",
+    "تعارفٍ يُقدَّم في أي مكان بوصفه تصديقًا على الدعاوى التقنية.",
   "Anybody's signature on a claim that this site has not itself established.":
     "توقيعِ أحدٍ على دعوى لم يُثبتها هذا الموقع نفسه.",
   "Arabic already shipped": "العربية مُنجَزة بالفعل",
@@ -523,7 +523,7 @@ export const programmeAr: TranslationDictionary = {
   "DOCUMENT CONTROL": "ضبط الوثيقة",
   "Delivery in Arabic": "التسليم بالعربية",
   "Document control": "ضبط الوثيقة",
-  "Does any of this help anyone?": "هل ينفع هذا أحداً؟",
+  "Does any of this help anyone?": "هل ينفع هذا أحدًا؟",
   "Dossier navigation": "التنقّل في الملف",
   "Each claim below is followed by what it does not reach. A fit argument without its limit is a sales argument, and it does not survive the first technical reviewer.":
     "يلي كل دعوى أدناه ما لا تبلغه. وحجّة الملاءمة بلا حدّها حجّةُ بائع، ولا تصمد أمام أول مراجعٍ تقني.",
@@ -548,7 +548,7 @@ export const programmeAr: TranslationDictionary = {
     "المؤسِّس وحده. وقد سُمّي أول موظَّفَين في الخطة أدناه ولم يُوظَّف أيٌّ منهما، ولذلك فكل عبارة هندسية في هذا الموقع عملُ شخصٍ واحد.",
   "Four facts an assessor will want that are not published here.": "أربع وقائع سيطلبها المقيِّم وليست منشورةً هنا.",
   "Four reasons the work is shaped like the region's problems.":
-    "أربعة أسباب تجعل هذا العمل مصوغاً على شكل مسائل المنطقة.",
+    "أربعة أسباب تجعل هذا العمل على مقاس مسائل المنطقة.",
   "Four things asked for, and four deliberately not asked for.": "أربعة أمور مطلوبة، وأربعة لا تُطلب عن قصد.",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits":
     "ملف طلب GALO AI — بنود التقييم والالتزامات والحدود",
@@ -573,7 +573,7 @@ export const programmeAr: TranslationDictionary = {
   "It states what exists, what does not, and how to check both, at the level of detail a diligence call would otherwise consume. Every line links to the page that carries its evidence.":
     "يذكر ما هو موجود وما هو غير موجود وكيف يُفحص كلاهما، بالتفصيل الذي كانت مكالمة العناية الواجبة ستستهلكه لولا ذلك. وكل بند يحيل إلى الصفحة التي تحمل دليله.",
   Limit: "الحدّ",
-  "Missed if": "يُعدّ مُخفَقاً إذا",
+  "Missed if": "يُعدّ مُخفَقًا إذا",
   "No capital has been raised and there are no external shareholders, so there is nothing to show.":
     "لم يُجمع أي رأس مال ولا يوجد مساهمون خارجيون، فليس ثمّة ما يُعرض.",
   "No incorporated entity exists at the end of the quarter, or the founder is not working from the city.":
@@ -581,10 +581,10 @@ export const programmeAr: TranslationDictionary = {
   "No operating company has been incorporated and no revenue has been recognised.":
     "لم تُؤسَّس شركة عاملة ولم يُعترف بأي إيراد.",
   "No regulator, supervisory authority, or standards body has reviewed any of this, and no regulated deployment exists. The shape of the answer is established; its acceptance by anyone is not.":
-    "لم تراجع أيُّ جهة رقابية أو إشرافية أو معيارية شيئاً من هذا، ولا وجود لنشرٍ خاضع للتنظيم. فشكل الجواب ثابت؛ أمّا قبوله من أحدٍ فلا.",
+    "لم تراجع أيُّ جهة رقابية أو إشرافية أو معيارية شيئًا من هذا، ولا وجود لنشرٍ خاضع للتنظيم. فشكل الجواب ثابت؛ أمّا قبوله من أحدٍ فلا.",
   "No relationship is being claimed here, and none exists.": "لا تُدَّعى هنا أي علاقة، ولا وجود لعلاقة.",
   "No timing, cost, throughput, or efficiency figure has been measured, and none is claimed. That a thing runs is not a statement about what it costs to run.":
-    "لم يُقَس أي زمنٍ أو كلفةٍ أو معدّل نفاذٍ أو كفاءة، ولا يُدَّعى شيء من ذلك. وكونُ الشيء يعمل ليس قولاً عمّا يكلّفه تشغيله.",
+    "لم يُقَس أي زمنٍ أو كلفةٍ أو معدّل نفاذٍ أو كفاءة، ولا يُدَّعى شيء من ذلك. وكونُ الشيء يعمل ليس قولًا عمّا يكلّفه تشغيله.",
   "Nobody outside the project. Every replay, every proof re-derivation, and every published count was produced by the same party that benefits from them being right. That is the honest description of the evidence base today.":
     "لا أحد من خارج المشروع. فكل إعادة تشغيل، وكل إعادة اشتقاق لبرهان، وكل عدد منشور، أنتجه الطرف نفسه الذي يستفيد من صحّتها. وهذا هو الوصف الأمين لقاعدة الأدلّة اليوم.",
   None: "لا شيء",
@@ -593,7 +593,7 @@ export const programmeAr: TranslationDictionary = {
   "None. Every check published on this site was run by the project on its own work. This is the single largest gap in the dossier, and the second milestone below exists only to close it.":
     "لا شيء. فكل فحص منشور في هذا الموقع أجراه المشروع على عمله هو. وهذه أكبر ثغرة في الملف، ولم يوضع الالتزام الثاني أدناه إلّا لسدّها.",
   "None. No angel round, no grant, no accelerator cheque, no convertible. The work to date was self-funded.":
-    "لا شيء. لا جولة ملائكية ولا منحة ولا شيك مسرِّعة أعمال ولا قرض قابل للتحويل. وقد مُوِّل كل العمل حتى الآن ذاتياً.",
+    "لا شيء. لا جولة ملائكية ولا منحة ولا شيك مسرِّعة أعمال ولا قرض قابل للتحويل. وقد مُوِّل كل العمل حتى الآن ذاتيًا.",
   "None. The project has never invoiced anyone.": "لا شيء. لم يُصدر المشروع فاتورةً لأحد قطّ.",
   "Not asked for": "غير المطلوب",
   "Not incorporated. Incorporation is the first milestone below rather than a completed step, and until it happens there is no entity to contract with.":
@@ -616,9 +616,9 @@ export const programmeAr: TranslationDictionary = {
   "Provided directly to an assessing party on request.": "يُقدَّم إلى الجهة المقيِّمة مباشرةً عند الطلب.",
   "Publish the first measurement of external operational effect, whatever it turns out to be.":
     "نشر أول قياس للأثر التشغيلي الخارجي، مهما تكن نتيجته.",
-  "READ THIS FIRST": "اقرأ هذا أولاً",
+  "READ THIS FIRST": "اقرأ هذا أولًا",
   "RELEASE OF RECORD": "الإصدار المرجعي",
-  "Read the full assessment dossier": "اقرأ ملف التقييم كاملاً",
+  "Read the full assessment dossier": "اقرأ ملف التقييم كاملًا",
   "Release of record": "الإصدار المرجعي",
   "Release record and boundaries": "سجل الإصدار والحدود",
   "Relocation and base of operations": "الانتقال وقاعدة التشغيل",
@@ -637,12 +637,12 @@ export const programmeAr: TranslationDictionary = {
     "معلَنٌ لا منفَّذ. ينوي المؤسِّس الانتقال إلى أبوظبي وبناء فريق التشغيل هناك. والنيّة ليست إقامة، ويبقى هذا البند على هذه الحالة حتى يوجد كيانٌ وتأشيرة.",
   "THE ASK, IN BOTH DIRECTIONS": "الطلب، في الاتجاهين",
   "THE HARD PART OF THE CONVERSATION": "الجزء الصعب من الحديث",
-  "THE STATE OF PLAY, LINE BY LINE": "الوضع الراهن، بنداً بنداً",
-  "TWELVE MONTHS, WRITTEN TO BE MARKED": "اثنا عشر شهراً، مكتوبةً لتُؤشَّر بنودها",
+  "THE STATE OF PLAY, LINE BY LINE": "الوضع الراهن، بندًا بندًا",
+  "TWELVE MONTHS, WRITTEN TO BE MARKED": "اثنا عشر شهرًا، مكتوبةً لتُؤشَّر بنودها",
   "Take one published count and recompute it, or take one proposition and look for a counterexample. If 560 is wrong, or a proposition fails at any level, the foundation is wrong and nothing built on it survives. The whole index is small enough to check by hand.":
-    "خذ عدداً منشوراً وأعد حسابه، أو خذ قضيةً وابحث عن مثالٍ مضادّ. فإن كان 560 خاطئاً، أو سقطت قضيةٌ عند أي مستوى، فالأساس خاطئ ولا ينجو شيء بُني عليه. والفهرس كلّه أصغر من أن يتعذّر فحصه يدوياً.",
+    "خذ عددًا منشورًا وأعد حسابه، أو خذ قضيةً وابحث عن مثالٍ مضادّ. فإن كان 560 خاطئًا، أو سقطت قضيةٌ عند أي مستوى، فالأساس خاطئ ولا ينجو شيء بُني عليه. والفهرس كلّه أصغر من أن يتعذّر فحصه يدويًا.",
   "Take the twelve-month table, keep it, and come back with it. Each milestone carries the observation that would show it was missed, so the document can be marked rather than believed.":
-    "خذ جدول الاثني عشر شهراً واحتفظ به وعُد به. فلكل التزامٍ الملاحظةُ التي تُظهر أنّه لم يُنفَّذ — ولذلك تُؤشَّر هذه الوثيقة ولا تُصدَّق.",
+    "خذ جدول الاثني عشر شهرًا واحتفظ به وعُد به. فلكل التزامٍ الملاحظةُ التي تُظهر أنّه لم يُنفَّذ — ولذلك تُؤشَّر هذه الوثيقة ولا تُصدَّق.",
   Team: "الفريق",
   "Technical reviewers with an interest in attacking the mathematics rather than confirming it.":
     "مراجعون تقنيون يهمّهم مهاجمة الرياضيات لا تأكيدها.",
@@ -660,36 +660,36 @@ export const programmeAr: TranslationDictionary = {
     "أن يُجري المشروعُ إعادةَ الاشتقاق بنفسه، أو أن تُجرى من الخارج ثم لا تُنشر لأنّها جاءت سيّئة.",
   "The same picture in business terms": "الصورة نفسها بلغة الأعمال",
   "The second list matters more than the first. It fixes in advance what could otherwise be read into an introduction, a meeting, or a logo appearing next to ours.":
-    "القائمة الثانية أهمّ من الأولى. فهي تثبّت سلفاً ما كان يمكن أن يُقرأ في تعارفٍ أو اجتماعٍ أو شعارٍ يظهر إلى جانب شعارنا.",
+    "القائمة الثانية أهمّ من الأولى. فهي تثبّت سلفًا ما كان يمكن أن يُقرأ في تعارفٍ أو اجتماعٍ أو شعارٍ يظهر إلى جانب شعارنا.",
   "The success condition is written after the results are seen, or the data used is ours rather than a partner's.":
     "أن يُكتب شرط النجاح بعد رؤية النتائج، أو أن تكون البيانات المستعملة بياناتنا لا بيانات شريك.",
   "The time to be measured against the five milestones above, and to be dropped if they are missed.":
     "الوقتُ لأن نُقاس بالالتزامات الخمسة أعلاه، ولأن نُستبعَد إن أُخفِق فيها.",
   "The verification handbook": "دليل التحقق",
   "The whole site is delivered in Arabic with right-to-left layout, with mathematical notation isolated so it stays readable, and the build fails if a single rendered string lacks its translation. An assessor can check this in one click by switching the language.":
-    "يُسلَّم الموقع كلّه بالعربية بتخطيطٍ من اليمين إلى اليسار، مع عزل الترميز الرياضي ليبقى مقروءاً، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. ويستطيع المقيِّم التحقّق من ذلك بنقرة واحدة بتبديل اللغة.",
+    "يُسلَّم الموقع كلّه بالعربية بتخطيطٍ من اليمين إلى اليسار، مع عزل الترميز الرياضي ليبقى مقروءًا، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. ويستطيع المقيِّم التحقّق من ذلك بنقرة واحدة بتبديل اللغة.",
   "There is no operating company today, so there is nothing to contract with. Incorporation is the first milestone below rather than a completed step.":
     "لا توجد اليوم شركة عاملة، فليس ثمّة من يُتعاقَد معه. والتأسيس هو الالتزام الأول أدناه لا خطوةً منجَزة.",
   "These are the questions that decide the meeting. Answering them here costs the advantage of a rehearsed reply and gains the only thing worth more: the assessor can check the answers before spending an hour on them.":
-    "هذه الأسئلة بعينها هي التي تحسم الاجتماع. والإجابة عنها هنا تكلّفنا ميزة الردّ المُعَدّ سلفاً وتكسبنا الشيء الوحيد الأثمن منها: أن يستطيع المقيِّم فحص الأجوبة قبل أن ينفق عليها ساعة.",
+    "هذه الأسئلة بعينها هي التي تحسم الاجتماع. والإجابة عنها هنا تكلّفنا ميزة الردّ المُعَدّ سلفًا وتكسبنا الشيء الوحيد الأثمن منها: أن يستطيع المقيِّم فحص الأجوبة قبل أن ينفق عليها ساعة.",
   "This is a property of the current release described by its own selfchecks, not a data-residency certification and not a security review. Neither has been carried out by anyone.":
-    "هذه خاصية للإصدار الحالي بحسب فحوصه الذاتية، لا شهادةَ إقامةِ بيانات ولا مراجعةَ أمن. ولم يُجرِ أحدٌ أياً منهما.",
+    "هذه خاصية للإصدار الحالي بحسب فحوصه الذاتية، لا شهادةَ إقامةِ بيانات ولا مراجعةَ أمن. ولم يُجرِ أحدٌ أيًا منهما.",
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
-    "وُجدت هذه الصفحة كي يبدأ الحديث الأول من الأسئلة المفتوحة لا من المغلقة. اثنا عشر بنداً للتقييم، ستّة منها سلبية. واثنا عشر شهراً من الالتزامات، لكلٍّ منها الملاحظة التي تُظهر إخفاقه. وستّة أسئلة نتوقّع أن نُساءل عنها، بأجوبتها كما هي اليوم لا كما نودّ أن تكون.",
+    "وُجدت هذه الصفحة كي يبدأ الحديث الأول من الأسئلة المفتوحة لا من المغلقة. اثنا عشر بندًا للتقييم، ستّة منها سلبية. واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرطُ الإخفاق مكتوبًا سلفًا. وستّة أسئلة نتوقّع أن نُساءل عنها، بأجوبتها كما هي اليوم لا كما نودّ أن تكون.",
   "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
     "يُسلَّم هذا الموقع بالعربية بتخطيطٍ من اليمين إلى اليسار، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. وهو موقعٌ لا نشرٌ، وهذا هو الادّعاء كلّه.",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
-    "ثلاثة بنود ثابتة، وثلاثة غائبة تماماً، والباقي جزئي أو غير مُفصَح عنه. وهكذا يبدو مشروعٌ بحثيّ ما قبل التأسيس إذا صُوِّر بصدق؛ وأي عرضٍ آخر لن يكلّف إلّا الساعة الأولى من الاجتماع الأول.",
-  "Twelve lines an assessor works through": "اثنا عشر بنداً يمرّ بها المقيِّم",
+    "ثلاثة بنود ثابتة، وثلاثة غائبة تمامًا، والباقي جزئي أو غير مُفصَح عنه. وهكذا يبدو مشروعٌ بحثيّ ما قبل التأسيس إذا صُوِّر بصدق؛ وأي عرضٍ آخر لن يكلّف إلّا الساعة الأولى من الاجتماع الأول.",
+  "Twelve lines an assessor works through": "اثنا عشر بندًا يمرّ بها المقيِّم",
   "Twelve lines an assessor works through. Six of them are negative.":
-    "اثنا عشر بنداً يمرّ بها المقيِّم. ستّة منها سلبية.",
-  "Twelve months, with failure conditions": "اثنا عشر شهراً مع شروط الإخفاق",
+    "اثنا عشر بندًا يمرّ بها المقيِّم. ستّة منها سلبية.",
+  "Twelve months, with failure conditions": "اثنا عشر شهرًا مع شروط الإخفاق",
   "Two of them are withheld on purpose and two of them do not exist yet. Saying which is which is the point: an absence with no explanation reads the same as something being hidden.":
     "اثنان منها لا يُفصَح عنهما عن قصد، واثنان لم يوجدا بعد. وبيانُ أيِّهما أيّ هو المقصود: فالغياب بلا تفسير يُقرأ كما يُقرأ الإخفاء.",
   "Unknown, and stated as unknown everywhere it could be misread. Nothing has been measured against any alternative or against doing nothing at all. Anyone claiming otherwise on our behalf would be going beyond what this project can support.":
     "غير معروف، وقد ذُكر أنّه غير معروف في كل موضع كان يمكن أن يُقرأ فيه على خلاف ذلك. فلم يُقَس شيء في مواجهة أي بديل ولا في مواجهة عدم الفعل. ومن يدّعي خلاف ذلك نيابةً عنّا يتجاوز ما يستطيع المشروع إسناده.",
-  "WHAT A WEBSITE IS THE WRONG PLACE FOR": "ما لا يصلح الموقع مكاناً له",
-  "What has actually been proved?": "ما الذي بُرهن عليه فعلاً؟",
+  "WHAT A WEBSITE IS THE WRONG PLACE FOR": "ما لا يصلح الموقع مكانًا له",
+  "What has actually been proved?": "ما الذي بُرهن عليه فعلًا؟",
   "What is asked for, and what is not": "ما المطلوب وما غير المطلوب",
   "What is the fastest way to disprove the technical claim?": "ما أسرع طريق لدحض الدعوى التقنية؟",
   "What it deliberately avoids": "ما تتجنّبه عن قصد",
@@ -699,7 +699,7 @@ export const programmeAr: TranslationDictionary = {
   "What would make the founder stop?": "ما الذي يجعل المؤسِّس يتوقّف؟",
   "Where it stands today": "أين يقف الأمر اليوم",
   "Who has checked this?": "من الذي فحص هذا؟",
-  "Why the work is shaped like the region's problems": "لماذا صيغ هذا العمل على شكل مسائل المنطقة",
+  "Why the work is shaped like the region's problems": "لماذا جاء هذا العمل على مقاس مسائل المنطقة",
   "Why would a finite algebra matter when language models exist?":
     "لماذا يهمّ جبرٌ منتهٍ ما دامت النماذج اللغوية موجودة؟",
 };

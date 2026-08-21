@@ -69,7 +69,7 @@ export const ar: TranslationDictionary = {
   Home: "الرئيسية",
   "GALO technical evaluation": "التقييم التقني لـ GALO",
   "Research architecture for decisions that have to be defensible afterwards: what was permitted, what was chosen, and a record anyone can replay.":
-    "بنية بحثية للقرارات التي يلزم الدفاع عنها لاحقاً: ما كان مسموحاً، وما الذي اختير، وسجلّ يستطيع أي شخص أن يعيده.",
+    "بنية بحثية للقرارات التي يلزم الدفاع عنها لاحقًا: ما كان مسموحًا، وما الذي اختير، وسجلّ يستطيع أي شخص أن يعيده.",
   "Working bounded prototype. Persistent learning, external operational gain, General AI, commercial traction, and programme selection are not claimed.":
     "نموذج أولي عامل ومحدود النطاق. لا ندّعي وجود تعلّم مستديم، أو مكسب تشغيلي خارجي، أو ذكاء اصطناعي عام، أو زخم تجاري، أو اختيار ضمن أي برنامج.",
   "Founder & Chief Architect": "المؤسس وكبير مهندسي البنية",
@@ -348,7 +348,7 @@ export const ar: TranslationDictionary = {
   "FOUNDER / ARCHITECT": "المؤسس / مهندس البنية",
   FOUNDER: "المؤسس",
   "Founder-led research, built with adversarial claim discipline.":
-    "بحث يقوده المؤسس ومبني على انضباط صارم للاختبار المضاد للادعاءات.",
+    "بحث يقوده المؤسس، ينضبط بأن تُختبر كلّ دعوى بما قد يدحضها.",
   RELOCATION: "الانتقال",
   "FOUNDING TEAM PLAN": "خطة الفريق المؤسس",
   "Systems engineering · Research/evaluation · Abu Dhabi partnerships":
@@ -442,7 +442,7 @@ export const ar: TranslationDictionary = {
   "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
     "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية، منتجها الأول ضمان القرار الصناعي. تُنشر نتائج التعلّم المحدودة النطاق مع نتائجها السلبية؛ والصلاحية الخاضعة لسيطرة الشريك غير مُثبتة، والاستقلالية الإنتاجية غير مأذون بها.",
   "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
-    "GALO AI — نموذج عالم قابل للتحقّق للذكاء الاصطناعي الخاص والاستقلالية الصناعية",
+    "GALO AI — نموذج عالم قابل للتحقّق: ذكاء اصطناعي خاصّ واستقلالية صناعية",
   "Evidence — GALO AI": "GALO AI — الأدلة وحدود الادعاءات",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "الأدلة العامة وحدود الادعاءات للإصدار البحثي الحالي من GALO.",

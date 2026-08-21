@@ -182,27 +182,27 @@ export const mathFiguresAr: TranslationDictionary = {
   "A prime level has nothing between P0 and the whole ring, which is why L5 and L7 have two sub-collections while the smaller L6 has four. Size is not the same as structure, and this is the clearest place that shows it.":
     "المستوى الأوّليّ لا شيء بين P0 والحلقة كلّها، ولذلك لـL5 وL7 مجموعتان فرعيتان لكلٍّ منهما، بينما لـL6 الأصغر أربع. الحجم ليس هو البنية، وهذا أوضح موضع يُظهر ذلك.",
   "A single counterexample settles this permanently: no later result can make STAR associative. What it does not settle is anything about PLUS, which is associative at every level and is checked separately.":
-    "مثال مضاد واحد يحسم هذا نهائياً: لا نتيجة لاحقة تجعل STAR تجميعياً. أمّا ما لا يحسمه فهو أي شيء عن PLUS، فهو تجميعي في كل مستوى ويُفحص على حدة.",
+    "مثال مضاد واحد يحسم هذا نهائيًا: لا نتيجة لاحقة تجعل STAR تجميعيًا. أمّا ما لا يحسمه فهو أي شيء عن PLUS، فهو تجميعي في كل مستوى ويُفحص على حدة.",
   "Add the same position repeatedly and count the steps back to P0.":
     "أضِف الموضع نفسه مرّة بعد مرّة، وعُدّ الخطوات حتى العودة إلى P0.",
   "Agreement between two methods is a check on the arithmetic, not evidence about anything outside it. It says the counting is right; it says nothing about what the orbits are for.":
-    "اتّفاق الطريقتين تحقّقٌ من الحساب لا دليلٌ على شيء خارجه. يقول إنّ العدّ صحيح، ولا يقول شيئاً عمّا تصلح له المدارات.",
+    "اتّفاق الطريقتين تحقّقٌ من الحساب لا دليلٌ على شيء خارجه. يقول إنّ العدّ صحيح، ولا يقول شيئًا عمّا تصلح له المدارات.",
   "Both methods agree at every level.": "تتّفق الطريقتان في كل مستوى.",
   "Cells where PLUS and STAR return different positions": "الخلايا التي يعيد فيها PLUS وSTAR مواضع مختلفة",
   "Count the distinct results along each row and each column. A tick means all five appeared; a number means how few did. The whole failure of STAR is one row, and it drags four of the five columns down with it.":
     "عُدّ النتائج المختلفة في كل صفّ وكل عمود. علامة الصحّ تعني أنّ الخمسة كلّها ظهرت، والرقم يقول كم ظهر منها. وإخفاق STAR كلّه صفٌّ واحد، وهو يجرّ معه أربعة أعمدة من خمسة.",
   "Count the orbits by walking them, or never look at an orbit and average instead.":
-    "عُدّ المدارات بالمرور عليها، أو لا تنظر إلى مدار أصلاً وخُذ المتوسّط بدلاً من ذلك.",
+    "عُدّ المدارات بالمرور عليها، أو لا تنظر إلى مدار أصلًا وخُذ المتوسّط بدلًا من ذلك.",
   "Each square below is one level: rows are the left input, columns the right. A filled cell is a pair where PLUS and STAR return different positions. They sit in the first row only, and P0 combined with itself is not among them.":
     "كل مربّع أدناه مستوى واحد: الصفوف هي المُدخَل الأيسر والأعمدة هي الأيمن. والخلية المملوءة زوجٌ يعيد فيه PLUS وSTAR موضعين مختلفين. وهي في الصفّ الأول وحده، وP0 مع نفسه ليس منها.",
   "Every position exactly once in every row and column — PLUS passes, STAR does not.":
     "كل موضع مرّة واحدة بالضبط في كل صفّ وكل عمود: PLUS ينجح وSTAR لا.",
   "HOW LONG EACH POSITION TAKES TO COME HOME": "كم يستغرق كل موضع ليعود إلى بيته",
-  "Move the brackets and STAR gives a different position.": "حرِّك الأقواس فيعطي STAR موضعاً آخر.",
+  "Move the brackets and STAR gives a different position.": "حرِّك الأقواس فيعطي STAR موضعًا آخر.",
   "ONE TRIPLE, TWO ANSWERS": "ثلاثة مُدخَلات، جوابان",
   "One row wide, at every level, and nowhere else.": "بعرض صفٍّ واحد، في كل مستوى، ولا في أي موضع آخر.",
   "Orbit counts by enumeration and by averaging, level by level": "أعداد المدارات بالمرور وبالمتوسّط، مستوى بعد مستوى",
-  "P0, already home": "P0، وهو في بيته أصلاً",
+  "P0, already home": "P0، وهو في بيته أصلًا",
   "PLUS at L5": "PLUS عند L5",
   "Repeat one step from P0 and you land in a smaller closed ring — one for each divisor.":
     "كرِّر خطوة واحدة من P0 فتقع في حلقة أصغر مغلقة — واحدة لكل قاسم.",
@@ -218,28 +218,28 @@ export const mathFiguresAr: TranslationDictionary = {
   "THE RINGS INSIDE A RING": "حلقات داخل حلقة",
   "THE SAME NUMBER, REACHED TWO DIFFERENT WAYS": "العدد نفسه، بطريقتين مختلفتين",
   "Take the same three inputs in the same order and only change which pair is combined first. Under PLUS the answer would not move. Under STAR it does, and that single fact is what stops STAR from being a semigroup.":
-    "خذ المُدخَلات الثلاثة نفسها بالترتيب نفسه، ولا تغيّر إلّا أيّ زوج يُدمج أوّلاً. تحت PLUS لا يتزحزح الجواب؛ وتحت STAR يتزحزح، وهذه الحقيقة وحدها تمنع STAR من أن تكون شبه زمرة.",
-  "The Latin-square test applied to both laws at L5": "اختبار المربّع اللاتيني مطبَّقاً على القانونين عند L5",
+    "خذ المُدخَلات الثلاثة نفسها بالترتيب نفسه، ولا تغيّر إلّا أيّ زوج يُدمج أوّلًا. تحت PLUS لا يتزحزح الجواب؛ وتحت STAR يتزحزح، وهذه الحقيقة وحدها تمنع STAR من أن تكون شبه زمرة.",
+  "The Latin-square test applied to both laws at L5": "اختبار المربّع اللاتيني مطبَّقًا على القانونين عند L5",
   "The first method goes pair by pair and crosses off everything each orbit touches. The second asks each lawful relabelling how many pairs it leaves exactly where they were, and takes the average. They are unrelated procedures and they agree at every level.":
-    "الطريقة الأولى تمضي زوجاً بعد زوج وتشطب كل ما يمسّه كل مدار. والثانية تسأل كل إعادة تسمية مشروعة: كم زوجاً تتركه في مكانه تماماً؟ ثم تأخذ المتوسّط. إجراءان لا صلة بينهما، ويتّفقان في كل مستوى.",
+    "الطريقة الأولى تمضي زوجًا بعد زوج وتشطب كل ما يمسّه كل مدار. والثانية تسأل كل إعادة تسمية مشروعة: كم زوجًا تتركه في مكانه تمامًا؟ ثم تأخذ المتوسّط. إجراءان لا صلة بينهما، ويتّفقان في كل مستوى.",
   "The four closed sub-collections of L6 and how they nest": "المجموعات الفرعية المغلقة الأربع لـL6 وكيف تتداخل",
   "The number on each tile is how many additions of that position return you to P0. It is the level divided by whatever factor the two share, so at a prime level every position but P0 takes the full lap.":
-    "الرقم على كل مربّع هو كم مرّة تُضاف هذا الموضع حتى تعود إلى P0. وهو المستوى مقسوماً على العامل المشترك بينهما، ولذلك يقطع كل موضع عدا P0 دورة كاملة عند مستوى أوّليّ.",
+    "الرقم على كل مربّع هو كم مرّة تُضاف هذا الموضع حتى تعود إلى P0. وهو المستوى مقسومًا على العامل المشترك بينهما، ولذلك يقطع كل موضع عدا P0 دورة كاملة عند مستوى أوّليّ.",
   "The same three inputs bracketed two ways at L3": "المُدخَلات الثلاثة نفسها بترتيبَي أقواس عند L3",
   "This is the standard test and it is decisive in one direction only: failing it rules a table out of being a group table, while passing it does not by itself make one. The rest of the group properties are checked separately.":
     "هذا الاختبار المعياريّ، وهو حاسم في اتجاه واحد فقط: الإخفاق فيه يُخرج الجدول من كونه جدول زمرة، أمّا النجاح فلا يجعله كذلك بذاته. وبقيّة خصائص الزمرة تُفحص على حدة.",
   "Two five-by-five tables. In the PLUS table every row and every column contains each of P0 to P4 exactly once, and every margin carries a tick. In the STAR table the first row is P0 five times, so that row is marked 1, and four of the five columns are marked 4.":
-    "جدولان خمسة في خمسة. في جدول PLUS يحوي كل صفّ وكل عمود كلّاً من P0 إلى P4 مرّة واحدة بالضبط، وعلى الهوامش علامات صحّ في كل موضع. أمّا في جدول STAR فالصفّ الأول هو P0 خمس مرّات، فيُعلَّم ذلك الصفّ بـ1، وتُعلَّم أربعة أعمدة من خمسة بـ4.",
+    "جدولان خمسة في خمسة. في جدول PLUS يحوي كل صفّ وكل عمود كلًّا من P0 إلى P4 مرّة واحدة بالضبط، وعلى الهوامش علامات صحّ في كل موضع. أمّا في جدول STAR فالصفّ الأول هو P0 خمس مرّات، فيُعلَّم ذلك الصفّ بـ1، وتُعلَّم أربعة أعمدة من خمسة بـ4.",
   "Two rows of tiles. At L6 the counts read one, six, three, two, three, six. At L7 they read one followed by six sevens. The composite level splits into several different answers; the prime level does not.":
     "صفّان من المربّعات. عند L6 تُقرأ الأعداد: واحد، ستّة، ثلاثة، اثنان، ثلاثة، ستّة. وعند L7: واحد يتبعه ستّة أعداد قيمتها سبعة. المستوى المؤلَّف ينقسم إلى أجوبة مختلفة، والمستوى الأوّليّ لا.",
   "Two rows. The upper row combines P1 with P0 first, giving P1, and then combines that with P1 to reach P2. The lower row combines P0 with P1 first, giving P0, and then combines P1 with that to reach P1. The two rows end on different positions.":
-    "صفّان. يدمج الصفّ العلوي P1 مع P0 أوّلاً فينتج P1، ثم يدمج ذلك مع P1 فيبلغ P2. ويدمج الصفّ السفلي P0 مع P1 أوّلاً فينتج P0، ثم يدمج P1 مع ذلك فيبلغ P1. وينتهي الصفّان عند موضعين مختلفين.",
-  "WHERE THE TWO LAWS ACTUALLY DISAGREE": "أين يفترق القانونان فعلاً",
+    "صفّان. يدمج الصفّ العلوي P1 مع P0 أوّلًا فينتج P1، ثم يدمج ذلك مع P1 فيبلغ P2. ويدمج الصفّ السفلي P0 مع P1 أوّلًا فينتج P0، ثم يدمج P1 مع ذلك فيبلغ P1. وينتهي الصفّان عند موضعين مختلفين.",
+  "WHERE THE TWO LAWS ACTUALLY DISAGREE": "أين يفترق القانونان فعلًا",
   "at L6, adding P2 three times returns to P0 through P2 and P4":
-    "عند L6، إضافة P2 ثلاث مرّات تعيدك إلى P0 مروراً بـP2 وP4",
+    "عند L6، إضافة P2 ثلاث مرّات تعيدك إلى P0 مرورًا بـP2 وP4",
   "at a prime level nothing shares a factor, so every position takes the full lap":
     "عند مستوى أوّليّ لا يشترك شيء في عامل، فيقطع كل موضع دورة كاملة",
-  "comes home early, on a shorter ring": "يعود مبكّراً، على حلقة أقصر",
+  "comes home early, on a shorter ring": "يعود مبكّرًا، على حلقة أقصر",
   "counted by averaging what each relabelling leaves fixed": "معدود بمتوسّط ما تتركه كل إعادة تسمية في مكانه",
   "counted by walking every orbit": "معدود بالمرور على كل مدار",
   "disagreeing pairs at level n, all of them in the first row":
@@ -260,7 +260,7 @@ export const mathFiguresAr: TranslationDictionary = {
   "the only other lawful relabelling at L6 leaves just two positions where they were":
     "إعادة التسمية المشروعة الأخرى الوحيدة عند L6 لا تُبقي في مكانه سوى موضعين",
   "the relabelling that changes nothing leaves every pair fixed":
-    "إعادة التسمية التي لا تغيّر شيئاً تترك كل زوج في مكانه",
+    "إعادة التسمية التي لا تغيّر شيئًا تترك كل زوج في مكانه",
   "the same three inputs, two bracketings, two positions": "المُدخَلات الثلاثة نفسها، ترتيبا أقواس، وموضعان",
   "the two laws agree": "يتّفق القانونان",
   "the two laws return different positions": "يعيد القانونان موضعين مختلفين",

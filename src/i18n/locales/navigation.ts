@@ -57,7 +57,7 @@ export const navigationAr: TranslationDictionary = {
   "Automorphisms, orbits, and the Burnside counts.": "التشاكلات الذاتية والمدارات وأعداد بيرنسايد.",
   "Built up from the first state transition.": "مبنيّة ابتداءً من أول انتقال حالة.",
   "EVERY PAGE ON THIS SITE": "كل صفحات هذا الموقع",
-  "Four tracks, and how far each one has actually come.": "أربعة مسارات، وإلى أين وصل كلٌّ منها فعلاً.",
+  "Four tracks, and how far each one has actually come.": "أربعة مسارات، وإلى أين وصل كلٌّ منها فعلًا.",
   "How this differs from a chatbot, and who else is in the field.":
     "بمَ يختلف هذا عن روبوت دردشة، ومن غيره في هذا الميدان.",
   "If you have to decide": "إذا كان عليك أن تقرّر",
@@ -74,7 +74,7 @@ export const navigationAr: TranslationDictionary = {
   "What a sceptic can establish here, and what nobody can.":
     "ما يستطيع المشكِّك أن يثبته هنا، وما لا يستطيع أحد إثباته.",
   "What exists, what does not, and what would tell you to walk away.":
-    "ما هو موجود، وما ليس موجوداً، وما الذي يقول لك إنّ عليك الانصراف.",
+    "ما هو موجود، وما ليس موجودًا، وما الذي يقول لك إنّ عليك الانصراف.",
   "Whatever you were looking for, it is one of these.": "مهما كان ما تبحث عنه، فهو واحد من هذه.",
   "Back to top": "العودة إلى الأعلى",
 };
