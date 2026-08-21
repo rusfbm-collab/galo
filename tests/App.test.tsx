@@ -360,6 +360,11 @@ describe("GALO public site", () => {
     setPath("/evidence");
     render(<App />);
 
+    // The carrier the numbers came from is named, and it is not the release archive.
+    const carrier = document.querySelector(".sealed-archive__value")?.textContent ?? "";
+    expect(carrier).toBe("eb81fa17c11ca9cb1658edeaf72b104bdbeef5de3818449a0159dd42308fd279");
+    expect(carrier).not.toBe(document.querySelector(".fingerprint-card__value .mono")?.textContent);
+
     // What a reviewer can run comes before what the numbers say.
     const replay = document.querySelectorAll(".sealed-replay article");
     expect(replay).toHaveLength(3);

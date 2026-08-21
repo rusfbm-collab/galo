@@ -1588,7 +1588,7 @@ export function TheoryPage() {
             </div>
             <dl dir="ltr">
               <div>
-                <dt>archive_sha256</dt>
+                <dt>release_archive_sha256</dt>
                 <dd>{releaseEvidence.archiveFingerprint}</dd>
               </div>
               <div>

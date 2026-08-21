@@ -15799,6 +15799,41 @@ caption bdi {
 
 /* ---- the V65–V67 learning line on /evidence ---- */
 
+/* The carrier the sealed numbers actually came from. It sits above the audit
+   strip because "which archive" outranks "how many checks". */
+.sealed-archive {
+  display: grid;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--teal-deep);
+  border-radius: 18px;
+  padding: 20px 24px;
+  margin-top: 34px;
+  background: var(--white);
+}
+
+.sealed-archive p {
+  margin: 0;
+}
+
+.sealed-archive__value {
+  overflow-wrap: anywhere;
+  color: var(--navy-950);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.sealed-archive > p:last-child {
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.sealed-replay {
+  margin-top: 14px;
+}
+
 /* What a reviewer can run without asking us for anything. It sits above the
    results because how the numbers are checkable outranks what they say. */
 .sealed-replay {

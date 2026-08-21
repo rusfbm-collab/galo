@@ -89,6 +89,17 @@ export const learningResults: readonly LearningResult[] = [
   },
 ];
 
+/**
+ * The single executable carrier. Earlier steps of the line had working archives
+ * of their own; those are out of circulation, and naming this one is what stops
+ * a number on this site from being traced to an artefact nobody ships any more.
+ */
+export const sealedArchive = {
+  label: "Programme archive of record",
+  sha256: "eb81fa17c11ca9cb1658edeaf72b104bdbeef5de3818449a0159dd42308fd279",
+  note: "Every learning figure on this page comes from this archive and no other. The frozen kernel release is a separate carrier with its own fingerprint, and the two are never blended.",
+} as const;
+
 export type SealedReplay = {
   label: string;
   value: string;
@@ -179,6 +190,8 @@ export const learningBoundaries: readonly LearningBoundary[] = [
 ];
 
 export const learningEvidenceTranslationKeys = [
+  sealedArchive.label,
+  sealedArchive.note,
   ...learningResults.flatMap((row) => [row.task, row.headline, row.establishes, row.boundary]),
   ...sealedReplay.flatMap((row) => [row.label, row.detail]),
   ...learningContract,

@@ -5,7 +5,13 @@ import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { releaseEvidence } from "../content/evidence";
-import { learningBoundaries, learningContract, learningResults, sealedReplay } from "../content/learningEvidence";
+import {
+  learningBoundaries,
+  learningContract,
+  learningResults,
+  sealedArchive,
+  sealedReplay,
+} from "../content/learningEvidence";
 import { publicClaims } from "../content/publicClaims";
 import { useI18n } from "../i18n/I18nContext";
 
@@ -51,8 +57,12 @@ export function EvidencePage() {
             </div>
             <div>
               <p className="eyebrow">{t("RELEASE FINGERPRINT")}</p>
-              <h2>{t("Bound to one immutable research archive.")}</h2>
-              <p>{t("Metrics on this page are not blended with historical releases.")}</p>
+              <h2>{t("The release counts below are bound to this archive and no other.")}</h2>
+              <p>
+                {t(
+                  "This is the frozen kernel release. The sealed learning line further down runs from a separate archive with its own fingerprint, printed there. Neither set of numbers is blended with the other, and no figure on this page comes from an archive that is out of circulation.",
+                )}
+              </p>
             </div>
             <button
               className="fingerprint-card__value"
@@ -227,6 +237,14 @@ export function EvidencePage() {
                 )}
               </p>
             </div>
+          </div>
+
+          <div className="sealed-archive">
+            <p className="eyebrow">{t(sealedArchive.label)}</p>
+            <p className="sealed-archive__value mono" dir="ltr">
+              {sealedArchive.sha256}
+            </p>
+            <p>{t(sealedArchive.note)}</p>
           </div>
 
           <div className="sealed-replay">

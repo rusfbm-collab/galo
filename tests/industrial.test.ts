@@ -10,10 +10,12 @@ import {
   stopRule,
   wedgeSeparation,
 } from "../src/content/industrial";
+import { releaseEvidence } from "../src/content/evidence";
 import {
   learningBoundaries,
   learningContract,
   learningResults,
+  sealedArchive,
   sealedReplay,
 } from "../src/content/learningEvidence";
 
@@ -252,6 +254,16 @@ describe("the sealed V75-V78 learning line", () => {
       expect(row.headline).toMatch(/with the key.*with it withheld/i);
       expect(row.headline).toContain("CI95");
     }
+  });
+
+  it("names one carrier for these numbers, and it is the programme archive", () => {
+    // Earlier steps of the line had working archives of their own and those are
+    // out of circulation. A number traceable to a withdrawn artefact is the
+    // failure this pins against.
+    expect(sealedArchive.sha256).toMatch(/^[0-9a-f]{64}$/);
+    expect(sealedArchive.sha256).toBe("eb81fa17c11ca9cb1658edeaf72b104bdbeef5de3818449a0159dd42308fd279");
+    expect(sealedArchive.sha256).not.toBe(releaseEvidence.archiveFingerprint);
+    expect(sealedArchive.note).toMatch(/never blended/i);
   });
 
   it("states what a reviewer can run without asking us for anything", () => {

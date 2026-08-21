@@ -7,6 +7,10 @@ import type { TranslationDictionary } from "../translations";
  */
 
 export const sealedEvidenceRu: TranslationDictionary = {
+  "Every learning figure on this page comes from this archive and no other. The frozen kernel release is a separate carrier with its own fingerprint, and the two are never blended.": "Каждая цифра про обучение на этой странице взята из этого архива и ни из какого другого. Замороженный релиз ядра — отдельный носитель со своим отпечатком, и эти два никогда не смешиваются.",
+  "Programme archive of record": "Программный архив, на который ссылаемся",
+  "The release counts below are bound to this archive and no other.": "Счётчики релиза ниже привязаны к этому архиву и ни к какому другому.",
+  "This is the frozen kernel release. The sealed learning line further down runs from a separate archive with its own fingerprint, printed there. Neither set of numbers is blended with the other, and no figure on this page comes from an archive that is out of circulation.": "Это замороженный релиз ядра. Опечатанная линия обучения ниже работает из отдельного архива со своим отпечатком, который там и напечатан. Ни один из двух наборов цифр не смешивается с другим, и ни одна цифра на этой странице не взята из архива, выведенного из обращения.",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. It runs in the sealed prototype, and not in the shipped release.": "План, записанный деревом шагов, а не одним ходом, так что весь план можно осмотреть до того, как что-либо из него запустится. Он работает в опечатанном прототипе, а не в поставляемом релизе.",
   "Carrying what was learned from one run into the next. Learning writes are held at zero in the shipped release; in the sealed prototype line this stage is exactly what was measured.": "Перенос выученного из одного прогона в следующий. В поставляемом релизе записи обучения держатся на нуле; в опечатанной прототипной линии этот этап — ровно то, что и измерялось.",
   "Changing one belief without retraining everything around it. This is the loop the architecture is designed around, and it does not run in the shipped release.": "Изменение одного убеждения без переобучения всего вокруг. Это тот цикл, вокруг которого построена архитектура, и в поставляемом релизе он не работает.",
@@ -72,6 +76,10 @@ export const sealedEvidenceRu: TranslationDictionary = {
 };
 
 export const sealedEvidenceZh: TranslationDictionary = {
+  "Every learning figure on this page comes from this archive and no other. The frozen kernel release is a separate carrier with its own fingerprint, and the two are never blended.": "本页上关于学习的每一个数字，都取自这个归档，而不是别的任何归档。冻结的内核发布是另一个独立的载体，有它自己的指纹，这两者从不混在一起。",
+  "Programme archive of record": "作为依据的程序归档",
+  "The release counts below are bound to this archive and no other.": "下面这些发布版的计数，绑定的是这个归档，而不是别的任何归档。",
+  "This is the frozen kernel release. The sealed learning line further down runs from a separate archive with its own fingerprint, printed there. Neither set of numbers is blended with the other, and no figure on this page comes from an archive that is out of circulation.": "这是冻结的内核发布。下面那条封存的学习线，跑的是另一个归档，有它自己的指纹，就印在那里。两组数字谁也不跟谁混在一起；本页上也没有任何一个数字来自已经退出流通的归档。",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. It runs in the sealed prototype, and not in the shipped release.": "把计划写成一棵步骤树，而不是一步棋，这样整个计划在任何一步跑起来之前都能被查看。它在封存的原型里运行，不在发布出去的版本里。",
   "Carrying what was learned from one run into the next. Learning writes are held at zero in the shipped release; in the sealed prototype line this stage is exactly what was measured.": "把一次运行里学到的东西带到下一次。在发布出去的版本里，学习写入保持为零；而在封存的原型线里，这一阶段恰恰就是被测量的那个东西。",
   "Changing one belief without retraining everything around it. This is the loop the architecture is designed around, and it does not run in the shipped release.": "改掉一个信念，而不必把它周围的一切都重新训练一遍。架构就是围着这个回路建起来的，而它在发布出去的版本里并不运行。",
@@ -137,6 +145,10 @@ export const sealedEvidenceZh: TranslationDictionary = {
 };
 
 export const sealedEvidenceAr: TranslationDictionary = {
+  "Every learning figure on this page comes from this archive and no other. The frozen kernel release is a separate carrier with its own fingerprint, and the two are never blended.": "كلّ رقم عن التعلّم في هذه الصفحة مأخوذ من هذا الأرشيف دون سواه. أمّا إصدار النواة المجمَّد فحاملٌ منفصل ببصمته الخاصّة، ولا يُخلَط الاثنان أبداً.",
+  "Programme archive of record": "أرشيف البرنامج المرجعي",
+  "The release counts below are bound to this archive and no other.": "عدّادات الإصدار أدناه مرتبطة بهذا الأرشيف دون سواه.",
+  "This is the frozen kernel release. The sealed learning line further down runs from a separate archive with its own fingerprint, printed there. Neither set of numbers is blended with the other, and no figure on this page comes from an archive that is out of circulation.": "هذا هو إصدار النواة المجمَّد. أمّا خطّ التعلّم المختوم أدناه فيعمل من أرشيف منفصل ببصمته الخاصّة، مطبوعةً هناك. ولا تُخلَط أيّ من المجموعتين بالأخرى، ولا يأتي أيّ رقم في هذه الصفحة من أرشيف خرج من التداول.",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. It runs in the sealed prototype, and not in the shipped release.": "خطّة مكتوبة شجرةَ خطوات لا حركةً واحدة، فيمكن فحص الخطّة كلّها قبل تشغيل أيّ جزء منها. تعمل في النموذج الأوّلي المختوم لا في الإصدار المُسلَّم.",
   "Carrying what was learned from one run into the next. Learning writes are held at zero in the shipped release; in the sealed prototype line this stage is exactly what was measured.": "نقل ما تعلّمه تشغيلٌ إلى التشغيل التالي. تبقى كتابات التعلّم عند الصفر في الإصدار المُسلَّم؛ أمّا في الخطّ الأوّلي المختوم فهذه المرحلة هي بالضبط ما قِيس.",
   "Changing one belief without retraining everything around it. This is the loop the architecture is designed around, and it does not run in the shipped release.": "تغيير اعتقاد واحد دون إعادة تدريب كلّ ما حوله. هذه هي الحلقة التي بُنيت البنية حولها، وهي لا تعمل في الإصدار المُسلَّم.",
