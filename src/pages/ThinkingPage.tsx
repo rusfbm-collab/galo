@@ -42,7 +42,7 @@ export function ThinkingPage() {
           <h1>{t("The thinking schemes, drawn stage by stage.")}</h1>
           <p>
             {t(
-              "This page opens the decision procedure and shows every stage of it: what arrives, what is checked, what narrows, what executes, and what is written down. It is deliberately mechanical, because the whole point of the design is that a reader can follow the same path the engine followed and arrive at the same place.",
+              "This page opens the decision procedure of the shipped release and shows every stage of it: what arrives, what is checked, what narrows, what executes, and what is written down. It is deliberately mechanical, because the whole point of the design is that a reader can follow the same path that engine followed and arrive at the same place. The counters that sit at zero throughout are properties of this runtime; the sealed prototype line is a different artefact and is described on the evidence page.",
             )}
           </p>
           <div className="thinking-hero__pair">

@@ -30,7 +30,7 @@ export function ThoughtLoopFigure() {
     <figure className="galo-figure galo-figure--loop">
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("WHAT ONE STEP LEAVES BEHIND")}</span>
-        <strong>{t("The position moves. Nothing else in the engine does.")}</strong>
+        <strong>{t("The position moves. Nothing else in this engine does.")}</strong>
         <span className="galo-figure__note">
           {t(
             "Two positions address one cell, the cell names the new position, and the record fixes what happened. The counters in the middle stay at zero throughout, which is what lets a second machine reproduce the step exactly instead of approximately.",

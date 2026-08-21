@@ -6,9 +6,11 @@ const WIDTH = 660;
 const HEIGHT = 240;
 
 /**
- * What has to close before persistent learning could be switched on. Every
- * precondition and every status here is taken from the published boundary
- * register rather than restated, so the picture cannot drift away from the record.
+ * What has to close before persistent learning could be switched on inside the
+ * shipped runtime. The gates are properties of that runtime, not of learning as
+ * such: the sealed prototype line learns already. Every precondition and every
+ * status here is taken from the published boundary register rather than
+ * restated, so the picture cannot drift away from the record.
  */
 const openLabels = [
   "Persistent trusted manifest head",
@@ -33,10 +35,10 @@ export function LearningGateFigure() {
     <figure className="galo-figure galo-figure--gatechain">
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("WHAT HAS TO CLOSE FIRST")}</span>
-        <strong>{t("Four open conditions stand between today and any persistent learning.")}</strong>
+        <strong>{t("Four open conditions stand between the shipped release and persistent learning inside it.")}</strong>
         <span className="galo-figure__note">
           {t(
-            "Every row comes from the published boundary register with the status it really has. Not one is closed today. That is the reason persistent policy learning appears as not started, and not as coming soon.",
+            "Every row comes from the published boundary register with the status it really has, and not one is closed today. That is why persistent policy learning inside this release is published as not started rather than as coming soon. It is a statement about the release: the sealed prototype line, which is a different artefact, learns already.",
           )}
         </span>
       </figcaption>
@@ -46,7 +48,7 @@ export function LearningGateFigure() {
           <title id={titleId}>{t("Four open preconditions leading to a closed gate")}</title>
           <desc id={descriptionId}>
             {t(
-              "Four stacked rows, each with a code, an open status, and a name. Arrows from all four converge on a gate marked closed, and beyond the gate is persistent policy learning, marked as not started.",
+              "Four stacked rows, each with a code, an open status, and a name. Arrows from all four converge on a gate marked closed, and beyond the gate is persistent policy learning inside this release, marked as not started.",
             )}
           </desc>
           <defs>

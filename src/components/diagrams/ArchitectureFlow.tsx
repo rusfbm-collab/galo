@@ -48,22 +48,23 @@ const target: readonly Stage[] = [
   },
   {
     label: "Task decomposition",
-    plain: "Splitting one goal into smaller steps that can be checked separately. Written down, not built.",
+    plain:
+      "Splitting one goal into smaller steps that can be checked separately. Written down, and not in the shipped release.",
   },
   {
     label: "Multi-level ProgramIR",
     plain:
-      "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. Not built.",
+      "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. It runs in the sealed prototype, and not in the shipped release.",
   },
   {
     label: "Local revision",
     plain:
-      "Changing one belief without retraining everything around it. This is the loop the architecture is designed around, and it does not run today.",
+      "Changing one belief without retraining everything around it. This is the loop the architecture is designed around, and it does not run in the shipped release.",
   },
   {
     label: "Persistent policy",
     plain:
-      "Carrying what was learned from one run into the next. Learning writes are held at zero, and this stage is published as not started.",
+      "Carrying what was learned from one run into the next. Learning writes are held at zero in the shipped release; in the sealed prototype line this stage is exactly what was measured.",
   },
 ] as const;
 
@@ -116,12 +117,16 @@ export function ArchitectureFlow() {
         <div className="architecture-lane__header">
           <span className="status status--development">{t("TARGET ARCHITECTURE · IN DEVELOPMENT")}</span>
           <h3 id="target-lane-title">{t("Explicit state, local revision, adaptive search")}</h3>
-          <p>{t("Six stages that are written down and not built. None of them runs in the current release.")}</p>
+          <p>
+            {t(
+              "Six stages the architecture is built around. None of them runs in the shipped release, and several of them run in a separate sealed prototype.",
+            )}
+          </p>
         </div>
         <StageList stages={target} tone="target" />
         <p className="architecture-lane__note">
           {t(
-            "A trained Atlas is not present. Observation-conditioned structural reasoning and persistent learning are not implemented in the current release.",
+            "None of this is in the shipped release: it carries no trained Atlas, and neither observation-conditioned structural reasoning nor persistent learning is implemented there. The sealed prototype line has trained Atlases of its own, and is a different artefact.",
           )}
         </p>
       </section>

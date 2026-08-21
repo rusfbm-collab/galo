@@ -77,7 +77,7 @@ describe("GALO public site", () => {
     expect(screen.getByText("CURRENT VERIFIED SLICE")).toBeInTheDocument();
     expect(screen.getByText(/TARGET ARCHITECTURE · IN DEVELOPMENT/i)).toBeInTheDocument();
     expect(
-      screen.getByText(/Observation-conditioned structural reasoning and persistent learning are not implemented/i),
+      screen.getByText(/neither observation-conditioned structural reasoning nor persistent learning is implemented there/i),
     ).toBeInTheDocument();
   });
 
@@ -98,11 +98,13 @@ describe("GALO public site", () => {
     expect(stages[0]!.open).toBe(true);
     expect(stages[0]!).toHaveTextContent("the complete list of actions the engine is allowed to take is fixed");
 
-    // The six target stages each say plainly that they do not run today.
+    // The six target stages each say plainly that they are not in the shipped
+    // release. They may not say "not built": the sealed prototype runs several.
     const target = stages.slice(5);
     expect(target).toHaveLength(6);
     const targetProse = target.map((stage) => stage.querySelector("p")?.textContent ?? "").join(" ");
-    expect(targetProse).toMatch(/does not run|Not built|not started|No trained Atlas/i);
+    expect(targetProse).toMatch(/does not run|not in the shipped release|No trained Atlas/i);
+    expect(targetProse).not.toMatch(/\bNot built\b/);
   });
 
   it("replays the receipt deterministically", async () => {
@@ -554,7 +556,7 @@ describe("GALO public site", () => {
     // Three shelves, and the target shelf keeps the unwelcome statuses on it.
     expect(document.querySelectorAll(".galo-shelves__shelf")).toHaveLength(3);
     expect(document.querySelector(".galo-shelves__shelf.is-target")).toHaveTextContent(
-      "Persistent policy learning: NOT STARTED",
+      "Persistent policy learning inside this release: NOT STARTED",
     );
   });
 

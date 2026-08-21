@@ -11,7 +11,8 @@ const LEFT = 22;
 /**
  * The seven levels, drawn as what they are: seven towers, each one block taller
  * than the one before it, because level L_n declares exactly n states. The block
- * at the foot of every tower is P0 — the one state that exists at every level.
+ * at the foot of every tower is that level's own P0. Each level declares its
+ * own; a shared P0 is not something the matching name gives you.
  *
  * Heights are not decorative. Tower n has n blocks because the level has n poles,
  * and the block counts come straight from `towerCounts` rather than being drawn by eye.
@@ -31,7 +32,7 @@ export function StateTowers() {
       <title id="hero-towers-title">{t("Seven levels drawn as seven towers of increasing height")}</title>
       <desc id="hero-towers-desc">
         {t(
-          "Seven towers side by side, one per level. Tower L1 is one block tall and tower L7 is seven blocks tall, because level n declares exactly n states. The bottom block of every tower is P0, the state that exists at every level.",
+          "Seven towers side by side, one per level. Tower L1 is one block tall and tower L7 is seven blocks tall, because level n declares exactly n states. The bottom block of every tower is that level's own P0.",
         )}
       </desc>
 
