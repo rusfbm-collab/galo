@@ -8,7 +8,7 @@ export const visualsRu: TranslationDictionary = {
   "A hash-derived order picks one candidate and binds it to a single use.":
     "Порядок, полученный из хеша, выбирает одного кандидата и привязывает его к одному использованию.",
   "A horizontal bar chart of six phases. Selector records 2,852 work units, shared preparation 1,902, baseline action 24, treatment action 24, and outcome evaluation and policy update record none.":
-    "Горизонтальная столбчатая диаграмма по шести фазам. Селектор — 2,852 единицы работы, общая подготовка — 1,902, базовое действие — 24, экспериментальное действие — 24, а оценка результата и обновление политики не дают ни одной.",
+    "Горизонтальная столбчатая диаграмма по шести фазам. Селектор — 2 852 единицы работы, общая подготовка — 1 902, базовое действие — 24, экспериментальное действие — 24, а оценка результата и обновление политики не дают ни одной.",
   "A level is a ring of named positions, and PLUS is one forward turn.":
     "Уровень — это кольцо именованных позиций, а PLUS — один поворот вперёд.",
   "A level with n positions has n² ordered input pairs. Two laws and two role placements multiply that by four, so level n contributes exactly 4n² typed coordinates.":
@@ -52,9 +52,9 @@ export const visualsRu: TranslationDictionary = {
   "FOUR TRACKS, FOUR DIFFERENT STAGES": "ЧЕТЫРЕ НАПРАВЛЕНИЯ — ЧЕТЫРЕ РАЗНЫЕ СТАДИИ",
   "Finished and re-derived on every build": "Завершено и заново выводится при каждой сборке",
   "Five stacked bars of decreasing width labelled 1,204 committed descriptors, 880 executable descriptors, 440 candidates on one pattern frontier, one bound handle, and one recorded receipt.":
-    "Пять расположенных друг под другом полос убывающей ширины: 1,204 зафиксированных дескриптора, 880 исполнимых дескрипторов, 440 кандидатов на фронтире одного шаблона, один связанный handle и один записанный протокол.",
+    "Пять расположенных друг под другом полос убывающей ширины: 1 204 зафиксированных дескриптора, 880 исполнимых дескрипторов, 440 кандидатов на фронтире одного шаблона, один связанный handle и один записанный протокол.",
   "From 1,204 declared candidates down to one recorded action.":
-    "От 1,204 объявленных кандидатов до одного записанного действия.",
+    "От 1 204 объявленных кандидатов до одного записанного действия.",
   "HOW THE CURRENT ENGINE NARROWS ITS CHOICES": "КАК ТЕКУЩИЙ ДВИЖОК СУЖАЕТ ВЫБОР",
   "How older material is handled": "Как мы обращаемся с прежними материалами",
   "Identity leaves fixed": "Тождественное отображение оставляет неподвижными",
@@ -135,7 +135,7 @@ export const visualsRu: TranslationDictionary = {
     "Две фазы несут почти всю работу, а две фазы равны ровно нулю.",
   "Typed coordinates contributed by each level": "Типизированные координаты, которые даёт каждый уровень",
   "WHERE 560 COMES FROM, LEVEL BY LEVEL": "ОТКУДА БЕРЁТСЯ 560 — УРОВЕНЬ ЗА УРОВНЕМ",
-  "WHERE THE 4,802 COUNTED WORK UNITS COME FROM": "ОТКУДА БЕРУТСЯ 4,802 УЧТЁННЫЕ ЕДИНИЦЫ РАБОТЫ",
+  "WHERE THE 4,802 COUNTED WORK UNITS COME FROM": "ОТКУДА БЕРУТСЯ 4 802 УЧТЁННЫЕ ЕДИНИЦЫ РАБОТЫ",
   "WHICH LEVELS CAN CARRY INFORMATION INTO WHICH": "КАКИЕ УРОВНИ МОГУТ ПЕРЕНОСИТЬ ИНФОРМАЦИЮ В КАКИЕ",
   "What already works, and what is being built next.": "Что уже работает и что строится дальше.",
   "What the current numbers actually measure.": "Что на самом деле измеряют эти числа.",

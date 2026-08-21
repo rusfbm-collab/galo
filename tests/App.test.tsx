@@ -1151,7 +1151,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Проверяемая модель мира для частного ИИ и промышленной автономности.",
+        name: "Проверяемая модель мира — для приватного ИИ и промышленной автономности.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();

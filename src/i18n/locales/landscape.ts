@@ -53,7 +53,7 @@ export const landscapeRu: TranslationDictionary = {
     "Явное состояние — то, чего хочет и GALO. Чего там нет, так это стороны исполнения: лимита, одноразовой привязки и записи о том, какое действие за этим последовало.",
   "Follow one decision from input to record": "Проследить одно решение от входа до записи",
   "For each of the two fixed source patterns the selector narrows a 440-candidate frontier to one, in an order fixed by a hash rather than by a preference. The same input gives the same choice on any machine.":
-    "Для каждого из двух фиксированных исходных шаблонов селектор сужает фронтир из 440 кандидатов до одного, в порядке, заданном хешем, а не предпочтением. Один и тот же вход даёт один и тот же выбор на любой машине.",
+    "Для каждого из двух фиксированных исходных шаблонов селектор сужает срез из 440 кандидатов до одного, в порядке, заданном хешем, а не предпочтением. Один и тот же вход даёт один и тот же выбор на любой машине.",
   "For the slice that runs today, that is a fair question and the honest answer is that a rule engine would cover much of it. The argument for the algebra is about what comes next — the level ladder and local revision — and that argument is not yet backed by a running system.":
     "Для того среза, что работает сегодня, вопрос справедлив, и честный ответ — что движок правил закрыл бы значительную его часть. Довод в пользу алгебры касается следующего шага — лестницы уровней и локального пересмотра, — и этот довод пока не подкреплён работающей системой.",
   "GPT, Claude, Gemini, Llama, Mistral, Qwen": "GPT, Claude, Gemini, Llama, Mistral, Qwen",
@@ -91,7 +91,7 @@ export const landscapeRu: TranslationDictionary = {
   "Reproduce it in five steps": "Воспроизвести за пять шагов",
   "Retrieval-augmented systems": "Системы с поиском по документам",
   "SEVEN LEVELS": "СЕМЬ УРОВНЕЙ",
-  "See the declared universe and how it is counted": "Посмотреть объявленный универсум и как он посчитан",
+  "See the declared universe and how it is counted": "Посмотреть объявленное множество и как оно посчитано",
   "Seven levels drawn as seven towers of increasing height":
     "Семь уровней, нарисованных как семь башен возрастающей высоты",
   "Seven towers side by side, one per level. Tower L1 is one block tall and tower L7 is seven blocks tall, because level n declares exactly n states. The bottom block of every tower is P0, the state that exists at every level.":
@@ -111,7 +111,7 @@ export const landscapeRu: TranslationDictionary = {
   "The closest thing to a direct overlap in practice. GALO's difference is that the permitted set is declared, enumerated and closed before the run, and appears in the record next to the choice.":
     "Самое близкое пересечение на практике. Отличие GALO в том, что множество разрешённого объявлено, перечислено и закрыто до запуска и попадает в запись рядом со сделанным выбором.",
   "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.":
-    "Объявленный универсум содержит 1 204 дескриптора, из них 880 исполняемых, и он целиком перечисляется на каждой сборке. Действие, которого нет в списке, выполнить нельзя: попытка отклоняется и записывается.",
+    "Объявленное множество содержит 1 204 дескриптора, из них 880 исполняемых, и он целиком перечисляется на каждой сборке. Действие, которого нет в списке, выполнить нельзя: попытка отклоняется и записывается.",
   "The ingredients are not. Declared operators, explicit state, checkers admitting a proposer's candidates — each has a literature. What is claimed as ours is the specific kernel: a finite algebra whose levels, laws and symmetries are proved out, with typed execution and receipts sitting directly on it.":
     "Составные части — нет. Объявленные операторы, явное состояние, проверяющий, допускающий кандидатов предлагающего, — у каждого своя литература. Нашим заявлено конкретное ядро: конечная алгебра, у которой доказаны уровни, законы и симметрии, а прямо на ней стоят типизированное исполнение и протоколы.",
   "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.":

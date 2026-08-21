@@ -2,7 +2,7 @@ import type { TranslationDictionary } from "../translations";
 
 export const comparisonRu: TranslationDictionary = {
   "1,204 declared candidates, of which 880 are executable. Enumerating the whole space is an ordinary operation that runs on every build.":
-    "1,204 объявленных кандидата, из них 880 исполнимых. Перечислить всё пространство — обычная операция, которая выполняется при каждой сборке.",
+    "1 204 объявленных кандидата, из них 880 исполнимых. Перечислить всё пространство — обычная операция, которая выполняется при каждой сборке.",
   "A PASS is meaningful only together with its scope. Quoting the status without the scope is the single most common way to overstate what a record shows.":
     "PASS осмыслен только вместе со своей областью действия. Процитировать статус без области — самый частый способ преувеличить то, что показывает запись.",
   "A coarser level does not lie. It stops being able to tell two cases apart.":
@@ -212,7 +212,7 @@ export const comparisonRu: TranslationDictionary = {
   "The architecture describes a composition in which a model proposes and the verified layer admits, executes, and records. That composition is a written design with named preconditions; it is not a shipped capability.":
     "Архитектура описывает композицию, в которой модель предлагает, а верифицируемый слой допускает, исполняет и записывает. Эта композиция — описанный проект с названными предусловиями, а не поставляемая возможность.",
   "The candidate is checked against a declared finite universe. Anything outside it is refused with a named reason rather than approximated.":
-    "Кандидат сверяется с объявленным конечным универсумом. Всё, что вне его, отклоняется с названной причиной, а не приближается.",
+    "Кандидат сверяется с объявленным конечным объявленным множеством. Всё, что вне его, отклоняется с названной причиной, а не приближается.",
   "The count is Euler's totient, and it does not grow with the level.":
     "Их число — функция Эйлера, и оно не растёт вместе с уровнем.",
   "The difference is visible one step in.": "Разница видна уже на первом шаге.",
@@ -302,7 +302,7 @@ export const comparisonRu: TranslationDictionary = {
   "Yes by construction. The step is a table lookup and the candidate ordering is hash-derived.":
     "Да, по построению. Шаг — это просмотр таблицы, а порядок кандидатов выводится из хеша.",
   "Yes for the declared universe. All 1,204 committed descriptors are enumerated on every build.":
-    "Да, для объявленного универсума. Все 1,204 зафиксированных дескриптора перечисляются при каждой сборке.",
+    "Да, для объявленного универсума. Все 1 204 зафиксированных дескриптора перечисляются при каждой сборке.",
   "Yes, from the record alone, on a different machine, cell by cell.":
     "Да, по одной только записи, на другой машине, ячейка за ячейкой.",
   "Yes. This is the thing it is genuinely extraordinary at.": "Да. Именно в этом она по-настоящему выдающаяся.",

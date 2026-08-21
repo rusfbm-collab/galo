@@ -100,8 +100,8 @@ export const ru: TranslationDictionary = {
   "Minimum sufficient level selected": "Выбран минимально достаточный уровень",
   "Receipt chain intact": "Цепочка протоколов не нарушена",
   "Verified current mechanics": "Верифицированные текущие механизмы",
-  "Finite universe": "Конечный универсум",
-  "1,204 commitments / 756 cells": "1,204 зафиксированных кандидата / 756 ячеек",
+  "Finite universe": "Конечное объявленное множество",
+  "1,204 commitments / 756 cells": "1 204 зафиксированных кандидата / 756 ячеек",
   "Bound execution": "Исполнение с привязкой",
   "Membership proof + one-shot handle": "Доказательство принадлежности + одноразовый дескриптор",
   "Budget law": "Ограничение бюджета",
@@ -111,9 +111,9 @@ export const ru: TranslationDictionary = {
 
   "THE PROBLEM": "ПРОБЛЕМА",
   "Agentic AI is moving faster than its reasoning state can be governed.":
-    "Агентный ИИ развивается быстрее, чем совершенствуются механизмы управления состоянием его рассуждений.",
+    "Агентный ИИ развивается быстрее, чем средства контроля за тем, на чём он строит свои рассуждения.",
   "Models can produce increasingly capable outputs, while the authoritative state behind long-running decisions can remain implicit, transient, or difficult to revise locally.":
-    "Модели способны выдавать всё более сложные результаты, однако авторитетное состояние, лежащее в основе долгосрочных решений, может оставаться неявным, временным или трудным для локального пересмотра.",
+    "Модели выдают всё более сложные результаты, а состояние, на которое опираются решения с длинным горизонтом, может оставаться неявным, недолговечным и трудным для точечной правки.",
   "Implicit world state": "Неявное состояние мира",
   "A system can answer without exposing the durable model behind the answer.":
     "Система может дать ответ, не раскрывая устойчивую модель, которая за ним стоит.",
@@ -123,9 +123,9 @@ export const ru: TranslationDictionary = {
   "Premature collapse": "Преждевременное схлопывание",
   "Several plausible explanations can be compressed into one output before evidence warrants a unique decision.":
     "Несколько правдоподобных объяснений могут быть сведены к одному результату до того, как доказательств станет достаточно для однозначного решения.",
-  "Broad correction": "Широкомасштабная коррекция",
+  "Broad correction": "Правка, расходящаяся слишком широко",
   "A local counterexample may require a broad prompt, memory, or model change that affects unrelated behaviour.":
-    "Локальный контрпример может потребовать масштабного изменения промпта, памяти или модели, затрагивающего несвязанное поведение.",
+    "Один местный контрпример может потребовать переделки промпта, памяти или модели — и задеть поведение, которое к нему отношения не имеет.",
 
   ARCHITECTURE: "АРХИТЕКТУРА",
   "Separate the verified execution slice from the target world-model loop.":

@@ -1,11 +1,11 @@
 import type { TranslationDictionary } from "../translations";
 
 export const releaseRu: TranslationDictionary = {
-  "1,204 descriptors / 880 executable": "1,204 дескриптора / 880 исполняемых",
+  "1,204 descriptors / 880 executable": "1 204 дескриптора / 880 исполняемых",
   "140 ordered coordinates × two laws × two operand-role orientations; 556 are active across runtime L2–L7. These are not semantic concepts.":
     "140 упорядоченных координат × два закона × две ориентации ролей операндов; 556 координат активны в среде исполнения L2–L7. Это не семантические понятия.",
-  "4,802 internal work-unit IDs reconciled": "Согласовано 4,802 внутренних идентификатора единиц работы",
-  "440-candidate frontier per source pattern": "Фронтир из 440 кандидатов для каждого исходного шаблона",
+  "4,802 internal work-unit IDs reconciled": "4 802 внутренних идентификатора единиц работы сведены",
+  "440-candidate frontier per source pattern": "440 кандидатов на срезе для каждого исходного шаблона",
   "880 are executable in current V4; each of the two fixed source patterns exposes a 440-candidate frontier.":
     "В текущей V4 исполняемыми являются 880 дескрипторов; каждому из двух фиксированных исходных шаблонов соответствует фронтир из 440 кандидатов.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
@@ -70,7 +70,7 @@ export const releaseRu: TranslationDictionary = {
   "Fresh FULL": "Свежий FULL",
   "Fresh STATIC": "Свежий STATIC",
   "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,366/1,366 checks across 131 modules. Fresh FULL was not run, and CPython 3.13 replay was blocked by runtime availability.":
-    "Свежие проверки STATIC и FAST прошли в текущей сессии анализа. Сохранённый протокол выпуска фиксирует 1,366/1,366 проверок в 131 модуле. Свежий FULL не запускался, а воспроизведение в CPython 3.13 было заблокировано из-за недоступности среды исполнения.",
+    "Свежие проверки STATIC и FAST прошли в текущей сессии анализа. Сохранённый протокол выпуска фиксирует 1 366/1 366 проверок в 131 модуле. Свежий FULL не запускался, а воспроизведение в CPython 3.13 было заблокировано из-за недоступности среды исполнения.",
   "Historical-learning boundary": "Граница исторических данных об обучении",
   "Integrated one-step source-to-action episode executed":
     "Исполнен интегрированный одношаговый эпизод от источника к действию",
@@ -121,9 +121,9 @@ export const releaseRu: TranslationDictionary = {
   "Terminal release status preserved with disclosed boundaries":
     "Терминальный статус выпуска сохранён с явно раскрытыми границами",
   "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
-    "Результат FULL 1,366/1,366 — это сохранённый протокол выпуска. Свежего воспроизведения за ним нет.",
+    "Результат FULL 1 366/1 366 — это сохранённый протокол выпуска. Свежего воспроизведения за ним нет.",
   "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
-    "Результат FULL 1,366/1,366 является сохранённым доказательством выпуска; свежий FULL в рамках этого анализа не запускался.",
+    "Результат FULL 1 366/1 366 является сохранённым доказательством выпуска; свежий FULL в рамках этого анализа не запускался.",
   "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms.":
     "Семейства PLUS/STAR уровней L1–L7, 560 ориентированных типизированных координат, преобразования, симметрии и межуровневые гомоморфизмы.",
   "The bundled finite sample verifies against a release-pinned public key.":

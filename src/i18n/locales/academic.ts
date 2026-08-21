@@ -26,7 +26,7 @@ export const academicRuExtra: TranslationDictionary = {
     "Математическое вложение — это разрешение перенести различие, а не право переносить данные во время исполнения. Происхождение, согласование, потери и политика остаются отдельными контрактами.",
   "A record that can be replayed": "Запись, которую можно воспроизвести",
   "A running engine over a fully enumerated finite universe, producing a machine-readable record for every run.":
-    "Работающий движок над полностью перечисленным конечным универсумом, который на каждый запуск выдаёт машиночитаемую запись.",
+    "Работающий движок над полностью перечисленным конечным объявленным множеством, который на каждый запуск выдаёт машиночитаемую запись.",
   "A table of results for two inputs": "Таблица результатов для двух входов",
   "A unit is invertible modulo n, so multiplication by it permutes the positions and fixes P0.":
     "Единица обратима по модулю n, поэтому умножение на неё переставляет позиции и оставляет P0 на месте.",
@@ -259,7 +259,7 @@ export const academicRuExtra: TranslationDictionary = {
   "YOU HAVE READ ONE OF THESE BEFORE": "ВЫ УЖЕ ЧИТАЛИ ТАКУЮ ТАБЛИЦУ",
   "You already know one: the multiplication table. Choose a row, choose a column, read the cell. A Cayley table is the same idea applied to any rule that takes two inputs.":
     "Одну вы уже знаете — таблицу умножения. Выберите строку, выберите столбец, прочитайте ячейку. Таблица Кэли — та же идея, применённая к любому правилу с двумя входами.",
-  "a declared filter chain over a finite universe": "объявленная цепочка фильтров над конечным универсумом",
+  "a declared filter chain over a finite universe": "объявленная цепочка фильтров над конечным объявленным множеством",
   "cells composed into an explicit tree": "ячейки, собранные в явное дерево",
   "counts and boundaries anyone can recompute": "числа и границы, которые каждый может пересчитать",
   "one filled cell per input pair": "по одной заполненной ячейке на пару входов",
