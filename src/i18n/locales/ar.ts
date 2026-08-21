@@ -18,6 +18,7 @@ import { landscapeAr } from "./landscape";
 import { fieldAr } from "./field";
 import { navigationAr } from "./navigation";
 import { mathFiguresAr } from "./mathFigures";
+import { industrialAr } from "./industrial";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -43,6 +44,7 @@ export const ar: TranslationDictionary = {
   ...fieldAr,
   ...navigationAr,
   ...mathFiguresAr,
+  ...industrialAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",
@@ -433,10 +435,10 @@ export const ar: TranslationDictionary = {
   "Return home": "العودة إلى الرئيسية",
   "View evidence": "عرض الأدلة",
 
-  "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.":
-    "بنية بحثية في مرحلة pre-seed لقرارات تخضع للتدقيق لاحقاً: الأفعال المسموح بها تُثبَّت قبل أي تشغيل، ويخلّف كل تشغيل سجلاً يستطيع أي شخص أن يعيده فيبلغ النتيجة نفسها.",
-  "GALO AI — AI That Has to Show Why It Was Allowed to Decide":
-    "GALO AI — ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر",
+  "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
+    "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية، منتجها الأول ضمان القرار الصناعي. تُنشر نتائج التعلّم المحدودة النطاق مع نتائجها السلبية؛ والصلاحية الخاضعة لسيطرة الشريك غير مُثبتة، والاستقلالية الإنتاجية غير مأذون بها.",
+  "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
+    "GALO AI — نموذج عالم قابل للتحقّق للذكاء الاصطناعي الخاص والاستقلالية الصناعية",
   "Evidence — GALO AI": "GALO AI — الأدلة وحدود الادعاءات",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "الأدلة العامة وحدود الادعاءات للإصدار البحثي الحالي من GALO.",

@@ -44,11 +44,7 @@ export function DiligenceTimelineFigure() {
             </marker>
           </defs>
 
-          <path
-            className="galo-diligence__line"
-            d={`M20 ${LINE_Y} H ${WIDTH - 34}`}
-            markerEnd={`url(#${arrowId})`}
-          />
+          <path className="galo-diligence__line" d={`M20 ${LINE_Y} H ${WIDTH - 34}`} markerEnd={`url(#${arrowId})`} />
 
           {diligenceSteps.map((step, index) => {
             const x = FIRST_X + index * SPACING;

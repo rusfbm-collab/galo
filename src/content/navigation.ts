@@ -34,6 +34,11 @@ export const siteMap: readonly SiteMapGroup[] = [
     title: "If you have to decide",
     links: [
       {
+        label: "For industry",
+        href: "/industry",
+        hint: "The first product, its autonomy ladder and its price hypotheses.",
+      },
+      {
         label: "For investors",
         href: "/investors",
         hint: "What exists, what does not, and what would tell you to walk away.",

@@ -71,8 +71,8 @@ export const landscapeRu: TranslationDictionary = {
     "Измерены на публичных бенчмарках, и результаты можно оспорить",
   "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.":
     "Именованные факты и объявленные отношения, из которых ризонер выводит следствия. У всего есть идентификатор, который человек может процитировать.",
-  "Nine families of system that are also trying to build artificial intelligence.":
-    "Девять семейств систем, которые тоже пытаются построить искусственный интеллект.",
+  "Twelve families of system that are also trying to build artificial intelligence.":
+    "Двенадцать семейств систем, которые тоже пытаются построить искусственный интеллект.",
   "No benchmark has been run. Where a chart would normally go, this site says that instead.":
     "Ни один бенчмарк не запускался. Там, где обычно стоял бы график, этот сайт пишет об этом прямо.",
   "No customer, no pilot, no deployment. A working bounded prototype and the mathematics under it.":
@@ -133,7 +133,7 @@ export const landscapeRu: TranslationDictionary = {
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "Тот же инстинкт — решать внутри чего-то объявленного, — только применённый к свойствам программ, а не к действиям во время работы. Ядро GALO — конечная алгебра, а его среда исполнения пишет протоколы.",
   "The seven levels, and one execution receipt": "Семь уровней и один протокол исполнения",
-  "The wider field, nine families": "Поле целиком: девять семейств",
+  "The wider field, twelve families": "Поле целиком: двенадцать семейств",
   "Then why not use a rule engine?": "Тогда почему не движок правил?",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "Выученного предпочтения нет, объяснения на естественном языке тоже. Движок выбирает внутри объявленного множества; он не судит о том, что в этом множестве должно было быть.",
@@ -222,8 +222,8 @@ export const landscapeZh: TranslationDictionary = {
   "Measured against public benchmarks, with results others can dispute": "在公开基准上被测量过，结果别人可以质疑",
   "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.":
     "有名字的事实和已声明的关系，再由推理机算出蕴涵。每样东西都有一个人可以直接引用的标识。",
-  "Nine families of system that are also trying to build artificial intelligence.":
-    "另外九类同样在尝试造出人工智能的系统。",
+  "Twelve families of system that are also trying to build artificial intelligence.":
+    "另外十二类同样在尝试造出人工智能的系统。",
   "No benchmark has been run. Where a chart would normally go, this site says that instead.":
     "没有跑过任何基准测试。本该放一张图表的地方，本站直接把这句话写在那里。",
   "No customer, no pilot, no deployment. A working bounded prototype and the mathematics under it.":
@@ -282,7 +282,7 @@ export const landscapeZh: TranslationDictionary = {
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "同一种本能——在已声明的东西内部作判定——只不过用在程序的性质上，而不是运行时所采取的动作上。GALO 的内核是有限代数，它的运行时会写回执。",
   "The seven levels, and one execution receipt": "七个层级，以及一份执行回执",
-  "The wider field, nine families": "更广的领域：九类系统",
+  "The wider field, twelve families": "更广的领域：十二类系统",
   "Then why not use a rule engine?": "那为什么不用规则引擎？",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "这里没有学出来的偏好，也没有自然语言的说明。引擎在一个已声明的集合内部作选择；至于这个集合本该包含什么，它不作判断。",
@@ -371,8 +371,8 @@ export const landscapeAr: TranslationDictionary = {
   "Measured against public benchmarks, with results others can dispute": "مقيسة على معايير عامّة، ونتائجها قابلة للطعن",
   "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.":
     "وقائع مسمّاة وعلاقات معلَنة، يحسب محرّكُ استدلال ما يترتّب عليها. ولكل شيء معرّف يستطيع المرء أن يقتبسه.",
-  "Nine families of system that are also trying to build artificial intelligence.":
-    "تسع عائلات من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
+  "Twelve families of system that are also trying to build artificial intelligence.":
+    "اثنتا عشرة عائلة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
   "No benchmark has been run. Where a chart would normally go, this site says that instead.":
     "لم يُجرَ أي قياس معياريّ. وحيث يوضع الرسم البياني عادةً، يقول هذا الموقع ذلك صراحةً.",
   "No customer, no pilot, no deployment. A working bounded prototype and the mathematics under it.":
@@ -431,7 +431,7 @@ export const landscapeAr: TranslationDictionary = {
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "الغريزة نفسها — أن تحسم داخل شيء معلَن — لكن مطبَّقة على خصائص البرامج لا على أفعال تُتّخذ أثناء التشغيل. نواة GALO جبر منتهٍ، وزمن تشغيلها يكتب إيصالات.",
   "The seven levels, and one execution receipt": "المستويات السبعة وإيصال تنفيذ واحد",
-  "The wider field, nine families": "الميدان الأوسع: تسع عائلات",
+  "The wider field, twelve families": "الميدان الأوسع: اثنتا عشرة عائلة",
   "Then why not use a rule engine?": "ولماذا لا نكتفي بمحرّك قواعد إذن؟",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "لا تفضيل متعلَّم ولا تعليل بلغة طبيعية. يختار المحرّك داخل مجموعة معلَنة، ولا يحكم على ما كان ينبغي أن تحتويه تلك المجموعة.",

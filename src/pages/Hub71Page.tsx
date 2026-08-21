@@ -211,7 +211,7 @@ export function Hub71Page() {
             eyebrow={t("HOW THIS READS AGAINST THE FIELD")}
             title={t("An assessment line is worth little without something to measure it against.")}
             text={t(
-              "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — nine families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.",
+              "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — twelve families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.",
             )}
           />
           <div className="landscape-standing">
@@ -237,7 +237,7 @@ export function Hub71Page() {
           </div>
           <p className="section-followup">
             <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("See all nine families, named, with what each one lets an outsider check")}{" "}
+              {t("See all twelve families, named, with what each one lets an outsider check")}{" "}
               <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
             </a>
           </p>

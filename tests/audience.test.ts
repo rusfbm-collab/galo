@@ -55,10 +55,27 @@ describe("investor entry point", () => {
   });
 
   it("prints the zero-measurement fact rather than omitting it", () => {
-    const zeroResults = oneMinuteFacts.find((fact) => fact.label.includes("measured external results"));
+    const zeroResults = oneMinuteFacts.find((fact) => fact.label.includes("under a partner's control"));
     expect(zeroResults).toBeDefined();
     expect(zeroResults!.value).toBe("0");
-    expect(zeroResults!.note).toMatch(/no benchmark, customer outcome, or operational gain has been measured/i);
+    expect(zeroResults!.note).toMatch(/no operational gain has been measured anywhere/i);
+  });
+
+  it("never lets one 'no learning' number stand for both the release and the prototype", () => {
+    const learning = oneMinuteFacts.find((fact) => fact.label.includes("learning writes"))!;
+    expect(learning.value).toBe("0");
+    expect(learning.label).toMatch(/released kernel/i);
+    expect(learning.note).toMatch(/separate engine and atlas prototype does learn/i);
+
+    const running = stageFacts.find((fact) => fact.question === "Is there something running?")!;
+    expect(running.answer).toMatch(/no learning in the released kernel/i);
+
+    // "Nothing has been measured" stopped being true when the benchmark line was
+    // published, so this answer may not be a flat no.
+    const measured = stageFacts.find((fact) => fact.question === "Is any of it measured against an alternative?")!;
+    expect(measured.marker).toBe("PARTIAL");
+    expect(measured.answer).toMatch(/two of those six results were negative/i);
+    expect(measured.answer).toMatch(/no operational gain has been measured anywhere/i);
   });
 
   it("keeps the stage facts aligned with the empty fields in the site record", () => {
@@ -341,7 +358,9 @@ describe("academic register", () => {
 
     for (const term of coined) {
       // A coinage may not open by borrowing the authority of the literature.
-      expect(termAcademics[term]!.academic, term).not.toMatch(/^(In mathematics|The standard|By convention in algebra)/i);
+      expect(termAcademics[term]!.academic, term).not.toMatch(
+        /^(In mathematics|The standard|By convention in algebra)/i,
+      );
     }
   });
 

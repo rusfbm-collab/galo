@@ -772,7 +772,8 @@ export const theoryRu: TranslationDictionary = {
   "The objects that the selected transformation g does not move.":
     "Объекты, которые выбранное преобразование g оставляет неподвижными.",
   "X modulo the action of G": "X по модулю действия G",
-  "The set of orbits. Ordinary numeric division has nothing to do with it.": "Множество орбит. С обычным делением чисел это не связано.",
+  "The set of orbits. Ordinary numeric division has nothing to do with it.":
+    "Множество орбит. С обычным делением чисел это не связано.",
   "All acted-on objects reachable from one selected object by allowed symmetries.":
     "Все объекты действия, достижимые из одного выбранного объекта посредством допустимых симметрий.",
   "The symmetries that leave one selected acted-on object unchanged.":

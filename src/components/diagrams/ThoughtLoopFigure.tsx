@@ -73,11 +73,7 @@ export function ThoughtLoopFigure() {
           <path className="galo-loop__link" d="M220 70 H 412" markerEnd={`url(#${arrowId})`} />
           <path className="galo-loop__link" d="M500 96 V 160" markerEnd={`url(#${arrowId})`} />
           <path className="galo-loop__link" d="M420 194 H 228" markerEnd={`url(#${arrowId})`} />
-          <path
-            className="galo-loop__link galo-loop__link--carry"
-            d="M140 168 V 104"
-            markerEnd={`url(#${carryId})`}
-          />
+          <path className="galo-loop__link galo-loop__link--carry" d="M140 168 V 104" markerEnd={`url(#${carryId})`} />
 
           <text className="galo-loop__edge" x="316" y="58" textAnchor="middle" direction="ltr">
             ⊕ | ★

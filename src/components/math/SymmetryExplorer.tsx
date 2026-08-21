@@ -101,7 +101,11 @@ export function SymmetryExplorer() {
           <code dir="ltr">
             Orb(P{source}) = {`{${poleList(carrierOrbit)}}`}
           </code>
-          <p>{t("The orbit holds every image of the selected pole under all the units, and not just under the one that was selected.")}</p>
+          <p>
+            {t(
+              "The orbit holds every image of the selected pole under all the units, and not just under the one that was selected.",
+            )}
+          </p>
         </article>
         <article>
           <span>{t("Ordered-pair orbit")}</span>

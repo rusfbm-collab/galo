@@ -1,17 +1,17 @@
 /**
  * Where GALO sits among the other attempts to build artificial intelligence.
  *
- * Nine families, named rather than gestured at, because a reader who works in
+ * Twelve families, named rather than gestured at, because a reader who works in
  * this field will ask about them by name and a reader who does not deserves to
  * know they exist. Every row describes how a family is built and what an
  * outsider can check afterwards. No row says one family answers better than
  * another: none of that has been measured here, and repeating a benchmark from
  * somebody else's paper would be borrowing evidence we did not produce.
  *
- * The relation column is written to be uncomfortable where it should be. Eight
- * of the nine families are shipped, used, and evaluated by people outside their
- * own teams. GALO is not, and the table says so in the same breath as the
- * architectural point.
+ * The relation column is written to be uncomfortable where it should be. Every
+ * family here but this one is shipped, used, and evaluated by people outside the
+ * team that built it. GALO is not, and the table says so in the same breath as
+ * the architectural point.
  */
 
 export type LandscapeRow = {
@@ -86,6 +86,33 @@ export const landscapeRows: readonly LandscapeRow[] = [
       "The admitted result, against the checker's rules. The proposal step remains learned and is not itself checkable.",
     relation:
       "The nearest architectural relative, and the honest comparison hurts: this composition is exactly what GALO's target architecture describes, and these systems are built, published and evaluated while GALO's version is written down and not implemented.",
+  },
+  {
+    family: "Digital-twin platforms",
+    examples: "Plant and asset twins, telemetry integration, 3D context and simulation",
+    decidedBy:
+      "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.",
+    checkable:
+      "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.",
+    relation:
+      "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.",
+  },
+  {
+    family: "Industrial analytics and predictive maintenance",
+    examples: "Anomaly detection, failure forecasting, condition monitoring and domain models",
+    decidedBy: "Models fitted to historical operating data, producing an alert, a score or a forecast.",
+    checkable: "The alert can be checked against what happened next, and the model against the operating window it was trained on.",
+    relation:
+      "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.",
+  },
+  {
+    family: "Ontology and operations platforms",
+    examples: "Palantir-style operational ontologies, workflow and data-integration platforms",
+    decidedBy: "A modelled ontology of the organisation, with workflows, governance and integration around it.",
+    checkable:
+      "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.",
+    relation:
+      "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.",
   },
   {
     family: "Knowledge graphs and ontologies",
@@ -179,7 +206,7 @@ export type PlainNeighbour = {
 
 /**
  * The same comparison for somebody who has never heard of any of it. Three
- * neighbours instead of nine families, no product names except the one everybody
+ * neighbours instead of twelve families, no product names except the one everybody
  * has used, and the last one is the awkward one on purpose.
  */
 export const plainNeighbours: readonly PlainNeighbour[] = [

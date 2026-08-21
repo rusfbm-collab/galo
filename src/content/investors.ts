@@ -9,9 +9,10 @@
  */
 
 export const oneMinute = {
-  what: "GALO is a way for a decision-making system to keep its state in a small written-out table instead of inside a model nobody can open.",
+  what:
+    "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.",
   forWhom:
-    "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: regulated operations, long-running automation, and anything a reviewer has to sign.",
+    "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.",
   whyNow:
     "Software is being handed decisions faster than the reasoning behind those decisions can be governed, and the usual answer — more logging — records what happened without recording what was allowed.",
 } as const;
@@ -36,13 +37,13 @@ export const oneMinuteFacts: readonly FactChip[] = [
   },
   {
     value: "0",
-    label: "learning writes",
-    note: "Nothing is accumulated between runs. Two runs on the same input behave identically, a year apart.",
+    label: "learning writes in the released kernel",
+    note: "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.",
   },
   {
     value: "0",
-    label: "measured external results",
-    note: "No benchmark, customer outcome, or operational gain has been measured. That number is zero and is printed here on purpose.",
+    label: "results produced under a partner's control",
+    note: "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.",
   },
 ];
 
@@ -139,7 +140,7 @@ export const stageFacts: readonly StageFact[] = [
   {
     question: "Is there something running?",
     answer:
-      "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning.",
+      "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.",
     marker: "YES",
   },
   {
@@ -157,8 +158,8 @@ export const stageFacts: readonly StageFact[] = [
   {
     question: "Is any of it measured against an alternative?",
     answer:
-      "No. There is no benchmark, no comparison against an ordinary system, and no measured operational gain of any kind.",
-    marker: "NO",
+      "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.",
+    marker: "PARTIAL",
   },
   {
     question: "Who has done the work so far?",
@@ -173,7 +174,7 @@ export const stageFacts: readonly StageFact[] = [
   {
     question: "What is the next block of work?",
     answer:
-      "Widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates that have to be shut before any persistent learning is switched on.",
+      "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.",
     marker: "PARTIAL",
   },
 ];
@@ -289,11 +290,11 @@ export const diligenceSteps: readonly DiligenceStep[] = [
 
 export const investorNotClaimed = [
   "No revenue, no funds raised, no customer, no pilot, and no letter of intent.",
-  "No benchmark, accuracy, speed, or cost comparison against any other system.",
+  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.",
   "No measured operational gain inside or outside the project.",
-  "No trained model of the world; the current engine performs zero learning writes.",
+  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.",
   "No independent verification by any party outside the project.",
-  "No claim about general intelligence, autonomy, or understanding.",
+  "No claim about general intelligence, production autonomy, or functional-safety certification.",
 ] as const;
 
 export const investorsTranslationKeys = [

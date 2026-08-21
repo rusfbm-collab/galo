@@ -42,7 +42,9 @@ export function TypedActionMeaningFigure() {
     <figure className="galo-figure galo-figure--typed">
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("ONE PAIR OF POSITIONS, FOUR DIFFERENT RESULTS")}</span>
-        <strong>{t("The two positions are not enough to know what happened. The type is the rest of the record.")}</strong>
+        <strong>
+          {t("The two positions are not enough to know what happened. The type is the rest of the record.")}
+        </strong>
         <span className="galo-figure__note">
           {t(
             "Below, the same source and active pole are read under each of the four declared action families. Two of the readings disagree with the other two. That is why a record carries level, law, and orientation alongside the pair — without them the line does not determine its own result, and an auditor is left reconstructing intent.",

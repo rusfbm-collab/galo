@@ -118,7 +118,11 @@ export const theorySymbolLegend = [
     reading: "fixed points of g",
     meaning: "The objects that the selected transformation g does not move.",
   },
-  { symbol: "X/G", reading: "X modulo the action of G", meaning: "The set of orbits. Ordinary numeric division has nothing to do with it." },
+  {
+    symbol: "X/G",
+    reading: "X modulo the action of G",
+    meaning: "The set of orbits. Ordinary numeric division has nothing to do with it.",
+  },
   { symbol: "x∈X", reading: "x belongs to X", meaning: "The object x is an element of the set X." },
   { symbol: "A⇒B", reading: "A implies B", meaning: "Whenever A is true, B must also be true." },
   {
@@ -240,7 +244,8 @@ export const targetArchitectureFlow = [
   {
     title: "Authenticated observation",
     status: "TARGET · NOT PROVEN",
-    detail: "Accept externally grounded evidence with source custody, and stop relying on a bundled finite sample alone.",
+    detail:
+      "Accept externally grounded evidence with source custody, and stop relying on a bundled finite sample alone.",
   },
   {
     title: "Typed domain map",
@@ -286,7 +291,8 @@ export const theoryArchitectureLayers = [
     number: "01",
     title: "Finite state alphabet",
     status: "FORMAL",
-    detail: "L1–L7 provide named finite carriers. A pole is a local state label — no word meaning attaches to it, and no neuron.",
+    detail:
+      "L1–L7 provide named finite carriers. A pole is a local state label — no word meaning attaches to it, and no neuron.",
   },
   {
     number: "02",
@@ -454,8 +460,7 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     workedExample: "L3: start at P1, move two steps, and wrap around: P1⊕P2=P0.",
     whyTrue:
       "Addition of residues is closed, associative, and commutative; P0 is the identity and P_(n−i) is the inverse of P_i.",
-    commonMistake:
-      "PLUS is a finite cyclic law on labels. It adds neither domain meanings nor real quantities.",
+    commonMistake: "PLUS is a finite cyclic law on labels. It adds neither domain meanings nor real quantities.",
     tableCheck: "L3 PLUS: row P1, column P2, cell P0; row P2, column P1 gives the same cell value.",
     formulaCheck: "(1+2) mod 3=0=(2+1) mod 3.",
   }),
@@ -898,7 +903,8 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     workedExample:
       "At L2, PLUS(P1,P1) uses two inputs, while the symbol P0 names one fixed element and accepts no inputs.",
     whyTrue: "Arity counts argument places syntactically; a named constant is exactly a nullary operation.",
-    commonMistake: "The tuple (2,2,0) lists arities. Level sizes, tensor dimensions, and learned layer widths are all something else.",
+    commonMistake:
+      "The tuple (2,2,0) lists arities. Level sizes, tensor dimensions, and learned layer widths are all something else.",
     tableCheck: "Operation ledger: PLUS | 2; STAR | 2; P0 | 0.",
     formulaCheck: "A_n=(Q_n,PLUS_n,STAR_n,P0).",
   }),

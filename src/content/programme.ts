@@ -18,12 +18,7 @@
 
 /** What an assessing party can conclude about a line, stated as a status. */
 export type AssessmentStatus =
-  | "ESTABLISHED"
-  | "PARTIAL"
-  | "STATED, NOT DONE"
-  | "NOT ESTABLISHED"
-  | "NONE"
-  | "NOT DISCLOSED";
+  "ESTABLISHED" | "PARTIAL" | "STATED, NOT DONE" | "NOT ESTABLISHED" | "NONE" | "NOT DISCLOSED";
 
 export type AssessmentRow = {
   dimension: string;
@@ -176,8 +171,10 @@ export type Milestone = {
 export const twelveMonths: readonly Milestone[] = [
   {
     window: "Months 0–3",
-    deliverable: "Incorporate the operating company and move the founder's base of work to Abu Dhabi.",
-    wouldFailIf: "No incorporated entity exists at the end of the quarter, or the founder is not working from the city.",
+    deliverable:
+      "Incorporate the operating company in ADGM, move the founder's base of work to Abu Dhabi, and complete twenty-five industrial discovery interviews.",
+    wouldFailIf:
+      "No incorporated entity exists at the end of the quarter, the founder is not working from the city, or fewer than twenty-five interviews were held.",
   },
   {
     window: "Months 0–6",
@@ -194,8 +191,9 @@ export const twelveMonths: readonly Milestone[] = [
   {
     window: "Months 6–12",
     deliverable:
-      "Run one bounded evaluation on a partner's own data, with the success condition agreed in writing before the run.",
-    wouldFailIf: "The success condition is written after the results are seen, or the data used is ours rather than a partner's.",
+      "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.",
+    wouldFailIf:
+      "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.",
   },
   {
     window: "Months 9–12",
@@ -206,10 +204,11 @@ export const twelveMonths: readonly Milestone[] = [
 
 /** What an ecosystem is being asked for, in the plainest terms available. */
 export const askedFor: readonly string[] = [
-  "A base to incorporate in, hire from, and operate from for the twelve months above.",
-  "Introductions to organisations able to define a bounded evaluation on their own data, with a success condition they write themselves.",
-  "Technical reviewers with an interest in attacking the mathematics rather than confirming it.",
-  "The time to be measured against the five milestones above, and to be dropped if they are missed.",
+  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.",
+  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.",
+  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.",
+  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.",
+  "The time to be measured against the milestones above, and to be dropped if they are missed.",
 ] as const;
 
 /** What is deliberately not being asked for, so it cannot be read into the rest. */
@@ -218,6 +217,7 @@ export const notAskedFor: readonly string[] = [
   "An introduction that would be presented anywhere as validation of the technical claims.",
   "A customer commitment made on our behalf, or pressure applied to anyone to run a pilot.",
   "Anybody's signature on a claim that this site has not itself established.",
+  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.",
 ] as const;
 
 export type HardQuestion = {

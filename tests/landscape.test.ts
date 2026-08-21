@@ -13,8 +13,8 @@ const PERFORMANCE_WORDS =
   /\b(better|worse|faster|slower|cheaper|smarter|more accurate|outperform\w*|beats?|superior|state of the art|state-of-the-art)\b/i;
 
 describe("the wider field", () => {
-  it("names nine families and fills every column", () => {
-    expect(landscapeRows).toHaveLength(9);
+  it("names twelve families and fills every column", () => {
+    expect(landscapeRows).toHaveLength(12);
     for (const row of landscapeRows) {
       expect(row.family.length).toBeGreaterThan(8);
       expect(row.examples.length).toBeGreaterThan(12);
@@ -37,7 +37,7 @@ describe("the wider field", () => {
 
   it("names systems a reader could look up rather than gesturing at categories", () => {
     const examples = landscapeRows.map((row) => row.examples).join(" | ");
-    for (const name of ["GPT", "Lean", "Z3", "AlphaProof", "Cyc", "Soar", "Drools", "LangChain"]) {
+    for (const name of ["GPT", "Lean", "Z3", "AlphaProof", "Cyc", "Soar", "Drools", "LangChain", "Palantir"]) {
       expect(examples).toContain(name);
     }
   });

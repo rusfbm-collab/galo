@@ -123,4 +123,65 @@ export const claims: Claim[] = [
     allowedPlacements: ["evidence"],
     forbiddenVariants: ["fresh FULL 1,366", "fresh FULL passed"],
   },
+  {
+    id: "C14_GENERAL_PURPOSE_ARCHITECTURE",
+    publicCopy:
+      "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.",
+    status: "architecture",
+    source: "V67 claim matrix",
+    allowedPlacements: ["hero", "evidence", "industry"],
+    forbiddenVariants: ["General AI achieved"],
+  },
+  {
+    id: "C15_INDUSTRIAL_WEDGE",
+    publicCopy:
+      "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.",
+    status: "in-development",
+    source: "V67 business model memorandum",
+    allowedPlacements: ["industry", "investors", "hub71"],
+    forbiddenVariants: ["validated ROI", "existing industrial customer"],
+  },
+  {
+    id: "C16_SCOPED_SYNTHETIC_LEARNING",
+    publicCopy:
+      "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.",
+    status: "bounded",
+    source: "V65 preregistered synthetic run",
+    allowedPlacements: ["evidence"],
+    forbiddenVariants: ["industrial validation", "production improvement"],
+  },
+  {
+    id: "C17_PUBLIC_BENCHMARK_RESULTS",
+    publicCopy:
+      "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.",
+    status: "bounded",
+    source: "V65-V67 public-benchmark archive",
+    allowedPlacements: ["evidence"],
+    forbiddenVariants: ["universal strongest-baseline superiority"],
+  },
+  {
+    id: "C18_PARTNER_VALIDITY_NOT_PROVEN",
+    publicCopy: "Partner-controlled industrial validity is not proven.",
+    status: "not-proven",
+    source: "V67 claim matrix",
+    allowedPlacements: ["hero", "evidence", "industry"],
+    forbiddenVariants: ["General AI achieved"],
+  },
+  {
+    id: "C19_PRODUCTION_AUTONOMY_NOT_AUTHORIZED",
+    publicCopy: "Production autonomy is not authorized and functional-safety certification is not claimed.",
+    status: "not-claimed",
+    source: "V67 industrial-autonomy boundary",
+    allowedPlacements: ["evidence", "industry"],
+    forbiddenVariants: ["certified control system"],
+  },
+  {
+    id: "C20_ABOVE_EXISTING_CONTROL_SYSTEMS",
+    publicCopy:
+      "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.",
+    status: "architecture",
+    source: "V67 technical evidence memorandum",
+    allowedPlacements: ["industry", "architecture"],
+    forbiddenVariants: ["replaces the digital twin", "direct robot control"],
+  },
 ];

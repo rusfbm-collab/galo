@@ -983,7 +983,5 @@ export const termAcademics: Record<string, TermAcademic> = {
 };
 
 export const termAcademicTranslationKeys = [
-  ...new Set([
-    ...Object.values(termAcademics).flatMap((entry) => [entry.discipline, entry.standing, entry.academic]),
-  ]),
+  ...new Set([...Object.values(termAcademics).flatMap((entry) => [entry.discipline, entry.standing, entry.academic])]),
 ] as const;

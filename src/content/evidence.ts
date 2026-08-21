@@ -132,15 +132,16 @@ export const releaseEvidence = {
       detail: "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.",
     },
     {
-      label: "External outcome and operational gain",
+      label: "Partner-controlled operational validity",
       status: "NOT PROVEN" as EvidenceStatus,
       detail:
-        "Internal work-unit accounting is not a speedup, causal outcome, customer value, or external gain result.",
+        "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.",
     },
     {
-      label: "Persistent policy",
+      label: "Persistent policy in this release",
       status: "NOT STARTED" as EvidenceStatus,
-      detail: "Current V4 performs no policy update; historical research artifacts are a separate audit record.",
+      detail:
+        "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.",
     },
     {
       label: "Current trained World Atlas",

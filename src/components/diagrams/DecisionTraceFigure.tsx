@@ -81,20 +81,10 @@ export function DecisionTraceFigure() {
                   )}
                 </g>
               ))}
-              <path
-                className="galo-trace__link"
-                d={`M443 ${lane.y} H ${WIDTH - 154}`}
-                markerEnd={`url(#${arrowId})`}
-              />
+              <path className="galo-trace__link" d={`M443 ${lane.y} H ${WIDTH - 154}`} markerEnd={`url(#${arrowId})`} />
               <g className="galo-trace__terminal">
                 <rect x={WIDTH - 146} y={lane.y - 24} width="126" height="48" rx="13" />
-                <text
-                  x={WIDTH - 83}
-                  y={lane.y}
-                  dominantBaseline="central"
-                  textAnchor="middle"
-                  direction="ltr"
-                >
+                <text x={WIDTH - 83} y={lane.y} dominantBaseline="central" textAnchor="middle" direction="ltr">
                   {lane.terminal}
                 </text>
               </g>

@@ -174,9 +174,12 @@ export function TransitionTutor() {
             <li>
               <Check size={16} aria-hidden="true" />
               <p>
-                {t("The complete typed address is {cellId}. The target is stored as its own result and never hidden inside the ID.", {
-                  cellId: cell.cellId,
-                })}
+                {t(
+                  "The complete typed address is {cellId}. The target is stored as its own result and never hidden inside the ID.",
+                  {
+                    cellId: cell.cellId,
+                  },
+                )}
               </p>
             </li>
           </ol>

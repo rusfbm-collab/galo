@@ -35,8 +35,7 @@ export const heroArchRu: TranslationDictionary = {
 };
 
 export const heroArchZh: TranslationDictionary = {
-  "AI that has to show why it was allowed to decide.":
-    "必须说明自己凭什么有权作出该决定的人工智能。",
+  "AI that has to show why it was allowed to decide.": "必须说明自己凭什么有权作出该决定的人工智能。",
   "BUILT FOR DECISIONS THAT GET AUDITED": "为事后要被审计的决策而建",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. Not built.":
     "把计划写成一棵步骤树，而不是单独一步：整棵树在任何一步开跑之前都可以先看一遍。尚未建成。",
@@ -69,8 +68,7 @@ export const heroArchZh: TranslationDictionary = {
 };
 
 export const heroArchAr: TranslationDictionary = {
-  "AI that has to show why it was allowed to decide.":
-    "ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر.",
+  "AI that has to show why it was allowed to decide.": "ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر.",
   "BUILT FOR DECISIONS THAT GET AUDITED": "مبنيّ لقرارات تخضع للتدقيق لاحقاً",
   "A plan written as a tree of steps rather than a single move, so the whole plan can be inspected before any of it runs. Not built.":
     "خطة مكتوبة على هيئة شجرة خطوات لا خطوة واحدة، بحيث يمكن فحص الخطة كلّها قبل أن ينطلق أي جزء منها. غير مبنيّ.",

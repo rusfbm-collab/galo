@@ -15,7 +15,7 @@ const contents = [
   { href: "#anatomy", label: "Two anatomies, side by side" },
   { href: "#dimensions", label: "Ten dimensions compared" },
   { href: "#strengths", label: "What each one is good at" },
-  { href: "#landscape", label: "The wider field, nine families" },
+  { href: "#landscape", label: "The wider field, twelve families" },
   { href: "#together", label: "How they could work together" },
   { href: "#misreadings", label: "Five misreadings" },
 ] as const;
@@ -188,7 +188,7 @@ export function ComparisonPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE WIDER FIELD")}
-            title={t("Nine families of system that are also trying to build artificial intelligence.")}
+            title={t("Twelve families of system that are also trying to build artificial intelligence.")}
             text={t(
               "Chatbots are not the only thing GALO should be compared with, and they are not the comparison a specialist would reach for. Each family below is named, described by how it is built and by what an outsider can check afterwards, and followed by where this project stands relative to it — including the places where it stands behind.",
             )}

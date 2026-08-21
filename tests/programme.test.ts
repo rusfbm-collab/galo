@@ -38,16 +38,12 @@ describe("assessment dossier", () => {
   it("keeps the negative lines in the table rather than in a footnote", () => {
     expect(assessmentTable).toHaveLength(12);
 
-    const negative = assessmentTable.filter(
-      (row) => row.status === "NONE" || row.status === "NOT ESTABLISHED",
-    );
+    const negative = assessmentTable.filter((row) => row.status === "NONE" || row.status === "NOT ESTABLISHED");
     expect(negative).toHaveLength(6);
 
     // The first negative line has to appear before the halfway point, or the
     // table is ordered to be skimmed favourably.
-    const firstNegative = assessmentTable.findIndex(
-      (row) => row.status === "NONE" || row.status === "NOT ESTABLISHED",
-    );
+    const firstNegative = assessmentTable.findIndex((row) => row.status === "NONE" || row.status === "NOT ESTABLISHED");
     expect(firstNegative).toBeLessThan(assessmentTable.length / 2);
 
     for (const row of assessmentTable) {
@@ -101,8 +97,8 @@ describe("assessment dossier", () => {
   });
 
   it("says what is not being asked for, at the same length as what is", () => {
-    expect(askedFor).toHaveLength(4);
-    expect(notAskedFor).toHaveLength(4);
+    expect(askedFor).toHaveLength(5);
+    expect(notAskedFor).toHaveLength(5);
     expect(notAskedFor.join(" ")).toMatch(/endorsement/i);
     expect(notAskedFor.join(" ")).toMatch(/validation of the technical claims/i);
   });

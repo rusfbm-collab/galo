@@ -20,8 +20,8 @@ export const fieldRu: TranslationDictionary = {
     "Другие занимаются этим давно, и некоторые продвинулись дальше.",
   "Run the same source pattern twice on different machines and compare the chosen candidate. Anything but an identical result falsifies the claim outright.":
     "Запустите один и тот же исходный шаблон дважды на разных машинах и сравните выбранного кандидата. Любой результат, кроме идентичного, опровергает утверждение сразу.",
-  "See all nine families, named, with what each one lets an outsider check":
-    "Посмотреть все девять семейств с именами и с тем, что каждое даёт проверить постороннему",
+  "See all twelve families, named, with what each one lets an outsider check":
+    "Посмотреть все двенадцать семейств с именами и с тем, что каждое даёт проверить постороннему",
   "Software that refuses to accept a proof it cannot check line by line. It is stricter than anything claimed here. It also never does anything: it checks statements, it does not decide, spend, or act. That is the gap this project is trying to stand in.":
     "Программа, которая отказывается принимать доказательство, если не может проверить его построчно. Она строже всего, что здесь заявлено. И она ничего не делает: проверяет утверждения, но не решает, не тратит и не действует. В этом промежутке проект и пытается встать.",
   "THE THREE PROMISES, AND HOW TO BREAK EACH": "ТРИ ОБЕЩАНИЯ И КАК СЛОМАТЬ КАЖДОЕ",
@@ -35,10 +35,11 @@ export const fieldRu: TranslationDictionary = {
   "The question is not whether anyone else has thought of this. Several fields have.":
     "Вопрос не в том, додумался ли до этого кто-нибудь ещё. Додумались, и не в одной области.",
   "The rule books a bank already runs on": "Своды правил, на которых уже работает банк",
-  "The same comparison in full, with nine families named": "То же сравнение целиком, с девятью названными семействами",
+  "The same comparison in full, with twelve families named":
+    "То же сравнение целиком, с двенадцатью названными семействами",
   "The three promises, and how to break each": "Три обещания и как сломать каждое",
-  "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — nine families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
-    "Двенадцать строк выше говорят, что установлено внутри проекта, а что нет. Этот раздел говорит вещь потруднее: как те же строки читаются рядом с языковыми моделями, агентными фреймворками, ассистентами доказательств, солверами, работами по схеме «предлагающий и проверяющий», графами знаний, когнитивными архитектурами и движками правил — девятью семействами, которые тоже пытаются построить искусственный интеллект и каждое из которых практически продвинулось дальше.",
+  "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — twelve families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
+    "Двенадцать строк выше говорят, что установлено внутри проекта, а что нет. Этот раздел говорит вещь потруднее: как те же строки читаются рядом с языковыми моделями, агентными фреймворками, ассистентами доказательств, солверами, работами по схеме «предлагающий и проверяющий», графами знаний, когнитивными архитектурами и движками правил — двенадцатью семействами, которые тоже пытаются построить искусственный интеллект и каждое из которых практически продвинулось дальше.",
   "This is the part of the comparison that costs us something. Read it before the risk register rather than after it.":
     "Это та часть сравнения, которая нам чего-то стоит. Прочитайте её до реестра рисков, а не после.",
   "Three things this sits next to": "Три вещи, рядом с которыми это стоит",
@@ -71,8 +72,8 @@ export const fieldZh: TranslationDictionary = {
     "别人在这件事上已经做了很久，其中一些走得比我们远。",
   "Run the same source pattern twice on different machines and compare the chosen candidate. Anything but an identical result falsifies the claim outright.":
     "拿同一个源模式，在不同机器上各跑一次，比较选出的候选。只要结果不完全一致，这条主张当场就被推翻。",
-  "See all nine families, named, with what each one lets an outsider check":
-    "看完整的九类系统：都点了名，也写明各自让外人能核验什么",
+  "See all twelve families, named, with what each one lets an outsider check":
+    "看完整的十二类系统：都点了名，也写明各自让外人能核验什么",
   "Software that refuses to accept a proof it cannot check line by line. It is stricter than anything claimed here. It also never does anything: it checks statements, it does not decide, spend, or act. That is the gap this project is trying to stand in.":
     "一种软件，凡是它无法逐行核验的证明，一律不收。它比这里声称的任何东西都严格。它同时什么也不做：它核验陈述，但不作决定、不花钱、不采取行动。本项目想站的，正是这中间的空当。",
   "THE THREE PROMISES, AND HOW TO BREAK EACH": "三个承诺，以及各自怎么被推翻",
@@ -86,10 +87,10 @@ export const fieldZh: TranslationDictionary = {
   "The question is not whether anyone else has thought of this. Several fields have.":
     "问题不在于有没有别人想到过。想到的人不少，而且不止一个领域。",
   "The rule books a bank already runs on": "银行早就在跑的那些规则手册",
-  "The same comparison in full, with nine families named": "同一份对比的完整版，九类系统都点了名",
+  "The same comparison in full, with twelve families named": "同一份对比的完整版，十二类系统都点了名",
   "The three promises, and how to break each": "三个承诺，以及各自怎么被推翻",
-  "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — nine families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
-    "上面十二行说的是本项目内部什么已确立、什么尚未确立。这一节要说的是更难的那件事：同样这些行，摆在语言模型、智能体框架、证明助手、求解器、「提议者加检查器」一脉、知识图谱、认知架构和规则引擎旁边怎么读——这九类同样在尝试造出人工智能，而且在实务上每一类都走得更远。",
+  "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — twelve families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
+    "上面十二行说的是本项目内部什么已确立、什么尚未确立。这一节要说的是更难的那件事：同样这些行，摆在语言模型、智能体框架、证明助手、求解器、「提议者加检查器」一脉、知识图谱、认知架构和规则引擎旁边怎么读——这十二类同样在尝试造出人工智能，而且在实务上每一类都走得更远。",
   "This is the part of the comparison that costs us something. Read it before the risk register rather than after it.":
     "这是对比中让我们付出代价的那部分。请在读风险清单之前读它，而不是之后。",
   "Three things this sits next to": "这东西挨着哪三样",
@@ -122,8 +123,8 @@ export const fieldAr: TranslationDictionary = {
     "انشغل آخرون بهذا منذ زمن طويل، وبعضهم قطع شوطاً أبعد.",
   "Run the same source pattern twice on different machines and compare the chosen candidate. Anything but an identical result falsifies the claim outright.":
     "شغِّل نمط المصدر نفسه مرّتين على جهازين مختلفين وقارن المرشّح المختار. وأي نتيجة غير متطابقة تُسقط الدعوى فوراً.",
-  "See all nine families, named, with what each one lets an outsider check":
-    "انظر العائلات التسع كلّها بأسمائها، وما يتيح كلٌّ منها للغريب أن يفحصه",
+  "See all twelve families, named, with what each one lets an outsider check":
+    "انظر العائلات الاثنتي عشرة كلّها بأسمائها، وما يتيح كلٌّ منها للغريب أن يفحصه",
   "Software that refuses to accept a proof it cannot check line by line. It is stricter than anything claimed here. It also never does anything: it checks statements, it does not decide, spend, or act. That is the gap this project is trying to stand in.":
     "برمجيات ترفض قبول أي برهان لا تستطيع فحصه سطراً سطراً. وهي أشدّ صرامةً من كل ما يُدّعى هنا. وهي في الوقت نفسه لا تفعل شيئاً: تفحص العبارات، ولا تقرّر ولا تنفق ولا تتصرّف. وفي هذه الفجوة بالذات يحاول هذا المشروع أن يقف.",
   "THE THREE PROMISES, AND HOW TO BREAK EACH": "الوعود الثلاثة وكيف يُكسر كلٌّ منها",
@@ -137,10 +138,10 @@ export const fieldAr: TranslationDictionary = {
   "The question is not whether anyone else has thought of this. Several fields have.":
     "ليس السؤال هل فكّر أحد آخر في هذا. لقد فكّر فيه غير ميدان.",
   "The rule books a bank already runs on": "أدلّة القواعد التي يعمل بها المصرف أصلاً",
-  "The same comparison in full, with nine families named": "المقارنة نفسها كاملةً، بتسع عائلات مذكورة بأسمائها",
+  "The same comparison in full, with twelve families named": "المقارنة نفسها كاملةً، باثنتي عشرة عائلة مذكورة بأسمائها",
   "The three promises, and how to break each": "الوعود الثلاثة وكيف يُكسر كلٌّ منها",
-  "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — nine families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
-    "تقول الأسطر الاثنا عشر أعلاه ما ثبت وما لم يثبت داخل هذا المشروع. أمّا هذا القسم فيقول الأصعب: كيف تُقرأ الأسطر نفسها بجوار نماذج اللغة، وأُطر الوكلاء، ومساعدات البرهان، والحلّالات، وأعمال المُقترِح والمدقّق، ورسوم المعرفة، والبنى المعرفية، ومحرّكات القواعد — تسع عائلات تحاول هي الأخرى بناء ذكاء اصطناعي، وكلٌّ منها أبعد شوطاً من الناحية العملية.",
+  "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — twelve families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
+    "تقول الأسطر الاثنا عشر أعلاه ما ثبت وما لم يثبت داخل هذا المشروع. أمّا هذا القسم فيقول الأصعب: كيف تُقرأ الأسطر نفسها بجوار نماذج اللغة، وأُطر الوكلاء، ومساعدات البرهان، والحلّالات، وأعمال المُقترِح والمدقّق، ورسوم المعرفة، والبنى المعرفية، ومحرّكات القواعد — اثنتا عشرة عائلة تحاول هي الأخرى بناء ذكاء اصطناعي، وكلٌّ منها أبعد شوطاً من الناحية العملية.",
   "This is the part of the comparison that costs us something. Read it before the risk register rather than after it.":
     "هذا هو الجزء من المقارنة الذي يكلّفنا شيئاً. اقرأه قبل سجلّ المخاطر لا بعده.",
   "Three things this sits next to": "ثلاثة أشياء يقف هذا بجوارها",

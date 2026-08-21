@@ -56,7 +56,13 @@ export function DeterministicChoiceFigure() {
 
           {LANES.map((lane) => (
             <g key={lane.id} className="galo-determinism__lane">
-              <text className="galo-determinism__run" x="14" y={lane.y + NODE_HEIGHT / 2} dominantBaseline="central" direction="ltr">
+              <text
+                className="galo-determinism__run"
+                x="14"
+                y={lane.y + NODE_HEIGHT / 2}
+                dominantBaseline="central"
+                direction="ltr"
+              >
                 {lane.id}
               </text>
               {STAGES.map((stage, index) => (

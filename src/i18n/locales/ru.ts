@@ -18,6 +18,7 @@ import { landscapeRu } from "./landscape";
 import { fieldRu } from "./field";
 import { navigationRu } from "./navigation";
 import { mathFiguresRu } from "./mathFigures";
+import { industrialRu } from "./industrial";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -43,6 +44,7 @@ export const ru: TranslationDictionary = {
   ...fieldRu,
   ...navigationRu,
   ...mathFiguresRu,
+  ...industrialRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
@@ -443,10 +445,10 @@ export const ru: TranslationDictionary = {
   "Return home": "Вернуться на главную",
   "View evidence": "Открыть доказательства",
 
-  "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.":
-    "Исследовательская архитектура стадии pre-seed для решений, которые потом проверяют: список разрешённых действий закрывается до запуска, а после каждого запуска остаётся запись, по которой любой повторит шаг и получит тот же результат.",
-  "GALO AI — AI That Has to Show Why It Was Allowed to Decide":
-    "GALO AI — искусственный интеллект, обязанный показать, почему он имел право решить",
+  "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
+    "Архитектура общего назначения для проверяемой модели мира и автономности, первый продукт которой — гарантия промышленных решений. Ограниченные результаты обучения опубликованы вместе с отрицательными; валидность на данных партнёра не доказана, промышленная автономность не разрешена.",
+  "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
+    "GALO AI — проверяемая модель мира для частного ИИ и промышленной автономности",
   "Evidence — GALO AI": "Доказательства — GALO AI",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "Изучите реализованные ограниченные механизмы GALO, неизменяемый отпечаток выпуска, матрицу публичных утверждений и раскрытые границы исследования.",

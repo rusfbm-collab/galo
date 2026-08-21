@@ -157,33 +157,35 @@ export function HomePage() {
       <section className="hero">
         <div className="shell hero__grid">
           <div className="hero__content">
-            <p className="eyebrow eyebrow--cyan">{t("BUILT FOR DECISIONS THAT GET AUDITED")}</p>
-            <h1>{t("AI that has to show why it was allowed to decide.")}</h1>
+            <p className="eyebrow eyebrow--cyan">
+              {t("GENERAL-PURPOSE ARCHITECTURE · INDUSTRIAL DECISION ASSURANCE FIRST")}
+            </p>
+            <h1>{t("A verifiable world model for private AI and industrial autonomy.")}</h1>
             <p className="hero__lead">
               {t(
-                "In most AI systems the explanation is written after the decision, by the same machinery that made it. GALO is built the other way round: the list of permitted actions closes before anything runs, the choice comes only from that list, and what is left afterwards is a record a stranger can replay to the same result — what was open, what was taken, what was refused. Today that runs inside one small declared scope: no learning, and no measured advantage outside the project.",
+                "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.",
               )}
             </p>
             <div className="hero__status" aria-label={t("Current project status")}>
               <span>
-                <CircleDot size={14} aria-hidden="true" /> {t("Working bounded prototype")}
+                <CircleDot size={14} aria-hidden="true" /> {t("Working research prototype")}
               </span>
               <span>{t("Pre-seed")}</span>
               <span>{t("Founder-led")}</span>
               <span>{t("Abu Dhabi relocation planned")}</span>
             </div>
             <div className="hero__actions">
-              <a className="button button--primary" href={href("/simple")}>
-                {t("Explain it in plain words")}{" "}
+              <a className="button button--primary" href={href("/industry")}>
+                {t("Request a bounded industrial evaluation")}{" "}
                 <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
-              <a className="button button--outline-light" href="#how-to-read">
-                {t("Where should I start?")}
+              <a className="button button--outline-light" href={href("/evidence#learning")}>
+                {t("Review the technical evidence")}
               </a>
             </div>
             <p className="hero__boundary">
               {t(
-                "Formal replay within a declared scope. General AI and external capability superiority are not claimed.",
+                "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue.",
               )}
             </p>
           </div>

@@ -19,11 +19,18 @@ describe("GALO public site", () => {
   beforeEach(() => setPath("/"));
   afterEach(cleanup);
 
-  it("renders the problem-led hero and bounded status", () => {
+  it("leads with the platform thesis and the wedge, and keeps the boundary in the hero", () => {
     render(<App />);
-    expect(screen.getByRole("heading", { level: 1, name: /why it was allowed to decide/i })).toBeInTheDocument();
-    expect(screen.getByText("Working bounded prototype")).toBeInTheDocument();
-    expect(screen.getByText(/General AI and external capability superiority are not claimed/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 1, name: "A verifiable world model for private AI and industrial autonomy." }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Working research prototype")).toBeInTheDocument();
+    expect(screen.getByText(/General-purpose architecture, not general intelligence/i)).toBeInTheDocument();
+    expect(screen.getByText(/production autonomy is not authorised/i)).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Request a bounded industrial evaluation/i })).toHaveAttribute(
+      "href",
+      "/industry",
+    );
   });
 
   it("draws the seven levels as seven towers whose heights come from the mathematics", () => {
@@ -123,9 +130,12 @@ describe("GALO public site", () => {
     expect(screen.getByText("General AI")).toBeInTheDocument();
   });
 
-  it("publishes the confirmed evaluation email without inventing social links", () => {
+  it("publishes the confirmed evaluation email and the confirmed founder profile", () => {
     render(<App />);
-    expect(screen.queryByRole("link", { name: /LinkedIn/i })).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /LinkedIn/i })).toHaveAttribute(
+      "href",
+      "https://www.linkedin.com/in/ruslan-a-5038765/",
+    );
     expect(screen.getByRole("link", { name: "rusfbm@gmail.com" })).toHaveAttribute("href", "mailto:rusfbm@gmail.com");
     expect(
       screen
@@ -150,6 +160,7 @@ describe("GALO public site", () => {
       "/investors",
       "/audit",
       "/hub71",
+      "/industry",
       "/evidence",
       "/theory",
       "/thinking",
@@ -159,7 +170,7 @@ describe("GALO public site", () => {
       expect(map.querySelector(`a[href="${route}"]`), `Footer is missing ${route}`).toBeInTheDocument();
     }
     // Every entry carries a line saying what that page settles.
-    expect(map.querySelectorAll("li > span")).toHaveLength(11);
+    expect(map.querySelectorAll("li > span")).toHaveLength(12);
 
     const header = screen.getByRole("navigation", { name: "Primary navigation" });
     expect(header.querySelector('a[aria-current="page"]')).toHaveAttribute("href", "/audit");
@@ -171,7 +182,7 @@ describe("GALO public site", () => {
 
     const menu = screen.getByRole("navigation", { name: "Mobile navigation" });
     expect(menu.querySelectorAll(".mobile-nav__group")).toHaveLength(3);
-    expect(menu.querySelectorAll("a:not(.button)")).toHaveLength(11);
+    expect(menu.querySelectorAll("a:not(.button)")).toHaveLength(12);
     expect(menu.querySelector('a[href="/hub71"]')).toBeInTheDocument();
   });
 
@@ -181,7 +192,7 @@ describe("GALO public site", () => {
 
     const map = screen.getByRole("navigation", { name: "All pages" });
     expect(map.querySelectorAll("h3")).toHaveLength(3);
-    expect(map.querySelectorAll("a")).toHaveLength(11);
+    expect(map.querySelectorAll("a")).toHaveLength(12);
     expect(screen.getByText("Whatever you were looking for, it is one of these.")).toBeInTheDocument();
   });
 
@@ -280,7 +291,7 @@ describe("GALO public site", () => {
     expect(screen.getByText(/closed deterministic selector\. Nothing about it was learned/i)).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Public claim matrix" })).toBeInTheDocument();
     expect(screen.getByText("NOT PRESENT")).toBeInTheDocument();
-    expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
+    expect(screen.getAllByText("NOT CLAIMED").length).toBeGreaterThan(0);
   });
 
   it("opens with a plain-language briefing before any mathematics", () => {
@@ -295,6 +306,79 @@ describe("GALO public site", () => {
       "href",
       "/theory#cayley-first",
     );
+  });
+
+  it("renders the industrial wedge without letting it become a claim of authority", () => {
+    setPath("/industry");
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Decision assurance around the digital twins a plant already runs.",
+      }),
+    ).toBeInTheDocument();
+
+    // The two levels are stated next to each other, and the guard line under them
+    // is the sentence that stops one being read as the other.
+    expect(document.querySelectorAll(".wedge-grid article")).toHaveLength(3);
+    const guard = document.querySelector(".wedge-guard")?.textContent ?? "";
+    expect(guard).toContain("GENERAL-PURPOSE ARCHITECTURE = YES");
+    expect(guard).toContain("GENERAL INTELLIGENCE = NOT PROVEN");
+
+    // Nine tiers, with the partner owning the top and the bottom of the stack.
+    const tiers = document.querySelectorAll(".integration-stack > li");
+    expect(tiers).toHaveLength(9);
+    expect(tiers[0]?.textContent).toContain("replaces none of them");
+    expect(tiers[8]?.textContent).toContain("No current or proposed path writes to them directly");
+
+    // Seven steps of one evaluated decision, ending with no actuation.
+    expect(document.querySelectorAll(".industrial-workflow > li")).toHaveLength(7);
+    expect(screen.getByText("No real actuation happens during an evaluation.")).toBeInTheDocument();
+
+    // Five rungs of the ladder, and not one of them is marked as running.
+    const rungs = document.querySelectorAll(".autonomy-ladder > li");
+    expect(rungs).toHaveLength(5);
+    expect(document.querySelectorAll(".autonomy-ladder__status.is-runs-today")).toHaveLength(0);
+    expect(document.querySelectorAll(".autonomy-ladder__status.is-gated")).toHaveLength(3);
+
+    // Seven arms, eight gates, five offer rows, five fit criteria.
+    expect(document.querySelectorAll(".evaluation-arms article")).toHaveLength(7);
+    expect(document.querySelectorAll(".promotion-gates ul li")).toHaveLength(8);
+    expect(document.querySelectorAll(".offer-ladder tbody tr")).toHaveLength(5);
+    expect(document.querySelectorAll(".partner-fit article")).toHaveLength(5);
+
+    // The price table says what it is in its own caption.
+    expect(document.querySelector(".offer-ladder caption")?.textContent).toContain(
+      "Design-partner planning hypotheses",
+    );
+  });
+
+  it("renders the V65-V67 learning line with its negatives in the same table", () => {
+    setPath("/evidence");
+    render(<App />);
+
+    const results = document.querySelectorAll(".learning-results article");
+    expect(results).toHaveLength(6);
+    expect(document.querySelectorAll(".learning-results article.is-negative")).toHaveLength(2);
+
+    const statuses = Array.from(document.querySelectorAll(".learning-results__status")).map(
+      (node) => node.textContent,
+    );
+    expect(statuses).toContain("NOT SUPPORTED");
+    expect(statuses).toContain("NOT IDENTIFIABLE");
+
+    // The negative headline is printed as-is rather than being softened.
+    expect(screen.getByText("0% work advantage")).toBeInTheDocument();
+    expect(screen.getByText("No identifiable independent effect")).toBeInTheDocument();
+
+    // The frozen release and the prototype are kept apart in the section lead.
+    expect(screen.getByText(/still performs no learning at all/i)).toBeInTheDocument();
+
+    expect(document.querySelectorAll(".learning-contract ol li")).toHaveLength(8);
+    const boundaries = document.querySelectorAll(".learning-boundaries li");
+    expect(boundaries).toHaveLength(6);
+    expect(document.querySelector(".learning-boundaries")?.textContent).toContain("NOT AUTHORIZED");
   });
 
   it("renders the assessment dossier as a document, with its absences visible", () => {
@@ -322,7 +406,7 @@ describe("GALO public site", () => {
 
     // The dossier states its position against the field rather than only against itself.
     expect(document.querySelectorAll("#field .landscape-standing li")).toHaveLength(4);
-    expect(document.querySelector("#field")?.textContent).toMatch(/nine families/i);
+    expect(document.querySelector("#field")?.textContent).toMatch(/twelve families/i);
 
     // Five commitments, each carrying its own failure condition.
     expect(document.querySelectorAll(".programme-months li")).toHaveLength(5);
@@ -709,7 +793,7 @@ describe("GALO public site", () => {
     expect(document.querySelector(".galo-figure--answers")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--complement")).toBeInTheDocument();
 
-    expect(document.querySelectorAll(".landscape-card")).toHaveLength(9);
+    expect(document.querySelectorAll(".landscape-card")).toHaveLength(12);
     expect(screen.getByRole("heading", { level: 3, name: "Proof assistants" })).toBeInTheDocument();
     expect(screen.getByText("Lean and mathlib, Rocq (formerly Coq), Isabelle/HOL")).toBeInTheDocument();
     expect(screen.getByText(/Stronger verification than GALO claims anywhere/i)).toBeInTheDocument();
@@ -875,7 +959,7 @@ describe("GALO public site", () => {
     expect(paths).toHaveLength(4);
     expect(paths[0]?.querySelectorAll("ol > li")).toHaveLength(3);
     expect(screen.getByRole("heading", { level: 2, name: /You do not need the mathematics/i })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Explain it in plain words/i })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: /Request a bounded industrial evaluation/i })).toBeInTheDocument();
   });
 
   it("carries the investor and audit routes into every locale", () => {
@@ -1016,7 +1100,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Искусственный интеллект, обязанный показать, почему он имел право так решить.",
+        name: "Проверяемая модель мира для частного ИИ и промышленной автономности.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -1032,8 +1116,10 @@ describe("GALO public site", () => {
       screen.getByRole("heading", { level: 1, name: "已经能用的部分，以及接下来正在建设的部分。" }),
     ).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
-    expect(screen.getByText("通用人工智能")).toBeInTheDocument();
-    expect(screen.getByText("NOT CLAIMED")).toBeInTheDocument();
+    // "General AI" is now bounded twice on this page: once for the frozen release
+    // and once for the V65-V67 learning line.
+    expect(screen.getAllByText("通用人工智能").length).toBeGreaterThanOrEqual(2);
+    expect(screen.getAllByText("NOT CLAIMED").length).toBeGreaterThan(0);
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/zh/evidence");
   });
 
@@ -1045,7 +1131,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر.",
+        name: "نموذج عالم قابل للتحقّق للذكاء الاصطناعي الخاص والاستقلالية الصناعية.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

@@ -15,6 +15,7 @@ const CANONICAL_ROUTES = [
   "/investors",
   "/audit",
   "/hub71",
+  "/industry",
   "/theory",
   "/thinking",
   "/vs-llm",

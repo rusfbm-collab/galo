@@ -25,7 +25,8 @@ export const aiWords: readonly AiWord[] = [
     word: "Model",
     plain:
       "A very large pile of numbers that a program uses to produce an answer. Nobody wrote those numbers by hand; they came out of a process, and no single one of them means anything on its own.",
-    whyHere: "Almost every AI product you have used is one. GALO is not, and most of this site is about that difference.",
+    whyHere:
+      "Almost every AI product you have used is one. GALO is not, and most of this site is about that difference.",
   },
   {
     word: "Training",

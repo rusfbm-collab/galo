@@ -21,10 +21,8 @@ export const termsPageRu: TranslationDictionary = {
     "Фактор — более грубое состояние GALO, которое всё ещё остаётся законным. Так формально выглядит решение сознательно смотреть на меньшее.",
   "A stable subset is a smaller world GALO cannot escape from. It is how a narrower scope can be carved out and still be exact.":
     "Замкнутое подмножество — меньший мир, из которого GALO выйти не может. Так вырезают более узкую область, и она остаётся точной.",
-  "All 59 terms in one place":
-    "Все 59 терминов в одном месте",
-  "All terms":
-    "Все термины",
+  "All 59 terms in one place": "Все 59 терминов в одном месте",
+  "All terms": "Все термины",
   "An action is what lets GALO count distinct situations rather than distinct names. Two names moved onto each other were never two situations.":
     "Действие позволяет GALO считать разные ситуации, а не разные имена. Два имени, переводимых друг в друга, никогда и не были двумя ситуациями.",
   "An orbit is a group of GALO positions that are genuinely interchangeable. Orbits, not labels, are what should be counted.":
@@ -33,8 +31,7 @@ export const termsPageRu: TranslationDictionary = {
     "На седьмом уровне отмечены все метки, кроме P0, потому что семь — простое число и всё меньшее с ним взаимно просто.",
   "At prime levels this block structure decides how GALO's positions can be grouped. It is a fact about the level, not a design choice.":
     "На простых уровнях эта блочная структура решает, как можно группировать позиции GALO. Это факт об уровне, а не выбор дизайнера.",
-  "BEFORE THE EXACT DEFINITION":
-    "ПЕРЕД ТОЧНЫМ ОПРЕДЕЛЕНИЕМ",
+  "BEFORE THE EXACT DEFINITION": "ПЕРЕД ТОЧНЫМ ОПРЕДЕЛЕНИЕМ",
   "Because bracketing matters in GALO, the number of distinct programs of a given length is this count and not one.":
     "Поскольку расстановка скобок в GALO важна, число различных программ данной длины равно этому счёту, а не единице.",
   "Because of this, the bracketing of a GALO program is part of the program. It has to be written down, never assumed.":
@@ -45,10 +42,8 @@ export const termsPageRu: TranslationDictionary = {
     "Раз такое отображение существует всегда, GALO никогда не утверждает, что два уровня не связаны. Честный вопрос — есть ли интересное отображение.",
   "Both marked cells answer P0, so P1 and P2 undo each other. And stepping by P1 repeatedly visits every label.":
     "Обе отмеченные клетки дают P0 — значит, P1 и P2 отменяют друг друга. А шагая по P1 раз за разом, вы обойдёте все метки.",
-  "Browse the whole tower":
-    "Посмотреть всю башню",
-  "COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS":
-    "ПОЛНОЕ ОПРЕДЕЛЕНИЕ И ДВЕ НЕЗАВИСИМЫЕ ПРОВЕРКИ",
+  "Browse the whole tower": "Посмотреть всю башню",
+  "COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS": "ПОЛНОЕ ОПРЕДЕЛЕНИЕ И ДВЕ НЕЗАВИСИМЫЕ ПРОВЕРКИ",
   "Characters are a checking device in GALO, not a feature. They give a second, independent way to confirm a count.":
     "Характеры в GALO — инструмент проверки, а не возможность. Они дают второй, независимый способ подтвердить подсчёт.",
   "Choosing a level in GALO is choosing how finely situations are told apart. A bigger level distinguishes more but costs more to declare and check.":
@@ -67,16 +62,14 @@ export const termsPageRu: TranslationDictionary = {
     "Любой ответ в сетке — снова одна из меток строк. Ничего нового там не появляется.",
   "Every step GALO takes is one binary operation: the position it is standing on, plus the operand the admitted action supplies.":
     "Каждый шаг GALO — одна двухместная операция: позиция, на которой он стоит, плюс операнд из допущенного действия.",
-  "Every term opens a page with a worked table.":
-    "Каждый термин открывает страницу с разобранной таблицей.",
+  "Every term opens a page with a worked table.": "Каждый термин открывает страницу с разобранной таблицей.",
   "Everything you need to read this grid is in the labels and the two symbols above it. There is no hidden notation.":
     "Всё, что нужно для чтения этой сетки, — в метках и двух символах над ней. Скрытых обозначений нет.",
   "Five is the honest number of distinct situations GALO has at this level. Nine is the number of names for them.":
     "Пять — честное число различных ситуаций, которые есть у GALO на этом уровне. Девять — число имён для них.",
   "Fix P1 on the left and you get the marked row. Fix it on the right and you get the marked column.":
     "Зафиксируйте P1 слева — получится отмеченная строка. Зафиксируйте справа — отмеченный столбец.",
-  "GALO AI Term — What It Means in the Tables":
-    "Термин GALO AI — что он значит в таблицах",
+  "GALO AI Term — What It Means in the Tables": "Термин GALO AI — что он значит в таблицах",
   "GALO aggregates per fibre so that a total can be broken back down. A number that cannot be broken down is not published.":
     "GALO агрегирует по слоям так, чтобы итог можно было разложить обратно. Число, которое не раскладывается, не публикуется.",
   "GALO deliberately keeps the weaker structure. The site names it precisely so that stronger theorems are not borrowed by accident.":
@@ -107,8 +100,7 @@ export const termsPageRu: TranslationDictionary = {
     "Сгруппируйте клетки с одинаковым ответом и посчитайте каждую группу. Эта группировка и есть слой.",
   "Group the labels into evens and odds, and the marked cells still land in the group you would predict.":
     "Разложите метки на чётные и нечётные — отмеченные клетки всё равно попадут в ту группу, которую вы предсказали.",
-  "If this is still too technical":
-    "Если и это слишком технично",
+  "If this is still too technical": "Если и это слишком технично",
   "Imagine renaming the labels and rewriting the table. If the grid comes out identical, the renaming was an automorphism.":
     "Представьте, что вы переименовали метки и переписали таблицу. Если сетка вышла точно такой же — переименование было автоморфизмом.",
   "In GALO the carrier is the complete set of positions the engine may ever be in during a run. Declaring it is the first thing a level does.":
@@ -117,8 +109,7 @@ export const termsPageRu: TranslationDictionary = {
     "Только так шаг в GALO может отбросить то, что ему дали. Это объявлено в законе, а не решается на ходу.",
   "Inversion is the smallest non-trivial symmetry GALO has at most levels, and it is often the only one.":
     "Инверсия — самая маленькая нетривиальная симметрия, которая есть у GALO на большинстве уровней, и часто единственная.",
-  "KEEP GOING":
-    "ЧТО ДАЛЬШЕ",
+  "KEEP GOING": "ЧТО ДАЛЬШЕ",
   "Keeping the three apart is GALO's central editorial rule. A proof about the tables is never evidence about the running engine.":
     "Держать эти три порознь — главное редакционное правило GALO. Доказательство о таблицах никогда не является свидетельством о работающем движке.",
   "Look at how many distinct answers appear in the table at all. The marked row contributes only one of them.":
@@ -181,16 +172,14 @@ export const termsPageRu: TranslationDictionary = {
     "Поменяйте операнды местами и сравните отмеченные клетки. Они разные — значит, порядок важен.",
   "Take one table away and you have a reduct. Put it back and you have the expansion. Same positions, different amount of structure.":
     "Уберите одну таблицу — получите редукт. Верните её — получите расширение. Позиции те же, структуры разное количество.",
-  "Terms that only make sense next to this one.":
-    "Термины, которые имеют смысл только рядом с этим.",
+  "Terms that only make sense next to this one.": "Термины, которые имеют смысл только рядом с этим.",
   "The count of marked labels is exactly how many lawful relabellings GALO has at that level. Prime levels have the most.":
     "Число отмеченных меток — это ровно столько законных переименований, сколько есть у GALO на этом уровне. У простых уровней их больше всего.",
   "The first table is a group. The second is only a magma, because it fails associativity and has no two-sided identity.":
     "Первая таблица — группа. Вторая — всего лишь магма: у неё нет ассоциативности и нет двусторонней единицы.",
   "The four marked cells use only P0 and P2, and every answer is again P0 or P2. That pair never leaks out.":
     "Четыре отмеченные клетки используют только P0 и P2, и каждый ответ — снова P0 или P2. Эта пара никогда не протекает наружу.",
-  "The full list":
-    "Полный список",
+  "The full list": "Полный список",
   "The legend exists so that no GALO page requires prior notation. If a symbol is not in it, it is not used.":
     "Легенда существует, чтобы ни одна страница GALO не требовала знать обозначения заранее. Если символа в ней нет — он не используется.",
   "The marked cell answers P1, because four and one leave the same remainder when divided by three.":
@@ -223,14 +212,12 @@ export const termsPageRu: TranslationDictionary = {
     "Один и тот же P0 ведёт себя по-разному в зависимости от того, с какой стороны он стоит. Именно поэтому GALO записывает, с какой стороны был каждый операнд.",
   "The same row and column in both tables. Same address, different law — so they are two different coordinates, not one.":
     "Те же строка и столбец в обеих таблицах. Адрес один, закон разный — значит, это две разные координаты, а не одна.",
-  "The same thing, without the mathematics.":
-    "То же самое, но без математики.",
+  "The same thing, without the mathematics.": "То же самое, но без математики.",
   "The size of that collection tells GALO how much a step can still distinguish afterwards. A shrinking image means information was dropped.":
     "Размер этого набора говорит GALO, сколько шаг ещё способен различать после себя. Сжимающийся образ значит, что информацию выбросили.",
   "The table is complete and exact, and it still says nothing about anything outside itself. That silence is the boundary.":
     "Таблица полна и точна — и всё равно ничего не говорит о том, что вне её. Это молчание и есть граница.",
-  "The tables themselves":
-    "Сами таблицы",
+  "The tables themselves": "Сами таблицы",
   "The two marked cells are the same three operands bracketed two ways. They do not agree.":
     "Две отмеченные клетки — это одни и те же три операнда, взятые в скобки двумя способами. Они не совпадают.",
   "The two marked cells are the two bracketings of the same three operands, and they disagree. One counterexample settles it.":
@@ -265,10 +252,8 @@ export const termsPageRu: TranslationDictionary = {
     "Две таблицы могут вести себя одинаково, а метки при этом разные. Одинаковая структура — не то же самое, что одинаковые имена.",
   "Two tables of the same rule, two by two and four by four. The level is simply how many positions there are.":
     "Две таблицы одного и того же правила: два на два и четыре на четыре. Уровень — это просто сколько всего позиций.",
-  "WHERE TO LOOK IN THE TABLE":
-    "КУДА СМОТРЕТЬ В ТАБЛИЦЕ",
-  "What the word means inside GALO":
-    "Что это слово значит внутри GALO",
+  "WHERE TO LOOK IN THE TABLE": "КУДА СМОТРЕТЬ В ТАБЛИЦЕ",
+  "What the word means inside GALO": "Что это слово значит внутри GALO",
   "Without a marked starting label, the table has no centre. Every position looks like every other.":
     "Без отмеченной начальной метки у таблицы нет центра. Каждая позиция выглядит как любая другая.",
   "Wrapping is what keeps GALO finite. No sequence of steps can ever walk off the end of the declared list.":
@@ -296,10 +281,8 @@ export const termsPageZh: TranslationDictionary = {
     "商是 GALO 的一种更粗的状态，而它仍然合法。这是“刻意少看一些”的形式化版本。",
   "A stable subset is a smaller world GALO cannot escape from. It is how a narrower scope can be carved out and still be exact.":
     "稳定子集是一个 GALO 出不去的小世界。较窄的范围就是这样被切出来，而且依然精确。",
-  "All 59 terms in one place":
-    "全部 59 个术语，都在一处",
-  "All terms":
-    "全部术语",
+  "All 59 terms in one place": "全部 59 个术语，都在一处",
+  "All terms": "全部术语",
   "An action is what lets GALO count distinct situations rather than distinct names. Two names moved onto each other were never two situations.":
     "作用让 GALO 数的是不同的情形，而不是不同的名字。两个能互相搬到对方位置上的名字，本来就不是两种情形。",
   "An orbit is a group of GALO positions that are genuinely interchangeable. Orbits, not labels, are what should be counted.":
@@ -308,8 +291,7 @@ export const termsPageZh: TranslationDictionary = {
     "在第七层，除 P0 外每个标签都被标出，因为七是质数，比它小的数都与它互质。",
   "At prime levels this block structure decides how GALO's positions can be grouped. It is a fact about the level, not a design choice.":
     "在质数层上，这种分块结构决定了 GALO 的位置能怎样分组。这是关于层级的事实，不是设计上的选择。",
-  "BEFORE THE EXACT DEFINITION":
-    "在给出精确定义之前",
+  "BEFORE THE EXACT DEFINITION": "在给出精确定义之前",
   "Because bracketing matters in GALO, the number of distinct programs of a given length is this count and not one.":
     "因为在 GALO 里括号怎么放是有意义的，所以给定长度的不同程序数量等于这个计数，而不是一。",
   "Because of this, the bracketing of a GALO program is part of the program. It has to be written down, never assumed.":
@@ -320,10 +302,8 @@ export const termsPageZh: TranslationDictionary = {
     "既然这种映射总是存在，GALO 就从不声称两个层级毫无联系。诚实的问题是：有没有一个有意思的映射。",
   "Both marked cells answer P0, so P1 and P2 undo each other. And stepping by P1 repeatedly visits every label.":
     "两个被标出的格子都给出 P0，说明 P1 和 P2 互相抵消。而反复按 P1 走，会把每个标签都走一遍。",
-  "Browse the whole tower":
-    "浏览整座塔",
-  "COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS":
-    "完整定义与两项独立检查",
+  "Browse the whole tower": "浏览整座塔",
+  "COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS": "完整定义与两项独立检查",
   "Characters are a checking device in GALO, not a feature. They give a second, independent way to confirm a count.":
     "特征在 GALO 里是核对的工具，不是一项能力。它们提供了第二条独立的路径来确认一个计数。",
   "Choosing a level in GALO is choosing how finely situations are told apart. A bigger level distinguishes more but costs more to declare and check.":
@@ -342,16 +322,14 @@ export const termsPageZh: TranslationDictionary = {
     "网格里的每个答案，本身又是某个行标签。永远不会冒出新东西。",
   "Every step GALO takes is one binary operation: the position it is standing on, plus the operand the admitted action supplies.":
     "GALO 走的每一步都是一次二元运算：它当前所站的位置，加上被准入的动作提供的那个操作数。",
-  "Every term opens a page with a worked table.":
-    "每个术语都会打开一页，里面有一张讲解过的表。",
+  "Every term opens a page with a worked table.": "每个术语都会打开一页，里面有一张讲解过的表。",
   "Everything you need to read this grid is in the labels and the two symbols above it. There is no hidden notation.":
     "读这张网格所需的一切，都在标签和上方那两个符号里。没有隐藏的记号。",
   "Five is the honest number of distinct situations GALO has at this level. Nine is the number of names for them.":
     "五，是 GALO 在这一层上不同情形的诚实数目。九，是给它们起的名字的数目。",
   "Fix P1 on the left and you get the marked row. Fix it on the right and you get the marked column.":
     "把 P1 固定在左边，得到被标出的那一行；固定在右边，得到被标出的那一列。",
-  "GALO AI Term — What It Means in the Tables":
-    "GALO AI 术语 — 它在表里意味着什么",
+  "GALO AI Term — What It Means in the Tables": "GALO AI 术语 — 它在表里意味着什么",
   "GALO aggregates per fibre so that a total can be broken back down. A number that cannot be broken down is not published.":
     "GALO 按纤维汇总，好让总数还能被拆回去。拆不回去的数字，不公开。",
   "GALO deliberately keeps the weaker structure. The site names it precisely so that stronger theorems are not borrowed by accident.":
@@ -382,8 +360,7 @@ export const termsPageZh: TranslationDictionary = {
     "把答案相同的格子归成一组，再数每组有多少。这个分组就是纤维。",
   "Group the labels into evens and odds, and the marked cells still land in the group you would predict.":
     "把标签分成偶数和奇数，被标出的格子仍然落在你预料的那一组里。",
-  "If this is still too technical":
-    "如果这还是太技术",
+  "If this is still too technical": "如果这还是太技术",
   "Imagine renaming the labels and rewriting the table. If the grid comes out identical, the renaming was an automorphism.":
     "设想你把标签改名，然后把表重写一遍。如果网格出来一模一样，那这次改名就是一个自同构。",
   "In GALO the carrier is the complete set of positions the engine may ever be in during a run. Declaring it is the first thing a level does.":
@@ -392,8 +369,7 @@ export const termsPageZh: TranslationDictionary = {
     "在 GALO 里，这是一步能丢掉“别人给它的东西”的唯一方式。它写在法则里，不是运行时才决定的。",
   "Inversion is the smallest non-trivial symmetry GALO has at most levels, and it is often the only one.":
     "反演是 GALO 在大多数层上拥有的最小的非平凡对称，而且常常是唯一的一个。",
-  "KEEP GOING":
-    "接下来看什么",
+  "KEEP GOING": "接下来看什么",
   "Keeping the three apart is GALO's central editorial rule. A proof about the tables is never evidence about the running engine.":
     "把这三者分开，是 GALO 最核心的编辑规则。关于表的证明，永远不是关于运行中引擎的证据。",
   "Look at how many distinct answers appear in the table at all. The marked row contributes only one of them.":
@@ -444,8 +420,7 @@ export const termsPageZh: TranslationDictionary = {
     "STAR 是 GALO 里那条会重置的法则。正是这种不对称，让一步对顺序敏感；而对顺序敏感，才让程序有意义。",
   "Send absolutely everything to P0. It is dull, it loses everything, and it is always lawful.":
     "把所有东西一律送到 P0。无聊，什么都丢了——而且永远合法。",
-  "Seven questions, answered in the same order for every term.":
-    "七个问题，对每个术语都按同样的顺序回答。",
+  "Seven questions, answered in the same order for every term.": "七个问题，对每个术语都按同样的顺序回答。",
   "Six splits into two and three, so this table behaves like a two-table and a three-table side by side.":
     "六可以拆成二和三，所以这张表的表现就像一张二的表和一张三的表并排放着。",
   "Slide every label round by a fixed amount. The PLUS grid is unchanged, which is why sliding is allowed.":
@@ -456,16 +431,14 @@ export const termsPageZh: TranslationDictionary = {
     "把两个操作数交换一下，再比较那两个被标出的格子。它们不一样——所以顺序有意义。",
   "Take one table away and you have a reduct. Put it back and you have the expansion. Same positions, different amount of structure.":
     "拿走一张表，得到的是约化；把它放回去，得到的是扩张。位置一样，结构的多少不同。",
-  "Terms that only make sense next to this one.":
-    "只有跟这个术语放在一起才说得通的那些词。",
+  "Terms that only make sense next to this one.": "只有跟这个术语放在一起才说得通的那些词。",
   "The count of marked labels is exactly how many lawful relabellings GALO has at that level. Prime levels have the most.":
     "被标出的标签的个数，恰好就是 GALO 在这一层上合法重命名的数量。质数层最多。",
   "The first table is a group. The second is only a magma, because it fails associativity and has no two-sided identity.":
     "第一张表是一个群。第二张只是一个原群：它不满足结合律，也没有双边单位元。",
   "The four marked cells use only P0 and P2, and every answer is again P0 or P2. That pair never leaks out.":
     "四个被标出的格子只用到 P0 和 P2，而每个答案又都是 P0 或 P2。这一对从不漏到外面去。",
-  "The full list":
-    "完整清单",
+  "The full list": "完整清单",
   "The legend exists so that no GALO page requires prior notation. If a symbol is not in it, it is not used.":
     "有这份图例，是为了让 GALO 的任何一页都不要求你事先懂某套记号。图例里没有的符号，就不会被用到。",
   "The marked cell answers P1, because four and one leave the same remainder when divided by three.":
@@ -498,14 +471,12 @@ export const termsPageZh: TranslationDictionary = {
     "同一个 P0，站在哪一边，行为就不一样。正因如此，GALO 才要记下每个操作数当时在哪一边。",
   "The same row and column in both tables. Same address, different law — so they are two different coordinates, not one.":
     "两张表里同样的行和列。地址相同，法则不同——所以这是两个不同的坐标，而不是一个。",
-  "The same thing, without the mathematics.":
-    "同一件事，只是不带数学。",
+  "The same thing, without the mathematics.": "同一件事，只是不带数学。",
   "The size of that collection tells GALO how much a step can still distinguish afterwards. A shrinking image means information was dropped.":
     "这个集合的大小告诉 GALO：这一步之后还能分辨多少东西。像在收缩，就说明信息被丢掉了。",
   "The table is complete and exact, and it still says nothing about anything outside itself. That silence is the boundary.":
     "这张表既完整又精确——而它对自身之外的任何东西仍然什么都没说。这种沉默，就是边界。",
-  "The tables themselves":
-    "那些表本身",
+  "The tables themselves": "那些表本身",
   "The two marked cells are the same three operands bracketed two ways. They do not agree.":
     "这两个被标出的格子，是同样三个操作数的两种加括号方式。它们对不上。",
   "The two marked cells are the two bracketings of the same three operands, and they disagree. One counterexample settles it.":
@@ -540,10 +511,8 @@ export const termsPageZh: TranslationDictionary = {
     "两张表可以表现得一模一样，而标签却不同。结构相同，不等于名字相同。",
   "Two tables of the same rule, two by two and four by four. The level is simply how many positions there are.":
     "同一条规则的两张表：二乘二和四乘四。所谓层级，不过是一共有多少个位置。",
-  "WHERE TO LOOK IN THE TABLE":
-    "在表里该看哪儿",
-  "What the word means inside GALO":
-    "这个词在 GALO 内部指什么",
+  "WHERE TO LOOK IN THE TABLE": "在表里该看哪儿",
+  "What the word means inside GALO": "这个词在 GALO 内部指什么",
   "Without a marked starting label, the table has no centre. Every position looks like every other.":
     "没有一个被标出的起始标签，这张表就没有中心。每个位置看起来都跟别的一样。",
   "Wrapping is what keeps GALO finite. No sequence of steps can ever walk off the end of the declared list.":
@@ -571,10 +540,8 @@ export const termsPageAr: TranslationDictionary = {
     "القسمة حالة أخشن لـGALO وتبقى مشروعة. إنها الصيغة الشكلية لقرار متعمَّد بالنظر إلى أقل.",
   "A stable subset is a smaller world GALO cannot escape from. It is how a narrower scope can be carved out and still be exact.":
     "المجموعة الجزئية المستقرة عالم أصغر لا يستطيع GALO الخروج منه. هكذا يُقتطع نطاق أضيق يظل دقيقًا.",
-  "All 59 terms in one place":
-    "المصطلحات الـ59 كلها في مكان واحد",
-  "All terms":
-    "كل المصطلحات",
+  "All 59 terms in one place": "المصطلحات الـ59 كلها في مكان واحد",
+  "All terms": "كل المصطلحات",
   "An action is what lets GALO count distinct situations rather than distinct names. Two names moved onto each other were never two situations.":
     "الفعل هو ما يتيح لـGALO أن يعدّ المواقف المختلفة لا الأسماء المختلفة. واسمان يُنقل أحدهما إلى الآخر لم يكونا موقفين قط.",
   "An orbit is a group of GALO positions that are genuinely interchangeable. Orbits, not labels, are what should be counted.":
@@ -583,8 +550,7 @@ export const termsPageAr: TranslationDictionary = {
     "عند المستوى السابع تُعلَّم كل التسميات عدا P0، لأن السبعة عدد أولي وكل ما دونه أولي معه.",
   "At prime levels this block structure decides how GALO's positions can be grouped. It is a fact about the level, not a design choice.":
     "عند المستويات الأولية تحدّد هذه البنية الكتلية كيف يمكن تجميع مواضع GALO. حقيقة عن المستوى لا اختيار تصميم.",
-  "BEFORE THE EXACT DEFINITION":
-    "قبل التعريف الدقيق",
+  "BEFORE THE EXACT DEFINITION": "قبل التعريف الدقيق",
   "Because bracketing matters in GALO, the number of distinct programs of a given length is this count and not one.":
     "لأن ترتيب الأقواس مهم في GALO، فإن عدد البرامج المختلفة بطول معيّن هو هذا العدد لا واحدًا.",
   "Because of this, the bracketing of a GALO program is part of the program. It has to be written down, never assumed.":
@@ -595,10 +561,8 @@ export const termsPageAr: TranslationDictionary = {
     "ولأن هذا التحويل موجود دائمًا، لا يدّعي GALO قط أن مستويين غير مرتبطين. والسؤال الأمين هو: هل ثمة تحويل مهم؟",
   "Both marked cells answer P0, so P1 and P2 undo each other. And stepping by P1 repeatedly visits every label.":
     "الخليتان المعلَّمتان تعطيان P0، إذن P1 وP2 يلغي أحدهما الآخر. والخطو بـP1 مرارًا يمرّ على كل التسميات.",
-  "Browse the whole tower":
-    "تصفّح البرج كله",
-  "COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS":
-    "التعريف الكامل وفحصان مستقلان",
+  "Browse the whole tower": "تصفّح البرج كله",
+  "COMPLETE DEFINITION AND TWO INDEPENDENT CHECKS": "التعريف الكامل وفحصان مستقلان",
   "Characters are a checking device in GALO, not a feature. They give a second, independent way to confirm a count.":
     "الطوابع في GALO أداة تحقق لا ميزة. فهي تمنح طريقة ثانية مستقلة لتأكيد عدّ.",
   "Choosing a level in GALO is choosing how finely situations are told apart. A bigger level distinguishes more but costs more to declare and check.":
@@ -617,16 +581,14 @@ export const termsPageAr: TranslationDictionary = {
     "كل جواب في الشبكة هو نفسه إحدى تسميات الصفوف. ولا يظهر شيء جديد أبدًا.",
   "Every step GALO takes is one binary operation: the position it is standing on, plus the operand the admitted action supplies.":
     "كل خطوة يخطوها GALO عملية ثنائية واحدة: الموضع الذي يقف عليه، مع المعامل الذي يقدّمه الفعل المقبول.",
-  "Every term opens a page with a worked table.":
-    "كل مصطلح يفتح صفحة فيها جدول مشروح.",
+  "Every term opens a page with a worked table.": "كل مصطلح يفتح صفحة فيها جدول مشروح.",
   "Everything you need to read this grid is in the labels and the two symbols above it. There is no hidden notation.":
     "كل ما تحتاجه لقراءة هذه الشبكة موجود في التسميات وفي الرمزين فوقها. لا رموز خفية.",
   "Five is the honest number of distinct situations GALO has at this level. Nine is the number of names for them.":
     "خمسة هو العدد الأمين للمواقف المختلفة لدى GALO عند هذا المستوى. وتسعة هو عدد الأسماء لها.",
   "Fix P1 on the left and you get the marked row. Fix it on the right and you get the marked column.":
     "ثبّت P1 على اليسار فتحصل على الصف المعلَّم، وثبّته على اليمين فتحصل على العمود المعلَّم.",
-  "GALO AI Term — What It Means in the Tables":
-    "مصطلح في GALO AI — ماذا يعني في الجداول",
+  "GALO AI Term — What It Means in the Tables": "مصطلح في GALO AI — ماذا يعني في الجداول",
   "GALO aggregates per fibre so that a total can be broken back down. A number that cannot be broken down is not published.":
     "يجمّع GALO حسب الألياف كي يمكن تفكيك المجموع مجددًا. والعدد الذي لا يمكن تفكيكه لا يُنشر.",
   "GALO deliberately keeps the weaker structure. The site names it precisely so that stronger theorems are not borrowed by accident.":
@@ -657,8 +619,7 @@ export const termsPageAr: TranslationDictionary = {
     "جمّع الخلايا التي تشترك في الجواب نفسه ثم عُدّ كل مجموعة. هذا التجميع هو الليف.",
   "Group the labels into evens and odds, and the marked cells still land in the group you would predict.":
     "صنّف التسميات إلى زوجية وفردية، وستظل الخلايا المعلَّمة تقع في المجموعة التي تتوقعها.",
-  "If this is still too technical":
-    "إن كان هذا لا يزال تقنيًا أكثر مما ينبغي",
+  "If this is still too technical": "إن كان هذا لا يزال تقنيًا أكثر مما ينبغي",
   "Imagine renaming the labels and rewriting the table. If the grid comes out identical, the renaming was an automorphism.":
     "تخيّل أنك أعدت تسمية العلامات وأعدت كتابة الجدول. فإن خرجت الشبكة كما هي، كانت إعادة التسمية تشاكلًا ذاتيًا.",
   "In GALO the carrier is the complete set of positions the engine may ever be in during a run. Declaring it is the first thing a level does.":
@@ -667,8 +628,7 @@ export const termsPageAr: TranslationDictionary = {
     "في GALO هذه هي الطريقة الوحيدة التي يمكن بها لخطوة أن تُسقط ما أُعطي لها. وهي معلنة في القانون لا مقرَّرة أثناء التشغيل.",
   "Inversion is the smallest non-trivial symmetry GALO has at most levels, and it is often the only one.":
     "الانعكاس أصغر تناظر غير تافه يملكه GALO في معظم المستويات، وكثيرًا ما يكون الوحيد.",
-  "KEEP GOING":
-    "إلى أين بعد ذلك",
+  "KEEP GOING": "إلى أين بعد ذلك",
   "Keeping the three apart is GALO's central editorial rule. A proof about the tables is never evidence about the running engine.":
     "الفصل بين هذه الثلاثة هو القاعدة التحريرية الأساسية في GALO. وبرهان عن الجداول ليس دليلًا عن المحرك العامل.",
   "Look at how many distinct answers appear in the table at all. The marked row contributes only one of them.":
@@ -719,8 +679,7 @@ export const termsPageAr: TranslationDictionary = {
     "‏STAR هو قانون GALO القادر على إعادة الضبط. وهذا اللاتماثل هو ما يجعل الخطوة حساسة للترتيب، وحساسية الترتيب هي ما يجعل البرامج ذات معنى.",
   "Send absolutely everything to P0. It is dull, it loses everything, and it is always lawful.":
     "أرسل كل شيء إلى P0. ممل، ويفقد كل شيء، وهو مع ذلك مشروع دائمًا.",
-  "Seven questions, answered in the same order for every term.":
-    "سبعة أسئلة، يُجاب عنها بالترتيب نفسه لكل مصطلح.",
+  "Seven questions, answered in the same order for every term.": "سبعة أسئلة، يُجاب عنها بالترتيب نفسه لكل مصطلح.",
   "Six splits into two and three, so this table behaves like a two-table and a three-table side by side.":
     "الستة تنقسم إلى اثنين وثلاثة، فيسلك هذا الجدول سلوك جدول اثنين وجدول ثلاثة جنبًا إلى جنب.",
   "Slide every label round by a fixed amount. The PLUS grid is unchanged, which is why sliding is allowed.":
@@ -731,16 +690,14 @@ export const termsPageAr: TranslationDictionary = {
     "بدّل المعاملين وقارن الخليتين المعلَّمتين. تختلفان، إذن الترتيب مهم.",
   "Take one table away and you have a reduct. Put it back and you have the expansion. Same positions, different amount of structure.":
     "انزع جدولًا فتحصل على اختزال، وأعده فتحصل على التوسيع. المواضع نفسها، ومقدار البنية مختلف.",
-  "Terms that only make sense next to this one.":
-    "مصطلحات لا معنى لها إلا بجوار هذا المصطلح.",
+  "Terms that only make sense next to this one.": "مصطلحات لا معنى لها إلا بجوار هذا المصطلح.",
   "The count of marked labels is exactly how many lawful relabellings GALO has at that level. Prime levels have the most.":
     "عدد التسميات المعلَّمة هو بالضبط عدد إعادات التسمية المشروعة لدى GALO عند ذلك المستوى. والمستويات الأولية أكثرها.",
   "The first table is a group. The second is only a magma, because it fails associativity and has no two-sided identity.":
     "الجدول الأول زمرة. والثاني مجرد ماغما، لأنه يخلّ بالترابطية ولا محايد له من الجهتين.",
   "The four marked cells use only P0 and P2, and every answer is again P0 or P2. That pair never leaks out.":
     "الخلايا الأربع المعلَّمة تستعمل P0 وP2 فقط، وكل جواب هو P0 أو P2 مجددًا. هذا الزوج لا يتسرّب أبدًا.",
-  "The full list":
-    "القائمة الكاملة",
+  "The full list": "القائمة الكاملة",
   "The legend exists so that no GALO page requires prior notation. If a symbol is not in it, it is not used.":
     "توجد وسيلة الإيضاح كي لا تتطلب أي صفحة في GALO معرفة رموز مسبقة. وما ليس فيها لا يُستعمل.",
   "The marked cell answers P1, because four and one leave the same remainder when divided by three.":
@@ -773,14 +730,12 @@ export const termsPageAr: TranslationDictionary = {
     "‏P0 نفسه يسلك سلوكين مختلفين تبعًا للجهة التي يقف فيها. ولهذا بالذات يسجّل GALO جهة كل معامل.",
   "The same row and column in both tables. Same address, different law — so they are two different coordinates, not one.":
     "الصف والعمود نفساهما في الجدولين. العنوان واحد والقانون مختلف، إذن هما إحداثيان مختلفان لا واحد.",
-  "The same thing, without the mathematics.":
-    "الشيء نفسه، بلا رياضيات.",
+  "The same thing, without the mathematics.": "الشيء نفسه، بلا رياضيات.",
   "The size of that collection tells GALO how much a step can still distinguish afterwards. A shrinking image means information was dropped.":
     "حجم تلك المجموعة يخبر GALO كم يستطيع التمييز بعد الخطوة. وتقلّص الصورة يعني أن معلومات أُسقطت.",
   "The table is complete and exact, and it still says nothing about anything outside itself. That silence is the boundary.":
     "الجدول كامل ودقيق، ومع ذلك لا يقول شيئًا عمّا خارجه. هذا الصمت هو الحد.",
-  "The tables themselves":
-    "الجداول نفسها",
+  "The tables themselves": "الجداول نفسها",
   "The two marked cells are the same three operands bracketed two ways. They do not agree.":
     "الخليتان المعلَّمتان هما المعاملات الثلاثة نفسها بترتيبَي أقواس مختلفين. وهما غير متفقتين.",
   "The two marked cells are the two bracketings of the same three operands, and they disagree. One counterexample settles it.":
@@ -815,10 +770,8 @@ export const termsPageAr: TranslationDictionary = {
     "قد يسلك جدولان السلوك نفسه وتسمياتهما مختلفة. وتطابق البنية ليس تطابق الأسماء.",
   "Two tables of the same rule, two by two and four by four. The level is simply how many positions there are.":
     "جدولان للقاعدة نفسها: اثنان في اثنين وأربعة في أربعة. والمستوى ببساطة هو عدد المواضع.",
-  "WHERE TO LOOK IN THE TABLE":
-    "أين تنظر في الجدول",
-  "What the word means inside GALO":
-    "ماذا تعني الكلمة داخل GALO",
+  "WHERE TO LOOK IN THE TABLE": "أين تنظر في الجدول",
+  "What the word means inside GALO": "ماذا تعني الكلمة داخل GALO",
   "Without a marked starting label, the table has no centre. Every position looks like every other.":
     "بلا تسمية بداية معلَّمة لا مركز للجدول. وكل موضع يبدو كأي موضع آخر.",
   "Wrapping is what keeps GALO finite. No sequence of steps can ever walk off the end of the declared list.":

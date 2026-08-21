@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { AuditPage } from "../pages/AuditPage";
 import { Hub71Page } from "../pages/Hub71Page";
+import { IndustryPage } from "../pages/IndustryPage";
 import { ComparisonPage } from "../pages/ComparisonPage";
 import { EvidencePage } from "../pages/EvidencePage";
 import { HomePage } from "../pages/HomePage";
@@ -28,9 +29,9 @@ import { termBySlug } from "../content/termPages";
 
 const metadata: Record<PageRoute, { title: string; description: string }> = {
   "/": {
-    title: "GALO AI — AI That Has to Show Why It Was Allowed to Decide",
+    title: "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy",
     description:
-      "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.",
+      "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.",
   },
   "/evidence": {
     title: "Evidence — GALO AI",
@@ -57,6 +58,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     description:
       "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.",
   },
+  "/industry": {
+    title: "GALO AI for Industry — Decision Assurance Around Existing Digital Twins",
+    description:
+      "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.",
+  },
   "/theory": {
     title: "GALO Theory for Beginners — From States to Verified Execution",
     description:
@@ -70,7 +76,7 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
   "/vs-llm": {
     title: "GALO AI and Language Models — What Is Actually Different",
     description:
-      "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.",
+      "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against twelve named families of system that are also trying to build artificial intelligence.",
   },
   "/math": {
     title: "GALO Mathematics — PLUS and STAR Cayley Tables",
@@ -181,6 +187,7 @@ export function App() {
       {route === "/investors" && <InvestorsPage />}
       {route === "/audit" && <AuditPage />}
       {route === "/hub71" && <Hub71Page />}
+      {route === "/industry" && <IndustryPage />}
       {route === "/theory" && <TheoryPage />}
       {route === "/thinking" && <ThinkingPage />}
       {route === "/vs-llm" && <ComparisonPage />}

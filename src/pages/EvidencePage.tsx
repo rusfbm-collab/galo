@@ -1,10 +1,11 @@
-import { ArrowLeft, Check, Copy, FileCheck2, Fingerprint, ShieldAlert } from "lucide-react";
+import { ArrowLeft, Check, Copy, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
 import { useState } from "react";
 import { ReceiptAnatomyFigure } from "../components/diagrams/ReceiptAnatomyFigure";
 import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { releaseEvidence } from "../content/evidence";
+import { learningBoundaries, learningContract, learningResults } from "../content/learningEvidence";
 import { publicClaims } from "../content/publicClaims";
 import { useI18n } from "../i18n/I18nContext";
 
@@ -211,6 +212,78 @@ export function EvidencePage() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section id="learning" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">{t("THE V65–V67 LEARNING LINE")}</p>
+              <h2>{t("Six results, and two of them did not work.")}</h2>
+              <p className="section-heading__text">
+                {t(
+                  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.",
+                )}
+              </p>
+            </div>
+          </div>
+
+          <div className="learning-results">
+            {learningResults.map((row) => (
+              <article
+                key={row.task}
+                className={
+                  row.status === "NOT SUPPORTED" || row.status === "NOT IDENTIFIABLE" ? "is-negative" : undefined
+                }
+              >
+                <span className="learning-results__status" dir="ltr">
+                  {row.status}
+                </span>
+                <h3 dir="ltr">{row.task}</h3>
+                <strong>{t(row.headline)}</strong>
+                <p>{t(row.establishes)}</p>
+                <p className="learning-results__boundary">
+                  <ShieldAlert size={15} aria-hidden="true" /> {t(row.boundary)}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <div className="learning-contract">
+            <div className="learning-contract__head">
+              <Lock size={20} aria-hidden="true" />
+              <div>
+                <strong>{t("The eight conditions a work-reduction claim has to meet before it is made")}</strong>
+                <p>
+                  {t(
+                    "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.",
+                  )}
+                </p>
+              </div>
+            </div>
+            <ol>
+              {learningContract.map((line, index) => (
+                <li key={line}>
+                  <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
+                  {t(line)}
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          <ul className="evidence-list evidence-list--boundary learning-boundaries">
+            {learningBoundaries.map((item) => (
+              <li key={item.label}>
+                <ShieldAlert size={17} aria-hidden="true" />
+                <span>
+                  <small dir="ltr">{item.status}</small>
+                  {t(item.label)}
+                  <em>{t(item.detail)}</em>
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

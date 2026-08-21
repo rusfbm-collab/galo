@@ -15,9 +15,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — AI That Has to Show Why It Was Allowed to Decide",
+        title: "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy",
         description:
-          "A pre-seed research architecture for decisions that get audited: permitted actions are fixed before anything runs, and every run leaves a record anyone can replay to the same result.",
+          "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.",
       },
       simple: {
         path: "simple",
@@ -36,6 +36,12 @@ const locales = {
         title: "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits",
         description:
           "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.",
+      },
+      industry: {
+        path: "industry",
+        title: "GALO AI for Industry — Decision Assurance Around Existing Digital Twins",
+        description:
+          "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.",
       },
       audit: {
         path: "audit",
@@ -59,7 +65,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI and Language Models — What Is Actually Different",
         description:
-          "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against nine named families of system that are also trying to build artificial intelligence.",
+          "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against twelve named families of system that are also trying to build artificial intelligence.",
       },
       math: {
         path: "math",
@@ -95,9 +101,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — искусственный интеллект, обязанный показать, почему он имел право решить",
+        title: "GALO AI — проверяемая модель мира для частного ИИ и промышленной автономности",
         description:
-          "Исследовательская архитектура стадии pre-seed для решений, которые потом проверяют: список разрешённых действий закрывается до запуска, а после каждого запуска остаётся запись, по которой любой повторит шаг и получит тот же результат.",
+          "Архитектура общего назначения для проверяемой модели мира и автономности, первый продукт которой — гарантия промышленных решений. Ограниченные результаты обучения опубликованы вместе с отрицательными; валидность на данных партнёра не доказана, промышленная автономность не разрешена.",
       },
       simple: {
         path: "simple",
@@ -116,6 +122,12 @@ const locales = {
         title: "Досье заявки GALO AI — строки оценки, обязательства и границы",
         description:
           "Досье заявки, подготовленное для оценки: двенадцать строк текущего состояния, шесть из них отрицательные; четыре довода о региональном соответствии с их пределами; двенадцать месяцев обязательств, у каждого — условие невыполнения; и шесть вопросов, по которым мы ожидаем давления. Аффилиация с Hub71 не заявляется и не подразумевается.",
+      },
+      industry: {
+        path: "industry",
+        title: "GALO AI для промышленности — гарантия решений вокруг существующих цифровых двойников",
+        description:
+          "Первый коммерческий продукт: ограниченная оценка одного промышленного процесса — только чтение, только рекомендации. Где GALO стоит над цифровым двойником, семь шагов одного оценённого решения, лестница автономности со всеми её шлюзами и плановые ценовые гипотезы, которые не являются прайс-листом.",
       },
       audit: {
         path: "audit",
@@ -139,7 +151,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI и языковые модели — в чём именно разница",
         description:
-          "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата, — и где он стоит относительно девяти названных семейств систем, которые тоже пытаются построить искусственный интеллект.",
+          "Чем GALO отличается от языковой модели: состояние, проверка, воспроизведение, локальное исправление и широта охвата, — и где он стоит относительно двенадцати названных семейств систем, которые тоже пытаются построить искусственный интеллект.",
       },
       math: {
         path: "math",
@@ -175,9 +187,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — 必须说明自己凭什么有权作出该决定的人工智能",
+        title: "GALO AI — 面向私有 AI 与工业自主性的可验证世界模型",
         description:
-          "一套面向「事后要被审计的决策」的 pre-seed 阶段研究架构：允许执行的动作在运行之前就已定死，每一次运行都留下任何人都能照着重跑、并得到同一结果的记录。",
+          "一套通用的可验证世界模型与自主性架构，其第一个产品是工业决策保障。有限范围的学习结果连同负面结果一并公开；由合作方掌控的有效性尚未证明，工业自主性也未获授权。",
       },
       simple: {
         path: "simple",
@@ -196,6 +208,12 @@ const locales = {
         title: "GALO AI 申请档案 — 评估条目、里程碑与边界",
         description:
           "为评估而准备的申请档案：十二条现状条目，其中六条为否定；四项区域契合主张，各附其限度；十二个月的承诺，每一项都带有未达成的判定条件；以及我们预计会被追问的六个问题。不声称也不暗示与 Hub71 存在任何隶属关系。",
+      },
+      industry: {
+        path: "industry",
+        title: "GALO AI 面向工业 — 围绕现有数字孪生的决策保障",
+        description:
+          "第一个商业产品：针对一个工业流程的有限评估，只读、只给建议。GALO 在数字孪生之上处于什么位置、一次被评估的决策的七个步骤、带全部闸门的自主性阶梯，以及并非价目表的规划性价格假设。",
       },
       audit: {
         path: "audit",
@@ -219,7 +237,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI 与语言模型 — 究竟差别在哪里",
         description:
-          "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度；以及它相对于另外九类同样在尝试造出人工智能的系统处在什么位置。",
+          "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度；以及它相对于另外十二类同样在尝试造出人工智能的系统处在什么位置。",
       },
       math: {
         path: "math",
@@ -251,9 +269,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — ذكاء اصطناعي مُلزَم بأن يُبيّن لماذا كان له الحقّ في أن يقرّر",
+        title: "GALO AI — نموذج عالم قابل للتحقّق للذكاء الاصطناعي الخاص والاستقلالية الصناعية",
         description:
-          "بنية بحثية في مرحلة pre-seed لقرارات تخضع للتدقيق لاحقاً: الأفعال المسموح بها تُثبَّت قبل أي تشغيل، ويخلّف كل تشغيل سجلاً يستطيع أي شخص أن يعيده فيبلغ النتيجة نفسها.",
+          "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية، منتجها الأول ضمان القرار الصناعي. تُنشر نتائج التعلّم المحدودة النطاق مع نتائجها السلبية؛ والصلاحية الخاضعة لسيطرة الشريك غير مُثبتة، والاستقلالية الإنتاجية غير مأذون بها.",
       },
       simple: {
         path: "simple",
@@ -272,6 +290,12 @@ const locales = {
         title: "ملف طلب GALO AI — بنود التقييم والالتزامات والحدود",
         description:
           "ملف طلب أُعدّ للتقييم: اثنا عشر بنداً تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهراً من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+      },
+      industry: {
+        path: "industry",
+        title: "GALO AI للصناعة — ضمان القرار حول التوائم الرقمية القائمة",
+        description:
+          "المنتج التجاري الأول: تقييم محدود لسير عمل صناعي واحد، بالقراءة فقط وبصفة استشارية. أين يقف GALO فوق التوأم الرقمي، والخطوات السبع لقرار مُقيَّم، وسلّم الاستقلالية ببواباته كلّها، وفرضيات تسعير تخطيطية ليست قائمة أسعار.",
       },
       audit: {
         path: "audit",
@@ -295,7 +319,7 @@ const locales = {
         path: "vs-llm",
         title: "GALO AI ونماذج اللغة — أين يكمن الفرق فعلًا",
         description:
-          "كيف يختلف GALO عن نموذج اللغة — الحالة وطريقة الفحص وإعادة التشغيل والتصحيح الموضعي واتساع النطاق — وأين يقف من تسع عائلات مسمّاة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
+          "كيف يختلف GALO عن نموذج اللغة — الحالة وطريقة الفحص وإعادة التشغيل والتصحيح الموضعي واتساع النطاق — وأين يقف من اثنتي عشرة عائلة مسمّاة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
       },
       math: {
         path: "math",

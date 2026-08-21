@@ -92,6 +92,13 @@ export function InvestorsPage() {
               </article>
             ))}
           </div>
+          <p className="section-followup">
+            <Compass size={16} aria-hidden="true" />{" "}
+            {t(
+              "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:",
+            )}{" "}
+            <a href={href("/industry")}>{t("the industrial wedge, in full")}</a>
+          </p>
         </div>
       </section>
 
@@ -220,7 +227,7 @@ export function InvestorsPage() {
 
           <p className="section-followup">
             <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("See all nine families, named, with what each one lets an outsider check")}{" "}
+              {t("See all twelve families, named, with what each one lets an outsider check")}{" "}
               <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
             </a>
           </p>

@@ -23,7 +23,7 @@ export const siteContent = {
     ipOwnership: null as string | null,
     email: null as string | null,
     telegram: null as string | null,
-    linkedin: null as string | null,
+    linkedin: "https://www.linkedin.com/in/ruslan-a-5038765/" as string | null,
     photo: null as string | null,
   },
   assets: {
@@ -32,6 +32,7 @@ export const siteContent = {
     releaseStatus: null as string | null,
   },
   navigation: [
+    { label: "For industry", href: "/industry" },
     { label: "In plain words", href: "/simple" },
     { label: "For investors", href: "/investors" },
     { label: "For auditors", href: "/audit" },

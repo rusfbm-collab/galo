@@ -9,6 +9,9 @@ const sourceRoots = [
   "src/i18n",
   "src/content/academicAnalysis.ts",
   "src/content/aiBasics.ts",
+  "src/content/industrial.ts",
+  "src/content/learningEvidence.ts",
+  "src/content/navigation.ts",
   "src/content/audit.ts",
   "src/content/contact.ts",
   "src/content/evidence.ts",
@@ -17,6 +20,7 @@ const sourceRoots = [
   "src/content/orientation.ts",
   "src/content/plainLanguage.ts",
   "src/content/plainWords.ts",
+  "src/content/publicClaims.ts",
   "src/content/programme.ts",
   "src/content/site.ts",
   "src/content/termDeepDives.ts",
@@ -29,6 +33,18 @@ const extensions = new Set([".ts", ".tsx", ".html", ".json"]);
 
 const forbidden = [
   "AGI achieved",
+  "General AI achieved",
+  "already deployed at a factory",
+  "replaces the digital twin",
+  "replaces SCADA",
+  "direct low-level robot control",
+  "functional-safety certified",
+  "safety certification obtained",
+  "production autonomy demonstrated",
+  "validated ROI",
+  "guaranteed ROI",
+  "current price list",
+  "universal strongest-baseline superiority",
   "LLM killer",
   "replaces LLMs",
   "human-level",
@@ -78,9 +94,8 @@ const forbidden = [
   "CORE/QUASI/BOUNDARY executable",
 ];
 
-const required = [
-  "Persistent policy learning",
-  "NOT STARTED",
+const requiredPhrases = [
+  "Persistent policy learning in the current V4 runtime has not started.",
   "trained Atlas is not present",
   "External operational gain",
   "General AI",
@@ -123,7 +138,28 @@ const required = [
   "единственным левым нулём и единственным правым нейтральным элементом",
   "唯一的左零元和唯一的右中性元",
   "الصفر الأيسر الوحيد والعنصر المحايد الوحيد من اليمين",
+  // V67 positioning. The general-purpose architecture and the industrial wedge
+  // are both stated, and neither may travel without its boundary.
+  "General-purpose architecture, not general intelligence",
+  "Partner-controlled industrial validity is not proven.",
+  "Production autonomy is not authorized",
+  "no customer, no signed pipeline and no revenue",
+  "replaces none of them",
+  "Design-partner planning hypotheses",
+  "0% work advantage",
+  "No identifiable independent effect",
 ];
+
+// A forbidden phrase must never be a substring of a required one, or the two
+// lists would quietly contradict each other.
+for (const phrase of forbidden) {
+  for (const requiredPhrase of requiredPhrases) {
+    if (requiredPhrase.toLowerCase().includes(phrase.toLowerCase())) {
+      console.error(JSON.stringify({ status: "FAIL", code: "LIST_CONFLICT", phrase, requiredPhrase }, null, 2));
+      process.exit(1);
+    }
+  }
+}
 
 async function collect(relativePath) {
   const url = new URL(relativePath, root);
@@ -152,7 +188,7 @@ for (const phrase of forbidden) {
   }
 }
 
-for (const phrase of required) {
+for (const phrase of requiredPhrases) {
   if (!combined.toLowerCase().includes(phrase.toLowerCase())) {
     violations.push({ code: "REQUIRED_BOUNDARY_MISSING", phrase, where: "public UI source" });
   }
@@ -168,6 +204,6 @@ console.log(
     status: "PASS",
     scannedFiles: files.length,
     forbiddenMatches: 0,
-    requiredBoundaries: required.length,
+    requiredBoundaries: requiredPhrases.length,
   }),
 );

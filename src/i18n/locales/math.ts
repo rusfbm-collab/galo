@@ -190,7 +190,8 @@ export const mathZh: TranslationDictionary = {
     "LEFT 或 RIGHT 不会重新定义二元表。动作族只决定源状态与活动极如何放入同一个冻结运算。",
   "source then active": "先源状态，后活动极",
   "active then source": "先活动极，后源状态",
-  "Orientation changes where the operands sit. The Cayley law is untouched.": "执行方向改变操作数的放置次序，而不改变凯莱运算律。",
+  "Orientation changes where the operands sit. The Cayley law is untouched.":
+    "执行方向改变操作数的放置次序，而不改变凯莱运算律。",
   "Direct L3 orientation witness": "L3 方向的直接见证",
   "PLUS returns the same target because it is commutative, while STAR orientation changes the target. The typed identities remain distinct in both cases.":
     "PLUS 因满足交换律而返回相同目标，STAR 的执行方向则会改变目标；两种情况下，类型化身份都保持不同。",
@@ -302,7 +303,8 @@ export const mathAr: TranslationDictionary = {
     "لا يُعاد تعريف الجدول الثنائي من أجل LEFT أو RIGHT. تحدد العائلة كيفية وضع القطب المصدر والقطب النشط في العملية المجمّدة نفسها.",
   "source then active": "المصدر ثم النشط",
   "active then source": "النشط ثم المصدر",
-  "Orientation changes where the operands sit. The Cayley law is untouched.": "يغيّر الاتجاه موضع المُعاملات، لا قانون كايلي.",
+  "Orientation changes where the operands sit. The Cayley law is untouched.":
+    "يغيّر الاتجاه موضع المُعاملات، لا قانون كايلي.",
   "Direct L3 orientation witness": "شاهد مباشر للاتجاه عند L3",
   "PLUS returns the same target because it is commutative, while STAR orientation changes the target. The typed identities remain distinct in both cases.":
     "تعيد PLUS الهدف نفسه لأنها تبادلية، بينما يغيّر اتجاه STAR الهدف. وتظل الهويات محددة الأنواع متميزة في الحالتين.",
