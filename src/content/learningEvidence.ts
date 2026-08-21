@@ -1,19 +1,24 @@
 /**
- * The V65–V67 learning line, with its negatives kept.
+ * The sealed V75-V78 learning line.
  *
- * This is a change from what this site used to say. The frozen R5B6A1_3 kernel
- * release still performs no learning at all — that has not moved. Alongside it
- * there is now a receipt-native Engine and Atlas prototype with scoped learning
- * results on synthetic tasks and public benchmarks. Both statements are true at
- * once, and this file exists so that neither is used to imply the other.
+ * This replaces the V65-V67 numbers the site used to publish. Three things
+ * changed and all three are stated rather than quietly swapped: the results got
+ * substantially stronger, one benchmark that used to read as a flat negative
+ * now learns, and one benchmark that used to read as unmeasurable now refuses
+ * under seal instead. The superseded numbers stay in the archive; the site says
+ * where they went rather than deleting them from the record.
  *
- * Every row carries its own boundary, and the two results that did not work are
- * in the same table as the four that did, in the same style. A benchmark line
- * that only reports its wins is not evidence.
+ * The comparator is the thing to read first. Every percentage below is measured
+ * against the identical system with its learned volume detached — same engine,
+ * same schema, same candidate universe, same budget. That is what makes the
+ * saving a statement about learning rather than about search size.
+ *
+ * What has not moved: the frozen R5B6A1_3 kernel release still performs no
+ * policy update at all, no partner has run any of this on their own data, and
+ * nothing here authorises a command to a plant.
  */
 
-export type LearningStatus =
-  "SUPPORTED, SCOPED" | "SUPPORTED VS PREREGISTERED BASELINE" | "NOT SUPPORTED" | "NOT IDENTIFIABLE";
+export type LearningStatus = "SUPPORTED, SEALED" | "SUPPORTED, SCOPED" | "TYPED REFUSAL, SEALED";
 
 export type LearningResult = {
   task: string;
@@ -23,50 +28,96 @@ export type LearningResult = {
   boundary: string;
 };
 
+/**
+ * Ordered by what a reader should meet first rather than by campaign number:
+ * natural language leads, the synthetic anchor that started the line comes last.
+ */
 export const learningResults: readonly LearningResult[] = [
+  {
+    task: "SIGMORPHON 2022",
+    headline: "66.4% less work on the complete official test — 57,755 words, F1 0.759",
+    status: "SUPPORTED, SEALED",
+    establishes:
+      "The result closest to ordinary language, and the one where the saving cannot be explained away as a shrinking candidate list. The whole official test was run rather than a slice, and 38.2% of words needed more than one check, so the reduction is measuring learning rather than search size.",
+    boundary:
+      "English word segmentation, run by us on a public corpus. It is not an industrial workflow and not a partner-controlled result.",
+  },
+  {
+    task: "UMLS",
+    headline: "58.5% less work with the key, 66.6% with it withheld, CI95",
+    status: "SUPPORTED, SEALED",
+    establishes:
+      "A learning effect on a public benchmark, with the confidence interval computed on families the system never saw in training. The harder task — the one where the lookup key is withheld and the run works from packaged memory — is the one where the saving is larger.",
+    boundary:
+      "This is also where the previous release's stated limit fell: the same campaign beats our own strongest alternative method by a paired 27.2%, CI95. Universal superiority over every possible baseline is still not claimed and has not been tested.",
+  },
+  {
+    task: "Kinship",
+    headline: "57.4% less work with the key, 64.0% with it withheld, CI95",
+    status: "SUPPORTED, SEALED",
+    establishes:
+      "That a benchmark which produced nothing under the earlier loop is learnable under the sealed one. The structure was there; the previous mechanism could not find it.",
+    boundary:
+      "The earlier contour measured a 0% advantage on this same benchmark, and that reading stays in the archive rather than being dropped. A result that changes when the mechanism changes is a fact about the mechanism, not a correction to the record.",
+  },
+  {
+    task: "WN18RR",
+    headline: "30.7% less work with the key, 43.4% with it withheld, CI95",
+    status: "SUPPORTED, SEALED",
+    establishes:
+      "The same effect on a second knowledge-graph benchmark, with both campaigns reported rather than the better one.",
+    boundary:
+      "A corpus that has been publicly available for years and may have been seen before. Fresh partner-controlled validity is a different question and is not answered here.",
+  },
+  {
+    task: "Nations",
+    headline: "A typed refusal, under seal, on both campaigns",
+    status: "TYPED REFUSAL, SEALED",
+    establishes:
+      "That the system declares a dataset unlearnable instead of producing a number. This is the control that is allowed to fail, and it failed in the way it was designed to: by refusing rather than by fitting.",
+    boundary:
+      "No positive claim and no negative claim can be built on it. A refusal says the method declined to answer, which is not the same as evidence that there was nothing to find.",
+  },
   {
     task: "V65 synthetic Engine + Atlas",
     headline: "60.9% less full cognitive work, at exact terminal parity",
     status: "SUPPORTED, SCOPED",
     establishes:
-      "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.",
-    boundary: "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.",
+      "The original end-to-end result, on a frozen synthetic task, with a receipt Atlas and a comparator sharing the same engine. It is the anchor the later work was built from.",
+    boundary:
+      "Synthetic L3-L7 tasks, superseded in scope by the sealed public-corpus results above. Nothing industrial, and nothing about an operating plant.",
+  },
+];
+
+export type SealedReplay = {
+  label: string;
+  value: string;
+  detail: string;
+};
+
+/**
+ * What makes the numbers above checkable rather than merely stated. This is the
+ * strongest property of the current evidence line, and the one a reviewer can
+ * exercise without asking us for anything.
+ */
+export const sealedReplay: readonly SealedReplay[] = [
+  {
+    label: "Sealed experiments",
+    value: "6",
+    detail:
+      "Each campaign ships its preregistration, its result and its record of attempts, so the order — commit first, reveal second — is visible rather than asserted.",
   },
   {
-    task: "UMLS",
-    headline: "49.7% less work than the preregistered global-frequency baseline",
-    status: "SUPPORTED VS PREREGISTERED BASELINE",
-    establishes: "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.",
-    boundary: "A stronger equal-information comparator was not beaten. This is not universal superiority.",
+    label: "Independent audit checks",
+    value: "18 / 18",
+    detail:
+      "One command runs the whole audit, including six bit-exact replays and a standing gate that the engine still reproduces its own seals.",
   },
   {
-    task: "WN18RR",
-    headline: "7.17% less work, CI95 5.82–8.55%",
-    status: "SUPPORTED, SCOPED",
-    establishes:
-      "A small positive work effect on a public benchmark, with the interval published rather than the point alone.",
-    boundary: "A previously exposed corpus. Fresh partner-controlled validity is a different question.",
-  },
-  {
-    task: "JF17K-3",
-    headline: "1.34% fewer candidate checks",
-    status: "SUPPORTED, SCOPED",
-    establishes: "A Q0 ranking signal on n-ary relations.",
-    boundary: "Candidate checks are not full cognitive work, and this is not a production improvement.",
-  },
-  {
-    task: "Kinship",
-    headline: "0% work advantage",
-    status: "NOT SUPPORTED",
-    establishes: "Nothing. The negative is retained in the archive rather than dropped.",
-    boundary: "There is no reading of this result that is positive, and none is offered.",
-  },
-  {
-    task: "Nations",
-    headline: "No identifiable independent effect",
-    status: "NOT IDENTIFIABLE",
-    establishes: "That the heldout effect could not be computed on this task at all.",
-    boundary: "Neither a positive nor a negative claim can be made from it.",
+    label: "Files under one digest",
+    value: "1,307",
+    detail:
+      "The archive is addressed by a single SHA-256, so the version a reviewer runs is provably the version the numbers came from.",
   },
 ];
 
@@ -94,7 +145,7 @@ export const learningBoundaries: readonly LearningBoundary[] = [
     label: "Partner-controlled validity",
     status: "NOT PROVEN",
     detail:
-      "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.",
+      "Every result above is on a public corpus or a synthetic task, run by us. No partner has run one of these on their own data with their own evaluator, and that is the next required step.",
   },
   {
     label: "Industrial and production autonomy",
@@ -117,7 +168,7 @@ export const learningBoundaries: readonly LearningBoundary[] = [
     label: "Tower-specific advantage",
     status: "NOT PROVEN",
     detail:
-      "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.",
+      "Sealed secondary measurements show the learned operation behaving associatively and embedding into the Cayley laws well above a calibrated null. That the tower uniquely beats a matched alternative is still not claimed, and is not what those measurements test.",
   },
   {
     label: "General AI",
@@ -129,6 +180,7 @@ export const learningBoundaries: readonly LearningBoundary[] = [
 
 export const learningEvidenceTranslationKeys = [
   ...learningResults.flatMap((row) => [row.task, row.headline, row.establishes, row.boundary]),
+  ...sealedReplay.flatMap((row) => [row.label, row.detail]),
   ...learningContract,
   ...learningBoundaries.flatMap((row) => [row.label, row.detail]),
 ] as const;

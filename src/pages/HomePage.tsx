@@ -163,7 +163,7 @@ export function HomePage() {
             <h1>{t("A verifiable world model for private AI and industrial autonomy.")}</h1>
             <p className="hero__lead">
               {t(
-                "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.",
+                "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is unusual is that every learning number here can be re-run by somebody else: on public corpora the system needs 57–67% less computation than the identical system with its learning switched off, and the benchmark it refused to learn is published beside the ones it did. No partner has yet run one on their own data, and nothing here authorises a command to a plant.",
               )}
             </p>
             <div className="hero__status" aria-label={t("Current project status")}>

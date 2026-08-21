@@ -146,8 +146,13 @@ const requiredPhrases = [
   "no customer, no signed pipeline and no revenue",
   "replaces none of them",
   "Design-partner planning hypotheses",
-  "0% work advantage",
-  "No identifiable independent effect",
+  // V79 sealed evidence. The comparator, the refusal and the superseded zero are
+  // the three things a stronger set of numbers must not be allowed to quietly
+  // drop, so each is pinned here.
+  "the identical system with its learning switched off",
+  "A typed refusal, under seal, on both campaigns",
+  "stays in the archive rather than being dropped",
+  "uniquely beats a matched alternative is still not claimed",
 ];
 
 // A forbidden phrase must never be a substring of a required one, or the two

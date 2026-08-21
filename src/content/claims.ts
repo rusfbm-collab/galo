@@ -153,9 +153,9 @@ export const claims: Claim[] = [
   {
     id: "C17_PUBLIC_BENCHMARK_RESULTS",
     publicCopy:
-      "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.",
+      "Against the identical system with its learning switched off: SIGMORPHON 2022 66.4% less work on the complete official test of 57,755 words at F1 0.759; UMLS 58.5% keyed and 66.6% keyless, CI95; Kinship 57.4% and 64.0%; WN18RR 30.7% and 43.4%; Nations a typed refusal under seal.",
     status: "bounded",
-    source: "V65-V67 public-benchmark archive",
+    source: "V75-V78 sealed public-corpus archive",
     allowedPlacements: ["evidence"],
     forbiddenVariants: ["universal strongest-baseline superiority"],
   },

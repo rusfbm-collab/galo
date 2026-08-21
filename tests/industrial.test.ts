@@ -10,7 +10,12 @@ import {
   stopRule,
   wedgeSeparation,
 } from "../src/content/industrial";
-import { learningBoundaries, learningContract, learningResults } from "../src/content/learningEvidence";
+import {
+  learningBoundaries,
+  learningContract,
+  learningResults,
+  sealedReplay,
+} from "../src/content/learningEvidence";
 
 /**
  * The industrial wedge is the one part of this site that talks about money, a
@@ -186,13 +191,13 @@ describe("the evaluation design", () => {
   });
 });
 
-describe("the V65-V67 learning line", () => {
-  it("publishes six results and keeps the two that did not work", () => {
+describe("the sealed V75-V78 learning line", () => {
+  it("publishes six sealed results and keeps the one the system refused", () => {
     expect(learningResults).toHaveLength(6);
-    const negatives = learningResults.filter(
-      (row) => row.status === "NOT SUPPORTED" || row.status === "NOT IDENTIFIABLE",
-    );
-    expect(negatives.map((row) => row.task)).toEqual(["Kinship", "Nations"]);
+    const refusals = learningResults.filter((row) => row.status === "TYPED REFUSAL, SEALED");
+    expect(refusals.map((row) => row.task)).toEqual(["Nations"]);
+    // JF17K-3 was withdrawn with the V67 line and must not reappear.
+    expect(learningResults.map((row) => row.task)).not.toContain("JF17K-3");
   });
 
   it("gives every result a boundary, including the positive ones", () => {
@@ -202,19 +207,49 @@ describe("the V65-V67 learning line", () => {
     }
   });
 
-  it("offers no positive reading of the negative results", () => {
+  it("keeps the superseded 0% on the benchmark that now learns", () => {
+    // Kinship flipped from a flat negative to a positive when the mechanism
+    // changed. Quietly replacing the old number would be the dishonest move.
     const kinship = learningResults.find((row) => row.task === "Kinship")!;
-    const nations = learningResults.find((row) => row.task === "Nations")!;
-    expect(kinship.headline).toBe("0% work advantage");
-    expect(kinship.boundary).toMatch(/no reading of this result that is positive/i);
-    expect(nations.establishes).toMatch(/could not be computed/i);
+    expect(kinship.headline).toContain("57.4%");
+    expect(kinship.boundary).toContain("0%");
+    expect(kinship.boundary).toMatch(/stays in the archive rather than being dropped/i);
   });
 
-  it("does not let the strongest number stand without its scope", () => {
-    const synthetic = learningResults[0]!;
+  it("reads a refusal as a refusal rather than as a result in either direction", () => {
+    const nations = learningResults.find((row) => row.task === "Nations")!;
+    expect(nations.establishes).toMatch(/allowed to fail/i);
+    expect(nations.boundary).toMatch(/no positive claim and no negative claim/i);
+  });
+
+  it("does not let the strongest number stand without its comparator or its scope", () => {
+    const language = learningResults[0]!;
+    expect(language.task).toBe("SIGMORPHON 2022");
+    expect(language.headline).toContain("66.4%");
+    expect(language.headline).toContain("57,755");
+    // The saving has to be attributable to learning rather than to a smaller search.
+    expect(language.establishes).toMatch(/38\.2% of words needed more than one check/i);
+    expect(language.boundary).toMatch(/not a partner-controlled result/i);
+
+    const synthetic = learningResults.at(-1)!;
     expect(synthetic.headline).toContain("60.9%");
-    expect(synthetic.boundary).toMatch(/synthetic/i);
-    expect(synthetic.boundary).toMatch(/nothing industrial/i);
+    expect(synthetic.boundary).toMatch(/superseded in scope/i);
+  });
+
+  it("publishes both campaigns wherever two were run, not the better one", () => {
+    for (const task of ["UMLS", "Kinship", "WN18RR"]) {
+      const row = learningResults.find((entry) => entry.task === task)!;
+      expect(row.headline).toMatch(/with the key.*with it withheld/i);
+      expect(row.headline).toContain("CI95");
+    }
+  });
+
+  it("states what a reviewer can run without asking us for anything", () => {
+    expect(sealedReplay).toHaveLength(3);
+    const byLabel = new Map(sealedReplay.map((row) => [row.label, row.value]));
+    expect(byLabel.get("Sealed experiments")).toBe("6");
+    expect(byLabel.get("Independent audit checks")).toBe("18 / 18");
+    expect(sealedReplay.map((row) => row.detail).join(" ")).toMatch(/bit-exact replays/i);
   });
 
   it("names the eight conditions before a work-reduction claim is made", () => {
@@ -225,13 +260,17 @@ describe("the V65-V67 learning line", () => {
     expect(contract).toMatch(/no oracle leak/i);
   });
 
-  it("keeps the four boundaries that decide how these numbers may be quoted", () => {
+  it("keeps the six boundaries that decide how these numbers may be quoted", () => {
     const byLabel = new Map(learningBoundaries.map((row) => [row.label, row.status]));
     expect(byLabel.get("Partner-controlled validity")).toBe("NOT PROVEN");
     expect(byLabel.get("Industrial and production autonomy")).toBe("NOT AUTHORIZED");
     expect(byLabel.get("Functional-safety certification")).toBe("NOT CLAIMED");
     expect(byLabel.get("Customers, letters of intent, revenue")).toBe("NONE");
     expect(byLabel.get("General AI")).toBe("NOT PROVEN");
+    // The sealed secondary measurements did not turn this one into a claim.
+    expect(byLabel.get("Tower-specific advantage")).toBe("NOT PROVEN");
+    const tower = learningBoundaries.find((row) => row.label === "Tower-specific advantage")!;
+    expect(tower.detail).toMatch(/uniquely beats a matched alternative is still not claimed/i);
   });
 
   it("separates the frozen release from the prototype in the boundary text", () => {

@@ -23,9 +23,9 @@ export type WedgeLine = {
 export const wedgeSeparation: readonly WedgeLine[] = [
   {
     label: "Platform thesis",
-    value: "General-purpose verifiable world-model and autonomy architecture",
+    value: "A general-purpose verifiable world-model and autonomy runtime",
     detail:
-      "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.",
+      "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. It already runs on natural language and on knowledge graphs. Domain changes the adapters and the sources; it does not change the evidence cycle.",
   },
   {
     label: "Commercial wedge",

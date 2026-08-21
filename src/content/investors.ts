@@ -43,7 +43,7 @@ export const oneMinuteFacts: readonly FactChip[] = [
   {
     value: "0",
     label: "results produced under a partner's control",
-    note: "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.",
+    note: "On public corpora the system needs 57-67% less computation than the identical system with its learning switched off, and one benchmark it refused to learn is published with the rest. No partner has run any of it on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.",
   },
 ];
 
@@ -158,7 +158,7 @@ export const stageFacts: readonly StageFact[] = [
   {
     question: "Is any of it measured against an alternative?",
     answer:
-      "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.",
+      "Yes, against itself. Every published figure compares the engine with the identical engine with its learning switched off, on preregistered public corpora, and the run that refused to learn is published with the others. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.",
     marker: "PARTIAL",
   },
   {

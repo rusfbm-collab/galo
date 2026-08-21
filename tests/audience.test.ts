@@ -71,10 +71,12 @@ describe("investor entry point", () => {
     expect(running.answer).toMatch(/no learning in the released kernel/i);
 
     // "Nothing has been measured" stopped being true when the benchmark line was
-    // published, so this answer may not be a flat no.
+    // published, so this answer may not be a flat no — but the alternative it is
+    // measured against is itself, and that has to be said in the same breath.
     const measured = stageFacts.find((fact) => fact.question === "Is any of it measured against an alternative?")!;
     expect(measured.marker).toBe("PARTIAL");
-    expect(measured.answer).toMatch(/two of those six results were negative/i);
+    expect(measured.answer).toMatch(/identical engine with its learning switched off/i);
+    expect(measured.answer).toMatch(/refused to learn is published with the others/i);
     expect(measured.answer).toMatch(/no operational gain has been measured anywhere/i);
   });
 

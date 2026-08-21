@@ -141,7 +141,7 @@ export const releaseEvidence = {
       label: "Persistent policy in this release",
       status: "NOT STARTED" as EvidenceStatus,
       detail:
-        "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.",
+        "The R5B6A1_3 release performs no policy update at all. The sealed V75–V78 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with the benchmark it refused to learn.",
     },
     {
       label: "Current trained World Atlas",

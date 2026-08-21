@@ -20,6 +20,7 @@ import { navigationZh } from "./navigation";
 import { mathFiguresZh } from "./mathFigures";
 import { industrialZh } from "./industrial";
 import { plainChaptersZh } from "./plainChapters";
+import { sealedEvidenceZh } from "./sealedEvidence";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -47,6 +48,7 @@ export const zh: TranslationDictionary = {
   ...mathFiguresZh,
   ...industrialZh,
   ...plainChaptersZh,
+  ...sealedEvidenceZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

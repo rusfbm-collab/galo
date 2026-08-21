@@ -300,7 +300,7 @@ export function IndustryPage() {
           <div className="theory-next__links comparison-next">
             <a href={href("/evidence#learning")}>
               <span>{t("The evidence behind the offer")}</span>
-              <strong>{t("Scoped learning results, negatives included")}</strong>
+              <strong>{t("Sealed results, and the one the system refused")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
             <a href={href("/vs-llm#landscape")}>

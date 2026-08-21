@@ -354,23 +354,37 @@ describe("GALO public site", () => {
     );
   });
 
-  it("renders the V65-V67 learning line with its negatives in the same table", () => {
+  it("renders the sealed learning line with its refusal in the same table", () => {
     setPath("/evidence");
     render(<App />);
 
+    // What a reviewer can run comes before what the numbers say.
+    const replay = document.querySelectorAll(".sealed-replay article");
+    expect(replay).toHaveLength(3);
+    expect(document.querySelector(".sealed-replay")?.textContent).toContain("18 / 18");
+
     const results = document.querySelectorAll(".learning-results article");
     expect(results).toHaveLength(6);
-    expect(document.querySelectorAll(".learning-results article.is-negative")).toHaveLength(2);
+    expect(document.querySelectorAll(".learning-results article.is-negative")).toHaveLength(1);
 
     const statuses = Array.from(document.querySelectorAll(".learning-results__status")).map(
       (node) => node.textContent,
     );
-    expect(statuses).toContain("NOT SUPPORTED");
-    expect(statuses).toContain("NOT IDENTIFIABLE");
+    expect(statuses).toContain("TYPED REFUSAL, SEALED");
+    expect(statuses.filter((status) => status === "SUPPORTED, SEALED")).toHaveLength(4);
 
-    // The negative headline is printed as-is rather than being softened.
-    expect(screen.getByText("0% work advantage")).toBeInTheDocument();
-    expect(screen.getByText("No identifiable independent effect")).toBeInTheDocument();
+    // The strongest result leads, and the refusal is printed as-is.
+    expect(
+      screen.getByText("66.4% less work on the complete official test — 57,755 words, F1 0.759"),
+    ).toBeInTheDocument();
+    expect(screen.getByText("A typed refusal, under seal, on both campaigns")).toBeInTheDocument();
+
+    // The superseded 0% on Kinship is still on the page rather than deleted.
+    expect(screen.getByText(/earlier contour measured a 0% advantage/i)).toBeInTheDocument();
+
+    // The withdrawn V67 numbers are gone.
+    expect(screen.queryByText(/49\.7%/)).not.toBeInTheDocument();
+    expect(screen.queryByText(/JF17K/)).not.toBeInTheDocument();
 
     // The frozen release and the prototype are kept apart in the section lead.
     expect(screen.getByText(/still performs no learning at all/i)).toBeInTheDocument();

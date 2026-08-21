@@ -20,6 +20,7 @@ import { navigationAr } from "./navigation";
 import { mathFiguresAr } from "./mathFigures";
 import { industrialAr } from "./industrial";
 import { plainChaptersAr } from "./plainChapters";
+import { sealedEvidenceAr } from "./sealedEvidence";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -47,6 +48,7 @@ export const ar: TranslationDictionary = {
   ...mathFiguresAr,
   ...industrialAr,
   ...plainChaptersAr,
+  ...sealedEvidenceAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

@@ -5,7 +5,7 @@ import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { releaseEvidence } from "../content/evidence";
-import { learningBoundaries, learningContract, learningResults } from "../content/learningEvidence";
+import { learningBoundaries, learningContract, learningResults, sealedReplay } from "../content/learningEvidence";
 import { publicClaims } from "../content/publicClaims";
 import { useI18n } from "../i18n/I18nContext";
 
@@ -219,23 +219,31 @@ export function EvidencePage() {
         <div className="shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">{t("THE V65–V67 LEARNING LINE")}</p>
-              <h2>{t("Six results, and two of them did not work.")}</h2>
+              <p className="eyebrow">{t("THE SEALED LEARNING LINE")}</p>
+              <h2>{t("Every number below is the same engine measured against itself, with the learning switched off.")}</h2>
               <p className="section-heading__text">
                 {t(
-                  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.",
+                  "That comparator is the whole point: same engine, same schema, same candidate universe, same budget, with only the learned volume detached. A saving measured that way is a statement about learning rather than about search size. This is separate from the frozen release above, which still performs no learning at all — both statements are true at once, and neither is allowed to imply the other.",
                 )}
               </p>
             </div>
+          </div>
+
+          <div className="sealed-replay">
+            {sealedReplay.map((row) => (
+              <article key={row.label}>
+                <strong dir="ltr">{row.value}</strong>
+                <h3>{t(row.label)}</h3>
+                <p>{t(row.detail)}</p>
+              </article>
+            ))}
           </div>
 
           <div className="learning-results">
             {learningResults.map((row) => (
               <article
                 key={row.task}
-                className={
-                  row.status === "NOT SUPPORTED" || row.status === "NOT IDENTIFIABLE" ? "is-negative" : undefined
-                }
+                className={row.status === "TYPED REFUSAL, SEALED" ? "is-negative" : undefined}
               >
                 <span className="learning-results__status" dir="ltr">
                   {row.status}
