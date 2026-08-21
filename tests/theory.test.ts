@@ -159,7 +159,7 @@ describe("beginner theory dual-channel safeguards", () => {
     expect(releaseEvidence.tracks.find(({ name }) => name === "Compatibility and audit layer")?.detail).toContain(
       "not automatically current runtime capabilities",
     );
-    expect(releaseEvidence.tracks.map(({ reached }) => reached)).toEqual([3, 2, 3, 1]);
+    expect(releaseEvidence.tracks.map(({ reached }) => reached)).toEqual([3, 2, 3, 2]);
     expect(releaseEvidence.tracks.every(({ reached }) => reached < workTrackMilestones.length)).toBe(true);
     expect(releaseEvidence.freshReplay.full).toBe("NOT COMPLETED");
     expect(releaseEvidence.arithmetic.storedFull).toBe(1366);

@@ -74,11 +74,11 @@ export const releaseEvidence = {
     },
     {
       name: "Target world-model loop",
-      state: "Specified, and open on purpose",
+      state: "Running in a sealed prototype, not in the release",
       detail:
-        "The explicit World Atlas, adaptive resolution, local revision, and the learning loop exist as a written architecture with named preconditions.",
-      next: "Closing the evidence gates that must precede any persistent learning.",
-      reached: 1,
+        "The explicit World Atlas, adaptive resolution, local revision and the learning loop run in a separate sealed prototype with trained Atlases of its own. None of it is in the shipped runtime, and the wider loop the architecture describes is still specified rather than built.",
+      next: "Carrying it into a partner-controlled evaluation, which is the step none of the sealed work substitutes for.",
+      reached: 2,
     },
   ],
   selector: [
@@ -144,9 +144,10 @@ export const releaseEvidence = {
         "The R5B6A1_3 release performs no policy update at all. The sealed V75–V78 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with the benchmark it refused to learn.",
     },
     {
-      label: "Current trained World Atlas",
+      label: "Trained World Atlas in the release",
       status: "NOT PRESENT" as EvidenceStatus,
-      detail: "Current V4 performs zero Atlas learning writes and does not contain a trained Atlas.",
+      detail:
+        "The shipped V4 runtime performs zero Atlas learning writes and carries no trained Atlas. The sealed prototype line has its own, and the two are never the same artefact.",
     },
     {
       label: "General AI",

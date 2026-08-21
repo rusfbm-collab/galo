@@ -236,6 +236,16 @@ describe("the sealed V75-V78 learning line", () => {
     expect(synthetic.boundary).toMatch(/superseded in scope/i);
   });
 
+  it("says the strong baseline was run and won, rather than leaving it untested", () => {
+    // V61 records openly that on a full refit the strongest counting baseline
+    // beats the tower tail on every external corpus. Claiming it was never
+    // tested would be the flattering version.
+    const umls = learningResults.find((row) => row.task === "UMLS")!;
+    expect(umls.boundary).toMatch(/tested rather than left open/i);
+    expect(umls.boundary).toMatch(/strongest counting baseline beats the tower tail/i);
+    expect(umls.boundary).not.toMatch(/has not been tested/i);
+  });
+
   it("publishes both campaigns wherever two were run, not the better one", () => {
     for (const task of ["UMLS", "Kinship", "WN18RR"]) {
       const row = learningResults.find((entry) => entry.task === task)!;
@@ -270,7 +280,10 @@ describe("the sealed V75-V78 learning line", () => {
     // The sealed secondary measurements did not turn this one into a claim.
     expect(byLabel.get("Tower-specific advantage")).toBe("NOT PROVEN");
     const tower = learningBoundaries.find((row) => row.label === "Tower-specific advantage")!;
-    expect(tower.detail).toMatch(/uniquely beats a matched alternative is still not claimed/i);
+    expect(tower.detail).toMatch(/uniquely beats a matched alternative is not claimed/i);
+    // Associativity is sealed; embeddability is not, and the page may not merge them.
+    expect(tower.detail).toMatch(/associatively under seal/i);
+    expect(tower.detail).toMatch(/in development, where a seal is still the next step/i);
   });
 
   it("separates the frozen release from the prototype in the boundary text", () => {

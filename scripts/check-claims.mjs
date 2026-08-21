@@ -95,7 +95,7 @@ const forbidden = [
 ];
 
 const requiredPhrases = [
-  "Persistent policy learning in the current V4 runtime has not started.",
+  "Persistent policy learning in the frozen V4 release runtime has not started.",
   "trained Atlas is not present",
   "External operational gain",
   "General AI",

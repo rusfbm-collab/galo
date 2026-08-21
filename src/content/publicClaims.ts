@@ -57,7 +57,7 @@ export const publicClaims: PublicClaim[] = [
   },
   {
     id: "C07_PERSISTENT_LEARNING_NOT_STARTED",
-    publicCopy: "Persistent policy learning in the current V4 runtime has not started.",
+    publicCopy: "Persistent policy learning in the frozen V4 release runtime has not started.",
     status: "not-started",
     source: "Current release status",
   },

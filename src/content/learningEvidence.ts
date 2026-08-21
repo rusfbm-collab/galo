@@ -49,7 +49,7 @@ export const learningResults: readonly LearningResult[] = [
     establishes:
       "A learning effect on a public benchmark, with the confidence interval computed on families the system never saw in training. The harder task — the one where the lookup key is withheld and the run works from packaged memory — is the one where the saving is larger.",
     boundary:
-      "This is also where the previous release's stated limit fell: the same campaign beats our own strongest alternative method by a paired 27.2%, CI95. Universal superiority over every possible baseline is still not claimed and has not been tested.",
+      "This is also where the previous release's stated limit fell: on the same episodes the campaign beats our own strongest tower comparator by a paired 27.2%, CI95. It is not superiority over every baseline, and that was tested rather than left open — given a full refit, the strongest counting baseline beats the tower tail on every external corpus. Both results are on the record.",
   },
   {
     task: "Kinship",
@@ -168,7 +168,7 @@ export const learningBoundaries: readonly LearningBoundary[] = [
     label: "Tower-specific advantage",
     status: "NOT PROVEN",
     detail:
-      "Sealed secondary measurements show the learned operation behaving associatively and embedding into the Cayley laws well above a calibrated null. That the tower uniquely beats a matched alternative is still not claimed, and is not what those measurements test.",
+      "Two secondary measurements point at it and neither settles it: the learned operation behaves associatively under seal, and it embeds into the Cayley laws well above a calibrated null in development, where a seal is still the next step. That the tower uniquely beats a matched alternative is not claimed, and is not what either measurement tests.",
   },
   {
     label: "General AI",

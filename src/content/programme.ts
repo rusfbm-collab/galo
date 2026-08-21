@@ -141,9 +141,9 @@ export const regionFit: readonly RegionFit[] = [
       "A localized website is not a localized product. It shows that the discipline exists and is enforced, not that any Arabic-language deployment has been made.",
   },
   {
-    claim: "Nothing is trained, so nothing has to leave",
+    claim: "The shipped release is untrained, so deploying it moves no corpus",
     mechanism:
-      "The current release performs no learning: Atlas semantic reads, rank effects, and learning writes are all zero, and the artefact is a declared table rather than a fitted model. There is no training corpus to move, host, or lose.",
+      "The current release performs no learning: Atlas semantic reads, rank effects, and learning writes are all zero, and the artefact is a declared table rather than a fitted model, so there is no training corpus behind it to move, host, or lose. The sealed prototype line does hold trained Atlases — a separate artefact, and not the one that would be deployed.",
     limit:
       "This is a property of the current release described by its own selfchecks, not a data-residency certification and not a security review. Neither has been carried out by anyone.",
   },
