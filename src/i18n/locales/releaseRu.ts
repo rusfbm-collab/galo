@@ -7,7 +7,7 @@ export const releaseRu: TranslationDictionary = {
   "4,802 internal work-unit IDs reconciled": "4 802 внутренних идентификатора единиц работы сведены",
   "440-candidate frontier per source pattern": "440 кандидатов на срезе для каждого исходного шаблона",
   "880 are executable in current V4; each of the two fixed source patterns exposes a 440-candidate frontier.":
-    "В текущей V4 исполняемыми являются 880 дескрипторов; каждому из двух фиксированных исходных шаблонов соответствует фронтир из 440 кандидатов.",
+    "В текущей V4 исполняемыми являются 880 дескрипторов; каждому из двух фиксированных исходных шаблонов соответствует срез из 440 кандидатов.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "Бинарный одношаговый контур исполнения L2–L7 с двумя замкнутыми исходными шаблонами и четырьмя исполняемыми видами действий; L1 используется только для контроля.",
   "A closed deterministic selector. Nothing about it was learned.":
@@ -44,7 +44,7 @@ export const releaseRu: TranslationDictionary = {
   "Current V4 uses a deterministic selector for exactly two fixed source patterns.":
     "Текущая V4 использует детерминированный селектор ровно для двух фиксированных исходных шаблонов.",
   "Current trained World Atlas": "Текущий обученный World Atlas",
-  "Deterministic 440-candidate frontier selected": "Детерминированно выбран фронтир из 440 кандидатов",
+  "Deterministic 440-candidate frontier selected": "Детерминированно выбран срез из 440 кандидатов",
   "Deterministic order": "Детерминированный порядок",
   "Deterministic selector": "Детерминированный селектор",
   "Deterministic selector for exactly two fixed source patterns":
@@ -88,7 +88,7 @@ export const releaseRu: TranslationDictionary = {
     "Данные партнёра и предварительно зарегистрированные результаты до разрешения любой персистентной политики.",
   "Passed across 131 modules in the stored FULL receipt; this FULL result was not freshly replayed here.":
     "В сохранённом протоколе FULL пройдены проверки в 131 модуле; этот результат FULL здесь заново не воспроизводился.",
-  "Pattern frontier": "Фронтир шаблона",
+  "Pattern frontier": "Срез по шаблону",
   "Persist trust state": "Обеспечить сохранение доверенного состояния",
   "Persistent policy learning in the current V4 runtime has not started.":
     "Обучение персистентной политики в текущей среде исполнения V4 не начато.",
@@ -135,7 +135,7 @@ export const releaseRu: TranslationDictionary = {
   "The formal L1–L7 kernel contains 560 oriented typed transition coordinates.":
     "Формальное ядро L1–L7 содержит 560 ориентированных типизированных координат переходов.",
   "The physical total is an internal count of receipt work-unit IDs. It is not elapsed time, FLOPS, energy, cost saving, speedup, causal outcome, or external operational gain.":
-    "Физический итог — это внутреннее число идентификаторов единиц работы в протоколах. Он не является истекшим временем, числом FLOPS, энергией, экономией затрат, ускорением, причинным результатом или внешним операционным выигрышем.",
+    "Физический итог — это внутреннее число идентификаторов единиц работы в протоколах. Это не затраченное время, не FLOPS, не энергия, не экономия денег, не ускорение, не причинный результат и не внешний операционный выигрыш.",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
     "В выпуске явно разделены математика, доказательства совместимости и текущий исполняемый API. Утверждение одного слоя не переносится неявно в другой.",
   "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
