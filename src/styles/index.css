@@ -13441,6 +13441,72 @@ caption bdi {
 
 /* ---- what you will be able to say ---- */
 
+/* ---- symmetry chapter, plain opening ---- */
+
+.symmetry-checks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 18px;
+}
+
+.symmetry-checks article {
+  display: grid;
+  gap: 11px;
+  align-content: start;
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--chart-neutral-strong);
+  border-radius: 18px;
+  padding: 22px 24px;
+  background: var(--white);
+}
+
+.symmetry-checks article.is-symmetry {
+  border-inline-start-color: var(--teal);
+}
+
+.symmetry-checks article.is-not-symmetry {
+  border-inline-start-color: var(--amber);
+}
+
+.symmetry-checks__verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--navy-900);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.symmetry-checks article.is-symmetry .symmetry-checks__verdict {
+  color: var(--teal-deep);
+}
+
+/* --amber is a border and fill tone; as text on white it does not reach 4.5:1,
+   so the failing label borrows the same red the misconception cards use. */
+.symmetry-checks article.is-not-symmetry .symmetry-checks__verdict {
+  color: var(--red);
+}
+
+.symmetry-checks article p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.62;
+}
+
+.symmetry-checks__rule {
+  color: var(--navy-900) !important;
+  font-weight: 650;
+}
+
+.symmetry-checks__result {
+  border-top: 1px solid var(--line);
+  padding-top: 11px;
+  color: var(--navy-900) !important;
+  font-weight: 600;
+}
+
 .orientation-takeaways {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
@@ -13496,6 +13562,25 @@ caption bdi {
   flex: none;
   color: var(--teal-deep);
   transform: translateY(2px);
+}
+
+/* Four steps meant to be read in order. The takeaway grid auto-fits, which
+   breaks four cards as 3 + 1; a fixed pair of columns keeps them 2 x 2. */
+.symmetry-basics {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.symmetry-basics li p:not(.orientation-takeaways__claim) {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.62;
+}
+
+@media (max-width: 780px) {
+  .symmetry-basics {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .orientation-takeaways a {

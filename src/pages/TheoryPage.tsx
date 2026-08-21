@@ -656,11 +656,11 @@ export function TheoryPage() {
       <section id="typed-actions" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("SOURCE, ACTIVE, LEFT, AND RIGHT")}
-            title={t("The operation is fixed; the semantic roles decide where its inputs are placed.")}
+            eyebrow={t("WHO ACTED ON WHOM")}
+            title={t("Two records can reach the same answer and still be different records.")}
             text={isolateLtrTokens(
               t(
-                "Source is the local pole from which this typed transition begins. Active is the pole applied to that source. LEFT puts source on the raw left; RIGHT puts active on the raw left. These names describe interface roles, not a complete World Atlas state and not standard algebraic translation terminology.",
+                "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.",
               ),
               ["LEFT", "RIGHT", "World Atlas"],
             )}
@@ -1121,10 +1121,10 @@ export function TheoryPage() {
       <section id="levels-maps" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("MAPS BETWEEN LEVELS")}
-            title={t("A shared pole name is not enough to move information lawfully between levels.")}
+            eyebrow={t("MOVING BETWEEN LEVELS")}
+            title={t("Two levels using the same position names does not make the names mean the same thing.")}
             text={t(
-              "A homomorphism must preserve the declared operations. An embedding must additionally keep distinct source poles distinct. Operational transfer can require still more: provenance, alignment, loss, and authorization checks.",
+              "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.",
             )}
           />
           <CommutingSquareFigure />
@@ -1347,7 +1347,7 @@ export function TheoryPage() {
               "The formal alphabet, the current runtime, and the target learning system are three different layers.",
             )}
             text={t(
-              "The mathematics supplies exact finite structure. The current V4 release uses only a bounded deterministic execution slice. The wider World Atlas and persistent learning loop remain an architectural target.",
+              "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.",
             )}
           />
           <div className="theory-architecture-stack">
@@ -1370,7 +1370,7 @@ export function TheoryPage() {
             <h3>{t("A closed deterministic selector. Nothing about it was learned.")}</h3>
             <p>
               {t(
-                "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.",
+                "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.",
               )}
             </p>
           </div>
@@ -1382,11 +1382,10 @@ export function TheoryPage() {
             tabIndex={0}
           >
             <table className="theory-runtime-arithmetic">
-              <caption>{t("The release counts are derived in this order")}</caption>
+              <caption>{t("The four numbers this release is held to, and what each one counts")}</caption>
               <thead>
                 <tr>
                   <th scope="col">{t("Value")}</th>
-                  <th scope="col">{t("Independent arithmetic")}</th>
                   <th scope="col">{t("Object counted")}</th>
                 </tr>
               </thead>
@@ -1396,9 +1395,6 @@ export function TheoryPage() {
                     <th scope="row" dir="ltr">
                       {row.value}
                     </th>
-                    <td>
-                      <code dir="ltr">{row.calculation}</code>
-                    </td>
                     <td>{t(row.meaning)}</td>
                   </tr>
                 ))}
@@ -1411,7 +1407,6 @@ export function TheoryPage() {
                 <span>{String(index + 1).padStart(2, "0")}</span>
                 <div>
                   <h3>{t(step.title)}</h3>
-                  <code dir="ltr">{step.exact}</code>
                   <p>{t(step.detail)}</p>
                 </div>
               </li>

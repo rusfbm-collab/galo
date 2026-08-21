@@ -19,6 +19,7 @@ import { fieldRu } from "./field";
 import { navigationRu } from "./navigation";
 import { mathFiguresRu } from "./mathFigures";
 import { industrialRu } from "./industrial";
+import { plainChaptersRu } from "./plainChapters";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -45,6 +46,7 @@ export const ru: TranslationDictionary = {
   ...navigationRu,
   ...mathFiguresRu,
   ...industrialRu,
+  ...plainChaptersRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

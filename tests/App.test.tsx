@@ -634,9 +634,14 @@ describe("GALO public site", () => {
     expect(
       screen.getByText(/At L3 specifically there are two pole orbits, five ordered-pair orbits/i),
     ).toBeInTheDocument();
-    expect(screen.getByRole("table", { name: "The release counts are derived in this order" })).toHaveTextContent(
-      "1,204556 + 6 × 108",
-    );
+    // The chapter states what each release number counts; how it is derived is a
+    // formal-chapter question and is no longer printed next to it.
+    const releaseCounts = screen.getByRole("table", {
+      name: "The four numbers this release is held to, and what each one counts",
+    });
+    expect(releaseCounts).toHaveTextContent("1,204");
+    expect(releaseCounts).toHaveTextContent("The complete committed descriptor universe in the current release.");
+    expect(releaseCounts).not.toHaveTextContent("556 + 6 × 108");
     expect(screen.getByText("TARGET ARCHITECTURE · NOT CURRENT V4")).toBeInTheDocument();
     expect(screen.getByText(/process-local; it does not establish durable trust state/i)).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
@@ -1047,11 +1052,31 @@ describe("GALO public site", () => {
     render(<App />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Symmetries of the PLUS and STAR families." }),
+      screen.getByRole("heading", { level: 1, name: "Which renamings leave every rule exactly where it was." }),
     ).toBeInTheDocument();
+
+    // The chapter now opens without notation: four steps, then one renaming that
+    // works and one that does not, before any group theory appears.
+    expect(document.querySelectorAll(".symmetry-basics > li")).toHaveLength(4);
+    const checks = document.querySelectorAll(".symmetry-checks article");
+    expect(checks).toHaveLength(2);
+    expect(checks[0]).toHaveClass("is-symmetry");
+    expect(checks[1]).toHaveClass("is-not-symmetry");
+    expect(screen.getByText(/leaves every rule exactly where it was is a symmetry/i)).toBeInTheDocument();
+
+    // Same-shape-is-not-same-meaning is stated in words, not only in notation.
+    expect(screen.getByText("Same shape means the same thing.")).toBeInTheDocument();
+    expect(screen.getByText(/says nothing about where either came from/i)).toBeInTheDocument();
+
     expect(screen.getByText("enumeration=224 · Burnside=224")).toBeInTheDocument();
-    expect(screen.getByText(/Eighteen sums seven local groups/i)).toBeInTheDocument();
-    expect(screen.getByText(/u=2: \{1,4\} → \{2,3\}/i)).toBeInTheDocument();
+    expect(screen.getByText(/Eighteen is seven separate answers added together/i)).toBeInTheDocument();
+
+    // The quadratic-residue, CRT and character cards moved to the formal chapter.
+    expect(screen.queryByText(/u=2: \{1,4\} → \{2,3\}/i)).not.toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Read them in the formal chapter" })).toHaveAttribute(
+      "href",
+      "/math#academic-analysis",
+    );
 
     const controls = screen.getByLabelText("Symmetry explorer controls");
     const selects = controls.querySelectorAll("select");
@@ -1068,9 +1093,9 @@ describe("GALO public site", () => {
 
   it("renders the symmetry chapter in Russian, Chinese, and RTL Arabic", () => {
     for (const [path, heading, direction] of [
-      ["/ru/symmetry", "Симметрии семейств PLUS и STAR.", "ltr"],
-      ["/zh/symmetry", "PLUS 与 STAR 族的对称性。", "ltr"],
-      ["/ar/symmetry", "تناظرات عائلتي PLUS وSTAR.", "rtl"],
+      ["/ru/symmetry", "Какие переименования оставляют каждое правило ровно там, где оно было.", "ltr"],
+      ["/zh/symmetry", "哪些改名能把每一条规则都原封不动留在原处。", "ltr"],
+      ["/ar/symmetry", "أيّ إعادات التسمية تُبقي كلّ قاعدة في موضعها تماماً.", "rtl"],
     ] as const) {
       setPath(path);
       const view = render(<App />);

@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, CircleEqual, Orbit, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ArrowRight, CircleAlert, CircleCheck, CircleEqual, Orbit, ShieldAlert } from "lucide-react";
 import { PageShell } from "../components/layout/PageShell";
 import { UnitGroupFigure } from "../components/diagrams/UnitGroupFigure";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
@@ -20,17 +20,19 @@ import {
   symmetryLevelProfiles,
 } from "../content/mathematics";
 import { conceptLessons } from "../content/theory";
+import { symmetryBasics, symmetryLimits, symmetryWorkedChecks } from "../content/symmetryOrientation";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
-  { href: "#two-families", label: "Two indexed families" },
-  { href: "#vocabulary", label: "Symmetry vocabulary" },
-  { href: "#symmetry-notebook", label: "Step-by-step symmetry notebook" },
-  { href: "#orbit-lab", label: "Orbit and stabilizer lab" },
-  { href: "#level-ledger", label: "L1–L7 symmetry ledger" },
-  { href: "#affine-boundary", label: "Affine and STAR boundary" },
-  { href: "#morphism-matrix", label: "Morphism comparison" },
-  { href: "#interpretation", label: "Interpretation boundaries" },
+  { href: "#what-is-symmetry", label: "What a symmetry is" },
+  { href: "#two-families", label: "What is being renamed" },
+  { href: "#vocabulary", label: "Five words" },
+  { href: "#symmetry-notebook", label: "Every term, in full" },
+  { href: "#orbit-lab", label: "Try it yourself" },
+  { href: "#level-ledger", label: "Level by level" },
+  { href: "#affine-boundary", label: "The renaming that almost works" },
+  { href: "#morphism-matrix", label: "Between levels" },
+  { href: "#interpretation", label: "What this does not imply" },
 ] as const;
 
 const symmetryLessons = conceptLessons.filter(({ chapter }) => chapter === "symmetry");
@@ -45,30 +47,111 @@ export function SymmetryPage() {
           <a className="back-link" href={href("/math")}>
             <ArrowLeft className="directional-icon" size={16} aria-hidden="true" /> {t("Mathematics")}
           </a>
-          <p className="eyebrow eyebrow--cyan">{t("ACADEMIC SYMMETRY CHAPTER")}</p>
-          <h1>{t("Symmetries of the PLUS and STAR families.")}</h1>
+          <p className="eyebrow eyebrow--cyan">{t("SYMMETRY CHAPTER")}</p>
+          <h1>{t("Which renamings leave every rule exactly where it was.")}</h1>
           <p>
             {t(
-              "This chapter distinguishes group automorphisms, affine torsor symmetries, STAR automorphisms, orbits, stabilizers, and cross-level homomorphisms. Similar formulas are not treated as the same structure.",
+              "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.",
             )}
           </p>
           <div className="math-hero__status">
-            <span dir="ltr">Aut(G_n) ≅ U(n)</span>
-            <span dir="ltr">Aut(A_n) ≅ U(n)</span>
-            <strong>{t("FIBREWISE, NOT GLOBAL")}</strong>
+            <span>{t("Starts with no notation")}</span>
+            <span>{t("Formal statements from the second section")}</span>
+            <strong>{t("SHAPE, NOT MEANING")}</strong>
           </div>
         </div>
       </section>
 
       <PageContents label="On this page" ariaLabel="Symmetry chapter navigation" items={contents} />
 
+      <section id="what-is-symmetry" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("BEFORE ANY NOTATION")}
+            title={t("A symmetry is a renaming that leaves every rule exactly where it was.")}
+            text={t(
+              "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.",
+            )}
+          />
+
+          <ol className="orientation-takeaways symmetry-basics">
+            {symmetryBasics.map((step) => (
+              <li key={step.number}>
+                <span className="orientation-takeaways__number" dir="ltr">
+                  {step.number}
+                </span>
+                <div>
+                  <p className="orientation-takeaways__claim">{t(step.title)}</p>
+                  <p>{t(step.plain)}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+
+          <div className="orientation-block">
+            <div className="orientation-block__head">
+              <span>{t("ONE THAT WORKS, ONE THAT DOES NOT")}</span>
+              <h3>{t("Both are worked on a real cell rather than described.")}</h3>
+              <p>
+                {t(
+                  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.",
+                )}
+              </p>
+            </div>
+            <div className="symmetry-checks">
+              {symmetryWorkedChecks.map((check) => (
+                <article key={check.rule} className={check.isSymmetry ? "is-symmetry" : "is-not-symmetry"}>
+                  <span className="symmetry-checks__verdict">
+                    {check.isSymmetry ? (
+                      <CircleCheck size={16} aria-hidden="true" />
+                    ) : (
+                      <CircleAlert size={16} aria-hidden="true" />
+                    )}
+                    {check.isSymmetry ? t("A symmetry") : t("Not a symmetry")}
+                  </span>
+                  <p className="symmetry-checks__rule">{t(check.rule)}</p>
+                  <p>{t(check.before)}</p>
+                  <p>{t(check.after)}</p>
+                  <p className="symmetry-checks__result">{t(check.verdict)}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+
+          <div className="orientation-block">
+            <div className="orientation-block__head">
+              <span>{t("WHAT IT NEVER MEANS")}</span>
+              <h3>{t("Three readings this chapter does not support.")}</h3>
+              <p>
+                {t(
+                  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.",
+                )}
+              </p>
+            </div>
+            <div className="theory-misconceptions">
+              {symmetryLimits.map((limit) => (
+                <article key={limit.claim}>
+                  <div>
+                    <CircleAlert size={18} aria-hidden="true" />
+                    <strong>{t(limit.claim)}</strong>
+                  </div>
+                  <p>
+                    <CircleCheck size={17} aria-hidden="true" /> {t(limit.correction)}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="two-families" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("OBJECT TYPES BEFORE SYMMETRIES")}
-            title={t("The same carrier supports different symmetry categories.")}
+            eyebrow={t("WHAT IS BEING RENAMED")}
+            title={t("The same positions, studied under one rule, the other rule, and both at once.")}
             text={t(
-              "The project calls L1–L7 two towers. Academically they are indexed families until bonding maps are declared; divisibility supplies only some nonzero embeddings.",
+              "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.",
             )}
           />
           <div
@@ -117,7 +200,7 @@ export function SymmetryPage() {
           </div>
           <div className="aggregate-proof-grid">
             <article>
-              <span>{t("Cyclic-group proof")}</span>
+              <span>{t("Why only some renamings work")}</span>
               <code dir="ltr">σ(P1)=P_u · σ bijective ⇔ gcd(u,n)=1</code>
               <p>
                 {t(
@@ -126,7 +209,7 @@ export function SymmetryPage() {
               </p>
             </article>
             <article>
-              <span>{t("STAR rigidity proof")}</span>
+              <span>{t("Why the second rule allows no more")}</span>
               <code dir="ltr">x≠0 ⇒ x★y=x+y</code>
               <p>
                 {t(
@@ -135,7 +218,7 @@ export function SymmetryPage() {
               </p>
             </article>
             <article>
-              <span>{t("Canonical group isomorphism")}</span>
+              <span>{t("Why these are matched rather than equal")}</span>
               <code dir="ltr">U(n) → Aut(A_n), u ↦ σ_u</code>
               <p>
                 {t(
@@ -150,8 +233,11 @@ export function SymmetryPage() {
       <section id="vocabulary" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("STANDARD GROUP-ACTION VOCABULARY")}
-            title={t("Automorphism, action, orbit, stabilizer, and Burnside are different notions.")}
+            eyebrow={t("FIVE WORDS THE REST OF THE CHAPTER USES")}
+            title={t("Each of these means one specific thing, and they are easy to run together.")}
+            text={t(
+              "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.",
+            )}
           />
           <div className="symmetry-vocabulary-grid">
             <article>
@@ -208,10 +294,10 @@ export function SymmetryPage() {
       <section id="symmetry-notebook" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("STEP-BY-STEP SYMMETRY NOTEBOOK")}
-            title={t("Treat a symmetry as a rule-preserving relabelling before counting anything.")}
+            eyebrow={t("EVERY TERM, IN FULL")}
+            title={t("If a word above lost you, its own page picks it up from the beginning.")}
             text={t(
-              "Each card begins with a concrete dial picture, then states the academic definition, works a finite example, proves the claim, marks the interpretation boundary, and reconciles a lookup ledger with a formula.",
+              "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.",
             )}
           />
           <div className="term-index">
@@ -242,9 +328,11 @@ export function SymmetryPage() {
         <div className="shell">
           <SectionHeading
             light
-            eyebrow={t("INTERACTIVE UNIT-ACTION LAB")}
-            title={t("Inspect cycles, orbits, stabilizers, and the Burnside ledger.")}
-            text={t("Every result is recomputed from multiplication by units modulo n in this browser.")}
+            eyebrow={t("TRY IT")}
+            title={t("Pick a level and a renaming, and watch which positions it groups together.")}
+            text={t(
+              "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.",
+            )}
           />
           <SymmetryExplorer />
           <BurnsideCheckFigure />
@@ -254,10 +342,10 @@ export function SymmetryPage() {
       <section id="level-ledger" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("L1–L7 SYMMETRY LEDGER")}
-            title={t("Local groups first; aggregate sums second.")}
+            eyebrow={t("LEVEL BY LEVEL")}
+            title={t("Each level is counted on its own, and the totals are sums rather than a single larger object.")}
             text={t(
-              "Pair orbits are computed inside each fixed level. Multiplying by four keeps the action-family tag fixed; no orbit crosses a level or family boundary.",
+              "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.",
             )}
           />
           <UnitGroupFigure />
@@ -275,26 +363,22 @@ export function SymmetryPage() {
               <thead>
                 <tr>
                   <th scope="col">{t("level")}</th>
-                  <th scope="col">U(n)</th>
-                  <th scope="col">|Aut|</th>
-                  <th scope="col">|Hol|</th>
-                  <th scope="col">{t("carrier orbits")}</th>
-                  <th scope="col">{t("pair orbits")}</th>
-                  <th scope="col">{t("typed orbits")}</th>
-                  <th scope="col">|End★|</th>
+                  <th scope="col">{t("renamings that work")}</th>
+                  <th scope="col">{t("how many")}</th>
+                  <th scope="col">{t("shapes of one position")}</th>
+                  <th scope="col">{t("shapes of a pair")}</th>
+                  <th scope="col">{t("shapes once the role is kept")}</th>
                 </tr>
               </thead>
               <tbody>
                 {symmetryLevelProfiles.map((profile) => (
                   <tr key={profile.level}>
                     <th scope="row">L{profile.level}</th>
-                    <td>{`{${profile.units.join(",")}}`}</td>
+                    <td dir="ltr">{`{${profile.units.join(",")}}`}</td>
                     <td>{profile.automorphismOrder}</td>
-                    <td>{profile.holomorphOrder}</td>
                     <td>{profile.carrierOrbitCount}</td>
                     <td>{profile.pairOrbitCount}</td>
                     <td>{4 * profile.pairOrbitCount}</td>
-                    <td>{profile.starEndomorphismCount}</td>
                   </tr>
                 ))}
               </tbody>
@@ -302,12 +386,12 @@ export function SymmetryPage() {
           </div>
           <div className="aggregate-proof-grid">
             <article>
-              <span>{t("Aggregate automorphism-map count")}</span>
+              <span>{t("Adding the seven levels up")}</span>
               <code dir="ltr">Σ_(n=1)^7 |Aut(A_n)| = 1+1+2+2+4+2+6 = {sameLevelAutomorphismCount}</code>
-              <p>{t("Eighteen sums seven local groups. No global automorphism group has that order.")}</p>
+              <p>{t("Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.")}</p>
             </article>
             <article>
-              <span>{t("Fibrewise typed-orbit count")}</span>
+              <span>{t("Why the total is multiplied by four")}</span>
               <code dir="ltr">4Σ O_n = 4(1+4+5+10+7+20+9) = {structuralOrbitCount}</code>
               <p>
                 {t(
@@ -316,7 +400,7 @@ export function SymmetryPage() {
               </p>
             </article>
             <article>
-              <span>{t("Independent reconciliation")}</span>
+              <span>{t("The same total, counted a second way")}</span>
               <code dir="ltr">O_n=(1/φ(n))Σ_(u∈U(n)) gcd(u−1,n)²</code>
               <code dir="ltr">
                 enumeration={structuralOrbitCount} · Burnside={structuralOrbitCountByBurnside}
@@ -332,27 +416,30 @@ export function SymmetryPage() {
       <section id="affine-boundary" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("POINTED AUTOMORPHISMS VS AFFINE TORSOR SYMMETRIES")}
-            title={t("Hol(C_n) belongs to the PLUS torsor. STAR automorphisms have nothing to do with it.")}
+            eyebrow={t("THE RENAMING THAT ALMOST WORKS")}
+            title={t("Shifting every position by a fixed amount preserves the first rule and breaks the second.")}
+            text={t(
+              "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.",
+            )}
           />
           <div className="affine-boundary-grid">
             <article>
-              <span>{t("Pointed automorphism")}</span>
+              <span>{t("A renaming that keeps the starting point")}</span>
               <code dir="ltr">σ_u(x)=ux · σ_u(0)=0</code>
               <p>{t("It preserves PLUS, STAR, and P0 for every unit u.")}</p>
             </article>
             <article>
-              <span>{t("Affine torsor map")}</span>
+              <span>{t("A shift, which moves it")}</span>
               <code dir="ltr">F_(u,b)(x)=ux+b</code>
               <p>{t("For b≠0 it does not fix P0, so it is not an automorphism of the pointed cyclic group.")}</p>
             </article>
             <article>
-              <span>{t("Exact STAR failure")}</span>
+              <span>{t("The exact cell where the shift fails")}</span>
               <code dir="ltr">T_b(0★0)=b ≠ 2b=T_b(0)★T_b(0), b≠0</code>
               <p>{t("The inequality holds for every nonzero residue b, and not just in a generic case.")}</p>
             </article>
             <article>
-              <span>{t("Inversion orbits, no physical mirrors")}</span>
+              <span>{t("Groups that look like mirrors and are not")}</span>
               <code dir="ltr">
                 δ ↦ −δ · L7:{" "}
                 {inversionOrbits(7)
@@ -365,46 +452,24 @@ export function SymmetryPage() {
                 )}
               </p>
             </article>
-            <article>
-              <span>{t("Quadratic-residue nuance")}</span>
-              <code dir="ltr">
-                L5 · u=2: {`{1,4}`} → {`{2,3}`}
-              </code>
-              <p>
-                {t(
-                  "The quadratic-residue subgroup preserves each block; the full unit group preserves only the unordered two-block partition and may swap its blocks.",
-                )}
-              </p>
-            </article>
-            <article>
-              <span>{t("Exact CRT boundary at L6")}</span>
-              <code dir="ltr">θ(3★_6 1)=θ(4)=(0,1) ≠ (0,0)=θ(3)★_coord θ(1)</code>
-              <p>
-                {t(
-                  "CRT decomposes cyclic addition, but STAR tests zero globally; a residue that is zero in only one CRT coordinate exposes the failure of coordinatewise preservation.",
-                )}
-              </p>
-            </article>
-            <article>
-              <span>{t("Characters and faithful phase labels")}</span>
-              <code dir="ltr">χ_s(k)=exp(2πisk/n), s∈Z_n</code>
-              <p>
-                {t(
-                  "Every s defines a character of C_n, and only the units give faithful labels. In a phase model P0 lands on complex 1; complex 0 is where it never goes.",
-                )}
-              </p>
-            </article>
           </div>
+          <p className="section-followup">
+            <ShieldAlert size={16} aria-hidden="true" />{" "}
+            {t(
+              "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.",
+            )}{" "}
+            <a href={href("/math#academic-analysis")}>{t("Read them in the formal chapter")}</a>
+          </p>
         </div>
       </section>
 
       <section id="morphism-matrix" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("CROSS-LEVEL HOMOMORPHISMS")}
-            title={t("PLUS and STAR have different homomorphism counts.")}
+            eyebrow={t("BETWEEN LEVELS")}
+            title={t("A level fits inside a larger one only when it divides it.")}
             text={t(
-              "Each cell shows PLUS homomorphisms / full-algebra homomorphisms. PLUS has gcd(n,m) maps. For n≥2, the full algebra has the zero map and φ(n) additional embeddings exactly when n divides m; at n=1 the zero map is the unique embedding.",
+              "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.",
             )}
           />
           <div
@@ -484,8 +549,11 @@ export function SymmetryPage() {
         <div className="shell">
           <SectionHeading
             light
-            eyebrow={t("INTERPRETATION FIREWALL")}
-            title={t("Finite algebra does not imply physical or field-theoretic symmetry.")}
+            eyebrow={t("WHAT THIS DOES NOT IMPLY")}
+            title={t("A statement about a finite table is not a statement about the world.")}
+            text={t(
+              "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.",
+            )}
           />
           <div className="math-boundary-grid">
             <article className="math-boundary-card math-boundary-card--established">
