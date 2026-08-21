@@ -12,7 +12,6 @@ export const releaseEvidence = {
   release: "R5B6A1_3",
   currentApi: "R5B6A1_3_CURRENT_V4",
   status: "READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES",
-  archiveFingerprint: "64506fbf19caac52fb8c44cebcc3fc4f8f1cfae959a5e75db3e63e3073716de9",
   freshReplay: {
     static: "PASS",
     staticReceipt: "f00581021163a7236194517d0370cff3d836803804959fdf1adfb318cb4666ea",

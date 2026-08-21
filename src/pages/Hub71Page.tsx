@@ -4,7 +4,6 @@ import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { publicContact } from "../content/contact";
 import { releaseEvidence } from "../content/evidence";
-import { sealedArchive } from "../content/learningEvidence";
 import {
   askedFor,
   assessmentTable,
@@ -365,14 +364,6 @@ export function Hub71Page() {
             <div>
               <dt>release_of_record</dt>
               <dd>{releaseEvidence.release}</dd>
-            </div>
-            <div>
-              <dt>release_archive_sha256</dt>
-              <dd>{releaseEvidence.archiveFingerprint}</dd>
-            </div>
-            <div>
-              <dt>programme_archive_sha256</dt>
-              <dd>{sealedArchive.sha256}</dd>
             </div>
             <div>
               <dt>release_status</dt>

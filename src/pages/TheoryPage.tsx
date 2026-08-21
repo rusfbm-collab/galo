@@ -1588,10 +1588,6 @@ export function TheoryPage() {
             </div>
             <dl dir="ltr">
               <div>
-                <dt>release_archive_sha256</dt>
-                <dd>{releaseEvidence.archiveFingerprint}</dd>
-              </div>
-              <div>
                 <dt>fresh STATIC</dt>
                 <dd>{releaseEvidence.freshReplay.static}</dd>
               </div>

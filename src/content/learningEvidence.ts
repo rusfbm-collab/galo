@@ -47,7 +47,7 @@ export const learningResults: readonly LearningResult[] = [
     headline: "58.5% less work with the key, 66.6% with it withheld, CI95",
     status: "SUPPORTED, SEALED",
     establishes:
-      "A learning effect on a public benchmark, with the confidence interval computed on families the system never saw in training. The harder task — the one where the lookup key is withheld and the run works from packaged memory — is the one where the saving is larger.",
+      "A learning effect on a public benchmark. The held-out pairs are ones the system never saw, though the vocabulary of relations they are built from was known from training — so this is transfer to new combinations rather than to a new subject. The harder task, where the lookup key is withheld and the run works from packaged memory, is the one where the saving is larger.",
     boundary:
       "This is also where the previous release's stated limit fell: on the same episodes the campaign beats our own strongest tower comparator by a paired 27.2%, CI95. It is not superiority over every baseline, and that was tested rather than left open — given a full refit, the strongest counting baseline beats the tower tail on every external corpus. Both results are on the record.",
   },
@@ -65,7 +65,7 @@ export const learningResults: readonly LearningResult[] = [
     headline: "30.7% less work with the key, 43.4% with it withheld, CI95",
     status: "SUPPORTED, SEALED",
     establishes:
-      "The same effect on a second knowledge-graph benchmark, with both campaigns reported rather than the better one.",
+      "The same effect on a second knowledge-graph benchmark, with both campaigns reported rather than the better one. The intervals are computed on the absolute work saved per episode; the percentages are derived from those.",
     boundary:
       "A corpus that has been publicly available for years and may have been seen before. Fresh partner-controlled validity is a different question and is not answered here.",
   },
@@ -95,9 +95,8 @@ export const learningResults: readonly LearningResult[] = [
  * a number on this site from being traced to an artefact nobody ships any more.
  */
 export const sealedArchive = {
-  label: "Programme archive of record",
-  sha256: "eb81fa17c11ca9cb1658edeaf72b104bdbeef5de3818449a0159dd42308fd279",
-  note: "Every learning figure on this page comes from this archive and no other. The frozen kernel release is a separate carrier with its own fingerprint, and the two are never blended.",
+  label: "One carrier for these numbers",
+  note: "Every learning figure on this page comes from a single self-verifying carrier and no other. The frozen kernel release is a separate one, and the two are never blended. Its digest and file list go to a reviewer rather than onto this page.",
 } as const;
 
 export type SealedReplay = {
@@ -120,13 +119,13 @@ export const sealedReplay: readonly SealedReplay[] = [
   },
   {
     label: "Independent audit checks",
-    value: "18 / 18",
+    value: "20 / 20",
     detail:
-      "One command runs the whole audit, including six bit-exact replays and a standing gate that the engine still reproduces its own seals.",
+      "One command runs the whole audit, and it runs twice — on two independent fresh unpacks — including six bit-exact replays and a standing gate that the engine still reproduces its own seals.",
   },
   {
     label: "Files under one digest",
-    value: "1,307",
+    value: "1,309",
     detail:
       "The archive is addressed by a single SHA-256, so the version a reviewer runs is provably the version the numbers came from.",
   },
@@ -174,6 +173,12 @@ export const learningBoundaries: readonly LearningBoundary[] = [
     status: "NONE",
     detail:
       "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.",
+  },
+  {
+    label: "What produced the saving",
+    status: "NOT ATTRIBUTED",
+    detail:
+      "The parts of GALO this site spends the most words on — the tower, the typed routes, the verifier, the selector and the learned cores — are not in the measured path of these campaigns. What was measured is a counting ranker reading a learned volume. So the numbers say that learning saves work; they do not say that the architecture is what saved it, and an end-to-end test that would separate the two has not been run.",
   },
   {
     label: "Tower-specific advantage",

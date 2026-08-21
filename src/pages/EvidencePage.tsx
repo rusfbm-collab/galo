@@ -1,5 +1,4 @@
-import { ArrowLeft, Check, Copy, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
-import { useState } from "react";
+import { ArrowLeft, Check, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
 import { ReceiptAnatomyFigure } from "../components/diagrams/ReceiptAnatomyFigure";
 import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
@@ -16,14 +15,7 @@ import { publicClaims } from "../content/publicClaims";
 import { useI18n } from "../i18n/I18nContext";
 
 export function EvidencePage() {
-  const [copied, setCopied] = useState(false);
   const { href, t } = useI18n();
-
-  const copyFingerprint = async () => {
-    await navigator.clipboard.writeText(releaseEvidence.archiveFingerprint);
-    setCopied(true);
-    window.setTimeout(() => setCopied(false), 1600);
-  };
 
   return (
     <PageShell>
@@ -51,31 +43,19 @@ export function EvidencePage() {
 
       <section className="section section--paper">
         <div className="shell">
-          <div className="fingerprint-card">
+          <div className="fingerprint-card fingerprint-card--plain">
             <div className="fingerprint-card__icon">
               <Fingerprint aria-hidden="true" />
             </div>
             <div>
-              <p className="eyebrow">{t("RELEASE FINGERPRINT")}</p>
-              <h2>{t("The release counts below are bound to this archive and no other.")}</h2>
+              <p className="eyebrow">{t("TWO CARRIERS, KEPT APART")}</p>
+              <h2>{t("Each set of numbers on this page comes from one carrier, and never from both.")}</h2>
               <p>
                 {t(
-                  "This is the frozen kernel release. The sealed learning line further down runs from a separate archive with its own fingerprint, printed there. Neither set of numbers is blended with the other, and no figure on this page comes from an archive that is out of circulation.",
+                  "The release counts immediately below are the frozen kernel release. The sealed learning line further down runs from a separate carrier of its own. Neither set is blended with the other, and no figure here comes from an artefact that is out of circulation. Digests and file names are handed to a reviewer rather than published.",
                 )}
               </p>
             </div>
-            <button
-              className="fingerprint-card__value"
-              type="button"
-              onClick={copyFingerprint}
-              aria-label={t("Copy release fingerprint")}
-            >
-              <span className="mono" dir="ltr">
-                {releaseEvidence.archiveFingerprint}
-              </span>
-              <Copy size={17} aria-hidden="true" />
-              <small>{copied ? t("COPIED") : t("COPY")}</small>
-            </button>
           </div>
 
           <div className="metric-grid metric-grid--evidence">
@@ -241,9 +221,6 @@ export function EvidencePage() {
 
           <div className="sealed-archive">
             <p className="eyebrow">{t(sealedArchive.label)}</p>
-            <p className="sealed-archive__value mono" dir="ltr">
-              {sealedArchive.sha256}
-            </p>
             <p>{t(sealedArchive.note)}</p>
           </div>
 

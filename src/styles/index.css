@@ -2306,6 +2306,16 @@ html[lang="ar"] .claim-table__row {
   background: #e9f7f5;
 }
 
+/* Without the digest column the card has two children, not three. */
+.fingerprint-card--plain {
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.fingerprint-card--plain p:not(.eyebrow) {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 .fingerprint-card h2 {
   margin: 0;
   font-size: 1.4rem;
@@ -15816,15 +15826,7 @@ caption bdi {
   margin: 0;
 }
 
-.sealed-archive__value {
-  overflow-wrap: anywhere;
-  color: var(--navy-950);
-  font-size: 0.86rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.sealed-archive > p:last-child {
+.sealed-archive > p:not(.eyebrow) {
   color: var(--ink-soft);
   font-size: 0.93rem;
   line-height: 1.6;

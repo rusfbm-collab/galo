@@ -360,15 +360,18 @@ describe("GALO public site", () => {
     setPath("/evidence");
     render(<App />);
 
-    // The carrier the numbers came from is named, and it is not the release archive.
-    const carrier = document.querySelector(".sealed-archive__value")?.textContent ?? "";
-    expect(carrier).toBe("eb81fa17c11ca9cb1658edeaf72b104bdbeef5de3818449a0159dd42308fd279");
-    expect(carrier).not.toBe(document.querySelector(".fingerprint-card__value .mono")?.textContent);
+    // One carrier is asserted, and no archive is named or fingerprinted for it.
+    // Per-run replay receipts are a different thing and stay.
+    const carrier = document.querySelector(".sealed-archive")?.textContent ?? "";
+    expect(carrier).toMatch(/single self-verifying carrier/i);
+    expect(carrier).not.toMatch(/[0-9a-f]{40}/);
+    expect(document.querySelector(".fingerprint-card")?.textContent ?? "").not.toMatch(/[0-9a-f]{40}/);
+    expect(document.body.textContent ?? "").not.toMatch(/_CONSOLIDATE|\.zip\b/i);
 
     // What a reviewer can run comes before what the numbers say.
     const replay = document.querySelectorAll(".sealed-replay article");
     expect(replay).toHaveLength(3);
-    expect(document.querySelector(".sealed-replay")?.textContent).toContain("18 / 18");
+    expect(document.querySelector(".sealed-replay")?.textContent).toContain("20 / 20");
 
     const results = document.querySelectorAll(".learning-results article");
     expect(results).toHaveLength(6);
@@ -398,7 +401,9 @@ describe("GALO public site", () => {
 
     expect(document.querySelectorAll(".learning-contract ol li")).toHaveLength(8);
     const boundaries = document.querySelectorAll(".learning-boundaries li");
-    expect(boundaries).toHaveLength(6);
+    expect(boundaries).toHaveLength(7);
+    // V78 puts the measured path outside the architecture; the page says so.
+    expect(document.querySelector(".learning-boundaries")?.textContent).toContain("NOT ATTRIBUTED");
     expect(document.querySelector(".learning-boundaries")?.textContent).toContain("NOT AUTHORIZED");
   });
 

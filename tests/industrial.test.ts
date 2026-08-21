@@ -10,7 +10,6 @@ import {
   stopRule,
   wedgeSeparation,
 } from "../src/content/industrial";
-import { releaseEvidence } from "../src/content/evidence";
 import {
   learningBoundaries,
   learningContract,
@@ -248,6 +247,15 @@ describe("the sealed V75-V78 learning line", () => {
     expect(umls.boundary).not.toMatch(/has not been tested/i);
   });
 
+  it("says what 'unseen' means on the knowledge-graph campaigns", () => {
+    // V78 restates the scope: the endpoint pairs are new, the relation
+    // vocabulary is not. "Families never seen in training" would overstate it.
+    const umls = learningResults.find((row) => row.task === "UMLS")!;
+    expect(umls.establishes).toMatch(/vocabulary of relations they are built from was known from training/i);
+    expect(umls.establishes).toMatch(/new combinations rather than to a new subject/i);
+    expect(umls.establishes).not.toMatch(/never saw in training/i);
+  });
+
   it("publishes both campaigns wherever two were run, not the better one", () => {
     for (const task of ["UMLS", "Kinship", "WN18RR"]) {
       const row = learningResults.find((entry) => entry.task === task)!;
@@ -256,21 +264,30 @@ describe("the sealed V75-V78 learning line", () => {
     }
   });
 
-  it("names one carrier for these numbers, and it is the programme archive", () => {
-    // Earlier steps of the line had working archives of their own and those are
-    // out of circulation. A number traceable to a withdrawn artefact is the
-    // failure this pins against.
-    expect(sealedArchive.sha256).toMatch(/^[0-9a-f]{64}$/);
-    expect(sealedArchive.sha256).toBe("eb81fa17c11ca9cb1658edeaf72b104bdbeef5de3818449a0159dd42308fd279");
-    expect(sealedArchive.sha256).not.toBe(releaseEvidence.archiveFingerprint);
+  it("says the numbers come from one carrier without naming the artefact", () => {
+    // The carrier matters; its digest and file list belong in a reviewer's hands
+    // rather than on the page, so no archive identifier may reappear here.
     expect(sealedArchive.note).toMatch(/never blended/i);
+    expect(sealedArchive.note).toMatch(/rather than onto this page/i);
+    expect(JSON.stringify(sealedArchive)).not.toMatch(/[0-9a-f]{40}/);
+  });
+
+  it("does not attribute the saving to the parts of GALO the site talks about most", () => {
+    // The measured path is a counting ranker over a learned volume. The tower,
+    // the routes and the verifier are not in it, and the page may not imply
+    // otherwise by omission.
+    const attribution = learningBoundaries.find((row) => row.label === "What produced the saving")!;
+    expect(attribution.status).toBe("NOT ATTRIBUTED");
+    expect(attribution.detail).toMatch(/not in the measured path/i);
+    expect(attribution.detail).toMatch(/they do not say that the architecture is what saved it/i);
   });
 
   it("states what a reviewer can run without asking us for anything", () => {
     expect(sealedReplay).toHaveLength(3);
     const byLabel = new Map(sealedReplay.map((row) => [row.label, row.value]));
     expect(byLabel.get("Sealed experiments")).toBe("6");
-    expect(byLabel.get("Independent audit checks")).toBe("18 / 18");
+    expect(byLabel.get("Independent audit checks")).toBe("20 / 20");
+    expect(byLabel.get("Files under one digest")).toBe("1,309");
     expect(sealedReplay.map((row) => row.detail).join(" ")).toMatch(/bit-exact replays/i);
   });
 
@@ -282,7 +299,7 @@ describe("the sealed V75-V78 learning line", () => {
     expect(contract).toMatch(/no oracle leak/i);
   });
 
-  it("keeps the six boundaries that decide how these numbers may be quoted", () => {
+  it("keeps the seven boundaries that decide how these numbers may be quoted", () => {
     const byLabel = new Map(learningBoundaries.map((row) => [row.label, row.status]));
     expect(byLabel.get("Partner-controlled validity")).toBe("NOT PROVEN");
     expect(byLabel.get("Industrial and production autonomy")).toBe("NOT AUTHORIZED");
