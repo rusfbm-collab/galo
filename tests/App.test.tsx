@@ -995,7 +995,7 @@ describe("GALO public site", () => {
 
   it("carries the investor and audit routes into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/investors", "Что это, что уже работает и что подскажет, что дальше можно не тратить время."],
+      ["/ru/investors", "Что это такое, что уже работает — и по каким признакам сюда можно больше не возвращаться."],
       ["/zh/investors", "这是什么、有什么，以及什么会告诉你它不值得你花时间。"],
       ["/ar/audit", "ما الذي يستطيع مراجع خارجي متشكّك إثباته هنا، وما الذي لا يستطيعه أحد."],
       ["/ru/audit", "Что здесь можно проверить самому — и чего не проверит никто."],
@@ -1151,7 +1151,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Проверяемая модель мира — для приватного ИИ и промышленной автономности.",
+        name: "Проверяемая модель мира — для приватного ИИ и автономного производства.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();

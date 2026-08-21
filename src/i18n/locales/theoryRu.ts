@@ -3,9 +3,9 @@ import type { TranslationDictionary } from "../translations";
 export const theoryRu: TranslationDictionary = {
   Home: "На главную",
   "START HERE · NO ADVANCED MATHEMATICS REQUIRED": "НАЧНИТЕ ЗДЕСЬ · УГЛУБЛЁННАЯ МАТЕМАТИКА НЕ ТРЕБУЕТСЯ",
-  "GALO theory, explained from the first state transition.": "Теория GALO: объяснение от первого перехода состояния.",
+  "GALO theory, explained from the first state transition.": "Теория GALO — с самого первого перехода.",
   "This guided chapter starts with a three-state dial and builds the theory one verified step at a time. Every key idea is shown in plain language, as a formula, as a finite table, and with an explicit limit on what it proves.":
-    "Эта учебная глава начинается с трёхпозиционного циферблата и выстраивает теорию по одному верифицированному шагу. Каждая ключевая идея представлена простыми словами, формулой, конечной таблицей и явной границей того, что она доказывает.",
+    "Глава начинается с циферблата на три позиции и дальше строит теорию по одному проверенному шагу. Каждую ключевую мысль даём сразу четырьмя способами: простыми словами, формулой, конечной таблицей и честной границей того, что она доказывает.",
   "Learning path": "Путь изучения",
   "named states": "именованные состояния",
   "exact transitions": "точные переходы",

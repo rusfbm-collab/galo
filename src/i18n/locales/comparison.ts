@@ -253,7 +253,7 @@ export const comparisonRu: TranslationDictionary = {
   "These are questions about mechanism and evidence, not about quality of output. The final row is the one that matters most for reading the rest of this page honestly.":
     "Это вопросы о механизме и доказательствах, а не о качестве выдачи. Последняя строка важнее всего, чтобы честно прочитать остальную страницу.",
   "They are different classes of object that give different kinds of guarantee. This page sets them side by side on mechanism and evidence — never on quality of output, because no comparative evaluation has been run.":
-    "Это разные классы объектов, дающие разные виды гарантий. Эта страница ставит их рядом по механизму и доказательствам — и никогда по качеству выдачи, потому что сравнительной оценки не проводилось.",
+    "Это объекты разных классов, и гарантии они дают тоже разные. Эта страница ставит их рядом по механизму и доказательствам — и никогда по качеству выдачи, потому что сравнительной оценки не проводилось.",
   "This is a description of mechanism, not a performance comparison. No benchmark, accuracy, or capability contest between the two is claimed on this site.":
     "Это описание механизма, а не сравнение производительности. Ни бенчмарк, ни точность, ни соревнование возможностей между ними на этом сайте не заявляются.",
   "This is just a rule engine with extra vocabulary.": "Это просто движок правил с дополнительной терминологией.",

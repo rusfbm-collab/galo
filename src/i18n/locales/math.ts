@@ -12,7 +12,7 @@ export const mathRu: TranslationDictionary = {
   "FORMAL KERNEL": "ФОРМАЛЬНОЕ ЯДРО",
   "The mathematics beneath GALO AI.": "Математическая основа GALO AI.",
   "The L1–L7 Cayley tables define the frozen PLUS and STAR operators used by the current formal kernel. They specify exact finite transformations; they do not by themselves prove learning, intelligence, or external performance.":
-    "Таблицы Кэли L1–L7 задают зафиксированные операторы PLUS и STAR, используемые текущим формальным ядром. Они определяют точные конечные преобразования; сами по себе они не доказывают обучение, интеллект или внешнюю результативность.",
+    "Таблицы Кэли L1–L7 задают операторы PLUS и STAR, закреплённые в нынешнем формальном ядре. Они описывают точные конечные преобразования — и сами по себе не говорят ничего ни об обучении, ни об интеллекте, ни о пользе снаружи.",
   "Formal scope": "Формальная область",
   FORMALLY_DERIVED: "FORMALLY_DERIVED",
   "Explore the tables": "Исследовать таблицы",

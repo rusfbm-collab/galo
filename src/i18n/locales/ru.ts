@@ -129,7 +129,7 @@ export const ru: TranslationDictionary = {
 
   ARCHITECTURE: "АРХИТЕКТУРА",
   "Separate the verified execution slice from the target world-model loop.":
-    "Отделить верифицированный слой исполнения от целевого цикла модели мира.",
+    "Отделить проверяемое исполнение от того цикла модели мира, к которому мы идём.",
   "The current release verifies bounded local mechanics within the declared finite scope. The wider architecture specifies how explicit state, local revision, and adaptive search should connect once the open controls are closed.":
     "Текущий выпуск верифицирует ограниченные локальные механизмы в заявленной конечной области. Более широкая архитектура определяет, как должны быть связаны явное состояние, локальная ревизия и адаптивный поиск после закрытия открытых контрольных требований.",
   "Explicit World Atlas": "Явный World Atlas",
@@ -189,7 +189,7 @@ export const ru: TranslationDictionary = {
     "Проектное поведение. Внешняя валидация остаётся целевым этапом.",
 
   "RECORDED RECEIPT": "ЗАФИКСИРОВАННЫЙ ПРОТОКОЛ",
-  "Inspect the execution state, not a staged answer.": "Изучите состояние исполнения, а не постановочный ответ.",
+  "Inspect the execution state, not a staged answer.": "Смотрите на состояние исполнения, а не на отрепетированный ответ.",
   "This deterministic walkthrough uses sanitized identifiers from the current direct selfcheck. It does not generate a semantic answer and it does not adapt to the input observation.":
     "Этот детерминированный разбор использует очищенные идентификаторы из текущей прямой самопроверки. Он не формирует семантический ответ и не адаптируется к входному наблюдению.",
   "STATIC JSON · NO BACKEND": "STATIC JSON · БЕЗ BACKEND",
@@ -269,7 +269,7 @@ export const ru: TranslationDictionary = {
 
   "DESIGN-PARTNER EVALUATION": "ОЦЕНКА С ДИЗАЙН-ПАРТНЁРОМ",
   "Test the architecture on a bounded sequential decision problem.":
-    "Проверьте архитектуру на задаче последовательного принятия решений с заданными границами.",
+    "Проверьте архитектуру на живой задаче с чёткими границами, где решения идут одно за другим.",
   "GALO is seeking partner-owned sequential data and a falsifiable evaluation environment where explicit state, late evidence, local revision, and deterministic replay matter.":
     "GALO ищет принадлежащие партнёру последовательные данные и фальсифицируемую среду оценки, в которой важны явное состояние, поздние доказательства, локальная ревизия и детерминированное воспроизведение.",
   "Request a 25-minute evaluation": "Запросить 25-минутную оценочную сессию",
@@ -308,7 +308,7 @@ export const ru: TranslationDictionary = {
 
   ROADMAP: "ДОРОЖНАЯ КАРТА",
   "From verified mechanics to externally grounded learning.":
-    "От верифицированных механизмов к обучению, основанному на внешних данных.",
+    "От проверенных механизмов — к обучению на внешних данных.",
   "Each milestone closes a dependency before the next capability is authorized.":
     "Каждый этап закрывает необходимую зависимость до допуска следующей возможности.",
   "Authenticate the source": "Аутентифицировать источник",
@@ -356,13 +356,13 @@ export const ru: TranslationDictionary = {
   "FOUNDER / ARCHITECT": "ОСНОВАТЕЛЬ / АРХИТЕКТОР",
   FOUNDER: "ОСНОВАТЕЛЬ",
   "Founder-led research, built with adversarial claim discipline.":
-    "Исследование под руководством основателя, построенное на состязательной дисциплине утверждений.",
+    "Проект ведёт основатель. Каждое утверждение здесь проходит проверку на прочность.",
   RELOCATION: "ПЕРЕЕЗД",
   "FOUNDING TEAM PLAN": "ПЛАН КОМАНДЫ-ОСНОВАТЕЛЯ",
   "Systems engineering · Research/evaluation · Abu Dhabi partnerships":
     "Системная инженерия · Исследования и оценка · Партнёрства в Абу-Даби",
   "NEXT CONVERSATION": "СЛЕДУЮЩИЙ РАЗГОВОР",
-  "Evaluate the architecture on a bounded problem.": "Оцените архитектуру на задаче с заданными границами.",
+  "Evaluate the architecture on a bounded problem.": "Проверьте архитектуру на задаче с чёткими границами.",
   "Bring partner-owned sequential data, a falsifiable outcome, and a setting where explicit state and replay matter.":
     "Предложите принадлежащие партнёру последовательные данные, фальсифицируемый результат и среду, в которой важны явное состояние и воспроизведение.",
   "Inspect the evidence first": "Сначала изучить доказательства",

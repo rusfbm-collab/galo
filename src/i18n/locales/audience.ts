@@ -430,7 +430,7 @@ export const audienceRu: TranslationDictionary = {
   "What operation decides it?": "Какая проверка это решает?",
   "What stage is this?": "На какой вы стадии?",
   "What this is, what exists, and what would tell you it is not worth your time.":
-    "Что это, что уже работает и что подскажет, что дальше можно не тратить время.",
+    "Что это такое, что уже работает — и по каким признакам сюда можно больше не возвращаться.",
   "What this page gives you": "Что эта страница вам даёт",
   "What would a failed audit look like here?": "Как выглядел бы провал проверки?",
   "What would settle it": "Что решит вопрос",

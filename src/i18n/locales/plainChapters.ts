@@ -57,7 +57,7 @@ export const plainChaptersRu: TranslationDictionary = {
   "ONE THAT WORKS, ONE THAT DOES NOT": "ОДНО РАБОТАЕТ, ДРУГОЕ НЕТ",
   "Pick a level and a renaming, and watch which positions it groups together.": "Выберите уровень и переименование и посмотрите, какие позиции оно сводит вместе.",
   "Read them in the formal chapter": "Прочитать их в формальной главе",
-  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.": "Переименуйте все позиции разом, перестройте таблицы и посмотрите, сдвинулось ли что-нибудь. Те переименования, от которых ничего не меняется, и есть симметрии; эта глава находит их все, считает формы, в которые они всё группируют, и отмечает, где этой группировке уже не позволено ничего означать.",
+  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.": "Переименуйте все позиции разом, перестройте таблицы и посмотрите, сдвинулось ли что-нибудь. Те переименования, от которых ничего не меняется, и есть симметрии; эта глава находит их все, считает формы, которые из этого получаются, и отмечает, где такому сходству уже не позволено ничего значить.",
   "SHAPE, NOT MEANING": "ФОРМА, А НЕ СМЫСЛ",
   "SYMMETRY CHAPTER": "ГЛАВА О СИММЕТРИИ",
   "Same shape means the same thing.": "Одинаковая форма означает одно и то же.",

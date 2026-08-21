@@ -66,7 +66,7 @@ export const programmeRu: TranslationDictionary = {
     "Всё, что написано на сайте про инженерную часть, сделал один человек. Первые двое сотрудников в плане названы, но ни один ещё не нанят.",
   "Every figure quoted above is generated from the same release record the rest of the site is generated from, so this page cannot drift away from the evidence pages while looking as though it agrees with them.":
     "Все цифры выше берутся из той же записи релиза, что и остальной сайт. Поэтому эта страница не может незаметно разойтись со страницами доказательств и при этом выглядеть как согласованная с ними.",
-  "Everything an assessor would ask, answered before the meeting.": "Всё, о чём спросят на оценке, отвечено заранее.",
+  "Everything an assessor would ask, answered before the meeting.": "На всё, о чём спросят на оценке, ответ уже есть.",
   "FIT, WITH THE LIMIT ATTACHED": "ПОЧЕМУ ПОДХОДИТ — И ГДЕ ПРЕДЕЛ",
   "Facts not published on a website": "Чего на сайте нет",
   "Fewer than two full-time technical people are employed at month nine.":
