@@ -37,8 +37,8 @@ export const landscapeRu: TranslationDictionary = {
     "Чат-боты — не единственное, с чем стоит сравнивать GALO, и не то сравнение, за которое взялся бы специалист. Каждое семейство ниже названо своим именем, описано по тому, как оно устроено и что посторонний может проверить потом, а следом сказано, где относительно него стоит этот проект — в том числе там, где он стоит позади.",
   "Checkable afterwards": "Что можно проверить потом",
   "Cognitive architectures": "Когнитивные архитектуры",
-  "Cyc, Wikidata, OWL and RDF reasoners, enterprise knowledge graphs":
-    "Cyc, Wikidata, ризонеры OWL и RDF, корпоративные графы знаний",
+  "Wikidata, OWL and RDF reasoners, enterprise knowledge graphs":
+    "Wikidata, ризонеры OWL и RDF, корпоративные графы знаний",
   Decide: "Выбрал",
   "Decided by": "Чем определяется исход",
   "Declared operators with preconditions and effects. A plan or a decision path can be printed and read line by line.":
@@ -71,8 +71,8 @@ export const landscapeRu: TranslationDictionary = {
     "Измерены на публичных бенчмарках, и результаты можно оспорить",
   "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.":
     "Именованные факты и объявленные отношения, из которых ризонер выводит следствия. У всего есть идентификатор, который человек может процитировать.",
-  "Twelve families of system that are also trying to build artificial intelligence.":
-    "Двенадцать семейств систем, которые тоже пытаются построить искусственный интеллект.",
+  "Thirteen families of system that are also trying to build artificial intelligence.":
+    "Тринадцать семейств систем, которые тоже пытаются построить искусственный интеллект.",
   "No benchmark has been run. Where a chart would normally go, this site says that instead.":
     "Ни один бенчмарк не запускался. Там, где обычно стоял бы график, этот сайт пишет об этом прямо.",
   "No customer, no pilot, no deployment. A working bounded prototype and the mathematics under it.":
@@ -133,7 +133,7 @@ export const landscapeRu: TranslationDictionary = {
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "Тот же инстинкт — решать внутри чего-то объявленного, — только применённый к свойствам программ, а не к действиям во время работы. Ядро GALO — конечная алгебра, а его среда исполнения пишет протоколы.",
   "The seven levels, and one execution receipt": "Семь уровней и один протокол исполнения",
-  "The wider field, twelve families": "Поле целиком: двенадцать семейств",
+  "The wider field, thirteen families": "Поле целиком: тринадцать семейств",
   "Then why not use a rule engine?": "Тогда почему не движок правил?",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "Выученного предпочтения нет, объяснения на естественном языке тоже. Движок выбирает внутри объявленного множества; он не судит о том, что в этом множестве должно было быть.",
@@ -191,7 +191,7 @@ export const landscapeZh: TranslationDictionary = {
     "该拿来和 GALO 比较的，不只是聊天机器人，而且这也不是内行人会选的比较对象。下面每一类都直呼其名，按「如何构成」和「外人事后能核验什么」来描述，随后写明本项目相对于它处在什么位置——包括落在后面的那些位置。",
   "Checkable afterwards": "事后可核验的部分",
   "Cognitive architectures": "认知架构",
-  "Cyc, Wikidata, OWL and RDF reasoners, enterprise knowledge graphs": "Cyc、Wikidata、OWL 与 RDF 推理机、企业知识图谱",
+  "Wikidata, OWL and RDF reasoners, enterprise knowledge graphs": "Wikidata、OWL 与 RDF 推理机、企业知识图谱",
   Decide: "作出选择",
   "Decided by": "由什么决定结果",
   "Declared operators with preconditions and effects. A plan or a decision path can be printed and read line by line.":
@@ -222,8 +222,8 @@ export const landscapeZh: TranslationDictionary = {
   "Measured against public benchmarks, with results others can dispute": "在公开基准上被测量过，结果别人可以质疑",
   "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.":
     "有名字的事实和已声明的关系，再由推理机算出蕴涵。每样东西都有一个人可以直接引用的标识。",
-  "Twelve families of system that are also trying to build artificial intelligence.":
-    "另外十二类同样在尝试造出人工智能的系统。",
+  "Thirteen families of system that are also trying to build artificial intelligence.":
+    "另外十三类同样在尝试造出人工智能的系统。",
   "No benchmark has been run. Where a chart would normally go, this site says that instead.":
     "没有跑过任何基准测试。本该放一张图表的地方，本站直接把这句话写在那里。",
   "No customer, no pilot, no deployment. A working bounded prototype and the mathematics under it.":
@@ -282,7 +282,7 @@ export const landscapeZh: TranslationDictionary = {
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "同一种本能——在已声明的东西内部作判定——只不过用在程序的性质上，而不是运行时所采取的动作上。GALO 的内核是有限代数，它的运行时会写回执。",
   "The seven levels, and one execution receipt": "七个层级，以及一份执行回执",
-  "The wider field, twelve families": "更广的领域：十二类系统",
+  "The wider field, thirteen families": "更广的领域：十三类系统",
   "Then why not use a rule engine?": "那为什么不用规则引擎？",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "这里没有学出来的偏好，也没有自然语言的说明。引擎在一个已声明的集合内部作选择；至于这个集合本该包含什么，它不作判断。",
@@ -339,8 +339,8 @@ export const landscapeAr: TranslationDictionary = {
     "ليست روبوتات الدردشة هي كلّ ما ينبغي أن يُقاس عليه GALO، ولا هي المقارنة التي يلجأ إليها المختصّ. كل عائلة أدناه مذكورة باسمها، وموصوفة بكيفية بنائها وبما يستطيع الغريب أن يفحصه لاحقًا، ثمّ يُقال أين يقف هذا المشروع منها — بما في ذلك المواضع التي يقف فيها خلفها.",
   "Checkable afterwards": "ما يمكن فحصه لاحقًا",
   "Cognitive architectures": "البنى المعرفية",
-  "Cyc, Wikidata, OWL and RDF reasoners, enterprise knowledge graphs":
-    "Cyc وWikidata ومحرّكات استدلال OWL وRDF ورسوم المعرفة المؤسسية",
+  "Wikidata, OWL and RDF reasoners, enterprise knowledge graphs":
+    "Wikidata ومحرّكات استدلال OWL وRDF ورسوم المعرفة المؤسسية",
   Decide: "اختار",
   "Decided by": "ما الذي يحدّد النتيجة",
   "Declared operators with preconditions and effects. A plan or a decision path can be printed and read line by line.":
@@ -371,8 +371,8 @@ export const landscapeAr: TranslationDictionary = {
   "Measured against public benchmarks, with results others can dispute": "مقيسة على معايير عامّة، ونتائجها قابلة للطعن",
   "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.":
     "وقائع مسمّاة وعلاقات معلَنة، يحسب محرّكُ استدلال ما يترتّب عليها. ولكل شيء معرّف يستطيع المرء أن يقتبسه.",
-  "Twelve families of system that are also trying to build artificial intelligence.":
-    "اثنتا عشرة عائلة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
+  "Thirteen families of system that are also trying to build artificial intelligence.":
+    "ثلاث عشرة عائلة من الأنظمة تحاول هي الأخرى بناء ذكاء اصطناعي.",
   "No benchmark has been run. Where a chart would normally go, this site says that instead.":
     "لم يُجرَ أي قياس معياريّ. وحيث يوضع الرسم البياني عادةً، يقول هذا الموقع ذلك صراحةً.",
   "No customer, no pilot, no deployment. A working bounded prototype and the mathematics under it.":
@@ -431,7 +431,7 @@ export const landscapeAr: TranslationDictionary = {
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "الغريزة نفسها — أن تحسم داخل شيء معلَن — لكن مطبَّقة على خصائص البرامج لا على أفعال تُتّخذ أثناء التشغيل. نواة GALO جبر منتهٍ، وزمن تشغيلها يكتب إيصالات.",
   "The seven levels, and one execution receipt": "المستويات السبعة وإيصال تنفيذ واحد",
-  "The wider field, twelve families": "الميدان الأوسع: اثنتا عشرة عائلة",
+  "The wider field, thirteen families": "الميدان الأوسع: ثلاث عشرة عائلة",
   "Then why not use a rule engine?": "ولماذا لا نكتفي بمحرّك قواعد إذن؟",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
     "لا تفضيل متعلَّم ولا تعليل بلغة طبيعية. يختار المحرّك داخل مجموعة معلَنة، ولا يحكم على ما كان ينبغي أن تحتويه تلك المجموعة.",

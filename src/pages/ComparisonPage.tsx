@@ -6,6 +6,11 @@ import { PageShell } from "../components/layout/PageShell";
 import { TermChips } from "../components/theory/TermExplainer";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import {
+  comparisonClasses,
+  comparisonClassesBoundary,
+  comparisonClassesLead,
+} from "../content/comparisonClasses";
 import { comparisonMisreadings, comparisonRows, galoStrengths, modelStrengths } from "../content/llmComparison";
 import { landscapeRows, landscapeStanding, landscapeVerdicts } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";
@@ -15,7 +20,8 @@ const contents = [
   { href: "#anatomy", label: "Two anatomies, side by side" },
   { href: "#dimensions", label: "Ten dimensions compared" },
   { href: "#strengths", label: "What each one is good at" },
-  { href: "#landscape", label: "The wider field, twelve families" },
+  { href: "#classes", label: "Nine classes of alternative approach" },
+  { href: "#landscape", label: "The wider field, thirteen families" },
   { href: "#together", label: "How they could work together" },
   { href: "#misreadings", label: "Five misreadings" },
 ] as const;
@@ -184,11 +190,59 @@ export function ComparisonPage() {
         </div>
       </section>
 
+      <section id="classes" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("BY CLASS, NOT BY BRAND")}
+            title={t("How GALO sits among the alternative approaches to AI.")}
+            text={t(comparisonClassesLead)}
+          />
+          <div
+            className="class-table-wrap"
+            role="region"
+            aria-label={t("Alternative approaches compared by class")}
+            tabIndex={0}
+          >
+            <table className="class-table">
+              <caption>{t("Authority, world state, change handling and replay, one class per row")}</caption>
+              <thead>
+                <tr>
+                  <th scope="col">{t("Approach")}</th>
+                  <th scope="col">{t("Strength")}</th>
+                  <th scope="col">{t("Where authority sits")}</th>
+                  <th scope="col">{t("Change handling")}</th>
+                  <th scope="col">{t("Relative to GALO")}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparisonClasses.map((row) => (
+                  <tr key={row.approach} className={row.isGalo ? "is-galo" : undefined}>
+                    <th scope="row">
+                      <strong>{t(row.approach)}</strong>
+                      <span className="class-table__landmarks">
+                        <bdi dir="ltr">{t(row.landmarks)}</bdi>
+                      </span>
+                    </th>
+                    <td>{t(row.strength)}</td>
+                    <td>{t(row.authority)}</td>
+                    <td>{t(row.change)}</td>
+                    <td className="class-table__contrast">{t(row.contrast)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="class-table__boundary">
+            <CircleAlert size={16} aria-hidden="true" /> {t(comparisonClassesBoundary)}
+          </p>
+        </div>
+      </section>
+
       <section id="landscape" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE WIDER FIELD")}
-            title={t("Twelve families of system that are also trying to build artificial intelligence.")}
+            title={t("Thirteen families of system that are also trying to build artificial intelligence.")}
             text={t(
               "Chatbots are not the only thing GALO should be compared with, and they are not the comparison a specialist would reach for. Each family below is named, described by how it is built and by what an outsider can check afterwards, and followed by where this project stands relative to it — including the places where it stands behind.",
             )}

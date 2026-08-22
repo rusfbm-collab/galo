@@ -13,8 +13,8 @@ const PERFORMANCE_WORDS =
   /\b(better|worse|faster|slower|cheaper|smarter|more accurate|outperform\w*|beats?|superior|state of the art|state-of-the-art)\b/i;
 
 describe("the wider field", () => {
-  it("names twelve families and fills every column", () => {
-    expect(landscapeRows).toHaveLength(12);
+  it("names thirteen families and fills every column", () => {
+    expect(landscapeRows).toHaveLength(13);
     for (const row of landscapeRows) {
       expect(row.family.length).toBeGreaterThan(8);
       expect(row.examples.length).toBeGreaterThan(12);

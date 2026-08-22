@@ -97,6 +97,9 @@ const forbidden = [
 
 const requiredPhrases = [
   "Persistent policy learning in the frozen V4 release runtime has not started.",
+  "None of this says GALO answers better than any of those families",
+  "This is architectural positioning, not a claim of universal superiority.",
+  "Learning may rank candidates; the verifier owns the verdict.",
   "trained Atlas is not present",
   "External operational gain",
   "General AI",

@@ -101,7 +101,7 @@ export function PlainWordsPage() {
           </div>
           <p className="section-followup">
             <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("The same comparison in full, with twelve families named")}{" "}
+              {t("The same comparison in full, with thirteen families named")}{" "}
               <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
             </a>
           </p>

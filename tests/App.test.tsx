@@ -432,7 +432,7 @@ describe("GALO public site", () => {
 
     // The dossier states its position against the field rather than only against itself.
     expect(document.querySelectorAll("#field .landscape-standing li")).toHaveLength(4);
-    expect(document.querySelector("#field")?.textContent).toMatch(/twelve families/i);
+    expect(document.querySelector("#field")?.textContent).toMatch(/thirteen families/i);
 
     // Five commitments, each carrying its own failure condition.
     expect(document.querySelectorAll(".programme-months li")).toHaveLength(5);
@@ -824,8 +824,12 @@ describe("GALO public site", () => {
     expect(document.querySelector(".galo-figure--answers")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--complement")).toBeInTheDocument();
 
-    expect(document.querySelectorAll(".landscape-card")).toHaveLength(12);
+    expect(document.querySelectorAll(".landscape-card")).toHaveLength(13);
     expect(screen.getByRole("heading", { level: 3, name: "Proof assistants" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { level: 3, name: "Global common-sense knowledge bases" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText(/Cyc proved there is demand for explicit reasoning/i)).toBeInTheDocument();
     expect(screen.getByText("Lean and mathlib, Rocq (formerly Coq), Isabelle/HOL")).toBeInTheDocument();
     expect(screen.getByText(/Stronger verification than GALO claims anywhere/i)).toBeInTheDocument();
     expect(document.querySelectorAll(".landscape-standing li")).toHaveLength(4);

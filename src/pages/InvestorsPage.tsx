@@ -227,7 +227,7 @@ export function InvestorsPage() {
 
           <p className="section-followup">
             <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("See all twelve families, named, with what each one lets an outsider check")}{" "}
+              {t("See all thirteen families, named, with what each one lets an outsider check")}{" "}
               <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
             </a>
           </p>

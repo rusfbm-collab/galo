@@ -21,6 +21,8 @@ import { mathFiguresRu } from "./mathFigures";
 import { industrialRu } from "./industrial";
 import { plainChaptersRu } from "./plainChapters";
 import { sealedEvidenceRu } from "./sealedEvidence";
+import { differentiationRu } from "./differentiation";
+import { comparisonClassesRu } from "./comparisonClasses";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -49,6 +51,8 @@ export const ru: TranslationDictionary = {
   ...industrialRu,
   ...plainChaptersRu,
   ...sealedEvidenceRu,
+  ...differentiationRu,
+  ...comparisonClassesRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

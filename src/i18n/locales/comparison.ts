@@ -456,7 +456,7 @@ export const comparisonZh: TranslationDictionary = {
   "HOW THEY COULD WORK TOGETHER": "它们可以如何协同工作",
   "Has every possible case been checked?": "是否所有可能的情形都被检查过？",
   "How GALO differs from a language model — state, checking, replay, correction, breadth — and where it stands against twelve named families of system that are also trying to build artificial intelligence.":
-    "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度；以及它相对于另外十二类同样在尝试造出人工智能的系统处在什么位置。",
+    "GALO 与语言模型的差别：状态、检查方式、重放、局部修正与覆盖广度；以及它相对于另外十三类同样在尝试造出人工智能的系统处在什么位置。",
   "How they could work together": "它们可以如何协同工作",
   "How you check it": "如何检查它",
   "Identical by construction. The result is a table lookup, and the ordering of candidates comes from a hash rather than a preference.":

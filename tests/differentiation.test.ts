@@ -1,0 +1,108 @@
+import { describe, expect, it } from "vitest";
+import {
+  differentiationBoundary,
+  heroDifferentiators,
+  whatThisIsNot,
+} from "../src/content/differentiation";
+import {
+  comparisonClasses,
+  comparisonClassesBoundary,
+  homeClassStrip,
+} from "../src/content/comparisonClasses";
+import { landscapeRows } from "../src/content/landscape";
+
+describe("the differentiation block", () => {
+  it("names four things this is not, and who owns the verdict", () => {
+    expect(heroDifferentiators).toHaveLength(4);
+    const joined = heroDifferentiators.join(" ");
+    expect(joined).toMatch(/Not a neural net as authority/);
+    expect(joined).toMatch(/Not a knowledge graph as the world model/);
+    expect(joined).toMatch(/Not a global common-sense knowledge base/);
+    expect(joined).toMatch(/the verifier owns the verdict/);
+  });
+
+  it("answers the three assumptions once each, with no comparative claim", () => {
+    expect(whatThisIsNot).toHaveLength(3);
+    for (const card of whatThisIsNot) {
+      expect(card.label.length).toBeGreaterThan(8);
+      expect(card.text.length).toBeGreaterThan(40);
+      // difference, never superiority
+      expect(card.text).not.toMatch(/\b(better|faster|superior|outperform|beats)\b/i);
+    }
+    expect(whatThisIsNot.map((c) => c.label).join(" ")).toMatch(/Cyc/);
+  });
+
+  it("keeps the limiter that stops the section reading as a boast", () => {
+    expect(differentiationBoundary).toMatch(/not says?|None of this says/);
+    expect(differentiationBoundary).toMatch(/has not been measured/);
+    expect(differentiationBoundary).toMatch(/specified, not shipped/);
+  });
+
+  it("gives Cyc a row of its own rather than a parenthesis", () => {
+    const cyc = landscapeRows.find((row) => row.family === "Global common-sense knowledge bases");
+    expect(cyc).toBeDefined();
+    expect(cyc?.examples).toMatch(/Cyc/);
+    expect(cyc?.relation).toMatch(/not a second attempt/i);
+    // and it is no longer buried in the knowledge-graph row
+    const graphs = landscapeRows.find((row) => row.family === "Knowledge graphs and ontologies");
+    expect(graphs?.examples).not.toMatch(/Cyc/);
+  });
+});
+
+describe("the class comparison", () => {
+  it("compares nine classes plus this one, by class rather than by brand", () => {
+    expect(comparisonClasses).toHaveLength(10);
+    expect(comparisonClasses.filter((row) => row.isGalo)).toHaveLength(1);
+    const approaches = comparisonClasses.map((row) => row.approach);
+    for (const expected of [
+      "Foundation and language models",
+      "Retrieval and agent stacks",
+      "Knowledge graphs",
+      "Symbolic knowledge bases",
+      "Neuro-symbolic hybrids",
+      "Predictive world models",
+      "Causal stacks",
+      "Formal methods and provers",
+      "Governance and policy layers",
+    ]) {
+      expect(approaches).toContain(expected);
+    }
+    // the class is the subject; products are landmarks in their own column
+    for (const row of comparisonClasses) {
+      expect(row.approach).not.toMatch(/GPT|Neo4j|LangGraph|Cyc|Lean/);
+    }
+  });
+
+  it("fills every column and never ranks one class above another", () => {
+    for (const row of comparisonClasses) {
+      // the GALO row's landmark is legitimately just "This project"
+      expect(row.landmarks.length).toBeGreaterThan(10);
+      for (const cell of [row.strength, row.authority, row.change, row.contrast]) {
+        expect(cell.length).toBeGreaterThan(35);
+      }
+      expect(`${row.strength} ${row.contrast}`).not.toMatch(
+        /\b(outperform|beats|superior to|better than)\b/i,
+      );
+    }
+  });
+
+  it("says the GALO row is the one nobody outside the team has run", () => {
+    const galo = comparisonClasses.find((row) => row.isGalo);
+    expect(galo?.contrast).toMatch(/nobody outside the team has run/);
+    expect(galo?.contrast).toMatch(/not proven/);
+    expect(galo?.contrast).toMatch(/not authorised/);
+  });
+
+  it("does not let the world-model row be read as a latent video predictor", () => {
+    const world = comparisonClasses.find((row) => row.approach === "Predictive world models");
+    expect(world?.contrast).toMatch(/declared decision state/);
+    expect(world?.contrast).toMatch(/not a latent predictor of the next frame/);
+  });
+
+  it("keeps the positioning boundary and the four-line home strip", () => {
+    expect(comparisonClassesBoundary).toMatch(/not a claim of universal superiority/);
+    expect(comparisonClassesBoundary).toMatch(/has been measured against any of these classes/);
+    expect(homeClassStrip).toHaveLength(4);
+    expect(homeClassStrip[3]).toMatch(/^GALO/);
+  });
+});

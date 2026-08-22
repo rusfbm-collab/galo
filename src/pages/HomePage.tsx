@@ -23,6 +23,12 @@ import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import { homeClassStrip } from "../content/comparisonClasses";
+import {
+  differentiationBoundary,
+  heroDifferentiators,
+  whatThisIsNot,
+} from "../content/differentiation";
 import { releaseEvidence } from "../content/evidence";
 import { getEvaluationContact } from "../content/contact";
 import { headlineClaims } from "../content/headlineClaims";
@@ -166,6 +172,11 @@ export function HomePage() {
                 "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is unusual is that every learning number here can be re-run by somebody else: on public corpora the system needs 57–67% less computation than the identical system with its learning switched off, and the benchmark it refused to learn is published beside the ones it did. No partner has yet run one on their own data, and nothing here authorises a command to a plant.",
               )}
             </p>
+            <ul className="hero__diff" aria-label={t("What this is not")}>
+              {heroDifferentiators.map((line) => (
+                <li key={line}>{t(line)}</li>
+              ))}
+            </ul>
             <div className="hero__status" aria-label={t("Current project status")}>
               <span>
                 <CircleDot size={14} aria-hidden="true" /> {t("Working research prototype")}
@@ -218,7 +229,11 @@ export function HomePage() {
               </div>
             </div>
             <div className="hero-visual__caption">
-              <span>{t("Level n declares n states; every tower stands on P0")}</span>
+              <span>
+                {t(
+                  "Seven finite levels declare how many local states a frame may distinguish. They are not a ladder of smarter AI.",
+                )}
+              </span>
               <span>{t("Receipt chain intact")}</span>
             </div>
           </div>
@@ -234,6 +249,41 @@ export function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="not-this" className="section section--white home-not-this">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHAT THIS IS NOT")}
+            title={t("Three things this gets taken for, and where each one differs.")}
+            text={t(
+              "A specialist asks these in the first ten seconds, and the answer used to be reachable only through the theory chapter. Each card answers one of them once. The full family-by-family table, with what an outsider can check in each, is on the comparison page.",
+            )}
+          />
+          <div className="not-this">
+            {whatThisIsNot.map((card) => (
+              <article key={card.label} className="not-this__card">
+                <h3>{t(card.label)}</h3>
+                <p>{t(card.text)}</p>
+              </article>
+            ))}
+          </div>
+          <div className="class-strip">
+            <p className="class-strip__title">{t("Compared with the common alternatives")}</p>
+            <ul>
+              {homeClassStrip.map((line) => (
+                <li key={line}>{t(line)}</li>
+              ))}
+            </ul>
+          </div>
+          <p className="not-this__boundary">
+            <CircleAlert size={16} aria-hidden="true" /> {t(differentiationBoundary)}
+          </p>
+          <a className="text-link" href={href("/vs-llm#classes")}>
+            {t("Nine classes of alternative approach, compared on authority, change and replay")}{" "}
+            <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+          </a>
         </div>
       </section>
 

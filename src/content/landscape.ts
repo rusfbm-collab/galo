@@ -1,7 +1,7 @@
 /**
  * Where GALO sits among the other attempts to build artificial intelligence.
  *
- * Twelve families, named rather than gestured at, because a reader who works in
+ * Thirteen families, named rather than gestured at, because a reader who works in
  * this field will ask about them by name and a reader who does not deserves to
  * know they exist. Every row describes how a family is built and what an
  * outsider can check afterwards. No row says one family answers better than
@@ -115,8 +115,18 @@ export const landscapeRows: readonly LandscapeRow[] = [
       "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.",
   },
   {
+    family: "Global common-sense knowledge bases",
+    examples: "Cyc, and the decades of hand-curated axioms behind it",
+    decidedBy:
+      "A very large hand-built body of general knowledge, with an inference engine drawing conclusions from it. The ambition is breadth: enough of the world written down that a system stops needing to be told the obvious.",
+    checkable:
+      "Which axioms were used and what follows from them. The undertaking is decades old and the engineering behind it is far beyond anything here.",
+    relation:
+      "The comparison people reach for, and the one worth answering plainly: this is not a second attempt at that. Cyc proved there is demand for explicit reasoning. GALO is not trying to write the world down — it is trying to make one decision defensible after the fact, on a versioned record, at a scope small enough to enumerate.",
+  },
+  {
     family: "Knowledge graphs and ontologies",
-    examples: "Cyc, Wikidata, OWL and RDF reasoners, enterprise knowledge graphs",
+    examples: "Wikidata, OWL and RDF reasoners, enterprise knowledge graphs",
     decidedBy:
       "Named facts and declared relations, with entailment computed by a reasoner. Everything has an identifier a person can quote.",
     checkable:
@@ -206,7 +216,7 @@ export type PlainNeighbour = {
 
 /**
  * The same comparison for somebody who has never heard of any of it. Three
- * neighbours instead of twelve families, no product names except the one everybody
+ * neighbours instead of thirteen families, no product names except the one everybody
  * has used, and the last one is the awkward one on purpose.
  */
 export const plainNeighbours: readonly PlainNeighbour[] = [
