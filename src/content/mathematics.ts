@@ -328,6 +328,36 @@ export function buildCayleyTable(operation: GaloOperation, level: GaloLevel): Ca
   );
 }
 
+/**
+ * How many binary operations exist on a carrier of n elements, and how many GALO
+ * declares. Every one of the n² cells of an n × n table may independently hold
+ * any of the n elements, so the count of possible tables is n^(n²) — a number
+ * that runs away from any enumeration by L5 and is past 10^41 at L7.
+ *
+ * That is the point of publishing it. The space of tables somebody *could*
+ * choose is astronomical; GALO declares two of them per level and freezes them,
+ * and the frozen choice is what makes the rest of the site checkable. Nothing
+ * here says the two chosen tables are the best ones — only that they are fixed
+ * in advance and that anybody can count what they were chosen out of.
+ */
+export function possibleTableCount(level: GaloLevel): bigint {
+  return BigInt(level) ** BigInt(level * level);
+}
+
+/** The count as {mantissa, exponent} for display, or an exact string when it is short. */
+export function tableCountDisplay(level: GaloLevel): { exact: string | null; mantissa: string; exponent: number } {
+  const digits = possibleTableCount(level).toString();
+  const exponent = digits.length - 1;
+  const mantissa = digits.length === 1 ? digits : `${digits[0]}.${digits.slice(1, 3)}`;
+  return { exact: digits.length <= 10 ? digits : null, mantissa, exponent };
+}
+
+/** Two laws at every level, declared once and frozen: PLUS_n and STAR_n. */
+export const declaredTablesPerLevel = galoOperations.length;
+
+/** Fourteen tables in all — one PLUS and one STAR at each of the seven levels. */
+export const declaredTableCount = galoLevels.length * declaredTablesPerLevel;
+
 export const towerCounts: readonly TowerCount[] = galoLevels.map((level) => ({
   level,
   poles: level,

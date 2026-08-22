@@ -19,6 +19,7 @@ import { CommutingSquareFigure } from "../components/diagrams/CommutingSquareFig
 import { CoordinateCountFigure } from "../components/diagrams/CoordinateCountFigure";
 import { CyclicDialFigure } from "../components/diagrams/CyclicDialFigure";
 import { FoundationChainFigure } from "../components/diagrams/FoundationChainFigure";
+import { FrameGenesisFigure } from "../components/diagrams/FrameGenesisFigure";
 import { NamedStateFigure } from "../components/diagrams/NamedStateFigure";
 import { ObjectSizeFigure } from "../components/diagrams/ObjectSizeFigure";
 import { LevelTransferFigure } from "../components/diagrams/LevelTransferFigure";
@@ -32,6 +33,7 @@ import { RoleOrientationFigure } from "../components/diagrams/RoleOrientationFig
 import { SelectorFunnelFigure } from "../components/diagrams/SelectorFunnelFigure";
 import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
 import { StarResetFigure } from "../components/diagrams/StarResetFigure";
+import { TableSpaceFigure } from "../components/diagrams/TableSpaceFigure";
 import { ThreeShelvesFigure } from "../components/diagrams/ThreeShelvesFigure";
 import { TypedActionMeaningFigure } from "../components/diagrams/TypedActionMeaningFigure";
 import { PageShell } from "../components/layout/PageShell";
@@ -568,6 +570,13 @@ export function TheoryPage() {
           </p>
           <CayleyHeatmapFigure />
           <DifferenceMapFigure />
+          <TableSpaceFigure />
+          <p className="theory-table-reconciliation">
+            <CircleCheck size={18} aria-hidden="true" />
+            {t(
+              "Why this matters more than the two tables themselves: a table nobody fixed in advance is a table that can be adjusted after the fact to suit an answer. These two were declared once, and everything downstream is a lookup in them.",
+            )}
+          </p>
           <TermChips terms={["Binary operation", "Cayley table", "PLUS", "STAR", "Closure", "Commutativity"]} />
         </div>
       </section>
@@ -921,6 +930,12 @@ export function TheoryPage() {
               "The target of one cell may feed another cell. For PLUS the grouping does not change the result; for STAR it can. Therefore a list of operands is not a complete STAR program—the brackets are executable structure.",
             )}
           />
+          <p className="theory-lead">
+            {t(
+              "A program is not written in the open. It is written inside a frame: a local scene that has already declared which level it works at, which two tables it reads, and how many places it has. The frame is where the tables stop being arithmetic and start being a thing you can state a relation in.",
+            )}
+          </p>
+          <FrameGenesisFigure />
           <ProgramTreeFigure />
           <div className="theory-program-grid">
             <article>

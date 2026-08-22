@@ -5251,6 +5251,13 @@ html[dir="rtl"] .theory-law-card__symbol {
   font-weight: 850;
 }
 
+.theory-lead {
+  max-width: 80ch;
+  margin: 30px 0 0;
+  font-size: 1.02rem;
+  line-height: 1.68;
+}
+
 .theory-table-reconciliation {
   display: flex;
   align-items: flex-start;
@@ -10737,6 +10744,167 @@ caption bdi {
 .galo-figure--memory svg {
   max-width: 820px;
   margin-inline: auto;
+}
+
+/* ---- how many tables there are, against how many are declared ---- */
+
+.galo-figure--table-space svg,
+.galo-figure--frame svg {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.galo-table-space__head {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.galo-table-space__rule {
+  stroke: var(--figure-line);
+  stroke-width: 1;
+}
+
+.galo-table-space__level {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.galo-table-space__row rect {
+  fill: var(--chart-1);
+  opacity: 0.82;
+}
+
+.galo-table-space__count {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+}
+
+.galo-table-space__declared rect {
+  fill: var(--chart-2);
+}
+
+.galo-table-space__declared-note {
+  fill: var(--figure-muted);
+  font-size: 0.64rem;
+}
+
+.section--navy .galo-table-space__row rect,
+.section--dark .galo-table-space__row rect {
+  fill: var(--cyan);
+  opacity: 0.72;
+}
+
+.section--navy .galo-table-space__declared rect,
+.section--dark .galo-table-space__declared rect {
+  fill: var(--amber);
+}
+
+/* ---- a frame, assembled out of the two tables ---- */
+
+.galo-frame__step rect {
+  fill: var(--white);
+  stroke: var(--chart-1);
+  stroke-width: 1.4;
+}
+
+.galo-frame__index {
+  fill: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.galo-frame__step-title {
+  fill: var(--figure-ink);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.galo-frame__step-value {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+}
+
+.galo-frame__feed {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-dasharray: 4 4;
+  stroke-width: 1;
+}
+
+.galo-frame__panel {
+  fill: rgba(15, 156, 136, 0.05);
+  stroke: var(--teal-deep);
+  stroke-width: 1.6;
+}
+
+.galo-frame__panel-title {
+  fill: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.galo-frame__band {
+  fill: var(--figure-muted);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.galo-frame__pole rect {
+  fill: var(--white);
+  stroke: var(--chart-1);
+  stroke-width: 1.2;
+}
+
+.galo-frame__pole text {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+}
+
+.galo-frame__table rect {
+  fill: var(--white);
+  stroke: var(--chart-1);
+  stroke-width: 0.8;
+}
+
+.galo-frame__table-label {
+  fill: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.galo-frame__slot rect {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-dasharray: 4 3;
+  stroke-width: 1.2;
+}
+
+.galo-frame__slot text {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.galo-frame__foot {
+  fill: var(--figure-muted);
+  font-size: 0.62rem;
+  font-style: italic;
 }
 
 .galo-pipeline__node rect {

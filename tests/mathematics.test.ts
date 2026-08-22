@@ -11,6 +11,10 @@ import {
   buildPairStabilizer,
   buildScaledTowerMorphism,
   canonicalTypedCellCount,
+  declaredTableCount,
+  declaredTablesPerLevel,
+  possibleTableCount,
+  tableCountDisplay,
   countPairOrbitsByBurnside,
   countPairOrbitsByEnumeration,
   enumerateStarHomomorphisms,
@@ -160,6 +164,38 @@ describe("GALO frozen PLUS/STAR mathematics", () => {
     expect(canonicalTypedCellCount).toBe(560);
     expect(2 * rawCellsPerOperator).toBe(rawLawCellCount);
     expect(2 * rawLawCellCount).toBe(canonicalTypedCellCount);
+  });
+
+  it("counts the tables that exist against the fourteen that are declared", () => {
+    // Each of the n² cells may independently hold any of the n elements.
+    for (const level of galoLevels) {
+      expect(possibleTableCount(level)).toBe(BigInt(level) ** BigInt(level * level));
+    }
+    expect(possibleTableCount(1)).toBe(1n);
+    expect(possibleTableCount(3)).toBe(19683n);
+    expect(possibleTableCount(4)).toBe(4294967296n);
+
+    // The figure prints short counts exactly and long ones in mantissa form, so
+    // both branches have to stay in step with the value they came from.
+    expect(tableCountDisplay(3).exact).toBe("19683");
+    const l7 = tableCountDisplay(7);
+    expect(l7.exact).toBeNull();
+    expect(l7.exponent).toBe(possibleTableCount(7).toString().length - 1);
+    expect(l7.exponent).toBe(41);
+    expect(l7.mantissa).toBe("2.56");
+
+    // Strictly increasing, which is what the bars are drawn from.
+    for (let index = 1; index < galoLevels.length; index += 1) {
+      expect(possibleTableCount(galoLevels[index]!) > possibleTableCount(galoLevels[index - 1]!)).toBe(true);
+    }
+
+    expect(declaredTablesPerLevel).toBe(2);
+    expect(declaredTableCount).toBe(galoLevels.length * declaredTablesPerLevel);
+    expect(declaredTableCount).toBe(14);
+    // Fourteen declared tables hold 280 law cells between them, and reading each
+    // in two role orders is what turns them into the 560 typed coordinates.
+    expect(rawCellsPerOperator * declaredTablesPerLevel).toBe(rawLawCellCount);
+    expect(rawLawCellCount * 2).toBe(canonicalTypedCellCount);
   });
 
   it("constructs every canonical typed coordinate exactly once and replays its raw table lookup", () => {
