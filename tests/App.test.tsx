@@ -865,28 +865,32 @@ describe("GALO public site", () => {
     render(<App />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "What we do, said the way you would say it to a friend." }),
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Sometimes what matters after a decision is not the answer, but being able to show calmly why it counted as permitted at the time.",
+      }),
     ).toBeInTheDocument();
 
     expect(document.querySelectorAll(".plain-story > li")).toHaveLength(4);
-    expect(document.querySelectorAll(".plain-neighbours > article")).toHaveLength(3);
-    expect(
-      screen.getByRole("heading", { level: 3, name: "The rule books a bank already runs on" }),
-    ).toBeInTheDocument();
-
     expect(document.querySelectorAll(".plain-idea > article")).toHaveLength(3);
-    expect(document.querySelectorAll(".plain-changes > article")).toHaveLength(3);
-    expect(document.querySelectorAll(".plain-honest > article")).toHaveLength(5);
+    expect(document.querySelectorAll(".usual-here > article")).toHaveLength(2);
+    expect(document.querySelectorAll(".not-chatbot > p")).toHaveLength(3);
+    expect(document.querySelectorAll(".plain-neighbours > article")).toHaveLength(4);
+    expect(document.querySelectorAll(".from-list p")).toHaveLength(3);
+    expect(document.querySelectorAll(".have-not__column")).toHaveLength(2);
+    expect(document.querySelectorAll(".have-not__column li")).toHaveLength(8);
+    expect(document.querySelectorAll(".in-short > p")).toHaveLength(3);
     expect(document.querySelectorAll(".plain-jargon > div")).toHaveLength(10);
 
-    // The page reuses the two figures a newcomer can read without help, and adds none
+    // The page reuses the figures a newcomer can read without help, and adds none
     // of the ones that assume the vocabulary.
     expect(document.querySelector(".galo-figure--trace")).toBeInTheDocument();
-    expect(document.querySelector(".galo-figure--bridge")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--two-ways")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--tiers")).not.toBeInTheDocument();
 
-    expect(screen.getByText("It is small. Much smaller than it sounds.")).toBeInTheDocument();
-    expect(screen.getByText("It does not replace the chatbots you have used.")).toBeInTheDocument();
+    // the honest column still says the four things it has always said
+    expect(screen.getByText("Customers or pilots")).toBeInTheDocument();
+    expect(screen.getByText("A promise that it is cleverer than familiar AI")).toBeInTheDocument();
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/simple");
 
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
@@ -897,9 +901,9 @@ describe("GALO public site", () => {
 
   it("carries the plain-words route into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/simple", "Чем мы занимаемся — так, как рассказали бы это другу."],
-      ["/zh/simple", "我们在做什么——就像跟朋友讲的那样。"],
-      ["/ar/simple", "ما نفعله، بالطريقة التي تحكيه بها لصديق."],
+      ["/ru/simple", "Иногда после решения важнее не сам ответ, а возможность позже спокойно показать: почему тогда это вообще считалось допустимым."],
+      ["/zh/simple", "有时候，一个决定之后要紧的不是答案本身，而是日后能否从容地说清：当时凭什么算是被允许的。"],
+      ["/ar/simple", "أحيانًا لا يكون المهم بعد القرار هو الجواب نفسه، بل أن تستطيع لاحقًا أن تبيّن بهدوء لماذا عُدَّ ذلك مسموحًا به حينئذ."],
     ] as const) {
       setPath(path);
       const view = render(<App />);

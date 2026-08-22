@@ -142,7 +142,7 @@ export const investorCaseRu: TranslationDictionary = {
   "The field, in five lines":
     "Поле, в пяти строках",
   "The first product is decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.":
-    "Первый продукт — гарантия решений вокруг систем, которые завод уже эксплуатирует. Эта страница — инвестиционный разбор: почему из этого может выйти компания, что покупает чек, что откроет следующий раунд и в какой момент тезис следует считать мёртвым.",
+    "Первый продукт — гарантия решений вокруг систем, которые производство уже эксплуатирует. Эта страница — инвестиционный разбор: почему из этого может выйти компания, что покупает чек, что откроет следующий раунд и в какой момент тезис следует считать мёртвым.",
   "The industrial sales cycle is long":
     "Промышленный цикл продажи длинный",
   "The learning results come from a counting ranker reading a learned volume. The tower, the typed routes and the verifier — the parts this site spends the most words on — are not in the measured path, so the saving is not yet evidence that the architecture is what produced it.":
@@ -174,7 +174,7 @@ export const investorCaseRu: TranslationDictionary = {
   "What would make us wrong":
     "Что покажет, что мы неправы",
   "Whatever the evaluation shows, turned into a scoped pilot a plant can actually authorise, or an honest stop.":
-    "Что бы ни показала оценка — превратить это в пилот, который завод действительно может санкционировать, или честно остановиться.",
+    "Что бы ни показала оценка — превратить это в пилот, который производство действительно может санкционировать, или честно остановиться.",
   "Where this differs":
     "Чем отличается этот",
   "Why this could be a company, and what a cheque is actually for.":

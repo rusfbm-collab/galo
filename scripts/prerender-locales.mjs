@@ -23,7 +23,7 @@ const locales = {
         path: "simple",
         title: "GALO AI in Plain Words — No Jargon, No Formulas",
         description:
-          "GALO explained the way you would explain it to a friend: the everyday situation it addresses, what it actually does, why a table, what that buys you, and what we cannot yet promise.",
+          "GALO explained the way you would explain it to a friend: an ordinary situation where something changes, what the system actually does, what it is not, what already works, and what we cannot yet promise.",
       },
       investors: {
         path: "investors",
@@ -109,7 +109,7 @@ const locales = {
         path: "simple",
         title: "GALO AI простыми словами — без терминов и формул",
         description:
-          "GALO так, как объясняют другу: знакомая ситуация, с которой всё начинается, что мы с ней делаем, при чём тут таблица, что это даёт и чего мы пока не обещаем.",
+          "GALO так, как объясняют другу: обычная ситуация, когда что-то поменялось, что система на самом деле делает, чем она не является, что уже работает и чего мы пока не обещаем.",
       },
       investors: {
         path: "investors",
@@ -195,7 +195,7 @@ const locales = {
         path: "simple",
         title: "用大白话说 GALO AI — 没有术语，没有公式",
         description:
-          "像跟朋友解释那样讲 GALO：一个你早就熟悉的情境、我们究竟拿它怎么办、为什么偏偏是一张表、这能带来什么，以及我们还不能承诺什么。",
+          "像跟朋友解释那样讲 GALO：一件平常的事起了变化、这套系统究竟做什么、它不是什么、什么已经能用，以及我们还不能承诺什么。",
       },
       investors: {
         path: "investors",
@@ -277,7 +277,7 @@ const locales = {
         path: "simple",
         title: "GALO AI بكلام بسيط — بلا مصطلحات ولا صيغ",
         description:
-          "شرح GALO كما تشرحه لصديق: الموقف المألوف الذي يبدأ منه كل شيء، وما الذي نفعله حياله، ولماذا جدول تحديدًا، وماذا يمنحك ذلك، وما الذي لا نستطيع الوعد به بعد.",
+          "شرح GALO كما تشرحه لصديق: موقفٌ عادي يتغيّر فيه شيء، وما الذي يفعله النظام فعلًا، وما ليس هو، وما يعمل بالفعل، وما الذي لا نستطيع الوعد به بعد.",
       },
       investors: {
         path: "investors",

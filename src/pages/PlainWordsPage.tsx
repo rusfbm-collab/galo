@@ -1,31 +1,37 @@
-import { ArrowLeft, ArrowRight, Coffee, HandHeart, MessageSquareOff, Signpost, Train } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Coffee, MessageSquareOff, NotebookPen, Signpost, X } from "lucide-react";
 import { DecisionTraceFigure } from "../components/diagrams/DecisionTraceFigure";
-import { TwoWaysToDecideFigure } from "../components/diagrams/TwoWaysToDecideFigure";
 import { FamiliarTableBridgeFigure } from "../components/diagrams/FamiliarTableBridgeFigure";
+import { TwoWaysToDecideFigure } from "../components/diagrams/TwoWaysToDecideFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import { aiWords, notWhatYouThink } from "../content/aiBasics";
 import {
-  honestAdmissions,
+  fromTheList,
+  inShort,
   jargonTranslations,
+  neighbourNotes,
+  notChatbot,
   openingStory,
   plainIdea,
-  timetableComparison,
-  whatChanges,
+  usualVsHere,
+  usualVsHereChange,
+  whatThereIs,
+  whatThereIsNot,
 } from "../content/plainWords";
-import { plainNeighbours } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
-  { href: "#not-ai", label: "If you do not work with AI at all" },
-  { href: "#neighbours", label: "Three things this sits next to" },
   { href: "#story", label: "A situation you already know" },
-  { href: "#idea", label: "What we actually do about it" },
+  { href: "#idea", label: "What GALO does" },
+  { href: "#usual", label: "How it usually goes, and how it goes here" },
+  { href: "#not-chatbot", label: "This is not a chatbot" },
+  { href: "#neighbours", label: "What it sits next to" },
+  { href: "#from-the-list", label: "Why only from the list" },
   { href: "#table", label: "Why a table, of all things" },
-  { href: "#changes", label: "What that buys you" },
-  { href: "#honest", label: "What we would rather tell you ourselves" },
-  { href: "#ai-words", label: "The AI words everyone uses" },
+  { href: "#honest", label: "What there is, and what there is not" },
+  { href: "#in-short", label: "If you want it very short" },
+  { href: "#not-ai", label: "If AI is not your field at all" },
   { href: "#jargon", label: "The words, translated" },
 ] as const;
 
@@ -40,10 +46,14 @@ export function PlainWordsPage() {
             <ArrowLeft className="directional-icon" size={16} aria-hidden="true" /> {t("Home")}
           </a>
           <p className="eyebrow eyebrow--cyan">{t("NO JARGON · TEN MINUTES · NOTHING TO KNOW IN ADVANCE")}</p>
-          <h1>{t("What we do, said the way you would say it to a friend.")}</h1>
+          <h1>
+            {t(
+              "Sometimes what matters after a decision is not the answer, but being able to show calmly why it counted as permitted at the time.",
+            )}
+          </h1>
           <p>
             {t(
-              "The rest of this site is written for specialists, and it shows. This page is not. There is no formula on it, no term you are expected to already know, and if a word needs explaining it gets explained right where it appears.",
+              "No formulas here and no special words. In ten minutes: what this is, what it is not, what already works, and what we are not promising yet.",
             )}
           </p>
           <div className="plain-hero__note">
@@ -59,62 +69,13 @@ export function PlainWordsPage() {
 
       <PageContents label="On this page" ariaLabel="Plain-words chapter navigation" items={contents} />
 
-      <section id="not-ai" className="section section--white math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("START HERE IF AI IS NOT YOUR FIELD")}
-            title={t("You do not need to know anything about artificial intelligence to read this page.")}
-            text={t(
-              "Most people meet AI as a chat window that answers questions. That is one kind, and it is not this. Before anything else, here are the four things a reader usually assumes on arriving, and what is actually true.",
-            )}
-          />
-          <div className="plain-misconceptions">
-            {notWhatYouThink.map((entry) => (
-              <article key={entry.assumption}>
-                <MessageSquareOff size={19} aria-hidden="true" />
-                <p className="plain-misconceptions__assumption">{t(entry.assumption)}</p>
-                <p className="plain-misconceptions__reality">{t(entry.reality)}</p>
-              </article>
-            ))}
-          </div>
-          <TwoWaysToDecideFigure />
-        </div>
-      </section>
-
-      <section id="neighbours" className="section section--paper math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("THREE THINGS THIS SITS NEXT TO")}
-            title={t("Other people have been at this for a long time, and some of them are further along.")}
-            text={t(
-              "A page like this usually skips the neighbours, which is how a reader ends up thinking nobody else has had the idea. Three of them, then, in ordinary words — and the middle one is the awkward one, so it is the one worth reading twice.",
-            )}
-          />
-          <div className="plain-neighbours">
-            {plainNeighbours.map((entry) => (
-              <article key={entry.what}>
-                <Signpost size={19} aria-hidden="true" />
-                <h3>{t(entry.what)}</h3>
-                <p>{t(entry.plain)}</p>
-              </article>
-            ))}
-          </div>
-          <p className="section-followup">
-            <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("The same comparison in full, with thirteen families named")}{" "}
-              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-            </a>
-          </p>
-        </div>
-      </section>
-
       <section id="story" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("START WITH SOMETHING FAMILIAR")}
-            title={t("A program decided something about you. Later, nobody could say why.")}
+            eyebrow={t("AN ORDINARY STORY")}
+            title={t("Picture a work situation you already know.")}
             text={t(
-              "Most people have been on one side of this, usually the annoying side. Read the four steps below and you will already know what we are trying to fix.",
+              "Nothing exotic happens in it. Something changes, work carries on, and the awkward question arrives a month later.",
             )}
           />
           <ol className="plain-story">
@@ -128,11 +89,6 @@ export function PlainWordsPage() {
               </li>
             ))}
           </ol>
-          <p className="plain-punchline">
-            {t(
-              "That gap at the end — where an honest person genuinely cannot answer a fair question — is the thing this project is about. Not making programs smarter. Making them able to account for themselves afterwards.",
-            )}
-          </p>
           <DecisionTraceFigure />
         </div>
       </section>
@@ -140,10 +96,10 @@ export function PlainWordsPage() {
       <section id="idea" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("THE IDEA, IN THREE SENTENCES")}
-            title={t("Write down the options first. Then you can only pick from them.")}
+            eyebrow={t("WHAT GALO DOES")}
+            title={t("Put simply, three things.")}
             text={t(
-              "That is genuinely the whole idea. Everything else on this site — the tables, the counts, the proofs — exists to make those three sentences actually true rather than merely promised.",
+              "Everything else on this site — the tables, the counts, the proofs — exists to make these three actually true rather than merely promised.",
             )}
           />
           <div className="plain-idea">
@@ -155,26 +111,83 @@ export function PlainWordsPage() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="plain-analogy">
-            <Train size={22} aria-hidden="true" />
+      <section id="usual" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("HOW IT USUALLY GOES, AND HOW IT GOES HERE")}
+            title={t("The difference is where you can point when you disagree.")}
+            text={t(
+              "Neither column is a verdict on the other. They are two ways of arriving at an answer, and they leave you with different things afterwards.",
+            )}
+          />
+          <div className="usual-here">
+            {usualVsHere.map((entry) => (
+              <article key={entry.label} className={entry.label === "Here" ? "is-ours" : undefined}>
+                <h3>{t(entry.label)}</h3>
+                <p>{t(entry.text)}</p>
+              </article>
+            ))}
+          </div>
+          <p className="plain-punchline">{t(usualVsHereChange)}</p>
+        </div>
+      </section>
+
+      <section id="not-chatbot" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THIS IS NOT A CHATBOT")}
+            title={t("It gets along with one perfectly well. It is doing a different job.")}
+          />
+          <div className="not-chatbot">
+            {notChatbot.map((line) => (
+              <p key={line}>{t(line)}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="neighbours" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHAT IT SITS NEXT TO")}
+            title={t("Other people have been at this for a long time, and some of them are further along.")}
+            text={t(
+              "A page like this usually skips the neighbours, which is how a reader ends up thinking nobody else has had the idea. Four of them, then, in ordinary words.",
+            )}
+          />
+          <div className="plain-neighbours">
+            {neighbourNotes.map((entry) => (
+              <article key={entry.neighbour}>
+                <Signpost size={19} aria-hidden="true" />
+                <h3>{t(entry.neighbour)}</h3>
+                <p>{t(entry.text)}</p>
+              </article>
+            ))}
+          </div>
+          <p className="section-followup">
+            <a className="text-link" href={href("/vs-llm#classes")}>
+              {t("The same comparison in full, with thirteen families named")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section id="from-the-list" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHY ONLY FROM THE LIST")}
+            title={t("Picture a notebook with every permitted action already written in it.")}
+          />
+          <div className="from-list">
+            <NotebookPen size={24} aria-hidden="true" />
             <div>
-              <h3>{t("It is the difference between asking a well-travelled friend and reading the timetable")}</h3>
-              <div className="plain-analogy__pair">
-                <p>
-                  <strong>{t(timetableComparison.everyday)}</strong>
-                  <span>{t(timetableComparison.everydayText)}</span>
-                </p>
-                <p className="is-ours">
-                  <strong>{t(timetableComparison.ours)}</strong>
-                  <span>{t(timetableComparison.oursText)}</span>
-                </p>
-              </div>
-              <p className="plain-analogy__foot">
-                {t(
-                  "Neither one is stupid. You want the friend when you are exploring a new city, and the timetable when you have to be somewhere and explain later why you were late.",
-                )}
-              </p>
+              {fromTheList.map((line) => (
+                <p key={line}>{t(line)}</p>
+              ))}
             </div>
           </div>
         </div>
@@ -198,80 +211,94 @@ export function PlainWordsPage() {
         </div>
       </section>
 
-      <section id="changes" className="section section--paper math-anchor-section">
+      <section id="honest" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("WHAT THAT BUYS YOU")}
-            title={t("Three things become possible that usually are not.")}
-            text={t("None of them is exciting on its own. Together they are the reason to bother.")}
+            eyebrow={t("WHAT THERE IS, AND WHAT THERE IS NOT")}
+            title={t("Both lists, side by side, with nothing moved between them.")}
+            text={t(
+              "This is the part most sites leave out, so it is written down rather than left for you to work out from what is missing.",
+            )}
           />
-          <div className="plain-changes">
-            {whatChanges.map((entry, index) => (
-              <article key={entry.title}>
-                <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
-                <h3>{t(entry.title)}</h3>
-                <p>{t(entry.text)}</p>
-              </article>
+          <div className="have-not">
+            <div className="have-not__column">
+              <h3>
+                <Check size={18} aria-hidden="true" /> {t("There already is")}
+              </h3>
+              <ul>
+                {whatThereIs.map((entry) => (
+                  <li key={entry.line}>
+                    <strong>{t(entry.line)}</strong>
+                    <span>{t(entry.detail)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="have-not__column is-not">
+              <h3>
+                <X size={18} aria-hidden="true" /> {t("There is not yet")}
+              </h3>
+              <ul>
+                {whatThereIsNot.map((entry) => (
+                  <li key={entry.line}>
+                    <strong>{t(entry.line)}</strong>
+                    <span>{t(entry.detail)}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="in-short" className="section section--navy math-anchor-section">
+        <div className="shell">
+          <SectionHeading light eyebrow={t("IF YOU WANT IT VERY SHORT")} title={t("The whole page in three sentences.")} />
+          <div className="in-short">
+            {inShort.map((line) => (
+              <p key={line}>{t(line)}</p>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="honest" className="section section--navy math-anchor-section">
+      <section id="not-ai" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            light
-            eyebrow={t("BEFORE YOU GET EXCITED")}
-            title={t("Five things we would rather you heard from us than found out later.")}
+            eyebrow={t("IF AI IS NOT YOUR FIELD AT ALL")}
+            title={t("You do not need to know anything about artificial intelligence to read this page.")}
             text={t(
-              "Every one of these is a real limitation, written the way we would say it across a table. If any of them changes, it changes on the evidence page first.",
+              "Most people meet AI as a chat window that answers questions. That is one kind, and it is not this. Here are the four things a reader usually assumes on arriving, and what is actually true.",
             )}
           />
-          <div className="plain-honest">
-            {honestAdmissions.map((entry) => (
-              <article key={entry.line}>
-                <HandHeart size={19} aria-hidden="true" />
-                <div>
-                  <h3>{t(entry.line)}</h3>
-                  <p>{t(entry.detail)}</p>
-                </div>
+          <div className="plain-misconceptions">
+            {notWhatYouThink.map((entry) => (
+              <article key={entry.assumption}>
+                <MessageSquareOff size={19} aria-hidden="true" />
+                <p className="plain-misconceptions__assumption">{t(entry.assumption)}</p>
+                <p className="plain-misconceptions__reality">{t(entry.reality)}</p>
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="ai-words" className="section section--paper math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("THE AI WORDS EVERYONE USES")}
-            title={t("Twelve words from the AI world, each in one sentence.")}
-            text={t(
-              "These are not our words — they belong to the whole industry, and every article you read uses them as though you already know them. Each one below gets a plain sentence and a note on why it turns up here at all.",
-            )}
-          />
-          <div className="plain-aiwords">
+          <TwoWaysToDecideFigure />
+          <div className="plain-ai-words">
             {aiWords.map((entry) => (
               <article key={entry.word}>
                 <h3>{t(entry.word)}</h3>
                 <p>{t(entry.plain)}</p>
-                <p className="plain-aiwords__why">
-                  <b>{t("Why it turns up here")}</b>
-                  {t(entry.whyHere)}
-                </p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="jargon" className="section section--white math-anchor-section">
+      <section id="jargon" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE WORDS, TRANSLATED")}
             title={t("If you carry on to the rest of the site, keep this list open.")}
             text={t(
-              "These ten words do most of the damage. On the left is what the other pages say; on the right is what it actually means.",
+              "These ten words do most of the damage. The site's word first, then what it actually means.",
             )}
           />
           <dl className="plain-jargon">
@@ -284,19 +311,19 @@ export function PlainWordsPage() {
           </dl>
 
           <div className="theory-next__links comparison-next plain-next">
-            <a href={href("/investors")}>
-              <span>{t("If you are weighing it up")}</span>
-              <strong>{t("What exists, what does not, and how to check")}</strong>
+            <a href={href("/industry")}>
+              <span>{t("If you are looking at this from the production side")}</span>
+              <strong>{t("Industry")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
-            <a href={href("/thinking")}>
-              <span>{t("If you want to see it work")}</span>
-              <strong>{t("One decision, drawn stage by stage")}</strong>
+            <a href={href("/evidence")}>
+              <span>{t("If you want hard numbers and checks")}</span>
+              <strong>{t("Evidence")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
             <a href={href("/vs-llm")}>
-              <span>{t("If you are wondering about chatbots")}</span>
-              <strong>{t("How this differs from a language model")}</strong>
+              <span>{t("If you want to compare it with other approaches")}</span>
+              <strong>{t("Comparison")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
           </div>

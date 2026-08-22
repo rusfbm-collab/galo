@@ -12156,8 +12156,7 @@ caption bdi {
   margin-top: 34px;
 }
 
-.plain-idea article,
-.plain-changes article {
+.plain-idea article {
   display: grid;
   align-content: start;
   gap: 9px;
@@ -12167,134 +12166,253 @@ caption bdi {
   background: var(--white);
 }
 
-.plain-idea span,
-.plain-changes span {
+.plain-idea span {
   color: var(--teal-deep);
   font-family: var(--font-mono);
   font-size: 0.9rem;
   font-weight: 800;
 }
 
-.plain-idea h3,
-.plain-changes h3 {
+.plain-idea h3 {
   margin: 0;
   font-size: 1.06rem;
   line-height: 1.36;
 }
 
-.plain-idea p,
-.plain-changes p {
+.plain-idea p {
   margin: 0;
   color: var(--muted);
   font-size: 0.97rem;
   line-height: 1.64;
 }
 
-/* ---- the timetable analogy ---- */
+/* ---- how it usually goes, and how it goes here ----
+   Two blocks rather than a table: the point is that they leave you with
+   different things afterwards, not that one scores higher than the other. */
 
-.plain-analogy {
+.usual-here {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.usual-here article {
+  display: grid;
+  align-content: start;
+  gap: 11px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: var(--white);
+}
+
+.usual-here article.is-ours {
+  border-color: var(--teal-deep);
+  background: rgba(15, 156, 136, 0.06);
+}
+
+.usual-here h3 {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.usual-here article.is-ours h3 {
+  color: var(--teal-deep);
+}
+
+.usual-here p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.66;
+}
+
+/* ---- not a chatbot ---- */
+
+.not-chatbot {
+  display: grid;
+  gap: 15px;
+  max-width: 84ch;
+  margin-top: 30px;
+  border-inline-start: 4px solid var(--teal-deep);
+  padding-inline-start: 22px;
+}
+
+.not-chatbot p {
+  margin: 0;
+  font-size: 1.01rem;
+  line-height: 1.68;
+}
+
+.not-chatbot p:last-child {
+  color: var(--navy-900);
+  font-weight: 560;
+}
+
+/* ---- why only from the list ---- */
+
+.from-list {
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  margin-top: 26px;
+  max-width: 92ch;
+  margin-top: 30px;
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 26px 28px;
   background: var(--white);
 }
 
-.plain-analogy > svg {
+.from-list > svg {
   flex: none;
-  margin-top: 4px;
+  margin-top: 3px;
   color: var(--teal-deep);
 }
 
-.plain-analogy h3 {
-  margin: 0 0 16px;
-  font-size: 1.12rem;
-  line-height: 1.38;
+.from-list > div {
+  display: grid;
+  gap: 12px;
 }
 
-.plain-analogy__pair {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
-  gap: 14px;
-}
-
-.plain-analogy__pair p {
-  display: grid;
-  gap: 6px;
+.from-list p {
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.66;
+}
+
+.from-list p:first-child {
+  font-weight: 620;
+}
+
+/* ---- what there is, and what there is not ----
+   Two columns that never trade entries. The negative one is not softened. */
+
+.have-not {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.have-not__column {
   border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 16px 18px;
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: var(--white);
 }
 
-.plain-analogy__pair p.is-ours {
-  border-color: var(--teal-deep);
-  background: rgba(15, 156, 136, 0.06);
+.have-not__column h3 {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 0 0 18px;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
 
-.plain-analogy__pair strong {
-  font-size: 0.99rem;
-  font-weight: 720;
+.have-not__column h3 svg {
+  flex: none;
 }
 
-.plain-analogy__pair span {
-  color: var(--muted);
-  font-size: 0.94rem;
-  line-height: 1.6;
+.have-not__column.is-not h3 {
+  color: var(--red);
 }
 
-.plain-analogy__foot {
-  margin: 16px 0 0;
+.have-not__column ul {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.have-not__column li {
+  display: grid;
+  gap: 5px;
+  border-top: 1px solid var(--line);
+  padding-top: 14px;
+}
+
+.have-not__column li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.have-not__column strong {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.have-not__column span {
   color: var(--muted);
   font-size: 0.95rem;
   line-height: 1.62;
 }
 
-.plain-changes {
+/* ---- the whole page in three sentences ---- */
+
+.in-short {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
   gap: 16px;
-  margin-top: 34px;
+  max-width: 82ch;
+  margin-top: 30px;
 }
 
-/* ---- the honest list ---- */
-
-.plain-honest {
-  display: grid;
-  gap: 14px;
-  margin-top: 34px;
-}
-
-.plain-honest article {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  border: 1px solid rgba(160, 195, 215, 0.24);
-  border-radius: 20px;
-  padding: 20px 24px;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.plain-honest svg {
-  flex: none;
-  margin-top: 4px;
-  color: var(--amber);
-}
-
-.plain-honest h3 {
-  margin: 0 0 6px;
-  color: var(--white);
+.in-short p {
+  margin: 0;
+  color: rgba(226, 238, 246, 0.88);
   font-size: 1.06rem;
+  line-height: 1.64;
+}
+
+.in-short p:first-child {
+  color: var(--white);
+  font-size: 1.24rem;
+  font-weight: 620;
+  line-height: 1.5;
+}
+
+/* ---- the four words a newcomer meets first ---- */
+
+.plain-ai-words {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.plain-ai-words article {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px 22px;
+  background: var(--white);
+}
+
+.plain-ai-words h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.02rem;
   line-height: 1.36;
 }
 
-.plain-honest p {
+.plain-ai-words p {
   margin: 0;
-  color: rgba(226, 238, 246, 0.8);
-  font-size: 0.96rem;
+  color: var(--muted);
+  font-size: 0.95rem;
   line-height: 1.64;
 }
 
@@ -12341,7 +12459,7 @@ caption bdi {
     grid-template-columns: 1fr;
     gap: 8px;
   }
-  .plain-analogy {
+  .from-list {
     flex-direction: column;
   }
 }

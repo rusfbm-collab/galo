@@ -21,7 +21,8 @@ import {
 } from "../src/content/investors";
 import { readerPaths } from "../src/content/plainLanguage";
 import {
-  honestAdmissions,
+  whatThereIs,
+  whatThereIsNot,
   jargonTranslations,
   openingStory,
   plainWordsTranslationKeys,
@@ -216,13 +217,17 @@ describe("plain words", () => {
     }
   });
 
-  it("tells the four unwelcome facts in the reader's own language", () => {
-    expect(honestAdmissions).toHaveLength(5);
-    const prose = honestAdmissions.map((entry) => `${entry.line} ${entry.detail}`).join(" ");
-    expect(prose).toMatch(/no revenue, no investment raised, no pilot/i);
-    expect(prose).toMatch(/nobody outside the project has checked it/i);
-    expect(prose).toMatch(/does not replace the chatbots/i);
-    expect(prose).toMatch(/we have not measured that it helps anyone/i);
+  it("puts what there is and what there is not side by side, in the reader's own language", () => {
+    expect(whatThereIs).toHaveLength(4);
+    expect(whatThereIsNot).toHaveLength(4);
+    const missing = whatThereIsNot.map((entry) => `${entry.line} ${entry.detail}`).join(" ");
+    expect(missing).toMatch(/no revenue, no investment raised, no pilot/i);
+    expect(missing).toMatch(/deployment at a real industrial site/i);
+    expect(missing).toMatch(/cleverer than familiar AI/i);
+    expect(missing).toMatch(/authorises a command to a machine/i);
+    // the positive column may never quietly become a promise
+    const present = whatThereIs.map((entry) => `${entry.line} ${entry.detail}`).join(" ");
+    expect(present).not.toMatch(/\b(customer|revenue|deployed|production)\b/i);
   });
 
   it("translates the jargon a reader will meet on the other pages", () => {
@@ -238,10 +243,12 @@ describe("plain words", () => {
     }
   });
 
-  it("walks the opening story from the decision to the unanswerable question", () => {
+  it("walks the opening story from a change to the question nobody can answer", () => {
     expect(openingStory).toHaveLength(4);
     expect(openingStory.map((beat) => beat.number)).toEqual(["01", "02", "03", "04"]);
-    expect(openingStory.at(-1)!.line).toMatch(/nobody can answer/i);
+    expect(openingStory[0]!.line).toMatch(/changes\.$/);
+    expect(openingStory[1]!.line).toMatch(/which earlier conclusions are affected/i);
+    expect(openingStory.at(-1)!.detail).toMatch(/not only the outcome but the grounds/i);
   });
 });
 

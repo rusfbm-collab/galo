@@ -26,6 +26,7 @@ import { comparisonClassesAr } from "./comparisonClasses";
 import { theoryPlainAr } from "./theoryPlain";
 import { gatesAr } from "./gates";
 import { investorCaseAr } from "./investorCase";
+import { plainWordsPageAr } from "./plainWordsPage";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -59,6 +60,7 @@ export const ar: TranslationDictionary = {
   ...theoryPlainAr,
   ...gatesAr,
   ...investorCaseAr,
+  ...plainWordsPageAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

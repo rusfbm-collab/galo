@@ -26,6 +26,7 @@ import { comparisonClassesRu } from "./comparisonClasses";
 import { theoryPlainRu } from "./theoryPlain";
 import { gatesRu } from "./gates";
 import { investorCaseRu } from "./investorCase";
+import { plainWordsPageRu } from "./plainWordsPage";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -59,6 +60,7 @@ export const ru: TranslationDictionary = {
   ...theoryPlainRu,
   ...gatesRu,
   ...investorCaseRu,
+  ...plainWordsPageRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

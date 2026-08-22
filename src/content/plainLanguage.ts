@@ -22,7 +22,7 @@ export const readerPaths: readonly ReaderPath[] = [
     goal: "No terms, no formulas, and nothing about artificial intelligence you are expected to know already.",
     minutes: "12m",
     stops: [
-      { href: "/simple#not-ai", label: "Start here if AI is not your field" },
+      { href: "/simple#story", label: "Start here if AI is not your field" },
       { href: "/simple#idea", label: "What we actually do about it" },
       { href: "/simple#honest", label: "What we would rather tell you ourselves" },
     ],
