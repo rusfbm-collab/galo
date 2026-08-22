@@ -33,9 +33,9 @@ const locales = {
       },
       hub71: {
         path: "hub71",
-        title: "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits",
+        title: "How GALO Works — The Mechanism, Without Taking It On Trust",
         description:
-          "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.",
+          "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.",
       },
       industry: {
         path: "industry",
@@ -119,9 +119,9 @@ const locales = {
       },
       hub71: {
         path: "hub71",
-        title: "Досье заявки GALO AI — строки оценки, обязательства и границы",
+        title: "Как работает GALO — механизм, без веры на слово",
         description:
-          "Досье заявки, подготовленное для оценки: двенадцать строк текущего состояния, шесть из них отрицательные; четыре довода о региональном соответствии с их пределами; двенадцать месяцев обязательств, у каждого — условие невыполнения; и шесть вопросов, по которым мы ожидаем давления. Аффилиация с Hub71 не заявляется и не подразумевается.",
+          "Движок, объяснённый тому, кто не обязан верить: один оборот за семь обычных шагов, черта, которую выученной части переходить нельзя, чем это не является, что уже проверено и пять мест, куда скептику стоит бить. Аффилиация с Hub71 не заявляется и не подразумевается.",
       },
       industry: {
         path: "industry",
@@ -205,9 +205,9 @@ const locales = {
       },
       hub71: {
         path: "hub71",
-        title: "GALO AI 申请档案 — 评估条目、里程碑与边界",
+        title: "GALO 如何工作 — 机制本身，不必先相信",
         description:
-          "为评估而准备的申请档案：十二条现状条目，其中六条为否定；四项区域契合主张，各附其限度；十二个月的承诺，每一项都带有未达成的判定条件；以及我们预计会被追问的六个问题。不声称也不暗示与 Hub71 存在任何隶属关系。",
+          "把引擎讲给不必相信它的人听：一个回合的七个平常步骤、学到的那部分不得越过的那条线、这不是什么、已经查过什么，以及怀疑者该往哪五个地方推。不声称也不暗示与 Hub71 存在任何隶属关系。",
       },
       industry: {
         path: "industry",
@@ -287,9 +287,9 @@ const locales = {
       },
       hub71: {
         path: "hub71",
-        title: "ملف طلب GALO AI — بنود التقييم والالتزامات والحدود",
+        title: "كيف يعمل GALO — الآلية، دون أخذها على الثقة",
         description:
-          "ملف طلب أُعدّ للتقييم: اثنا عشر بندًا تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+          "الآلة مشروحةً لمن ليس ملزَمًا بتصديقها: دورةٌ واحدة في سبع خطوات عادية، والخطُّ الذي لا يجوز للجزء المُتعلِّم تجاوزه، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
       },
       industry: {
         path: "industry",

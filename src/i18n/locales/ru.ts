@@ -30,6 +30,7 @@ import { plainWordsPageRu } from "./plainWordsPage";
 import { reasoningRouteRu } from "./reasoningRoute";
 import { tableSpaceRu } from "./tableSpace";
 import { twoTowersRu } from "./twoTowers";
+import { engineTourRu } from "./engineTour";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -67,6 +68,7 @@ export const ru: TranslationDictionary = {
   ...reasoningRouteRu,
   ...tableSpaceRu,
   ...twoTowersRu,
+  ...engineTourRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

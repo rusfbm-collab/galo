@@ -1,33 +1,33 @@
-import { ArrowLeft, ArrowRight, Ban, CircleAlert, FileText, Landmark, Scale, ShieldAlert, Target } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, CircleAlert, ShieldAlert, X } from "lucide-react";
+import { AuthorityContrastFigure } from "../components/diagrams/AuthorityContrastFigure";
+import { EngineCycleFigure } from "../components/diagrams/EngineCycleFigure";
+import { TwoRolesFigure } from "../components/diagrams/TwoRolesFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
-import { publicContact } from "../content/contact";
-import { releaseEvidence } from "../content/evidence";
 import {
-  askedFor,
-  assessmentTable,
-  hardQuestions,
-  nonAffiliation,
-  notAskedFor,
-  notPublishedHere,
-  regionFit,
-  twelveMonths,
-} from "../content/programme";
-import { landscapeStanding } from "../content/landscape";
-import { siteContent } from "../content/site";
+  alreadyChecked,
+  engineCycle,
+  engineIsNot,
+  engineRoles,
+  miniExample,
+  oneMinute,
+  whereToAttack,
+} from "../content/engineTour";
+import { publicContact } from "../content/contact";
+import { assessmentTable, hardQuestions, nonAffiliation, notPublishedHere, twelveMonths } from "../content/programme";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
-  { href: "#standing", label: "What this document is" },
-  { href: "#assessment", label: "Twelve lines an assessor works through" },
-  { href: "#region", label: "Why the work is shaped like the region's problems" },
-  { href: "#field", label: "How this reads against the field" },
-  { href: "#twelve-months", label: "Twelve months, with failure conditions" },
-  { href: "#ask", label: "What is asked for, and what is not" },
-  { href: "#pressed", label: "Six questions we expect to be pressed on" },
-  { href: "#withheld", label: "Facts not published on a website" },
-  { href: "#control", label: "Document control" },
+  { href: "#one-minute", label: "The whole thing in one minute" },
+  { href: "#cycle", label: "One turn of the engine" },
+  { href: "#roles", label: "Two roles, and the line between them" },
+  { href: "#not", label: "What this is not" },
+  { href: "#example", label: "One change, carried through" },
+  { href: "#checked", label: "What is already checked" },
+  { href: "#attack", label: "Where to attack this" },
+  { href: "#next", label: "Where to go next" },
+  { href: "#appendix", label: "Application materials" },
 ] as const;
 
 const positiveStatuses = new Set(["ESTABLISHED"]);
@@ -49,224 +49,59 @@ export function Hub71Page() {
           <a className="back-link" href={href("/")}>
             <ArrowLeft className="directional-icon" size={16} aria-hidden="true" /> {t("Home")}
           </a>
-          <p className="eyebrow eyebrow--cyan">{t("APPLICATION DOSSIER · NOT AN ANNOUNCEMENT")}</p>
-          <h1>{t("Everything an assessor would ask, answered before the meeting.")}</h1>
+          <p className="eyebrow eyebrow--cyan">{t("THE MECHANISM FIRST, THEN THE NUMBERS, THEN THE LIMITS")}</p>
+          <h1>{t("How GALO works. No formulas, and no need to trust the brand.")}</h1>
           <p>
             {t(
-              "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.",
+              "GALO is not a generator of good-looking answers. It is a machine that carries a decision as a checkable record: what changed, what it touched, what may still be accepted, and what can no longer be confirmed. This page explains that in about ten minutes and then hands you the places to attack it.",
             )}
           </p>
-          <div className="programme-hero__strip">
-            <div>
-              <small>{t("AFFILIATION")}</small>
-              <strong>{t("None")}</strong>
-            </div>
-            <div>
-              <small>{t("OUTCOME REPORTED")}</small>
-              <strong>{t("None")}</strong>
-            </div>
-            <div>
-              <small>{t("RELEASE OF RECORD")}</small>
-              <strong dir="ltr">{releaseEvidence.release}</strong>
-            </div>
-            <div>
-              <small>{t("STAGE")}</small>
-              <strong>{t(siteContent.company.stage)}</strong>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <PageContents label="On this page" ariaLabel="Dossier navigation" items={contents} />
-
-      <section id="standing" className="section section--white math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("READ THIS FIRST")}
-            title={t("No relationship is being claimed here, and none exists.")}
-            text={t(
-              "A page addressed to a programme is the easiest place on a website to imply a connection that has not happened. So the statement is made once, plainly, and the build refuses to ship without it.",
-            )}
-          />
-          <div className="programme-affiliation">
-            <ShieldAlert size={22} aria-hidden="true" />
-            <p>{t(nonAffiliation)}</p>
-          </div>
-          <div className="programme-standing">
-            <article>
-              <FileText size={19} aria-hidden="true" />
-              <h3>{t("What this document does")}</h3>
-              <p>
-                {t(
-                  "It states what exists, what does not, and how to check both, at the level of detail a diligence call would otherwise consume. Every line links to the page that carries its evidence.",
-                )}
-              </p>
-            </article>
-            <article>
-              <Ban size={19} aria-hidden="true" />
-              <h3>{t("What it deliberately avoids")}</h3>
-              <p>
-                {t(
-                  "It does not describe any programme, its criteria, its tracks, or its terms. Nothing in this project can verify those, and repeating them second-hand would be the exact unseriousness this page exists to avoid.",
-                )}
-              </p>
-            </article>
-            <article>
-              <Target size={19} aria-hidden="true" />
-              <h3>{t("How to use it against us")}</h3>
-              <p>
-                {t(
-                  "Take the twelve-month table, keep it, and come back with it. Each milestone carries the observation that would show it was missed, so the document can be marked rather than believed.",
-                )}
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="assessment" className="section section--paper math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("THE STATE OF PLAY, LINE BY LINE")}
-            title={t("Twelve lines an assessor works through. Six of them are negative.")}
-            text={t(
-              "The negative lines are not at the bottom. A dossier that puts its three strengths first and its six absences in a footnote is a dossier that expects not to be read carefully, and this one does.",
-            )}
-          />
-          <div className="programme-table-wrap" role="region" aria-label={t("Assessment lines")} tabIndex={0}>
-            <table className="programme-table">
-              <caption>{t("Assessment lines, with the status each one currently supports")}</caption>
-              <thead>
-                <tr>
-                  <th scope="col">{t("Dimension")}</th>
-                  <th scope="col">{t("Where it stands today")}</th>
-                  <th scope="col">{t("Status")}</th>
-                  <th scope="col">{t("Check")}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {assessmentTable.map((row) => (
-                  <tr key={row.dimension}>
-                    <th scope="row">{t(row.dimension)}</th>
-                    <td>{t(row.answerToday)}</td>
-                    <td>
-                      <span className={`programme-status ${statusTone(row.status)}`} dir="ltr">
-                        {row.status}
-                      </span>
-                    </td>
-                    <td>
-                      {row.whereToCheck ? (
-                        <a href={href(row.whereToCheck)}>
-                          {t("Open")}
-                          <ArrowRight className="directional-icon" size={14} aria-hidden="true" />
-                        </a>
-                      ) : (
-                        <span className="programme-table__none">{t("Not on this site")}</span>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="programme-note">
-            <CircleAlert size={18} aria-hidden="true" />
+          <div className="engine-hero__note">
             <span>
               {t(
-                "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.",
+                "If you finish this page and still do not believe the project, you should at least be able to say where the hole is. That is the point of it.",
               )}
             </span>
-          </p>
+          </div>
         </div>
       </section>
 
-      <section id="region" className="section section--white math-anchor-section">
+      <PageContents label="On this page" ariaLabel="Engine tour navigation" items={contents} />
+
+      <section id="one-minute" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("FIT, WITH THE LIMIT ATTACHED")}
-            title={t("Four reasons the work is shaped like the region's problems.")}
-            text={t(
-              "Each claim below is followed by what it does not reach. A fit argument without its limit is a sales argument, and it does not survive the first technical reviewer.",
-            )}
+            eyebrow={t("IN ONE MINUTE")}
+            title={t("Three sentences, and everything else on this page serves them.")}
           />
-          <div className="programme-fit">
-            {regionFit.map((entry) => (
-              <article key={entry.claim}>
-                <Landmark size={19} aria-hidden="true" />
-                <h3>{t(entry.claim)}</h3>
-                <p>{t(entry.mechanism)}</p>
-                <p className="programme-fit__limit">
-                  <b>{t("Limit")}</b>
-                  {t(entry.limit)}
-                </p>
-              </article>
+          <ol className="engine-minute">
+            {oneMinute.map((line, index) => (
+              <li key={line}>
+                <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
+                <p>{t(line)}</p>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
-      <section id="field" className="section section--paper math-anchor-section">
+      <section id="cycle" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("HOW THIS READS AGAINST THE FIELD")}
-            title={t("An assessment line is worth little without something to measure it against.")}
+            eyebrow={t("ONE TURN OF THE ENGINE")}
+            title={t("Seven steps, none of which needs a word you do not already have.")}
             text={t(
-              "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — thirteen families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.",
+              "Read the diagram for the shape, then the cards for what each step actually means. Nothing here is a metaphor for something more complicated underneath: this is the order the work happens in.",
             )}
           />
-          <div className="landscape-standing">
-            <div className="landscape-standing__head">
-              <Scale size={20} aria-hidden="true" />
-              <div>
-                <strong>{t("What every one of those has, and this project does not")}</strong>
-                <p>
-                  {t(
-                    "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.",
-                  )}
-                </p>
-              </div>
-            </div>
-            <ul>
-              {landscapeStanding.map((row) => (
-                <li key={row.they}>
-                  <span className="landscape-standing__them">{t(row.they)}</span>
-                  <span className="landscape-standing__us">{t(row.us)}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <p className="section-followup">
-            <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("See all thirteen families, named, with what each one lets an outsider check")}{" "}
-              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section id="twelve-months" className="section section--navy math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            light
-            eyebrow={t("TWELVE MONTHS, WRITTEN TO BE MARKED")}
-            title={t("Five commitments, each with the observation that would show it was missed.")}
-            text={t(
-              "A plan is a wish until somebody can tell whether it happened. Every milestone here carries its own failure condition, so this table can be kept and used against the project a year from now.",
-            )}
-          />
-          <ol className="programme-months">
-            {twelveMonths.map((milestone, index) => (
-              <li key={milestone.window}>
-                <div className="programme-months__marker">
-                  <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
-                  <small>{t(milestone.window)}</small>
-                </div>
+          <EngineCycleFigure />
+          <ol className="engine-steps">
+            {engineCycle.map((step) => (
+              <li key={step.number}>
+                <span dir="ltr">{step.number}</span>
                 <div>
-                  <p className="programme-months__deliverable">{t(milestone.deliverable)}</p>
-                  <p className="programme-months__fail">
-                    <b>{t("Missed if")}</b>
-                    {t(milestone.wouldFailIf)}
-                  </p>
+                  <h3>{t(step.label)}</h3>
+                  <p>{t(step.plain)}</p>
                 </div>
               </li>
             ))}
@@ -274,131 +109,256 @@ export function Hub71Page() {
         </div>
       </section>
 
-      <section id="ask" className="section section--white math-anchor-section">
+      <section id="roles" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("THE ASK, IN BOTH DIRECTIONS")}
-            title={t("Four things asked for, and four deliberately not asked for.")}
+            eyebrow={t("TWO ROLES, AND THE LINE BETWEEN THEM")}
+            title={t("The part that learns is not allowed to say what is true.")}
             text={t(
-              "The second list matters more than the first. It fixes in advance what could otherwise be read into an introduction, a meeting, or a logo appearing next to ours.",
+              "If you take one thing from this page, take this. Almost every objection to a learning system is really an objection to letting the learned part carry the authority — so here it does not, and the separation is a property of the release rather than a promise about behaviour.",
             )}
           />
-          <div className="programme-ask">
-            <article className="is-asked">
-              <h3>{t("Asked for")}</h3>
-              <ul>
-                {askedFor.map((line) => (
-                  <li key={line}>{t(line)}</li>
-                ))}
-              </ul>
-            </article>
-            <article className="is-not-asked">
-              <h3>{t("Not asked for")}</h3>
-              <ul>
-                {notAskedFor.map((line) => (
-                  <li key={line}>{t(line)}</li>
-                ))}
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="pressed" className="section section--paper math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("THE HARD PART OF THE CONVERSATION")}
-            title={t("Six questions we expect to be pressed on, answered as they stand.")}
-            text={t(
-              "These are the questions that decide the meeting. Answering them here costs the advantage of a rehearsed reply and gains the only thing worth more: the assessor can check the answers before spending an hour on them.",
-            )}
-          />
-          <dl className="programme-questions">
-            {hardQuestions.map((entry, index) => (
-              <div key={entry.question}>
-                <dt>
-                  <span dir="ltr">{String(index + 1).padStart(2, "0")}</span>
-                  {t(entry.question)}
-                </dt>
-                <dd>{t(entry.answerToday)}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      <section id="withheld" className="section section--white math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("WHAT A WEBSITE IS THE WRONG PLACE FOR")}
-            title={t("Four facts an assessor will want that are not published here.")}
-            text={t(
-              "Two of them are withheld on purpose and two of them do not exist yet. Saying which is which is the point: an absence with no explanation reads the same as something being hidden.",
-            )}
-          />
-          <div className="programme-withheld">
-            {notPublishedHere.map((entry) => (
-              <article key={entry.fact}>
-                <span className={entry.status === "NOT APPLICABLE" ? "is-na" : undefined} dir="ltr">
-                  {entry.status}
-                </span>
-                <h3>{t(entry.fact)}</h3>
-                <p>{t(entry.availability)}</p>
+          <TwoRolesFigure />
+          <div className="engine-roles">
+            {engineRoles.map((role) => (
+              <article key={role.role}>
+                <h3>{t(role.role)}</h3>
+                <p className="engine-roles__point">{t(role.point)}</p>
+                <div className="engine-roles__lists">
+                  <div>
+                    <h4>
+                      <Check size={16} aria-hidden="true" /> {t("May")}
+                    </h4>
+                    <ul>
+                      {role.may.map((item) => (
+                        <li key={item}>{t(item)}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="is-not">
+                    <h4>
+                      <X size={16} aria-hidden="true" /> {t("May not")}
+                    </h4>
+                    <ul>
+                      {role.mayNot.map((item) => (
+                        <li key={item}>{t(item)}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="control" className="section section--dark math-anchor-section">
+      <section id="not" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHAT THIS IS NOT")}
+            title={t("Five things a reader arrives assuming, answered without scoring anybody.")}
+            text={t(
+              "Each of these families is real work done by serious people, and several are far ahead of this project in engineering. The difference drawn below is about where the authority sits, and about nothing else.",
+            )}
+          />
+          <div className="engine-not">
+            {engineIsNot.map((entry) => (
+              <article key={entry.claim}>
+                <span>{t("Not")}</span>
+                <h3>{t(entry.claim)}</h3>
+                <p>{t(entry.answer)}</p>
+              </article>
+            ))}
+          </div>
+          <AuthorityContrastFigure />
+        </div>
+      </section>
+
+      <section id="example" className="section section--navy math-anchor-section">
         <div className="shell">
           <SectionHeading
             light
-            eyebrow={t("DOCUMENT CONTROL")}
-            title={t("What this document is pinned to, and who answers for it.")}
+            eyebrow={t("ONE CHANGE, CARRIED THROUGH")}
+            title={t("The least dramatic situation available, which is also the one this is for.")}
+          />
+          <ol className="engine-example">
+            {miniExample.map((line) => (
+              <li key={line}>{t(line)}</li>
+            ))}
+          </ol>
+          <p className="engine-example__foot">
+            {t(
+              "That last line is the part most systems leave out. Saying which conclusions can no longer be confirmed is worth more than producing a fresh answer for all of them.",
+            )}
+          </p>
+        </div>
+      </section>
+
+      <section id="checked" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHAT IS ALREADY CHECKED")}
+            title={t("Four lines, and the fourth is the one that matters most.")}
             text={t(
-              "Every figure quoted above is generated from the same release record the rest of the site is generated from, so this page cannot drift away from the evidence pages while looking as though it agrees with them.",
+              "The numbers themselves are on the evidence page, with the comparator each was measured against. This is the summary a reader can hold without opening it.",
             )}
           />
-          <dl className="programme-control" dir="ltr">
-            <div>
-              <dt>release_of_record</dt>
-              <dd>{releaseEvidence.release}</dd>
-            </div>
-            <div>
-              <dt>release_status</dt>
-              <dd>{releaseEvidence.status}</dd>
-            </div>
-            <div>
-              <dt>contact_of_record</dt>
-              <dd>{publicContact.evaluationEmail}</dd>
-            </div>
-            <div>
-              <dt>legal_entity</dt>
-              <dd>NOT INCORPORATED</dd>
-            </div>
-            <div>
-              <dt>affiliation</dt>
-              <dd>NONE</dd>
-            </div>
-          </dl>
+          <div className="engine-checked">
+            {alreadyChecked.map((entry) => (
+              <article key={entry.title} className={entry.missing ? "is-missing" : undefined}>
+                <span aria-hidden="true">{entry.missing ? <X size={17} /> : <Check size={17} />}</span>
+                <div>
+                  <h3>{t(entry.title)}</h3>
+                  <p>{t(entry.detail)}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="section-followup">
+            <a className="text-link" href={href("/evidence#learning")}>
+              {t("The measured results, with the comparator each was run against")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section id="attack" className="section section--dark math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            light
+            eyebrow={t("WHERE TO ATTACK THIS")}
+            title={t("The honest weaknesses, written to be used rather than to reassure.")}
+            text={t(
+              "A page that lists only what works is a page nobody can argue with, which is the same as a page nobody can check. Here are the five places a sceptic should push.",
+            )}
+          />
+          <ul className="engine-attack">
+            {whereToAttack.map((line) => (
+              <li key={line}>
+                <CircleAlert size={18} aria-hidden="true" />
+                <span>{t(line)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="next" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHERE TO GO NEXT")}
+            title={t("Four directions, depending on what you would need to see.")}
+          />
           <div className="theory-next__links comparison-next">
             <a href={href("/evidence")}>
-              <span>{t("The evidence behind every line above")}</span>
-              <strong>{t("Release record and boundaries")}</strong>
+              <span>{t("If you want the numbers and the checks")}</span>
+              <strong>{t("Evidence")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
-            <a href={href("/audit")}>
-              <span>{t("How far each kind of check reaches")}</span>
-              <strong>{t("The verification handbook")}</strong>
+            <a href={href("/industry")}>
+              <span>{t("If you are looking at this from the production side")}</span>
+              <strong>{t("Industry")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
             <a href={href("/investors")}>
-              <span>{t("The same picture in business terms")}</span>
-              <strong>{t("Stage, risks, and diligence path")}</strong>
+              <span>{t("If you are deciding whether this could become a company")}</span>
+              <strong>{t("Investors")}</strong>
+              <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
+            </a>
+            <a href={href("/vs-llm")}>
+              <span>{t("If you want the full comparison, class by class")}</span>
+              <strong>{t("Comparison")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
           </div>
+        </div>
+      </section>
+
+      <section id="appendix" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("APPENDIX")}
+            title={t("Application materials, kept here rather than at the top.")}
+            text={t(
+              "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: twelve assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.",
+            )}
+          />
+          <div className="engine-affiliation">
+            <ShieldAlert size={20} aria-hidden="true" />
+            <p>{t(nonAffiliation)}</p>
+          </div>
+
+          <details className="engine-dossier">
+            <summary>{t("Twelve assessment lines, six of them negative")}</summary>
+            <div className="engine-dossier__table-wrap" role="region" tabIndex={0} aria-label={t("Assessment lines")}>
+              <table className="engine-dossier__table">
+                <thead>
+                  <tr>
+                    <th scope="col">{t("Line")}</th>
+                    <th scope="col">{t("Status")}</th>
+                    <th scope="col">{t("What stands behind it")}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {assessmentTable.map((row) => (
+                    <tr key={row.dimension}>
+                      <th scope="row">{t(row.dimension)}</th>
+                      <td>
+                        <span className={`assessment-status ${statusTone(row.status)}`} dir="ltr">
+                          {row.status}
+                        </span>
+                      </td>
+                      <td>{t(row.answerToday)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </details>
+
+          <details className="engine-dossier">
+            <summary>{t("Twelve months, each with the observation that would show it was missed")}</summary>
+            <ol className="engine-dossier__list">
+              {twelveMonths.map((milestone) => (
+                <li key={milestone.window}>
+                  <strong>{t(milestone.window)}</strong>
+                  <span>{t(milestone.deliverable)}</span>
+                  <em>{t(milestone.wouldFailIf)}</em>
+                </li>
+              ))}
+            </ol>
+          </details>
+
+          <details className="engine-dossier">
+            <summary>{t("The questions we expect to be pressed on")}</summary>
+            <dl className="engine-dossier__questions">
+              {hardQuestions.map((entry) => (
+                <div key={entry.question}>
+                  <dt>{t(entry.question)}</dt>
+                  <dd>{t(entry.answerToday)}</dd>
+                </div>
+              ))}
+            </dl>
+          </details>
+
+          <details className="engine-dossier">
+            <summary>{t("Facts a website is the wrong place for")}</summary>
+            <ul className="engine-dossier__withheld">
+              {notPublishedHere.map((entry) => (
+                <li key={entry.fact}>
+                  <strong>{t(entry.fact)}</strong>
+                  <span>{t(entry.availability)}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="engine-dossier__contact">
+              {t("Anything above is available on request:")}{" "}
+              <a href={`mailto:${publicContact.evaluationEmail}`} dir="ltr">
+                {publicContact.evaluationEmail}
+              </a>
+            </p>
+          </details>
         </div>
       </section>
     </PageShell>

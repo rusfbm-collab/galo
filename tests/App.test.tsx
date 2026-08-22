@@ -417,47 +417,61 @@ describe("GALO public site", () => {
     expect(document.querySelector(".learning-boundaries")?.textContent).toContain("NOT AUTHORIZED");
   });
 
-  it("renders the assessment dossier as a document, with its absences visible", () => {
+  it("teaches the engine before it shows the dossier", () => {
     setPath("/hub71");
     render(<App />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Everything an assessor would ask, answered before the meeting." }),
+      screen.getByRole("heading", { level: 1, name: "How GALO works. No formulas, and no need to trust the brand." }),
     ).toBeInTheDocument();
 
-    // The non-affiliation statement is the first thing the page settles.
-    expect(document.querySelector(".programme-affiliation")?.textContent).toContain(
+    // The mechanism comes first. Nothing on the first screen is a status label,
+    // a release code, or an affiliation disclaimer.
+    const hero = document.querySelector(".page-hero");
+    expect(hero?.textContent).not.toMatch(/R5B6A1_3|ESTABLISHED|NOT ESTABLISHED|AFFILIATION/);
+    expect(hero?.textContent).toMatch(/checkable record/i);
+
+    expect(document.querySelectorAll(".engine-minute li")).toHaveLength(3);
+    expect(document.querySelectorAll(".engine-steps li")).toHaveLength(7);
+    expect(document.querySelectorAll(".engine-roles > article")).toHaveLength(2);
+    expect(document.querySelectorAll(".engine-not article")).toHaveLength(5);
+    expect(document.querySelectorAll(".engine-example li")).toHaveLength(5);
+    expect(document.querySelectorAll(".engine-checked article")).toHaveLength(4);
+    // The fourth checked line is an absence and is rendered as one.
+    expect(document.querySelectorAll(".engine-checked article.is-missing")).toHaveLength(1);
+    expect(document.querySelectorAll(".engine-attack li")).toHaveLength(5);
+
+    // Three figures carry the mechanism, including the one that compares where
+    // the authority sits against the neighbouring families.
+    expect(document.querySelector(".galo-figure--cycle")).toBeInTheDocument();
+    expect(document.querySelector(".galo-figure--authority-line")).toBeInTheDocument();
+    const authority = document.querySelector(".galo-figure--authority");
+    expect(authority).toBeInTheDocument();
+    expect(authority?.textContent).toContain("Cyc");
+    expect(authority?.querySelectorAll(".galo-authority__row")).toHaveLength(5);
+    expect(authority?.querySelectorAll(".galo-authority__row.is-galo")).toHaveLength(1);
+    // Four rows read "same object", one reads "two objects".
+    expect(authority?.querySelectorAll(".galo-authority__sign.is-galo")).toHaveLength(1);
+
+    // The dossier survives, folded into the appendix at the bottom rather than
+    // standing in front of everybody who is not an assessor.
+    const appendix = document.querySelector("#appendix");
+    expect(appendix?.querySelector(".engine-affiliation")?.textContent).toContain(
       "not affiliated with, endorsed by, backed by, or selected by Hub71",
     );
-    expect(document.querySelector(".programme-hero__strip")?.textContent).toContain("AFFILIATION");
+    expect(appendix?.querySelectorAll("details.engine-dossier")).toHaveLength(4);
+    expect(appendix?.querySelectorAll(".engine-dossier__table tbody tr")).toHaveLength(12);
+    expect(appendix?.querySelectorAll(".assessment-status.is-negative")).toHaveLength(6);
+    expect(appendix?.querySelectorAll(".engine-dossier__list li")).toHaveLength(5);
+    expect(appendix?.querySelectorAll(".engine-dossier__questions > div")).toHaveLength(6);
+    expect(appendix?.querySelectorAll(".engine-dossier__withheld li")).toHaveLength(4);
 
-    // Twelve assessment lines, and the six negative ones are rendered as such
-    // rather than being softened into prose.
-    const rows = document.querySelectorAll(".programme-table tbody tr");
-    expect(rows).toHaveLength(12);
-    const statuses = Array.from(document.querySelectorAll(".programme-status")).map((node) => node.textContent);
-    expect(statuses.filter((status) => status === "NONE")).toHaveLength(3);
-    expect(statuses.filter((status) => status === "NOT ESTABLISHED")).toHaveLength(3);
-    expect(document.querySelectorAll(".programme-status.is-negative")).toHaveLength(6);
+    // Every anchor in the contents strip resolves.
+    for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
+      const target = link.getAttribute("href")?.slice(1) ?? "";
+      expect(document.getElementById(target), `Missing engine-tour target #${target}`).toBeInTheDocument();
+    }
 
-    // The dossier states its position against the field rather than only against itself.
-    expect(document.querySelectorAll("#field .landscape-standing li")).toHaveLength(4);
-    expect(document.querySelector("#field")?.textContent).toMatch(/thirteen families/i);
-
-    // Five commitments, each carrying its own failure condition.
-    expect(document.querySelectorAll(".programme-months li")).toHaveLength(5);
-    expect(document.querySelectorAll(".programme-months__fail")).toHaveLength(5);
-
-    expect(document.querySelectorAll(".programme-fit__limit")).toHaveLength(4);
-    expect(document.querySelectorAll(".programme-questions > div")).toHaveLength(6);
-    expect(document.querySelectorAll(".programme-withheld article")).toHaveLength(4);
-
-    // Document control pins the page to the same release record as the rest of
-    // the site, and states the legal position rather than leaving it blank.
-    const control = document.querySelector(".programme-control");
-    expect(control).toHaveTextContent("R5B6A1_3");
-    expect(control).toHaveTextContent("NOT INCORPORATED");
-    expect(control).toHaveTextContent("rusfbm@gmail.com");
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/hub71");
   });
 

@@ -54,9 +54,9 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
       "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.",
   },
   "/hub71": {
-    title: "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits",
+    title: "How GALO Works — The Mechanism, Without Taking It On Trust",
     description:
-      "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.",
+      "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.",
   },
   "/industry": {
     title: "GALO AI for Industry — Decision Assurance Around Existing Digital Twins",
