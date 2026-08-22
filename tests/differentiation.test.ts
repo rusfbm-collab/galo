@@ -2,13 +2,10 @@ import { describe, expect, it } from "vitest";
 import {
   differentiationBoundary,
   heroDifferentiators,
+  whatThisIs,
   whatThisIsNot,
 } from "../src/content/differentiation";
-import {
-  comparisonClasses,
-  comparisonClassesBoundary,
-  homeClassStrip,
-} from "../src/content/comparisonClasses";
+import { comparisonClasses, comparisonClassesBoundary } from "../src/content/comparisonClasses";
 import { landscapeRows } from "../src/content/landscape";
 
 describe("the differentiation block", () => {
@@ -21,15 +18,21 @@ describe("the differentiation block", () => {
     expect(joined).toMatch(/the verifier owns the verdict/);
   });
 
-  it("answers the three assumptions once each, with no comparative claim", () => {
-    expect(whatThisIsNot).toHaveLength(3);
-    for (const card of whatThisIsNot) {
-      expect(card.label.length).toBeGreaterThan(8);
-      expect(card.text.length).toBeGreaterThan(40);
+  it("answers each assumption once, with no comparative claim", () => {
+    expect(whatThisIsNot).toHaveLength(4);
+    for (const row of whatThisIsNot) {
+      expect(row.taken).toMatch(/^Taken for /);
+      expect(row.answer.length).toBeGreaterThan(40);
       // difference, never superiority
-      expect(card.text).not.toMatch(/\b(better|faster|superior|outperform|beats)\b/i);
+      expect(row.answer).not.toMatch(/\b(better|faster|superior|outperform|beats)\b/i);
     }
-    expect(whatThisIsNot.map((c) => c.label).join(" ")).toMatch(/Cyc/);
+    const taken = whatThisIsNot.map((r) => r.taken).join(" ");
+    expect(taken).toMatch(/language model/);
+    expect(taken).toMatch(/knowledge graph/);
+    expect(taken).toMatch(/Cyc/);
+    expect(taken).toMatch(/governance wrapper/);
+    // and the block closes by saying what it is instead
+    expect(whatThisIs).toMatch(/does not own the verdict/);
   });
 
   it("keeps the limiter that stops the section reading as a boast", () => {
@@ -77,8 +80,13 @@ describe("the class comparison", () => {
     for (const row of comparisonClasses) {
       // the GALO row's landmark is legitimately just "This project"
       expect(row.landmarks.length).toBeGreaterThan(10);
+      // cells are phrases now, not paragraphs — the floor only catches empties
       for (const cell of [row.strength, row.authority, row.change, row.contrast]) {
-        expect(cell.length).toBeGreaterThan(35);
+        expect(cell.length).toBeGreaterThan(20);
+      }
+      // and the ceiling is what keeps the five columns readable at 1024px
+      for (const cell of [row.strength, row.authority, row.change]) {
+        expect(cell.length).toBeLessThan(105);
       }
       expect(`${row.strength} ${row.contrast}`).not.toMatch(
         /\b(outperform|beats|superior to|better than)\b/i,
@@ -102,7 +110,5 @@ describe("the class comparison", () => {
   it("keeps the positioning boundary and the four-line home strip", () => {
     expect(comparisonClassesBoundary).toMatch(/not a claim of universal superiority/);
     expect(comparisonClassesBoundary).toMatch(/has been measured against any of these classes/);
-    expect(homeClassStrip).toHaveLength(4);
-    expect(homeClassStrip[3]).toMatch(/^GALO/);
   });
 });

@@ -23,10 +23,10 @@ import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
 import { SectionHeading } from "../components/ui/SectionHeading";
-import { homeClassStrip } from "../content/comparisonClasses";
 import {
   differentiationBoundary,
   heroDifferentiators,
+  whatThisIs,
   whatThisIsNot,
 } from "../content/differentiation";
 import { releaseEvidence } from "../content/evidence";
@@ -252,31 +252,27 @@ export function HomePage() {
         </div>
       </section>
 
-      <section id="not-this" className="section section--white home-not-this">
+      <section id="not-this" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("WHAT THIS IS NOT")}
-            title={t("Three things this gets taken for, and where each one differs.")}
+            title={t("Taken for four other things. One line separates it from all four.")}
             text={t(
-              "A specialist asks these in the first ten seconds, and the answer used to be reachable only through the theory chapter. Each card answers one of them once. The full family-by-family table, with what an outsider can check in each, is on the comparison page.",
+              "Each row names an assumption a specialist arrives with, and the reason it does not hold. The reason is the same one every time: the learned part may propose and rank, and never admits the result.",
             )}
           />
-          <div className="not-this">
-            {whatThisIsNot.map((card) => (
-              <article key={card.label} className="not-this__card">
-                <h3>{t(card.label)}</h3>
-                <p>{t(card.text)}</p>
-              </article>
+          <dl className="not-this">
+            {whatThisIsNot.map((row) => (
+              <div key={row.taken} className="not-this__row">
+                <dt>{t(row.taken)}</dt>
+                <dd>{t(row.answer)}</dd>
+              </div>
             ))}
-          </div>
-          <div className="class-strip">
-            <p className="class-strip__title">{t("Compared with the common alternatives")}</p>
-            <ul>
-              {homeClassStrip.map((line) => (
-                <li key={line}>{t(line)}</li>
-              ))}
-            </ul>
-          </div>
+            <div className="not-this__row not-this__row--is">
+              <dt>{t("What it is instead")}</dt>
+              <dd>{t(whatThisIs)}</dd>
+            </div>
+          </dl>
           <p className="not-this__boundary">
             <CircleAlert size={16} aria-hidden="true" /> {t(differentiationBoundary)}
           </p>

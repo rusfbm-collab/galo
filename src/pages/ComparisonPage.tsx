@@ -204,6 +204,13 @@ export function ComparisonPage() {
             tabIndex={0}
           >
             <table className="class-table">
+              <colgroup>
+                <col className="is-approach" />
+                <col className="is-strength" />
+                <col className="is-authority" />
+                <col className="is-change" />
+                <col className="is-contrast" />
+              </colgroup>
               <caption>{t("Authority, world state, change handling and replay, one class per row")}</caption>
               <thead>
                 <tr>

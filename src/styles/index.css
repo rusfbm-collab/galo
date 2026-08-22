@@ -14531,39 +14531,66 @@ caption bdi {
   margin-top: 34px;
 }
 
-/* The three assumptions, answered once each. Deliberately plainer than the
-   headline cards below them: one sentence, no mechanism, no link out. */
+/* One block, one row per assumption, and a closing row saying what it is
+   instead. An earlier version said this twice — three cards and then a strip
+   repeating them — which is what made the section read as filler. */
 .not-this {
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   margin-top: 34px;
-}
-
-.not-this__card {
-  display: grid;
-  align-content: start;
-  gap: 10px;
   border: 1px solid var(--line);
-  border-inline-start: 3px solid color-mix(in srgb, var(--teal-deep) 55%, transparent);
-  border-radius: 18px;
-  padding: 24px 24px 22px;
+  border-radius: 20px;
+  overflow: hidden;
   background: var(--white);
 }
 
-.not-this__card h3 {
-  margin: 0;
-  color: var(--ink);
-  font-size: 1.02rem;
-  font-weight: 660;
-  letter-spacing: -0.01em;
+.not-this__row {
+  display: grid;
+  gap: 6px 32px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  padding: 20px 26px;
+  grid-template-columns: minmax(190px, 0.9fr) minmax(0, 2.4fr);
 }
 
-.not-this__card p {
+.not-this__row:last-child {
+  border-bottom: none;
+}
+
+.not-this__row dt {
+  margin: 0;
+  color: var(--navy-900);
+  font-size: 0.98rem;
+  font-weight: 660;
+  letter-spacing: -0.005em;
+}
+
+.not-this__row dd {
   margin: 0;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.95rem;
   line-height: 1.65;
+}
+
+.not-this__row--is {
+  border-top: 2px solid var(--navy-900);
+  background: color-mix(in srgb, var(--teal-deep) 6%, transparent);
+}
+
+.not-this__row--is dt {
+  color: var(--teal-deep);
+}
+
+.not-this__row--is dd {
+  color: var(--ink);
+  font-weight: 560;
+}
+
+@media (max-width: 720px) {
+  .not-this__row {
+    gap: 8px;
+    padding: 18px 20px;
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .not-this__boundary {
@@ -14582,54 +14609,6 @@ caption bdi {
   color: var(--red);
 }
 
-/* The same axis as the class table on the comparison page, cut to four lines. */
-.class-strip {
-  margin-top: 30px;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 22px 24px 20px;
-  background: var(--paper);
-}
-
-.class-strip__title {
-  margin: 0 0 12px;
-  color: var(--navy-900);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.class-strip ul {
-  display: grid;
-  gap: 9px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.class-strip li {
-  position: relative;
-  padding-inline-start: 18px;
-  color: var(--ink);
-  font-size: 0.93rem;
-  line-height: 1.6;
-}
-
-.class-strip li::before {
-  position: absolute;
-  inset-inline-start: 0;
-  top: 0.66em;
-  width: 8px;
-  height: 1.5px;
-  background: var(--teal-deep);
-  content: "";
-}
-
-.class-strip li:last-child {
-  font-weight: 620;
-}
-
 /* One class per row: authority, world state, change handling, replay. */
 .class-table-wrap {
   overflow-x: auto;
@@ -14638,9 +14617,24 @@ caption bdi {
 
 .class-table {
   width: 100%;
-  min-width: 940px;
+  min-width: 860px;
   border-collapse: collapse;
+  table-layout: fixed;
   text-align: start;
+}
+
+.class-table col.is-approach {
+  width: 19%;
+}
+
+.class-table col.is-strength,
+.class-table col.is-authority,
+.class-table col.is-change {
+  width: 19%;
+}
+
+.class-table col.is-contrast {
+  width: 24%;
 }
 
 .class-table caption {
@@ -14673,7 +14667,6 @@ caption bdi {
 }
 
 .class-table tbody th {
-  width: 20%;
   color: var(--ink);
   font-weight: 640;
 }

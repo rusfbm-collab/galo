@@ -34,92 +34,92 @@ export const comparisonClasses: readonly ComparisonClass[] = [
   {
     approach: "Foundation and language models",
     landmarks: "GPT-class assistants, open-weight models",
-    strength: "Fluency across an enormous range of tasks, with no schema written in advance.",
-    authority: "The fitted parameters, plus whatever the prompt and the retrieved context supply at the time.",
-    change: "A correction is a new prompt, a fine-tune, or a new model. The unit of change is the whole object.",
+    strength: "Fluency across an enormous range of tasks, with no schema written first.",
+    authority: "Fitted parameters, plus the prompt and the retrieved context.",
+    change: "A new prompt, a fine-tune, or a new model. The unit of change is the whole object.",
     contrast:
-      "GALO may use a learned ranking, but the verdict belongs to declared state and a verifier rather than to the parameters.",
+      "A learned ranking is allowed here. The verdict is not: it belongs to declared state and a verifier.",
   },
   {
     approach: "Retrieval and agent stacks",
     landmarks: "Tool-calling loops, graph-structured agent orchestration, enterprise assistants",
     strength:
-      "Tools, retrieval and workflow wired together and running in production today, at a scale this project is nowhere near.",
-    authority: "The prompt, a memory store, and the surrounding code that decides which tools exist at all.",
-    change: "A trace records the calls that were made. The calls that were available and not taken are usually nowhere.",
+      "Tools, retrieval and workflow in production today, at a scale this project is nowhere near.",
+    authority: "The prompt, a memory store, and the code that decides which tools exist.",
+    change: "A trace of the calls made. The calls not made are usually nowhere.",
     contrast:
-      "The unit here is a versioned decision transaction: the permitted set, the choice made from it, and a receipt somebody else can replay.",
+      "The unit here is a versioned decision transaction that somebody else can replay.",
   },
   {
     approach: "Knowledge graphs",
     landmarks: "Property-graph stores, enterprise knowledge graphs, RDF and OWL reasoners",
-    strength: "Entities and relations are explicit and quotable, and the graph is readable in the ordinary sense of the word.",
-    authority: "The graph itself, and the reasoner drawing conclusions over it.",
-    change: "An edit is an edit to the store. What one edit was permitted to touch is a matter of process around the graph.",
+    strength: "Entities and relations explicit, quotable, and readable in the ordinary sense.",
+    authority: "The graph, and the reasoner over it.",
+    change: "An edit to the store. What one edit may touch is a matter of process.",
     contrast:
-      "The Atlas is not an edge store acting as law. Typed state, frames, routes and receipts are the first-class objects, and the permitted set is closed before the run.",
+      "The Atlas is not an edge store acting as law, and the permitted set closes before the run.",
   },
   {
     approach: "Symbolic knowledge bases",
     landmarks: "Cyc and comparable large hand-built ontologies",
     strength:
-      "Explicit inference over broad general knowledge, with an audit trail, sustained across decades of engineering.",
-    authority: "A shared knowledge base and a logic engine over it.",
-    change: "Breadth is both the achievement and the standing cost: a general base has to be kept current to stay useful.",
+      "Explicit inference over broad knowledge, with an audit trail, sustained for decades.",
+    authority: "A shared knowledge base and a logic engine.",
+    change: "Breadth is the achievement and the standing cost: a general base must be kept current.",
     contrast:
-      "GALO is not a second attempt at a global common-sense base. It offers change-assurance on a local, versioned decision state instead.",
+      "Not a second global common-sense base. Change-assurance on one local, versioned decision state.",
   },
   {
     approach: "Neuro-symbolic hybrids",
     landmarks: "Neural components composed with rule, logic or constraint layers",
-    strength: "Both halves in one system, reaching results that neither half reaches alone.",
-    authority: "Split between the network and the symbolic layer, and where the split falls differs from system to system.",
-    change: "It depends which half was wrong, and the record does not always say which.",
+    strength: "Both halves in one system, reaching what neither half reaches alone.",
+    authority: "Split between network and symbolic layer, and the split falls differently in each.",
+    change: "Depends which half was wrong, and the record does not always say.",
     contrast:
-      "Here the split is the design and it is written down: the learned part may propose and rank, and never owns the terminal verdict.",
+      "Here the split is the design and it is written down: the learned part never owns the verdict.",
   },
   {
     approach: "Predictive world models",
     landmarks: "Learned dynamics models, joint-embedding predictive architectures",
-    strength: "Dynamics learned from observation, good enough to plan against without a schema being written first.",
+    strength: "Dynamics learned from observation, good enough to plan against.",
     authority: "A latent model of how the world moves.",
-    change: "Retraining, on the same terms as any fitted model.",
+    change: "Retraining, like any fitted model.",
     contrast:
-      "The phrase means a different thing on this site. A world model here is a declared decision state, not a latent predictor of the next frame, and nothing in it is offered as a prediction of dynamics.",
+      "The phrase means something else here: a declared decision state, not a latent predictor of the next frame.",
   },
   {
     approach: "Causal stacks",
     landmarks: "Causal graphs, structural models, intervention tooling",
-    strength: "Reasoning about interventions rather than only about correlation, with the assumptions stated openly.",
-    authority: "The causal graph, and the assumptions declared alongside it.",
-    change: "A changed assumption changes the graph, and the consequences are worked through by hand.",
+    strength: "Interventions rather than correlation alone, with the assumptions stated.",
+    authority: "The causal graph and its declared assumptions.",
+    change: "A changed assumption changes the graph, and the consequences are worked out by hand.",
     contrast:
-      "A local frame can carry that shape. What is on offer here is the loop around it: commit, verify, revise locally, replay.",
+      "A local frame can carry that shape; the loop around it is what is on offer here.",
   },
   {
     approach: "Formal methods and provers",
     landmarks: "Model checkers, theorem provers, verified compilers and kernels",
-    strength: "Guarantees stronger than anything else in this table, inside a stated domain.",
-    authority: "A specification, and a proof a small trusted kernel accepts.",
-    change: "A changed specification is a new proof obligation, discharged offline before anything runs.",
+    strength: "Guarantees stronger than anything else here, inside a stated domain.",
+    authority: "A specification, and a proof a small kernel accepts.",
+    change: "A new proof obligation, discharged offline before anything runs.",
     contrast:
-      "This is a runtime for decisions being taken now, and it claims far less than a prover does about what it establishes.",
+      "A runtime for decisions being taken now, claiming far less than a prover does.",
   },
   {
     approach: "Governance and policy layers",
     landmarks: "Model-governance platforms, guardrail and policy layers",
-    strength: "Controls, logging and policy over the models an organisation already runs, without replacing any of them.",
-    authority: "Policy applied to another engine's outputs.",
-    change: "The policy versions independently of the model it wraps.",
+    strength: "Controls and policy over the models an organisation already runs, replacing none.",
+    authority: "Policy over another engine's outputs.",
+    change: "The policy versions independently of the model.",
     contrast:
-      "GALO is the reasoning substrate rather than a wrapper: the state and the permitted set are its own, and the record is written from inside the run.",
+      "The substrate rather than a wrapper: the state and the permitted set are its own.",
   },
   {
     approach: "GALO",
     landmarks: "This project",
-    strength: "A declared decision state with a receipt that replays. Small, and narrow on purpose.",
-    authority: "Declared state and a frozen verifier. Learning may reorder the search; it does not admit the result.",
-    change: "A revision is a named edit to a named entry, carrying the receipt that authorised it.",
+    strength: "A declared decision state with a receipt that replays. Narrow on purpose.",
+    authority: "Declared state and a frozen verifier. Learning may reorder the search, not admit the result.",
+    change: "A named edit to a named entry, carrying the receipt that authorised it.",
     contrast:
       "The only row here that nobody outside the team has run. Partner-controlled industrial validity is not proven, and production autonomy is not authorised.",
     isGalo: true,
@@ -132,18 +132,9 @@ export const comparisonClassesLead =
 export const comparisonClassesBoundary =
   "This is architectural positioning, not a claim of universal superiority. Nothing on this site has been measured against any of these classes, and no row says one of them answers better than another. Partner-controlled industrial validity is not proven, and production autonomy is not authorised.";
 
-/** The same axis, cut to four lines for the home page. */
-export const homeClassStrip: readonly string[] = [
-  "Language models — fluency, without an explicit decision authority.",
-  "Graphs and knowledge bases — explicit structure; the change transaction is not itself the product.",
-  "Hybrids and governance layers — often composed around another engine.",
-  "GALO — versioned decision state, learning that does not own the verdict, local revision, replay.",
-];
-
 export const comparisonClassesTranslationKeys = [
   comparisonClassesLead,
   comparisonClassesBoundary,
-  ...homeClassStrip,
   ...comparisonClasses.flatMap((row) => [
     row.approach,
     row.landmarks,
