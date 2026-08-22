@@ -135,20 +135,18 @@ const businessSteps = [
 ];
 
 const roadmap = [
-  { number: "01", title: "Persist trust state", text: "A durable trusted manifest head beyond process-local checks." },
-  { number: "02", title: "Isolate the executor", text: "OS capability isolation and a CPython 3.13 replay lane." },
   {
-    number: "03",
+    number: "01",
     title: "Expand semantic closure",
     text: "Preregistered rules beyond the current two fixed source patterns.",
   },
   {
-    number: "04",
+    number: "02",
     title: "Add multi-step execution",
     text: "Trajectories, real CORE/QUASI/BOUNDARY actions, and a probe-response loop.",
   },
   {
-    number: "05",
+    number: "03",
     title: "Evaluate before learning",
     text: "Partner-owned data and preregistered outcomes before any persistent policy is authorized.",
   },

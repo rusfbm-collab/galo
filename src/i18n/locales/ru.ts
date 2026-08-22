@@ -23,6 +23,8 @@ import { plainChaptersRu } from "./plainChapters";
 import { sealedEvidenceRu } from "./sealedEvidence";
 import { differentiationRu } from "./differentiation";
 import { comparisonClassesRu } from "./comparisonClasses";
+import { theoryPlainRu } from "./theoryPlain";
+import { gatesRu } from "./gates";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -53,6 +55,8 @@ export const ru: TranslationDictionary = {
   ...sealedEvidenceRu,
   ...differentiationRu,
   ...comparisonClassesRu,
+  ...theoryPlainRu,
+  ...gatesRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

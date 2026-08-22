@@ -110,17 +110,17 @@ const firstPrinciples = [
   {
     icon: Layers3,
     title: "Make the possible states explicit",
-    text: "Instead of hiding every distinction in an opaque vector, begin with a declared finite set of local state labels.",
+    text: "Start by writing down every position the system can be in, by name. Nothing is hidden inside a vector nobody can read.",
   },
   {
     icon: Route,
     title: "Make every transition addressable",
-    text: "A level, action family, source, and active pole identify one exact transition coordinate.",
+    text: "Four things name one exact step and no other: the level, which law and which way round, the position you were in, and the one applied to it.",
   },
   {
     icon: FileCheck2,
     title: "Separate calculation from interpretation",
-    text: "The finite law computes a target. Meaning, authority, evidence, and real-world action require additional contracts.",
+    text: "The law works out where you land, and nothing more. What it means, who may act on it, what counts as evidence, and whether anything happens in the world are separate questions with separate rules.",
   },
 ] as const;
 
@@ -129,25 +129,25 @@ const actionFamilies = [
     family: "PLUS_LEFT",
     placement: "raw left = source · raw right = active",
     example: "PLUS_LEFT(P0,P2)=PLUS(P0,P2)=P2",
-    plain: "Apply cyclic addition with the source in the table row.",
+    plain: "Add and wrap around, with the position you started from taken as the row.",
   },
   {
     family: "PLUS_RIGHT",
     placement: "raw left = active · raw right = source",
     example: "PLUS_RIGHT(P0,P2)=PLUS(P2,P0)=P2",
-    plain: "Swap the semantic roles on the table axes. PLUS reaches the same target because PLUS is commutative.",
+    plain: "The same two inputs, swapped over. PLUS lands in the same place either way, because order does not matter to it.",
   },
   {
     family: "STAR_LEFT",
     placement: "raw left = source · raw right = active",
     example: "STAR_LEFT(P0,P2)=STAR(P0,P2)=P0",
-    plain: "The source controls whether the STAR reset row is entered.",
+    plain: "Here the position you started from is the one that decides whether STAR resets.",
   },
   {
     family: "STAR_RIGHT",
     placement: "raw left = active · raw right = source",
     example: "STAR_RIGHT(P0,P2)=STAR(P2,P0)=P2",
-    plain: "The active pole is placed on the left and therefore controls the STAR reset test.",
+    plain: "Here the applied position goes on the left, so it is the one that decides whether STAR resets.",
   },
 ] as const;
 
@@ -332,10 +332,10 @@ export function TheoryPage() {
           <SectionHeading
             eyebrow={t("THE IDEA IN ONE SENTENCE")}
             title={t(
-              "GALO makes a finite local transition alphabet explicit enough to calculate, inspect, and replay.",
+              "GALO writes out every move available at one spot, in full, so a move can be recalculated, checked, and run again.",
             )}
             text={t(
-              "A local pole is not the agent's complete world state. The target architecture may use typed coordinates as components of an explicit World Atlas, but the formal kernel alone is not a language model, trained memory, proof of intelligence, or truth certificate.",
+              "One position is not the whole picture a system holds. The wider design would use these coordinates inside an explicit World Atlas, but the mathematics on its own is not a language model, not a trained memory, not proof of intelligence, and not a certificate that anything is true.",
             )}
           />
           <div className="theory-first-principles">
@@ -397,9 +397,9 @@ export function TheoryPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("STATES, LEVELS, AND WRAPAROUND")}
-            title={t("A level says how many local distinctions are available.")}
+            title={t("A level says how many situations you can tell apart at one spot.")}
             text={t(
-              "L_n uses n labelled poles. For calculation, P_i corresponds to the remainder i modulo n. This correspondence supplies exact arithmetic without claiming that a pole has one universal meaning.",
+              "Level n gives you n named positions. For the arithmetic, position P_i stands for the remainder i after dividing by n, and that is what keeps the sums exact. It does not make P_i mean the same thing everywhere it appears.",
             )}
           />
           <div className="theory-dial-grid">
@@ -458,7 +458,7 @@ export function TheoryPage() {
             eyebrow={t("PLUS AND STAR WITHOUT JARGON")}
             title={t("PLUS always moves around the dial. STAR first asks one exact reset question.")}
             text={t(
-              "Both laws accept two poles and return one pole at the same level. Their complete behaviour can be reconstructed either from the formula or from the Cayley table.",
+              "Both laws take two positions and hand back one position at the same level. You can work out everything either law does from the formula, or read it straight off the table, and the two always agree.",
             )}
           />
           <div className="theory-law-grid">
@@ -578,7 +578,7 @@ export function TheoryPage() {
             eyebrow={t("WHY P0 HAS TWO ONE-SIDED ROLES")}
             title={t("The side on which P0 appears changes the statement.")}
             text={t(
-              "For STAR at every nondegenerate level n≥2, P0 is a left zero and a right-neutral element. These are two precise one-sided properties, not a two-sided identity.",
+              "At every level with more than one position, STAR treats P0 differently depending on which side it sits. On the left it swallows the answer; on the right it leaves the other input untouched. Two separate one-sided facts, not one rule that works both ways.",
             )}
           />
           <div className="theory-p0-grid">
@@ -838,7 +838,7 @@ export function TheoryPage() {
           <SectionHeading
             light
             eyebrow={t("GUIDED TRANSITION LABORATORY")}
-            title={t("Rebuild one transition from roles, formula, table, and canonical record.")}
+            title={t("Rebuild one step four ways: from the roles, the formula, the table, and the record.")}
             text={t(
               "Start with the L3 reset example, then change one control at a time. The explanation, formula channel, complete table, and record must continue to agree.",
             )}
@@ -851,7 +851,7 @@ export function TheoryPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("WHERE THE NUMBER 560 COMES FROM")}
-            title={t("Count addresses first, laws second, and semantic role placements third.")}
+            title={t("Count the addresses first, then the laws, then which input played which role.")}
             text={t(
               "No statistical estimate is involved. The count is a complete finite enumeration across L1–L7, and each multiplication in the derivation has a different object-level meaning.",
             )}
@@ -1511,26 +1511,6 @@ export function TheoryPage() {
               "A legacy relational-KG research artifact exists in compatibility history, but it is not the current V4 selector, has no proven strong-control advantage, and is not presented as a current trained Atlas.",
             )}
           </p>
-          <div className="theory-process-boundaries">
-            <article>
-              <span dir="ltr">NOT IMPLEMENTED</span>
-              <h3>{t("Persistent trusted manifest head")}</h3>
-              <p>
-                {t(
-                  "Current sequencing, rollback, and revocation evidence is process-local; it does not establish durable trust state across restarts.",
-                )}
-              </p>
-            </article>
-            <article>
-              <span dir="ltr">NOT PROVEN</span>
-              <h3>{t("Python process capability isolation")}</h3>
-              <p>
-                {t(
-                  "The release checks typed admission and receipts, but they do not prove operating-system capability isolation for the Python process.",
-                )}
-              </p>
-            </article>
-          </div>
           <p className="theory-architecture-boundary">
             {t(
               "The mathematical composition chapter describes a formal programming model. It must not be presented as a current multi-step runtime capability until the operational contracts and receipts exist.",
@@ -1566,7 +1546,7 @@ export function TheoryPage() {
           <SectionHeading
             light
             eyebrow={t("HOW TO READ GALO EVIDENCE")}
-            title={t("A PASS is meaningful only together with its exact contour and terminal witness.")}
+            title={t("A PASS on its own says nothing. It says something only with the exact scope it was checked in, and the result it ended on.")}
             text={t(
               "GALO separates mathematical derivation, executable tests, archive replay, operational evaluation, and open boundaries. Evidence from one layer does not automatically authorize a claim in another.",
             )}
@@ -1610,10 +1590,6 @@ export function TheoryPage() {
               <div>
                 <dt>stored FULL</dt>
                 <dd>1,366 / 1,366</dd>
-              </div>
-              <div>
-                <dt>CPython 3.13</dt>
-                <dd>BLOCKED_ENVIRONMENT_RUNTIME_UNAVAILABLE</dd>
               </div>
               <div>
                 <dt>persistent_policy</dt>

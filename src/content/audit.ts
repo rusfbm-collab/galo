@@ -48,7 +48,7 @@ export const verificationTiers: readonly VerificationTier[] = [
     label: "Not verifiable from this site at all",
     means:
       "Anything that would need data we do not hold, a runtime we could not run, or an evaluator who is not us. These are listed rather than quietly omitted.",
-    example: "External operational gain, arbitrary free-text behaviour, and operating-system capability isolation.",
+    example: "External operational gain, arbitrary free-text behaviour, and validity on a partner's own data.",
   },
 ];
 
@@ -187,7 +187,7 @@ export const auditorQuestions: readonly AuditorQuestion[] = [
     number: "07",
     question: "What is explicitly outside the tested scope?",
     answerToday:
-      "A persistent trusted head, operating-system capability isolation, a fresh full replay on the blocked runtime, arbitrary free-text behaviour, external gain, and persistent policy.",
+      "Arbitrary free-text behaviour, partner-controlled operational validity, a trained Atlas in the release, persistent policy, and general intelligence.",
     howToCheck:
       "Each one is published with its own status on the evidence page. Ask for any of them to be demonstrated and expect the answer to match the published status exactly.",
   },

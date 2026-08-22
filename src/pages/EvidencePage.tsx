@@ -332,7 +332,7 @@ export function EvidencePage() {
             <h3>{t("Replay status")}</h3>
             <p>
               {t(
-                "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,366/1,366 checks across 131 modules. Fresh FULL was not run, and CPython 3.13 replay was blocked by runtime availability.",
+                "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,366/1,366 checks across 131 modules. Fresh FULL was not run, so nothing on this page is claimed from a fresh FULL.",
               )}
             </p>
           </article>

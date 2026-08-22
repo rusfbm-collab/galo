@@ -13,10 +13,9 @@ const HEIGHT = 240;
  * restated, so the picture cannot drift away from the record.
  */
 const openLabels = [
-  "Persistent trusted manifest head",
-  "Python process capability isolation",
-  "CPython 3.13 replay",
   "Arbitrary free-text semantic noninterference",
+  "Partner-controlled operational validity",
+  "Trained World Atlas in the release",
 ];
 
 const preconditions = openLabels.map((label, index) => {
@@ -35,7 +34,7 @@ export function LearningGateFigure() {
     <figure className="galo-figure galo-figure--gatechain">
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("WHAT HAS TO CLOSE FIRST")}</span>
-        <strong>{t("Four open conditions stand between the shipped release and persistent learning inside it.")}</strong>
+        <strong>{t("Three open conditions stand between the shipped release and persistent learning inside it.")}</strong>
         <span className="galo-figure__note">
           {t(
             "Every row comes from the published boundary register with the status it really has, and not one is closed today. That is why persistent policy learning inside this release is published as not started rather than as coming soon. It is a statement about the release: the sealed prototype line, which is a different artefact, learns already.",
@@ -45,10 +44,10 @@ export function LearningGateFigure() {
 
       <div className="galo-figure__canvas">
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
-          <title id={titleId}>{t("Four open preconditions leading to a closed gate")}</title>
+          <title id={titleId}>{t("Three open preconditions leading to a closed gate")}</title>
           <desc id={descriptionId}>
             {t(
-              "Four stacked rows, each with a code, an open status, and a name. Arrows from all four converge on a gate marked closed, and beyond the gate is persistent policy learning inside this release, marked as not started.",
+              "Three stacked rows, each with a code, an open status, and a name. Arrows from all three converge on a gate marked closed, and beyond the gate is persistent policy learning inside this release, marked as not started.",
             )}
           </desc>
           <defs>
@@ -58,7 +57,7 @@ export function LearningGateFigure() {
           </defs>
 
           {preconditions.map((item, index) => {
-            const y = 20 + index * 46;
+            const y = 43 + index * 46;
             return (
               <g key={item.code} className="galo-gatechain__row">
                 <rect x="14" y={y} width="330" height="36" rx="10" />

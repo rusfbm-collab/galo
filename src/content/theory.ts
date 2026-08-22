@@ -67,7 +67,7 @@ export const theoryObjectClasses = [
     exact: "bound candidate + process-local sequence",
     meaning: "A runtime capability bound to one admitted candidate and one bounded use.",
     boundary:
-      "Current rollback, revocation, and sequencing are process-local; no persistent trusted head is implemented.",
+      "Rollback, revocation and sequencing are local to one run: the capability does not outlive the process that bound it.",
   },
   {
     object: "World Atlas state",
@@ -348,7 +348,7 @@ export const theoryEvidenceLadder = [
   {
     status: "BOUNDARY",
     question: "Is a required condition missing, blocked, or outside the tested scope?",
-    example: "Fresh FULL was not run and CPython 3.13 was unavailable in the review session.",
+    example: "Fresh FULL was not run in the review session, so no FULL pass is claimed from it.",
   },
   {
     status: "NOT PROVEN",

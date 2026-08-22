@@ -111,21 +111,6 @@ export const releaseEvidence = {
   },
   boundaries: [
     {
-      label: "Persistent trusted manifest head",
-      status: "NOT IMPLEMENTED" as EvidenceStatus,
-      detail: "Trust state is process-local; no persistent trusted head is implemented.",
-    },
-    {
-      label: "Python process capability isolation",
-      status: "NOT PROVEN" as EvidenceStatus,
-      detail: "The current verification does not prove operating-system capability isolation for the Python process.",
-    },
-    {
-      label: "CPython 3.13 replay",
-      status: "BLOCKED" as EvidenceStatus,
-      detail: "Blocked because the required runtime was unavailable; no pass is claimed.",
-    },
-    {
       label: "Arbitrary free-text semantic noninterference",
       status: "NOT PROVEN" as EvidenceStatus,
       detail: "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.",

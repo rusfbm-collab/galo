@@ -23,6 +23,8 @@ import { plainChaptersAr } from "./plainChapters";
 import { sealedEvidenceAr } from "./sealedEvidence";
 import { differentiationAr } from "./differentiation";
 import { comparisonClassesAr } from "./comparisonClasses";
+import { theoryPlainAr } from "./theoryPlain";
+import { gatesAr } from "./gates";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -53,6 +55,8 @@ export const ar: TranslationDictionary = {
   ...sealedEvidenceAr,
   ...differentiationAr,
   ...comparisonClassesAr,
+  ...theoryPlainAr,
+  ...gatesAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

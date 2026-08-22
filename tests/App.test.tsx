@@ -126,7 +126,7 @@ describe("GALO public site", () => {
 
   it("discloses all critical boundaries", () => {
     render(<App />);
-    expect(screen.getByText("Persistent trusted manifest head")).toBeInTheDocument();
+    expect(screen.getByText("Partner-controlled operational validity")).toBeInTheDocument();
     expect(screen.getByText("Arbitrary free-text semantic noninterference")).toBeInTheDocument();
     expect(screen.getAllByText("Persistent policy").length).toBeGreaterThan(0);
     expect(screen.getByText("General AI")).toBeInTheDocument();
@@ -669,7 +669,9 @@ describe("GALO public site", () => {
     expect(releaseCounts).toHaveTextContent("The complete committed descriptor universe in the current release.");
     expect(releaseCounts).not.toHaveTextContent("556 + 6 × 108");
     expect(screen.getByText("TARGET ARCHITECTURE · NOT CURRENT V4")).toBeInTheDocument();
-    expect(screen.getByText(/process-local; it does not establish durable trust state/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/must not be presented as a current multi-step runtime capability/i),
+    ).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/stored release evidence and was not freshly replayed/i)).toBeInTheDocument();
