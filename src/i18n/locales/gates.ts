@@ -7,6 +7,10 @@ import type { TranslationDictionary } from "../translations";
  */
 
 export const gatesRu: TranslationDictionary = {
+  "WHAT A RECEIPT RECORDS":
+    "ЧТО ЗАПИСЫВАЕТ КВИТАНЦИЯ",
+  "What the work count is, and what it is not.":
+    "Что такое счёт работы и чем он не является.",
   "Arbitrary free-text behaviour, partner-controlled operational validity, a trained Atlas in the release, persistent policy, and general intelligence.":
     "Поведение на произвольном свободном тексте, достоверность на стороне партнёра, обученный Atlas в выпуске, устойчивая политика и общий интеллект.",
   "External operational gain, arbitrary free-text behaviour, and validity on a partner's own data.":
@@ -26,6 +30,10 @@ export const gatesRu: TranslationDictionary = {
 };
 
 export const gatesZh: TranslationDictionary = {
+  "WHAT A RECEIPT RECORDS":
+    "回执记下了什么",
+  "What the work count is, and what it is not.":
+    "这个工作量计数是什么，又不是什么。",
   "Arbitrary free-text behaviour, partner-controlled operational validity, a trained Atlas in the release, persistent policy, and general intelligence.":
     "在任意自由文本上的行为、由合作方掌控的有效性、发布版里的已训练 Atlas、持久策略，以及通用智能。",
   "External operational gain, arbitrary free-text behaviour, and validity on a partner's own data.":
@@ -45,6 +53,10 @@ export const gatesZh: TranslationDictionary = {
 };
 
 export const gatesAr: TranslationDictionary = {
+  "WHAT A RECEIPT RECORDS":
+    "ما الذي يسجّله الإيصال",
+  "What the work count is, and what it is not.":
+    "ما هو عدّ العمل، وما ليس هو.",
   "Arbitrary free-text behaviour, partner-controlled operational validity, a trained Atlas in the release, persistent policy, and general intelligence.":
     "السلوك على نصٍّ حرّ أيًّا كان، والصلاحية التي يتحكّم بها الشريك، وAtlas مدرَّب داخل الإصدار، والسياسة المستديمة، والذكاء العامّ.",
   "External operational gain, arbitrary free-text behaviour, and validity on a partner's own data.":

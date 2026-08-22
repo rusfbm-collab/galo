@@ -122,12 +122,6 @@ export const releaseEvidence = {
         "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.",
     },
     {
-      label: "Persistent policy in this release",
-      status: "NOT STARTED" as EvidenceStatus,
-      detail:
-        "The R5B6A1_3 release performs no policy update at all. The sealed V75–V78 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with the benchmark it refused to learn.",
-    },
-    {
       label: "Trained World Atlas in the release",
       status: "NOT PRESENT" as EvidenceStatus,
       detail:

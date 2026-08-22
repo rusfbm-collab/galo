@@ -1,7 +1,6 @@
 import { ArrowLeft, Check, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
 import { ReceiptAnatomyFigure } from "../components/diagrams/ReceiptAnatomyFigure";
 import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
-import { WorkLedgerFigure } from "../components/diagrams/WorkLedgerFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { releaseEvidence } from "../content/evidence";
 import {
@@ -155,8 +154,8 @@ export function EvidencePage() {
         <div className="shell">
           <div className="section-heading">
             <div>
-              <p className="eyebrow">{t("RECEIPT-DERIVED WORK LEDGER")}</p>
-              <h2>{t("Every counted work unit belongs to one checked phase.")}</h2>
+              <p className="eyebrow">{t("WHAT A RECEIPT RECORDS")}</p>
+              <h2>{t("What the work count is, and what it is not.")}</h2>
               <p className="section-heading__text">
                 {t(
                   "The physical total is an internal count of receipt work-unit IDs. It is not elapsed time, FLOPS, energy, cost saving, speedup, causal outcome, or external operational gain.",
@@ -165,10 +164,6 @@ export function EvidencePage() {
             </div>
           </div>
           <ReceiptAnatomyFigure />
-          <WorkLedgerFigure />
-          <p className="scope-callout">
-            {t("Outcome evaluation and policy update each contribute zero work units in this release.")}
-          </p>
         </div>
       </section>
 

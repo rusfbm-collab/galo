@@ -288,7 +288,7 @@ describe("GALO public site", () => {
     expect(screen.getByText("Target world-model loop")).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
-    expect(screen.getByText("4,802")).toBeInTheDocument();
+    expect(screen.getByText("What the work count is, and what it is not.")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/closed deterministic selector\. Nothing about it was learned/i)).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Public claim matrix" })).toBeInTheDocument();

@@ -7854,18 +7854,6 @@ caption bdi {
   overflow: visible;
 }
 
-.galo-figure--star svg,
-.galo-figure--orbit svg,
-.galo-figure--funnel svg,
-.galo-figure--count svg,
-.galo-figure--ledger svg,
-.galo-figure--chain svg,
-.galo-figure--gate svg,
-.galo-figure--typed svg,
-.galo-figure--cost svg {
-  max-width: 780px;
-  margin-inline: auto;
-}
 
 .galo-figure__equation {
   margin: 20px 0 0;
@@ -8430,35 +8418,10 @@ caption bdi {
   justify-self: start;
 }
 
-/* ---- work ledger ---- */
 
-.galo-ledger__label {
-  fill: var(--figure-ink);
-  font-size: 0.82rem;
-  font-weight: 640;
-}
 
-.galo-ledger__track {
-  stroke: var(--chart-neutral);
-  stroke-width: 1;
-  stroke-dasharray: 2 4;
-}
 
-.galo-ledger__bar {
-  fill: var(--chart-1);
-}
 
-.galo-ledger__value {
-  fill: var(--figure-ink);
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
-.galo-ledger__row.is-empty .galo-ledger__label,
-.galo-ledger__row.is-empty .galo-ledger__value {
-  fill: var(--figure-muted);
-}
 
 .galo-figure__total {
   align-items: baseline;
