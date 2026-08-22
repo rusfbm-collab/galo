@@ -25,6 +25,7 @@ import { differentiationZh } from "./differentiation";
 import { comparisonClassesZh } from "./comparisonClasses";
 import { theoryPlainZh } from "./theoryPlain";
 import { gatesZh } from "./gates";
+import { investorCaseZh } from "./investorCase";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -57,6 +58,7 @@ export const zh: TranslationDictionary = {
   ...comparisonClassesZh,
   ...theoryPlainZh,
   ...gatesZh,
+  ...investorCaseZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, Ban, CircleAlert, Compass, Scale } from "lucide-react";
+import { ArrowLeft, ArrowRight, Ban, CircleAlert, Compass, Skull, Target } from "lucide-react";
 import { DecisionTraceFigure } from "../components/diagrams/DecisionTraceFigure";
 import { DiligenceTimelineFigure } from "../components/diagrams/DiligenceTimelineFigure";
 import { LearningGateFigure } from "../components/diagrams/LearningGateFigure";
@@ -7,25 +7,32 @@ import { PageShell } from "../components/layout/PageShell";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
+  fundedPlan,
+  investableRisks,
+  investmentThesis,
+  investorField,
+  statusLine,
+  thesisDeadline,
+  whatWouldMakeUsWrong,
+} from "../content/investorCase";
+import {
   businessProblem,
   diligenceSteps,
   investorNotClaimed,
-  oneMinute,
   oneMinuteFacts,
-  riskRegister,
   stageFacts,
   whereItFits,
 } from "../content/investors";
-import { landscapeStanding, landscapeVerdicts } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
-  { href: "#one-minute", label: "The whole idea in one minute" },
+  { href: "#thesis", label: "The thesis, in four questions" },
+  { href: "#state-of-play", label: "What exists today, and what does not" },
   { href: "#problem", label: "The problem, in money rather than mathematics" },
   { href: "#where-it-fits", label: "Where a layer like this would sit" },
-  { href: "#state-of-play", label: "What exists today, stated plainly" },
-  { href: "#field", label: "Who else is doing this, and where we stand" },
-  { href: "#risks", label: "Six risks and what would settle each" },
+  { href: "#field", label: "The field, in five lines" },
+  { href: "#risks", label: "Six risks, and what kills each one" },
+  { href: "#plan", label: "Twelve months, if funded" },
   { href: "#diligence", label: "A diligence path you can run yourself" },
   { href: "#not-claimed", label: "What is not being claimed" },
 ] as const;
@@ -40,55 +47,37 @@ export function InvestorsPage() {
           <a className="back-link" href={href("/")}>
             <ArrowLeft className="directional-icon" size={16} aria-hidden="true" /> {t("Home")}
           </a>
-          <p className="eyebrow eyebrow--cyan">{t("FOR A READER WHO WILL NEVER OPEN THE MATHEMATICS")}</p>
-          <h1>{t("What this is, what exists, and what would tell you it is not worth your time.")}</h1>
+          <p className="eyebrow eyebrow--cyan">{t("GALO AI · PRE-SEED")}</p>
+          <h1>{t("A verifiable decision layer for private and industrial AI.")}</h1>
           <p>
             {t(
-              "There is no formula on this page and none is needed. Everything below is written so that a non-technical reader can form a real opinion — including a negative one — in about fifteen minutes, and then check that opinion without asking us for anything.",
+              "The first product is decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.",
             )}
           </p>
-          <div className="investor-hero__facts">
-            {oneMinuteFacts.map((fact) => (
-              <div key={fact.label}>
-                <strong dir="ltr">{fact.value}</strong>
-                <span>{t(fact.label)}</span>
-              </div>
+          <ul className="investor-status" aria-label={t("Current status")}>
+            {statusLine.map((chip) => (
+              <li key={chip}>{t(chip)}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <PageContents label="On this page" ariaLabel="Investor chapter navigation" items={contents} />
 
-      <section id="one-minute" className="section section--white math-anchor-section">
+      <section id="thesis" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("THE WHOLE IDEA IN ONE MINUTE")}
-            title={t("Three sentences, and then the four numbers that qualify them.")}
+            eyebrow={t("THE THESIS, IN FOUR QUESTIONS")}
+            title={t("Why this could be a company, and what a cheque is actually for.")}
             text={t(
-              "If you read nothing else on this site, read this section. The three sentences say what the thing is; the four numbers underneath say how small it currently is, including the number that is zero.",
+              "The rest of this page is evidence and limits. This part is the argument, and it is an argument rather than a result — every claim in it is either checkable below or marked as not yet established.",
             )}
           />
-          <div className="one-minute">
-            <article>
-              <span>{t("What it is")}</span>
-              <p>{t(oneMinute.what)}</p>
-            </article>
-            <article>
-              <span>{t("Who it is for")}</span>
-              <p>{t(oneMinute.forWhom)}</p>
-            </article>
-            <article>
-              <span>{t("Why it is worth doing now")}</span>
-              <p>{t(oneMinute.whyNow)}</p>
-            </article>
-          </div>
-          <div className="one-minute__facts">
-            {oneMinuteFacts.map((fact) => (
-              <article key={fact.label}>
-                <strong dir="ltr">{fact.value}</strong>
-                <h3>{t(fact.label)}</h3>
-                <p>{t(fact.note)}</p>
+          <div className="thesis-blocks">
+            {investmentThesis.map((block) => (
+              <article key={block.heading}>
+                <h3>{t(block.heading)}</h3>
+                <p>{t(block.body)}</p>
               </article>
             ))}
           </div>
@@ -99,6 +88,42 @@ export function InvestorsPage() {
             )}{" "}
             <a href={href("/industry")}>{t("the industrial wedge, in full")}</a>
           </p>
+        </div>
+      </section>
+
+      <section id="state-of-play" className="section section--navy math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            light
+            eyebrow={t("WHAT EXISTS TODAY, AND WHAT DOES NOT")}
+            title={t("The short answers, including the ones that are simply no.")}
+            text={t(
+              "This is the section most sites do not publish. Each answer is written the way it would have to be written in a data room, and where the honest answer is not disclosed, it says not disclosed rather than something warmer.",
+            )}
+          />
+          <div className="one-minute__facts">
+            {oneMinuteFacts.map((fact) => (
+              <article key={fact.label}>
+                <strong dir="ltr">{fact.value}</strong>
+                <h3>{t(fact.label)}</h3>
+                <p>{t(fact.note)}</p>
+              </article>
+            ))}
+          </div>
+          <div className="stage-facts">
+            {stageFacts.map((fact) => (
+              <article key={fact.question}>
+                <div className="stage-facts__head">
+                  <h3>{t(fact.question)}</h3>
+                  <span className={`stage-facts__marker is-${fact.marker.toLowerCase().replace(/\s+/g, "-")}`}>
+                    <bdi dir="ltr">{fact.marker}</bdi>
+                  </span>
+                </div>
+                <p>{t(fact.answer)}</p>
+              </article>
+            ))}
+          </div>
+          <LearningGateFigure />
         </div>
       </section>
 
@@ -158,76 +183,38 @@ export function InvestorsPage() {
         </div>
       </section>
 
-      <section id="state-of-play" className="section section--navy math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            light
-            eyebrow={t("WHAT EXISTS TODAY, STATED PLAINLY")}
-            title={t("The short answers, including the ones that are simply no.")}
-            text={t(
-              "This is the section most sites do not publish. Each answer is written the way it would have to be written in a data room, and where the honest answer is not disclosed, it says not disclosed rather than something warmer.",
-            )}
-          />
-          <div className="stage-facts">
-            {stageFacts.map((fact) => (
-              <article key={fact.question}>
-                <div className="stage-facts__head">
-                  <h3>{t(fact.question)}</h3>
-                  <span className={`stage-facts__marker is-${fact.marker.toLowerCase().replace(/\s+/g, "-")}`}>
-                    <bdi dir="ltr">{fact.marker}</bdi>
-                  </span>
-                </div>
-                <p>{t(fact.answer)}</p>
-              </article>
-            ))}
-          </div>
-          <LearningGateFigure />
-        </div>
-      </section>
-
       <section id="field" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("WHO ELSE IS DOING THIS")}
-            title={t("The question is not whether anyone else has thought of this. Several fields have.")}
+            eyebrow={t("THE FIELD, IN FIVE LINES")}
+            title={t("What each class is bought for, and where this differs.")}
             text={t(
-              "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.",
+              "Compared by class rather than by company, and short on purpose. Nothing here says one class answers better than another; that has not been measured. The full family-by-family table is on the comparison page.",
             )}
           />
-          <div className="landscape-verdicts">
-            {landscapeVerdicts.map((row) => (
-              <article key={row.question}>
-                <h3>{t(row.question)}</h3>
-                <p>{t(row.answer)}</p>
-              </article>
-            ))}
+          <div className="field-table-wrap" role="region" aria-label={t("The field in five lines")} tabIndex={0}>
+            <table className="field-table">
+              <thead>
+                <tr>
+                  <th scope="col">{t("Class")}</th>
+                  <th scope="col">{t("Bought for")}</th>
+                  <th scope="col">{t("Where this differs")}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {investorField.map((row) => (
+                  <tr key={row.klass} className={row.isGalo ? "is-galo" : undefined}>
+                    <th scope="row">{t(row.klass)}</th>
+                    <td>{t(row.boughtFor)}</td>
+                    <td>{t(row.difference)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
-
-          <div className="landscape-standing">
-            <div className="landscape-standing__head">
-              <Scale size={20} aria-hidden="true" />
-              <div>
-                <strong>{t("What every one of those has, and this project does not")}</strong>
-                <p>
-                  {t(
-                    "This is the part of the comparison that costs us something. Read it before the risk register rather than after it.",
-                  )}
-                </p>
-              </div>
-            </div>
-            <ul>
-              {landscapeStanding.map((row) => (
-                <li key={row.they}>
-                  <span className="landscape-standing__them">{t(row.they)}</span>
-                  <span className="landscape-standing__us">{t(row.us)}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <p className="section-followup">
-            <a className="text-link" href={href("/vs-llm#landscape")}>
-              {t("See all thirteen families, named, with what each one lets an outsider check")}{" "}
+            <a className="text-link" href={href("/vs-llm#classes")}>
+              {t("Nine classes of alternative approach, compared on authority, change and replay")}{" "}
               <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
             </a>
           </p>
@@ -237,30 +224,70 @@ export function InvestorsPage() {
       <section id="risks" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("SIX RISKS AND WHAT WOULD SETTLE EACH")}
+            eyebrow={t("SIX RISKS, AND WHAT KILLS EACH ONE")}
             title={t("Written by us, in the form we would want them written if we were reading.")}
             text={t(
-              "A risk without a test is an opinion. Each entry below names the thing that could go wrong, why it would matter, and the specific observation that would settle the question in either direction.",
+              "A risk without a test is an opinion. Each entry names the thing that could go wrong, why it would end the company rather than merely delay it, the observation that would settle it either way, and where it stands today.",
             )}
           />
           <div className="risk-register">
-            {riskRegister.map((entry) => (
+            {investableRisks.map((entry) => (
               <article key={entry.code}>
                 <span className="risk-register__code" dir="ltr">
                   {entry.code}
                 </span>
                 <h3>{t(entry.risk)}</h3>
-                <p>{t(entry.whyItMatters)}</p>
+                <p>{t(entry.whyFatal)}</p>
                 <p className="risk-register__settled">
-                  <b>{t("What would settle it")}</b> {t(entry.settledBy)}
+                  <b>{t("What would settle it")}</b> {t(entry.whatSettlesIt)}
+                </p>
+                <p className="risk-register__status">
+                  <bdi dir="ltr">{t(entry.statusToday)}</bdi>
                 </p>
               </article>
             ))}
           </div>
+          <p className="risk-register__deadline">
+            <Skull size={18} aria-hidden="true" /> {t(thesisDeadline)}
+          </p>
         </div>
       </section>
 
-      <section id="diligence" className="section section--paper math-anchor-section">
+      <section id="plan" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("TWELVE MONTHS, IF FUNDED")}
+            title={t("What the money would be spent on, and what would say it was the wrong bet.")}
+            text={t(
+              "No round is open, no round size is stated, and nothing below has been agreed with anyone. This is what the first twelve months would be spent on if the work were funded, written as work rather than as milestones that imply a result.",
+            )}
+          />
+          <ol className="funded-plan">
+            {fundedPlan.map((item) => (
+              <li key={item.number}>
+                <span dir="ltr">{item.number}</span>
+                <div>
+                  <h3>{t(item.title)}</h3>
+                  <p>{t(item.text)}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+          <div className="wrong-list">
+            <div className="wrong-list__head">
+              <Target size={20} aria-hidden="true" />
+              <strong>{t("What would make us wrong")}</strong>
+            </div>
+            <ul>
+              {whatWouldMakeUsWrong.map((line) => (
+                <li key={line}>{t(line)}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="diligence" className="section section--white math-anchor-section">
         <div className="shell">
           <SectionHeading
             eyebrow={t("A DILIGENCE PATH YOU CAN RUN YOURSELF")}

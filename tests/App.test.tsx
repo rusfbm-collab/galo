@@ -915,21 +915,29 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "What this is, what exists, and what would tell you it is not worth your time.",
+        name: "A verifiable decision layer for private and industrial AI.",
       }),
     ).toBeInTheDocument();
 
-    expect(document.querySelectorAll(".one-minute > article")).toHaveLength(3);
+    // the case comes first, then the evidence and the limits
+    expect(document.querySelectorAll(".investor-status > li")).toHaveLength(5);
+    expect(document.querySelectorAll(".thesis-blocks > article")).toHaveLength(4);
     expect(document.querySelectorAll(".one-minute__facts > article")).toHaveLength(4);
     expect(document.querySelectorAll(".investor-problems > article")).toHaveLength(4);
     expect(document.querySelectorAll(".investor-fit > article")).toHaveLength(4);
     expect(document.querySelectorAll(".stage-facts > article")).toHaveLength(8);
-    // The field section: the three specialist answers, and the four lines that cost us.
-    expect(document.querySelectorAll("#field .landscape-verdicts > article")).toHaveLength(3);
-    expect(document.querySelectorAll("#field .landscape-standing li")).toHaveLength(4);
-    expect(document.querySelector("#field")?.textContent).toMatch(/no benchmark has been run/i);
+    // the field is five lines here; the long table lives on the comparison page
+    expect(document.querySelectorAll("#field .field-table tbody tr")).toHaveLength(5);
+    expect(document.querySelectorAll("#field .field-table tbody tr.is-galo")).toHaveLength(1);
 
     expect(document.querySelectorAll(".risk-register > article")).toHaveLength(6);
+    // every risk says where it stands today, and the thesis has a deadline
+    expect(document.querySelectorAll(".risk-register__status")).toHaveLength(6);
+    expect(document.querySelector(".risk-register__deadline")?.textContent).toMatch(
+      /nine to twelve months/i,
+    );
+    expect(document.querySelectorAll(".funded-plan > li")).toHaveLength(5);
+    expect(document.querySelectorAll(".wrong-list li")).toHaveLength(3);
     expect(document.querySelectorAll(".diligence-steps > li")).toHaveLength(6);
     expect(document.querySelectorAll(".not-claimed > li")).toHaveLength(6);
 
@@ -1001,8 +1009,8 @@ describe("GALO public site", () => {
 
   it("carries the investor and audit routes into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/investors", "Что это такое, что уже работает — и по каким признакам сюда можно больше не возвращаться."],
-      ["/zh/investors", "这是什么、已经有什么，以及什么信号说明可以不必再看下去。"],
+      ["/ru/investors", "Проверяемый слой решений для частного и промышленного ИИ."],
+      ["/zh/investors", "面向私有 AI 与工业 AI 的可验证决策层。"],
       ["/ar/audit", "ما الذي يستطيع مراجع خارجي متشكّك إثباته هنا، وما الذي لا يستطيعه أحد."],
       ["/ru/audit", "Что здесь можно проверить самому — и чего не проверит никто."],
     ] as const) {

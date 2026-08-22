@@ -25,6 +25,7 @@ import { differentiationRu } from "./differentiation";
 import { comparisonClassesRu } from "./comparisonClasses";
 import { theoryPlainRu } from "./theoryPlain";
 import { gatesRu } from "./gates";
+import { investorCaseRu } from "./investorCase";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 
@@ -57,6 +58,7 @@ export const ru: TranslationDictionary = {
   ...comparisonClassesRu,
   ...theoryPlainRu,
   ...gatesRu,
+  ...investorCaseRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

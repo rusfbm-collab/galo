@@ -11158,6 +11158,7 @@ caption bdi {
 
 .one-minute__facts h3 {
   margin: 0;
+  color: var(--ink);
   font-size: 0.95rem;
   line-height: 1.35;
 }
@@ -14570,6 +14571,237 @@ caption bdi {
   flex: none;
   margin-top: 3px;
   color: var(--red);
+}
+
+/* Investor page: one status line instead of four headline metrics. */
+.investor-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.investor-status li {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 6px 14px;
+  color: #d3e2ec;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.investor-status li:first-child {
+  border-color: color-mix(in srgb, var(--cyan) 60%, transparent);
+  color: #eaf7fb;
+}
+
+/* The argument, before the evidence and the limits. */
+.thesis-blocks {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  margin-top: 34px;
+}
+
+.thesis-blocks article {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--teal-deep);
+  border-radius: 18px;
+  padding: 26px 26px 24px;
+  background: var(--white);
+}
+
+.thesis-blocks h3 {
+  margin: 0;
+  color: var(--navy-900);
+  font-size: 1.04rem;
+  font-weight: 680;
+}
+
+.thesis-blocks p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.68;
+}
+
+/* Five lines, not an encyclopaedia. */
+.field-table-wrap {
+  overflow-x: auto;
+  margin-top: 34px;
+}
+
+.field-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: collapse;
+  text-align: start;
+}
+
+.field-table th,
+.field-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 16px 18px;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  text-align: start;
+  vertical-align: top;
+}
+
+.field-table thead th {
+  border-bottom: 2px solid var(--navy-900);
+  color: var(--navy-900);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.field-table tbody th {
+  width: 28%;
+  color: var(--ink);
+  font-weight: 660;
+}
+
+.field-table tbody tr.is-galo {
+  background: color-mix(in srgb, var(--teal-deep) 7%, transparent);
+}
+
+.field-table tbody tr.is-galo th {
+  color: var(--teal-deep);
+}
+
+/* Where a risk stands today, and the sentence that ends the thesis. */
+.risk-register__status {
+  margin: 4px 0 0;
+  color: var(--red);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+}
+
+.risk-register__deadline {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  max-width: 860px;
+  margin: 30px 0 0;
+  border: 1px solid color-mix(in srgb, var(--red) 45%, transparent);
+  border-radius: 16px;
+  padding: 20px 22px;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 560;
+  line-height: 1.65;
+}
+
+.risk-register__deadline svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--red);
+}
+
+/* Twelve months, if funded. */
+.funded-plan {
+  display: grid;
+  gap: 14px;
+  margin: 34px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.funded-plan li {
+  display: grid;
+  gap: 8px 22px;
+  align-items: start;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px 24px;
+  background: var(--white);
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.funded-plan li > span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.funded-plan h3 {
+  margin: 0 0 6px;
+  color: var(--navy-900);
+  font-size: 1rem;
+  font-weight: 660;
+}
+
+.funded-plan p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.93rem;
+  line-height: 1.65;
+}
+
+.wrong-list {
+  max-width: 860px;
+  margin-top: 26px;
+  border: 1px solid color-mix(in srgb, var(--red) 40%, transparent);
+  border-radius: 18px;
+  padding: 22px 24px 20px;
+  background: color-mix(in srgb, var(--red) 4%, transparent);
+}
+
+.wrong-list__head {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  color: var(--navy-900);
+}
+
+.wrong-list__head svg {
+  flex: none;
+  color: var(--red);
+}
+
+.wrong-list__head strong {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.wrong-list ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrong-list li {
+  position: relative;
+  padding-inline-start: 18px;
+  color: var(--ink);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.wrong-list li::before {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.66em;
+  width: 8px;
+  height: 1.5px;
+  background: var(--red);
+  content: "";
 }
 
 /* One class per row: authority, world state, change handling, replay. */
