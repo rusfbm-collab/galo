@@ -114,7 +114,7 @@ export const fieldAr: TranslationDictionary = {
   "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.":
     "المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ من ذلك أدبياته، وفي معظم الحالات برمجيات تعمل فعلًا. وينبغي للمستثمر أن يعرف ذلك قبل أن يقرّر ما الذي يُموَّل هنا حقًا، ولهذا فالأجوبة الثلاثة أدناه هي نفسها التي كنّا سنقولها في الاجتماع.",
   "Enumerate the declared universe yourself and count it. The published figures are 1,204 and 880; a different count is a finding you can name and we would have to answer.":
-    "عُدّ الكون المعلَن بنفسك بعد أن تسرده. الرقمان المنشوران هما 1٬204 و880، وأي عدد مختلف ملاحظةٌ يمكنك تسميتها ويلزمنا أن نجيب عنها.",
+    "اسرد الكون المعلَن بنفسك ثمّ عُدّه. الرقمان المنشوران هما 1٬204 و880، وأي عدد مختلف ملاحظةٌ يمكنك تسميتها ويلزمنا أن نجيب عنها.",
   "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.":
     "أربعة أسطر مذكورة هنا لا متروكة للمقيِّم كي يعثر عليها. كل سطر منها سبب لقول «لا»، وكلّها صحيحة.",
   "HOW THIS READS AGAINST THE FIELD": "كيف يُقرأ هذا في سياق الميدان",

@@ -264,7 +264,7 @@ export const aiBasicsAr: TranslationDictionary = {
   "Most people meet AI as a chat window that answers questions. That is one kind, and it is not this. Before anything else, here are the four things a reader usually assumes on arriving, and what is actually true.":
     "الذكاء الاصطناعي عند معظم الناس نافذةُ محادثة تجيب عن الأسئلة. ذاك صنفٌ منه، وليس هو المقصود هنا. وقبل كل شيء، إليك أربعة أمور يفترضها القارئ عادةً حين يفتح هذه الصفحة، وما هو صحيح فعلًا.",
   "No. It does not write text, hold a conversation, or answer questions. Ask it something in words and nothing happens — it has no way to read a sentence.":
-    "لا. فهو لا يكتب نصًّا ولا يحاور ولا يجيب عن أسئلة. اسأله بالكلام فلن يحدث شيء: قراءة الجُمل ليست في وسعه.",
+    "لا. فهو لا يكتب نصًّا ولا يحاور ولا يجيب عن أسئلة. اسأله بالكلام فلن يحدث شيء: قراءة الجُمل ليست في وسعه.",
   "No. The two do different jobs and could sit next to each other: one proposes what to do, the other decides whether that is allowed and writes down why.":
     "لا. فعملهما مختلف ويمكن أن يقفا جنبًا إلى جنب: أحدهما يقترح ما يُفعل، والآخر يقرّر هل يجوز ويدوّن السبب.",
   "No. There is no customer, no pilot, and no deployment. What exists is a working piece of software and the mathematics under it.":
@@ -273,7 +273,7 @@ export const aiBasicsAr: TranslationDictionary = {
   "Publishing the mathematics is not the same as this, and we try never to blur the two.":
     "نشر الرياضيات ليس هو هذا، ونحرص على ألّا نخلط بين الأمرين.",
   "Read the left column first — that is how nearly every AI system you have heard of is put together. The right column is the same three steps done differently. Neither column says anything about which gives better answers.":
-    "اقرأ العمود الأيسر أولًا: هكذا يُركَّب كل نظام ذكاء اصطناعي سمعت به تقريبًا. والعمود الأيمن هو الخطوات الثلاث نفسها بطريقة أخرى. ولا يقول أيٌّ من العمودين أين الأجوبة أفضل.",
+    "اقرأ العمود الأيمن أولًا: هكذا يُركَّب كل نظام ذكاء اصطناعي سمعت به تقريبًا. والعمود الأيسر هو الخطوات الثلاث نفسها بطريقة أخرى. ولا يقول أيٌّ من العمودين أين الأجوبة أفضل.",
   Reproducible: "قابلية إعادة الإنتاج",
   "START HERE IF AI IS NOT YOUR FIELD": "ابدأ من هنا إن لم يكن الذكاء الاصطناعي مجالك",
   "Same question, same answer, every single time. A clock behaves that way; a dice roll does not.":
@@ -291,7 +291,7 @@ export const aiBasicsAr: TranslationDictionary = {
   "The instructions a program is built from are published, so anyone can read them and run them.":
     "التعليمات التي بُني منها البرنامج منشورة: يستطيع أي أحد قراءتها وتشغيلها.",
   "The left column is not a criticism. Building things that way is how the useful AI of the last few years got built, and it does things the right column cannot do at all.":
-    "العمود الأيسر ليس مأخذًا على أحد. فهكذا بُني كل الذكاء الاصطناعي النافع في السنوات الأخيرة، وهو يفعل ما لا يستطيعه العمود الأيمن أصلًا.",
+    "العمود الأيمن ليس مأخذًا على أحد. فهكذا بُني كل الذكاء الاصطناعي النافع في السنوات الأخيرة، وهو يفعل ما لا يستطيعه العمود الأيسر أصلًا.",
   "The moment a trained program actually produces an answer, as opposed to the time it spent being trained.":
     "اللحظة التي يُخرج فيها البرنامج المدرَّب جوابًا، في مقابل الزمن الذي قضاه في التدريب.",
   "The program is shown millions of examples until its answers usually look right.":

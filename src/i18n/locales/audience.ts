@@ -1004,7 +1004,7 @@ export const audienceAr: TranslationDictionary = {
   "A generated table, a source file, a stored receipt, or a fingerprinted archive. If no object can be named, the claim goes into the not-proven column instead.":
     "جدول مولَّد، أو ملف مصدري، أو إيصال مخزَّن، أو أرشيف ببصمة. وإن تعذّر تسمية كائن، ينتقل الادعاء إلى عمود غير المُثبت.",
   "A horizontal line with six numbered stops. The first five are marked with short time boxes of thirty minutes to one day; the sixth is marked one week and is drawn as the point where a decision is required.":
-    "خط أفقي عليه ست محطات مرقّمة. الخمس الأولى موسومة بمُهَل قصيرة من ثلاثين دقيقة إلى يوم؛ والسادسة موسومة بأسبوع ومرسومة كنقطة يلزم عندها قرار.",
+    "خط أفقي عليه ست محطات مرقّمة. الخمس الأولى موسومة بمُهَل قصيرة من ثلاثين دقيقة إلى يوم؛ والسادسة موسومة بأسبوع، ومرسومة بوصفها النقطة التي يلزم عندها قرار.",
   "A log line proves an action occurred. It rarely proves that the action was inside a boundary somebody declared beforehand, which is the thing a reviewer actually needs to establish.":
     "سطر السجل يثبت أن فعلًا وقع. لكنه نادرًا ما يثبت أن الفعل كان داخل حدٍّ أعلنه أحد مسبقًا، وهذا بالضبط ما يحتاج المراجع إلى إثباته.",
   "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.":
@@ -1024,7 +1024,7 @@ export const audienceAr: TranslationDictionary = {
     "درجة لكل نوع من الأدلة، وعملية يمكنك تنفيذها لكل واحدة.",
   "A wrong answer is cheap. An untraceable one is not.": "الجواب الخاطئ رخيص. أما الجواب غير القابل للتتبّع فلا.",
   "All three are cheap to test. The first takes an afternoon, and the other two take one careful reading of the evidence page.":
-    "الثلاثة كلها رخيصة الاختبار. الأولى تأخذ أمسية، والأخريان قراءة متأنية واحدة لصفحة الأدلة.",
+    "الثلاثة كلها رخيصة الاختبار. الأولى تستغرق بعد ظهر يوم واحد، والأخريان قراءة متأنية واحدة لصفحة الأدلة.",
   "An agent runs unattended for weeks, and its behaviour drifts because everything it did quietly changed what it does next.":
     "يعمل وكيل بلا إشراف أسابيع، فينحرف سلوكه لأن كل ما فعله غيّر بصمت ما سيفعله بعد ذلك.",
   "An automated step touches a customer's money or eligibility, and a supervisor has to be able to reconstruct it two years later.":
@@ -1037,7 +1037,7 @@ export const audienceAr: TranslationDictionary = {
     "أي انطباع باستقلالية. فكل فحص منشور هنا يجريه بناؤنا نحن.",
   "Anything that proposes: a model, a rule engine, or a person": "أي شيء يقترح: نموذج، أو محرك قواعد، أو إنسان",
   "Anything that would need data we do not hold, a runtime we could not run, or an evaluator who is not us. These are listed rather than quietly omitted.":
-    "كل ما يحتاج بيانات لا نملكها، أو بيئة تشغيل لم نستطع تشغيلها، أو مقيّمًا ليس نحن. وهذه مذكورة لا مسكوت عنها.",
+    "كل ما يحتاج بيانات لا نملكها، أو بيئة تشغيل لم نستطع تشغيلها، أو مُقيِّمًا من غيرنا. وهذه مذكورة لا مسكوت عنها.",
   "Ask for the release archive and check its fingerprint against the one published here.":
     "اطلب أرشيف الإصدار وقارن بصمته بالمنشورة هنا.",
   "Ask what a second person would have to read to become productive, and how long that took the last time somebody tried.":
@@ -1073,7 +1073,7 @@ export const audienceAr: TranslationDictionary = {
   "Each one is published with its own status on the evidence page. Ask for any of them to be demonstrated and expect the answer to match the published status exactly.":
     "كل واحدة منشورة بحالتها الخاصة في صفحة الأدلة. اطلب إثبات أي منها وتوقّع أن يطابق الجواب الحالة المنشورة تمامًا.",
   "Every row comes from the published boundary register with the status it really has. Not one is closed today. That is the reason persistent policy learning appears as not started, and not as coming soon.":
-    "كل صف مأخوذ من سجل الحدود المنشور بالحالة التي يحملها فعلًا. ولا واحدة منها مغلقة اليوم، ولهذا يُنشر التعلّم المستديم للسياسة بوصفه لم يبدأ لا بوصفه قريبًا.",
+    "كل صف مأخوذ من سجل الحدود المنشور بالحالة التي يحملها فعلًا. ولا واحد منها مغلق اليوم، ولهذا يُنشر التعلّم المستديم للسياسة بوصفه لم يبدأ، لا بوصفه قريبًا.",
   "Each step is something a sceptical reader can do alone, in the stated time, using only what is published. The sixth step is the one that needs a decision from you, because it is the measurement nobody has made yet.":
     "كل خطوة شيء يستطيع قارئ متشكّك فعله وحده، في الوقت المذكور، وبما هو منشور فقط. والخطوة السادسة وحدها تحتاج قرارًا منك، لأنها القياس الذي لم يجرِه أحد بعد.",
   "Eight questions, answered as they stand": "ثمانية أسئلة، وإجاباتها كما هي اليوم",
@@ -1128,7 +1128,7 @@ export const audienceAr: TranslationDictionary = {
     "أربعة صفوف متراصّة، لكل منها رمز وحالة مفتوحة واسم. تلتقي أسهم الأربعة عند بوابة موسومة بمغلقة، وخلفها التعلّم المستديم للسياسة موسومًا بأنه لم يبدأ.",
   "Four tiers of verifiability": "أربع درجات لقابلية التحقق",
   "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.":
-    "أربع درجات لقابلية التحقق، والحقول الخمسة لكل ادعاء منشور، وكيف يُقرأ الحالة دون تضليل، وثمانية أسئلة للمراجع، وإعادة إنتاج من خمس خطوات، وحدود هذا الموقع.",
+    "أربع درجات لقابلية التحقق، والحقول الخمسة لكل ادعاء منشور، وكيف تُقرأ الحالة دون تضليل، وثمانية أسئلة للمراجع، وإعادة إنتاج من خمس خطوات، وحدود هذا الموقع.",
   "Four tiers, and the fourth one is the honest answer more often than anybody likes.":
     "أربع درجات، ورابعتها هي الجواب الأمين أكثر مما يودّ أحد.",
   "Four verification tiers drawn as bars of decreasing reach": "أربع درجات للتحقق مرسومة أشرطةً متناقصة المدى",
@@ -1138,9 +1138,9 @@ export const audienceAr: TranslationDictionary = {
   "GALO AI for Investors — What Exists, What Does Not, and How to Check":
     "GALO AI للمستثمرين — ما هو قائم وما ليس قائمًا وكيف يُتحقَّق منه",
   "GALO is a standalone research architecture for decision-making systems that hold their state in a small, completely written-out table instead of inside a model nobody can open. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.":
-    "‏GALO بنية بحثية مستقلة لأنظمة اتخاذ القرار تحتفظ بحالتها في جدول صغير مكتوب بالكامل بدل أن تكون داخل نموذج لا يستطيع أحد فتحه. والإصدار الحالي يتحقق من طبقة تنفيذ منتهية؛ أما التعلّم المستديم والأداء الخارجي فيبقيان غير مُثبتين.",
+    "‏GALO بنية بحثية مستقلة لأنظمة اتخاذ القرار تحتفظ بحالتها في جدول صغير مكتوب بالكامل، بدل إبقائها داخل نموذج لا يستطيع أحد فتحه. والإصدار الحالي يتحقق من طبقة تنفيذ منتهية؛ أما التعلّم المستديم والأداء الخارجي فيبقيان غير مُثبتين.",
   "GALO is a way for a decision-making system to keep its state in a small written-out table instead of inside a model nobody can open.":
-    "‏GALO طريقة تجعل نظام اتخاذ القرار يحتفظ بحالته في جدول صغير مكتوب بدل أن تكون داخل نموذج لا يستطيع أحد فتحه.",
+    "‏GALO طريقة تجعل نظام اتخاذ القرار يحتفظ بحالته في جدول صغير مكتوب، بدل إبقائها داخل نموذج لا يستطيع أحد فتحه.",
   "HOW FAR EACH KIND OF EVIDENCE REACHES": "إلى أي مدى يصل كل نوع من الأدلة",
   "HOW TO READ A STATUS WITHOUT BEING MISLED": "كيف تقرأ الحالة دون أن تُضلَّل",
   "Has anyone outside the project verified it?": "هل تحقق منه أحد خارج المشروع؟",
@@ -1166,9 +1166,9 @@ export const audienceAr: TranslationDictionary = {
   "Is there a product?": "هل هناك منتج؟",
   "Is there something running?": "هل هناك شيء يعمل؟",
   "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: regulated operations, long-running automation, and anything a reviewer has to sign.":
-    "إنه موجَّه إلى عمل يكون فيه الإخفاق المكلف ليس جوابًا خاطئًا بل جوابًا خاطئًا لا يستطيع أحد تتبّعه: العمليات الخاضعة للتنظيم، والأتمتة الطويلة الأمد، وكل ما يوقّع عليه مراجع.",
+    "إنه موجَّه إلى عملٍ ليس الإخفاقُ المكلف فيه جوابًا خاطئًا، بل جوابًا خاطئًا لا يستطيع أحد تتبّعه: العمليات الخاضعة للتنظيم، والأتمتة الطويلة الأمد، وكل ما يوقّع عليه مراجع.",
   "It is founder-led. Team size, employment history, and legal structure are not disclosed on this site.":
-    "العمل يقوده المؤسس. وحجم الفريق وتاريخ العمل والهيكل القانوني غير مُفصح عنها في هذا الموقع.",
+    "العمل يقوده المؤسس. وحجم الفريق والسِّيَر المهنية والهيكل القانوني غير مُفصح عنها في هذا الموقع.",
   "It means a required condition was missing, blocked, or outside the tested scope. Treated as a pass, it would be the single most misleading line on the page, so it is given its own status and its own colour.":
     "معناه أن شرطًا مطلوبًا كان غائبًا أو محجوبًا أو خارج النطاق المختبَر. ولو عُدّ نجاحًا لكان أكثر سطر مضلِّل في الصفحة، ولذلك أُعطي حالته الخاصة ولونه الخاص.",
   "It says nobody established the thing here. It does not say the thing is false. We publish it so the gap is visible instead of being guessed at from our silence.":
@@ -1182,7 +1182,7 @@ export const audienceAr: TranslationDictionary = {
     "تصبح العضوية في المجموعة المسموح بها خاصيةً للطبقة لا أملًا في النموذج، وأي محاولة خارجها تُرفض وتُسجَّل بدل أن تُنفَّذ.",
   "Model governance and assurance": "حوكمة النماذج وضمانها",
   "Most of this site is written for specialists, and that turned out to be a mistake for everybody else. These three routes fix it: pick the one that matches why you are here, follow its three stops in order, and stop when your question is answered.":
-    "معظم هذا الموقع مكتوب للمختصين، وقد تبيّن أن ذلك خطأ بحق الجميع سواهم. وهذه المسارات الثلاثة تصحّحه: اختر ما يوافق سبب مجيئك، واتبع محطاته الثلاث بالترتيب، وتوقف حين يُجاب سؤالك.",
+    "معظم هذا الموقع مكتوب للمختصين، وقد تبيّن أنّ ذلك أضرّ بكلّ من عداهم. وهذه المسارات الثلاثة تصحّحه: اختر ما يوافق سبب مجيئك، واتبع محطاته الثلاث بالترتيب، وتوقف حين يُجاب سؤالك.",
   "NOT PROVEN is a statement about evidence, not about falsity.": "‏NOT PROVEN بيان عن الأدلة لا عن البطلان.",
   "No benchmark, accuracy, speed, or cost comparison against any other system.":
     "لا مقارنة بمعيار أو دقة أو سرعة أو كلفة مع أي نظام آخر.",
@@ -1196,7 +1196,7 @@ export const audienceAr: TranslationDictionary = {
   "No trained model of the world; the current engine performs zero learning writes.":
     "لا نموذج عالم مدرَّب؛ والمحرك الحالي يُجري صفرًا من كتابات التعلّم.",
   "No. Every published number is recomputed by this site's own build. Independent re-checking is the milestone two of the four work tracks have not reached.":
-    "لا. كل رقم منشور يعيد بناء هذا الموقع حسابه بنفسه. وإعادة الفحص المستقلة هي المرحلة التي لم يبلغها مساران من مسارات العمل الأربعة.",
+    "لا. فكلّ رقم منشور تعيد حسابَه عمليةُ بناء هذا الموقع نفسها. وإعادة الفحص المستقلة هي المرحلة التي لم يبلغها مساران من مسارات العمل الأربعة.",
   "No. Semantic reads, rank effects, and learning writes are all held at zero, and no trained world model is present.":
     "لا. القراءات الدلالية وتأثيرات الترتيب وكتابات التعلّم كلها مثبَّتة عند الصفر، ولا يوجد نموذج عالم مدرَّب.",
   "No. There is a finished formal kernel, a running engine slice built on it, and a written architecture for the parts that do not exist yet.":
@@ -1210,7 +1210,7 @@ export const audienceAr: TranslationDictionary = {
   "Not verifiable from this site at all": "لا يمكن التحقق منه من هذا الموقع إطلاقًا",
   "Nothing here has been checked by anyone outside the project.": "لا شيء هنا فحصه أحد من خارج المشروع.",
   "Nothing here replaces the layer above it or the layer below it. The claim is narrower and more boring than that: the middle band is the part a reviewer has to be able to argue with, so it is the part that is written out in advance.":
-    "لا شيء هنا يحل محل الطبقة فوقه ولا التي تحته. والادعاء أضيق وأقل إثارة: الشريط الأوسط هو الجزء الذي يجب أن يستطيع المراجع مجادلته، ولذلك كُتب مسبقًا.",
+    "لا شيء هنا يحلّ محلّ ما فوقه من طبقات ولا ما تحته. والادعاء أضيق وأقل إثارة: الشريط الأوسط هو الجزء الذي يجب أن يستطيع المراجع مجادلته، ولذلك كُتب مسبقًا.",
   "Nothing here requires mathematics unless you want it.": "لا شيء هنا يتطلب رياضيات إلا إن أردتها أنت.",
   "Nothing is accumulated between runs. Two runs on the same input behave identically, a year apart.":
     "لا شيء يتراكم بين التشغيلات. وتشغيلان على المدخل نفسه يتصرفان بالطريقة نفسها بعد عام.",
@@ -1272,7 +1272,7 @@ export const audienceAr: TranslationDictionary = {
   "Start with the table you already know": "ابدأ من الجدول الذي تعرفه سلفًا",
   "Statuses, boundaries, and the release fingerprint": "الحالات والحدود وبصمة الإصدار",
   "Structural counts are recomputed by the page. Replay results are quoted from a stored receipt and labelled as stored.":
-    "الأعداد البنيوية تعيد الصفحة حسابها. أما نتائج إعادة التشغيل فتُقتبس من إيصال مخزَّن وتوسم بأنها مخزَّنة.",
+    "تعيد الصفحةُ حسابَ الأعداد البنيوية. أمّا نتائج إعادة التشغيل فتُقتبس من إيصال مخزَّن وتُوسَم بأنّها مخزَّنة.",
   "THE COST APPEARS LATER, NOT AT THE TIME": "الكلفة تظهر لاحقًا لا في حينه",
   "THE PROBLEM, IN MONEY RATHER THAN MATHEMATICS": "المشكلة بلغة المال لا الرياضيات",
   "THE SHAPE OF EVERY PUBLISHED CLAIM": "شكل كل ادعاء منشور",
@@ -1285,7 +1285,7 @@ export const audienceAr: TranslationDictionary = {
   "The action happened and was logged. What was permitted at that moment, and why this option rather than another, has to be rebuilt from memory, from code that has since changed, and from people who have moved on.":
     "الفعل وقع وسُجِّل. أما ما كان مسموحًا في تلك اللحظة، ولماذا هذا الخيار دون غيره، فيجب إعادة بنائه من الذاكرة، ومن كود تغيّر منذ ذلك الحين، ومن أشخاص رحلوا.",
   "The bar length is not importance. It is how far the claim travels without trust: how many people, with what access, could establish it for themselves. A claim in the bottom tier is not weak — it is simply not something this site can settle.":
-    "طول الشريط ليس أهمية. بل إلى أي مدى يسافر الادعاء دون ثقة: كم شخصًا، وبأي وصول، يستطيعون إثباته بأنفسهم. والادعاء في الدرجة الدنيا ليس ضعيفًا — إنما ليس مما يستطيع هذا الموقع حسمه.",
+    "طول الشريط ليس أهمية. بل إلى أيّ مدى يمضي الادعاء من دون أن يتطلّب ثقة: كم شخصًا، وبأي وصول، يستطيعون إثباته بأنفسهم. والادعاء في الدرجة الدنيا ليس ضعيفًا — إنما ليس مما يستطيع هذا الموقع حسمه.",
   "The state carried between runs would be three named registers that can be printed and compared, so drift becomes something you measure rather than something you notice late.":
     "الحالة المحمولة بين التشغيلات ستكون ثلاثة سجلات مسمّاة يمكن طباعتها ومقارنتها، فيصير الانحراف شيئًا تقيسه لا شيئًا تلاحظه متأخرًا.",
   "The cheapest way to find out whether a claim discipline is real is to attack the numbers, not the story. The path below is ordered by cost, and the first disproof available is also the fastest one.":
@@ -1334,7 +1334,7 @@ export const audienceAr: TranslationDictionary = {
   "The tier is not a measure of importance. It answers one question: how many people, with what access, could establish this without trusting the project? A claim in the last tier is not weaker — it is outside what this site can settle.":
     "الدرجة ليست مقياس أهمية. إنها تجيب عن سؤال واحد: كم شخصًا، وبأي وصول، يستطيعون إثبات ذلك دون الوثوق بالمشروع؟ والادعاء في الدرجة الأخيرة ليس أضعف — بل هو خارج ما يستطيع هذا الموقع حسمه.",
   "The two strings are identical, or the artefact is not the one this site describes.":
-    "السلسلتان متطابقتان، وإلا فالأثر ليس ما يصفه هذا الموقع.",
+    "السلسلتان متطابقتان، وإلا فالمصنوع ليس ما يصفه هذا الموقع.",
   "The value may be real and still unpriceable.": "قد تكون القيمة حقيقية ومع ذلك يتعذّر تسعيرها.",
   "The whole idea in one minute": "الفكرة كلها في دقيقة",
   "The work to date is founder-led, and the mathematics, the engine, and the claim discipline all sit with the same person.":
@@ -1343,7 +1343,7 @@ export const audienceAr: TranslationDictionary = {
   "There is no formula on this page and none is needed. Everything below is written so that a non-technical reader can form a real opinion — including a negative one — in about fifteen minutes, and then check that opinion without asking us for anything.":
     "لا صيغة في هذه الصفحة ولا حاجة إليها. وكل ما أدناه مكتوب ليتمكن قارئ غير تقني من تكوين رأي حقيقي — بما في ذلك رأي سلبي — في نحو خمس عشرة دقيقة، ثم التحقق منه دون أن يطلب منا شيئًا.",
   "These are published as counters rather than as prose. Confirm they are zero in the release evidence, and treat any future non-zero value as a change of claim.":
-    "تُنشر هذه كعدّادات لا كنثر. تأكّد أنها أصفار في أدلة الإصدار، وعُدّ أي قيمة غير صفرية مستقبلًا تغييرًا في الادعاء.",
+    "تُنشر هذه عدّادات لا عبارات. تأكّد أنها أصفار في أدلة الإصدار، وعُدّ أي قيمة غير صفرية مستقبلًا تغييرًا في الادعاء.",
   "These four are illustrations of where the shape fits, written by us. No organisation named or unnamed has evaluated, piloted, or agreed to anything, and nothing on this site should be read as implying otherwise.":
     "هذه الأربعة أمثلة كتبناها عن الموضع الذي يناسبه هذا الشكل. ولم تقيّم أي مؤسسة، مسمّاة أو غير مسمّاة، شيئًا ولم تجرّبه ولم توافق عليه، ولا ينبغي قراءة أي شيء في الموقع على أنه يوحي بخلاف ذلك.",
   "These rules exist because the most likely way this site could mislead somebody is not a false statement. It is a true statement quoted without the scope that makes it true.":
@@ -1374,7 +1374,7 @@ export const audienceAr: TranslationDictionary = {
   "Two identical decisions. The difference shows up when somebody asks why.":
     "قراران متطابقان. والفرق يظهر حين يسأل أحدهم: لماذا؟",
   "Use the four verification tiers above. Anything in the stored tier is evidence about one earlier run and must not be read as a fresh result.":
-    "استعمل درجات التحقق الأربع أعلاه. وكل ما في درجة المخزَّن دليل عن تشغيل سابق واحد ولا يجوز قراءته كنتيجة جديدة.",
+    "استعمل درجات التحقق الأربع أعلاه. وكل ما في درجة المخزَّن دليل عن تشغيل سابق واحد، ولا يجوز قراءته بوصفه نتيجة جديدة.",
   "WHAT CANNOT BE ESTABLISHED FROM HERE": "ما لا يمكن إثباته من هنا",
   "WHAT EXISTS TODAY, STATED PLAINLY": "ما هو قائم اليوم، بصراحة",
   "WHAT HAS TO CLOSE FIRST": "ما الذي يجب أن يُغلق أولًا",
@@ -1428,7 +1428,7 @@ export const audienceAr: TranslationDictionary = {
   "You cannot establish any external operational result, because no such measurement has been made by anybody.":
     "لا يمكنك إثبات أي نتيجة تشغيلية خارجية، لأن أحدًا لم يُجرِ قياسًا كهذا.",
   "You cannot establish from this site that the engine behaves well on any input outside its two accepted patterns, because it does not accept any.":
-    "لا يمكنك أن تثبت من هذا الموقع أن المحرك يتصرف جيدًا على أي مدخل خارج نمطيه المقبولين، لأنه لا يقبل أيًّا منها أصلًا.",
+    "لا يمكنك أن تثبت من هذا الموقع أن المحرك يتصرف جيدًا على أي مدخل خارج نمطيه المقبولين، لأنه لا يقبل شيئًا من ذلك أصلًا.",
   "You cannot establish independence of the checking, because every check published here is run by the project's own build.":
     "لا يمكنك إثبات استقلالية الفحص، لأن كل فحص منشور هنا يجريه بناء المشروع نفسه.",
   "You cannot establish operating-system level isolation of the executing process; that is published as not proven.":
@@ -1444,7 +1444,7 @@ export const audienceAr: TranslationDictionary = {
   "You will know what the object is and what it is not, without meeting a single formula.":
     "ستعرف ما هذا الكائن وما ليس هو، دون أن تصادف صيغة واحدة.",
   "You will know whether the artefact you were sent is the artefact the site describes.":
-    "ستعرف إن كان الأثر الذي أُرسل إليك هو الأثر الذي يصفه الموقع.",
+    "ستعرف إن كان المصنوع الذي أُرسل إليك هو المصنوع الذي يصفه الموقع.",
   "You will see the exact shape of what is being claimed, and you will notice that the not-proven column is long and published.":
     "سترى الشكل الدقيق لما يُدَّعى، وستلاحظ أن عمود غير المُثبت طويل ومنشور.",
   "Your table matches the one this site draws, cell for cell, with no exception anywhere in the grid.":

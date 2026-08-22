@@ -269,7 +269,7 @@ export const mathExtraAr: TranslationDictionary = {
   "A cell is a graph point; a fixed-active slice is a function.":
     "الخلية نقطة على رسم دالة؛ والشريحة ذات القطب النشط الثابت دالة.",
   "A cell is not a concept, word meaning, neuron, learned parameter, skill, truth value, or intelligence unit. Semantics and authority require separate evidence layers.":
-    "الخلية ليست مفهومًا، أو معنى كلمة، أو عصبونًا، أو مُعلَمة متعلَّمة، أو مهارة، أو قيمة صدق، أو وحدة ذكاء. تتطلب الدلالات والصلاحية طبقات أدلة مستقلة.",
+    "الخلية ليست مفهومًا، أو معنى كلمة، أو عصبونًا، أو مُعلَمة متعلَّمة، أو مهارة، أو قيمة صدق، أو وحدة ذكاء. تتطلب الدلالات والصلاحية طبقات أدلة مستقلة.",
   "A k-operand expression uses k−1 binary cells. For STAR, changing the tree can change the result, so a list of operands is not a complete program.":
     "يستخدم التعبير ذو k مُعاملات k−1 خلية ثنائية. في STAR، قد يؤدي تغيير الشجرة إلى تغيير النتيجة، لذلك لا تكفي قائمة المُعاملات لتكون برنامجًا كاملًا.",
   "A morphism is the mathematical preservation condition; LevelAlignmentReceipt is the auditable object that records whether a particular cross-level use passed it. Without that receipt, the correct result is BOUNDARY—not an implicit projection.":
@@ -354,9 +354,9 @@ export const mathExtraAr: TranslationDictionary = {
   "Program size": "حجم البرنامج",
   "Rank for fixed active pole a": "الرتبة عند تثبيت القطب النشط a",
   "Rank means the number of image states of a finite map; it is not a learned matrix rank.":
-    "تعني الرتبة عدد حالات الصورة لتطبيق منتهٍ؛ وليست رتبة مصفوفة متعلَّمة.",
+    "تعني الرتبة عدد حالات الصورة لتطبيق منتهٍ؛ وليست رتبة مصفوفة متعلَّمة.",
   "STAR_LEFT tests the source: source P0 activates the reset row.":
-    "يفحص STAR_LEFT المصدر: عندما تكون حالة المصدر P0 يُفعَّل صف إعادة الضبط.",
+    "يفحص STAR_LEFT المصدر: عندما تكون حالة المصدر P0 يُفعَّل صف إعادة الضبط.",
   "STAR_RIGHT places the active pole on the left: active P0 activates the reset row.":
     "يضع STAR_RIGHT القطب النشط على اليسار: القطب النشط P0 يفعّل صف إعادة الضبط.",
   "Source state": "حالة المصدر",
@@ -368,7 +368,7 @@ export const mathExtraAr: TranslationDictionary = {
   "The Catalan count is 1, 2, 5, and 14 for arities 2, 3, 4, and 5 respectively.":
     "أعداد كاتالان هي 1 و2 و5 و14 لأعداد المُعاملات 2 و3 و4 و5 على التوالي.",
   "The active pole is placed on the left. An active P0 activates the reset row; this can change the target relative to STAR_LEFT.":
-    "يوضع القطب النشط على اليسار. وعندما يكون القطب النشط P0 يُفعَّل صف إعادة الضبط؛ وقد يغيّر ذلك الهدف مقارنةً بـ STAR_LEFT.",
+    "يوضع القطب النشط على اليسار. وعندما يكون القطب النشط P0 يُفعَّل صف إعادة الضبط؛ وقد يغيّر ذلك الهدف مقارنةً بـ STAR_LEFT.",
   "The active pole selects the PLUS row. The target matches PLUS_LEFT by commutativity, but the typed coordinate does not.":
     "يختار القطب النشط صف PLUS. ويطابق الهدف PLUS_LEFT بسبب التبادلية، لكن الإحداثي محدد النوع لا يطابقه.",
   "The frozen PLUS and STAR laws do not change. The action family preserves the semantic roles source and active while mapping them to the raw left and right operands.":
@@ -383,7 +383,7 @@ export const mathExtraAr: TranslationDictionary = {
   "The source selects the PLUS row and the active pole selects the column.":
     "يختار المصدر صف PLUS، ويختار القطب النشط العمود.",
   "The source selects the STAR row. A source at P0 activates the left-reset row, whatever the active pole is.":
-    "يختار المصدر صف STAR. وعندما يكون المصدر عند P0 يُفعَّل صف إعادة الضبط من اليسار مهما كان القطب النشط.",
+    "يختار المصدر صف STAR. وعندما يكون المصدر عند P0 يُفعَّل صف إعادة الضبط من اليسار مهما كان القطب النشط.",
   "The two finite carriers being related.": "المجموعتان الحاملتان المنتهيتان اللتان يجري الربط بينهما.",
   "Transformations and symmetry": "التحويلات والتناظر",
   "Two laws": "قانونان",

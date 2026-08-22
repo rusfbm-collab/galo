@@ -646,7 +646,7 @@ export const academicArExtra: TranslationDictionary = {
   "GALO first declares how many positions exist. Three positions give a three-by-three table; seven give a seven-by-seven one. Nothing outside the declared list can ever appear.":
     "يعلن GALO أولًا عدد المواضع الموجودة. فثلاثة مواضع تعطي جدولًا ثلاثة في ثلاثة، وسبعة تعطي سبعة في سبعة. ولا يمكن أن يظهر شيء خارج القائمة المعلَنة.",
   "GALO is built so the trace is the product: what state the system was in, which rule fired, what it was allowed to do, and what it recorded. That is the artefact a reviewer, an auditor, or a counterparty can actually examine.":
-    "بُني GALO بحيث يكون الأثر نفسه هو المنتج: في أي حالة كان النظام، وأي قاعدة عملت، وبماذا كان مسموحًا له، وماذا سجّل. وهذا هو الأثر الذي يستطيع مراجع أو مدقق أو طرف مقابل أن يفحصه فعلًا.",
+    "بُني GALO بحيث يكون الأثر نفسه هو المنتج: في أي حالة كان النظام، وأي قاعدة عملت، وبماذا كان مسموحًا له، وماذا سجّل. وهذا هو المصنوع الذي يستطيع مراجع أو مدقق أو طرف مقابل أن يفحصه فعلًا.",
   "IN PLAIN LANGUAGE": "بلغة بسيطة",
   "If you read one section on this site, read this one.": "إن قرأت قسمًا واحدًا في هذا الموقع، فليكن هذا القسم.",
   "In long-running and regulated work, the expensive failure is not a wrong answer — it is a wrong answer nobody can trace.":

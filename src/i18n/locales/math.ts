@@ -278,7 +278,7 @@ export const mathAr: TranslationDictionary = {
   "Find P_j in the header. This fixes the column.": "ابحث عن P_j في رأس الجدول؛ بذلك يتحدد العمود.",
   "Read the intersection": "اقرأ نقطة التقاطع",
   "The cell is the output P_k. No probability or learned parameter is involved.":
-    "الخلية هي المخرج P_k. لا تدخل في ذلك أي احتمالات أو مُعلَمات متعلَّمة.",
+    "الخلية هي المخرج P_k. لا تدخل في ذلك أي احتمالات أو مُعلَمات متعلَّمة.",
   "Worked example at L3": "مثال محلول عند L3",
   "Move from row P1 to column P2. Since (1 + 2) mod 3 = 0, the result is P0.":
     "انتقل من الصف P1 إلى العمود P2. بما أن (1 + 2) mod 3 = 0، فالنتيجة هي P0.",
@@ -336,7 +336,7 @@ export const mathAr: TranslationDictionary = {
   "Not established": "غير مثبت",
   "Tables alone do not provide world semantics.": "لا توفر الجداول وحدها دلالات العالم.",
   "Persistent policy learning:": "التعلّم المستديم للسياسة:",
-  "Trained Atlas:": "Atlas المدرَّب:",
+  "Trained Atlas:": "Atlas المدرَّب:",
   "External operational gain:": "المكسب التشغيلي الخارجي:",
   "General AI:": "General AI:",
   "This browser explorer is not a runtime selfcheck or release replay.":

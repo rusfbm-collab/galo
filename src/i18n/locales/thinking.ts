@@ -603,7 +603,7 @@ export const thinkingAr: TranslationDictionary = {
   "A precondition of the bounded action is unmet, and the refusal itself is recorded.":
     "أحد شروط الفعل المقيَّد غير مستوفٍ، ويُسجَّل الرفض نفسه.",
   "A preference would have to be learned, stored, and trusted. A hash over recorded values needs none of those: it can be recomputed from the receipt alone, by someone who has no access to the machine and no reason to trust its operator.":
-    "التفضيل يجب أن يُتعلَّم ويُخزَّن ويُوثق به. أما التجزئة المحسوبة على قيم مسجَّلة فلا تحتاج شيئًا من ذلك: يمكن إعادة حسابها من الإيصال وحده، بواسطة شخص لا يملك وصولًا إلى الآلة ولا سببًا للثقة بمشغّلها.",
+    "التفضيل يجب أن يُتعلَّم ويُخزَّن ويُوثق به. أما التجزئة المحسوبة على قيم مسجَّلة فلا تحتاج شيئًا من ذلك: يمكن إعادة حسابها من الإيصال وحده، ويستطيع ذلك من لا يملك وصولًا إلى الآلة ولا سببًا للثقة بمشغّلها.",
   "A procedure that can stop is more useful than one that always answers.":
     "الإجراء القادر على التوقف أنفع من إجراء يجيب دائمًا.",
   "A refusal is a recorded outcome with a named gate. The design prefers a stop that can be pointed at over an answer that cannot be traced.":
@@ -614,7 +614,7 @@ export const thinkingAr: TranslationDictionary = {
   "A search wanders an open space and reports the best thing it turned up. Here the space is closed before the run starts, every cut is a rule anyone can read, and the last step is an ordering that can be recomputed. So the outcome can be argued with, not merely found plausible.":
     "البحث يستكشف فضاءً مفتوحًا ويبلّغ عن أفضل ما وجده. وهنا العكس تمامًا: الفضاء مغلق قبل بدء التشغيل، وكل تضييق قاعدة يستطيع أي أحد قراءتها، والخطوة الأخيرة ترتيب يمكن إعادة حسابه. ولهذا تكون النتيجة قابلة للمجادلة لا مجرد معقولة.",
   "A single action of arity 2 executes at route depth 1, and a receipt records the checks, the work units, and the outcome.":
-    "يُنفَّذ فعل واحد أُحادي التشغيل برتبة مدخلين عند عمق مسار 1، ويسجّل الإيصال الفحوص ووحدات العمل والنتيجة.",
+    "يُنفَّذ فعل واحد رتبتُه مدخلان عند عمق مسار 1، ويسجّل الإيصال الفحوص ووحدات العمل والنتيجة.",
   "A step would require reading meaning, changing a ranking, or writing something learned.":
     "خطوة تتطلب قراءة معنى، أو تغيير ترتيب، أو كتابة شيء متعلَّم.",
   "A thought is nine stages, and each one hands a named object to the next.":
@@ -716,7 +716,7 @@ export const thinkingAr: TranslationDictionary = {
     "يصل مدخل واحد إلى المحرك ويُعامَل كمرشح للمطابقة لا كنص يُفسَّر.",
   "One label from the declared carrier, such as P2 at L3.": "تسمية واحدة من الحامل المعلن، مثل P2 عند L3.",
   "One run, one accepted input, one bounded action. Every value in the right-hand column is either fixed by the release or recomputed on this site from the laws, so a reader who disagrees with a number has a specific place to point at.":
-    "تشغيل واحد، مدخل مقبول واحد، فعل مقيَّد واحد. وكل قيمة في العمود الأيمن إما يثبّتها الإصدار أو يعيد هذا الموقع حسابها من القوانين، فمن يخالف رقمًا يعرف أين يشير بالضبط.",
+    "تشغيل واحد، مدخل مقبول واحد، فعل مقيَّد واحد. وكل قيمة في عمود «القيمة الدقيقة» إمّا يثبّتها الإصدار أو يعيد هذا الموقع حسابها من القوانين، فمن يخالف رقمًا يعرف أين يشير بالضبط.",
   "One thought with concrete values": "فكرة واحدة بقيم محددة",
   "One thought, stage by stage": "فكرة واحدة، مرحلةً مرحلة",
   "Only four action kinds are executable; every other descriptor stays inert by construction.":
@@ -754,7 +754,7 @@ export const thinkingAr: TranslationDictionary = {
   "The descriptor stays inert. It remains a member of the committed universe, but it cannot run.":
     "يبقى الواصف خاملًا. فهو ما يزال عضوًا في الكون الملتزَم به، لكنه لا يستطيع العمل.",
   "The engine does not read meaning out of the input. It holds the input as an opaque value that will either match a declared pattern or fail to match it. Because nothing is inferred at this stage, two identical inputs are guaranteed to enter the following stages in exactly the same condition.":
-    "لا يستخرج المحرك معنى من المدخل. بل يحتفظ به كقيمة معتمة إما أن تطابق نمطًا معلنًا أو لا تطابقه. ولأن شيئًا لا يُستنتج في هذه المرحلة، فإن مدخلين متطابقين يدخلان المراحل التالية بالحالة نفسها تمامًا.",
+    "لا يستخرج المحرك معنى من المدخل. بل يحتفظ به بوصفه قيمة معتمة إما أن تطابق نمطًا معلنًا أو لا تطابقه. ولأن شيئًا لا يُستنتج في هذه المرحلة، فإن مدخلين متطابقين يدخلان المراحل التالية بالحالة نفسها تمامًا.",
   "The first of the two accepted patterns matched, which fixes both the operand role and the enumeration parity.":
     "طابق أول النمطين المقبولين، وهو ما يثبّت دور المعامل وتكافؤ التعداد معًا.",
   "The five things a page about thinking is most likely to be taken to mean.":
@@ -820,7 +820,7 @@ export const thinkingAr: TranslationDictionary = {
   "This is the smallest complete picture of GALO acting. It is worth reading twice, because everything else on the site — the counts, the symmetries, the receipts — exists to make this one turn checkable.":
     "هذه أصغر صورة كاملة لـ GALO وهو يعمل. تستحق قراءتين، لأن كل ما عداها في الموقع — الأعداد والتناظرات والإيصالات — موجود ليجعل هذه الدورة الواحدة قابلة للفحص.",
   "This is the stage most often mistaken for judgement. It is not: the order is a hash of values that are all recorded, so anyone holding the record can recompute the same order and reach the same candidate. The bound handle is one-shot and process-local — using it twice is refused rather than tolerated.":
-    "هذه المرحلة أكثر ما يُخلط بينه وبين الحكم. وليست كذلك: فالترتيب تجزئة لقيم كلها مسجَّلة، فمن يملك السجل يعيد حساب الترتيب نفسه ويصل إلى المرشح نفسه. والمقبض المربوط أحادي الاستخدام ومحلي للعملية — واستعماله مرتين يُرفض لا يُحتمَل.",
+    "هذه المرحلة أكثر ما يُخلط بينه وبين الحكم. وليست كذلك: فالترتيب تجزئة لقيم كلها مسجَّلة، فمن يملك السجل يعيد حساب الترتيب نفسه ويصل إلى المرشح نفسه. والمقبض المربوط أحادي الاستخدام ومحلي للعملية — واستعماله مرّتين يُرفض ولا يُتسامح فيه.",
   "This page opens the decision procedure and shows every stage of it: what arrives, what is checked, what narrows, what executes, and what is written down. It is deliberately mechanical, because the whole point of the design is that a reader can follow the same path the engine followed and arrive at the same place.":
     "تفتح هذه الصفحة إجراء اتخاذ القرار وتعرض كل مرحلة منه: ما الذي يصل، وما الذي يُفحص، وما الذي يضيق، وما الذي يُنفَّذ، وما الذي يُدوَّن. وهي ميكانيكية عن قصد، لأن جوهر التصميم أن يستطيع القارئ سلوك الطريق نفسه الذي سلكه المحرك والوصول إلى الموضع نفسه.",
   "This stage is written architecture with named preconditions, and it does not run today. Its point is that a revision would be a named edit to a named entry, so a reviewer could ask which entry changed, why, and on the strength of which receipt — the question that cannot be put to a fitted parameter.":

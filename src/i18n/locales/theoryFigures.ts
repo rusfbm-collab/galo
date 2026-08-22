@@ -388,7 +388,7 @@ export const theoryFiguresAr: TranslationDictionary = {
   "A legal or regulatory opinion. The record is an engineering artefact, not an assurance.":
     "رأيًا قانونيًا أو تنظيميًا. فالسجل مصنوعٌ هندسي لا شهادةَ ضمان.",
   "A live engine. The site recomputes from published formulas; it does not execute the release.":
-    "محرّكًا حيًّا. فالموقع يعيد الحساب انطلاقًا من الصيغ المنشورة، ولا ينفّذ الإصدار.",
+    "محرّكًا حيًّا. فالموقع يعيد الحساب انطلاقًا من الصيغ المنشورة، ولا ينفّذ الإصدار.",
   "A property of the law itself: P0 is the unique left zero of STAR, so any step taken from P0 lands on P0 again.":
     "خاصيةً للقانون نفسه: العنصر P0 هو الصفر الأيسر الوحيد للعملية STAR، ولذلك تعود أي خطوة تنطلق من P0 إلى P0 من جديد.",
   "A reader who takes one line from the first shelf and reads it as a property of the third has been misled, and this site treats that as its own error rather than the reader's.":

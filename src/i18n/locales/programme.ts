@@ -492,7 +492,7 @@ export const programmeAr: TranslationDictionary = {
   "A public endorsement, a logo, or a quotation to reuse in future material.":
     "تأييدٍ علني أو شعارٍ أو اقتباسٍ يُعاد استعماله في موادّ لاحقة.",
   "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
-    "الإصدار موجود ويُعاد إنتاجه. تنجح إعادات التشغيل الحديثة STATIC وFAST على مفسِّر CPython 3.12.13 قياسي، ومسجَّلٌ 1,366 من 1,366 فحصًا مخزَّنًا من نوع FULL عبر 131 وحدة.",
+    "الإصدار موجود ويُعاد إنتاجه. تنجح إعادات التشغيل الحديثة STATIC وFAST على مفسِّر CPython 3.12.13 قياسي، وسُجِّل 1,366 فحصًا مخزَّنًا من نوع FULL من أصل 1,366، عبر 131 وحدة.",
   "A running artefact exists": "يوجد مصنوعٌ يعمل",
   AFFILIATION: "الارتباط",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلانًا",
@@ -561,7 +561,7 @@ export const programmeAr: TranslationDictionary = {
   "How far each kind of check reaches": "إلى أي مدى يصل كل نوع من الفحص",
   "How to use it against us": "كيف تستعمله ضدّنا",
   "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
-    "منجَزٌ لا مخطَّط له. يعمل هذا الموقع بالإنجليزية والروسية والصينية والعربية بتخطيطٍ من اليمين إلى اليسار، ويُسقط اختبارٌ عمليةَ البناء إذا خلت أي سلسلة معروضة من ترجمتها. وهو موقعٌ لا نشرُ منتج، وهذا كل ما يُدَّعى.",
+    "منجَزٌ لا مخطَّط له. يعمل هذا الموقع بالإنجليزية والروسية والصينية والعربية بتخطيطٍ من اليمين إلى اليسار، ويُسقط اختبارٌ عمليةَ البناء إذا خلت أي سلسلة معروضة من ترجمتها. وهو موقعٌ ولا شيء غير ذلك: لم يُنشر أيّ منتج، وهذا كل ما يُدَّعى.",
   "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
     "تأسيس الشركة العاملة ونقل قاعدة عمل المؤسِّس إلى أبوظبي.",
   "Independent verification": "التحقق المستقل",
@@ -610,7 +610,7 @@ export const programmeAr: TranslationDictionary = {
   "Operating company": "الشركة العاملة",
   "Ownership of the intellectual property": "ملكية الملكية الفكرية",
   "Properties of a finite algebraic structure, each with a complete proof re-derived by the test suite: the two laws, the one-sided roles of the distinguished element, the count of 560 oriented typed coordinates, which levels map into which, and how many lawful relabellings each level has. Nothing about the world, nothing about usefulness, and nothing about anybody's operations.":
-    "خصائص لبنية جبرية منتهية، لكلٍّ منها برهانٌ تامّ يُعاد اشتقاقه بمجموعة الاختبارات: القانونان، والدوران الأحاديّا الجهة للعنصر المميَّز، وعدُّ 560 إحداثية موجَّهة مصنَّفة، وأيُّ المستويات ينغرس في أيّها، وكم إعادة تسمية مشروعة لكل مستوى. لا شيء عن العالم، ولا شيء عن النفع، ولا شيء عن عمليات أحد.",
+    "خصائص لبنية جبرية منتهية، لكلٍّ منها برهانٌ تامّ يُعاد اشتقاقه بمجموعة الاختبارات: القانونان، ودورا العنصر المميَّز على جهةٍ واحدة، وعدُّ 560 إحداثية موجَّهة مصنَّفة، وأيُّ المستويات ينغرس في أيّها، وكم إعادة تسمية مشروعة لكل مستوى. لا شيء عن العالم، ولا شيء عن النفع، ولا شيء عن عمليات أحد.",
   "Provided directly to an assessing party on request, under a mutual non-disclosure agreement.":
     "يُقدَّم إلى الجهة المقيِّمة مباشرةً عند الطلب، بموجب اتفاق عدم إفشاء متبادل.",
   "Provided directly to an assessing party on request.": "يُقدَّم إلى الجهة المقيِّمة مباشرةً عند الطلب.",
@@ -651,7 +651,7 @@ export const programmeAr: TranslationDictionary = {
   "The evidence behind every line above": "الأدلّة وراء كل بند أعلاه",
   "The mathematics is stated and checkable": "الرياضيات مصوغة وقابلة للفحص",
   "The negative lines are not at the bottom. A dossier that puts its three strengths first and its six absences in a footnote is a dossier that expects not to be read carefully, and this one does.":
-    "البنود السلبية ليست في الأسفل. فالملفّ الذي يقدّم مواطن قوّته الثلاث ويخبّئ غياباته الستّ في حاشية ملفٌّ لا يتوقّع أن يُقرأ بعناية؛ وهذا الملف يتوقّع ذلك.",
+    "البنود السلبية ليست في الأسفل. فالملفّ الذي يقدّم مواطن قوّته الثلاث ويخبّئ غياباته الستّ في حاشية ملفٌّ لا يتوقّع أن يُقرأ بعناية؛ وهذا الملفّ يتوقّع أن يُقرأ بعناية.",
   "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.":
     "تحتاج المرحلة التالية إلى كيان قانوني، وموظَّفَين تقنيَّين، وشركاء تقييم مستعدّين لإحضار بياناتهم، ومراجعين يهمّهم مهاجمة الرياضيات. وفي ما يلي ما سيُبنى في الأشهر الاثني عشر الأولى، مع الملاحظة التي تُظهر إخفاق كل التزام.",
   "The published replays ran on a standard CPython 3.12.13 interpreter, with no specialised hardware anywhere in the loop, because a replay enumerates a finite set instead of making an inference pass.":
@@ -677,7 +677,7 @@ export const programmeAr: TranslationDictionary = {
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
     "وُجدت هذه الصفحة كي يبدأ الحديث الأول من الأسئلة المفتوحة لا من المغلقة. اثنا عشر بندًا للتقييم، ستّة منها سلبية. واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرطُ الإخفاق مكتوبًا سلفًا. وستّة أسئلة نتوقّع أن نُساءل عنها، بأجوبتها كما هي اليوم لا كما نودّ أن تكون.",
   "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
-    "يُسلَّم هذا الموقع بالعربية بتخطيطٍ من اليمين إلى اليسار، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. وهو موقعٌ لا نشرٌ، وهذا هو الادّعاء كلّه.",
+    "يُسلَّم هذا الموقع بالعربية بتخطيطٍ من اليمين إلى اليسار، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. وهو موقعٌ لا نشرُ منتج: لم ينشر أحدٌ شيئًا، وهذا هو الادّعاء كلّه.",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
     "ثلاثة بنود ثابتة، وثلاثة غائبة تمامًا، والباقي جزئي أو غير مُفصَح عنه. وهكذا يبدو مشروعٌ بحثيّ ما قبل التأسيس إذا صُوِّر بصدق؛ وأي عرضٍ آخر لن يكلّف إلّا الساعة الأولى من الاجتماع الأول.",
   "Twelve lines an assessor works through": "اثنا عشر بندًا يمرّ بها المقيِّم",
@@ -685,7 +685,7 @@ export const programmeAr: TranslationDictionary = {
     "اثنا عشر بندًا يمرّ بها المقيِّم. ستّة منها سلبية.",
   "Twelve months, with failure conditions": "اثنا عشر شهرًا مع شروط الإخفاق",
   "Two of them are withheld on purpose and two of them do not exist yet. Saying which is which is the point: an absence with no explanation reads the same as something being hidden.":
-    "اثنان منها لا يُفصَح عنهما عن قصد، واثنان لم يوجدا بعد. وبيانُ أيِّهما أيّ هو المقصود: فالغياب بلا تفسير يُقرأ كما يُقرأ الإخفاء.",
+    "اثنان منها لا يُفصَح عنهما عن قصد، واثنان لم يوجدا بعد. والمقصود أن يُقال أيُّهما من أيّ: فالغياب بلا تفسير يُقرأ كما يُقرأ الإخفاء.",
   "Unknown, and stated as unknown everywhere it could be misread. Nothing has been measured against any alternative or against doing nothing at all. Anyone claiming otherwise on our behalf would be going beyond what this project can support.":
     "غير معروف، وقد ذُكر أنّه غير معروف في كل موضع كان يمكن أن يُقرأ فيه على خلاف ذلك. فلم يُقَس شيء في مواجهة أي بديل ولا في مواجهة عدم الفعل. ومن يدّعي خلاف ذلك نيابةً عنّا يتجاوز ما يستطيع المشروع إسناده.",
   "WHAT A WEBSITE IS THE WRONG PLACE FOR": "ما لا يصلح الموقع مكانًا له",

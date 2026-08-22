@@ -711,7 +711,7 @@ export const termsPageAr: TranslationDictionary = {
   "The marked labels are being moved around by the relabellings, while the table underneath stays fixed.":
     "التسميات المعلَّمة تُنقل بإعادات التسمية، والجدول تحتها ثابت لا يتحرك.",
   "The marked labels are the squares modulo five. They form a block the symmetries keep together.":
-    "التسميات المعلَّمة هي المربعات بمقياس خمسة. وهي تشكّل كتلة تُبقيها التناظرات معًا.",
+    "التسميات المعلَّمة هي المربعات بالمقياس خمسة. وهي تشكّل كتلة تُبقيها التناظرات معًا.",
   "The marked row and column repeat the labels unchanged. P0 leaves everything alone from either side.":
     "الصف والعمود المعلَّمان يكرران التسميات دون تغيير. وP0 لا يمسّ شيئًا من أي جهة.",
   "The marked row hits every label exactly once, so it is a bijection. The same row in STAR would not be.":

@@ -32,10 +32,10 @@ export const academicAr: TranslationDictionary = {
   "OBJECTS AND NOTATION": "الكائنات والترميز",
   "One carrier, two reducts, one full finite algebra.": "حامل واحد، وبنيتان مختزلتان، وجبر منتهٍ كامل واحد.",
   "Project labels P_i are residue classes. The word tower is project terminology for the indexed family L1–L7; it is not an ascending chain unless connecting morphisms are specified.":
-    "تقابل تسميات المشروع P_i فئات البواقي. وكلمة «برج» مصطلح مشروعي للعائلة المفهرسة L1–L7؛ وليست سلسلة تصاعدية ما لم تُحدَّد تشاكلات الربط.",
+    "تقابل تسميات المشروع P_i فئات البواقي. وكلمة «برج» مصطلح مشروعي للعائلة المفهرسة L1–L7؛ وليست سلسلة تصاعدية ما لم تُحدَّد تشاكلات الربط.",
   "Carrier correspondence": "تقابل الحوامل",
   "The bijection sends P_i to the residue class i modulo n and P0 to 0.":
-    "يرسل التقابل P_i إلى فئة الباقي i بترديد n، ويرسل P0 إلى 0.",
+    "يرسل التقابل P_i إلى فئة الباقي i بالمقياس n، ويرسل P0 إلى 0.",
   "PLUS reduct": "بنية PLUS المختزلة",
   "This is the cyclic group of order n. P0 is its two-sided neutral element.":
     "هذه هي الزمرة الدورية من الرتبة n، وP0 عنصرها المحايد ثنائي الجانب.",
@@ -100,9 +100,9 @@ export const academicAr: TranslationDictionary = {
   "Same-index candidate injection": "حقن مرشح يحافظ على الفهارس",
   "Zero homomorphism exists between every pair of levels": "يوجد تشاكل صفري بين كل زوج من المستويات",
   "Therefore A3→A5 has a homomorphism, but no nonzero homomorphism and no embedding. For n≥2, a nonzero homomorphism A_n→A_m exists exactly when n divides m; every such map is injective. At n=1 the unique zero map is itself an embedding.":
-    "لذلك يوجد تشاكل A3→A5، لكن لا يوجد تشاكل غير صفري ولا تضمين. عندما n≥2، يوجد تشاكل غير صفري A_n→A_m إذا وفقط إذا كانت n تقسم m؛ وكل تطبيق من هذا النوع حقني. وعندما n=1 يكون التطبيق الصفري الوحيد تضمينًا في حد ذاته.",
+    "لذلك يوجد تشاكل A3→A5، لكن لا يوجد تشاكل غير صفري ولا تضمين. عندما n≥2، يوجد تشاكل غير صفري A_n→A_m إذا وفقط إذا كانت n تقسم m؛ وكل تطبيق من هذا النوع متباين. وعندما n=1 يكون التطبيق الصفري الوحيد تضمينًا في حد ذاته.",
   "A homomorphism is a mathematical preservation condition; an embedding is an injective homomorphism; a candidate injection is only a set map until preservation is proved. LevelAlignmentReceipt separately records whether an operational transfer is authorized.":
-    "التشاكل شرط حفظ رياضي؛ والتضمين تشاكل حقني؛ أما الحقن المرشح فلا يعدو تطبيق مجموعات حتى يثبت الحفظ. ويسجل LevelAlignmentReceipt على نحو منفصل هل نُقل التشغيل بتفويض.",
+    "التشاكل شرط حفظ رياضي؛ والتضمين تشاكل متباين؛ أمّا التطبيق المتباين المرشَّح فلا يعدو تطبيق مجموعات حتى يثبت الحفظ. ويسجل LevelAlignmentReceipt على نحو منفصل هل نُقل التشغيل بتفويض.",
   "Two indexed families": "عائلتان مفهرستان",
   "Symmetry vocabulary": "مصطلحات التناظر",
   "Orbit and stabilizer lab": "مختبر المدار والمثبت",
@@ -150,7 +150,7 @@ export const academicAr: TranslationDictionary = {
   "INTERACTIVE UNIT-ACTION LAB": "مختبر تفاعلي لفعل زمرة الوحدات",
   "Inspect cycles, orbits, stabilizers, and the Burnside ledger.": "افحص الدورات والمدارات والمثبتات وحساب برنسايد.",
   "Every result is recomputed from multiplication by units modulo n in this browser.":
-    "تُعاد حساب كل نتيجة في المتصفح من الضرب في الوحدات بترديد n.",
+    "تُعاد حساب كل نتيجة في المتصفح من الضرب في الوحدات بالمقياس n.",
   "Symmetry explorer controls": "عناصر تحكم مستكشف التناظر",
   "Unit multiplier": "مضاعف قابل للعكس",
   "Source pole": "قطب المصدر",
@@ -201,19 +201,19 @@ export const academicAr: TranslationDictionary = {
   "Quadratic-residue nuance": "دقة البواقي التربيعية",
   "The quadratic-residue subgroup preserves each block; the full unit group preserves only the unordered two-block partition and may swap its blocks.":
     "تحفظ زمرة البواقي التربيعية الجزئية كل كتلة؛ أما زمرة الوحدات الكاملة فلا تحفظ إلا التقسيم غير المرتب إلى كتلتين وقد تبدلهما.",
-  "Characters and faithful phase labels": "المحارف ووسوم الطور الأمينة",
+  "Characters and faithful phase labels": "الطوابع ووسوم الطور الأمينة",
   "Every s defines a character of C_n, and only the units give faithful labels. In a phase model P0 lands on complex 1; complex 0 is where it never goes.":
-    "تعرّف جميع قيم s محارف لـ C_n؛ ولا تعطي وسومًا أمينة إلا قيم s القابلة للعكس. وفي نموذج الطور يقابل P0 العدد المركب 1، لا الصفر المركب.",
+    "تعرّف جميع قيم s طوابع لـ C_n؛ ولا تعطي وسومًا أمينة إلا قيم s القابلة للعكس. وفي نموذج الطور يقابل P0 العدد المركب 1، لا الصفر المركب.",
   "CROSS-LEVEL HOMOMORPHISMS": "التشاكلات بين المستويات",
   "PLUS and STAR have different homomorphism counts.": "يختلف عدد التشاكلات في PLUS عنه في STAR.",
   "Each cell shows PLUS homomorphisms / full-algebra homomorphisms. PLUS has gcd(n,m) maps. For n≥2, the full algebra has the zero map and φ(n) additional embeddings exactly when n divides m; at n=1 the zero map is the unique embedding.":
     "تعرض كل خلية عدد تشاكلات PLUS / تشاكلات الجبر الكامل. لـ PLUS عدد gcd(n,m) من التطبيقات. وعندما n≥2 يكون للجبر الكامل التطبيق الصفري وتوجد φ(n) تضمينات إضافية بالضبط عندما تقسم n العدد m؛ أما عندما n=1 فالتطبيق الصفري هو التضمين الوحيد.",
   Homomorphism: "تشاكل",
   "A map preserving the declared operations and constant. It need not be injective; the zero map is the decisive example.":
-    "تطبيق يحفظ العمليات والثابت المعلنة. ولا يلزم أن يكون حقنيًا؛ والتطبيق الصفري هو المثال الحاسم.",
+    "تطبيق يحفظ العمليات والثابت المعلنة. ولا يلزم أن يكون متباينًا؛ والتطبيق الصفري هو المثال الحاسم.",
   Embedding: "تضمين",
   "An injective homomorphism. For n≥2, a nonzero A_n→A_m homomorphism is automatically an embedding and exists exactly when n divides m; the L1 zero map is exceptionally injective.":
-    "تشاكل حقني. عندما n≥2 يكون كل تشاكل غير صفري A_n→A_m تضمينًا تلقائيًا، ويوجد إذا وفقط إذا كانت n تقسم m؛ أما تطبيق L1 الصفري فهو حالة حقنية استثنائية.",
+    "تشاكل متباين. عندما n≥2 يكون كل تشاكل غير صفري A_n→A_m تضمينًا تلقائيًا، ويوجد إذا وفقط إذا كانت n تقسم m؛ أما تطبيق L1 الصفري فهو حالة تباين استثنائية.",
   "Operational transfer": "نقل تشغيلي",
   "A runtime use that may require provenance, alignment, and loss checks beyond algebraic preservation. A homomorphism alone is not an authorization receipt.":
     "استخدام وقت التشغيل قد يتطلب فحوص المصدر والمحاذاة والفقد فوق الحفظ الجبري. والتشاكل وحده ليس إيصال تفويض.",

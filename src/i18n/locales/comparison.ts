@@ -915,7 +915,7 @@ export const comparisonAr: TranslationDictionary = {
   "The law is fixed; the orientation decides which role picks the row.":
     "القانون ثابت، والاتجاه يقرر أي دور يختار الصف.",
   "The left column lists what the GALO kernel cannot do at all. The right column lists properties rather than results: they say what the layer can be asked for, and say nothing about how well it does any task.":
-    "يسرد العمود الأيسر أشياء لا تستطيعها نواة GALO إطلاقًا. ويسرد العمود الأيمن خصائص لا نتائج: فهي تصف ما يمكن مطالبة الطبقة به، لا مدى جودة أدائها في أي مهمة.",
+    "يسرد العمود الأيمن أشياء لا تستطيعها نواة GALO إطلاقًا. ويسرد العمود الأيسر خصائص لا نتائج: فهي تصف ما يمكن مطالبة الطبقة به، لا مدى جودة أدائها في أي مهمة.",
   "The left tree groups the first two operands and evaluates to P2. The right tree groups the last two operands and evaluates to P1. The operands and their order are identical in both.":
     "تجمع الشجرة اليسرى المعاملين الأولين وتُحسب إلى P2. وتجمع اليمنى المعاملين الأخيرين وتُحسب إلى P1. والمعاملات وترتيبها متطابقة في كلتيهما.",
   "The path of one step through a language model and through GALO": "مسار خطوة واحدة عبر نموذج لغة وعبر GALO",
@@ -947,7 +947,7 @@ export const comparisonAr: TranslationDictionary = {
   "This loop is written architecture, not a shipped feature. The admit, execute, and record stages exist today inside a narrow contract; the two proposing stages do not exist at all and are marked accordingly.":
     "هذه الحلقة بنية مكتوبة لا ميزة مُسلَّمة. فمراحل القبول والتنفيذ والتسجيل موجودة اليوم داخل عقد ضيق، أما مرحلتا الاقتراح فغير موجودتين إطلاقًا وقد وُسمتا بذلك.",
   "Turning open-ended input into a useful continuation. It is the most general-purpose software artefact anyone has built, and nothing in the GALO kernel competes with that.":
-    "تحويل مدخل مفتوح إلى استكمال مفيد. وهو أعمّ أثر برمجي بناه أحد على الإطلاق، ولا شيء في نواة GALO ينافسه.",
+    "تحويل مدخل مفتوح إلى استكمال مفيد. وهو أعمّ مصنوع برمجي بناه أحد على الإطلاق، ولا شيء في نواة GALO ينافسه.",
   "Two anatomies, side by side": "بنيتان تشريحيتان جنبًا إلى جنب",
   "Two commuting squares, one closing and one failing": "مربعان تبادليان، أحدهما ينغلق والآخر لا",
   "Two evaluation trees over the same three operands": "شجرتا حساب فوق المعاملات الثلاثة نفسها",

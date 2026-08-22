@@ -10,12 +10,12 @@ export const releaseAr: TranslationDictionary = {
     "يوجد في V4 الحالية 880 واصفًا قابلًا للتنفيذ؛ ويكشف كل واحد من نمطي المصدر الثابتين جبهة من 440 مرشّحًا.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "شريحة تنفيذ ثنائية أحادية الخطوة على L2–L7، ذات نمطي مصدر مغلقين وأربعة أنواع من الأفعال القابلة للتنفيذ؛ أما L1 فللضبط فقط.",
-  "A closed deterministic selector. Nothing about it was learned.": "مُحدِّد حتمي مغلق، وليس آلية استدلال متعلّمة.",
-  "A current trained Atlas is not present.": "لا يوجد Atlas حالي مدرَّب.",
+  "A closed deterministic selector. Nothing about it was learned.": "مُحدِّد حتمي مغلق، وليس آلية استدلال متعلّمة.",
+  "A current trained Atlas is not present.": "لا يوجد Atlas حالي مدرَّب.",
   "A durable trusted manifest head beyond process-local checks.":
     "رأس manifest موثوق ودائم يتجاوز الفحوص المحلية ضمن العملية.",
   "A legacy relational-KG research artifact exists in compatibility history, but it is not the current V4 selector, has no proven strong-control advantage, and is not presented as a current trained Atlas.":
-    "يوجد في سجل التوافق التاريخي أثر بحثي قديم لـ relational-KG، لكنه ليس مُحدِّد V4 الحالي، ولا يملك تفوقًا مثبتًا أمام الضوابط القوية، ولا يُعرض بوصفه Atlas حاليًا مدرَّبًا.",
+    "يوجد في سجل التوافق التاريخي مصنوع بحثي قديم لـ relational-KG، لكنه ليس مُحدِّد V4 الحالي، ولا يملك تفوقًا مثبتًا أمام الضوابط القوية، ولا يُعرض بوصفه Atlas حاليًا مدرَّبًا.",
   "Add multi-step execution": "إضافة تنفيذ متعدد الخطوات",
   "Arbitrary free-text semantic noninterference": "عدم التداخل الدلالي للنص الحر التعسفي",
   "Atlas influence": "تأثير Atlas",
@@ -27,25 +27,25 @@ export const releaseAr: TranslationDictionary = {
     "عينة منتهية مضمّنة جرى التحقق منها بمفتاح عام مُثبّت في الإصدار",
   "Bundled sample verified against the pinned release key": "جرى التحقق من العينة المضمّنة بمفتاح الإصدار المُثبّت",
   "CPython 3.13 replay": "إعادة التشغيل على CPython 3.13",
-  "CURRENT V4 SELECTOR": "مُحدِّد V4 الحالي",
+  "CURRENT V4 SELECTOR": "مُحدِّد V4 الحالي",
   "Closed two-pattern source ontology admitted": "قُبلت أنطولوجيا مصدر مغلقة ذات نمطين",
   "Committed candidate descriptors": "واصفات مرشّحين مُثبّتة",
   "Committed descriptors": "واصفات مُثبّتة",
   "Compatibility and audit layer": "طبقة التوافق والتدقيق",
   "Current V4 direct selfcheck": "الفحص الذاتي المباشر لـ V4 الحالية",
   "Current V4 performs no policy update; historical research artifacts are a separate audit record.":
-    "لا تنفّذ V4 الحالية أي تحديث للسياسة؛ والآثار البحثية التاريخية سجل تدقيق منفصل.",
+    "لا تنفّذ V4 الحالية أي تحديث للسياسة؛ والمصنوعات البحثية التاريخية سجل تدقيق منفصل.",
   "Current V4 performs zero Atlas learning writes and does not contain a trained Atlas.":
-    "لا تنفّذ V4 الحالية أي كتابة تعلّم في Atlas، ولا تحتوي على Atlas مدرَّب.",
+    "لا تنفّذ V4 الحالية أي كتابة تعلّم في Atlas، ولا تحتوي على Atlas مدرَّب.",
   "Current V4 release contract": "عقد إصدار V4 الحالي",
   "Current V4 runtime": "بيئة تشغيل V4 الحالية",
   "Current V4 uses a deterministic selector for exactly two fixed source patterns.":
-    "تستخدم V4 الحالية مُحدِّدًا حتميًا لنمطي مصدر ثابتين لا غير.",
-  "Current trained World Atlas": "World Atlas الحالي المدرَّب",
+    "تستخدم V4 الحالية مُحدِّدًا حتميًا لنمطي مصدر ثابتين لا غير.",
+  "Current trained World Atlas": "World Atlas الحالي المدرَّب",
   "Deterministic 440-candidate frontier selected": "اختيرت حتميًا جبهة من 440 مرشّحًا",
   "Deterministic order": "ترتيب حتمي",
-  "Deterministic selector": "مُحدِّد حتمي",
-  "Deterministic selector for exactly two fixed source patterns": "مُحدِّد حتمي لنمطي مصدر ثابتين لا غير",
+  "Deterministic selector": "مُحدِّد حتمي",
+  "Deterministic selector for exactly two fixed source patterns": "مُحدِّد حتمي لنمطي مصدر ثابتين لا غير",
   "Do not infer runtime capability from formal or historical material.":
     "لا تستنتج قدرات بيئة التشغيل من مواد شكلية أو تاريخية.",
   "Evaluate before learning": "التقييم قبل التعلّم",
@@ -64,16 +64,16 @@ export const releaseAr: TranslationDictionary = {
   "Fresh FULL": "FULL جديد",
   "Fresh STATIC": "STATIC جديد",
   "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,366/1,366 checks across 131 modules. Fresh FULL was not run, and CPython 3.13 replay was blocked by runtime availability.":
-    "نجح تحققا STATIC وFAST الجديدان في جلسة المراجعة الحالية. ويسجّل إيصال الإصدار المحفوظ 1,366/1,366 فحصًا عبر 131 وحدة. لم يُشغَّل FULL جديد، وحُجبت إعادة التشغيل على CPython 3.13 لعدم توافر بيئة التشغيل.",
+    "نجح تحققا STATIC وFAST الجديدان في جلسة المراجعة الحالية. ويسجّل إيصال الإصدار المحفوظ 1,366/1,366 فحصًا عبر 131 وحدة. لم يُشغَّل FULL جديد، وحُجبت إعادة التشغيل على CPython 3.13 لعدم توافر بيئة التشغيل.",
   "Historical-learning boundary": "حدّ أدلة التعلّم التاريخية",
-  "Integrated one-step source-to-action episode executed": "نُفِّذت حلقة متكاملة أحادية الخطوة من المصدر إلى الفعل",
+  "Integrated one-step source-to-action episode executed": "نُفِّذت حلقة متكاملة أحادية الخطوة من المصدر إلى الفعل",
   "Internal work-unit accounting is not a speedup, causal outcome, customer value, or external gain result.":
     "المحاسبة الداخلية لوحدات العمل ليست نتيجةً لقياس تسريع أو مآل سببي أو قيمة للعميل أو مكسب خارجي.",
-  "Isolate the executor": "عزل المنفِّذ",
+  "Isolate the executor": "عزل المنفِّذ",
   "OS capability isolation and a CPython 3.13 replay lane.":
     "عزل الصلاحيات على مستوى نظام التشغيل ومسار إعادة تشغيل على CPython 3.13.",
   "Multi-step trajectory and probe-response loop": "مسار متعدد الخطوات وحلقة استقصاء–استجابة",
-  "Oriented typed coordinates": "إحداثيات موجَّهة محددة الأنواع",
+  "Oriented typed coordinates": "إحداثيات موجَّهة محددة الأنواع",
   "Outcome evaluation": "تقييم النتيجة",
   "Outcome evaluation and policy update each contribute zero work units in this release.":
     "يسهم كل من تقييم النتيجة وتحديث السياسة بصفر من وحدات العمل في هذا الإصدار.",
@@ -89,7 +89,7 @@ export const releaseAr: TranslationDictionary = {
   "Physical total": "المجموع الفعلي",
   "Pinned-key sample integrity": "سلامة العينة بالمفتاح المُثبّت",
   "Policy update": "تحديث السياسة",
-  "Preregistered partner evaluator before policy learning": "مقيِّم للشريك مسجّل مسبقًا قبل تعلّم السياسة",
+  "Preregistered partner evaluator before policy learning": "مقيِّم للشريك مسجّل مسبقًا قبل تعلّم السياسة",
   "Preregistered rules beyond the current two fixed source patterns.":
     "قواعد مسجّلة مسبقًا تتجاوز نمطي المصدر الثابتين الحاليين.",
   "Process-local sequence, rollback, and revocation checks": "فحوص التسلسل والتراجع والإبطال المحلية ضمن العملية",
@@ -100,7 +100,7 @@ export const releaseAr: TranslationDictionary = {
   "Receipt-derived phase work ledger reconciled": "تمت مطابقة سجل العمل المرحلي المشتق من الإيصالات",
   "Sanitized current-V4 receipt replay — deterministic, limited to two fixed source patterns, and not a live model or external benchmark.":
     "إعادة تشغيل منقّحة لإيصال V4 الحالي — حتمية ومقصورة على نمطي مصدر ثابتين، وليست نموذجًا حيًا ولا اختبارًا معياريًا خارجيًا.",
-  Selector: "المُحدِّد",
+  Selector: "المُحدِّد",
   "Shared preparation": "التهيئة المشتركة",
   "Source ontology": "أنطولوجيا المصدر",
   "Source-integrity boundary": "حدّ سلامة المصدر",
@@ -112,32 +112,32 @@ export const releaseAr: TranslationDictionary = {
   "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
     "نتيجة FULL البالغة 1,366/1,366 هي إيصال إصدار محفوظ، وليست نتيجة إعادة تشغيل جديدة.",
   "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
-    "نتيجة FULL البالغة 1,366/1,366 دليل إصدار محفوظ؛ ولم يُشغَّل FULL جديد في هذه المراجعة.",
+    "نتيجة FULL البالغة 1,366/1,366 دليل إصدار محفوظ؛ ولم يُشغَّل FULL جديد في هذه المراجعة.",
   "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms.":
-    "عائلات PLUS/STAR على L1–L7، و560 إحداثيًا موجَّهًا محدد النوع، والتحويلات، والتناظرات، والتشاكلات بين المستويات.",
+    "عائلات PLUS/STAR على L1–L7، و560 إحداثيًا موجَّهًا محدد النوع، والتحويلات، والتناظرات، والتشاكلات بين المستويات.",
   "The bundled finite sample verifies against a release-pinned public key.":
     "يمكن التحقق من العينة المنتهية المضمّنة بمفتاح عام مُثبّت في الإصدار.",
   "The bundled finite sample verifies against a release-pinned public key. That proves integrity relative to the shipped key; it does not prove independent external origin or truth.":
-    "يمكن التحقق من العينة المنتهية المضمّنة بمفتاح عام مُثبّت في الإصدار. وهذا يثبت السلامة نسبةً إلى المفتاح المورَّد، لكنه لا يثبت منشأً خارجيًا مستقلًا ولا صحة المحتوى.",
+    "يمكن التحقق من العينة المنتهية المضمّنة بمفتاح عام مُثبّت في الإصدار. وهذا يثبت السلامة نسبةً إلى المفتاح المورَّد، لكنه لا يثبت منشأً خارجيًا مستقلًا ولا صحة المحتوى.",
   "The current verification does not prove operating-system capability isolation for the Python process.":
     "لا يثبت التحقق الحالي عزل صلاحيات عملية Python على مستوى نظام التشغيل.",
   "The formal L1–L7 kernel contains 560 oriented typed transition coordinates.":
-    "تحتوي النواة الشكلية L1–L7 على 560 إحداثيًا موجَّهًا محدد النوع للانتقالات.",
+    "تحتوي النواة الشكلية L1–L7 على 560 إحداثيًا موجَّهًا محدد النوع للانتقالات.",
   "The physical total is an internal count of receipt work-unit IDs. It is not elapsed time, FLOPS, energy, cost saving, speedup, causal outcome, or external operational gain.":
     "المجموع الفعلي عدد داخلي لمعرّفات وحدات العمل في الإيصالات. وهو ليس زمنًا منقضيًا، ولا FLOPS، ولا طاقة، ولا وفرًا في التكلفة، ولا تسريعًا، ولا نتيجة سببية، ولا مكسبًا تشغيليًا خارجيًا.",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
     "يفصل الإصدار بوضوح بين الرياضيات وأدلة التوافق وواجهة API القابلة للتنفيذ حاليًا. ولا يُرقّى قول من طبقة إلى أخرى ضمنًا.",
   "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
-    "يقبل المُحدِّد نمطي مصدر ثابتين، لا ملاحظات تعسفية باللغة الطبيعية.",
+    "يقبل المُحدِّد نمطي مصدر ثابتين، لا ملاحظات تعسفية باللغة الطبيعية.",
   "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
-    "يتعرف المُحدِّد نمطي مصدر لا غير، ويرشّح كونًا منتهيًا مُثبّتًا بحسب الزوجية، ثم يطبّق دالة تجزئة على الملاحظة ومعرّف المرشح والرتبة التعدادية لإنتاج ترتيب حتمي. ولا تؤثر حالة Atlas في النتيجة.",
+    "يتعرف المُحدِّد نمطي مصدر لا غير، ويرشّح كونًا منتهيًا مُثبّتًا بحسب الزوجية، ثم يطبّق دالة تجزئة على الملاحظة ومعرّف المرشح والرتبة التعدادية لإنتاج ترتيب حتمي. ولا تؤثر حالة Atlas في النتيجة.",
   "This deterministic walkthrough uses sanitized identifiers from the current V4 direct selfcheck. It distinguishes two fixed source patterns, but it does not accept arbitrary observations, generate a semantic answer, or learn.":
     "يستخدم هذا العرض الحتمي معرّفات منقّحة من الفحص الذاتي المباشر لـ V4 الحالية. وهو يميّز بين نمطي مصدر ثابتين، لكنه لا يقبل ملاحظات تعسفية، ولا يولّد إجابة دلالية، ولا يتعلّم.",
   "Trajectories, real CORE/QUASI/BOUNDARY actions, and a probe-response loop.":
     "مسارات، وأفعال CORE/QUASI/BOUNDARY حقيقية، وحلقة استقصاء–استجابة.",
   "Treatment action": "إجراء المعالجة",
   "Trust state is process-local; no persistent trusted head is implemented.":
-    "حالة الثقة محلية ضمن العملية؛ ولم يُنفَّذ رأس موثوق دائم.",
+    "حالة الثقة محلية ضمن العملية؛ ولم يُنفَّذ رأس موثوق دائم.",
   "Zero Atlas semantic reads, rank effects, and learning writes":
     "صفر من قراءات Atlas الدلالية، وتأثيرات الرتبة، وكتابات التعلّم",
   "finite, binary, one-step candidate execution across active L2–L7; L1 is control-only. This is not the complete space of general reasoning.":

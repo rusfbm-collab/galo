@@ -310,7 +310,7 @@ export const landscapeAr: TranslationDictionary = {
   "A declared model and a decision procedure over it. The answer is a proof, a counterexample, or an honest failure to decide.":
     "نموذج معلَن وإجراء قرار يعمل فوقه. والنتيجة إمّا برهان، أو مثال مضاد، أو إقرار صريح بالعجز عن الحسم.",
   "A different class of object. These read language and answer open-ended questions; the GALO engine does neither, and is narrower than any of them by a very wide margin.":
-    "صنف آخر من الأشياء. هذه الأنظمة تقرأ اللغة وتجيب عن أسئلة مفتوحة، ومحرّك GALO لا يفعل أيًّا من ذلك، وهو أضيق منها جميعًا بفارق كبير.",
+    "صنف آخر من الأشياء. هذه الأنظمة تقرأ اللغة وتجيب عن أسئلة مفتوحة، ومحرّك GALO لا يفعل أيًّا من ذلك، وهو أضيق منها جميعًا بفارق كبير.",
   "A headline is a claim. Here is what backs each word of it, and where it stops.":
     "العنوان دعوى. وهنا ما يسند كل كلمة فيه، وأين يتوقّف.",
   "A learned component proposes candidates and a formal component admits or rejects them. Only admitted candidates count.":
@@ -330,7 +330,7 @@ export const landscapeAr: TranslationDictionary = {
     "السلوك الإجمالي على مجموعات القياس، وما تختار الجهة المطوِّرة نشره عن التدريب والتقييم. أمّا المخرجات الفردية فتُفحص بالمعاينة لا بالبناء.",
   Allowed: "مسموح",
   "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
-    "مسموح، واختار، وأظهر — ثلاثة وعود، ومن حقّ القارئ أن يسأل عمّا يسند كلًّا منها. كل بطاقة تسمّي الآلية الموجودة اليوم، والصفحة التي يمكنك أن تتحقّق فيها بنفسك، والجزء الذي لم يُستحقّ بعد. والحدود مكتوبة في البطاقة نفسها لا في حاشية.",
+    "مسموح، واختار، وأظهر — ثلاثة وعود، ومن حقّ القارئ أن يسأل عمّا يسند كلًّا منها. كل بطاقة تسمّي الآلية الموجودة اليوم، والصفحة التي يمكنك أن تتحقّق فيها بنفسك، والجزء الذي لم يُستحقّ بعد. والحدود مكتوبة في البطاقة نفسها لا في حاشية.",
   "AlphaZero, AlphaGeometry, AlphaProof, FunSearch and related work":
     "AlphaZero وAlphaGeometry وAlphaProof وFunSearch والأعمال المتّصلة بها",
   "An explicit working memory and a decision cycle over declared production rules, designed to model how deliberation is structured.":
@@ -409,7 +409,7 @@ export const landscapeAr: TranslationDictionary = {
   "The closest thing to a direct overlap in practice. GALO's difference is that the permitted set is declared, enumerated and closed before the run, and appears in the record next to the choice.":
     "أقرب تداخل عمليّ في الواقع. والفارق في GALO أنّ مجموعة المسموح به معلَنة ومعدودة ومغلقة قبل التشغيل، وأنّها تظهر في السجلّ إلى جانب الاختيار.",
   "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.":
-    "يضمّ الكون المعلَن 1٬204 واصفًا، منها 880 قابلة للتنفيذ، ويُعدّ بأكمله في كل عملية بناء. والفعل غير المدرَج لا يمكن اتخاذه، بل تُرفض المحاولة وتُدوَّن.",
+    "يضمّ الكون المعلَن 1٬204 واصفًا، منها 880 قابلة للتنفيذ، ويُعدّ عدًّا كاملًا في كل عملية بناء. والفعل غير المدرَج لا يمكن اتخاذه، بل تُرفض المحاولة وتُدوَّن.",
   "The ingredients are not. Declared operators, explicit state, checkers admitting a proposer's candidates — each has a literature. What is claimed as ours is the specific kernel: a finite algebra whose levels, laws and symmetries are proved out, with typed execution and receipts sitting directly on it.":
     "المكوّنات ليست جديدة. المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ منها أدبياتها. أمّا ما ندّعيه لأنفسنا فهو النواة بعينها: جبر منتهٍ بُرهنت مستوياته وقوانينه وتناظراته، ويقوم فوقه مباشرةً تنفيذ محدَّد الأنواع وإيصالات.",
   "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.":
@@ -427,7 +427,7 @@ export const landscapeAr: TranslationDictionary = {
   "The rule that fired and the memory it fired on. Decades of published research sit behind these systems.":
     "القاعدة التي أُطلقت والذاكرة التي أُطلقت عليها. وخلف هذه الأنظمة عقود من البحث المنشور.",
   "The same ambition, from an older tradition. GALO's contribution is not the ambition; it is a finite algebra with proved structure underneath it and receipts on top.":
-    "الطموح نفسه، لكن من تقليد أقدم. وليست مساهمة GALO في الطموح: تحتها جبر منتهٍ بُرهنت بنيته، وفوقها إيصالات.",
+    "الطموح نفسه، لكن من تقليد أقدم. وليست مساهمة GALO في الطموح، بل في جبرٍ منتهٍ بُرهنت بنيته تحته، وإيصالاتٍ فوقه.",
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "الغريزة نفسها — أن تحسم داخل شيء معلَن — لكن مطبَّقة على خصائص البرامج لا على أفعال تُتّخذ أثناء التشغيل. نواة GALO جبر منتهٍ، وزمن تشغيلها يكتب إيصالات.",
   "The seven levels, and one execution receipt": "المستويات السبعة وإيصال تنفيذ واحد",

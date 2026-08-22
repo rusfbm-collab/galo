@@ -423,7 +423,7 @@ export const plainAr: TranslationDictionary = {
   "The note left after a step: what was checked, what ran, what came out. The thing you would hand to somebody who asks.":
     "المذكرة التي تبقى بعد الخطوة: ما فُحص وما نُفّذ وما نتج. وهي ما تناوله لمن يسأل.",
   "The one on the right is not more advanced. It is the same idea with different labels in the boxes — and because every box is filled in beforehand, there is no situation it can be caught out by.":
-    "الذي على اليمين ليس أكثر تقدمًا. إنه الفكرة نفسها بتسميات أخرى في المربعات — ولأن كل مربع مملوء مسبقًا، فلا موقف يمكن أن يباغته.",
+    "الذي على اليسار ليس أكثر تقدمًا. إنه الفكرة نفسها بتسميات أخرى في المربعات — ولأن كل مربع مملوء مسبقًا، فلا موقف يمكن أن يباغته.",
   "The person you ask opens the log.": "الشخص الذي تسأله يفتح السجل.",
   "The program does not invent a new option halfway through. It picks one of the ones already written down, and the reason it picked that one is recorded together with the choice.":
     "لا يخترع البرنامج خيارًا جديدًا في منتصف الطريق. بل يأخذ واحدًا مما كُتب سلفًا، ويُسجَّل سبب اختياره مع الاختيار نفسه.",
@@ -436,12 +436,12 @@ export const plainAr: TranslationDictionary = {
   "Then it can only pick from that list": "ثم لا يمكنه الاختيار إلا من تلك القائمة",
   "There is no product, no customer, and no money coming in.": "لا منتج ولا عميل ولا مال يدخل.",
   "These ten words do most of the damage. On the left is what the other pages say; on the right is what it actually means.":
-    "هذه الكلمات العشر تصنع معظم الالتباس. على اليسار ما تقوله الصفحات الأخرى، وعلى اليمين ما يعنيه فعلًا.",
+    "هذه الكلمات العشر تصنع معظم الالتباس. على اليمين ما تقوله الصفحات الأخرى، وعلى اليسار ما يعنيه فعلًا.",
   "They genuinely do not know. The information was never written down, and by now the program has been updated twice and the people who built it have moved on.":
     "هم حقًّا لا يعرفون. فالمعلومة لم تُدوَّن أصلًا، وقد جرى تحديث البرنامج مرتين منذ ذلك الحين، ومن بنوه انتقلوا إلى أماكن أخرى.",
   "Three things become possible that usually are not.": "ثلاثة أمور تصير ممكنة، وهي في العادة ليست كذلك.",
   "Today the working part handles two kinds of request and takes one step at a time. That is genuinely all. Everything bigger is written down as a plan, and we say so wherever it comes up.":
-    "الجزء العامل اليوم يفهم نوعين من الطلبات ويخطو خطوة واحدة في المرة. هذا كل شيء حقًّا. وكل ما هو أكبر مكتوب بوصفه خطة، ونقول ذلك في كل موضع يرد فيه.",
+    "الجزء العامل اليوم يعالج نوعين من الطلبات ويخطو خطوة واحدة في المرة. هذا كل شيء حقًّا. وكل ما هو أكبر مكتوب بوصفه خطة، ونقول ذلك في كل موضع يرد فيه.",
   "WHAT THAT BUYS YOU": "ماذا يمنحك ذلك",
   "WHERE SHOULD I START?": "من أين أبدأ؟",
   "WHY A TABLE, OF ALL THINGS": "لماذا جدول تحديدًا",

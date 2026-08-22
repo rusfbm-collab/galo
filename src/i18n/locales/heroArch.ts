@@ -83,7 +83,7 @@ export const heroArchAr: TranslationDictionary = {
   "Every unit of work is counted and numbered, so the total can be checked against its parts rather than taken on trust.":
     "كل وحدة عمل معدودة ومرقَّمة، فيُراجَع المجموع في ضوء حدوده بدل أن يُؤخذ على الثقة.",
   "Five stages that run in the release you can download today. Open any of them for what it means.":
-    "خمس مراحل تعمل في الإصدار المتاح اليوم. افتح أيًّا منها لتجد ما تعنيه.",
+    "خمس مراحل تعمل في الإصدار المتاح اليوم. افتح أيًّا منها لتجد ما تعنيه.",
   "Input would arrive with proof of where it came from. Today the engine accepts two fixed patterns and nothing else, so this stage does not run.":
     "كان المُدخَل سيصل مصحوبًا بإثبات مصدره. أمّا اليوم فالمحرّك لا يقبل سوى نمطين ثابتين، ولذلك لا تعمل هذه المرحلة.",
   "One entry from that list is picked and tied to a single use. Trying to use it a second time is refused and recorded, not quietly allowed.":
