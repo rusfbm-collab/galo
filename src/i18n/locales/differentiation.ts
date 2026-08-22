@@ -97,8 +97,6 @@ export const differentiationRu: TranslationDictionary = {
     "Политика поверх выходов чужого движка.",
   "Retraining, like any fitted model.":
     "Переобучение, как у любой подогнанной модели.",
-  "Seven finite levels declare how many local states a frame may distinguish. They are not a ladder of smarter AI.":
-    "Семь конечных уровней задают, сколько локальных состояний может различать кадр. Это не лестница «ИИ поумнее».",
   "Split between network and symbolic layer, and the split falls differently in each.":
     "Разделено между сетью и символьным слоем, и граница у каждой системы своя.",
   "Taken for a governance wrapper":
@@ -238,8 +236,6 @@ export const differentiationZh: TranslationDictionary = {
     "策略作用在别人引擎的输出上。",
   "Retraining, like any fitted model.":
     "重新训练，跟任何拟合模型一样。",
-  "Seven finite levels declare how many local states a frame may distinguish. They are not a ladder of smarter AI.":
-    "七个有限层级规定一个框架最多能区分多少个局部状态。它们不是一架“AI 更聪明”的梯子。",
   "Split between network and symbolic layer, and the split falls differently in each.":
     "分在神经网络和符号层之间，而这道界线各家划得都不一样。",
   "Taken for a governance wrapper":
@@ -379,8 +375,6 @@ export const differentiationAr: TranslationDictionary = {
     "سياسةٌ على مخرجات محرّكٍ آخر.",
   "Retraining, like any fitted model.":
     "إعادةُ تدريب، كأيّ نموذج مُلائَم.",
-  "Seven finite levels declare how many local states a frame may distinguish. They are not a ladder of smarter AI.":
-    "سبعة مستويات منتهية تحدّد كم حالةً محلّية يستطيع الإطار أن يميّزها. وهي ليست سُلَّمًا لذكاء اصطناعي أذكى.",
   "Split between network and symbolic layer, and the split falls differently in each.":
     "موزَّعةٌ بين الشبكة والطبقة الرمزية، وموضع الفصل يختلف في كلّ نظام.",
   "Taken for a governance wrapper":

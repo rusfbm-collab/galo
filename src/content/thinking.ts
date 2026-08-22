@@ -27,6 +27,8 @@ export type RoutePhase = {
   happens: string;
   detail: string;
   stopsWhen: string;
+  /** Four or five words for the home-page figure, where there is no room for a sentence. */
+  heroGloss: string;
 };
 
 /**
@@ -46,6 +48,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "Candidates are enumerated from the declared laws rather than proposed by a model. Because completeness is checked instead of assumed, an incomplete portfolio is itself a recorded outcome: the route stops and names the part it could not open, rather than continuing over a space it cannot vouch for.",
     stopsWhen: "The portfolio cannot be completed, or the space cannot be materialised within the declared limit.",
+    heroGloss: "candidates opened in full",
   },
   {
     number: "02",
@@ -57,6 +60,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "This is where knowledge gets used rather than merely stored. When a proven structure covers a signature the episode needs, the step is taken from that structure and the shortcut leaves its own record — so a reduction in work can always be pointed at, instead of appearing as an unexplained improvement.",
     stopsWhen: "No available probe would tell the surviving readings apart.",
+    heroGloss: "maps built, structures reused",
   },
   {
     number: "03",
@@ -68,6 +72,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "The set of probes and their cost are fixed before the episode begins. The policy may choose among them; it may not change them or reprice them. That is the rule which keeps a probe from turning into a way of justifying a conclusion already reached.",
     stopsWhen: "The evidence does not distinguish, or the probe taken is not the probe that was declared.",
+    heroGloss: "one distinguishing probe",
   },
   {
     number: "04",
@@ -79,6 +84,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "The composition has to be unique up to lawful equivalence. Two inequivalent lawful compositions are not settled by preference: the route reports that it holds two of them and stops, because choosing between them would be exactly the unrecorded judgement this design exists to avoid.",
     stopsWhen: "No lawful composition exists, or several inequivalent ones do.",
+    heroGloss: "one lawful whole, or none",
   },
   {
     number: "05",
@@ -90,6 +96,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "Without an external reveal the route has no right to learn. This is the single rule that separates learning from self-confirmation: a system allowed to score its own outcomes can improve its numbers indefinitely without improving anything else.",
     stopsWhen: "No external reveal is available, or the outcome it reports is not verified.",
+    heroGloss: "the outcome comes from outside",
   },
   {
     number: "06",
@@ -101,6 +108,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "What is updated is where to look and in what order — never what counts as permitted. A policy snapshot that has gone stale is refused rather than merged, so two independent replays of the same episode land on the same state rather than on two nearly identical ones.",
     stopsWhen: "The policy snapshot the intent was formed against is no longer current.",
+    heroGloss: "the order changes, not the verdict",
   },
   {
     number: "07",
@@ -112,6 +120,7 @@ export const routePhases: readonly RoutePhase[] = [
     detail:
       "Every phase seals its state on the way out, which is why an interrupted episode continues instead of restarting, and why a mismatch of environment or Atlas on resumption is refused by name instead of quietly producing different numbers.",
     stopsWhen: "The environment or the Atlas does not match the checkpoint being resumed.",
+    heroGloss: "sealed, and replayable by others",
   },
 ];
 
@@ -382,7 +391,14 @@ export const thinkingMisreadings = [
 
 export const thinkingTranslationKeys = [
   ...new Set([
-    ...routePhases.flatMap((phase) => [phase.title, phase.question, phase.happens, phase.detail, phase.stopsWhen]),
+    ...routePhases.flatMap((phase) => [
+      phase.title,
+      phase.question,
+      phase.happens,
+      phase.detail,
+      phase.stopsWhen,
+      phase.heroGloss,
+    ]),
     ...lawfulExits.flatMap((exit) => [exit.title, exit.meaning, exit.detail]),
     ...routeProperties.flatMap((entry) => [entry.title, entry.text]),
     ...refusalGates.flatMap((gate) => [gate.gate, gate.refusesWhen, gate.instead]),

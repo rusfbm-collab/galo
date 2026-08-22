@@ -739,15 +739,15 @@ html[lang="ar"] .claim-table__row {
   font-weight: 700;
 }
 
-.hero-visual__towers {
+.hero-visual__figure {
   position: relative;
   z-index: 1;
   direction: ltr;
-  margin: 4px 20px 0;
+  margin: 2px 20px 0;
   padding-bottom: 34px;
 }
 
-.hero-towers {
+.hero-route {
   display: block;
   width: 100%;
   height: auto;
@@ -755,35 +755,70 @@ html[lang="ar"] .claim-table__row {
   overflow: visible;
 }
 
-.hero-towers__ground {
-  stroke: rgba(255, 255, 255, 0.16);
+.hero-route__phase rect {
+  fill: rgba(11, 34, 53, 0.62);
+  stroke: rgba(65, 200, 232, 0.32);
   stroke-width: 1;
 }
 
-.hero-towers__block {
-  fill: rgba(11, 34, 53, 0.55);
-  stroke: rgba(65, 200, 232, 0.34);
-  stroke-width: 1;
-}
-
-.hero-towers__block.is-floor {
-  fill: rgba(22, 184, 166, 0.22);
-  stroke: rgba(22, 184, 166, 0.75);
-}
-
-.hero-towers__pole {
+.hero-route__name {
   fill: #7fe3d5;
   font-family: var(--font-mono);
   font-size: 0.62rem;
-  text-anchor: middle;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
-.hero-towers__level {
+.hero-route__gloss {
   fill: #9fb6c4;
+  font-size: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+.hero-route__link {
+  fill: none;
+  stroke: rgba(122, 226, 208, 0.5);
+  stroke-width: 1.2;
+}
+
+.hero-route__rail {
+  fill: none;
+  stroke: rgba(159, 182, 196, 0.42);
+  stroke-dasharray: 4 4;
+  stroke-width: 1;
+}
+
+.hero-route__exit rect {
+  fill: rgba(22, 184, 166, 0.14);
+  stroke: rgba(22, 184, 166, 0.6);
+  stroke-dasharray: 5 4;
+  stroke-width: 1;
+}
+
+.hero-route__exit text {
+  fill: #7fe3d5;
   font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.06em;
-  text-anchor: middle;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.hero-route__exit.is-reject rect {
+  fill: rgba(216, 91, 97, 0.14);
+  stroke: rgba(240, 148, 153, 0.6);
+}
+
+.hero-route__exit.is-reject text {
+  fill: #f0a9ad;
+}
+
+/* Below this width the SVG scales the gloss under about 8px, which is smaller
+   than anything else on the page. The phase names carry the shape on their own;
+   the caption underneath carries the rest. */
+@media (max-width: 560px) {
+  .hero-route__gloss {
+    display: none;
+  }
 }
 
 .hero-visual__receipt {
@@ -7296,7 +7331,7 @@ html[dir="rtl"] .theory-law-card__symbol {
     min-height: 410px;
     border-radius: 22px;
   }
-  .hero-visual__towers {
+  .hero-visual__figure {
     margin-inline: 12px;
   }
   .hero-visual__receipt {

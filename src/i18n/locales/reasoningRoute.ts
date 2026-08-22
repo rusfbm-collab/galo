@@ -11,6 +11,32 @@ import type { TranslationDictionary } from "../translations";
  */
 
 export const reasoningRouteRu: TranslationDictionary = {
+  "CLOSED SET":
+    "ЗАМКНУТЫЙ НАБОР",
+  "ONE EPISODE · SEVEN PHASES":
+    "ОДИН ЭПИЗОД · СЕМЬ ФАЗ",
+  "One episode of GALO reasoning, drawn from opening to seal":
+    "Один эпизод рассуждения GALO, нарисованный от открытия до печати",
+  "One episode of reasoning, and the receipt it leaves":
+    "Один эпизод рассуждения и квитанция, которую он оставляет",
+  "Seven phases stacked top to bottom, from opening the candidate space to sealing the episode, each joined to the next by an arrow. A dashed rail runs down the right of all seven and ends in two boxes marked BOUNDARY and REJECT, so either exit is reachable from any phase.":
+    "Семь фаз, поставленных сверху вниз — от открытия пространства кандидатов до запечатывания эпизода, — каждая соединена со следующей стрелкой. Справа вдоль всех семи идёт пунктирная рейка, заканчивающаяся двумя блоками с надписями BOUNDARY и REJECT: любой из выходов достижим из любой фазы.",
+  "Work is counted as it is spent, and either exit is reachable from any phase. A stop is a recorded outcome with a named cause, not a missing answer.":
+    "Работа считается по мере траты, а любой из выходов достижим из любой фазы. Остановка — записанный исход с названной причиной, а не пропавший ответ.",
+  "candidates opened in full":
+    "кандидаты открыты целиком",
+  "maps built, structures reused":
+    "карты построены, структуры взяты",
+  "one distinguishing probe":
+    "одна различающая проба",
+  "one lawful whole, or none":
+    "одно законное целое или ни одного",
+  "sealed, and replayable by others":
+    "запечатано и воспроизводимо другими",
+  "the order changes, not the verdict":
+    "меняется порядок, а не вердикт",
+  "the outcome comes from outside":
+    "исход приходит извне",
   "A STOP IS A RESULT":
     "ОСТАНОВКА — ЭТО РЕЗУЛЬТАТ",
   "A boundary is returned naming what could not be separated, rather than the reading the route happens to find most plausible.":
@@ -280,6 +306,32 @@ export const reasoningRouteRu: TranslationDictionary = {
 };
 
 export const reasoningRouteZh: TranslationDictionary = {
+  "CLOSED SET":
+    "封闭集合",
+  "ONE EPISODE · SEVEN PHASES":
+    "一个回合 · 七个阶段",
+  "One episode of GALO reasoning, drawn from opening to seal":
+    "GALO 一个推理回合，从开启画到封存",
+  "One episode of reasoning, and the receipt it leaves":
+    "一个推理回合，以及它留下的回执",
+  "Seven phases stacked top to bottom, from opening the candidate space to sealing the episode, each joined to the next by an arrow. A dashed rail runs down the right of all seven and ends in two boxes marked BOUNDARY and REJECT, so either exit is reachable from any phase.":
+    "七个阶段自上而下排开，从打开候选空间一直到封存回合，每一个都用箭头连到下一个。右侧沿着这七个阶段有一条虚线的导轨，尽头是两个方块，标着 BOUNDARY 与 REJECT：两个出口从任何一个阶段都能到达。",
+  "Work is counted as it is spent, and either exit is reachable from any phase. A stop is a recorded outcome with a named cause, not a missing answer.":
+    "工作量是边花边数的，而两个出口从任何一个阶段都能到达。停止是一个带具体成因、被记录下来的结果，而不是一个没给出来的答案。",
+  "candidates opened in full":
+    "候选被完整打开",
+  "maps built, structures reused":
+    "局部图建好，结构被复用",
+  "one distinguishing probe":
+    "一个能区分的探针",
+  "one lawful whole, or none":
+    "一个合法的整体，或者一个都没有",
+  "sealed, and replayable by others":
+    "已封存，别人可以重放",
+  "the order changes, not the verdict":
+    "变的是顺序，不是裁定",
+  "the outcome comes from outside":
+    "结果来自外部",
   "A STOP IS A RESULT":
     "停下来也是一种结果",
   "A boundary is returned naming what could not be separated, rather than the reading the route happens to find most plausible.":
@@ -549,6 +601,32 @@ export const reasoningRouteZh: TranslationDictionary = {
 };
 
 export const reasoningRouteAr: TranslationDictionary = {
+  "CLOSED SET":
+    "مجموعة مغلقة",
+  "ONE EPISODE · SEVEN PHASES":
+    "حلقة واحدة · سبع مراحل",
+  "One episode of GALO reasoning, drawn from opening to seal":
+    "حلقةُ استدلالٍ واحدة في GALO، مرسومةً من الفتح إلى الختم",
+  "One episode of reasoning, and the receipt it leaves":
+    "حلقةُ استدلالٍ واحدة والإيصال الذي تتركه",
+  "Seven phases stacked top to bottom, from opening the candidate space to sealing the episode, each joined to the next by an arrow. A dashed rail runs down the right of all seven and ends in two boxes marked BOUNDARY and REJECT, so either exit is reachable from any phase.":
+    "سبع مراحل مرصوفة من الأعلى إلى الأسفل، من فتح فضاء المرشحين إلى ختم الحلقة، كلٌّ منها موصولةٌ بالتالية بسهم. وعلى اليمين يمتدّ بمحاذاة السبع جميعًا قضيبٌ متقطّع ينتهي إلى مربّعين مكتوبٍ عليهما BOUNDARY وREJECT، فكلا المخرجين يُبلَغ من أي مرحلة.",
+  "Work is counted as it is spent, and either exit is reachable from any phase. A stop is a recorded outcome with a named cause, not a missing answer.":
+    "يُحسَب العمل وهو يُنفَق، وكلا المخرجين يُبلَغ من أي مرحلة. والتوقّف نتيجةٌ مسجَّلة بسببٍ مسمّى لا جوابًا غائبًا.",
+  "candidates opened in full":
+    "المرشحون مفتوحون كاملًا",
+  "maps built, structures reused":
+    "خرائط تُبنى وبنى تُعاد",
+  "one distinguishing probe":
+    "مسبارٌ فارقٌ واحد",
+  "one lawful whole, or none":
+    "كلٌّ مشروعٌ واحد أو لا شيء",
+  "sealed, and replayable by others":
+    "مختومٌ ويُعيد تشغيله غيرك",
+  "the order changes, not the verdict":
+    "يتغيّر الترتيب لا الحكم",
+  "the outcome comes from outside":
+    "النتيجة تأتي من الخارج",
   "A STOP IS A RESULT":
     "التوقف نتيجة",
   "A boundary is returned naming what could not be separated, rather than the reading the route happens to find most plausible.":

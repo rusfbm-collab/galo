@@ -3,6 +3,7 @@ import userEvent from "@testing-library/user-event";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { App } from "../src/app/App";
 import { termSlugs } from "../src/content/termPages";
+import { routePhases } from "../src/content/thinking";
 import {
   getMissingTranslations,
   localizedPath,
@@ -33,21 +34,30 @@ describe("GALO public site", () => {
     );
   });
 
-  it("draws the seven levels as seven towers whose heights come from the mathematics", () => {
+  it("draws one episode of reasoning in the hero, with both lawful exits on it", () => {
     render(<App />);
-    const towers = document.querySelector(".hero-towers");
-    expect(towers).toBeInTheDocument();
+    const route = document.querySelector(".hero-route");
+    expect(route).toBeInTheDocument();
 
-    // One group per level, and level n holds exactly n blocks.
-    const groups = towers?.querySelectorAll("g") ?? [];
-    expect(groups).toHaveLength(7);
-    groups.forEach((group, index) => {
-      expect(group.querySelectorAll("rect")).toHaveLength(index + 1);
-    });
+    // One chip per phase, in the order the thinking page renders them.
+    const phases = route?.querySelectorAll(".hero-route__phase") ?? [];
+    expect(phases).toHaveLength(routePhases.length);
+    expect(Array.from(phases).map((phase) => phase.querySelector(".hero-route__name")?.textContent)).toEqual([
+      "SEARCH",
+      "HYPOTHESES",
+      "PROBING",
+      "COMPOSITION",
+      "REVEAL",
+      "LEARNING",
+      "COMPLETE",
+    ]);
 
-    // The foot of every tower is P0, the state present at every level.
-    expect(towers?.querySelectorAll("rect.is-floor")).toHaveLength(7);
-    expect(towers?.querySelectorAll(".hero-towers__pole")).toHaveLength(7);
+    // Both exits, and the rail that makes either reachable from any phase.
+    const exits = route?.querySelectorAll(".hero-route__exit") ?? [];
+    expect(Array.from(exits).map((exit) => exit.querySelector("text")?.textContent)).toEqual(["BOUNDARY", "REJECT"]);
+    expect(route?.querySelectorAll(".hero-route__exit.is-reject")).toHaveLength(1);
+    // One stub per phase, plus the rail itself and one drop into each exit.
+    expect(route?.querySelectorAll(".hero-route__rail")).toHaveLength(routePhases.length + 3);
   });
 
   it("takes the headline apart, with the limit in the same card as the claim", () => {

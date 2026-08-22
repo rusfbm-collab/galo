@@ -108,7 +108,6 @@ export const ar: TranslationDictionary = {
     "إعادة تشغيل شكلية ضمن نطاق معلن. لا ندّعي تحقيق الذكاء الاصطناعي العام أو التفوق في القدرات الخارجية.",
   "Layered resolution and receipt visual": "تمثيل بصري لمستويات الدقة وإيصالات التنفيذ",
   "WORLD STATE / RESOLUTION": "حالة العالم / مستوى الدقة",
-  "DECLARED SCOPE": "النطاق المعلَن",
   "BOUND HANDLE": "مقبض مرتبط",
   "WORK LEDGER": "سجل العمل",
   "Minimum sufficient level selected": "تم اختيار الحد الأدنى الكافي من الدقة",

@@ -90,10 +90,7 @@ export const landscapeRu: TranslationDictionary = {
   "Relative to GALO": "Как это соотносится с GALO",
   "Reproduce it in five steps": "Воспроизвести за пять шагов",
   "Retrieval-augmented systems": "Системы с поиском по документам",
-  "SEVEN LEVELS": "СЕМЬ УРОВНЕЙ",
   "See the declared universe and how it is counted": "Посмотреть объявленное множество и как оно посчитано",
-  "Seven levels drawn as seven towers of increasing height":
-    "Семь уровней, нарисованных как семь башен возрастающей высоты",
   "Seven towers side by side, one per level. Tower L1 is one block tall and tower L7 is seven blocks tall, because level n declares exactly n states. The bottom block of every tower is P0, the state that exists at every level.":
     "Семь башен в ряд, по одной на уровень. Башня L1 высотой в один блок, башня L7 — в семь, потому что уровень n объявляет ровно n состояний. Нижний блок каждой башни — P0, состояние, которое есть на всех уровнях.",
   Show: "Показал",
@@ -132,7 +129,6 @@ export const landscapeRu: TranslationDictionary = {
     "Та же цель, только из более старой традиции. Вклад GALO не в цели: под ним лежит конечная алгебра с доказанной структурой, а сверху — протоколы.",
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "Тот же инстинкт — решать внутри чего-то объявленного, — только применённый к свойствам программ, а не к действиям во время работы. Ядро GALO — конечная алгебра, а его среда исполнения пишет протоколы.",
-  "The seven levels, and one execution receipt": "Семь уровней и один протокол исполнения",
   "The wider field, thirteen families": "Поле целиком: тринадцать семейств",
   "Then why not use a rule engine?": "Тогда почему не движок правил?",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
@@ -240,9 +236,7 @@ export const landscapeZh: TranslationDictionary = {
   "Relative to GALO": "与 GALO 的关系",
   "Reproduce it in five steps": "分五步复算一遍",
   "Retrieval-augmented systems": "检索增强型系统",
-  "SEVEN LEVELS": "七个层级",
   "See the declared universe and how it is counted": "去看那个已声明的全集，以及它是怎么数出来的",
-  "Seven levels drawn as seven towers of increasing height": "七个层级，画成七座高度递增的塔",
   "Seven towers side by side, one per level. Tower L1 is one block tall and tower L7 is seven blocks tall, because level n declares exactly n states. The bottom block of every tower is P0, the state that exists at every level.":
     "七座塔并排而立，一层一座。L1 那座只有一块高，L7 那座有七块高，因为第 n 层恰好声明 n 个状态。每座塔最底下那一块都是 P0，也就是在每一层都存在的那个状态。",
   Show: "把过程摆出来",
@@ -281,7 +275,6 @@ export const landscapeZh: TranslationDictionary = {
     "同样的抱负，只是出自更早的传统。GALO 的贡献不在抱负本身：它底下是一个结构已被证明的有限代数，上面则是回执。",
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "同一种本能——在已声明的东西内部作判定——只不过用在程序的性质上，而不是运行时所采取的动作上。GALO 的内核是有限代数，它的运行时会写回执。",
-  "The seven levels, and one execution receipt": "七个层级，以及一份执行回执",
   "The wider field, thirteen families": "更广的领域：十三类系统",
   "Then why not use a rule engine?": "那为什么不用规则引擎？",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":
@@ -389,9 +382,7 @@ export const landscapeAr: TranslationDictionary = {
   "Relative to GALO": "الموقع بالنسبة إلى GALO",
   "Reproduce it in five steps": "أعِد إنتاجه في خمس خطوات",
   "Retrieval-augmented systems": "الأنظمة المعزَّزة بالاسترجاع",
-  "SEVEN LEVELS": "سبعة مستويات",
   "See the declared universe and how it is counted": "انظر الكون المعلَن وكيف جرى عدّه",
-  "Seven levels drawn as seven towers of increasing height": "سبعة مستويات مرسومة كسبعة أبراج يعلو كلٌّ منها عن سابقه",
   "Seven towers side by side, one per level. Tower L1 is one block tall and tower L7 is seven blocks tall, because level n declares exactly n states. The bottom block of every tower is P0, the state that exists at every level.":
     "سبعة أبراج متجاورة، برج لكل مستوى. برج L1 بارتفاع لبنة واحدة وبرج L7 بارتفاع سبع لبنات، لأنّ المستوى n يعلن n حالات بالضبط. واللبنة السفلى في كل برج هي P0، الحالة الموجودة في كل مستوى.",
   Show: "أظهر",
@@ -430,7 +421,6 @@ export const landscapeAr: TranslationDictionary = {
     "الطموح نفسه، لكن من تقليد أقدم. وليست مساهمة GALO في الطموح، بل في جبرٍ منتهٍ بُرهنت بنيته تحته، وإيصالاتٍ فوقه.",
   "The same instinct — decide inside something declared — applied to properties of programs rather than to actions taken at runtime. GALO's kernel is finite algebra and its runtime writes receipts.":
     "الغريزة نفسها — أن تحسم داخل شيء معلَن — لكن مطبَّقة على خصائص البرامج لا على أفعال تُتّخذ أثناء التشغيل. نواة GALO جبر منتهٍ، وزمن تشغيلها يكتب إيصالات.",
-  "The seven levels, and one execution receipt": "المستويات السبعة وإيصال تنفيذ واحد",
   "The wider field, thirteen families": "الميدان الأوسع: ثلاث عشرة عائلة",
   "Then why not use a rule engine?": "ولماذا لا نكتفي بمحرّك قواعد إذن؟",
   "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.":

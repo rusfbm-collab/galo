@@ -108,7 +108,6 @@ export const ru: TranslationDictionary = {
     "Формальное воспроизведение в заявленной области. GALO не заявляется как General AI и не утверждает превосходства внешних возможностей.",
   "Layered resolution and receipt visual": "Схема уровней разрешения и протокола исполнения",
   "WORLD STATE / RESOLUTION": "СОСТОЯНИЕ МИРА / РАЗРЕШЕНИЕ",
-  "DECLARED SCOPE": "ЗАЯВЛЕННАЯ ОБЛАСТЬ",
   "BOUND HANDLE": "СВЯЗАННЫЙ ДЕСКРИПТОР",
   "WORK LEDGER": "РЕЕСТР РАБОТЫ",
   "Minimum sufficient level selected": "Выбран минимально достаточный уровень",

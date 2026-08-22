@@ -108,7 +108,6 @@ export const zh: TranslationDictionary = {
     "在已声明范围内进行形式化重放。不声称实现通用人工智能，也不声称拥有经外部验证的能力优势。",
   "Layered resolution and receipt visual": "分层分辨率与执行回执示意图",
   "WORLD STATE / RESOLUTION": "世界状态 / 分辨率",
-  "DECLARED SCOPE": "已声明范围",
   "BOUND HANDLE": "已绑定句柄",
   "WORK LEDGER": "工作账本",
   "Minimum sufficient level selected": "已选择最小充分层级",

@@ -16,9 +16,9 @@ import {
   SquareTerminal,
 } from "lucide-react";
 import { ArchitectureFlow } from "../components/diagrams/ArchitectureFlow";
+import { HeroReasoningRoute } from "../components/diagrams/HeroReasoningRoute";
 import { LocalRevision } from "../components/diagrams/LocalRevision";
 import { ResolutionLadder } from "../components/diagrams/ResolutionLadder";
-import { StateTowers } from "../components/diagrams/StateTowers";
 import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
@@ -199,15 +199,13 @@ export function HomePage() {
             </p>
           </div>
 
-          <div className="hero-visual" aria-label={t("The seven levels, and one execution receipt")}>
+          <div className="hero-visual" aria-label={t("One episode of reasoning, and the receipt it leaves")}>
             <div className="hero-visual__topline">
-              <span>
-                {t("SEVEN LEVELS")} <bdi dir="ltr">L1 → L7</bdi>
-              </span>
-              <strong>{t("DECLARED SCOPE")}</strong>
+              <span>{t("ONE EPISODE · SEVEN PHASES")}</span>
+              <strong>{t("CLOSED SET")}</strong>
             </div>
-            <div className="hero-visual__towers">
-              <StateTowers />
+            <div className="hero-visual__figure">
+              <HeroReasoningRoute />
             </div>
             <div className="hero-visual__receipt">
               <span className="status status--pass" dir="ltr">
@@ -229,7 +227,7 @@ export function HomePage() {
             <div className="hero-visual__caption">
               <span>
                 {t(
-                  "Seven finite levels declare how many local states a frame may distinguish. They are not a ladder of smarter AI.",
+                  "Work is counted as it is spent, and either exit is reachable from any phase. A stop is a recorded outcome with a named cause, not a missing answer.",
                 )}
               </span>
               <span>{t("Receipt chain intact")}</span>
