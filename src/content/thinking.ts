@@ -1,168 +1,234 @@
 /**
- * The thinking schemes.
+ * The reasoning route.
  *
- * Everything on this route describes a decision procedure that is written out in
- * advance, so each stage carries the status it actually has: `CURRENT V4` for a
- * stage the shipped engine performs on every run, and `TARGET` for a stage that
- * exists as written architecture only. Nothing here describes cognition,
- * understanding, or autonomy.
+ * This page used to describe one artefact only: the frozen kernel release, whose
+ * single bounded step performs no policy update at all. That is still a true
+ * description of that release, and it is kept below where it belongs. It is not a
+ * true description of how GALO reaches a decision, because the route an episode
+ * actually travels is a closed set of phases with two lawful exits, a counted
+ * budget, and a learning phase that only opens after somebody outside the system
+ * discloses the outcome.
+ *
+ * Rules for every string in this file. Nothing here describes cognition,
+ * understanding, or autonomy; "thinking" names a written-out route, and the page
+ * says so in the first screen. Nothing here publishes an internal identifier, a
+ * module path, or a receipt type — the shape of the route is the subject, not its
+ * implementation. And nothing here may imply that the drawn route is what the
+ * published results measured: it is not, that gap is the last of the five
+ * misreadings, and it is stated rather than glossed.
  */
 
-export type ThoughtStatus = "CURRENT V4" | "TARGET";
-
-export type ThoughtStage = {
+export type RoutePhase = {
   number: string;
+  /** The phase's own name, kept untranslated and left-to-right in every locale. */
   name: string;
+  title: string;
   question: string;
   happens: string;
   detail: string;
   stopsWhen: string;
-  status: ThoughtStatus;
 };
 
 /**
- * One complete thought, drawn stage by stage. The first seven stages are what the
- * shipped engine does; the last two are written architecture and are marked as
- * such everywhere they appear.
+ * The phase set is closed: an episode is in exactly one of these, and a request
+ * for a phase outside the set is rejected rather than improvised. Each phase
+ * seals its state on the way out, which is why an interrupted episode resumes
+ * instead of restarting.
  */
-export const thoughtStages: readonly ThoughtStage[] = [
+export const routePhases: readonly RoutePhase[] = [
   {
     number: "01",
-    name: "An observation arrives",
-    question: "What came in?",
-    happens: "One input reaches the engine and is treated as a candidate for matching, never as text to interpret.",
+    name: "SEARCH",
+    title: "The candidate space is opened",
+    question: "What could lawfully happen here at all?",
+    happens:
+      "The episode opens, the space of lawful candidates is materialised, and the portfolio is checked for completeness before anything is chosen.",
     detail:
-      "The engine does not read meaning out of the input. It holds the input as an opaque value that will either match a declared pattern or fail to match it. Because nothing is inferred at this stage, two identical inputs are guaranteed to enter the following stages in exactly the same condition.",
-    stopsWhen: "Nothing stops here; this stage only receives.",
-    status: "CURRENT V4",
+      "Candidates are enumerated from the declared laws rather than proposed by a model. Because completeness is checked instead of assumed, an incomplete portfolio is itself a recorded outcome: the route stops and names the part it could not open, rather than continuing over a space it cannot vouch for.",
+    stopsWhen: "The portfolio cannot be completed, or the space cannot be materialised within the declared limit.",
   },
   {
     number: "02",
-    name: "The pattern is recognised or refused",
-    question: "Is this something I am allowed to act on?",
+    name: "HYPOTHESES",
+    title: "Executable local maps are built",
+    question: "Which readings of this situation are lawful?",
     happens:
-      "The input is matched against exactly two declared source patterns, and anything else is refused outright.",
+      "Lawful models become executable local maps, and any already-proven structure whose signature matches is consumed instead of being rebuilt.",
     detail:
-      "The pattern alpha,beta selects the LEFT role and the even enumeration parity; gamma,delta selects RIGHT and odd. There is no third branch and no fallback branch. An unmatched input produces a refusal with a named reason rather than a best guess, which is the first and largest difference between this procedure and an open-ended one.",
-    stopsWhen: "The input matches neither declared pattern.",
-    status: "CURRENT V4",
+      "This is where knowledge gets used rather than merely stored. When a proven structure covers a signature the episode needs, the step is taken from that structure and the shortcut leaves its own record — so a reduction in work can always be pointed at, instead of appearing as an unexplained improvement.",
+    stopsWhen: "No available probe would tell the surviving readings apart.",
   },
   {
     number: "03",
-    name: "The current position is read",
-    question: "Where am I standing right now?",
-    happens: "The state is one named position from the finite carrier declared for the working level.",
+    name: "PROBING",
+    title: "One distinguishing probe is taken",
+    question: "What would tell these readings apart?",
+    happens:
+      "A distinguishing probe is chosen and executed, the observation is recorded, attributed to the assumption it bears on, and the affected map is revised locally.",
     detail:
-      "At L3 the carrier is exactly {P0, P1, P2}; at L7 it is exactly seven labels. The position is the whole of the engine's state — there is no second, hidden state alongside it. This is why the state can be printed in full into a record instead of being summarised.",
-    stopsWhen: "The declared level offers no such position.",
-    status: "CURRENT V4",
+      "The set of probes and their cost are fixed before the episode begins. The policy may choose among them; it may not change them or reprice them. That is the rule which keeps a probe from turning into a way of justifying a conclusion already reached.",
+    stopsWhen: "The evidence does not distinguish, or the probe taken is not the probe that was declared.",
   },
   {
     number: "04",
-    name: "The candidate universe is opened",
-    question: "What could I possibly do next?",
+    name: "COMPOSITION",
+    title: "The surviving maps are composed",
+    question: "Does one lawful whole come out of what survived?",
     happens:
-      "All 1,204 committed descriptors are entered — the complete list the release commits to before anything runs.",
+      "The surviving maps are composed into a single multi-place structure, and proven structures are applied again wherever they cover it.",
     detail:
-      "The release fixes the list; the run never assembles it. Nothing joins it afterwards, and nothing outside it executes under any circumstances. So the stages that follow narrow rather than search: the answer is known to sit inside a finite set a reviewer can enumerate alone.",
-    stopsWhen: "A requested descriptor is not a member of the committed universe.",
-    status: "CURRENT V4",
+      "The composition has to be unique up to lawful equivalence. Two inequivalent lawful compositions are not settled by preference: the route reports that it holds two of them and stops, because choosing between them would be exactly the unrecorded judgement this design exists to avoid.",
+    stopsWhen: "No lawful composition exists, or several inequivalent ones do.",
   },
   {
     number: "05",
-    name: "Declared filters narrow the set",
-    question: "Which of those am I actually permitted to do?",
-    happens: "880 descriptors are executable, and the recognised pattern exposes one 440-candidate parity frontier.",
+    name: "REVEAL",
+    title: "The outcome is disclosed from outside",
+    question: "What actually happened, according to somebody other than me?",
+    happens:
+      "The outcome of the action is disclosed by an external evaluator, and its record is required before the route may continue.",
     detail:
-      "Both cuts are written into the release contract rather than decided during the run. Only four action kinds are executable at all; the remaining descriptors stay inert by construction. The parity half is fixed by whichever of the two patterns matched at stage 02, so the same input always reaches the same frontier.",
-    stopsWhen: "The candidate is inert or sits on the other parity half.",
-    status: "CURRENT V4",
+      "Without an external reveal the route has no right to learn. This is the single rule that separates learning from self-confirmation: a system allowed to score its own outcomes can improve its numbers indefinitely without improving anything else.",
+    stopsWhen: "No external reveal is available, or the outcome it reports is not verified.",
   },
   {
     number: "06",
-    name: "The order is derived and one handle is bound",
-    question: "Which single candidate do I take, and can I prove I would take it again?",
+    name: "LEARNING",
+    title: "Durable state is updated, and only durable state",
+    question: "What may I keep from this, and what may I never keep?",
     happens:
-      "A SHA-256 order over observation, candidate ID, and ordinal fixes the sequence, and one candidate is bound to a single use.",
+      "A learning intent is formed and applied: the ordering and the durable Atlas state change, and the laws, the candidate set, and the verdict do not.",
     detail:
-      "This is the stage most often mistaken for judgement. It is not: the order is a hash of values that are all recorded, so anyone holding the record can recompute the same order and reach the same candidate. The bound handle is one-shot and process-local — using it twice is refused rather than tolerated.",
-    stopsWhen: "The handle has already been spent, rolled back, or revoked.",
-    status: "CURRENT V4",
+      "What is updated is where to look and in what order — never what counts as permitted. A policy snapshot that has gone stale is refused rather than merged, so two independent replays of the same episode land on the same state rather than on two nearly identical ones.",
+    stopsWhen: "The policy snapshot the intent was formed against is no longer current.",
   },
   {
     number: "07",
-    name: "One bounded action runs and is recorded",
-    question: "What did I do, and what does the record say?",
+    name: "COMPLETE",
+    title: "The episode is sealed",
+    question: "What can somebody else replay from this?",
     happens:
-      "A single action of arity 2 executes at route depth 1, and a receipt records the checks, the work units, and the outcome.",
+      "The episode closes on a typed terminal, and its state and checkpoint are sealed so the route can be resumed with an identical result.",
     detail:
-      "The run ends here. There is no second step inside the same run, no revision of the earlier stages, and no write back into any learned store: semantic reads, rank effects, and learning writes are all zero. The receipt is the deliverable, and it is what someone else replays.",
-    stopsWhen: "A precondition of the bounded action is unmet, and the refusal itself is recorded.",
-    status: "CURRENT V4",
+      "Every phase seals its state on the way out, which is why an interrupted episode continues instead of restarting, and why a mismatch of environment or Atlas on resumption is refused by name instead of quietly producing different numbers.",
+    stopsWhen: "The environment or the Atlas does not match the checkpoint being resumed.",
+  },
+];
+
+export type LawfulExit = {
+  terminal: "BOUNDARY" | "REJECT";
+  title: string;
+  meaning: string;
+  detail: string;
+};
+
+/**
+ * Two exits, and they say different things. Keeping them apart is the point: a
+ * boundary is a lawful run that could not settle the question, a rejection is a
+ * run that was not lawful. Collapsing the two would make every stop look the same.
+ */
+export const lawfulExits: readonly LawfulExit[] = [
+  {
+    terminal: "BOUNDARY",
+    title: "The route ran lawfully and could not settle it",
+    meaning: "Reachable from any phase, and a legitimate way for an episode to end.",
+    detail:
+      "The evidence did not distinguish, no lawful composition was unique, no external reveal was available, or the counted budget ran out. In each case the cause is named in the record, so a stop is something a reader can examine rather than an absence of output.",
   },
   {
-    number: "08",
-    name: "The world model is revised",
-    question: "What should change in what I hold about the world?",
-    happens: "The recorded outcome would update an explicit world model, entry by entry, rather than a set of weights.",
+    terminal: "REJECT",
+    title: "The run was not lawful, and is not repaired",
+    meaning: "A broken invariant, refused by name rather than corrected in flight.",
     detail:
-      "This stage is written architecture with named preconditions, and it does not run today. Its point is that a revision would be a named edit to a named entry, so a reviewer could ask which entry changed, why, and on the strength of which receipt — the question that cannot be put to a fitted parameter.",
-    stopsWhen: "It does not run at all in the current release.",
-    status: "TARGET",
+      "A probe set changed under the policy, a stale snapshot submitted, a phase outside the declared set requested. The episode is rejected rather than salvaged, because a run that repaired its own violations would be a run nobody could reason about afterwards.",
+  },
+];
+
+export type RouteProperty = {
+  number: string;
+  title: string;
+  text: string;
+};
+
+/**
+ * The four properties that make this a route rather than a search. Each one is a
+ * constraint the engine enforces, not an intention.
+ */
+export const routeProperties: readonly RouteProperty[] = [
+  {
+    number: "01",
+    title: "The outcome is typed, not scored",
+    text: "Nothing is chosen for being most plausible. When there is nothing to tell the alternatives apart, the route must take a probe or return a boundary. The one thing it may not do is hand back the likeliest reading as though it had been established.",
   },
   {
-    number: "09",
-    name: "The working resolution is reconsidered",
-    question: "Do I need finer distinctions for what comes next?",
-    happens: "The level would be chosen in response to the situation instead of being declared in advance.",
-    detail:
-      "A coarser level never lies; it simply stops being able to tell two situations apart. Selecting the level automatically is exactly the adaptive-resolution part of the architecture, and it is open work. In the current release the level is fixed before the run and never changes during it.",
-    stopsWhen: "It does not run at all in the current release.",
-    status: "TARGET",
+    number: "02",
+    title: "Every step has a price, and the budget is finite",
+    text: "Work is counted in units as it is spent, and exhausting the budget is a lawful outcome with a named cause rather than a quiet decline in quality. That is what makes the difference between two runs a quantity instead of an impression.",
+  },
+  {
+    number: "03",
+    title: "Learning opens only after an outside disclosure",
+    text: "The route may not confirm itself. Until an external evaluator discloses the outcome, no durable state may change, and an attempt to change it before that point is refused by name and written down.",
+  },
+  {
+    number: "04",
+    title: "Every shortcut has to be presentable",
+    text: "Work goes down by consuming structures that were already proven, and each such consumption leaves its own record. A reduction nobody can point at is treated here as a defect rather than as a result.",
   },
 ];
 
 export type RefusalGate = {
   code: string;
   gate: string;
+  terminal: "BOUNDARY" | "REJECT";
   refusesWhen: string;
   instead: string;
 };
 
 /**
- * The five places a thought can stop. Each one is a declared check, so a stop is
- * a recorded outcome with a named cause rather than a failure to produce output.
+ * The five places an episode is allowed to stop. Four end in a boundary and one
+ * in a rejection, and the record says which.
  */
 export const refusalGates: readonly RefusalGate[] = [
   {
     code: "G1",
-    gate: "Pattern not accepted",
-    refusesWhen: "The observation matches neither of the two declared source patterns.",
-    instead: "Nothing is executed and no candidate is opened. The refusal names the gate that stopped it.",
+    gate: "Nothing left to distinguish with",
+    terminal: "BOUNDARY",
+    refusesWhen: "Several readings survive and no available probe would separate them.",
+    instead:
+      "A boundary is returned naming what could not be separated, rather than the reading the route happens to find most plausible.",
   },
   {
     code: "G2",
-    gate: "Kind not executable",
-    refusesWhen: "The candidate's action kind is outside the four kinds the release makes executable.",
-    instead: "The descriptor stays inert. It remains a member of the committed universe, but it cannot run.",
+    gate: "The space could not be opened in full",
+    terminal: "BOUNDARY",
+    refusesWhen: "The candidate portfolio cannot be completed, or materialising it would exceed the declared limit.",
+    instead:
+      "The episode stops before anything is chosen, because a choice out of a space nobody can vouch for is not a lawful choice.",
   },
   {
     code: "G3",
-    gate: "Outside the exposed frontier",
-    refusesWhen: "The candidate sits on the parity half that the matched pattern did not select.",
-    instead: "It is never exposed to ordering, so it cannot be reached even accidentally.",
+    gate: "No single lawful composition",
+    terminal: "BOUNDARY",
+    refusesWhen: "Either nothing composes lawfully, or two inequivalent lawful compositions both stand.",
+    instead:
+      "Both are reported as boundaries. The second is the interesting one: holding two answers is stated outright rather than resolved by preference.",
   },
   {
     code: "G4",
-    gate: "Handle already spent",
-    refusesWhen: "A one-shot executable handle is used a second time, after rollback, or after revocation.",
-    instead: "The second use is refused by the sequence check, and the attempt appears in the record.",
+    gate: "The work budget is spent",
+    terminal: "BOUNDARY",
+    refusesWhen: "The counted work for the episode reaches its declared budget before the route completes.",
+    instead:
+      "A boundary is returned with the budget as its named cause, so running out is never confused with having answered poorly.",
   },
   {
     code: "G5",
-    gate: "Outside the declared scope",
-    refusesWhen: "A step would require reading meaning, changing a ranking, or writing something learned.",
-    instead: "All three counters are held at zero, so the step cannot occur rather than occurring quietly.",
+    gate: "An invariant was broken",
+    terminal: "REJECT",
+    refusesWhen: "A probe set or its price was changed under the policy, a stale snapshot was submitted, or an undeclared phase was requested.",
+    instead:
+      "The episode is rejected rather than repaired. A rejection says the run was not lawful at all, which is a different statement from a boundary and is kept separate in the record.",
   },
 ];
 
@@ -174,42 +240,44 @@ export type MemoryRegister = {
 };
 
 /**
- * What survives from one thought to the next, and what deliberately does not.
+ * What survives an episode, and what deliberately does not. The second entry is
+ * the one that changed: durable learned state exists, it lives in a volume that
+ * can be detached, and detaching it is how the published results were measured.
  */
 export const memoryRegisters: readonly MemoryRegister[] = [
   {
-    register: "The current position",
-    holds: "One label from the declared carrier, such as P2 at L3.",
+    register: "The episode's record",
+    holds: "What was checked, what was probed, what ran, what was refused, and how much work it cost.",
     detail:
-      "This is the entire mutable state. It can be written into a record in full, compared to another run character by character, and restored exactly.",
+      "Append-only and linked back to the observation it came from, so what was learned cannot be shown without the episodes that produced it. A record is read by people and by replay tooling, never by the decision path of a later episode.",
     carried: true,
   },
   {
-    register: "The declared boundary",
-    holds: "Level, laws, executable kinds, arity, route depth, and accepted patterns.",
+    register: "The learned volume",
+    holds: "Counters and learned orders over what to try first, held in a volume that can be detached.",
     detail:
-      "Fixed by the release before any run begins. A run cannot widen it, and two runs of the same release are bounded identically.",
+      "Detachable is the operative word. The same engine runs with the volume mounted and with it removed, and the difference between those two runs is what every published learning number measures. Nothing in the volume is a weight, and nothing in it can widen what is permitted.",
     carried: true,
   },
   {
-    register: "The receipt ledger",
-    holds: "An append-only record of what each completed step checked, executed, and refused.",
+    register: "Proven structures and their lifecycle",
+    holds: "Structures that passed the formation checks, each standing as active, weakened, or retired.",
     detail:
-      "The ledger is read by people and by replay tooling, not by the engine's decision path. It never feeds back into the ordering of a later run.",
+      "A structure is weakened by a counterexample rather than deleted quietly, and everything derived from it loses force with it. So a structure that turns out to be wrong leaves a trail instead of disappearing from the story.",
     carried: true,
   },
   {
     register: "Learned weights",
     holds: "Nothing. There are none.",
     detail:
-      "No parameter is fitted, adjusted, or accumulated. Two runs separated by a thousand other runs behave identically on the same input.",
+      "No parameter is fitted, adjusted, or accumulated. What differs between two runs is the order candidates are tried in and which proven structures are already available — never what counts as a lawful answer.",
     carried: false,
   },
   {
-    register: "An accumulated preference",
-    holds: "Nothing. Order comes from a hash, not from history.",
+    register: "Any change to what is permitted",
+    holds: "Nothing. Learning cannot reach the verdict.",
     detail:
-      "Because the ordering input is observation, candidate ID, and ordinal, an earlier run cannot make a later run prefer anything. learning_writes stays at zero.",
+      "The laws, the candidate set, and the verifier's authority are frozen with respect to everything above. An episode may end up doing less work than the one before it; it may not end up being allowed more.",
     carried: false,
   },
 ];
@@ -223,8 +291,9 @@ export type WalkthroughRow = {
 };
 
 /**
- * One thought carried through with concrete values, so the schemes above can be
- * checked against something specific rather than read as a metaphor.
+ * The frozen kernel release, carried through with concrete values. This is one
+ * bounded step, not the route above: the release performs no policy update at
+ * all, and the counters that sit at zero are properties of that artefact.
  */
 export const thinkingWalkthrough: readonly WalkthroughRow[] = [
   {
@@ -287,33 +356,35 @@ export const thinkingMisreadings = [
   {
     claim: "GALO thinks the way a person thinks.",
     correction:
-      "The word names a written-out decision procedure with declared stages. No claim about cognition, understanding, or awareness is made anywhere on this site.",
+      "The word names a written-out route with declared phases, a counted budget, and a typed outcome. No claim about cognition, understanding, or awareness is made here or anywhere else on this site.",
   },
   {
-    claim: "The loop runs continuously until it is satisfied.",
+    claim: "The route keeps going until it is satisfied.",
     correction:
-      "The current engine performs one bounded step per run at route depth 1. Multi-step trajectories are named open work on the evidence page.",
+      "It cannot. The budget is finite and counted as it is spent, and exhausting it is a lawful outcome with a named cause. An episode ends on a settled answer or on a boundary, never on having tried for long enough.",
   },
   {
-    claim: "GALO works out which action is best.",
+    claim: "GALO works out which candidate is best.",
     correction:
-      "Nothing is scored. The order is derived from a hash of recorded values, which is why a reviewer can recompute it and reach the same candidate.",
+      "Nothing is scored. When the alternatives cannot be told apart, the route takes a probe or returns a boundary — it never hands back the most plausible one as though it had been established.",
   },
   {
-    claim: "Each thought teaches GALO something.",
+    claim: "Nothing is learned here, since there are no weights.",
     correction:
-      "Learning writes are held at zero. Revising an explicit world model is stage 08, and stage 08 is target architecture rather than shipped behaviour.",
+      "There are no weights, and there is learning. What is learned is where to look and in what order, held in a volume that can be detached; what may never be learned is the verdict. The measured results, and the comparator they were measured against, are on the evidence page.",
   },
   {
-    claim: "A refusal means the system failed.",
+    claim: "The route drawn on this page is what the published results measured.",
     correction:
-      "A refusal is a recorded outcome with a named gate. The design prefers a stop that can be pointed at over an answer that cannot be traced.",
+      "It is not, and the gap is published rather than glossed. The measuring path of the sealed campaigns is a counting ranker reading a learned volume; the tower, the typed routes, and the verifier are not in that path, so their joint contribution is not established. An end-to-end run that would settle it is the next registered step.",
   },
 ] as const;
 
 export const thinkingTranslationKeys = [
   ...new Set([
-    ...thoughtStages.flatMap((stage) => [stage.name, stage.question, stage.happens, stage.detail, stage.stopsWhen]),
+    ...routePhases.flatMap((phase) => [phase.title, phase.question, phase.happens, phase.detail, phase.stopsWhen]),
+    ...lawfulExits.flatMap((exit) => [exit.title, exit.meaning, exit.detail]),
+    ...routeProperties.flatMap((entry) => [entry.title, entry.text]),
     ...refusalGates.flatMap((gate) => [gate.gate, gate.refusesWhen, gate.instead]),
     ...memoryRegisters.flatMap((entry) => [entry.register, entry.holds, entry.detail]),
     ...thinkingWalkthrough.flatMap((row) => [row.asks, row.note]),

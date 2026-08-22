@@ -27,6 +27,7 @@ import { theoryPlainZh } from "./theoryPlain";
 import { gatesZh } from "./gates";
 import { investorCaseZh } from "./investorCase";
 import { plainWordsPageZh } from "./plainWordsPage";
+import { reasoningRouteZh } from "./reasoningRoute";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 
@@ -61,6 +62,7 @@ export const zh: TranslationDictionary = {
   ...gatesZh,
   ...investorCaseZh,
   ...plainWordsPageZh,
+  ...reasoningRouteZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

@@ -57,9 +57,9 @@ const locales = {
       },
       thinking: {
         path: "thinking",
-        title: "How GALO Thinks — The Decision Procedure, Stage by Stage",
+        title: "How GALO Thinks — The Route an Episode Travels",
         description:
-          "The GALO thinking schemes: the nine stages of one thought, the five refusal gates, the narrowing from 1,204 candidates to one, the one-step state cycle, and what is carried between runs.",
+          "The GALO reasoning route: seven phases and two lawful exits, where an episode is allowed to stop, one bounded step of the frozen release with its exact values, what survives an episode, and what the published results did not measure.",
       },
       "vs-llm": {
         path: "vs-llm",
@@ -143,9 +143,9 @@ const locales = {
       },
       thinking: {
         path: "thinking",
-        title: "Как мыслит GALO — процедура принятия решения по шагам",
+        title: "Как мыслит GALO — маршрут, который проходит эпизод",
         description:
-          "Схемы мышления GALO: девять этапов одной мысли, пять шлюзов отказа, сужение от 1 204 кандидатов до одного, одношаговый цикл состояния и то, что переносится между запусками.",
+          "Маршрут рассуждения GALO: семь фаз и два законных выхода, где эпизоду разрешено остановиться, один ограниченный шаг замороженного релиза с точными значениями, что переживает эпизод и чего опубликованные результаты не измеряли.",
       },
       "vs-llm": {
         path: "vs-llm",
@@ -229,9 +229,9 @@ const locales = {
       },
       thinking: {
         path: "thinking",
-        title: "GALO 如何思考 — 逐阶段拆解的决策流程",
+        title: "GALO 如何思考 — 一次推理所走的路线",
         description:
-          "GALO 的思维图解：一次思考的九个阶段、五道拒绝闸门、从 1,204 个候选收敛到一个、单步状态循环，以及在两次运行之间被带走的东西。",
+          "GALO 的推理路线：七个阶段与两个合法出口、一次推理允许在何处停下、冻结版本那一步的确切数值、一次推理之后留下什么，以及已公布结果没有测到的部分。",
       },
       "vs-llm": {
         path: "vs-llm",
@@ -311,9 +311,9 @@ const locales = {
       },
       thinking: {
         path: "thinking",
-        title: "كيف يفكّر GALO — إجراء اتخاذ القرار مرحلةً مرحلة",
+        title: "كيف يفكّر GALO — المسار الذي تسلكه الحلقة",
         description:
-          "مخططات التفكير في GALO: مراحل الفكرة التسع، وبوابات الرفض الخمس، والتضييق من 1,204 مرشحًا إلى واحد، ودورة الحالة ذات الخطوة الواحدة، وما يُحمل بين التشغيلات.",
+          "مسار الاستدلال في GALO: سبع مراحل ومخرجان مشروعان، وأين يُسمح للحلقة بالتوقف، وخطوة واحدة محدودة من الإصدار المجمَّد بقيمها الدقيقة، وما يبقى بعد الحلقة، وما لم تقسه النتائج المنشورة.",
       },
       "vs-llm": {
         path: "vs-llm",

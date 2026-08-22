@@ -5,12 +5,13 @@ const WIDTH = 640;
 const HEIGHT = 234;
 
 /** Exact register names, kept untranslated and left-to-right in every locale. */
-const carriedValues = ["position", "boundary", "ledger"];
-const droppedValues = ["weights", "preference"];
+const carriedValues = ["receipts", "learned volume", "proven structures"];
+const droppedValues = ["weights", "wider verdict"];
 
 /**
- * What crosses the line between one thought and the next. Three registers do;
- * two things that a trained system would carry deliberately do not.
+ * What survives an episode. Three registers do; two things a reader will assume
+ * are there deliberately are not — and the second carried register is the one
+ * that changed: durable learned state exists, and it can be detached.
  */
 export function ThinkingMemoryFigure() {
   const { t } = useI18n();
@@ -20,18 +21,18 @@ export function ThinkingMemoryFigure() {
   return (
     <figure className="galo-figure galo-figure--memory">
       <figcaption className="galo-figure__caption">
-        <span className="galo-figure__eyebrow">{t("WHAT CROSSES INTO THE NEXT THOUGHT")}</span>
-        <strong>{t("Three registers are carried forward. Two familiar ones are not.")}</strong>
+        <span className="galo-figure__eyebrow">{t("WHAT SURVIVES AN EPISODE")}</span>
+        <strong>{t("Three registers are carried forward. Two familiar ones are still absent.")}</strong>
         <span className="galo-figure__note">
           {t(
-            "Everything the engine still holds after a run can be printed out in full. That is what makes a later disagreement resolvable: two runs can be compared register by register instead of being argued about.",
+            "Everything an episode leaves behind can be listed. That is what makes a later disagreement resolvable: two runs can be compared register by register instead of being argued about — and the learned volume can simply be removed, which is how every published learning number was measured.",
           )}
         </span>
       </figcaption>
 
       <div className="galo-memory__bands">
-        <span className="galo-memory__band-tag">{t("carried across runs")}</span>
-        <span className="galo-memory__band-tag is-dropped">{t("never carried, and never accumulated")}</span>
+        <span className="galo-memory__band-tag">{t("carried into the next episode")}</span>
+        <span className="galo-memory__band-tag is-dropped">{t("absent by construction, not merely unused")}</span>
       </div>
 
       <div className="galo-figure__canvas">
@@ -39,7 +40,7 @@ export function ThinkingMemoryFigure() {
           <title id={titleId}>{t("Carried and non-carried state between two runs")}</title>
           <desc id={descriptionId}>
             {t(
-              "An upper band with three solid boxes labelled position, boundary, and ledger, and a lower band drawn with a dashed border containing two boxes labelled weights and preference, each marked with a cross.",
+              "An upper band with three solid boxes labelled receipts, learned volume, and proven structures, and a lower band drawn with a dashed border containing two boxes labelled weights and wider verdict, each marked with a cross.",
             )}
           </desc>
 
@@ -77,11 +78,11 @@ export function ThinkingMemoryFigure() {
             </g>
           ))}
           <text className="galo-memory__zero" x={WIDTH - 32} y="164" textAnchor="end" direction="ltr">
-            learning_writes = 0
+            no fitted parameter
           </text>
 
           <text className="galo-memory__foot" x="14" y={HEIGHT - 8}>
-            {t("two runs of the same release are bounded identically")}
+            {t("detach the volume and the same engine runs without it")}
           </text>
         </svg>
       </div>

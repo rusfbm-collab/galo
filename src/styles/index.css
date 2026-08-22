@@ -10305,12 +10305,6 @@ caption bdi {
   background: var(--white);
 }
 
-.thinking-stages article.is-target {
-  border-style: dashed;
-  border-color: var(--chart-neutral-strong);
-  background: var(--soft-navy);
-}
-
 .thinking-stages__head {
   display: flex;
   align-items: center;
@@ -10337,11 +10331,6 @@ caption bdi {
 .thinking-stages__status.is-current {
   background: rgba(15, 156, 136, 0.14);
   color: #0b6d5f;
-}
-
-.thinking-stages__status.is-target {
-  background: rgba(232, 169, 58, 0.16);
-  color: #8a5d0b;
 }
 
 .thinking-stages h3 {
@@ -10454,11 +10443,131 @@ caption bdi {
 
 /* ---- refusal gate cards ---- */
 
+/* ---- the two lawful exits ----
+   Drawn apart from the phase cards, because neither is the eighth phase: both
+   are reachable from any of the seven. */
+
+.thinking-exits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.thinking-exits article {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  border: 1px dashed var(--teal-deep);
+  border-radius: 20px;
+  padding: 20px 22px;
+  background: rgba(15, 156, 136, 0.05);
+}
+
+.thinking-exits article.is-reject {
+  border-color: var(--red);
+  background: rgba(216, 91, 97, 0.06);
+}
+
+.thinking-exits__terminal {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+}
+
+.thinking-exits article.is-reject .thinking-exits__terminal {
+  color: var(--red);
+}
+
+.thinking-exits h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.04rem;
+  line-height: 1.36;
+}
+
+.thinking-exits p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.62;
+}
+
+.thinking-exits__meaning {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ---- what makes it a route and not a search ---- */
+
+.thinking-properties {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.thinking-properties article {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: var(--white);
+}
+
+.thinking-properties span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.thinking-properties h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.04rem;
+  line-height: 1.36;
+}
+
+.thinking-properties p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.64;
+}
+
 .thinking-gates {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 16px;
   margin-top: 34px;
+}
+
+.thinking-gates__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.thinking-gates__terminal {
+  border: 1px solid rgba(122, 226, 208, 0.4);
+  border-radius: 999px;
+  padding: 3px 10px;
+  color: #7ae2d0;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.thinking-gates__terminal.is-reject {
+  border-color: rgba(240, 148, 153, 0.45);
+  color: #f09499;
 }
 
 .thinking-gates article {

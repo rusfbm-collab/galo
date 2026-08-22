@@ -1025,12 +1025,12 @@ describe("GALO public site", () => {
     }
   });
 
-  it("gives the thinking schemes their own route with every stage and gate on the page", () => {
+  it("gives the reasoning route its own page with every phase, exit, and stop on it", () => {
     setPath("/thinking");
     render(<App />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "The thinking schemes, drawn stage by stage." }),
+      screen.getByRole("heading", { level: 1, name: "The route an episode travels, phase by phase." }),
     ).toBeInTheDocument();
 
     expect(document.querySelector(".galo-figure--pipeline")).toBeInTheDocument();
@@ -1040,15 +1040,25 @@ describe("GALO public site", () => {
     expect(document.querySelector(".galo-figure--memory")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--funnel")).toBeInTheDocument();
 
-    expect(document.querySelectorAll(".thinking-stages > article")).toHaveLength(9);
-    expect(document.querySelectorAll(".thinking-stages > article.is-target")).toHaveLength(2);
+    expect(document.querySelectorAll(".thinking-stages > article")).toHaveLength(7);
+    expect(document.querySelectorAll(".thinking-exits > article")).toHaveLength(2);
+    expect(document.querySelectorAll(".thinking-exits > article.is-reject")).toHaveLength(1);
+    expect(document.querySelectorAll(".thinking-properties > article")).toHaveLength(4);
     expect(document.querySelectorAll(".thinking-gates > article")).toHaveLength(5);
+    expect(document.querySelectorAll(".thinking-gates__terminal.is-reject")).toHaveLength(1);
     expect(document.querySelectorAll(".thinking-registers > article")).toHaveLength(5);
     expect(document.querySelectorAll(".thinking-registers > article.is-dropped")).toHaveLength(2);
     expect(document.querySelectorAll(".thinking-table tbody tr")).toHaveLength(9);
 
+    // The phase names are machine labels and stay untranslated in every locale.
+    for (const phase of ["SEARCH", "HYPOTHESES", "PROBING", "COMPOSITION", "REVEAL", "LEARNING", "COMPLETE"]) {
+      expect(screen.getAllByText(phase).length, phase).toBeGreaterThan(0);
+    }
+
     expect(screen.getByRole("table", { name: /accepted observation/i })).toBeInTheDocument();
     expect(screen.getByText("GALO thinks the way a person thinks.")).toBeInTheDocument();
+    // The attribution gap has to be on the page, not only in the archive.
+    expect(screen.getByText("The route drawn on this page is what the published results measured.")).toBeInTheDocument();
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/thinking");
 
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
@@ -1059,9 +1069,9 @@ describe("GALO public site", () => {
 
   it("carries the thinking route into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/thinking", "Схемы мышления, нарисованные этап за этапом."],
-      ["/zh/thinking", "思维图解，逐阶段画出来。"],
-      ["/ar/thinking", "مخططات التفكير، مرسومة مرحلةً مرحلة."],
+      ["/ru/thinking", "Маршрут, который проходит эпизод, фаза за фазой."],
+      ["/zh/thinking", "一次推理所走的路线，逐个阶段。"],
+      ["/ar/thinking", "المسار الذي تسلكه الحلقة، مرحلةً مرحلة."],
     ] as const) {
       setPath(path);
       const view = render(<App />);

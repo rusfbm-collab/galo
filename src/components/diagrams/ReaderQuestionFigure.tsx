@@ -25,8 +25,8 @@ const readers = [
     icon: Wrench,
     who: "An engineer",
     question: "What does the engine actually do on one input?",
-    answer: "One thought in nine stages, seven of which run in the current release",
-    href: "/thinking#one-thought",
+    answer: "One episode in seven phases, with two lawful ways out of it",
+    href: "/thinking#route",
     cannot: "A live engine. The site recomputes from published formulas; it does not execute the release.",
   },
   {

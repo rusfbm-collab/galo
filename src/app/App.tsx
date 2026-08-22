@@ -69,9 +69,9 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
       "Understand GALO step by step: finite states, PLUS and STAR, typed transitions, 560 coordinates, programs, symmetries, level maps, runtime scope, and evidence boundaries.",
   },
   "/thinking": {
-    title: "How GALO Thinks — The Decision Procedure, Stage by Stage",
+    title: "How GALO Thinks — The Route an Episode Travels",
     description:
-      "The GALO thinking schemes: the nine stages of one thought, the five refusal gates, the narrowing from 1,204 candidates to one, the one-step state cycle, and what is carried between runs.",
+      "The GALO reasoning route: seven phases and two lawful exits, where an episode is allowed to stop, one bounded step of the frozen release with its exact values, what survives an episode, and what the published results did not measure.",
   },
   "/vs-llm": {
     title: "GALO AI and Language Models — What Is Actually Different",
