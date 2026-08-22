@@ -358,6 +358,78 @@ export const declaredTablesPerLevel = galoOperations.length;
 /** Fourteen tables in all — one PLUS and one STAR at each of the seven levels. */
 export const declaredTableCount = galoLevels.length * declaredTablesPerLevel;
 
+/**
+ * Every map Q_n → Q_m that commutes with the declared laws, enumerated rather
+ * than sampled. Pass an operation to ask about one tower on its own; omit it to
+ * ask about both at once, which is the question that matters — a map has to
+ * survive all four action families to make an upper level redundant.
+ *
+ * Direct arithmetic rather than `buildCanonicalTypedCell`, because the caller is
+ * a test that walks m^n candidates per pair and object allocation dominates.
+ */
+export function commutingLevelMaps(
+  sourceLevel: GaloLevel,
+  targetLevel: GaloLevel,
+  operation?: GaloOperation,
+): readonly (readonly number[])[] {
+  const operations = operation ? [operation] : galoOperations;
+  const found: number[][] = [];
+  const candidate = new Array<number>(sourceLevel).fill(0);
+
+  const commutes = () => {
+    // P0 is the named origin of every level, so a map that moves it is not a map
+    // between these algebras at all.
+    if (candidate[0] !== 0) return false;
+    for (const op of operations) {
+      for (let source = 0; source < sourceLevel; source += 1) {
+        for (let active = 0; active < sourceLevel; active += 1) {
+          // LEFT reads (source, active); RIGHT reads (active, source).
+          for (const [left, right] of [
+            [source, active],
+            [active, source],
+          ] as const) {
+            const mapped = candidate[applyGaloOperation(op, sourceLevel, left, right)]!;
+            const direct = applyGaloOperation(op, targetLevel, candidate[left]!, candidate[right]!);
+            if (mapped !== direct) return false;
+          }
+        }
+      }
+    }
+    return true;
+  };
+
+  const walk = (index: number) => {
+    if (index === sourceLevel) {
+      if (commutes()) found.push([...candidate]);
+      return;
+    }
+    for (let value = 0; value < targetLevel; value += 1) {
+      candidate[index] = value;
+      walk(index + 1);
+    }
+  };
+  walk(0);
+  return found;
+}
+
+/**
+ * How often a tower folds onto a lower level — that is, admits a downward map
+ * other than the collapse that glues every pole to P0.
+ *
+ * These are literals rather than a module-load enumeration, because computing
+ * them walks a few hundred thousand candidate maps and no page needs that at
+ * render time. `tests/mathematics.test.ts` recomputes all three from
+ * `commutingLevelMaps` and fails if any of them drifts.
+ *
+ * The asymmetry is the point. PLUS folds five ways (L4→L2, L6→L2, L6→L3 twice,
+ * L6→L4). STAR folds no way at all, at any level pair. Requiring a map to commute
+ * with both leaves only the collapse — which is why an upper level can express
+ * distinctions no lower level reproduces, and why enumerating it is not padding.
+ */
+export const nontrivialPlusFolds = 5;
+export const nontrivialStarFolds = 0;
+export const nontrivialJointFolds = 0;
+
 export const towerCounts: readonly TowerCount[] = galoLevels.map((level) => ({
   level,
   poles: level,

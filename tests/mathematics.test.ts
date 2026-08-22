@@ -11,8 +11,12 @@ import {
   buildPairStabilizer,
   buildScaledTowerMorphism,
   canonicalTypedCellCount,
+  commutingLevelMaps,
   declaredTableCount,
   declaredTablesPerLevel,
+  nontrivialJointFolds,
+  nontrivialPlusFolds,
+  nontrivialStarFolds,
   possibleTableCount,
   tableCountDisplay,
   countPairOrbitsByBurnside,
@@ -164,6 +168,46 @@ describe("GALO frozen PLUS/STAR mathematics", () => {
     expect(canonicalTypedCellCount).toBe(560);
     expect(2 * rawCellsPerOperator).toBe(rawLawCellCount);
     expect(2 * rawLawCellCount).toBe(canonicalTypedCellCount);
+  });
+
+  it("proves no level folds onto a lower one once both laws have to commute", () => {
+    const downwardPairs = galoLevels.flatMap((source) =>
+      galoLevels.filter((target) => target < source).map((target) => [source, target] as const),
+    );
+    expect(downwardPairs).toHaveLength(21);
+
+    const nontrivial = (maps: readonly (readonly number[])[]) =>
+      maps.filter((map) => map.some((value) => value !== 0));
+
+    let plus = 0;
+    let star = 0;
+    let joint = 0;
+    for (const [source, target] of downwardPairs) {
+      const both = commutingLevelMaps(source, target);
+      // Exactly one map survives both laws, and it is the collapse onto P0.
+      expect(both, `L${source} to L${target}`).toHaveLength(1);
+      expect(both[0]).toEqual(new Array(source).fill(0));
+
+      plus += nontrivial(commutingLevelMaps(source, target, "PLUS")).length;
+      star += nontrivial(commutingLevelMaps(source, target, "STAR")).length;
+      joint += nontrivial(both).length;
+    }
+
+    // The asymmetry the home-page figure is drawn from: PLUS folds, STAR never does.
+    expect(plus).toBe(nontrivialPlusFolds);
+    expect(star).toBe(nontrivialStarFolds);
+    expect(joint).toBe(nontrivialJointFolds);
+    expect(plus).toBe(5);
+    expect(star).toBe(0);
+    expect(joint).toBe(0);
+
+    // And the five are where the figure marks them: sources L4 and L6 only.
+    const foldSources = new Set(
+      downwardPairs
+        .filter(([source, target]) => nontrivial(commutingLevelMaps(source, target, "PLUS")).length > 0)
+        .map(([source]) => source),
+    );
+    expect([...foldSources].sort()).toEqual([4, 6]);
   });
 
   it("counts the tables that exist against the fourteen that are declared", () => {

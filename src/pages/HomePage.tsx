@@ -19,6 +19,7 @@ import { ArchitectureFlow } from "../components/diagrams/ArchitectureFlow";
 import { HeroReasoningRoute } from "../components/diagrams/HeroReasoningRoute";
 import { LocalRevision } from "../components/diagrams/LocalRevision";
 import { ResolutionLadder } from "../components/diagrams/ResolutionLadder";
+import { TwoTowersFigure } from "../components/diagrams/TwoTowersFigure";
 import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
@@ -407,6 +408,51 @@ export function HomePage() {
                 <p>{t(step.text)}</p>
               </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="two-towers" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHAT IS IN THE CORE")}
+            title={t("Two towers of frozen tables, and everything else is a lookup in them.")}
+            text={t(
+              "People expect the core of an AI system to be a model. Here it is two families of Cayley tables over seven finite levels, written before anything runs and never edited afterwards. The kernel carries them byte for byte, and the same 560 typed cells serve every domain the engine works in — the language contour and the graph contours are not separate copies.",
+            )}
+            aside={
+              <a className="text-link" href={href("/theory#plus-star")}>
+                {t("Read the two laws in full")}{" "}
+                <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            }
+          />
+          <TwoTowersFigure />
+          <div className="tower-notes">
+            <article>
+              <h3>{t("Why two and not one")}</h3>
+              <p>
+                {t(
+                  "PLUS is a cyclic group: it composes in any order and every step can be undone. STAR is not — it inspects one operand first, and past two positions it is neither commutative nor associative. A system with only PLUS cannot express a reset; a system with only STAR loses the arithmetic underneath it.",
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{t("Why seven levels and not one")}</h3>
+              <p>
+                {t(
+                  "Because the upper ones are not redundant, and that is checked rather than assumed. Across every downward pair of levels the only map that commutes with all four action families glues every pole onto P0 and preserves nothing. So a higher level can draw distinctions no lower level reproduces, and enumerating it is not padding.",
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{t("What this does not establish")}</h3>
+              <p>
+                {t(
+                  "That the towers are what produced the published learning results. They are not in the measured path of those campaigns, and their contribution to it is unproven — it is written on the evidence page as an open boundary rather than left for a reader to discover.",
+                )}
+              </p>
+            </article>
           </div>
         </div>
       </section>

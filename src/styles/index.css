@@ -10746,6 +10746,142 @@ caption bdi {
   margin-inline: auto;
 }
 
+/* ---- the two towers in the core ---- */
+
+.galo-figure--towers svg {
+  max-width: 880px;
+  margin-inline: auto;
+}
+
+.galo-towers__panel rect {
+  fill: var(--white);
+  stroke: var(--chart-1);
+  stroke-width: 1.5;
+}
+
+.galo-towers__panel.is-star rect {
+  stroke: var(--chart-2);
+}
+
+.galo-towers__name {
+  fill: var(--chart-1);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.galo-towers__panel.is-star .galo-towers__name {
+  fill: var(--chart-2);
+}
+
+.galo-towers__signature {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+}
+
+.galo-towers__level rect {
+  fill: rgba(15, 156, 136, 0.08);
+  stroke: var(--chart-1);
+  stroke-width: 1;
+}
+
+.galo-towers__panel.is-star .galo-towers__level rect {
+  fill: rgba(184, 121, 10, 0.08);
+  stroke: var(--chart-2);
+}
+
+.galo-towers__level text {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+/* A level that folds onto a lower one. Only PLUS has any. */
+.galo-towers__level.is-folding rect {
+  fill: var(--chart-1);
+  stroke: var(--chart-1);
+}
+
+.galo-towers__level.is-folding text {
+  fill: var(--white);
+}
+
+.galo-towers__headline {
+  fill: var(--figure-ink);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.galo-towers__property {
+  fill: var(--figure-muted);
+  font-size: 0.64rem;
+}
+
+.galo-towers__fold {
+  fill: var(--chart-1);
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.galo-towers__panel.is-star .galo-towers__fold {
+  fill: var(--figure-muted);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.galo-towers__shared {
+  fill: var(--figure-muted);
+  font-size: 0.68rem;
+}
+
+.galo-towers__key {
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  background: var(--chart-1);
+}
+
+/* ---- the three notes under the towers ---- */
+
+.tower-notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: 16px;
+  margin-top: 34px;
+}
+
+.tower-notes article {
+  display: grid;
+  align-content: start;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px 24px;
+  background: var(--white);
+}
+
+.tower-notes article:last-child {
+  border-color: rgba(232, 169, 58, 0.45);
+  background: rgba(232, 169, 58, 0.05);
+}
+
+.tower-notes h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.36;
+}
+
+.tower-notes p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.64;
+}
+
 /* ---- how many tables there are, against how many are declared ---- */
 
 .galo-figure--table-space svg,

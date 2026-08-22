@@ -29,6 +29,7 @@ import { investorCaseAr } from "./investorCase";
 import { plainWordsPageAr } from "./plainWordsPage";
 import { reasoningRouteAr } from "./reasoningRoute";
 import { tableSpaceAr } from "./tableSpace";
+import { twoTowersAr } from "./twoTowers";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 
@@ -65,6 +66,7 @@ export const ar: TranslationDictionary = {
   ...plainWordsPageAr,
   ...reasoningRouteAr,
   ...tableSpaceAr,
+  ...twoTowersAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",
