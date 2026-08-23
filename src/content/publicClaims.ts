@@ -26,6 +26,13 @@ export const publicClaims: PublicClaim[] = [
     source: "Current theory reference",
   },
   {
+    id: "C01B_WEIGHT_FREE_LEARNED_STATE",
+    publicCopy:
+      "The engine holds no trainable parameter tensor and performs no gradient or backpropagation step. Its learned state is explicit: counters, discrete orders, relation frames, written-out routes, proven structures and receipts.",
+    status: "architecture",
+    source: "Static scan of the active import closure, run by the project",
+  },
+  {
     id: "C02_FROZEN_560_KERNEL",
     publicCopy: "The formal L1–L7 kernel contains 560 oriented typed transition coordinates.",
     status: "implemented",

@@ -118,9 +118,9 @@ export function PlainWordsPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("HOW IT USUALLY GOES, AND HOW IT GOES HERE")}
-            title={t("The difference is where you can point when you disagree.")}
+            title={t("One learns by changing hidden numbers. This one has no numbers to change.")}
             text={t(
-              "Neither column is a verdict on the other. They are two ways of arriving at an answer, and they leave you with different things afterwards.",
+              "Neither column is a verdict on the other. They are two ways of arriving at an answer, and the thing each one keeps along the way is what makes them different afterwards.",
             )}
           />
           <div className="usual-here">

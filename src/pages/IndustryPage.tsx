@@ -39,7 +39,7 @@ export function IndustryPage() {
           <h1>{t("Decision assurance around the digital twins a plant already runs.")}</h1>
           <p>
             {t(
-              "The architecture is meant to be general. The first product is deliberately not: one industrial workflow, read only, advisory, with a frozen baseline and a decision package somebody else can replay. Industry is where the cost of ambiguity is already counted, which is why an architecture is worth testing there first.",
+              "The architecture is meant to be general, and it is weight-free: nothing it learns is a hidden number, so an affected decision can be named rather than inferred. The first product is deliberately narrow — one industrial workflow, read only, advisory, with a frozen baseline and a decision package somebody else can replay. Industry is where the cost of ambiguity is already counted, which is why an architecture is worth testing there first.",
             )}
           </p>
           <div className="industry-hero__strip">

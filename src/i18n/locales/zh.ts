@@ -33,6 +33,7 @@ import { twoTowersZh } from "./twoTowers";
 import { engineTourZh } from "./engineTour";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
+import { weightFreeZh } from "./weightFree";
 
 export const zh: TranslationDictionary = {
   ...mathZh,
@@ -69,6 +70,7 @@ export const zh: TranslationDictionary = {
   ...tableSpaceZh,
   ...twoTowersZh,
   ...engineTourZh,
+  ...weightFreeZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",
@@ -441,10 +443,6 @@ export const zh: TranslationDictionary = {
   "Return home": "返回首页",
   "View evidence": "查看证据",
 
-  "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
-    "一套通用的可验证世界模型与自主性架构，其第一个产品是工业决策保障。有限范围的学习结果连同负面结果一并公开；由合作方掌控的有效性尚未证明，工业自主性也未获授权。",
-  "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
-    "GALO AI — 可验证的世界模型，面向私有 AI 与工业自主",
   "Evidence — GALO AI": "证据 — GALO AI",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "查看 GALO 已实现的有限机制、不可变发布指纹、公开声明矩阵及已披露的研究边界。",

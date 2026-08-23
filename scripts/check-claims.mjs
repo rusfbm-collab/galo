@@ -26,6 +26,7 @@ const sourceRoots = [
   "src/content/termDeepDives.ts",
   "src/content/termPages.ts",
   "src/content/thinking.ts",
+  "src/content/weightFree.ts",
   "src/data/controlled-replay.json",
   "index.html",
 ];

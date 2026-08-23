@@ -78,11 +78,11 @@ export type UsualVsHere = {
 export const usualVsHere: readonly UsualVsHere[] = [
   {
     label: "Usually",
-    text: "A system is trained on examples for a long time. Then it gives you an answer. Ask why, and the honest reply is often that this is how it came out inside. There is almost nowhere to point at a specific reason.",
+    text: "A system is shown a great many examples, and while it looks at them it quietly adjusts millions of internal numbers until the answers come out about right. Those numbers are what it learned. None of them means anything on its own, so when you ask why, the honest reply is often that this is how it came out inside.",
   },
   {
     label: "Here",
-    text: "The set of permitted moves exists in advance, and it is limited. The system can only take one from that set. Afterwards you can open the record and see which move was taken and which others were on the table.",
+    text: "There are no such numbers at all. What this system learns, it writes down: this thing is related to that one, this check is worth doing first, this structure held up and this one was contradicted. You can read the list, and you can cross one line out without disturbing the rest of it.",
   },
 ];
 
@@ -177,6 +177,7 @@ export const whatThereIsNot: readonly HaveNotLine[] = [
 
 /** The whole page in four sentences. */
 export const inShort: readonly string[] = [
+  "Ordinary AI learns by changing millions of hidden numbers. This one learns by changing things that are written down.",
   "GALO is not there to give you a good-looking answer.",
   "It is there for a different job: when rules or data change, find the decisions that are affected and show the grounds on which they are still permitted — or say honestly that the grounds are thin.",
   "Today it is a working prototype, not a finished deployment.",

@@ -28,6 +28,20 @@ export const claims: Claim[] = [
     forbiddenVariants: ["fully autonomous world-model system"],
   },
   {
+    id: "C01B_WEIGHT_FREE_LEARNED_STATE",
+    publicCopy:
+      "The engine holds no trainable parameter tensor and performs no gradient or backpropagation step. Its learned state is explicit: counters, discrete orders, relation frames, written-out routes, proven structures and receipts.",
+    status: "architecture",
+    source: "Static scan of the active import closure, run by the project",
+    allowedPlacements: ["hero", "architecture", "evidence", "home"],
+    forbiddenVariants: [
+      // The scan is static and ours; neither fact may be dropped in a shorter retelling.
+      "independently certified weight-free",
+      "audited weight-free",
+      "no neural component anywhere in the product",
+    ],
+  },
+  {
     id: "C02_FROZEN_560_KERNEL",
     publicCopy: "The formal L1–L7 kernel contains 560 oriented typed transition coordinates.",
     status: "implemented",

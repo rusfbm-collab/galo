@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { App } from "../src/app/App";
 import { termSlugs } from "../src/content/termPages";
 import { routePhases } from "../src/content/thinking";
+import { learnedState } from "../src/content/weightFree";
 import {
   getMissingTranslations,
   localizedPath,
@@ -20,11 +21,14 @@ describe("GALO public site", () => {
   beforeEach(() => setPath("/"));
   afterEach(cleanup);
 
-  it("leads with the platform thesis and the wedge, and keeps the boundary in the hero", () => {
+  it("leads with the category, then the wedge, and keeps the boundary in the hero", () => {
     render(<App />);
     expect(
-      screen.getByRole("heading", { level: 1, name: "A verifiable world model for private AI and industrial autonomy." }),
+      screen.getByRole("heading", { level: 1, name: "A different kind of AI, for decisions that have to stay provable." }),
     ).toBeInTheDocument();
+    // The identity comes before any evidence about it.
+    expect(screen.getByText(/Neural AI learns by changing hidden numerical weights/i)).toBeInTheDocument();
+    expect(screen.getByText("No learned weights. No backpropagation.")).toBeInTheDocument();
     expect(screen.getByText("Working research prototype")).toBeInTheDocument();
     expect(screen.getByText(/General-purpose architecture, not general intelligence/i)).toBeInTheDocument();
     expect(screen.getByText(/production autonomy is not authorised/i)).toBeInTheDocument();
@@ -32,6 +36,30 @@ describe("GALO public site", () => {
       "href",
       "/industry",
     );
+  });
+
+  it("puts the weight-free block above every number that argues for it", () => {
+    render(<App />);
+    const section = document.querySelector("#weight-free");
+    expect(section).toBeInTheDocument();
+
+    // Two columns of four steps, differing on exactly one row in each.
+    const figure = section?.querySelector(".galo-figure--weight-free");
+    expect(figure?.querySelectorAll(".galo-wf__step")).toHaveLength(8);
+    expect(figure?.querySelectorAll(".galo-wf__step.is-marked")).toHaveLength(2);
+
+    // The alternative to weights is listed in full, not in outline.
+    expect(section?.querySelectorAll(".weight-free__state dl > div")).toHaveLength(learnedState.length);
+
+    // Both concessions travel with the claim.
+    expect(section?.textContent).toContain("run by the project on its own code");
+    expect(section?.textContent).toContain("It is not part of GALO");
+
+    // And it stands ahead of the sections that carry the evidence.
+    const order = Array.from(document.querySelectorAll("section[id]")).map((element) => element.id);
+    expect(order.indexOf("weight-free")).toBeLessThan(order.indexOf("evidence"));
+    expect(order.indexOf("weight-free")).toBeLessThan(order.indexOf("receipt"));
+    expect(order.indexOf("weight-free")).toBeLessThan(order.indexOf("two-towers"));
   });
 
   it("draws one episode of reasoning in the hero, with both lawful exits on it", () => {
@@ -839,7 +867,7 @@ describe("GALO public site", () => {
       screen.getByRole("heading", { level: 1, name: "GALO is not a language model, and not a competitor to one." }),
     ).toBeInTheDocument();
     expect(screen.getByRole("table", { name: /Property-by-property/i })).toBeInTheDocument();
-    expect(document.querySelectorAll(".comparison-table tbody tr")).toHaveLength(10);
+    expect(document.querySelectorAll(".comparison-table tbody tr")).toHaveLength(11);
     expect(screen.getByRole("rowheader", { name: "Breadth today" })).toBeInTheDocument();
     expect(screen.getByText(/A language model handles open-ended tasks/i)).toBeInTheDocument();
     expect(
@@ -903,7 +931,7 @@ describe("GALO public site", () => {
     expect(document.querySelectorAll(".from-list p")).toHaveLength(3);
     expect(document.querySelectorAll(".have-not__column")).toHaveLength(2);
     expect(document.querySelectorAll(".have-not__column li")).toHaveLength(8);
-    expect(document.querySelectorAll(".in-short > p")).toHaveLength(3);
+    expect(document.querySelectorAll(".in-short > p")).toHaveLength(4);
     expect(document.querySelectorAll(".plain-jargon > div")).toHaveLength(10);
 
     // The page reuses the figures a newcomer can read without help, and adds none
@@ -943,7 +971,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "A verifiable decision layer for private and industrial AI.",
+        name: "A weight-free decision layer for private and industrial AI.",
       }),
     ).toBeInTheDocument();
 
@@ -1037,8 +1065,8 @@ describe("GALO public site", () => {
 
   it("carries the investor and audit routes into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/investors", "Проверяемый слой решений для частного и промышленного ИИ."],
-      ["/zh/investors", "面向私有 AI 与工业 AI 的可验证决策层。"],
+      ["/ru/investors", "Слой решений без обучаемых весов — для частного и промышленного ИИ."],
+      ["/zh/investors", "面向私有与工业人工智能的无权重决策层。"],
       ["/ar/audit", "ما الذي يستطيع مراجع خارجي متشكّك إثباته هنا، وما الذي لا يستطيعه أحد."],
       ["/ru/audit", "Что здесь можно проверить самому — и чего не проверит никто."],
     ] as const) {
@@ -1203,7 +1231,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Проверяемая модель мира — для приватного ИИ и автономного производства.",
+        name: "Другой вид ИИ — для решений, которые должны оставаться доказуемыми.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -1234,7 +1262,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "نموذج عالم قابل للتحقّق: ذكاء اصطناعي خاصّ واستقلالية صناعية.",
+        name: "نوعٌ آخر من الذكاء الاصطناعي، لقراراتٍ يجب أن تبقى قابلةً للإثبات.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

@@ -29,9 +29,9 @@ import { termBySlug } from "../content/termPages";
 
 const metadata: Record<PageRoute, { title: string; description: string }> = {
   "/": {
-    title: "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy",
+    title: "GALO AI — Weight-Free AI for Decisions That Have to Stay Provable",
     description:
-      "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.",
+      "An AI architecture with no learned model weights and no backpropagation. GALO learns explicit relations and verified structures in a versioned Atlas, starting with industrial decision assurance. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.",
   },
   "/evidence": {
     title: "Evidence — GALO AI",

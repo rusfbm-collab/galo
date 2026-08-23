@@ -15,6 +15,12 @@ export type ComparisonRow = {
 
 export const comparisonRows: readonly ComparisonRow[] = [
   {
+    dimension: "How it learns",
+    model:
+      "By changing hidden numerical weights. A training step measures the error and adjusts millions to billions of parameters through backpropagation, and no single one of them stands for anything a person could name.",
+    galo: "By building, checking, reusing and locally revising explicit structures. There is no parameter tensor to adjust, no gradient step and no backpropagation anywhere in the engine.",
+  },
+  {
     dimension: "What the state is",
     model:
       "A long vector of learned numbers. It is real and it determines behaviour, but no part of it carries a name a person can point at.",

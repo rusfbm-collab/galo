@@ -44,8 +44,6 @@ export const comparisonRu: TranslationDictionary = {
     "Любое утверждение о том, что одно быстрее, дешевле, безопаснее или точнее другого. Это эмпирические утверждения, и ни одно из них здесь не измерялось.",
   "Arbitrary natural language, images, and code. This is the enormous practical advantage of a language model.":
     "Произвольный естественный язык, изображения и код. Это огромное практическое преимущество языковой модели.",
-  "Asking which of the two is better is like asking whether a measuring instrument beats a control loop. The useful question is what each one can be held to: what it accepts, what it produces, and what it lets an outsider verify afterwards.":
-    "Спрашивать, что из двух лучше, — всё равно что спрашивать, побеждает ли измерительный прибор контур управления. Полезный вопрос другой: с чего каждого можно спросить — что он принимает, что производит и что позволяет проверить постороннему.",
   "Astronomically large and open-ended. Enumerating it is not merely expensive, it is not a meaningful operation.":
     "Астрономически велико и открыто. Перечислить его не просто дорого — такая операция вообще не имеет смысла.",
   "Both lists are short, and both are honest.": "Оба списка коротки, и оба честны.",
@@ -392,8 +390,6 @@ export const comparisonZh: TranslationDictionary = {
     "任何「一方更快、更便宜、更安全或更准确」的说法。这些都是经验性论断，此处一项也没有测量过。",
   "Arbitrary natural language, images, and code. This is the enormous practical advantage of a language model.":
     "任意的自然语言、图像和代码。这是语言模型巨大的实践优势。",
-  "Asking which of the two is better is like asking whether a measuring instrument beats a control loop. The useful question is what each one can be held to: what it accepts, what it produces, and what it lets an outsider verify afterwards.":
-    "问这两者哪个更好，就像问一件测量仪器是否胜过一个控制回路。有用的问题是另一个：各自可以被要求交代什么——它接受什么、产出什么、又让外人能事后验证什么。",
   "Astronomically large and open-ended. Enumerating it is not merely expensive, it is not a meaningful operation.":
     "浩大到天文数字，而且是开放的。枚举它不只是昂贵，而是根本谈不上是一项有意义的操作。",
   "Both lists are short, and both are honest.": "两份清单都很短，也都很诚实。",
@@ -731,8 +727,6 @@ export const comparisonAr: TranslationDictionary = {
     "أي قول بأن أحدهما أسرع أو أرخص أو أأمن أو أدق من الآخر. فهذه ادعاءات تجريبية لم يُقَس أي منها هنا.",
   "Arbitrary natural language, images, and code. This is the enormous practical advantage of a language model.":
     "لغة طبيعية عشوائية وصور وشيفرة برمجية. وهذه هي الميزة العملية الهائلة لنموذج اللغة.",
-  "Asking which of the two is better is like asking whether a measuring instrument beats a control loop. The useful question is what each one can be held to: what it accepts, what it produces, and what it lets an outsider verify afterwards.":
-    "السؤال عن أيهما أفضل يشبه السؤال عمّا إذا كانت أداة قياس تتفوق على حلقة تحكم. والسؤال المفيد مختلف: بماذا يمكن مساءلة كل منهما — ماذا يقبل، وماذا ينتج، وما الذي يتيح لغريب أن يتحقق منه لاحقًا.",
   "Astronomically large and open-ended. Enumerating it is not merely expensive, it is not a meaningful operation.":
     "شاسع إلى حد فلكي ومفتوح. وتعداده ليس مكلفًا فحسب، بل ليس عملية ذات معنى أصلًا.",
   "Both lists are short, and both are honest.": "القائمتان قصيرتان وكلتاهما صادقة.",

@@ -66,7 +66,7 @@ export function ComparisonPage() {
             eyebrow={t("START FROM THE CATEGORY, NOT THE SCORE")}
             title={t("A thermometer and a thermostat both concern temperature. They are still different machines.")}
             text={t(
-              "Asking which of the two is better is like asking whether a measuring instrument beats a control loop. The useful question is what each one can be held to: what it accepts, what it produces, and what it lets an outsider verify afterwards.",
+              "Asking which of the two is better is like asking whether a measuring instrument beats a control loop. The useful question is what each one can be held to: what it accepts, what it produces, and what it lets an outsider verify afterwards. One difference runs under all the others on this page — a language model learns by changing hidden weights, and this engine has none to change.",
             )}
           />
           <div className="comparison-frame">

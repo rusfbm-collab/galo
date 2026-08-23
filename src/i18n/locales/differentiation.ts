@@ -71,8 +71,6 @@ export const differentiationRu: TranslationDictionary = {
     "Здесь это разделение и есть замысел, и оно записано: выученная часть вердиктом не владеет.",
   "Interventions rather than correlation alone, with the assumptions stated.":
     "Вмешательства, а не одна корреляция, с заявленными допущениями.",
-  "Learned search can reorder work. It cannot rewrite the final admitted decision.":
-    "Обученный поиск может переставить работу местами. Переписать итоговое допущенное решение он не может.",
   "Learning may rank candidates; the verifier owns the verdict.":
     "Обучение может ранжировать кандидатов; вердикт принадлежит проверяющему.",
   "None of this says GALO answers better than any of those families — that has not been measured and is not claimed here. It says the object is a different kind of thing, and the difference is where the authority for a decision sits. In the frozen release the question does not even arise, because that release performs no learning at all: a system that both learns and admits under a verifier is specified, not shipped.":
@@ -81,14 +79,8 @@ export const differentiationRu: TranslationDictionary = {
     "Ничто из этого не говорит, что GALO отвечает лучше любого из этих семейств. Это не измеряли и здесь не утверждают. Сказано другое: перед вами вещь иного рода, и разница в том, у кого полномочие на решение. В замороженном выпуске вопрос вообще не возникает — он не обучается вовсе; а работающая система, которая и учится, и допускает через проверяющего, пока описана, но не выпущена.",
   "Not \"another Cyc\"":
     "Не «второй Cyc»",
-  "Not a global common-sense knowledge base.":
-    "Не глобальная база здравого смысла.",
   "Not a graph product":
     "Не продукт на графах",
-  "Not a knowledge graph as the world model.":
-    "Модель мира — не граф знаний.",
-  "Not a neural net as authority.":
-    "Полномочие — не у нейросети.",
   "Not a second global common-sense base. Change-assurance on one local, versioned decision state.":
     "Не вторая глобальная база здравого смысла. Гарантия на изменение одного локального состояния решения с версией.",
   "Not weights-as-truth":
@@ -210,8 +202,6 @@ export const differentiationZh: TranslationDictionary = {
     "在这里，这道分界就是设计，而且写了下来：学出来的那部分不掌握裁定。",
   "Interventions rather than correlation alone, with the assumptions stated.":
     "讲干预而不只是相关，而且假设是摆出来的。",
-  "Learned search can reorder work. It cannot rewrite the final admitted decision.":
-    "学出来的搜索可以调换工作的先后。它改不了最终被放行的那个决定。",
   "Learning may rank candidates; the verifier owns the verdict.":
     "学习可以给候选排序；裁定归核验器。",
   "None of this says GALO answers better than any of those families — that has not been measured and is not claimed here. It says the object is a different kind of thing, and the difference is where the authority for a decision sits. In the frozen release the question does not even arise, because that release performs no learning at all: a system that both learns and admits under a verifier is specified, not shipped.":
@@ -220,14 +210,8 @@ export const differentiationZh: TranslationDictionary = {
     "以上这些都没有说 GALO 答得比这些家族里的谁都好。那件事没测过，这里也不这么讲。这里讲的是另一回事：它是另一类东西，区别在于决定权归谁。在冻结版本里这个问题根本不会出现，因为那个版本压根不学习；而一个既学习、又由核验器放行的运行系统，只写在纸上，尚未交付。",
   "Not \"another Cyc\"":
     "不是“又一个 Cyc”",
-  "Not a global common-sense knowledge base.":
-    "不是全局常识知识库。",
   "Not a graph product":
     "不是图数据库产品",
-  "Not a knowledge graph as the world model.":
-    "世界模型不是知识图谱。",
-  "Not a neural net as authority.":
-    "说了算的不是神经网络。",
   "Not a second global common-sense base. Change-assurance on one local, versioned decision state.":
     "不是第二个全局常识底座。是对一份带版本的局部决策状态做变更保障。",
   "Not weights-as-truth":
@@ -349,8 +333,6 @@ export const differentiationAr: TranslationDictionary = {
     "هنا يكون الفصل هو التصميمَ نفسه، وهو مكتوب: الجزء المتعلِّم لا يملك الحكم.",
   "Interventions rather than correlation alone, with the assumptions stated.":
     "التدخّلات لا الارتباط وحده، بافتراضاتٍ مصرَّح بها.",
-  "Learned search can reorder work. It cannot rewrite the final admitted decision.":
-    "يستطيع البحث المتعلَّم أن يعيد ترتيب العمل. ولا يستطيع أن يعيد كتابة القرار المقبول النهائي.",
   "Learning may rank candidates; the verifier owns the verdict.":
     "للتعلّم أن يرتّب المرشّحين؛ أمّا الحكم فللمدقّق.",
   "None of this says GALO answers better than any of those families — that has not been measured and is not claimed here. It says the object is a different kind of thing, and the difference is where the authority for a decision sits. In the frozen release the question does not even arise, because that release performs no learning at all: a system that both learns and admits under a verifier is specified, not shipped.":
@@ -359,14 +341,8 @@ export const differentiationAr: TranslationDictionary = {
     "لا شيء ممّا سبق يقول إنّ GALO يجيب أفضل من أيّ من تلك العائلات. فذلك لم يُقَس ولا يُدَّعى هنا. وإنّما يقول إنّ هذا شيء من نوع آخر، وإنّ الفارق في مَن تعود إليه سلطة القرار. وفي الإصدار المجمَّد لا يُطرح السؤال أصلًا، لأنّ ذلك الإصدار لا يتعلّم البتّة؛ أمّا نظامٌ يعمل فيتعلّم ويقبل تحت مدقّقٍ فمكتوبٌ لا مُسلَّم.",
   "Not \"another Cyc\"":
     "ليس «Cyc آخر»",
-  "Not a global common-sense knowledge base.":
-    "وليس قاعدةَ معرفة بديهيّة عالمية.",
   "Not a graph product":
     "ليس منتجًا قائمًا على غراف",
-  "Not a knowledge graph as the world model.":
-    "ونموذج العالم ليس غرافَ معرفة.",
-  "Not a neural net as authority.":
-    "السلطة ليست لشبكة عصبية.",
   "Not a second global common-sense base. Change-assurance on one local, versioned decision state.":
     "ليست قاعدةً بديهيّة عالمية ثانية، بل ضمانُ تغييرٍ على حالة قرارٍ محلّية واحدة لها إصدار.",
   "Not weights-as-truth":

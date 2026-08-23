@@ -29,14 +29,10 @@ export const investorCaseRu: TranslationDictionary = {
     "Технический сооснователь или ведущий инженер, вышедший на продуктивную работу с ядром. Спросите, что должен прочитать второй человек и сколько это заняло в прошлый раз.",
   "A technical co-founder or principal engineer, because every risk above gets worse while the work has one pair of hands.":
     "Технический сооснователь или ведущий инженер — потому что каждый риск выше становится хуже, пока работу делает одна пара рук.",
-  "A verifiable decision layer for private and industrial AI.":
-    "Проверяемый слой решений для частного и промышленного ИИ.",
   "An end-to-end run where the full path carries the work and the advantage survives, under a comparator that shares the engine.":
     "Сквозной прогон, где работу несёт полный путь и преимущество сохраняется — при мерке, у которой тот же движок.",
   "Assurance under change, with replay":
     "Гарантия при изменении, с воспроизведением",
-  "Authority does not sit in the weights.":
-    "Полномочие лежит не в весах.",
   "Bought for":
     "Покупают за",
   "Broad reusable knowledge and inference":
@@ -67,8 +63,6 @@ export const investorCaseRu: TranslationDictionary = {
     "Тоже явная — но продуктом здесь является транзакция решения, а не хранилище.",
   "Find one operator already paying for reconstruction after incidents, and check whether that cost is large enough to move a budget this year rather than next.":
     "Найдите оператора, который уже платит за восстановление картины после инцидентов, и проверьте, достаточна ли эта сумма, чтобы сдвинуть бюджет в этом году, а не в следующем.",
-  "Four properties, and the bet is that they only work together: state that is written down rather than inferred, learning that may rank candidates and never admits the result, revision that touches the affected entry rather than the whole model, and a record somebody else can replay. Each exists separately elsewhere. The claim is about the combination, and it is a claim rather than a result.":
-    "Четыре свойства, и ставка в том, что работают они только вместе: состояние, которое записано, а не выведено; обучение, которое может ранжировать кандидатов и никогда не допускает результат; правка, задевающая затронутую запись, а не всю модель; и запись, которую может воспроизвести кто-то другой. Каждое из них где-то существует по отдельности. Утверждение — про сочетание, и это утверждение, а не результат.",
   "GALO AI · PRE-SEED":
     "GALO AI · PRE-SEED",
   "Governance and policy wrappers":
@@ -141,8 +135,6 @@ export const investorCaseRu: TranslationDictionary = {
     "Поле в пяти строках",
   "The field, in five lines":
     "Поле, в пяти строках",
-  "The first product is decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.":
-    "Первый продукт — гарантия решений вокруг систем, которые производство уже эксплуатирует. Эта страница — инвестиционный разбор: почему из этого может выйти компания, что покупает чек, что откроет следующий раунд и в какой момент тезис следует считать мёртвым.",
   "The industrial sales cycle is long":
     "Промышленный цикл продажи длинный",
   "The learning results come from a counting ranker reading a learned volume. The tower, the typed routes and the verifier — the parts this site spends the most words on — are not in the measured path, so the saving is not yet evidence that the architecture is what produced it.":
@@ -210,14 +202,10 @@ export const investorCaseZh: TranslationDictionary = {
     "一位技术联合创始人或主任工程师，真正能在内核上干活。可以问：第二个人得读些什么，以及上一次有人试的时候花了多久。",
   "A technical co-founder or principal engineer, because every risk above gets worse while the work has one pair of hands.":
     "一位技术联合创始人或主任工程师——因为只要活儿还压在一双手上，上面每一条风险都只会更糟。",
-  "A verifiable decision layer for private and industrial AI.":
-    "面向私有 AI 与工业 AI 的可验证决策层。",
   "An end-to-end run where the full path carries the work and the advantage survives, under a comparator that shares the engine.":
     "一次端到端的运行：由完整路径承担工作，而且优势还在，比较对象用的是同一套引擎。",
   "Assurance under change, with replay":
     "变更下的保障，加上可重跑",
-  "Authority does not sit in the weights.":
-    "说了算的不在权重里。",
   "Bought for":
     "买的是",
   "Broad reusable knowledge and inference":
@@ -248,8 +236,6 @@ export const investorCaseZh: TranslationDictionary = {
     "一样是显式的，但这里的产品是决策事务，不是那个存储。",
   "Find one operator already paying for reconstruction after incidents, and check whether that cost is large enough to move a budget this year rather than next.":
     "找一个已经在为「事故之后把过程还原出来」付钱的运营方，看看那笔成本够不够大，大到今年就能动预算，而不是明年。",
-  "Four properties, and the bet is that they only work together: state that is written down rather than inferred, learning that may rank candidates and never admits the result, revision that touches the affected entry rather than the whole model, and a record somebody else can replay. Each exists separately elsewhere. The claim is about the combination, and it is a claim rather than a result.":
-    "四个属性，而赌注在于它们只有凑在一起才成立：状态是写下来的而不是推出来的；学习可以给候选排序，但永远不放行结果；修正只碰受影响的那一条，而不是整个模型；记录别人能重跑。这几样单独拿出来，别处都有。这里主张的是那个组合——而且这是主张，不是结果。",
   "GALO AI · PRE-SEED":
     "GALO AI · 种子前",
   "Governance and policy wrappers":
@@ -322,8 +308,6 @@ export const investorCaseZh: TranslationDictionary = {
     "这块地，五行说完",
   "The field, in five lines":
     "这块地，五行说完",
-  "The first product is decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.":
-    "首个产品是围着工厂已经在跑的那些系统做决策保障。本页是投资论证：为什么这可能成为一家公司、一张支票买的是什么、什么会解锁下一轮，以及到哪一步就该宣布这个论点死了。",
   "The industrial sales cycle is long":
     "工业销售周期很长",
   "The learning results come from a counting ranker reading a learned volume. The tower, the typed routes and the verifier — the parts this site spends the most words on — are not in the measured path, so the saving is not yet evidence that the architecture is what produced it.":
@@ -391,14 +375,10 @@ export const investorCaseAr: TranslationDictionary = {
     "مؤسِّسٌ تقنيّ مشارك أو مهندسٌ رئيس يبلغ الإنتاجية على النواة. اسأل ما الذي يلزم شخصًا ثانيًا أن يقرأه، وكم استغرق ذلك آخر مرّة حاول فيها أحد.",
   "A technical co-founder or principal engineer, because every risk above gets worse while the work has one pair of hands.":
     "مؤسِّسٌ تقنيّ مشارك أو مهندسٌ رئيس، لأنّ كلّ خطرٍ أعلاه يزداد سوءًا ما دام العمل على زوجٍ واحد من اليدين.",
-  "A verifiable decision layer for private and industrial AI.":
-    "طبقةُ قرارٍ قابلة للتحقّق للذكاء الاصطناعي الخاصّ والصناعي.",
   "An end-to-end run where the full path carries the work and the advantage survives, under a comparator that shares the engine.":
     "تشغيلٌ من الطرف إلى الطرف يحمل فيه المسارُ الكامل العملَ ويبقى التفوّق قائمًا، في مواجهة مقارِنٍ يشترك في المحرّك نفسه.",
   "Assurance under change, with replay":
     "ضمانٌ عند التغيير، مع إعادة التشغيل",
-  "Authority does not sit in the weights.":
-    "السلطة ليست في الأوزان.",
   "Bought for":
     "يُشترى مقابل",
   "Broad reusable knowledge and inference":
@@ -429,8 +409,6 @@ export const investorCaseAr: TranslationDictionary = {
     "صريحةٌ هي الأخرى، لكنّ المنتَج هنا صفقةُ القرار لا المخزن.",
   "Find one operator already paying for reconstruction after incidents, and check whether that cost is large enough to move a budget this year rather than next.":
     "ابحث عن مشغّلٍ يدفع اليوم مقابل إعادة بناء ما جرى بعد الحوادث، وتحقّق أهذه الكلفة كبيرةٌ بما يكفي لتحريك ميزانية هذا العام لا العام المقبل.",
-  "Four properties, and the bet is that they only work together: state that is written down rather than inferred, learning that may rank candidates and never admits the result, revision that touches the affected entry rather than the whole model, and a record somebody else can replay. Each exists separately elsewhere. The claim is about the combination, and it is a claim rather than a result.":
-    "أربع خصائص، والرهان أنّها لا تعمل إلّا مجتمعة: حالةٌ مكتوبة لا مستنتَجة، وتعلُّمٌ له أن يرتّب المرشّحين وليس له أن يقبل النتيجة أبدًا، ومراجعةٌ تمسّ المدخل المتأثّر لا النموذج كلّه، وسجلٌّ يستطيع غيرُنا أن يعيد تشغيله. وكلٌّ منها موجودٌ وحده في مكانٍ ما. والدعوى عن التركيب، وهي دعوى لا نتيجة.",
   "GALO AI · PRE-SEED":
     "GALO AI · ما قبل التمويل الأوّلي",
   "Governance and policy wrappers":
@@ -503,8 +481,6 @@ export const investorCaseAr: TranslationDictionary = {
     "الميدان في خمسة أسطر",
   "The field, in five lines":
     "الميدان في خمسة أسطر",
-  "The first product is decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.":
-    "المنتج الأوّل ضمانُ القرار حول الأنظمة التي يشغّلها المصنع أصلًا. وهذه الصفحة هي حجّة الاستثمار: لماذا قد يصير هذا شركة، وما الذي يشتريه الشيك، وما الذي يفتح الجولة التالية، وعند أيّ نقطةٍ تُعدّ الأطروحة ميتة.",
   "The industrial sales cycle is long":
     "دورةُ البيع الصناعي طويلة",
   "The learning results come from a counting ranker reading a learned volume. The tower, the typed routes and the verifier — the parts this site spends the most words on — are not in the measured path, so the saving is not yet evidence that the architecture is what produced it.":

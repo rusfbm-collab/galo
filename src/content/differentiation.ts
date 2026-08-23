@@ -21,14 +21,20 @@
  */
 
 /**
- * Four lines under the hero lead. Short enough to be read standing up, and each
- * one is a negative rather than a promise.
+ * Four lines under the hero lead. Short enough to be read standing up.
+ *
+ * The first of these used to read "not a neural net as authority", which
+ * concedes that a neural net is in there and merely outranked — a reader who
+ * knows the field hears a governance wrapper. The first line now says the
+ * stronger and simpler thing, and the other three say what stands in its place.
+ * "Learning may rank candidates; the verifier owns the verdict" has moved to the
+ * weight-free block, where a reader now meets the authority question first.
  */
 export const heroDifferentiators: readonly string[] = [
-  "Not a neural net as authority.",
-  "Not a knowledge graph as the world model.",
-  "Not a global common-sense knowledge base.",
-  "Learning may rank candidates; the verifier owns the verdict.",
+  "No learned weights. No backpropagation.",
+  "An explicit, versioned Atlas of relations.",
+  "Local learning, and local revision.",
+  "Independent checking, and deterministic replay.",
 ];
 
 export type NotThis = {
@@ -46,7 +52,8 @@ export type NotThis = {
 export const whatThisIsNot: readonly NotThis[] = [
   {
     taken: "Taken for a language model",
-    answer: "Learned search can reorder work. It cannot rewrite the final admitted decision.",
+    answer:
+      "There is no parameter tensor to fit and no gradient step to take. Learned search reorders work; it cannot rewrite the admitted decision.",
   },
   {
     taken: "Taken for a knowledge graph",

@@ -20,8 +20,6 @@ export const plainWordsPageRu: TranslationDictionary = {
     "Обещания, что это «умнее» привычного ИИ",
   "A record you can reconstruct the decision from":
     "Запись, по которой можно восстановить ход решения",
-  "A system is trained on examples for a long time. Then it gives you an answer. Ask why, and the honest reply is often that this is how it came out inside. There is almost nowhere to point at a specific reason.":
-    "Систему долго учат на примерах. Потом она выдаёт ответ. Спросишь «почему» — и честный ответ часто сводится к тому, что «так сложилось внутри». Показать пальцем конкретную причину почти некуда.",
   "A working programme":
     "Рабочая программа",
   "AN ORDINARY STORY":
@@ -96,8 +94,6 @@ export const plainWordsPageRu: TranslationDictionary = {
     "Большинство встречает ИИ как окно чата, которое отвечает на вопросы. Это один его вид, и здесь речь не о нём. Ниже — четыре вещи, которые читатель обычно предполагает с порога, и как обстоит дело на самом деле.",
   "Narrow on purpose: it handles two kinds of request and takes one step at a time. That is genuinely all of it.":
     "Намеренно узкая: обрабатывает два вида запроса и делает один шаг за раз. Это действительно всё.",
-  "Neither column is a verdict on the other. They are two ways of arriving at an answer, and they leave you with different things afterwards.":
-    "Ни одна колонка не приговор другой. Это два способа прийти к ответу, и после них у вас остаётся разное.",
   "No formulas here and no special words. In ten minutes: what this is, what it is not, what already works, and what we are not promising yet.":
     "Здесь без формул и без специальных слов. За десять минут — что это такое, чем не является, что уже работает и чего мы пока не обещаем.",
   "Nobody is running this in production anywhere, and nothing on this site should be read as saying otherwise.":
@@ -128,14 +124,10 @@ export const plainWordsPageRu: TranslationDictionary = {
     "Такого сравнения не проводили ни мы, ни кто-либо другой, поэтому таких слов здесь нет.",
   "That is exactly why you can come back later and check the decision against the trail rather than against somebody's memory.":
     "Именно поэтому потом можно вернуться и проверить решение не по памяти, а по следу.",
-  "The difference is where you can point when you disagree.":
-    "Разница в том, куда можно показать пальцем, если вы не согласны.",
   "The easiest way to picture it is a notebook with every permitted action written out in advance.":
     "Проще всего представить блокнот, где заранее выписаны все допустимые действия.",
   "The right to operate equipment on its own":
     "Право самостоятельно управлять оборудованием",
-  "The set of permitted moves exists in advance, and it is limited. The system can only take one from that set. Afterwards you can open the record and see which move was taken and which others were on the table.":
-    "Заранее есть ограниченный набор допустимых ходов. Система может взять только из него. Потом можно открыть запись и увидеть, какой ход выбрали и какие ещё были на столе.",
   "The system cannot invent a new line just because something looks similar. It chooses from what is already permitted, and leaves a record of having done so.":
     "Система не может придумать новую строку только потому, что «вроде похоже». Она выбирает из того, что уже разрешено, и оставляет об этом запись.",
   "The system decided. Or: a specialist looked at it. Both are true, and neither is an answer to the question.":
@@ -203,8 +195,6 @@ export const plainWordsPageZh: TranslationDictionary = {
     "承诺它比常见的人工智能更聪明",
   "A record you can reconstruct the decision from":
     "一份可据以复原整个决定过程的记录",
-  "A system is trained on examples for a long time. Then it gives you an answer. Ask why, and the honest reply is often that this is how it came out inside. There is almost nowhere to point at a specific reason.":
-    "系统先用大量例子训练很久，然后给出答案。问它为什么，诚实的回答往往只是「内部就这么形成的」。几乎没有一处具体的理由可以指出来。",
   "A working programme":
     "一个能运行的程序",
   "AN ORDINARY STORY":
@@ -279,8 +269,6 @@ export const plainWordsPageZh: TranslationDictionary = {
     "多数人第一次遇到人工智能，是一个回答问题的聊天窗口。那是其中一种，而不是这里说的这种。下面是读者一进来通常会有的四个预设，以及事实如何。",
   "Narrow on purpose: it handles two kinds of request and takes one step at a time. That is genuinely all of it.":
     "刻意做得窄：它处理两类请求，一次走一步。真的就这些。",
-  "Neither column is a verdict on the other. They are two ways of arriving at an answer, and they leave you with different things afterwards.":
-    "两栏都不是对另一栏的判决。它们是得出答案的两种方式，事后留给你的东西不一样。",
   "No formulas here and no special words. In ten minutes: what this is, what it is not, what already works, and what we are not promising yet.":
     "这里没有公式，也没有专门术语。十分钟之内：这是什么，不是什么，什么已经能用，以及我们还不承诺什么。",
   "Nobody is running this in production anywhere, and nothing on this site should be read as saying otherwise.":
@@ -311,14 +299,10 @@ export const plainWordsPageZh: TranslationDictionary = {
     "这样的比较没有做过——我们没做，别人也没做——所以这里不用这样的说法。",
   "That is exactly why you can come back later and check the decision against the trail rather than against somebody's memory.":
     "正因为如此，日后可以回过头来，凭留下的痕迹而不是凭谁的记忆去核对那个决定。",
-  "The difference is where you can point when you disagree.":
-    "差别在于：你不同意的时候，能指向哪里。",
   "The easiest way to picture it is a notebook with every permitted action written out in advance.":
     "最容易的设想，是一个事先写好了全部允许动作的笔记本。",
   "The right to operate equipment on its own":
     "自行操作设备的权限",
-  "The set of permitted moves exists in advance, and it is limited. The system can only take one from that set. Afterwards you can open the record and see which move was taken and which others were on the table.":
-    "允许的走法事先就有，而且是有限的。系统只能从里面取一个。事后可以打开记录，看见选了哪一步，还有哪些曾摆在桌面上。",
   "The system cannot invent a new line just because something looks similar. It chooses from what is already permitted, and leaves a record of having done so.":
     "系统不能因为「看着差不多」就自己添一行。它只从已经被允许的里面挑，并把这件事记下来。",
   "The system decided. Or: a specialist looked at it. Both are true, and neither is an answer to the question.":
@@ -386,8 +370,6 @@ export const plainWordsPageAr: TranslationDictionary = {
     "وعدٌ بأنه أذكى من الذكاء الاصطناعي المألوف",
   "A record you can reconstruct the decision from":
     "سجلٌّ يمكن أن يُعاد منه بناء مسار القرار",
-  "A system is trained on examples for a long time. Then it gives you an answer. Ask why, and the honest reply is often that this is how it came out inside. There is almost nowhere to point at a specific reason.":
-    "يُدرَّب النظام على الأمثلة زمنًا طويلًا، ثم يعطيك جوابًا. وإذا سألت عن السبب، كان الجواب الصادق في الغالب أن الأمر «تكوَّن هكذا في الداخل». ولا يكاد يوجد موضعٌ يُشار إليه بوصفه السبب.",
   "A working programme":
     "برنامجٌ عامل",
   "AN ORDINARY STORY":
@@ -462,8 +444,6 @@ export const plainWordsPageAr: TranslationDictionary = {
     "يلتقي معظم الناس بالذكاء الاصطناعي في هيئة نافذة محادثةٍ تجيب عن الأسئلة. ذاك نوعٌ منه، وليس هو المقصود هنا. وفيما يلي أربعة أمورٍ يفترضها القارئ عادةً عند وصوله، وما هو صحيحٌ فعلًا.",
   "Narrow on purpose: it handles two kinds of request and takes one step at a time. That is genuinely all of it.":
     "ضيّقٌ عن قصد: يعالج نوعين من الطلبات ويخطو خطوةً واحدة في المرة. وهذا كل ما فيه فعلًا.",
-  "Neither column is a verdict on the other. They are two ways of arriving at an answer, and they leave you with different things afterwards.":
-    "ليست إحدى الخانتين حكمًا على الأخرى؛ هما طريقان للوصول إلى جواب، ويتركان لك بعده شيئين مختلفين.",
   "No formulas here and no special words. In ten minutes: what this is, what it is not, what already works, and what we are not promising yet.":
     "لا صيغ هنا ولا كلماتٍ خاصة. في عشر دقائق: ما هذا، وما ليس هو، وما يعمل بالفعل، وما لا نَعِد به بعد.",
   "Nobody is running this in production anywhere, and nothing on this site should be read as saying otherwise.":
@@ -494,14 +474,10 @@ export const plainWordsPageAr: TranslationDictionary = {
     "تلك المقارنة لم تُجرَ، لا منّا ولا من غيرنا، ولذلك لا تُستعمل هذه الكلمات هنا.",
   "That is exactly why you can come back later and check the decision against the trail rather than against somebody's memory.":
     "ولهذا بالضبط يمكنك أن تعود لاحقًا فتتحقّق من القرار بالأثر لا بذاكرة أحد.",
-  "The difference is where you can point when you disagree.":
-    "الفرق في الموضع الذي تستطيع أن تشير إليه حين تعترض.",
   "The easiest way to picture it is a notebook with every permitted action written out in advance.":
     "أيسر تصوُّرٍ له دفترٌ كُتب فيه سلفًا كلُّ فعلٍ مسموح به.",
   "The right to operate equipment on its own":
     "حقُّ تشغيل المعدّات من تلقاء نفسه",
-  "The set of permitted moves exists in advance, and it is limited. The system can only take one from that set. Afterwards you can open the record and see which move was taken and which others were on the table.":
-    "مجموعة الحركات المسموح بها موجودةٌ سلفًا وهي محدودة، ولا يسع النظام إلا أن يأخذ منها. ويمكنك بعد ذلك أن تفتح السجل فترى أيّ حركةٍ اتُّخذت وأيّها كان مطروحًا أيضًا.",
   "The system cannot invent a new line just because something looks similar. It chooses from what is already permitted, and leaves a record of having done so.":
     "لا يستطيع النظام أن يبتكر سطرًا جديدًا لمجرد أن شيئًا ما بدا مشابهًا؛ بل يختار مما هو مسموحٌ به سلفًا، ويترك سجلًا بأنه فعل ذلك.",
   "The system decided. Or: a specialist looked at it. Both are true, and neither is an answer to the question.":

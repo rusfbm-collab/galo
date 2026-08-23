@@ -48,10 +48,10 @@ export function InvestorsPage() {
             <ArrowLeft className="directional-icon" size={16} aria-hidden="true" /> {t("Home")}
           </a>
           <p className="eyebrow eyebrow--cyan">{t("GALO AI · PRE-SEED")}</p>
-          <h1>{t("A verifiable decision layer for private and industrial AI.")}</h1>
+          <h1>{t("A weight-free decision layer for private and industrial AI.")}</h1>
           <p>
             {t(
-              "The first product is decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.",
+              "No learned weights and no backpropagation: what the engine learns is explicit and can be read, versioned and rolled back. The first product applies that to decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.",
             )}
           </p>
           <ul className="investor-status" aria-label={t("Current status")}>

@@ -85,8 +85,8 @@ describe("academic reference", () => {
 });
 
 describe("language-model comparison", () => {
-  it("compares ten properties and never states a performance claim", () => {
-    expect(comparisonRows).toHaveLength(10);
+  it("compares eleven properties and never states a performance claim", () => {
+    expect(comparisonRows).toHaveLength(11);
     const forbidden = /\b(faster|cheaper|better than|outperform|beats|superior|more accurate than a language model\b)/i;
     for (const row of comparisonRows) {
       expect(row.dimension.trim().length).toBeGreaterThan(4);
@@ -94,6 +94,13 @@ describe("language-model comparison", () => {
       expect(row.galo.trim().length).toBeGreaterThan(40);
       expect(`${row.model} ${row.galo}`).not.toMatch(forbidden);
     }
+  });
+
+  it("opens on how each one learns, because that is the category difference", () => {
+    const first = comparisonRows[0];
+    expect(first?.dimension).toBe("How it learns");
+    expect(first?.model.toLowerCase()).toContain("backpropagation");
+    expect(first?.galo.toLowerCase()).toContain("no backpropagation");
   });
 
   it("keeps the breadth row last and honest about the trade", () => {

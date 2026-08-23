@@ -33,6 +33,7 @@ import { twoTowersAr } from "./twoTowers";
 import { engineTourAr } from "./engineTour";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
+import { weightFreeAr } from "./weightFree";
 
 export const ar: TranslationDictionary = {
   ...mathAr,
@@ -69,6 +70,7 @@ export const ar: TranslationDictionary = {
   ...tableSpaceAr,
   ...twoTowersAr,
   ...engineTourAr,
+  ...weightFreeAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",
@@ -454,10 +456,6 @@ export const ar: TranslationDictionary = {
   "Return home": "العودة إلى الرئيسية",
   "View evidence": "عرض الأدلة",
 
-  "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
-    "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية، منتجها الأول ضمان القرار الصناعي. تُنشر نتائج التعلّم المحدودة النطاق مع نتائجها السلبية؛ والصلاحية الخاضعة لسيطرة الشريك غير مُثبتة، والاستقلالية الإنتاجية غير مأذون بها.",
-  "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
-    "GALO AI — نموذج عالم قابل للتحقّق: ذكاء اصطناعي خاصّ واستقلالية صناعية",
   "Evidence — GALO AI": "GALO AI — الأدلة وحدود الادعاءات",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "الأدلة العامة وحدود الادعاءات للإصدار البحثي الحالي من GALO.",

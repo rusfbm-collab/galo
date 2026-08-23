@@ -33,6 +33,7 @@ import { twoTowersRu } from "./twoTowers";
 import { engineTourRu } from "./engineTour";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
+import { weightFreeRu } from "./weightFree";
 
 export const ru: TranslationDictionary = {
   ...mathRu,
@@ -69,6 +70,7 @@ export const ru: TranslationDictionary = {
   ...tableSpaceRu,
   ...twoTowersRu,
   ...engineTourRu,
+  ...weightFreeRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
@@ -464,10 +466,6 @@ export const ru: TranslationDictionary = {
   "Return home": "Вернуться на главную",
   "View evidence": "Открыть доказательства",
 
-  "A general-purpose verifiable world-model and autonomy architecture, with industrial decision assurance as its first product. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.":
-    "Архитектура общего назначения для проверяемой модели мира и автономности, первый продукт которой — гарантия промышленных решений. Ограниченные результаты обучения опубликованы вместе с отрицательными; валидность на данных партнёра не доказана, промышленная автономность не разрешена.",
-  "GALO AI — A Verifiable World Model for Private AI and Industrial Autonomy":
-    "GALO AI — проверяемая модель мира для частного ИИ и промышленной автономности",
   "Evidence — GALO AI": "Доказательства — GALO AI",
   "Inspect GALO's implemented bounded mechanics, immutable release fingerprint, public claim matrix, and disclosed research boundaries.":
     "Изучите реализованные ограниченные механизмы GALO, неизменяемый отпечаток выпуска, матрицу публичных утверждений и раскрытые границы исследования.",

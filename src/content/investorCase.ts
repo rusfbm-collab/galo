@@ -39,7 +39,7 @@ export const investmentThesis: readonly ThesisBlock[] = [
   },
   {
     heading: "Why GALO",
-    body: "Four properties, and the bet is that they only work together: state that is written down rather than inferred, learning that may rank candidates and never admits the result, revision that touches the affected entry rather than the whole model, and a record somebody else can replay. Each exists separately elsewhere. The claim is about the combination, and it is a claim rather than a result.",
+    body: "It is a different category before it is a different product: there are no learned weights and no backpropagation anywhere in the engine, so what it learns is explicit and can be read, versioned and rolled back one item at a time. Four properties follow from that, and the bet is that they only work together: state written down rather than inferred, learning that may rank candidates and never admits the result, revision that touches the affected entry rather than the whole model, and a record somebody else can replay. Each exists separately elsewhere. The claim is about the combination, and it is a claim rather than a result.",
   },
   {
     heading: "Why this is not already everywhere",
@@ -66,7 +66,7 @@ export const investorField: readonly FieldRow[] = [
   {
     klass: "Language models and agent stacks",
     boughtFor: "Speed and breadth of answer",
-    difference: "Authority does not sit in the weights.",
+    difference: "There are no weights here for authority to sit in.",
   },
   {
     klass: "Knowledge graphs and rule engines",

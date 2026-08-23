@@ -9,13 +9,16 @@ import { comparisonClasses, comparisonClassesBoundary } from "../src/content/com
 import { landscapeRows } from "../src/content/landscape";
 
 describe("the differentiation block", () => {
-  it("names four things this is not, and who owns the verdict", () => {
+  it("opens on the category, not on a hedge about authority", () => {
     expect(heroDifferentiators).toHaveLength(4);
     const joined = heroDifferentiators.join(" ");
-    expect(joined).toMatch(/Not a neural net as authority/);
-    expect(joined).toMatch(/Not a knowledge graph as the world model/);
-    expect(joined).toMatch(/Not a global common-sense knowledge base/);
-    expect(joined).toMatch(/the verifier owns the verdict/);
+    // "not a neural net as authority" conceded that a neural net was in there
+    // and merely outranked. The first line now says the stronger thing.
+    expect(joined).not.toMatch(/as authority/);
+    expect(heroDifferentiators[0]).toMatch(/No learned weights\. No backpropagation\./);
+    expect(joined).toMatch(/Atlas of relations/);
+    expect(joined).toMatch(/local revision/i);
+    expect(joined).toMatch(/deterministic replay/);
   });
 
   it("answers each assumption once, with no comparative claim", () => {

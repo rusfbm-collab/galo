@@ -20,6 +20,7 @@ import { HeroReasoningRoute } from "../components/diagrams/HeroReasoningRoute";
 import { LocalRevision } from "../components/diagrams/LocalRevision";
 import { ResolutionLadder } from "../components/diagrams/ResolutionLadder";
 import { TwoTowersFigure } from "../components/diagrams/TwoTowersFigure";
+import { WeightFreeContrast } from "../components/diagrams/WeightFreeContrast";
 import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
@@ -36,6 +37,12 @@ import { headlineClaims } from "../content/headlineClaims";
 import { twelveMonths } from "../content/programme";
 import { investorBriefing } from "../content/plainLanguage";
 import { siteContent } from "../content/site";
+import {
+  authorityLine,
+  externalAdapterRule,
+  learnedState,
+  weightFreeBoundary,
+} from "../content/weightFree";
 import { useI18n } from "../i18n/I18nContext";
 
 const problemCards = [
@@ -162,16 +169,17 @@ export function HomePage() {
       <section className="hero">
         <div className="shell hero__grid">
           <div className="hero__content">
-            <p className="eyebrow eyebrow--cyan">
-              {t("GENERAL-PURPOSE ARCHITECTURE · INDUSTRIAL DECISION ASSURANCE FIRST")}
-            </p>
-            <h1>{t("A verifiable world model for private AI and industrial autonomy.")}</h1>
+            <p className="eyebrow eyebrow--cyan">{t("WEIGHT-FREE AI · INDUSTRIAL DECISION ASSURANCE")}</p>
+            <h1>{t("A different kind of AI, for decisions that have to stay provable.")}</h1>
             <p className="hero__lead">
               {t(
-                "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is unusual is that every learning number here can be re-run by somebody else: on public corpora the system needs 57–67% less computation than the identical system with its learning switched off, and the benchmark it refused to learn is published beside the ones it did. No partner has yet run one on their own data, and nothing here authorises a command to a plant.",
+                "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building, checking, reusing and locally revising explicit objects, relations, competing explanations and evidence in a versioned Atlas, so every learned change can be read, versioned and replayed. The first product applies that architecture to decision assurance around the digital twins and operational systems a plant already runs.",
               )}
             </p>
-            <ul className="hero__diff" aria-label={t("What this is not")}>
+            <p className="hero__result">
+              {t("Know what changed, what it affects, and why the decision still stands.")}
+            </p>
+            <ul className="hero__diff" aria-label={t("What kind of system this is")}>
               {heroDifferentiators.map((line) => (
                 <li key={line}>{t(line)}</li>
               ))}
@@ -195,7 +203,7 @@ export function HomePage() {
             </div>
             <p className="hero__boundary">
               {t(
-                "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue.",
+                "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue. Every figure on this site was produced by the project on its own data, and nothing here authorises a command to a plant.",
               )}
             </p>
           </div>
@@ -246,6 +254,59 @@ export function HomePage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section id="weight-free" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("THE DIFFERENCE, BEFORE ANY NUMBERS")}
+            title={t("Ordinary AI learns by changing hidden weights. This one has none to change.")}
+            text={t(
+              "Everything further down this page — the percentages, the receipts, the seven phases, the tables — is evidence about a kind of object. This section says what the object is, because the evidence does not mean much until that is clear.",
+            )}
+          />
+
+          <WeightFreeContrast />
+
+          <div className="weight-free__state">
+            <div className="weight-free__state-head">
+              <p className="eyebrow">{t("WHAT AN EPISODE MAY LEAVE BEHIND")}</p>
+              <h3>{t("If learning is not weights, here is the whole of what it is instead.")}</h3>
+              <p>
+                {t(
+                  "Six kinds of thing, and the list is complete rather than illustrative. Each one can be printed, compared with the same item from an earlier run, and rolled back on its own without touching the rest.",
+                )}
+              </p>
+            </div>
+            <dl>
+              {learnedState.map((entry) => (
+                <div key={entry.name}>
+                  <dt>{t(entry.name)}</dt>
+                  <dd>{t(entry.holds)}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <p className="weight-free__authority">
+            <ShieldCheck size={18} aria-hidden="true" />
+            <span>{t(authorityLine)}</span>
+          </p>
+
+          <div className="weight-free__limits">
+            <p>
+              <CircleAlert size={16} aria-hidden="true" /> {t(weightFreeBoundary)}
+            </p>
+            <p>
+              <CircleAlert size={16} aria-hidden="true" /> {t(externalAdapterRule)}
+            </p>
+          </div>
+
+          <a className="text-link" href={href("/vs-llm#dimensions")}>
+            {t("The same difference, dimension by dimension, against a language model")}{" "}
+            <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+          </a>
         </div>
       </section>
 
