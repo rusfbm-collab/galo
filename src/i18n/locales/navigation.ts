@@ -19,7 +19,6 @@ export const navigationRu: TranslationDictionary = {
   "The claim, and where each part of it is checked.": "Утверждение и то, где проверяется каждая его часть.",
   "The mathematics": "Математика",
   "The whole thing with no formula and no jargon.": "Всё то же самое — без формул и без терминов.",
-  "Twelve assessment lines, six of them negative.": "Двенадцать строк оценки, шесть из них отрицательные.",
   "What a sceptic can establish here, and what nobody can.":
     "Что скептик может здесь установить, а чего не установит никто.",
   "What exists, what does not, and what would tell you to walk away.": "Что есть, чего нет и что подскажет вам уйти.",
@@ -44,7 +43,6 @@ export const navigationZh: TranslationDictionary = {
   "The claim, and where each part of it is checked.": "那句主张，以及它的每一部分在哪里可以核验。",
   "The mathematics": "数学部分",
   "The whole thing with no formula and no jargon.": "同样的内容，不用公式，也不用术语。",
-  "Twelve assessment lines, six of them negative.": "十二行评估结论，其中六行是否定的。",
   "What a sceptic can establish here, and what nobody can.": "怀疑者在这里能确证什么，以及什么谁也确证不了。",
   "What exists, what does not, and what would tell you to walk away.":
     "什么已经有了、什么还没有，以及什么会告诉你该走人。",
@@ -70,7 +68,6 @@ export const navigationAr: TranslationDictionary = {
   "The claim, and where each part of it is checked.": "الدعوى، وأين يُفحص كل جزء منها.",
   "The mathematics": "الرياضيات",
   "The whole thing with no formula and no jargon.": "الشيء نفسه، بلا صيغ ولا مصطلحات.",
-  "Twelve assessment lines, six of them negative.": "اثنا عشر سطر تقييم، ستّة منها سلبية.",
   "What a sceptic can establish here, and what nobody can.":
     "ما يستطيع المشكِّك أن يثبته هنا، وما لا يستطيع أحد إثباته.",
   "What exists, what does not, and what would tell you to walk away.":

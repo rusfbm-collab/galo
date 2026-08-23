@@ -290,7 +290,7 @@ export const differentiationAr: TranslationDictionary = {
   "A declared decision state with a receipt that replays. Narrow on purpose.":
     "حالةُ قرارٍ معلَنة وإيصالٌ يُعاد تشغيله. ضيّقٌ عن قصد.",
   "A learned ranking is allowed here. The verdict is not: it belongs to declared state and a verifier.":
-    "الترتيب المتعلَّم مسموحٌ به هنا. أمّا الحكم فلا: هو لحالةٍ معلَنة ومُتحقِّق.",
+    "الترتيب المتعلَّم مسموحٌ به هنا. أمّا الحكم فلا: هو لحالةٍ معلَنة ومدقّق.",
   "A local frame can carry that shape; the loop around it is what is on offer here.":
     "يستطيع إطارٌ محلّي أن يحمل ذلك الشكل؛ والمعروض هنا هو الحلقة من حوله.",
   "A named edit to a named entry, carrying the receipt that authorised it.":
@@ -304,7 +304,7 @@ export const differentiationAr: TranslationDictionary = {
   "A shared knowledge base and a logic engine.":
     "قاعدةُ معرفةٍ مشتركة ومحرّك منطق.",
   "A specialist asks these in the first ten seconds, and the answer used to be reachable only through the theory chapter. Each card answers one of them once. The full family-by-family table, with what an outsider can check in each, is on the comparison page.":
-    "يسأل المختصّ هذه الأسئلة في العشر ثوانٍ الأولى، وكان الجواب فيما مضى لا يُبلَغ إلّا من فصل النظرية. وتجيب كلّ بطاقة عن واحد منها مرّة واحدة. أمّا الجدول الكامل عائلةً عائلة، وما يستطيع الغريب فحصه في كلٍّ منها، فعلى صفحة المقارنة.",
+    "يسأل المختصّ هذه الأسئلة في الثواني العشر الأولى، وكان الجواب فيما مضى لا يُبلَغ إلّا من فصل النظرية. وتجيب كلّ بطاقة عن واحد منها مرّة واحدة. أمّا الجدول الكامل عائلةً عائلة، وما يستطيع الغريب فحصه في كلٍّ منها، فعلى صفحة المقارنة.",
   "A specification, and a proof a small kernel accepts.":
     "مواصفةٌ وبرهانٌ تقبله نواةٌ صغيرة.",
   "A trace of the calls made. The calls not made are usually nowhere.":
@@ -326,7 +326,7 @@ export const differentiationAr: TranslationDictionary = {
   "Cyc, and the decades of hand-curated axioms behind it":
     "Cyc، وما وراءه من عقودٍ من البديهيّات المنتقاة يدويًّا",
   "Declared state and a frozen verifier. Learning may reorder the search, not admit the result.":
-    "حالةٌ معلَنة ومُتحقِّقٌ مجمَّد. للتعلّم أن يعيد ترتيب البحث، لا أن يقبل النتيجة.",
+    "حالةٌ معلَنة ومدقّقٌ مجمَّد. للتعلّم أن يعيد ترتيب البحث، لا أن يقبل النتيجة.",
   "Depends which half was wrong, and the record does not always say.":
     "يتوقّف على أيّ النصفين أخطأ، والسجلّ لا يقول ذلك دائمًا.",
   "Dynamics learned from observation, good enough to plan against.":
@@ -352,11 +352,11 @@ export const differentiationAr: TranslationDictionary = {
   "Learned search can reorder work. It cannot rewrite the final admitted decision.":
     "يستطيع البحث المتعلَّم أن يعيد ترتيب العمل. ولا يستطيع أن يعيد كتابة القرار المقبول النهائي.",
   "Learning may rank candidates; the verifier owns the verdict.":
-    "للتعلّم أن يرتّب المرشّحين؛ أمّا الحكم فللمُتحقِّق.",
+    "للتعلّم أن يرتّب المرشّحين؛ أمّا الحكم فللمدقّق.",
   "None of this says GALO answers better than any of those families — that has not been measured and is not claimed here. It says the object is a different kind of thing, and the difference is where the authority for a decision sits. In the frozen release the question does not even arise, because that release performs no learning at all: a system that both learns and admits under a verifier is specified, not shipped.":
-    "لا شيء ممّا سبق يقول إنّ GALO يجيب أفضل من أيٍّ من تلك العائلات — فذلك لم يُقَس ولا يُدَّعى هنا. وإنّما يقول إنّ هذا شيء من نوع آخر، وإنّ الفارق في مَن تعود إليه سلطة القرار. وفي الإصدار المجمَّد لا يُطرح السؤال أصلًا، لأنّ ذلك الإصدار لا يتعلّم البتّة: فنظامٌ يتعلّم ويقبل تحت مُتحقِّق مكتوبٌ لا مُسلَّم.",
+    "لا شيء ممّا سبق يقول إنّ GALO يجيب أفضل من أيٍّ من تلك العائلات — فذلك لم يُقَس ولا يُدَّعى هنا. وإنّما يقول إنّ هذا شيء من نوع آخر، وإنّ الفارق في مَن تعود إليه سلطة القرار. وفي الإصدار المجمَّد لا يُطرح السؤال أصلًا، لأنّ ذلك الإصدار لا يتعلّم البتّة: فنظامٌ يتعلّم ويقبل تحت مدقّقٍ مكتوبٌ لا مُسلَّم.",
   "None of this says GALO answers better than any of those families. That has not been measured and is not claimed here. It says the object is a different kind of thing, and the difference is where the authority for a decision sits. In the frozen release the question does not even arise, because that release performs no learning at all; a running system that both learns and admits under a verifier is specified, not shipped.":
-    "لا شيء ممّا سبق يقول إنّ GALO يجيب أفضل من أيّ من تلك العائلات. فذلك لم يُقَس ولا يُدَّعى هنا. وإنّما يقول إنّ هذا شيء من نوع آخر، وإنّ الفارق في مَن تعود إليه سلطة القرار. وفي الإصدار المجمَّد لا يُطرح السؤال أصلًا، لأنّ ذلك الإصدار لا يتعلّم البتّة؛ أمّا نظامٌ يعمل فيتعلّم ويقبل تحت مُتحقِّق فمكتوبٌ لا مُسلَّم.",
+    "لا شيء ممّا سبق يقول إنّ GALO يجيب أفضل من أيّ من تلك العائلات. فذلك لم يُقَس ولا يُدَّعى هنا. وإنّما يقول إنّ هذا شيء من نوع آخر، وإنّ الفارق في مَن تعود إليه سلطة القرار. وفي الإصدار المجمَّد لا يُطرح السؤال أصلًا، لأنّ ذلك الإصدار لا يتعلّم البتّة؛ أمّا نظامٌ يعمل فيتعلّم ويقبل تحت مدقّقٍ فمكتوبٌ لا مُسلَّم.",
   "Not \"another Cyc\"":
     "ليس «Cyc آخر»",
   "Not a global common-sense knowledge base.":

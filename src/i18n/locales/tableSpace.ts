@@ -155,7 +155,7 @@ export const tableSpaceAr: TranslationDictionary = {
   "Q_{level} · {poles} positions":
     "Q_{level} · {poles} مواضع",
   "k role slots":
-    "k من الخانات الدورية",
+    "k من خانات الأدوار",
   "{cells} typed cells":
     "{cells} خلية مصنَّفة",
   "A frame is the two tables, plus three declarations about how to read them.":
@@ -171,11 +171,11 @@ export const tableSpaceAr: TranslationDictionary = {
   "Declare how many places the scene has":
     "أعلِن كم موضعًا للمشهد",
   "Each of the n × n cells may hold any of the n positions, so a level of size n has n^(n²) possible tables. The bars count digits rather than values, because the growth is the subject: by L5 the space is past anything anyone could enumerate, and it keeps going.":
-    "كلُّ خليةٍ من خلايا الجدول n × n قد تحمل أيًا من المواضع الـn، فلمستوىً حجمه n عددُ n^(n²) من الجداول الممكنة. والأعمدة تعدّ الأرقام لا القيم، لأن الموضوع هنا هو النمو: عند L5 صار الفضاء خارج أي تعدادٍ ممكن، وهو ماضٍ في الزيادة.",
+    "كلُّ خليةٍ من خلايا الجدول n × n قد تحمل أيًا من المواضع الـn، فالمستوى الذي حجمه n له n^(n²) من الجداول الممكنة. والأعمدة تعدّ الأرقام لا القيم، لأن الموضوع هنا هو النمو: عند L5 صار الفضاء خارج أي تعدادٍ ممكن، وهو ماضٍ في الزيادة.",
   "Four declarations turning two Cayley tables into one frame":
     "أربعة إعلانات تحوّل جدولَي كايلي إلى إطارٍ واحد",
   "Four numbered steps down the left — choose a level, take its two frozen laws, read each cell with its roles, declare how many places the scene has — feeding into a panel on the right. The panel shows the carrier positions, the two tables drawn as grids, and the empty role slots that make up one frame.":
-    "أربع خطوات مرقَّمة على اليسار — اختر مستوى، وخذ قانونَيه المجمَّدَين، واقرأ كل خلية بأدوارها، وأعلن كم موضعًا للمشهد — تصبّ في لوحةٍ على اليمين. تُظهر اللوحة مواضع الحامل، والجدولين مرسومَين شبكتين، والخانات الدورية الفارغة التي يتكوَّن منها إطارٌ واحد.",
+    "أربع خطوات مرقَّمة على اليسار — اختر مستوى، وخذ قانونَيه المجمَّدَين، واقرأ كل خلية بأدوارها، وأعلن كم موضعًا للمشهد — تصبّ في لوحةٍ على اليمين. تُظهر اللوحة مواضع الحامل، والجدولين مرسومَين شبكتين، وخانات الأدوار الفارغة التي يتكوَّن منها إطارٌ واحد.",
   "HOW A FRAME IS MADE OUT OF THE TABLES":
     "كيف يُصنع الإطار من الجداول",
   "HOW MANY TABLES THERE ARE, AND HOW MANY ARE DECLARED":
@@ -195,11 +195,11 @@ export const tableSpaceAr: TranslationDictionary = {
   "Polarity is local to this frame.":
     "القطبية محلية لهذا الإطار.",
   "ROLE SLOTS":
-    "الخانات الدورية",
+    "خانات الأدوار",
   "Read each cell with its roles":
     "اقرأ كل خلية بأدوارها",
   "Seven horizontal bars, one per level, whose lengths follow the number of digits in the count of possible tables. Level 1 has one table, level 3 has 19,683, level 7 has more than 10 to the 41st. A short bar underneath marks the fourteen tables GALO actually declares.":
-    "سبعة أعمدة أفقية، واحدٌ لكل مستوى، تتبع أطوالها عدد أرقام عدد الجداول الممكنة. للمستوى 1 جدولٌ واحد، وللمستوى 3 عدد 19,683، وللمستوى 7 أكثر من 10 مرفوعًا إلى 41. ويشير عمودٌ قصير تحتها إلى الجداول الأربعة عشر التي يعلنها GALO فعلًا.",
+    "سبعة أعمدة أفقية، واحدٌ لكل مستوى، تتبع أطوالها عدد أرقام عدد الجداول الممكنة. للمستوى 1 جدولٌ واحد، وللمستوى 3 عددُها 19,683، وللمستوى 7 أكثر من 10 مرفوعًا إلى 41. ويشير عمودٌ قصير تحتها إلى الجداول الأربعة عشر التي يعلنها GALO فعلًا.",
   "THE SAME TWO TABLES":
     "الجدولان نفسهما",
   "Take the two frozen laws at it":

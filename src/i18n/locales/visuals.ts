@@ -1,6 +1,14 @@
 import type { TranslationDictionary } from "../translations";
 
 export const visualsRu: TranslationDictionary = {
+  "CLOSED":
+    "ЗАКРЫТО",
+  "declared":
+    "объявленный",
+  "of record":
+    "официальный",
+  "open-ended":
+    "открытый",
   "A column chart with one column per level from L1 to L7. The columns rise 4, 16, 36, 64, 100, 144 and 196, which add up to 560. The L1 column is marked separately because those four coordinates stay control-only in the current runtime.":
     "Столбчатая диаграмма: по одному столбцу на каждый уровень от L1 до L7. Высоты столбцов — 4, 16, 36, 64, 100, 144 и 196, в сумме 560. Столбец L1 выделен отдельно, потому что эти четыре координаты в текущей среде исполнения остаются только управляющими.",
   "A distinction survives a level change only when the levels divide.":
@@ -180,6 +188,14 @@ export const visualsRu: TranslationDictionary = {
 };
 
 export const visualsZh: TranslationDictionary = {
+  "CLOSED":
+    "已关闭",
+  "declared":
+    "已声明",
+  "of record":
+    "作为定案",
+  "open-ended":
+    "开放式",
   "A column chart with one column per level from L1 to L7. The columns rise 4, 16, 36, 64, 100, 144 and 196, which add up to 560. The L1 column is marked separately because those four coordinates stay control-only in the current runtime.":
     "柱状图，从 L1 到 L7 每个层级一根柱子。柱高依次为 4、16、36、64、100、144 和 196，合计 560。L1 的柱子单独标注，因为这四个坐标在当前运行时中仅作控制用途。",
   "A distinction survives a level change only when the levels divide.":
@@ -353,6 +369,14 @@ export const visualsZh: TranslationDictionary = {
 };
 
 export const visualsAr: TranslationDictionary = {
+  "CLOSED":
+    "مغلقة",
+  "declared":
+    "معلَن",
+  "of record":
+    "مرجعي",
+  "open-ended":
+    "مفتوح",
   "A column chart with one column per level from L1 to L7. The columns rise 4, 16, 36, 64, 100, 144 and 196, which add up to 560. The L1 column is marked separately because those four coordinates stay control-only in the current runtime.":
     "مخطط أعمدة يضم عمودًا واحدًا لكل مستوى من L1 إلى L7. ترتفع الأعمدة إلى 4 و16 و36 و64 و100 و144 و196، ومجموعها 560. ويُميَّز عمود L1 على حدة لأن هذه الإحداثيات الأربعة تبقى للتحكم فقط في بيئة التشغيل الحالية.",
   "A distinction survives a level change only when the levels divide.":

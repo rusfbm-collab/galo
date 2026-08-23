@@ -418,7 +418,7 @@ export const investorCaseAr: TranslationDictionary = {
   "Enterprises are accumulating decisions taken by software, and the question they cannot answer is not what the model said. It is what happens after a source, a procedure or a threshold changes: which decisions are affected, which have to be re-checked, and why the ones left standing are still lawful. That question is asked by auditors, regulators and insurers, and today it is answered by people rereading logs.":
     "تتراكم لدى المؤسسات قراراتٌ اتّخذتها البرمجيات، والسؤال الذي تعجز عن جوابه ليس «ماذا قال النموذج». بل ما الذي يحدث بعد تغيُّر مصدرٍ أو إجراءٍ أو عتبة: أيّ القرارات تأثّر، وأيّها يلزم إعادة فحصه، ولماذا يبقى الباقي مشروعًا. يسأل هذا السؤال المدقّقون والجهات الرقابية وشركات التأمين، ويجيب عنه اليوم أناسٌ يعيدون قراءة السجلّات.",
   "Even a working evaluation can take three quarters to reach a signature in a regulated plant. A pre-seed runway does not obviously survive that, and the technology being right does not shorten it.":
-    "حتى التقييم الناجح قد يستغرق ثلاثة أرباعٍ سنوية ليبلغ توقيعًا في مصنعٍ خاضع للتنظيم. ومدرَجُ ما قبل التأسيس لا يصمد لذلك بداهةً، وصوابُ التقنية لا يقصّر المدّة.",
+    "حتى التقييم الناجح قد يستغرق تسعة أشهر ليبلغ توقيعًا في مصنعٍ خاضع للتنظيم. ومدرَجُ ما قبل التأسيس لا يحتمل ذلك بداهةً، وصوابُ التقنية لا يقصّر المدّة.",
   "Every number published here was produced by the project on its own data with its own evaluator. Self-recomputation is honest and it is not independence, and no amount of it converts into a purchase order.":
     "كلّ رقمٍ منشور هنا أنتجه المشروع على بياناته وبمُقيِّمه. وإعادةُ الحساب الذاتية أمينة لكنّها ليست استقلالية، ولا يتحوّل منها أيّ قدرٍ إلى أمر شراء.",
   "Execution help cannot be hired, and the work stays at one pair of hands.":
@@ -442,7 +442,7 @@ export const investorCaseAr: TranslationDictionary = {
   "Industrial buyers are reached through integrators, platform vendors and existing relationships. A correct architecture with no route to a plant floor is a paper, not a company.":
     "يُبلَغ المشترون الصناعيون عبر المُكامِلين وموردي المنصّات والعلاقات القائمة. والبنية الصحيحة بلا طريقٍ إلى أرض المصنع ورقةٌ بحثية لا شركة.",
   "It is not a wrapper over a language model, so it cannot be shipped as a feature by anyone who has one. It needs a different runtime, which is expensive to build and hard to sell before the pain is acute. The market currently buys fluency. Assurance under change becomes payable where the cost of an unexplainable decision is already on somebody's books — which is why the first product is industrial rather than general.":
-    "ليس غلافًا فوق نموذج لغة، فلا يستطيع من يملك نموذجًا أن يشحنه ميزةً عابرة. إنّه يحتاج زمن تشغيلٍ آخر، بناؤه مكلف وبيعه عسير قبل أن يشتدّ الألم. والسوق اليوم تشتري الطلاقة. أمّا الضمان عند التغيير فيصير مدفوع الثمن حيث تكون كلفة القرار غير القابل للتفسير مقيَّدةً في دفاتر أحدهم بالفعل — ولهذا كان المنتج الأوّل صناعيًّا لا عامًّا.",
+    "ليس غلافًا فوق نموذج لغة، فلا يستطيع من يملك نموذجًا أن يطرحه ميزةً عابرة. إنّه يحتاج زمن تشغيلٍ آخر، بناؤه مكلف وبيعه عسير قبل أن يشتدّ الألم. والسوق اليوم تشتري الطلاقة. أمّا الضمان عند التغيير فيصير مدفوع الثمن حيث تكون كلفة القرار غير القابل للتفسير مقيَّدةً في دفاتر أحدهم بالفعل — ولهذا كان المنتج الأوّل صناعيًّا لا عامًّا.",
   "Knowledge graphs and rule engines":
     "غرافات المعرفة ومحرّكات القواعد",
   "Language models and agent stacks":
@@ -508,7 +508,7 @@ export const investorCaseAr: TranslationDictionary = {
   "The industrial sales cycle is long":
     "دورةُ البيع الصناعي طويلة",
   "The learning results come from a counting ranker reading a learned volume. The tower, the typed routes and the verifier — the parts this site spends the most words on — are not in the measured path, so the saving is not yet evidence that the architecture is what produced it.":
-    "جاءت نتائج التعلّم من مُرتِّبٍ عدّيّ يقرأ مجلّدًا متعلَّمًا. أمّا البرج والمسارات المُصنَّفة والمُتحقِّق — وهي ما يفرد له الموقع أكثر كلامه — فليست في المسار المقيس، فالوفر ليس بعدُ دليلًا على أنّ البنية هي ما أنتجه.",
+    "جاءت نتائج التعلّم من مُرتِّبٍ عدَّاديّ يقرأ مجلَّدًا مُتعلَّمًا. أمّا البرج والمسارات المُصنَّفة والمدقّق — وهي ما يفرد له الموقع أكثر كلامه — فليست في المسار المقيس، فالوفر ليس بعدُ دليلًا على أنّ البنية هي ما أنتجه.",
   "The mathematics, the engine and the claim discipline sit with one person. Illness, distraction or a competing offer stops all three at once, and nothing on this site would survive that without a second engineer.":
     "الرياضيات والمحرّك وانضباط الدعاوى تقوم كلّها على شخصٍ واحد. ومرضٌ أو انشغالٌ أو عرضٌ منافس يوقفها ثلاثتها دفعةً واحدة، ولا ينجو شيءٌ في هذا الموقع من ذلك بغير مهندسٍ ثانٍ.",
   "The measured path is not the full path":

@@ -896,7 +896,7 @@ export const industrialAr: TranslationDictionary = {
   "V67 industrial-autonomy boundary": "حدّ الاستقلالية الصناعية V67",
   "V67 technical evidence memorandum": "مذكّرة الأدلّة التقنية V67",
   "Verified work": "عمل مُتحقَّق منه",
-  "Verifier · PASS / REJECT / BOUNDARY": "المُتحقِّق · PASS / REJECT / BOUNDARY",
+  "Verifier · PASS / REJECT / BOUNDARY": "المدقّق · PASS / REJECT / BOUNDARY",
   "Verify": "التحقّق",
   "WHAT IT WOULD COST": "كم سيكلّف ذلك",
   "WHERE GALO SITS": "أين يقف GALO",

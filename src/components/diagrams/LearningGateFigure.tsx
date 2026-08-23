@@ -78,8 +78,8 @@ export function LearningGateFigure() {
 
           <g className="galo-gatechain__gate">
             <rect x="460" y="86" width="80" height="64" rx="14" />
-            <text x="500" y="118" dominantBaseline="central" textAnchor="middle" direction="ltr">
-              CLOSED
+            <text x="500" y="118" dominantBaseline="central" textAnchor="middle">
+              {t("CLOSED")}
             </text>
           </g>
 

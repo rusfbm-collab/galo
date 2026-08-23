@@ -634,11 +634,11 @@ export const reasoningRouteAr: TranslationDictionary = {
   "A boundary is returned with the budget as its named cause, so running out is never confused with having answered poorly.":
     "يُعاد حدٌّ سببه المسمّى هو الميزانية، فلا يُخلط نفادها يومًا بجوابٍ رديء.",
   "A broken invariant, refused by name rather than corrected in flight.":
-    "ثابتٌ انكسر، فيُرفض بالاسم بدل أن يُصلَح أثناء الجريان.",
+    "لازمٌ انتُهك، فيُرفض بالاسم بدل أن يُصلَح أثناء التشغيل.",
   "A distinguishing probe is chosen and executed, the observation is recorded, attributed to the assumption it bears on, and the affected map is revised locally.":
     "يُختار مسبارٌ فارق ويُنفَّذ، وتُسجَّل الملاحظة وتُنسَب إلى الافتراض الذي تمسّه، وتُنقَّح الخريطة المتأثِّرة محليًا.",
   "A learning intent is formed and applied: the ordering and the durable Atlas state change, and the laws, the candidate set, and the verdict do not.":
-    "يُصاغ قصدُ تعلُّمٍ ويُطبَّق: يتغيَّر الترتيب وحالة الأطلس الدائمة، ولا تتغيَّر القوانين ولا مجموعة المرشحين ولا الحكم.",
+    "يُصاغ قصدُ تعلُّمٍ ويُطبَّق: يتغيَّر الترتيب وحالة Atlas الدائمة، ولا تتغيَّر القوانين ولا مجموعة المرشحين ولا الحكم.",
   "A probe set changed under the policy, a stale snapshot submitted, a phase outside the declared set requested. The episode is rejected rather than salvaged, because a run that repaired its own violations would be a run nobody could reason about afterwards.":
     "غُيِّرت مجموعة المسابر تحت السياسة، أو قُدِّمت لقطةٌ قديمة، أو طُلبت مرحلةٌ خارج المجموعة المعلنة. تُرفض الحلقة ولا تُنقَذ، لأن تشغيلًا يُصلح مخالفاته بنفسه تشغيلٌ لا يستطيع أحدٌ أن يحاجّ فيه بعد ذلك.",
   "A probe set or its price was changed under the policy, a stale snapshot was submitted, or an undeclared phase was requested.":
@@ -650,17 +650,17 @@ export const reasoningRouteAr: TranslationDictionary = {
   "A written-out route with declared phases, a counted budget, and a typed outcome at the end of it.":
     "مسارٌ مكتوبٌ بمراحل معلنة، وميزانيةٍ محسوبة، ونتيجةٍ مصنَّفة في نهايته.",
   "An invariant was broken":
-    "انكسر ثابت",
+    "انتُهك لازم",
   "An upper band with three solid boxes labelled receipts, learned volume, and proven structures, and a lower band drawn with a dashed border containing two boxes labelled weights and wider verdict, each marked with a cross.":
     "شريطٌ علويّ فيه ثلاثة مربّعاتٍ صُلبة: الإيصالات، والمجلَّد المُتعلَّم، والبنى المُثبَتة؛ وشريطٌ سفليّ مرسومٌ بإطارٍ متقطّع يضمّ مربّعين معلَّمين بعلامة شطب: الأوزان والحكم الأوسع.",
   "Any change to what is permitted":
     "أيّ تغييرٍ لما هو مسموح به",
   "Append-only and linked back to the observation it came from, so what was learned cannot be shown without the episodes that produced it. A record is read by people and by replay tooling, never by the decision path of a later episode.":
-    "لا يُكتب إلا إضافةً، ومربوطٌ بالملاحظة التي جاء منها، فلا يمكن إظهار ما تُعلِّم دون الحلقات التي أنتجته. يقرأ السجلَّ البشرُ وأدواتُ إعادة التشغيل، ولا يقرأه أبدًا مسارُ قرارِ حلقةٍ لاحقة.",
+    "لا يُكتب إلا إضافةً، ومربوطٌ بالملاحظة التي جاء منها، فلا يمكن إظهار ما جرى تعلُّمه دون الحلقات التي أنتجته. يقرأ السجلَّ البشرُ وأدواتُ إعادة التشغيل، ولا يقرأه أبدًا مسارُ قرارِ حلقةٍ لاحقة.",
   "Both are reported as boundaries. The second is the interesting one: holding two answers is stated outright rather than resolved by preference.":
-    "كلتا الحالتين تُبلَّغ حدًّا. والثانية هي الطريفة: أن تكون بيدك إجابتان أمرٌ يُقال صراحةً لا يُحسَم بالتفضيل.",
+    "كلتا الحالتين تُبلَّغ حدًّا. والثانية هي الأجدر بالانتباه: أن تكون بيدك إجابتان أمرٌ يُقال صراحةً لا يُحسَم بالتفضيل.",
   "Candidates are enumerated from the declared laws rather than proposed by a model. Because completeness is checked instead of assumed, an incomplete portfolio is itself a recorded outcome: the route stops and names the part it could not open, rather than continuing over a space it cannot vouch for.":
-    "يُعدَّد المرشحون من القوانين المعلنة لا يقترحهم نموذج. والاكتمال يُفحص ولا يُفترض، فالمحفظة الناقصة نتيجةٌ مسجَّلة بذاتها: يتوقّف المسار ويسمّي الجزء الذي تعذّر عليه فتحه، بدل أن يمضي فوق فضاءٍ لا يضمنه.",
+    "يُعدَّد المرشحون من القوانين المعلنة، ولا يقترحهم نموذج. والاكتمال يُفحص ولا يُفترض، فالمحفظة الناقصة نتيجةٌ مسجَّلة بذاتها: يتوقّف المسار ويسمّي الجزء الذي تعذّر عليه فتحه، بدل أن يمضي فوق فضاءٍ لا يضمنه.",
   "Counters and learned orders over what to try first, held in a volume that can be detached.":
     "عدّادات وترتيباتٌ مُتعلَّمة لما يُجرَّب أولًا، محفوظةٌ في مجلَّدٍ يمكن فصله.",
   "Detachable is the operative word. The same engine runs with the volume mounted and with it removed, and the difference between those two runs is what every published learning number measures. Nothing in the volume is a weight, and nothing in it can widen what is permitted.":
@@ -672,9 +672,9 @@ export const reasoningRouteAr: TranslationDictionary = {
   "Each phase answers one question and hands one object to the next. The phase set is closed, so there is no unnamed state to fall into: an episode is either in one of the seven or on one of the two exits, and the exits are reachable from any phase rather than only from the end.":
     "كلُّ مرحلةٍ تجيب عن سؤالٍ واحد وتسلّم التاليةَ شيئًا واحدًا. ومجموعة المراحل مغلقة، فلا حالةَ بلا اسمٍ يُسقَط فيها: الحلقة إما في واحدةٍ من السبع وإما على أحد المخرجين، والمخرجان يُبلغان من أي مرحلةٍ لا من النهاية وحدها.",
   "Either nothing composes lawfully, or two inequivalent lawful compositions both stand.":
-    "إما ألّا يتركّب شيءٌ بصورةٍ مشروعة، وإما أن يقوم تركيبان مشروعان غير متكافئين.",
+    "إما ألّا يتركّب شيءٌ تركيبًا مشروعًا، وإما أن يقوم تركيبان مشروعان غير متكافئين.",
   "Every phase seals its state on the way out, which is why an interrupted episode continues instead of restarting, and why a mismatch of environment or Atlas on resumption is refused by name instead of quietly producing different numbers.":
-    "كلُّ مرحلةٍ تختم حالتها وهي تغادر، ولهذا تُستأنَف الحلقةُ المقطوعة ولا تبدأ من جديد، ولهذا يُرفض اختلافُ البيئة أو الأطلس عند الاستئناف بالاسم بدل أن يُعطي أرقامًا أخرى في صمت.",
+    "كلُّ مرحلةٍ تختم حالتها وهي تغادر، ولهذا تُستأنَف الحلقةُ المقطوعة ولا تبدأ من جديد، ولهذا يُرفض اختلافُ البيئة أو Atlas عند الاستئناف بالاسم بدل أن يُعطي أرقامًا أخرى في صمت.",
   "Every shortcut has to be presentable":
     "كلُّ اختصارٍ يجب أن يكون قابلًا للإبراز",
   "Every step has a price, and the budget is finite":
@@ -696,7 +696,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "Inside one bounded step":
     "داخل خطوةٍ واحدة محدودة",
   "It cannot. The budget is finite and counted as it is spent, and exhausting it is a lawful outcome with a named cause. An episode ends on a settled answer or on a boundary, never on having tried for long enough.":
-    "لا يستطيع. الميزانية منتهية وتُحسب وهي تُنفَق، ونفادها نتيجةٌ مشروعة بسببٍ مسمّى. تنتهي الحلقة بجوابٍ محسوم أو بحدّ، ولا تنتهي أبدًا بأنها حاولت طويلًا بما يكفي.",
+    "لا يستطيع. الميزانية منتهية وتُحسب وهي تُنفَق، ونفادها نتيجةٌ مشروعة بسببٍ مسمّى. تنتهي الحلقة بجوابٍ محسوم أو بحدّ، ولا تنتهي قطُّ لمجرّد أنها حاولت بما يكفي من الوقت.",
   "It is not, and the gap is published rather than glossed. The measuring path of the sealed campaigns is a counting ranker reading a learned volume; the tower, the typed routes, and the verifier are not in that path, so their joint contribution is not established. An end-to-end run that would settle it is the next registered step.":
     "ليس كذلك، والفجوة منشورةٌ لا مطموسة. فمسار القياس في الحملات المختومة مرتِّبٌ عدَّاديّ يقرأ مجلَّدًا مُتعلَّمًا؛ أما البرج والمسارات المصنَّفة والمدقّق فليست في ذلك المسار، ولذلك لم يثبت إسهامها المشترك. والتشغيل الشامل الذي يحسم ذلك هو الخطوة المسجَّلة التالية.",
   "Lawful models become executable local maps, and any already-proven structure whose signature matches is consumed instead of being rebuilt.":
@@ -714,11 +714,11 @@ export const reasoningRouteAr: TranslationDictionary = {
   "No single lawful composition":
     "لا تركيب مشروع واحد",
   "Nothing is chosen for being most plausible. When there is nothing to tell the alternatives apart, the route must take a probe or return a boundary. The one thing it may not do is hand back the likeliest reading as though it had been established.":
-    "لا شيء يُختار لكونه الأرجح. وحين لا يوجد ما يفرّق بين البدائل، وجب على المسار أن يأخذ مسبارًا أو يعيد حدًّا. والشيء الوحيد الذي لا يحقّ له هو أن يعيد القراءة الأرجح وكأنها ثبتت.",
+    "لا شيء يُختار لكونه الأرجح. وحين لا يوجد ما يفرّق بين البدائل، وجب على المسار أن يأخذ مسبارًا أو يعيد حدًّا. والشيء الوحيد الذي لا يحقّ له هو أن يعيد القراءة الأرجح وكأنها ثبتت.",
   "Nothing is learned here, since there are no weights.":
     "ما دامت لا أوزان، فلا تعلُّمَ إذن.",
   "Nothing is scored. When the alternatives cannot be told apart, the route takes a probe or returns a boundary — it never hands back the most plausible one as though it had been established.":
-    "لا شيء يُسجَّل بدرجة. وحين يتعذّر التمييز بين البدائل، يأخذ المسار مسبارًا أو يعيد حدًّا — ولا يعيد الأرجح قطُّ وكأنه ثبت.",
+    "لا شيء يُسجَّل بدرجة. وحين يتعذّر التمييز بين البدائل، يأخذ المسار مسبارًا أو يعيد حدًّا — ولا يعيد الأرجح قطُّ وكأنه ثبت.",
   "Nothing left to distinguish with":
     "لم يبقَ ما يُفرَّق به",
   "Nothing. Learning cannot reach the verdict.":
@@ -726,7 +726,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "ONE EPISODE, FROM OPENING TO SEAL":
     "حلقةٌ واحدة، من الفتح إلى الختم",
   "One accepted observation carried through one bounded step":
-    "ملاحظةٌ واحدة مقبولة تُساق عبر خطوةٍ واحدة محدودة",
+    "ملاحظةٌ واحدة مقبولة تُمرَّر عبر خطوةٍ واحدة محدودة",
   "One bounded step with concrete values":
     "خطوةٌ واحدة محدودة بقيمٍ محدَّدة",
   "One distinguishing probe is taken":
@@ -762,15 +762,15 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The GALO reasoning route: seven phases and two lawful exits, where an episode is allowed to stop, one bounded step of the frozen release with its exact values, what survives an episode, and what the published results did not measure.":
     "مسار الاستدلال في GALO: سبع مراحل ومخرجان مشروعان، وأين يُسمح للحلقة بالتوقف، وخطوة واحدة محدودة من الإصدار المجمَّد بقيمها الدقيقة، وما يبقى بعد الحلقة، وما لم تقسه النتائج المنشورة.",
   "The candidate portfolio cannot be completed, or materialising it would exceed the declared limit.":
-    "تعذّر إكمال محفظة المرشحين، أو أن تجسيدها يتجاوز الحدَّ المعلن.",
+    "تعذّر إكمال محفظة المرشحين، أو أن بسْطها يتجاوز الحدَّ المعلن.",
   "The candidate space is opened":
     "يُفتح فضاء المرشحين",
   "The composition has to be unique up to lawful equivalence. Two inequivalent lawful compositions are not settled by preference: the route reports that it holds two of them and stops, because choosing between them would be exactly the unrecorded judgement this design exists to avoid.":
-    "يجب أن يكون التركيب وحيدًا حتى التكافؤ المشروع. ولا يُحسم تركيبان مشروعان غير متكافئين بالتفضيل: يبلّغ المسار أنه يحمل اثنين ثم يتوقّف — لأن الاختيار بينهما هو بالضبط ذلك الحكم غير المدوَّن الذي وُجد هذا التصميم لتجنُّبه.",
+    "يجب أن يكون التركيب وحيدًا إلى حدّ التكافؤ المشروع. ولا يُحسم تركيبان مشروعان غير متكافئين بالتفضيل: يبلّغ المسار أنه يحمل اثنين ثم يتوقّف — لأن الاختيار بينهما هو بالضبط ذلك الحكم غير المدوَّن الذي وُجد هذا التصميم لتجنُّبه.",
   "The counted work for the episode reaches its declared budget before the route completes.":
     "يبلغ العملُ المحسوب للحلقة ميزانيتَها المعلنة قبل أن يكتمل المسار.",
   "The environment or the Atlas does not match the checkpoint being resumed.":
-    "لا تطابق البيئةُ أو الأطلسُ نقطةَ التفتيش التي يجري استئنافها.",
+    "لا تطابق البيئةُ أو Atlas نقطةَ التفتيش التي يجري استئنافها.",
   "The episode closes on a typed terminal, and its state and checkpoint are sealed so the route can be resumed with an identical result.":
     "تُغلَق الحلقة على طرفٍ مصنَّف، وتُختَم حالتُها ونقطةُ تفتيشها ليُستأنَف المسار بنتيجةٍ مطابقة.",
   "The episode is rejected rather than repaired. A rejection says the run was not lawful at all, which is a different statement from a boundary and is kept separate in the record.":
@@ -778,7 +778,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The episode is sealed":
     "تُختَم الحلقة",
   "The episode opens, the space of lawful candidates is materialised, and the portfolio is checked for completeness before anything is chosen.":
-    "تُفتَح الحلقة، ويُجسَّد فضاء المرشحين المشروعين، وتُفحَص المحفظة من حيث الاكتمال قبل اختيار أي شيء.",
+    "تُفتَح الحلقة، ويُبسَط فضاء المرشحين المشروعين، وتُفحَص المحفظة من حيث الاكتمال قبل اختيار أي شيء.",
   "The episode stops before anything is chosen, because a choice out of a space nobody can vouch for is not a lawful choice.":
     "تتوقّف الحلقة قبل اختيار أي شيء، لأن الاختيار من فضاءٍ لا يضمنه أحدٌ ليس اختيارًا مشروعًا.",
   "The episode's record":
@@ -788,11 +788,11 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The evidence does not distinguish, or the probe taken is not the probe that was declared.":
     "لا تفرّق الأدلة، أو أن المسبار المأخوذ ليس المسبار المعلن.",
   "The frozen release holds its learning counters at zero by construction, so two runs of it separated by a thousand others behave identically. The learning described on this page belongs to the sealed programme, which is a different artefact measured against itself with its learned volume detached.":
-    "يُبقي الإصدار المجمَّد عدّادات تعلُّمه عند الصفر بحكم البناء، فتشغيلان له يفصل بينهما ألفُ تشغيلٍ آخر يسلكان السلوك نفسه. أما التعلُّم الموصوف في هذه الصفحة فينتمي إلى البرنامج المختوم، وهو قطعةٌ أخرى قِيست في مقابل نفسها وقد نُزع مجلَّدها المُتعلَّم.",
+    "يُبقي الإصدار المجمَّد عدّادات تعلُّمه عند الصفر بحكم البناء، فتشغيلان له يفصل بينهما ألفُ تشغيلٍ آخر يسلكان السلوك نفسه. أما التعلُّم الموصوف في هذه الصفحة فينتمي إلى البرنامج المختوم، وهو مُنتَجٌ آخر قِيس في مقابل نفسه وقد نُزع مجلَّدها المُتعلَّم.",
   "The frozen release performs one step, and every value in it can be recomputed.":
     "يؤدّي الإصدار المجمَّد خطوةً واحدة، وكلُّ قيمةٍ فيها يمكن إعادة حسابها.",
   "The interesting question about any decision-making system is what it carries forward, because that is what a later behaviour depends on. Two of the three carried registers hold something that was learned — which is why the second one can be detached and the same engine run without it.":
-    "السؤال الطريف عن أي نظام قرارٍ هو ما الذي يحمله إلى ما بعد، لأن السلوك اللاحق يتوقّف عليه. واثنان من السجلات الثلاثة المحمولة يحملان شيئًا مُتعلَّمًا — ولهذا يمكن فصل الثاني وتشغيل المحرك نفسه من دونه.",
+    "والسؤال الجدير بالطرح عن أي نظام قرارٍ هو ما الذي يحمله معه إلى ما بعد، لأن السلوك اللاحق يتوقّف عليه. واثنان من السجلات الثلاثة المحمولة يحملان شيئًا مُتعلَّمًا — ولهذا يمكن فصل الثاني وتشغيل المحرك نفسه من دونه.",
   "The laws, the candidate set, and the verifier's authority are frozen with respect to everything above. An episode may end up doing less work than the one before it; it may not end up being allowed more.":
     "القوانين ومجموعة المرشحين وصلاحية المدقّق مجمَّدةٌ تجاه كل ما سبق. قد تنتهي الحلقة بعملٍ أقلَّ من سابقتها؛ ولا يمكن أن تنتهي بأن يُسمح لها بأكثر.",
   "The learned volume":
@@ -806,7 +806,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The policy snapshot the intent was formed against is no longer current.":
     "لقطةُ السياسة التي صيغ القصدُ في مقابلها لم تعد الحالية.",
   "The portfolio cannot be completed, or the space cannot be materialised within the declared limit.":
-    "تعذّر إكمال المحفظة، أو تعذّر تجسيد الفضاء ضمن الحدّ المعلن.",
+    "تعذّر إكمال المحفظة، أو تعذّر بسْط الفضاء ضمن الحدّ المعلن.",
   "The route an episode travels, phase by phase.":
     "المسار الذي تسلكه الحلقة، مرحلةً مرحلة.",
   "The route drawn on this page is what the published results measured.":
@@ -836,7 +836,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "There are no weights, and there is learning. What is learned is where to look and in what order, held in a volume that can be detached; what may never be learned is the verdict. The measured results, and the comparator they were measured against, are on the evidence page.":
     "لا أوزان، وثمّة تعلُّم. المُتعلَّم هو أين يُبحَث وبأي ترتيب، محفوظًا في مجلَّدٍ يمكن فصله؛ وما لا يُتعلَّم أبدًا هو الحكم. أما النتائج المقيسة والمُقارِن الذي قِيست في مقابله فعلى صفحة الأدلة.",
   "This is not the route above; it is one bounded step of the frozen kernel release, which performs no policy update at all. It is here because it is the part of the system with the hardest numbers attached: the space is closed before the run starts, every cut is a rule anyone can read, and the ordering can be recomputed from the record alone.":
-    "هذا ليس المسار أعلاه؛ إنه خطوةٌ واحدة محدودة من إصدار النواة المجمَّد، وهو لا يُحدِّث السياسة البتّة. وهو هنا لأنه الجزء الذي تتعلّق به أصلب الأرقام: الفضاء مغلقٌ قبل أن يبدأ التشغيل، وكلُّ قطعٍ قاعدةٌ يستطيع أي أحدٍ قراءتها، والترتيب يُعاد حسابه من السجل وحده.",
+    "هذا ليس المسار أعلاه؛ إنه خطوةٌ واحدة محدودة من إصدار النواة المجمَّد، وهو لا يُحدِّث السياسة البتّة. وهو هنا لأنه الجزء الذي تتعلّق به أصلب الأرقام: الفضاء مغلقٌ قبل أن يبدأ التشغيل، وكلُّ تضييقٍ قاعدةٌ يستطيع أي أحدٍ قراءتها، والترتيب يُعاد حسابه من السجل وحده.",
   "This is where knowledge gets used rather than merely stored. When a proven structure covers a signature the episode needs, the step is taken from that structure and the shortcut leaves its own record — so a reduction in work can always be pointed at, instead of appearing as an unexplained improvement.":
     "هنا تُستعمَل المعرفة لا تُخزَّن فحسب. فحين تغطّي بنيةٌ مُثبَتة توقيعًا تحتاجه الحلقة، تُؤخذ الخطوة من تلك البنية، ويترك الاختصار سجلَّه الخاص — فيبقى انخفاضُ العمل شيئًا يُشار إليه دائمًا لا تحسُّنًا بلا تفسير.",
   "Three registers are carried forward. Two familiar ones are still absent.":
@@ -878,7 +878,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "Work goes down by consuming structures that were already proven, and each such consumption leaves its own record. A reduction nobody can point at is treated here as a defect rather than as a result.":
     "ينخفض العمل باستهلاك بنى سبق إثباتها، ويترك كلُّ استهلاكٍ منها سجلَّه الخاص. أما انخفاضٌ لا يستطيع أحدٌ الإشارة إليه فيُعَدُّ هنا عيبًا لا نتيجة.",
   "Work is counted in units as it is spent, and exhausting the budget is a lawful outcome with a named cause rather than a quiet decline in quality. That is what makes the difference between two runs a quantity instead of an impression.":
-    "يُحسَب العمل بوحداتٍ وهو يُنفَق، ونفادُ الميزانية نتيجةٌ مشروعة بسببٍ مسمّى لا تدهورًا صامتًا في الجودة. وهذا بالذات ما يجعل الفرق بين تشغيلين كمًّا لا انطباعًا.",
+    "يُحسَب العمل بوحداتٍ وهو يُنفَق، ونفادُ الميزانية نتيجةٌ مشروعة بسببٍ مسمّى لا تدهورًا صامتًا في الجودة. وهذا بالذات ما يجعل الفرق بين تشغيلين كمًّا لا انطباعًا.",
   "absent by construction, not merely unused":
     "غائبان بحكم البناء لا لكونهما غير مستعملين",
   "carried into the next episode":

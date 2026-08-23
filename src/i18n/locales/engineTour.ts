@@ -661,19 +661,19 @@ export const engineTourZh: TranslationDictionary = {
 
 export const engineTourAr: TranslationDictionary = {
   "Five rows: language models, knowledge graphs, symbolic knowledge bases such as Cyc, policy wrappers over a model, and GALO. Each row names what produces the answer and what vouches for it, with a sign between them. The first four carry an equals sign because both are the same object; the last carries a not-equals sign because they are two.":
-    "خمسة صفوف: نماذج اللغة، والرسوم المعرفية، وقواعد المعرفة الرمزية مثل Cyc، وأغلفة السياسة فوق نموذج، وGALO. ويسمّي كل صفٍّ ما يُنتج الجواب وما يضمنه، وبينهما علامة. تحمل الأربعة الأولى علامة المساواة لأنهما شيءٌ واحد؛ ويحمل الأخير علامة عدم المساواة لأنهما اثنان.",
+    "خمسة صفوف: نماذج اللغة، والرسوم المعرفية، وقواعد المعرفة الرمزية مثل Cyc، وأغلفة السياسة فوق نموذج، وGALO. ويسمّي كل صفٍّ ما يُنتج الجواب وما يضمنه، وبينهما علامة. تحمل الصفوف الأربعة الأولى علامة المساواة لأن الاثنين فيها شيءٌ واحد؛ ويحمل الأخير علامة عدم المساواة لأنهما فيه اثنان.",
   "A benchmark that refused to be learned is published next to the ones that worked, and a withdrawn claim stays in the record rather than disappearing from it.":
-    "مقياسٌ مرجعي رفض أن يُتعلَّم منشورٌ إلى جانب تلك التي نجحت، والادعاء المسحوب يبقى في السجل ولا يختفي منه.",
+    "ويُنشَر المقياس المرجعي الذي رفض أن يُتعلَّم إلى جانب تلك التي نجحت، ويبقى الادعاء المسحوب في السجل ولا يختفي منه.",
   "A chain, not a wheel. The turn ends on a record rather than starting again.":
     "سلسلةٌ لا عجلة. تنتهي الدورة بسجلٍّ ولا تبدأ من جديد.",
   "A chatbot":
     "روبوت محادثة",
   "A graph where an edge counts as a fact":
-    "رسمٌ تُعَدُّ فيه الحافةُ واقعة",
+    "غرافٌ تُعَدُّ فيه الحافةُ واقعة",
   "A model, then a filter":
     "نموذجٌ ثم مرشِّح",
   "A page that lists only what works is a page nobody can argue with, which is the same as a page nobody can check. Here are the five places a sceptic should push.":
-    "صفحةٌ لا تُعدِّد إلا ما ينجح صفحةٌ لا يستطيع أحدٌ مجادلتها، وهو نفسه ألّا يستطيع أحدٌ فحصها. وهذه المواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها.",
+    "الصفحة التي لا تُعدِّد إلا ما ينجح لا يستطيع أحدٌ مجادلتها، ومَن لا يستطيع مجادلتها لا يستطيع فحصها. وهذه المواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها.",
   "A promise of general intelligence":
     "وعدٌ بذكاءٍ عام",
   "A record somebody else can repeat":
@@ -691,7 +691,7 @@ export const engineTourAr: TranslationDictionary = {
   "A stored relation is not a verdict here. What is stored is the state of a decision and how it was reached.":
     "العلاقة المخزَّنة ليست حكمًا هنا. المخزَّن هو حالة القرار وكيف بُلغ إليه.",
   "A strong mechanism on controlled tasks is not a demonstrated gain on a plant floor, and this page does not treat it as one.":
-    "آليةٌ قوية في مهامّ مضبوطة ليست مكسبًا مُثبَتًا في صالة إنتاج، وهذه الصفحة لا تعامله على أنه كذلك.",
+    "آليةٌ قوية في مهامّ مضبوطة ليست مكسبًا مُثبَتًا على أرض المصنع، ولا تعدُّها هذه الصفحة كذلك.",
   "A very large reference work":
     "مرجعٌ ضخم",
   "ANSWERS":
@@ -731,9 +731,9 @@ export const engineTourAr: TranslationDictionary = {
   "Engine tour navigation":
     "التنقل في شرح المحرك",
   "Every family here is a serious body of work, and several are decades ahead in engineering. The figure draws one difference and nothing else: whether the part that produces an answer is the same part that vouches for it. Where they are the same object, accepting the answer means accepting that object.":
-    "كلُّ عائلةٍ هنا جسدٌ جادّ من العمل، وبعضها متقدّمٌ هندسيًا بعقود. ويرسم الشكل فرقًا واحدًا لا غير: أهو الجزء نفسه الذي يُنتج الجواب هو الذي يضمنه. وحيث يكونان شيئًا واحدًا، فقبولُ الجواب قبولٌ لذلك الشيء.",
+    "كلُّ عائلةٍ هنا رصيدٌ جادٌّ من العمل، وبعضها متقدّمٌ هندسيًا بعقود. ويرسم الشكل فرقًا واحدًا لا غير: أيكون الجزء الذي يُنتج الجواب هو نفسه الذي يضمنه؟ وحين يكونان شيئًا واحدًا، فقبولُ الجواب قبولٌ لذلك الشيء.",
   "Every number was produced by the project, on its own data, with its own evaluator. That is honest and it is not independence, and it is the single largest gap.":
-    "كلُّ رقمٍ أنتجه المشروع بنفسه على بياناته بمُقيِّمه. وهذا صادقٌ وليس استقلالًا، وهو أكبر فجوةٍ منفردة.",
+    "كلُّ رقمٍ أنتجه المشروع بنفسه على بياناته بمُقيِّمه. وذلك صدقٌ لا استقلال، وهو أكبر الفجوات على الإطلاق.",
   "Facts a website is the wrong place for":
     "وقائع الموقعُ ليس مكانها",
   "Fill a gap to produce an answer":
@@ -747,7 +747,7 @@ export const engineTourAr: TranslationDictionary = {
   "Four lines, and the fourth is the one that matters most.":
     "أربعة سطور، ورابعها هو الأهم.",
   "GALO is not a generator of good-looking answers. It is a machine that carries a decision as a checkable record: what changed, what it touched, what may still be accepted, and what can no longer be confirmed. This page explains that in about ten minutes and then hands you the places to attack it.":
-    "ليس GALO مولِّدَ أجوبةٍ حسنة المظهر. إنه آلةٌ تسوق القرار بوصفه سجلًا قابلًا للفحص: ما الذي تغيَّر، وما الذي تأثَّر، وما الذي لا يزال مقبولًا، وما الذي لم يعد ممكنًا تأكيده. تشرح هذه الصفحة ذلك في نحو عشر دقائق، ثم تدلّك على مواضع الطعن فيه.",
+    "ليس GALO مولِّدَ أجوبةٍ برّاقة. إنه آلةٌ تُجري القرار مَجرى سجلٍّ قابل للفحص: ما الذي تغيَّر، وما الذي تأثَّر، وما الذي لا يزال مقبولًا، وما الذي لم يعد ممكنًا تأكيده. تشرح هذه الصفحة ذلك في نحو عشر دقائق، ثم تدلّك على مواضع الطعن فيه.",
   "GPT-class systems":
     "أنظمة من صنف GPT",
   "Guardrails over a model":
@@ -765,11 +765,11 @@ export const engineTourAr: TranslationDictionary = {
   "If the grounds are thin, the honest output is that this cannot be settled now — and that is written down too.":
     "إذا كانت الأسس ضعيفة، فالمُخرَج الصادق أن هذا لا يُحسم الآن — وهذا يُدوَّن أيضًا.",
   "If you are deciding whether this could become a company":
-    "إن كنت تقرّر أيمكن أن يصير هذا شركة",
+    "إن كنت تزن ما إذا كان هذا يصلح أن يصير شركة",
   "If you finish this page and still do not believe the project, you should at least be able to say where the hole is. That is the point of it.":
-    "إن أنهيت هذه الصفحة ولم تصدّق المشروع بعد، فينبغي أن تستطيع على الأقل قول أين الثغرة. وهذا هو المقصود منها.",
+    "إن أنهيت هذه الصفحة ولم تصدّق المشروع بعد، فينبغي أن تكون قادرًا على تحديد موضع الثغرة على الأقل. وهذا هو المقصود منها.",
   "If you take one thing from this page, take this. Almost every objection to a learning system is really an objection to letting the learned part carry the authority — so here it does not, and the separation is a property of the release rather than a promise about behaviour.":
-    "إن أخذت من هذه الصفحة شيئًا واحدًا فليكن هذا. فكلُّ اعتراضٍ على نظامٍ يتعلَّم هو في حقيقته اعتراضٌ على أن يحمل الجزءُ المُتعلِّم السلطة — وهو هنا لا يحملها، وهذا الفصل خاصيةٌ في الإصدار لا وعدٌ عن السلوك.",
+    "إن أخذت من هذه الصفحة شيئًا واحدًا فليكن هذا. فكلُّ اعتراضٍ على نظامٍ يتعلَّم هو في حقيقته اعتراضٌ على أن يحمل الجزءُ المُتعلِّم السلطة — وهو هنا لا يحملها، وهذا الفصل خاصيةٌ في الإصدار نفسه، لا وعدًا بشأن السلوك.",
   "If you want the full comparison, class by class":
     "إن أردت المقارنة كاملةً، صنفًا صنفًا",
   "If you want the numbers and the checks":
@@ -783,7 +783,7 @@ export const engineTourAr: TranslationDictionary = {
   "It holds no conversation. It sits next to one perfectly well and does a different job.":
     "لا يجري محادثة. وينسجم تمامًا إلى جانب واحدٍ منها ويؤدي عملًا آخر.",
   "It is the only part allowed to say yes, and it is allowed to say no.":
-    "هو الجزء الوحيد المسموح له أن يقول نعم، وهو مسموحٌ له أن يقول لا.",
+    "هو الجزء الوحيد الذي يجوز له أن يقول نعم، ويجوز له أيضًا أن يقول لا.",
   "It looks for which earlier conclusions the change actually touches.":
     "يبحث عن الاستنتاجات السابقة التي مسّها التغيير فعلًا.",
   "It shows which of them can still be treated as permitted, and on what grounds.":
@@ -815,7 +815,7 @@ export const engineTourAr: TranslationDictionary = {
   "May not":
     "لا يجوز",
   "Measured against the identical system with its learned volume removed — same engine, same candidates, same budget. That comparator is what makes the number about learning rather than about search size.":
-    "قِيس في مقابل النظام نفسه وقد نُزع مجلَّده المُتعلَّم — المحرك نفسه، والمرشحون أنفسهم، والميزانية نفسها. وهذا المُقارِن هو ما يجعل الرقم عن التعلُّم لا عن حجم البحث.",
+    "قِيس في مقابل النظام نفسه وقد نُزع مجلَّده المُتعلَّم — المحرك نفسه، والمرشحون أنفسهم، والميزانية نفسها. وبهذا المُقارِن يصير الرقمُ قولًا في التعلُّم لا في حجم البحث.",
   "No partner has run any of this on their own data":
     "لم يشغّل أي شريك شيئًا من هذا على بياناته",
   "Nobody is writing the world down. The scope is small enough to be enumerated, on purpose.":
@@ -825,9 +825,9 @@ export const engineTourAr: TranslationDictionary = {
   "Not claimed anywhere on this site, and the boundary is published rather than implied.":
     "غير مُدَّعىً في أي موضع من هذا الموقع، والحدُّ منشورٌ لا مُلمَّحٌ إليه.",
   "Nothing in this chain names a component. It is the shape of one turn: something arrives, the system works out what it touches, what may still be done about it, and whether the result may be admitted — then writes down enough for somebody else to walk the same path.":
-    "لا حلقةَ في هذه السلسلة تسمّي مكوِّنًا. إنها شكل دورةٍ واحدة: يصل شيء، فيستبين النظام ما مسّه، وما لا يزال ممكنًا فعله حياله، وأيُجاز الناتج — ثم يدوّن ما يكفي ليسلك غيرُه المسار نفسه.",
+    "لا وصلةَ في هذه السلسلة تسمّي مكوِّنًا. إنها شكل دورةٍ واحدة: يصل شيء، فيستبين النظام ما مسّه، وما لا يزال ممكنًا فعله حياله، وأيُجاز الناتج — ثم يدوّن ما يكفي ليسلك غيرُه المسار نفسه.",
   "ONE CHANGE, CARRIED THROUGH":
-    "تغييرٌ واحد، مساقًا إلى نهايته",
+    "تغييرٌ واحد، مُتابَعٌ إلى نهايته",
   "ONE TURN OF THE ENGINE":
     "دورةٌ واحدة للمحرك",
   "ONE TURN, IN ORDINARY WORDS":
@@ -837,7 +837,7 @@ export const engineTourAr: TranslationDictionary = {
   "One archive, one command, and the same results come back on a fresh unpack. Somebody else can run it without asking us anything.":
     "أرشيفٌ واحد وأمرٌ واحد، وتعود النتائج نفسها عند فكِّ ضغطٍ جديد. ويستطيع غيرك تشغيله دون أن يسألنا شيئًا.",
   "One change, carried through":
-    "تغييرٌ واحد مساقًا إلى نهايته",
+    "تغييرٌ واحد مُتابَعٌ إلى نهايته",
   "One founder. The mathematics, the engine and the claim discipline sit with the same person.":
     "مؤسِّسٌ واحد. الرياضيات والمحرك وانضباط الادعاءات كلُّها عند الشخص نفسه.",
   "One more neural network used as the source of truth":
@@ -859,7 +859,7 @@ export const engineTourAr: TranslationDictionary = {
   "Reuse a structure it has proven before":
     "أن يعيد استعمال بنيةٍ سبق أن أثبتها",
   "Seven numbered bars stacked top to bottom and joined by short arrows, running from something arriving to a record somebody else can repeat. The fifth and sixth bars are marked, because either of them can end the turn without an answer.":
-    "سبعة أشرطة مرقَّمة مرصوفة من الأعلى إلى الأسفل وموصولةٌ بأسهمٍ قصيرة، من وصول شيءٍ إلى سجلٍّ يستطيع غيرك أن يعيده. والشريطان الخامس والسادس معلَّمان، لأن أيًا منهما قد ينهي الدورة دون جواب.",
+    "سبعة أشرطة مرقَّمة مرصوفة من الأعلى إلى الأسفل وموصولةٌ بأسهمٍ قصيرة، من وصول شيءٍ إلى سجلٍّ يستطيع غيرك أن يعيده. والشريطان الخامس والسادس معلَّمان، لأن أيًّا منهما قد ينهي الدورة دون جواب.",
   "Seven steps, and two of them are allowed to end it.":
     "سبع خطوات، واثنتان منها مسموحٌ لهما بإنهائها.",
   "Seven steps, none of which needs a word you do not already have.":
@@ -881,7 +881,7 @@ export const engineTourAr: TranslationDictionary = {
   "TWO ROLES, AND THE LINE BETWEEN THEM":
     "دوران والخطُّ بينهما",
   "That last line is the part most systems leave out. Saying which conclusions can no longer be confirmed is worth more than producing a fresh answer for all of them.":
-    "السطر الأخير هو ما تُسقطه معظم الأنظمة. وقولُ أيِّ الاستنتاجات لم يعد ممكنًا تأكيدها أثمنُ من إنتاج جوابٍ جديد لها جميعًا.",
+    "السطر الأخير هو ما تُسقطه معظم الأنظمة. وبيانُ الاستنتاجات التي لم يعد ممكنًا تأكيدها أثمنُ من إنتاج جوابٍ جديد لها جميعًا.",
   "The axiom set":
     "مجموعة البديهيات",
   "The candidates come from a list written in advance. Nothing outside that list can be taken.":
@@ -891,11 +891,11 @@ export const engineTourAr: TranslationDictionary = {
   "The edge":
     "الحافة",
   "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.":
-    "الآلة مشروحةً لمن ليس ملزَمًا بتصديقها: دورةٌ واحدة في سبع خطوات عادية، والخطُّ الذي لا يجوز للجزء المُتعلِّم تجاوزه، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+    "المحرّك مشروحًا لمن ليس ملزَمًا بتصديقه: دورةٌ واحدة في سبع خطوات عادية، والخطُّ الذي لا يجوز للجزء المُتعلِّم تجاوزه، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
   "The honest weaknesses, written to be used rather than to reassure.":
     "نقاط الضعف الصادقة، مكتوبةً لتُستعمل لا لتطمئن.",
   "The least dramatic situation available, which is also the one this is for.":
-    "أقلُّ المواقف دراميةً على الإطلاق، وهو نفسه الموقف الذي وُجد هذا من أجله.",
+    "أقلُّ المواقف إثارةً على الإطلاق، وهو نفسه الموقف الذي وُجد هذا من أجله.",
   "The measured path of the published results does not include the tower, the typed routes or the verifier, so their contribution is not established.":
     "لا يشمل مسارُ القياس في النتائج المنشورة البرجَ ولا المسارات المصنَّفة ولا المدقّق، فإسهامها غير مُثبَت.",
   "The measured results, with the comparator each was run against":
@@ -929,9 +929,9 @@ export const engineTourAr: TranslationDictionary = {
   "This is architectural positioning, not a claim of universal superiority.":
     "هذا تموضعٌ معماري لا ادعاءَ تفوّقٍ شامل.",
   "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. Everything below the line is fixed by the release and behaves identically on two runs.":
-    "هذه هي العقدة الشكّية، ولذلك هي على الصفحة لا على بُعد ثلاث شاشات. فكلُّ ما فوق الخط قد يكون خاطئًا والجواب مع ذلك صحيح، لأن لا شيء فوق الخط مسموحٌ له أن يوقّع شيئًا. وكلُّ ما تحت الخط مثبَّتٌ بالإصدار ويسلك السلوك نفسه في تشغيلين.",
+    "هنا مربط الفرس عند المتشكِّك، ولذلك هو على الصفحة لا على بُعد ثلاث شاشات. فكلُّ ما فوق الخط قد يكون خاطئًا والجواب مع ذلك صحيح، لأن ما فوق الخط لا يُؤذَن له بالتوقيع على شيء. وكلُّ ما تحت الخط مثبَّتٌ بالإصدار ويسلك السلوك نفسه في تشغيلين.",
   "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: twelve assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
-    "كان هذا الصفحةَ كلَّها فيما مضى، فوقف مستندٌ كُتب لمقيِّمٍ واحد أمام سائر الناس. وهو باقٍ في السجل، مطويًا: اثنا عشر بند تقييم، واثنا عشر شهرًا مع الملاحظة التي تُظهر إخفاق كلٍّ منها، والأسئلة التي نتوقّع أن نُساءل عنها، والوقائع التي ليس الموقعُ مكانَها.",
+    "كان هذا الصفحةَ كلَّها فيما مضى، فوقف مستندٌ كُتب لمقيِّمٍ واحد أمام سائر الناس. وهو باقٍ في السجل، مطويًّا في آخر الصفحة: اثنا عشر بندًا للتقييم، واثنا عشر شهرًا مع الملاحظة التي تُظهر إخفاق كلٍّ منها، والأسئلة التي نتوقّع أن نُساءل عنها، والوقائع التي ليس الموقعُ مكانَها.",
   "Three sentences, and everything else on this page serves them.":
     "ثلاث جُمل، وكلُّ ما عداها في هذه الصفحة يخدمها.",
   "Twelve months, each with the observation that would show it was missed":
@@ -965,7 +965,7 @@ export const engineTourAr: TranslationDictionary = {
   "Where to go next":
     "إلى أين بعد ذلك",
   "Which explanations are still alive":
-    "أيُّ التفسيرات لا يزال حيًا",
+    "أيُّ التفسيرات لا يزال حيًّا",
   "Which move is permitted":
     "أيُّ حركةٍ مسموح بها",
   "Wikidata, RDF stores":

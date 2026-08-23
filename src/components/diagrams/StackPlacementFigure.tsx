@@ -57,8 +57,9 @@ export function StackPlacementFigure() {
           {layers.map((layer) => (
             <g key={layer.id} className={`galo-stack__layer is-${layer.id}`}>
               <rect x={LAYER_X} y={layer.y} width={LAYER_WIDTH} height={LAYER_HEIGHT} rx="14" />
-              <text className="galo-stack__tag" x={LAYER_X + 18} y={layer.y + 22} direction="ltr">
-                {layer.tag}
+              {/* A descriptive word, not a machine label — it has to translate. */}
+              <text className="galo-stack__tag" x={LAYER_X + 18} y={layer.y + 22}>
+                {t(layer.tag)}
               </text>
               <text className="galo-stack__label" x={LAYER_X + 18} y={layer.y + 42}>
                 {t(layer.label)}

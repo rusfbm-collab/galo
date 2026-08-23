@@ -368,7 +368,7 @@ export const comparisonClassesAr: TranslationDictionary = {
   "Cyc and comparable large hand-built ontologies":
     "Cyc وما يماثله من الأنطولوجيات الكبيرة المبنيّة باليد",
   "Declared state and a frozen verifier. Learning may reorder the search; it does not admit the result.":
-    "حالةٌ معلَنة ومُتحقِّقٌ مجمَّد. للتعلّم أن يعيد ترتيب البحث؛ وليس له أن يقبل النتيجة.",
+    "حالةٌ معلَنة ومدقّقٌ مجمَّد. للتعلّم أن يعيد ترتيب البحث؛ وليس له أن يقبل النتيجة.",
   "Dynamics learned from observation, good enough to plan against without a schema being written first.":
     "ديناميّاتٌ متعلَّمة من الملاحظة، تكفي للتخطيط عليها من غير مخطَّطٍ يُكتب أوّلًا.",
   "Entities and relations are explicit and quotable, and the graph is readable in the ordinary sense of the word.":
@@ -388,7 +388,7 @@ export const comparisonClassesAr: TranslationDictionary = {
   "GALO is the reasoning substrate rather than a wrapper: the state and the permitted set are its own, and the record is written from inside the run.":
     "‏GALO هو ركيزة الاستدلال لا غلافًا حولها: الحالة ومجموعة المسموح به له هو، والسجلّ يُكتب من داخل التشغيل.",
   "GALO may use a learned ranking, but the verdict belongs to declared state and a verifier rather than to the parameters.":
-    "قد يستعمل GALO ترتيبًا متعلَّمًا، لكنّ الحكم لحالةٍ معلَنة ومُتحقِّق، لا للمعاملات.",
+    "قد يستعمل GALO ترتيبًا متعلَّمًا، لكنّ الحكم لحالةٍ معلَنة ومدقّق، لا للمعاملات.",
   "GALO — versioned decision state, learning that does not own the verdict, local revision, replay.":
     "‏GALO — حالةُ قرارٍ لها إصدار، وتعلُّمٌ لا يملك الحكم، ومراجعةٌ موضعية، وإعادةُ تشغيل.",
   "GPT-class assistants, open-weight models":
