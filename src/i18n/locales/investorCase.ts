@@ -382,7 +382,7 @@ export const investorCaseAr: TranslationDictionary = {
   "A first product a buyer can scope in one conversation, priced as a planning hypothesis, with a decision package at the end of it.":
     "منتجٌ أوّل يستطيع المشتري تحديد نطاقه في محادثة واحدة، بسعرٍ مطروحٍ بوصفه فرضية تخطيطية، وبحزمة قرارٍ في نهايته.",
   "A path to a private pilot":
-    "طريقٌ إلى تجربةٍ خاصّة",
+    "طريقٌ إلى تجربةٍ رائدة خاصّة",
   "A risk without a test is an opinion. Each entry names the thing that could go wrong, why it would end the company rather than merely delay it, the observation that would settle it either way, and where it stands today.":
     "الخطر بلا اختبارٍ رأيٌ. ويسمّي كلّ بندٍ ما يمكن أن يسوء، ولماذا يُنهي الشركة لا يؤخّرها فحسب، والملاحظةَ التي تحسم المسألة في أيّ اتجاه، وأين يقف الأمر اليوم.",
   "A second engineer":

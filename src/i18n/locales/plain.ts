@@ -381,7 +381,7 @@ export const plainAr: TranslationDictionary = {
   "Neither one is stupid. You want the friend when you are exploring a new city, and the timetable when you have to be somewhere and explain later why you were late.":
     "لا هذا غباء ولا ذاك. تحتاج الصديق حين تتجوّل في مدينة لا تعرفها، وتحتاج الجدول حين يجب أن تصل في موعدك ثم تفسّر لاحقًا سبب تأخرك.",
   "No revenue, no investment raised, no pilot, no agreement with anybody. Research stage, and nothing else.":
-    "لا إيرادات، ولا استثمار مجموع، ولا تجربة أولية، ولا اتفاق مع أحد. مرحلة بحث، لا أكثر.",
+    "لا إيرادات، ولا استثمار مجموع، ولا تجربة رائدة، ولا اتفاق مع أحد. مرحلة بحث، لا أكثر.",
   "No terms, no formulas. An everyday situation, what we do about it, and what we cannot promise yet.":
     "بلا مصطلحات ولا صيغ. موقف مألوف، وما نفعله حياله، وما لا نعد به بعد.",
   "Nobody outside the project has checked it yet.": "لم يفحصه أحد من خارج المشروع بعد.",

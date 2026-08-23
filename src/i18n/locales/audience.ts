@@ -1130,7 +1130,7 @@ export const audienceAr: TranslationDictionary = {
   "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.":
     "أربع درجات لقابلية التحقق، والحقول الخمسة لكل ادعاء منشور، وكيف تُقرأ الحالة دون تضليل، وثمانية أسئلة للمراجع، وإعادة إنتاج من خمس خطوات، وحدود هذا الموقع.",
   "Four tiers, and the fourth one is the honest answer more often than anybody likes.":
-    "أربع درجات، ورابعتها هي الجواب الأمين أكثر مما يودّ أحد.",
+    "أربع درجات، ورابعتها هي الجواب الأمين في حالاتٍ أكثر ممّا يودّ أحد.",
   "Four verification tiers drawn as bars of decreasing reach": "أربع درجات للتحقق مرسومة أشرطةً متناقصة المدى",
   "Fresh full replay on the unavailable runtime": "إعادة تشغيل كاملة جديدة على البيئة غير المتاحة",
   "GALO AI for Auditors — What an Outsider Can Actually Verify":
@@ -1149,7 +1149,7 @@ export const audienceAr: TranslationDictionary = {
   "If careful engineering with disciplined logging gets a reviewer eighty per cent of the way, the remaining twenty per cent has to be worth a different architecture.":
     "إن كانت هندسة متقنة مع تسجيل منضبط توصل المراجع إلى ثمانين بالمئة من الطريق، فالعشرون الباقية يجب أن تستحق بنية مختلفة.",
   "If the answer to why did it do that is a distribution over possibilities, the conversation has nowhere to go. There is no specific place to point at and disagree.":
-    "إن كان الجواب عن لماذا فعل ذلك توزيعًا على احتمالات، فلا مكان يذهب إليه النقاش. لا موضع محدد يمكن الإشارة إليه والاختلاف عليه.",
+    "إن كان الجواب عن «لماذا فعل ذلك» توزيعًا على احتمالات، فلا مكان يذهب إليه النقاش. لا موضع محدد يمكن الإشارة إليه والاختلاف عليه.",
   "If you have to verify rather than decide": "إن كان عليك التحقق لا اتخاذ القرار",
   "If you read nothing else on this site, read this section. The three sentences say what the thing is; the four numbers underneath say how small it currently is, including the number that is zero.":
     "إن لم تقرأ من هذا الموقع سوى قسم واحد فاقرأ هذا. الجمل الثلاث تقول ما هو الشيء؛ والأرقام الأربعة تحتها تقول كم هو صغير الآن، بما فيها الرقم الذي يساوي صفرًا.",
@@ -1192,7 +1192,7 @@ export const audienceAr: TranslationDictionary = {
   "No independent verification by any party outside the project.": "لا تحقق مستقل من أي جهة خارج المشروع.",
   "No measured operational gain inside or outside the project.": "لا مكسب تشغيلي مقيس داخل المشروع ولا خارجه.",
   "No revenue, no funds raised, no customer, no pilot, and no letter of intent.":
-    "لا إيرادات، ولا أموال مجموعة، ولا عميل، ولا تجربة أولية، ولا خطاب نوايا.",
+    "لا إيرادات، ولا أموال مجموعة، ولا عميل، ولا تجربة رائدة، ولا خطاب نوايا.",
   "No trained model of the world; the current engine performs zero learning writes.":
     "لا نموذج عالم مدرَّب؛ والمحرك الحالي يُجري صفرًا من كتابات التعلّم.",
   "No. Every published number is recomputed by this site's own build. Independent re-checking is the milestone two of the four work tracks have not reached.":
@@ -1231,7 +1231,7 @@ export const audienceAr: TranslationDictionary = {
   "Pick one published count and recompute it yourself from the stated laws.":
     "خذ عدًّا منشورًا واحدًا وأعد حسابه بنفسك من القوانين المعلنة.",
   "Pre-seed research. No revenue, no funds raised, no customer, no pilot, and no letter of intent — none of those is claimed anywhere on this site.":
-    "مرحلة بحثية ما قبل التمويل الأوّلي. لا إيرادات ولا أموال مجموعة ولا عميل ولا تجربة أولية ولا خطاب نوايا — ولا يُدّعى أيٌّ من ذلك في أي موضع من الموقع.",
+    "مرحلة بحثية ما قبل التمويل الأوّلي. لا إيرادات ولا أموال مجموعة ولا عميل ولا تجربة رائدة ولا خطاب نوايا — ولا يُدّعى أيٌّ من ذلك في أي موضع من الموقع.",
   "Process capability isolation": "عزل قدرات العملية",
   "Published in the boundary register with this exact status. Until it changes there, nothing downstream of it may be described as available.":
     "منشور في سجل الحدود بهذه الحالة بالضبط. وما لم تتغيّر هناك، لا يجوز وصف أي شيء تاليه بأنه متاح.",
@@ -1239,7 +1239,7 @@ export const audienceAr: TranslationDictionary = {
   "Read the five refusal gates on the thinking page, then look for the corresponding refusal fields in the receipt structure.":
     "اقرأ بوابات الرفض الخمس في صفحة التفكير، ثم ابحث عن حقول الرفض المقابلة في بنية الإيصال.",
   "Read the four situations below as descriptions of shape, not as pipeline. None of them is a deployment, a pilot, a customer, or a conversation, and none is presented as one.":
-    "اقرأ المواقف الأربعة أدناه بوصفها وصفًا لشكل، لا خط مبيعات. لا واحد منها نشرٌ ولا تجربة أولية ولا عميل ولا محادثة، ولا يُقدَّم أيٌّ منها كذلك.",
+    "اقرأ المواقف الأربعة أدناه بوصفها وصفًا لشكل، لا مسار مبيعات. لا واحد منها نشرٌ ولا تجربة رائدة ولا عميل ولا محادثة، ولا يُقدَّم أيٌّ منها كذلك.",
   "Read the plain-language briefing and the thinking schemes, and nothing else.":
     "اقرأ الملخّص باللغة البسيطة ومخططات التفكير، ولا شيء غير ذلك.",
   "Recompute one published count yourself from the stated laws. It is an afternoon of work, and it is the cheapest disproof available.":
@@ -1324,7 +1324,7 @@ export const audienceAr: TranslationDictionary = {
   "The reconstruction stops being an investigation. The state, the permitted set, and the chosen action are already written down in a form a second party can replay.":
     "تتوقف إعادة البناء عن كونها تحقيقًا. فالحالة والمجموعة المسموح بها والفعل المختار مدوَّنة أصلًا بصيغة يستطيع طرف ثانٍ إعادة تشغيلها.",
   "The shape of every published claim": "شكل كل ادعاء منشور",
-  "The short answers, including the ones that are simply no.": "إجابات قصيرة، بما فيها تلك التي هي ببساطة لا.",
+  "The short answers, including the ones that are simply no.": "إجابات قصيرة، بما فيها ما جوابه ببساطة: لا.",
   "The state, the permitted set, the ordering input, and the executed action are all in one record. Answering the question is reading a document, not running an investigation.":
     "الحالة والمجموعة المسموح بها ومدخل الترتيب والفعل المنفَّذ كلها في سجل واحد. والإجابة عن السؤال قراءة وثيقة لا إجراء تحقيق.",
   "The stored FULL receipt reporting 1,366 of 1,366 regression checks.":
@@ -1408,7 +1408,7 @@ export const audienceAr: TranslationDictionary = {
     "حين يُساءَل عن قرار آلي بعد أشهر، فالكلفة لا تكون القرار نفسه تقريبًا أبدًا. بل إعادة البناء: معرفة ما كان النظام يعرفه، وما كان مسموحًا له، ولماذا اختار ما اختار.",
   "Where a layer like this would sit": "أين تقع طبقة كهذه",
   "Which published numbers are recomputed, and which are quoted?": "أي الأرقام المنشورة يُعاد حسابها وأيها يُقتبس؟",
-  "Who has done the work so far?": "من قام بالعمل حتى الآن؟",
+  "Who has done the work so far?": "من أنجز العمل حتى الآن؟",
   "Who it is for": "لمن هو",
   "Who owns the intellectual property?": "لمن الملكية الفكرية؟",
   "Why it is worth doing now": "لماذا يستحق هذا العمل الآن",
@@ -1421,7 +1421,7 @@ export const audienceAr: TranslationDictionary = {
   "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning.":
     "نعم، وهو ضيّق عن قصد: نمطا مدخلات مقبولان، وخطوة مقيَّدة واحدة لكل تشغيل، وأربعة أنواع أفعال قابلة للتنفيذ، وبلا تعلّم.",
   "Yes. 1,204 committed descriptors, of which 880 are executable and 440 are exposed to any single accepted input pattern.":
-    "نعم. 1,204 واصفًا ملتزَمًا بها، منها 880 قابلة للتنفيذ و440 مكشوفة لأي نمط مدخلات مقبول واحد.",
+    "نعم. 1,204 واصفًا مُثبَّتًا، منها 880 قابلة للتنفيذ و440 مكشوفة لأي نمط مدخلات مقبول واحد.",
   "You are deciding whether to spend an hour on this": "أنت تقرر إن كنت ستنفق ساعة على هذا",
   "You cannot establish a fresh full replay on the runtime that was unavailable; that is published as blocked, not as a pass.":
     "لا يمكنك إثبات إعادة تشغيل كاملة جديدة على البيئة التي لم تكن متاحة؛ فذلك منشور بوصفه محجوبًا لا ناجحًا.",
@@ -1435,7 +1435,7 @@ export const audienceAr: TranslationDictionary = {
     "لا يمكنك إثبات عزل العملية المنفِّذة على مستوى نظام التشغيل؛ فذلك منشور بوصفه غير مُثبت.",
   "You have to verify a claim, not enjoy it": "عليك التحقق من ادعاء لا الاستمتاع به",
   "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.":
-    "تصل إلى 1,204 ملتزَمًا بها، و880 قابلة للتنفيذ، وجبهة من 440 مرشحًا لنمط مقبول واحد.",
+    "تصل إلى 1,204 واصفًا مُثبَّتًا، و880 قابلة للتنفيذ، وجبهة من 440 مرشحًا لنمط مقبول واحد.",
   "You reach 560 across L1–L7, of which 556 are active in the runtime range.":
     "تصل إلى 560 عبر L1–L7، منها 556 نشطة في نطاق التشغيل.",
   "You want the mechanism and then the proofs": "تريد الآلية ثم البراهين",
@@ -1463,7 +1463,7 @@ export const audienceAr: TranslationDictionary = {
     "لا شرط مسبق مغلق اليوم، ولا واحد منها مجدول هنا",
   "one bounded action": "فعل مقيَّد واحد",
   "only the middle band is described on this site": "لا يوصف في هذا الموقع سوى الشريط الأوسط",
-  "possible actions, fixed in advance": "فعل ممكن، مثبَّتة مسبقًا",
+  "possible actions, fixed in advance": "فعلًا ممكنًا، مثبَّتًا مسبقًا",
   proposes: "يقترح",
   "questioned later": "سؤال بعد أشهر",
   receipt: "إيصال",

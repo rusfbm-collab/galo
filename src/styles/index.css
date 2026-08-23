@@ -438,9 +438,12 @@ html[lang="ar"] body {
   font-family: "Noto Sans Arabic", "IBM Plex Sans Arabic", Tahoma, Arial, system-ui, sans-serif;
 }
 
-html[lang="zh-CN"] .eyebrow,
-html[lang="ar"] .eyebrow {
+html[lang="zh-CN"] .eyebrow {
   letter-spacing: 0.06em;
+  text-transform: none;
+}
+
+html[lang="ar"] .eyebrow {
   text-transform: none;
 }
 
@@ -17700,4 +17703,17 @@ caption bdi {
     gap: 12px;
     grid-template-columns: auto minmax(0, 1fr);
   }
+}
+
+/*
+ * Arabic is a joined script: positive letter-spacing pulls the glyphs apart at
+ * their joins, and a word stops reading as one word. Tracking is set in nearly
+ * two hundred places in this stylesheet for Latin and Chinese, and it was
+ * reaching Arabic text through most of them. This is last in the file, and the
+ * attribute is doubled, so it outranks the per-component rules rather than
+ * needing an override beside each one.
+ */
+html[lang="ar"][lang="ar"] body,
+html[lang="ar"][lang="ar"] body * {
+  letter-spacing: normal;
 }
