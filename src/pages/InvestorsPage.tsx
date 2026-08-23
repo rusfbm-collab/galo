@@ -51,7 +51,7 @@ export function InvestorsPage() {
           <h1>{t("A weight-free decision layer for private and industrial AI.")}</h1>
           <p>
             {t(
-              "No learned weights and no backpropagation: what the engine learns is explicit and can be read, versioned and rolled back. The first product applies that to decision assurance around the systems a plant already runs. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.",
+              "No learned weights and no backpropagation: what the engine learns is explicit and can be read, versioned and rolled back. The first product is intended for decision assurance around the systems industry already runs, and none of it is running at an industrial site today. This page is the investment case: why this could be a company, what a cheque buys, what would unlock the next round, and the point at which the thesis should be called dead.",
             )}
           </p>
           <ul className="investor-status" aria-label={t("Current status")}>

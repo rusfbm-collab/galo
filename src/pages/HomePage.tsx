@@ -173,7 +173,7 @@ export function HomePage() {
             <h1>{t("A different kind of AI, for decisions that have to stay provable.")}</h1>
             <p className="hero__lead">
               {t(
-                "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building, checking, reusing and locally revising explicit objects, relations, competing explanations and evidence in a versioned Atlas, so every learned change can be read, versioned and replayed. The first product applies that architecture to decision assurance around the digital twins and operational systems a plant already runs.",
+                "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building, checking, reusing and locally revising explicit objects, relations, competing explanations and evidence in a versioned Atlas, so every learned change can be read, versioned and replayed. The first product is intended to apply that architecture to decision assurance around the digital twins and operational systems industry already runs. None of it is running at an industrial site today.",
               )}
             </p>
             <p className="hero__result">
