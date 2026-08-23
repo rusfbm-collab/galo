@@ -1,8 +1,7 @@
 import type { TranslationDictionary } from "../translations";
 
 export const weightFreeRu: TranslationDictionary = {
-  "A different kind of AI, for decisions that have to stay provable.":
-    "Другой вид ИИ — для решений, которые должны оставаться доказуемыми.",
+  "AI built for provable decisions.": "ИИ для доказуемых решений.",
   "A list short enough to print, every item named":
     "Список, который умещается на одной странице, и у каждого пункта есть имя",
   "A named relation between named things, carrying the observation it came from.":
@@ -37,8 +36,8 @@ export const weightFreeRu: TranslationDictionary = {
   "Everything further down this page — the percentages, the receipts, the seven phases, the tables — is evidence about a kind of object. This section says what the object is, because the evidence does not mean much until that is clear.":
     "Всё, что ниже на этой странице, — проценты, протоколы, семь фаз, таблицы — это доказательства о некотором виде объекта. Этот раздел говорит, что это за объект, потому что до этого доказательства мало что значат.",
   "Explicit objects and relations": "Явные объекты и отношения",
-  "GALO AI — Weight-Free AI for Decisions That Have to Stay Provable":
-    "GALO AI — ИИ без обучаемых весов для решений, которые должны оставаться доказуемыми",
+  "GALO AI — Weight-Free AI Built for Provable Decisions":
+    "GALO AI — ИИ без обучаемых весов, созданный для доказуемых решений",
   "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue. Every figure on this site was produced by the project on its own data, and nothing here authorises a command to a plant.":
     "Архитектура общего назначения, а не общий интеллект. Валидность под контролем партнёра не доказана, промышленная автономия не разрешена, клиента, письма о намерениях и выручки нет. Каждая цифра на этом сайте получена самим проектом на своих данных, и ничто здесь не даёт права на команду производству.",
   "Hidden numerical weights": "Скрытые числовые веса",
@@ -108,7 +107,7 @@ export const weightFreeRu: TranslationDictionary = {
 };
 
 export const weightFreeZh: TranslationDictionary = {
-  "A different kind of AI, for decisions that have to stay provable.": "另一类人工智能，面向那些必须始终可被证明的决策。",
+  "AI built for provable decisions.": "为可证明的决策而打造的人工智能。",
   "A list short enough to print, every item named": "一份短到可以打印出来的清单，每一项都有名字",
   "A named relation between named things, carrying the observation it came from.": "有名字的事物之间的一条有名字的关系，并带着它所来自的那次观察。",
   "A neural model may be attached from outside as a proposal adapter — a parser or a sensor, in effect. It is not part of GALO, its weights are not GALO state, and it cannot create a frame, write to the Atlas, widen the candidate set, or authorise a verdict.":
@@ -140,7 +139,7 @@ export const weightFreeZh: TranslationDictionary = {
   "Everything further down this page — the percentages, the receipts, the seven phases, the tables — is evidence about a kind of object. This section says what the object is, because the evidence does not mean much until that is clear.":
     "本页再往下的一切——那些百分比、回执、七个阶段、表格——都是关于某一类对象的证据。本节先说清楚这个对象是什么，因为在此之前证据说明不了太多。",
   "Explicit objects and relations": "显式的对象与关系",
-  "GALO AI — Weight-Free AI for Decisions That Have to Stay Provable": "GALO AI — 面向必须始终可被证明的决策的无权重人工智能",
+  "GALO AI — Weight-Free AI Built for Provable Decisions": "GALO AI — 为可证明的决策而打造的无权重人工智能",
   "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue. Every figure on this site was produced by the project on its own data, and nothing here authorises a command to a plant.":
     "通用架构，而不是通用智能。由合作方控制的有效性尚未得到证明，生产环境的自主权未获授权，既没有客户，也没有意向书或收入。本站的每一个数字都是本项目在自己的数据上得出的，而且这里没有任何内容授权向工厂下达指令。",
   "Hidden numerical weights": "隐藏的数值权重",
@@ -202,8 +201,7 @@ export const weightFreeZh: TranslationDictionary = {
 };
 
 export const weightFreeAr: TranslationDictionary = {
-  "A different kind of AI, for decisions that have to stay provable.":
-    "نوعٌ آخر من الذكاء الاصطناعي، لقراراتٍ يجب أن تبقى قابلةً للإثبات.",
+  "AI built for provable decisions.": "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
   "A list short enough to print, every item named": "قائمةٌ قصيرة بما يكفي لطباعتها، ولكلِّ بندٍ فيها اسم",
   "A named relation between named things, carrying the observation it came from.":
     "علاقةٌ مسمّاة بين أشياء مسمّاة، تحمل معها الرصد الذي جاءت منه.",
@@ -237,8 +235,8 @@ export const weightFreeAr: TranslationDictionary = {
   "Everything further down this page — the percentages, the receipts, the seven phases, the tables — is evidence about a kind of object. This section says what the object is, because the evidence does not mean much until that is clear.":
     "كلُّ ما يلي في هذه الصفحة — النِّسب والإيصالات والمراحل السبع والجداول — أدلّةٌ عن نوعٍ من الأشياء. ويقول هذا القسم ما هذا الشيء، لأنّ الأدلّة لا تعني كثيرًا قبل أن يتّضح ذلك.",
   "Explicit objects and relations": "أشياء وعلاقات صريحة",
-  "GALO AI — Weight-Free AI for Decisions That Have to Stay Provable":
-    "‏GALO AI — ذكاءٌ اصطناعيّ بلا أوزان لقراراتٍ يجب أن تبقى قابلةً للإثبات",
+  "GALO AI — Weight-Free AI Built for Provable Decisions":
+    "‏GALO AI — ذكاءٌ اصطناعيّ بلا أوزان، بُني لقراراتٍ قابلة للإثبات",
   "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue. Every figure on this site was produced by the project on its own data, and nothing here authorises a command to a plant.":
     "بنية عامّة الغرض، لا ذكاء عامّ. الصلاحية التي يتحكّم بها الشريك غير مُثبَتة، والاستقلالية الإنتاجية غير مأذون بها، ولا يوجد عميل ولا خطاب نوايا ولا إيراد. وكلُّ رقمٍ في هذا الموقع أنتجه المشروع على بياناته، ولا شيء هنا يأذن بأمرٍ إلى مصنع.",
   "Hidden numerical weights": "أوزانٌ عددية خفيّة",

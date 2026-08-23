@@ -15,7 +15,7 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — Weight-Free AI for Decisions That Have to Stay Provable",
+        title: "GALO AI — Weight-Free AI Built for Provable Decisions",
         description:
           "An AI architecture with no learned model weights and no backpropagation. GALO learns explicit relations and verified structures in a versioned Atlas, starting with industrial decision assurance. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.",
       },

@@ -24,7 +24,7 @@ describe("GALO public site", () => {
   it("leads with the category, then the wedge, and keeps the boundary in the hero", () => {
     render(<App />);
     expect(
-      screen.getByRole("heading", { level: 1, name: "A different kind of AI, for decisions that have to stay provable." }),
+      screen.getByRole("heading", { level: 1, name: "AI built for provable decisions." }),
     ).toBeInTheDocument();
     // The identity comes before any evidence about it.
     expect(screen.getByText(/Neural AI learns by changing hidden numerical weights/i)).toBeInTheDocument();
@@ -1231,7 +1231,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Другой вид ИИ — для решений, которые должны оставаться доказуемыми.",
+        name: "ИИ для доказуемых решений.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -1262,7 +1262,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "نوعٌ آخر من الذكاء الاصطناعي، لقراراتٍ يجب أن تبقى قابلةً للإثبات.",
+        name: "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

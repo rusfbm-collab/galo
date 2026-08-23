@@ -170,7 +170,7 @@ export function HomePage() {
         <div className="shell hero__grid">
           <div className="hero__content">
             <p className="eyebrow eyebrow--cyan">{t("WEIGHT-FREE AI · INDUSTRIAL DECISION ASSURANCE")}</p>
-            <h1>{t("A different kind of AI, for decisions that have to stay provable.")}</h1>
+            <h1>{t("AI built for provable decisions.")}</h1>
             <p className="hero__lead">
               {t(
                 "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building, checking, reusing and locally revising explicit objects, relations, competing explanations and evidence in a versioned Atlas, so every learned change can be read, versioned and replayed. The first product is intended to apply that architecture to decision assurance around the digital twins and operational systems industry already runs. None of it is running at an industrial site today.",
@@ -345,9 +345,9 @@ export function HomePage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("THE HEADLINE, TAKEN APART")}
-            title={t("A headline is a claim. Here is what backs each word of it, and where it stops.")}
+            title={t("“Provable” is a strong word. Here is what has to be true for it, and where it stops.")}
             text={t(
-              "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.",
+              "It breaks into three promises: the move was allowed before the run, the decision was taken from a declared set, and a stranger can be shown both. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.",
             )}
           />
           <div className="headline-claims">

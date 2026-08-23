@@ -9,8 +9,8 @@ export const landscapeRu: TranslationDictionary = {
     "Объявленная модель и процедура принятия решения над ней. Ответ — доказательство, контрпример или честный отказ решить.",
   "A different class of object. These read language and answer open-ended questions; the GALO engine does neither, and is narrower than any of them by a very wide margin.":
     "Объект другого класса. Такие системы читают язык и отвечают на открытые вопросы; движок GALO не делает ни того, ни другого и уже любой из них несопоставимо уже.",
-  "A headline is a claim. Here is what backs each word of it, and where it stops.":
-    "Заголовок — это утверждение. Вот что стоит за каждым его словом и где оно заканчивается.",
+  "“Provable” is a strong word. Here is what has to be true for it, and where it stops.":
+    "«Доказуемо» — сильное слово. Вот что должно быть верно, чтобы оно держалось, и где оно кончается.",
   "A learned component proposes candidates and a formal component admits or rejects them. Only admitted candidates count.":
     "Обученная часть предлагает кандидатов, формальная часть их допускает или отклоняет. Засчитываются только допущенные.",
   "A model plans and calls tools; the surrounding code decides which tools exist. Permission is usually expressed in the prompt and in the code around it.":
@@ -27,8 +27,8 @@ export const landscapeRu: TranslationDictionary = {
   "Aggregate behaviour on benchmark suites, and whatever the provider chooses to publish about training and evaluation. Individual outputs are checked by inspection, not by construction.":
     "Совокупное поведение на наборах бенчмарков и то, что поставщик решает опубликовать об обучении и оценке. Отдельные ответы проверяются просмотром, а не по построению.",
   Allowed: "Разрешено",
-  "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
-    "Разрешено, выбрал, показал — три обещания, и читатель вправе спросить, что стоит за каждым. В каждой карточке названы механизм, который существует сегодня, страница, где это можно проверить самому, и та часть, которая ещё не заслужена. Ограничения стоят в той же карточке, что и утверждение, а не в сноске.",
+  "It breaks into three promises: the move was allowed before the run, the decision was taken from a declared set, and a stranger can be shown both. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
+    "Оно распадается на три обещания: ход был разрешён ещё до запуска, решение взято из объявленного набора, и постороннему можно показать и то и другое. Каждая карточка называет механизм, который существует сегодня, страницу, где вы проверите это сами, и ту часть, которая ещё не заслужена. Ограничения стоят в той же карточке, что и утверждение, а не в сноске.",
   "AlphaZero, AlphaGeometry, AlphaProof, FunSearch and related work":
     "AlphaZero, AlphaGeometry, AlphaProof, FunSearch и родственные работы",
   "An explicit working memory and a decision cycle over declared production rules, designed to model how deliberation is structured.":
@@ -159,8 +159,8 @@ export const landscapeZh: TranslationDictionary = {
     "一个已声明的模型，加上在其之上的判定过程。结果要么是一份证明，要么是一个反例，要么是坦率地承认无法判定。",
   "A different class of object. These read language and answer open-ended questions; the GALO engine does neither, and is narrower than any of them by a very wide margin.":
     "属于另一类东西。它们读懂语言、回答开放式问题；GALO 引擎两样都不做，而且比其中任何一个都窄得多。",
-  "A headline is a claim. Here is what backs each word of it, and where it stops.":
-    "标题是一句主张。下面写明它每一个词背后有什么，以及它在哪里止步。",
+  "“Provable” is a strong word. Here is what has to be true for it, and where it stops.":
+    "「可证明」是一个很重的词。下面是它要成立所需要的条件，以及它到哪里为止。",
   "A learned component proposes candidates and a formal component admits or rejects them. Only admitted candidates count.":
     "由学习出来的部分提出候选，由形式化的部分决定接受还是驳回。只有被接受的才算数。",
   "A model plans and calls tools; the surrounding code decides which tools exist. Permission is usually expressed in the prompt and in the code around it.":
@@ -177,8 +177,8 @@ export const landscapeZh: TranslationDictionary = {
   "Aggregate behaviour on benchmark suites, and whatever the provider chooses to publish about training and evaluation. Individual outputs are checked by inspection, not by construction.":
     "在各类基准测试上的总体表现，以及提供方愿意公开的训练与评测信息。单条输出靠人工查看来核，而不是靠构造保证。",
   Allowed: "被允许",
-  "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
-    "被允许、作出选择、把过程摆出来——三个承诺，读者有权追问每一个背后是什么。下面每张卡片都写出今天已经存在的机制、可以自己去核验的页面，以及尚未挣到的那一部分。限制就写在主张旁边，而不是塞进脚注。",
+  "It breaks into three promises: the move was allowed before the run, the decision was taken from a declared set, and a stranger can be shown both. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
+    "它拆成三个承诺：这一步在运行之前就是被允许的、这个决定取自一份已声明的集合，而且这两点都能拿给外人看。每张卡片都点明今天已经存在的机制、你可以自己去核验的页面，以及尚未挣得的那一部分。限制就写在与主张同一张卡片上，而不是脚注里。",
   "AlphaZero, AlphaGeometry, AlphaProof, FunSearch and related work":
     "AlphaZero、AlphaGeometry、AlphaProof、FunSearch 及相关工作",
   "An explicit working memory and a decision cycle over declared production rules, designed to model how deliberation is structured.":
@@ -304,8 +304,8 @@ export const landscapeAr: TranslationDictionary = {
     "نموذج معلَن وإجراء قرار يعمل فوقه. والنتيجة إمّا برهان، أو مثال مضاد، أو إقرار صريح بالعجز عن الحسم.",
   "A different class of object. These read language and answer open-ended questions; the GALO engine does neither, and is narrower than any of them by a very wide margin.":
     "صنف آخر من الأشياء. هذه الأنظمة تقرأ اللغة وتجيب عن أسئلة مفتوحة، ومحرّك GALO لا يفعل أيًّا من ذلك، وهو أضيق منها جميعًا بفارق كبير.",
-  "A headline is a claim. Here is what backs each word of it, and where it stops.":
-    "العنوان دعوى. وهنا ما يسند كل كلمة فيه، وأين يتوقّف.",
+  "“Provable” is a strong word. Here is what has to be true for it, and where it stops.":
+    "«قابل للإثبات» كلمةٌ ثقيلة. وهذا ما يلزم أن يصحّ حتى تصدق، وأين تقف.",
   "A learned component proposes candidates and a formal component admits or rejects them. Only admitted candidates count.":
     "جزء متعلِّم يقترح المرشّحين، وجزء صوريّ يقبلهم أو يردّهم. ولا يُحتسب إلّا ما قُبِل.",
   "A model plans and calls tools; the surrounding code decides which tools exist. Permission is usually expressed in the prompt and in the code around it.":
@@ -322,8 +322,8 @@ export const landscapeAr: TranslationDictionary = {
   "Aggregate behaviour on benchmark suites, and whatever the provider chooses to publish about training and evaluation. Individual outputs are checked by inspection, not by construction.":
     "السلوك الإجمالي على مجموعات القياس، وما تختار الجهة المطوِّرة نشره عن التدريب والتقييم. أمّا المخرجات الفردية فتُفحص بالمعاينة لا بالبناء.",
   Allowed: "مسموح",
-  "Allowed, decide, show — three promises, and a reader is entitled to ask what stands behind each one. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
-    "مسموح، واختار، وأظهر — ثلاثة وعود، ومن حقّ القارئ أن يسأل عمّا يسند كلًّا منها. كل بطاقة تسمّي الآلية الموجودة اليوم، والصفحة التي يمكنك أن تتحقّق فيها بنفسك، والجزء الذي لم يُستحقّ بعد. والحدود مكتوبة في البطاقة نفسها لا في حاشية.",
+  "It breaks into three promises: the move was allowed before the run, the decision was taken from a declared set, and a stranger can be shown both. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.":
+    "وهي تنحلّ إلى ثلاثة وعود: أنّ الفعل كان مباحًا قبل التشغيل، وأنّ القرار أُخذ من مجموعةٍ معلَنة، وأنّ كليهما يمكن عرضه على غريب. وتسمّي كلُّ بطاقةٍ الآليةَ القائمة اليوم، والصفحةَ التي تفحصها فيها بنفسك، والجزءَ الذي لم يُكتسب بعد. والحدود في البطاقة نفسها مع الدعوى، لا في حاشية.",
   "AlphaZero, AlphaGeometry, AlphaProof, FunSearch and related work":
     "AlphaZero وAlphaGeometry وAlphaProof وFunSearch والأعمال المتّصلة بها",
   "An explicit working memory and a decision cycle over declared production rules, designed to model how deliberation is structured.":
