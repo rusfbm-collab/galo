@@ -75,8 +75,8 @@ export const investorCaseRu: TranslationDictionary = {
     "Обёртки управления и политик",
   "If nine to twelve months pass with no paid evaluation and no design partner, the thesis is not confirmed and should be treated as such rather than extended.":
     "Если пройдут девять–двенадцать месяцев без платной оценки и без партнёра по разработке — тезис не подтверждён, и относиться к нему нужно именно так, а не продлевать.",
-  "Incorporation and residency in Abu Dhabi, or wherever the first evaluation partner makes more sense.":
-    "Регистрация и резидентство в Абу-Даби — или там, где это разумнее для первого партнёра по оценке.",
+  "An operating entity, so there is something to contract with, set up wherever the first evaluation partner makes that useful.":
+    "Операционная компания — чтобы было с кем заключать договор, — открытая там, где это полезнее для первого партнёра по оценке.",
   "Industrial buyers are reached through integrators, platform vendors and existing relationships. A correct architecture with no route to a plant floor is a paper, not a company.":
     "До промышленных покупателей добираются через интеграторов, поставщиков платформ и уже существующие отношения. Правильная архитектура без пути в цех — это статья, а не компания.",
   "It is not a wrapper over a language model, so it cannot be shipped as a feature by anyone who has one. It needs a different runtime, which is expensive to build and hard to sell before the pain is acute. The market currently buys fluency. Assurance under change becomes payable where the cost of an unexplainable decision is already on somebody's books — which is why the first product is industrial rather than general.":
@@ -256,8 +256,8 @@ export const investorCaseZh: TranslationDictionary = {
     "治理层与策略外壳",
   "If nine to twelve months pass with no paid evaluation and no design partner, the thesis is not confirmed and should be treated as such rather than extended.":
     "如果九到十二个月过去，既没有付费评估也没有设计合作方，那这个论点就没被证实——该照这个结论办，而不是把期限往后延。",
-  "Incorporation and residency in Abu Dhabi, or wherever the first evaluation partner makes more sense.":
-    "在阿布扎比注册并落地，或者落在对第一个评估合作方更合适的地方。",
+  "An operating entity, so there is something to contract with, set up wherever the first evaluation partner makes that useful.":
+    "一个运营实体，好让对方有可以签约的对象，设在对第一个评估合作方更有用的地方。",
   "Industrial buyers are reached through integrators, platform vendors and existing relationships. A correct architecture with no route to a plant floor is a paper, not a company.":
     "要够到工业买家，得走集成商、平台厂商和已有的关系。一套正确的架构，如果没有通往车间的路，那是一篇论文，不是一家公司。",
   "It is not a wrapper over a language model, so it cannot be shipped as a feature by anyone who has one. It needs a different runtime, which is expensive to build and hard to sell before the pain is acute. The market currently buys fluency. Assurance under change becomes payable where the cost of an unexplainable decision is already on somebody's books — which is why the first product is industrial rather than general.":
@@ -437,8 +437,8 @@ export const investorCaseAr: TranslationDictionary = {
     "أغلفة الحوكمة والسياسات",
   "If nine to twelve months pass with no paid evaluation and no design partner, the thesis is not confirmed and should be treated as such rather than extended.":
     "إن مضت تسعة أشهر إلى اثني عشر بلا تقييمٍ مدفوع وبلا شريك تصميم، فالأطروحة غير مؤكَّدة، ويُتعامل معها على هذا الأساس لا بتمديد المهلة.",
-  "Incorporation and residency in Abu Dhabi, or wherever the first evaluation partner makes more sense.":
-    "التأسيس والإقامة في أبوظبي، أو حيث يكون ذلك أنسب لأوّل شريك تقييم.",
+  "An operating entity, so there is something to contract with, set up wherever the first evaluation partner makes that useful.":
+    "كيانٌ تشغيليّ يكون طرفًا يمكن التعاقد معه، يُؤسَّس حيث يكون ذلك أنفع لأوّل شريك تقييم.",
   "Industrial buyers are reached through integrators, platform vendors and existing relationships. A correct architecture with no route to a plant floor is a paper, not a company.":
     "يُبلَغ المشترون الصناعيون عبر المُكامِلين وموردي المنصّات والعلاقات القائمة. والبنية الصحيحة بلا طريقٍ إلى أرض المصنع ورقةٌ بحثية لا شركة.",
   "It is not a wrapper over a language model, so it cannot be shipped as a feature by anyone who has one. It needs a different runtime, which is expensive to build and hard to sell before the pain is acute. The market currently buys fluency. Assurance under change becomes payable where the cost of an unexplainable decision is already on somebody's books — which is why the first product is industrial rather than general.":

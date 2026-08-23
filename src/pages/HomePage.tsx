@@ -182,7 +182,7 @@ export function HomePage() {
               </span>
               <span>{t("Pre-seed")}</span>
               <span>{t("Founder-led")}</span>
-              <span>{t("Abu Dhabi relocation planned")}</span>
+              <span>{t("No capital raised")}</span>
             </div>
             <div className="hero__actions">
               <a className="button button--primary" href={href("/industry")}>
@@ -711,16 +711,16 @@ export function HomePage() {
         </div>
       </section>
 
-      <section id="abu-dhabi" className="section section--abu-dhabi">
+      <section id="next-twelve-months" className="section section--commitments">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("WHY ABU DHABI")}
-            title={t("Abu Dhabi is the planned operating base — stated as intent, not as a done thing.")}
+            eyebrow={t("THE NEXT TWELVE MONTHS")}
+            title={t("What is not true yet, and the plan written so somebody else can mark it.")}
             text={t(
               "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.",
             )}
           />
-          <div className="abu-grid">
+          <div className="commitment-grid">
             <article>
               <span>01</span>
               <h3>{t("Not yet incorporated")}</h3>
@@ -769,8 +769,8 @@ export function HomePage() {
             </ol>
           </div>
           <p className="endorsement-note">{t("No programme selection, partnership, or endorsement is implied.")}</p>
-          <a className="button button--ghost abu-dossier-link" href={href("/hub71")}>
-            {t("Read the full assessment dossier")}{" "}
+          <a className="button button--ghost dossier-link" href={href("/hub71")}>
+            {t("Read how the engine works, then where to attack it")}{" "}
             <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
           </a>
         </div>
@@ -792,12 +792,12 @@ export function HomePage() {
             <p>{t(siteContent.founder.bio)}</p>
             <div className="founder-facts">
               <div>
-                <small>{t("RELOCATION")}</small>
-                <strong>{t(siteContent.founder.relocation)}</strong>
+                <small>{t("TEAM TODAY")}</small>
+                <strong>{t("One person. Neither of the two first hires has been made.")}</strong>
               </div>
               <div>
                 <small>{t("FOUNDING TEAM PLAN")}</small>
-                <strong>{t("Systems engineering · Research/evaluation · Abu Dhabi partnerships")}</strong>
+                <strong>{t("Systems engineering · Research/evaluation · Industrial partnerships")}</strong>
               </div>
             </div>
           </div>

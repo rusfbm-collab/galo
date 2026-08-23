@@ -202,7 +202,7 @@ export const fundedPlan: readonly PlanItem[] = [
   {
     number: "05",
     title: "Company setup where the work lands",
-    text: "Incorporation and residency in Abu Dhabi, or wherever the first evaluation partner makes more sense.",
+    text: "An operating entity, so there is something to contract with, set up wherever the first evaluation partner makes that useful.",
   },
 ];
 

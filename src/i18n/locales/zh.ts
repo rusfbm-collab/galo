@@ -84,7 +84,6 @@ export const zh: TranslationDictionary = {
   Evidence: "证据",
   Evaluation: "技术评估",
   Founder: "创始人",
-  "Abu Dhabi": "阿布扎比",
   Privacy: "隐私",
   Home: "首页",
   "GALO technical evaluation": "GALO 技术评估申请",
@@ -95,8 +94,6 @@ export const zh: TranslationDictionary = {
   "Founder & Chief Architect": "创始人兼首席架构师",
   "Ruslan originated the GALO multipolar architecture, designed its frozen PLUS/STAR kernel and graph-free World Atlas model, and directed a multi-stage experimental programme across explicit memory, adaptive resolution, local revision, candidate-universe control, and deterministic replay. He established a red-team discipline that requires over-stated claims to be withdrawn or downgraded when stronger controls fail.":
     "Ruslan 提出了 GALO 多极架构，设计了其冻结的 PLUS/STAR 内核和无图 World Atlas 模型，并主导了一个多阶段实验计划，涵盖显式记忆、自适应分辨率、局部修正、候选全集控制和确定性重放。他建立了一套红队式声明约束：当更强控制测试失败时，任何表述过度的声明都必须撤回或降级。",
-  "Plans to relocate to Abu Dhabi and build the operating team there if selected.":
-    "如获选，计划迁往阿布扎比并在那里组建运营团队。",
 
   "RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE": "面向可检查智能体状态的研究架构",
   "AI agents need a world state they can inspect, revise, and replay.":
@@ -107,7 +104,7 @@ export const zh: TranslationDictionary = {
   "Working bounded prototype": "可运行的有限范围原型",
   "Pre-seed": "种子前轮",
   "Founder-led": "由创始人主导",
-  "Abu Dhabi relocation planned": "计划迁往阿布扎比",
+  "No capital raised": "尚未募得资本",
   "Inspect a verified receipt": "检查一份已验证回执",
   "Request a technical evaluation": "申请技术评估",
   "Formal replay within a declared scope. General AI and external capability superiority are not claimed.":
@@ -334,9 +331,6 @@ export const zh: TranslationDictionary = {
   "Persistent policy sidecar with exact fallback only after prior controls close.":
     "只有在前置控制项关闭后，才启用带精确回退机制的持续策略 sidecar。",
 
-  "WHY ABU DHABI": "为何选择阿布扎比",
-  "Abu Dhabi is GALO’s planned operating base — not a satellite office.":
-    "阿布扎比是 GALO 计划中的运营基地，而不是卫星办公室。",
   "The next stage needs technical evaluation partners, company formation, focused hiring, and access to a serious AI infrastructure ecosystem in one place.":
     "下一阶段需要在同一地点获得技术评估伙伴、公司设立、专注招聘以及成熟 AI 基础设施生态的支持。",
   "AI ecosystem": "AI 生态系统",
@@ -346,24 +340,24 @@ export const zh: TranslationDictionary = {
   "Proximity to enterprise, government, and sovereign-AI teams able to define bounded partner-owned settings.":
     "接近能够定义有限、由合作伙伴掌控场景的企业、政府和主权 AI 团队。",
   "Company building": "公司建设",
-  "A base for incorporation, relocation, hiring, legal operations, finance, and the next fundraising evidence.":
-    "为公司注册、迁址、招聘、法律运营、财务和下一轮融资证据建立基地。",
   "12-MONTH CONTRIBUTION PLAN": "12 个月贡献计划",
-  "Build the external-evidence layer from Abu Dhabi.": "从阿布扎比建设外部证据层。",
-  "Relocate the founder and establish the operating company": "创始人迁往阿布扎比并设立运营公司",
   "Hire a founding systems engineer and research/evaluation engineer": "招聘一名创始系统工程师和一名研究/评估工程师",
   "Release a private Runtime and World Atlas alpha": "发布私有 Runtime 和 World Atlas alpha 版本",
   "Complete two partner-grade technical evaluations": "完成两项达到合作伙伴评估要求的技术评估",
   "Target one committed or paid pilot and prepare seed evidence": "以一个已承诺或付费试点为目标，并准备种子轮融资证据",
   "No programme selection, partnership, or endorsement is implied.":
     "本网站不暗示 GALO 已入选任何项目、建立任何合作关系或获得任何背书。",
+  "THE NEXT TWELVE MONTHS": "接下来的十二个月",
+  "What is not true yet, and the plan written so somebody else can mark it.": "哪些事情还不成立，以及一份写成可供他人逐条打分的计划。",
+  "Read how the engine works, then where to attack it": "先看引擎如何运作，再看该从哪里攻击它",
 
   "FOUNDER / ARCHITECT": "创始人 / 架构师",
   FOUNDER: "创始人",
   "Founder-led research, built with adversarial claim discipline.": "由创始人主导的研究，以对抗式声明约束推进。",
-  RELOCATION: "迁址计划",
+  "TEAM TODAY": "当前团队",
+  "One person. Neither of the two first hires has been made.": "一个人。两名首批员工都还没有招到。",
   "FOUNDING TEAM PLAN": "创始团队计划",
-  "Systems engineering · Research/evaluation · Abu Dhabi partnerships": "系统工程 · 研究/评估 · 阿布扎比合作伙伴关系",
+  "Systems engineering · Research/evaluation · Industrial partnerships": "系统工程 · 研究/评估 · 工业合作伙伴关系",
   "NEXT CONVERSATION": "下一步沟通",
   "Evaluate the architecture on a bounded problem.": "在一个有限问题上评估该架构。",
   "Bring partner-owned sequential data, a falsifiable outcome, and a setting where explicit state and replay matter.":

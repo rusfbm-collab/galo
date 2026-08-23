@@ -280,8 +280,8 @@ export const engineTourRu: TranslationDictionary = {
     "Это архитектурное позиционирование, а не заявление о всеобщем превосходстве.",
   "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. Everything below the line is fixed by the release and behaves identically on two runs.":
     "Это главный скептический узел, поэтому он на виду, а не тремя экранами ниже. Всё, что над чертой, может ошибаться, а ответ при этом останется верным: над чертой никому не позволено ничего подписывать. Всё, что под чертой, зафиксировано релизом и на двух запусках ведёт себя одинаково.",
-  "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: twelve assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
-    "Раньше это была вся страница — и документ, написанный для одного оценщика, стоял перед всеми остальными. Он остаётся в записи, только свёрнут: двенадцать строк оценки, двенадцать месяцев с наблюдением, которое покажет невыполнение каждого, вопросы, по которым мы ожидаем давления, и факты, которым не место на сайте.",
+  "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: eleven assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
+    "Раньше это была вся страница — и документ, написанный для одного оценщика, стоял перед всеми остальными. Он остаётся в записи, только свёрнут: одиннадцать строк оценки, двенадцать месяцев с наблюдением, которое покажет невыполнение каждого, вопросы, по которым мы ожидаем давления, и факты, которым не место на сайте.",
   "Three sentences, and everything else on this page serves them.":
     "Три предложения — и всё остальное на странице служит им.",
   "Twelve months, each with the observation that would show it was missed":
@@ -605,8 +605,8 @@ export const engineTourZh: TranslationDictionary = {
     "这是架构上的定位，不是关于普遍优越性的主张。",
   "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. Everything below the line is fixed by the release and behaves identically on two runs.":
     "这是最关键的怀疑点，所以它就摆在这里，而不是往下三屏。线上面的一切都可以是错的，而答案照样是对的，因为线上面没有谁被允许签字。线下面的一切由版本固定，两次运行的表现完全一样。",
-  "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: twelve assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
-    "以前这就是整个页面，于是一份写给某一位评估者的文件挡在了所有其他人前面。它仍然在记录里，只是折叠起来了：十二条评估条目、十二个月并附上能显示每一项未达成的观察、我们预计会被追问的问题，以及不适合放在网站上的事实。",
+  "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: eleven assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
+    "以前这就是整个页面，于是一份写给某一位评估者的文件挡在了所有其他人前面。它仍然在记录里，只是折叠起来了：十一条评估条目、十二个月并附上能显示每一项未达成的观察、我们预计会被追问的问题，以及不适合放在网站上的事实。",
   "Three sentences, and everything else on this page serves them.":
     "三句话，这一页的其余一切都是在为它们服务。",
   "Twelve months, each with the observation that would show it was missed":
@@ -930,8 +930,8 @@ export const engineTourAr: TranslationDictionary = {
     "هذا تموضعٌ معماري لا ادعاءَ تفوّقٍ شامل.",
   "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. Everything below the line is fixed by the release and behaves identically on two runs.":
     "هنا مربط الفرس عند المتشكِّك، ولذلك هو على الصفحة لا على بُعد ثلاث شاشات. فكلُّ ما فوق الخط قد يكون خاطئًا والجواب مع ذلك صحيح، لأن ما فوق الخط لا يُؤذَن له بالتوقيع على شيء. وكلُّ ما تحت الخط مثبَّتٌ بالإصدار ويسلك السلوك نفسه في تشغيلين.",
-  "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: twelve assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
-    "كان هذا الصفحةَ كلَّها فيما مضى، فوقف مستندٌ كُتب لمقيِّمٍ واحد أمام سائر الناس. وهو باقٍ في السجل، مطويًّا في آخر الصفحة: اثنا عشر بندًا للتقييم، واثنا عشر شهرًا مع الملاحظة التي تُظهر إخفاق كلٍّ منها، والأسئلة التي نتوقّع أن نُساءل عنها، والوقائع التي ليس الموقعُ مكانَها.",
+  "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: eleven assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.":
+    "كان هذا الصفحةَ كلَّها فيما مضى، فوقف مستندٌ كُتب لمقيِّمٍ واحد أمام سائر الناس. وهو باقٍ في السجل، مطويًّا في آخر الصفحة: أحد عشر بندًا للتقييم، واثنا عشر شهرًا مع الملاحظة التي تُظهر إخفاق كلٍّ منها، والأسئلة التي نتوقّع أن نُساءل عنها، والوقائع التي ليس الموقعُ مكانَها.",
   "Three sentences, and everything else on this page serves them.":
     "ثلاث جُمل، وكلُّ ما عداها في هذه الصفحة يخدمها.",
   "Twelve months, each with the observation that would show it was missed":

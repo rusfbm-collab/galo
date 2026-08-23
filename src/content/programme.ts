@@ -1,9 +1,9 @@
 /**
  * The assessment dossier.
  *
- * This file is written for one reader: somebody at an Abu Dhabi technology
- * programme who has to decide whether an applicant is worth a meeting, and who
- * has read enough decks to discount every adjective in them.
+ * This file is written for one reader: somebody at a technology programme who
+ * has to decide whether an applicant is worth a meeting, and who has read
+ * enough decks to discount every adjective in them.
  *
  * Three rules govern every string here.
  *
@@ -17,8 +17,7 @@
  */
 
 /** What an assessing party can conclude about a line, stated as a status. */
-export type AssessmentStatus =
-  "ESTABLISHED" | "PARTIAL" | "STATED, NOT DONE" | "NOT ESTABLISHED" | "NONE" | "NOT DISCLOSED";
+export type AssessmentStatus = "ESTABLISHED" | "PARTIAL" | "NOT ESTABLISHED" | "NONE" | "NOT DISCLOSED";
 
 export type AssessmentRow = {
   dimension: string;
@@ -29,7 +28,7 @@ export type AssessmentRow = {
 };
 
 /**
- * Twelve lines an assessor works through. Six of them are negative, and they
+ * Eleven lines an assessor works through. Six of them are negative, and they
  * are not placed last.
  */
 export const assessmentTable: readonly AssessmentRow[] = [
@@ -102,13 +101,6 @@ export const assessmentTable: readonly AssessmentRow[] = [
     whereToCheck: "/#founder",
   },
   {
-    dimension: "Relocation and base of operations",
-    answerToday:
-      "Stated, not executed. The founder intends to relocate to Abu Dhabi and build the operating team there. Intent is not residency, and this line stays at this status until an entity and a visa exist.",
-    status: "STATED, NOT DONE",
-    whereToCheck: "/#founder",
-  },
-  {
     dimension: "Ownership of the intellectual property",
     answerToday:
       "Not published on this site. Assignment records and the ownership position are provided directly to an assessing party on request.",
@@ -171,10 +163,9 @@ export type Milestone = {
 export const twelveMonths: readonly Milestone[] = [
   {
     window: "Months 0–3",
-    deliverable:
-      "Incorporate the operating company in ADGM, move the founder's base of work to Abu Dhabi, and complete twenty-five industrial discovery interviews.",
+    deliverable: "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.",
     wouldFailIf:
-      "No incorporated entity exists at the end of the quarter, the founder is not working from the city, or fewer than twenty-five interviews were held.",
+      "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.",
   },
   {
     window: "Months 0–6",

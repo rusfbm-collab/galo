@@ -84,7 +84,6 @@ export const ru: TranslationDictionary = {
   Evidence: "Доказательства",
   Evaluation: "Оценка",
   Founder: "Основатель",
-  "Abu Dhabi": "Абу-Даби",
   Privacy: "Конфиденциальность",
   Home: "На главную",
   "GALO technical evaluation": "Техническая оценка GALO",
@@ -95,8 +94,6 @@ export const ru: TranslationDictionary = {
   "Founder & Chief Architect": "Основатель и главный архитектор",
   "Ruslan originated the GALO multipolar architecture, designed its frozen PLUS/STAR kernel and graph-free World Atlas model, and directed a multi-stage experimental programme across explicit memory, adaptive resolution, local revision, candidate-universe control, and deterministic replay. He established a red-team discipline that requires over-stated claims to be withdrawn or downgraded when stronger controls fail.":
     "Руслан придумал многополярную архитектуру GALO, спроектировал её зафиксированное ядро PLUS/STAR и безграфовую модель World Atlas и вёл многоэтапную экспериментальную программу: явная память, адаптивное разрешение, локальная ревизия, контроль универсума кандидатов, детерминированное воспроизведение. Он же завёл правило red team: если более строгая проверка не проходит, завышенное утверждение отзывают или ослабляют.",
-  "Plans to relocate to Abu Dhabi and build the operating team there if selected.":
-    "Планирует переехать в Абу-Даби и в случае отбора сформировать там операционную команду.",
 
   "RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE": "ИССЛЕДОВАНИЕ · РЕШЕНИЯ, КОТОРЫЕ МОЖНО ПРОВЕРИТЬ",
   "AI agents need a world state they can inspect, revise, and replay.":
@@ -107,7 +104,7 @@ export const ru: TranslationDictionary = {
   "Working bounded prototype": "Рабочий ограниченный прототип",
   "Pre-seed": "Pre-seed",
   "Founder-led": "Под руководством основателя",
-  "Abu Dhabi relocation planned": "Переезд в Абу-Даби запланирован",
+  "No capital raised": "Капитал не привлекался",
   "Inspect a verified receipt": "Изучить верифицированный протокол",
   "Request a technical evaluation": "Запросить техническую оценку",
   "Formal replay within a declared scope. General AI and external capability superiority are not claimed.":
@@ -346,9 +343,6 @@ export const ru: TranslationDictionary = {
   "Persistent policy sidecar with exact fallback only after prior controls close.":
     "Персистентный модуль политики с точным возвратом к исходному режиму только после закрытия предыдущих контрольных требований.",
 
-  "WHY ABU DHABI": "ПОЧЕМУ АБУ-ДАБИ",
-  "Abu Dhabi is GALO’s planned operating base — not a satellite office.":
-    "Абу-Даби — планируемая операционная база GALO, а не вспомогательный офис.",
   "The next stage needs technical evaluation partners, company formation, focused hiring, and access to a serious AI infrastructure ecosystem in one place.":
     "Для следующего этапа нужны партнёры по технической оценке, учреждение компании, целевой найм и доступ к развитой экосистеме ИИ-инфраструктуры в одном месте.",
   "AI ecosystem": "Экосистема ИИ",
@@ -358,11 +352,7 @@ export const ru: TranslationDictionary = {
   "Proximity to enterprise, government, and sovereign-AI teams able to define bounded partner-owned settings.":
     "Близость к корпоративным, государственным и суверенным ИИ-командам, способным определить ограниченные среды, принадлежащие партнёру.",
   "Company building": "Создание компании",
-  "A base for incorporation, relocation, hiring, legal operations, finance, and the next fundraising evidence.":
-    "База для регистрации компании, переезда, найма, юридических операций, финансов и подготовки доказательной базы для следующего раунда финансирования.",
   "12-MONTH CONTRIBUTION PLAN": "12-МЕСЯЧНЫЙ ПЛАН ВКЛАДА",
-  "Build the external-evidence layer from Abu Dhabi.": "Создать слой внешних доказательств из Абу-Даби.",
-  "Relocate the founder and establish the operating company": "Перевезти основателя и учредить операционную компанию",
   "Hire a founding systems engineer and research/evaluation engineer":
     "Нанять системного инженера-основателя и инженера по исследованиям и оценке",
   "Release a private Runtime and World Atlas alpha": "Выпустить закрытые альфа-версии Runtime и World Atlas",
@@ -371,15 +361,21 @@ export const ru: TranslationDictionary = {
     "Стремиться к одному подтверждённому или платному пилоту и подготовить доказательную базу для seed-раунда",
   "No programme selection, partnership, or endorsement is implied.":
     "Никакой отбор в программу, партнёрство или одобрение не подразумеваются.",
+  "THE NEXT TWELVE MONTHS": "БЛИЖАЙШИЕ ДВЕНАДЦАТЬ МЕСЯЦЕВ",
+  "What is not true yet, and the plan written so somebody else can mark it.":
+    "Что пока не сделано — и план, написанный так, чтобы его мог проверить кто-то со стороны.",
+  "Read how the engine works, then where to attack it": "Как устроен движок — и куда по нему бить",
 
   "FOUNDER / ARCHITECT": "ОСНОВАТЕЛЬ / АРХИТЕКТОР",
   FOUNDER: "ОСНОВАТЕЛЬ",
   "Founder-led research, built with adversarial claim discipline.":
     "Проект ведёт основатель. Каждое утверждение здесь проходит проверку на прочность.",
-  RELOCATION: "ПЕРЕЕЗД",
+  "TEAM TODAY": "КОМАНДА СЕГОДНЯ",
+  "One person. Neither of the two first hires has been made.":
+    "Один человек. Ни один из двух первых наймов ещё не сделан.",
   "FOUNDING TEAM PLAN": "ПЛАН КОМАНДЫ-ОСНОВАТЕЛЯ",
-  "Systems engineering · Research/evaluation · Abu Dhabi partnerships":
-    "Системная инженерия · Исследования и оценка · Партнёрства в Абу-Даби",
+  "Systems engineering · Research/evaluation · Industrial partnerships":
+    "Системная инженерия · Исследования и оценка · Промышленные партнёрства",
   "NEXT CONVERSATION": "СЛЕДУЮЩИЙ РАЗГОВОР",
   "Evaluate the architecture on a bounded problem.": "Проверьте архитектуру на задаче с чёткими границами.",
   "Bring partner-owned sequential data, a falsifiable outcome, and a setting where explicit state and replay matter.":

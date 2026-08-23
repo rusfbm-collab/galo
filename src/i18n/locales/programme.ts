@@ -29,8 +29,6 @@ export const programmeRu: TranslationDictionary = {
   "A running artefact exists": "Есть работающий артефакт",
   AFFILIATION: "АФФИЛИАЦИЯ",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ДОСЬЕ ЗАЯВКИ · НЕ ОБЪЯВЛЕНИЕ",
-  "Abu Dhabi is the planned operating base — stated as intent, not as a done thing.":
-    "Абу-Даби — планируемая база. Пока это намерение, а не свершившийся факт.",
   Affiliation: "Аффилиация",
   "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
     "Досье заявки, подготовленное для оценки: двенадцать пунктов о том, как обстоит дело, шесть из них отрицательные; четыре довода о том, почему работа подходит региону, и предел каждого из них; двенадцать месяцев обязательств с условиями провала; шесть вопросов, на которых нас будут дожимать. Аффилиация с Hub71 не заявляется и не подразумевается.",
@@ -97,8 +95,6 @@ export const programmeRu: TranslationDictionary = {
   "How to use it against us": "Как проверить нас по этому документу",
   "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
     "Уже сделано, а не в планах. Сайт работает на английском, русском, китайском и арабском, с правосторонней вёрсткой; если хоть одна строка осталась без перевода, сборка падает. Это сайт, а не продукт в эксплуатации — больше мы ничего и не говорим.",
-  "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
-    "Открыть операционную компанию и перевезти рабочую базу основателя в Абу-Даби.",
   "Independent verification": "Независимая проверка",
   "Intellectual-property assignment and ownership position":
     "Права на интеллектуальную собственность: передача и владелец",
@@ -153,10 +149,8 @@ export const programmeRu: TranslationDictionary = {
     "Опубликовать первое измерение внешнего эффекта — каким бы оно ни вышло.",
   "READ THIS FIRST": "СНАЧАЛА ПРОЧТИТЕ ЭТО",
   "RELEASE OF RECORD": "РЕЛИЗ, НА КОТОРЫЙ ССЫЛАЕМСЯ",
-  "Read the full assessment dossier": "Открыть полное досье",
   "Release of record": "Релиз, на который ссылаемся",
   "Release record and boundaries": "Запись релиза и границы",
-  "Relocation and base of operations": "Переезд и база",
   "Replay runs on an ordinary interpreter": "Повтор идёт на обычном интерпретаторе",
   Revenue: "Выручка",
   "Run one bounded evaluation on a partner's own data, with the success condition agreed in writing before the run.":
@@ -168,8 +162,6 @@ export const programmeRu: TranslationDictionary = {
   "Six questions we expect to be pressed on, answered as they stand.":
     "Шесть вопросов, на которых нас будут дожимать, — и ответы на сегодня.",
   "Stage, risks, and diligence path": "Стадия, риски и путь due diligence",
-  "Stated, not executed. The founder intends to relocate to Abu Dhabi and build the operating team there. Intent is not residency, and this line stays at this status until an entity and a visa exist.":
-    "Заявлено, но не сделано. Основатель собирается переехать в Абу-Даби и собрать там команду. Намерение — ещё не резидентство, и статус здесь не изменится, пока не появятся компания и виза.",
   "THE ASK, IN BOTH DIRECTIONS": "О ЧЁМ ПРОСИМ И О ЧЁМ НЕТ",
   "THE HARD PART OF THE CONVERSATION": "ТРУДНАЯ ЧАСТЬ РАЗГОВОРА",
   "THE STATE OF PLAY, LINE BY LINE": "КАК ОБСТОИТ ДЕЛО, ПУНКТ ЗА ПУНКТОМ",
@@ -267,8 +259,6 @@ export const programmeZh: TranslationDictionary = {
   "A running artefact exists": "存在一个可运行的制品",
   AFFILIATION: "隶属关系",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "申请档案 · 并非公告",
-  "Abu Dhabi is the planned operating base — stated as intent, not as a done thing.":
-    "阿布扎比是计划中的运营基地；这是已声明的意向，而不是已经完成的事。",
   Affiliation: "隶属关系",
   "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
     "为评估而准备的申请档案：十二条现状条目，其中六条为否定；四项区域契合主张，各附其限度；十二个月的承诺，每一项都带有未达成的判定条件；以及我们预计会被追问的六个问题。不声称也不暗示与 Hub71 存在任何隶属关系。",
@@ -327,8 +317,6 @@ export const programmeZh: TranslationDictionary = {
   "How to use it against us": "如何用它来对付我们",
   "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
     "已经实现，而不是列入计划。本站以英语、俄语、汉语和阿拉伯语运行，并采用从右至左的版式；只要有一条被渲染的字符串缺少译文，测试就会让构建失败。这是一个网站，而不是产品部署，而这也就是全部的主张。",
-  "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
-    "注册运营公司，并把创始人的工作基地迁至阿布扎比。",
   "Independent verification": "独立核实",
   "Intellectual-property assignment and ownership position": "知识产权的转让与归属",
   "Introductions to organisations able to define a bounded evaluation on their own data, with a success condition they write themselves.":
@@ -383,10 +371,8 @@ export const programmeZh: TranslationDictionary = {
     "发布对外部运行效果的第一次测量，无论结果如何。",
   "READ THIS FIRST": "请先读这一段",
   "RELEASE OF RECORD": "作为依据的版本",
-  "Read the full assessment dossier": "阅读完整的评估档案",
   "Release of record": "作为依据的版本",
   "Release record and boundaries": "版本记录与边界",
-  "Relocation and base of operations": "迁址与运营基地",
   "Replay runs on an ordinary interpreter": "重放在普通解释器上就能运行",
   Revenue: "营收",
   "Run one bounded evaluation on a partner's own data, with the success condition agreed in writing before the run.":
@@ -398,8 +384,6 @@ export const programmeZh: TranslationDictionary = {
   "Six questions we expect to be pressed on, answered as they stand.":
     "我们预计会被追问的六个问题，答案就是它们目前的样子。",
   "Stage, risks, and diligence path": "阶段、风险与尽职调查路径",
-  "Stated, not executed. The founder intends to relocate to Abu Dhabi and build the operating team there. Intent is not residency, and this line stays at this status until an entity and a visa exist.":
-    "已声明，但尚未执行。创始人打算迁往阿布扎比并在当地组建运营团队。意向不等于居留，在实体与签证到位之前，这一条会一直保持这个状态。",
   "THE ASK, IN BOTH DIRECTIONS": "请求，两个方向",
   "THE HARD PART OF THE CONVERSATION": "对话中难的那部分",
   "THE STATE OF PLAY, LINE BY LINE": "现状，逐条列出",
@@ -496,8 +480,6 @@ export const programmeAr: TranslationDictionary = {
   "A running artefact exists": "يوجد مصنوعٌ يعمل",
   AFFILIATION: "الارتباط",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلانًا",
-  "Abu Dhabi is the planned operating base — stated as intent, not as a done thing.":
-    "أبوظبي هي قاعدة التشغيل المزمعة؛ وهذه نيّةٌ معلَنة لا أمرٌ منجَز.",
   Affiliation: "الارتباط",
   "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
     "ملف طلب أُعدّ للتقييم: اثنا عشر بندًا تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
@@ -562,8 +544,6 @@ export const programmeAr: TranslationDictionary = {
   "How to use it against us": "كيف تستعمله ضدّنا",
   "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
     "منجَزٌ لا مخطَّط له. يعمل هذا الموقع بالإنجليزية والروسية والصينية والعربية بتخطيطٍ من اليمين إلى اليسار، ويُسقط اختبارٌ عمليةَ البناء إذا خلت أي سلسلة معروضة من ترجمتها. وهو موقعٌ ولا شيء غير ذلك: لم يُنشر أيّ منتج، وهذا كل ما يُدَّعى.",
-  "Incorporate the operating company and move the founder's base of work to Abu Dhabi.":
-    "تأسيس الشركة العاملة ونقل قاعدة عمل المؤسِّس إلى أبوظبي.",
   "Independent verification": "التحقق المستقل",
   "Intellectual-property assignment and ownership position": "التنازل عن الملكية الفكرية وموقع ملكيتها",
   "Introductions to organisations able to define a bounded evaluation on their own data, with a success condition they write themselves.":
@@ -618,10 +598,8 @@ export const programmeAr: TranslationDictionary = {
     "نشر أول قياس للأثر التشغيلي الخارجي، مهما تكن نتيجته.",
   "READ THIS FIRST": "اقرأ هذا أولًا",
   "RELEASE OF RECORD": "الإصدار المرجعي",
-  "Read the full assessment dossier": "اقرأ ملف التقييم كاملًا",
   "Release of record": "الإصدار المرجعي",
   "Release record and boundaries": "سجل الإصدار والحدود",
-  "Relocation and base of operations": "الانتقال وقاعدة التشغيل",
   "Replay runs on an ordinary interpreter": "إعادة التشغيل تجري على مفسِّر عادي",
   Revenue: "الإيرادات",
   "Run one bounded evaluation on a partner's own data, with the success condition agreed in writing before the run.":
@@ -633,8 +611,6 @@ export const programmeAr: TranslationDictionary = {
   "Six questions we expect to be pressed on, answered as they stand.":
     "ستّة أسئلة نتوقّع أن نُساءل عنها، بأجوبتها كما هي اليوم.",
   "Stage, risks, and diligence path": "المرحلة والمخاطر ومسار العناية الواجبة",
-  "Stated, not executed. The founder intends to relocate to Abu Dhabi and build the operating team there. Intent is not residency, and this line stays at this status until an entity and a visa exist.":
-    "معلَنٌ لا منفَّذ. ينوي المؤسِّس الانتقال إلى أبوظبي وبناء فريق التشغيل هناك. والنيّة ليست إقامة، ويبقى هذا البند على هذه الحالة حتى يوجد كيانٌ وتأشيرة.",
   "THE ASK, IN BOTH DIRECTIONS": "الطلب، في الاتجاهين",
   "THE HARD PART OF THE CONVERSATION": "الجزء الصعب من الحديث",
   "THE STATE OF PLAY, LINE BY LINE": "الوضع الراهن، بندًا بندًا",

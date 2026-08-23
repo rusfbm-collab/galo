@@ -309,8 +309,8 @@ export function IndustryPage() {
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
             <a href={href("/hub71")}>
-              <span>{t("The assessment dossier")}</span>
-              <strong>{t("Twelve assessment lines, six of them negative")}</strong>
+              <span>{t("If you want the mechanism itself")}</span>
+              <strong>{t("How the engine works")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
           </div>

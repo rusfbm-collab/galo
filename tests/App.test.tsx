@@ -460,7 +460,7 @@ describe("GALO public site", () => {
       "not affiliated with, endorsed by, backed by, or selected by Hub71",
     );
     expect(appendix?.querySelectorAll("details.engine-dossier")).toHaveLength(4);
-    expect(appendix?.querySelectorAll(".engine-dossier__table tbody tr")).toHaveLength(12);
+    expect(appendix?.querySelectorAll(".engine-dossier__table tbody tr")).toHaveLength(11);
     expect(appendix?.querySelectorAll(".assessment-status.is-negative")).toHaveLength(6);
     expect(appendix?.querySelectorAll(".engine-dossier__list li")).toHaveLength(5);
     expect(appendix?.querySelectorAll(".engine-dossier__questions > div")).toHaveLength(6);

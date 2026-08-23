@@ -84,7 +84,6 @@ export const ar: TranslationDictionary = {
   Evidence: "الأدلة",
   Evaluation: "التقييم",
   Founder: "المؤسس",
-  "Abu Dhabi": "أبوظبي",
   Privacy: "الخصوصية",
   Home: "الرئيسية",
   "GALO technical evaluation": "التقييم التقني لـ GALO",
@@ -95,8 +94,6 @@ export const ar: TranslationDictionary = {
   "Founder & Chief Architect": "المؤسس وكبير مهندسي البنية",
   "Ruslan originated the GALO multipolar architecture, designed its frozen PLUS/STAR kernel and graph-free World Atlas model, and directed a multi-stage experimental programme across explicit memory, adaptive resolution, local revision, candidate-universe control, and deterministic replay. He established a red-team discipline that requires over-stated claims to be withdrawn or downgraded when stronger controls fail.":
     "ابتكر رسلان بنية GALO متعدّدة الأقطاب، وصمّم نواتها المجمّدة PLUS/STAR ونموذجَ World Atlas الذي لا يقوم على غراف. وقاد برنامجًا تجريبيًّا متعدّد المراحل شمل الذاكرة الصريحة، والدقّة التكيّفية، والمراجعة الموضعية، وضبط كون المرشّحات، وإعادة التشغيل الحتمية. وأرسى منهج فريق أحمر يوجب سحبَ كلّ ادّعاء مبالَغ فيه أو خفضَ درجته متى أخفقت الضوابط الأشدّ.",
-  "Plans to relocate to Abu Dhabi and build the operating team there if selected.":
-    "يخطط للانتقال إلى أبوظبي وبناء فريق التشغيل هناك في حال الاختيار.",
 
   "RESEARCH ARCHITECTURE FOR INSPECTABLE AGENT STATE": "بنية بحثية لحالة وكيل قابلة للفحص",
   "AI agents need a world state they can inspect, revise, and replay.":
@@ -107,7 +104,7 @@ export const ar: TranslationDictionary = {
   "Working bounded prototype": "نموذج أولي عامل ومحدود النطاق",
   "Pre-seed": "مرحلة ما قبل التمويل الأولي",
   "Founder-led": "يقوده المؤسس",
-  "Abu Dhabi relocation planned": "الانتقال إلى أبوظبي مخطط له",
+  "No capital raised": "لم يُجمَع أيُّ رأس مال",
   "Inspect a verified receipt": "فحص إيصال متحقَّق منه",
   "Request a technical evaluation": "طلب تقييم تقني",
   "Formal replay within a declared scope. General AI and external capability superiority are not claimed.":
@@ -339,9 +336,6 @@ export const ar: TranslationDictionary = {
   "Persistent policy sidecar with exact fallback only after prior controls close.":
     "وحدة جانبية لسياسة مستديمة، مع رجوع مطابق لا يُفعّل إلا بعد إغلاق الضوابط السابقة.",
 
-  "WHY ABU DHABI": "لماذا أبوظبي",
-  "Abu Dhabi is GALO’s planned operating base — not a satellite office.":
-    "أبوظبي هي قاعدة التشغيل التي يخطّط لها GALO — لا مكتبًا فرعيًّا.",
   "The next stage needs technical evaluation partners, company formation, focused hiring, and access to a serious AI infrastructure ecosystem in one place.":
     "تحتاج المرحلة التالية إلى شركاء للتقييم التقني، وإلى تأسيس الشركة، وتوظيفٍ مركَّز، وإلى منظومة جادّة للبنية التحتية للذكاء الاصطناعي مجتمعةً في مكان واحد.",
   "AI ecosystem": "منظومة الذكاء الاصطناعي",
@@ -351,11 +345,7 @@ export const ar: TranslationDictionary = {
   "Proximity to enterprise, government, and sovereign-AI teams able to define bounded partner-owned settings.":
     "القرب من فرق المؤسسات والحكومات والذكاء الاصطناعي السيادي، وهي القادرة على تحديد بيئاتٍ محدودة يملكها الشريك.",
   "Company building": "بناء الشركة",
-  "A base for incorporation, relocation, hiring, legal operations, finance, and the next fundraising evidence.":
-    "قاعدة للتأسيس والانتقال والتوظيف والعمليات القانونية والتمويلية وبناء أدلة الجولة التالية.",
   "12-MONTH CONTRIBUTION PLAN": "خطة مساهمة لمدة 12 شهرًا",
-  "Build the external-evidence layer from Abu Dhabi.": "بناء طبقة الأدلة الخارجية من أبوظبي.",
-  "Relocate the founder and establish the operating company": "انتقال المؤسس وتأسيس الشركة التشغيلية",
   "Hire a founding systems engineer and research/evaluation engineer": "توظيف مهندس أنظمة مؤسس ومهندس للبحث والتقييم",
   "Release a private Runtime and World Atlas alpha": "إصدار نسخة Alpha خاصة من Runtime وWorld Atlas",
   "Complete two partner-grade technical evaluations": "إكمال تقييمين تقنيين بمستوى مناسب للشركاء",
@@ -363,15 +353,21 @@ export const ar: TranslationDictionary = {
     "استهداف تجربة رائدة واحدة، ملتزَمٍ بها أو مدفوعة الأجر، وإعداد أدلّة جولة التمويل الأولي",
   "No programme selection, partnership, or endorsement is implied.":
     "لا يُفهم من ذلك أي اختيار في برنامج أو شراكة أو تأييد.",
+  "THE NEXT TWELVE MONTHS": "الأشهر الاثنا عشر المقبلة",
+  "What is not true yet, and the plan written so somebody else can mark it.":
+    "ما لم يتحقّق بعد، وخطةٌ كُتبت كي يضع عليها غيرُنا علاماته.",
+  "Read how the engine works, then where to attack it": "اقرأ كيف يعمل المحرّك، ثمّ من أين تهاجمه",
 
   "FOUNDER / ARCHITECT": "المؤسس / مهندس البنية",
   FOUNDER: "المؤسس",
   "Founder-led research, built with adversarial claim discipline.":
     "بحث يقوده المؤسس، ينضبط بأن تُختبر كلّ دعوى بما قد يدحضها.",
-  RELOCATION: "الانتقال",
+  "TEAM TODAY": "الفريق اليوم",
+  "One person. Neither of the two first hires has been made.":
+    "شخصٌ واحد، ولم يُوظَّف بعدُ أيٌّ من التعيينَين الأوَّلَين.",
   "FOUNDING TEAM PLAN": "خطة الفريق المؤسس",
-  "Systems engineering · Research/evaluation · Abu Dhabi partnerships":
-    "هندسة الأنظمة · البحث والتقييم · شراكات أبوظبي",
+  "Systems engineering · Research/evaluation · Industrial partnerships":
+    "هندسة الأنظمة · البحث والتقييم · الشراكات الصناعية",
   "NEXT CONVERSATION": "المحادثة التالية",
   "Evaluate the architecture on a bounded problem.": "قيّم البنية على مسألة محدودة.",
   "Bring partner-owned sequential data, a falsifiable outcome, and a setting where explicit state and replay matter.":

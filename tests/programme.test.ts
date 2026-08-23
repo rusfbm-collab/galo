@@ -36,7 +36,7 @@ describe("assessment dossier", () => {
   });
 
   it("keeps the negative lines in the table rather than in a footnote", () => {
-    expect(assessmentTable).toHaveLength(12);
+    expect(assessmentTable).toHaveLength(11);
 
     const negative = assessmentTable.filter((row) => row.status === "NONE" || row.status === "NOT ESTABLISHED");
     expect(negative).toHaveLength(6);

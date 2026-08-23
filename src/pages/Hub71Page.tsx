@@ -31,7 +31,7 @@ const contents = [
 ] as const;
 
 const positiveStatuses = new Set(["ESTABLISHED"]);
-const neutralStatuses = new Set(["PARTIAL", "STATED, NOT DONE", "NOT DISCLOSED"]);
+const neutralStatuses = new Set(["PARTIAL", "NOT DISCLOSED"]);
 
 function statusTone(status: string) {
   if (positiveStatuses.has(status)) return "is-established";
@@ -281,7 +281,7 @@ export function Hub71Page() {
             eyebrow={t("APPENDIX")}
             title={t("Application materials, kept here rather than at the top.")}
             text={t(
-              "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: twelve assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.",
+              "This used to be the whole page, which made a document written for one assessor stand in front of everybody else. It is still on the record, folded down: eleven assessment lines, twelve months with the observation that would show each was missed, the questions we expect to be pressed on, and the facts a website is the wrong place for.",
             )}
           />
           <div className="engine-affiliation">
@@ -290,7 +290,7 @@ export function Hub71Page() {
           </div>
 
           <details className="engine-dossier">
-            <summary>{t("Twelve assessment lines, six of them negative")}</summary>
+            <summary>{t("Eleven assessment lines, six of them negative")}</summary>
             <div className="engine-dossier__table-wrap" role="region" tabIndex={0} aria-label={t("Assessment lines")}>
               <table className="engine-dossier__table">
                 <thead>

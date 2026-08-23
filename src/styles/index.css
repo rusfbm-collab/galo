@@ -1986,19 +1986,19 @@ html[lang="ar"] .claim-table__row {
   font-size: 0.82rem;
 }
 
-/* Abu Dhabi */
+/* Twelve-month commitments */
 
-.section--abu-dhabi {
+.section--commitments {
   background: #eef2f0;
 }
 
-.abu-grid {
+.commitment-grid {
   display: grid;
   gap: 14px;
   grid-template-columns: repeat(3, 1fr);
 }
 
-.abu-grid article {
+.commitment-grid article {
   min-height: 250px;
   border: 1px solid #d5dfda;
   border-radius: 23px;
@@ -2006,18 +2006,18 @@ html[lang="ar"] .claim-table__row {
   background: rgba(255, 255, 255, 0.68);
 }
 
-.abu-grid article > span {
+.commitment-grid article > span {
   color: var(--teal-deep);
   font-family: var(--font-mono);
   font-size: 0.64rem;
 }
 
-.abu-grid h3 {
+.commitment-grid h3 {
   margin: 78px 0 10px;
   font-size: 1.12rem;
 }
 
-.abu-grid p {
+.commitment-grid p {
   margin: 0;
   color: var(--muted);
   font-size: 0.82rem;
@@ -2095,7 +2095,7 @@ html[lang="ar"] .claim-table__row {
   text-transform: uppercase;
 }
 
-.abu-dossier-link {
+.dossier-link {
   margin-top: 22px;
 }
 
@@ -7161,7 +7161,7 @@ html[dir="rtl"] .theory-law-card__symbol {
     max-width: 680px;
   }
   .use-case-grid,
-  .abu-grid,
+  .commitment-grid,
   .metric-grid,
   .replay-status-grid,
   .evidence-layer-grid,
@@ -7456,10 +7456,10 @@ html[dir="rtl"] .theory-law-card__symbol {
     gap: 7px;
     grid-template-columns: 1fr;
   }
-  .abu-grid article {
+  .commitment-grid article {
     min-height: 220px;
   }
-  .abu-grid h3 {
+  .commitment-grid h3 {
     margin-top: 55px;
   }
   .twelve-month-plan {

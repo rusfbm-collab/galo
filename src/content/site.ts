@@ -17,7 +17,7 @@ export const siteContent = {
     role: "Founder & Chief Architect",
     bio: "Ruslan originated the GALO multipolar architecture, designed its frozen PLUS/STAR kernel and graph-free World Atlas model, and directed a multi-stage experimental programme across explicit memory, adaptive resolution, local revision, candidate-universe control, and deterministic replay. He established a red-team discipline that requires over-stated claims to be withdrawn or downgraded when stronger controls fail.",
     currentLocation: null as string | null,
-    relocation: "Plans to relocate to Abu Dhabi and build the operating team there if selected.",
+    relocation: null as string | null,
     education: null as string | null,
     previousEmployment: null as string | null,
     ipOwnership: null as string | null,
