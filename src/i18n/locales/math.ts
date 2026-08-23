@@ -269,7 +269,7 @@ export const mathAr: TranslationDictionary = {
   "PLUS formula": "صيغة PLUS",
   "STAR formula": "صيغة STAR",
   "Generated locally from the displayed formula. Educational view — not a live engine, Atlas, or replay.":
-    "تم إنشاؤه محليًا من الصيغة المعروضة. عرض تعليمي — وليس محركًا حيًا أو Atlas أو إعادة تشغيل.",
+    "أُنشئ محليًا من الصيغة المعروضة. عرض تعليمي — وليس محركًا حيًا أو Atlas أو إعادة تشغيل.",
   "HOW TO READ THE TABLE": "كيفية قراءة الجدول",
   "Three coordinates, one deterministic answer.": "ثلاثة إحداثيات، وإجابة حتمية واحدة.",
   "Pick the left operand": "اختر المُعامَل الأيسر",

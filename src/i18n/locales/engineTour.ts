@@ -689,7 +689,7 @@ export const engineTourAr: TranslationDictionary = {
   "A separate part of the system decides whether the move may be admitted. It can also say no.":
     "جزءٌ منفصل من النظام يقرّر أيُجاز هذا الفعل، وله أن يقول لا.",
   "A stored relation is not a verdict here. What is stored is the state of a decision and how it was reached.":
-    "العلاقة المخزَّنة ليست حكمًا هنا. المخزَّن هو حالة القرار وكيف بُلغ إليه.",
+    "العلاقة المخزَّنة ليست حكمًا هنا. المخزَّن هو حالة القرار وكيف انتُهي إليه.",
   "A strong mechanism on controlled tasks is not a demonstrated gain on a plant floor, and this page does not treat it as one.":
     "آليةٌ قوية في مهامّ مضبوطة ليست مكسبًا مُثبَتًا على أرض المصنع، ولا تعدُّها هذه الصفحة كذلك.",
   "A very large reference work":
@@ -715,7 +715,7 @@ export const engineTourAr: TranslationDictionary = {
   "Application materials, kept here rather than at the top.":
     "مواد الطلب، هنا لا في الأعلى.",
   "Be argued with by the part that learned":
-    "أن تجادله الجهةُ التي تعلَّمت",
+    "أن يجادله الجزءُ الذي تعلَّم",
   "Change between two runs of the same release":
     "أن يتغيّر بين تشغيلين للإصدار نفسه",
   "Change what counts as permitted":
@@ -723,23 +723,23 @@ export const engineTourAr: TranslationDictionary = {
   "Cyc":
     "Cyc",
   "Cyc is the comparison most people reach for. It is not what this is: nobody here is writing the world down.":
-    "Cyc هي المقارنة التي يلجأ إليها معظم الناس. وليس هذا هو: لا أحد هنا يكتب العالم.",
+    "Cyc هي المقارنة التي يلجأ إليها معظم الناس، وليس هذا منها في شيء: فلا أحد هنا يدوّن العالم.",
   "Declare what is true":
-    "أن يُعلن ما هو حق",
+    "أن يُعلن ما هو صحيح",
   "Each of these families is real work done by serious people, and several are far ahead of this project in engineering. The difference drawn below is about where the authority sits, and about nothing else.":
     "كلٌّ من هذه العائلات عملٌ حقيقي أنجزه أناسٌ جادّون، وبعضها متقدّمٌ على هذا المشروع هندسيًا بمراحل. والفرق المرسوم أدناه يخصّ موضع السلطة وحده، لا شيء غيره.",
   "Engine tour navigation":
     "التنقل في شرح المحرك",
   "Every family here is a serious body of work, and several are decades ahead in engineering. The figure draws one difference and nothing else: whether the part that produces an answer is the same part that vouches for it. Where they are the same object, accepting the answer means accepting that object.":
-    "كلُّ عائلةٍ هنا رصيدٌ جادٌّ من العمل، وبعضها متقدّمٌ هندسيًا بعقود. ويرسم الشكل فرقًا واحدًا لا غير: أيكون الجزء الذي يُنتج الجواب هو نفسه الذي يضمنه؟ وحين يكونان شيئًا واحدًا، فقبولُ الجواب قبولٌ لذلك الشيء.",
+    "كلُّ عائلةٍ هنا حصيلةُ عملٍ جادّ، وبعضها متقدّمٌ هندسيًا بعقود. ويرسم الشكل فرقًا واحدًا لا غير: أيكون الجزء الذي يُنتج الجواب هو نفسه الذي يضمنه؟ وحين يكونان شيئًا واحدًا، فقبولُ الجواب قبولٌ لذلك الشيء.",
   "Every number was produced by the project, on its own data, with its own evaluator. That is honest and it is not independence, and it is the single largest gap.":
     "كلُّ رقمٍ أنتجه المشروع بنفسه على بياناته بمُقيِّمه. وذلك صدقٌ لا استقلال، وهو أكبر الفجوات على الإطلاق.",
   "Facts a website is the wrong place for":
-    "وقائع الموقعُ ليس مكانها",
+    "وقائع ليس الموقعُ مكانها",
   "Fill a gap to produce an answer":
     "أن يملأ فراغًا لينتج جوابًا",
   "Fitted weights":
-    "أوزانٌ مضبوطة",
+    "أوزانٌ مُلائَمة",
   "Five things a reader arrives assuming, answered without scoring anybody.":
     "خمسة أمور يفترضها القارئ عند وصوله، مُجابٌ عنها دون تسجيل نقاطٍ على أحد.",
   "Four directions, depending on what you would need to see.":
@@ -755,7 +755,7 @@ export const engineTourAr: TranslationDictionary = {
   "Hand-built axioms":
     "بديهيات مبنيَّة يدويًا",
   "How GALO Works — The Mechanism, Without Taking It On Trust":
-    "كيف يعمل GALO — الآلية، دون أخذها على الثقة",
+    "كيف يعمل GALO — الآلية، دون التسليم بها",
   "How GALO works. No formulas, and no need to trust the brand.":
     "كيف يعمل GALO. بلا صيغ، ودون حاجةٍ للثقة بالاسم.",
   "How the engine works":
@@ -781,7 +781,7 @@ export const engineTourAr: TranslationDictionary = {
   "It can make the search cheaper. It cannot make the answer right.":
     "يستطيع أن يجعل البحث أقلَّ كلفة. ولا يستطيع أن يجعل الجواب صحيحًا.",
   "It holds no conversation. It sits next to one perfectly well and does a different job.":
-    "لا يجري محادثة. وينسجم تمامًا إلى جانب واحدٍ منها ويؤدي عملًا آخر.",
+    "لا يجري محادثة. ويعمل جنبًا إلى جنب مع واحدٍ منها بلا مشكلة، فعملُه غير عمله.",
   "It is the only part allowed to say yes, and it is allowed to say no.":
     "هو الجزء الوحيد الذي يجوز له أن يقول نعم، ويجوز له أيضًا أن يقول لا.",
   "It looks for which earlier conclusions the change actually touches.":
@@ -789,13 +789,13 @@ export const engineTourAr: TranslationDictionary = {
   "It shows which of them can still be treated as permitted, and on what grounds.":
     "ويُظهر أيَّها لا يزال يمكن عدُّه مسموحًا به، وعلى أي أساس.",
   "LAW AND CHECKING":
-    "القانون والتحقق",
+    "القانون والفحص",
   "LEARNING AND SEARCH":
     "التعلُّم والبحث",
   "Language models":
     "نماذج اللغة",
   "Law and checking":
-    "القانون والتحقق",
+    "القانون والفحص",
   "Learning and search":
     "التعلُّم والبحث",
   "Learning can make the search cheaper. It cannot make the answer right.":
@@ -803,7 +803,7 @@ export const engineTourAr: TranslationDictionary = {
   "Learning exists here and never carries authority. The part that admits a result is not the part that learned.":
     "التعلُّم موجودٌ هنا ولا يحمل السلطة أبدًا. فالجزء الذي يُجيز النتيجة ليس الجزء الذي تعلَّم.",
   "Learning may suggest where to look first. It never gets to sign the verdict.":
-    "قد يقترح التعلُّم أين يُنظَر أولًا. ولا يُتاح له قط أن يوقّع الحكم.",
+    "قد يقترح التعلُّم أين يُنظَر أولًا. ولا يُتاح له قطُّ أن يوقّع على الحكم.",
   "Learning proposes":
     "التعلُّم يقترح",
   "Learning proposes above the line; the check decides below it":
@@ -815,15 +815,15 @@ export const engineTourAr: TranslationDictionary = {
   "May not":
     "لا يجوز",
   "Measured against the identical system with its learned volume removed — same engine, same candidates, same budget. That comparator is what makes the number about learning rather than about search size.":
-    "قِيس في مقابل النظام نفسه وقد نُزع مجلَّده المُتعلَّم — المحرك نفسه، والمرشحون أنفسهم، والميزانية نفسها. وبهذا المُقارِن يصير الرقمُ قولًا في التعلُّم لا في حجم البحث.",
+    "قِيس في مقابل النظام نفسه وقد نُزع رصيدَه المُتعلَّم — المحرك نفسه، والمرشحون أنفسهم، والميزانية نفسها. وبهذا المُقارِن يصير الرقمُ قولًا في التعلُّم لا في حجم البحث.",
   "No partner has run any of this on their own data":
     "لم يشغّل أي شريك شيئًا من هذا على بياناته",
   "Nobody is writing the world down. The scope is small enough to be enumerated, on purpose.":
-    "لا أحد يكتب العالم. والنطاق صغيرٌ بما يكفي لتعداده، عن قصد.",
+    "لا أحد يدوّن العالم. والنطاق صغيرٌ بما يكفي لتعداده، عن قصد.",
   "Not":
     "ليس",
   "Not claimed anywhere on this site, and the boundary is published rather than implied.":
-    "غير مُدَّعىً في أي موضع من هذا الموقع، والحدُّ منشورٌ لا مُلمَّحٌ إليه.",
+    "غير مُدَّعًى في أي موضع من هذا الموقع، والحدُّ منشورٌ لا مُلمَّحٌ إليه.",
   "Nothing in this chain names a component. It is the shape of one turn: something arrives, the system works out what it touches, what may still be done about it, and whether the result may be admitted — then writes down enough for somebody else to walk the same path.":
     "لا وصلةَ في هذه السلسلة تسمّي مكوِّنًا. إنها شكل دورةٍ واحدة: يصل شيء، فيستبين النظام ما مسّه، وما لا يزال ممكنًا فعله حياله، وأيُجاز الناتج — ثم يدوّن ما يكفي ليسلك غيرُه المسار نفسه.",
   "ONE CHANGE, CARRIED THROUGH":
@@ -897,7 +897,7 @@ export const engineTourAr: TranslationDictionary = {
   "The least dramatic situation available, which is also the one this is for.":
     "أقلُّ المواقف إثارةً على الإطلاق، وهو نفسه الموقف الذي وُجد هذا من أجله.",
   "The measured path of the published results does not include the tower, the typed routes or the verifier, so their contribution is not established.":
-    "لا يشمل مسارُ القياس في النتائج المنشورة البرجَ ولا المسارات المصنَّفة ولا المدقّق، فإسهامها غير مُثبَت.",
+    "لا يشمل مسارُ القياس في النتائج المنشورة البرجَ ولا المسارات المحددة النوع ولا المدقّق، فإسهامها غير مُثبَت.",
   "The measured results, with the comparator each was run against":
     "النتائج المقيسة، ومع كلٍّ منها المُقارِن الذي جرى في مقابله",
   "The mechanism in ten minutes, then where to attack it.":
@@ -937,7 +937,7 @@ export const engineTourAr: TranslationDictionary = {
   "Twelve months, each with the observation that would show it was missed":
     "اثنا عشر شهرًا، لكلٍّ منها الملاحظة التي تُظهر أنه لم يتحقّق",
   "Two lanes with a solid line between them. The upper lane, learning and search, holds three candidates and may reorder them. The lower lane, law and checking, returns one of three verdicts: admit, refuse, or not yet. Only candidates cross downward, and only verdicts come back.":
-    "شريطان بينهما خطٌّ متصل. الشريط الأعلى، التعلُّم والبحث، يحمل ثلاثة مرشحين وله أن يعيد ترتيبهم. والشريط الأدنى، القانون والتحقق، يعيد أحد ثلاثة أحكام: إجازة أو رفض أو «ليس بعد». ولا يعبر نزولًا إلا مرشح، ولا يعود إلا حكم.",
+    "شريطان بينهما خطٌّ متصل. الشريط الأعلى، التعلُّم والبحث، يحمل ثلاثة مرشحين وله أن يعيد ترتيبهم. والشريط الأدنى، القانون والفحص، يعيد أحد ثلاثة أحكام: إجازة أو رفض أو «ليس بعد». ولا يعبر نزولًا إلا مرشح، ولا يعود إلا حكم.",
   "Two roles, and the line between them":
     "دوران والخطُّ بينهما",
   "VOUCHES":

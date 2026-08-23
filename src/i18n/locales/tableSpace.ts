@@ -157,7 +157,7 @@ export const tableSpaceAr: TranslationDictionary = {
   "k role slots":
     "k من خانات الأدوار",
   "{cells} typed cells":
-    "{cells} خلية مصنَّفة",
+    "{cells} خلية محددة النوع",
   "A frame is the two tables, plus three declarations about how to read them.":
     "الإطار هو الجدولان نفسهما، مضافًا إليهما ثلاثة إعلانات عن كيفية قراءتهما.",
   "A program is not written in the open. It is written inside a frame: a local scene that has already declared which level it works at, which two tables it reads, and how many places it has. The frame is where the tables stop being arithmetic and start being a thing you can state a relation in.":
@@ -185,7 +185,7 @@ export const tableSpaceAr: TranslationDictionary = {
   "Nothing new is invented at this step. A frame is a local scene in which a relation can be stated and checked, and everything inside it is a cell of the same two frozen tables — which is why a frame can be handed to somebody else and read the same way.":
     "لا يُبتكَر شيءٌ في هذه الخطوة. الإطار مشهدٌ محلي يمكن أن تُصاغ فيه علاقةٌ ويُتحقَّق منها، وكلُّ ما فيه خليةٌ من الجدولين المجمَّدَين نفسيهما. ولهذا يمكن تسليم الإطار إلى غيرك فيُقرأ القراءة نفسها.",
   "PLUS and STAR at every level — {tables} tables, {cells} typed cells, frozen before anything runs":
-    "PLUS وSTAR في كل مستوى — {tables} جدولًا و{cells} خلية مصنَّفة، مجمَّدة قبل أن يجري أي شيء",
+    "PLUS وSTAR في كل مستوى — {tables} جدولًا و{cells} خلية محددة النوع، مجمَّدة قبل أن يجري أي شيء",
   "POSSIBLE TABLES":
     "الجداول الممكنة",
   "Past 10^41 to choose from at L7. Two are declared, and then frozen.":

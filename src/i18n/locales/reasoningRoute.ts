@@ -648,11 +648,11 @@ export const reasoningRouteAr: TranslationDictionary = {
   "A structure is weakened by a counterexample rather than deleted quietly, and everything derived from it loses force with it. So a structure that turns out to be wrong leaves a trail instead of disappearing from the story.":
     "تضعُف البنية بمثالٍ مضادّ لا بحذفٍ صامت، ويسقط معها كلُّ ما اشتُقَّ منها. فالبنية التي تتبيَّن خطأها تترك أثرًا بدل أن تختفي من الحكاية.",
   "A written-out route with declared phases, a counted budget, and a typed outcome at the end of it.":
-    "مسارٌ مكتوبٌ بمراحل معلنة، وميزانيةٍ محسوبة، ونتيجةٍ مصنَّفة في نهايته.",
+    "مسارٌ مكتوبٌ بمراحل معلنة، وميزانيةٍ محسوبة، ونتيجةٍ محددة النوع في نهايته.",
   "An invariant was broken":
     "انتُهك لازم",
   "An upper band with three solid boxes labelled receipts, learned volume, and proven structures, and a lower band drawn with a dashed border containing two boxes labelled weights and wider verdict, each marked with a cross.":
-    "شريطٌ علويّ فيه ثلاثة مربّعاتٍ صُلبة: الإيصالات، والمجلَّد المُتعلَّم، والبنى المُثبَتة؛ وشريطٌ سفليّ مرسومٌ بإطارٍ متقطّع يضمّ مربّعين معلَّمين بعلامة شطب: الأوزان والحكم الأوسع.",
+    "شريطٌ علويّ فيه ثلاثة مربّعاتٍ صُلبة: الإيصالات، والرصيد المُتعلَّم، والبنى المُثبَتة؛ وشريطٌ سفليّ مرسومٌ بإطارٍ متقطّع يضمّ مربّعين معلَّمين بعلامة شطب: الأوزان والحكم الأوسع.",
   "Any change to what is permitted":
     "أيّ تغييرٍ لما هو مسموح به",
   "Append-only and linked back to the observation it came from, so what was learned cannot be shown without the episodes that produced it. A record is read by people and by replay tooling, never by the decision path of a later episode.":
@@ -662,9 +662,9 @@ export const reasoningRouteAr: TranslationDictionary = {
   "Candidates are enumerated from the declared laws rather than proposed by a model. Because completeness is checked instead of assumed, an incomplete portfolio is itself a recorded outcome: the route stops and names the part it could not open, rather than continuing over a space it cannot vouch for.":
     "يُعدَّد المرشحون من القوانين المعلنة، ولا يقترحهم نموذج. والاكتمال يُفحص ولا يُفترض، فالمحفظة الناقصة نتيجةٌ مسجَّلة بذاتها: يتوقّف المسار ويسمّي الجزء الذي تعذّر عليه فتحه، بدل أن يمضي فوق فضاءٍ لا يضمنه.",
   "Counters and learned orders over what to try first, held in a volume that can be detached.":
-    "عدّادات وترتيباتٌ مُتعلَّمة لما يُجرَّب أولًا، محفوظةٌ في مجلَّدٍ يمكن فصله.",
+    "عدّادات وترتيباتٌ مُتعلَّمة لما يُجرَّب أولًا، محفوظةٌ في رصيدٍ يمكن فصله.",
   "Detachable is the operative word. The same engine runs with the volume mounted and with it removed, and the difference between those two runs is what every published learning number measures. Nothing in the volume is a weight, and nothing in it can widen what is permitted.":
-    "الكلمة المفتاح هي «قابل للفصل». يعمل المحرك نفسه والمجلَّد مركَّب ويعمل وقد نُزع، والفرق بين هذين التشغيلين هو ما يقيسه كلُّ رقمِ تعلُّمٍ منشور. وليس في المجلَّد وزنٌ واحد، ولا فيه ما يستطيع توسيع ما هو مسموح به.",
+    "الكلمة المفتاح هي «قابل للفصل». يعمل المحرك نفسه والرصيد مركَّب ويعمل وقد نُزع، والفرق بين هذين التشغيلين هو ما يقيسه كلُّ رقمِ تعلُّمٍ منشور. وليس في الرصيد وزنٌ واحد، ولا فيه ما يستطيع توسيع ما هو مسموح به.",
   "Does one lawful whole come out of what survived?":
     "هل يخرج من الباقي كلٌّ مشروعٌ واحد؟",
   "Durable state is updated, and only durable state":
@@ -680,7 +680,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "Every step has a price, and the budget is finite":
     "لكلِّ خطوةٍ ثمن، والميزانية منتهية",
   "Everything an episode leaves behind can be listed. That is what makes a later disagreement resolvable: two runs can be compared register by register instead of being argued about — and the learned volume can simply be removed, which is how every published learning number was measured.":
-    "كلُّ ما تتركه الحلقة وراءها يمكن تعداده. وهذا ما يجعل الخلاف اللاحق قابلًا للحسم: يمكن مقارنة تشغيلين سجلًا بسجلّ بدل التنازع فيهما — والمجلَّد المُتعلَّم يمكن نزعه ببساطة، وهكذا قِيس كلُّ رقمِ تعلُّمٍ منشور.",
+    "كلُّ ما تتركه الحلقة وراءها يمكن تعداده. وهذا ما يجعل الخلاف اللاحق قابلًا للحسم: يمكن مقارنة تشغيلين سجلًا بسجلّ بدل التنازع فيهما — والرصيد المُتعلَّم يمكن نزعه ببساطة، وهكذا قِيس كلُّ رقمِ تعلُّمٍ منشور.",
   "Executable local maps are built":
     "تُبنى خرائط محلية قابلة للتنفيذ",
   "Four constraints do the work, and none of them is an intention.":
@@ -698,7 +698,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "It cannot. The budget is finite and counted as it is spent, and exhausting it is a lawful outcome with a named cause. An episode ends on a settled answer or on a boundary, never on having tried for long enough.":
     "لا يستطيع. الميزانية منتهية وتُحسب وهي تُنفَق، ونفادها نتيجةٌ مشروعة بسببٍ مسمّى. تنتهي الحلقة بجوابٍ محسوم أو بحدّ، ولا تنتهي قطُّ لمجرّد أنها حاولت بما يكفي من الوقت.",
   "It is not, and the gap is published rather than glossed. The measuring path of the sealed campaigns is a counting ranker reading a learned volume; the tower, the typed routes, and the verifier are not in that path, so their joint contribution is not established. An end-to-end run that would settle it is the next registered step.":
-    "ليس كذلك، والفجوة منشورةٌ لا مطموسة. فمسار القياس في الحملات المختومة مرتِّبٌ عدَّاديّ يقرأ مجلَّدًا مُتعلَّمًا؛ أما البرج والمسارات المصنَّفة والمدقّق فليست في ذلك المسار، ولذلك لم يثبت إسهامها المشترك. والتشغيل الشامل الذي يحسم ذلك هو الخطوة المسجَّلة التالية.",
+    "ليس كذلك، والفجوة منشورةٌ لا مطموسة. فمسار القياس في الحملات المختومة مرتِّبٌ عدَّاديّ يقرأ رصيدًا مُتعلَّمًا؛ أما البرج والمسارات المحددة النوع والمدقّق فليست في ذلك المسار، ولذلك لم يثبت إسهامها المشترك. والتشغيل الشامل الذي يحسم ذلك هو الخطوة المسجَّلة التالية.",
   "Lawful models become executable local maps, and any already-proven structure whose signature matches is consumed instead of being rebuilt.":
     "تصير النماذج المشروعة خرائط محلية قابلة للتنفيذ، وكلُّ بنيةٍ مُثبَتة سلفًا يطابق توقيعُها تُستهلَك بدل أن تُبنى من جديد.",
   "Learning opens only after an outside disclosure":
@@ -772,7 +772,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The environment or the Atlas does not match the checkpoint being resumed.":
     "لا تطابق البيئةُ أو Atlas نقطةَ التفتيش التي يجري استئنافها.",
   "The episode closes on a typed terminal, and its state and checkpoint are sealed so the route can be resumed with an identical result.":
-    "تُغلَق الحلقة على طرفٍ مصنَّف، وتُختَم حالتُها ونقطةُ تفتيشها ليُستأنَف المسار بنتيجةٍ مطابقة.",
+    "تُغلَق الحلقة على طرفٍ محدد النوع، وتُختَم حالتُها ونقطةُ تفتيشها ليُستأنَف المسار بنتيجةٍ مطابقة.",
   "The episode is rejected rather than repaired. A rejection says the run was not lawful at all, which is a different statement from a boundary and is kept separate in the record.":
     "تُرفض الحلقة ولا تُصلَح. والرفض يقول إن التشغيل لم يكن مشروعًا أصلًا، وهذه عبارةٌ غير عبارة الحدّ، وتُحفظ منفصلةً عنها في السجل.",
   "The episode is sealed":
@@ -788,7 +788,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The evidence does not distinguish, or the probe taken is not the probe that was declared.":
     "لا تفرّق الأدلة، أو أن المسبار المأخوذ ليس المسبار المعلن.",
   "The frozen release holds its learning counters at zero by construction, so two runs of it separated by a thousand others behave identically. The learning described on this page belongs to the sealed programme, which is a different artefact measured against itself with its learned volume detached.":
-    "يُبقي الإصدار المجمَّد عدّادات تعلُّمه عند الصفر بحكم البناء، فتشغيلان له يفصل بينهما ألفُ تشغيلٍ آخر يسلكان السلوك نفسه. أما التعلُّم الموصوف في هذه الصفحة فينتمي إلى البرنامج المختوم، وهو مُنتَجٌ آخر قِيس في مقابل نفسه وقد نُزع مجلَّدها المُتعلَّم.",
+    "يُبقي الإصدار المجمَّد عدّادات تعلُّمه عند الصفر بحكم البناء، فتشغيلان له يفصل بينهما ألفُ تشغيلٍ آخر يسلكان السلوك نفسه. أما التعلُّم الموصوف في هذه الصفحة فينتمي إلى البرنامج المختوم، وهو مُنتَجٌ آخر قِيس في مقابل نفسه وقد نُزع رصيدُها المُتعلَّم.",
   "The frozen release performs one step, and every value in it can be recomputed.":
     "يؤدّي الإصدار المجمَّد خطوةً واحدة، وكلُّ قيمةٍ فيها يمكن إعادة حسابها.",
   "The interesting question about any decision-making system is what it carries forward, because that is what a later behaviour depends on. Two of the three carried registers hold something that was learned — which is why the second one can be detached and the same engine run without it.":
@@ -796,11 +796,11 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The laws, the candidate set, and the verifier's authority are frozen with respect to everything above. An episode may end up doing less work than the one before it; it may not end up being allowed more.":
     "القوانين ومجموعة المرشحين وصلاحية المدقّق مجمَّدةٌ تجاه كل ما سبق. قد تنتهي الحلقة بعملٍ أقلَّ من سابقتها؛ ولا يمكن أن تنتهي بأن يُسمح لها بأكثر.",
   "The learned volume":
-    "المجلَّد المُتعلَّم",
+    "الرصيد المُتعلَّم",
   "The outcome is disclosed from outside":
     "تُكشَف النتيجة من الخارج",
   "The outcome is typed, not scored":
-    "النتيجة مصنَّفة لا مُسجَّلة بدرجة",
+    "النتيجة محددة النوع لا مُسجَّلة بدرجة",
   "The outcome of the action is disclosed by an external evaluator, and its record is required before the route may continue.":
     "يكشف مُقيِّمٌ خارجي نتيجةَ الفعل، ويُشترط سجلُّه قبل أن يستطيع المسار المضيّ.",
   "The policy snapshot the intent was formed against is no longer current.":
@@ -830,11 +830,11 @@ export const reasoningRouteAr: TranslationDictionary = {
   "The surviving maps are composed into a single multi-place structure, and proven structures are applied again wherever they cover it.":
     "تُركَّب الخرائط الباقية في بنيةٍ واحدة متعدّدة المواضع، وتُطبَّق البنى المُثبَتة ثانيةً حيثما غطّتها.",
   "The word names a written-out route with declared phases, a counted budget, and a typed outcome. No claim about cognition, understanding, or awareness is made here or anywhere else on this site.":
-    "تسمّي الكلمةُ مسارًا مكتوبًا بمراحل معلنة وميزانيةٍ محسوبة ونتيجةٍ مصنَّفة. ولا يُقدَّم أي ادعاءٍ عن الإدراك أو الفهم أو الوعي، لا هنا ولا في أي موضعٍ آخر من هذا الموقع.",
+    "تسمّي الكلمةُ مسارًا مكتوبًا بمراحل معلنة وميزانيةٍ محسوبة ونتيجةٍ محددة النوع. ولا يُقدَّم أي ادعاءٍ عن الإدراك أو الفهم أو الوعي، لا هنا ولا في أي موضعٍ آخر من هذا الموقع.",
   "The work budget is spent":
     "نفدت ميزانية العمل",
   "There are no weights, and there is learning. What is learned is where to look and in what order, held in a volume that can be detached; what may never be learned is the verdict. The measured results, and the comparator they were measured against, are on the evidence page.":
-    "لا أوزان، وثمّة تعلُّم. المُتعلَّم هو أين يُبحَث وبأي ترتيب، محفوظًا في مجلَّدٍ يمكن فصله؛ وما لا يُتعلَّم أبدًا هو الحكم. أما النتائج المقيسة والمُقارِن الذي قِيست في مقابله فعلى صفحة الأدلة.",
+    "لا أوزان، وثمّة تعلُّم. المُتعلَّم هو أين يُبحَث وبأي ترتيب، محفوظًا في رصيدٍ يمكن فصله؛ وما لا يُتعلَّم أبدًا هو الحكم. أما النتائج المقيسة والمُقارِن الذي قِيست في مقابله فعلى صفحة الأدلة.",
   "This is not the route above; it is one bounded step of the frozen kernel release, which performs no policy update at all. It is here because it is the part of the system with the hardest numbers attached: the space is closed before the run starts, every cut is a rule anyone can read, and the ordering can be recomputed from the record alone.":
     "هذا ليس المسار أعلاه؛ إنه خطوةٌ واحدة محدودة من إصدار النواة المجمَّد، وهو لا يُحدِّث السياسة البتّة. وهو هنا لأنه الجزء الذي تتعلّق به أصلب الأرقام: الفضاء مغلقٌ قبل أن يبدأ التشغيل، وكلُّ تضييقٍ قاعدةٌ يستطيع أي أحدٍ قراءتها، والترتيب يُعاد حسابه من السجل وحده.",
   "This is where knowledge gets used rather than merely stored. When a proven structure covers a signature the episode needs, the step is taken from that structure and the shortcut leaves its own record — so a reduction in work can always be pointed at, instead of appearing as an unexplained improvement.":
@@ -886,7 +886,7 @@ export const reasoningRouteAr: TranslationDictionary = {
   "dashed: a lawful exit, reachable from any phase":
     "متقطّع: مخرجٌ مشروع يُبلَغ من أي مرحلة",
   "detach the volume and the same engine runs without it":
-    "انزع المجلَّد ويعمل المحرك نفسه من دونه",
+    "انزع الرصيد ويعمل المحرك نفسه من دونه",
   "lawful, unsettled":
     "مشروع، غير محسوم",
   "solid: a phase of the route":

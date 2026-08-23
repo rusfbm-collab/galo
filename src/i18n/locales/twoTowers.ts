@@ -153,11 +153,11 @@ export const twoTowersAr: TranslationDictionary = {
   "Noncommutative at n ≥ 2":
     "غير تبديلية عند n ≥ 2",
   "PLUS and STAR are not two settings of one law. They are two families of frozen tables running over the same finite carrier, and they behave differently enough that neither can stand in for the other. Both live in the kernel, and the same 560 typed cells serve every domain the engine runs.":
-    "ليس PLUS وSTAR ضبطَين لقانونٍ واحد، بل عائلتان من الجداول المجمَّدة تعملان فوق الحامل المنتهي نفسه، ويختلف سلوكهما بما يكفي لألّا تحلّ إحداهما محل الأخرى. وكلتاهما تسكن النواة، والخلايا المصنَّفة الـ560 نفسها تخدم كل مجالٍ يعمل فيه المحرك.",
+    "ليس PLUS وSTAR ضبطَين لقانونٍ واحد، بل عائلتان من الجداول المجمَّدة تعملان فوق الحامل المنتهي نفسه، ويختلف سلوكهما بما يكفي لألّا تحلّ إحداهما محل الأخرى. وكلتاهما تسكن النواة، والخلايا المحددة النوع الـ560 نفسها تخدم كل مجالٍ يعمل فيه المحرك.",
   "PLUS is a cyclic group: it composes in any order and every step can be undone. STAR is not — it inspects one operand first, and past two positions it is neither commutative nor associative. A system with only PLUS cannot express a reset; a system with only STAR loses the arithmetic underneath it.":
     "PLUS زمرةٌ دورية: يتركّب بأي ترتيب، وكل خطوةٍ فيه قابلة للنقض. أما STAR فلا: ينظر في أحد المعاملين أولًا، وبعد موضعين لا هو تبديلي ولا تجميعي. ونظامٌ بـPLUS وحده لا يستطيع التعبير عن إعادة ضبط؛ ونظامٌ بـSTAR وحده يفقد ما تحته من حساب.",
   "People expect the core of an AI system to be a model. Here it is two families of Cayley tables over seven finite levels, written before anything runs and never edited afterwards. The kernel carries them byte for byte, and the same 560 typed cells serve every domain the engine works in — the language contour and the graph contours are not separate copies.":
-    "يتوقّع الناس أن يكون في نواة نظام ذكاءٍ اصطناعي نموذج. وهنا عائلتان من جداول كايلي فوق سبعة مستوياتٍ منتهية، كُتبتا قبل أن يجري أي شيء ولم تُعدَّلا بعدها. تحملهما النواة بايتًا ببايت، والخلايا المصنَّفة الـ560 نفسها تخدم كل مجالٍ يعمل فيه المحرك: مسارُ اللغة ومسارات الرسوم ليست نسخًا منفصلة.",
+    "يتوقّع الناس أن يكون في نواة نظام ذكاءٍ اصطناعي نموذج. وهنا عائلتان من جداول كايلي فوق سبعة مستوياتٍ منتهية، كُتبتا قبل أن يجري أي شيء ولم تُعدَّلا بعدها. تحملهما النواة بايتًا ببايت، والخلايا المحددة النوع الـ560 نفسها تخدم كل مجالٍ يعمل فيه المحرك: مسارُ اللغة ومسارات الرسوم ليست نسخًا منفصلة.",
   "Read the two laws in full":
     "اقرأ القانونين كاملَين",
   "Same seven levels, same poles. Two different algebras on them.":
@@ -171,7 +171,7 @@ export const twoTowersAr: TranslationDictionary = {
   "The same poles Q_n at every level. Different structure on them.":
     "الأقطاب Q_n نفسها في كل مستوى. والبنية عليها مختلفة.",
   "Two panels. Each holds a column of seven equally sized level chips, L7 at the top down to L1, next to the properties of that law. The PLUS column marks the two levels that can fold onto a lower one; the STAR column marks none. A line underneath states that both towers stand over the same poles.":
-    "لوحتان. في كلٍّ منهما عمودٌ من سبعة مربّعات مستوياتٍ متساوية الحجم، من L7 في الأعلى إلى L1، إلى جانب خصائص ذلك القانون. ويُعلَّم في عمود PLUS مستويان يمكن طيُّهما إلى مستوىً أدنى؛ ولا يُعلَّم في عمود STAR أيٌّ منها. وتحتهما سطرٌ يقول إن البرجَين يقومان على الأقطاب نفسها.",
+    "لوحتان. في كلٍّ منهما عمودٌ من سبعة مربّعات مستوياتٍ متساوية الحجم، من L7 في الأعلى إلى L1، إلى جانب خصائص ذلك القانون. ويُعلَّم في عمود PLUS مستويان يمكن طيُّهما إلى مستوًى أدنى؛ ولا يُعلَّم في عمود STAR أيٌّ منها. وتحتهما سطرٌ يقول إن البرجَين يقومان على الأقطاب نفسها.",
   "Two towers of frozen tables, and everything else is a lookup in them.":
     "برجان من الجداول المجمَّدة، وكلُّ ما عداهما مراجعةٌ لهما.",
   "WHAT IS IN THE CORE":
@@ -183,5 +183,5 @@ export const twoTowersAr: TranslationDictionary = {
   "Why two and not one":
     "لماذا اثنان لا واحد",
   "marked: a level that folds onto a lower one":
-    "معلَّم: مستوى يُطوى إلى مستوىً أدنى",
+    "معلَّم: مستوى يُطوى إلى مستوًى أدنى",
 };

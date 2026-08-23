@@ -452,11 +452,11 @@ export const programmeZh: TranslationDictionary = {
 };
 
 export const programmeAr: TranslationDictionary = {
-  "Months 0–3": "الأشهر ٠–٣",
-  "Months 0–6": "الأشهر ٠–٦",
-  "Months 3–9": "الأشهر ٣–٩",
-  "Months 6–12": "الأشهر ٦–١٢",
-  "Months 9–12": "الأشهر ٩–١٢",
+  "Months 0–3": "الأشهر 0–3",
+  "Months 0–6": "الأشهر 0–6",
+  "Months 3–9": "الأشهر 3–9",
+  "Months 6–12": "الأشهر 6–12",
+  "Months 9–12": "الأشهر 9–12",
   "12-MONTH PLAN, WRITTEN TO BE MARKED": "خطة اثني عشر شهرًا، مكتوبةٌ لتُؤشَّر بنودها",
   "A base to incorporate in, hire from, and operate from for the twelve months above.":
     "قاعدةٌ للتأسيس والتوظيف والعمل طوال الاثني عشر شهرًا المذكورة أعلاه.",
@@ -477,7 +477,7 @@ export const programmeAr: TranslationDictionary = {
     "تأييدٍ علني أو شعارٍ أو اقتباسٍ يُعاد استعماله في موادّ لاحقة.",
   "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
     "الإصدار موجود ويُعاد إنتاجه. تنجح إعادات التشغيل الحديثة STATIC وFAST على مفسِّر CPython 3.12.13 قياسي، وسُجِّل 1,366 فحصًا مخزَّنًا من نوع FULL من أصل 1,366، عبر 131 وحدة.",
-  "A running artefact exists": "يوجد مصنوعٌ يعمل",
+  "A running artefact exists": "ثمّة مصنوعٌ يعمل",
   AFFILIATION: "الارتباط",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلانًا",
   Affiliation: "الارتباط",
@@ -499,7 +499,7 @@ export const programmeAr: TranslationDictionary = {
   "Because they answer different questions. A language model proposes; a declared finite layer decides what it is allowed to admit and writes down why. No head-to-head evaluation of the two has been run, and this project does not claim one would favour it.":
     "لأنّهما يجيبان عن سؤالين مختلفين. النموذج اللغوي يقترح؛ والطبقة المنتهية المعلَنة تقرّر ما يجوز قبوله وتدوّن السبب. ولم تُجرَ مقارنة مباشرة بينهما، ولا يدّعي المشروع أنّها كانت ستميل لصالحه.",
   "Capital raised": "رأس المال المجموع",
-  "Capitalisation table": "جدول الملكية",
+  "Capitalisation table": "جدول رأس المال",
   Check: "الفحص",
   "Customer, pilot, or letter of intent": "عميل أو تجربة رائدة أو خطاب نوايا",
   "DOCUMENT CONTROL": "ضبط الوثيقة",
@@ -512,7 +512,7 @@ export const programmeAr: TranslationDictionary = {
   "Each commitment carries the observation that would show it was missed.":
     "لكل التزامٍ الملاحظةُ التي تُظهر أنّه لم يُنفَّذ.",
   "Every engineering statement on this site is the work of one person. Two first hires are named in the plan and neither has been made.":
-    "كل عبارة هندسية في هذا الموقع عملُ شخصٍ واحد. وقد سُمّي أول موظَّفَين في الخطة، ولم يُوظَّف أيٌّ منهما بعد.",
+    "كل عبارة هندسية في هذا الموقع عملُ شخصٍ واحد. وقد سُمّي التعيينان الأوّلان في الخطة، ولم يتمّ أيٌّ منهما بعد.",
   "Every figure quoted above is generated from the same release record the rest of the site is generated from, so this page cannot drift away from the evidence pages while looking as though it agrees with them.":
     "كل رقم مقتبَس أعلاه مولَّدٌ من سجل الإصدار نفسه الذي يولَّد منه سائر الموقع، ولذلك لا يمكن لهذه الصفحة أن تنحرف عن صفحات الأدلّة وهي تبدو متوافقةً معها.",
   "Everything an assessor would ask, answered before the meeting.":
@@ -527,7 +527,7 @@ export const programmeAr: TranslationDictionary = {
   "Founder identity documents, education, and employment history": "وثائق هوية المؤسِّس وتعليمه ومساره المهني",
   "Founder only": "المؤسِّس وحده",
   "Founder only. Two first hires are named in the plan below and neither has been made, so every engineering statement on this site is the work of one person.":
-    "المؤسِّس وحده. وقد سُمّي أول موظَّفَين في الخطة أدناه ولم يُوظَّف أيٌّ منهما، ولذلك فكل عبارة هندسية في هذا الموقع عملُ شخصٍ واحد.",
+    "المؤسِّس وحده. وقد سُمّي التعيينان الأوّلان في الخطة أدناه ولم يتمّ أيٌّ منهما، ولذلك فكل عبارة هندسية في هذا الموقع عملُ شخصٍ واحد.",
   "Four facts an assessor will want that are not published here.": "أربع وقائع سيطلبها المقيِّم وليست منشورةً هنا.",
   "Four reasons the work is shaped like the region's problems.":
     "أربعة أسباب تجعل هذا العمل على مقاس مسائل المنطقة.",
@@ -543,9 +543,9 @@ export const programmeAr: TranslationDictionary = {
   "How far each kind of check reaches": "إلى أي مدى يصل كل نوع من الفحص",
   "How to use it against us": "كيف تستعمله ضدّنا",
   "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.":
-    "منجَزٌ لا مخطَّط له. يعمل هذا الموقع بالإنجليزية والروسية والصينية والعربية بتخطيطٍ من اليمين إلى اليسار، ويُسقط اختبارٌ عمليةَ البناء إذا خلت أي سلسلة معروضة من ترجمتها. وهو موقعٌ ولا شيء غير ذلك: لم يُنشر أيّ منتج، وهذا كل ما يُدَّعى.",
+    "منجَزٌ لا مخطَّط له. يعمل هذا الموقع بالإنجليزية والروسية والصينية والعربية بتخطيطٍ من اليمين إلى اليسار، ويُسقط اختبارٌ عمليةَ البناء إذا خلت أي سلسلة معروضة من ترجمتها. وهو موقعٌ ولا شيء غير ذلك: لم يُنشر أيّ منتج، وهذا كلُّ ما ندّعيه.",
   "Independent verification": "التحقق المستقل",
-  "Intellectual-property assignment and ownership position": "التنازل عن الملكية الفكرية وموقع ملكيتها",
+  "Intellectual-property assignment and ownership position": "التنازل عن الملكية الفكرية ووضع ملكيتها",
   "Introductions to organisations able to define a bounded evaluation on their own data, with a success condition they write themselves.":
     "تعارفٌ مع جهات قادرة على تحديد تقييم محدود على بياناتها هي، بشرط نجاحٍ تكتبه بنفسها.",
   "It does not describe any programme, its criteria, its tracks, or its terms. Nothing in this project can verify those, and repeating them second-hand would be the exact unseriousness this page exists to avoid.":
@@ -553,7 +553,7 @@ export const programmeAr: TranslationDictionary = {
   "It states what exists, what does not, and how to check both, at the level of detail a diligence call would otherwise consume. Every line links to the page that carries its evidence.":
     "يذكر ما هو موجود وما هو غير موجود وكيف يُفحص كلاهما، بالتفصيل الذي كانت مكالمة العناية الواجبة ستستهلكه لولا ذلك. وكل بند يحيل إلى الصفحة التي تحمل دليله.",
   Limit: "الحدّ",
-  "Missed if": "يُعدّ مُخفَقًا إذا",
+  "Missed if": "يُعدّ إخفاقًا إذا",
   "No capital has been raised and there are no external shareholders, so there is nothing to show.":
     "لم يُجمع أي رأس مال ولا يوجد مساهمون خارجيون، فليس ثمّة ما يُعرض.",
   "No incorporated entity exists at the end of the quarter, or the founder is not working from the city.":
@@ -569,28 +569,28 @@ export const programmeAr: TranslationDictionary = {
     "لا أحد من خارج المشروع. فكل إعادة تشغيل، وكل إعادة اشتقاق لبرهان، وكل عدد منشور، أنتجه الطرف نفسه الذي يستفيد من صحّتها. وهذا هو الوصف الأمين لقاعدة الأدلّة اليوم.",
   None: "لا شيء",
   "None of the three. Nothing signed, nothing verbal, nothing in negotiation.":
-    "لا واحدٌ من الثلاثة. لا موقَّع ولا شفهي ولا قيد التفاوض.",
+    "لا شيء من الثلاثة. لا موقَّع ولا شفهي ولا قيد التفاوض.",
   "None. Every check published on this site was run by the project on its own work. This is the single largest gap in the dossier, and the second milestone below exists only to close it.":
     "لا شيء. فكل فحص منشور في هذا الموقع أجراه المشروع على عمله هو. وهذه أكبر ثغرة في الملف، ولم يوضع الالتزام الثاني أدناه إلّا لسدّها.",
   "None. No angel round, no grant, no accelerator cheque, no convertible. The work to date was self-funded.":
-    "لا شيء. لا جولة ملائكية ولا منحة ولا شيك مسرِّعة أعمال ولا قرض قابل للتحويل. وقد مُوِّل كل العمل حتى الآن ذاتيًا.",
+    "لا شيء. لا جولة تمويل ملائكي، ولا منحة، ولا شيك من مسرِّعة أعمال، ولا قرض قابل للتحويل. وقد مُوِّل كل العمل حتى الآن ذاتيًا.",
   "None. The project has never invoiced anyone.": "لا شيء. لم يُصدر المشروع فاتورةً لأحد قطّ.",
   "Not asked for": "غير المطلوب",
   "Not incorporated. Incorporation is the first milestone below rather than a completed step, and until it happens there is no entity to contract with.":
     "غير مؤسَّسة. فالتأسيس هو الالتزام الأول أدناه لا خطوةً منجَزة، وما لم يتمّ فلا كيان يُتعاقَد معه.",
   "Not measured. No benchmark, customer outcome, or operational comparison exists, in any deployment, run by anyone. No figure is available to quote because none was produced.":
-    "غير مقيس. لا وجود لأي قياس مرجعي أو نتيجة لدى عميل أو مقارنة تشغيلية — لا في أي نشر ولا لدى أحد. ولا يتوفّر رقمٌ يُقتبَس لأنّه لم يُنتَج.",
+    "غير مقيس. لا وجود لأي قياس مرجعي أو نتيجة لدى عميل أو مقارنة تشغيلية — لا في أيّ عملية نشر ولا على يد أحد. ولا يتوفّر رقمٌ يُقتبَس لأنّه لم يُنتَج.",
   "Not on this site": "ليس في هذا الموقع",
   "Not published on this site. Assignment records and the ownership position are provided directly to an assessing party on request.":
-    "لا يُنشر في هذا الموقع. وتُقدَّم سجلات التنازل وموقع الملكية إلى الجهة المقيِّمة مباشرةً عند الطلب.",
+    "لا يُنشر في هذا الموقع. وتُقدَّم سجلات التنازل ووضع الملكية إلى الجهة المقيِّمة مباشرةً عند الطلب.",
   "Not yet incorporated": "لم تُؤسَّس بعد",
   "Nothing is trained, so nothing has to leave": "لا شيء يُدرَّب، فلا شيء مضطرٌّ إلى المغادرة",
   "OUTCOME REPORTED": "النتيجة المُبلَّغ عنها",
   Open: "افتح",
   "Operating company": "الشركة العاملة",
-  "Ownership of the intellectual property": "ملكية الملكية الفكرية",
+  "Ownership of the intellectual property": "الجهة المالكة للملكية الفكرية",
   "Properties of a finite algebraic structure, each with a complete proof re-derived by the test suite: the two laws, the one-sided roles of the distinguished element, the count of 560 oriented typed coordinates, which levels map into which, and how many lawful relabellings each level has. Nothing about the world, nothing about usefulness, and nothing about anybody's operations.":
-    "خصائص لبنية جبرية منتهية، لكلٍّ منها برهانٌ تامّ يُعاد اشتقاقه بمجموعة الاختبارات: القانونان، ودورا العنصر المميَّز على جهةٍ واحدة، وعدُّ 560 إحداثية موجَّهة مصنَّفة، وأيُّ المستويات ينغرس في أيّها، وكم إعادة تسمية مشروعة لكل مستوى. لا شيء عن العالم، ولا شيء عن النفع، ولا شيء عن عمليات أحد.",
+    "خصائص لبنية جبرية منتهية، لكلٍّ منها برهانٌ تامّ يُعاد اشتقاقه بمجموعة الاختبارات: القانونان، ودورا العنصر المميَّز على جهةٍ واحدة، وعدُّ 560 إحداثية موجَّهة محددة النوع، وأيُّ المستويات ينغرس في أيّها، وكم إعادة تسمية مشروعة لكل مستوى. لا شيء عن العالم، ولا شيء عن النفع، ولا شيء عن عمليات أحد.",
   "Provided directly to an assessing party on request, under a mutual non-disclosure agreement.":
     "يُقدَّم إلى الجهة المقيِّمة مباشرةً عند الطلب، بموجب اتفاق عدم إفشاء متبادل.",
   "Provided directly to an assessing party on request.": "يُقدَّم إلى الجهة المقيِّمة مباشرةً عند الطلب.",
@@ -629,7 +629,7 @@ export const programmeAr: TranslationDictionary = {
   "The negative lines are not at the bottom. A dossier that puts its three strengths first and its six absences in a footnote is a dossier that expects not to be read carefully, and this one does.":
     "البنود السلبية ليست في الأسفل. فالملفّ الذي يقدّم مواطن قوّته الثلاث ويخبّئ غياباته الستّ في حاشية ملفٌّ لا يتوقّع أن يُقرأ بعناية؛ وهذا الملفّ يتوقّع أن يُقرأ بعناية.",
   "The next stage needs an entity, two technical hires, evaluation partners willing to bring their own data, and reviewers with an interest in attacking the mathematics. Below is what would be built in the first twelve months, with the observation that would show each commitment was missed.":
-    "تحتاج المرحلة التالية إلى كيان قانوني، وموظَّفَين تقنيَّين، وشركاء تقييم مستعدّين لإحضار بياناتهم، ومراجعين يهمّهم مهاجمة الرياضيات. وفي ما يلي ما سيُبنى في الأشهر الاثني عشر الأولى، مع الملاحظة التي تُظهر إخفاق كل التزام.",
+    "تحتاج المرحلة التالية إلى كيان قانوني، وتعيينَين تقنيَّين، وشركاء تقييم مستعدّين لإحضار بياناتهم، ومراجعين يهمّهم مهاجمة الرياضيات. وفي ما يلي ما سيُبنى في الأشهر الاثني عشر الأولى، مع الملاحظة التي تُظهر إخفاق كل التزام.",
   "The published replays ran on a standard CPython 3.12.13 interpreter, with no specialised hardware anywhere in the loop, because a replay enumerates a finite set instead of making an inference pass.":
     "نُفِّذت إعادات التشغيل المنشورة على مفسِّر CPython 3.12.13 قياسي لا على عتادٍ متخصّص، لأنّ إعادة التشغيل إحصاءٌ منتهٍ لا تمريرةُ استدلال.",
   "The re-derivation is carried out by the project, or is carried out externally and then not published because it went badly.":
@@ -645,7 +645,7 @@ export const programmeAr: TranslationDictionary = {
   "The whole site is delivered in Arabic with right-to-left layout, with mathematical notation isolated so it stays readable, and the build fails if a single rendered string lacks its translation. An assessor can check this in one click by switching the language.":
     "يُسلَّم الموقع كلّه بالعربية بتخطيطٍ من اليمين إلى اليسار، مع عزل الترميز الرياضي ليبقى مقروءًا، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. ويستطيع المقيِّم التحقّق من ذلك بنقرة واحدة بتبديل اللغة.",
   "There is no operating company today, so there is nothing to contract with. Incorporation is the first milestone below rather than a completed step.":
-    "لا توجد اليوم شركة عاملة، فليس ثمّة من يُتعاقَد معه. والتأسيس هو الالتزام الأول أدناه لا خطوةً منجَزة.",
+    "لا توجد اليوم شركة عاملة، فلا كيان يُتعاقَد معه. والتأسيس هو الالتزام الأول أدناه لا خطوةً منجَزة.",
   "These are the questions that decide the meeting. Answering them here costs the advantage of a rehearsed reply and gains the only thing worth more: the assessor can check the answers before spending an hour on them.":
     "هذه الأسئلة بعينها هي التي تحسم الاجتماع. والإجابة عنها هنا تكلّفنا ميزة الردّ المُعَدّ سلفًا وتكسبنا الشيء الوحيد الأثمن منها: أن يستطيع المقيِّم فحص الأجوبة قبل أن ينفق عليها ساعة.",
   "This is a property of the current release described by its own selfchecks, not a data-residency certification and not a security review. Neither has been carried out by anyone.":
@@ -653,9 +653,9 @@ export const programmeAr: TranslationDictionary = {
   "This page exists so that a first conversation can start at the open questions instead of the closed ones. Twelve assessment lines, six of them negative. Twelve months of commitments, each with the observation that would show it was missed. Six questions we expect to be pressed on, answered as they stand today rather than as we would like them to stand.":
     "وُجدت هذه الصفحة كي يبدأ الحديث الأول من الأسئلة المفتوحة لا من المغلقة. اثنا عشر بندًا للتقييم، ستّة منها سلبية. واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرطُ الإخفاق مكتوبًا سلفًا. وستّة أسئلة نتوقّع أن نُساءل عنها، بأجوبتها كما هي اليوم لا كما نودّ أن تكون.",
   "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.":
-    "يُسلَّم هذا الموقع بالعربية بتخطيطٍ من اليمين إلى اليسار، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. وهو موقعٌ لا نشرُ منتج: لم ينشر أحدٌ شيئًا، وهذا هو الادّعاء كلّه.",
+    "يُسلَّم هذا الموقع بالعربية بتخطيطٍ من اليمين إلى اليسار، ويسقط البناء إن خلت سلسلة معروضة واحدة من ترجمتها. وهو موقعٌ إلكتروني لا أكثر: لم ينشر أحدٌ شيئًا، وهذا كلُّ ما ندّعيه.",
   "Three lines are established, three are absent outright, and the rest are partial or undisclosed. That distribution is what a pre-seed research project honestly looks like, and presenting it any other way would only cost the first hour of the first meeting.":
-    "ثلاثة بنود ثابتة، وثلاثة غائبة تمامًا، والباقي جزئي أو غير مُفصَح عنه. وهكذا يبدو مشروعٌ بحثيّ ما قبل التأسيس إذا صُوِّر بصدق؛ وأي عرضٍ آخر لن يكلّف إلّا الساعة الأولى من الاجتماع الأول.",
+    "ثلاثة بنود ثابتة، وثلاثة غائبة تمامًا، والباقي جزئي أو غير مُفصَح عنه. وهكذا يبدو مشروعٌ بحثيّ ما قبل التمويل الأوّلي إذا صُوِّر بصدق؛ وأي عرضٍ آخر لن يكلّف إلّا الساعة الأولى من الاجتماع الأول.",
   "Twelve lines an assessor works through": "اثنا عشر بندًا يمرّ بها المقيِّم",
   "Twelve lines an assessor works through. Six of them are negative.":
     "اثنا عشر بندًا يمرّ بها المقيِّم. ستّة منها سلبية.",

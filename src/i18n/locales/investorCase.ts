@@ -380,7 +380,7 @@ export const investorCaseAr: TranslationDictionary = {
   "A design partner who brings the workflow and the data, or a platform relationship that carries the first evaluations.":
     "شريكُ تصميمٍ يأتي بسير العمل وبالبيانات، أو علاقةٌ مع منصّة تحمل التقييمات الأولى.",
   "A first product a buyer can scope in one conversation, priced as a planning hypothesis, with a decision package at the end of it.":
-    "منتجٌ أوّل يستطيع المشتري تحديد نطاقه في محادثة واحدة، بسعرٍ بوصفه فرضية تخطيطية، وبحزمة قرارٍ في نهايته.",
+    "منتجٌ أوّل يستطيع المشتري تحديد نطاقه في محادثة واحدة، بسعرٍ مطروحٍ بوصفه فرضية تخطيطية، وبحزمة قرارٍ في نهايته.",
   "A path to a private pilot":
     "طريقٌ إلى تجربةٍ خاصّة",
   "A risk without a test is an opinion. Each entry names the thing that could go wrong, why it would end the company rather than merely delay it, the observation that would settle it either way, and where it stands today.":
@@ -402,7 +402,7 @@ export const investorCaseAr: TranslationDictionary = {
   "Bought for":
     "يُشترى مقابل",
   "Broad reusable knowledge and inference":
-    "معرفةٌ واسعة قابلة لإعادة الاستعمال واستدلالٌ عليها",
+    "معرفةٌ واسعة قابلة لإعادة الاستعمال والاستدلال",
   "Class":
     "الصنف",
   "Company setup where the work lands":
@@ -418,7 +418,7 @@ export const investorCaseAr: TranslationDictionary = {
   "Enterprises are accumulating decisions taken by software, and the question they cannot answer is not what the model said. It is what happens after a source, a procedure or a threshold changes: which decisions are affected, which have to be re-checked, and why the ones left standing are still lawful. That question is asked by auditors, regulators and insurers, and today it is answered by people rereading logs.":
     "تتراكم لدى المؤسسات قراراتٌ اتّخذتها البرمجيات، والسؤال الذي تعجز عن جوابه ليس «ماذا قال النموذج». بل ما الذي يحدث بعد تغيُّر مصدرٍ أو إجراءٍ أو عتبة: أيّ القرارات تأثّر، وأيّها يلزم إعادة فحصه، ولماذا يبقى الباقي مشروعًا. يسأل هذا السؤال المدقّقون والجهات الرقابية وشركات التأمين، ويجيب عنه اليوم أناسٌ يعيدون قراءة السجلّات.",
   "Even a working evaluation can take three quarters to reach a signature in a regulated plant. A pre-seed runway does not obviously survive that, and the technology being right does not shorten it.":
-    "حتى التقييم الناجح قد يستغرق تسعة أشهر ليبلغ توقيعًا في مصنعٍ خاضع للتنظيم. ومدرَجُ ما قبل التأسيس لا يحتمل ذلك بداهةً، وصوابُ التقنية لا يقصّر المدّة.",
+    "حتى التقييم الناجح قد يستغرق تسعة أشهر ليبلغ توقيعًا في مصنعٍ خاضع للتنظيم. وليس بديهيًّا أن يصمد مدرَجُ ما قبل التمويل الأوّلي أمام ذلك، وصوابُ التقنية لا يقصّر المدّة.",
   "Every number published here was produced by the project on its own data with its own evaluator. Self-recomputation is honest and it is not independence, and no amount of it converts into a purchase order.":
     "كلّ رقمٍ منشور هنا أنتجه المشروع على بياناته وبمُقيِّمه. وإعادةُ الحساب الذاتية أمينة لكنّها ليست استقلالية، ولا يتحوّل منها أيّ قدرٍ إلى أمر شراء.",
   "Execution help cannot be hired, and the work stays at one pair of hands.":
@@ -432,17 +432,17 @@ export const investorCaseAr: TranslationDictionary = {
   "Four properties, and the bet is that they only work together: state that is written down rather than inferred, learning that may rank candidates and never admits the result, revision that touches the affected entry rather than the whole model, and a record somebody else can replay. Each exists separately elsewhere. The claim is about the combination, and it is a claim rather than a result.":
     "أربع خصائص، والرهان أنّها لا تعمل إلّا مجتمعة: حالةٌ مكتوبة لا مستنتَجة، وتعلُّمٌ له أن يرتّب المرشّحين وليس له أن يقبل النتيجة أبدًا، ومراجعةٌ تمسّ المدخل المتأثّر لا النموذج كلّه، وسجلٌّ يستطيع غيرُنا أن يعيد تشغيله. وكلٌّ منها موجودٌ وحده في مكانٍ ما. والدعوى عن التركيب، وهي دعوى لا نتيجة.",
   "GALO AI · PRE-SEED":
-    "GALO AI · ما قبل التأسيس",
+    "GALO AI · ما قبل التمويل الأوّلي",
   "Governance and policy wrappers":
     "أغلفة الحوكمة والسياسات",
   "If nine to twelve months pass with no paid evaluation and no design partner, the thesis is not confirmed and should be treated as such rather than extended.":
-    "إن مضت تسعة أشهر إلى اثني عشر بلا تقييمٍ مدفوع وبلا شريك تصميم، فالأطروحة غير مؤكَّدة، ويُتعامل معها على هذا الأساس لا بتمديد المهلة.",
+    "إن مضى تسعة إلى اثني عشر شهرًا بلا تقييمٍ مدفوع وبلا شريك تصميم، فالأطروحة غير مؤكَّدة، ويُتعامل معها على هذا الأساس لا بتمديد المهلة.",
   "An operating entity, so there is something to contract with, set up wherever the first evaluation partner makes that useful.":
     "كيانٌ تشغيليّ يكون طرفًا يمكن التعاقد معه، يُؤسَّس حيث يكون ذلك أنفع لأوّل شريك تقييم.",
   "Industrial buyers are reached through integrators, platform vendors and existing relationships. A correct architecture with no route to a plant floor is a paper, not a company.":
     "يُبلَغ المشترون الصناعيون عبر المُكامِلين وموردي المنصّات والعلاقات القائمة. والبنية الصحيحة بلا طريقٍ إلى أرض المصنع ورقةٌ بحثية لا شركة.",
   "It is not a wrapper over a language model, so it cannot be shipped as a feature by anyone who has one. It needs a different runtime, which is expensive to build and hard to sell before the pain is acute. The market currently buys fluency. Assurance under change becomes payable where the cost of an unexplainable decision is already on somebody's books — which is why the first product is industrial rather than general.":
-    "ليس غلافًا فوق نموذج لغة، فلا يستطيع من يملك نموذجًا أن يطرحه ميزةً عابرة. إنّه يحتاج زمن تشغيلٍ آخر، بناؤه مكلف وبيعه عسير قبل أن يشتدّ الألم. والسوق اليوم تشتري الطلاقة. أمّا الضمان عند التغيير فيصير مدفوع الثمن حيث تكون كلفة القرار غير القابل للتفسير مقيَّدةً في دفاتر أحدهم بالفعل — ولهذا كان المنتج الأوّل صناعيًّا لا عامًّا.",
+    "ليس غلافًا فوق نموذج لغة، فلا يستطيع من يملك نموذجًا أن يطرحه ميزةً في منتجه. إنّه يحتاج زمن تشغيلٍ آخر، بناؤه مكلف وبيعه عسير قبل أن يشتدّ الألم. والسوق اليوم تشتري الطلاقة. أمّا الضمان عند التغيير فيصير مدفوع الثمن حيث تكون كلفة القرار غير القابل للتفسير مقيَّدةً في دفاتر أحدهم بالفعل — ولهذا كان المنتج الأوّل صناعيًّا لا عامًّا.",
   "Knowledge graphs and rule engines":
     "غرافات المعرفة ومحرّكات القواعد",
   "Language models and agent stacks":
@@ -470,7 +470,7 @@ export const investorCaseAr: TranslationDictionary = {
   "One partner-owned evaluation":
     "تقييمٌ واحد على بيانات شريك",
   "PARTIAL — the wedge is written; nobody has bought it":
-    "جزئيّ — الوتد مكتوب ولم يشتره أحد",
+    "جزئيّ — المدخل مكتوب ولم يشتره أحد",
   "Partner-controlled proof is still ahead, and that is the gap the next year is for.":
     "الإثبات الذي يتحكّم به شريك ما يزال أمامنا، والعام المقبل لسدّ هذه الثغرة بعينها.",
   "Read as a science project":
@@ -496,7 +496,7 @@ export const investorCaseAr: TranslationDictionary = {
   "TWELVE MONTHS, IF FUNDED":
     "اثنا عشر شهرًا، إن جاء التمويل",
   "The advantage fails once the run is under a partner's custody rather than ours.":
-    "يسقط التفوّق ما إن يجرِ التشغيل في عهدة الشريك بدل عهدتنا.",
+    "يسقط التفوّق ما إن يجري التشغيل في عهدة الشريك بدل عهدتنا.",
   "The engine as something a partner's platform team can run inside their own boundary, rather than as a research tree.":
     "المحرّك بوصفه شيئًا يستطيع فريق منصّة الشريك تشغيله داخل حدوده، لا شجرةَ بحثٍ.",
   "The field in five lines":
@@ -508,7 +508,7 @@ export const investorCaseAr: TranslationDictionary = {
   "The industrial sales cycle is long":
     "دورةُ البيع الصناعي طويلة",
   "The learning results come from a counting ranker reading a learned volume. The tower, the typed routes and the verifier — the parts this site spends the most words on — are not in the measured path, so the saving is not yet evidence that the architecture is what produced it.":
-    "جاءت نتائج التعلّم من مُرتِّبٍ عدَّاديّ يقرأ مجلَّدًا مُتعلَّمًا. أمّا البرج والمسارات المُصنَّفة والمدقّق — وهي ما يفرد له الموقع أكثر كلامه — فليست في المسار المقيس، فالوفر ليس بعدُ دليلًا على أنّ البنية هي ما أنتجه.",
+    "جاءت نتائج التعلّم من مُرتِّبٍ عدَّاديّ يقرأ رصيدًا مُتعلَّمًا. أمّا البرج والمسارات المُصنَّفة والمدقّق — وهي ما يفرد له الموقع أكثر كلامه — فليست في المسار المقيس، فالوفر ليس بعدُ دليلًا على أنّ البنية هي ما أنتجه.",
   "The mathematics, the engine and the claim discipline sit with one person. Illness, distraction or a competing offer stops all three at once, and nothing on this site would survive that without a second engineer.":
     "الرياضيات والمحرّك وانضباط الدعاوى تقوم كلّها على شخصٍ واحد. ومرضٌ أو انشغالٌ أو عرضٌ منافس يوقفها ثلاثتها دفعةً واحدة، ولا ينجو شيءٌ في هذا الموقع من ذلك بغير مهندسٍ ثانٍ.",
   "The measured path is not the full path":
@@ -540,7 +540,7 @@ export const investorCaseAr: TranslationDictionary = {
   "Where this differs":
     "أين يختلف هذا",
   "Why this could be a company, and what a cheque is actually for.":
-    "لماذا قد يصير هذا شركة، وعلامَ الشيك في الحقيقة.",
+    "لماذا قد يصير هذا شركة، وعلامَ يُنفَق الشيك في الحقيقة.",
   "Why this could become a company":
     "لماذا قد يصير هذا شركة",
   "Why this is not already everywhere":

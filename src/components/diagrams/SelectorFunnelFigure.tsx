@@ -34,10 +34,16 @@ const stages = [
   },
 ] as const;
 
-const WIDTH = 620;
+/**
+ * The label sits to the right of its bar, so the widest bar decides how much
+ * room the longest label gets. "Committed descriptors" is two long words in
+ * Russian and three in Arabic, and at the old 620/420 it ran off the viewBox
+ * and was clipped mid-word.
+ */
+const WIDTH = 700;
 const ROW_HEIGHT = 54;
 const HEIGHT = ROW_HEIGHT * stages.length + 16;
-const MAX_BAR = 420;
+const MAX_BAR = 380;
 const MIN_BAR = 44;
 const maximumWeight = stages[0].weight;
 

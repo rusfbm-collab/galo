@@ -213,7 +213,7 @@ export const theoryAr: TranslationDictionary = {
   "Raw PLUS and STAR coordinates": "إحداثيات PLUS وSTAR الخام",
   "The same addresses are evaluated once under PLUS and once under STAR.":
     "تُقيَّم العناوين نفسها مرة تحت PLUS ومرة تحت STAR.",
-  "Oriented typed coordinates": "إحداثيات موجهة محددة النوع",
+  "Oriented typed coordinates": "إحداثيات موجَّهة محددة النوع",
   "Each raw law coordinate is recorded with LEFT or RIGHT source-active role placement.":
     "يُسجَّل كل إحداثي خام للقانون مع موضع دوري حالة المصدر والقطب النشط وفق LEFT أو RIGHT.",
   "Current active runtime coordinates": "إحداثيات وقت التشغيل النشطة حاليًا",
@@ -325,10 +325,10 @@ export const theoryAr: TranslationDictionary = {
   "L1–L7 mathematical coordinates": "الإحداثيات الرياضية لـ L1–L7",
   "Active typed catalogue": "الفهرس النشط محدد النوع",
   "L2–L7 active; L1 control-only": "L2–L7 نشطة؛ وL1 للتحكم فقط",
-  "Committed descriptors": "الواصفات المدرجة في الالتزام",
+  "Committed descriptors": "واصفات مُثبّتة",
   "Declared finite candidate universe": "كون مرشحين منتهٍ ومعلن",
-  "Executable descriptors": "الواصفات القابلة للتنفيذ",
-  "Four allowed action kinds": "أربعة أنواع إجراءات مسموح بها",
+  "Executable descriptors": "واصفات قابلة للتنفيذ",
+  "Four allowed action kinds": "أربعة أنواع أفعال مسموح بها",
   "Frontier per source pattern": "الجبهة لكل نمط مصدر",
   "Deterministically ordered candidates": "مرشحون مرتَّبون ترتيبًا حتميًا",
   "Accepted source patterns": "أنماط المصدر المقبولة",

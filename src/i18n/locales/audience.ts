@@ -1045,7 +1045,7 @@ export const audienceAr: TranslationDictionary = {
   "Ask what the universe size would be for a realistic contract, and whether the check is still exhaustive at that size or quietly becomes sampling.":
     "اسأل كم سيكون حجم الكون لعقد واقعي، وهل يبقى الفحص شاملًا عند ذلك الحجم أم يتحول بصمت إلى معاينة عيّنة.",
   "Audit chapter navigation": "التنقل في فصل التدقيق",
-  "BOUNDARY is not a softer PASS.": "‏BOUNDARY ليست PASS ألطف.",
+  "BOUNDARY is not a softer PASS.": "‏BOUNDARY ليست نسخةً ألطف من PASS.",
   "Behaviour outside the two accepted patterns": "السلوك خارج النمطين المقبولين",
   "Between the thing that proposes and the thing that cannot be undone.": "بين ما يقترح وما لا يمكن التراجع عنه.",
   "Both lanes decide and act, and on the day nobody can tell them apart. Six months later one of them can be answered by reading a record and the other one starts an investigation whose cost nobody budgeted.":
@@ -1231,7 +1231,7 @@ export const audienceAr: TranslationDictionary = {
   "Pick one published count and recompute it yourself from the stated laws.":
     "خذ عدًّا منشورًا واحدًا وأعد حسابه بنفسك من القوانين المعلنة.",
   "Pre-seed research. No revenue, no funds raised, no customer, no pilot, and no letter of intent — none of those is claimed anywhere on this site.":
-    "مرحلة بحثية ما قبل التأسيس. لا إيرادات ولا أموال مجموعة ولا عميل ولا تجربة أولية ولا خطاب نوايا — ولا يُدّعى أيٌّ من ذلك في أي موضع من الموقع.",
+    "مرحلة بحثية ما قبل التمويل الأوّلي. لا إيرادات ولا أموال مجموعة ولا عميل ولا تجربة أولية ولا خطاب نوايا — ولا يُدّعى أيٌّ من ذلك في أي موضع من الموقع.",
   "Process capability isolation": "عزل قدرات العملية",
   "Published in the boundary register with this exact status. Until it changes there, nothing downstream of it may be described as available.":
     "منشور في سجل الحدود بهذه الحالة بالضبط. وما لم تتغيّر هناك، لا يجوز وصف أي شيء تاليه بأنه متاح.",

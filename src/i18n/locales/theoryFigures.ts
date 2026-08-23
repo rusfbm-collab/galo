@@ -378,7 +378,7 @@ export const theoryFiguresAr: TranslationDictionary = {
     "‏1,204 واصفة معلَنة، منها 880 قابلة للتنفيذ و440 على حدّ النمط المختار",
   "560 counted coordinates": "560 إحداثية معدودة",
   "560 oriented typed transition coordinates, obtained by counting each level and adding":
-    "560 إحداثية انتقال موجَّهة ومصنَّفة، نُتِجت بعدّ كل مستوى ثم الجمع",
+    "560 إحداثية انتقال موجَّهة ومحددة النوع، نُتِجت بعدّ كل مستوى ثم الجمع",
   "A bounded bar beside an unbounded one": "شريط محدود إلى جانب شريط غير محدود",
   "A deterministic selector for exactly two fixed source patterns, with a hash-derived order":
     "منتقٍ حتمي لنمطين مصدريين ثابتين بالضبط، بترتيب مشتقّ من قيمة تجزئة",
@@ -460,14 +460,14 @@ export const theoryFiguresAr: TranslationDictionary = {
   "One finite table": "جدول منتهٍ واحد",
   "One of them finishes. The other one stops when the budget does.":
     "إحداهما تنتهي. والأخرى تتوقّف حين تنفد الميزانية.",
-  "One pair fanning out into four typed readings": "زوج واحد يتفرّع إلى أربع قراءات مصنَّفة",
+  "One pair fanning out into four typed readings": "زوج واحد يتفرّع إلى أربع قراءات محددة النوع",
   "One reading, and it is the same reading for everyone who opens the record.":
     "قراءة واحدة، وهي القراءة ذاتها لدى كل من يفتح السجل.",
   "One row resets": "صفٌّ واحد يعيد التصفير",
   "One thought in nine stages, seven of which run in the current release":
     "فكرة واحدة في تسع مراحل، سبعٌ منها تعمل في الإصدار الحالي",
   "Oriented typed transition coordinates. The number is reached by counting each level and adding the counts, not by estimating.":
-    "إحداثية انتقال موجَّهة ومصنَّفة. وقد بُلغ العدد بعدّ كل مستوى وجمع النواتج، لا بالتقدير.",
+    "إحداثية انتقال موجَّهة ومحددة النوع. وقد بُلغ العدد بعدّ كل مستوى وجمع النواتج، لا بالتقدير.",
   "P0 is the unique left zero and unique right-neutral element of STAR for every level above one":
     "‏P0 هو الصفر الأيسر الوحيد والعنصر المحايد الوحيد من اليمين للعملية STAR عند كل مستوى أعلى من واحد",
   "Persistent policy learning: NOT STARTED": "التعلّم المستديم للسياسة: NOT STARTED",

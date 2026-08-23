@@ -163,7 +163,7 @@ export const visualsRu: TranslationDictionary = {
   "each law cell is recorded with a LEFT or RIGHT role placement":
     "каждая ячейка закона записывается с размещением ролей LEFT или RIGHT",
   "each pair is evaluated under PLUS and under STAR": "каждая пара вычисляется по PLUS и по STAR",
-  "every relabelling fixes it": "его оставляет на месте любое переименование",
+  "every relabelling fixes it": "переименования его не двигают",
   "exchanged by the relabelling u=2": "меняются местами при переименовании u=2",
   "from level": "откуда",
   "left input": "левый вход",
@@ -494,7 +494,7 @@ export const visualsAr: TranslationDictionary = {
   "The mathematical foundation, the compatibility layer, the engine running today, and the target world-model loop advance separately. Each track below states the milestone it has actually reached and what is being worked on next, so progress on one track is never presented as progress on another.":
     "يتقدم الأساس الرياضي وطبقة التوافق والمحرّك العامل اليوم وحلقة نموذج العالم المستهدفة كلٌّ على حدة. ويذكر كل مسار أدناه المعلم الذي بلغه فعلًا وما يجري العمل عليه تاليًا، فلا يُقدَّم تقدّم مسار على أنه تقدّم مسار آخر.",
   "The milestones are named stages, not a percentage. A track is marked only where a concrete artefact exists: a derivation, a running module, a re-run check, or an outside result.":
-    "المعالم مراحل مُسمّاة لا نسبة مئوية. ولا يُوسم المسار إلا حيث يوجد أثر ملموس: اشتقاق، أو وحدة تعمل، أو فحص أُعيد تشغيله، أو نتيجة خارجية.",
+    "المعالم مراحل مُسمّاة لا نسبة مئوية. ولا يُوسم المسار إلا حيث يوجد مصنوع ملموس: اشتقاق، أو وحدة تعمل، أو فحص أُعيد تشغيله، أو نتيجة خارجية.",
   "The ring below has exactly three positions. Moving forward past the last position returns to the first one — that is the whole meaning of wraparound.":
     "تضم الحلقة أدناه ثلاثة مواضع بالضبط. والتقدّم خطوةً بعد الموضع الأخير يعيدك إلى الأول، وهذا هو كل معنى الالتفاف.",
   "The swap leaves fixed": "التبديل يُبقي ثابتًا",
@@ -541,7 +541,7 @@ export const visualsAr: TranslationDictionary = {
   "ordered input pairs across L1–L7": "أزواج المدخلات المرتبة عبر L1–L7",
   "raw left": "المعامل الأيسر الخام",
   "raw right": "المعامل الأيمن الخام",
-  reached: "تم بلوغه",
+  reached: "بُلِغ",
   reset: "إعادة ضبط",
   "reset row": "صف إعادة الضبط",
   steps: "خطوة",

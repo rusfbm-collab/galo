@@ -59,7 +59,7 @@ export const releaseAr: TranslationDictionary = {
   "Finite formal verification does not establish general intelligence.": "لا يثبت التحقق الشكلي المنتهي وجود ذكاء عام.",
   "Finite-universe membership and single-use executable handles": "عضوية الكون المنتهي ومقابض التنفيذ أحادية الاستخدام",
   "Formal mathematics": "الرياضيات الشكلية",
-  "Four allowed action kinds": "أربعة أنواع مسموح بها من الأفعال",
+  "Four allowed action kinds": "أربعة أنواع أفعال مسموح بها",
   "Fresh FAST": "FAST جديد",
   "Fresh FULL": "FULL جديد",
   "Fresh STATIC": "STATIC جديد",
@@ -73,7 +73,7 @@ export const releaseAr: TranslationDictionary = {
   "OS capability isolation and a CPython 3.13 replay lane.":
     "عزل الصلاحيات على مستوى نظام التشغيل ومسار إعادة تشغيل على CPython 3.13.",
   "Multi-step trajectory and probe-response loop": "مسار متعدد الخطوات وحلقة استقصاء–استجابة",
-  "Oriented typed coordinates": "إحداثيات موجَّهة محددة الأنواع",
+  "Oriented typed coordinates": "إحداثيات موجَّهة محددة النوع",
   "Outcome evaluation": "تقييم النتيجة",
   "Outcome evaluation and policy update each contribute zero work units in this release.":
     "يسهم كل من تقييم النتيجة وتحديث السياسة بصفر من وحدات العمل في هذا الإصدار.",

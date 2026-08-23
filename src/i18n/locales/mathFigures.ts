@@ -208,7 +208,7 @@ export const mathFiguresAr: TranslationDictionary = {
     "كرِّر خطوة واحدة من P0 فتقع في حلقة أصغر مغلقة — واحدة لكل قاسم.",
   "STAR at L5": "STAR عند L5",
   "Seven pairs of columns, one pair per level. In each pair the left column is the count from walking the orbits and the right column is the count from averaging fixed pairs. The two columns are the same height at every level: 1, 4, 5, 10, 7, 20 and 9.":
-    "سبعة أزواج من الأعمدة، زوج لكل مستوى. في كل زوج العمود الأيسر هو العدّ بالمرور على المدارات، والأيمن هو العدّ بمتوسّط الأزواج الثابتة. والعمودان متساويا الارتفاع في كل مستوى: ١، ٤، ٥، ١٠، ٧، ٢٠ و٩.",
+    "سبعة أزواج من الأعمدة، زوج لكل مستوى. في كل زوج العمود الأيسر هو العدّ بالمرور على المدارات، والأيمن هو العدّ بمتوسّط الأزواج الثابتة. والعمودان متساويا الارتفاع في كل مستوى: 1 و4 و5 و10 و7 و20 و9.",
   "Seven square grids, one per level from L1 to L7. In each grid the only filled cells lie along the top row, and there are n−1 of them at level n: none at L1, one at L2, and six at L7. Twenty-one filled cells out of one hundred and forty.":
     "سبع شبكات مربّعة، واحدة لكل مستوى من L1 إلى L7. في كل شبكة تقع الخلايا المملوءة في الصفّ العلوي وحده، وعددها n−1 عند المستوى n: لا شيء عند L1، وواحدة عند L2، وستّ عند L7. إحدى وعشرون خلية مملوءة من أصل مئة وأربعين.",
   "Start at P0 and keep adding the same position. At L6, adding P2 each time visits P0, P2, P4 and returns; adding P3 visits P0 and P3. Those closed rings are the sub-collections, and a line joins one to another when the smaller sits inside the larger.":

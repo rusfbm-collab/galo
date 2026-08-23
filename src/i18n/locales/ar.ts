@@ -99,10 +99,10 @@ export const ar: TranslationDictionary = {
   "AI agents need a world state they can inspect, revise, and replay.":
     "تحتاج وكلاءُ الذكاء الاصطناعي إلى حالة عالمٍ تستطيع فحصَها ومراجعتَها وإعادةَ تشغيلها.",
   "GALO is a standalone research architecture for explicit world state, typed execution, and receipt-backed replay. Its current release verifies a finite execution layer; persistent learning and external performance remain unproven.":
-    "GALO بنيةٌ بحثية مستقلّة لحالة عالمٍ صريحة، وتنفيذٍ محدَّد الأنواع، وإعادةِ تشغيلٍ تسندها الإيصالات. يتحقّق إصدارها الحالي من طبقة تنفيذٍ محدودة؛ أمّا التعلّم المستديم والأداء الخارجي فما زالا غير مثبتين.",
+    "GALO بنيةٌ بحثية مستقلّة لحالة عالمٍ صريحة، وتنفيذٍ محدَّد الأنواع، وإعادةِ تشغيلٍ تسندها الإيصالات. يتحقّق إصدارها الحالي من طبقة تنفيذٍ منتهية؛ أمّا التعلّم المستديم والأداء الخارجي فما زالا غير مثبتين.",
   "Current project status": "حالة المشروع الحالية",
   "Working bounded prototype": "نموذج أولي عامل ومحدود النطاق",
-  "Pre-seed": "مرحلة ما قبل التمويل الأولي",
+  "Pre-seed": "مرحلة ما قبل التمويل الأوّلي",
   "Founder-led": "يقوده المؤسس",
   "No capital raised": "لم يُجمَع أيُّ رأس مال",
   "Inspect a verified receipt": "فحص إيصال متحقَّق منه",
@@ -113,10 +113,10 @@ export const ar: TranslationDictionary = {
   "WORLD STATE / RESOLUTION": "حالة العالم / مستوى الدقة",
   "BOUND HANDLE": "مقبض مرتبط",
   "WORK LEDGER": "سجل العمل",
-  "Minimum sufficient level selected": "تم اختيار الحد الأدنى الكافي من الدقة",
+  "Minimum sufficient level selected": "اختير الحدُّ الأدنى الكافي من الدقة",
   "Receipt chain intact": "سلسلة الإيصالات سليمة",
   "Verified current mechanics": "الآليات الحالية المتحقَّق منها",
-  "Finite universe": "كون محدود",
+  "Finite universe": "كون منتهٍ",
   "1,204 commitments / 756 cells": "1,204 سجلًا مُثبّتًا / 756 خلية",
   "Bound execution": "تنفيذ مرتبط",
   "Membership proof + one-shot handle": "إثبات عضوية + مقبض أحادي الاستخدام",
@@ -147,7 +147,7 @@ export const ar: TranslationDictionary = {
   "Separate the verified execution slice from the target world-model loop.":
     "افصل شريحة التنفيذ المتحقَّق منها عن حلقة نموذج العالم المستهدفة.",
   "The current release verifies bounded local mechanics within the declared finite scope. The wider architecture specifies how explicit state, local revision, and adaptive search should connect once the open controls are closed.":
-    "يتحقّق الإصدار الحالي من آلياتٍ موضعية مقيّدة داخل النطاق المحدود المعلن. وتصف البنيةُ الأوسع كيف تترابط الحالةُ الصريحة والمراجعةُ الموضعية والبحثُ التكيّفي متى أُغلقت الضوابط المفتوحة.",
+    "يتحقّق الإصدار الحالي من آلياتٍ موضعية مقيّدة داخل النطاق المنتهي المعلن. وتصف البنيةُ الأوسع كيف تترابط الحالةُ الصريحة والمراجعةُ الموضعية والبحثُ التكيّفي متى أُغلقت الضوابط المفتوحة.",
   "Explicit World Atlas": "World Atlas صريح",
   "The architecture specifies objects, events, alternative hypotheses, evidence, and revisions as first-class state. A trained Atlas is not present.":
     "تنصّ البنية على أن تكون الكائناتُ والأحداثُ والفرضياتُ البديلة والأدلّةُ والمراجعات عناصرَ حالةٍ من الدرجة الأولى. ولا وجود لـ Atlas مدرَّب.",
@@ -166,8 +166,8 @@ export const ar: TranslationDictionary = {
   "The verifier is not the whole product. It is the constitutional layer intended to protect the wider adaptive architecture.":
     "أداةُ التحقّق ليست المنتَج كلَّه، بل هي الطبقة الدستورية التي يُراد بها حمايةُ البنية التكيّفية الأوسع.",
   "CURRENT VERIFIED SLICE": "الشريحة الحالية المتحقَّق منها",
-  "Finite, typed, receipt-backed execution": "تنفيذ محدود، محدد الأنواع، ومدعوم بالإيصالات",
-  "Committed finite universe": "كون محدود مُثبّت",
+  "Finite, typed, receipt-backed execution": "تنفيذ منتهٍ، محدَّد الأنواع، ومدعوم بالإيصالات",
+  "Committed finite universe": "كون منتهٍ مُثبّت",
   "Bound executable handle": "مقبض تنفيذ مرتبط",
   "Budgeted one-shot action": "إجراء أحادي الاستخدام ضمن ميزانية",
   "Execution receipts": "إيصالات التنفيذ",
@@ -216,7 +216,7 @@ export const ar: TranslationDictionary = {
   "Show step {number}: {label}": "عرض الخطوة {number}: {label}",
   STEP: "الخطوة",
   Mode: "النمط",
-  "deterministic / client-side": "حتمي / على جانب العميل",
+  "deterministic / client-side": "حتمي / من جانب العميل",
   "Sanitized receipt payload": "حمولة إيصال منقحة",
   "Replaying…": "جارٍ إعادة التشغيل…",
   "Replay again": "إعادة التشغيل مرة أخرى",
@@ -229,9 +229,9 @@ export const ar: TranslationDictionary = {
     "تصف هذه المكونات المسار البحثي التالي. وقد فُصلت عمدًا عن الإيصال الحالي المسجّل.",
   "Controlled architecture walkthrough — not a live model, grounded reasoning demo, or external benchmark.":
     "عرضٌ مضبوط للبنية — لا نموذجٌ حيّ، ولا عرضٌ لاستدلالٍ مرتكزٍ على ملاحظات خارجية، ولا اختبارٌ معياريّ خارجي.",
-  "Public observation envelope recorded": "تم تسجيل مغلف الملاحظة العام",
-  "Finite candidate universe committed": "تم تثبيت كون محدود للمرشّحات",
-  "Executable handle bound to universe membership": "تم ربط مقبض التنفيذ بعضوية الكون",
+  "Public observation envelope recorded": "سُجِّل مغلَّف الملاحظة العام",
+  "Finite candidate universe committed": "ثُبِّت كونُ المرشّحات المنتهي",
+  "Executable handle bound to universe membership": "رُبِط مقبض التنفيذ بعضوية الكون",
   "One-shot action executed under budget": "نُفّذ إجراء أحادي الاستخدام ضمن الميزانية",
   "Receipt-derived work ledger resolved": "حُلَّ سجل العمل المشتق من الإيصالات",
   "Terminal result preserved with a boundary": "حُفظت النتيجة النهائية مع حد معلَن",
@@ -258,7 +258,7 @@ export const ar: TranslationDictionary = {
   "Stored regression checks": "اختبارات انحدار محفوظة",
   "Passed in the declared release environment; not an intelligence metric.":
     "نجحت في بيئة الإصدار المعلنة؛ وهي ليست مقياسًا للذكاء.",
-  "Finite committed candidate universe": "كون مرشّحات محدود ومُثبّت",
+  "Finite committed candidate universe": "كون مرشّحات منتهٍ ومُثبّت",
   "Universe-membership-bound executable handles": "مقابض تنفيذ مرتبطة بعضوية الكون",
   "Single-use execution with bounded budget": "تنفيذ أحادي الاستخدام ضمن ميزانية محددة",
   "Atomic candidate and budget rollback": "تراجع ذري للمرشّح والميزانية",
@@ -271,13 +271,13 @@ export const ar: TranslationDictionary = {
   "Trained World Atlas": "World Atlas مدرَّب",
   "General AI": "الذكاء الاصطناعي العام",
   "CLAIM DISCIPLINE": "انضباط الادعاءات",
-  "What is verified — and what is not.": "ما تم التحقق منه — وما لم يتم.",
+  "What is verified — and what is not.": "ما جرى التحقّق منه — وما لم يجرِ.",
   "A useful research system must expose the edge of its evidence. GALO treats BOUNDARY and claim withdrawal as product behaviour, not footnotes.":
     "على النظام البحثي النافع أن يكشف أين تنتهي أدلّته. ويتعامل GALO مع BOUNDARY وسحبِ الادّعاء بوصفهما سلوكًا للمنتج، لا حاشيةً على هامشه.",
   CURRENT: "الحالي",
   "Verified within declared scope": "متحقَّق منه ضمن النطاق المعلن",
   "OPEN BOUNDARIES": "الحدود المفتوحة",
-  "Not implemented, started, or proven": "غير منفّذ أو غير مبدوء أو غير مثبت",
+  "Not implemented, started, or proven": "لم يُنفَّذ ولم يبدأ ولم يثبت",
   "Claim discipline is part of the product.": "انضباط الادعاءات جزء من المنتج.",
 
   "DESIGN-PARTNER EVALUATION": "تقييم مع شريك تصميم",
@@ -298,7 +298,7 @@ export const ar: TranslationDictionary = {
   "TERMINAL OUTPUT": "المخرج النهائي",
   "Evidence-backed result / portfolio / BOUNDARY": "نتيجة مدعومة بالأدلة / محفظة / BOUNDARY",
 
-  "COMMERCIAL WEDGE": "مدخل تجاري تدريجي",
+  "COMMERCIAL WEDGE": "المدخل التجاري",
   "A staged route from technical evaluation to private deployment.": "مسار مرحلي من التقييم التقني إلى النشر الخاص.",
   "The commercial path is planned, not traction. No customers, revenue, pilots, or partner commitments are represented on this site.":
     "المسار التجاري خطّةٌ، لا رواجٌ قائم. ولا يعرض هذا الموقع عملاء ولا إيرادات ولا تجارب رائدة ولا التزامات من شركاء.",
@@ -320,7 +320,7 @@ export const ar: TranslationDictionary = {
   "From verified mechanics to externally grounded learning.":
     "من آلياتٍ متحقَّق منها إلى تعلّمٍ يستند إلى شواهد خارجية.",
   "Each milestone closes a dependency before the next capability is authorized.":
-    "تغلق كل مرحلة اعتمادًا قبل التصريح بالقدرة التالية.",
+    "تُغلق كل مرحلة تبعيةً قبل التصريح بالقدرة التالية.",
   "Authenticate the source": "وثّق المصدر",
   "Signed source custody and a pinned external trust root.": "عهدة مصدر موقّعة وجذر ثقة خارجي مُثبّت.",
   "Close selection": "أغلق حلقة الاختيار",
@@ -385,10 +385,10 @@ export const ar: TranslationDictionary = {
     "لا تُدمج مقاييس هذه الصفحة مع الإصدارات التاريخية.",
   "Copy release fingerprint": "نسخ بصمة الإصدار",
   COPY: "نسخ",
-  COPIED: "تم النسخ",
+  COPIED: "نُسِخ",
   "Exact public scope:": "النطاق العام الدقيق:",
   "finite, binary, one-step candidate execution across the declared L1–L7 tower. This is not the complete space of general reasoning.":
-    "تنفيذُ مرشّحات محدود، ثنائيّ، بخطوة واحدة، عبر برج L1–L7 المعلن. وهذا ليس الفضاء الكامل للاستدلال العام.",
+    "تنفيذُ مرشّحات منتهٍ، ثنائيّ، بخطوة واحدة، عبر برج L1–L7 المعلن. وهذا ليس الفضاء الكامل للاستدلال العام.",
   "CURRENT CAPABILITIES": "القدرات الحالية",
   "Implemented bounded mechanics": "آليات مقيّدة منفّذة",
   "CURRENT BOUNDARIES": "الحدود الحالية",
@@ -415,7 +415,7 @@ export const ar: TranslationDictionary = {
   "Current bounded actions use typed execution contracts and receipts.":
     "تستخدم الإجراءات المقيّدة الحالية عقود تنفيذ محددة الأنواع وإيصالات.",
   "Executable handles are bound to membership in a committed finite universe and are single-use.":
-    "ترتبط مقابض التنفيذ بعضويةٍ في كونٍ محدود مُثبَّت، ولا تُستعمل إلّا مرّة واحدة.",
+    "ترتبط مقابض التنفيذ بعضويةٍ في كونٍ منتهٍ مُثبَّت، ولا تُستعمل إلّا مرّة واحدة.",
   "Work accounting is reconstructed from execution receipts within the current occurrence scope.":
     "يُعاد بناء احتساب العمل من إيصالات التنفيذ، داخل نطاق الوقوع الحالي.",
   "Persistent policy learning has not started.": "لم يبدأ التعلّم المستديم للسياسة.",
@@ -426,7 +426,7 @@ export const ar: TranslationDictionary = {
   "Frozen kernel capability registry": "سجل قدرات النواة المجمّدة",
   "Theory and current release status": "النظرية وحالة الإصدار الحالي",
   "Current capability registry": "سجل القدرات الحالي",
-  "Direct machine selfcheck": "الفحص الذاتي المباشر الآلي",
+  "Direct machine selfcheck": "الفحص الذاتي الآلي المباشر",
   "Current release status": "حالة الإصدار الحالي",
   "Current claim registry": "سجل الادعاءات الحالي",
   "Replay status": "حالة إعادة التشغيل",
