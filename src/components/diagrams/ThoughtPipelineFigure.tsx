@@ -79,7 +79,9 @@ export function ThoughtPipelineFigure() {
               column < 2
                 ? `M${COLUMNS[column]! + NODE_WIDTH} ${y + NODE_HEIGHT / 2} H ${COLUMNS[column + 1]! - 8}`
                 : `M${COLUMNS[2]! + NODE_WIDTH / 2} ${y + NODE_HEIGHT} V ${y + NODE_HEIGHT + 14} H ${COLUMNS[0]! + NODE_WIDTH / 2} V ${ROWS[row + 1]! - 8}`;
-            return <path key={`link-${phase.number}`} className="galo-pipeline__link" d={d} markerEnd={`url(#${arrowId})`} />;
+            return (
+              <path key={`link-${phase.number}`} className="galo-pipeline__link" d={d} markerEnd={`url(#${arrowId})`} />
+            );
           })}
 
           {lawfulExits.map((exit, index) => {

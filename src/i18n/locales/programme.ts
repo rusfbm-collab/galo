@@ -529,8 +529,7 @@ export const programmeAr: TranslationDictionary = {
   "Founder only. Two first hires are named in the plan below and neither has been made, so every engineering statement on this site is the work of one person.":
     "المؤسِّس وحده. وقد سُمّي التعيينان الأوّلان في الخطة أدناه ولم يتمّ أيٌّ منهما، ولذلك فكل عبارة هندسية في هذا الموقع عملُ شخصٍ واحد.",
   "Four facts an assessor will want that are not published here.": "أربع وقائع سيطلبها المقيِّم وليست منشورةً هنا.",
-  "Four reasons the work is shaped like the region's problems.":
-    "أربعة أسباب تجعل هذا العمل على مقاس مسائل المنطقة.",
+  "Four reasons the work is shaped like the region's problems.": "أربعة أسباب تجعل هذا العمل على مقاس مسائل المنطقة.",
   "Four things asked for, and four deliberately not asked for.": "أربعة أمور مطلوبة، وأربعة لا تُطلب عن قصد.",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits":
     "ملف طلب GALO AI — بنود التقييم والالتزامات والحدود",

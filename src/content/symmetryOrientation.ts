@@ -81,7 +81,8 @@ export const symmetryWorkedChecks: readonly SymmetryCheck[] = [
     rule: "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.",
     before:
       "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.",
-    after: "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.",
+    after:
+      "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.",
     verdict:
       "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.",
     isSymmetry: false,

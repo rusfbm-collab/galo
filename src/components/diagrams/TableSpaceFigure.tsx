@@ -1,10 +1,5 @@
 import { useId } from "react";
-import {
-  canonicalTypedCellCount,
-  declaredTableCount,
-  galoLevels,
-  tableCountDisplay,
-} from "../../content/mathematics";
+import { canonicalTypedCellCount, declaredTableCount, galoLevels, tableCountDisplay } from "../../content/mathematics";
 import { useI18n } from "../../i18n/I18nContext";
 
 const WIDTH = 660;
@@ -53,7 +48,9 @@ export function TableSpaceFigure() {
 
       <div className="galo-figure__canvas">
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
-          <title id={titleId}>{t("The number of possible tables at each level, against the two that are declared")}</title>
+          <title id={titleId}>
+            {t("The number of possible tables at each level, against the two that are declared")}
+          </title>
           <desc id={descriptionId}>
             {t(
               "Seven horizontal bars, one per level, whose lengths follow the number of digits in the count of possible tables. Level 1 has one table, level 3 has 19,683, level 7 has more than 10 to the 41st. A short bar underneath marks the fourteen tables GALO actually declares.",
@@ -116,7 +113,9 @@ export function TableSpaceFigure() {
 
       <div className="galo-figure__legend">
         <span>{t("Bars follow digit count, not value.")}</span>
-        <span>{t("Nothing here says the two declared laws are the best two. It says what they were declared out of.")}</span>
+        <span>
+          {t("Nothing here says the two declared laws are the best two. It says what they were declared out of.")}
+        </span>
       </div>
     </figure>
   );

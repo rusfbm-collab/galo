@@ -34,7 +34,9 @@ export function LearningGateFigure() {
     <figure className="galo-figure galo-figure--gatechain">
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("WHAT HAS TO CLOSE FIRST")}</span>
-        <strong>{t("Three open conditions stand between the shipped release and persistent learning inside it.")}</strong>
+        <strong>
+          {t("Three open conditions stand between the shipped release and persistent learning inside it.")}
+        </strong>
         <span className="galo-figure__note">
           {t(
             "Every row comes from the published boundary register with the status it really has, and not one is closed today. That is why persistent policy learning inside this release is published as not started rather than as coming soon. It is a statement about the release: the sealed prototype line, which is a different artefact, learns already.",

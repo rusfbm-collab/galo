@@ -210,16 +210,16 @@ deciding whether to fund, buy, or approve a system rather than to learn the
 mathematics. Eight figures answer that reader in pictures, and each one is
 attached to the section whose mathematics it restates:
 
-| Figure | Section | What it settles |
-| --- | --- | --- |
-| Two reading lanes | `#orientation` | The five stops of the chapter, once as what is proved and once as what it decides |
-| Four readers | `#orientation` | The question each audience arrives with, the section that answers it, and what that section cannot give them |
-| Cost of establishing a negative | `#cayley-first` | Reading a declared list terminates; probing an undeclared space does not |
-| A sentence versus a name | `#states` | The same status as prose with three readings, and as one declared position with one |
-| Absorbing chains | `#p0` | Three histories under STAR: once a chain lands on P0 no later step takes it off |
-| One pair, four typed readings | `#typed-actions` | Why a record carries level, law, and orientation and not only the pair |
-| The whole index drawn in full | `#count-560` | 560 marks, banded by level, with a visible edge |
-| Three shelves | `#evidence-language` | Proved, running today, and merely written down, with nothing carrying between them |
+| Figure                          | Section              | What it settles                                                                                              |
+| ------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| Two reading lanes               | `#orientation`       | The five stops of the chapter, once as what is proved and once as what it decides                            |
+| Four readers                    | `#orientation`       | The question each audience arrives with, the section that answers it, and what that section cannot give them |
+| Cost of establishing a negative | `#cayley-first`      | Reading a declared list terminates; probing an undeclared space does not                                     |
+| A sentence versus a name        | `#states`            | The same status as prose with three readings, and as one declared position with one                          |
+| Absorbing chains                | `#p0`                | Three histories under STAR: once a chain lands on P0 no later step takes it off                              |
+| One pair, four typed readings   | `#typed-actions`     | Why a record carries level, law, and orientation and not only the pair                                       |
+| The whole index drawn in full   | `#count-560`         | 560 marks, banded by level, with a visible edge                                                              |
+| Three shelves                   | `#evidence-language` | Proved, running today, and merely written down, with nothing carrying between them                           |
 
 Two rules keep these honest. Anything computed — the chains, the four targets,
 the 560 marks and their per-level bands — is regenerated from `mathematics.ts`
@@ -252,7 +252,7 @@ Above everything else on a term page sits the definition as a referee would stat
 - **discipline** — which branch the word belongs to: universal algebra, group theory, number theory, combinatorics, sets/maps/relations, or project convention. It is shown as a tag in the hero and pins the literature a reader should reach for.
 - **standing** — whether the word is standard with its standard meaning, standard but narrowed to this setting, or a name the project coined. The fourteen coined words are listed in a test, so promoting one to "standard" has to be a deliberate edit rather than a slip. A coined word's tag is amber, not teal.
 - **formal** — the definition in notation, rendered left-to-right in every locale and deliberately free of prose glue, so the same line serves the Russian, Chinese, and Arabic pages unchanged. A test rejects a formal line with no notation in it, and holds the handful of publication conventions — which have no notation to state — to a compact declaration instead.
-- **academic** — the rigorous statement, translated into all four languages with the terminology each mathematical tradition actually uses: *носитель*, *обеднение и обогащение*, *конгруэнция*, *теорема об орбите и стабилизаторе*; 载体集, 约化与扩充, 同余关系, 轨道–稳定子定理; المجموعة الحاملة, الاختزال والتوسيع, علاقة التطابق, مبرهنة المدار والمثبِّت. Translating the register rather than the words is the point: a Russian reader should recognise the sentence from a textbook, not from a translation of one.
+- **academic** — the rigorous statement, translated into all four languages with the terminology each mathematical tradition actually uses: _носитель_, _обеднение и обогащение_, _конгруэнция_, _теорема об орбите и стабилизаторе_; 载体集, 约化与扩充, 同余关系, 轨道–稳定子定理; المجموعة الحاملة, الاختزال والتوسيع, علاقة التطابق, مبرهنة المدار والمثبِّت. Translating the register rather than the words is the point: a Russian reader should recognise the sentence from a textbook, not from a translation of one.
 
 The order on the page is deliberate. The exact definition comes first for the reader who wants it, and the plain-language layers come after, so neither audience has to read the other's version to reach its own.
 

@@ -137,7 +137,8 @@ const actionFamilies = [
     family: "PLUS_RIGHT",
     placement: "raw left = active · raw right = source",
     example: "PLUS_RIGHT(P0,P2)=PLUS(P2,P0)=P2",
-    plain: "The same two inputs, swapped over. PLUS lands in the same place either way, because order does not matter to it.",
+    plain:
+      "The same two inputs, swapped over. PLUS lands in the same place either way, because order does not matter to it.",
   },
   {
     family: "STAR_LEFT",
@@ -1561,7 +1562,9 @@ export function TheoryPage() {
           <SectionHeading
             light
             eyebrow={t("HOW TO READ GALO EVIDENCE")}
-            title={t("A PASS on its own says nothing. It says something only with the exact scope it was checked in, and the result it ended on.")}
+            title={t(
+              "A PASS on its own says nothing. It says something only with the exact scope it was checked in, and the result it ended on.",
+            )}
             text={t(
               "GALO separates mathematical derivation, executable tests, archive replay, operational evaluation, and open boundaries. Evidence from one layer does not automatically authorize a claim in another.",
             )}

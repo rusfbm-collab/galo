@@ -7,100 +7,147 @@ import type { TranslationDictionary } from "../translations";
  */
 
 export const plainChaptersRu: TranslationDictionary = {
-  "A statement about a finite table is not a statement about the world.": "Утверждение о конечной таблице — это не утверждение о мире.",
+  "A statement about a finite table is not a statement about the world.":
+    "Утверждение о конечной таблице — это не утверждение о мире.",
   "Between levels": "Между уровнями",
   "Every term, in full": "Каждый термин, целиком",
   "Five words": "Пять слов",
   "Level by level": "По уровням",
-  "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.": "Левая колонка — то, что глава устанавливает, правая — то, что ей раз за разом приписывают и чего она не устанавливает. Ничто в правой колонке здесь не опровергается: просто эти вычисления не об этом.",
+  "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.":
+    "Левая колонка — то, что глава устанавливает, правая — то, что ей раз за разом приписывают и чего она не устанавливает. Ничто в правой колонке здесь не опровергается: просто эти вычисления не об этом.",
   "The renaming that almost works": "Переименование, которое почти работает",
   "Try it yourself": "Попробуйте сами",
   "WHAT THIS DOES NOT IMPLY": "ЧЕГО ЭТО НЕ ВЛЕЧЁТ",
   "What is being renamed": "Что именно переименовывают",
   "What this does not imply": "Чего это не влечёт",
-  "A level fits inside a larger one only when it divides it.": "Уровень помещается внутрь большего только тогда, когда делит его.",
-  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.": "Переименование либо выдерживает сравнение, либо нет, и второй пример проваливается на конкретной ячейке, на которую можно показать пальцем. В этом весь метод: спор ничего не решает, и «почти получилось» не помогает.",
+  "A level fits inside a larger one only when it divides it.":
+    "Уровень помещается внутрь большего только тогда, когда делит его.",
+  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.":
+    "Переименование либо выдерживает сравнение, либо нет, и второй пример проваливается на конкретной ячейке, на которую можно показать пальцем. В этом весь метод: спор ничего не решает, и «почти получилось» не помогает.",
   "A renaming that keeps the starting point": "Переименование, которое сохраняет начальную позицию",
-  "A renaming that leaves every rule exactly where it was is a symmetry. One that moves even a single cell is not, and the single cell is enough — this is the rare kind of question where one counterexample settles it completely.": "Переименование, которое оставляет каждое правило ровно там, где оно было, — это симметрия. То, которое сдвинуло хотя бы одну ячейку, — нет, и одной ячейки достаточно: это редкий случай, когда один контрпример закрывает вопрос полностью.",
+  "A renaming that leaves every rule exactly where it was is a symmetry. One that moves even a single cell is not, and the single cell is enough — this is the rare kind of question where one counterexample settles it completely.":
+    "Переименование, которое оставляет каждое правило ровно там, где оно было, — это симметрия. То, которое сдвинуло хотя бы одну ячейку, — нет, и одной ячейки достаточно: это редкий случай, когда один контрпример закрывает вопрос полностью.",
   "A shift, which moves it": "Сдвиг, который её смещает",
   "A symmetry": "Симметрия",
-  "A symmetry is a renaming that leaves every rule exactly where it was.": "Симметрия — это переименование, которое оставляет каждое правило ровно там, где оно было.",
-  "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.": "Ячейка таблицы говорит вам ответ и ничего — о том, как вы к нему пришли. Но запись обязана хранить, какая позиция была ситуацией, а какая — тем, что к ней применили: разбор через год спрашивает, кто на кого подействовал, а не только что получилось. Именно поэтому одна таблица ответов превращается в четыре вида записи, и поэтому число на этой странице больше, чем можно было бы решить по одним таблицам.",
+  "A symmetry is a renaming that leaves every rule exactly where it was.":
+    "Симметрия — это переименование, которое оставляет каждое правило ровно там, где оно было.",
+  "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.":
+    "Ячейка таблицы говорит вам ответ и ничего — о том, как вы к нему пришли. Но запись обязана хранить, какая позиция была ситуацией, а какая — тем, что к ней применили: разбор через год спрашивает, кто на кого подействовал, а не только что получилось. Именно поэтому одна таблица ответов превращается в четыре вида записи, и поэтому число на этой странице больше, чем можно было бы решить по одним таблицам.",
   "Adding the seven levels up": "Складываем семь уровней",
-  "After the renaming those two are the third and the second, and combining them lands on the fifth as well — the same place the original answer was renamed to.": "После переименования эти две — третья и вторая, и их сочетание тоже попадает на пятую: ровно туда, куда переименовался исходный ответ.",
-  "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.": "После сдвига в этой особой ячейке оказывается другая позиция, и оговорка срабатывает уже на ней.",
-  "At level five, rename every position by doubling its number and wrapping round: the first stays first, the second becomes the third, the third becomes the fifth, and so on.": "На пятом уровне переименуйте каждую позицию, удвоив её номер и завернув по кругу: первая остаётся первой, вторая становится третьей, третья — пятой, и так далее.",
-  "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.": "На том же уровне вместо этого сдвиньте каждую позицию на одну вперёд: первая становится второй, вторая — третьей, а последняя заворачивается в начало.",
+  "After the renaming those two are the third and the second, and combining them lands on the fifth as well — the same place the original answer was renamed to.":
+    "После переименования эти две — третья и вторая, и их сочетание тоже попадает на пятую: ровно туда, куда переименовался исходный ответ.",
+  "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.":
+    "После сдвига в этой особой ячейке оказывается другая позиция, и оговорка срабатывает уже на ней.",
+  "At level five, rename every position by doubling its number and wrapping round: the first stays first, the second becomes the third, the third becomes the fifth, and so on.":
+    "На пятом уровне переименуйте каждую позицию, удвоив её номер и завернув по кругу: первая остаётся первой, вторая становится третьей, третья — пятой, и так далее.",
+  "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.":
+    "На том же уровне вместо этого сдвиньте каждую позицию на одну вперёд: первая становится второй, вторая — третьей, а последняя заворачивается в начало.",
   "BEFORE ANY NOTATION": "ДО ВСЯКИХ ОБОЗНАЧЕНИЙ",
   "BETWEEN LEVELS": "МЕЖДУ УРОВНЯМИ",
   "Both are worked on a real cell rather than described.": "Оба разобраны на настоящей ячейке, а не описаны словами.",
-  "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.": "Выбор переименования показывает цикл, по которому оно гоняет позиции, группы, в которые их сводит, и те позиции, которые оставляет на месте. Число под этим затем проверяется вторым способом, стандартным усреднением, и оба должны сойтись.",
-  "Counting the shapes is the same as counting what matters.": "Посчитать формы — то же самое, что посчитать то, что важно.",
+  "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.":
+    "Выбор переименования показывает цикл, по которому оно гоняет позиции, группы, в которые их сводит, и те позиции, которые оставляет на месте. Число под этим затем проверяется вторым способом, стандартным усреднением, и оба должны сойтись.",
+  "Counting the shapes is the same as counting what matters.":
+    "Посчитать формы — то же самое, что посчитать то, что важно.",
   "EVERY TERM, IN FULL": "КАЖДЫЙ ТЕРМИН, ЦЕЛИКОМ",
-  "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.": "Каждая карточка начинается с картинки, даёт определение, разбирает один конечный пример руками, доказывает утверждение и отмечает, на что оно не распространяется. Они здесь для читателя, которому нужен один термин как следует, а не глава по-быстрому.",
-  "Each level is counted on its own, and the totals are sums rather than a single larger object.": "Каждый уровень считается сам по себе, а итоги — это суммы, а не один объект побольше.",
-  "Each of these means one specific thing, and they are easy to run together.": "Каждое из них означает одну конкретную вещь, и их легко смешать.",
-  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.": "Восемнадцать — это семь отдельных ответов, сложенных вместе. Ни у чего в башне нет восемнадцати симметрий; есть семь вещей, у которых их одна, одна, две, две, четыре, две и шесть.",
-  "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.": "Каждый подсчёт ниже сделан внутри одного уровня. Ничто не группируется через уровни, а итоги внизу — это сложение семи отдельных результатов: единой группы симметрий всей башни не существует, и именно этот раздел об этом говорит.",
-  "Every one of the twenty-five cells behaves like that, in both tables. Nothing moved, so this renaming is a symmetry.": "Так ведёт себя каждая из двадцати пяти ячеек, в обеих таблицах. Ничего не сдвинулось — значит, это переименование — симметрия.",
+  "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.":
+    "Каждая карточка начинается с картинки, даёт определение, разбирает один конечный пример руками, доказывает утверждение и отмечает, на что оно не распространяется. Они здесь для читателя, которому нужен один термин как следует, а не глава по-быстрому.",
+  "Each level is counted on its own, and the totals are sums rather than a single larger object.":
+    "Каждый уровень считается сам по себе, а итоги — это суммы, а не один объект побольше.",
+  "Each of these means one specific thing, and they are easy to run together.":
+    "Каждое из них означает одну конкретную вещь, и их легко смешать.",
+  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.":
+    "Восемнадцать — это семь отдельных ответов, сложенных вместе. Ни у чего в башне нет восемнадцати симметрий; есть семь вещей, у которых их одна, одна, две, две, четыре, две и шесть.",
+  "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.":
+    "Каждый подсчёт ниже сделан внутри одного уровня. Ничто не группируется через уровни, а итоги внизу — это сложение семи отдельных результатов: единой группы симметрий всей башни не существует, и именно этот раздел об этом говорит.",
+  "Every one of the twenty-five cells behaves like that, in both tables. Nothing moved, so this renaming is a symmetry.":
+    "Так ведёт себя каждая из двадцати пяти ячеек, в обеих таблицах. Ничего не сдвинулось — значит, это переименование — симметрия.",
   "FIVE WORDS THE REST OF THE CHAPTER USES": "ПЯТЬ СЛОВ, КОТОРЫМИ ПОЛЬЗУЕТСЯ ВСЯ ОСТАЛЬНАЯ ГЛАВА",
   "Formal statements from the second section": "Формальные утверждения — со второго раздела",
   "Groups that look like mirrors and are not": "Группы, похожие на зеркала, но не зеркала",
-  "If a word above lost you, its own page picks it up from the beginning.": "Если какое-то слово выше вас потеряло, у него есть своя страница, которая начинает с начала.",
+  "If a word above lost you, its own page picks it up from the beginning.":
+    "Если какое-то слово выше вас потеряло, у него есть своя страница, которая начинает с начала.",
   "If nothing moved, the renaming was a symmetry": "Если ничего не сдвинулось, переименование было симметрией",
-  "In the original table, combining the second position with the fourth lands on the fifth.": "В исходной таблице сочетание второй позиции с четвёртой попадает на пятую.",
-  "It does not. A symmetry says two situations are structurally interchangeable. It says nothing about where either came from, who is allowed to act on it, or what it means — and none of those travel along with the renaming.": "Нет. Симметрия говорит, что две ситуации структурно взаимозаменимы. Она ничего не говорит о том, откуда взялась каждая из них, кому позволено с ней действовать и что она значит, — и ничто из этого вместе с переименованием не переносится.",
+  "In the original table, combining the second position with the fourth lands on the fifth.":
+    "В исходной таблице сочетание второй позиции с четвёртой попадает на пятую.",
+  "It does not. A symmetry says two situations are structurally interchangeable. It says nothing about where either came from, who is allowed to act on it, or what it means — and none of those travel along with the renaming.":
+    "Нет. Симметрия говорит, что две ситуации структурно взаимозаменимы. Она ничего не говорит о том, откуда взялась каждая из них, кому позволено с ней действовать и что она значит, — и ничто из этого вместе с переименованием не переносится.",
   "LEVEL BY LEVEL": "ПО УРОВНЯМ",
-  "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.": "Уровни различаются тем, сколько случаев они вообще способны различить, поэтому перенос с грубого уровня на более тонкий — это настоящий вопрос, а не переклейка ярлыков. Планок три, и каждая строже предыдущей: правила по-прежнему должны выполняться, различное по-прежнему должно оставаться различным, и — прежде чем с результатом что-то сделают — перенос должен быть разрешён. Первые две берутся математикой; третья — нет, и этот раздел отмечает, где математика заканчивается.",
+  "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.":
+    "Уровни различаются тем, сколько случаев они вообще способны различить, поэтому перенос с грубого уровня на более тонкий — это настоящий вопрос, а не переклейка ярлыков. Планок три, и каждая строже предыдущей: правила по-прежнему должны выполняться, различное по-прежнему должно оставаться различным, и — прежде чем с результатом что-то сделают — перенос должен быть разрешён. Первые две берутся математикой; третья — нет, и этот раздел отмечает, где математика заканчивается.",
   "MOVING BETWEEN LEVELS": "ПЕРЕХОД МЕЖДУ УРОВНЯМИ",
   "Not a symmetry": "Не симметрия",
   "ONE THAT WORKS, ONE THAT DOES NOT": "ОДНО РАБОТАЕТ, ДРУГОЕ НЕТ",
-  "Pick a level and a renaming, and watch which positions it groups together.": "Выберите уровень и переименование и посмотрите, какие позиции оно сводит вместе.",
+  "Pick a level and a renaming, and watch which positions it groups together.":
+    "Выберите уровень и переименование и посмотрите, какие позиции оно сводит вместе.",
   "Read them in the formal chapter": "Прочитать их в формальной главе",
-  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.": "Переименуйте все позиции разом, перестройте таблицы и посмотрите, сдвинулось ли что-нибудь. Те переименования, от которых ничего не меняется, и есть симметрии; эта глава находит их все, считает формы, которые из этого получаются, и отмечает, где такому сходству уже не позволено ничего значить.",
+  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.":
+    "Переименуйте все позиции разом, перестройте таблицы и посмотрите, сдвинулось ли что-нибудь. Те переименования, от которых ничего не меняется, и есть симметрии; эта глава находит их все, считает формы, которые из этого получаются, и отмечает, где такому сходству уже не позволено ничего значить.",
   "SHAPE, NOT MEANING": "ФОРМА, А НЕ СМЫСЛ",
   "SYMMETRY CHAPTER": "ГЛАВА О СИММЕТРИИ",
   "Same shape means the same thing.": "Одинаковая форма означает одно и то же.",
-  "Shifting every position by a fixed amount preserves the first rule and breaks the second.": "Сдвиг всех позиций на одну и ту же величину сохраняет первое правило и ломает второе.",
+  "Shifting every position by a fixed amount preserves the first rule and breaks the second.":
+    "Сдвиг всех позиций на одну и ту же величину сохраняет первое правило и ломает второе.",
   "Start by renaming everything": "Сначала всё переименуйте",
   "Starts with no notation": "Начинается без обозначений",
-  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.": "Симметрия — слово, которое обещает больше, чем говорит, и три фразы ниже — те, с которыми читатель уходит чаще всего. Каждая записана в самой сильной форме, в какой её могли бы пересказать, и затем поправлена.",
+  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.":
+    "Симметрия — слово, которое обещает больше, чем говорит, и три фразы ниже — те, с которыми читатель уходит чаще всего. Каждая записана в самой сильной форме, в какой её могли бы пересказать, и затем поправлена.",
   "THE RENAMING THAT ALMOST WORKS": "ПЕРЕИМЕНОВАНИЕ, КОТОРОЕ ПОЧТИ РАБОТАЕТ",
   "TRY IT": "ПОПРОБУЙТЕ САМИ",
-  "Take the positions the system can be in and give them new names, by one fixed rule applied to all of them at once. Nothing about the system changes while you do this — you are relabelling the boxes, not moving what is inside them.": "Возьмите позиции, в которых система может находиться, и дайте им новые имена — по одному фиксированному правилу, применённому ко всем сразу. Сама система при этом никак не меняется: вы переклеиваете ярлыки на коробках, а не перекладываете то, что внутри.",
-  "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.": "Это сдвинувшаяся ячейка, значит, это переименование не симметрия. Перестановка сама по себе вполне законная — она просто не сохраняет правила, а спрашивают именно об этом.",
+  "Take the positions the system can be in and give them new names, by one fixed rule applied to all of them at once. Nothing about the system changes while you do this — you are relabelling the boxes, not moving what is inside them.":
+    "Возьмите позиции, в которых система может находиться, и дайте им новые имена — по одному фиксированному правилу, применённому ко всем сразу. Сама система при этом никак не меняется: вы переклеиваете ярлыки на коробках, а не перекладываете то, что внутри.",
+  "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.":
+    "Это сдвинувшаяся ячейка, значит, это переименование не симметрия. Перестановка сама по себе вполне законная — она просто не сохраняет правила, а спрашивают именно об этом.",
   "The exact cell where the shift fails": "Точная ячейка, на которой сдвиг проваливается",
-  "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.": "Первая позиция — та, которую оба правила считают особой: это начальная точка, и у второго из двух правил есть оговорка, применимая только к ней.",
-  "The four numbers this release is held to, and what each one counts": "Четыре числа, за которые отвечает этот релиз, и что каждое из них считает",
-  "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.": "Сетка спрашивает для каждой пары уровней, сколькими способами, сохраняющими правила, можно перенести меньший в больший. По одному первому правилу такие способы есть всегда. По обоим правилам сразу их почти нет — и картина в точности совпадает с делимостью: поэтому третий уровень сидит внутри шестого, а внутрь пятого не помещается ничего. Каждая ячейка читается как «первое правило / оба правила».",
-  "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.": "Простая фраза и есть определение; строка обозначений под ней — та же фраза, записанная так, как рецензент ожидает её увидеть. Ничто ниже не требует читать обозначения.",
-  "The same positions, studied under one rule, the other rule, and both at once.": "Те же позиции, рассмотренные под одним правилом, под другим и под обоими сразу.",
+  "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.":
+    "Первая позиция — та, которую оба правила считают особой: это начальная точка, и у второго из двух правил есть оговорка, применимая только к ней.",
+  "The four numbers this release is held to, and what each one counts":
+    "Четыре числа, за которые отвечает этот релиз, и что каждое из них считает",
+  "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.":
+    "Сетка спрашивает для каждой пары уровней, сколькими способами, сохраняющими правила, можно перенести меньший в больший. По одному первому правилу такие способы есть всегда. По обоим правилам сразу их почти нет — и картина в точности совпадает с делимостью: поэтому третий уровень сидит внутри шестого, а внутрь пятого не помещается ничего. Каждая ячейка читается как «первое правило / оба правила».",
+  "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.":
+    "Простая фраза и есть определение; строка обозначений под ней — та же фраза, записанная так, как рецензент ожидает её увидеть. Ничто ниже не требует читать обозначения.",
+  "The same positions, studied under one rule, the other rule, and both at once.":
+    "Те же позиции, рассмотренные под одним правилом, под другим и под обоими сразу.",
   "The same total, counted a second way": "Тот же итог, посчитанный вторым способом",
-  "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.": "Разделы после этого написаны в тех обозначениях, в которых такие вещи обычно и пишут: это правильный регистр для того, кто проверяет работу, и бесполезный для всех остальных. Поэтому сначала идёт сама идея — словами, с одним переименованием, которое работает, и одним, которое нет. Это та же идея, которой пользуется вся остальная глава; меняется только словарь.",
+  "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.":
+    "Разделы после этого написаны в тех обозначениях, в которых такие вещи обычно и пишут: это правильный регистр для того, кто проверяет работу, и бесполезный для всех остальных. Поэтому сначала идёт сама идея — словами, с одним переименованием, которое работает, и одним, которое нет. Это та же идея, которой пользуется вся остальная глава; меняется только словарь.",
   "Then redo the tables and compare": "Потом перестройте таблицы и сравните",
   "These symmetries are the symmetries of something physical.": "Эти симметрии — симметрии чего-то физического.",
-  "They are not. Everything here is a statement about a finite table of names. Nothing in it refers to space, time, direction, or any physical quantity, and a formula resembling one from physics is a resemblance rather than a claim.": "Нет. Всё здесь — утверждение о конечной таблице имён. Ничто в ней не отсылает к пространству, времени, направлению или какой-либо физической величине, а формула, похожая на физическую, — это сходство, а не заявление.",
-  "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.": "Это тот самый почти-случай, который стоит понять, потому что именно от него ждут, что он сработает. Сдвиг сохраняет сложение — потому и выглядит симметрией, — но он смещает начальную позицию, а у второго правила есть оговорка, применимая только к тому, что там стоит. Одной оговорки достаточно, чтобы всё провалилось.",
-  "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.": "Ещё три граничных случая — как ведут себя формы под квадратичными вычетами, где перестаёт применяться разложение шестого уровня и что означает и чего не означает фазовая метка — изложены в формальной главе о ядре, а не здесь: каждому из них нужен словарь, который эта страница намеренно не вводила.",
+  "They are not. Everything here is a statement about a finite table of names. Nothing in it refers to space, time, direction, or any physical quantity, and a formula resembling one from physics is a resemblance rather than a claim.":
+    "Нет. Всё здесь — утверждение о конечной таблице имён. Ничто в ней не отсылает к пространству, времени, направлению или какой-либо физической величине, а формула, похожая на физическую, — это сходство, а не заявление.",
+  "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.":
+    "Это тот самый почти-случай, который стоит понять, потому что именно от него ждут, что он сработает. Сдвиг сохраняет сложение — потому и выглядит симметрией, — но он смещает начальную позицию, а у второго правила есть оговорка, применимая только к тому, что там стоит. Одной оговорки достаточно, чтобы всё провалилось.",
+  "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.":
+    "Ещё три граничных случая — как ведут себя формы под квадратичными вычетами, где перестаёт применяться разложение шестого уровня и что означает и чего не означает фазовая метка — изложены в формальной главе о ядре, а не здесь: каждому из них нужен словарь, который эта страница намеренно не вводила.",
   "Three readings this chapter does not support.": "Три прочтения, которых эта глава не подтверждает.",
-  "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.": "Три вещи легко услышать как одну, и большинство неверных прочтений этого проекта начинается именно там. Математика закончена и из трёх самая маленькая. Выпущённый движок использует лишь узкий её кусок. Всё остальное — более широкое состояние, цикл обучения — записано и не построено. Каждая строка ниже говорит, к какой из трёх она относится.",
-  "Two levels using the same position names does not make the names mean the same thing.": "То, что два уровня пользуются одними и теми же именами позиций, не делает эти имена одним и тем же.",
-  "Two records can reach the same answer and still be different records.": "Две записи могут прийти к одному ответу и всё равно остаться разными записями.",
-  "Two situations can share a shape and still have to be treated separately, because the record keeps what the shape does not: which of them actually happened, and under what authority. Grouping by shape is a way to organise checking, not a way to merge records.": "Две ситуации могут делить одну форму и всё же требовать раздельного обращения, потому что запись хранит то, чего форма не хранит: какая из них на самом деле произошла и под чьими полномочиями. Группировка по форме — способ организовать проверку, а не способ слить записи.",
-  "Two situations related by a symmetry have the same shape, so anything proved about one holds for the other and does not have to be checked twice. That is the whole payoff, and the rest of this chapter is care about when it applies.": "Две ситуации, связанные симметрией, имеют одну форму, поэтому доказанное про одну верно и для другой и не требует повторной проверки. В этом весь выигрыш, а вся остальная глава — аккуратность насчёт того, когда он применим.",
+  "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.":
+    "Три вещи легко услышать как одну, и большинство неверных прочтений этого проекта начинается именно там. Математика закончена и из трёх самая маленькая. Выпущённый движок использует лишь узкий её кусок. Всё остальное — более широкое состояние, цикл обучения — записано и не построено. Каждая строка ниже говорит, к какой из трёх она относится.",
+  "Two levels using the same position names does not make the names mean the same thing.":
+    "То, что два уровня пользуются одними и теми же именами позиций, не делает эти имена одним и тем же.",
+  "Two records can reach the same answer and still be different records.":
+    "Две записи могут прийти к одному ответу и всё равно остаться разными записями.",
+  "Two situations can share a shape and still have to be treated separately, because the record keeps what the shape does not: which of them actually happened, and under what authority. Grouping by shape is a way to organise checking, not a way to merge records.":
+    "Две ситуации могут делить одну форму и всё же требовать раздельного обращения, потому что запись хранит то, чего форма не хранит: какая из них на самом деле произошла и под чьими полномочиями. Группировка по форме — способ организовать проверку, а не способ слить записи.",
+  "Two situations related by a symmetry have the same shape, so anything proved about one holds for the other and does not have to be checked twice. That is the whole payoff, and the rest of this chapter is care about when it applies.":
+    "Две ситуации, связанные симметрией, имеют одну форму, поэтому доказанное про одну верно и для другой и не требует повторной проверки. В этом весь выигрыш, а вся остальная глава — аккуратность насчёт того, когда он применим.",
   "WHAT IS BEING RENAMED": "ЧТО ИМЕННО ПЕРЕИМЕНОВЫВАЮТ",
   "WHAT IT NEVER MEANS": "ЧЕГО ЭТО НИКОГДА НЕ ОЗНАЧАЕТ",
   "WHO ACTED ON WHOM": "КТО НА КОГО ПОДЕЙСТВОВАЛ",
   "What a symmetry is": "Что такое симметрия",
   "What that is worth": "Чего это стоит",
-  "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.": "То, что делает выпущённый движок, достаточно узко, чтобы описать одной фразой: он принимает два вида входа, сужает список, зафиксированный до его запуска, и упорядочивает оставшееся по правилу, зависящему только от входа. Запустите дважды на одном и том же входе с разницей в год — он вернёт то же самое, потому что внутри нет ничего, что переносилось бы дальше.",
-  "Which renamings leave every rule exactly where it was.": "Какие переименования оставляют каждое правило ровно там, где оно было.",
-  "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.": "Какие переименования выживают, зависит от того, сколько вы просите их сохранить. Попросите только, чтобы держалось первое правило, — пройдёт больше; попросите, чтобы держались оба правила и начальная точка, — пройдёт меньше. Три строки ниже — это три таких вопроса, и ответом во всех трёх случаях оказывается один и тот же набор переименований.",
+  "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.":
+    "То, что делает выпущённый движок, достаточно узко, чтобы описать одной фразой: он принимает два вида входа, сужает список, зафиксированный до его запуска, и упорядочивает оставшееся по правилу, зависящему только от входа. Запустите дважды на одном и том же входе с разницей в год — он вернёт то же самое, потому что внутри нет ничего, что переносилось бы дальше.",
+  "Which renamings leave every rule exactly where it was.":
+    "Какие переименования оставляют каждое правило ровно там, где оно было.",
+  "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.":
+    "Какие переименования выживают, зависит от того, сколько вы просите их сохранить. Попросите только, чтобы держалось первое правило, — пройдёт больше; попросите, чтобы держались оба правила и начальная точка, — пройдёт меньше. Три строки ниже — это три таких вопроса, и ответом во всех трёх случаях оказывается один и тот же набор переименований.",
   "Why only some renamings work": "Почему работают только некоторые переименования",
   "Why the second rule allows no more": "Почему второе правило не допускает больше",
   "Why the total is multiplied by four": "Почему итог умножается на четыре",
   "Why these are matched rather than equal": "Почему они сопоставлены, а не равны",
-  "Work out the whole table of results again using the new names, and lay it next to the original. Either it comes out identical, cell for cell, or somewhere a cell has moved. There is no third outcome, and finding out is counting rather than judgement.": "Заново постройте всю таблицу результатов, пользуясь новыми именами, и положите её рядом с исходной. Либо она выходит тождественной, ячейка в ячейку, либо где-то ячейка сдвинулась. Третьего не дано, и выяснение — это подсчёт, а не суждение.",
+  "Work out the whole table of results again using the new names, and lay it next to the original. Either it comes out identical, cell for cell, or somewhere a cell has moved. There is no third outcome, and finding out is counting rather than judgement.":
+    "Заново постройте всю таблицу результатов, пользуясь новыми именами, и положите её рядом с исходной. Либо она выходит тождественной, ячейка в ячейку, либо где-то ячейка сдвинулась. Третьего не дано, и выяснение — это подсчёт, а не суждение.",
   "how many": "сколько",
   "renamings that work": "переименования, которые работают",
   "shapes of a pair": "формы пары",
@@ -109,100 +156,144 @@ export const plainChaptersRu: TranslationDictionary = {
 };
 
 export const plainChaptersZh: TranslationDictionary = {
-  "A statement about a finite table is not a statement about the world.": "关于一张有限的表的陈述，不是关于世界的陈述。",
+  "A statement about a finite table is not a statement about the world.":
+    "关于一张有限的表的陈述，不是关于世界的陈述。",
   "Between levels": "层级之间",
   "Every term, in full": "每个术语，完整版",
   "Five words": "五个词",
   "Level by level": "逐层来看",
-  "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.": "左栏是本章确实确立的东西，右栏是人们一再以为它确立、而它并没有确立的东西。右栏里的内容在这里并没有被否证——只是这些计算讲的不是那件事。",
+  "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.":
+    "左栏是本章确实确立的东西，右栏是人们一再以为它确立、而它并没有确立的东西。右栏里的内容在这里并没有被否证——只是这些计算讲的不是那件事。",
   "The renaming that almost works": "那个差一点就成的改名",
   "Try it yourself": "自己试试",
   "WHAT THIS DOES NOT IMPLY": "这并不蕴含什么",
   "What is being renamed": "被改名的到底是什么",
   "What this does not imply": "这并不蕴含什么",
   "A level fits inside a larger one only when it divides it.": "只有当一个层级整除更大的层级时，它才装得进去。",
-  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.": "一次改名要么经得起对照，要么经不起；第二个例子恰恰是在某一格上出的错，那一格你可以直接指出来。方法就这么简单：争论解决不了问题，「差一点就成了」也不算数。",
+  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.":
+    "一次改名要么经得起对照，要么经不起；第二个例子恰恰是在某一格上出的错，那一格你可以直接指出来。方法就这么简单：争论解决不了问题，「差一点就成了」也不算数。",
   "A renaming that keeps the starting point": "保住起点的改名",
-  "A renaming that leaves every rule exactly where it was is a symmetry. One that moves even a single cell is not, and the single cell is enough — this is the rare kind of question where one counterexample settles it completely.": "把每一条规则都原封不动留在原处的改名，就是一个对称。哪怕只挪动了一格，它就不是——而且一格就够了：这是那种少见的问题，一个反例就把它彻底了结。",
+  "A renaming that leaves every rule exactly where it was is a symmetry. One that moves even a single cell is not, and the single cell is enough — this is the rare kind of question where one counterexample settles it completely.":
+    "把每一条规则都原封不动留在原处的改名，就是一个对称。哪怕只挪动了一格，它就不是——而且一格就够了：这是那种少见的问题，一个反例就把它彻底了结。",
   "A shift, which moves it": "一次平移，它把起点挪走了",
   "A symmetry": "是对称",
-  "A symmetry is a renaming that leaves every rule exactly where it was.": "所谓对称，就是一次把每条规则都原封不动留在原处的改名。",
-  "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.": "表格里的一格只告诉你答案，不告诉你是怎么走到那里的。但记录必须保住：哪个位置是当时的情形，哪个是被施加上去的东西——因为一年后的复核问的是「谁对谁做了什么」，而不只是「结果是什么」。正因如此，一张答案表才变成四类记录，这一页上的数字也才比单看表格所能推出的要大。",
+  "A symmetry is a renaming that leaves every rule exactly where it was.":
+    "所谓对称，就是一次把每条规则都原封不动留在原处的改名。",
+  "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.":
+    "表格里的一格只告诉你答案，不告诉你是怎么走到那里的。但记录必须保住：哪个位置是当时的情形，哪个是被施加上去的东西——因为一年后的复核问的是「谁对谁做了什么」，而不只是「结果是什么」。正因如此，一张答案表才变成四类记录，这一页上的数字也才比单看表格所能推出的要大。",
   "Adding the seven levels up": "把七个层级加起来",
-  "After the renaming those two are the third and the second, and combining them lands on the fifth as well — the same place the original answer was renamed to.": "改名之后，这两个成了第三个和第二个，把它们合起来同样落在第五个上——正是原来那个答案被改名后所在的位置。",
-  "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.": "平移之后，坐在那个特殊位子上的换成了另一个位置，那条附加条款便对它生效了。",
-  "At level five, rename every position by doubling its number and wrapping round: the first stays first, the second becomes the third, the third becomes the fifth, and so on.": "在第五层，把每个位置的编号乘以二再绕回来重新命名：第一个还是第一个，第二个变成第三个，第三个变成第五个，依此类推。",
-  "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.": "还是在这一层，改成把每个位置往前挪一格：第一个变成第二个，第二个变成第三个，最后一个绕回到开头。",
+  "After the renaming those two are the third and the second, and combining them lands on the fifth as well — the same place the original answer was renamed to.":
+    "改名之后，这两个成了第三个和第二个，把它们合起来同样落在第五个上——正是原来那个答案被改名后所在的位置。",
+  "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.":
+    "平移之后，坐在那个特殊位子上的换成了另一个位置，那条附加条款便对它生效了。",
+  "At level five, rename every position by doubling its number and wrapping round: the first stays first, the second becomes the third, the third becomes the fifth, and so on.":
+    "在第五层，把每个位置的编号乘以二再绕回来重新命名：第一个还是第一个，第二个变成第三个，第三个变成第五个，依此类推。",
+  "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.":
+    "还是在这一层，改成把每个位置往前挪一格：第一个变成第二个，第二个变成第三个，最后一个绕回到开头。",
   "BEFORE ANY NOTATION": "在任何记号之前",
   "BETWEEN LEVELS": "层级之间",
   "Both are worked on a real cell rather than described.": "两个例子都是在真实的格子上算出来的，不是用话描述的。",
-  "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.": "选定一个改名，就能看到它把这些位置绕成的循环、把它们并成的组，以及它原地不动的那些位置。下面的计数随后用第二种办法——一个标准的平均论证——再算一遍，两者必须对得上。",
+  "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.":
+    "选定一个改名，就能看到它把这些位置绕成的循环、把它们并成的组，以及它原地不动的那些位置。下面的计数随后用第二种办法——一个标准的平均论证——再算一遍，两者必须对得上。",
   "Counting the shapes is the same as counting what matters.": "数清有多少种形状，就等于数清了要紧的东西。",
   "EVERY TERM, IN FULL": "每个术语，完整版",
-  "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.": "每张卡片先给一张图，再给定义，然后手算一个有限的例子，证明结论，并标出这个结论管不到的地方。它们是给那种想把一个术语真正弄懂、而不是把整章快速翻完的读者准备的。",
-  "Each level is counted on its own, and the totals are sums rather than a single larger object.": "每一层都是单独计数的，底下的总数是加出来的，而不是某个更大的单一对象。",
-  "Each of these means one specific thing, and they are easy to run together.": "这几个词各自都只指一件具体的事，而且很容易被混在一起。",
-  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.": "十八是七个各自独立的答案加起来的结果。塔里没有任何一样东西有十八个对称；有的是七样东西，各自有一个、一个、两个、两个、四个、两个和六个。",
-  "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.": "下面每一项计数都是在单独一层里做的。没有任何东西跨层分组，底部的总数是七个各自独立结果的相加——整座塔并不存在一个统一的对称群，而这一节说的正是这件事。",
-  "Every one of the twenty-five cells behaves like that, in both tables. Nothing moved, so this renaming is a symmetry.": "二十五个格子在两张表里都是这样。什么也没挪动，所以这个改名是一个对称。",
+  "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.":
+    "每张卡片先给一张图，再给定义，然后手算一个有限的例子，证明结论，并标出这个结论管不到的地方。它们是给那种想把一个术语真正弄懂、而不是把整章快速翻完的读者准备的。",
+  "Each level is counted on its own, and the totals are sums rather than a single larger object.":
+    "每一层都是单独计数的，底下的总数是加出来的，而不是某个更大的单一对象。",
+  "Each of these means one specific thing, and they are easy to run together.":
+    "这几个词各自都只指一件具体的事，而且很容易被混在一起。",
+  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.":
+    "十八是七个各自独立的答案加起来的结果。塔里没有任何一样东西有十八个对称；有的是七样东西，各自有一个、一个、两个、两个、四个、两个和六个。",
+  "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.":
+    "下面每一项计数都是在单独一层里做的。没有任何东西跨层分组，底部的总数是七个各自独立结果的相加——整座塔并不存在一个统一的对称群，而这一节说的正是这件事。",
+  "Every one of the twenty-five cells behaves like that, in both tables. Nothing moved, so this renaming is a symmetry.":
+    "二十五个格子在两张表里都是这样。什么也没挪动，所以这个改名是一个对称。",
   "FIVE WORDS THE REST OF THE CHAPTER USES": "本章其余部分反复用到的五个词",
   "Formal statements from the second section": "从第二节开始给出形式化陈述",
   "Groups that look like mirrors and are not": "看着像镜像、其实不是的那些组",
-  "If a word above lost you, its own page picks it up from the beginning.": "如果上面哪个词把你甩下了，它有自己的页面，从头讲起。",
+  "If a word above lost you, its own page picks it up from the beginning.":
+    "如果上面哪个词把你甩下了，它有自己的页面，从头讲起。",
   "If nothing moved, the renaming was a symmetry": "要是什么都没挪动，这次改名就是一个对称",
-  "In the original table, combining the second position with the fourth lands on the fifth.": "在原来的表里，第二个位置和第四个位置合起来落在第五个上。",
-  "It does not. A symmetry says two situations are structurally interchangeable. It says nothing about where either came from, who is allowed to act on it, or what it means — and none of those travel along with the renaming.": "不是。对称说的是两种情形在结构上可以互换。它对这两者各自从哪来、谁被允许对它动手、以及它意味着什么，一概不置一词——这些东西也都不会跟着改名一起搬过去。",
+  "In the original table, combining the second position with the fourth lands on the fifth.":
+    "在原来的表里，第二个位置和第四个位置合起来落在第五个上。",
+  "It does not. A symmetry says two situations are structurally interchangeable. It says nothing about where either came from, who is allowed to act on it, or what it means — and none of those travel along with the renaming.":
+    "不是。对称说的是两种情形在结构上可以互换。它对这两者各自从哪来、谁被允许对它动手、以及它意味着什么，一概不置一词——这些东西也都不会跟着改名一起搬过去。",
   "LEVEL BY LEVEL": "逐层来看",
-  "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.": "各层之间的差别在于能分辨多少种情形，所以把东西从粗的一层搬到细的一层是个真问题，不是换个标签。门槛有三道，一道比一道严：规则仍要成立；本来不同的仍要保持不同；而且在拿结果去做任何事之前，这次搬运还必须是被许可的。前两道靠数学过；第三道不是——这一节标出的就是数学到此为止的地方。",
+  "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.":
+    "各层之间的差别在于能分辨多少种情形，所以把东西从粗的一层搬到细的一层是个真问题，不是换个标签。门槛有三道，一道比一道严：规则仍要成立；本来不同的仍要保持不同；而且在拿结果去做任何事之前，这次搬运还必须是被许可的。前两道靠数学过；第三道不是——这一节标出的就是数学到此为止的地方。",
   "MOVING BETWEEN LEVELS": "在层级之间搬运",
   "Not a symmetry": "不是对称",
   "ONE THAT WORKS, ONE THAT DOES NOT": "一个成，一个不成",
-  "Pick a level and a renaming, and watch which positions it groups together.": "选一个层级和一个改名，看它把哪些位置归到了一起。",
+  "Pick a level and a renaming, and watch which positions it groups together.":
+    "选一个层级和一个改名，看它把哪些位置归到了一起。",
   "Read them in the formal chapter": "到形式化那一章去读",
-  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.": "把所有位置一次性改名，重新做出表来，看看有没有东西挪动。那些什么也不改变的改名就是对称；本章把它们全部找出来，数清它们把东西归成了多少种形状，并标出这种归类从哪里开始不再被允许表示任何含义。",
+  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.":
+    "把所有位置一次性改名，重新做出表来，看看有没有东西挪动。那些什么也不改变的改名就是对称；本章把它们全部找出来，数清它们把东西归成了多少种形状，并标出这种归类从哪里开始不再被允许表示任何含义。",
   "SHAPE, NOT MEANING": "是形状，不是含义",
   "SYMMETRY CHAPTER": "对称这一章",
   "Same shape means the same thing.": "形状一样，意思就一样。",
-  "Shifting every position by a fixed amount preserves the first rule and breaks the second.": "把所有位置平移同样的量，第一条规则保住了，第二条就破了。",
+  "Shifting every position by a fixed amount preserves the first rule and breaks the second.":
+    "把所有位置平移同样的量，第一条规则保住了，第二条就破了。",
   "Start by renaming everything": "先把所有东西改名",
   "Starts with no notation": "开头没有任何记号",
-  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.": "「对称」是个许诺得比它实际说的要多的词，下面这三句正是读者最容易带走的说法。每一句都按别人最可能转述的最强形式写出来，然后被纠正。",
+  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.":
+    "「对称」是个许诺得比它实际说的要多的词，下面这三句正是读者最容易带走的说法。每一句都按别人最可能转述的最强形式写出来，然后被纠正。",
   "THE RENAMING THAT ALMOST WORKS": "那个差一点就成的改名",
   "TRY IT": "自己试试",
-  "Take the positions the system can be in and give them new names, by one fixed rule applied to all of them at once. Nothing about the system changes while you do this — you are relabelling the boxes, not moving what is inside them.": "把系统可能处在的那些位置拿过来，用一条固定的规则一次性给它们全都换上新名字。做这件事的时候系统本身毫无变化：你换的是箱子上的标签，不是箱子里的东西。",
-  "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.": "这就是一个挪动了的格子，所以这个改名不是对称。作为一次洗牌它挺正常——它只是没保住规则，而人家问的恰恰只有这一件事。",
+  "Take the positions the system can be in and give them new names, by one fixed rule applied to all of them at once. Nothing about the system changes while you do this — you are relabelling the boxes, not moving what is inside them.":
+    "把系统可能处在的那些位置拿过来，用一条固定的规则一次性给它们全都换上新名字。做这件事的时候系统本身毫无变化：你换的是箱子上的标签，不是箱子里的东西。",
+  "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.":
+    "这就是一个挪动了的格子，所以这个改名不是对称。作为一次洗牌它挺正常——它只是没保住规则，而人家问的恰恰只有这一件事。",
   "The exact cell where the shift fails": "平移出错的那一格",
-  "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.": "第一个位置是两条规则都当作特殊来对待的那个：它是起点，而两条规则里的第二条有一句只对它生效的附加条款。",
-  "The four numbers this release is held to, and what each one counts": "这个发布要为之负责的四个数字，以及每个数字数的是什么",
-  "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.": "这张网格针对每一对层级问：有多少种保住规则的方式，能把小的那层搬进大的那层。只按第一条规则，这样的方式总是有的。两条规则一起要求，就几乎没有了——而且这个格局恰好就是整除关系：所以第三层装得进第六层，而第五层里什么也装不进去。每一格读作「第一条规则 / 两条规则」。",
-  "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.": "那句平白的话就是定义；它下面那行记号是同一句话，只是按评审人习惯看到的写法写的。下面的内容都不需要看懂记号。",
-  "The same positions, studied under one rule, the other rule, and both at once.": "同样这些位置：先在一条规则下看，再在另一条规则下看，最后两条一起看。",
+  "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.":
+    "第一个位置是两条规则都当作特殊来对待的那个：它是起点，而两条规则里的第二条有一句只对它生效的附加条款。",
+  "The four numbers this release is held to, and what each one counts":
+    "这个发布要为之负责的四个数字，以及每个数字数的是什么",
+  "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.":
+    "这张网格针对每一对层级问：有多少种保住规则的方式，能把小的那层搬进大的那层。只按第一条规则，这样的方式总是有的。两条规则一起要求，就几乎没有了——而且这个格局恰好就是整除关系：所以第三层装得进第六层，而第五层里什么也装不进去。每一格读作「第一条规则 / 两条规则」。",
+  "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.":
+    "那句平白的话就是定义；它下面那行记号是同一句话，只是按评审人习惯看到的写法写的。下面的内容都不需要看懂记号。",
+  "The same positions, studied under one rule, the other rule, and both at once.":
+    "同样这些位置：先在一条规则下看，再在另一条规则下看，最后两条一起看。",
   "The same total, counted a second way": "同一个总数，用第二种办法再算一遍",
-  "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.": "这一节之后的部分，是用这类东西通常采用的记号写的：对要核查工作的人来说这是对的写法，对其他所有人则毫无用处。所以先讲想法本身——用大白话，配一个成立的改名和一个不成立的改名。这跟本章其余部分用的是同一个想法，变的只是措辞。",
+  "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.":
+    "这一节之后的部分，是用这类东西通常采用的记号写的：对要核查工作的人来说这是对的写法，对其他所有人则毫无用处。所以先讲想法本身——用大白话，配一个成立的改名和一个不成立的改名。这跟本章其余部分用的是同一个想法，变的只是措辞。",
   "Then redo the tables and compare": "然后把表重做一遍，两相对照",
   "These symmetries are the symmetries of something physical.": "这些对称是某种物理事物的对称。",
-  "They are not. Everything here is a statement about a finite table of names. Nothing in it refers to space, time, direction, or any physical quantity, and a formula resembling one from physics is a resemblance rather than a claim.": "不是。这里的一切都是关于一张有限的名字表的陈述。其中没有任何东西指向空间、时间、方向或任何物理量；一个长得像物理公式的式子，是长得像，不是在主张什么。",
-  "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.": "这是值得弄明白的那个「差一点」，因为大家恰恰都指望它能成。平移把加法保住了——所以它看着像对称——可它把起点挪走了，而第二条规则有一句只对坐在那个位子上的东西生效的附加条款。一句就足以让整件事不成立。",
-  "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.": "另有三个边界情形——形状在平方剩余下的表现、第六层的分解从哪里起不再适用，以及一个相位标签意味着什么、不意味着什么——写在形式化的内核那一章里，而不在这里：它们各自都需要本页有意没有引入的词汇。",
+  "They are not. Everything here is a statement about a finite table of names. Nothing in it refers to space, time, direction, or any physical quantity, and a formula resembling one from physics is a resemblance rather than a claim.":
+    "不是。这里的一切都是关于一张有限的名字表的陈述。其中没有任何东西指向空间、时间、方向或任何物理量；一个长得像物理公式的式子，是长得像，不是在主张什么。",
+  "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.":
+    "这是值得弄明白的那个「差一点」，因为大家恰恰都指望它能成。平移把加法保住了——所以它看着像对称——可它把起点挪走了，而第二条规则有一句只对坐在那个位子上的东西生效的附加条款。一句就足以让整件事不成立。",
+  "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.":
+    "另有三个边界情形——形状在平方剩余下的表现、第六层的分解从哪里起不再适用，以及一个相位标签意味着什么、不意味着什么——写在形式化的内核那一章里，而不在这里：它们各自都需要本页有意没有引入的词汇。",
   "Three readings this chapter does not support.": "本章并不支持的三种读法。",
-  "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.": "有三样东西很容易被听成一样，对这个项目的多数误读都是从那里开始的。数学部分已经做完，而且是三者中最小的。已发布的引擎只用了它很窄的一片。其余的一切——更大的状态、学习回路——都是写下来了而没有造出来。下面每一行都写明它属于三者中的哪一个。",
-  "Two levels using the same position names does not make the names mean the same thing.": "两个层级用着同样的位置名字，并不等于这些名字指的是同一回事。",
-  "Two records can reach the same answer and still be different records.": "两条记录可以得出同一个答案，却仍然是两条不同的记录。",
-  "Two situations can share a shape and still have to be treated separately, because the record keeps what the shape does not: which of them actually happened, and under what authority. Grouping by shape is a way to organise checking, not a way to merge records.": "两种情形可以共用一个形状，却仍然必须分开对待，因为记录保住了形状保不住的东西：其中哪一个真的发生了，以及是在谁的授权之下。按形状归类是组织核查的办法，不是合并记录的办法。",
-  "Two situations related by a symmetry have the same shape, so anything proved about one holds for the other and does not have to be checked twice. That is the whole payoff, and the rest of this chapter is care about when it applies.": "由一个对称联系起来的两种情形具有同一个形状，所以对其中一个证明过的事对另一个也成立，不必再查一遍。好处全在这里，而本章其余部分讲的都是「什么时候这条才适用」的谨慎。",
+  "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.":
+    "有三样东西很容易被听成一样，对这个项目的多数误读都是从那里开始的。数学部分已经做完，而且是三者中最小的。已发布的引擎只用了它很窄的一片。其余的一切——更大的状态、学习回路——都是写下来了而没有造出来。下面每一行都写明它属于三者中的哪一个。",
+  "Two levels using the same position names does not make the names mean the same thing.":
+    "两个层级用着同样的位置名字，并不等于这些名字指的是同一回事。",
+  "Two records can reach the same answer and still be different records.":
+    "两条记录可以得出同一个答案，却仍然是两条不同的记录。",
+  "Two situations can share a shape and still have to be treated separately, because the record keeps what the shape does not: which of them actually happened, and under what authority. Grouping by shape is a way to organise checking, not a way to merge records.":
+    "两种情形可以共用一个形状，却仍然必须分开对待，因为记录保住了形状保不住的东西：其中哪一个真的发生了，以及是在谁的授权之下。按形状归类是组织核查的办法，不是合并记录的办法。",
+  "Two situations related by a symmetry have the same shape, so anything proved about one holds for the other and does not have to be checked twice. That is the whole payoff, and the rest of this chapter is care about when it applies.":
+    "由一个对称联系起来的两种情形具有同一个形状，所以对其中一个证明过的事对另一个也成立，不必再查一遍。好处全在这里，而本章其余部分讲的都是「什么时候这条才适用」的谨慎。",
   "WHAT IS BEING RENAMED": "被改名的到底是什么",
   "WHAT IT NEVER MEANS": "它从来不意味着什么",
   "WHO ACTED ON WHOM": "谁对谁做了什么",
   "What a symmetry is": "什么是对称",
   "What that is worth": "这值多少",
-  "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.": "已发布的引擎做的事窄到一句话就能讲完：它接受两类输入，把一个在它运行之前就定死的列表缩小，再用一条只依赖于输入的规则给剩下的排序。同一个输入，隔一年跑两次，它返回的东西一样，因为它里面没有任何会往下带的东西。",
+  "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.":
+    "已发布的引擎做的事窄到一句话就能讲完：它接受两类输入，把一个在它运行之前就定死的列表缩小，再用一条只依赖于输入的规则给剩下的排序。同一个输入，隔一年跑两次，它返回的东西一样，因为它里面没有任何会往下带的东西。",
   "Which renamings leave every rule exactly where it was.": "哪些改名能把每一条规则都原封不动留在原处。",
-  "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.": "哪些改名能活下来，取决于你要求它们保住多少东西。只要求第一条规则成立，通过的就多一些；要求两条规则连同起点一起成立，通过的就少一些。下面三行就是这三个问题，而答案在三种情况下竟是同一批改名。",
+  "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.":
+    "哪些改名能活下来，取决于你要求它们保住多少东西。只要求第一条规则成立，通过的就多一些；要求两条规则连同起点一起成立，通过的就少一些。下面三行就是这三个问题，而答案在三种情况下竟是同一批改名。",
   "Why only some renamings work": "为什么只有一部分改名能成",
   "Why the second rule allows no more": "为什么第二条规则不再多放行一个",
   "Why the total is multiplied by four": "为什么总数要乘以四",
   "Why these are matched rather than equal": "为什么它们是对应，而不是相等",
-  "Work out the whole table of results again using the new names, and lay it next to the original. Either it comes out identical, cell for cell, or somewhere a cell has moved. There is no third outcome, and finding out is counting rather than judgement.": "用新名字把整张结果表重新做一遍，然后跟原来那张并排放着。要么它逐格完全一致，要么某处有一格挪了位。没有第三种可能，而且弄清楚这件事靠的是数数，不是判断。",
+  "Work out the whole table of results again using the new names, and lay it next to the original. Either it comes out identical, cell for cell, or somewhere a cell has moved. There is no third outcome, and finding out is counting rather than judgement.":
+    "用新名字把整张结果表重新做一遍，然后跟原来那张并排放着。要么它逐格完全一致，要么某处有一格挪了位。没有第三种可能，而且弄清楚这件事靠的是数数，不是判断。",
   "how many": "多少个",
   "renamings that work": "能成的改名",
   "shapes of a pair": "一对位置的形状",
@@ -211,100 +302,144 @@ export const plainChaptersZh: TranslationDictionary = {
 };
 
 export const plainChaptersAr: TranslationDictionary = {
-  "A statement about a finite table is not a statement about the world.": "العبارة عن جدول منتهٍ ليست عبارةً عن العالم.",
+  "A statement about a finite table is not a statement about the world.":
+    "العبارة عن جدول منتهٍ ليست عبارةً عن العالم.",
   "Between levels": "بين المستويات",
   "Every term, in full": "كلّ مصطلح، كاملًا",
   "Five words": "خمس كلمات",
   "Level by level": "مستوًى مستوًى",
-  "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.": "العمود الأيمن ما يُثبته الفصل، والأيسر ما يُنسَب إليه مرارًا ولا يُثبته. ولا يُدحَض شيء في العمود الأيسر هنا — بل إنّ هذه الحسابات ليست عنه أصلًا.",
+  "The left column is what the chapter establishes and the right is what it is repeatedly taken to establish and does not. Nothing in the right column is disproved here — it is simply not what these calculations are about.":
+    "العمود الأيمن ما يُثبته الفصل، والأيسر ما يُنسَب إليه مرارًا ولا يُثبته. ولا يُدحَض شيء في العمود الأيسر هنا — بل إنّ هذه الحسابات ليست عنه أصلًا.",
   "The renaming that almost works": "إعادة التسمية التي كادت تنجح",
   "Try it yourself": "جرّبها بنفسك",
   "WHAT THIS DOES NOT IMPLY": "ما لا يستلزمه هذا",
   "What is being renamed": "ما الذي يُعاد تسميته",
   "What this does not imply": "ما لا يستلزمه هذا",
   "A level fits inside a larger one only when it divides it.": "لا يتّسع مستوى داخل مستوى أكبر إلّا حين يقسمه.",
-  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.": "إمّا أن تصمد إعادة التسمية أمام المقارنة أو لا، والمثال الثاني يسقط عند خليّة بعينها يمكنك الإشارة إليها. هذا هو المنهج كلّه: لا يحسمه جدال، ولا ينفع فيه أنّه كاد أن يصحّ.",
+  "A renaming either survives the comparison or it does not, and the second example fails on a specific cell you can point at. That is the whole method: no argument settles it, and no amount of it being nearly true helps.":
+    "إمّا أن تصمد إعادة التسمية أمام المقارنة أو لا، والمثال الثاني يسقط عند خليّة بعينها يمكنك الإشارة إليها. هذا هو المنهج كلّه: لا يحسمه جدال، ولا ينفع فيه أنّه كاد أن يصحّ.",
   "A renaming that keeps the starting point": "إعادة تسمية تُبقي نقطة البداية",
-  "A renaming that leaves every rule exactly where it was is a symmetry. One that moves even a single cell is not, and the single cell is enough — this is the rare kind of question where one counterexample settles it completely.": "إعادة التسمية التي تُبقي كلّ قاعدة في موضعها تمامًا هي تناظر. وتلك التي تُزحزح خليّة واحدة ليست كذلك، وخليّة واحدة تكفي — فهذا من الأسئلة النادرة التي يحسمها مثال مضادّ واحد حسمًا تامًّا.",
+  "A renaming that leaves every rule exactly where it was is a symmetry. One that moves even a single cell is not, and the single cell is enough — this is the rare kind of question where one counterexample settles it completely.":
+    "إعادة التسمية التي تُبقي كلّ قاعدة في موضعها تمامًا هي تناظر. وتلك التي تُزحزح خليّة واحدة ليست كذلك، وخليّة واحدة تكفي — فهذا من الأسئلة النادرة التي يحسمها مثال مضادّ واحد حسمًا تامًّا.",
   "A shift, which moves it": "إزاحة، وهي تُزحزحها",
   "A symmetry": "تناظر",
-  "A symmetry is a renaming that leaves every rule exactly where it was.": "التناظر إعادةُ تسميةٍ تُبقي كلّ قاعدة في موضعها تمامًا.",
-  "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.": "تخبرك خليّة الجدول بالجواب ولا تخبرك بشيء عن الطريق إليه. لكنّ السجلّ ملزَم بأن يحفظ أيّ موضع كان الحالةَ وأيّهما كان الشيء المطبَّق عليها، لأنّ مراجعةً بعد عام تسأل مَن فعل بمَن، لا ما الذي خرج فحسب. ولهذا يصير جدولُ أجوبةٍ واحد أربعةَ أنواع من السجلّ، ولهذا يكون العدد في هذه الصفحة أكبر ممّا توحي به الجداول وحدها.",
+  "A symmetry is a renaming that leaves every rule exactly where it was.":
+    "التناظر إعادةُ تسميةٍ تُبقي كلّ قاعدة في موضعها تمامًا.",
+  "A table cell tells you the answer and nothing about how you arrived at it. But the record has to keep which position was the situation and which was the thing applied to it, because a review a year later asks who acted on whom, not merely what came out. Keeping that distinction is why one table of answers becomes four kinds of record, and why the count on this page is larger than the tables alone would suggest.":
+    "تخبرك خليّة الجدول بالجواب ولا تخبرك بشيء عن الطريق إليه. لكنّ السجلّ ملزَم بأن يحفظ أيّ موضع كان الحالةَ وأيّهما كان الشيء المطبَّق عليها، لأنّ مراجعةً بعد عام تسأل مَن فعل بمَن، لا ما الذي خرج فحسب. ولهذا يصير جدولُ أجوبةٍ واحد أربعةَ أنواع من السجلّ، ولهذا يكون العدد في هذه الصفحة أكبر ممّا توحي به الجداول وحدها.",
   "Adding the seven levels up": "جمع المستويات السبعة",
-  "After the renaming those two are the third and the second, and combining them lands on the fifth as well — the same place the original answer was renamed to.": "بعد إعادة التسمية صار هذان الثالثَ والثاني، وجمعهما يقع على الخامس أيضًا — وهو المكان نفسه الذي أُعيدت تسمية الجواب الأصلي إليه.",
-  "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.": "بعد الإزاحة صار الجالس في ذلك الموضع الخاصّ موضعًا آخر، وصارت العبارة تنطبق عليه.",
-  "At level five, rename every position by doubling its number and wrapping round: the first stays first, the second becomes the third, the third becomes the fifth, and so on.": "في المستوى الخامس، أعِد تسمية كلّ موضع بمضاعفة رقمه مع الالتفاف: يبقى الأوّل أوّلًا، ويصير الثاني ثالثًا، والثالث خامسًا، وهكذا.",
-  "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.": "في المستوى نفسه، أزِح كلّ موضع خطوةً واحدة بدلًا من ذلك: يصير الأوّل ثانيًا، والثاني ثالثًا، ويلتفّ الأخير إلى المقدّمة.",
+  "After the renaming those two are the third and the second, and combining them lands on the fifth as well — the same place the original answer was renamed to.":
+    "بعد إعادة التسمية صار هذان الثالثَ والثاني، وجمعهما يقع على الخامس أيضًا — وهو المكان نفسه الذي أُعيدت تسمية الجواب الأصلي إليه.",
+  "After the shift, the position sitting in that special slot is a different one, and the clause now fires on it.":
+    "بعد الإزاحة صار الجالس في ذلك الموضع الخاصّ موضعًا آخر، وصارت العبارة تنطبق عليه.",
+  "At level five, rename every position by doubling its number and wrapping round: the first stays first, the second becomes the third, the third becomes the fifth, and so on.":
+    "في المستوى الخامس، أعِد تسمية كلّ موضع بمضاعفة رقمه مع الالتفاف: يبقى الأوّل أوّلًا، ويصير الثاني ثالثًا، والثالث خامسًا، وهكذا.",
+  "At the same level, shift every position up by one instead: the first becomes the second, the second becomes the third, and the last wraps round to the front.":
+    "في المستوى نفسه، أزِح كلّ موضع خطوةً واحدة بدلًا من ذلك: يصير الأوّل ثانيًا، والثاني ثالثًا، ويلتفّ الأخير إلى المقدّمة.",
   "BEFORE ANY NOTATION": "قبل أيّ رموز",
   "BETWEEN LEVELS": "بين المستويات",
   "Both are worked on a real cell rather than described.": "كلاهما محسوب على خليّة حقيقية لا موصوف بالكلام.",
-  "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.": "اختيار إعادة تسمية يُظهر الدورة التي تُدير بها المواضع، والمجموعات التي تجمعها فيها، والمواضع التي تتركها في مكانها. ثمّ يُراجَع العدد أسفلها بطريقة ثانية، بحجّة متوسّط قياسية، وعلى الاثنين أن يتّفقا.",
+  "Choosing a renaming shows the cycle it moves the positions around in, the groups it collapses them into, and which positions it leaves alone. The count underneath is then checked a second way, by a standard averaging argument, and the two have to agree.":
+    "اختيار إعادة تسمية يُظهر الدورة التي تُدير بها المواضع، والمجموعات التي تجمعها فيها، والمواضع التي تتركها في مكانها. ثمّ يُراجَع العدد أسفلها بطريقة ثانية، بحجّة متوسّط قياسية، وعلى الاثنين أن يتّفقا.",
   "Counting the shapes is the same as counting what matters.": "عدُّ الأشكال هو نفسه عدُّ ما يهمّ.",
   "EVERY TERM, IN FULL": "كلّ مصطلح، كاملًا",
-  "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.": "تبدأ كلّ بطاقة بصورة، ثمّ تعطي التعريف، وتحسب مثالًا منتهيًا باليد، وتُثبت الادّعاء، وتحدّد ما لا يمتدّ إليه. وهي هنا لمن يريد مصطلحًا واحدًا كما ينبغي، لا الفصل كلّه بسرعة.",
-  "Each level is counted on its own, and the totals are sums rather than a single larger object.": "يُحسَب كلّ مستوى على حدة، والمجاميع حصيلةُ جمعٍ لا كائنٌ واحد أكبر.",
-  "Each of these means one specific thing, and they are easy to run together.": "يعني كلٌّ منها شيئًا واحدًا بعينه، ويسهل الخلط بينها.",
-  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.": "ثمانية عشر حاصلُ جمع سبعة أجوبة منفصلة. لا شيء في البرج له ثمانية عشر تناظرًا؛ بل سبعة أشياء لكلٍّ منها واحد وواحد واثنان واثنان وأربعة واثنان وستّة.",
-  "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.": "كلّ عدٍّ أدناه مأخوذ داخل مستوى واحد. لا شيء يتجمّع عبر المستويات، والمجاميع في الأسفل جمعُ سبع نتائج منفصلة — فلا وجود لزمرة تناظر واحدة للبرج كلّه، وهذا القسم هو الذي يقول ذلك.",
-  "Every one of the twenty-five cells behaves like that, in both tables. Nothing moved, so this renaming is a symmetry.": "تتصرّف كلّ خليّة من الخمس والعشرين هكذا، في الجدولين معًا. لم يتزحزح شيء، فهذه إعادة التسمية تناظر.",
+  "Each card starts with a picture, gives the definition, works one finite example by hand, proves the claim, and marks what the claim does not extend to. They are here for the reader who wants one term properly rather than the chapter quickly.":
+    "تبدأ كلّ بطاقة بصورة، ثمّ تعطي التعريف، وتحسب مثالًا منتهيًا باليد، وتُثبت الادّعاء، وتحدّد ما لا يمتدّ إليه. وهي هنا لمن يريد مصطلحًا واحدًا كما ينبغي، لا الفصل كلّه بسرعة.",
+  "Each level is counted on its own, and the totals are sums rather than a single larger object.":
+    "يُحسَب كلّ مستوى على حدة، والمجاميع حصيلةُ جمعٍ لا كائنٌ واحد أكبر.",
+  "Each of these means one specific thing, and they are easy to run together.":
+    "يعني كلٌّ منها شيئًا واحدًا بعينه، ويسهل الخلط بينها.",
+  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.":
+    "ثمانية عشر حاصلُ جمع سبعة أجوبة منفصلة. لا شيء في البرج له ثمانية عشر تناظرًا؛ بل سبعة أشياء لكلٍّ منها واحد وواحد واثنان واثنان وأربعة واثنان وستّة.",
+  "Every count below is taken inside one level. Nothing groups across levels, and the totals at the bottom are additions of seven separate results — there is no single symmetry group of the whole tower, and this is the section that says so.":
+    "كلّ عدٍّ أدناه مأخوذ داخل مستوى واحد. لا شيء يتجمّع عبر المستويات، والمجاميع في الأسفل جمعُ سبع نتائج منفصلة — فلا وجود لزمرة تناظر واحدة للبرج كلّه، وهذا القسم هو الذي يقول ذلك.",
+  "Every one of the twenty-five cells behaves like that, in both tables. Nothing moved, so this renaming is a symmetry.":
+    "تتصرّف كلّ خليّة من الخمس والعشرين هكذا، في الجدولين معًا. لم يتزحزح شيء، فهذه إعادة التسمية تناظر.",
   "FIVE WORDS THE REST OF THE CHAPTER USES": "خمس كلمات يستعملها بقيّة الفصل",
   "Formal statements from the second section": "العبارات الصورية تبدأ من القسم الثاني",
   "Groups that look like mirrors and are not": "مجموعات تشبه المرايا وليست كذلك",
-  "If a word above lost you, its own page picks it up from the beginning.": "إن أضاعتك كلمة أعلاه، فلها صفحتها الخاصّة التي تبدأ من البداية.",
+  "If a word above lost you, its own page picks it up from the beginning.":
+    "إن أضاعتك كلمة أعلاه، فلها صفحتها الخاصّة التي تبدأ من البداية.",
   "If nothing moved, the renaming was a symmetry": "إن لم يتزحزح شيء، فقد كانت إعادة التسمية تناظرًا",
-  "In the original table, combining the second position with the fourth lands on the fifth.": "في الجدول الأصلي، يقع جمع الموضع الثاني مع الرابع على الخامس.",
-  "It does not. A symmetry says two situations are structurally interchangeable. It says nothing about where either came from, who is allowed to act on it, or what it means — and none of those travel along with the renaming.": "لا. يقول التناظر إنّ حالتين قابلتان للتبادل بنيويًا. ولا يقول شيئًا عن مصدر أيٍّ منهما، ولا عمّن يُسمح له بالتصرّف فيها، ولا عمّا تعنيه — ولا ينتقل أيٌّ من ذلك مع إعادة التسمية.",
+  "In the original table, combining the second position with the fourth lands on the fifth.":
+    "في الجدول الأصلي، يقع جمع الموضع الثاني مع الرابع على الخامس.",
+  "It does not. A symmetry says two situations are structurally interchangeable. It says nothing about where either came from, who is allowed to act on it, or what it means — and none of those travel along with the renaming.":
+    "لا. يقول التناظر إنّ حالتين قابلتان للتبادل بنيويًا. ولا يقول شيئًا عن مصدر أيٍّ منهما، ولا عمّن يُسمح له بالتصرّف فيها، ولا عمّا تعنيه — ولا ينتقل أيٌّ من ذلك مع إعادة التسمية.",
   "LEVEL BY LEVEL": "مستوًى مستوًى",
-  "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.": "تختلف المستويات في عدد الحالات التي تستطيع التمييز بينها أصلًا، فنقلُ شيء من مستوى خشن إلى أدقّ سؤالٌ حقيقي لا إعادةَ لصق بطاقات. وثمّة ثلاث عتبات، كلٌّ أشدّ من سابقتها: يجب أن تظلّ القواعد صحيحة، ويجب أن يظلّ المختلف مختلفًا، ويجب — قبل أن يُفعَل بالنتيجة شيء — أن يكون النقل مأذونًا به. تُجتاز الأوليان بالرياضيات؛ أمّا الثالثة فلا، وهذا القسم يحدّد أين تتوقّف.",
+  "Levels differ in how many cases they can tell apart, so carrying something from a coarse level to a finer one is a real question rather than a relabelling. There are three separate bars, each stricter than the last: the rules still have to hold, distinct things still have to stay distinct, and — before anything is done with the result — the transfer still has to be permitted. Clearing the first two is mathematics; the third is not, and this section marks where one stops.":
+    "تختلف المستويات في عدد الحالات التي تستطيع التمييز بينها أصلًا، فنقلُ شيء من مستوى خشن إلى أدقّ سؤالٌ حقيقي لا إعادةَ لصق بطاقات. وثمّة ثلاث عتبات، كلٌّ أشدّ من سابقتها: يجب أن تظلّ القواعد صحيحة، ويجب أن يظلّ المختلف مختلفًا، ويجب — قبل أن يُفعَل بالنتيجة شيء — أن يكون النقل مأذونًا به. تُجتاز الأوليان بالرياضيات؛ أمّا الثالثة فلا، وهذا القسم يحدّد أين تتوقّف.",
   "MOVING BETWEEN LEVELS": "الانتقال بين المستويات",
   "Not a symmetry": "ليس تناظرًا",
   "ONE THAT WORKS, ONE THAT DOES NOT": "واحدة تنجح وأخرى لا",
-  "Pick a level and a renaming, and watch which positions it groups together.": "اختر مستوًى وإعادة تسمية، وانظر أيّ المواضع تجمعها معًا.",
+  "Pick a level and a renaming, and watch which positions it groups together.":
+    "اختر مستوًى وإعادة تسمية، وانظر أيّ المواضع تجمعها معًا.",
   "Read them in the formal chapter": "اقرأها في الفصل الصوري",
-  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.": "أعِد تسمية كلّ المواضع دفعةً واحدة، وأعِد بناء الجداول، وانظر هل تزحزح شيء. وإعادات التسمية التي لا تُغيّر شيئًا هي التناظرات؛ يجدها هذا الفصل كلّها، ويعدّ الأشكال التي تجمع الأشياء فيها، ويحدّد أين يتوقّف هذا التجميع عن أن يُسمح له بأن يعني شيئًا.",
+  "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.":
+    "أعِد تسمية كلّ المواضع دفعةً واحدة، وأعِد بناء الجداول، وانظر هل تزحزح شيء. وإعادات التسمية التي لا تُغيّر شيئًا هي التناظرات؛ يجدها هذا الفصل كلّها، ويعدّ الأشكال التي تجمع الأشياء فيها، ويحدّد أين يتوقّف هذا التجميع عن أن يُسمح له بأن يعني شيئًا.",
   "SHAPE, NOT MEANING": "الشكل لا المعنى",
   "SYMMETRY CHAPTER": "فصل التناظر",
   "Same shape means the same thing.": "الشكل نفسه يعني الشيء نفسه.",
-  "Shifting every position by a fixed amount preserves the first rule and breaks the second.": "إزاحةُ كلّ المواضع بمقدار ثابت تحفظ القاعدة الأولى وتكسر الثانية.",
+  "Shifting every position by a fixed amount preserves the first rule and breaks the second.":
+    "إزاحةُ كلّ المواضع بمقدار ثابت تحفظ القاعدة الأولى وتكسر الثانية.",
   "Start by renaming everything": "ابدأ بإعادة تسمية كلّ شيء",
   "Starts with no notation": "يبدأ بلا رموز",
-  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.": "التناظر كلمة تَعِد بأكثر ممّا تقول، والجمل الثلاث أدناه هي ما يغادر به القارئ غالبًا. كُتبت كلٌّ منها بأقوى صورة قد تُردَّد بها، ثمّ صُحّحت.",
+  "Symmetry is a word that invites more than it says, and the three sentences below are the ones a reader is most likely to leave with. Each is stated in the strongest form somebody might repeat it, and then corrected.":
+    "التناظر كلمة تَعِد بأكثر ممّا تقول، والجمل الثلاث أدناه هي ما يغادر به القارئ غالبًا. كُتبت كلٌّ منها بأقوى صورة قد تُردَّد بها، ثمّ صُحّحت.",
   "THE RENAMING THAT ALMOST WORKS": "إعادة التسمية التي كادت تنجح",
   "TRY IT": "جرّبها بنفسك",
-  "Take the positions the system can be in and give them new names, by one fixed rule applied to all of them at once. Nothing about the system changes while you do this — you are relabelling the boxes, not moving what is inside them.": "خذ المواضع التي يمكن للنظام أن يكون فيها وأعطها أسماءً جديدة، بقاعدة واحدة ثابتة تُطبَّق عليها كلّها دفعةً واحدة. ولا يتغيّر في النظام شيء أثناء ذلك: أنت تُبدّل بطاقات الصناديق لا ما بداخلها.",
-  "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.": "تلك خليّة تزحزحت، فهذه إعادة التسمية ليست تناظرًا. وهي خلطٌ سليم تمامًا — لكنّها ببساطة لا تحفظ القواعد، وهذا وحده هو المطلوب.",
+  "Take the positions the system can be in and give them new names, by one fixed rule applied to all of them at once. Nothing about the system changes while you do this — you are relabelling the boxes, not moving what is inside them.":
+    "خذ المواضع التي يمكن للنظام أن يكون فيها وأعطها أسماءً جديدة، بقاعدة واحدة ثابتة تُطبَّق عليها كلّها دفعةً واحدة. ولا يتغيّر في النظام شيء أثناء ذلك: أنت تُبدّل بطاقات الصناديق لا ما بداخلها.",
+  "That is a cell that moved, so this renaming is not a symmetry. It is a perfectly good shuffle — it simply does not preserve the rules, which is the only thing being asked.":
+    "تلك خليّة تزحزحت، فهذه إعادة التسمية ليست تناظرًا. وهي خلطٌ سليم تمامًا — لكنّها ببساطة لا تحفظ القواعد، وهذا وحده هو المطلوب.",
   "The exact cell where the shift fails": "الخليّة التي تسقط عندها الإزاحة",
-  "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.": "الموضع الأوّل هو الذي تعامله القاعدتان معاملةً خاصّة: فهو نقطة البداية، وللثانية منهما عبارة لا تنطبق إلّا عليه.",
-  "The four numbers this release is held to, and what each one counts": "الأرقام الأربعة التي يُسأل عنها هذا الإصدار، وما يعدّه كلٌّ منها",
-  "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.": "تسأل الشبكة، لكلّ زوج من المستويات، كم طريقةً حافظةً للقواعد تنقل الأصغر إلى الأكبر. وبالقاعدة الأولى وحدها توجد دائمًا بعضها. وبالقاعدتين معًا لا تكاد توجد — والنمط هو القسمة بالضبط، ولذلك يتّسع المستوى الثالث داخل السادس ولا يتّسع شيء داخل الخامس. وتُقرأ كلّ خليّة: القاعدة الأولى / القاعدتان.",
-  "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.": "الجملة البسيطة هي التعريف؛ وسطر الرموز تحتها هو الجملة نفسها مكتوبةً كما يتوقّع مراجعٌ أن يراها. ولا يحتاج ما تحتها إلى قراءة الرموز.",
-  "The same positions, studied under one rule, the other rule, and both at once.": "المواضع نفسها، مدروسةً تحت قاعدة، ثمّ تحت الأخرى، ثمّ تحتهما معًا.",
+  "The first position is the one both rules treat as special — it is the starting point, and the second of the two rules has a clause that applies only to it.":
+    "الموضع الأوّل هو الذي تعامله القاعدتان معاملةً خاصّة: فهو نقطة البداية، وللثانية منهما عبارة لا تنطبق إلّا عليه.",
+  "The four numbers this release is held to, and what each one counts":
+    "الأرقام الأربعة التي يُسأل عنها هذا الإصدار، وما يعدّه كلٌّ منها",
+  "The grid asks, for every pair of levels, how many rule-preserving ways there are to carry the smaller into the larger. Under the first rule alone there are always some. Under both rules together there are almost none — and the pattern is exactly divisibility, which is why level three sits inside level six and nothing sits inside level five. Each cell reads first rule / both rules.":
+    "تسأل الشبكة، لكلّ زوج من المستويات، كم طريقةً حافظةً للقواعد تنقل الأصغر إلى الأكبر. وبالقاعدة الأولى وحدها توجد دائمًا بعضها. وبالقاعدتين معًا لا تكاد توجد — والنمط هو القسمة بالضبط، ولذلك يتّسع المستوى الثالث داخل السادس ولا يتّسع شيء داخل الخامس. وتُقرأ كلّ خليّة: القاعدة الأولى / القاعدتان.",
+  "The plain sentence is the definition; the line of notation under it is the same sentence written the way a reviewer would expect to see it. Nothing below needs the notation to be followed.":
+    "الجملة البسيطة هي التعريف؛ وسطر الرموز تحتها هو الجملة نفسها مكتوبةً كما يتوقّع مراجعٌ أن يراها. ولا يحتاج ما تحتها إلى قراءة الرموز.",
+  "The same positions, studied under one rule, the other rule, and both at once.":
+    "المواضع نفسها، مدروسةً تحت قاعدة، ثمّ تحت الأخرى، ثمّ تحتهما معًا.",
   "The same total, counted a second way": "المجموع نفسه، محسوبًا بطريقة ثانية",
-  "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.": "كُتبت الأقسام التالية بالرموز التي تُكتب بها هذه الأمور عادةً: وهو المستوى الصحيح لمن يراجع العمل، وعديم النفع لسواه. لذلك تأتي الفكرة أوّلًا بالكلمات، مع إعادة تسمية تنجح وأخرى لا تنجح. وهي الفكرة نفسها التي يستعملها بقيّة الفصل؛ ولا يتغيّر إلّا المفردات.",
+  "The sections after this one are written in the notation these things are normally written in, which is right for somebody checking the work and no use to anybody else. So the idea comes first, in words, with one renaming that works and one that does not. It is the same idea the rest of the chapter uses; only the vocabulary changes.":
+    "كُتبت الأقسام التالية بالرموز التي تُكتب بها هذه الأمور عادةً: وهو المستوى الصحيح لمن يراجع العمل، وعديم النفع لسواه. لذلك تأتي الفكرة أوّلًا بالكلمات، مع إعادة تسمية تنجح وأخرى لا تنجح. وهي الفكرة نفسها التي يستعملها بقيّة الفصل؛ ولا يتغيّر إلّا المفردات.",
   "Then redo the tables and compare": "ثمّ أعِد بناء الجداول وقارِن",
   "These symmetries are the symmetries of something physical.": "هذه التناظرات تناظراتُ شيء فيزيائي.",
-  "They are not. Everything here is a statement about a finite table of names. Nothing in it refers to space, time, direction, or any physical quantity, and a formula resembling one from physics is a resemblance rather than a claim.": "لا. كلّ ما هنا عبارةٌ عن جدول أسماء منتهٍ. ولا يشير فيه شيء إلى مكان أو زمان أو اتّجاه أو أيّ كمّية فيزيائية، والصيغة التي تشبه صيغةً من الفيزياء شبهٌ لا ادّعاء.",
-  "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.": "هذه هي المحاولة التي تكاد تنجح، وهي جديرة بالفهم لأنّها التي يتوقّع الناس نجاحها. تحفظ الإزاحة الجمعَ — ولذلك تبدو تناظرًا — لكنّها تُزحزح نقطة البداية، وللقاعدة الثانية عبارة لا تنطبق إلّا على الجالس هناك. وعبارة واحدة تكفي لإسقاط الأمر كلّه.",
-  "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.": "ثلاث حالات حدّية أخرى — كيف تتصرّف الأشكال تحت البواقي التربيعية، وأين يتوقّف تفكيك المستوى السادس عن الانطباق، وما الذي تعنيه بطاقة الطور وما لا تعنيه — مذكورة في فصل النواة الصوري لا هنا، لأنّ كلًّا منها يحتاج مفردات لم تُدخِلها هذه الصفحة عن قصد.",
+  "They are not. Everything here is a statement about a finite table of names. Nothing in it refers to space, time, direction, or any physical quantity, and a formula resembling one from physics is a resemblance rather than a claim.":
+    "لا. كلّ ما هنا عبارةٌ عن جدول أسماء منتهٍ. ولا يشير فيه شيء إلى مكان أو زمان أو اتّجاه أو أيّ كمّية فيزيائية، والصيغة التي تشبه صيغةً من الفيزياء شبهٌ لا ادّعاء.",
+  "This is the near miss worth understanding, because it is the one people expect to work. A shift keeps addition intact — that is why it looks like a symmetry — but it moves the starting position, and the second rule has a clause that applies only to whatever is sitting there. One clause is enough to fail the whole thing.":
+    "هذه هي المحاولة التي تكاد تنجح، وهي جديرة بالفهم لأنّها التي يتوقّع الناس نجاحها. تحفظ الإزاحة الجمعَ — ولذلك تبدو تناظرًا — لكنّها تُزحزح نقطة البداية، وللقاعدة الثانية عبارة لا تنطبق إلّا على الجالس هناك. وعبارة واحدة تكفي لإسقاط الأمر كلّه.",
+  "Three further boundary cases — how the shapes behave under the square residues, where the level-six decomposition stops applying, and what a phase label does and does not mean — are stated in the formal kernel chapter rather than here, because each needs vocabulary this page has deliberately not introduced.":
+    "ثلاث حالات حدّية أخرى — كيف تتصرّف الأشكال تحت البواقي التربيعية، وأين يتوقّف تفكيك المستوى السادس عن الانطباق، وما الذي تعنيه بطاقة الطور وما لا تعنيه — مذكورة في فصل النواة الصوري لا هنا، لأنّ كلًّا منها يحتاج مفردات لم تُدخِلها هذه الصفحة عن قصد.",
   "Three readings this chapter does not support.": "ثلاث قراءات لا يدعمها هذا الفصل.",
-  "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.": "ثلاثة أشياء يسهل سماعها شيئًا واحدًا، ومن هناك تبدأ معظم القراءات الخاطئة لهذا المشروع. الرياضيات منتهية وهي أصغر الثلاثة. والمحرّك المُصدَر لا يستعمل منها إلّا شريحة ضيّقة. وكلّ ما عدا ذلك — الحالة الأوسع وحلقة التعلّم — مكتوب وغير مبنيّ. ويقول كلّ سطر أدناه إلى أيّ الثلاثة ينتمي.",
-  "Two levels using the same position names does not make the names mean the same thing.": "استعمالُ مستويين أسماءَ المواضع نفسها لا يجعل تلك الأسماء تعني الشيء نفسه.",
-  "Two records can reach the same answer and still be different records.": "قد يصل سجلّان إلى الجواب نفسه ويظلّان سجلَّين مختلفين.",
-  "Two situations can share a shape and still have to be treated separately, because the record keeps what the shape does not: which of them actually happened, and under what authority. Grouping by shape is a way to organise checking, not a way to merge records.": "قد تشترك حالتان في شكل واحد ويظلّ لزامًا معاملتهما على حدة، لأنّ السجلّ يحفظ ما لا يحفظه الشكل: أيّهما وقع فعلًا، وتحت أيّ صلاحية. والتجميع بالشكل وسيلةٌ لتنظيم الفحص لا لدمج السجلّات.",
-  "Two situations related by a symmetry have the same shape, so anything proved about one holds for the other and does not have to be checked twice. That is the whole payoff, and the rest of this chapter is care about when it applies.": "الحالتان اللتان يربطهما تناظر لهما الشكل نفسه، فما يُثبَت عن إحداهما يصحّ على الأخرى ولا يحتاج فحصًا ثانيًا. هذا هو المكسب كلّه، وبقيّة الفصل تدقيقٌ في متى ينطبق.",
+  "Three things are easy to hear as one, and most misreadings of this project start there. The mathematics is finished and is the smallest of the three. The released engine uses only a narrow slice of it. Everything else — the wider state, the learning loop — is written down and not built. Each row below says which of the three it belongs to.":
+    "ثلاثة أشياء يسهل سماعها شيئًا واحدًا، ومن هناك تبدأ معظم القراءات الخاطئة لهذا المشروع. الرياضيات منتهية وهي أصغر الثلاثة. والمحرّك المُصدَر لا يستعمل منها إلّا شريحة ضيّقة. وكلّ ما عدا ذلك — الحالة الأوسع وحلقة التعلّم — مكتوب وغير مبنيّ. ويقول كلّ سطر أدناه إلى أيّ الثلاثة ينتمي.",
+  "Two levels using the same position names does not make the names mean the same thing.":
+    "استعمالُ مستويين أسماءَ المواضع نفسها لا يجعل تلك الأسماء تعني الشيء نفسه.",
+  "Two records can reach the same answer and still be different records.":
+    "قد يصل سجلّان إلى الجواب نفسه ويظلّان سجلَّين مختلفين.",
+  "Two situations can share a shape and still have to be treated separately, because the record keeps what the shape does not: which of them actually happened, and under what authority. Grouping by shape is a way to organise checking, not a way to merge records.":
+    "قد تشترك حالتان في شكل واحد ويظلّ لزامًا معاملتهما على حدة، لأنّ السجلّ يحفظ ما لا يحفظه الشكل: أيّهما وقع فعلًا، وتحت أيّ صلاحية. والتجميع بالشكل وسيلةٌ لتنظيم الفحص لا لدمج السجلّات.",
+  "Two situations related by a symmetry have the same shape, so anything proved about one holds for the other and does not have to be checked twice. That is the whole payoff, and the rest of this chapter is care about when it applies.":
+    "الحالتان اللتان يربطهما تناظر لهما الشكل نفسه، فما يُثبَت عن إحداهما يصحّ على الأخرى ولا يحتاج فحصًا ثانيًا. هذا هو المكسب كلّه، وبقيّة الفصل تدقيقٌ في متى ينطبق.",
   "WHAT IS BEING RENAMED": "ما الذي يُعاد تسميته",
   "WHAT IT NEVER MEANS": "ما لا يعنيه أبدًا",
   "WHO ACTED ON WHOM": "مَن فعل بمَن",
   "What a symmetry is": "ما التناظر",
   "What that is worth": "ما قيمة ذلك",
-  "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.": "ما يفعله المحرّك المُصدَر ضيّق بما يكفي لوصفه في جملة: يقبل نوعين من المُدخلات، ويُضيّق قائمةً ثُبِّتت قبل تشغيله، ويرتّب ما تبقّى بقاعدة لا تعتمد إلّا على المُدخلات. شغّله مرّتين على المُدخل نفسه بفارق عام فيُعيد الشيء نفسه، لأنّه لا يحمل في داخله شيئًا ينتقل.",
+  "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.":
+    "ما يفعله المحرّك المُصدَر ضيّق بما يكفي لوصفه في جملة: يقبل نوعين من المُدخلات، ويُضيّق قائمةً ثُبِّتت قبل تشغيله، ويرتّب ما تبقّى بقاعدة لا تعتمد إلّا على المُدخلات. شغّله مرّتين على المُدخل نفسه بفارق عام فيُعيد الشيء نفسه، لأنّه لا يحمل في داخله شيئًا ينتقل.",
   "Which renamings leave every rule exactly where it was.": "أيّ إعادات التسمية تُبقي كلّ قاعدة في موضعها تمامًا.",
-  "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.": "أيّ إعادات التسمية تصمد يتوقّف على مقدار ما تطلب منها حفظه. اطلب صحّة القاعدة الأولى وحدها فيمرّ منها أكثر؛ واطلب صحّة القاعدتين ونقطة البداية فيمرّ أقلّ. والصفوف الثلاثة أدناه هي هذه الأسئلة الثلاثة، ويتبيّن أنّ الجواب في الحالات الثلاث هو مجموعة إعادات التسمية نفسها.",
+  "Which renamings survive depends on how much you are asking them to preserve. Ask only that the first rule holds and more of them get through; ask that both rules and the starting point hold and fewer do. The three rows below are those three questions, and the answer turns out to be the same set of renamings in all three cases.":
+    "أيّ إعادات التسمية تصمد يتوقّف على مقدار ما تطلب منها حفظه. اطلب صحّة القاعدة الأولى وحدها فيمرّ منها أكثر؛ واطلب صحّة القاعدتين ونقطة البداية فيمرّ أقلّ. والصفوف الثلاثة أدناه هي هذه الأسئلة الثلاثة، ويتبيّن أنّ الجواب في الحالات الثلاث هو مجموعة إعادات التسمية نفسها.",
   "Why only some renamings work": "لماذا تنجح بعض إعادات التسمية فقط",
   "Why the second rule allows no more": "لماذا لا تسمح القاعدة الثانية بأكثر",
   "Why the total is multiplied by four": "لماذا يُضرَب المجموع بأربعة",
   "Why these are matched rather than equal": "لماذا هما متطابقان بالمقابلة لا متساويان",
-  "Work out the whole table of results again using the new names, and lay it next to the original. Either it comes out identical, cell for cell, or somewhere a cell has moved. There is no third outcome, and finding out is counting rather than judgement.": "أعِد بناء جدول النتائج كلّه بالأسماء الجديدة، وضعه إلى جانب الأصلي. إمّا أن يخرج مطابقًا خليّةً بخليّة، وإمّا أن تكون خليّة قد تزحزحت. لا ثالث لهما، وتبيُّن ذلك عدٌّ لا حُكم.",
+  "Work out the whole table of results again using the new names, and lay it next to the original. Either it comes out identical, cell for cell, or somewhere a cell has moved. There is no third outcome, and finding out is counting rather than judgement.":
+    "أعِد بناء جدول النتائج كلّه بالأسماء الجديدة، وضعه إلى جانب الأصلي. إمّا أن يخرج مطابقًا خليّةً بخليّة، وإمّا أن تكون خليّة قد تزحزحت. لا ثالث لهما، وتبيُّن ذلك عدٌّ لا حُكم.",
   "how many": "كم",
   "renamings that work": "إعادات التسمية التي تنجح",
   "shapes of a pair": "أشكال الزوج",

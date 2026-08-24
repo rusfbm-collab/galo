@@ -91,9 +91,7 @@ describe("the class comparison", () => {
       for (const cell of [row.strength, row.authority, row.change]) {
         expect(cell.length).toBeLessThan(105);
       }
-      expect(`${row.strength} ${row.contrast}`).not.toMatch(
-        /\b(outperform|beats|superior to|better than)\b/i,
-      );
+      expect(`${row.strength} ${row.contrast}`).not.toMatch(/\b(outperform|beats|superior to|better than)\b/i);
     }
   });
 

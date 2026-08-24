@@ -388,7 +388,11 @@ export function SymmetryPage() {
             <article>
               <span>{t("Adding the seven levels up")}</span>
               <code dir="ltr">Σ_(n=1)^7 |Aut(A_n)| = 1+1+2+2+4+2+6 = {sameLevelAutomorphismCount}</code>
-              <p>{t("Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.")}</p>
+              <p>
+                {t(
+                  "Eighteen is seven separate answers added together. Nothing in the tower has eighteen symmetries; seven things have one, one, two, two, four, two and six of them.",
+                )}
+              </p>
             </article>
             <article>
               <span>{t("Why the total is multiplied by four")}</span>

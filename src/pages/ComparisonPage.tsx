@@ -6,11 +6,7 @@ import { PageShell } from "../components/layout/PageShell";
 import { TermChips } from "../components/theory/TermExplainer";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
-import {
-  comparisonClasses,
-  comparisonClassesBoundary,
-  comparisonClassesLead,
-} from "../content/comparisonClasses";
+import { comparisonClasses, comparisonClassesBoundary, comparisonClassesLead } from "../content/comparisonClasses";
 import { comparisonMisreadings, comparisonRows, galoStrengths, modelStrengths } from "../content/llmComparison";
 import { landscapeRows, landscapeStanding, landscapeVerdicts } from "../content/landscape";
 import { useI18n } from "../i18n/I18nContext";

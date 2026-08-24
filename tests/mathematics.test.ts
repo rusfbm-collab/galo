@@ -176,8 +176,7 @@ describe("GALO frozen PLUS/STAR mathematics", () => {
     );
     expect(downwardPairs).toHaveLength(21);
 
-    const nontrivial = (maps: readonly (readonly number[])[]) =>
-      maps.filter((map) => map.some((value) => value !== 0));
+    const nontrivial = (maps: readonly (readonly number[])[]) => maps.filter((map) => map.some((value) => value !== 0));
 
     let plus = 0;
     let star = 0;

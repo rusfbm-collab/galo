@@ -7,279 +7,423 @@ import type { TranslationDictionary } from "../translations";
  */
 
 export const industrialRu: TranslationDictionary = {
-  "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.": "GALO — архитектура общего назначения: она не прячет внутри непрозрачной модели ни состояние системы, ни её разрешённые действия, ни пройденный маршрут. То, что продаётся первым, гораздо уже — сделать решение защищаемым там, где на предприятии уже работают цифровые двойники и производственные системы.",
-  "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.": "Он рассчитан на работу, где дорого обходится не неверный ответ, а неверный ответ, который никто не может проследить: промышленная эксплуатация, регулируемые процессы, автоматика, которая живёт годами и всё, что рецензенту приходится подписывать. Промышленность идёт первой потому, что цена неоднозначности там уже посчитана.",
-  "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.": "Результаты обучения есть на синтетических задачах и публичных бенчмарках, включая отрицательные. Ни один партнёр не прогонял ни одного из них на своих данных со своим оценщиком, и никакого эксплуатационного выигрыша нигде не измерено. Этот ноль напечатан здесь намеренно.",
-  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.": "Нет ни одного результата на бенчмарке, полученного под контролем партнёра, и нет сравнения по точности, скорости или стоимости с системой, которая реально работает.",
-  "No claim about general intelligence, production autonomy, or functional-safety certification.": "Никаких заявлений об общем интеллекте, производственной автономности или сертификации функциональной безопасности.",
-  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.": "В выпущённом ядре обучения нет; там, где прототип всё же учится, результаты ограничены синтетическими задачами и публичными бенчмарками и публикуются вместе с отрицательными.",
-  "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.": "Одна ограниченная оценка гарантии промышленных решений только на чтение, на данных партнёра, — вместе с расширением принимаемого входного контракта, добавлением многошаговых траекторий и закрытием названных ворот доказательности.",
-  "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.": "Отчасти. Прототип Engine и Atlas измерялся против предзарегистрированных базовых линий на публичных бенчмарках, и два из шести результатов оказались отрицательными. Против системы, которая реально работает, не измерялось ничего, и никакого эксплуатационного выигрыша нигде не измерено.",
-  "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:": "Архитектура — общая; первое, что у нас купят, — нет. Что это за первый продукт, сколько он, по нашей прикидке, стоил бы и как далеко он от того, чтобы коснуться железа:",
-  "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.": "Замороженный релиз ничего не накапливает между прогонами, так что два прогона на одном входе ведут себя одинаково и через год. Отдельный прототип Engine и Atlas всё же учится, и о нём сообщается отдельно от этой цифры, а не внутри неё.",
-  "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.": "Да, и оно намеренно узкое: два принимаемых входных шаблона, один ограниченный шаг за прогон, четыре исполняемых вида действий и никакого обучения в выпущённом ядре. Отдельный прототип Engine и Atlas всё же учится, и о его результатах сообщается на их собственных условиях.",
+  "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.":
+    "GALO — архитектура общего назначения: она не прячет внутри непрозрачной модели ни состояние системы, ни её разрешённые действия, ни пройденный маршрут. То, что продаётся первым, гораздо уже — сделать решение защищаемым там, где на предприятии уже работают цифровые двойники и производственные системы.",
+  "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.":
+    "Он рассчитан на работу, где дорого обходится не неверный ответ, а неверный ответ, который никто не может проследить: промышленная эксплуатация, регулируемые процессы, автоматика, которая живёт годами и всё, что рецензенту приходится подписывать. Промышленность идёт первой потому, что цена неоднозначности там уже посчитана.",
+  "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.":
+    "Результаты обучения есть на синтетических задачах и публичных бенчмарках, включая отрицательные. Ни один партнёр не прогонял ни одного из них на своих данных со своим оценщиком, и никакого эксплуатационного выигрыша нигде не измерено. Этот ноль напечатан здесь намеренно.",
+  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.":
+    "Нет ни одного результата на бенчмарке, полученного под контролем партнёра, и нет сравнения по точности, скорости или стоимости с системой, которая реально работает.",
+  "No claim about general intelligence, production autonomy, or functional-safety certification.":
+    "Никаких заявлений об общем интеллекте, производственной автономности или сертификации функциональной безопасности.",
+  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.":
+    "В выпущённом ядре обучения нет; там, где прототип всё же учится, результаты ограничены синтетическими задачами и публичными бенчмарками и публикуются вместе с отрицательными.",
+  "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.":
+    "Одна ограниченная оценка гарантии промышленных решений только на чтение, на данных партнёра, — вместе с расширением принимаемого входного контракта, добавлением многошаговых траекторий и закрытием названных ворот доказательности.",
+  "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.":
+    "Отчасти. Прототип Engine и Atlas измерялся против предзарегистрированных базовых линий на публичных бенчмарках, и два из шести результатов оказались отрицательными. Против системы, которая реально работает, не измерялось ничего, и никакого эксплуатационного выигрыша нигде не измерено.",
+  "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:":
+    "Архитектура — общая; первое, что у нас купят, — нет. Что это за первый продукт, сколько он, по нашей прикидке, стоил бы и как далеко он от того, чтобы коснуться железа:",
+  "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.":
+    "Замороженный релиз ничего не накапливает между прогонами, так что два прогона на одном входе ведут себя одинаково и через год. Отдельный прототип Engine и Atlas всё же учится, и о нём сообщается отдельно от этой цифры, а не внутри неё.",
+  "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.":
+    "Да, и оно намеренно узкое: два принимаемых входных шаблона, один ограниченный шаг за прогон, четыре исполняемых вида действий и никакого обучения в выпущённом ядре. Отдельный прототип Engine и Atlas всё же учится, и о его результатах сообщается на их собственных условиях.",
   "learning writes in the released kernel": "записей обучения в выпущённом ядре",
   "results produced under a partner's control": "результатов, полученных под контролем партнёра",
   "the industrial wedge, in full": "промышленное направление целиком",
   "0% work advantage": "0% выигрыша по объёму работы",
   "1.34% fewer candidate checks": "на 1,34% меньше проверок кандидатов",
-  "49.7% less work than the preregistered global-frequency baseline": "на 49,7% меньше работы, чем у предзарегистрированной базовой линии по глобальной частоте",
-  "60.9% less full cognitive work, at exact terminal parity": "на 60,9% меньше полной когнитивной работы при точном совпадении итога",
+  "49.7% less work than the preregistered global-frequency baseline":
+    "на 49,7% меньше работы, чем у предзарегистрированной базовой линии по глобальной частоте",
+  "60.9% less full cognitive work, at exact terminal parity":
+    "на 60,9% меньше полной когнитивной работы при точном совпадении итога",
   "6–8 weeks": "6–8 недель",
   "7.17% less work, CI95 5.82–8.55%": "на 7,17% меньше работы, ДИ95 5,82–8,55%",
   "A Q0 ranking signal on n-ary relations.": "Сигнал ранжирования Q0 на n-арных отношениях.",
   "A candidate diagnosis and a portfolio of candidate actions.": "Диагноз-кандидат и портфель возможных действий.",
-  "A committed route and Atlas state, written before anything is revealed.": "Зафиксированный маршрут и состояние Atlas, записанные до того, как что-либо раскрыто.",
+  "A committed route and Atlas state, written before anything is revealed.":
+    "Зафиксированный маршрут и состояние Atlas, записанные до того, как что-либо раскрыто.",
   "A demand for immediate unsupervised control.": "Требование немедленного управления без надзора.",
   "A digital-twin scenario, where one exists.": "Сценарий в цифровом двойнике — там, где он есть.",
   "A duplicate or post-reveal commitment is rejected.": "Повторная фиксация или фиксация после раскрытия отклоняется.",
-  "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.": "Куда более широкий продукт, за которым стоит куда больше интеграционной работы. Гипотеза GALO уже и переносимее: законные переходы состояния, граница полномочий, которую обучаемая часть не пересекает, и воспроизведение, не зависящее от присутствия самой платформы.",
-  "A general architecture and a narrow first product are two different sentences.": "Общая архитектура и узкий первый продукт — это два разных предложения.",
-  "A general-purpose architecture is a design intention. General intelligence would need broad perception, transfer, planning and grounding well beyond any evidence here.": "Архитектура общего назначения — это замысел. Для общего интеллекта потребовались бы широкое восприятие, перенос, планирование и связь с миром, далеко выходящие за пределы любых здешних свидетельств.",
-  "A modelled ontology of the organisation, with workflows, governance and integration around it.": "Смоделированная онтология организации, вокруг которой построены рабочие процессы, управление и интеграция.",
-  "A one-off custom visualisation with no recurring assurance need.": "Разовая визуализация под заказ, без постоянной потребности в гарантии решений.",
+  "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.":
+    "Куда более широкий продукт, за которым стоит куда больше интеграционной работы. Гипотеза GALO уже и переносимее: законные переходы состояния, граница полномочий, которую обучаемая часть не пересекает, и воспроизведение, не зависящее от присутствия самой платформы.",
+  "A general architecture and a narrow first product are two different sentences.":
+    "Общая архитектура и узкий первый продукт — это два разных предложения.",
+  "A general-purpose architecture is a design intention. General intelligence would need broad perception, transfer, planning and grounding well beyond any evidence here.":
+    "Архитектура общего назначения — это замысел. Для общего интеллекта потребовались бы широкое восприятие, перенос, планирование и связь с миром, далеко выходящие за пределы любых здешних свидетельств.",
+  "A modelled ontology of the organisation, with workflows, governance and integration around it.":
+    "Смоделированная онтология организации, вокруг которой построены рабочие процессы, управление и интеграция.",
+  "A one-off custom visualisation with no recurring assurance need.":
+    "Разовая визуализация под заказ, без постоянной потребности в гарантии решений.",
   "A person or a simulation holds authority": "Полномочия у человека или у симуляции",
   "A post-reveal oracle, never promotable.": "Оракул после раскрытия; продвижению не подлежит.",
-  "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.": "Прогноз и защитимое решение — разные продукты. GALO держит конкурирующие диагнозы живыми, выбирает проверку, которая их разделяет, и записывает, почему действие вообще было предложено.",
-  "A previously exposed corpus. Fresh partner-controlled validity is a different question.": "Ранее использовавшийся корпус. Валидность на данных партнёра — отдельный вопрос.",
-  "A public observation with a source digest and a declared scope.": "Публичное наблюдение с отпечатком источника и объявленной областью.",
+  "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.":
+    "Прогноз и защитимое решение — разные продукты. GALO держит конкурирующие диагнозы живыми, выбирает проверку, которая их разделяет, и записывает, почему действие вообще было предложено.",
+  "A previously exposed corpus. Fresh partner-controlled validity is a different question.":
+    "Ранее использовавшийся корпус. Валидность на данных партнёра — отдельный вопрос.",
+  "A public observation with a source digest and a declared scope.":
+    "Публичное наблюдение с отпечатком источника и объявленной областью.",
   "A signed evaluator outcome.": "Подписанный результат от оценивающей стороны.",
-  "A single arm proves nothing: any improvement can be explained by a weaker comparator, a leak, or the order of the data. Seven arms remove those explanations one at a time, and the promotion gates are written down before the sealed set is opened.": "Одна рука не доказывает ничего: любое улучшение можно объяснить более слабым сравнением, утечкой или порядком данных. Семь рук снимают эти объяснения по одному, а условия продвижения записываются до того, как вскрывают запечатанный набор.",
-  "A small positive work effect on a public benchmark, with the interval published rather than the point alone.": "Небольшой положительный эффект по объёму работы на публичном бенчмарке, с опубликованным интервалом, а не только точкой.",
-  "A stable deployment, support, assurance updates and new workflows.": "Стабильное развёртывание, поддержка, обновления гарантий и новые процессы.",
+  "A single arm proves nothing: any improvement can be explained by a weaker comparator, a leak, or the order of the data. Seven arms remove those explanations one at a time, and the promotion gates are written down before the sealed set is opened.":
+    "Одна рука не доказывает ничего: любое улучшение можно объяснить более слабым сравнением, утечкой или порядком данных. Семь рук снимают эти объяснения по одному, а условия продвижения записываются до того, как вскрывают запечатанный набор.",
+  "A small positive work effect on a public benchmark, with the interval published rather than the point alone.":
+    "Небольшой положительный эффект по объёму работы на публичном бенчмарке, с опубликованным интервалом, а не только точкой.",
+  "A stable deployment, support, assurance updates and new workflows.":
+    "Стабильное развёртывание, поддержка, обновления гарантий и новые процессы.",
   "A stale Atlas snapshot.": "Устаревший снимок Atlas.",
-  "A stronger equal-information comparator was not beaten. This is not universal superiority.": "Более сильный сравнимый по информации соперник побеждён не был. Это не универсальное превосходство.",
+  "A stronger equal-information comparator was not beaten. This is not universal superiority.":
+    "Более сильный сравнимый по информации соперник побеждён не был. Это не универсальное превосходство.",
   "A terminal, safety and actual-work ledger.": "Реестр итогов, безопасности и фактической работы.",
-  "A0 against A1 down at least 15%, with the CI95 lower bound above 5%.": "A0 против A1 — минус не менее 15%, с нижней границей ДИ95 выше 5%.",
-  "A0 must beat or materially complement A2 on a preregistered endpoint.": "A0 обязана превзойти A2 или существенно дополнить её по предзарегистрированной конечной точке.",
+  "A0 against A1 down at least 15%, with the CI95 lower bound above 5%.":
+    "A0 против A1 — минус не менее 15%, с нижней границей ДИ95 выше 5%.",
+  "A0 must beat or materially complement A2 on a preregistered endpoint.":
+    "A0 обязана превзойти A2 или существенно дополнить её по предзарегистрированной конечной точке.",
   "AED 150k–300k": "150–300 тыс. AED",
   "AED 350k–750k": "350–750 тыс. AED",
   "AED 600k–1.8m per site per year": "600 тыс. – 1,8 млн AED за площадку в год",
-  "Above the systems that run the plant, and never inside them.": "Над системами, которые ведут производство, и никогда внутри них.",
-  "Advisory": "Рекомендательный режим",
+  "Above the systems that run the plant, and never inside them.":
+    "Над системами, которые ведут производство, и никогда внутри них.",
+  Advisory: "Рекомендательный режим",
   "Advisory and simulation first": "Сначала рекомендации и симуляция",
   "Advisory to robot missions, with the gates": "От рекомендаций до роботизированных миссий, со шлюзами",
   "After a positive evaluation": "После положительной оценки",
-  "Alternatives are kept while the evidence does not settle them.": "Альтернативы сохраняются, пока данных не хватает, чтобы выбрать одну.",
-  "An alarm arrives. Seven steps later there is a package somebody else can replay.": "Приходит тревога. Через семь шагов на руках пакет, который посторонний может воспроизвести.",
-  "An evaluation run on the wrong site produces an uninterpretable result and burns a quarter for both sides. Each line below has a disqualifier attached; any one of them is enough to stop before a contract.": "Оценка, проведённая не на той площадке, даёт результат, который невозможно интерпретировать, и сжигает квартал обеим сторонам. К каждой строке ниже приложен дисквалификатор; любого из них достаточно, чтобы остановиться до договора.",
-  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.": "Исключение из правила допуска для партнёра, который ему не соответствует, — какой бы ни была его готовность подписать.",
-  "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.": "Явная модель предприятия, питаемая телеметрией, с симуляцией сверху. Что и где находится, что происходит сейчас и как выглядел бы сценарий.",
-  "An integrated Atlas and adapters running in operational shadow mode.": "Интегрированный Atlas и адаптеры, работающие в теневом режиме на площадке.",
-  "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.": "Операционный эффект Atlas на публичном бенчмарке, измеренный относительно заранее зафиксированной базовой линии.",
+  "Alternatives are kept while the evidence does not settle them.":
+    "Альтернативы сохраняются, пока данных не хватает, чтобы выбрать одну.",
+  "An alarm arrives. Seven steps later there is a package somebody else can replay.":
+    "Приходит тревога. Через семь шагов на руках пакет, который посторонний может воспроизвести.",
+  "An evaluation run on the wrong site produces an uninterpretable result and burns a quarter for both sides. Each line below has a disqualifier attached; any one of them is enough to stop before a contract.":
+    "Оценка, проведённая не на той площадке, даёт результат, который невозможно интерпретировать, и сжигает квартал обеим сторонам. К каждой строке ниже приложен дисквалификатор; любого из них достаточно, чтобы остановиться до договора.",
+  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.":
+    "Исключение из правила допуска для партнёра, который ему не соответствует, — какой бы ни была его готовность подписать.",
+  "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.":
+    "Явная модель предприятия, питаемая телеметрией, с симуляцией сверху. Что и где находится, что происходит сейчас и как выглядел бы сценарий.",
+  "An integrated Atlas and adapters running in operational shadow mode.":
+    "Интегрированный Atlas и адаптеры, работающие в теневом режиме на площадке.",
+  "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.":
+    "Операционный эффект Atlas на публичном бенчмарке, измеренный относительно заранее зафиксированной базовой линии.",
   "An upper bound, and nothing else.": "Только верхняя граница, и ничего больше.",
-  "Annual": "Ежегодно",
+  Annual: "Ежегодно",
   "Annual runtime and Atlas licence": "Годовая лицензия на среду исполнения и Atlas",
-  "Anomaly detection, failure forecasting, condition monitoring and domain models": "Обнаружение аномалий, прогноз отказов, мониторинг состояния и доменные модели",
+  "Anomaly detection, failure forecasting, condition monitoring and domain models":
+    "Обнаружение аномалий, прогноз отказов, мониторинг состояния и доменные модели",
   "At most 1% of independent groups.": "Не более 1% независимых групп.",
   "Broader general-purpose reasoning": "Рассуждение общего назначения, шире прежнего",
-  "Candidate checks are not full cognitive work, and this is not a production improvement.": "Проверки кандидатов — это не полная когнитивная работа, и это не улучшение в эксплуатации.",
-  "Candidate membership and terminal semantics stay equal across the arms.": "Состав кандидатов и итоговая семантика остаются одинаковыми во всех руках.",
-  "Collapsing them is the quickest way to say something untrue in either direction — either the product sounds like general intelligence, or the architecture sounds like a maintenance tool. They are stated separately here and everywhere else on the site.": "Смешать их — быстрейший способ сказать неправду в любую сторону: либо продукт звучит как общий интеллект, либо архитектура — как инструмент для обслуживания оборудования. Здесь и всюду на сайте они сказаны порознь.",
+  "Candidate checks are not full cognitive work, and this is not a production improvement.":
+    "Проверки кандидатов — это не полная когнитивная работа, и это не улучшение в эксплуатации.",
+  "Candidate membership and terminal semantics stay equal across the arms.":
+    "Состав кандидатов и итоговая семантика остаются одинаковыми во всех руках.",
+  "Collapsing them is the quickest way to say something untrue in either direction — either the product sounds like general intelligence, or the architecture sounds like a maintenance tool. They are stated separately here and everywhere else on the site.":
+    "Смешать их — быстрейший способ сказать неправду в любую сторону: либо продукт звучит как общий интеллект, либо архитектура — как инструмент для обслуживания оборудования. Здесь и всюду на сайте они сказаны порознь.",
   "Commercial wedge": "С чего начинаем продавать",
-  "Commit": "Фиксация",
-  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.": "Строительство компании: юрлицо в ADGM, первые технические наймы, договоры и путь к готовности к seed-раунду.",
+  Commit: "Фиксация",
+  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.":
+    "Строительство компании: юрлицо в ADGM, первые технические наймы, договоры и путь к готовности к seed-раунду.",
   "Competing local models and assumptions": "Конкурирующие локальные модели и допущения",
-  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.": "Вычислительные и симуляционные мощности для приватной оценки, независимого воспроизведения и проверки physical AI.",
-  "Control": "Контроль",
+  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.":
+    "Вычислительные и симуляционные мощности для приватной оценки, независимого воспроизведения и проверки physical AI.",
+  Control: "Контроль",
   "Counterfactual route and recovery evidence.": "Контрфактуальный маршрут и свидетельство восстановления.",
   "Customers, letters of intent, revenue": "Клиенты, письма о намерениях, выручка",
-  "DEV and SEALED state roots unchanged; no policy, Atlas or core promotion.": "Корни состояний DEV и SEALED не изменились; ни политика, ни Atlas, ни ядро не продвигались.",
-  "Decision assurance around the digital twins a plant already runs.": "Решение, которое можно отстоять, — там, где на производстве уже работают цифровые двойники.",
+  "DEV and SEALED state roots unchanged; no policy, Atlas or core promotion.":
+    "Корни состояний DEV и SEALED не изменились; ни политика, ни Atlas, ни ядро не продвигались.",
+  "Decision assurance around the digital twins a plant already runs.":
+    "Решение, которое можно отстоять, — там, где на производстве уже работают цифровые двойники.",
   "Delay already costs money": "Задержка уже стоит денег",
-  "Design-partner planning hypotheses · not current prices": "Плановые гипотезы для разговора с партнёром по пилоту · не действующие цены",
-  "Digital twin · SCADA · historian · MES · ERP · CMMS · manuals · sensors": "Цифровой двойник · SCADA · архив измерений · MES · ERP · CMMS · инструкции · датчики",
-  "Digital twin, telemetry, work order, manual revision.": "Цифровой двойник, телеметрия, наряд на работу, правка в инструкции.",
+  "Design-partner planning hypotheses · not current prices":
+    "Плановые гипотезы для разговора с партнёром по пилоту · не действующие цены",
+  "Digital twin · SCADA · historian · MES · ERP · CMMS · manuals · sensors":
+    "Цифровой двойник · SCADA · архив измерений · MES · ERP · CMMS · инструкции · датчики",
+  "Digital twin, telemetry, work order, manual revision.":
+    "Цифровой двойник, телеметрия, наряд на работу, правка в инструкции.",
   "Digital-twin platforms": "Платформы цифровых двойников",
   "Does GALO beat the operational incumbent?": "Обходит ли GALO то, что у партнёра уже работает?",
-  "Does explicit state and replay add operational value?": "Добавляют ли явное состояние и воспроизведение операционную ценность?",
+  "Does explicit state and replay add operational value?":
+    "Добавляют ли явное состояние и воспроизведение операционную ценность?",
   "Does learning reduce verified work?": "Снижает ли обучение объём проверенной работы?",
   "Does the current state matter?": "Важно ли текущее состояние?",
   "Does the result depend on genuine temporal learning?": "Зависит ли результат от настоящего обучения во времени?",
-  "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.": "Уберите любое из них — и число выше становится не просто слабее, а нечитаемым. Они перечислены, чтобы проверяющий мог указать, какое именно, по его мнению, мы нарушили.",
-  "Duration": "Срок",
-  "Each step names the partner system it reads, the artefact GALO produces, and the control that stops the step from being gamed. The controls are the point: without them a work-reduction number means nothing.": "Каждый шаг называет систему партнёра, из которой он читает, артефакт, который производит GALO, и контроль, не дающий этот шаг подкрутить. Контроли и есть суть: без них число о снижении работы ничего не значит.",
-  "Economics": "Экономика",
-  "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.": "Сквозное обучение внутри одной области, с протокольным Atlas и сравнением на том же самом движке.",
+  "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.":
+    "Уберите любое из них — и число выше становится не просто слабее, а нечитаемым. Они перечислены, чтобы проверяющий мог указать, какое именно, по его мнению, мы нарушили.",
+  Duration: "Срок",
+  "Each step names the partner system it reads, the artefact GALO produces, and the control that stops the step from being gamed. The controls are the point: without them a work-reduction number means nothing.":
+    "Каждый шаг называет систему партнёра, из которой он читает, артефакт, который производит GALO, и контроль, не дающий этот шаг подкрутить. Контроли и есть суть: без них число о снижении работы ничего не значит.",
+  Economics: "Экономика",
+  "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.":
+    "Сквозное обучение внутри одной области, с протокольным Atlas и сравнением на том же самом движке.",
   "Enterprise agreement, priced after discovery": "Корпоративное соглашение, цена определяется после исследования",
-  "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.": "Все результаты на сегодня получены на синтетических задачах или публичных бенчмарках. Ни один партнёр не прогонял такое на своих данных со своей оценивающей стороной, и это следующий обязательный шаг.",
+  "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.":
+    "Все результаты на сегодня получены на синтетических задачах или публичных бенчмарках. Ни один партнёр не прогонял такое на своих данных со своей оценивающей стороной, и это следующий обязательный шаг.",
   "Exact equality for any arm that may be promoted.": "Точное равенство для любой руки, которую можно продвинуть.",
-  "Existing PLC · robot controller · certified safety interlocks": "Существующие ПЛК · контроллер робота · сертифицированные блокировки безопасности",
+  "Existing PLC · robot controller · certified safety interlocks":
+    "Существующие ПЛК · контроллер робота · сертифицированные блокировки безопасности",
   "Explicit, versioned state for the decision at hand.": "Явное версионированное состояние для конкретного решения.",
   "False accepts": "Ложные допуски",
-  "Faster diagnosis and cheaper re-verification only pay where the delay is measured.": "Более быстрая диагностика и более дешёвая перепроверка окупаются только там, где задержка измерена.",
+  "Faster diagnosis and cheaper re-verification only pay where the delay is measured.":
+    "Более быстрая диагностика и более дешёвая перепроверка окупаются только там, где задержка измерена.",
   "Five rungs, and the evidence that would open each one.": "Пять ступеней и свидетельство, которое открывает каждую.",
   "For industry": "Промышленности",
-  "Full candidate membership is preserved rather than pruned quietly.": "Состав кандидатов сохраняется целиком, а не подрезается втихую.",
+  "Full candidate membership is preserved rather than pruned quietly.":
+    "Состав кандидатов сохраняется целиком, а не подрезается втихую.",
   "Functional-safety certification": "Сертификация функциональной безопасности",
-  "GALO AI for Industry — Decision Assurance Around Existing Digital Twins": "GALO AI для промышленности — решения, которые можно отстоять, рядом с уже работающими двойниками",
+  "GALO AI for Industry — Decision Assurance Around Existing Digital Twins":
+    "GALO AI для промышленности — решения, которые можно отстоять, рядом с уже работающими двойниками",
   "GALO World Atlas": "World Atlas в GALO",
   "GALO artefact": "Артефакт GALO",
-  "GALO does not replace a digital twin, a SCADA system, a PLC, a robot controller or a safety interlock, and no proposed version writes to any of them directly. It reads what they publish and hands its conclusion to a person, a simulation or an approval gateway.": "GALO не заменяет ни цифрового двойника, ни SCADA, ни ПЛК, ни контроллер робота, ни блокировку безопасности, и ни одна из предлагаемых версий не пишет в них напрямую. Он читает то, что они публикуют, и передаёт свой вывод человеку, симуляции или шлюзу согласования.",
-  "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.": "GALO спроектирован как архитектура мировой модели, рассуждения, обучения и воспроизведения, не привязанная к одной предметной области. Архитектура общего назначения — не общий интеллект.",
-  "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.": "GALO спроектирован так, чтобы стоять над существующими цифровыми двойниками, системами SCADA, ПЛК, контроллерами роботов и блокировками безопасности, и ни одно из них не заменяет.",
-  "GALO is not a PLC, a motion controller or a safety system, and it does not aim to become one. In robotics its long-term place is mission reasoning, constraints, exception handling and recovery planning above a controller somebody else certified.": "GALO — не ПЛК, не контроллер движения и не система безопасности, и он не собирается ими становиться. В робототехнике его долгосрочное место — рассуждение о миссии, ограничения, обработка исключений и планирование восстановления над контроллером, который сертифицировал кто-то другой.",
-  "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.": "GALO ничего не прячет: состояние, выученный поиск, локальный пересмотр и маршруты действий остаются на виду — начиная с того места на производстве, где уже работают цифровые двойники и производственные системы. Доказано на сегодня ограниченное: результаты обучения на синтетических задачах и публичных бенчмарках, опубликованные вместе с двумя, которые не сработали. Ни один партнёр ещё не прогонял это на своих данных, и ничто здесь не разрешает команду на производство.",
-  "GENERAL-PURPOSE ARCHITECTURE · INDUSTRIAL DECISION ASSURANCE FIRST": "АРХИТЕКТУРА ОБЩЕГО НАЗНАЧЕНИЯ · ПЕРВОЙ ИДЁТ ПРОМЫШЛЕННОСТЬ",
-  "General-purpose verifiable world-model and autonomy architecture": "Проверяемая архитектура модели мира и автономности общего назначения",
-  "Hardware and software in the loop, certified interlocks, and regulator or partner approval.": "Железо и программы в контуре, сертифицированные блокировки и одобрение регулятора или партнёра.",
+  "GALO does not replace a digital twin, a SCADA system, a PLC, a robot controller or a safety interlock, and no proposed version writes to any of them directly. It reads what they publish and hands its conclusion to a person, a simulation or an approval gateway.":
+    "GALO не заменяет ни цифрового двойника, ни SCADA, ни ПЛК, ни контроллер робота, ни блокировку безопасности, и ни одна из предлагаемых версий не пишет в них напрямую. Он читает то, что они публикуют, и передаёт свой вывод человеку, симуляции или шлюзу согласования.",
+  "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.":
+    "GALO спроектирован как архитектура мировой модели, рассуждения, обучения и воспроизведения, не привязанная к одной предметной области. Архитектура общего назначения — не общий интеллект.",
+  "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.":
+    "GALO спроектирован так, чтобы стоять над существующими цифровыми двойниками, системами SCADA, ПЛК, контроллерами роботов и блокировками безопасности, и ни одно из них не заменяет.",
+  "GALO is not a PLC, a motion controller or a safety system, and it does not aim to become one. In robotics its long-term place is mission reasoning, constraints, exception handling and recovery planning above a controller somebody else certified.":
+    "GALO — не ПЛК, не контроллер движения и не система безопасности, и он не собирается ими становиться. В робототехнике его долгосрочное место — рассуждение о миссии, ограничения, обработка исключений и планирование восстановления над контроллером, который сертифицировал кто-то другой.",
+  "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.":
+    "GALO ничего не прячет: состояние, выученный поиск, локальный пересмотр и маршруты действий остаются на виду — начиная с того места на производстве, где уже работают цифровые двойники и производственные системы. Доказано на сегодня ограниченное: результаты обучения на синтетических задачах и публичных бенчмарках, опубликованные вместе с двумя, которые не сработали. Ни один партнёр ещё не прогонял это на своих данных, и ничто здесь не разрешает команду на производство.",
+  "GENERAL-PURPOSE ARCHITECTURE · INDUSTRIAL DECISION ASSURANCE FIRST":
+    "АРХИТЕКТУРА ОБЩЕГО НАЗНАЧЕНИЯ · ПЕРВОЙ ИДЁТ ПРОМЫШЛЕННОСТЬ",
+  "General-purpose verifiable world-model and autonomy architecture":
+    "Проверяемая архитектура модели мира и автономности общего назначения",
+  "Hardware and software in the loop, certified interlocks, and regulator or partner approval.":
+    "Железо и программы в контуре, сертифицированные блокировки и одобрение регулятора или партнёра.",
   "Heldout integrity": "Целостность отложенной выборки",
-  "Historical ground truth, or an independent expert judgement.": "Исторический фактический исход или независимое экспертное суждение.",
-  "Human approval · twin simulation · supervisory gateway": "Одобрение человека · симуляция на двойнике · надзорный шлюз",
-  "If A0 does not beat A1 under the frozen contract, or if there is an oracle leak, a frozen write, candidate drift or a false accept, the result stays NOT_SUPPORTED on that scope. The protocol is not changed after the sealed set has been inspected.": "Если A0 не превзойдёт A1 при замороженном контракте, либо обнаружится утечка оракула, запись в замороженное, дрейф кандидатов или ложное принятие, результат остаётся NOT_SUPPORTED на этой области. Протокол не меняется после того, как запечатанный набор был вскрыт.",
-  "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.": "Зарегистрировать операционную компанию в ADGM и провести двадцать пять интервью с промышленными предприятиями.",
-  "Independent assets with no shared process worth speaking of.": "Независимые активы без сколько-нибудь общего процесса.",
-  "Independent cross-domain evidence. Not a marketing declaration.": "Независимое свидетельство сразу в нескольких областях. Не маркетинговое заявление.",
+  "Historical ground truth, or an independent expert judgement.":
+    "Исторический фактический исход или независимое экспертное суждение.",
+  "Human approval · twin simulation · supervisory gateway":
+    "Одобрение человека · симуляция на двойнике · надзорный шлюз",
+  "If A0 does not beat A1 under the frozen contract, or if there is an oracle leak, a frozen write, candidate drift or a false accept, the result stays NOT_SUPPORTED on that scope. The protocol is not changed after the sealed set has been inspected.":
+    "Если A0 не превзойдёт A1 при замороженном контракте, либо обнаружится утечка оракула, запись в замороженное, дрейф кандидатов или ложное принятие, результат остаётся NOT_SUPPORTED на этой области. Протокол не меняется после того, как запечатанный набор был вскрыт.",
+  "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.":
+    "Зарегистрировать операционную компанию в ADGM и провести двадцать пять интервью с промышленными предприятиями.",
+  "Independent assets with no shared process worth speaking of.":
+    "Независимые активы без сколько-нибудь общего процесса.",
+  "Independent cross-domain evidence. Not a marketing declaration.":
+    "Независимое свидетельство сразу в нескольких областях. Не маркетинговое заявление.",
   "Industrial analytics and predictive maintenance": "Промышленная аналитика и предиктивное обслуживание",
   "Industrial and production autonomy": "Промышленная и производственная автономность",
   "Industrial chapter navigation": "Навигация по промышленному разделу",
-  "Industrial decision assurance around existing digital twins": "Промышленные решения, которые можно отстоять, рядом с уже работающими двойниками",
+  "Industrial decision assurance around existing digital twins":
+    "Промышленные решения, которые можно отстоять, рядом с уже работающими двойниками",
   "Industrial decision-assurance evaluation": "Оценка промышленных решений на защищаемость",
-  "Industry is chosen because the cost of ambiguity, downtime and an unsafe action is already measured there. A narrow market with measurable stakes falsifies an architecture faster than a broad one without them.": "Промышленность выбрана потому, что цена неоднозначности, простоя и небезопасного действия там уже посчитана. Узкий рынок, где цена ошибки измерима, опровергает архитектуру быстрее, чем широкий, где она нет.",
-  "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.": "Внутренний учёт единиц работы — это не ускорение, не причинный исход, не ценность для клиента и не внешний результат. Ни один партнёр не прогонял оценку на своих данных со своим оценщиком.",
-  "Issue a high-level recommendation or command through a separate approval gateway.": "Выдать высокоуровневую рекомендацию или команду через отдельный шлюз одобрения.",
-  "It allows an advisory-first deployment that is safe by construction.": "Она позволяет развёртывание «сначала рекомендация», безопасное по построению.",
-  "It funds the architecture and tests it against real cost": "Она финансирует архитектуру и проверяет её реальной ценой",
-  "Learn": "Учиться",
+  "Industry is chosen because the cost of ambiguity, downtime and an unsafe action is already measured there. A narrow market with measurable stakes falsifies an architecture faster than a broad one without them.":
+    "Промышленность выбрана потому, что цена неоднозначности, простоя и небезопасного действия там уже посчитана. Узкий рынок, где цена ошибки измерима, опровергает архитектуру быстрее, чем широкий, где она нет.",
+  "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.":
+    "Внутренний учёт единиц работы — это не ускорение, не причинный исход, не ценность для клиента и не внешний результат. Ни один партнёр не прогонял оценку на своих данных со своим оценщиком.",
+  "Issue a high-level recommendation or command through a separate approval gateway.":
+    "Выдать высокоуровневую рекомендацию или команду через отдельный шлюз одобрения.",
+  "It allows an advisory-first deployment that is safe by construction.":
+    "Она позволяет развёртывание «сначала рекомендация», безопасное по построению.",
+  "It funds the architecture and tests it against real cost":
+    "Она финансирует архитектуру и проверяет её реальной ценой",
+  Learn: "Учиться",
   "Learned proposal and search": "Выученные предложения и поиск",
-  "Less actual work, measured against the same mechanism rather than a weaker one.": "Меньше фактической работы, измеренной против того же механизма, а не против более слабого.",
+  "Less actual work, measured against the same mechanism rather than a weaker one.":
+    "Меньше фактической работы, измеренной против того же механизма, а не против более слабого.",
   "Licence, support, and usage or site economics": "Лицензия, поддержка и экономика использования или площадки",
-  "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.": "Происхождение — через собственную модель платформы, в той мере, в какой она это фиксирует, и то, что организация сама решит показать аудитору.",
-  "Local revision and cross-system evidence matter when one change touches several things.": "Локальный пересмотр и межсистемные свидетельства важны, когда одно изменение задевает сразу несколько вещей.",
-  "Mission decomposition, constraints, route choice and recovery above the vendor's controller.": "Декомпозиция миссии, ограничения, выбор маршрута и восстановление — над контроллером поставщика.",
-  "Models fitted to historical operating data, producing an alert, a score or a forecast.": "Модели, подогнанные под исторические эксплуатационные данные, выдающие сигнал, оценку или прогноз.",
-  "Most plants are not suitable, and saying so early is part of the product.": "Большинство производств не подходят, и сказать это заранее — часть продукта.",
+  "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.":
+    "Происхождение — через собственную модель платформы, в той мере, в какой она это фиксирует, и то, что организация сама решит показать аудитору.",
+  "Local revision and cross-system evidence matter when one change touches several things.":
+    "Локальный пересмотр и межсистемные свидетельства важны, когда одно изменение задевает сразу несколько вещей.",
+  "Mission decomposition, constraints, route choice and recovery above the vendor's controller.":
+    "Декомпозиция миссии, ограничения, выбор маршрута и восстановление — над контроллером поставщика.",
+  "Models fitted to historical operating data, producing an alert, a score or a forecast.":
+    "Модели, подогнанные под исторические эксплуатационные данные, выдающие сигнал, оценку или прогноз.",
+  "Most plants are not suitable, and saying so early is part of the product.":
+    "Большинство производств не подходят, и сказать это заранее — часть продукта.",
   "Multi-site or fleet expansion": "Расширение на несколько площадок или на парк",
-  "Negotiated": "По договорённости",
-  "Neither a positive nor a negative claim can be made from it.": "Из него нельзя сделать ни положительного, ни отрицательного вывода.",
-  "No certification exists, none is applied for, and none is implied by any number on this site.": "Сертификации не существует, заявка не подана, и ни одна цифра на этом сайте её не подразумевает.",
+  Negotiated: "По договорённости",
+  "Neither a positive nor a negative claim can be made from it.":
+    "Из него нельзя сделать ни положительного, ни отрицательного вывода.",
+  "No certification exists, none is applied for, and none is implied by any number on this site.":
+    "Сертификации не существует, заявка не подана, и ни одна цифра на этом сайте её не подразумевает.",
   "No customer, no pilot, no revenue": "Ни клиента, ни пилота, ни выручки",
-  "No gold diagnosis and no future outcome enters the policy input.": "Ни эталонный диагноз, ни будущий исход не попадают на вход политики.",
-  "No historian or SCADA, no asset hierarchy, no maintenance record, no versioned procedures.": "Ни архива измерений, ни SCADA, ни иерархии активов, ни записей об обслуживании, ни процедур с версиями.",
+  "No gold diagnosis and no future outcome enters the policy input.":
+    "Ни эталонный диагноз, ни будущий исход не попадают на вход политики.",
+  "No historian or SCADA, no asset hierarchy, no maintenance record, no versioned procedures.":
+    "Ни архива измерений, ни SCADA, ни иерархии активов, ни записей об обслуживании, ни процедур с версиями.",
   "No identifiable independent effect": "Независимый эффект не идентифицируется",
-  "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.": "К концу квартала компания не зарегистрирована или проведено меньше двадцати пяти промышленных интервью.",
-  "No oracle leak: the evaluator outcome is signed outside the engine.": "Нет утечки оракула: исход оценщика подписывается вне движка.",
-  "No quantified downtime, review time or operational consequence.": "Нет количественной оценки простоя, времени разбора или эксплуатационных последствий.",
+  "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.":
+    "К концу квартала компания не зарегистрирована или проведено меньше двадцати пяти промышленных интервью.",
+  "No oracle leak: the evaluator outcome is signed outside the engine.":
+    "Нет утечки оракула: исход оценщика подписывается вне движка.",
+  "No quantified downtime, review time or operational consequence.":
+    "Нет количественной оценки простоя, времени разбора или эксплуатационных последствий.",
   "No real actuation happens during an evaluation.": "Во время оценки не происходит никакого реального воздействия.",
-  "None of these rungs runs today. They are listed with their gates so that a reader can see what would have to be true before GALO went anywhere near a physical command — and so that nobody has to take the word 'roadmap' on trust.": "Ни одна из этих ступеней сегодня не работает. Они перечислены со своими воротами, чтобы читатель видел, что должно выполниться прежде, чем GALO подойдёт к физической команде, — и чтобы слово «дорожная карта» никому не пришлось принимать на веру.",
-  "Nothing here authorises a command to a plant, a controller or a robot. The roadmap is advisory first, then simulation, and every rung above that is gated.": "Ничто здесь не разрешает команду производству, контроллеру или роботу. Дорожная карта — сначала рекомендация, затем симуляция, и каждая ступень выше этого закрыта воротами.",
-  "Nothing. The negative is retained in the archive rather than dropped.": "Ничего. Отрицательный результат сохраняется в архиве, а не отбрасывается.",
+  "None of these rungs runs today. They are listed with their gates so that a reader can see what would have to be true before GALO went anywhere near a physical command — and so that nobody has to take the word 'roadmap' on trust.":
+    "Ни одна из этих ступеней сегодня не работает. Они перечислены со своими воротами, чтобы читатель видел, что должно выполниться прежде, чем GALO подойдёт к физической команде, — и чтобы слово «дорожная карта» никому не пришлось принимать на веру.",
+  "Nothing here authorises a command to a plant, a controller or a robot. The roadmap is advisory first, then simulation, and every rung above that is gated.":
+    "Ничто здесь не разрешает команду производству, контроллеру или роботу. Дорожная карта — сначала рекомендация, затем симуляция, и каждая ступень выше этого закрыта воротами.",
+  "Nothing. The negative is retained in the archive rather than dropped.":
+    "Ничего. Отрицательный результат сохраняется в архиве, а не отбрасывается.",
   "OEM or autonomy SDK": "OEM или SDK автономности",
   "ONE EVALUATED DECISION": "ОДНО ОЦЕНЁННОЕ РЕШЕНИЕ",
-  "Observe": "Наблюдать",
-  "Offer": "Предложение",
-  "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.": "Один Atlas, типизированные программы, контракт обучения и контракт воспроизведения, рассчитанные держаться и на знаниях, и в науке, и в промышленной эксплуатации, и в автономных миссиях. Меняется предметная область — меняются адаптеры и источники; цикл доказательства остаётся тот же.",
-  "One bounded workflow, a frozen baseline, and a replay package.": "Один ограниченный рабочий процесс, замороженная базовая линия и пакет для воспроизведения.",
+  Observe: "Наблюдать",
+  Offer: "Предложение",
+  "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.":
+    "Один Atlas, типизированные программы, контракт обучения и контракт воспроизведения, рассчитанные держаться и на знаниях, и в науке, и в промышленной эксплуатации, и в автономных миссиях. Меняется предметная область — меняются адаптеры и источники; цикл доказательства остаётся тот же.",
+  "One bounded workflow, a frozen baseline, and a replay package.":
+    "Один ограниченный рабочий процесс, замороженная базовая линия и пакет для воспроизведения.",
   "One evaluated decision, in seven steps": "Одно оценённое решение, в семи шагах",
-  "One workflow should be able to grow into assets, sites, fleets and procedures.": "Один рабочий процесс должен уметь вырасти в активы, площадки, парки и процедуры.",
+  "One workflow should be able to grow into assets, sites, fleets and procedures.":
+    "Один рабочий процесс должен уметь вырасти в активы, площадки, парки и процедуры.",
   "Ontology and operations platforms": "Онтологические и операционные платформы",
   "Operational data already exists": "Эксплуатационные данные уже есть",
   "PLATFORM AND PRODUCT, KEPT APART": "ПЛАТФОРМА И ПРОДУКТ, ПОРОЗНЬ",
-  "Palantir-style operational ontologies, workflow and data-integration platforms": "Операционные онтологии в стиле Palantir, платформы рабочих процессов и интеграции данных",
+  "Palantir-style operational ontologies, workflow and data-integration platforms":
+    "Операционные онтологии в стиле Palantir, платформы рабочих процессов и интеграции данных",
   "Partner system": "Система партнёра",
-  "Partner-controlled industrial validity is not proven.": "Валидность в промышленности, подтверждённая партнёром, не доказана.",
+  "Partner-controlled industrial validity is not proven.":
+    "Валидность в промышленности, подтверждённая партнёром, не доказана.",
   "Partner-controlled operational validity": "Эксплуатационная валидность, подтверждённая партнёром",
   "Partner-controlled validity": "Валидность, подтверждённая партнёром",
-  "Partner-owned heldout data, work reduction at the same verdict, and zero false accepts.": "Отложенные данные, принадлежащие партнёру, снижение работы при том же вердикте и ноль ложных принятий.",
+  "Partner-owned heldout data, work reduction at the same verdict, and zero false accepts.":
+    "Отложенные данные, принадлежащие партнёру, снижение работы при том же вердикте и ноль ложных принятий.",
   "Persistent policy in this release": "Устойчивая политика в этом релизе",
-  "Planning hypotheses for a design-partner conversation, and nothing more.": "Плановые гипотезы для разговора с партнёром по пилоту — и ничего больше.",
+  "Planning hypotheses for a design-partner conversation, and nothing more.":
+    "Плановые гипотезы для разговора с партнёром по пилоту — и ничего больше.",
   "Planning hypothesis": "Плановая гипотеза",
   "Planning price hypotheses": "Гипотезы плановых цен",
-  "Plant and asset twins, telemetry integration, 3D context and simulation": "Двойники производств и активов, интеграция телеметрии, 3D-контекст и симуляция",
+  "Plant and asset twins, telemetry integration, 3D context and simulation":
+    "Двойники производств и активов, интеграция телеметрии, 3D-контекст и симуляция",
   "Platform and product, kept apart": "Платформа и продукт, порознь",
   "Platform thesis": "Тезис платформы",
   "Pointwise harm": "Точечный вред",
   "Policy and Atlas update receipts.": "Протоколы обновления политики и Atlas.",
   "Private site pilot": "Частный пилот на площадке",
-  "Production autonomy is not authorized and functional-safety certification is not claimed.": "Производственная автономность не разрешена, и сертификация функциональной безопасности не заявляется.",
+  "Production autonomy is not authorized and functional-safety certification is not claimed.":
+    "Производственная автономность не разрешена, и сертификация функциональной безопасности не заявляется.",
   "Production autonomy not authorised": "Производственная автономность не разрешена",
-  "Propose": "Предлагать",
-  "Rank diagnoses and actions, name the affected assets and the evidence. A person decides.": "Ранжировать диагнозы и действия, назвать затронутые активы и свидетельства. Решает человек.",
+  Propose: "Предлагать",
+  "Rank diagnoses and actions, name the affected assets and the evidence. A person decides.":
+    "Ранжировать диагнозы и действия, назвать затронутые активы и свидетельства. Решает человек.",
   "Ranks what to check. Holds no verdict authority.": "Ранжирует, что проверить. Права выносить вердикт не имеет.",
   "Read-only adapters": "Адаптеры только на чтение",
   "Read-only domain adapters": "Доменные адаптеры только на чтение",
   "Recomputes, and refuses when it cannot.": "Пересчитывает, а когда не может — отказывается.",
   "Request a bounded industrial evaluation": "Запросить промышленную оценку в чётких границах",
-  "Retrieval plus reranking, or the partner's own model workflow, with equal information.": "Поиск с переранжированием либо собственный процесс партнёра на его модели — при равной информации.",
-  "Reusable adapters, partner evidence and rollout economics.": "Переиспользуемые адаптеры, свидетельства партнёра и экономика тиражирования.",
-  "Reveal": "Раскрыть",
+  "Retrieval plus reranking, or the partner's own model workflow, with equal information.":
+    "Поиск с переранжированием либо собственный процесс партнёра на его модели — при равной информации.",
+  "Reusable adapters, partner evidence and rollout economics.":
+    "Переиспользуемые адаптеры, свидетельства партнёра и экономика тиражирования.",
+  Reveal: "Раскрыть",
   "Review the technical evidence": "Посмотреть технические доказательства",
-  "Reviewer hours, diagnosis time, routes re-checked and audit time, all measured.": "Часы рецензентов, время постановки диагноза, перепроверенные маршруты и время аудита — всё измеряется.",
+  "Reviewer hours, diagnosis time, routes re-checked and audit time, all measured.":
+    "Часы рецензентов, время постановки диагноза, перепроверенные маршруты и время аудита — всё измеряется.",
   "Robotics mission layer": "Слой миссий в робототехнике",
-  "Run counterfactual plans inside the partner's digital twin. No physical command leaves the system.": "Прогонять контрфактические планы внутри цифрового двойника партнёра. Ни одна физическая команда систему не покидает.",
-  "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.": "Провести одну ограниченную промышленную оценку гарантии решений на собственных данных партнёра — только на чтение и в рекомендательном режиме, с условием успеха, согласованным письменно до запуска.",
+  "Run counterfactual plans inside the partner's digital twin. No physical command leaves the system.":
+    "Прогонять контрфактические планы внутри цифрового двойника партнёра. Ни одна физическая команда систему не покидает.",
+  "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.":
+    "Провести одну ограниченную промышленную оценку гарантии решений на собственных данных партнёра — только на чтение и в рекомендательном режиме, с условием успеха, согласованным письменно до запуска.",
   "SEVEN ARMS AND EIGHT GATES": "СЕМЬ РУК И ВОСЕМЬ ВОРОТ",
-  "Same verdict, false accepts, and the search reduction are all reported.": "Тот же вердикт, ложные принятия и сокращение поиска — сообщаются все три.",
+  "Same verdict, false accepts, and the search reduction are all reported.":
+    "Тот же вердикт, ложные принятия и сокращение поиска — сообщаются все три.",
   "Scoped learning results, negatives included": "Ограниченные результаты обучения, включая отрицательные",
   "Seven arms and eight gates": "Семь рук и восемь ворот",
-  "Shadow-mode reliability, a safety case, and an independent operational review.": "Надёжность в теневом режиме, обоснование безопасности и независимая проверка на производстве.",
+  "Shadow-mode reliability, a safety case, and an independent operational review.":
+    "Надёжность в теневом режиме, обоснование безопасности и независимая проверка на производстве.",
   "Shuffled feedback.": "Перемешанная обратная связь.",
-  "Simulate": "Симулировать",
-  "Simulation": "Симуляция",
+  Simulate: "Симулировать",
+  Simulation: "Симуляция",
   "Simulation and supervisory-control evidence.": "Свидетельства из симуляции и надзорного управления.",
-  "Simulation parity, scenario coverage, and recovery and boundary metrics.": "Соответствие симуляции, покрытие сценариев, метрики восстановления и границ.",
+  "Simulation parity, scenario coverage, and recovery and boundary metrics.":
+    "Соответствие симуляции, покрытие сценариев, метрики восстановления и границ.",
   "Six results, and two of them did not work.": "Шесть результатов, и два из них не сработали.",
   "Strong baseline": "Сильная базовая линия",
   "Structured observations with source custody.": "Структурированные наблюдения с прослеживаемым источником.",
-  "Supervisory": "Надзорный режим",
-  "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.": "Синтетические задачи L3–L7. Ничего промышленного и ничего о действующем производстве.",
-  "Systems that already exist and stay in place. GALO reads them and replaces none of them.": "Системы, которые уже есть и остаются на месте. GALO читает их и не заменяет ни одну.",
+  Supervisory: "Надзорный режим",
+  "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.":
+    "Синтетические задачи L3–L7. Ничего промышленного и ничего о действующем производстве.",
+  "Systems that already exist and stay in place. GALO reads them and replaces none of them.":
+    "Системы, которые уже есть и остаются на месте. GALO читает их и не заменяет ни одну.",
   "THE AUTONOMY LADDER": "ЛЕСТНИЦА АВТОНОМНОСТИ",
   "THE FIRST MARKET, AND THE REASON IT IS THE FIRST": "ПЕРВЫЙ РЫНОК И ПОЧЕМУ ИМЕННО ОН",
   "THE V65–V67 LEARNING LINE": "ЛИНИЯ ОБУЧЕНИЯ V65–V67",
   "TRAIN split only.": "Только сплит TRAIN.",
-  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.": "Технические рецензенты, которым интересно атаковать математику и дизайн оценки, а не подтверждать их.",
+  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.":
+    "Технические рецензенты, которым интересно атаковать математику и дизайн оценки, а не подтверждать их.",
   "Terminal parity": "Совпадение итога",
-  "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.": "То, что башня L1–L7 превосходит сопоставимую альтернативу, — исследовательская гипотеза. Она не предлагается как причина инвестировать.",
-  "That the heldout effect could not be computed on this task at all.": "Что отложенный эффект на этой задаче вообще не удалось вычислить.",
+  "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.":
+    "То, что башня L1–L7 превосходит сопоставимую альтернативу, — исследовательская гипотеза. Она не предлагается как причина инвестировать.",
+  "That the heldout effect could not be computed on this task at all.":
+    "Что отложенный эффект на этой задаче вообще не удалось вычислить.",
   "The DEV and SEALED roots stay frozen.": "Корни DEV и SEALED остаются замороженными.",
-  "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.": "Релиз R5B6A1_3 не выполняет никакого обновления политики вообще. Линия Engine и Atlas V65–V67 — отдельный прототип со своими ограниченными свидетельствами обучения, опубликованными ниже вместе с отрицательными результатами.",
+  "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.":
+    "Релиз R5B6A1_3 не выполняет никакого обновления политики вообще. Линия Engine и Atlas V65–V67 — отдельный прототип со своими ограниченными свидетельствами обучения, опубликованными ниже вместе с отрицательными результатами.",
   "The action space the partner has approved.": "Пространство действий, которое партнёр утвердил.",
-  "The alert can be checked against what happened next, and the model against the operating window it was trained on.": "Сигнал можно сверить с тем, что случилось дальше, а модель — с тем эксплуатационным окном, на котором её обучали.",
+  "The alert can be checked against what happened next, and the model against the operating window it was trained on.":
+    "Сигнал можно сверить с тем, что случилось дальше, а модель — с тем эксплуатационным окном, на котором её обучали.",
   "The assessment dossier": "Досье для оценки",
   "If you want the mechanism itself": "Если вам нужен сам механизм",
-  "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.": "Модель актива, телеметрия за показанием и то, что выдал смоделированный сценарий. Ради этого категория и существует.",
+  "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.":
+    "Модель актива, телеметрия за показанием и то, что выдал смоделированный сценарий. Ради этого категория и существует.",
   "The causal same-mechanism comparator.": "Причинное сравнение на том же механизме.",
-  "The eight conditions a work-reduction claim has to meet before it is made": "Восемь условий, которым должно отвечать заявление о сокращении работы, прежде чем его сделают",
-  "The evaluation is designed to be able to fail, and to say so.": "Оценка спроектирована так, чтобы могла провалиться и сказать об этом.",
-  "The evaluation needs bounded observations and outcomes that are revealed independently.": "Оценке нужны ограниченные наблюдения и исходы, раскрываемые независимо.",
+  "The eight conditions a work-reduction claim has to meet before it is made":
+    "Восемь условий, которым должно отвечать заявление о сокращении работы, прежде чем его сделают",
+  "The evaluation is designed to be able to fail, and to say so.":
+    "Оценка спроектирована так, чтобы могла провалиться и сказать об этом.",
+  "The evaluation needs bounded observations and outcomes that are revealed independently.":
+    "Оценке нужны ограниченные наблюдения и исходы, раскрываемые независимо.",
   "The evidence behind the offer": "Свидетельства за этим предложением",
-  "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.": "Первый коммерческий продукт — ограниченная оценка гарантии промышленных решений. Клиента нет, подписанной воронки нет, выручки нет.",
-  "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.": "Первый коммерческий продукт: ограниченная оценка на одном промышленном рабочем процессе — только чтение, режим рекомендаций. Где GALO стоит над цифровым двойником, семь шагов оценённого решения, лестница автономности с её воротами и плановые гипотезы цен, которые не являются прайс-листом.",
-  "The first product, its autonomy ladder and its price hypotheses.": "Первый продукт, его лестница автономности и его гипотезы цен.",
-  "The first thing anybody would buy: a bounded, read-only, advisory evaluation on one industrial workflow, with a frozen baseline and a replayable decision package at the end.": "Первое, что вообще кто-то купит: ограниченная оценка на одном промышленном рабочем процессе — только чтение, режим рекомендаций, замороженная базовая линия и воспроизводимый пакет решения в конце.",
+  "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.":
+    "Первый коммерческий продукт — ограниченная оценка гарантии промышленных решений. Клиента нет, подписанной воронки нет, выручки нет.",
+  "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.":
+    "Первый коммерческий продукт: ограниченная оценка на одном промышленном рабочем процессе — только чтение, режим рекомендаций. Где GALO стоит над цифровым двойником, семь шагов оценённого решения, лестница автономности с её воротами и плановые гипотезы цен, которые не являются прайс-листом.",
+  "The first product, its autonomy ladder and its price hypotheses.":
+    "Первый продукт, его лестница автономности и его гипотезы цен.",
+  "The first thing anybody would buy: a bounded, read-only, advisory evaluation on one industrial workflow, with a frozen baseline and a replayable decision package at the end.":
+    "Первое, что вообще кто-то купит: ограниченная оценка на одном промышленном рабочем процессе — только чтение, режим рекомендаций, замороженная базовая линия и воспроизводимый пакет решения в конце.",
   "The heldout set is frozen and stays frozen.": "Отложенная выборка заморожена и остаётся замороженной.",
   "The learned persistent GALO Atlas.": "Обученный устойчивый GALO Atlas.",
-  "The partner's existing diagnostic rules and operating context.": "Существующие диагностические правила партнёра и его эксплуатационный контекст.",
-  "The partner's strongest rule engine or static deterministic ranking.": "Сильнейший движок правил партнёра или статическое детерминированное ранжирование.",
-  "The policy updates and the Atlas updates are both recorded.": "Обновления политики и обновления Atlas записываются оба.",
+  "The partner's existing diagnostic rules and operating context.":
+    "Существующие диагностические правила партнёра и его эксплуатационный контекст.",
+  "The partner's strongest rule engine or static deterministic ranking.":
+    "Сильнейший движок правил партнёра или статическое детерминированное ранжирование.",
+  "The policy updates and the Atlas updates are both recorded.":
+    "Обновления политики и обновления Atlas записываются оба.",
   "The private key stays outside the engine.": "Приватный ключ остаётся вне движка.",
   "The route is committed before anything is revealed.": "Маршрут фиксируется до того, как что-либо раскрыто.",
   "The route is explicit and its work is counted.": "Маршрут явный, и его работа посчитана.",
   "The same data for every arm.": "Одни и те же данные для каждой руки.",
-  "The same engine, Atlas schema and capacity, with updates blocked.": "Тот же движок, схема и ёмкость Atlas, с заблокированными обновлениями.",
-  "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.": "Условие успеха написано после того, как результаты увидены; использованы наши данные, а не партнёрские; либо прогон затронул что-то сверх доступа на чтение.",
-  "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.": "Поверхность, которую GALO должен читать, а не вытеснять. Двойник говорит, что и где; GALO берётся за вопрос, какие объяснения ещё открыты, какая проверка их разводит и что законно делать дальше.",
-  "The terminal result must be identical, not merely comparable.": "Итоговый результат должен быть идентичным, а не просто сопоставимым.",
-  "The time to be measured against the milestones above, and to be dropped if they are missed.": "Время, которое будет измерено против вех выше и снято, если вехи не взяты.",
+  "The same engine, Atlas schema and capacity, with updates blocked.":
+    "Тот же движок, схема и ёмкость Atlas, с заблокированными обновлениями.",
+  "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.":
+    "Условие успеха написано после того, как результаты увидены; использованы наши данные, а не партнёрские; либо прогон затронул что-то сверх доступа на чтение.",
+  "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.":
+    "Поверхность, которую GALO должен читать, а не вытеснять. Двойник говорит, что и где; GALO берётся за вопрос, какие объяснения ещё открыты, какая проверка их разводит и что законно делать дальше.",
+  "The terminal result must be identical, not merely comparable.":
+    "Итоговый результат должен быть идентичным, а не просто сопоставимым.",
+  "The time to be measured against the milestones above, and to be dropped if they are missed.":
+    "Время, которое будет измерено против вех выше и снято, если вехи не взяты.",
   "The whole run replays directly from a fresh root.": "Весь прогон воспроизводится напрямую из свежего корня.",
   "The workflow is connected": "Рабочий процесс подключён",
-  "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.": "Клиента нет, подписанной воронки нет, выручки нет. Плановые цены — гипотезы для разговора.",
-  "There is no reading of this result that is positive, and none is offered.": "Положительного прочтения у этого результата нет, и оно не предлагается.",
+  "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.":
+    "Клиента нет, подписанной воронки нет, выручки нет. Плановые цены — гипотезы для разговора.",
+  "There is no reading of this result that is positive, and none is offered.":
+    "Положительного прочтения у этого результата нет, и оно не предлагается.",
   "There is somewhere to expand to": "Есть куда расширяться",
-  "These are the numbers we would open a conversation with. They are not a price list, not a signed pipeline and not revenue — no partner has agreed to any of them, because there is no partner yet.": "Это цифры, с которых мы начали бы разговор. Это не прайс-лист, не подписанная воронка и не выручка — ни один партнёр ни на одну из них не соглашался, потому что партнёра пока нет.",
-  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.": "Это отдельно от замороженного релиза выше, который по-прежнему не выполняет никакого обучения. Рядом с ним есть прототип Engine и Atlas, родной для расписок, с ограниченными результатами обучения на синтетических задачах и публичных бенчмарках. Оба утверждения истинны одновременно, и ни одному не позволено подразумевать другое. Отрицательные результаты — в той же таблице и в том же стиле.",
+  "These are the numbers we would open a conversation with. They are not a price list, not a signed pipeline and not revenue — no partner has agreed to any of them, because there is no partner yet.":
+    "Это цифры, с которых мы начали бы разговор. Это не прайс-лист, не подписанная воронка и не выручка — ни один партнёр ни на одну из них не соглашался, потому что партнёра пока нет.",
+  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.":
+    "Это отдельно от замороженного релиза выше, который по-прежнему не выполняет никакого обучения. Рядом с ним есть прототип Engine и Atlas, родной для расписок, с ограниченными результатами обучения на синтетических задачах и публичных бенчмарках. Оба утверждения истинны одновременно, и ни одному не позволено подразумевать другое. Отрицательные результаты — в той же таблице и в том же стиле.",
   "Tower-specific advantage": "Преимущество, специфичное для башни",
-  "Transfer across domains, long horizons and open tasks.": "Перенос между областями, длинные горизонты и открытые задачи.",
+  "Transfer across domains, long horizons and open tasks.":
+    "Перенос между областями, длинные горизонты и открытые задачи.",
   "Eleven assessment lines, six of them negative": "Одиннадцать линий оценки, шесть из них отрицательные",
-  "Twins, rule engines, ontology platforms and robotics stacks": "Двойники, движки правил, онтологические платформы и робототехнические стеки",
-  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.": "Два партнёра по пилоту в области промышленных цифровых двойников, эксплуатации производств или автономных систем, способные определить ограниченную оценку на своих данных с условием успеха, которое они формулируют сами.",
-  "Two fresh roots reproduce the semantic state, the outcomes and the ledgers.": "Два свежих корня воспроизводят семантическое состояние, исходы и журналы.",
+  "Twins, rule engines, ontology platforms and robotics stacks":
+    "Двойники, движки правил, онтологические платформы и робототехнические стеки",
+  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.":
+    "Два партнёра по пилоту в области промышленных цифровых двойников, эксплуатации производств или автономных систем, способные определить ограниченную оценку на своих данных с условием успеха, которое они формулируют сами.",
+  "Two fresh roots reproduce the semantic state, the outcomes and the ledgers.":
+    "Два свежих корня воспроизводят семантическое состояние, исходы и журналы.",
   "Typed ProgramIR routes": "Типизированные маршруты ProgramIR",
-  "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.": "UMLS — на 49,7% меньше работы против предзарегистрированной базовой линии; WN18RR — 7,17%, ДИ95 5,82–8,55%; JF17K-3 — на 1,34% меньше проверок кандидатов; Kinship — 0% выигрыша; Nations — не идентифицируется.",
-  "Untouched. No current or proposed path writes to them directly.": "Не тронуты. Ни текущий, ни предлагаемый путь не пишет в них напрямую.",
+  "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.":
+    "UMLS — на 49,7% меньше работы против предзарегистрированной базовой линии; WN18RR — 7,17%, ДИ95 5,82–8,55%; JF17K-3 — на 1,34% меньше проверок кандидатов; Kinship — 0% выигрыша; Nations — не идентифицируется.",
+  "Untouched. No current or proposed path writes to them directly.":
+    "Не тронуты. Ни текущий, ни предлагаемый путь не пишет в них напрямую.",
   "V65 preregistered synthetic run": "Предзарегистрированный синтетический прогон V65",
-  "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.": "Синтетическое обучение Engine и Atlas V65 сократило полную когнитивную работу на 60,9% при точном совпадении итога, внутри замороженной синтетической области.",
+  "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.":
+    "Синтетическое обучение Engine и Atlas V65 сократило полную когнитивную работу на 60,9% при точном совпадении итога, внутри замороженной синтетической области.",
   "V65-V67 public-benchmark archive": "Архив публичных бенчмарков V65–V67",
   "V67 business model memorandum": "Меморандум о бизнес-модели V67",
   "V67 claim matrix": "Матрица утверждений V67",
@@ -287,7 +431,7 @@ export const industrialRu: TranslationDictionary = {
   "V67 technical evidence memorandum": "Меморандум о техническом обосновании V67",
   "Verified work": "Проверенная работа",
   "Verifier · PASS / REJECT / BOUNDARY": "Верификатор · PASS / REJECT / BOUNDARY",
-  "Verify": "Проверять",
+  Verify: "Проверять",
   "WHAT IT WOULD COST": "СКОЛЬКО ЭТО СТОИЛО БЫ",
   "WHERE GALO SITS": "ГДЕ СТОИТ GALO",
   "WHO THIS IS NOT FOR": "КОМУ ЭТО НЕ ПОДХОДИТ",
@@ -296,30 +440,42 @@ export const industrialRu: TranslationDictionary = {
   "What the wedge is for": "Зачем это нужно",
   "What would have to be proved": "Что пришлось бы доказать",
   "Where GALO sits, and what it never touches": "Где стоит GALO и чего он никогда не трогает",
-  "Where a person or a simulation stands between the reasoning and the plant.": "Где между рассуждением и производством стоит человек или симуляция.",
+  "Where a person or a simulation stands between the reasoning and the plant.":
+    "Где между рассуждением и производством стоит человек или симуляция.",
   "Who else is in this market": "Кто ещё есть на этом рынке",
   "Who this is not for": "Кому это не подходит",
   "Working research prototype": "Работающий исследовательский прототип",
   "Zero.": "Ноль.",
-  "gated": "под воротами",
-  "roadmap": "дорожная карта",
+  gated: "под воротами",
+  roadmap: "дорожная карта",
   "the authority boundary": "граница полномочий",
   "the partner's systems, untouched": "системы партнёра, не тронутые",
   "what GALO would add": "что добавил бы GALO",
 };
 
 export const industrialZh: TranslationDictionary = {
-  "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.": "GALO 是一套通用架构，它把一个决策系统的状态、被允许的动作，以及实际走过的路线都保持显式，而不是塞进一个谁也打不开的模型里。至于第一个拿去卖的东西，则要窄得多：围绕工厂里已经在跑的数字孪生和运营系统，为决策提供保障。",
-  "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.": "它针对的是这样一类工作：贵的不是给错答案，而是给了错答案却没人能追溯——工业运行、受监管的流程、长期运行的自动化，以及任何需要有人签字的事。工业排在第一位，是因为在那里含糊的代价早就被算过了。",
-  "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.": "学习结果存在于合成任务和公开基准上，负面结果也在其中。没有任何合作方用自己的评判者在自己的数据上跑过其中任何一项，也没有在任何地方测出过运行层面的收益。这个零是故意印在这里的。",
-  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.": "没有任何在合作方掌控下产出的基准结果，也没有与任何一套真正在运行的系统做过准确率、速度或成本的比较。",
-  "No claim about general intelligence, production autonomy, or functional-safety certification.": "不主张通用智能、生产级自主，也不主张功能安全认证。",
-  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.": "已发布的内核里没有学习；在原型确实会学习的地方，结果限于合成任务和公开基准，并且连同负面结果一起发布。",
-  "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.": "在合作方自己的数据上做一次范围明确的只读工业决策保障评估，同时拓宽可接受的输入契约、加入多步轨迹，并关掉那些已经点名的证据关卡。",
-  "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.": "算是有一部分。Engine 与 Atlas 原型在公开基准上对照预先登记的基线做过测量，六项结果里有两项是负面的。没有跟任何一套真正在运行的系统比过，也没有在任何地方测出过运行层面的收益。",
-  "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:": "架构是通用的；第一件真会有人买的东西不是。那个第一产品到底是什么、作为规划假设它会花多少钱、以及它离碰到一台机器还有多远：",
-  "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.": "冻结的发布在两次运行之间什么也不积累，所以同一个输入跑两次，隔一年行为也一样。另有一个独立的 Engine 与 Atlas 原型确实会学习，它是与这个数字分开报告的，而不是被折进去。",
-  "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.": "有，而且是刻意做窄的：两种可接受的输入模式、每次运行一个有界步骤、四类可执行动作，以及已发布内核里完全没有学习。另有一个独立的 Engine 与 Atlas 原型确实会学习，它的结果按它自己的口径来报告。",
+  "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.":
+    "GALO 是一套通用架构，它把一个决策系统的状态、被允许的动作，以及实际走过的路线都保持显式，而不是塞进一个谁也打不开的模型里。至于第一个拿去卖的东西，则要窄得多：围绕工厂里已经在跑的数字孪生和运营系统，为决策提供保障。",
+  "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.":
+    "它针对的是这样一类工作：贵的不是给错答案，而是给了错答案却没人能追溯——工业运行、受监管的流程、长期运行的自动化，以及任何需要有人签字的事。工业排在第一位，是因为在那里含糊的代价早就被算过了。",
+  "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.":
+    "学习结果存在于合成任务和公开基准上，负面结果也在其中。没有任何合作方用自己的评判者在自己的数据上跑过其中任何一项，也没有在任何地方测出过运行层面的收益。这个零是故意印在这里的。",
+  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.":
+    "没有任何在合作方掌控下产出的基准结果，也没有与任何一套真正在运行的系统做过准确率、速度或成本的比较。",
+  "No claim about general intelligence, production autonomy, or functional-safety certification.":
+    "不主张通用智能、生产级自主，也不主张功能安全认证。",
+  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.":
+    "已发布的内核里没有学习；在原型确实会学习的地方，结果限于合成任务和公开基准，并且连同负面结果一起发布。",
+  "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.":
+    "在合作方自己的数据上做一次范围明确的只读工业决策保障评估，同时拓宽可接受的输入契约、加入多步轨迹，并关掉那些已经点名的证据关卡。",
+  "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.":
+    "算是有一部分。Engine 与 Atlas 原型在公开基准上对照预先登记的基线做过测量，六项结果里有两项是负面的。没有跟任何一套真正在运行的系统比过，也没有在任何地方测出过运行层面的收益。",
+  "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:":
+    "架构是通用的；第一件真会有人买的东西不是。那个第一产品到底是什么、作为规划假设它会花多少钱、以及它离碰到一台机器还有多远：",
+  "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.":
+    "冻结的发布在两次运行之间什么也不积累，所以同一个输入跑两次，隔一年行为也一样。另有一个独立的 Engine 与 Atlas 原型确实会学习，它是与这个数字分开报告的，而不是被折进去。",
+  "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.":
+    "有，而且是刻意做窄的：两种可接受的输入模式、每次运行一个有界步骤、四类可执行动作，以及已发布内核里完全没有学习。另有一个独立的 Engine 与 Atlas 原型确实会学习，它的结果按它自己的口径来报告。",
   "learning writes in the released kernel": "已发布内核中的学习写入次数",
   "results produced under a partner's control": "在合作方掌控下产出的结果数",
   "the industrial wedge, in full": "完整的工业楔子",
@@ -331,66 +487,92 @@ export const industrialZh: TranslationDictionary = {
   "7.17% less work, CI95 5.82–8.55%": "工作量减少 7.17%，95% 置信区间 5.82–8.55%",
   "A Q0 ranking signal on n-ary relations.": "在 n 元关系上的 Q0 排序信号。",
   "A candidate diagnosis and a portfolio of candidate actions.": "一个候选诊断，以及一组候选动作。",
-  "A committed route and Atlas state, written before anything is revealed.": "一条已提交的路线和 Atlas 状态，在任何东西被揭示之前就写下。",
+  "A committed route and Atlas state, written before anything is revealed.":
+    "一条已提交的路线和 Atlas 状态，在任何东西被揭示之前就写下。",
   "A demand for immediate unsupervised control.": "要求立刻实现无人监督的控制。",
   "A digital-twin scenario, where one exists.": "数字孪生中的一个场景——如果确实有的话。",
   "A duplicate or post-reveal commitment is rejected.": "重复提交或事后提交一律驳回。",
-  "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.": "一个宽得多的产品，背后的集成量也大得多。GALO 的假设更窄也更可迁移：合法的状态转换、学习部分无法越过的权限边界，以及不依赖该平台在场的重放。",
-  "A general architecture and a narrow first product are two different sentences.": "通用的架构和一个很窄的首个产品，是两句不同的话。",
-  "A general-purpose architecture is a design intention. General intelligence would need broad perception, transfer, planning and grounding well beyond any evidence here.": "通用架构是一种设计意图。要谈通用智能，需要的是远超此处任何证据的广泛感知、迁移、规划与世界锚定。",
-  "A modelled ontology of the organisation, with workflows, governance and integration around it.": "一套为组织建模的本体，外面围着工作流、治理与数据集成。",
+  "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.":
+    "一个宽得多的产品，背后的集成量也大得多。GALO 的假设更窄也更可迁移：合法的状态转换、学习部分无法越过的权限边界，以及不依赖该平台在场的重放。",
+  "A general architecture and a narrow first product are two different sentences.":
+    "通用的架构和一个很窄的首个产品，是两句不同的话。",
+  "A general-purpose architecture is a design intention. General intelligence would need broad perception, transfer, planning and grounding well beyond any evidence here.":
+    "通用架构是一种设计意图。要谈通用智能，需要的是远超此处任何证据的广泛感知、迁移、规划与世界锚定。",
+  "A modelled ontology of the organisation, with workflows, governance and integration around it.":
+    "一套为组织建模的本体，外面围着工作流、治理与数据集成。",
   "A one-off custom visualisation with no recurring assurance need.": "一次性的定制可视化，没有持续的决策保障需求。",
   "A person or a simulation holds authority": "权限在人或仿真手里",
   "A post-reveal oracle, never promotable.": "揭示之后才用的先知，永远不得晋级。",
-  "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.": "预测和一个站得住脚的决策是两种产品。GALO 让互相竞争的诊断继续存在，挑出能把它们分开的那个检查，并记录下这个动作当初为什么会被提出来。",
-  "A previously exposed corpus. Fresh partner-controlled validity is a different question.": "此前已经被用过的语料。由合作方掌控的新鲜有效性是另一个问题。",
+  "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.":
+    "预测和一个站得住脚的决策是两种产品。GALO 让互相竞争的诊断继续存在，挑出能把它们分开的那个检查，并记录下这个动作当初为什么会被提出来。",
+  "A previously exposed corpus. Fresh partner-controlled validity is a different question.":
+    "此前已经被用过的语料。由合作方掌控的新鲜有效性是另一个问题。",
   "A public observation with a source digest and a declared scope.": "一条公开的观测，带有来源摘要和已声明的范围。",
   "A signed evaluator outcome.": "由评估方签署的结果。",
-  "A single arm proves nothing: any improvement can be explained by a weaker comparator, a leak, or the order of the data. Seven arms remove those explanations one at a time, and the promotion gates are written down before the sealed set is opened.": "只有一条对照臂什么也证明不了：任何改进都可以用「对照太弱」「有泄漏」「数据顺序」来解释。七条臂把这些解释一条条排除掉，而晋级条件是在拆封那一组之前就写好的。",
-  "A small positive work effect on a public benchmark, with the interval published rather than the point alone.": "在一个公开基准上出现的一个不大的正向工作量效应，公布的是区间而不只是点估计。",
+  "A single arm proves nothing: any improvement can be explained by a weaker comparator, a leak, or the order of the data. Seven arms remove those explanations one at a time, and the promotion gates are written down before the sealed set is opened.":
+    "只有一条对照臂什么也证明不了：任何改进都可以用「对照太弱」「有泄漏」「数据顺序」来解释。七条臂把这些解释一条条排除掉，而晋级条件是在拆封那一组之前就写好的。",
+  "A small positive work effect on a public benchmark, with the interval published rather than the point alone.":
+    "在一个公开基准上出现的一个不大的正向工作量效应，公布的是区间而不只是点估计。",
   "A stable deployment, support, assurance updates and new workflows.": "稳定的部署、支持、保障更新，以及新的工作流。",
   "A stale Atlas snapshot.": "一份过时的 Atlas 快照。",
-  "A stronger equal-information comparator was not beaten. This is not universal superiority.": "信息对等的更强对照并没有被超过。这不是普遍意义上的胜出。",
+  "A stronger equal-information comparator was not beaten. This is not universal superiority.":
+    "信息对等的更强对照并没有被超过。这不是普遍意义上的胜出。",
   "A terminal, safety and actual-work ledger.": "一份终局、安全与实际工作量的账本。",
-  "A0 against A1 down at least 15%, with the CI95 lower bound above 5%.": "A0 相对 A1 至少下降 15%，且 95% 置信区间下界高于 5%。",
-  "A0 must beat or materially complement A2 on a preregistered endpoint.": "A0 必须在预先登记的终点上胜过 A2，或对其构成实质性的补充。",
+  "A0 against A1 down at least 15%, with the CI95 lower bound above 5%.":
+    "A0 相对 A1 至少下降 15%，且 95% 置信区间下界高于 5%。",
+  "A0 must beat or materially complement A2 on a preregistered endpoint.":
+    "A0 必须在预先登记的终点上胜过 A2，或对其构成实质性的补充。",
   "AED 150k–300k": "15 万–30 万迪拉姆",
   "AED 350k–750k": "35 万–75 万迪拉姆",
   "AED 600k–1.8m per site per year": "每个厂区每年 60 万–180 万迪拉姆",
   "Above the systems that run the plant, and never inside them.": "在运行这座工厂的那些系统之上，而绝不在它们内部。",
-  "Advisory": "建议模式",
+  Advisory: "建议模式",
   "Advisory and simulation first": "先建议，再仿真",
   "Advisory to robot missions, with the gates": "从建议一路到机器人任务，附带各道闸门",
   "After a positive evaluation": "在评估结果为正之后",
   "Alternatives are kept while the evidence does not settle them.": "只要证据还没把它们分开，备选解释就都保留着。",
-  "An alarm arrives. Seven steps later there is a package somebody else can replay.": "一条报警进来。七步之后，就有了一份外人可以照着重跑的决策包。",
-  "An evaluation run on the wrong site produces an uninterpretable result and burns a quarter for both sides. Each line below has a disqualifier attached; any one of them is enough to stop before a contract.": "在不合适的厂区做评估，得到的结果无法解读，还给双方各烧掉一个季度。下面每一条都配了一个「不合格」判据；任何一条成立，都足以在签合同之前打住。",
-  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.": "为不符合准入条件的合作方开口子——无论对方多愿意签字。",
-  "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.": "一个由遥测数据驱动的、关于工厂的显式模型，上面还有仿真。什么在哪里、现在正发生什么、某个场景会是什么样。",
-  "An integrated Atlas and adapters running in operational shadow mode.": "已集成的 Atlas 和适配器，在现场以影子模式运行。",
-  "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.": "在一个公开基准上出现的 Atlas 运行效应，对照的是事先固定下来的基线。",
+  "An alarm arrives. Seven steps later there is a package somebody else can replay.":
+    "一条报警进来。七步之后，就有了一份外人可以照着重跑的决策包。",
+  "An evaluation run on the wrong site produces an uninterpretable result and burns a quarter for both sides. Each line below has a disqualifier attached; any one of them is enough to stop before a contract.":
+    "在不合适的厂区做评估，得到的结果无法解读，还给双方各烧掉一个季度。下面每一条都配了一个「不合格」判据；任何一条成立，都足以在签合同之前打住。",
+  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.":
+    "为不符合准入条件的合作方开口子——无论对方多愿意签字。",
+  "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.":
+    "一个由遥测数据驱动的、关于工厂的显式模型，上面还有仿真。什么在哪里、现在正发生什么、某个场景会是什么样。",
+  "An integrated Atlas and adapters running in operational shadow mode.":
+    "已集成的 Atlas 和适配器，在现场以影子模式运行。",
+  "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.":
+    "在一个公开基准上出现的 Atlas 运行效应，对照的是事先固定下来的基线。",
   "An upper bound, and nothing else.": "只是一个上界，别的什么都不是。",
-  "Annual": "按年",
+  Annual: "按年",
   "Annual runtime and Atlas licence": "运行时与 Atlas 的年度许可",
-  "Anomaly detection, failure forecasting, condition monitoring and domain models": "异常检测、故障预测、状态监测与领域模型",
+  "Anomaly detection, failure forecasting, condition monitoring and domain models":
+    "异常检测、故障预测、状态监测与领域模型",
   "At most 1% of independent groups.": "不超过 1% 的独立分组。",
   "Broader general-purpose reasoning": "更广的通用推理",
-  "Candidate checks are not full cognitive work, and this is not a production improvement.": "候选检查不等于完整的认知工作量，这也不是生产环境里的改进。",
+  "Candidate checks are not full cognitive work, and this is not a production improvement.":
+    "候选检查不等于完整的认知工作量，这也不是生产环境里的改进。",
   "Candidate membership and terminal semantics stay equal across the arms.": "候选集合与终局语义在各条臂之间保持一致。",
-  "Collapsing them is the quickest way to say something untrue in either direction — either the product sounds like general intelligence, or the architecture sounds like a maintenance tool. They are stated separately here and everywhere else on the site.": "把两者混起来，是往任一个方向说假话的最快办法：要么产品听上去像通用智能，要么架构听上去像一件设备维护工具。这里和站内其他地方都把它们分开来说。",
+  "Collapsing them is the quickest way to say something untrue in either direction — either the product sounds like general intelligence, or the architecture sounds like a maintenance tool. They are stated separately here and everywhere else on the site.":
+    "把两者混起来，是往任一个方向说假话的最快办法：要么产品听上去像通用智能，要么架构听上去像一件设备维护工具。这里和站内其他地方都把它们分开来说。",
   "Commercial wedge": "商业切入点",
-  "Commit": "提交",
-  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.": "把公司搭起来：ADGM 实体、最初几名技术人员、合同，以及通往种子轮准备就绪的路径。",
+  Commit: "提交",
+  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.":
+    "把公司搭起来：ADGM 实体、最初几名技术人员、合同，以及通往种子轮准备就绪的路径。",
   "Competing local models and assumptions": "互相竞争的局部模型与假设",
-  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.": "用于私有评估、独立重放和 physical AI 验证的算力与仿真资源。",
-  "Control": "控制项",
+  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.":
+    "用于私有评估、独立重放和 physical AI 验证的算力与仿真资源。",
+  Control: "控制项",
   "Counterfactual route and recovery evidence.": "反事实路线与恢复方案的证据。",
   "Customers, letters of intent, revenue": "客户、意向书、收入",
-  "DEV and SEALED state roots unchanged; no policy, Atlas or core promotion.": "DEV 与 SEALED 的状态根未发生变化；策略、Atlas 和内核都没有晋级。",
-  "Decision assurance around the digital twins a plant already runs.": "在工厂已经跑着的数字孪生旁边，把决策做得站得住。",
+  "DEV and SEALED state roots unchanged; no policy, Atlas or core promotion.":
+    "DEV 与 SEALED 的状态根未发生变化；策略、Atlas 和内核都没有晋级。",
+  "Decision assurance around the digital twins a plant already runs.":
+    "在工厂已经跑着的数字孪生旁边，把决策做得站得住。",
   "Delay already costs money": "延迟本来就在花钱",
   "Design-partner planning hypotheses · not current prices": "面向设计伙伴的规划性假设 · 并非现行价格",
-  "Digital twin · SCADA · historian · MES · ERP · CMMS · manuals · sensors": "数字孪生 · SCADA · 历史数据库 · MES · ERP · CMMS · 手册 · 传感器",
+  "Digital twin · SCADA · historian · MES · ERP · CMMS · manuals · sensors":
+    "数字孪生 · SCADA · 历史数据库 · MES · ERP · CMMS · 手册 · 传感器",
   "Digital twin, telemetry, work order, manual revision.": "数字孪生、遥测、工单、手册修订。",
   "Digital-twin platforms": "数字孪生平台",
   "Does GALO beat the operational incumbent?": "GALO 能不能胜过合作方现有的那套东西？",
@@ -398,38 +580,52 @@ export const industrialZh: TranslationDictionary = {
   "Does learning reduce verified work?": "学习是否减少了经过核验的工作量？",
   "Does the current state matter?": "当前状态到底重不重要？",
   "Does the result depend on genuine temporal learning?": "这个结果是否真的依赖于随时间发生的学习？",
-  "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.": "去掉其中任何一条，上面那个数字就不是变弱，而是变得没法读了。把它们列出来，是为了让审查者能指出他认为我们弄错的是哪一条。",
-  "Duration": "周期",
-  "Each step names the partner system it reads, the artefact GALO produces, and the control that stops the step from being gamed. The controls are the point: without them a work-reduction number means nothing.": "每一步都写明：它读的是合作方的哪套系统、GALO 产出什么、以及哪条控制项让这一步无法被做手脚。控制项才是关键：没有它们，那个「工作量下降」的数字什么也不说明。",
-  "Economics": "经济性",
-  "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.": "在同一个范围内端到端的学习，配上带回执的 Atlas，以及一个共用同一引擎的对照。",
+  "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.":
+    "去掉其中任何一条，上面那个数字就不是变弱，而是变得没法读了。把它们列出来，是为了让审查者能指出他认为我们弄错的是哪一条。",
+  Duration: "周期",
+  "Each step names the partner system it reads, the artefact GALO produces, and the control that stops the step from being gamed. The controls are the point: without them a work-reduction number means nothing.":
+    "每一步都写明：它读的是合作方的哪套系统、GALO 产出什么、以及哪条控制项让这一步无法被做手脚。控制项才是关键：没有它们，那个「工作量下降」的数字什么也不说明。",
+  Economics: "经济性",
+  "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.":
+    "在同一个范围内端到端的学习，配上带回执的 Atlas，以及一个共用同一引擎的对照。",
   "Enterprise agreement, priced after discovery": "企业协议，价格在摸底之后再定",
-  "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.": "到目前为止的全部结果，都出自合成任务或公开基准。还没有任何合作方在自己的数据上、用自己的评估方跑过一次，而这正是下一步必须做的事。",
+  "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.":
+    "到目前为止的全部结果，都出自合成任务或公开基准。还没有任何合作方在自己的数据上、用自己的评估方跑过一次，而这正是下一步必须做的事。",
   "Exact equality for any arm that may be promoted.": "任何有资格晋级的臂，都必须完全相等。",
   "Existing PLC · robot controller · certified safety interlocks": "现有 PLC · 机器人控制器 · 经认证的安全联锁",
   "Explicit, versioned state for the decision at hand.": "针对当下这个决策的显式、带版本的状态。",
   "False accepts": "误接受",
-  "Faster diagnosis and cheaper re-verification only pay where the delay is measured.": "只有在延迟已经被量化的地方，更快的诊断和更便宜的复核才划算。",
+  "Faster diagnosis and cheaper re-verification only pay where the delay is measured.":
+    "只有在延迟已经被量化的地方，更快的诊断和更便宜的复核才划算。",
   "Five rungs, and the evidence that would open each one.": "五级台阶，以及能打开每一级的证据。",
   "For industry": "面向工业",
   "Full candidate membership is preserved rather than pruned quietly.": "候选集合被完整保留，而不是悄悄剪掉一部分。",
   "Functional-safety certification": "功能安全认证",
-  "GALO AI for Industry — Decision Assurance Around Existing Digital Twins": "GALO AI 面向工业 — 让现有数字孪生旁的决策站得住",
+  "GALO AI for Industry — Decision Assurance Around Existing Digital Twins":
+    "GALO AI 面向工业 — 让现有数字孪生旁的决策站得住",
   "GALO World Atlas": "GALO 的 World Atlas",
   "GALO artefact": "GALO 的产出",
-  "GALO does not replace a digital twin, a SCADA system, a PLC, a robot controller or a safety interlock, and no proposed version writes to any of them directly. It reads what they publish and hands its conclusion to a person, a simulation or an approval gateway.": "GALO 不替代数字孪生、SCADA、PLC、机器人控制器或安全联锁，任何设想中的版本也都不会直接往它们里写。它读取这些系统公开出来的东西，再把结论交给人、交给仿真，或交给审批网关。",
-  "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.": "GALO 被设计成一套不绑定单一领域的世界模型、推理、学习与重放架构。通用的是架构，不是智能。",
-  "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.": "GALO 的设计位置是在现有数字孪生、SCADA 系统、PLC、机器人控制器和安全联锁之上，并且一个都不替代。",
-  "GALO is not a PLC, a motion controller or a safety system, and it does not aim to become one. In robotics its long-term place is mission reasoning, constraints, exception handling and recovery planning above a controller somebody else certified.": "GALO 不是 PLC、不是运动控制器、也不是安全系统，而且并不打算变成其中任何一个。在机器人领域，它的长期位置是：在别人已经认证过的控制器之上做任务推理、约束管理、异常处理和恢复规划。",
-  "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.": "GALO 把状态、学习出来的搜索、局部修正和动作路线都摆在明面上——起点就在工厂已有的数字孪生和运营系统那里，先把决策做扎实。今天已被证明的是有限范围的：合成任务和公开基准上的学习结果，连同没能奏效的那两项一起公开。还没有任何合作方在自己的数据上跑过，这里的一切也都不授权向工厂下达任何指令。",
+  "GALO does not replace a digital twin, a SCADA system, a PLC, a robot controller or a safety interlock, and no proposed version writes to any of them directly. It reads what they publish and hands its conclusion to a person, a simulation or an approval gateway.":
+    "GALO 不替代数字孪生、SCADA、PLC、机器人控制器或安全联锁，任何设想中的版本也都不会直接往它们里写。它读取这些系统公开出来的东西，再把结论交给人、交给仿真，或交给审批网关。",
+  "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.":
+    "GALO 被设计成一套不绑定单一领域的世界模型、推理、学习与重放架构。通用的是架构，不是智能。",
+  "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.":
+    "GALO 的设计位置是在现有数字孪生、SCADA 系统、PLC、机器人控制器和安全联锁之上，并且一个都不替代。",
+  "GALO is not a PLC, a motion controller or a safety system, and it does not aim to become one. In robotics its long-term place is mission reasoning, constraints, exception handling and recovery planning above a controller somebody else certified.":
+    "GALO 不是 PLC、不是运动控制器、也不是安全系统，而且并不打算变成其中任何一个。在机器人领域，它的长期位置是：在别人已经认证过的控制器之上做任务推理、约束管理、异常处理和恢复规划。",
+  "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.":
+    "GALO 把状态、学习出来的搜索、局部修正和动作路线都摆在明面上——起点就在工厂已有的数字孪生和运营系统那里，先把决策做扎实。今天已被证明的是有限范围的：合成任务和公开基准上的学习结果，连同没能奏效的那两项一起公开。还没有任何合作方在自己的数据上跑过，这里的一切也都不授权向工厂下达任何指令。",
   "GENERAL-PURPOSE ARCHITECTURE · INDUSTRIAL DECISION ASSURANCE FIRST": "通用架构 · 先做工业决策保障",
   "General-purpose verifiable world-model and autonomy architecture": "通用的、可验证的世界模型与自主性架构",
-  "Hardware and software in the loop, certified interlocks, and regulator or partner approval.": "硬件在环与软件在环、经认证的联锁装置，以及监管方或合作方的批准。",
+  "Hardware and software in the loop, certified interlocks, and regulator or partner approval.":
+    "硬件在环与软件在环、经认证的联锁装置，以及监管方或合作方的批准。",
   "Heldout integrity": "留出集的完整性",
   "Historical ground truth, or an independent expert judgement.": "历史上的实际结果，或一位独立专家的判断。",
   "Human approval · twin simulation · supervisory gateway": "人工批准 · 孪生体仿真 · 监督网关",
-  "If A0 does not beat A1 under the frozen contract, or if there is an oracle leak, a frozen write, candidate drift or a false accept, the result stays NOT_SUPPORTED on that scope. The protocol is not changed after the sealed set has been inspected.": "如果在冻结的契约下 A0 没有胜过 A1，或者出现了预言泄漏、对冻结数据的写入、候选集漂移或误接受，那么在该范围上的结论就保持为 NOT_SUPPORTED。密封集合一经查看，协议就不再改动。",
-  "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.": "在 ADGM 注册运营公司，并完成二十五次工业界的探索性访谈。",
+  "If A0 does not beat A1 under the frozen contract, or if there is an oracle leak, a frozen write, candidate drift or a false accept, the result stays NOT_SUPPORTED on that scope. The protocol is not changed after the sealed set has been inspected.":
+    "如果在冻结的契约下 A0 没有胜过 A1，或者出现了预言泄漏、对冻结数据的写入、候选集漂移或误接受，那么在该范围上的结论就保持为 NOT_SUPPORTED。密封集合一经查看，协议就不再改动。",
+  "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.":
+    "在 ADGM 注册运营公司，并完成二十五次工业界的探索性访谈。",
   "Independent assets with no shared process worth speaking of.": "各自独立的资产，之间没有什么值得一提的共同流程。",
   "Independent cross-domain evidence. Not a marketing declaration.": "跨领域的独立证据。不是一句营销宣言。",
   "Industrial analytics and predictive maintenance": "工业分析与预测性维护",
@@ -437,54 +633,77 @@ export const industrialZh: TranslationDictionary = {
   "Industrial chapter navigation": "工业篇章导航",
   "Industrial decision assurance around existing digital twins": "围绕既有数字孪生的工业决策保障",
   "Industrial decision-assurance evaluation": "工业决策保障评估",
-  "Industry is chosen because the cost of ambiguity, downtime and an unsafe action is already measured there. A narrow market with measurable stakes falsifies an architecture faster than a broad one without them.": "选工业，是因为在那里，含糊、停机和一次不安全动作的代价早就被算过了。一个赌注可度量的窄市场，比一个没有赌注的宽市场更快地能证伪一套架构。",
-  "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.": "内部的工作单位计数不是加速、不是因果结果、不是客户价值，也不是外部收益。还没有任何合作方用自己的评判者在自己的数据上跑过一次评估。",
-  "Issue a high-level recommendation or command through a separate approval gateway.": "通过一个独立的批准网关，发出高层次的建议或指令。",
-  "It allows an advisory-first deployment that is safe by construction.": "它使得「先做建议」的部署方式在构造上就是安全的。",
+  "Industry is chosen because the cost of ambiguity, downtime and an unsafe action is already measured there. A narrow market with measurable stakes falsifies an architecture faster than a broad one without them.":
+    "选工业，是因为在那里，含糊、停机和一次不安全动作的代价早就被算过了。一个赌注可度量的窄市场，比一个没有赌注的宽市场更快地能证伪一套架构。",
+  "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.":
+    "内部的工作单位计数不是加速、不是因果结果、不是客户价值，也不是外部收益。还没有任何合作方用自己的评判者在自己的数据上跑过一次评估。",
+  "Issue a high-level recommendation or command through a separate approval gateway.":
+    "通过一个独立的批准网关，发出高层次的建议或指令。",
+  "It allows an advisory-first deployment that is safe by construction.":
+    "它使得「先做建议」的部署方式在构造上就是安全的。",
   "It funds the architecture and tests it against real cost": "它既为这套架构提供资金，也用真实成本来检验它",
-  "Learn": "学习",
+  Learn: "学习",
   "Learned proposal and search": "学习出来的提案与搜索",
-  "Less actual work, measured against the same mechanism rather than a weaker one.": "实际工作量更少，而且是与同一套机制比较，不是与一个更弱的机制比较。",
+  "Less actual work, measured against the same mechanism rather than a weaker one.":
+    "实际工作量更少，而且是与同一套机制比较，不是与一个更弱的机制比较。",
   "Licence, support, and usage or site economics": "许可、支持，以及按用量或按站点的经济模型",
-  "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.": "血缘关系走平台自己的模型，取决于那个模型记录了多少，再加上机构自己愿意向审计者开放的部分。",
-  "Local revision and cross-system evidence matter when one change touches several things.": "当一处改动牵动好几样东西时，局部修正和跨系统的证据就变得要紧。",
-  "Mission decomposition, constraints, route choice and recovery above the vendor's controller.": "在供应商的控制器之上做任务分解、约束、路线选择和恢复。",
-  "Models fitted to historical operating data, producing an alert, a score or a forecast.": "在历史运行数据上拟合出来的模型，产出一条告警、一个分数或一份预测。",
-  "Most plants are not suitable, and saying so early is part of the product.": "大多数工厂并不合适，而早点把这话说出来，本身就是产品的一部分。",
+  "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.":
+    "血缘关系走平台自己的模型，取决于那个模型记录了多少，再加上机构自己愿意向审计者开放的部分。",
+  "Local revision and cross-system evidence matter when one change touches several things.":
+    "当一处改动牵动好几样东西时，局部修正和跨系统的证据就变得要紧。",
+  "Mission decomposition, constraints, route choice and recovery above the vendor's controller.":
+    "在供应商的控制器之上做任务分解、约束、路线选择和恢复。",
+  "Models fitted to historical operating data, producing an alert, a score or a forecast.":
+    "在历史运行数据上拟合出来的模型，产出一条告警、一个分数或一份预测。",
+  "Most plants are not suitable, and saying so early is part of the product.":
+    "大多数工厂并不合适，而早点把这话说出来，本身就是产品的一部分。",
   "Multi-site or fleet expansion": "扩展到多站点或整个机队",
-  "Negotiated": "面议",
+  Negotiated: "面议",
   "Neither a positive nor a negative claim can be made from it.": "从中既不能得出肯定的结论，也不能得出否定的结论。",
-  "No certification exists, none is applied for, and none is implied by any number on this site.": "并不存在这样的认证，也没有申请，网站上的任何数字都不隐含它。",
+  "No certification exists, none is applied for, and none is implied by any number on this site.":
+    "并不存在这样的认证，也没有申请，网站上的任何数字都不隐含它。",
   "No customer, no pilot, no revenue": "没有客户、没有试点、没有收入",
-  "No gold diagnosis and no future outcome enters the policy input.": "标准答案的诊断和未来的结果，都不会进入策略的输入。",
-  "No historian or SCADA, no asset hierarchy, no maintenance record, no versioned procedures.": "没有历史库或 SCADA，没有资产层级，没有维修记录，也没有带版本的作业规程。",
+  "No gold diagnosis and no future outcome enters the policy input.":
+    "标准答案的诊断和未来的结果，都不会进入策略的输入。",
+  "No historian or SCADA, no asset hierarchy, no maintenance record, no versioned procedures.":
+    "没有历史库或 SCADA，没有资产层级，没有维修记录，也没有带版本的作业规程。",
   "No identifiable independent effect": "识别不出独立效应",
-  "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.": "季度结束时仍没有注册实体，或者所做的工业访谈少于二十五次。",
+  "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.":
+    "季度结束时仍没有注册实体，或者所做的工业访谈少于二十五次。",
   "No oracle leak: the evaluator outcome is signed outside the engine.": "没有预言泄漏：评判者的结果在引擎之外签名。",
   "No quantified downtime, review time or operational consequence.": "没有量化过的停机时间、复核时间或运行后果。",
   "No real actuation happens during an evaluation.": "在评估期间不会发生任何真实的执行动作。",
-  "None of these rungs runs today. They are listed with their gates so that a reader can see what would have to be true before GALO went anywhere near a physical command — and so that nobody has to take the word 'roadmap' on trust.": "这些台阶今天一级也没在运行。之所以连同各自的关卡一起列出来，是让读者看清：在 GALO 靠近任何一条物理指令之前，有哪些事必须先成立——也是为了不让任何人只凭「路线图」这个词去信任。",
-  "Nothing here authorises a command to a plant, a controller or a robot. The roadmap is advisory first, then simulation, and every rung above that is gated.": "这里没有任何东西授权向工厂、控制器或机器人下达指令。路线图是先建议、再仿真，再往上的每一级都有关卡。",
-  "Nothing. The negative is retained in the archive rather than dropped.": "什么也没有。这个负面结果留在存档里，不被丢掉。",
+  "None of these rungs runs today. They are listed with their gates so that a reader can see what would have to be true before GALO went anywhere near a physical command — and so that nobody has to take the word 'roadmap' on trust.":
+    "这些台阶今天一级也没在运行。之所以连同各自的关卡一起列出来，是让读者看清：在 GALO 靠近任何一条物理指令之前，有哪些事必须先成立——也是为了不让任何人只凭「路线图」这个词去信任。",
+  "Nothing here authorises a command to a plant, a controller or a robot. The roadmap is advisory first, then simulation, and every rung above that is gated.":
+    "这里没有任何东西授权向工厂、控制器或机器人下达指令。路线图是先建议、再仿真，再往上的每一级都有关卡。",
+  "Nothing. The negative is retained in the archive rather than dropped.":
+    "什么也没有。这个负面结果留在存档里，不被丢掉。",
   "OEM or autonomy SDK": "OEM 或自主性 SDK",
   "ONE EVALUATED DECISION": "一个被评估的决策",
-  "Observe": "观察",
-  "Offer": "方案",
-  "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.": "一个 Atlas、带类型的程序、一份学习契约和一份重放契约，设计上要在知识、科学、工业运行和自主任务这几处都站得住。领域变的是适配器和数据源；它不改变证据循环。",
-  "One bounded workflow, a frozen baseline, and a replay package.": "一条边界清楚的工作流、一条冻结的基线，加上一个可重放的包。",
+  Observe: "观察",
+  Offer: "方案",
+  "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.":
+    "一个 Atlas、带类型的程序、一份学习契约和一份重放契约，设计上要在知识、科学、工业运行和自主任务这几处都站得住。领域变的是适配器和数据源；它不改变证据循环。",
+  "One bounded workflow, a frozen baseline, and a replay package.":
+    "一条边界清楚的工作流、一条冻结的基线，加上一个可重放的包。",
   "One evaluated decision, in seven steps": "一个被评估的决策，分七步",
-  "One workflow should be able to grow into assets, sites, fleets and procedures.": "一条工作流应当能够长成资产、站点、机队和作业规程。",
+  "One workflow should be able to grow into assets, sites, fleets and procedures.":
+    "一条工作流应当能够长成资产、站点、机队和作业规程。",
   "Ontology and operations platforms": "本体与运营平台",
   "Operational data already exists": "运行数据已经存在",
   "PLATFORM AND PRODUCT, KEPT APART": "平台与产品，分开说",
-  "Palantir-style operational ontologies, workflow and data-integration platforms": "Palantir 式的运营本体，以及工作流与数据集成平台",
+  "Palantir-style operational ontologies, workflow and data-integration platforms":
+    "Palantir 式的运营本体，以及工作流与数据集成平台",
   "Partner system": "合作方的系统",
   "Partner-controlled industrial validity is not proven.": "由合作方掌控的工业有效性尚未被证明。",
   "Partner-controlled operational validity": "由合作方掌控的运行有效性",
   "Partner-controlled validity": "由合作方掌控的有效性",
-  "Partner-owned heldout data, work reduction at the same verdict, and zero false accepts.": "合作方自己持有的留出数据、在同一判定下的工作量下降，以及零误接受。",
+  "Partner-owned heldout data, work reduction at the same verdict, and zero false accepts.":
+    "合作方自己持有的留出数据、在同一判定下的工作量下降，以及零误接受。",
   "Persistent policy in this release": "本次发布中的持久策略",
-  "Planning hypotheses for a design-partner conversation, and nothing more.": "供与设计合作方对话时用的规划假设，仅此而已。",
+  "Planning hypotheses for a design-partner conversation, and nothing more.":
+    "供与设计合作方对话时用的规划假设，仅此而已。",
   "Planning hypothesis": "规划假设",
   "Planning price hypotheses": "价格规划假设",
   "Plant and asset twins, telemetry integration, 3D context and simulation": "工厂与资产孪生、遥测集成、三维语境与仿真",
@@ -493,95 +712,130 @@ export const industrialZh: TranslationDictionary = {
   "Pointwise harm": "逐点损失",
   "Policy and Atlas update receipts.": "策略更新与 Atlas 更新的回执。",
   "Private site pilot": "单一站点的私有试点",
-  "Production autonomy is not authorized and functional-safety certification is not claimed.": "生产级自主未获授权，也不主张任何功能安全认证。",
+  "Production autonomy is not authorized and functional-safety certification is not claimed.":
+    "生产级自主未获授权，也不主张任何功能安全认证。",
   "Production autonomy not authorised": "生产级自主未获授权",
-  "Propose": "提议",
-  "Rank diagnoses and actions, name the affected assets and the evidence. A person decides.": "对诊断和动作排序，点明涉及的资产和依据。由人来决定。",
+  Propose: "提议",
+  "Rank diagnoses and actions, name the affected assets and the evidence. A person decides.":
+    "对诊断和动作排序，点明涉及的资产和依据。由人来决定。",
   "Ranks what to check. Holds no verdict authority.": "对该查什么排序。没有下判定的权力。",
   "Read-only adapters": "只读适配器",
   "Read-only domain adapters": "只读的领域适配器",
   "Recomputes, and refuses when it cannot.": "重新计算；算不出来时就拒绝。",
   "Request a bounded industrial evaluation": "申请一次范围明确的工业评估",
-  "Retrieval plus reranking, or the partner's own model workflow, with equal information.": "检索加重排序，或合作方自己的模型工作流，信息量相同。",
+  "Retrieval plus reranking, or the partner's own model workflow, with equal information.":
+    "检索加重排序，或合作方自己的模型工作流，信息量相同。",
   "Reusable adapters, partner evidence and rollout economics.": "可复用的适配器、来自合作方的证据，以及推广的经济性。",
-  "Reveal": "揭示",
+  Reveal: "揭示",
   "Review the technical evidence": "查看技术证据",
-  "Reviewer hours, diagnosis time, routes re-checked and audit time, all measured.": "复核人员的工时、诊断时间、被重新检查的路线，以及审计时间，全都要计量。",
+  "Reviewer hours, diagnosis time, routes re-checked and audit time, all measured.":
+    "复核人员的工时、诊断时间、被重新检查的路线，以及审计时间，全都要计量。",
   "Robotics mission layer": "机器人任务层",
-  "Run counterfactual plans inside the partner's digital twin. No physical command leaves the system.": "在合作方的数字孪生里跑反事实方案。没有任何物理指令离开系统。",
-  "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.": "在合作方自己的数据上，做一次范围明确的工业决策保障评估：只读、只做建议，成功条件在开跑之前先落成文字。",
+  "Run counterfactual plans inside the partner's digital twin. No physical command leaves the system.":
+    "在合作方的数字孪生里跑反事实方案。没有任何物理指令离开系统。",
+  "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.":
+    "在合作方自己的数据上，做一次范围明确的工业决策保障评估：只读、只做建议，成功条件在开跑之前先落成文字。",
   "SEVEN ARMS AND EIGHT GATES": "七条实验臂与八道关卡",
-  "Same verdict, false accepts, and the search reduction are all reported.": "同一判定、误接受，以及搜索量的下降，三者都要报告。",
+  "Same verdict, false accepts, and the search reduction are all reported.":
+    "同一判定、误接受，以及搜索量的下降，三者都要报告。",
   "Scoped learning results, negatives included": "范围明确的学习结果，含负面结果",
   "Seven arms and eight gates": "七条实验臂与八道关卡",
-  "Shadow-mode reliability, a safety case, and an independent operational review.": "影子模式下的可靠性、一份安全论证，以及一次独立的运行评审。",
+  "Shadow-mode reliability, a safety case, and an independent operational review.":
+    "影子模式下的可靠性、一份安全论证，以及一次独立的运行评审。",
   "Shuffled feedback.": "被打乱的反馈。",
-  "Simulate": "仿真",
-  "Simulation": "仿真",
+  Simulate: "仿真",
+  Simulation: "仿真",
   "Simulation and supervisory-control evidence.": "来自仿真与监督控制的证据。",
-  "Simulation parity, scenario coverage, and recovery and boundary metrics.": "仿真的一致性、场景覆盖，以及恢复与边界的度量。",
+  "Simulation parity, scenario coverage, and recovery and boundary metrics.":
+    "仿真的一致性、场景覆盖，以及恢复与边界的度量。",
   "Six results, and two of them did not work.": "六项结果，其中两项没成。",
   "Strong baseline": "强基线",
   "Structured observations with source custody.": "带来源保管链的结构化观测。",
-  "Supervisory": "监督式",
-  "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.": "L3–L7 的合成任务。没有任何工业内容，也不涉及任何一座在运行的工厂。",
-  "Systems that already exist and stay in place. GALO reads them and replaces none of them.": "那些本来就在、而且会继续留着的系统。GALO 读它们，一个也不取代。",
+  Supervisory: "监督式",
+  "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.":
+    "L3–L7 的合成任务。没有任何工业内容，也不涉及任何一座在运行的工厂。",
+  "Systems that already exist and stay in place. GALO reads them and replaces none of them.":
+    "那些本来就在、而且会继续留着的系统。GALO 读它们，一个也不取代。",
   "THE AUTONOMY LADDER": "自主性的阶梯",
   "THE FIRST MARKET, AND THE REASON IT IS THE FIRST": "第一个市场，以及为什么是它",
   "THE V65–V67 LEARNING LINE": "V65–V67 的学习线",
   "TRAIN split only.": "仅 TRAIN 划分。",
-  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.": "有兴趣去攻击这套数学和评估设计的技术评审人，而不是去为它们背书的人。",
+  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.":
+    "有兴趣去攻击这套数学和评估设计的技术评审人，而不是去为它们背书的人。",
   "Terminal parity": "终局一致",
-  "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.": "L1–L7 这座塔胜过一个对等的替代方案，这是一个研究假设。它不作为投资理由提出。",
+  "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.":
+    "L1–L7 这座塔胜过一个对等的替代方案，这是一个研究假设。它不作为投资理由提出。",
   "That the heldout effect could not be computed on this task at all.": "在这项任务上，留出集的效应根本算不出来。",
   "The DEV and SEALED roots stay frozen.": "DEV 与 SEALED 的根保持冻结。",
-  "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.": "R5B6A1_3 这个发布完全不做任何策略更新。V65–V67 的 Engine 与 Atlas 是另一条独立的原型线，有它自己范围明确的学习证据，连同负面结果一起发布在下面。",
+  "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.":
+    "R5B6A1_3 这个发布完全不做任何策略更新。V65–V67 的 Engine 与 Atlas 是另一条独立的原型线，有它自己范围明确的学习证据，连同负面结果一起发布在下面。",
   "The action space the partner has approved.": "合作方已经批准的动作空间。",
-  "The alert can be checked against what happened next, and the model against the operating window it was trained on.": "告警可以拿后来实际发生的事去核对，模型则可以拿它训练时用的那段运行窗口去核对。",
+  "The alert can be checked against what happened next, and the model against the operating window it was trained on.":
+    "告警可以拿后来实际发生的事去核对，模型则可以拿它训练时用的那段运行窗口去核对。",
   "The assessment dossier": "评估卷宗",
   "If you want the mechanism itself": "如果你想看的是机制本身",
-  "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.": "资产模型、一个读数背后的遥测，以及一次模拟场景跑出来的结果。这个品类之所以存在，就是为了这些。",
+  "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.":
+    "资产模型、一个读数背后的遥测，以及一次模拟场景跑出来的结果。这个品类之所以存在，就是为了这些。",
   "The causal same-mechanism comparator.": "同机制的因果对照组。",
-  "The eight conditions a work-reduction claim has to meet before it is made": "一项工作量下降的主张在被说出口之前，必须满足的八个条件",
+  "The eight conditions a work-reduction claim has to meet before it is made":
+    "一项工作量下降的主张在被说出口之前，必须满足的八个条件",
   "The evaluation is designed to be able to fail, and to say so.": "这次评估在设计上就允许失败，并且会把失败说出来。",
-  "The evaluation needs bounded observations and outcomes that are revealed independently.": "评估需要边界清楚的观测，以及独立揭示的结果。",
+  "The evaluation needs bounded observations and outcomes that are revealed independently.":
+    "评估需要边界清楚的观测，以及独立揭示的结果。",
   "The evidence behind the offer": "这份方案背后的证据",
-  "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.": "第一个商业产品，是一次范围明确的工业决策保障评估。没有客户，没有签下的管道，没有收入。",
-  "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.": "第一个商业产品：在一条工业工作流上做一次范围明确的只读建议式评估。GALO 站在数字孪生之上的位置、一个被评估决策的七个步骤、带关卡的自主性阶梯，以及并非价目表的价格规划假设。",
+  "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.":
+    "第一个商业产品，是一次范围明确的工业决策保障评估。没有客户，没有签下的管道，没有收入。",
+  "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.":
+    "第一个商业产品：在一条工业工作流上做一次范围明确的只读建议式评估。GALO 站在数字孪生之上的位置、一个被评估决策的七个步骤、带关卡的自主性阶梯，以及并非价目表的价格规划假设。",
   "The first product, its autonomy ladder and its price hypotheses.": "第一个产品、它的自主性阶梯，以及它的价格假设。",
-  "The first thing anybody would buy: a bounded, read-only, advisory evaluation on one industrial workflow, with a frozen baseline and a replayable decision package at the end.": "第一件真会有人买的东西：在一条工业工作流上做一次范围明确的只读建议式评估，配一条冻结的基线，最后交出一个可重放的决策包。",
+  "The first thing anybody would buy: a bounded, read-only, advisory evaluation on one industrial workflow, with a frozen baseline and a replayable decision package at the end.":
+    "第一件真会有人买的东西：在一条工业工作流上做一次范围明确的只读建议式评估，配一条冻结的基线，最后交出一个可重放的决策包。",
   "The heldout set is frozen and stays frozen.": "留出集是冻结的，而且一直冻结着。",
   "The learned persistent GALO Atlas.": "学习出来的持久 GALO Atlas。",
   "The partner's existing diagnostic rules and operating context.": "合作方现有的诊断规则和运行语境。",
-  "The partner's strongest rule engine or static deterministic ranking.": "合作方最强的规则引擎，或一套静态的确定性排序。",
+  "The partner's strongest rule engine or static deterministic ranking.":
+    "合作方最强的规则引擎，或一套静态的确定性排序。",
   "The policy updates and the Atlas updates are both recorded.": "策略更新和 Atlas 更新，两者都会被记录。",
   "The private key stays outside the engine.": "私钥留在引擎之外。",
   "The route is committed before anything is revealed.": "路线在任何东西被揭示之前就已经定下。",
   "The route is explicit and its work is counted.": "路线是显式的，它的工作量是被计数的。",
   "The same data for every arm.": "每条实验臂用的是同一份数据。",
-  "The same engine, Atlas schema and capacity, with updates blocked.": "同一个引擎、同一套 Atlas 模式与容量，但更新被封住。",
-  "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.": "成功条件是在看到结果之后才写的，或者用的是我们自己的数据而不是合作方的，或者这次运行碰了只读权限以外的东西。",
-  "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.": "GALO 要读的表面，不是要取代的东西。孪生体说的是「什么」和「在哪」；GALO 接手的问题是：还有哪些解释没被排除、哪一次检查能把它们分开、以及接下来在规则内可以做什么。",
+  "The same engine, Atlas schema and capacity, with updates blocked.":
+    "同一个引擎、同一套 Atlas 模式与容量，但更新被封住。",
+  "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.":
+    "成功条件是在看到结果之后才写的，或者用的是我们自己的数据而不是合作方的，或者这次运行碰了只读权限以外的东西。",
+  "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.":
+    "GALO 要读的表面，不是要取代的东西。孪生体说的是「什么」和「在哪」；GALO 接手的问题是：还有哪些解释没被排除、哪一次检查能把它们分开、以及接下来在规则内可以做什么。",
   "The terminal result must be identical, not merely comparable.": "终局结果必须完全一致，而不只是差不多。",
-  "The time to be measured against the milestones above, and to be dropped if they are missed.": "对照上面这些里程碑来计量的时间；里程碑没达成，就撤。",
+  "The time to be measured against the milestones above, and to be dropped if they are missed.":
+    "对照上面这些里程碑来计量的时间；里程碑没达成，就撤。",
   "The whole run replays directly from a fresh root.": "整次运行可以直接从一个全新的根重放出来。",
   "The workflow is connected": "工作流是连通的",
-  "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.": "没有客户，没有签下的管道，没有收入。规划价格只是用来谈的假设。",
-  "There is no reading of this result that is positive, and none is offered.": "这个结果没有任何正面读法，我们也不提供一种。",
+  "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.":
+    "没有客户，没有签下的管道，没有收入。规划价格只是用来谈的假设。",
+  "There is no reading of this result that is positive, and none is offered.":
+    "这个结果没有任何正面读法，我们也不提供一种。",
   "There is somewhere to expand to": "有可以扩张的去处",
-  "These are the numbers we would open a conversation with. They are not a price list, not a signed pipeline and not revenue — no partner has agreed to any of them, because there is no partner yet.": "这些是我们开口谈的时候会拿出来的数字。它们不是价目表、不是签下的管道、也不是收入——没有任何合作方同意过其中任何一条，因为目前还没有合作方。",
-  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.": "这与上面那个冻结的发布是两回事：那个发布仍然完全不做任何学习。与它并行的，是一个以回执为原生结构的 Engine 与 Atlas 原型，在合成任务和公开基准上有范围明确的学习结果。这两句话同时为真，谁也不许用来暗示另一句。负面结果就在同一张表里，用同样的写法。",
+  "These are the numbers we would open a conversation with. They are not a price list, not a signed pipeline and not revenue — no partner has agreed to any of them, because there is no partner yet.":
+    "这些是我们开口谈的时候会拿出来的数字。它们不是价目表、不是签下的管道、也不是收入——没有任何合作方同意过其中任何一条，因为目前还没有合作方。",
+  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.":
+    "这与上面那个冻结的发布是两回事：那个发布仍然完全不做任何学习。与它并行的，是一个以回执为原生结构的 Engine 与 Atlas 原型，在合成任务和公开基准上有范围明确的学习结果。这两句话同时为真，谁也不许用来暗示另一句。负面结果就在同一张表里，用同样的写法。",
   "Tower-specific advantage": "塔特有的优势",
   "Transfer across domains, long horizons and open tasks.": "跨领域迁移、长时程，以及开放式任务。",
   "Eleven assessment lines, six of them negative": "十一条评估线，其中六条是负面的",
   "Twins, rule engines, ontology platforms and robotics stacks": "孪生体、规则引擎、本体平台和机器人技术栈",
-  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.": "两家设计合作方，来自工业数字孪生、工厂运营或自主系统领域，能够在自己的数据上界定一次范围明确的评估，成功条件由他们自己来写。",
-  "Two fresh roots reproduce the semantic state, the outcomes and the ledgers.": "两个全新的根，都能复现出同样的语义状态、结果和账本。",
+  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.":
+    "两家设计合作方，来自工业数字孪生、工厂运营或自主系统领域，能够在自己的数据上界定一次范围明确的评估，成功条件由他们自己来写。",
+  "Two fresh roots reproduce the semantic state, the outcomes and the ledgers.":
+    "两个全新的根，都能复现出同样的语义状态、结果和账本。",
   "Typed ProgramIR routes": "带类型的 ProgramIR 路线",
-  "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.": "UMLS 比预先登记的基线少 49.7% 的工作量；WN18RR 为 7.17%，95% 置信区间 5.82–8.55%；JF17K-3 候选检查少 1.34%；Kinship 优势为 0%；Nations 识别不出来。",
-  "Untouched. No current or proposed path writes to them directly.": "没被碰过。无论现有路径还是提议中的路径，都不会直接写入它们。",
+  "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.":
+    "UMLS 比预先登记的基线少 49.7% 的工作量；WN18RR 为 7.17%，95% 置信区间 5.82–8.55%；JF17K-3 候选检查少 1.34%；Kinship 优势为 0%；Nations 识别不出来。",
+  "Untouched. No current or proposed path writes to them directly.":
+    "没被碰过。无论现有路径还是提议中的路径，都不会直接写入它们。",
   "V65 preregistered synthetic run": "V65 预先登记的合成实验",
-  "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.": "V65 的 Engine 与 Atlas 在合成任务上的学习，把完整认知工作量减少了 60.9%，且终局结果完全一致，范围限于一个冻结的合成场景。",
+  "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.":
+    "V65 的 Engine 与 Atlas 在合成任务上的学习，把完整认知工作量减少了 60.9%，且终局结果完全一致，范围限于一个冻结的合成场景。",
   "V65-V67 public-benchmark archive": "V65–V67 公开基准归档",
   "V67 business model memorandum": "V67 商业模式备忘录",
   "V67 claim matrix": "V67 主张矩阵",
@@ -589,7 +843,7 @@ export const industrialZh: TranslationDictionary = {
   "V67 technical evidence memorandum": "V67 技术证据备忘录",
   "Verified work": "已核验的工作",
   "Verifier · PASS / REJECT / BOUNDARY": "验证器 · PASS / REJECT / BOUNDARY",
-  "Verify": "核验",
+  Verify: "核验",
   "WHAT IT WOULD COST": "这会花多少钱",
   "WHERE GALO SITS": "GALO 站在哪里",
   "WHO THIS IS NOT FOR": "这不适合谁",
@@ -598,140 +852,199 @@ export const industrialZh: TranslationDictionary = {
   "What the wedge is for": "这个楔子是用来干什么的",
   "What would have to be proved": "需要证明什么",
   "Where GALO sits, and what it never touches": "GALO 站在哪里，又永远不碰什么",
-  "Where a person or a simulation stands between the reasoning and the plant.": "在推理和工厂之间，站着一个人或一次仿真的地方。",
+  "Where a person or a simulation stands between the reasoning and the plant.":
+    "在推理和工厂之间，站着一个人或一次仿真的地方。",
   "Who else is in this market": "这个市场上还有谁",
   "Who this is not for": "这不适合谁",
   "Working research prototype": "可运行的研究原型",
   "Zero.": "零。",
-  "gated": "有关卡",
-  "roadmap": "路线图",
+  gated: "有关卡",
+  roadmap: "路线图",
   "the authority boundary": "权限边界",
   "the partner's systems, untouched": "合作方的系统，未被触碰",
   "what GALO would add": "GALO 会加上什么",
 };
 
 export const industrialAr: TranslationDictionary = {
-  "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.": "GALO بنية عامّة الغرض تُبقي حالةَ نظام القرار وأفعالَه المسموح بها والمسارَ الذي سلكه ظاهرةً للعيان، بدل أن تُخفيها داخل نموذج لا يستطيع أحد فتحه. أمّا أوّل ما يُباع فأضيق من ذلك بكثير: ضمانُ القرار إلى جانب التوائم الرقمية والأنظمة التشغيلية التي يشغّلها المصنع أصلًا.",
-  "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.": "وهو موجَّه إلى عملٍ ليس الفشلُ المكلف فيه هو الجوابَ الخاطئ، بل الجوابَ الخاطئ الذي لا يستطيع أحد تتبّعه: التشغيل الصناعي، والعمليات الخاضعة للتنظيم، والأتمتة الطويلة الأمد، وكلّ ما يوقّع عليه مراجع. وتأتي الصناعة أوّلًا لأنّ كلفة الالتباس محسوبة فيها أصلًا.",
-  "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.": "توجد نتائج تعلّم على مهامّ اصطناعية ومعايير عامّة، بما فيها السلبية. ولم يُجرِ أيّ شريك واحدةً منها على بياناته بمُقيِّمه الخاصّ، ولم يُقَس أيّ مكسب تشغيلي في أيّ مكان. وهذا الصفر مطبوع هنا عن قصد.",
-  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.": "لا نتيجة معيارية أُنتجت تحت سيطرة شريك، ولا مقارنة في الدقّة أو السرعة أو الكلفة مع نظام قيد التشغيل الفعلي.",
-  "No claim about general intelligence, production autonomy, or functional-safety certification.": "لا ادّعاء بذكاء عامّ ولا باستقلالية إنتاجية ولا باعتماد للسلامة الوظيفية.",
-  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.": "لا تعلّم في النواة المُصدَرة؛ وحيث يتعلّم النموذج الأوّلي فعلًا، تبقى النتائج محصورة في مهامّ اصطناعية ومعايير عامّة وتُنشَر مع سلبيّاتها.",
-  "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.": "تقييم واحد محدود لضمان القرار الصناعي بالقراءة فقط على بيانات شريك، إلى جانب توسيع عقد المُدخلات المقبولة وإضافة مسارات متعدّدة الخطوات وإغلاق بوّابات الأدلّة المسمّاة.",
-  "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.": "جزئيًا. قِيس النموذج الأوّلي للمحرّك وAtlas في مواجهة خطوط أساس مسجَّلة مسبقًا على معايير عامّة، وكانت نتيجتان من ستّ سلبيّتين. ولم يُقَس شيء في مواجهة نظام قيد التشغيل الفعلي، ولم يُقَس أيّ مكسب تشغيلي في أيّ مكان.",
-  "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:": "البنية عامّة؛ أمّا أوّل ما قد يشتريه أحد فليس كذلك. ما هو هذا المنتج الأوّل، وكم سيكلّف على سبيل فرضية تخطيطية، وكم يبعد عن أن يمسّ آلة:",
-  "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.": "لا يراكم الإصدار المجمَّد شيئًا بين الجولات، فتتصرّف جولتان على المُدخل نفسه تصرّفًا متطابقًا بعد عام. أمّا النموذج الأوّلي المنفصل للمحرّك وAtlas فيتعلّم فعلًا، ويُبلَّغ عنه بمعزل عن هذا الرقم لا مطويًّا فيه.",
-  "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.": "نعم، وهو ضيّق عن قصد: نمطا مُدخل مقبولان، وخطوة واحدة محدودة لكلّ جولة، وأربعة أنواع أفعال قابلة للتنفيذ، ولا تعلّم في النواة المُصدَرة. أمّا النموذج الأوّلي المنفصل للمحرّك وAtlas فيتعلّم فعلًا، وتُعرَض نتائجه بشروطها الخاصّة.",
+  "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.":
+    "GALO بنية عامّة الغرض تُبقي حالةَ نظام القرار وأفعالَه المسموح بها والمسارَ الذي سلكه ظاهرةً للعيان، بدل أن تُخفيها داخل نموذج لا يستطيع أحد فتحه. أمّا أوّل ما يُباع فأضيق من ذلك بكثير: ضمانُ القرار إلى جانب التوائم الرقمية والأنظمة التشغيلية التي يشغّلها المصنع أصلًا.",
+  "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.":
+    "وهو موجَّه إلى عملٍ ليس الفشلُ المكلف فيه هو الجوابَ الخاطئ، بل الجوابَ الخاطئ الذي لا يستطيع أحد تتبّعه: التشغيل الصناعي، والعمليات الخاضعة للتنظيم، والأتمتة الطويلة الأمد، وكلّ ما يوقّع عليه مراجع. وتأتي الصناعة أوّلًا لأنّ كلفة الالتباس محسوبة فيها أصلًا.",
+  "Learning results exist on synthetic tasks and public benchmarks, negatives included. No partner has run one on their own data with their own evaluator, and no operational gain has been measured anywhere. That number is zero and is printed here on purpose.":
+    "توجد نتائج تعلّم على مهامّ اصطناعية ومعايير عامّة، بما فيها السلبية. ولم يُجرِ أيّ شريك واحدةً منها على بياناته بمُقيِّمه الخاصّ، ولم يُقَس أيّ مكسب تشغيلي في أيّ مكان. وهذا الصفر مطبوع هنا عن قصد.",
+  "No benchmark result produced under a partner's control, and no accuracy, speed or cost comparison against a system in operational use.":
+    "لا نتيجة معيارية أُنتجت تحت سيطرة شريك، ولا مقارنة في الدقّة أو السرعة أو الكلفة مع نظام قيد التشغيل الفعلي.",
+  "No claim about general intelligence, production autonomy, or functional-safety certification.":
+    "لا ادّعاء بذكاء عامّ ولا باستقلالية إنتاجية ولا باعتماد للسلامة الوظيفية.",
+  "No learning in the released kernel; where a prototype does learn, the results are scoped to synthetic tasks and public benchmarks and are published with their negatives.":
+    "لا تعلّم في النواة المُصدَرة؛ وحيث يتعلّم النموذج الأوّلي فعلًا، تبقى النتائج محصورة في مهامّ اصطناعية ومعايير عامّة وتُنشَر مع سلبيّاتها.",
+  "One bounded, read-only industrial decision-assurance evaluation on a partner's own data, alongside widening the accepted input contract, adding multi-step trajectories, and closing the named evidence gates.":
+    "تقييم واحد محدود لضمان القرار الصناعي بالقراءة فقط على بيانات شريك، إلى جانب توسيع عقد المُدخلات المقبولة وإضافة مسارات متعدّدة الخطوات وإغلاق بوّابات الأدلّة المسمّاة.",
+  "Partly. The Engine and Atlas prototype was measured against preregistered baselines on public benchmarks, and two of those six results were negative. Nothing has been measured against a system in operational use, and no operational gain has been measured anywhere.":
+    "جزئيًا. قِيس النموذج الأوّلي للمحرّك وAtlas في مواجهة خطوط أساس مسجَّلة مسبقًا على معايير عامّة، وكانت نتيجتان من ستّ سلبيّتين. ولم يُقَس شيء في مواجهة نظام قيد التشغيل الفعلي، ولم يُقَس أيّ مكسب تشغيلي في أيّ مكان.",
+  "The architecture is general; the first thing anybody would buy is not. What that first product is, what it would cost as a planning hypothesis, and how far it is from touching a machine:":
+    "البنية عامّة؛ أمّا أوّل ما قد يشتريه أحد فليس كذلك. ما هو هذا المنتج الأوّل، وكم سيكلّف على سبيل فرضية تخطيطية، وكم يبعد عن أن يمسّ آلة:",
+  "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.":
+    "لا يراكم الإصدار المجمَّد شيئًا بين الجولات، فتتصرّف جولتان على المُدخل نفسه تصرّفًا متطابقًا بعد عام. أمّا النموذج الأوّلي المنفصل للمحرّك وAtlas فيتعلّم فعلًا، ويُبلَّغ عنه بمعزل عن هذا الرقم لا مطويًّا فيه.",
+  "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.":
+    "نعم، وهو ضيّق عن قصد: نمطا مُدخل مقبولان، وخطوة واحدة محدودة لكلّ جولة، وأربعة أنواع أفعال قابلة للتنفيذ، ولا تعلّم في النواة المُصدَرة. أمّا النموذج الأوّلي المنفصل للمحرّك وAtlas فيتعلّم فعلًا، وتُعرَض نتائجه بشروطها الخاصّة.",
   "learning writes in the released kernel": "عمليات كتابة تعلّم في النواة المُصدَرة",
   "results produced under a partner's control": "نتائج أُنتجت تحت سيطرة شريك",
   "the industrial wedge, in full": "المدخل الصناعي كاملًا",
   "0% work advantage": "صفر٪ من الوفر في العمل",
   "1.34% fewer candidate checks": "1.34٪ أقلّ في فحوص المرشّحين",
-  "49.7% less work than the preregistered global-frequency baseline": "عمل أقلّ بنسبة 49.7٪ من خطّ الأساس المسجَّل مسبقًا القائم على التواتر العامّ",
+  "49.7% less work than the preregistered global-frequency baseline":
+    "عمل أقلّ بنسبة 49.7٪ من خطّ الأساس المسجَّل مسبقًا القائم على التواتر العامّ",
   "60.9% less full cognitive work, at exact terminal parity": "عمل إدراكي كامل أقلّ بنسبة 60.9٪ مع تطابق نهائي تامّ",
   "6–8 weeks": "6–8 أسابيع",
   "7.17% less work, CI95 5.82–8.55%": "عمل أقلّ بنسبة 7.17٪، بفاصل ثقة 95٪ من 5.82 إلى 8.55٪",
   "A Q0 ranking signal on n-ary relations.": "إشارة ترتيب Q0 على علاقات n-آرية.",
   "A candidate diagnosis and a portfolio of candidate actions.": "تشخيص مرشَّح ومحفظة من الأفعال المرشَّحة.",
-  "A committed route and Atlas state, written before anything is revealed.": "مسار مُثبَّت وحالة Atlas، مكتوبان قبل الكشف عن أي شيء.",
+  "A committed route and Atlas state, written before anything is revealed.":
+    "مسار مُثبَّت وحالة Atlas، مكتوبان قبل الكشف عن أي شيء.",
   "A demand for immediate unsupervised control.": "المطالبة بتحكّم فوري من دون إشراف.",
   "A digital-twin scenario, where one exists.": "سيناريو في التوأم الرقمي، حيث يوجد واحد.",
   "A duplicate or post-reveal commitment is rejected.": "يُرفض أي تثبيت مكرَّر أو لاحق للكشف.",
-  "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.": "منتج أوسع بكثير وخلفه تكامل أكبر بكثير. أمّا فرضية GALO فأضيق وأيسر نقلًا: انتقالات حالة مشروعة، وحدّ صلاحيات لا يتخطّاه الجزء المتعلِّم، وإعادة تشغيل لا تتوقّف على حضور المنصّة نفسها.",
-  "A general architecture and a narrow first product are two different sentences.": "بنية عامّة ومنتج أول ضيّق: جملتان مختلفتان.",
-  "A general-purpose architecture is a design intention. General intelligence would need broad perception, transfer, planning and grounding well beyond any evidence here.": "البنية العامّة الغرض نيّة تصميمية. أمّا الذكاء العام فيتطلّب إدراكًا واسعًا ونقلًا وتخطيطًا وارتباطًا بالعالم يتجاوز بكثير أي دليل هنا.",
-  "A modelled ontology of the organisation, with workflows, governance and integration around it.": "أنطولوجيا مُنمذَجة للمؤسسة، تُحيط بها سير العمل والحوكمة والتكامل.",
-  "A one-off custom visualisation with no recurring assurance need.": "تصوير بصريّ مخصَّص لمرّة واحدة، بلا حاجة متكرّرة إلى ضمان القرار.",
+  "A far broader product with far more integration behind it. GALO's hypothesis is narrower and more portable: lawful state transitions, an authority boundary the learner cannot cross, and replay that does not depend on the platform being present.":
+    "منتج أوسع بكثير وخلفه تكامل أكبر بكثير. أمّا فرضية GALO فأضيق وأيسر نقلًا: انتقالات حالة مشروعة، وحدّ صلاحيات لا يتخطّاه الجزء المتعلِّم، وإعادة تشغيل لا تتوقّف على حضور المنصّة نفسها.",
+  "A general architecture and a narrow first product are two different sentences.":
+    "بنية عامّة ومنتج أول ضيّق: جملتان مختلفتان.",
+  "A general-purpose architecture is a design intention. General intelligence would need broad perception, transfer, planning and grounding well beyond any evidence here.":
+    "البنية العامّة الغرض نيّة تصميمية. أمّا الذكاء العام فيتطلّب إدراكًا واسعًا ونقلًا وتخطيطًا وارتباطًا بالعالم يتجاوز بكثير أي دليل هنا.",
+  "A modelled ontology of the organisation, with workflows, governance and integration around it.":
+    "أنطولوجيا مُنمذَجة للمؤسسة، تُحيط بها سير العمل والحوكمة والتكامل.",
+  "A one-off custom visualisation with no recurring assurance need.":
+    "تصوير بصريّ مخصَّص لمرّة واحدة، بلا حاجة متكرّرة إلى ضمان القرار.",
   "A person or a simulation holds authority": "الصلاحية بيد إنسان أو محاكاة",
   "A post-reveal oracle, never promotable.": "أوراكل بعد الكشف، لا يُرقّى أبدًا.",
-  "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.": "التنبّؤ والقرار القابل للدفاع منتجان مختلفان. يُبقي GALO التشخيصات المتنافسة حيّة، ويختار الفحص الذي يفصل بينها، ويدوّن لماذا اقتُرح الفعل أصلًا.",
-  "A previously exposed corpus. Fresh partner-controlled validity is a different question.": "متن سبق استخدامه. أمّا الصلاحية الجديدة الخاضعة لسيطرة الشريك فمسألة أخرى.",
+  "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.":
+    "التنبّؤ والقرار القابل للدفاع منتجان مختلفان. يُبقي GALO التشخيصات المتنافسة حيّة، ويختار الفحص الذي يفصل بينها، ويدوّن لماذا اقتُرح الفعل أصلًا.",
+  "A previously exposed corpus. Fresh partner-controlled validity is a different question.":
+    "متن سبق استخدامه. أمّا الصلاحية الجديدة الخاضعة لسيطرة الشريك فمسألة أخرى.",
   "A public observation with a source digest and a declared scope.": "رصدٌ عامّ مع بصمة مصدر ونطاق معلَن.",
   "A signed evaluator outcome.": "نتيجة موقَّعة من جهة التقييم.",
-  "A single arm proves nothing: any improvement can be explained by a weaker comparator, a leak, or the order of the data. Seven arms remove those explanations one at a time, and the promotion gates are written down before the sealed set is opened.": "ذراع واحدة لا تُثبت شيئًا: يمكن تفسير أي تحسّن بمقارنٍ أضعف، أو تسرّب، أو ترتيب البيانات. سبع أذرع تُزيل هذه التفسيرات واحدًا واحدًا، وشروط الترقية تُكتب قبل فتح المجموعة المختومة.",
-  "A small positive work effect on a public benchmark, with the interval published rather than the point alone.": "أثر إيجابي صغير في حجم العمل على معيار عامّ، بنشر الفاصل لا النقطة وحدها.",
+  "A single arm proves nothing: any improvement can be explained by a weaker comparator, a leak, or the order of the data. Seven arms remove those explanations one at a time, and the promotion gates are written down before the sealed set is opened.":
+    "ذراع واحدة لا تُثبت شيئًا: يمكن تفسير أي تحسّن بمقارنٍ أضعف، أو تسرّب، أو ترتيب البيانات. سبع أذرع تُزيل هذه التفسيرات واحدًا واحدًا، وشروط الترقية تُكتب قبل فتح المجموعة المختومة.",
+  "A small positive work effect on a public benchmark, with the interval published rather than the point alone.":
+    "أثر إيجابي صغير في حجم العمل على معيار عامّ، بنشر الفاصل لا النقطة وحدها.",
   "A stable deployment, support, assurance updates and new workflows.": "نشر مستقرّ ودعم وتحديثات ضمان وسير عمل جديدة.",
   "A stale Atlas snapshot.": "لقطة قديمة من Atlas.",
-  "A stronger equal-information comparator was not beaten. This is not universal superiority.": "لم يُتجاوَز مقارِنٌ أقوى متكافئ في المعلومات. وهذا ليس تفوّقًا شاملًا.",
+  "A stronger equal-information comparator was not beaten. This is not universal superiority.":
+    "لم يُتجاوَز مقارِنٌ أقوى متكافئ في المعلومات. وهذا ليس تفوّقًا شاملًا.",
   "A terminal, safety and actual-work ledger.": "سجلّ للنتيجة النهائية والسلامة والعمل الفعلي.",
-  "A0 against A1 down at least 15%, with the CI95 lower bound above 5%.": "A0 مقابل A1 بانخفاض لا يقلّ عن 15٪، وحدّ أدنى لفاصل الثقة 95٪ يتجاوز 5٪.",
-  "A0 must beat or materially complement A2 on a preregistered endpoint.": "على A0 أن تتفوّق على A2 أو تكمّلها جوهريًا عند نقطة نهاية مسجَّلة مسبقًا.",
+  "A0 against A1 down at least 15%, with the CI95 lower bound above 5%.":
+    "A0 مقابل A1 بانخفاض لا يقلّ عن 15٪، وحدّ أدنى لفاصل الثقة 95٪ يتجاوز 5٪.",
+  "A0 must beat or materially complement A2 on a preregistered endpoint.":
+    "على A0 أن تتفوّق على A2 أو تكمّلها جوهريًا عند نقطة نهاية مسجَّلة مسبقًا.",
   "AED 150k–300k": "150–300 ألف درهم",
   "AED 350k–750k": "350–750 ألف درهم",
   "AED 600k–1.8m per site per year": "600 ألف – 1.8 مليون درهم لكل موقع سنويًا",
   "Above the systems that run the plant, and never inside them.": "فوق الأنظمة التي تُدير المصنع، ولا داخلها أبدًا.",
-  "Advisory": "الوضع الاستشاري",
+  Advisory: "الوضع الاستشاري",
   "Advisory and simulation first": "الاستشارة والمحاكاة أوّلًا",
   "Advisory to robot missions, with the gates": "من الاستشارة إلى مهامّ الروبوتات، مع البوّابات",
   "After a positive evaluation": "بعد تقييم إيجابي",
   "Alternatives are kept while the evidence does not settle them.": "تبقى البدائل ما دامت الأدلّة لم تحسم بينها.",
-  "An alarm arrives. Seven steps later there is a package somebody else can replay.": "يصل إنذار. وبعد سبع خطوات تصبح لديك حزمة يستطيع غريب أن يعيد تشغيلها.",
-  "An evaluation run on the wrong site produces an uninterpretable result and burns a quarter for both sides. Each line below has a disqualifier attached; any one of them is enough to stop before a contract.": "تقييمٌ يُجرى في موقع غير مناسب ينتج نتيجة لا تقبل التأويل ويحرق ربع سنة على الطرفين. ولكل سطر أدناه شرط استبعاد؛ ويكفي واحد منها للتوقّف قبل التعاقد.",
-  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.": "استثناء من بوّابة القبول لشريك لا يستوفيها، مهما بلغ استعداده للتوقيع.",
-  "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.": "نموذج صريح للمصنع تغذّيه القياسات عن بُعد، وفوقه محاكاة. ما الذي يوجد وأين، وما الذي يجري الآن، وكيف سيبدو سيناريو ما.",
-  "An integrated Atlas and adapters running in operational shadow mode.": "Atlas مدمج ومحوّلات تعمل في وضع الظلّ التشغيلي.",
-  "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.": "أثر تشغيليّ لـAtlas على معيار عامّ، مقيسٌ إلى خطّ أساس ثُبِّت سلفًا.",
+  "An alarm arrives. Seven steps later there is a package somebody else can replay.":
+    "يصل إنذار. وبعد سبع خطوات تصبح لديك حزمة يستطيع غريب أن يعيد تشغيلها.",
+  "An evaluation run on the wrong site produces an uninterpretable result and burns a quarter for both sides. Each line below has a disqualifier attached; any one of them is enough to stop before a contract.":
+    "تقييمٌ يُجرى في موقع غير مناسب ينتج نتيجة لا تقبل التأويل ويحرق ربع سنة على الطرفين. ولكل سطر أدناه شرط استبعاد؛ ويكفي واحد منها للتوقّف قبل التعاقد.",
+  "An exception to the admission gate for a partner who does not meet it, however willing they are to sign.":
+    "استثناء من بوّابة القبول لشريك لا يستوفيها، مهما بلغ استعداده للتوقيع.",
+  "An explicit model of the plant, fed by telemetry, with simulation on top. What is where, what is happening, and what a scenario would look like.":
+    "نموذج صريح للمصنع تغذّيه القياسات عن بُعد، وفوقه محاكاة. ما الذي يوجد وأين، وما الذي يجري الآن، وكيف سيبدو سيناريو ما.",
+  "An integrated Atlas and adapters running in operational shadow mode.":
+    "Atlas مدمج ومحوّلات تعمل في وضع الظلّ التشغيلي.",
+  "An operational Atlas effect on a public benchmark, measured against a baseline fixed in advance.":
+    "أثر تشغيليّ لـAtlas على معيار عامّ، مقيسٌ إلى خطّ أساس ثُبِّت سلفًا.",
   "An upper bound, and nothing else.": "حدّ أعلى فقط، لا أكثر.",
-  "Annual": "سنويًا",
+  Annual: "سنويًا",
   "Annual runtime and Atlas licence": "ترخيص سنوي لزمن التشغيل وAtlas",
-  "Anomaly detection, failure forecasting, condition monitoring and domain models": "كشف الشذوذ والتنبّؤ بالأعطال ومراقبة الحالة والنماذج الميدانية",
+  "Anomaly detection, failure forecasting, condition monitoring and domain models":
+    "كشف الشذوذ والتنبّؤ بالأعطال ومراقبة الحالة والنماذج الميدانية",
   "At most 1% of independent groups.": "بحدّ أقصى 1٪ من المجموعات المستقلّة.",
   "Broader general-purpose reasoning": "استدلال عامّ الغرض أوسع",
-  "Candidate checks are not full cognitive work, and this is not a production improvement.": "فحوص المرشّحين ليست العمل الإدراكي الكامل، وهذا ليس تحسّنًا في التشغيل الفعلي.",
-  "Candidate membership and terminal semantics stay equal across the arms.": "تبقى عضوية المرشّحين ودلالات النتيجة النهائية متساوية عبر الأذرع.",
-  "Collapsing them is the quickest way to say something untrue in either direction — either the product sounds like general intelligence, or the architecture sounds like a maintenance tool. They are stated separately here and everywhere else on the site.": "خلطهما أسرع طريق إلى قول ما ليس صحيحًا في أي من الاتجاهين: فإمّا أن يبدو المنتج ذكاءً عامًّا، وإمّا أن تبدو البنية أداة صيانة. وهما مذكوران منفصلين هنا وفي كل موضع من الموقع.",
+  "Candidate checks are not full cognitive work, and this is not a production improvement.":
+    "فحوص المرشّحين ليست العمل الإدراكي الكامل، وهذا ليس تحسّنًا في التشغيل الفعلي.",
+  "Candidate membership and terminal semantics stay equal across the arms.":
+    "تبقى عضوية المرشّحين ودلالات النتيجة النهائية متساوية عبر الأذرع.",
+  "Collapsing them is the quickest way to say something untrue in either direction — either the product sounds like general intelligence, or the architecture sounds like a maintenance tool. They are stated separately here and everywhere else on the site.":
+    "خلطهما أسرع طريق إلى قول ما ليس صحيحًا في أي من الاتجاهين: فإمّا أن يبدو المنتج ذكاءً عامًّا، وإمّا أن تبدو البنية أداة صيانة. وهما مذكوران منفصلين هنا وفي كل موضع من الموقع.",
   "Commercial wedge": "المدخل التجاري",
-  "Commit": "التثبيت",
-  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.": "بناء الشركة: كيان في ADGM، والتعيينات التقنية المؤسِّسة، والعقود، والطريق إلى الجاهزية لجولة التمويل الأولي.",
+  Commit: "التثبيت",
+  "Company building: an ADGM entity, the founding technical hires, contracts, and the path to seed readiness.":
+    "بناء الشركة: كيان في ADGM، والتعيينات التقنية المؤسِّسة، والعقود، والطريق إلى الجاهزية لجولة التمويل الأولي.",
   "Competing local models and assumptions": "نماذج محلّية متنافسة وافتراضات",
-  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.": "قدرة حوسبة ومحاكاة لتقييم خاصّ وإعادة تشغيل مستقلّة والتحقّق من الذكاء الاصطناعي الفيزيائي.",
-  "Control": "الضابط",
+  "Compute and simulation capacity for a private evaluation, independent replay and physical-AI validation.":
+    "قدرة حوسبة ومحاكاة لتقييم خاصّ وإعادة تشغيل مستقلّة والتحقّق من الذكاء الاصطناعي الفيزيائي.",
+  Control: "الضابط",
   "Counterfactual route and recovery evidence.": "مسار افتراضي مضاد ودليل على خطّة التعافي.",
   "Customers, letters of intent, revenue": "العملاء وخطابات النوايا والإيرادات",
-  "DEV and SEALED state roots unchanged; no policy, Atlas or core promotion.": "جذور حالتَي DEV وSEALED دون تغيير؛ ولا ترقية للسياسة ولا لـAtlas ولا للنواة.",
-  "Decision assurance around the digital twins a plant already runs.": "ضمانُ القرار حول التوائم الرقمية التي يشغّلها المصنع بالفعل.",
+  "DEV and SEALED state roots unchanged; no policy, Atlas or core promotion.":
+    "جذور حالتَي DEV وSEALED دون تغيير؛ ولا ترقية للسياسة ولا لـAtlas ولا للنواة.",
+  "Decision assurance around the digital twins a plant already runs.":
+    "ضمانُ القرار حول التوائم الرقمية التي يشغّلها المصنع بالفعل.",
   "Delay already costs money": "التأخير يكلّف مالًا بالفعل",
   "Design-partner planning hypotheses · not current prices": "فرضيات تخطيطية لشريك تصميم · وليست أسعارًا سارية",
-  "Digital twin · SCADA · historian · MES · ERP · CMMS · manuals · sensors": "التوأم الرقمي · SCADA · مؤرشِف البيانات · MES · ERP · CMMS · كتيّبات التشغيل · الحسّاسات",
-  "Digital twin, telemetry, work order, manual revision.": "التوأم الرقمي، والقياسات عن بُعد، وأمر العمل، ومراجعة الدليل.",
+  "Digital twin · SCADA · historian · MES · ERP · CMMS · manuals · sensors":
+    "التوأم الرقمي · SCADA · مؤرشِف البيانات · MES · ERP · CMMS · كتيّبات التشغيل · الحسّاسات",
+  "Digital twin, telemetry, work order, manual revision.":
+    "التوأم الرقمي، والقياسات عن بُعد، وأمر العمل، ومراجعة الدليل.",
   "Digital-twin platforms": "منصّات التوائم الرقمية",
   "Does GALO beat the operational incumbent?": "هل يتفوّق GALO على القائم لدى الشريك؟",
   "Does explicit state and replay add operational value?": "هل تضيف الحالة الصريحة وإعادة التشغيل قيمةً تشغيلية؟",
   "Does learning reduce verified work?": "هل يقلّل التعلّمُ العملَ المتحقَّق منه؟",
   "Does the current state matter?": "هل تهمّ الحالة الراهنة؟",
   "Does the result depend on genuine temporal learning?": "هل تتوقّف النتيجة على تعلّم زمنيّ حقيقي؟",
-  "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.": "أسقِط واحدًا منها فيصير الرقم أعلاه غير قابل للقراءة، لا أضعفَ فحسب. وهي مسرودة ليتمكّن المراجع من تحديد أيّها يرى أنّنا أخطأنا فيه.",
-  "Duration": "المدّة",
-  "Each step names the partner system it reads, the artefact GALO produces, and the control that stops the step from being gamed. The controls are the point: without them a work-reduction number means nothing.": "تسمّي كل خطوة نظامَ الشريك الذي تقرأ منه، والمصنوعَ الذي ينتجه GALO، والضابطَ الذي يمنع التلاعب بتلك الخطوة. والضوابط هي جوهر الأمر: من دونها لا يعني رقمُ خفض العمل شيئًا.",
-  "Economics": "الاقتصاديات",
-  "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.": "تعلّم من الطرف إلى الطرف داخل نطاق واحد، مع Atlas قائم على الإيصالات ومقارِنٍ يشترك في المحرّك نفسه.",
+  "Drop any one of these and the number above becomes unreadable rather than merely weaker. They are listed so a reviewer can check which one they think we got wrong.":
+    "أسقِط واحدًا منها فيصير الرقم أعلاه غير قابل للقراءة، لا أضعفَ فحسب. وهي مسرودة ليتمكّن المراجع من تحديد أيّها يرى أنّنا أخطأنا فيه.",
+  Duration: "المدّة",
+  "Each step names the partner system it reads, the artefact GALO produces, and the control that stops the step from being gamed. The controls are the point: without them a work-reduction number means nothing.":
+    "تسمّي كل خطوة نظامَ الشريك الذي تقرأ منه، والمصنوعَ الذي ينتجه GALO، والضابطَ الذي يمنع التلاعب بتلك الخطوة. والضوابط هي جوهر الأمر: من دونها لا يعني رقمُ خفض العمل شيئًا.",
+  Economics: "الاقتصاديات",
+  "End-to-end learning inside one scope, with a receipt Atlas and a comparator that shares the same engine.":
+    "تعلّم من الطرف إلى الطرف داخل نطاق واحد، مع Atlas قائم على الإيصالات ومقارِنٍ يشترك في المحرّك نفسه.",
   "Enterprise agreement, priced after discovery": "اتفاق مؤسسي، يُسعَّر بعد الاستكشاف",
-  "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.": "كل نتيجة حتى الآن على مهامّ اصطناعية أو معايير عامّة. ولم يُجرِ أي شريك واحدة منها على بياناته بمُقيِّمه الخاصّ، وتلك هي الخطوة التالية اللازمة.",
+  "Every result so far is on synthetic tasks or public benchmarks. No partner has run one of these on their own data with their own evaluator, and that is the next required step.":
+    "كل نتيجة حتى الآن على مهامّ اصطناعية أو معايير عامّة. ولم يُجرِ أي شريك واحدة منها على بياناته بمُقيِّمه الخاصّ، وتلك هي الخطوة التالية اللازمة.",
   "Exact equality for any arm that may be promoted.": "تساوٍ تامّ لأي ذراع قابلة للترقية.",
-  "Existing PLC · robot controller · certified safety interlocks": "وحدات PLC القائمة · متحكّم الروبوت · تعشيقات الأمان المعتمَدة",
+  "Existing PLC · robot controller · certified safety interlocks":
+    "وحدات PLC القائمة · متحكّم الروبوت · تعشيقات الأمان المعتمَدة",
   "Explicit, versioned state for the decision at hand.": "حالة صريحة ذات إصدارات، خاصّة بالقرار المطروح.",
   "False accepts": "القبول الخاطئ",
-  "Faster diagnosis and cheaper re-verification only pay where the delay is measured.": "التشخيص الأسرع وإعادة التحقّق الأرخص لا يُجديان إلّا حيث يكون التأخير مقيسًا.",
+  "Faster diagnosis and cheaper re-verification only pay where the delay is measured.":
+    "التشخيص الأسرع وإعادة التحقّق الأرخص لا يُجديان إلّا حيث يكون التأخير مقيسًا.",
   "Five rungs, and the evidence that would open each one.": "خمس درجات، والدليل الذي يفتح كلًّا منها.",
   "For industry": "للصناعة",
-  "Full candidate membership is preserved rather than pruned quietly.": "تُحفظ عضوية المرشّحين كاملةً بدل تقليمها في صمت.",
+  "Full candidate membership is preserved rather than pruned quietly.":
+    "تُحفظ عضوية المرشّحين كاملةً بدل تقليمها في صمت.",
   "Functional-safety certification": "شهادة السلامة الوظيفية",
-  "GALO AI for Industry — Decision Assurance Around Existing Digital Twins": "GALO AI للصناعة — ضمان القرار حول التوائم الرقمية القائمة",
+  "GALO AI for Industry — Decision Assurance Around Existing Digital Twins":
+    "GALO AI للصناعة — ضمان القرار حول التوائم الرقمية القائمة",
   "GALO World Atlas": "World Atlas في GALO",
   "GALO artefact": "مصنوع GALO",
-  "GALO does not replace a digital twin, a SCADA system, a PLC, a robot controller or a safety interlock, and no proposed version writes to any of them directly. It reads what they publish and hands its conclusion to a person, a simulation or an approval gateway.": "لا يحلّ GALO محلّ التوأم الرقمي ولا SCADA ولا PLC ولا متحكّم الروبوت ولا تعشيقة الأمان، ولا تكتب أي نسخة مقترحة إليها مباشرةً. إنّه يقرأ ما تنشره ويسلّم خلاصته إلى إنسان أو محاكاة أو بوّابة موافقة.",
-  "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.": "صُمّم GALO بوصفه بنية عامّة الميدان لنموذج العالم والاستدلال والتعلّم وإعادة التشغيل. بنية عامّة الغرض، لا ذكاء عامّ.",
-  "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.": "صُمّم GALO ليقف فوق التوائم الرقمية وأنظمة SCADA ووحدات PLC ومتحكّمات الروبوتات وتعشيقات الأمان القائمة، ولا يحلّ محلّ أيٍّ منها.",
-  "GALO is not a PLC, a motion controller or a safety system, and it does not aim to become one. In robotics its long-term place is mission reasoning, constraints, exception handling and recovery planning above a controller somebody else certified.": "ليس GALO وحدة PLC ولا متحكّم حركة ولا نظام سلامة، ولا يسعى إلى أن يصير كذلك. وموضعه بعيد المدى في الروبوتات هو الاستدلال على المهمّة والقيود ومعالجة الاستثناءات وتخطيط التعافي، فوق متحكّم اعتمده غيرنا.",
-  "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.": "يُبقي GALO الحالةَ والبحثَ المتعلَّم والمراجعةَ الموضعية ومسارات الفعل ظاهرةً للعيان — بدءًا من جعل القرار قابلًا للدفاع عنه إلى جانب التوائم الرقمية والأنظمة التشغيلية التي يشغّلها المصنع أصلًا. وما ثبت اليوم محدود النطاق: نتائج تعلّم على مهامّ اصطناعية ومعايير عامّة، منشورة مع النتيجتين اللتين لم تنجحا. ولم يُجرِ أي شريك واحدة منها على بياناته، ولا شيء هنا يأذن بأمرٍ إلى مصنع.",
+  "GALO does not replace a digital twin, a SCADA system, a PLC, a robot controller or a safety interlock, and no proposed version writes to any of them directly. It reads what they publish and hands its conclusion to a person, a simulation or an approval gateway.":
+    "لا يحلّ GALO محلّ التوأم الرقمي ولا SCADA ولا PLC ولا متحكّم الروبوت ولا تعشيقة الأمان، ولا تكتب أي نسخة مقترحة إليها مباشرةً. إنّه يقرأ ما تنشره ويسلّم خلاصته إلى إنسان أو محاكاة أو بوّابة موافقة.",
+  "GALO is designed as a domain-general world-model, reasoning, learning and replay architecture. General-purpose architecture, not general intelligence.":
+    "صُمّم GALO بوصفه بنية عامّة الميدان لنموذج العالم والاستدلال والتعلّم وإعادة التشغيل. بنية عامّة الغرض، لا ذكاء عامّ.",
+  "GALO is designed to sit above existing digital twins, SCADA systems, PLCs, robot controllers and safety interlocks, and replaces none of them.":
+    "صُمّم GALO ليقف فوق التوائم الرقمية وأنظمة SCADA ووحدات PLC ومتحكّمات الروبوتات وتعشيقات الأمان القائمة، ولا يحلّ محلّ أيٍّ منها.",
+  "GALO is not a PLC, a motion controller or a safety system, and it does not aim to become one. In robotics its long-term place is mission reasoning, constraints, exception handling and recovery planning above a controller somebody else certified.":
+    "ليس GALO وحدة PLC ولا متحكّم حركة ولا نظام سلامة، ولا يسعى إلى أن يصير كذلك. وموضعه بعيد المدى في الروبوتات هو الاستدلال على المهمّة والقيود ومعالجة الاستثناءات وتخطيط التعافي، فوق متحكّم اعتمده غيرنا.",
+  "GALO keeps state, learned search, local revision and action routes explicit — starting with decision assurance around the digital twins and operational systems a plant already runs. What is proven today is scoped: learning results on synthetic tasks and public benchmarks, published together with the two that did not work. No partner has yet run one on their own data, and nothing here authorises a command to a plant.":
+    "يُبقي GALO الحالةَ والبحثَ المتعلَّم والمراجعةَ الموضعية ومسارات الفعل ظاهرةً للعيان — بدءًا من جعل القرار قابلًا للدفاع عنه إلى جانب التوائم الرقمية والأنظمة التشغيلية التي يشغّلها المصنع أصلًا. وما ثبت اليوم محدود النطاق: نتائج تعلّم على مهامّ اصطناعية ومعايير عامّة، منشورة مع النتيجتين اللتين لم تنجحا. ولم يُجرِ أي شريك واحدة منها على بياناته، ولا شيء هنا يأذن بأمرٍ إلى مصنع.",
   "GENERAL-PURPOSE ARCHITECTURE · INDUSTRIAL DECISION ASSURANCE FIRST": "بنية عامّة الغرض · ضمان القرار الصناعي أوّلًا",
-  "General-purpose verifiable world-model and autonomy architecture": "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية",
-  "Hardware and software in the loop, certified interlocks, and regulator or partner approval.": "عتاد وبرمجيات ضمن الحلقة، وتعشيقات أمان معتمدة، وموافقة من الجهة الرقابية أو الشريك.",
+  "General-purpose verifiable world-model and autonomy architecture":
+    "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية",
+  "Hardware and software in the loop, certified interlocks, and regulator or partner approval.":
+    "عتاد وبرمجيات ضمن الحلقة، وتعشيقات أمان معتمدة، وموافقة من الجهة الرقابية أو الشريك.",
   "Heldout integrity": "سلامة المجموعة المحجوزة",
   "Historical ground truth, or an independent expert judgement.": "حقيقة أرضية تاريخية، أو حُكم خبير مستقلّ.",
   "Human approval · twin simulation · supervisory gateway": "موافقة بشرية · محاكاة على التوأم · بوّابة إشرافية",
-  "If A0 does not beat A1 under the frozen contract, or if there is an oracle leak, a frozen write, candidate drift or a false accept, the result stays NOT_SUPPORTED on that scope. The protocol is not changed after the sealed set has been inspected.": "إذا لم يتفوّق A0 على A1 تحت العقد المجمَّد، أو ظهر تسريب من الأوراكل أو كتابة في المجمَّد أو انزياح في المرشّحين أو قبول خاطئ، تبقى النتيجة NOT_SUPPORTED على ذلك النطاق. ولا يُغيَّر البروتوكول بعد فحص المجموعة المختومة.",
-  "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.": "تأسيس الشركة التشغيلية في ADGM، وإتمام خمس وعشرين مقابلة استكشافية صناعية.",
+  "If A0 does not beat A1 under the frozen contract, or if there is an oracle leak, a frozen write, candidate drift or a false accept, the result stays NOT_SUPPORTED on that scope. The protocol is not changed after the sealed set has been inspected.":
+    "إذا لم يتفوّق A0 على A1 تحت العقد المجمَّد، أو ظهر تسريب من الأوراكل أو كتابة في المجمَّد أو انزياح في المرشّحين أو قبول خاطئ، تبقى النتيجة NOT_SUPPORTED على ذلك النطاق. ولا يُغيَّر البروتوكول بعد فحص المجموعة المختومة.",
+  "Incorporate the operating company in ADGM and complete twenty-five industrial discovery interviews.":
+    "تأسيس الشركة التشغيلية في ADGM، وإتمام خمس وعشرين مقابلة استكشافية صناعية.",
   "Independent assets with no shared process worth speaking of.": "أصول مستقلّة بلا عملية مشتركة تُذكر.",
   "Independent cross-domain evidence. Not a marketing declaration.": "دليل مستقلّ عابر للمجالات. لا إعلان تسويقي.",
   "Industrial analytics and predictive maintenance": "التحليلات الصناعية والصيانة التنبّؤية",
@@ -739,151 +1052,218 @@ export const industrialAr: TranslationDictionary = {
   "Industrial chapter navigation": "التنقّل في فصول القسم الصناعي",
   "Industrial decision assurance around existing digital twins": "ضمان القرار الصناعي حول التوائم الرقمية القائمة",
   "Industrial decision-assurance evaluation": "تقييم ضمان القرار الصناعي",
-  "Industry is chosen because the cost of ambiguity, downtime and an unsafe action is already measured there. A narrow market with measurable stakes falsifies an architecture faster than a broad one without them.": "اختيرت الصناعة لأنّ كلفة الالتباس والتوقّف والفعل غير الآمن محسوبة فيها أصلًا. وسوق ضيّقة ذات رهان قابل للقياس تُكذِّب بنيةً أسرع من سوق واسعة بلا رهان.",
-  "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.": "حساب وحدات العمل داخليًا ليس تسريعًا ولا نتيجة سببية ولا قيمةً للعميل ولا مكسبًا خارجيًا. ولم يُجرِ أي شريك تقييمًا على بياناته بمُقيِّمه الخاصّ.",
-  "Issue a high-level recommendation or command through a separate approval gateway.": "إصدار توصية أو أمر رفيع المستوى عبر بوّابة موافقة منفصلة.",
-  "It allows an advisory-first deployment that is safe by construction.": "تتيح نشرًا استشاريًا أوّلًا، آمنًا بحكم البناء.",
+  "Industry is chosen because the cost of ambiguity, downtime and an unsafe action is already measured there. A narrow market with measurable stakes falsifies an architecture faster than a broad one without them.":
+    "اختيرت الصناعة لأنّ كلفة الالتباس والتوقّف والفعل غير الآمن محسوبة فيها أصلًا. وسوق ضيّقة ذات رهان قابل للقياس تُكذِّب بنيةً أسرع من سوق واسعة بلا رهان.",
+  "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.":
+    "حساب وحدات العمل داخليًا ليس تسريعًا ولا نتيجة سببية ولا قيمةً للعميل ولا مكسبًا خارجيًا. ولم يُجرِ أي شريك تقييمًا على بياناته بمُقيِّمه الخاصّ.",
+  "Issue a high-level recommendation or command through a separate approval gateway.":
+    "إصدار توصية أو أمر رفيع المستوى عبر بوّابة موافقة منفصلة.",
+  "It allows an advisory-first deployment that is safe by construction.":
+    "تتيح نشرًا استشاريًا أوّلًا، آمنًا بحكم البناء.",
   "It funds the architecture and tests it against real cost": "تموّل البنية وتختبرها في مواجهة كلفة حقيقية",
-  "Learn": "التعلّم",
+  Learn: "التعلّم",
   "Learned proposal and search": "الاقتراح والبحث المتعلَّمان",
-  "Less actual work, measured against the same mechanism rather than a weaker one.": "عمل فعليّ أقلّ، مقيسًا في مواجهة الآلية نفسها لا في مواجهة آلية أضعف.",
+  "Less actual work, measured against the same mechanism rather than a weaker one.":
+    "عمل فعليّ أقلّ، مقيسًا في مواجهة الآلية نفسها لا في مواجهة آلية أضعف.",
   "Licence, support, and usage or site economics": "ترخيص ودعم واقتصاديات استخدام أو موقع",
-  "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.": "التتبّع عبر نموذج المنصّة نفسه، بقدر ما يسجّله ذلك النموذج، وبما تختار المؤسّسة نفسها كشفه لمدقِّق.",
-  "Local revision and cross-system evidence matter when one change touches several things.": "تهمّ المراجعة الموضعية والأدلّة العابرة للأنظمة حين يمسّ تغييرٌ واحد أشياء عدّة.",
-  "Mission decomposition, constraints, route choice and recovery above the vendor's controller.": "تفكيك المهمّة والقيود واختيار المسار والتعافي، فوق متحكّم المورّد.",
-  "Models fitted to historical operating data, producing an alert, a score or a forecast.": "نماذج مُلائَمة لبيانات تشغيل تاريخية، تُنتج تنبيهًا أو درجةً أو تنبّؤًا.",
-  "Most plants are not suitable, and saying so early is part of the product.": "معظم المصانع غير مناسبة، وقول ذلك مبكّرًا جزء من المنتج.",
+  "Lineage through the platform's own model, to the extent that model records it, and whatever the organisation itself chooses to expose to an auditor.":
+    "التتبّع عبر نموذج المنصّة نفسه، بقدر ما يسجّله ذلك النموذج، وبما تختار المؤسّسة نفسها كشفه لمدقِّق.",
+  "Local revision and cross-system evidence matter when one change touches several things.":
+    "تهمّ المراجعة الموضعية والأدلّة العابرة للأنظمة حين يمسّ تغييرٌ واحد أشياء عدّة.",
+  "Mission decomposition, constraints, route choice and recovery above the vendor's controller.":
+    "تفكيك المهمّة والقيود واختيار المسار والتعافي، فوق متحكّم المورّد.",
+  "Models fitted to historical operating data, producing an alert, a score or a forecast.":
+    "نماذج مُلائَمة لبيانات تشغيل تاريخية، تُنتج تنبيهًا أو درجةً أو تنبّؤًا.",
+  "Most plants are not suitable, and saying so early is part of the product.":
+    "معظم المصانع غير مناسبة، وقول ذلك مبكّرًا جزء من المنتج.",
   "Multi-site or fleet expansion": "التوسّع إلى مواقع متعدّدة أو إلى أسطول",
-  "Negotiated": "بالتفاوض",
+  Negotiated: "بالتفاوض",
   "Neither a positive nor a negative claim can be made from it.": "لا يمكن أن يُبنى عليه ادّعاء إيجابي ولا سلبي.",
-  "No certification exists, none is applied for, and none is implied by any number on this site.": "لا توجد شهادة، ولم يُقدَّم طلب لها، ولا يوحي بها أي رقم على هذا الموقع.",
+  "No certification exists, none is applied for, and none is implied by any number on this site.":
+    "لا توجد شهادة، ولم يُقدَّم طلب لها، ولا يوحي بها أي رقم على هذا الموقع.",
   "No customer, no pilot, no revenue": "لا عميل ولا تجربة رائدة ولا إيراد",
-  "No gold diagnosis and no future outcome enters the policy input.": "لا يدخل التشخيص الذهبي ولا النتيجة المستقبلية في مُدخل السياسة.",
-  "No historian or SCADA, no asset hierarchy, no maintenance record, no versioned procedures.": "لا مؤرشِف بيانات ولا SCADA، ولا تسلسل هرمي للأصول، ولا سجلّ صيانة، ولا إجراءات ذات إصدارات.",
+  "No gold diagnosis and no future outcome enters the policy input.":
+    "لا يدخل التشخيص الذهبي ولا النتيجة المستقبلية في مُدخل السياسة.",
+  "No historian or SCADA, no asset hierarchy, no maintenance record, no versioned procedures.":
+    "لا مؤرشِف بيانات ولا SCADA، ولا تسلسل هرمي للأصول، ولا سجلّ صيانة، ولا إجراءات ذات إصدارات.",
   "No identifiable independent effect": "لا أثر مستقلّ قابل للتمييز",
-  "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.": "لا يوجد كيانٌ مؤسَّس عند نهاية الربع، أو أُجري أقلُّ من خمسٍ وعشرين مقابلة صناعية.",
-  "No oracle leak: the evaluator outcome is signed outside the engine.": "لا تسريب من الأوراكل: نتيجة المُقيِّم موقَّعة خارج المحرّك.",
-  "No quantified downtime, review time or operational consequence.": "لا قياس كمّي للتوقّف ولا لزمن المراجعة ولا للأثر التشغيلي.",
+  "No incorporated entity exists at the end of the quarter, or fewer than twenty-five industrial interviews were held.":
+    "لا يوجد كيانٌ مؤسَّس عند نهاية الربع، أو أُجري أقلُّ من خمسٍ وعشرين مقابلة صناعية.",
+  "No oracle leak: the evaluator outcome is signed outside the engine.":
+    "لا تسريب من الأوراكل: نتيجة المُقيِّم موقَّعة خارج المحرّك.",
+  "No quantified downtime, review time or operational consequence.":
+    "لا قياس كمّي للتوقّف ولا لزمن المراجعة ولا للأثر التشغيلي.",
   "No real actuation happens during an evaluation.": "لا يحدث أي تشغيل فعليّ أثناء التقييم.",
-  "None of these rungs runs today. They are listed with their gates so that a reader can see what would have to be true before GALO went anywhere near a physical command — and so that nobody has to take the word 'roadmap' on trust.": "لا تعمل أيّ من هذه الدرجات اليوم. وهي مذكورة مع بوّاباتها كي يرى القارئ ما يجب أن يصحّ قبل أن يقترب GALO من أمر فيزيائي — وكي لا يضطرّ أحد إلى تصديق كلمة «خارطة طريق» على عهدتنا.",
-  "Nothing here authorises a command to a plant, a controller or a robot. The roadmap is advisory first, then simulation, and every rung above that is gated.": "لا شيء هنا يأذن بأمرٍ إلى مصنع أو متحكّم أو روبوت. خارطة الطريق استشارية أوّلًا، ثمّ محاكاة، وكلّ درجة فوق ذلك محكومة ببوّابة.",
-  "Nothing. The negative is retained in the archive rather than dropped.": "لا شيء. تُحفَظ النتيجة السلبية في الأرشيف بدل إسقاطها.",
+  "None of these rungs runs today. They are listed with their gates so that a reader can see what would have to be true before GALO went anywhere near a physical command — and so that nobody has to take the word 'roadmap' on trust.":
+    "لا تعمل أيّ من هذه الدرجات اليوم. وهي مذكورة مع بوّاباتها كي يرى القارئ ما يجب أن يصحّ قبل أن يقترب GALO من أمر فيزيائي — وكي لا يضطرّ أحد إلى تصديق كلمة «خارطة طريق» على عهدتنا.",
+  "Nothing here authorises a command to a plant, a controller or a robot. The roadmap is advisory first, then simulation, and every rung above that is gated.":
+    "لا شيء هنا يأذن بأمرٍ إلى مصنع أو متحكّم أو روبوت. خارطة الطريق استشارية أوّلًا، ثمّ محاكاة، وكلّ درجة فوق ذلك محكومة ببوّابة.",
+  "Nothing. The negative is retained in the archive rather than dropped.":
+    "لا شيء. تُحفَظ النتيجة السلبية في الأرشيف بدل إسقاطها.",
   "OEM or autonomy SDK": "شركة OEM أو SDK للاستقلالية",
   "ONE EVALUATED DECISION": "قرار واحد مُقيَّم",
-  "Observe": "الملاحظة",
-  "Offer": "العرض",
-  "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.": "Atlas واحد وبرامج مُصنَّفة وعقد تعلّم وعقد إعادة تشغيل، يُقصد بها أن تصمد عبر المعرفة والعلوم والتشغيل الصناعي والمهامّ الذاتية. المجال يغيّر المحوّلات والمصادر؛ ولا يغيّر دورة الدليل.",
-  "One bounded workflow, a frozen baseline, and a replay package.": "سير عمل واحد محدود، وخطّ أساس مجمَّد، وحزمة إعادة تشغيل.",
+  Observe: "الملاحظة",
+  Offer: "العرض",
+  "One Atlas, typed programs, a learning contract and a replay contract, intended to hold across knowledge, science, industrial operations and autonomous missions. Domain changes the adapters and the sources; it does not change the evidence cycle.":
+    "Atlas واحد وبرامج مُصنَّفة وعقد تعلّم وعقد إعادة تشغيل، يُقصد بها أن تصمد عبر المعرفة والعلوم والتشغيل الصناعي والمهامّ الذاتية. المجال يغيّر المحوّلات والمصادر؛ ولا يغيّر دورة الدليل.",
+  "One bounded workflow, a frozen baseline, and a replay package.":
+    "سير عمل واحد محدود، وخطّ أساس مجمَّد، وحزمة إعادة تشغيل.",
   "One evaluated decision, in seven steps": "قرار واحد مُقيَّم، في سبع خطوات",
-  "One workflow should be able to grow into assets, sites, fleets and procedures.": "ينبغي أن يستطيع سير عمل واحد أن ينمو إلى أصول ومواقع وأساطيل وإجراءات.",
+  "One workflow should be able to grow into assets, sites, fleets and procedures.":
+    "ينبغي أن يستطيع سير عمل واحد أن ينمو إلى أصول ومواقع وأساطيل وإجراءات.",
   "Ontology and operations platforms": "منصّات الأنطولوجيا والعمليات",
   "Operational data already exists": "بيانات التشغيل موجودة أصلًا",
   "PLATFORM AND PRODUCT, KEPT APART": "المنصّة والمنتج، كلٌّ على حدة",
-  "Palantir-style operational ontologies, workflow and data-integration platforms": "أنطولوجيات تشغيلية على نمط Palantir، ومنصّات سير العمل وتكامل البيانات",
+  "Palantir-style operational ontologies, workflow and data-integration platforms":
+    "أنطولوجيات تشغيلية على نمط Palantir، ومنصّات سير العمل وتكامل البيانات",
   "Partner system": "نظام الشريك",
   "Partner-controlled industrial validity is not proven.": "الصلاحية الصناعية التي يتحكّم بها الشريك غير مُثبَتة.",
   "Partner-controlled operational validity": "الصلاحية التشغيلية التي يتحكّم بها الشريك",
   "Partner-controlled validity": "الصلاحية التي يتحكّم بها الشريك",
-  "Partner-owned heldout data, work reduction at the same verdict, and zero false accepts.": "بيانات محجوزة يملكها الشريك، وخفض في العمل عند الحُكم نفسه، وصفر قبول خاطئ.",
+  "Partner-owned heldout data, work reduction at the same verdict, and zero false accepts.":
+    "بيانات محجوزة يملكها الشريك، وخفض في العمل عند الحُكم نفسه، وصفر قبول خاطئ.",
   "Persistent policy in this release": "السياسة الدائمة في هذا الإصدار",
-  "Planning hypotheses for a design-partner conversation, and nothing more.": "فرضيات تخطيط لمحادثة مع شريك تصميم، ولا شيء غير ذلك.",
+  "Planning hypotheses for a design-partner conversation, and nothing more.":
+    "فرضيات تخطيط لمحادثة مع شريك تصميم، ولا شيء غير ذلك.",
   "Planning hypothesis": "فرضية تخطيط",
   "Planning price hypotheses": "فرضيات أسعار تخطيطية",
-  "Plant and asset twins, telemetry integration, 3D context and simulation": "توائم المصانع والأصول، وتكامل القياس عن بُعد، والسياق ثلاثي الأبعاد، والمحاكاة",
+  "Plant and asset twins, telemetry integration, 3D context and simulation":
+    "توائم المصانع والأصول، وتكامل القياس عن بُعد، والسياق ثلاثي الأبعاد، والمحاكاة",
   "Platform and product, kept apart": "المنصّة والمنتج، كلٌّ على حدة",
   "Platform thesis": "أطروحة المنصّة",
   "Pointwise harm": "ضرر نقطي",
   "Policy and Atlas update receipts.": "إيصالات تحديث السياسة وAtlas.",
   "Private site pilot": "تجربة رائدة خاصّة في موقع واحد",
-  "Production autonomy is not authorized and functional-safety certification is not claimed.": "الاستقلالية الإنتاجية غير مأذون بها، ولا يُدّعى اعتماد للسلامة الوظيفية.",
+  "Production autonomy is not authorized and functional-safety certification is not claimed.":
+    "الاستقلالية الإنتاجية غير مأذون بها، ولا يُدّعى اعتماد للسلامة الوظيفية.",
   "Production autonomy not authorised": "الاستقلالية الإنتاجية غير مأذون بها",
-  "Propose": "الاقتراح",
-  "Rank diagnoses and actions, name the affected assets and the evidence. A person decides.": "ترتيب التشخيصات والإجراءات، وتسمية الأصول المعنيّة والأدلّة. والقرار لإنسان.",
+  Propose: "الاقتراح",
+  "Rank diagnoses and actions, name the affected assets and the evidence. A person decides.":
+    "ترتيب التشخيصات والإجراءات، وتسمية الأصول المعنيّة والأدلّة. والقرار لإنسان.",
   "Ranks what to check. Holds no verdict authority.": "يرتّب ما يُفحَص. ولا يملك سلطة الحُكم.",
   "Read-only adapters": "محوّلات للقراءة فقط",
   "Read-only domain adapters": "محوّلات مجال للقراءة فقط",
   "Recomputes, and refuses when it cannot.": "يُعيد الحساب، ويرفض حين لا يستطيع.",
   "Request a bounded industrial evaluation": "اطلب تقييمًا صناعيًا محدود النطاق",
-  "Retrieval plus reranking, or the partner's own model workflow, with equal information.": "استرجاع مع إعادة ترتيب، أو سير عمل الشريك القائم على نموذج، بمعلومات متساوية.",
-  "Reusable adapters, partner evidence and rollout economics.": "محوّلات قابلة لإعادة الاستعمال، وأدلّة من الشريك، واقتصاديات التوسّع.",
-  "Reveal": "الكشف",
+  "Retrieval plus reranking, or the partner's own model workflow, with equal information.":
+    "استرجاع مع إعادة ترتيب، أو سير عمل الشريك القائم على نموذج، بمعلومات متساوية.",
+  "Reusable adapters, partner evidence and rollout economics.":
+    "محوّلات قابلة لإعادة الاستعمال، وأدلّة من الشريك، واقتصاديات التوسّع.",
+  Reveal: "الكشف",
   "Review the technical evidence": "راجِع الأدلّة التقنية",
-  "Reviewer hours, diagnosis time, routes re-checked and audit time, all measured.": "ساعات المراجعين وزمن التشخيص والمسارات المُعاد فحصها وزمن التدقيق، كلّها مقيسة.",
+  "Reviewer hours, diagnosis time, routes re-checked and audit time, all measured.":
+    "ساعات المراجعين وزمن التشخيص والمسارات المُعاد فحصها وزمن التدقيق، كلّها مقيسة.",
   "Robotics mission layer": "طبقة المهامّ الروبوتية",
-  "Run counterfactual plans inside the partner's digital twin. No physical command leaves the system.": "تشغيل خطط مضادّة للواقع داخل التوأم الرقمي للشريك. ولا يغادر النظامَ أيّ أمر فيزيائي.",
-  "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.": "إجراء تقييم واحد محدود لضمان القرار الصناعي على بيانات الشريك ذاتها، بالقراءة فقط وعلى نحو استشاري، مع شرط نجاح مُتَّفق عليه كتابةً قبل التشغيل.",
+  "Run counterfactual plans inside the partner's digital twin. No physical command leaves the system.":
+    "تشغيل خطط مضادّة للواقع داخل التوأم الرقمي للشريك. ولا يغادر النظامَ أيّ أمر فيزيائي.",
+  "Run one bounded industrial decision-assurance evaluation on a partner's own data, read-only and advisory, with the success condition agreed in writing before the run.":
+    "إجراء تقييم واحد محدود لضمان القرار الصناعي على بيانات الشريك ذاتها، بالقراءة فقط وعلى نحو استشاري، مع شرط نجاح مُتَّفق عليه كتابةً قبل التشغيل.",
   "SEVEN ARMS AND EIGHT GATES": "سبع أذرع وثماني بوّابات",
-  "Same verdict, false accepts, and the search reduction are all reported.": "الحُكم نفسه، والقبول الخاطئ، وخفض البحث — تُبلَّغ كلّها.",
+  "Same verdict, false accepts, and the search reduction are all reported.":
+    "الحُكم نفسه، والقبول الخاطئ، وخفض البحث — تُبلَّغ كلّها.",
   "Scoped learning results, negatives included": "نتائج تعلّم محدودة النطاق، بما فيها السلبية",
   "Seven arms and eight gates": "سبع أذرع وثماني بوّابات",
-  "Shadow-mode reliability, a safety case, and an independent operational review.": "موثوقية في وضع الظلّ، وحجّة سلامة، ومراجعة تشغيلية مستقلّة.",
+  "Shadow-mode reliability, a safety case, and an independent operational review.":
+    "موثوقية في وضع الظلّ، وحجّة سلامة، ومراجعة تشغيلية مستقلّة.",
   "Shuffled feedback.": "تغذية راجعة مخلوطة.",
-  "Simulate": "المحاكاة",
-  "Simulation": "المحاكاة",
+  Simulate: "المحاكاة",
+  Simulation: "المحاكاة",
   "Simulation and supervisory-control evidence.": "أدلّة من المحاكاة والتحكّم الإشرافي.",
-  "Simulation parity, scenario coverage, and recovery and boundary metrics.": "تطابق المحاكاة، وتغطية السيناريوهات، ومقاييس التعافي والحدود.",
+  "Simulation parity, scenario coverage, and recovery and boundary metrics.":
+    "تطابق المحاكاة، وتغطية السيناريوهات، ومقاييس التعافي والحدود.",
   "Six results, and two of them did not work.": "ستّ نتائج، اثنتان منها لم تنجحا.",
   "Strong baseline": "خطّ أساس قويّ",
   "Structured observations with source custody.": "ملاحظات مُهيكَلة مع حفظ عهدة المصدر.",
-  "Supervisory": "إشرافي",
-  "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.": "مهامّ اصطناعية L3–L7. لا شيء صناعي، ولا شيء عن مصنع قيد التشغيل.",
-  "Systems that already exist and stay in place. GALO reads them and replaces none of them.": "أنظمة موجودة أصلًا وتبقى في مكانها. يقرؤها GALO ولا يحلّ محلّ أيّ منها.",
+  Supervisory: "إشرافي",
+  "Synthetic L3–L7 tasks. Nothing industrial, and nothing about an operating plant.":
+    "مهامّ اصطناعية L3–L7. لا شيء صناعي، ولا شيء عن مصنع قيد التشغيل.",
+  "Systems that already exist and stay in place. GALO reads them and replaces none of them.":
+    "أنظمة موجودة أصلًا وتبقى في مكانها. يقرؤها GALO ولا يحلّ محلّ أيّ منها.",
   "THE AUTONOMY LADDER": "سُلَّم الاستقلالية",
   "THE FIRST MARKET, AND THE REASON IT IS THE FIRST": "السوق الأولى، وسبب كونها الأولى",
   "THE V65–V67 LEARNING LINE": "خطّ التعلّم V65–V67",
   "TRAIN split only.": "شقّ TRAIN فقط.",
-  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.": "مراجعون تقنيّون يهمّهم مهاجمة الرياضيات وتصميم التقييم لا تأكيدهما.",
+  "Technical reviewers with an interest in attacking the mathematics and the evaluation design rather than confirming them.":
+    "مراجعون تقنيّون يهمّهم مهاجمة الرياضيات وتصميم التقييم لا تأكيدهما.",
   "Terminal parity": "تطابق النتيجة النهائية",
-  "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.": "أنّ برج L1–L7 يتفوّق على بديل مكافئ فرضيةٌ بحثية. ولا تُقدَّم سببًا للاستثمار.",
-  "That the heldout effect could not be computed on this task at all.": "أنّ الأثر على المجموعة المحجوزة لم يكن قابلًا للحساب على هذه المهمّة أصلًا.",
+  "That the L1–L7 tower beats a matched alternative is a research hypothesis. It is not offered as a reason to invest.":
+    "أنّ برج L1–L7 يتفوّق على بديل مكافئ فرضيةٌ بحثية. ولا تُقدَّم سببًا للاستثمار.",
+  "That the heldout effect could not be computed on this task at all.":
+    "أنّ الأثر على المجموعة المحجوزة لم يكن قابلًا للحساب على هذه المهمّة أصلًا.",
   "The DEV and SEALED roots stay frozen.": "يبقى جذرا DEV وSEALED مجمَّدَين.",
-  "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.": "لا يُجري إصدار R5B6A1_3 أيّ تحديث للسياسة إطلاقًا. أمّا خطّ المحرّك وAtlas V65–V67 فهو نموذج أوّلي منفصل بأدلّة تعلّم محدودة النطاق خاصّة به، منشورة أدناه مع نتائجها السلبية.",
+  "The R5B6A1_3 release performs no policy update at all. The V65–V67 Engine and Atlas line is a separate prototype with its own scoped learning evidence, published below with its negatives.":
+    "لا يُجري إصدار R5B6A1_3 أيّ تحديث للسياسة إطلاقًا. أمّا خطّ المحرّك وAtlas V65–V67 فهو نموذج أوّلي منفصل بأدلّة تعلّم محدودة النطاق خاصّة به، منشورة أدناه مع نتائجها السلبية.",
   "The action space the partner has approved.": "فضاء الأفعال الذي أقرّه الشريك.",
-  "The alert can be checked against what happened next, and the model against the operating window it was trained on.": "يمكن مراجعة التنبيه في مواجهة ما حدث لاحقًا، والنموذج في مواجهة نافذة التشغيل التي دُرِّب عليها.",
+  "The alert can be checked against what happened next, and the model against the operating window it was trained on.":
+    "يمكن مراجعة التنبيه في مواجهة ما حدث لاحقًا، والنموذج في مواجهة نافذة التشغيل التي دُرِّب عليها.",
   "The assessment dossier": "ملفّ التقييم",
   "If you want the mechanism itself": "إن كنت تريد الآلية نفسها",
-  "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.": "نموذج الأصل، والقياس عن بُعد وراء قراءةٍ ما، وما أنتجه سيناريو محاكى. ولهذا وُجدت الفئة.",
+  "The asset model, the telemetry behind a reading, and what a simulated scenario produced. This is why the category exists.":
+    "نموذج الأصل، والقياس عن بُعد وراء قراءةٍ ما، وما أنتجه سيناريو محاكى. ولهذا وُجدت الفئة.",
   "The causal same-mechanism comparator.": "المقارِن السببي على الآلية نفسها.",
-  "The eight conditions a work-reduction claim has to meet before it is made": "الشروط الثمانية التي يجب أن يستوفيها ادّعاء خفض العمل قبل إطلاقه",
+  "The eight conditions a work-reduction claim has to meet before it is made":
+    "الشروط الثمانية التي يجب أن يستوفيها ادّعاء خفض العمل قبل إطلاقه",
   "The evaluation is designed to be able to fail, and to say so.": "التقييم مصمَّم بحيث يمكن أن يفشل، وأن يقول ذلك.",
-  "The evaluation needs bounded observations and outcomes that are revealed independently.": "يحتاج التقييم إلى ملاحظات محدودة ونتائج يُكشَف عنها بشكل مستقلّ.",
+  "The evaluation needs bounded observations and outcomes that are revealed independently.":
+    "يحتاج التقييم إلى ملاحظات محدودة ونتائج يُكشَف عنها بشكل مستقلّ.",
   "The evidence behind the offer": "الأدلّة وراء العرض",
-  "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.": "المنتج التجاري الأوّل تقييمٌ محدود لضمان القرار الصناعي. لا عميل، ولا مسار مبيعات موقَّع، ولا إيراد.",
-  "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.": "المنتج التجاري الأوّل: تقييم محدود، بالقراءة فقط واستشاري، على سير عمل صناعي واحد. موضع GALO فوق التوأم الرقمي، والخطوات السبع لقرار مُقيَّم، وسُلَّم الاستقلالية ببوّاباته، وفرضيات أسعار تخطيطية ليست قائمة أسعار.",
-  "The first product, its autonomy ladder and its price hypotheses.": "المنتج الأوّل وسُلَّم استقلاليته وفرضيات أسعاره.",
-  "The first thing anybody would buy: a bounded, read-only, advisory evaluation on one industrial workflow, with a frozen baseline and a replayable decision package at the end.": "أوّل ما قد يشتريه أحد: تقييم محدود، بالقراءة فقط واستشاري، على سير عمل صناعي واحد، مع خطّ أساس مجمَّد وحزمة قرار قابلة لإعادة التشغيل في النهاية.",
+  "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.":
+    "المنتج التجاري الأوّل تقييمٌ محدود لضمان القرار الصناعي. لا عميل، ولا مسار مبيعات موقَّع، ولا إيراد.",
+  "The first commercial product: a bounded, read-only, advisory evaluation on one industrial workflow. Where GALO sits above a digital twin, the seven steps of an evaluated decision, the autonomy ladder with its gates, and planning price hypotheses that are not a price list.":
+    "المنتج التجاري الأوّل: تقييم محدود، بالقراءة فقط واستشاري، على سير عمل صناعي واحد. موضع GALO فوق التوأم الرقمي، والخطوات السبع لقرار مُقيَّم، وسُلَّم الاستقلالية ببوّاباته، وفرضيات أسعار تخطيطية ليست قائمة أسعار.",
+  "The first product, its autonomy ladder and its price hypotheses.":
+    "المنتج الأوّل وسُلَّم استقلاليته وفرضيات أسعاره.",
+  "The first thing anybody would buy: a bounded, read-only, advisory evaluation on one industrial workflow, with a frozen baseline and a replayable decision package at the end.":
+    "أوّل ما قد يشتريه أحد: تقييم محدود، بالقراءة فقط واستشاري، على سير عمل صناعي واحد، مع خطّ أساس مجمَّد وحزمة قرار قابلة لإعادة التشغيل في النهاية.",
   "The heldout set is frozen and stays frozen.": "المجموعة المحجوزة مجمَّدة وتبقى مجمَّدة.",
   "The learned persistent GALO Atlas.": "Atlas الدائم المتعلَّم الخاصّ بـ GALO.",
   "The partner's existing diagnostic rules and operating context.": "قواعد التشخيص القائمة لدى الشريك وسياقه التشغيلي.",
-  "The partner's strongest rule engine or static deterministic ranking.": "أقوى محرّك قواعد لدى الشريك، أو ترتيب حتميّ ثابت.",
+  "The partner's strongest rule engine or static deterministic ranking.":
+    "أقوى محرّك قواعد لدى الشريك، أو ترتيب حتميّ ثابت.",
   "The policy updates and the Atlas updates are both recorded.": "تُسجَّل تحديثات السياسة وتحديثات Atlas كلتاهما.",
   "The private key stays outside the engine.": "المفتاح الخاصّ يبقى خارج المحرّك.",
   "The route is committed before anything is revealed.": "يُثبَّت المسار قبل أن يُكشَف أيّ شيء.",
   "The route is explicit and its work is counted.": "المسار صريح وعمله معدود.",
   "The same data for every arm.": "البيانات نفسها لكلّ ذراع.",
-  "The same engine, Atlas schema and capacity, with updates blocked.": "المحرّك نفسه ومخطّط Atlas وسعته نفسها، مع حظر التحديثات.",
-  "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.": "كُتب شرط النجاح بعد رؤية النتائج، أو استُعملت بياناتنا بدل بيانات الشريك، أو مسّ التشغيلُ شيئًا خارج صلاحية القراءة.",
-  "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.": "هو السطح الذي صُمِّم GALO لقراءته، لا شيءٌ يُراد إزاحته. التوأم يقول ما الموجود وأين هو؛ أمّا السؤال الذي يتولّاه GALO فهو: أيّ التفسيرات ما تزال مفتوحة، وأيّ فحص يفصل بينها، وما الذي يجوز فعله بعد ذلك.",
-  "The terminal result must be identical, not merely comparable.": "يجب أن تكون النتيجة النهائية مطابقة، لا مجرّد قابلة للمقارنة.",
-  "The time to be measured against the milestones above, and to be dropped if they are missed.": "الوقت الذي سيُقاس في مواجهة المعالم أعلاه، ويُسحَب إن لم تتحقّق.",
+  "The same engine, Atlas schema and capacity, with updates blocked.":
+    "المحرّك نفسه ومخطّط Atlas وسعته نفسها، مع حظر التحديثات.",
+  "The success condition is written after the results are seen, the data used is ours rather than a partner's, or the run touches anything beyond read access.":
+    "كُتب شرط النجاح بعد رؤية النتائج، أو استُعملت بياناتنا بدل بيانات الشريك، أو مسّ التشغيلُ شيئًا خارج صلاحية القراءة.",
+  "The surface GALO is designed to read, not a thing to displace. A twin says what and where; the question GALO takes on is which explanations are still open, which check separates them, and what may lawfully be done next.":
+    "هو السطح الذي صُمِّم GALO لقراءته، لا شيءٌ يُراد إزاحته. التوأم يقول ما الموجود وأين هو؛ أمّا السؤال الذي يتولّاه GALO فهو: أيّ التفسيرات ما تزال مفتوحة، وأيّ فحص يفصل بينها، وما الذي يجوز فعله بعد ذلك.",
+  "The terminal result must be identical, not merely comparable.":
+    "يجب أن تكون النتيجة النهائية مطابقة، لا مجرّد قابلة للمقارنة.",
+  "The time to be measured against the milestones above, and to be dropped if they are missed.":
+    "الوقت الذي سيُقاس في مواجهة المعالم أعلاه، ويُسحَب إن لم تتحقّق.",
   "The whole run replays directly from a fresh root.": "يُعاد تشغيل الجولة كاملةً مباشرةً من جذر جديد.",
   "The workflow is connected": "سير العمل موصول",
-  "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.": "لا عميل ولا مسار مبيعات موقَّع ولا إيراد. والأسعار التخطيطية فرضيات لمحادثة.",
-  "There is no reading of this result that is positive, and none is offered.": "لا قراءة إيجابية لهذه النتيجة، ولا تُقدَّم واحدة.",
+  "There is no customer, no signed pipeline and no revenue. Planning prices are hypotheses for a conversation.":
+    "لا عميل ولا مسار مبيعات موقَّع ولا إيراد. والأسعار التخطيطية فرضيات لمحادثة.",
+  "There is no reading of this result that is positive, and none is offered.":
+    "لا قراءة إيجابية لهذه النتيجة، ولا تُقدَّم واحدة.",
   "There is somewhere to expand to": "ثمّة مكان للتوسّع إليه",
-  "These are the numbers we would open a conversation with. They are not a price list, not a signed pipeline and not revenue — no partner has agreed to any of them, because there is no partner yet.": "هذه هي الأرقام التي نفتح بها الحديث. ليست قائمة أسعار ولا مسار مبيعات موقَّعًا ولا إيرادًا — لم يوافق عليها أيّ شريك، لأنّه لا شريك بعد.",
-  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.": "هذا منفصل عن الإصدار المجمَّد أعلاه، الذي ما يزال لا يتعلّم شيئًا البتّة. وإلى جانبه نموذج أوّلي لمحرّك وAtlas مبنيَّين على الإيصالات، بنتائج تعلّم محدودة النطاق على مهامّ اصطناعية ومعايير عامّة. العبارتان صحيحتان معًا، ولا يُسمح لإحداهما بأن توحي بالأخرى. والنتائج السلبية في الجدول نفسه وبالأسلوب نفسه.",
+  "These are the numbers we would open a conversation with. They are not a price list, not a signed pipeline and not revenue — no partner has agreed to any of them, because there is no partner yet.":
+    "هذه هي الأرقام التي نفتح بها الحديث. ليست قائمة أسعار ولا مسار مبيعات موقَّعًا ولا إيرادًا — لم يوافق عليها أيّ شريك، لأنّه لا شريك بعد.",
+  "This is separate from the frozen release above, which still performs no learning at all. Alongside it there is a receipt-native Engine and Atlas prototype with scoped learning results on synthetic tasks and public benchmarks. Both statements are true at once, and neither is allowed to imply the other. The negatives are in the same table, in the same style.":
+    "هذا منفصل عن الإصدار المجمَّد أعلاه، الذي ما يزال لا يتعلّم شيئًا البتّة. وإلى جانبه نموذج أوّلي لمحرّك وAtlas مبنيَّين على الإيصالات، بنتائج تعلّم محدودة النطاق على مهامّ اصطناعية ومعايير عامّة. العبارتان صحيحتان معًا، ولا يُسمح لإحداهما بأن توحي بالأخرى. والنتائج السلبية في الجدول نفسه وبالأسلوب نفسه.",
   "Tower-specific advantage": "ميزة خاصّة بالبرج",
-  "Transfer across domains, long horizons and open tasks.": "الانتقال عبر المجالات، والآفاق الطويلة، والمهامّ المفتوحة.",
+  "Transfer across domains, long horizons and open tasks.":
+    "الانتقال عبر المجالات، والآفاق الطويلة، والمهامّ المفتوحة.",
   "Eleven assessment lines, six of them negative": "أحد عشر سطرًا للتقييم، ستّةٌ منها سلبية",
-  "Twins, rule engines, ontology platforms and robotics stacks": "التوائم ومحرّكات القواعد ومنصّات الأنطولوجيا ومنظومات الروبوتات",
-  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.": "شريكا تصميم في التوائم الرقمية الصناعية أو تشغيل المصانع أو الأنظمة الذاتية، قادران على تحديد تقييم محدود على بياناتهما بشرط نجاح يكتبانه بنفسيهما.",
-  "Two fresh roots reproduce the semantic state, the outcomes and the ledgers.": "جذران جديدان يُعيدان إنتاج الحالة الدلالية والنتائج والسجلّات.",
+  "Twins, rule engines, ontology platforms and robotics stacks":
+    "التوائم ومحرّكات القواعد ومنصّات الأنطولوجيا ومنظومات الروبوتات",
+  "Two design partners in industrial digital twins, plant operations or autonomous systems, able to define a bounded evaluation on their own data with a success condition they write themselves.":
+    "شريكا تصميم في التوائم الرقمية الصناعية أو تشغيل المصانع أو الأنظمة الذاتية، قادران على تحديد تقييم محدود على بياناتهما بشرط نجاح يكتبانه بنفسيهما.",
+  "Two fresh roots reproduce the semantic state, the outcomes and the ledgers.":
+    "جذران جديدان يُعيدان إنتاج الحالة الدلالية والنتائج والسجلّات.",
   "Typed ProgramIR routes": "مسارات ProgramIR المُصنَّفة",
-  "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.": "UMLS: عمل أقلّ بنسبة 49.7٪ في مواجهة خطّ أساس مسجَّل مسبقًا؛ WN18RR: 7.17٪ بفاصل ثقة 95٪ من 5.82 إلى 8.55٪؛ JF17K-3: فحوص مرشّحين أقلّ بنسبة 1.34٪؛ Kinship: صفر٪ من الوفر في العمل؛ Nations: غير قابل للتمييز.",
-  "Untouched. No current or proposed path writes to them directly.": "لم تُمَسّ. ولا يكتب فيها مباشرةً أيّ مسار حالي أو مقترَح.",
+  "UMLS 49.7% less work against a preregistered baseline; WN18RR 7.17%, CI95 5.82-8.55%; JF17K-3 1.34% fewer candidate checks; Kinship 0% work advantage; Nations not identifiable.":
+    "UMLS: عمل أقلّ بنسبة 49.7٪ في مواجهة خطّ أساس مسجَّل مسبقًا؛ WN18RR: 7.17٪ بفاصل ثقة 95٪ من 5.82 إلى 8.55٪؛ JF17K-3: فحوص مرشّحين أقلّ بنسبة 1.34٪؛ Kinship: صفر٪ من الوفر في العمل؛ Nations: غير قابل للتمييز.",
+  "Untouched. No current or proposed path writes to them directly.":
+    "لم تُمَسّ. ولا يكتب فيها مباشرةً أيّ مسار حالي أو مقترَح.",
   "V65 preregistered synthetic run": "جولة V65 الاصطناعية المسجَّلة مسبقًا",
-  "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.": "خفّض تعلّم المحرّك وAtlas الاصطناعي V65 العملَ الإدراكي الكامل بنسبة 60.9٪ مع تطابق نهائي تامّ، داخل نطاق اصطناعي مجمَّد.",
+  "V65 synthetic Engine and Atlas learning reduced full cognitive work by 60.9% at exact terminal parity, inside a frozen synthetic scope.":
+    "خفّض تعلّم المحرّك وAtlas الاصطناعي V65 العملَ الإدراكي الكامل بنسبة 60.9٪ مع تطابق نهائي تامّ، داخل نطاق اصطناعي مجمَّد.",
   "V65-V67 public-benchmark archive": "أرشيف المعايير العامّة V65–V67",
   "V67 business model memorandum": "مذكّرة نموذج الأعمال V67",
   "V67 claim matrix": "مصفوفة ادّعاءات V67",
@@ -891,7 +1271,7 @@ export const industrialAr: TranslationDictionary = {
   "V67 technical evidence memorandum": "مذكّرة الأدلّة التقنية V67",
   "Verified work": "عمل مُتحقَّق منه",
   "Verifier · PASS / REJECT / BOUNDARY": "المدقّق · PASS / REJECT / BOUNDARY",
-  "Verify": "التحقّق",
+  Verify: "التحقّق",
   "WHAT IT WOULD COST": "كم سيكلّف ذلك",
   "WHERE GALO SITS": "أين يقف GALO",
   "WHO THIS IS NOT FOR": "لمن لا يصلح هذا",
@@ -900,13 +1280,14 @@ export const industrialAr: TranslationDictionary = {
   "What the wedge is for": "ما الغرض من هذا المدخل",
   "What would have to be proved": "ما الذي سيلزم إثباته",
   "Where GALO sits, and what it never touches": "أين يقف GALO، وما الذي لا يمسّه أبدًا",
-  "Where a person or a simulation stands between the reasoning and the plant.": "حيث يقف إنسان أو محاكاة بين الاستدلال والمصنع.",
+  "Where a person or a simulation stands between the reasoning and the plant.":
+    "حيث يقف إنسان أو محاكاة بين الاستدلال والمصنع.",
   "Who else is in this market": "من غيرنا في هذه السوق",
   "Who this is not for": "لمن لا يصلح هذا",
   "Working research prototype": "نموذج بحثي أوّلي يعمل",
   "Zero.": "صفر.",
-  "gated": "محكوم ببوّابة",
-  "roadmap": "خارطة طريق",
+  gated: "محكوم ببوّابة",
+  roadmap: "خارطة طريق",
   "the authority boundary": "حدّ الصلاحية",
   "the partner's systems, untouched": "أنظمة الشريك، دون مساس",
   "what GALO would add": "ما الذي سيضيفه GALO",

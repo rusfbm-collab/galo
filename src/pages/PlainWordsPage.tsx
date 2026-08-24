@@ -253,7 +253,11 @@ export function PlainWordsPage() {
 
       <section id="in-short" className="section section--navy math-anchor-section">
         <div className="shell">
-          <SectionHeading light eyebrow={t("IF YOU WANT IT VERY SHORT")} title={t("The whole page in three sentences.")} />
+          <SectionHeading
+            light
+            eyebrow={t("IF YOU WANT IT VERY SHORT")}
+            title={t("The whole page in three sentences.")}
+          />
           <div className="in-short">
             {inShort.map((line) => (
               <p key={line}>{t(line)}</p>
@@ -297,9 +301,7 @@ export function PlainWordsPage() {
           <SectionHeading
             eyebrow={t("THE WORDS, TRANSLATED")}
             title={t("If you carry on to the rest of the site, keep this list open.")}
-            text={t(
-              "These ten words do most of the damage. The site's word first, then what it actually means.",
-            )}
+            text={t("These ten words do most of the damage. The site's word first, then what it actually means.")}
           />
           <dl className="plain-jargon">
             {jargonTranslations.map((entry) => (

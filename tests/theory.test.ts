@@ -201,7 +201,9 @@ describe("beginner theory dual-channel safeguards", () => {
     expect(theoryObjectClasses.find(({ object }) => object === "World Atlas state")?.layer).toBe(
       "TARGET · NOT PRESENT",
     );
-    expect(theoryObjectClasses.find(({ object }) => object === "One-shot handle")?.boundary).toContain("local to one run");
+    expect(theoryObjectClasses.find(({ object }) => object === "One-shot handle")?.boundary).toContain(
+      "local to one run",
+    );
     expect(targetArchitectureFlow).toHaveLength(8);
     expect(targetArchitectureFlow.every(({ status }) => status.startsWith("TARGET"))).toBe(true);
     expect(theorySymbolLegend.map(({ symbol }) => symbol)).toEqual(

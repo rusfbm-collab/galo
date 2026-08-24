@@ -101,7 +101,8 @@ export const landscapeRows: readonly LandscapeRow[] = [
     family: "Industrial analytics and predictive maintenance",
     examples: "Anomaly detection, failure forecasting, condition monitoring and domain models",
     decidedBy: "Models fitted to historical operating data, producing an alert, a score or a forecast.",
-    checkable: "The alert can be checked against what happened next, and the model against the operating window it was trained on.",
+    checkable:
+      "The alert can be checked against what happened next, and the model against the operating window it was trained on.",
     relation:
       "A prediction and a defensible decision are different products. GALO keeps the competing diagnoses alive, chooses the check that separates them, and records why an action was proposed at all.",
   },

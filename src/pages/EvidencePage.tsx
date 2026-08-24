@@ -205,7 +205,9 @@ export function EvidencePage() {
           <div className="section-heading">
             <div>
               <p className="eyebrow">{t("THE SEALED LEARNING LINE")}</p>
-              <h2>{t("Every number below is the same engine measured against itself, with the learning switched off.")}</h2>
+              <h2>
+                {t("Every number below is the same engine measured against itself, with the learning switched off.")}
+              </h2>
               <p className="section-heading__text">
                 {t(
                   "That comparator is the whole point: same engine, same schema, same candidate universe, same budget, with only the learned volume detached. A saving measured that way is a statement about learning rather than about search size. This is separate from the frozen release above, which still performs no learning at all — both statements are true at once, and neither is allowed to imply the other.",
@@ -231,10 +233,7 @@ export function EvidencePage() {
 
           <div className="learning-results">
             {learningResults.map((row) => (
-              <article
-                key={row.task}
-                className={row.status === "TYPED REFUSAL, SEALED" ? "is-negative" : undefined}
-              >
+              <article key={row.task} className={row.status === "TYPED REFUSAL, SEALED" ? "is-negative" : undefined}>
                 <span className="learning-results__status" dir="ltr">
                   {row.status}
                 </span>

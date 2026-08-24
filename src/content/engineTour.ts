@@ -50,7 +50,8 @@ export const engineCycle: readonly CycleStep[] = [
   {
     number: "03",
     label: "Which explanations are still alive",
-    plain: "Several readings of the situation may survive at once, and they are kept rather than narrowed by preference.",
+    plain:
+      "Several readings of the situation may survive at once, and they are kept rather than narrowed by preference.",
   },
   {
     number: "04",
@@ -65,7 +66,8 @@ export const engineCycle: readonly CycleStep[] = [
   {
     number: "06",
     label: "An answer, a set of options, or not yet",
-    plain: "If the grounds are thin, the honest output is that this cannot be settled now — and that is written down too.",
+    plain:
+      "If the grounds are thin, the honest output is that this cannot be settled now — and that is written down too.",
   },
   {
     number: "07",
@@ -96,7 +98,11 @@ export const engineRoles: readonly EngineRole[] = [
   {
     role: "Law and checking",
     may: ["Admit a move", "Refuse a move", "Stop and say the grounds are not enough"],
-    mayNot: ["Fill a gap to produce an answer", "Be argued with by the part that learned", "Change between two runs of the same release"],
+    mayNot: [
+      "Fill a gap to produce an answer",
+      "Be argued with by the part that learned",
+      "Change between two runs of the same release",
+    ],
     point: "It is the only part allowed to say yes, and it is allowed to say no.",
   },
 ];
@@ -114,7 +120,8 @@ export const engineIsNot: readonly NotThis[] = [
   },
   {
     claim: "One more neural network used as the source of truth",
-    answer: "Learning exists here and never carries authority. The part that admits a result is not the part that learned.",
+    answer:
+      "Learning exists here and never carries authority. The part that admits a result is not the part that learned.",
   },
   {
     claim: "A very large reference work",
@@ -122,7 +129,8 @@ export const engineIsNot: readonly NotThis[] = [
   },
   {
     claim: "A graph where an edge counts as a fact",
-    answer: "A stored relation is not a verdict here. What is stored is the state of a decision and how it was reached.",
+    answer:
+      "A stored relation is not a verdict here. What is stored is the state of a decision and how it was reached.",
   },
   {
     claim: "A promise of general intelligence",

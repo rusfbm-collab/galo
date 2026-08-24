@@ -80,11 +80,7 @@ export function TwoRolesFigure() {
                 height={BOX_HEIGHT}
                 rx="8"
               />
-              <text
-                x={LANE_X + 18 + index * (BOX_WIDTH + 16) + BOX_WIDTH / 2}
-                y={TOP_LANE_Y + 58}
-                textAnchor="middle"
-              >
+              <text x={LANE_X + 18 + index * (BOX_WIDTH + 16) + BOX_WIDTH / 2} y={TOP_LANE_Y + 58} textAnchor="middle">
                 {t(proposal)}
               </text>
             </g>

@@ -138,7 +138,8 @@ export const fieldAr: TranslationDictionary = {
   "The question is not whether anyone else has thought of this. Several fields have.":
     "ليس السؤال هل فكّر أحد آخر في هذا. لقد فكّر فيه غير ميدان.",
   "The rule books a bank already runs on": "أدلّة القواعد التي يعمل بها المصرف أصلًا",
-  "The same comparison in full, with thirteen families named": "المقارنة نفسها كاملةً، بثلاث عشرة عائلة مذكورة بأسمائها",
+  "The same comparison in full, with thirteen families named":
+    "المقارنة نفسها كاملةً، بثلاث عشرة عائلة مذكورة بأسمائها",
   "The three promises, and how to break each": "الوعود الثلاثة وكيف يُكسر كلٌّ منها",
   "The twelve lines above say what is and is not established inside this project. This section says the harder thing: how the same lines read next to language models, agent frameworks, proof assistants, solvers, learned-proposer work, knowledge graphs, cognitive architectures, and rule engines — thirteen families that are also trying to build artificial intelligence, and every one of which is further along in practical terms.":
     "تقول الأسطر الاثنا عشر أعلاه ما ثبت وما لم يثبت داخل هذا المشروع. أمّا هذا القسم فيقول الأصعب: كيف تُقرأ الأسطر نفسها بجوار نماذج اللغة، وأُطر الوكلاء، ومساعدات البرهان، والحلّالات، وأعمال المُقترِح والمدقّق، ورسوم المعرفة، والبنى المعرفية، ومحرّكات القواعد — ثلاث عشرة عائلة تحاول هي الأخرى بناء ذكاء اصطناعي، وكلٌّ منها أبعد شوطًا من الناحية العملية.",

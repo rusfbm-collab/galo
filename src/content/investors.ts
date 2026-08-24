@@ -9,8 +9,7 @@
  */
 
 export const oneMinute = {
-  what:
-    "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.",
+  what: "GALO is a general-purpose architecture for keeping a decision system's state, its permitted actions and the route it took explicit, rather than inside a model nobody can open. The first thing it is sold as is much narrower: decision assurance around the digital twins and operational systems an industrial plant already runs.",
   forWhom:
     "It is aimed at work where the expensive failure is not a wrong answer but a wrong answer nobody can trace: industrial operations, regulated processes, long-running automation, and anything a reviewer has to sign. Industry comes first because the cost of ambiguity is already counted there.",
   whyNow:

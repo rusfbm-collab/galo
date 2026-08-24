@@ -37,18 +37,15 @@ export const comparisonClasses: readonly ComparisonClass[] = [
     strength: "Fluency across an enormous range of tasks, with no schema written first.",
     authority: "Fitted parameters, plus the prompt and the retrieved context.",
     change: "A new prompt, a fine-tune, or a new model. The unit of change is the whole object.",
-    contrast:
-      "A learned ranking is allowed here. The verdict is not: it belongs to declared state and a verifier.",
+    contrast: "A learned ranking is allowed here. The verdict is not: it belongs to declared state and a verifier.",
   },
   {
     approach: "Retrieval and agent stacks",
     landmarks: "Tool-calling loops, graph-structured agent orchestration, enterprise assistants",
-    strength:
-      "Tools, retrieval and workflow in production today, at a scale this project is nowhere near.",
+    strength: "Tools, retrieval and workflow in production today, at a scale this project is nowhere near.",
     authority: "The prompt, a memory store, and the code that decides which tools exist.",
     change: "A trace of the calls made. The calls not made are usually nowhere.",
-    contrast:
-      "The unit here is a versioned decision transaction that somebody else can replay.",
+    contrast: "The unit here is a versioned decision transaction that somebody else can replay.",
   },
   {
     approach: "Knowledge graphs",
@@ -56,18 +53,15 @@ export const comparisonClasses: readonly ComparisonClass[] = [
     strength: "Entities and relations explicit, quotable, and readable in the ordinary sense.",
     authority: "The graph, and the reasoner over it.",
     change: "An edit to the store. What one edit may touch is a matter of process.",
-    contrast:
-      "The Atlas is not an edge store acting as law, and the permitted set closes before the run.",
+    contrast: "The Atlas is not an edge store acting as law, and the permitted set closes before the run.",
   },
   {
     approach: "Symbolic knowledge bases",
     landmarks: "Cyc and comparable large hand-built ontologies",
-    strength:
-      "Explicit inference over broad knowledge, with an audit trail, sustained for decades.",
+    strength: "Explicit inference over broad knowledge, with an audit trail, sustained for decades.",
     authority: "A shared knowledge base and a logic engine.",
     change: "Breadth is the achievement and the standing cost: a general base must be kept current.",
-    contrast:
-      "Not a second global common-sense base. Change-assurance on one local, versioned decision state.",
+    contrast: "Not a second global common-sense base. Change-assurance on one local, versioned decision state.",
   },
   {
     approach: "Neuro-symbolic hybrids",
@@ -75,8 +69,7 @@ export const comparisonClasses: readonly ComparisonClass[] = [
     strength: "Both halves in one system, reaching what neither half reaches alone.",
     authority: "Split between network and symbolic layer, and the split falls differently in each.",
     change: "Depends which half was wrong, and the record does not always say.",
-    contrast:
-      "Here the split is the design and it is written down: the learned part never owns the verdict.",
+    contrast: "Here the split is the design and it is written down: the learned part never owns the verdict.",
   },
   {
     approach: "Predictive world models",
@@ -93,8 +86,7 @@ export const comparisonClasses: readonly ComparisonClass[] = [
     strength: "Interventions rather than correlation alone, with the assumptions stated.",
     authority: "The causal graph and its declared assumptions.",
     change: "A changed assumption changes the graph, and the consequences are worked out by hand.",
-    contrast:
-      "A local frame can carry that shape; the loop around it is what is on offer here.",
+    contrast: "A local frame can carry that shape; the loop around it is what is on offer here.",
   },
   {
     approach: "Formal methods and provers",
@@ -102,8 +94,7 @@ export const comparisonClasses: readonly ComparisonClass[] = [
     strength: "Guarantees stronger than anything else here, inside a stated domain.",
     authority: "A specification, and a proof a small kernel accepts.",
     change: "A new proof obligation, discharged offline before anything runs.",
-    contrast:
-      "A runtime for decisions being taken now, claiming far less than a prover does.",
+    contrast: "A runtime for decisions being taken now, claiming far less than a prover does.",
   },
   {
     approach: "Governance and policy layers",
@@ -111,8 +102,7 @@ export const comparisonClasses: readonly ComparisonClass[] = [
     strength: "Controls and policy over the models an organisation already runs, replacing none.",
     authority: "Policy over another engine's outputs.",
     change: "The policy versions independently of the model.",
-    contrast:
-      "The substrate rather than a wrapper: the state and the permitted set are its own.",
+    contrast: "The substrate rather than a wrapper: the state and the permitted set are its own.",
   },
   {
     approach: "GALO",

@@ -38,7 +38,8 @@ export const openingStory: readonly StoryBeat[] = [
   {
     number: "03",
     line: "The usual answer is short.",
-    detail: "The system decided. Or: a specialist looked at it. Both are true, and neither is an answer to the question.",
+    detail:
+      "The system decided. Or: a specialist looked at it. Both are true, and neither is an answer to the question.",
   },
   {
     number: "04",
@@ -140,11 +141,13 @@ export type HaveNotLine = {
 export const whatThereIs: readonly HaveNotLine[] = [
   {
     line: "A working programme",
-    detail: "Narrow on purpose: it handles two kinds of request and takes one step at a time. That is genuinely all of it.",
+    detail:
+      "Narrow on purpose: it handles two kinds of request and takes one step at a time. That is genuinely all of it.",
   },
   {
     line: "A record you can reconstruct the decision from",
-    detail: "Complete enough that a stranger can repeat the same steps a year later and land on the same result, without asking us anything.",
+    detail:
+      "Complete enough that a stranger can repeat the same steps a year later and land on the same result, without asking us anything.",
   },
   {
     line: "Learning that helps it search faster, and never gets the right to replace a rule",
@@ -159,7 +162,8 @@ export const whatThereIs: readonly HaveNotLine[] = [
 export const whatThereIsNot: readonly HaveNotLine[] = [
   {
     line: "A deployment at a real industrial site",
-    detail: "Nobody is running this in production anywhere, and nothing on this site should be read as saying otherwise.",
+    detail:
+      "Nobody is running this in production anywhere, and nothing on this site should be read as saying otherwise.",
   },
   {
     line: "Customers or pilots",
@@ -171,7 +175,8 @@ export const whatThereIsNot: readonly HaveNotLine[] = [
   },
   {
     line: "The right to operate equipment on its own",
-    detail: "Nothing here authorises a command to a machine, a controller or a robot. The first mode is read-only and advisory.",
+    detail:
+      "Nothing here authorises a command to a machine, a controller or a robot. The first mode is read-only and advisory.",
   },
 ];
 
