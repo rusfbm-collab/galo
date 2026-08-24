@@ -28,9 +28,29 @@ export const heroEyebrow = "WEIGHT-FREE AI · INDUSTRIAL DECISION ASSURANCE";
  */
 export const heroHeadline = "AI built for provable decisions.";
 
+/**
+ * The lead sets the problem up; the mechanism belongs to the explainer block
+ * directly under the hero, which states it once and in full. These two used to
+ * carry the mechanism as well, and the page said the same thing twice within a
+ * screen and a half.
+ */
 export const heroLead: readonly string[] = [
-  "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building and revising explicit relations and verified structures in a versioned Atlas.",
-  "That keeps the state behind a decision readable, replayable, and re-checkable in the one place a change actually touched. The first product is intended for industrial decision assurance around the digital twins and operational systems a company already operates.",
+  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.",
+  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.",
+];
+
+/* ------------------------------------------------- what GALO is, in short ---- */
+
+export const explainerEyebrow = "WHAT GALO IS";
+
+/**
+ * The whole argument in prose, before any diagram takes it apart. A reader who
+ * stops here should still be able to repeat the claim accurately to somebody
+ * else, which is the only test this block has to pass.
+ */
+export const explainerParagraphs: readonly string[] = [
+  "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.",
+  "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.",
 ];
 
 /** Three verbs, in the order an operator would want them. */
@@ -373,6 +393,8 @@ export const homeNarrativeTranslationKeys = [
   heroResult,
   ...heroMarkers,
   heroBoundary,
+  explainerEyebrow,
+  ...explainerParagraphs,
   heroFigureEyebrow,
   neuralLane.head,
   galoLane.head,

@@ -9,6 +9,7 @@ import {
   artefactScopes,
   changeBoundary,
   changeCases,
+  explainerParagraphs,
   heroBoundary,
   heroEyebrow,
   heroHeadline,
@@ -58,7 +59,39 @@ describe("GALO public site", () => {
       "href",
       "/industry",
     );
-    expect(screen.getByRole("link", { name: "See how GALO works" })).toHaveAttribute("href", "#learned-state");
+    expect(screen.getByRole("link", { name: "See how GALO works" })).toHaveAttribute("href", "#what-galo-is");
+  });
+
+  // HOME-EXPLAINER-10 — the whole claim in prose, once, before any diagram
+  // takes it apart, and not repeated from the hero it follows.
+  it("states what GALO is in prose directly under the hero", () => {
+    render(<App />);
+    const explainer = document.querySelector("#what-galo-is");
+    expect(explainer).toBeInTheDocument();
+
+    const panel = explainer?.querySelector(".home-explainer__panel");
+    expect(panel?.querySelectorAll("p:not(.eyebrow)")).toHaveLength(explainerParagraphs.length);
+    expect(explainerParagraphs).toHaveLength(2);
+    for (const paragraph of explainerParagraphs) {
+      expect(panel?.textContent).toContain(paragraph);
+    }
+
+    // The mechanism, the local revision, and the wedge — all three are in it.
+    const text = panel?.textContent ?? "";
+    expect(text).toContain("no trainable weights and uses no backpropagation");
+    expect(text).toContain("versioned Atlas");
+    expect(text).toContain("without retraining the whole system");
+
+    // It sits between the hero and the first figure section.
+    const order = Array.from(document.querySelectorAll("section[id]")).map((element) => element.id);
+    expect(order.indexOf("what-galo-is")).toBe(0);
+    expect(order.indexOf("what-galo-is")).toBeLessThan(order.indexOf("learned-state"));
+
+    // And the hero above it no longer says the same thing in the same words.
+    const hero = document.querySelector(".hero")?.textContent ?? "";
+    for (const paragraph of explainerParagraphs) {
+      expect(hero).not.toContain(paragraph);
+    }
   });
 
   // HOME-STALE-CLAIM-02 — copy the restructure retired must not survive anywhere on the page.

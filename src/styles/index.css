@@ -943,6 +943,12 @@ html[lang="ar"] .hero h1 {
   background: var(--navy-900);
 }
 
+/* A tinted band, so the explainer under the hero reads as its own block rather
+   than as the opening of the section below it. */
+.section--soft {
+  background: var(--soft-navy);
+}
+
 /* A grid or flex child defaults to min-width:auto, so one long token widens the
    whole track and the page scrolls sideways on a phone. These are the layout
    children that hold prose. */
@@ -11739,6 +11745,54 @@ caption bdi {
 .under-hood__route .hero-route {
   max-width: 560px;
   margin-inline: auto;
+}
+
+/* ---- what GALO is, in short ---- */
+
+.home-explainer {
+  padding-block: 74px;
+}
+
+.home-explainer__panel {
+  max-width: 78ch;
+  margin-inline: auto;
+  border-inline-start: 3px solid var(--teal-deep);
+  padding-inline-start: 30px;
+}
+
+.home-explainer__panel .eyebrow {
+  margin: 0 0 18px;
+  color: var(--teal-deep);
+}
+
+.home-explainer__panel p + p {
+  margin-top: 20px;
+}
+
+.home-explainer__panel p:not(.eyebrow) {
+  margin-bottom: 0;
+  color: var(--ink);
+  font-size: clamp(1.02rem, 1.32vw, 1.2rem);
+  line-height: 1.66;
+}
+
+@media (max-width: 860px) {
+  .home-explainer {
+    padding-block: 58px;
+  }
+  .home-explainer__panel {
+    padding-inline-start: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-explainer {
+    padding-block: 46px;
+  }
+  .home-explainer__panel {
+    border-inline-start-width: 2px;
+    padding-inline-start: 16px;
+  }
 }
 
 /* ---- the engine tour page ---- */

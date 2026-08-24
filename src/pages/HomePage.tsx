@@ -38,6 +38,8 @@ import {
   changeHeadline,
   cycleBody,
   cycleHeadline,
+  explainerEyebrow,
+  explainerParagraphs,
   heroBoundary,
   heroEyebrow,
   heroHeadline,
@@ -198,7 +200,7 @@ export function HomePage() {
                 {t("Request a bounded industrial evaluation")}{" "}
                 <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
-              <a className="button button--outline-light" href="#learned-state">
+              <a className="button button--outline-light" href="#what-galo-is">
                 {t("See how GALO works")}
               </a>
             </div>
@@ -207,6 +209,17 @@ export function HomePage() {
 
           <div className="hero-visual">
             <WeightFreeHeroFigure />
+          </div>
+        </div>
+      </section>
+
+      <section id="what-galo-is" className="section section--soft home-explainer">
+        <div className="shell">
+          <div className="home-explainer__panel">
+            <p className="eyebrow">{t(explainerEyebrow)}</p>
+            {explainerParagraphs.map((paragraph) => (
+              <p key={paragraph}>{t(paragraph)}</p>
+            ))}
           </div>
         </div>
       </section>

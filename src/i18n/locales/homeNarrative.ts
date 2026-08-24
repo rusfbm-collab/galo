@@ -1,6 +1,15 @@
 import type { TranslationDictionary } from "../translations";
 
 export const homeNarrativeRu: TranslationDictionary = {
+  "WHAT GALO IS": "ЧТО ТАКОЕ GALO",
+  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.":
+    "Решение, принятое сегодня, должно выдержать завтрашний день. Источник исправили, регламент пересмотрели, показание пропало — и вопрос становится таким: каких выводов это касается и какие из них по-прежнему держатся.",
+  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.":
+    "GALO построен так, чтобы у этого вопроса был ответ, который может проверить человек со стороны. Первый продукт предназначен для подтверждения промышленных решений вокруг систем, которые компания уже эксплуатирует.",
+  "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.":
+    "GALO — принципиально другой вид ИИ. Нейросети обучаются, изменяя скрытые числовые веса; в GALO обучаемых весов нет и обратное распространение ошибки не используется. GALO учится иначе: формирует, проверяет и локально пересматривает явную структуру знания, сохраняемую в версионируемом Атласе.",
+  "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.":
+    "Поэтому каждое решение сохраняет видимые основания: данные, отношения и последовательность проверяемых шагов. При изменении одного источника или условия GALO позволяет пересмотреть только связанные с ним структуры и решения, не переобучая всю систему. Первый продукт переносит этот принцип в промышленный контур — к решениям, основанным на уже используемых цифровых двойниках и операционных системах.",
   "+ one reuse binding": "+ одна привязка для переиспользования",
   "+ one verified relation frame": "+ один проверенный фрейм отношения",
   "A NEW KIND OF LEARNED STATE": "ВЫУЧЕННОЕ СОСТОЯНИЕ ДРУГОГО РОДА",
@@ -93,8 +102,6 @@ export const homeNarrativeRu: TranslationDictionary = {
   "Named relations between named things, and the procedures written out over them.":
     "Именованные отношения между именованными вещами и выписанные над ними процедуры.",
   "Named sources": "Именованные источники",
-  "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building and revising explicit relations and verified structures in a versioned Atlas.":
-    "Нейросетевой ИИ учится, меняя скрытые числовые веса. У GALO обучаемых весов нет, и обратное распространение ошибки не используется. Он учится иначе: строит и пересматривает явные отношения и проверенные структуры в версионируемом Атласе.",
   "No backpropagation": "Без обратного распространения",
   "No claim of operational gain, partner-controlled validity, or authority over any plant system.":
     "Никаких утверждений об операционном выигрыше, о валидности под контролем партнёра и о власти над какой-либо производственной системой.",
@@ -164,8 +171,6 @@ export const homeNarrativeRu: TranslationDictionary = {
     "В этом вся коммерческая идея. В долгой и регулируемой работе дорого обходится редко неверный ответ — дорого обходится тот, который никто не может восстановить через полгода.",
   "That it reproduces: fresh replays pass, and every published structural count is re-derived on each build.":
     "То, что он воспроизводится: свежие проигрывания проходят, и каждый опубликованный структурный счёт заново выводится при каждой сборке.",
-  "That keeps the state behind a decision readable, replayable, and re-checkable in the one place a change actually touched. The first product is intended for industrial decision assurance around the digital twins and operational systems a company already operates.":
-    "Благодаря этому состояние за решением остаётся читаемым, воспроизводимым и перепроверяемым ровно в том месте, которого изменение действительно коснулось. Первый продукт предназначен для подтверждения промышленных решений вокруг цифровых двойников и операционных систем, которые компания уже эксплуатирует.",
   "The Atlas receives a new explicit version": "Атлас получает новую явную версию",
   "The affected route is replayed against the new record and reaches the same result. The decision keeps its support, and the replay says why.":
     "Затронутый маршрут проигрывается заново против новой записи и приходит к тому же результату. Решение сохраняет своё основание, и воспроизведение говорит почему.",
@@ -238,6 +243,15 @@ export const homeNarrativeRu: TranslationDictionary = {
 };
 
 export const homeNarrativeZh: TranslationDictionary = {
+  "WHAT GALO IS": "GALO 是什么",
+  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.":
+    "今天做出的决策，要经得起明天。一份来源被更正，一条规程被修订，一次读数缺失——问题就变成了：这波及了哪些结论，而其中又有哪些依然站得住。",
+  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.":
+    "GALO 就是为了让这个问题有一个外人也能核验的答案而建的。第一个产品面向工业决策保障，围绕企业已经在运行的那些系统。",
+  "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.":
+    "GALO 是一种根本不同的人工智能。神经网络通过改变隐藏的数值权重来学习；GALO 没有可训练的权重，也不使用反向传播。GALO 的学习方式不同：它构建、核验并局部修订一套显式的知识结构，保存在带版本的图册（Atlas）里。",
+  "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.":
+    "因此每一个决策都保留着看得见的依据：所用的数据、所依赖的关系，以及一串可核验的步骤。当某一个来源或某一个条件发生变化时，GALO 允许只修订与之相关的结构和决策，而不必重新训练整个系统。第一个产品把这一原则带入工业场景——用于那些建立在企业已经在用的数字孪生与操作系统之上的决策。",
   "+ one reuse binding": "+ 一条复用绑定",
   "+ one verified relation frame": "+ 一个已验证的关系框架",
   "A NEW KIND OF LEARNED STATE": "另一类已学到的状态",
@@ -324,8 +338,6 @@ export const homeNarrativeZh: TranslationDictionary = {
   "Named relations between named things, and the procedures written out over them.":
     "有名字的事物之间有名字的关系，以及写在这些关系之上的过程。",
   "Named sources": "具名的来源",
-  "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building and revising explicit relations and verified structures in a versioned Atlas.":
-    "神经网络人工智能靠改变隐藏的数值权重来学习。GALO 没有已学权重，也不使用反向传播。它的学习方式是另一种：在带版本的 Atlas 中构建并修订显式的关系与已验证的结构。",
   "No backpropagation": "没有反向传播",
   "No claim of operational gain, partner-controlled validity, or authority over any plant system.":
     "不主张任何运行增益、由合作方控制的有效性，也不主张对任何生产系统拥有权限。",
@@ -394,8 +406,6 @@ export const homeNarrativeZh: TranslationDictionary = {
     "整个商业构想就在这里。在长期运行且受监管的工作里，昂贵的失败很少是答案错了；昂贵的是半年后没有人能把它重建出来。",
   "That it reproduces: fresh replays pass, and every published structural count is re-derived on each build.":
     "它是可复现的：新的重放能够通过，而且每一个已公布的结构性计数都会在每次构建时重新推导。",
-  "That keeps the state behind a decision readable, replayable, and re-checkable in the one place a change actually touched. The first product is intended for industrial decision assurance around the digital twins and operational systems a company already operates.":
-    "这样一来，一个决策背后的状态就保持可读、可重放，并且可以只在改动真正触及的那一处重新核对。第一款产品面向工业决策保障，围绕一家公司已经在运行的数字孪生与运营系统。",
   "The Atlas receives a new explicit version": "Atlas 得到一个新的显式版本",
   "The affected route is replayed against the new record and reaches the same result. The decision keeps its support, and the replay says why.":
     "受影响的路线对着新记录重放了一遍，得到同样的结果。这个决策保住了它的支撑，而重放说明了为什么。",
@@ -467,6 +477,15 @@ export const homeNarrativeZh: TranslationDictionary = {
 };
 
 export const homeNarrativeAr: TranslationDictionary = {
+  "WHAT GALO IS": "ما هو GALO",
+  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.":
+    "القرار الذي يُتَّخذ اليوم عليه أن يصمد غدًا. يُصحَّح مصدر، وتُراجَع تعليمات، وتغيب قراءة — فيصير السؤال: أيَّ الاستنتاجات يمسّ ذلك، وأيُّها يبقى قائمًا.",
+  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.":
+    "بُني GALO ليكون لهذا السؤال جوابٌ يستطيع من هو خارج المشروع فحصه. والمنتَج الأوّل مُعَدٌّ لضمان القرار الصناعي حول أنظمةٍ تشغّلها الشركة أصلًا.",
+  "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.":
+    "‏GALO نوعٌ من الذكاء الاصطناعيّ مختلفٌ في أصله. تتعلّم الشبكات العصبية بتغيير أوزانٍ عددية خفيّة؛ أمّا GALO فلا أوزان قابلة للتدريب لديه، ولا يستعمل الانتشار العكسيّ. يتعلّم GALO على نحوٍ آخر: يبني بنيةً صريحة للمعرفة، ويتحقّق منها، ويراجعها مراجعةً موضعية، وهي محفوظةٌ في أطلسٍ ذي إصدارات.",
+  "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.":
+    "ولذلك يحتفظ كلُّ قرارٍ بأسسه ظاهرةً: البيانات، والعلاقات، وسلسلةُ خطواتٍ قابلة للفحص. وإذا تغيّر مصدرٌ واحد أو شرطٌ واحد، أتاح GALO مراجعة البنى والقرارات المتّصلة به وحدها، دون إعادة تدريب النظام كلّه. وينقل المنتَج الأوّل هذا المبدأ إلى الحلقة الصناعية — إلى قراراتٍ قائمةٍ على التوائم الرقمية والأنظمة التشغيلية التي تشغّلها الشركة أصلًا.",
   "+ one reuse binding": "+ ربطُ إعادة استعمالٍ واحد",
   "+ one verified relation frame": "+ إطارُ علاقةٍ مُثبَت واحد",
   "A NEW KIND OF LEARNED STATE": "نوعٌ آخر من الحالة المتعلَّمة",
@@ -556,8 +575,6 @@ export const homeNarrativeAr: TranslationDictionary = {
   "Named relations between named things, and the procedures written out over them.":
     "علاقاتٌ مسمّاة بين أشياء مسمّاة، والإجراءات المكتوبة فوقها.",
   "Named sources": "مصادر مسمّاة",
-  "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building and revising explicit relations and verified structures in a versioned Atlas.":
-    "يتعلَّم الذكاءُ الاصطناعي العصبيّ بتغيير أوزانٍ عددية خفيّة. أمّا GALO فلا أوزان متعلَّمة لديه ولا يستعمل الانتشار العكسيّ. إنّه يتعلَّم ببناء علاقاتٍ صريحة وبنًى مُثبَتة داخل Atlas ذي إصدارات، وبمراجعتها.",
   "No backpropagation": "بلا انتشارٍ عكسيّ",
   "No claim of operational gain, partner-controlled validity, or authority over any plant system.":
     "لا ادّعاءَ مكسبٍ تشغيليّ، ولا صلاحيةٍ يتحكّم بها شريك، ولا سلطةٍ على أيّ نظام في المصنع.",
@@ -626,8 +643,6 @@ export const homeNarrativeAr: TranslationDictionary = {
     "هذه هي الفكرة التجارية كلُّها. ففي العمل الطويل الخاضع للتنظيم نادرًا ما تكون الكلفةُ في الجواب الخاطئ؛ بل في الجواب الذي لا يستطيع أحدٌ إعادة بنائه بعد ستّة أشهر.",
   "That it reproduces: fresh replays pass, and every published structural count is re-derived on each build.":
     "أنّه يُعاد إنتاجه: تنجح إعادات التشغيل الحديثة، ويُعاد اشتقاق كلّ عددٍ بنيويّ منشور عند كلّ بناء.",
-  "That keeps the state behind a decision readable, replayable, and re-checkable in the one place a change actually touched. The first product is intended for industrial decision assurance around the digital twins and operational systems a company already operates.":
-    "وبذلك تبقى الحالة وراء القرار مقروءةً وقابلةً لإعادة التشغيل ولإعادة الفحص في الموضع الوحيد الذي مسّه التغيير فعلًا. والمنتج الأوّل مُعَدٌّ لضمان القرار الصناعي حول التوائم الرقمية والأنظمة التشغيلية التي تشغّلها الشركة أصلًا.",
   "The Atlas receives a new explicit version": "يتلقّى Atlas إصدارًا صريحًا جديدًا",
   "The affected route is replayed against the new record and reaches the same result. The decision keeps its support, and the replay says why.":
     "يُعاد تشغيل المسار المتأثّر في مقابل السجلّ الجديد فيبلغ النتيجة نفسها. فيحتفظ القرار بسنده، وتقول إعادةُ التشغيل لماذا.",
