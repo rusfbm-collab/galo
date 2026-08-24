@@ -27,7 +27,7 @@ export const homeNarrativeRu: TranslationDictionary = {
   "A written specification and this page. No deployment, no customer, no pilot.":
     "Написанная спецификация и эта страница. Ни развёртывания, ни клиента, ни пилота.",
   "A written-out route": "Выписанный маршрут",
-  "AI built to keep decisions provable.": "ИИ, который держит решения доказуемыми.",
+  "AI built for provable decisions.": "ИИ для доказуемых решений.",
   Affected: "Затронуто",
   "An end-to-end run where the full architecture, not a counting ranker, is in the measured path.":
     "Сквозной прогон, в измеряемом пути которого стоит вся архитектура, а не счётный ранжировщик.",
@@ -264,7 +264,7 @@ export const homeNarrativeZh: TranslationDictionary = {
   "A written specification and this page. No deployment, no customer, no pilot.":
     "一份写下来的规格说明，以及本页。没有部署，没有客户，没有试点。",
   "A written-out route": "一条写出来的路线",
-  "AI built to keep decisions provable.": "为让决策始终可被证明而打造的人工智能。",
+  "AI built for provable decisions.": "为可证明的决策而打造的人工智能。",
   Affected: "受影响",
   "An end-to-end run where the full architecture, not a counting ranker, is in the measured path.":
     "一次端到端的运行，其被测路径上是完整的架构，而不是一个计数式排序器。",
@@ -493,7 +493,7 @@ export const homeNarrativeAr: TranslationDictionary = {
   "A written specification and this page. No deployment, no customer, no pilot.":
     "مواصفةٌ مكتوبة وهذه الصفحة. لا نشر، ولا عميل، ولا تجربة رائدة.",
   "A written-out route": "مسارٌ مكتوب",
-  "AI built to keep decisions provable.": "ذكاءٌ اصطناعيّ بُني ليُبقي القرارات قابلةً للإثبات.",
+  "AI built for provable decisions.": "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
   Affected: "المتأثِّر",
   "An end-to-end run where the full architecture, not a counting ranker, is in the measured path.":
     "تشغيلٌ من الطرف إلى الطرف تكون فيه البنية الكاملة، لا مُرتِّبٌ عدَّاديّ، في المسار المقيس.",

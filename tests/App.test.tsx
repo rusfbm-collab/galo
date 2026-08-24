@@ -39,7 +39,7 @@ describe("GALO public site", () => {
   it("leads with the category, then the wedge, and keeps the boundary in the hero", () => {
     render(<App />);
     expect(screen.getByRole("heading", { level: 1, name: heroHeadline })).toBeInTheDocument();
-    expect(heroHeadline).toBe("AI built to keep decisions provable.");
+    expect(heroHeadline).toBe("AI built for provable decisions.");
 
     const hero = document.querySelector(".hero");
     expect(hero).toBeInTheDocument();
@@ -67,7 +67,7 @@ describe("GALO public site", () => {
     const page = document.querySelector("main")?.textContent ?? "";
     for (const stale of [
       "A different kind of AI, for decisions that have to stay provable.",
-      "AI built for provable decisions.",
+      "AI built to keep decisions provable.",
       "Provable AI for critical decisions.",
       "Not a neural net as authority.",
       "a weight carries no name",
@@ -1385,10 +1385,10 @@ describe("GALO public site", () => {
   // English left showing through, and Arabic keeps its right-to-left direction.
   it("renders the restructured home page in every locale without English fallback", () => {
     const headlines: Record<string, string> = {
-      "": "AI built to keep decisions provable.",
-      ru: "ИИ, который держит решения доказуемыми.",
-      zh: "为让决策始终可被证明而打造的人工智能。",
-      ar: "ذكاءٌ اصطناعيّ بُني ليُبقي القرارات قابلةً للإثبات.",
+      "": "AI built for provable decisions.",
+      ru: "ИИ для доказуемых решений.",
+      zh: "为可证明的决策而打造的人工智能。",
+      ar: "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
     };
 
     for (const [locale, headline] of Object.entries(headlines)) {
@@ -1438,7 +1438,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "ИИ, который держит решения доказуемыми.",
+        name: "ИИ для доказуемых решений.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -1469,7 +1469,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "ذكاءٌ اصطناعيّ بُني ليُبقي القرارات قابلةً للإثبات.",
+        name: "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

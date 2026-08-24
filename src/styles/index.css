@@ -616,18 +616,14 @@ html[lang="ar"] .claim-table__row {
   text-wrap: balance;
 }
 
-/* The same sentence is about a third wider in Russian and Arabic than it is in
-   English, which pushes it onto a third line at desktop widths. The line count
-   is the contract, not the type size, so those two locales get their own cap —
-   and only where the problem is, because below 861px the single-column hero is
-   wide enough for all four languages at the shared size. */
-@media (min-width: 861px) {
-  html[lang="ru"] .hero h1 {
-    font-size: clamp(1.75rem, 3.7vw, 2.95rem);
-  }
-  html[lang="ar"] .hero h1 {
-    font-size: clamp(1.8rem, 3.9vw, 3rem);
-  }
+/* Russian and Arabic set this sentence in words that are individually wider
+   than English's, so at the widest cap no two-line split fits and the headline
+   spills onto a third. The line count is the contract, not the type size, so
+   the two locales keep the same curve with a lower ceiling — below 1024px the
+   vw term governs and all four languages are back on the shared size. */
+html[lang="ru"] .hero h1,
+html[lang="ar"] .hero h1 {
+  font-size: clamp(1.95rem, 4.55vw, 3.6rem);
 }
 
 .hero__lead {

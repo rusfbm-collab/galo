@@ -26,7 +26,7 @@ export const heroEyebrow = "WEIGHT-FREE AI · INDUSTRIAL DECISION ASSURANCE";
  * "Keep" is the load-bearing word: a decision that was provable on the day is
  * cheap, and one that is still provable after a source moved is the product.
  */
-export const heroHeadline = "AI built to keep decisions provable.";
+export const heroHeadline = "AI built for provable decisions.";
 
 export const heroLead: readonly string[] = [
   "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building and revising explicit relations and verified structures in a versioned Atlas.",
