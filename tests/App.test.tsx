@@ -4,7 +4,21 @@ import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { App } from "../src/app/App";
 import { termSlugs } from "../src/content/termPages";
 import { routePhases } from "../src/content/thinking";
-import { learnedState } from "../src/content/weightFree";
+import { investorBriefing } from "../src/content/plainLanguage";
+import {
+  artefactScopes,
+  changeBoundary,
+  changeCases,
+  heroBoundary,
+  heroEyebrow,
+  heroHeadline,
+  heroLead,
+  heroMarkers,
+  heroResult,
+  learnedGroups,
+  learnedGroupsNote,
+} from "../src/content/homeNarrative";
+
 import {
   getMissingTranslations,
   localizedPath,
@@ -21,56 +35,188 @@ describe("GALO public site", () => {
   beforeEach(() => setPath("/"));
   afterEach(cleanup);
 
+  // HOME-H1-01 — the headline is the one sentence the page is allowed to open with.
   it("leads with the category, then the wedge, and keeps the boundary in the hero", () => {
     render(<App />);
-    expect(
-      screen.getByRole("heading", { level: 1, name: "AI built for provable decisions." }),
-    ).toBeInTheDocument();
-    // The identity comes before any evidence about it.
-    expect(screen.getByText(/Neural AI learns by changing hidden numerical weights/i)).toBeInTheDocument();
-    expect(screen.getByText("No learned weights. No backpropagation.")).toBeInTheDocument();
-    expect(screen.getByText("Working research prototype")).toBeInTheDocument();
-    expect(screen.getByText(/General-purpose architecture, not general intelligence/i)).toBeInTheDocument();
-    expect(screen.getByText(/production autonomy is not authorised/i)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: heroHeadline })).toBeInTheDocument();
+    expect(heroHeadline).toBe("AI built to keep decisions provable.");
+
+    const hero = document.querySelector(".hero");
+    expect(hero).toBeInTheDocument();
+
+    // Eyebrow, lead, result line, markers and boundary — the whole first screen.
+    expect(hero?.textContent).toContain(heroEyebrow);
+    expect(hero?.textContent).toContain(heroResult);
+    expect(hero?.querySelectorAll(".hero__markers li")).toHaveLength(heroMarkers.length);
+    expect(hero?.textContent).toContain(heroBoundary);
+
+    // The lead stays short enough to read in one pass.
+    const leadWords = heroLead.join(" ").trim().split(/\s+/).length;
+    expect(leadWords).toBeLessThanOrEqual(90);
+
     expect(screen.getByRole("link", { name: /Request a bounded industrial evaluation/i })).toHaveAttribute(
       "href",
       "/industry",
     );
+    expect(screen.getByRole("link", { name: "See how GALO works" })).toHaveAttribute("href", "#learned-state");
   });
 
-  it("puts the weight-free block above every number that argues for it", () => {
+  // HOME-STALE-CLAIM-02 — copy the restructure retired must not survive anywhere on the page.
+  it("carries no sentence the restructure retired", () => {
     render(<App />);
-    const section = document.querySelector("#weight-free");
-    expect(section).toBeInTheDocument();
+    const page = document.querySelector("main")?.textContent ?? "";
+    for (const stale of [
+      "A different kind of AI, for decisions that have to stay provable.",
+      "AI built for provable decisions.",
+      "Provable AI for critical decisions.",
+      "Not a neural net as authority.",
+      "a weight carries no name",
+      "probabilistic answer",
+    ]) {
+      expect(page).not.toContain(stale);
+    }
+    // The old headline-decomposition block went with the old headline.
+    expect(document.querySelectorAll(".headline-claim")).toHaveLength(0);
+    // And the seven-phase route is no longer the first thing a visitor meets.
+    expect(document.querySelector(".hero .hero-route")).toBeNull();
+    expect(document.querySelector("#under-the-hood .hero-route")).toBeInTheDocument();
+  });
 
-    // Two columns of four steps, differing on exactly one row in each.
-    const figure = section?.querySelector(".galo-figure--weight-free");
-    expect(figure?.querySelectorAll(".galo-wf__step")).toHaveLength(8);
-    expect(figure?.querySelectorAll(".galo-wf__step.is-marked")).toHaveLength(2);
+  // HOME-WEIGHT-FREE-03 — the identity is stated before any number that argues for it.
+  it("puts the weight-free identity above every number that argues for it", () => {
+    render(<App />);
 
-    // The alternative to weights is listed in full, not in outline.
-    expect(section?.querySelectorAll(".weight-free__state dl > div")).toHaveLength(learnedState.length);
+    // Two lanes of three stages, with exactly one pivot stage marked in each.
+    const figure = document.querySelector(".hero .wf-hero");
+    expect(figure?.querySelectorAll(".wf-hero__stage")).toHaveLength(6);
+    expect(figure?.querySelectorAll(".wf-hero__stage.is-pivot")).toHaveLength(2);
 
-    // Both concessions travel with the claim.
-    expect(section?.textContent).toContain("run by the project on its own code");
-    expect(section?.textContent).toContain("It is not part of GALO");
+    // The alternative to weights is listed as four stable groups, plus the invariant.
+    const learned = document.querySelector("#learned-state");
+    expect(learned?.querySelectorAll(".learned-groups article")).toHaveLength(learnedGroups.length);
+    expect(learnedGroups).toHaveLength(4);
+    expect(learned?.textContent).toContain(learnedGroupsNote);
 
-    // And it stands ahead of the sections that carry the evidence.
+    // Both concessions travel with the claim, in the section that makes it.
+    const cycle = document.querySelector("#learning-cycle");
+    expect(cycle?.textContent).toContain("run by the project on its own code");
+    expect(cycle?.textContent).toContain("It is not part of GALO");
+
+    // And the identity sections stand ahead of the ones that carry the evidence.
     const order = Array.from(document.querySelectorAll("section[id]")).map((element) => element.id);
-    expect(order.indexOf("weight-free")).toBeLessThan(order.indexOf("evidence"));
-    expect(order.indexOf("weight-free")).toBeLessThan(order.indexOf("receipt"));
-    expect(order.indexOf("weight-free")).toBeLessThan(order.indexOf("two-towers"));
+    for (const identity of ["learned-state", "when-change", "provable", "learning-cycle", "scope"]) {
+      expect(order.indexOf(identity)).toBeGreaterThan(-1);
+      expect(order.indexOf(identity)).toBeLessThan(order.indexOf("evidence"));
+      expect(order.indexOf(identity)).toBeLessThan(order.indexOf("two-towers"));
+    }
+    expect(order.indexOf("learned-state")).toBeLessThan(order.indexOf("receipt"));
   });
 
-  it("draws one episode of reasoning in the hero, with both lawful exits on it", () => {
+  // HOME-SCOPE-04 — three artefacts, kept apart, each answering the same four questions.
+  it("separates the three artefacts instead of saying “the system”", () => {
     render(<App />);
-    const route = document.querySelector(".hero-route");
+    const scope = document.querySelector("#scope");
+    expect(scope?.querySelectorAll(".scopes__card")).toHaveLength(3);
+    expect(artefactScopes.map((entry) => entry.tag)).toEqual([
+      "PUBLIC BOUNDED VERIFIER",
+      "SEALED RESEARCH LINE",
+      "TARGET INDUSTRIAL PRODUCT",
+    ]);
+    for (const card of Array.from(scope?.querySelectorAll(".scopes__card") ?? [])) {
+      expect(card.querySelectorAll("dl > div")).toHaveLength(4);
+      expect(Array.from(card.querySelectorAll("dt")).map((term) => term.textContent)).toEqual([
+        "What exists",
+        "What was measured",
+        "What does not follow",
+        "The next gate",
+      ]);
+    }
+
+    // Every number that argues for GALO belongs to the evidence section, not the identity ones.
+    for (const id of ["learned-state", "when-change", "provable", "learning-cycle", "scope"]) {
+      const text = document.querySelector(`#${id}`)?.textContent ?? "";
+      for (const figure of ["1,204", "4,802", "880", "440"]) {
+        expect(text).not.toContain(figure);
+      }
+    }
+    expect(document.querySelector("#evidence")?.textContent).toContain("1,204");
+  });
+
+  // HOME-DIAGRAM-A11Y-05 — every new figure is reachable without sight or a mouse.
+  it("gives every home figure a name, a text equivalent and keyboard reach", () => {
+    render(<App />);
+    for (const selector of [".wf-hero", ".change-impact", ".provable", ".cycle", ".scopes"]) {
+      const figure = document.querySelector(selector);
+      expect(figure, selector).toBeInTheDocument();
+      expect(figure?.tagName).toBe("FIGURE");
+      expect(figure?.querySelector("figcaption"), selector).toBeInTheDocument();
+
+      const labelledBy = figure?.getAttribute("aria-labelledby");
+      const describedBy = figure?.getAttribute("aria-describedby");
+      expect(labelledBy, selector).toBeTruthy();
+      expect(describedBy, selector).toBeTruthy();
+      expect(document.getElementById(labelledBy as string), selector).toBeInTheDocument();
+
+      const equivalent = document.getElementById(describedBy as string);
+      expect(equivalent, selector).toBeInTheDocument();
+      expect(equivalent?.className).toContain("sr-only");
+      expect((equivalent?.textContent ?? "").length, selector).toBeGreaterThan(40);
+    }
+
+    // The one interactive figure is a real tablist, not hover-only decoration.
+    const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>(".change-impact [role='tab']"));
+    expect(tabs).toHaveLength(changeCases.length);
+    expect(tabs.filter((tab) => tab.getAttribute("aria-selected") === "true")).toHaveLength(1);
+    for (const tab of tabs) {
+      expect(tab.tagName).toBe("BUTTON");
+      expect(tab.getAttribute("aria-controls")).toBeTruthy();
+    }
+  });
+
+  it("moves the selected change with the arrow keys", () => {
+    render(<App />);
+    const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>(".change-impact [role='tab']"));
+    const [first, second] = tabs;
+    expect(first).toBeDefined();
+    expect(second).toBeDefined();
+    expect(first!.getAttribute("aria-selected")).toBe("true");
+
+    fireEvent.keyDown(first!, { key: "ArrowRight" });
+    expect(second!.getAttribute("aria-selected")).toBe("true");
+
+    fireEvent.keyDown(second!, { key: "ArrowLeft" });
+    expect(first!.getAttribute("aria-selected")).toBe("true");
+  });
+
+  // HOME-CLAIM-09 — the outcomes a change can have are named, and none of them is a score.
+  it("keeps the three change outcomes named rather than scored", () => {
+    render(<App />);
+    expect(changeCases.map((entry) => entry.outcome)).toEqual(["STANDS", "REVISE", "NEEDS EVIDENCE"]);
+    const impact = document.querySelector(".change-impact");
+    expect(impact?.querySelector(".change-impact__outcome")?.className).toMatch(/is-(stands|revise|needs-evidence)/);
+    // The illustrative disclaimer travels with the target workflow it draws.
+    expect(document.querySelector("#when-change")?.textContent).toContain(changeBoundary);
+  });
+
+  it("draws one episode of reasoning under the hood, with both lawful exits on it", () => {
+    render(<App />);
+    const route = document.querySelector("#under-the-hood .hero-route");
     expect(route).toBeInTheDocument();
 
-    // One chip per phase, in the order the thinking page renders them.
+    // One chip per phase, in the order the thinking page renders them, and the
+    // plain name leads while the technical code follows it on the same row.
     const phases = route?.querySelectorAll(".hero-route__phase") ?? [];
     expect(phases).toHaveLength(routePhases.length);
     expect(Array.from(phases).map((phase) => phase.querySelector(".hero-route__name")?.textContent)).toEqual([
+      "Open possibilities",
+      "Keep alternatives",
+      "Test what separates them",
+      "Assemble one lawful answer",
+      "Take the outcome from outside",
+      "Record what is reusable",
+      "Seal the episode",
+    ]);
+    expect(Array.from(phases).map((phase) => phase.querySelector(".hero-route__gloss")?.textContent)).toEqual([
       "SEARCH",
       "HYPOTHESES",
       "PROBING",
@@ -80,25 +226,19 @@ describe("GALO public site", () => {
       "COMPLETE",
     ]);
 
-    // Both exits, and the rail that makes either reachable from any phase.
+    // Both exits, each naming the outcome above its terminal code.
     const exits = route?.querySelectorAll(".hero-route__exit") ?? [];
-    expect(Array.from(exits).map((exit) => exit.querySelector("text")?.textContent)).toEqual(["BOUNDARY", "REJECT"]);
+    expect(Array.from(exits).map((exit) => exit.querySelector(".hero-route__exit-plain")?.textContent)).toEqual([
+      "NEEDS MORE EVIDENCE",
+      "INVALID RUN",
+    ]);
+    expect(Array.from(exits).map((exit) => exit.querySelector(".hero-route__exit-code")?.textContent)).toEqual([
+      "BOUNDARY",
+      "REJECT",
+    ]);
     expect(route?.querySelectorAll(".hero-route__exit.is-reject")).toHaveLength(1);
     // One stub per phase, plus the rail itself and one drop into each exit.
     expect(route?.querySelectorAll(".hero-route__rail")).toHaveLength(routePhases.length + 3);
-  });
-
-  it("takes the headline apart, with the limit in the same card as the claim", () => {
-    render(<App />);
-    const cards = document.querySelectorAll(".headline-claim");
-    expect(cards).toHaveLength(3);
-    cards.forEach((card) => {
-      expect(card.querySelector(".headline-claim__mechanism")?.textContent ?? "").not.toHaveLength(0);
-      expect(card.querySelector(".headline-claim__limit")?.textContent ?? "").not.toHaveLength(0);
-      expect(card.querySelector("a")).toHaveAttribute("href");
-    });
-    expect(screen.getByText(/The list of permitted actions is closed before the run/i)).toBeInTheDocument();
-    expect(screen.getByText(/fresh FULL was not run/i)).toBeInTheDocument();
   });
 
   it("shows exact evidence numbers with scope captions", () => {
@@ -115,7 +255,9 @@ describe("GALO public site", () => {
     expect(screen.getByText("CURRENT VERIFIED SLICE")).toBeInTheDocument();
     expect(screen.getByText(/TARGET ARCHITECTURE · IN DEVELOPMENT/i)).toBeInTheDocument();
     expect(
-      screen.getByText(/neither observation-conditioned structural reasoning nor persistent learning is implemented there/i),
+      screen.getByText(
+        /neither observation-conditioned structural reasoning nor persistent learning is implemented there/i,
+      ),
     ).toBeInTheDocument();
   });
 
@@ -339,8 +481,24 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", { name: "If you read one section on this site, read this one." }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "What is actually being built?" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "What would change your mind?" })).toBeInTheDocument();
+    expect(investorBriefing.map((item) => item.question)).toEqual([
+      "What is GALO?",
+      "What does it learn?",
+      "Why does that matter?",
+      "What is the first product?",
+      "What works today?",
+      "What is not claimed?",
+    ]);
+    for (const item of investorBriefing) {
+      expect(screen.getByRole("heading", { name: item.question })).toBeInTheDocument();
+    }
+    // The briefing no longer denies the learning the rest of the page describes.
+    const briefing = document.querySelector("#plain-language")?.textContent ?? "";
+    expect(briefing).not.toMatch(/nothing is learned/i);
+    // And it names which of the three artefacts each answer is about.
+    expect(briefing).toContain("bounded public verifier");
+    expect(briefing).toContain("sealed line");
+    expect(briefing).toContain("It is intended, not deployed.");
     expect(screen.getByText(/a finite table of results for two inputs — a Cayley table/i)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /See the table everything is built on/i })).toHaveAttribute(
       "href",
@@ -415,9 +573,7 @@ describe("GALO public site", () => {
     expect(results).toHaveLength(6);
     expect(document.querySelectorAll(".learning-results article.is-negative")).toHaveLength(1);
 
-    const statuses = Array.from(document.querySelectorAll(".learning-results__status")).map(
-      (node) => node.textContent,
-    );
+    const statuses = Array.from(document.querySelectorAll(".learning-results__status")).map((node) => node.textContent);
     expect(statuses).toContain("TYPED REFUSAL, SEALED");
     expect(statuses.filter((status) => status === "SUPPORTED, SEALED")).toHaveLength(4);
 
@@ -721,9 +877,7 @@ describe("GALO public site", () => {
     expect(releaseCounts).toHaveTextContent("The complete committed descriptor universe in the current release.");
     expect(releaseCounts).not.toHaveTextContent("556 + 6 × 108");
     expect(screen.getByText("TARGET ARCHITECTURE · NOT CURRENT V4")).toBeInTheDocument();
-    expect(
-      screen.getByText(/must not be presented as a current multi-step runtime capability/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/must not be presented as a current multi-step runtime capability/i)).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/stored release evidence and was not freshly replayed/i)).toBeInTheDocument();
@@ -880,9 +1034,7 @@ describe("GALO public site", () => {
 
     expect(document.querySelectorAll(".landscape-card")).toHaveLength(13);
     expect(screen.getByRole("heading", { level: 3, name: "Proof assistants" })).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { level: 3, name: "Global common-sense knowledge bases" }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 3, name: "Global common-sense knowledge bases" })).toBeInTheDocument();
     expect(screen.getByText(/Cyc proved there is demand for explicit reasoning/i)).toBeInTheDocument();
     expect(screen.getByText("Lean and mathlib, Rocq (formerly Coq), Isabelle/HOL")).toBeInTheDocument();
     expect(screen.getByText(/Stronger verification than GALO claims anywhere/i)).toBeInTheDocument();
@@ -953,9 +1105,15 @@ describe("GALO public site", () => {
 
   it("carries the plain-words route into every locale", () => {
     for (const [path, heading] of [
-      ["/ru/simple", "Иногда после решения важнее не сам ответ, а возможность позже спокойно показать: почему тогда это вообще считалось допустимым."],
+      [
+        "/ru/simple",
+        "Иногда после решения важнее не сам ответ, а возможность позже спокойно показать: почему тогда это вообще считалось допустимым.",
+      ],
       ["/zh/simple", "有时候，一个决定之后要紧的不是答案本身，而是日后能否从容地说清：当时凭什么算是被允许的。"],
-      ["/ar/simple", "أحيانًا لا يكون المهم بعد القرار هو الجواب نفسه، بل أن تستطيع لاحقًا أن تبيّن بهدوء لماذا عُدَّ ذلك مسموحًا به حينئذ."],
+      [
+        "/ar/simple",
+        "أحيانًا لا يكون المهم بعد القرار هو الجواب نفسه، بل أن تستطيع لاحقًا أن تبيّن بهدوء لماذا عُدَّ ذلك مسموحًا به حينئذ.",
+      ],
     ] as const) {
       setPath(path);
       const view = render(<App />);
@@ -989,9 +1147,7 @@ describe("GALO public site", () => {
     expect(document.querySelectorAll(".risk-register > article")).toHaveLength(6);
     // every risk says where it stands today, and the thesis has a deadline
     expect(document.querySelectorAll(".risk-register__status")).toHaveLength(6);
-    expect(document.querySelector(".risk-register__deadline")?.textContent).toMatch(
-      /nine to twelve months/i,
-    );
+    expect(document.querySelector(".risk-register__deadline")?.textContent).toMatch(/nine to twelve months/i);
     expect(document.querySelectorAll(".funded-plan > li")).toHaveLength(5);
     expect(document.querySelectorAll(".wrong-list li")).toHaveLength(3);
     expect(document.querySelectorAll(".diligence-steps > li")).toHaveLength(6);
@@ -1110,7 +1266,9 @@ describe("GALO public site", () => {
     expect(screen.getByRole("table", { name: /accepted observation/i })).toBeInTheDocument();
     expect(screen.getByText("GALO thinks the way a person thinks.")).toBeInTheDocument();
     // The attribution gap has to be on the page, not only in the archive.
-    expect(screen.getByText("The route drawn on this page is what the published results measured.")).toBeInTheDocument();
+    expect(
+      screen.getByText("The route drawn on this page is what the published results measured."),
+    ).toBeInTheDocument();
     expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/thinking");
 
     for (const link of Array.from(document.querySelectorAll<HTMLAnchorElement>('.math-contents a[href^="#"]'))) {
@@ -1223,6 +1381,55 @@ describe("GALO public site", () => {
     expect(screen.getByText(/outside the current site boundary/i)).toBeInTheDocument();
   });
 
+  // HOME-I18N-08 — the restructured home page renders in four languages with no
+  // English left showing through, and Arabic keeps its right-to-left direction.
+  it("renders the restructured home page in every locale without English fallback", () => {
+    const headlines: Record<string, string> = {
+      "": "AI built to keep decisions provable.",
+      ru: "ИИ, который держит решения доказуемыми.",
+      zh: "为让决策始终可被证明而打造的人工智能。",
+      ar: "ذكاءٌ اصطناعيّ بُني ليُبقي القرارات قابلةً للإثبات.",
+    };
+
+    for (const [locale, headline] of Object.entries(headlines)) {
+      setPath(locale ? `/${locale}` : "/");
+      render(<App />);
+
+      expect(screen.getByRole("heading", { level: 1, name: headline })).toBeInTheDocument();
+      expect(document.documentElement).toHaveAttribute("dir", locale === "ar" ? "rtl" : "ltr");
+
+      // Every new section is present in every language.
+      for (const id of ["learned-state", "when-change", "provable", "learning-cycle", "scope", "not-this"]) {
+        expect(document.querySelector(`#${id}`), `${locale || "en"} #${id}`).toBeInTheDocument();
+      }
+
+      // And no English sentence from the source copy leaks into a translated page.
+      if (locale) {
+        const hero = document.querySelector(".hero")?.textContent ?? "";
+        expect(hero, locale).not.toContain(heroHeadline);
+        expect(hero, locale).not.toContain(heroResult);
+      }
+
+      cleanup();
+    }
+  });
+
+  // HOME-CLAIM-09 — the first screen carries the boundary and nothing that would
+  // read as a deployment, a customer or an outside model doing the work.
+  it("keeps the claim firewall on the first screen", () => {
+    render(<App />);
+    const hero = document.querySelector(".hero")?.textContent ?? "";
+
+    expect(hero).toContain("Research prototype.");
+    for (const forbidden of ["GPT", "LLM", "language model", "customer", "revenue", "letter of intent", "deployed"]) {
+      expect(hero.toLowerCase(), forbidden).not.toContain(forbidden.toLowerCase());
+    }
+
+    // The external model is discussed, but below the fold and with its rule attached.
+    const cycle = document.querySelector("#learning-cycle")?.textContent ?? "";
+    expect(cycle).toContain("It is not part of GALO");
+  });
+
   it("renders a complete Russian home route with localized navigation and contact", () => {
     setPath("/ru");
     render(<App />);
@@ -1231,7 +1438,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "ИИ для доказуемых решений.",
+        name: "ИИ, который держит решения доказуемыми.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByRole("navigation", { name: "Основная навигация" })).toBeInTheDocument();
@@ -1262,7 +1469,7 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
+        name: "ذكاءٌ اصطناعيّ بُني ليُبقي القرارات قابلةً للإثبات.",
       }),
     ).toBeInTheDocument();
     expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');

@@ -34,6 +34,7 @@ import { engineTourRu } from "./engineTour";
 import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 import { weightFreeRu } from "./weightFree";
+import { homeNarrativeRu } from "./homeNarrative";
 
 export const ru: TranslationDictionary = {
   ...mathRu,
@@ -71,6 +72,7 @@ export const ru: TranslationDictionary = {
   ...twoTowersRu,
   ...engineTourRu,
   ...weightFreeRu,
+  ...homeNarrativeRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",
@@ -207,7 +209,8 @@ export const ru: TranslationDictionary = {
     "Проектное поведение. Внешняя валидация остаётся целевым этапом.",
 
   "RECORDED RECEIPT": "ЗАФИКСИРОВАННЫЙ ПРОТОКОЛ",
-  "Inspect the execution state, not a staged answer.": "Смотрите на состояние исполнения, а не на отрепетированный ответ.",
+  "Inspect the execution state, not a staged answer.":
+    "Смотрите на состояние исполнения, а не на отрепетированный ответ.",
   "This deterministic walkthrough uses sanitized identifiers from the current direct selfcheck. It does not generate a semantic answer and it does not adapt to the input observation.":
     "Этот детерминированный разбор использует очищенные идентификаторы из текущей прямой самопроверки. Он не формирует семантический ответ и не адаптируется к входному наблюдению.",
   "STATIC JSON · NO BACKEND": "STATIC JSON · БЕЗ BACKEND",

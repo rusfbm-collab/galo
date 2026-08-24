@@ -22,6 +22,8 @@ export type RoutePhase = {
   number: string;
   /** The phase's own name, kept untranslated and left-to-right in every locale. */
   name: string;
+  /** What the phase does, in words a first-time reader can follow without the code. */
+  publicName: string;
   title: string;
   question: string;
   happens: string;
@@ -41,6 +43,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "01",
     name: "SEARCH",
+    publicName: "Open possibilities",
     title: "The candidate space is opened",
     question: "What could lawfully happen here at all?",
     happens:
@@ -53,6 +56,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "02",
     name: "HYPOTHESES",
+    publicName: "Keep alternatives",
     title: "Executable local maps are built",
     question: "Which readings of this situation are lawful?",
     happens:
@@ -65,6 +69,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "03",
     name: "PROBING",
+    publicName: "Test what separates them",
     title: "One distinguishing probe is taken",
     question: "What would tell these readings apart?",
     happens:
@@ -77,6 +82,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "04",
     name: "COMPOSITION",
+    publicName: "Assemble one lawful answer",
     title: "The surviving maps are composed",
     question: "Does one lawful whole come out of what survived?",
     happens:
@@ -89,6 +95,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "05",
     name: "REVEAL",
+    publicName: "Take the outcome from outside",
     title: "The outcome is disclosed from outside",
     question: "What actually happened, according to somebody other than me?",
     happens:
@@ -101,6 +108,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "06",
     name: "LEARNING",
+    publicName: "Record what is reusable",
     title: "Durable state is updated, and only durable state",
     question: "What may I keep from this, and what may I never keep?",
     happens:
@@ -113,6 +121,7 @@ export const routePhases: readonly RoutePhase[] = [
   {
     number: "07",
     name: "COMPLETE",
+    publicName: "Seal the episode",
     title: "The episode is sealed",
     question: "What can somebody else replay from this?",
     happens:
@@ -126,6 +135,8 @@ export const routePhases: readonly RoutePhase[] = [
 
 export type LawfulExit = {
   terminal: "BOUNDARY" | "REJECT";
+  /** The same outcome named for a reader who has never seen the terminal code. */
+  plain: string;
   title: string;
   meaning: string;
   detail: string;
@@ -139,6 +150,7 @@ export type LawfulExit = {
 export const lawfulExits: readonly LawfulExit[] = [
   {
     terminal: "BOUNDARY",
+    plain: "NEEDS MORE EVIDENCE",
     title: "The route ran lawfully and could not settle it",
     meaning: "Reachable from any phase, and a legitimate way for an episode to end.",
     detail:
@@ -146,6 +158,7 @@ export const lawfulExits: readonly LawfulExit[] = [
   },
   {
     terminal: "REJECT",
+    plain: "INVALID RUN",
     title: "The run was not lawful, and is not repaired",
     meaning: "A broken invariant, refused by name rather than corrected in flight.",
     detail:
@@ -235,7 +248,8 @@ export const refusalGates: readonly RefusalGate[] = [
     code: "G5",
     gate: "An invariant was broken",
     terminal: "REJECT",
-    refusesWhen: "A probe set or its price was changed under the policy, a stale snapshot was submitted, or an undeclared phase was requested.",
+    refusesWhen:
+      "A probe set or its price was changed under the policy, a stale snapshot was submitted, or an undeclared phase was requested.",
     instead:
       "The episode is rejected rather than repaired. A rejection says the run was not lawful at all, which is a different statement from a boundary and is kept separate in the record.",
   },
@@ -398,8 +412,9 @@ export const thinkingTranslationKeys = [
       phase.detail,
       phase.stopsWhen,
       phase.heroGloss,
+      phase.publicName,
     ]),
-    ...lawfulExits.flatMap((exit) => [exit.title, exit.meaning, exit.detail]),
+    ...lawfulExits.flatMap((exit) => [exit.title, exit.meaning, exit.detail, exit.plain]),
     ...routeProperties.flatMap((entry) => [entry.title, entry.text]),
     ...refusalGates.flatMap((gate) => [gate.gate, gate.refusesWhen, gate.instead]),
     ...memoryRegisters.flatMap((entry) => [entry.register, entry.holds, entry.detail]),

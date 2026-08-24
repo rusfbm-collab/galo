@@ -1,22 +1,22 @@
 import { lawfulExits, routePhases } from "../../content/thinking";
 import { useI18n } from "../../i18n/I18nContext";
 
-const WIDTH = 360;
+const WIDTH = 400;
 const HEIGHT = 344;
 
 const CHIP_X = 14;
-const CHIP_WIDTH = 262;
+const CHIP_WIDTH = 300;
 const CHIP_HEIGHT = 28;
 const ROW_STEP = 40;
 const ROW_TOP = 6;
 
 /** The rail the two exits hang off, in the left gutter, collecting every phase. */
-const RAIL_X = 296;
+const RAIL_X = 334;
 const SPINE_Y = 292;
-const EXIT_Y = 306;
-const EXIT_HEIGHT = 28;
-const EXIT_WIDTH = 158;
-const EXIT_X = [14, 182];
+const EXIT_Y = 302;
+const EXIT_HEIGHT = 34;
+const EXIT_WIDTH = 178;
+const EXIT_X = [14, 208];
 
 const rowY = (index: number) => ROW_TOP + index * ROW_STEP;
 
@@ -43,7 +43,7 @@ export function HeroReasoningRoute() {
       <title id="hero-route-title">{t("One episode of GALO reasoning, drawn from opening to seal")}</title>
       <desc id="hero-route-desc">
         {t(
-          "Seven phases stacked top to bottom, from opening the candidate space to sealing the episode, each joined to the next by an arrow. A dashed rail runs down the right of all seven and ends in two boxes marked BOUNDARY and REJECT, so either exit is reachable from any phase.",
+          "Seven phases stacked top to bottom, from opening the possibilities to sealing the episode, each joined to the next by an arrow and carrying its technical code beside its plain name. A dashed rail runs down the right of all seven and ends in two boxes, one for a lawful run that needs more evidence and one for an invalid run, so either exit is reachable from any phase.",
         )}
       </desc>
 
@@ -96,11 +96,17 @@ export function HeroReasoningRoute() {
         return (
           <g key={phase.number} className="hero-route__phase">
             <rect x={CHIP_X} y={y} width={CHIP_WIDTH} height={CHIP_HEIGHT} rx="9" />
-            <text className="hero-route__name" x={CHIP_X + 12} y={y + 18} direction="ltr">
-              {phase.name}
+            <text className="hero-route__name" x={CHIP_X + 12} y={y + 18}>
+              {t(phase.publicName)}
             </text>
-            <text className="hero-route__gloss" x={CHIP_X + CHIP_WIDTH - 12} y={y + 18} textAnchor="end">
-              {t(phase.heroGloss)}
+            <text
+              className="hero-route__gloss"
+              x={CHIP_X + CHIP_WIDTH - 12}
+              y={y + 18}
+              textAnchor="end"
+              direction="ltr"
+            >
+              {phase.name}
             </text>
           </g>
         );
@@ -109,7 +115,21 @@ export function HeroReasoningRoute() {
       {lawfulExits.map((exit, index) => (
         <g key={exit.terminal} className={`hero-route__exit${index === 1 ? " is-reject" : ""}`}>
           <rect x={EXIT_X[index]} y={EXIT_Y} width={EXIT_WIDTH} height={EXIT_HEIGHT} rx="8" />
-          <text x={EXIT_X[index]! + EXIT_WIDTH / 2} y={EXIT_Y + 18} textAnchor="middle" direction="ltr">
+          <text
+            className="hero-route__exit-plain"
+            x={EXIT_X[index]! + EXIT_WIDTH / 2}
+            y={EXIT_Y + 15}
+            textAnchor="middle"
+          >
+            {t(exit.plain)}
+          </text>
+          <text
+            className="hero-route__exit-code"
+            x={EXIT_X[index]! + EXIT_WIDTH / 2}
+            y={EXIT_Y + 27}
+            textAnchor="middle"
+            direction="ltr"
+          >
             {exit.terminal}
           </text>
         </g>

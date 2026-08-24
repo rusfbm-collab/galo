@@ -451,10 +451,6 @@ html[lang="ru"] .eyebrow {
   letter-spacing: 0.11em;
 }
 
-html[lang="ru"] .hero h1 {
-  font-size: clamp(3rem, 4vw, 5.1rem);
-}
-
 html[lang="ru"] .page-hero h1 {
   font-size: clamp(3.2rem, 5.2vw, 6.5rem);
 }
@@ -611,11 +607,27 @@ html[lang="ar"] .claim-table__row {
 .hero h1 {
   max-width: 740px;
   margin: 0;
-  font-size: clamp(3rem, 5.4vw, 5.45rem);
+  /* Capped so the headline holds two lines at desktop widths in all four
+     languages; a layout check in the sweep script fails if it does not. */
+  font-size: clamp(1.95rem, 4.55vw, 4rem);
   font-weight: 680;
   line-height: 0.98;
   letter-spacing: -0.065em;
   text-wrap: balance;
+}
+
+/* The same sentence is about a third wider in Russian and Arabic than it is in
+   English, which pushes it onto a third line at desktop widths. The line count
+   is the contract, not the type size, so those two locales get their own cap —
+   and only where the problem is, because below 861px the single-column hero is
+   wide enough for all four languages at the shared size. */
+@media (min-width: 861px) {
+  html[lang="ru"] .hero h1 {
+    font-size: clamp(1.75rem, 3.7vw, 2.95rem);
+  }
+  html[lang="ar"] .hero h1 {
+    font-size: clamp(1.8rem, 3.9vw, 3rem);
+  }
 }
 
 .hero__lead {
@@ -631,46 +643,36 @@ html[lang="ar"] .claim-table__row {
   max-width: 660px;
   margin: 26px 0 0;
   color: var(--white);
-  font-size: clamp(1.12rem, 1.7vw, 1.5rem);
+  font-size: clamp(1.06rem, 1.55vw, 1.36rem);
   font-weight: 640;
-  line-height: 1.35;
-  letter-spacing: -0.015em;
+  line-height: 1.38;
+  letter-spacing: -0.012em;
 }
 
-/* Four lines under the lead: what kind of object this is. */
-.hero__diff {
+/* Four markers, read at a glance rather than parsed. Two columns so each one
+   stays on a single line in every language. */
+.hero__markers {
   display: grid;
-  gap: 7px;
-  max-width: 640px;
+  gap: 9px 26px;
+  max-width: 620px;
   margin: 24px 0 0;
   padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   list-style: none;
 }
 
-.hero__diff li {
-  position: relative;
-  padding-inline-start: 20px;
-  color: #d3e2ec;
-  font-size: clamp(0.9rem, 1.1vw, 1rem);
-  line-height: 1.5;
+.hero__markers li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #d8e6ef;
+  font-size: clamp(0.88rem, 1.05vw, 0.98rem);
+  font-weight: 600;
 }
 
-.hero__diff li::before {
-  position: absolute;
-  inset-inline-start: 0;
-  top: 0.62em;
-  width: 9px;
-  height: 1.5px;
-  background: var(--cyan);
-  content: "";
-}
-
-.hero__diff li:first-child {
-  margin-bottom: 5px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  color: #eaf4f9;
-  font-weight: 640;
+.hero__markers svg {
+  flex: none;
+  color: var(--cyan);
 }
 
 .hero__status {
@@ -716,7 +718,6 @@ html[lang="ar"] .claim-table__row {
 
 .hero-visual {
   position: relative;
-  min-height: 512px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: 28px;
@@ -772,17 +773,20 @@ html[lang="ar"] .claim-table__row {
 }
 
 .hero-route__name {
-  fill: #7fe3d5;
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  fill: #e7f2f8;
+  font-size: 0.6rem;
+  font-weight: 600;
 }
 
+/* The technical code is kept, but it is now the secondary label: a reader who
+   has never met SEARCH or COMPOSITION reads the plain name first, and a reader
+   who works with the engine still finds the code on the same row. */
 .hero-route__gloss {
-  fill: #9fb6c4;
-  font-size: 0.5rem;
-  letter-spacing: 0.01em;
+  fill: #7fe3d5;
+  font-family: var(--font-mono);
+  font-size: 0.46rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
 .hero-route__link {
@@ -805,10 +809,16 @@ html[lang="ar"] .claim-table__row {
   stroke-width: 1;
 }
 
-.hero-route__exit text {
+.hero-route__exit-plain {
   fill: #7fe3d5;
+  font-size: 0.56rem;
+  font-weight: 700;
+}
+
+.hero-route__exit-code {
+  fill: rgba(127, 227, 213, 0.66);
   font-family: var(--font-mono);
-  font-size: 0.6rem;
+  font-size: 0.44rem;
   font-weight: 700;
   letter-spacing: 0.09em;
 }
@@ -818,13 +828,17 @@ html[lang="ar"] .claim-table__row {
   stroke: rgba(240, 148, 153, 0.6);
 }
 
-.hero-route__exit.is-reject text {
+.hero-route__exit.is-reject .hero-route__exit-plain {
   fill: #f0a9ad;
 }
 
-/* Below this width the SVG scales the gloss under about 8px, which is smaller
-   than anything else on the page. The phase names carry the shape on their own;
-   the caption underneath carries the rest. */
+.hero-route__exit.is-reject .hero-route__exit-code {
+  fill: rgba(240, 169, 173, 0.66);
+}
+
+/* Below this width the SVG scales the code under about 8px, which is smaller
+   than anything else on the page. The plain phase names carry the shape on their
+   own; the caption underneath carries the rest. */
 @media (max-width: 560px) {
   .hero-route__gloss {
     display: none;
@@ -7097,7 +7111,7 @@ html[dir="rtl"] .theory-law-card__symbol {
     max-width: 760px;
   }
   .hero h1 {
-    font-size: clamp(3.2rem, 11vw, 5.4rem);
+    font-size: clamp(2.5rem, 5.6vw, 3.1rem);
   }
   .hero-visual {
     width: min(100%, 620px);
@@ -7321,7 +7335,7 @@ html[dir="rtl"] .theory-law-card__symbol {
     padding-block: 62px 48px;
   }
   .hero h1 {
-    font-size: clamp(2.85rem, 14vw, 4.5rem);
+    font-size: clamp(1.8rem, 7.2vw, 2.5rem);
   }
   .hero__lead {
     margin-top: 24px;
@@ -7906,7 +7920,6 @@ caption bdi {
   overflow: visible;
 }
 
-
 .galo-figure__equation {
   margin: 20px 0 0;
   border-radius: 14px;
@@ -8469,11 +8482,6 @@ caption bdi {
 .galo-figure__stage-notes bdi {
   justify-self: start;
 }
-
-
-
-
-
 
 .galo-figure__total {
   align-items: baseline;
@@ -10962,62 +10970,6 @@ caption bdi {
 
 /* ---- the weight-free block on the home page ---- */
 
-.weight-free__state {
-  display: grid;
-  gap: 44px;
-  margin-top: 46px;
-  padding: 34px;
-  border: 1px solid var(--line);
-  border-radius: 26px;
-  background: var(--white);
-  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
-}
-
-.weight-free__state-head h3 {
-  margin: 12px 0 0;
-  font-size: 1.34rem;
-  line-height: 1.25;
-}
-
-.weight-free__state-head p {
-  margin: 14px 0 0;
-  color: var(--muted);
-  font-size: 0.86rem;
-  line-height: 1.65;
-}
-
-.weight-free__state dl {
-  display: grid;
-  gap: 0;
-  margin: 0;
-}
-
-.weight-free__state dl > div {
-  display: grid;
-  gap: 4px 20px;
-  padding: 14px 0;
-  border-top: 1px solid var(--line);
-  grid-template-columns: minmax(0, 0.5fr) minmax(0, 1fr);
-}
-
-.weight-free__state dl > div:first-child {
-  padding-top: 0;
-  border-top: 0;
-}
-
-.weight-free__state dt {
-  color: var(--teal-deep);
-  font-size: 0.84rem;
-  font-weight: 700;
-}
-
-.weight-free__state dd {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.6;
-}
-
 .weight-free__authority {
   display: flex;
   align-items: center;
@@ -11057,69 +11009,740 @@ caption bdi {
   color: var(--amber);
 }
 
-/* ---- the weight-free contrast on the home page ---- */
+/* ---- the home narrative: five HTML figures ----
 
-.galo-wf__divider {
-  stroke: var(--figure-line);
-  stroke-dasharray: 3 5;
-  stroke-width: 1;
+   These are built from HTML rather than SVG. Labels are the whole content, and
+   in HTML they wrap, keep the page's type scale instead of shrinking with a
+   viewBox, stay selectable and translatable, and reverse under RTL without the
+   figure needing to know which side it is on.                                */
+
+.wf-hero {
+  margin: 0;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
 }
 
-.galo-wf__head {
-  fill: var(--figure-muted);
-  font-size: 0.56rem;
-  font-weight: 800;
+.wf-hero__caption {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.wf-hero__eyebrow {
+  color: var(--cyan);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.13em;
+}
+
+.wf-hero__caption strong {
+  color: var(--white);
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.wf-hero__lanes {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.wf-hero__lane-head {
+  margin: 0 0 10px;
+  color: #93aabb;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
   letter-spacing: 0.12em;
 }
 
-.galo-wf__col.is-galo .galo-wf__head {
-  fill: var(--teal-deep);
+.wf-hero__lane.is-galo .wf-hero__lane-head {
+  color: var(--cyan);
 }
 
-.galo-wf__step rect {
-  fill: var(--white);
-  stroke: var(--figure-line);
-  stroke-width: 1;
+.wf-hero__stages {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.galo-wf__col.is-galo .galo-wf__step rect {
-  fill: rgba(15, 156, 136, 0.05);
-  stroke: rgba(15, 156, 136, 0.4);
+.wf-hero__stage {
+  position: relative;
+  padding: 13px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 13px;
+  color: #d3e2ec;
+  font-size: 0.83rem;
+  line-height: 1.4;
 }
 
-/* The third row is the only place the two paths differ, so it is the only row
-   drawn with weight in either column. */
-.galo-wf__step.is-marked rect {
-  fill: var(--soft-navy);
-  stroke: var(--chart-neutral-strong);
-  stroke-width: 1.6;
-}
-
-.galo-wf__col.is-galo .galo-wf__step.is-marked rect {
-  fill: rgba(15, 156, 136, 0.13);
-  stroke: var(--teal-deep);
-  stroke-width: 1.6;
-}
-
-.galo-wf__label {
-  fill: var(--figure-ink);
-  font-size: 0.62rem;
+/* The middle stage is the only one the two lanes differ on, so it is the only
+   one either lane draws with weight. */
+.wf-hero__stage.is-pivot {
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.07);
+  color: var(--white);
   font-weight: 640;
 }
 
-.galo-wf__col.is-galo .galo-wf__step.is-marked .galo-wf__label {
-  fill: var(--teal-deep);
+.wf-hero__lane.is-galo .wf-hero__stage {
+  border-color: rgba(45, 212, 191, 0.24);
 }
 
-.galo-wf__flow {
-  fill: none;
-  stroke: var(--chart-neutral-strong);
-  stroke-linecap: round;
-  stroke-width: 1.3;
+.wf-hero__lane.is-galo .wf-hero__stage.is-pivot {
+  border-color: var(--cyan);
+  background: rgba(45, 212, 191, 0.13);
+  color: #d8fbf4;
 }
 
-.galo-wf__col.is-galo .galo-wf__flow {
-  stroke: var(--teal-deep);
+.wf-hero__stage:not(:last-child)::after {
+  display: block;
+  margin: 10px auto -20px;
+  color: #6d8698;
+  content: "↓";
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.wf-hero__foot {
+  margin: 26px 0 0;
+  color: #93aabb;
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+/* ---- learned-state groups ---- */
+
+.learned-groups {
+  display: grid;
+  gap: 14px;
+  margin-top: 34px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.learned-groups article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+}
+
+.learned-groups strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--teal-deep);
+  font-size: 0.92rem;
+}
+
+.learned-groups p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.learned-groups__note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.79rem;
+  line-height: 1.6;
+}
+
+.section-boundary {
+  display: flex;
+  gap: 10px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 0.79rem;
+  line-height: 1.65;
+}
+
+.section-boundary svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--amber);
+}
+
+/* ---- change impact ---- */
+
+.change-impact {
+  margin: 34px 0 0;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--white);
+}
+
+.change-impact__caption {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.change-impact__flag {
+  color: var(--chart-2);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.11em;
+}
+
+.change-impact__caption strong {
+  font-size: 1.06rem;
+}
+
+.change-impact__switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.change-impact__switch button {
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.change-impact__switch button.is-active {
+  border-color: var(--teal-deep);
+  background: rgba(15, 156, 136, 0.1);
+  color: var(--teal-deep);
+}
+
+.change-impact__source {
+  display: grid;
+  gap: 5px;
+  margin-bottom: 18px;
+  padding: 15px 18px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: var(--paper);
+}
+
+.change-impact__source > span {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* The version transition is a machine token: it stays Latin and left-to-right
+   in every locale, so a right-to-left reader still sees which version came
+   first rather than a mirrored arrow they have to decode. */
+.change-impact__version {
+  display: inline-block;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.change-impact__split {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.change-impact__column {
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+}
+
+.change-impact__column.is-affected {
+  border-color: rgba(232, 169, 58, 0.42);
+  background: rgba(232, 169, 58, 0.07);
+}
+
+.change-impact__column-head {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.change-impact__column.is-affected .change-impact__column-head {
+  color: var(--chart-2);
+}
+
+.change-impact__column ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.change-impact__column li {
+  font-size: 0.83rem;
+  line-height: 1.45;
+}
+
+.change-impact__column:not(.is-affected) li {
+  color: var(--muted);
+}
+
+.change-impact__outcome {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 17px 19px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+}
+
+.change-impact__outcome p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.change-impact__outcome-tag {
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.change-impact__outcome.is-stands {
+  border-color: rgba(15, 156, 136, 0.4);
+  background: rgba(15, 156, 136, 0.07);
+}
+
+.change-impact__outcome.is-stands .change-impact__outcome-tag {
+  background: rgba(15, 156, 136, 0.16);
+  color: var(--teal-deep);
+}
+
+.change-impact__outcome.is-revise {
+  border-color: rgba(232, 169, 58, 0.45);
+  background: rgba(232, 169, 58, 0.08);
+}
+
+.change-impact__outcome.is-revise .change-impact__outcome-tag {
+  background: rgba(232, 169, 58, 0.2);
+  color: var(--chart-2);
+}
+
+.change-impact__outcome.is-needs-evidence {
+  border-color: rgba(216, 91, 97, 0.4);
+  background: rgba(216, 91, 97, 0.06);
+}
+
+.change-impact__outcome.is-needs-evidence .change-impact__outcome-tag {
+  background: rgba(216, 91, 97, 0.15);
+  color: var(--red);
+}
+
+.change-impact__note {
+  display: flex;
+  gap: 9px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.77rem;
+  line-height: 1.6;
+}
+
+.change-impact__note svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--chart-neutral-strong);
+}
+
+/* ---- the provable decision package ---- */
+
+.provable {
+  margin: 34px 0 0;
+}
+
+.provable__caption {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.provable__eyebrow {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.11em;
+}
+
+.provable__caption strong {
+  font-size: 1.06rem;
+}
+
+.provable__package {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--white);
+}
+
+.provable__package-tag {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.11em;
+}
+
+.provable__parts {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.provable__parts li {
+  display: grid;
+  gap: 16px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.provable__parts li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.provable__index {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.provable__parts strong {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.provable__question {
+  margin: 0 0 6px;
+  color: var(--ink);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.provable__detail {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.provable__terminal {
+  margin: 22px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+/* ---- the learning cycle ---- */
+
+.cycle {
+  margin: 34px 0 0;
+}
+
+.cycle__caption {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.cycle__eyebrow {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.11em;
+}
+
+.cycle__caption strong {
+  font-size: 1.06rem;
+}
+
+.cycle__stages {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  list-style: none;
+}
+
+.cycle__stages li {
+  display: grid;
+  gap: 9px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--white);
+  align-content: start;
+}
+
+.cycle__number {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.cycle__stages strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.cycle__stages p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+.cycle__diff {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--paper);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+}
+
+.cycle__version {
+  display: grid;
+  gap: 3px;
+  text-align: center;
+}
+
+.cycle__version span {
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.cycle__version small {
+  color: var(--muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+}
+
+.cycle__version.is-after span {
+  color: var(--teal-deep);
+}
+
+.cycle__diff-lines {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0 18px;
+  border-inline: 1px dashed var(--line);
+  list-style: none;
+}
+
+.cycle__diff-lines li {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.cycle__invariant {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 16px;
+  padding: 14px 18px;
+  border: 1px solid rgba(15, 156, 136, 0.32);
+  border-radius: 15px;
+  background: rgba(15, 156, 136, 0.06);
+  color: var(--teal-deep);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.cycle__no-gradient {
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: rgba(15, 156, 136, 0.16);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+
+/* ---- the three artefact scopes ---- */
+
+.scopes {
+  margin: 34px 0 0;
+}
+
+.scopes__caption {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 22px;
+}
+
+.scopes__eyebrow {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.11em;
+}
+
+.scopes__caption strong {
+  font-size: 1.06rem;
+}
+
+.scopes__grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.scopes__card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--white);
+}
+
+.scopes__tag {
+  margin: 0 0 12px;
+  padding: 6px 11px;
+  border-radius: 7px;
+  background: var(--soft-navy);
+  color: var(--navy-900);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+}
+
+.scopes__card h3 {
+  margin: 0 0 16px;
+  font-size: 1rem;
+}
+
+.scopes__card dl {
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+
+.scopes__card dl > div {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.scopes__card dl > div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.scopes__card dt {
+  margin-bottom: 5px;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scopes__card dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+/* ---- what this is not ---- */
+
+.not-this-cards {
+  display: grid;
+  gap: 14px;
+  margin-top: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.not-this-cards article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+
+.not-this-cards strong {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 0.92rem;
+}
+
+.not-this-cards p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+/* ---- under the hood ---- */
+
+.under-hood__teaser {
+  display: grid;
+  gap: 10px 24px;
+  margin: 30px 0 0;
+  padding: 0;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+}
+
+.under-hood__teaser li {
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 15px;
+  color: #d3e2ec;
+  font-size: 0.85rem;
+}
+
+.under-hood__route {
+  margin-top: 34px;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.under-hood__route .eyebrow {
+  margin: 0 0 18px;
+}
+
+/* The figure moved down here from the hero, where the column capped it. In a
+   full-width card it would scale its own labels to twenty-odd pixels, so the
+   cap comes back explicitly. */
+.under-hood__route .hero-route {
+  max-width: 560px;
+  margin-inline: auto;
 }
 
 /* ---- the engine tour page ---- */
@@ -17877,20 +18500,83 @@ caption bdi {
 /* The weight-free block is defined below the responsive section of this file,
    so its own collapse has to come after it in source order. */
 @media (max-width: 860px) {
-  .weight-free__state {
-    gap: 28px;
-    padding: 26px;
-    grid-template-columns: 1fr;
-  }
-
-  .weight-free__state dl > div {
-    gap: 6px;
-    grid-template-columns: 1fr;
-  }
-
   .weight-free__authority {
     align-items: flex-start;
     font-size: 0.86rem;
+  }
+}
+
+/* The home narrative's figures are defined below the responsive section of this
+   file, so their own collapse has to come after them in source order. */
+@media (max-width: 1100px) {
+  .cycle__stages {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .scopes__grid,
+  .not-this-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .under-hood__teaser {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .weight-free__authority {
+    align-items: flex-start;
+    font-size: 0.86rem;
+  }
+
+  /* Two lanes become two stacked cards rather than shrinking to unreadable. */
+  .wf-hero__lanes,
+  .learned-groups,
+  .change-impact__split,
+  .cycle__stages,
+  .scopes__grid,
+  .not-this-cards,
+  .under-hood__teaser {
+    grid-template-columns: 1fr;
+  }
+
+  .cycle__diff {
+    gap: 14px;
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+
+  .cycle__diff-lines {
+    padding: 12px 0;
+    border-inline: 0;
+    border-block: 1px dashed var(--line);
+  }
+
+  .change-impact,
+  .provable__package,
+  .scopes__card {
+    padding: 20px;
+  }
+
+  .change-impact__outcome {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* The four markers stay two-by-two down to the narrowest phone: they are the
+   compact identity statement, and a single column turns them into a list the
+   eye reads one item at a time. The gap tightens instead. */
+@media (max-width: 600px) {
+  .hero__markers {
+    gap: 10px 14px;
+  }
+  .hero__markers li {
+    align-items: flex-start;
+    font-size: 0.84rem;
+    line-height: 1.28;
+  }
+  .hero__markers svg {
+    margin-top: 2px;
   }
 }
 

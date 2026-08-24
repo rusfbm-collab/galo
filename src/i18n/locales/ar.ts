@@ -34,6 +34,7 @@ import { engineTourAr } from "./engineTour";
 import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 import { weightFreeAr } from "./weightFree";
+import { homeNarrativeAr } from "./homeNarrative";
 
 export const ar: TranslationDictionary = {
   ...mathAr,
@@ -71,6 +72,7 @@ export const ar: TranslationDictionary = {
   ...twoTowersAr,
   ...engineTourAr,
   ...weightFreeAr,
+  ...homeNarrativeAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

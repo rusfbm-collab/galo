@@ -65,46 +65,55 @@ export type PlainAnswer = {
   detail: string;
 };
 
+/**
+ * Six questions, in the order somebody outside the field asks them.
+ *
+ * These used to say the system does not learn, full stop, which stopped being
+ * true the moment the page began describing a sealed research line that does.
+ * The contradiction was not in the facts — it was in a vocabulary that let one
+ * artefact borrow a sentence from another. Each answer here names which of the
+ * three artefacts it is about.
+ */
 export const investorBriefing: readonly PlainAnswer[] = [
   {
-    question: "What is actually being built?",
+    question: "What is GALO?",
     answer:
-      "A way for a decision-making system to hold its state in a small, named, completely written-out table instead of inside an opaque model.",
+      "A weight-free AI architecture: it stores what it learned as explicit, versioned structures rather than as hidden model parameters.",
     detail:
-      "Because the table is finite and written down in advance, every step the system takes has an address, a result, and a record. There is no hidden remainder that only the model knows about.",
+      "There is no trainable parameter tensor in the engine and no gradient step. That is a statement about the kind of object it is, not about how well it performs.",
   },
   {
-    question: "Why does a table matter?",
-    answer: "A finite table can be checked completely. A model cannot.",
+    question: "What does it learn?",
+    answer: "Relations, reusable structures, search orders, and routes backed by the evidence that produced them.",
     detail:
-      "Checking a table is not sampling or testing: every entry is inspected, and the check either passes on all of them or fails on a named one. That is what makes a claim about this layer arguable by someone who does not trust us.",
+      "Each of those can be printed, compared with the same item from an earlier run, and rolled back on its own. What it never learns is what counts as a lawful answer.",
   },
   {
-    question: "Where is the commercial value?",
+    question: "Why does that matter?",
     answer:
-      "In long-running and regulated work, the expensive failure is not a wrong answer — it is a wrong answer nobody can trace.",
+      "Because when something changes, the decisions it actually affects can be named — instead of retraining everything or accepting an answer that quietly moved.",
     detail:
-      "GALO is built so the trace is the product: what state the system was in, which rule fired, what it was allowed to do, and what it recorded. That is the artefact a reviewer, an auditor, or a counterparty can actually examine.",
+      "That is the whole commercial idea. In long-running and regulated work the expensive failure is rarely the wrong answer; it is the one nobody can reconstruct six months later.",
+  },
+  {
+    question: "What is the first product?",
+    answer: "Industrial decision assurance around the systems a company already operates.",
+    detail:
+      "Read-only and advisory, on one bounded workflow, with a frozen baseline and a decision package somebody else can replay. It is intended, not deployed.",
   },
   {
     question: "What works today?",
     answer:
-      "A running engine over a fully enumerated finite universe, producing a machine-readable record for every run.",
+      "A bounded public verifier exists and reproduces. Sealed research prototypes have measured weight-free learning inside declared scopes. No partner-controlled industrial deployment exists.",
     detail:
-      "It is narrow on purpose: two fixed input patterns, one step per run, no learning. Everything inside that boundary is checked on every build; nothing outside it is claimed.",
+      "Those are three different artefacts and no result carries from one to another. The public release performs no learning at all; the sealed line is where every learning figure on this site comes from.",
   },
   {
-    question: "What does not work yet?",
-    answer: "Learning, a trained world model, and any measured result outside our own accounting.",
-    detail:
-      "These are stated as open work with named preconditions, not implied as done. The evidence page lists each one and the milestone it has actually reached.",
-  },
-  {
-    question: "What would change your mind?",
+    question: "What is not claimed?",
     answer:
-      "A bounded, partner-owned problem where explicit state and exact replay can be measured against an ordinary baseline.",
+      "General intelligence, production autonomy, partner-controlled validity, customer traction, and general superiority over language models.",
     detail:
-      "That evaluation has not been run. Until it is, no claim about external gain appears anywhere on this site, and the numbers published here describe internal structure only.",
+      "None of those appears anywhere on this site, and each is listed on the evidence page with the observation that would settle it.",
   },
 ];
 

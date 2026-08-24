@@ -4,10 +4,7 @@ import {
   Building2,
   CircleAlert,
   Check,
-  CircleDot,
   Database,
-  FileCheck2,
-  Gauge,
   Layers3,
   LockKeyhole,
   MapPinned,
@@ -16,33 +13,52 @@ import {
   SquareTerminal,
 } from "lucide-react";
 import { ArchitectureFlow } from "../components/diagrams/ArchitectureFlow";
-import { HeroReasoningRoute } from "../components/diagrams/HeroReasoningRoute";
 import { LocalRevision } from "../components/diagrams/LocalRevision";
 import { ResolutionLadder } from "../components/diagrams/ResolutionLadder";
 import { TwoTowersFigure } from "../components/diagrams/TwoTowersFigure";
-import { WeightFreeContrast } from "../components/diagrams/WeightFreeContrast";
+import { HeroReasoningRoute } from "../components/diagrams/HeroReasoningRoute";
+import { ChangeImpactFigure } from "../components/diagrams/ChangeImpactFigure";
+import { ProvableDecisionFigure } from "../components/diagrams/ProvableDecisionFigure";
+import { ResearchScopeFigure } from "../components/diagrams/ResearchScopeFigure";
+import { WeightFreeHeroFigure } from "../components/diagrams/WeightFreeHeroFigure";
+import { WeightFreeLearningCycleFigure } from "../components/diagrams/WeightFreeLearningCycleFigure";
 import { ReplayExplorer } from "../components/demo/ReplayExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { ReaderPaths } from "../components/ui/ReaderPaths";
 import { SectionHeading } from "../components/ui/SectionHeading";
-import {
-  differentiationBoundary,
-  heroDifferentiators,
-  whatThisIs,
-  whatThisIsNot,
-} from "../content/differentiation";
+import { differentiationBoundary, whatThisIs } from "../content/differentiation";
 import { releaseEvidence } from "../content/evidence";
 import { getEvaluationContact } from "../content/contact";
-import { headlineClaims } from "../content/headlineClaims";
 import { twelveMonths } from "../content/programme";
 import { investorBriefing } from "../content/plainLanguage";
 import { siteContent } from "../content/site";
 import {
-  authorityLine,
-  externalAdapterRule,
-  learnedState,
-  weightFreeBoundary,
-} from "../content/weightFree";
+  changeBody,
+  changeBoundary,
+  changeHeadline,
+  cycleBody,
+  cycleHeadline,
+  heroBoundary,
+  heroEyebrow,
+  heroHeadline,
+  heroLead,
+  heroMarkers,
+  heroResult,
+  learnedGroups,
+  learnedGroupsNote,
+  learnedStateBody,
+  learnedStateHeadline,
+  notThisCards,
+  provableBody,
+  provableHeadline,
+  scopeBody,
+  scopeBoundary,
+  scopeHeadline,
+  underHoodBody,
+  underHoodHeadline,
+  underHoodTeaser,
+} from "../content/homeNarrative";
+import { authorityLine, externalAdapterRule, weightFreeBoundary } from "../content/weightFree";
 import { useI18n } from "../i18n/I18nContext";
 
 const problemCards = [
@@ -90,13 +106,6 @@ const beginnerBridge = [
     text: "A formal target is not yet world meaning, a useful action, a learned policy, or General AI.",
   },
 ] as const;
-
-const verifiedSlice = [
-  { icon: Layers3, title: "Finite universe", text: "1,204 descriptors / 880 executable" },
-  { icon: LockKeyhole, title: "Pinned-key sample integrity", text: "Bundled finite sample / two source patterns" },
-  { icon: Gauge, title: "Deterministic selector", text: "440-candidate frontier per source pattern" },
-  { icon: FileCheck2, title: "Receipt ledger", text: "4,802 internal work-unit IDs reconciled" },
-];
 
 const architecturePrinciples = [
   {
@@ -169,131 +178,87 @@ export function HomePage() {
       <section className="hero">
         <div className="shell hero__grid">
           <div className="hero__content">
-            <p className="eyebrow eyebrow--cyan">{t("WEIGHT-FREE AI · INDUSTRIAL DECISION ASSURANCE")}</p>
-            <h1>{t("AI built for provable decisions.")}</h1>
-            <p className="hero__lead">
-              {t(
-                "Neural AI learns by changing hidden numerical weights. GALO has no learned weights and uses no backpropagation. It learns by building, checking, reusing and locally revising explicit objects, relations, competing explanations and evidence in a versioned Atlas, so every learned change can be read, versioned and replayed. The first product is intended to apply that architecture to decision assurance around the digital twins and operational systems industry already runs. None of it is running at an industrial site today.",
-              )}
-            </p>
-            <p className="hero__result">
-              {t("Know what changed, what it affects, and why the decision still stands.")}
-            </p>
-            <ul className="hero__diff" aria-label={t("What kind of system this is")}>
-              {heroDifferentiators.map((line) => (
-                <li key={line}>{t(line)}</li>
+            <p className="eyebrow eyebrow--cyan">{t(heroEyebrow)}</p>
+            <h1>{t(heroHeadline)}</h1>
+            {heroLead.map((paragraph) => (
+              <p key={paragraph} className="hero__lead">
+                {t(paragraph)}
+              </p>
+            ))}
+            <p className="hero__result">{t(heroResult)}</p>
+            <ul className="hero__markers" aria-label={t("What kind of system this is")}>
+              {heroMarkers.map((marker) => (
+                <li key={marker}>
+                  <Check size={15} aria-hidden="true" /> {t(marker)}
+                </li>
               ))}
             </ul>
-            <div className="hero__status" aria-label={t("Current project status")}>
-              <span>
-                <CircleDot size={14} aria-hidden="true" /> {t("Working research prototype")}
-              </span>
-              <span>{t("Pre-seed")}</span>
-              <span>{t("Founder-led")}</span>
-              <span>{t("No capital raised")}</span>
-            </div>
             <div className="hero__actions">
               <a className="button button--primary" href={href("/industry")}>
                 {t("Request a bounded industrial evaluation")}{" "}
                 <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
               </a>
-              <a className="button button--outline-light" href={href("/evidence#learning")}>
-                {t("Review the technical evidence")}
+              <a className="button button--outline-light" href="#learned-state">
+                {t("See how GALO works")}
               </a>
             </div>
-            <p className="hero__boundary">
-              {t(
-                "General-purpose architecture, not general intelligence. Partner-controlled validity is not proven, production autonomy is not authorised, and there is no customer, letter of intent or revenue. Every figure on this site was produced by the project on its own data, and nothing here authorises a command to a plant.",
-              )}
-            </p>
+            <p className="hero__boundary">{t(heroBoundary)}</p>
           </div>
 
-          <div className="hero-visual" aria-label={t("One episode of reasoning, and the receipt it leaves")}>
-            <div className="hero-visual__topline">
-              <span>{t("ONE EPISODE · SEVEN PHASES")}</span>
-              <strong>{t("CLOSED SET")}</strong>
-            </div>
-            <div className="hero-visual__figure">
-              <HeroReasoningRoute />
-            </div>
-            <div className="hero-visual__receipt">
-              <span className="status status--pass" dir="ltr">
-                PASS
-              </span>
-              <div>
-                <small>{t("BOUND HANDLE")}</small>
-                <strong className="mono" dir="ltr">
-                  59e097da…dde3ab
-                </strong>
-              </div>
-              <div>
-                <small>{t("WORK LEDGER")}</small>
-                <strong className="mono" dir="ltr">
-                  df8920b9…0a406b
-                </strong>
-              </div>
-            </div>
-            <div className="hero-visual__caption">
-              <span>
-                {t(
-                  "Work is counted as it is spent, and either exit is reachable from any phase. A stop is a recorded outcome with a named cause, not a missing answer.",
-                )}
-              </span>
-              <span>{t("Receipt chain intact")}</span>
-            </div>
+          <div className="hero-visual">
+            <WeightFreeHeroFigure />
           </div>
-        </div>
-
-        <div className="shell proof-strip" aria-label={t("Verified current mechanics")}>
-          {verifiedSlice.map(({ icon: Icon, title, text }) => (
-            <div key={title} className="proof-strip__item">
-              <Icon size={19} aria-hidden="true" />
-              <div>
-                <strong>{t(title)}</strong>
-                <span>{t(text)}</span>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
-      <section id="weight-free" className="section section--paper math-anchor-section">
+      <section id="learned-state" className="section section--paper math-anchor-section">
         <div className="shell">
           <SectionHeading
-            eyebrow={t("THE DIFFERENCE, BEFORE ANY NUMBERS")}
-            title={t("Ordinary AI learns by changing hidden weights. This one has none to change.")}
-            text={t(
-              "Everything further down this page — the percentages, the receipts, the seven phases, the tables — is evidence about a kind of object. This section says what the object is, because the evidence does not mean much until that is clear.",
-            )}
+            eyebrow={t("A NEW KIND OF LEARNED STATE")}
+            title={t(learnedStateHeadline)}
+            text={t(learnedStateBody)}
           />
-
-          <WeightFreeContrast />
-
-          <div className="weight-free__state">
-            <div className="weight-free__state-head">
-              <p className="eyebrow">{t("WHAT AN EPISODE MAY LEAVE BEHIND")}</p>
-              <h3>{t("If learning is not weights, here is the whole of what it is instead.")}</h3>
-              <p>
-                {t(
-                  "Six kinds of thing, and the list is complete rather than illustrative. Each one can be printed, compared with the same item from an earlier run, and rolled back on its own without touching the rest.",
-                )}
-              </p>
-            </div>
-            <dl>
-              {learnedState.map((entry) => (
-                <div key={entry.name}>
-                  <dt>{t(entry.name)}</dt>
-                  <dd>{t(entry.holds)}</dd>
-                </div>
-              ))}
-            </dl>
+          <div className="learned-groups">
+            {learnedGroups.map((group) => (
+              <article key={group.name}>
+                <strong>{t(group.name)}</strong>
+                <p>{t(group.holds)}</p>
+              </article>
+            ))}
           </div>
-
+          <p className="learned-groups__note">{t(learnedGroupsNote)}</p>
           <p className="weight-free__authority">
             <ShieldCheck size={18} aria-hidden="true" />
             <span>{t(authorityLine)}</span>
           </p>
+          <a className="text-link" href={href("/vs-llm#dimensions")}>
+            {t("The same difference, dimension by dimension, against a language model")}{" "}
+            <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+          </a>
+        </div>
+      </section>
 
+      <section id="when-change" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading eyebrow={t("WHEN THE WORLD CHANGES")} title={t(changeHeadline)} text={t(changeBody)} />
+          <ChangeImpactFigure />
+          <p className="section-boundary">
+            <CircleAlert size={16} aria-hidden="true" /> {t(changeBoundary)}
+          </p>
+        </div>
+      </section>
+
+      <section id="provable" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading eyebrow={t("WHAT PROVABLE MEANS")} title={t(provableHeadline)} text={t(provableBody)} />
+          <ProvableDecisionFigure />
+        </div>
+      </section>
+
+      <section id="learning-cycle" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading eyebrow={t("HOW GALO LEARNS WITHOUT WEIGHTS")} title={t(cycleHeadline)} text={t(cycleBody)} />
+          <WeightFreeLearningCycleFigure />
           <div className="weight-free__limits">
             <p>
               <CircleAlert size={16} aria-hidden="true" /> {t(weightFreeBoundary)}
@@ -302,11 +267,16 @@ export function HomePage() {
               <CircleAlert size={16} aria-hidden="true" /> {t(externalAdapterRule)}
             </p>
           </div>
+        </div>
+      </section>
 
-          <a className="text-link" href={href("/vs-llm#dimensions")}>
-            {t("The same difference, dimension by dimension, against a language model")}{" "}
-            <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-          </a>
+      <section id="scope" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading eyebrow={t("WHAT EXISTS TODAY")} title={t(scopeHeadline)} text={t(scopeBody)} />
+          <ResearchScopeFigure />
+          <p className="section-boundary">
+            <CircleAlert size={16} aria-hidden="true" /> {t(scopeBoundary)}
+          </p>
         </div>
       </section>
 
@@ -315,22 +285,16 @@ export function HomePage() {
           <SectionHeading
             eyebrow={t("WHAT THIS IS NOT")}
             title={t("Taken for four other things. One line separates it from all four.")}
-            text={t(
-              "Each row names an assumption a specialist arrives with, and the reason it does not hold. The reason is the same one every time: the learned part may propose and rank, and never admits the result.",
-            )}
+            text={t(whatThisIs)}
           />
-          <dl className="not-this">
-            {whatThisIsNot.map((row) => (
-              <div key={row.taken} className="not-this__row">
-                <dt>{t(row.taken)}</dt>
-                <dd>{t(row.answer)}</dd>
-              </div>
+          <div className="not-this-cards">
+            {notThisCards.map((card) => (
+              <article key={card.name}>
+                <strong>{t(card.name)}</strong>
+                <p>{t(card.detail)}</p>
+              </article>
             ))}
-            <div className="not-this__row not-this__row--is">
-              <dt>{t("What it is instead")}</dt>
-              <dd>{t(whatThisIs)}</dd>
-            </div>
-          </dl>
+          </div>
           <p className="not-this__boundary">
             <CircleAlert size={16} aria-hidden="true" /> {t(differentiationBoundary)}
           </p>
@@ -338,33 +302,6 @@ export function HomePage() {
             {t("Nine classes of alternative approach, compared on authority, change and replay")}{" "}
             <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
           </a>
-        </div>
-      </section>
-
-      <section id="the-claim" className="section section--white">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("THE HEADLINE, TAKEN APART")}
-            title={t("“Provable” is a strong word. Here is what has to be true for it, and where it stops.")}
-            text={t(
-              "It breaks into three promises: the move was allowed before the run, the decision was taken from a declared set, and a stranger can be shown both. Each card names the mechanism that exists today, the page where you can check it yourself, and the part that is not yet earned. The limits are in the same card as the claim, not in a footnote.",
-            )}
-          />
-          <div className="headline-claims">
-            {headlineClaims.map((claim) => (
-              <article key={claim.word} className="headline-claim">
-                <span className="headline-claim__word">{t(claim.word)}</span>
-                <p className="headline-claim__claim">{t(claim.claim)}</p>
-                <p className="headline-claim__mechanism">{t(claim.mechanism)}</p>
-                <p className="headline-claim__limit">
-                  <CircleAlert size={16} aria-hidden="true" /> {t(claim.limit)}
-                </p>
-                <a className="text-link" href={href(claim.href)}>
-                  {t(claim.hrefLabel)} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-                </a>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -443,77 +380,6 @@ export function HomePage() {
                 <p>{t(card.text)}</p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="theory-introduction" className="section section--white home-theory-bridge">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("NEW TO THE MATHEMATICS?")}
-            title={t("Build GALO from one three-state example before opening the academic reference.")}
-            text={t(
-              "The beginner chapter introduces the main symbols with a reading legend, reconstructs transitions independently from tables and formulas, and keeps the formal model separate from the current runtime and target learning architecture.",
-            )}
-            aside={
-              <a className="text-link" href={href("/theory")}>
-                {t("Open the guided theory")} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-              </a>
-            }
-          />
-          <div className="home-theory-bridge__steps">
-            {beginnerBridge.map((step) => (
-              <article key={step.number}>
-                <span>{step.number}</span>
-                <h3>{t(step.title)}</h3>
-                <p>{t(step.text)}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="two-towers" className="section section--paper math-anchor-section">
-        <div className="shell">
-          <SectionHeading
-            eyebrow={t("WHAT IS IN THE CORE")}
-            title={t("Two towers of frozen tables, and everything else is a lookup in them.")}
-            text={t(
-              "People expect the core of an AI system to be a model. Here it is two families of Cayley tables over seven finite levels, written before anything runs and never edited afterwards. The kernel carries them byte for byte, and the same 560 typed cells serve every domain the engine works in — the language contour and the graph contours are not separate copies.",
-            )}
-            aside={
-              <a className="text-link" href={href("/theory#plus-star")}>
-                {t("Read the two laws in full")}{" "}
-                <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-              </a>
-            }
-          />
-          <TwoTowersFigure />
-          <div className="tower-notes">
-            <article>
-              <h3>{t("Why two and not one")}</h3>
-              <p>
-                {t(
-                  "PLUS is a cyclic group: it composes in any order and every step can be undone. STAR is not — it inspects one operand first, and past two positions it is neither commutative nor associative. A system with only PLUS cannot express a reset; a system with only STAR loses the arithmetic underneath it.",
-                )}
-              </p>
-            </article>
-            <article>
-              <h3>{t("Why seven levels and not one")}</h3>
-              <p>
-                {t(
-                  "Because the upper ones are not redundant, and that is checked rather than assumed. Across every downward pair of levels the only map that commutes with all four action families glues every pole onto P0 and preserves nothing. So a higher level can draw distinctions no lower level reproduces, and enumerating it is not padding.",
-                )}
-              </p>
-            </article>
-            <article>
-              <h3>{t("What this does not establish")}</h3>
-              <p>
-                {t(
-                  "That the towers are what produced the published learning results. They are not in the measured path of those campaigns, and their contribution to it is unproven — it is written on the evidence page as an open boundary rather than left for a reader to discover.",
-                )}
-              </p>
-            </article>
           </div>
         </div>
       </section>
@@ -746,6 +612,106 @@ export function HomePage() {
               <h3>{t("Regulated decision support")}</h3>
               <p>{t("Private evaluation settings that require disclosed scope and explicit failure boundaries.")}</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="theory-introduction" className="section section--white home-theory-bridge">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("NEW TO THE MATHEMATICS?")}
+            title={t("Build GALO from one three-state example before opening the academic reference.")}
+            text={t(
+              "The beginner chapter introduces the main symbols with a reading legend, reconstructs transitions independently from tables and formulas, and keeps the formal model separate from the current runtime and target learning architecture.",
+            )}
+            aside={
+              <a className="text-link" href={href("/theory")}>
+                {t("Open the guided theory")} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            }
+          />
+          <div className="home-theory-bridge__steps">
+            {beginnerBridge.map((step) => (
+              <article key={step.number}>
+                <span>{step.number}</span>
+                <h3>{t(step.title)}</h3>
+                <p>{t(step.text)}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="two-towers" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t("WHAT IS IN THE CORE")}
+            title={t("Two towers of frozen tables, and everything else is a lookup in them.")}
+            text={t(
+              "People expect the core of an AI system to be a model. Here it is two families of Cayley tables over seven finite levels, written before anything runs and never edited afterwards. The kernel carries them byte for byte, and the same 560 typed cells serve every domain the engine works in — the language contour and the graph contours are not separate copies.",
+            )}
+            aside={
+              <a className="text-link" href={href("/theory#plus-star")}>
+                {t("Read the two laws in full")}{" "}
+                <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            }
+          />
+          <TwoTowersFigure />
+          <div className="tower-notes">
+            <article>
+              <h3>{t("Why two and not one")}</h3>
+              <p>
+                {t(
+                  "PLUS is a cyclic group: it composes in any order and every step can be undone. STAR is not — it inspects one operand first, and past two positions it is neither commutative nor associative. A system with only PLUS cannot express a reset; a system with only STAR loses the arithmetic underneath it.",
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{t("Why seven levels and not one")}</h3>
+              <p>
+                {t(
+                  "Because the upper ones are not redundant, and that is checked rather than assumed. Across every downward pair of levels the only map that commutes with all four action families glues every pole onto P0 and preserves nothing. So a higher level can draw distinctions no lower level reproduces, and enumerating it is not padding.",
+                )}
+              </p>
+            </article>
+            <article>
+              <h3>{t("What this does not establish")}</h3>
+              <p>
+                {t(
+                  "That the towers are what produced the published learning results. They are not in the measured path of those campaigns, and their contribution to it is unproven — it is written on the evidence page as an open boundary rather than left for a reader to discover.",
+                )}
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="under-the-hood" className="section section--navy math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            light
+            eyebrow={t("UNDER THE HOOD")}
+            title={t(underHoodHeadline)}
+            text={t(underHoodBody)}
+            aside={
+              <a className="text-link" href={href("/math")}>
+                {t("See the mathematics")} <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+              </a>
+            }
+          />
+          <ul className="under-hood__teaser">
+            {underHoodTeaser.map((line) => (
+              <li key={line}>{t(line)}</li>
+            ))}
+          </ul>
+          <div className="under-hood__route">
+            <p className="eyebrow">{t("ONE EPISODE · SEVEN PHASES")}</p>
+            <HeroReasoningRoute />
+            <a className="text-link" href={href("/thinking")}>
+              {t("Follow one decision from the input to the record")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>

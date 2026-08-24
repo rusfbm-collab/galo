@@ -34,6 +34,7 @@ import { engineTourZh } from "./engineTour";
 import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 import { weightFreeZh } from "./weightFree";
+import { homeNarrativeZh } from "./homeNarrative";
 
 export const zh: TranslationDictionary = {
   ...mathZh,
@@ -71,6 +72,7 @@ export const zh: TranslationDictionary = {
   ...twoTowersZh,
   ...engineTourZh,
   ...weightFreeZh,
+  ...homeNarrativeZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",
@@ -350,7 +352,8 @@ export const zh: TranslationDictionary = {
   "No programme selection, partnership, or endorsement is implied.":
     "本网站不暗示 GALO 已入选任何项目、建立任何合作关系或获得任何背书。",
   "THE NEXT TWELVE MONTHS": "接下来的十二个月",
-  "What is not true yet, and the plan written so somebody else can mark it.": "哪些事情还不成立，以及一份写成可供他人逐条打分的计划。",
+  "What is not true yet, and the plan written so somebody else can mark it.":
+    "哪些事情还不成立，以及一份写成可供他人逐条打分的计划。",
   "Read how the engine works, then where to attack it": "先看引擎如何运作，再看该从哪里攻击它",
 
   "FOUNDER / ARCHITECT": "创始人 / 架构师",

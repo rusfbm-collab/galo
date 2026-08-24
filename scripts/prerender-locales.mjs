@@ -15,9 +15,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — Weight-Free AI Built for Provable Decisions",
+        title: "GALO AI — Weight-Free AI for Provable Decisions",
         description:
-          "An AI architecture with no learned model weights and no backpropagation. GALO learns explicit relations and verified structures in a versioned Atlas, starting with industrial decision assurance. Scoped learning results are published together with their negatives; partner-controlled validity is not proven and production autonomy is not authorised.",
+          "An AI architecture with no learned model weights and no backpropagation. GALO learns explicit relations and verified structures in a versioned Atlas, so when something changes you can see what changed, trace what it affects, and re-check only what matters. First product: industrial decision assurance. Research prototype — partner-controlled validity is not proven and production autonomy is not authorised.",
       },
       simple: {
         path: "simple",
@@ -101,9 +101,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — проверяемая модель мира для частного ИИ и промышленной автономности",
+        title: "GALO AI — ИИ без весов для доказуемых решений",
         description:
-          "Архитектура общего назначения для проверяемой модели мира и автономности, первый продукт которой — гарантия промышленных решений. Ограниченные результаты обучения опубликованы вместе с отрицательными; валидность на данных партнёра не доказана, промышленная автономность не разрешена.",
+          "Архитектура ИИ без выученных весов модели и без обратного распространения. GALO учит явные отношения и проверенные структуры в Атласе с версиями: когда что-то меняется, видно, что именно изменилось, что это затрагивает и что нужно перепроверить. Первый продукт — гарантия промышленных решений. Исследовательский прототип: валидность на данных партнёра не доказана, промышленная автономность не разрешена.",
       },
       simple: {
         path: "simple",
@@ -187,9 +187,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — 可验证的世界模型，面向私有 AI 与工业自主",
+        title: "GALO AI — 无权重的人工智能，面向可证明的决策",
         description:
-          "一套通用的可验证世界模型与自主性架构，其第一个产品是工业决策保障。有限范围的学习结果连同负面结果一并公开；由合作方掌控的有效性尚未证明，工业自主性也未获授权。",
+          "一套没有学习权重、也没有反向传播的人工智能架构。GALO 把学到的东西写成带版本的图册里的显式关系与已证明的结构：一旦有什么发生变化，你能看清改了什么、波及了哪些结论，以及只需重新核验哪一部分。第一个产品是工业决策保障。研究原型：由合作方掌控的有效性尚未证明，工业自主性也未获授权。",
       },
       simple: {
         path: "simple",
@@ -269,9 +269,9 @@ const locales = {
     pages: {
       home: {
         path: "",
-        title: "GALO AI — نموذج عالم قابل للتحقّق: ذكاء اصطناعي خاصّ واستقلالية صناعية",
+        title: "GALO AI — ذكاء اصطناعيّ بلا أوزان لقراراتٍ قابلة للإثبات",
         description:
-          "بنية عامّة الغرض لنموذج عالم قابل للتحقّق وللاستقلالية، منتجها الأول ضمان القرار الصناعي. تُنشر نتائج التعلّم المحدودة النطاق مع نتائجها السلبية؛ والصلاحية الخاضعة لسيطرة الشريك غير مُثبتة، والاستقلالية الإنتاجية غير مأذون بها.",
+          "بنية ذكاء اصطناعيّ بلا أوزان متعلَّمة وبلا انتشارٍ خلفيّ. تتعلّم GALO علاقاتٍ صريحة وبنًى مُثبَتة داخل أطلسٍ ذي إصدارات، فإذا تغيّر شيء رأيتَ ما الذي تغيّر، وما الذي يمسّه، وما الذي يحتاج إعادة تحقّقٍ وحده. أوّل منتَج: ضمان القرار الصناعي. نموذج بحثيّ أوّليّ: الصلاحية الخاضعة لسيطرة الشريك غير مُثبتة، والاستقلالية الإنتاجية غير مأذون بها.",
       },
       simple: {
         path: "simple",
