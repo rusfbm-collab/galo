@@ -1,11 +1,15 @@
 import type { TranslationDictionary } from "../translations";
 
 export const homeNarrativeRu: TranslationDictionary = {
+  "A decision has to survive more than today's check; it has to survive tomorrow's changes. When a source is corrected, a procedure is updated, or a reading is no longer available, what matters is knowing straight away which conclusions are affected, which still hold, and what exactly has to be checked again.":
+    "Решение должно выдерживать не только сегодняшнюю проверку, но и завтрашние изменения. Если источник исправлен, регламент обновлён или показание больше недоступно, важно сразу понять: какие выводы затронуты, какие сохраняют силу и что именно нужно проверить заново.",
+  "GALO keeps the grounds of every decision in an explicit, reproducible form. An independent specialist can therefore follow the path from the source data to the conclusion, see what a change affects, and re-check only the affected part — without revisiting the whole system.":
+    "GALO сохраняет основания каждого решения в явной и воспроизводимой форме. Поэтому независимый специалист может проследить путь от исходных данных до вывода, увидеть последствия изменений и перепроверить только затронутую часть — без полного пересмотра всей системы.",
+  "The first GALO product is intended to support industrial decisions inside the loop of digital twins and operational systems that are already running.":
+    "Первый продукт GALO предназначен для сопровождения промышленных решений в контуре уже действующих цифровых двойников и операционных систем.",
+  "See what changed. Understand which decisions are affected. Re-check only what is necessary.":
+    "Увидеть, что изменилось. Понять, какие решения затронуты. Перепроверить только необходимое.",
   "WHAT GALO IS": "ЧТО ТАКОЕ GALO",
-  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.":
-    "Решение, принятое сегодня, должно выдержать завтрашний день. Источник исправили, регламент пересмотрели, показание пропало — и вопрос становится таким: каких выводов это касается и какие из них по-прежнему держатся.",
-  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.":
-    "GALO построен так, чтобы у этого вопроса был ответ, который может проверить человек со стороны. Первый продукт предназначен для подтверждения промышленных решений вокруг систем, которые компания уже эксплуатирует.",
   "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.":
     "GALO — принципиально другой вид ИИ. Нейросети обучаются, изменяя скрытые числовые веса; в GALO обучаемых весов нет и обратное распространение ошибки не используется. GALO учится иначе: формирует, проверяет и локально пересматривает явную структуру знания, сохраняемую в версионируемом Атласе.",
   "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.":
@@ -152,8 +156,6 @@ export const homeNarrativeRu: TranslationDictionary = {
   "Search counters and orders": "Счётчики и порядки поиска",
   "See how GALO works": "Как работает GALO",
   "See the mathematics": "Открыть математику",
-  "See what changed. Trace what it affects. Re-check only what matters.":
-    "Увидеть, что изменилось. Проследить, на что это влияет. Перепроверить только то, что важно.",
   "Sensor calibration record": "Запись калибровки датчика",
   "Separate sealed artefacts with trained Atlas volumes, preregistered before the results were seen.":
     "Отдельные опечатанные артефакты с обученными томами Атласа, зарегистрированные до того, как результаты были увидены.",
@@ -243,11 +245,15 @@ export const homeNarrativeRu: TranslationDictionary = {
 };
 
 export const homeNarrativeZh: TranslationDictionary = {
+  "A decision has to survive more than today's check; it has to survive tomorrow's changes. When a source is corrected, a procedure is updated, or a reading is no longer available, what matters is knowing straight away which conclusions are affected, which still hold, and what exactly has to be checked again.":
+    "一个决策要经受的不只是今天的检查，还有明天的变化。当一份来源被更正、一条规程被更新，或者某个读数不再可得时，要紧的是立刻知道：哪些结论受到影响，哪些依然成立，以及究竟需要重新核验什么。",
+  "GALO keeps the grounds of every decision in an explicit, reproducible form. An independent specialist can therefore follow the path from the source data to the conclusion, see what a change affects, and re-check only the affected part — without revisiting the whole system.":
+    "GALO 以显式且可复现的形式保存每一个决策的依据。因此，一位独立的专业人员可以从原始数据一路追到结论，看清一次改动波及了什么，并且只重新核验受影响的那一部分——不必把整个系统重来一遍。",
+  "The first GALO product is intended to support industrial decisions inside the loop of digital twins and operational systems that are already running.":
+    "GALO 的第一个产品，面向企业已经在运行的数字孪生与操作系统这一回路中的工业决策。",
+  "See what changed. Understand which decisions are affected. Re-check only what is necessary.":
+    "看清改了什么。弄清哪些决策受影响。只重新核验必要的部分。",
   "WHAT GALO IS": "GALO 是什么",
-  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.":
-    "今天做出的决策，要经得起明天。一份来源被更正，一条规程被修订，一次读数缺失——问题就变成了：这波及了哪些结论，而其中又有哪些依然站得住。",
-  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.":
-    "GALO 就是为了让这个问题有一个外人也能核验的答案而建的。第一个产品面向工业决策保障，围绕企业已经在运行的那些系统。",
   "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.":
     "GALO 是一种根本不同的人工智能。神经网络通过改变隐藏的数值权重来学习；GALO 没有可训练的权重，也不使用反向传播。GALO 的学习方式不同：它构建、核验并局部修订一套显式的知识结构，保存在带版本的图册（Atlas）里。",
   "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.":
@@ -387,8 +393,6 @@ export const homeNarrativeZh: TranslationDictionary = {
   "Search counters and orders": "搜索计数器与次序",
   "See how GALO works": "看看 GALO 是怎么工作的",
   "See the mathematics": "查看数学部分",
-  "See what changed. Trace what it affects. Re-check only what matters.":
-    "看清什么变了。追出它影响到哪里。只复核真正要紧的部分。",
   "Sensor calibration record": "传感器标定记录",
   "Separate sealed artefacts with trained Atlas volumes, preregistered before the results were seen.":
     "一批独立的封存产物，带训练过的 Atlas 卷宗，并在看到结果之前就已预注册。",
@@ -477,11 +481,15 @@ export const homeNarrativeZh: TranslationDictionary = {
 };
 
 export const homeNarrativeAr: TranslationDictionary = {
+  "A decision has to survive more than today's check; it has to survive tomorrow's changes. When a source is corrected, a procedure is updated, or a reading is no longer available, what matters is knowing straight away which conclusions are affected, which still hold, and what exactly has to be checked again.":
+    "على القرار أن يصمد لا أمام فحص اليوم وحده، بل أمام تغيّرات الغد أيضًا. فإذا صُحِّح مصدر، أو حُدِّثت تعليمات، أو لم تعد قراءةٌ متاحة، فالمهمّ أن يُعرَف في الحال: أيُّ الاستنتاجات تأثّر، وأيُّها يبقى قائمًا، وما الذي يلزم فحصه من جديد بالضبط.",
+  "GALO keeps the grounds of every decision in an explicit, reproducible form. An independent specialist can therefore follow the path from the source data to the conclusion, see what a change affects, and re-check only the affected part — without revisiting the whole system.":
+    "تحفظ GALO أسس كلِّ قرارٍ في صورةٍ صريحة قابلة لإعادة التشغيل. ولذلك يستطيع مختصٌّ مستقلّ أن يتتبّع الطريق من البيانات الأصلية إلى الاستنتاج، وأن يرى ما يمسّه التغيير، وأن يعيد فحص الجزء المتأثّر وحده — دون مراجعة النظام كلّه.",
+  "The first GALO product is intended to support industrial decisions inside the loop of digital twins and operational systems that are already running.":
+    "مُنتَج GALO الأوّل مُعَدٌّ لمرافقة القرارات الصناعية داخل حلقة التوائم الرقمية والأنظمة التشغيلية العاملة أصلًا.",
+  "See what changed. Understand which decisions are affected. Re-check only what is necessary.":
+    "أن ترى ما تغيّر. وأن تعرف أيَّ القرارات تأثّرت. وأن تعيد فحص ما يلزم وحده.",
   "WHAT GALO IS": "ما هو GALO",
-  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.":
-    "القرار الذي يُتَّخذ اليوم عليه أن يصمد غدًا. يُصحَّح مصدر، وتُراجَع تعليمات، وتغيب قراءة — فيصير السؤال: أيَّ الاستنتاجات يمسّ ذلك، وأيُّها يبقى قائمًا.",
-  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.":
-    "بُني GALO ليكون لهذا السؤال جوابٌ يستطيع من هو خارج المشروع فحصه. والمنتَج الأوّل مُعَدٌّ لضمان القرار الصناعي حول أنظمةٍ تشغّلها الشركة أصلًا.",
   "GALO is a fundamentally different kind of AI. Neural networks learn by changing hidden numerical weights; GALO has no trainable weights and uses no backpropagation. GALO learns differently: it builds, checks and locally revises an explicit structure of knowledge, held in a versioned Atlas.":
     "‏GALO نوعٌ من الذكاء الاصطناعيّ مختلفٌ في أصله. تتعلّم الشبكات العصبية بتغيير أوزانٍ عددية خفيّة؛ أمّا GALO فلا أوزان قابلة للتدريب لديه، ولا يستعمل الانتشار العكسيّ. يتعلّم GALO على نحوٍ آخر: يبني بنيةً صريحة للمعرفة، ويتحقّق منها، ويراجعها مراجعةً موضعية، وهي محفوظةٌ في أطلسٍ ذي إصدارات.",
   "So every decision keeps its grounds visible: the data, the relations, and the sequence of checkable steps. When one source or one condition changes, GALO makes it possible to revise only the structures and decisions connected to it, without retraining the whole system. The first product carries this principle into an industrial setting — to decisions resting on the digital twins and operational systems a company already runs.":
@@ -624,8 +632,6 @@ export const homeNarrativeAr: TranslationDictionary = {
   "Search counters and orders": "عدّادات البحث وترتيباته",
   "See how GALO works": "انظر كيف يعمل GALO",
   "See the mathematics": "طالِع الرياضيات",
-  "See what changed. Trace what it affects. Re-check only what matters.":
-    "أن ترى ما تغيَّر. وأن تتتبَّع ما يمسُّه. وأن تُعيد فحص ما يهمّ وحده.",
   "Sensor calibration record": "سجلّ معايرة الحسّاس",
   "Separate sealed artefacts with trained Atlas volumes, preregistered before the results were seen.":
     "مصنوعاتٌ مختومة منفصلة، فيها أرصدةُ Atlas مدرَّبة، سُجِّلت مسبقًا قبل رؤية النتائج.",

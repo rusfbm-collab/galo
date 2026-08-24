@@ -51,9 +51,11 @@ describe("GALO public site", () => {
     expect(hero?.querySelectorAll(".hero__markers li")).toHaveLength(heroMarkers.length);
     expect(hero?.textContent).toContain(heroBoundary);
 
-    // The lead stays short enough to read in one pass.
+    // Three paragraphs — the problem, the answer, the wedge — and a ceiling so
+    // the first screen cannot quietly grow into an essay.
+    expect(heroLead).toHaveLength(3);
     const leadWords = heroLead.join(" ").trim().split(/\s+/).length;
-    expect(leadWords).toBeLessThanOrEqual(90);
+    expect(leadWords).toBeLessThanOrEqual(130);
 
     expect(screen.getByRole("link", { name: /Request a bounded industrial evaluation/i })).toHaveAttribute(
       "href",

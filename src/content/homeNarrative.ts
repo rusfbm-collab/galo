@@ -29,14 +29,15 @@ export const heroEyebrow = "WEIGHT-FREE AI · INDUSTRIAL DECISION ASSURANCE";
 export const heroHeadline = "AI built for provable decisions.";
 
 /**
- * The lead sets the problem up; the mechanism belongs to the explainer block
- * directly under the hero, which states it once and in full. These two used to
- * carry the mechanism as well, and the page said the same thing twice within a
- * screen and a half.
+ * Three paragraphs, in the order a reader asks for them: the problem, what GALO
+ * does about it, and where the first product points. The mechanism underneath —
+ * no weights, no backpropagation, a versioned Atlas — is the explainer block
+ * directly below, so the hero never has to reach for it.
  */
 export const heroLead: readonly string[] = [
-  "A decision made today has to survive tomorrow. A source is corrected, a procedure is revised, a reading goes missing — and the question becomes which conclusions that reaches, and which of them still hold.",
-  "GALO is built so that question has an answer somebody outside can check. The first product is intended for industrial decision assurance around systems a company already operates.",
+  "A decision has to survive more than today's check; it has to survive tomorrow's changes. When a source is corrected, a procedure is updated, or a reading is no longer available, what matters is knowing straight away which conclusions are affected, which still hold, and what exactly has to be checked again.",
+  "GALO keeps the grounds of every decision in an explicit, reproducible form. An independent specialist can therefore follow the path from the source data to the conclusion, see what a change affects, and re-check only the affected part — without revisiting the whole system.",
+  "The first GALO product is intended to support industrial decisions inside the loop of digital twins and operational systems that are already running.",
 ];
 
 /* ------------------------------------------------- what GALO is, in short ---- */
@@ -54,7 +55,7 @@ export const explainerParagraphs: readonly string[] = [
 ];
 
 /** Three verbs, in the order an operator would want them. */
-export const heroResult = "See what changed. Trace what it affects. Re-check only what matters.";
+export const heroResult = "See what changed. Understand which decisions are affected. Re-check only what is necessary.";
 
 /** Four markers, two or three words each, read at a glance rather than parsed. */
 export const heroMarkers: readonly string[] = [
