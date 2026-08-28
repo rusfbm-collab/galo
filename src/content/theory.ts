@@ -1223,4 +1223,19 @@ export const theoryMisconceptions = [
     correction:
       "It proves only the finite claims inside its contract. Persistent learning and General AI remain unclaimed.",
   },
+  {
+    claim: "One prediction visits all 560 cells.",
+    correction:
+      "It runs a fixed list of typed steps covering three channels, seven levels, and four families. The catalogue is an address space; a route is a length, and the two are different numbers.",
+  },
+  {
+    claim: "Coverage is a kind of accuracy.",
+    correction:
+      "Coverage is the share of questions that were answered at all. A system that refuses more raises it not at all and can raise its accuracy among answers, which is exactly why both are published.",
+  },
+  {
+    claim: "A refusal is a wrong answer the system hid.",
+    correction:
+      "A refusal publishes no prediction and no ranking, and names its cause. In the overall figure it is counted as wrong, so refusing cannot improve that number.",
+  },
 ] as const;

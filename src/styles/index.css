@@ -11795,6 +11795,444 @@ caption bdi {
   }
 }
 
+/* ---- the law of a published answer, and how to read a result ---- */
+
+.theory-route-arithmetic {
+  max-width: 78ch;
+  margin: 0 0 34px;
+}
+
+.theory-route-arithmetic__line {
+  margin: 18px 0 0;
+  padding: 14px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.94rem;
+  font-weight: 600;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.theory-route-arithmetic__caution,
+.theory-scope-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  max-width: 78ch;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.theory-route-arithmetic__caution svg,
+.theory-scope-note svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--amber);
+}
+
+.theory-denominator-block {
+  margin-top: 62px;
+  padding-top: 46px;
+  border-top: 1px solid var(--line);
+}
+
+/* the four-stage conjunction */
+
+.verdict,
+.causal,
+.denominators {
+  margin: 34px 0 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--white);
+}
+
+.verdict__caption,
+.causal__caption,
+.denominators__caption {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 24px;
+}
+
+.verdict__eyebrow,
+.causal__eyebrow,
+.denominators__eyebrow {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.verdict__caption strong,
+.causal__caption strong,
+.denominators__caption strong {
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.42;
+}
+
+.verdict__stages {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  list-style: none;
+}
+
+.verdict__stages li {
+  display: flex;
+  gap: 14px;
+  padding: 17px 19px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+
+.verdict__number {
+  flex: none;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.verdict__stages strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-size: 0.97rem;
+}
+
+.verdict__does {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.58;
+}
+
+.verdict__prevents {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.verdict__prevents span {
+  color: var(--red);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.verdict__law {
+  margin: 22px 0 0;
+  padding: 15px 20px;
+  border: 1px solid rgba(10, 130, 119, 0.32);
+  border-radius: 14px;
+  background: rgba(10, 130, 119, 0.07);
+  color: var(--teal-deep);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.verdict__outcomes {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  align-items: start;
+}
+
+.verdict__outcome {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+
+.verdict__outcome.is-answer {
+  border-color: rgba(10, 130, 119, 0.34);
+  background: rgba(10, 130, 119, 0.06);
+}
+
+.verdict__outcome.is-boundary {
+  border-color: rgba(232, 169, 58, 0.4);
+  background: rgba(232, 169, 58, 0.07);
+}
+
+.verdict__tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.verdict__outcome.is-answer .verdict__tag {
+  color: var(--teal-deep);
+}
+
+.verdict__outcome.is-boundary .verdict__tag {
+  color: #a06b12;
+}
+
+.verdict__outcome p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.58;
+}
+
+.verdict__outcome ul {
+  display: grid;
+  gap: 9px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.verdict__outcome li {
+  display: grid;
+  gap: 3px;
+  padding-inline-start: 13px;
+  border-inline-start: 2px solid rgba(232, 169, 58, 0.5);
+}
+
+.verdict__outcome li strong {
+  color: var(--ink);
+  font-size: 0.88rem;
+}
+
+.verdict__outcome li span {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.52;
+}
+
+.verdict__foot {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* the protocol order */
+
+.causal__grid {
+  display: grid;
+  gap: 8px;
+}
+
+.causal__head,
+.causal__row {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr);
+  align-items: baseline;
+}
+
+.causal__head {
+  padding: 0 18px 6px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.causal__row {
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+/* The two rows where the test split is finally read are the whole point of the
+   figure, so they are marked rather than left for the reader to spot. */
+.causal__row.is-test {
+  border-color: rgba(10, 130, 119, 0.36);
+  background: rgba(10, 130, 119, 0.06);
+}
+
+.causal__step {
+  display: flex;
+  gap: 11px;
+  color: var(--ink);
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.causal__number {
+  flex: none;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.causal__reads,
+.causal__freezes {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.causal__label {
+  display: none;
+  margin-inline-end: 6px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.causal__row.is-test .causal__reads {
+  color: var(--teal-deep);
+  font-weight: 600;
+}
+
+.causal__laws {
+  display: grid;
+  gap: 11px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.causal__laws li {
+  padding-inline-start: 15px;
+  border-inline-start: 2px solid var(--teal-deep);
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* four denominators */
+
+.denominators__grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.denominators__grid article {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+
+.denominators__grid h4 {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+
+.denominators__over,
+.denominators__misread {
+  display: grid;
+  gap: 3px;
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.52;
+}
+
+.denominators__over {
+  color: var(--teal-deep);
+  font-weight: 600;
+}
+
+.denominators__over span,
+.denominators__misread span {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.denominators__over span {
+  color: var(--muted);
+}
+
+.denominators__misread {
+  margin-top: 12px;
+  color: var(--muted);
+}
+
+.denominators__misread span {
+  color: var(--red);
+}
+
+.denominators__says {
+  margin: 10px 0 0;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.58;
+}
+
+.denominators__rule {
+  margin: 20px 0 0;
+  padding: 15px 20px;
+  border: 1px solid rgba(10, 130, 119, 0.32);
+  border-radius: 14px;
+  background: rgba(10, 130, 119, 0.07);
+  color: var(--teal-deep);
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.denominators__worked {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.62;
+}
+
+@media (max-width: 860px) {
+  .verdict,
+  .causal,
+  .denominators {
+    padding: 22px 18px;
+  }
+  .verdict__stages,
+  .verdict__outcomes,
+  .denominators__grid {
+    grid-template-columns: 1fr;
+  }
+  .causal__head {
+    display: none;
+  }
+  .causal__row {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  /* Stacked, the two right-hand cells lose their column headers, so each one
+     carries its own label and shows it only here. */
+  .causal__label {
+    display: inline;
+  }
+}
+
 /* ---- the engine tour page ---- */
 
 .engine-hero__note {

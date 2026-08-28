@@ -35,6 +35,7 @@ import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 import { weightFreeRu } from "./weightFree";
 import { homeNarrativeRu } from "./homeNarrative";
+import { verdictLawRu } from "./verdictLaw";
 
 export const ru: TranslationDictionary = {
   ...mathRu,
@@ -73,6 +74,7 @@ export const ru: TranslationDictionary = {
   ...engineTourRu,
   ...weightFreeRu,
   ...homeNarrativeRu,
+  ...verdictLawRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
   "GALO AI home": "Главная страница GALO AI",

@@ -35,6 +35,7 @@ import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 import { weightFreeZh } from "./weightFree";
 import { homeNarrativeZh } from "./homeNarrative";
+import { verdictLawZh } from "./verdictLaw";
 
 export const zh: TranslationDictionary = {
   ...mathZh,
@@ -73,6 +74,7 @@ export const zh: TranslationDictionary = {
   ...engineTourZh,
   ...weightFreeZh,
   ...homeNarrativeZh,
+  ...verdictLawZh,
   Language: "语言",
   "Skip to content": "跳到正文",
   "GALO AI home": "GALO AI 首页",

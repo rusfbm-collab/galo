@@ -16,7 +16,9 @@ import { AbsorbingGateFigure } from "../components/diagrams/AbsorbingGateFigure"
 import { CayleyHeatmapFigure } from "../components/diagrams/CayleyHeatmapFigure";
 import { CheckCostFigure } from "../components/diagrams/CheckCostFigure";
 import { CommutingSquareFigure } from "../components/diagrams/CommutingSquareFigure";
+import { CausalOrderFigure } from "../components/diagrams/CausalOrderFigure";
 import { CoordinateCountFigure } from "../components/diagrams/CoordinateCountFigure";
+import { DenominatorFigure } from "../components/diagrams/DenominatorFigure";
 import { CyclicDialFigure } from "../components/diagrams/CyclicDialFigure";
 import { FoundationChainFigure } from "../components/diagrams/FoundationChainFigure";
 import { FrameGenesisFigure } from "../components/diagrams/FrameGenesisFigure";
@@ -36,6 +38,7 @@ import { StarResetFigure } from "../components/diagrams/StarResetFigure";
 import { TableSpaceFigure } from "../components/diagrams/TableSpaceFigure";
 import { ThreeShelvesFigure } from "../components/diagrams/ThreeShelvesFigure";
 import { TypedActionMeaningFigure } from "../components/diagrams/TypedActionMeaningFigure";
+import { VerdictConjunctionFigure } from "../components/diagrams/VerdictConjunctionFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { ConceptLessonCard } from "../components/math/ConceptLessonCard";
 import { TermButton, TermChips } from "../components/theory/TermExplainer";
@@ -64,6 +67,21 @@ import {
   theoryObjectClasses,
   theorySymbolLegend,
 } from "../content/theory";
+import {
+  causalBody,
+  causalBoundary,
+  causalEyebrow,
+  causalHeadline,
+  denominatorBody,
+  denominatorEyebrow,
+  denominatorHeadline,
+  routeArithmeticCaution,
+  routeArithmeticLine,
+  routeArithmeticNote,
+  verdictBody,
+  verdictEyebrow,
+  verdictHeadline,
+} from "../content/verdictLaw";
 import { afterThisChapter, chapterVocabulary } from "../content/orientation";
 import { cayleyFoundation, cayleyWhyFinite } from "../content/plainLanguage";
 import { releaseEvidence } from "../content/evidence";
@@ -81,9 +99,11 @@ const contents = [
   { href: "#guided-lab", label: "Guided transition laboratory" },
   { href: "#count-560", label: "Where the number 560 comes from" },
   { href: "#programs", label: "From cells to bracketed programs" },
+  { href: "#verdict-law", label: "When a program becomes an answer" },
   { href: "#symmetry-simple", label: "Symmetry in plain language" },
   { href: "#levels-maps", label: "Maps between levels" },
   { href: "#architecture-map", label: "How the mathematics fits the architecture" },
+  { href: "#reading-a-result", label: "Reading a benchmark result" },
   { href: "#evidence-language", label: "How to read GALO evidence" },
   { href: "#glossary", label: "Plain-language glossary" },
 ] as const;
@@ -999,6 +1019,23 @@ export function TheoryPage() {
         </div>
       </section>
 
+      <section id="verdict-law" className="section section--white math-anchor-section">
+        <div className="shell">
+          <SectionHeading eyebrow={t(verdictEyebrow)} title={t(verdictHeadline)} text={t(verdictBody)} />
+          <div className="theory-route-arithmetic">
+            <p className="theory-lead">{t(routeArithmeticNote)}</p>
+            <p className="theory-route-arithmetic__line" dir="ltr">
+              {routeArithmeticLine}
+            </p>
+            <p className="theory-route-arithmetic__caution">
+              <CircleAlert size={16} aria-hidden="true" /> {t(routeArithmeticCaution)}
+            </p>
+          </div>
+          <VerdictConjunctionFigure />
+          <TermChips terms={["Receipt", "Boundary", "Typed coordinate"]} />
+        </div>
+      </section>
+
       <section id="symmetry-simple" className="section section--navy math-anchor-section">
         <div className="shell">
           <SectionHeading
@@ -1554,6 +1591,21 @@ export function TheoryPage() {
             ))}
           </ol>
           <TermChips terms={["Formal, current, and target layers", "Current V4 step-by-step replay", "Receipt"]} />
+        </div>
+      </section>
+
+      <section id="reading-a-result" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading eyebrow={t(causalEyebrow)} title={t(causalHeadline)} text={t(causalBody)} />
+          <CausalOrderFigure />
+          <p className="theory-scope-note">
+            <CircleAlert size={16} aria-hidden="true" /> {t(causalBoundary)}
+          </p>
+          <div className="theory-denominator-block">
+            <SectionHeading eyebrow={t(denominatorEyebrow)} title={t(denominatorHeadline)} text={t(denominatorBody)} />
+            <DenominatorFigure />
+          </div>
+          <TermChips terms={["Boundary", "Receipt", "Formal, current, and target layers"]} />
         </div>
       </section>
 

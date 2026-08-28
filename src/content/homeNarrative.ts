@@ -326,10 +326,10 @@ export const artefactScopes: readonly ArtefactScope[] = [
     name: "The prototypes that do learn",
     exists: "Separate sealed artefacts with trained Atlas volumes, preregistered before the results were seen.",
     measured:
-      "Paired reductions in work on public corpora against the identical system with its learning switched off, published with the benchmark that refused to be learned.",
+      "On fixed public corpora: how much work the learning saves against the identical system with it switched off, and — on the later line — how often an answer was allowed at all and how often it was right, published together with the benchmark that produced no answers whatsoever.",
     doesNotFollow:
       "Not a statement about the public release, which learns nothing, and not a statement about any industrial setting.",
-    nextGate: "An end-to-end run where the full architecture, not a counting ranker, is in the measured path.",
+    nextGate: "An independent party rebuilding the whole line from the published bytes and reporting what they got.",
   },
   {
     tag: "TARGET INDUSTRIAL PRODUCT",

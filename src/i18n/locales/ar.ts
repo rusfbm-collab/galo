@@ -35,6 +35,7 @@ import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 import { weightFreeAr } from "./weightFree";
 import { homeNarrativeAr } from "./homeNarrative";
+import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
   ...mathAr,
@@ -73,6 +74,7 @@ export const ar: TranslationDictionary = {
   ...engineTourAr,
   ...weightFreeAr,
   ...homeNarrativeAr,
+  ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
   "GALO AI home": "الصفحة الرئيسية لـ GALO AI",

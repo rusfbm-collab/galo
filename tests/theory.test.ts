@@ -230,6 +230,11 @@ describe("beginner theory dual-channel safeguards", () => {
     }
     expect(new Set(conceptLessonTranslationKeys).size).toBe(conceptLessonTranslationKeys.length);
     expect(conceptLessonTranslationKeys).toEqual(expect.arrayContaining(conceptLessons.map(({ term }) => term)));
-    expect(theoryMisconceptions).toHaveLength(6);
+    // Six on the mathematics, three on how a result is allowed to be read.
+    expect(theoryMisconceptions).toHaveLength(9);
+    const claims = theoryMisconceptions.map((entry) => entry.claim);
+    expect(claims).toContain("One prediction visits all 560 cells.");
+    expect(claims).toContain("Coverage is a kind of accuracy.");
+    expect(claims).toContain("A refusal is a wrong answer the system hid.");
   });
 });
