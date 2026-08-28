@@ -44,7 +44,11 @@ export const siteMap: readonly SiteMapGroup[] = [
         hint: "What exists, what does not, and what would tell you to walk away.",
       },
       { label: "For auditors", href: "/audit", hint: "What a sceptic can establish here, and what nobody can." },
-      { label: "How the engine works", href: "/hub71", hint: "The mechanism in ten minutes, then where to attack it." },
+      {
+        label: "How the engine works",
+        href: "/engine",
+        hint: "The mechanism in ten minutes, then where to attack it.",
+      },
       { label: "Evidence", href: "/evidence", hint: "Four tracks, and how far each one has actually come." },
     ],
   },

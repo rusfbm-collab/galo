@@ -22,13 +22,13 @@ import { siteContent } from "../src/content/site";
  */
 describe("assessment dossier", () => {
   it("states the non-affiliation in the form the claim checker requires", () => {
-    expect(nonAffiliation).toContain("not affiliated with, endorsed by, backed by, or selected by Hub71");
+    expect(nonAffiliation).toContain("prepared by the project itself");
     expect(nonAffiliation).toMatch(/reports no decision, no relationship, and no outcome/i);
   });
 
   it("never implies a relationship, a selection, or an endorsement", () => {
     const prose = programmeTranslationKeys.join(" ");
-    expect(prose).not.toMatch(/\b(Hub71 partner|Hub71 portfolio|Hub71 cohort|selected for|accepted into)\b/i);
+    expect(prose).not.toMatch(/\b(Hub71|selected for|accepted into|backed by|endorsed by)\b/i);
     // Describing somebody else's programme second-hand is the failure mode this
     // page exists to avoid, so its own strings may not do it either.
     expect(prose).not.toMatch(/\b(their criteria|the programme offers|eligibility requirements)\b/i);

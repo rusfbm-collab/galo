@@ -30,8 +30,8 @@ export const programmeRu: TranslationDictionary = {
   AFFILIATION: "АФФИЛИАЦИЯ",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ДОСЬЕ ЗАЯВКИ · НЕ ОБЪЯВЛЕНИЕ",
   Affiliation: "Аффилиация",
-  "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
-    "Досье заявки, подготовленное для оценки: двенадцать пунктов о том, как обстоит дело, шесть из них отрицательные; четыре довода о том, почему работа подходит региону, и предел каждого из них; двенадцать месяцев обязательств с условиями провала; шесть вопросов, на которых нас будут дожимать. Аффилиация с Hub71 не заявляется и не подразумевается.",
+  "An assessment dossier prepared by the project: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on.":
+    "Досье для оценки, подготовленное самим проектом: двенадцать пунктов о том, как обстоит дело, шесть из них отрицательные; четыре довода о том, почему работа подходит региону, и предел каждого из них; двенадцать месяцев обязательств с условиями провала; шесть вопросов, на которых нас будут дожимать.",
   "An introduction that would be presented anywhere as validation of the technical claims.":
     "Знакомства, которое где-нибудь выдадут за подтверждение наших технических выводов.",
   "Anybody's signature on a claim that this site has not itself established.":
@@ -85,8 +85,8 @@ export const programmeRu: TranslationDictionary = {
     "Четыре вещи, о которых мы просим, и четыре, о которых просить не станем.",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits":
     "Досье заявки GALO AI — пункты оценки, обязательства и границы",
-  "GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or any of its partners. This page is an application dossier prepared by the project. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
-    "GALO AI не аффилирован с Hub71 и её партнёрами: нас не одобряли, не поддерживали и не отбирали. Эта страница — досье заявки, которое проект составил сам. В ней нет ни решения, ни отношений, ни исхода, и читать её как сообщение о чём-то подобном не следует.",
+  "This dossier was prepared by the project itself, for assessment by somebody outside it. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
+    "Это досье подготовил сам проект — для оценки кем-то со стороны. В нём нет ни решения, ни отношений, ни исхода, и читать его как сообщение о чём-то подобном не следует.",
   "Have the mathematics re-derived and attacked by somebody outside the project, and publish the result unedited.":
     "Отдать математику человеку со стороны — пусть выведет заново и попробует сломать — и опубликовать его выводы без правок.",
   "Hire a systems engineer and a research and evaluation engineer, both full-time.":
@@ -260,8 +260,8 @@ export const programmeZh: TranslationDictionary = {
   AFFILIATION: "隶属关系",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "申请档案 · 并非公告",
   Affiliation: "隶属关系",
-  "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
-    "为评估而准备的申请档案：十二条现状条目，其中六条为否定；四项区域契合主张，各附其限度；十二个月的承诺，每一项都带有未达成的判定条件；以及我们预计会被追问的六个问题。不声称也不暗示与 Hub71 存在任何隶属关系。",
+  "An assessment dossier prepared by the project: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on.":
+    "由项目自己准备、供评估用的材料：十二条现状条目，其中六条为否定；四项区域契合主张，各附其限度；十二个月的承诺，每一项都带有未达成的判定条件；以及我们预计会被追问的六个问题。",
   "An introduction that would be presented anywhere as validation of the technical claims.":
     "任何会在别处被当作技术主张之佐证来呈现的引荐。",
   "Anybody's signature on a claim that this site has not itself established.": "任何人为本站尚未确立的主张背书签字。",
@@ -307,8 +307,8 @@ export const programmeZh: TranslationDictionary = {
   "Four reasons the work is shaped like the region's problems.": "这项工作为什么正好对得上本地区的问题——四个理由。",
   "Four things asked for, and four deliberately not asked for.": "我们请求的四件事，以及我们刻意不请求的四件事。",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits": "GALO AI 申请档案 — 评估条目、里程碑与边界",
-  "GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or any of its partners. This page is an application dossier prepared by the project. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
-    "GALO AI 与 Hub71 及其任何合作方均无隶属关系，未获其背书、支持或选拔。本页是本项目自行准备的申请档案。它不报告任何决定、任何关系或任何结果，页面上的任何内容都不应被这样解读。",
+  "This dossier was prepared by the project itself, for assessment by somebody outside it. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
+    "这份材料是项目自己准备的，供项目之外的人评估。它不报告任何决定、任何关系、任何结果，其中也没有任何内容应当被这样读。",
   "Have the mathematics re-derived and attacked by somebody outside the project, and publish the result unedited.":
     "请项目之外的人重新推导并攻击这套数学，并原样发布其结果。",
   "Hire a systems engineer and a research and evaluation engineer, both full-time.":
@@ -481,8 +481,8 @@ export const programmeAr: TranslationDictionary = {
   AFFILIATION: "الارتباط",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلانًا",
   Affiliation: "الارتباط",
-  "An application dossier prepared for assessment: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on. No affiliation with Hub71 is claimed or implied.":
-    "ملف طلب أُعدّ للتقييم: اثنا عشر بندًا تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+  "An assessment dossier prepared by the project: twelve lines of the current state with six of them negative, four regional-fit claims with their limits, twelve months of commitments each with a failure condition, and the six questions we expect to be pressed on.":
+    "ملفُّ تقييمٍ أعدَّه المشروع بنفسه: اثنا عشر بندًا تصف الوضع الراهن، ستّة منها سلبية؛ وأربع دعاوى للملاءمة الإقليمية مع حدودها؛ واثنا عشر شهرًا من الالتزامات، لكلٍّ منها شرط الإخفاق؛ والأسئلة الستّة التي نتوقّع أن نُساءل عنها.",
   "An introduction that would be presented anywhere as validation of the technical claims.":
     "تعارفٍ يُقدَّم في أي مكان بوصفه تصديقًا على الدعاوى التقنية.",
   "Anybody's signature on a claim that this site has not itself established.":
@@ -533,8 +533,8 @@ export const programmeAr: TranslationDictionary = {
   "Four things asked for, and four deliberately not asked for.": "أربعة أمور مطلوبة، وأربعة لا تُطلب عن قصد.",
   "GALO AI Application Dossier — Assessment Lines, Milestones, and Limits":
     "ملف طلب GALO AI — بنود التقييم والالتزامات والحدود",
-  "GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or any of its partners. This page is an application dossier prepared by the project. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
-    "لا ترتبط GALO AI بـ Hub71 ولا بأي من شركائها، ولم تحصل على تأييدها أو دعمها أو اختيارها. وهذه الصفحة ملف طلبٍ أعدّه المشروع بنفسه. وهي لا تُخبر عن أي قرار ولا عن أي علاقة ولا عن أي نتيجة، ولا ينبغي أن يُقرأ شيء فيها على هذا النحو.",
+  "This dossier was prepared by the project itself, for assessment by somebody outside it. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one.":
+    "أعدَّ هذا الملفَّ المشروعُ نفسه، ليقيّمه من هو خارجه. وهو لا يُبلِّغ عن قرارٍ ولا علاقةٍ ولا نتيجة، ولا ينبغي أن يُقرأ منه شيءٌ على هذا النحو.",
   "Have the mathematics re-derived and attacked by somebody outside the project, and publish the result unedited.":
     "أن يُعيد شخصٌ من خارج المشروع اشتقاق الرياضيات ومهاجمتها، وأن يُنشر ما خلص إليه دون تحرير.",
   "Hire a systems engineer and a research and evaluation engineer, both full-time.":

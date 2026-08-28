@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The site is a layered public surface for Hub71 reviewers, prospective technical evaluators, and deep-tech investors:
+The site is a layered public surface for programme reviewers, prospective technical evaluators, and deep-tech investors:
 
 1. `/` explains the problem, the architectural class, the verified bounded slice, and the proposed external evaluation in under three minutes.
 2. `/math` and `/symmetry` publish the finite algebra with academic definitions, proofs, examples, and interpretation boundaries.
@@ -12,13 +12,13 @@ The primary conversion is a bounded technical-evaluation conversation. This is n
 
 ## Audiences and decisions
 
-| Audience            | Decision the site must enable                                                    |
-| ------------------- | -------------------------------------------------------------------------------- |
-| Hub71 sourcing      | Understand category, problem, maturity, and Abu Dhabi intent in under 60 seconds |
-| Hub71 team          | Assess founder discipline, market wedge, hiring plan, and 12-month build plan    |
-| Ecosystem evaluator | See a falsifiable, partner-owned bounded evaluation shape                        |
-| Technical reviewer  | Inspect scope, receipts, boundaries, and current-vs-target separation            |
-| Deep-tech investor  | Understand the staged commercial route without fabricated traction               |
+| Audience            | Decision the site must enable                                                 |
+| ------------------- | ----------------------------------------------------------------------------- |
+| Programme sourcing  | Understand category, problem, and maturity in under 60 seconds                |
+| Programme reviewer  | Assess founder discipline, market wedge, hiring plan, and 12-month build plan |
+| Ecosystem evaluator | See a falsifiable, partner-owned bounded evaluation shape                     |
+| Technical reviewer  | Inspect scope, receipts, boundaries, and current-vs-target separation         |
+| Deep-tech investor  | Understand the staged commercial route without fabricated traction            |
 
 ## Positioning
 

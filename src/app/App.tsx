@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { AuditPage } from "../pages/AuditPage";
-import { Hub71Page } from "../pages/Hub71Page";
+import { EnginePage } from "../pages/EnginePage";
 import { IndustryPage } from "../pages/IndustryPage";
 import { ComparisonPage } from "../pages/ComparisonPage";
 import { EvidencePage } from "../pages/EvidencePage";
@@ -53,10 +53,10 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     description:
       "Four tiers of verifiability, the five slots of every published claim, how to read a status without being misled, eight reviewer questions, a five-step reproduction, and the limits of this site.",
   },
-  "/hub71": {
+  "/engine": {
     title: "How GALO Works — The Mechanism, Without Taking It On Trust",
     description:
-      "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.",
+      "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the three conditions an answer has to satisfy before it may be published, what this is not, what has already been checked, and the five places a sceptic should push.",
   },
   "/industry": {
     title: "GALO AI for Industry — Decision Assurance Around Existing Digital Twins",
@@ -186,7 +186,7 @@ export function App() {
       {route === "/simple" && <PlainWordsPage />}
       {route === "/investors" && <InvestorsPage />}
       {route === "/audit" && <AuditPage />}
-      {route === "/hub71" && <Hub71Page />}
+      {route === "/engine" && <EnginePage />}
       {route === "/industry" && <IndustryPage />}
       {route === "/theory" && <TheoryPage />}
       {route === "/thinking" && <ThinkingPage />}

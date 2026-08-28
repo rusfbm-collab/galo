@@ -60,7 +60,7 @@ import {
   underHoodHeadline,
   underHoodTeaser,
 } from "../content/homeNarrative";
-import { authorityLine, externalAdapterRule, weightFreeBoundary } from "../content/weightFree";
+import { authorityLine, externalAdapterRule, structuralRightLine, weightFreeBoundary } from "../content/weightFree";
 import { useI18n } from "../i18n/I18nContext";
 
 const problemCards = [
@@ -242,7 +242,9 @@ export function HomePage() {
           <p className="learned-groups__note">{t(learnedGroupsNote)}</p>
           <p className="weight-free__authority">
             <ShieldCheck size={18} aria-hidden="true" />
-            <span>{t(authorityLine)}</span>
+            <span>
+              {t(authorityLine)} <em>{t(structuralRightLine)}</em>
+            </span>
           </p>
           <a className="text-link" href={href("/vs-llm#dimensions")}>
             {t("The same difference, dimension by dimension, against a language model")}{" "}
@@ -809,7 +811,7 @@ export function HomePage() {
             </ol>
           </div>
           <p className="endorsement-note">{t("No programme selection, partnership, or endorsement is implied.")}</p>
-          <a className="button button--ghost dossier-link" href={href("/hub71")}>
+          <a className="button button--ghost dossier-link" href={href("/engine")}>
             {t("Read how the engine works, then where to attack it")}{" "}
             <ArrowRight className="directional-icon" size={17} aria-hidden="true" />
           </a>

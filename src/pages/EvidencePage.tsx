@@ -1,4 +1,4 @@
-import { ArrowLeft, Check, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
 import { ReceiptAnatomyFigure } from "../components/diagrams/ReceiptAnatomyFigure";
 import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { PageShell } from "../components/layout/PageShell";
@@ -229,6 +229,20 @@ export function EvidencePage() {
                 <p>{t(row.detail)}</p>
               </article>
             ))}
+          </div>
+
+          <div className="learning-denominators">
+            <p className="eyebrow">{t("BEFORE READING ANY OF THESE NUMBERS")}</p>
+            <h3>{t("A system allowed to refuse can raise its score by answering less.")}</h3>
+            <p>
+              {t(
+                "So the denominator is the argument, and it is the part usually left out. How often an answer existed at all, and how often the answers that did exist were right, are two different numbers over two different sets — and neither may stand in for the other. The figure a refusal cannot improve is the one taken over every question asked.",
+              )}
+            </p>
+            <a className="text-link" href={href("/theory#reading-a-result")}>
+              {t("Four numbers that all look like accuracy, and what each is divided by")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
           </div>
 
           <div className="learning-results">

@@ -86,7 +86,10 @@ describe("academic reference", () => {
 
 describe("language-model comparison", () => {
   it("compares eleven properties and never states a performance claim", () => {
-    expect(comparisonRows).toHaveLength(11);
+    expect(comparisonRows).toHaveLength(12);
+    // Declining is a dimension, not a footnote: it is the one place the two
+    // systems differ on whether an answer exists at all.
+    expect(comparisonRows.map((row) => row.dimension)).toContain("When it declines");
     const forbidden = /\b(faster|cheaper|better than|outperform|beats|superior|more accurate than a language model\b)/i;
     for (const row of comparisonRows) {
       expect(row.dimension.trim().length).toBeGreaterThan(4);

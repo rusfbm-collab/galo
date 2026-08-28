@@ -39,4 +39,18 @@ export const externalAdapterRule =
  */
 export const authorityLine = "Learning may rank candidates; the verifier owns the verdict.";
 
-export const weightFreeTranslationKeys = [weightFreeBoundary, externalAdapterRule, authorityLine] as const;
+/**
+ * The other half of the same rule, and the half that is easy to miss. Learning
+ * carries no authority — and it is also not optional: a proposal with no learned
+ * structure behind it is refused rather than published, so the engine cannot
+ * fall back on the frozen laws alone and answer anyway.
+ */
+export const structuralRightLine =
+  "It is also not optional. A proposal with no learned structure behind it is refused, not published.";
+
+export const weightFreeTranslationKeys = [
+  weightFreeBoundary,
+  externalAdapterRule,
+  authorityLine,
+  structuralRightLine,
+] as const;

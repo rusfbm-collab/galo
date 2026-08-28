@@ -1,6 +1,34 @@
 import type { TranslationDictionary } from "../translations";
 
 export const verdictLawRu: TranslationDictionary = {
+  "Three conditions, all of them": "Три условия, и все сразу",
+  "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.":
+    "Ход допускается, только если контекст заслужил право отвечать, за ним стоит выученная структура и типизированная программа исполняется. Не хватает одного — в ответе отказано.",
+  "Withhold the right to answer at all": "Не дать права ответить вовсе",
+  "It cannot make the answer right — and without it there is no answer to check.":
+    "Оно не может сделать ответ верным — и без него проверять будет нечего.",
+  "Answer from the frozen laws alone when nothing was learned":
+    "Ответить по одним замороженным законам, когда ничего не выучено",
+  "It is also not optional. A proposal with no learned structure behind it is refused, not published.":
+    "И оно не необязательно. Предложение, за которым не стоит выученная структура, отклоняется, а не публикуется.",
+  "AND ONE MORE FAMILY, BELOW THE ROUTE": "И ЕЩЁ ОДНО СЕМЕЙСТВО — НИЖЕ МАРШРУТА",
+  "Even a route that finished can still end without a published answer.":
+    "Даже дошедший до конца маршрут может закончиться без опубликованного ответа.",
+  "The five gates above are about the route: what it could not separate, could not open, could not compose, or could not afford. Underneath them sits a second test, applied to the answer itself. Three conditions have to hold together, and any one of them missing is also a boundary with a named cause.":
+    "Пять ворот выше — про маршрут: что он не смог различить, не смог открыть, не смог собрать или не смог себе позволить. Под ними лежит вторая проверка — уже самого ответа. Три условия должны выполниться вместе, и отсутствие любого из них — тоже граница с названной причиной.",
+  "The three conditions, and what each one prevents": "Три условия и что каждое из них предотвращает",
+  "When it declines": "Когда отказывается отвечать",
+  "There is no built-in notion of declining. An answer comes back for every prompt, and low confidence looks the same as high confidence from outside.":
+    "Понятия отказа тут просто нет. Ответ возвращается на любой запрос, а снаружи низкая уверенность выглядит так же, как высокая.",
+  "An answer needs three separate conditions to hold together, so declining is ordinary rather than exceptional. A refusal publishes no prediction at all and names which condition was missing.":
+    "Ответу нужно, чтобы три отдельных условия выполнились вместе, поэтому отказ здесь обычное дело, а не исключение. Отказ не публикует никакого прогноза и называет, какого условия не хватило.",
+  "BEFORE READING ANY OF THESE NUMBERS": "ПРЕЖДЕ ЧЕМ ЧИТАТЬ ЛЮБОЕ ИЗ ЭТИХ ЧИСЕЛ",
+  "A system allowed to refuse can raise its score by answering less.":
+    "Система, которой разрешено отказывать, может поднять свой результат, отвечая реже.",
+  "So the denominator is the argument, and it is the part usually left out. How often an answer existed at all, and how often the answers that did exist were right, are two different numbers over two different sets — and neither may stand in for the other. The figure a refusal cannot improve is the one taken over every question asked.":
+    "Поэтому спор идёт о знаменателе, и именно его обычно опускают. Как часто ответ вообще был и как часто те ответы, что были, оказались верны, — это два разных числа по двум разным множествам, и подменять одно другим нельзя. Число, которому отказ помочь не может, — то, что берётся по всем заданным вопросам.",
+  "Four numbers that all look like accuracy, and what each is divided by":
+    "Четыре числа, каждое из которых выглядит как точность, и на что делится каждое",
   "A benchmark where nothing bought the right to answer publishes a coverage of zero and an overall accuracy of zero, and no selective accuracy at all — because there is nothing to take the average over. The internal ranking on the same rows may be well above chance. Reporting that ranking as the result would be the exact substitution this rule forbids.":
     "Бенчмарк, на котором никто не купил права ответить, публикует нулевое покрытие и нулевую общую точность — и никакой выборочной точности вовсе, потому что усреднять не по чему. Внутреннее ранжирование на тех же строках при этом может быть заметно выше случайного. Выдать это ранжирование за результат и было бы ровно той подменой, которую запрещает правило.",
   "A boundary carries no hidden prediction. The proposal stays in the record for diagnosis, and the published answer is empty rather than quietly downgraded.":
@@ -148,6 +176,33 @@ export const verdictLawRu: TranslationDictionary = {
 };
 
 export const verdictLawZh: TranslationDictionary = {
+  "Three conditions, all of them": "三个条件，一个都不能少",
+  "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.":
+    "只有当这个上下文已经挣得作答的权利、背后有一个学到的结构撑着、并且类型化程序跑得通，这一步才被准许。缺了任何一个，答案就被拒绝。",
+  "Withhold the right to answer at all": "干脆不给出作答的权利",
+  "It cannot make the answer right — and without it there is no answer to check.":
+    "它没法让答案变对——而没有它，根本就没有答案可查。",
+  "Answer from the frozen laws alone when nothing was learned": "在什么也没学到的时候，仅凭冻结的法则作答",
+  "It is also not optional. A proposal with no learned structure behind it is refused, not published.":
+    "而且它也不是可有可无的。一个背后没有学到的结构的提议，会被拒绝，而不是被公开。",
+  "AND ONE MORE FAMILY, BELOW THE ROUTE": "还有一族，在路线之下",
+  "Even a route that finished can still end without a published answer.":
+    "哪怕一条路线走完了，最后也可能没有可以公开的答案。",
+  "The five gates above are about the route: what it could not separate, could not open, could not compose, or could not afford. Underneath them sits a second test, applied to the answer itself. Three conditions have to hold together, and any one of them missing is also a boundary with a named cause.":
+    "上面那五道闸门讲的是路线：它没能区分什么、没能打开什么、没能拼出什么，或者付不起什么。在它们下面还有第二重检验，针对的是答案本身。三个条件必须同时成立，缺了其中任何一个，同样是一条带有具名原因的边界。",
+  "The three conditions, and what each one prevents": "三个条件，以及每一个各自防住了什么",
+  "When it declines": "什么时候它不作答",
+  "There is no built-in notion of declining. An answer comes back for every prompt, and low confidence looks the same as high confidence from outside.":
+    "它内部根本没有「不作答」这个概念。任何提示都会有答案回来，而从外面看，低置信度和高置信度长得一模一样。",
+  "An answer needs three separate conditions to hold together, so declining is ordinary rather than exceptional. A refusal publishes no prediction at all and names which condition was missing.":
+    "一个答案需要三个各自独立的条件同时成立，所以在这里不作答是常态，不是例外。拒答完全不发布任何预测，并且写明是哪个条件缺席。",
+  "BEFORE READING ANY OF THESE NUMBERS": "在读这些数字之前",
+  "A system allowed to refuse can raise its score by answering less.":
+    "一个被允许拒答的系统，可以靠少作答来把成绩抬上去。",
+  "So the denominator is the argument, and it is the part usually left out. How often an answer existed at all, and how often the answers that did exist were right, are two different numbers over two different sets — and neither may stand in for the other. The figure a refusal cannot improve is the one taken over every question asked.":
+    "所以真正要争的是分母，而这恰恰是通常被略去的部分。到底有多少次存在答案，和那些确实存在的答案有多少次是对的，是落在两个不同集合上的两个不同的数——谁也不能顶替谁。拒答改善不了的那个数，是按问过的每一个问题算出来的那个。",
+  "Four numbers that all look like accuracy, and what each is divided by":
+    "四个看上去都像准确率的数字，以及每一个的分母是什么",
   "A benchmark where nothing bought the right to answer publishes a coverage of zero and an overall accuracy of zero, and no selective accuracy at all — because there is nothing to take the average over. The internal ranking on the same rows may be well above chance. Reporting that ranking as the result would be the exact substitution this rule forbids.":
     "在一个没有任何东西买到作答权利的基准上，公布出来的覆盖率是零，总体准确率是零，而选择性准确率根本没有——因为没有东西可以取平均。同样那些行上的内部排序，可能明显好过随机。把那个排序当成结果报出去，正是这条规则禁止的那种顶替。",
   "A boundary carries no hidden prediction. The proposal stays in the record for diagnosis, and the published answer is empty rather than quietly downgraded.":
@@ -290,6 +345,34 @@ export const verdictLawZh: TranslationDictionary = {
 };
 
 export const verdictLawAr: TranslationDictionary = {
+  "Three conditions, all of them": "ثلاثة شروط، وكلُّها معًا",
+  "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.":
+    "لا يُقبَل الانتقال إلا إذا كسب السياقُ حقَّ الجواب، ووقفت خلفه بنيةٌ متعلَّمة، ونجح البرنامج المحدَّد النوع. وغيابُ واحدٍ منها يعني رفض الجواب.",
+  "Withhold the right to answer at all": "أن يمنع حقَّ الجواب أصلًا",
+  "It cannot make the answer right — and without it there is no answer to check.":
+    "لا يجعل الجوابَ صائبًا — وبدونه لا جوابَ يُفحَص أصلًا.",
+  "Answer from the frozen laws alone when nothing was learned":
+    "أن يجيب من القوانين المجمَّدة وحدها حين لم يُتعلَّم شيء",
+  "It is also not optional. A proposal with no learned structure behind it is refused, not published.":
+    "وهو أيضًا ليس اختياريًّا. فالاقتراحُ الذي لا تقف خلفه بنيةٌ متعلَّمة يُرفَض ولا يُنشَر.",
+  "AND ONE MORE FAMILY, BELOW THE ROUTE": "وأسرةٌ أخرى، تحت المسار",
+  "Even a route that finished can still end without a published answer.":
+    "حتى المسارُ الذي بلغ نهايته قد ينتهي بلا جوابٍ منشور.",
+  "The five gates above are about the route: what it could not separate, could not open, could not compose, or could not afford. Underneath them sits a second test, applied to the answer itself. Three conditions have to hold together, and any one of them missing is also a boundary with a named cause.":
+    "البوّابات الخمس أعلاه تخصّ المسار: ما لم يستطع الفصل فيه، وما لم يستطع فتحه، وما لم يستطع تركيبه، وما لم يقدر على ثمنه. وتحتها اختبارٌ ثانٍ يقع على الجواب نفسه. ثلاثة شروطٍ يجب أن تتحقّق معًا، وغيابُ أيٍّ منها حدٌّ أيضًا بسببٍ مُسمًّى.",
+  "The three conditions, and what each one prevents": "الشروط الثلاثة، وما يمنعه كلٌّ منها",
+  "When it declines": "متى يمتنع عن الجواب",
+  "There is no built-in notion of declining. An answer comes back for every prompt, and low confidence looks the same as high confidence from outside.":
+    "لا وجود لمفهوم الامتناع أصلًا. فلكلّ مُدخَلٍ جوابٌ يعود، والثقةُ المنخفضة تبدو من الخارج كالثقة العالية سواءً بسواء.",
+  "An answer needs three separate conditions to hold together, so declining is ordinary rather than exceptional. A refusal publishes no prediction at all and names which condition was missing.":
+    "يحتاج الجوابُ إلى تحقّق ثلاثة شروطٍ منفصلةٍ معًا، فالامتناع هنا عاديٌّ لا استثنائيّ. والرفضُ لا ينشر تنبّؤًا البتّة، ويسمّي الشرط الغائب.",
+  "BEFORE READING ANY OF THESE NUMBERS": "قبل قراءة أيٍّ من هذه الأرقام",
+  "A system allowed to refuse can raise its score by answering less.":
+    "النظامُ المسموح له بالامتناع يستطيع أن يرفع نتيجته بأن يجيب أقلّ.",
+  "So the denominator is the argument, and it is the part usually left out. How often an answer existed at all, and how often the answers that did exist were right, are two different numbers over two different sets — and neither may stand in for the other. The figure a refusal cannot improve is the one taken over every question asked.":
+    "فالمقامُ هو موضعُ النزاع، وهو الجزء الذي يُحذَف عادةً. فكم مرّةً وُجد جوابٌ أصلًا، وكم مرّةً كانت الأجوبةُ الموجودة صائبة، رقمان مختلفان على مجموعتين مختلفتين — ولا يقوم أحدهما مقام الآخر. والرقمُ الذي لا يحسّنه امتناعٌ هو المأخوذ على كلّ سؤالٍ طُرح.",
+  "Four numbers that all look like accuracy, and what each is divided by":
+    "أربعةُ أرقامٍ يبدو كلٌّ منها دقّةً، وعلى أيّ شيءٍ يُقسَم كلٌّ منها",
   "A benchmark where nothing bought the right to answer publishes a coverage of zero and an overall accuracy of zero, and no selective accuracy at all — because there is nothing to take the average over. The internal ranking on the same rows may be well above chance. Reporting that ranking as the result would be the exact substitution this rule forbids.":
     "المرجعُ القياسيّ الذي لم يشترِ فيه شيءٌ حقَّ الجواب يَنشر تغطيةً صفرًا ودقّةً إجماليةً صفرًا، ولا ينشر دقّةً انتقائيةً البتّة — إذ لا شيء يُتوسَّط عليه. وقد يكون الترتيب الداخليّ على تلك الأسطر نفسها أعلى من الصدفة بكثير. وعرضُ ذلك الترتيب بوصفه النتيجة هو عينُ الاستبدال الذي تمنعه هذه القاعدة.",
   "A boundary carries no hidden prediction. The proposal stays in the record for diagnosis, and the published answer is empty rather than quietly downgraded.":

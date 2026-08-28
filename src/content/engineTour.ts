@@ -60,8 +60,9 @@ export const engineCycle: readonly CycleStep[] = [
   },
   {
     number: "05",
-    label: "The check",
-    plain: "A separate part of the system decides whether the move may be admitted. It can also say no.",
+    label: "Three conditions, all of them",
+    plain:
+      "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.",
   },
   {
     number: "06",
@@ -86,14 +87,21 @@ export type EngineRole = {
 
 /**
  * The sceptical crux of the whole design, and the reason it is not hidden three
- * screens down. Two roles, and the boundary between them is the product.
+ * screens down. These are two roles inside one path rather than two contours
+ * running beside each other: neither can produce an answer on its own, and the
+ * boundary between them is the product.
  */
 export const engineRoles: readonly EngineRole[] = [
   {
     role: "Learning and search",
-    may: ["Order the candidates", "Reach a lawful answer with fewer checks", "Reuse a structure it has proven before"],
+    may: [
+      "Order the candidates",
+      "Reach a lawful answer with fewer checks",
+      "Reuse a structure it has proven before",
+      "Withhold the right to answer at all",
+    ],
     mayNot: ["Declare what is true", "Add a candidate nobody declared", "Change what counts as permitted"],
-    point: "It can make the search cheaper. It cannot make the answer right.",
+    point: "It cannot make the answer right — and without it there is no answer to check.",
   },
   {
     role: "Law and checking",
@@ -101,6 +109,7 @@ export const engineRoles: readonly EngineRole[] = [
     mayNot: [
       "Fill a gap to produce an answer",
       "Be argued with by the part that learned",
+      "Answer from the frozen laws alone when nothing was learned",
       "Change between two runs of the same release",
     ],
     point: "It is the only part allowed to say yes, and it is allowed to say no.",

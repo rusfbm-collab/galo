@@ -9,7 +9,7 @@ export type PageRoute =
   | "/simple"
   | "/investors"
   | "/audit"
-  | "/hub71"
+  | "/engine"
   | "/industry"
   | "/theory"
   | "/thinking"
@@ -75,21 +75,25 @@ export function parseLocalizedPath(pathname: string): {
     return { locale, route: "/term", rawRoute, slug: routeSegments[1] };
   }
 
+  // The engine tour used to live at /hub71, and that URL is indexed. A rename
+  // that 404s the old address is a worse outcome than carrying one alias.
+  const canonicalRawRoute = rawRoute === "/hub71" ? "/engine" : rawRoute;
+
   const route: PageRoute =
-    rawRoute === "/" ||
-    rawRoute === "/simple" ||
-    rawRoute === "/investors" ||
-    rawRoute === "/audit" ||
-    rawRoute === "/hub71" ||
-    rawRoute === "/industry" ||
-    rawRoute === "/theory" ||
-    rawRoute === "/thinking" ||
-    rawRoute === "/vs-llm" ||
-    rawRoute === "/math" ||
-    rawRoute === "/symmetry" ||
-    rawRoute === "/evidence" ||
-    rawRoute === "/privacy"
-      ? rawRoute
+    canonicalRawRoute === "/" ||
+    canonicalRawRoute === "/simple" ||
+    canonicalRawRoute === "/investors" ||
+    canonicalRawRoute === "/audit" ||
+    canonicalRawRoute === "/engine" ||
+    canonicalRawRoute === "/industry" ||
+    canonicalRawRoute === "/theory" ||
+    canonicalRawRoute === "/thinking" ||
+    canonicalRawRoute === "/vs-llm" ||
+    canonicalRawRoute === "/math" ||
+    canonicalRawRoute === "/symmetry" ||
+    canonicalRawRoute === "/evidence" ||
+    canonicalRawRoute === "/privacy"
+      ? canonicalRawRoute
       : "/404";
 
   return { locale, route, rawRoute };

@@ -31,11 +31,11 @@ const locales = {
         description:
           "A non-technical account of GALO: the problem in business terms, where a declared layer would sit, what runs today, six risks with their tests, and a diligence path a reader can run without us.",
       },
-      hub71: {
-        path: "hub71",
+      engine: {
+        path: "engine",
         title: "How GALO Works — The Mechanism, Without Taking It On Trust",
         description:
-          "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.",
+          "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the three conditions an answer has to satisfy before it may be published, what this is not, what has already been checked, and the five places a sceptic should push.",
       },
       industry: {
         path: "industry",
@@ -117,11 +117,11 @@ const locales = {
         description:
           "Нетехнический разбор GALO: проблема на языке денег, место объявленного слоя в системе, что работает сегодня, шесть рисков с проверками и путь due diligence, который читатель может пройти без нас.",
       },
-      hub71: {
-        path: "hub71",
+      engine: {
+        path: "engine",
         title: "Как работает GALO — механизм, без веры на слово",
         description:
-          "Движок, объяснённый тому, кто не обязан верить: один оборот за семь обычных шагов, черта, которую выученной части переходить нельзя, чем это не является, что уже проверено и пять мест, куда скептику стоит бить. Аффилиация с Hub71 не заявляется и не подразумевается.",
+          "Движок, объяснённый тому, кто не обязан верить: один оборот за семь обычных шагов, три условия, которым ответ должен удовлетворить, прежде чем его опубликуют, чем это не является, что уже проверено и пять мест, куда скептику стоит бить.",
       },
       industry: {
         path: "industry",
@@ -203,11 +203,11 @@ const locales = {
         description:
           "不含数学的 GALO 说明：用钱来讲的问题、这一声明层该放在哪里、今天真正在跑的东西、六项风险及其检验方式，以及一条读者无需我们配合就能自己走完的尽调路径。",
       },
-      hub71: {
-        path: "hub71",
+      engine: {
+        path: "engine",
         title: "GALO 如何工作 — 机制本身，不必先相信",
         description:
-          "把引擎讲给不必相信它的人听：一个回合的七个平常步骤、学到的那部分不得越过的那条线、这不是什么、已经查过什么，以及怀疑者该往哪五个地方推。不声称也不暗示与 Hub71 存在任何隶属关系。",
+          "把引擎讲给不必相信它的人听：一个回合的七个平常步骤、一个答案在被公开之前必须满足的三个条件、这不是什么、已经查过什么，以及怀疑者该往哪五个地方推。",
       },
       industry: {
         path: "industry",
@@ -285,11 +285,11 @@ const locales = {
         description:
           "عرض غير تقني لـ GALO: المشكلة بلغة المال، وأين تقع الطبقة المعلنة، وما الذي يعمل اليوم، وستة مخاطر مع اختباراتها، ومسار عناية واجبة يستطيع القارئ سلوكه دوننا.",
       },
-      hub71: {
-        path: "hub71",
+      engine: {
+        path: "engine",
         title: "كيف يعمل GALO — الآلية، دون أخذها على الثقة",
         description:
-          "الآلة مشروحةً لمن ليس ملزَمًا بتصديقها: دورةٌ واحدة في سبع خطوات عادية، والخطُّ الذي لا يجوز للجزء المُتعلِّم تجاوزه، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+          "الآلة مشروحةً لمن ليس ملزَمًا بتصديقها: دورةٌ واحدة في سبع خطوات عادية، والشروط الثلاثة التي على الجواب أن يستوفيها قبل أن يُنشَر، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها.",
       },
       industry: {
         path: "industry",

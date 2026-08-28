@@ -376,7 +376,7 @@ describe("GALO public site", () => {
       "/vs-llm",
       "/investors",
       "/audit",
-      "/hub71",
+      "/engine",
       "/industry",
       "/evidence",
       "/theory",
@@ -400,7 +400,7 @@ describe("GALO public site", () => {
     const menu = screen.getByRole("navigation", { name: "Mobile navigation" });
     expect(menu.querySelectorAll(".mobile-nav__group")).toHaveLength(3);
     expect(menu.querySelectorAll("a:not(.button)")).toHaveLength(12);
-    expect(menu.querySelector('a[href="/hub71"]')).toBeInTheDocument();
+    expect(menu.querySelector('a[href="/engine"]')).toBeInTheDocument();
   });
 
   it("answers a dead end with the whole site rather than two buttons", () => {
@@ -418,7 +418,7 @@ describe("GALO public site", () => {
       "/simple",
       "/investors",
       "/audit",
-      "/hub71",
+      "/engine",
       "/theory",
       "/thinking",
       "/vs-llm",
@@ -637,7 +637,7 @@ describe("GALO public site", () => {
   });
 
   it("teaches the engine before it shows the dossier", () => {
-    setPath("/hub71");
+    setPath("/engine");
     render(<App />);
 
     expect(
@@ -676,7 +676,7 @@ describe("GALO public site", () => {
     // standing in front of everybody who is not an assessor.
     const appendix = document.querySelector("#appendix");
     expect(appendix?.querySelector(".engine-affiliation")?.textContent).toContain(
-      "not affiliated with, endorsed by, backed by, or selected by Hub71",
+      "reports no decision, no relationship, and no outcome",
     );
     expect(appendix?.querySelectorAll("details.engine-dossier")).toHaveLength(4);
     expect(appendix?.querySelectorAll(".engine-dossier__table tbody tr")).toHaveLength(11);
@@ -691,7 +691,7 @@ describe("GALO public site", () => {
       expect(document.getElementById(target), `Missing engine-tour target #${target}`).toBeInTheDocument();
     }
 
-    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/hub71");
+    expect(document.querySelector('link[rel="canonical"]')).toHaveAttribute("href", "https://aigalo.com/engine");
   });
 
   it("opens the theory route from the Cayley table it is built on", () => {
@@ -1056,7 +1056,7 @@ describe("GALO public site", () => {
       screen.getByRole("heading", { level: 1, name: "GALO is not a language model, and not a competitor to one." }),
     ).toBeInTheDocument();
     expect(screen.getByRole("table", { name: /Property-by-property/i })).toBeInTheDocument();
-    expect(document.querySelectorAll(".comparison-table tbody tr")).toHaveLength(11);
+    expect(document.querySelectorAll(".comparison-table tbody tr")).toHaveLength(12);
     expect(screen.getByRole("rowheader", { name: "Breadth today" })).toBeInTheDocument();
     expect(screen.getByText(/A language model handles open-ended tasks/i)).toBeInTheDocument();
     expect(
@@ -1579,7 +1579,7 @@ describe("GALO public site", () => {
         "/simple",
         "/investors",
         "/audit",
-        "/hub71",
+        "/engine",
         "/theory",
         "/thinking",
         "/vs-llm",

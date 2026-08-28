@@ -308,7 +308,7 @@ export function IndustryPage() {
               <strong>{t("Twins, rule engines, ontology platforms and robotics stacks")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
-            <a href={href("/hub71")}>
+            <a href={href("/engine")}>
               <span>{t("If you want the mechanism itself")}</span>
               <strong>{t("How the engine works")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />

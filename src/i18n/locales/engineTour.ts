@@ -1,7 +1,7 @@
 import type { TranslationDictionary } from "../translations";
 
 /**
- * The engine tour — the rewritten /hub71 route.
+ * The engine tour — the /engine route.
  *
  * The Russian follows the wording the site owner supplied for this page wherever
  * the two line up, and keeps the same register elsewhere: short sentences, no
@@ -167,8 +167,8 @@ export const engineTourRu: TranslationDictionary = {
     "Кандидаты берутся из списка, написанного заранее. Ничего вне этого списка взять нельзя.",
   "The check": "Проверка",
   "The edge": "Ребро",
-  "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.":
-    "Движок, объяснённый тому, кто не обязан верить: один оборот за семь обычных шагов, черта, которую выученной части переходить нельзя, чем это не является, что уже проверено и пять мест, куда скептику стоит бить. Аффилиация с Hub71 не заявляется и не подразумевается.",
+  "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the three conditions an answer has to satisfy before it may be published, what this is not, what has already been checked, and the five places a sceptic should push.":
+    "Движок, объяснённый тому, кто не обязан верить: один оборот за семь обычных шагов, три условия, которым ответ должен удовлетворить, прежде чем его опубликуют, чем это не является, что уже проверено и пять мест, куда скептику стоит бить.",
   "The honest weaknesses, written to be used rather than to reassure.":
     "Честные слабости, написанные чтобы ими воспользовались, а не чтобы успокоить.",
   "The least dramatic situation available, which is also the one this is for.":
@@ -387,8 +387,8 @@ export const engineTourZh: TranslationDictionary = {
     "候选来自一份事先写好的清单。清单之外的东西一个也拿不了。",
   "The check": "检验",
   "The edge": "那条边",
-  "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.":
-    "把引擎讲给不必相信它的人听：一个回合的七个平常步骤、学到的那部分不得越过的那条线、这不是什么、已经查过什么，以及怀疑者该往哪五个地方推。不声称也不暗示与 Hub71 存在任何隶属关系。",
+  "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the three conditions an answer has to satisfy before it may be published, what this is not, what has already been checked, and the five places a sceptic should push.":
+    "把引擎讲给不必相信它的人听：一个回合的七个平常步骤、一个答案在被公开之前必须满足的三个条件、这不是什么、已经查过什么，以及怀疑者该往哪五个地方推。",
   "The honest weaknesses, written to be used rather than to reassure.":
     "诚实的弱点，写出来是给人用的，不是给人安心的。",
   "The least dramatic situation available, which is also the one this is for.":
@@ -608,8 +608,8 @@ export const engineTourAr: TranslationDictionary = {
     "يأتي المرشحون من قائمةٍ كُتبت سلفًا. ولا يمكن أخذ شيءٍ خارجها.",
   "The check": "الفحص",
   "The edge": "الحافة",
-  "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the line the learned part may not cross, what this is not, what has already been checked, and the five places a sceptic should push. No affiliation with Hub71 is claimed or implied.":
-    "المحرّك مشروحًا لمن ليس ملزَمًا بتصديقه: دورةٌ واحدة في سبع خطوات عادية، والخطُّ الذي لا يجوز للجزء المُتعلِّم تجاوزه، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها. لا نَدّعي ولا نُلمّح إلى أي ارتباط بـ Hub71.",
+  "The engine explained to somebody who is not obliged to believe it: one turn in seven ordinary steps, the three conditions an answer has to satisfy before it may be published, what this is not, what has already been checked, and the five places a sceptic should push.":
+    "المحرّك مشروحًا لمن ليس ملزَمًا بتصديقه: دورةٌ واحدة في سبع خطوات عادية، والشروط الثلاثة التي على الجواب أن يستوفيها قبل أن يُنشَر، وما ليس هذا، وما جرى فحصه فعلًا، والمواضع الخمسة التي ينبغي للمتشكِّك أن يضغط عليها.",
   "The honest weaknesses, written to be used rather than to reassure.":
     "نقاط الضعف الصادقة، مكتوبةً لتُستعمل لا لتطمئن.",
   "The least dramatic situation available, which is also the one this is for.":

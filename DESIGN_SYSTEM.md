@@ -132,23 +132,21 @@ The audit route is written against its own site. It sorts every published value 
 
 ## Assessment dossier
 
-`/hub71` is the only page addressed to a single reader: somebody at an Abu Dhabi
-technology programme deciding whether an applicant is worth a meeting. It is
-built as a document rather than a page, and three rules keep it one.
+The `/engine` page ends with a folded appendix written for one reader: somebody
+deciding whether the project is worth a meeting. It is built as a document
+rather than a page, and three rules keep it one.
 
-**Nothing about the addressee is described.** The dossier does not state Hub71's
-programmes, criteria, tracks, incentives, or terms. Nothing in this project can
-verify those, and repeating them second-hand would be exactly the unseriousness
-the page exists to avoid. Hub71 is named in one place only: the non-affiliation
-statement.
+**No programme is described.** The dossier names no accelerator, fund or
+assessor, and states nothing about anybody's criteria, tracks, incentives or
+terms. Nothing in this project can verify those, and repeating them second-hand
+would be exactly the unseriousness the appendix exists to avoid.
 
 **No relationship is implied, and the build enforces it.** The statement — that
-GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or
-any of its partners, and that the page reports no decision, relationship, or
-outcome — is a required boundary in `scripts/check-claims.mjs` in all four
-languages. Eight affiliation shapes ("Hub71 portfolio", "member of Hub71",
-"accepted into Hub71", …) are forbidden phrases, chosen so that none of them can
-occur inside the non-affiliation sentence itself.
+the dossier was prepared by the project itself and reports no decision, no
+relationship and no outcome — is a required boundary in
+`scripts/check-claims.mjs` in all four languages. A set of affiliation shapes
+naming specific programmes stays on the forbidden list in the same file, so a
+future edit cannot quietly claim backing that does not exist.
 
 **Every commitment carries its failure condition.** The twelve-month table
 states, next to each deliverable, the observation that would show it was missed

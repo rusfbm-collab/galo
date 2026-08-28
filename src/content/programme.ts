@@ -1,17 +1,17 @@
 /**
  * The assessment dossier.
  *
- * This file is written for one reader: somebody at a technology programme who
- * has to decide whether an applicant is worth a meeting, and who has read
- * enough decks to discount every adjective in them.
+ * This file is written for one reader: somebody who has to decide whether the
+ * project is worth a meeting, and who has read enough decks to discount every
+ * adjective in them.
  *
  * Three rules govern every string here.
  *
- * 1. No sentence describes Hub71, its programmes, its criteria, or its
+ * 1. No sentence describes any named programme, its criteria, or its
  *    incentives. Nothing in this project can verify those, and stating them
  *    second-hand would be exactly the unseriousness this page exists to avoid.
  * 2. No affiliation, selection, endorsement, or introduction is implied.
- *    The non-affiliation statement below is enforced by the claim checker.
+ *    The statement below is enforced by the claim checker.
  * 3. Every commitment carries the observation that would show it failed. A
  *    milestone without a failure condition is a wish.
  */
@@ -285,7 +285,7 @@ export const notPublishedHere: readonly WithheldFact[] = [
  * boundary, not a decorative one: no build can ship without it.
  */
 export const nonAffiliation =
-  "GALO AI is not affiliated with, endorsed by, backed by, or selected by Hub71 or any of its partners. This page is an application dossier prepared by the project. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one." as const;
+  "This dossier was prepared by the project itself, for assessment by somebody outside it. It reports no decision, no relationship, and no outcome, and nothing on it should be read as one." as const;
 
 export const programmeTranslationKeys = [
   ...assessmentTable.flatMap((row) => [row.dimension, row.answerToday]),

@@ -39,7 +39,7 @@ function statusTone(status: string) {
   return "is-negative";
 }
 
-export function Hub71Page() {
+export function EnginePage() {
   const { href, t } = useI18n();
 
   return (

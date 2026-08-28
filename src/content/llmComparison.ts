@@ -61,6 +61,12 @@ export const comparisonRows: readonly ComparisonRow[] = [
     galo: "One named position and a machine-readable record of what was checked, what ran, and where it stopped.",
   },
   {
+    dimension: "When it declines",
+    model:
+      "There is no built-in notion of declining. An answer comes back for every prompt, and low confidence looks the same as high confidence from outside.",
+    galo: "An answer needs three separate conditions to hold together, so declining is ordinary rather than exceptional. A refusal publishes no prediction at all and names which condition was missing.",
+  },
+  {
     dimension: "Correcting one mistake",
     model:
       "Retrain, fine-tune, or change the prompt. Each of those can move behaviour on inputs nobody was looking at.",

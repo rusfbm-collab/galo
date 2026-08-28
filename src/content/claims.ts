@@ -152,7 +152,7 @@ export const claims: Claim[] = [
       "The first commercial product is a bounded industrial decision-assurance evaluation. There is no customer, no signed pipeline and no revenue.",
     status: "in-development",
     source: "V67 business model memorandum",
-    allowedPlacements: ["industry", "investors", "hub71"],
+    allowedPlacements: ["industry", "investors", "engine"],
     forbiddenVariants: ["validated ROI", "existing industrial customer"],
   },
   {

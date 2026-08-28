@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { render, screen, cleanup } from "@testing-library/react";
 import { afterEach, beforeEach } from "vitest";
 import { App } from "../src/app/App";
+import { authorityLine, structuralRightLine } from "../src/content/weightFree";
 import {
   boundaryCauses,
   causalLaws,
@@ -123,5 +124,69 @@ describe("reading a benchmark result", () => {
       expect(equivalent?.className, selector).toContain("sr-only");
       expect((equivalent?.textContent ?? "").length, selector).toBeGreaterThan(60);
     }
+  });
+});
+
+describe("the site carries the theory consistently", () => {
+  beforeEach(() => setPath("/"));
+  afterEach(cleanup);
+
+  it("names no accelerator, programme or assessor anywhere it renders", () => {
+    for (const route of ["/", "/engine", "/industry", "/investors", "/evidence", "/thinking", "/theory"]) {
+      setPath(route);
+      render(<App />);
+      const page = document.body.textContent ?? "";
+      expect(page, route).not.toMatch(/hub\s*71/i);
+      cleanup();
+    }
+  });
+
+  it("keeps the old engine URL reachable instead of 404ing it", () => {
+    setPath("/hub71");
+    render(<App />);
+    expect(screen.getByRole("heading", { level: 1, name: /How GALO works/i })).toBeInTheDocument();
+    cleanup();
+
+    setPath("/ru/hub71");
+    render(<App />);
+    expect(document.querySelector("h1")?.textContent ?? "").not.toBe("");
+    expect(document.querySelector(".page-hero--programme")).toBeInTheDocument();
+  });
+
+  it("says on every page that learning is required as well as unauthorised", () => {
+    render(<App />);
+    const learned = document.querySelector("#learned-state")?.textContent ?? "";
+    expect(learned).toContain(authorityLine);
+    expect(learned).toContain(structuralRightLine);
+
+    cleanup();
+    setPath("/engine");
+    render(<App />);
+    const roles = document.querySelector(".engine-roles")?.textContent ?? document.body.textContent ?? "";
+    expect(roles).toContain("without it there is no answer to check");
+    expect(roles).toContain("Answer from the frozen laws alone when nothing was learned");
+  });
+
+  it("puts the three verdict conditions on the thinking page as a second family", () => {
+    setPath("/thinking");
+    render(<App />);
+    const block = document.querySelector(".thinking-verdict");
+    expect(block).toBeInTheDocument();
+    expect(block?.querySelectorAll(".thinking-verdict__causes li")).toHaveLength(boundaryCauses.length);
+    expect(block?.querySelector("a")).toHaveAttribute("href", "/theory#verdict-law");
+    // The route gates stay a separate family of five.
+    expect(document.querySelectorAll(".thinking-gates article")).toHaveLength(5);
+  });
+
+  it("warns about the denominator before the evidence numbers, not after", () => {
+    setPath("/evidence");
+    render(<App />);
+    const section = document.querySelector("#learning");
+    const warning = section?.querySelector(".learning-denominators");
+    const results = section?.querySelector(".learning-results");
+    expect(warning).toBeInTheDocument();
+    expect(results).toBeInTheDocument();
+    expect(warning!.compareDocumentPosition(results!) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+    expect(warning?.querySelector("a")).toHaveAttribute("href", "/theory#reading-a-result");
   });
 });

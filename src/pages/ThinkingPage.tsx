@@ -18,6 +18,7 @@ import {
   thinkingMisreadings,
   thinkingWalkthrough,
 } from "../content/thinking";
+import { boundaryCauses } from "../content/verdictLaw";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
@@ -177,6 +178,28 @@ export function ThinkingPage() {
                 <p className="thinking-gates__instead">{t(gate.instead)}</p>
               </article>
             ))}
+          </div>
+
+          <div className="thinking-verdict">
+            <p className="eyebrow">{t("AND ONE MORE FAMILY, BELOW THE ROUTE")}</p>
+            <h3>{t("Even a route that finished can still end without a published answer.")}</h3>
+            <p className="thinking-verdict__lead">
+              {t(
+                "The five gates above are about the route: what it could not separate, could not open, could not compose, or could not afford. Underneath them sits a second test, applied to the answer itself. Three conditions have to hold together, and any one of them missing is also a boundary with a named cause.",
+              )}
+            </p>
+            <ul className="thinking-verdict__causes">
+              {boundaryCauses.map((entry) => (
+                <li key={entry.cause}>
+                  <strong>{t(entry.cause)}</strong>
+                  <span>{t(entry.detail)}</span>
+                </li>
+              ))}
+            </ul>
+            <a className="text-link" href={href("/theory#verdict-law")}>
+              {t("The three conditions, and what each one prevents")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
           </div>
         </div>
       </section>
