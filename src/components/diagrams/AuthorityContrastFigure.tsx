@@ -158,6 +158,11 @@ export function AuthorityContrastFigure() {
       </div>
 
       <div className="galo-figure__legend">
+        <span>
+          {t(
+            "The last row is the only one where neither object can act alone: the learned side may not sign, and the checking side may not sign without it.",
+          )}
+        </span>
         <span>{t("This is architectural positioning, not a claim of universal superiority.")}</span>
         <span>
           {t(

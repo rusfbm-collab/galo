@@ -1,6 +1,34 @@
 import type { TranslationDictionary } from "../translations";
 
 export const verdictLawRu: TranslationDictionary = {
+  "The part that learns may not sign. The part that checks may not sign alone.":
+    "Та часть, что учится, подписывать не может. Та, что проверяет, не может подписать одна.",
+  "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. But nothing below the line can sign on its own either: three things have to arrive from above before an answer is even possible, and everything below is fixed by the release and behaves identically on two runs.":
+    "Это узел скептического спора, поэтому он здесь, а не тремя экранами ниже. Всё, что выше черты, может быть неверным, а ответ при этом верным, потому что выше черты подписывать не позволено ничему. Но и ничто ниже черты не подпишет само по себе: прежде чем ответ станет возможен, сверху должны прийти три вещи, — а всё, что ниже, зафиксировано выпуском и на двух прогонах ведёт себя одинаково.",
+  "Three things cross the line before the check may admit anything":
+    "Три вещи пересекают черту, прежде чем проверка сможет что-либо допустить",
+  "Two lanes with a solid line between them. The upper lane, learning and search, holds three things it can produce: a ranked candidate, the right to answer, and a learned structure. All three cross the line downward. The lower lane, law and checking, admits only when all three arrived and its own typed program passes; otherwise it returns a boundary. Only verdicts come back upward.":
+    "Две полосы, между ними сплошная черта. Верхняя полоса — обучение и поиск — держит три вещи, которые может произвести: ранжированного кандидата, право отвечать и выученную структуру. Все три пересекают черту вниз. Нижняя полоса — закон и проверка — допускает только тогда, когда пришли все три и её собственная типизированная программа прошла; иначе она возвращает границу. Вверх возвращаются только вердикты.",
+  "a candidate": "кандидат",
+  "ranked, unsigned": "ранжирован, не подписан",
+  "the right to answer": "право отвечать",
+  "earned out of sample": "заслужено вне выборки",
+  "a learned structure": "выученная структура",
+  "formed from evidence": "образована из свидетельств",
+  "all three cross, and none of them is a conclusion": "переходят все три, и ни одна из них не вывод",
+  "may say yes only if all three arrived": "может сказать «да», только если пришли все три",
+  "all three, and the program ran": "все три, и программа исполнилась",
+  "any one missing, and the cause is named": "не хватает одной — причина названа",
+  "Learning cannot make the answer right, and without it there is nothing to check.":
+    "Обучение не может сделать ответ верным, а без него нечего проверять.",
+  "The last row is the only one where neither object can act alone: the learned side may not sign, and the checking side may not sign without it.":
+    "Последняя строка — единственная, где ни один из объектов не действует в одиночку: выученная сторона подписывать не может, а проверяющая не может подписать без неё.",
+  "all three, or a boundary": "все три — или граница",
+  "a typed program that ran": "пройденная типизированная программа",
+  "Seven numbered bars stacked top to bottom and joined by short arrows, running from something arriving to a record somebody else can repeat. The fifth and sixth bars are marked, because either of them can end the turn without an answer. The fifth fans out to the right into three smaller boxes — the right to answer, a learned structure, and a typed program that ran — joined by and rather than or.":
+    "Семь пронумерованных полос, поставленных сверху вниз и соединённых короткими стрелками, — от того, что что-то пришло, до записи, которую сможет повторить кто-то другой. Пятая и шестая помечены, потому что любая из них может закончить оборот без ответа. Пятая расходится вправо на три меньших блока — право отвечать, выученная структура и типизированная программа, которая исполнилась, — соединённых союзом «и», а не «или».",
+  "The dashed rail touches every phase: either exit is reachable from any one of them, not only from the last.":
+    "Пунктирная рейка касается каждой фазы: любой из выходов достижим из любой из них, а не только из последней.",
   "Three conditions, all of them": "Три условия, и все сразу",
   "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.":
     "Ход допускается, только если контекст заслужил право отвечать, за ним стоит выученная структура и типизированная программа исполняется. Не хватает одного — в ответе отказано.",
@@ -176,6 +204,33 @@ export const verdictLawRu: TranslationDictionary = {
 };
 
 export const verdictLawZh: TranslationDictionary = {
+  "The part that learns may not sign. The part that checks may not sign alone.":
+    "学习的那一部分不能签字。检查的那一部分也不能独自签字。",
+  "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. But nothing below the line can sign on its own either: three things have to arrive from above before an answer is even possible, and everything below is fixed by the release and behaves identically on two runs.":
+    "这是怀疑者最较真的那个点，所以它就摆在这里，而不是往下翻三屏。线以上的一切都可能是错的，而答案仍然是对的，因为线以上没有任何东西被允许签字。但线以下也没有任何东西能自己签字：在答案成为可能之前，必须有三样东西从上面下来；而线以下的一切都由发布版本固定，两次运行的表现完全一样。",
+  "Three things cross the line before the check may admit anything": "有三样东西越过这条线，检查才可能准许什么",
+  "Two lanes with a solid line between them. The upper lane, learning and search, holds three things it can produce: a ranked candidate, the right to answer, and a learned structure. All three cross the line downward. The lower lane, law and checking, admits only when all three arrived and its own typed program passes; otherwise it returns a boundary. Only verdicts come back upward.":
+    "两条带，中间是一条实线。上面那条带是学习与搜索，里面有它能产出的三样东西：一个带排序的候选、作答的权利，以及一个学到的结构。三样都向下越过这条线。下面那条带是法则与检查，只有当三样都到齐、并且它自己的类型化程序通过时才准许；否则它返回一条边界。向上回来的只有判决。",
+  "a candidate": "一个候选",
+  "ranked, unsigned": "有排序，未签字",
+  "the right to answer": "作答的权利",
+  "earned out of sample": "在样本外挣得",
+  "a learned structure": "一个学到的结构",
+  "formed from evidence": "由证据长成",
+  "all three cross, and none of them is a conclusion": "三样都过线，而其中没有一样是结论",
+  "may say yes only if all three arrived": "只有三样都到齐才能说「可以」",
+  "all three, and the program ran": "三样齐了，而且程序跑通了",
+  "any one missing, and the cause is named": "缺了任何一样，原因写明",
+  "Learning cannot make the answer right, and without it there is nothing to check.":
+    "学习没法让答案变对，而没有它，就没有东西可查。",
+  "The last row is the only one where neither object can act alone: the learned side may not sign, and the checking side may not sign without it.":
+    "最后一行是唯一一个两个对象都不能单独行事的：学到的那一侧不能签字，而检查的那一侧没有它也不能签。",
+  "all three, or a boundary": "三样齐了，否则就是一条边界",
+  "a typed program that ran": "一段真的跑过的类型化程序",
+  "Seven numbered bars stacked top to bottom and joined by short arrows, running from something arriving to a record somebody else can repeat. The fifth and sixth bars are marked, because either of them can end the turn without an answer. The fifth fans out to the right into three smaller boxes — the right to answer, a learned structure, and a typed program that ran — joined by and rather than or.":
+    "七条编了号的横条自上而下排开，用短箭头相连，从「有什么进来了」一直到「一份别人能重走一遍的记录」。第五条和第六条做了标记，因为它们中的任何一条都可能让这一回合没有答案就结束。第五条向右分成三个小方块——作答的权利、一个学到的结构、一段真的跑过的类型化程序——它们之间是「并且」，不是「或者」。",
+  "The dashed rail touches every phase: either exit is reachable from any one of them, not only from the last.":
+    "那条虚线导轨贴着每一个阶段：两个出口从其中任何一个都能到达，而不只是从最后一个。",
   "Three conditions, all of them": "三个条件，一个都不能少",
   "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.":
     "只有当这个上下文已经挣得作答的权利、背后有一个学到的结构撑着、并且类型化程序跑得通，这一步才被准许。缺了任何一个，答案就被拒绝。",
@@ -345,6 +400,34 @@ export const verdictLawZh: TranslationDictionary = {
 };
 
 export const verdictLawAr: TranslationDictionary = {
+  "The part that learns may not sign. The part that checks may not sign alone.":
+    "الجزءُ الذي يتعلّم لا يوقّع. والجزءُ الذي يفحص لا يوقّع وحده.",
+  "This is the sceptical crux, so it is on the page rather than three screens down. Everything above the line can be wrong without the answer being wrong, because nothing above the line is allowed to sign anything. But nothing below the line can sign on its own either: three things have to arrive from above before an answer is even possible, and everything below is fixed by the release and behaves identically on two runs.":
+    "هذه هي عقدةُ الشكّ، ولذلك هي هنا لا بعد ثلاث شاشات. كلُّ ما فوق الخطّ قد يكون خطأً والجوابُ مع ذلك صائبًا، إذ لا يُؤذَن لشيءٍ فوق الخطّ أن يوقّع. لكن لا شيء تحت الخطّ يوقّع وحده أيضًا: على ثلاثة أشياء أن تصل من فوق قبل أن يصير الجوابُ ممكنًا، وكلُّ ما تحته مثبَّتٌ بالإصدار ويسلك السلوك نفسه في تشغيلين.",
+  "Three things cross the line before the check may admit anything":
+    "ثلاثةُ أشياء تعبر الخطّ قبل أن يستطيع الفحصُ قبول شيء",
+  "Two lanes with a solid line between them. The upper lane, learning and search, holds three things it can produce: a ranked candidate, the right to answer, and a learned structure. All three cross the line downward. The lower lane, law and checking, admits only when all three arrived and its own typed program passes; otherwise it returns a boundary. Only verdicts come back upward.":
+    "شريطان بينهما خطٌّ متّصل. الشريط الأعلى، التعلّم والبحث، يحمل ثلاثة أشياء يقدر على إنتاجها: مرشَّحًا مرتَّبًا، وحقَّ الجواب، وبنيةً متعلَّمة. وتعبر الثلاثة جميعًا الخطَّ نزولًا. والشريط الأسفل، القانون والفحص، لا يقبل إلا إذا وصلت الثلاثة ونجح برنامجه المحدَّد النوع؛ وإلا أعاد حدًّا. ولا يعود إلى الأعلى إلا الأحكام.",
+  "a candidate": "مرشَّح",
+  "ranked, unsigned": "مرتَّب، غير موقَّع",
+  "the right to answer": "حقّ الجواب",
+  "earned out of sample": "مكسوبٌ خارج العيّنة",
+  "a learned structure": "بنيةٌ متعلَّمة",
+  "formed from evidence": "تكوّنت من الأدلّة",
+  "all three cross, and none of them is a conclusion": "تعبر الثلاثة، وليس فيها ما هو استنتاج",
+  "may say yes only if all three arrived": "لا يقول نعم إلا إذا وصلت الثلاثة",
+  "all three, and the program ran": "الثلاثة جميعًا، والبرنامج نُفِّذ",
+  "any one missing, and the cause is named": "غياب واحدةٍ منها، والسبب مُسمًّى",
+  "Learning cannot make the answer right, and without it there is nothing to check.":
+    "لا يجعل التعلّمُ الجوابَ صائبًا، وبدونه لا شيء يُفحَص.",
+  "The last row is the only one where neither object can act alone: the learned side may not sign, and the checking side may not sign without it.":
+    "الصفُّ الأخير هو الوحيد الذي لا يعمل فيه أيٌّ من الكائنين وحده: الجانبُ المتعلَّم لا يوقّع، والجانبُ الفاحص لا يوقّع بدونه.",
+  "all three, or a boundary": "الثلاثة جميعًا، وإلا فحدّ",
+  "a typed program that ran": "برنامجٌ محدَّد النوع نُفِّذ فعلًا",
+  "Seven numbered bars stacked top to bottom and joined by short arrows, running from something arriving to a record somebody else can repeat. The fifth and sixth bars are marked, because either of them can end the turn without an answer. The fifth fans out to the right into three smaller boxes — the right to answer, a learned structure, and a typed program that ran — joined by and rather than or.":
+    "سبعةُ أشرطةٍ مرقَّمة مرصوفة من الأعلى إلى الأسفل وموصولة بأسهمٍ قصيرة، من وصول شيءٍ ما إلى سجلٍّ يستطيع غيرُك أن يعيد المشي عليه. والشريطان الخامس والسادس مُعلَّمان، لأنّ أيًّا منهما قد يُنهي الدورة بلا جواب. ويتفرّع الخامس يمينًا إلى ثلاثة صناديق أصغر — حقّ الجواب، وبنيةٌ متعلَّمة، وبرنامجٌ محدَّد النوع نُفِّذ — موصولةٍ بـ«و» لا بـ«أو».",
+  "The dashed rail touches every phase: either exit is reachable from any one of them, not only from the last.":
+    "القضيبُ المتقطّع يمسّ كلَّ مرحلة: فكلا المخرجين يُبلَغ من أيٍّ منها، لا من الأخيرة وحدها.",
   "Three conditions, all of them": "ثلاثة شروط، وكلُّها معًا",
   "The move is admitted only if the context has earned the right to answer, a learned structure stands behind it, and the typed program runs. Any one missing and the answer is refused.":
     "لا يُقبَل الانتقال إلا إذا كسب السياقُ حقَّ الجواب، ووقفت خلفه بنيةٌ متعلَّمة، ونجح البرنامج المحدَّد النوع. وغيابُ واحدٍ منها يعني رفض الجواب.",

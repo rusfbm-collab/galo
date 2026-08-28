@@ -178,6 +178,50 @@ describe("the site carries the theory consistently", () => {
     expect(document.querySelectorAll(".thinking-gates article")).toHaveLength(5);
   });
 
+  it("draws three crossings on the authority line, not one", () => {
+    setPath("/engine");
+    render(<App />);
+    const figure = document.querySelector(".galo-figure--authority-line");
+    expect(figure).toBeInTheDocument();
+    // A candidate, the right it earned, and the structure that backs it.
+    expect(figure?.querySelectorAll(".galo-lanes__chip")).toHaveLength(3);
+    expect(figure?.querySelectorAll(".galo-lanes__cross")).toHaveLength(3);
+    // One way to admit, one way to refuse, and the refusal is not drawn as an error.
+    expect(figure?.querySelectorAll(".galo-lanes__verdict.is-admit")).toHaveLength(1);
+    expect(figure?.querySelectorAll(".galo-lanes__verdict.is-refuse")).toHaveLength(0);
+    expect(figure?.textContent).toContain("may say yes only if all three arrived");
+  });
+
+  it("fans the engine cycle's fifth step into the three conditions", () => {
+    setPath("/engine");
+    render(<App />);
+    const figure = document.querySelector(".galo-figure--cycle");
+    expect(figure?.querySelectorAll(".galo-cycle__condition")).toHaveLength(3);
+    expect(figure?.querySelectorAll(".galo-cycle__fan")).toHaveLength(3);
+    expect(figure?.textContent).toContain("all three, or a boundary");
+  });
+
+  it("leads the route map with plain phase names and keeps the codes beside them", () => {
+    setPath("/thinking");
+    render(<App />);
+    const map = document.querySelector(".route-map");
+    expect(map?.tagName).toBe("FIGURE");
+    expect(map?.querySelectorAll(".route-map__phases li")).toHaveLength(7);
+    expect(Array.from(map?.querySelectorAll(".route-map__phases strong") ?? []).map((n) => n.textContent)).toEqual([
+      "Open possibilities",
+      "Keep alternatives",
+      "Test what separates them",
+      "Assemble one lawful answer",
+      "Take the outcome from outside",
+      "Record what is reusable",
+      "Seal the episode",
+    ]);
+    expect(
+      Array.from(map?.querySelectorAll(".route-map__phases .route-map__code") ?? []).map((n) => n.textContent),
+    ).toEqual(["SEARCH", "HYPOTHESES", "PROBING", "COMPOSITION", "REVEAL", "LEARNING", "COMPLETE"]);
+    expect(map?.querySelectorAll(".route-map__exits article")).toHaveLength(2);
+  });
+
   it("warns about the denominator before the evidence numbers, not after", () => {
     setPath("/evidence");
     render(<App />);

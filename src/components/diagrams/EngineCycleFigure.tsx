@@ -10,7 +10,13 @@ const ROW_STEP = 38;
 const TOP = 24;
 const INDEX_X = 20;
 const CHIP_X = 46;
-const CHIP_WIDTH = 596;
+const CHIP_WIDTH = 380;
+
+/** The three conditions that hang off step five, drawn where the reader meets it. */
+const CONDITION_X = CHIP_X + CHIP_WIDTH + 26;
+const CONDITION_WIDTH = 208;
+const CONDITION_HEIGHT = 19;
+const CONDITION_GAP = 4;
 
 /**
  * One turn of the engine, in ordinary words.
@@ -20,12 +26,19 @@ const CHIP_WIDTH = 596;
  * circles until satisfied. The two steps that can end the turn early — the check
  * and the "not yet" — are marked, because a reader who misses them takes away a
  * machine that always answers.
+ *
+ * The cards under this figure carry every step's explanation, so repeating the
+ * labels here would earn nothing. What the drawing adds is the fan at step five:
+ * the check is not one test but three, and all three have to hold. That is the
+ * fact the shape can show and a list cannot.
  */
 export function EngineCycleFigure() {
   const { t } = useI18n();
   const titleId = useId();
   const descriptionId = useId();
   const arrowId = useId();
+
+  const conditions = ["the right to answer", "a learned structure", "a typed program that ran"];
 
   return (
     <figure className="galo-figure galo-figure--cycle">
@@ -44,7 +57,7 @@ export function EngineCycleFigure() {
           <title id={titleId}>{t("The seven steps of one turn of the engine")}</title>
           <desc id={descriptionId}>
             {t(
-              "Seven numbered bars stacked top to bottom and joined by short arrows, running from something arriving to a record somebody else can repeat. The fifth and sixth bars are marked, because either of them can end the turn without an answer.",
+              "Seven numbered bars stacked top to bottom and joined by short arrows, running from something arriving to a record somebody else can repeat. The fifth and sixth bars are marked, because either of them can end the turn without an answer. The fifth fans out to the right into three smaller boxes — the right to answer, a learned structure, and a typed program that ran — joined by and rather than or.",
             )}
           </desc>
 
@@ -70,6 +83,33 @@ export function EngineCycleFigure() {
               </g>
             );
           })}
+
+          {/* Step five fans out: three conditions, joined by and, all required. */}
+          {conditions.map((condition, index) => {
+            const centre = TOP + 4 * ROW_STEP + STEP_HEIGHT / 2;
+            const total = conditions.length * CONDITION_HEIGHT + (conditions.length - 1) * CONDITION_GAP;
+            const y = centre - total / 2 + index * (CONDITION_HEIGHT + CONDITION_GAP);
+            return (
+              <g key={condition} className="galo-cycle__condition">
+                <path
+                  className="galo-cycle__fan"
+                  d={`M${CHIP_X + CHIP_WIDTH} ${centre} C ${CONDITION_X - 12} ${centre}, ${CONDITION_X - 12} ${y + CONDITION_HEIGHT / 2}, ${CONDITION_X} ${y + CONDITION_HEIGHT / 2}`}
+                />
+                <rect x={CONDITION_X} y={y} width={CONDITION_WIDTH} height={CONDITION_HEIGHT} rx="6" />
+                <text x={CONDITION_X + CONDITION_WIDTH / 2} y={y + 13} textAnchor="middle">
+                  {t(condition)}
+                </text>
+              </g>
+            );
+          })}
+          <text
+            className="galo-cycle__conjunction"
+            x={CONDITION_X + CONDITION_WIDTH / 2}
+            y={TOP + 4 * ROW_STEP + STEP_HEIGHT / 2 + 40}
+            textAnchor="middle"
+          >
+            {t("all three, or a boundary")}
+          </text>
 
           {engineCycle.slice(0, -1).map((step, index) => (
             <path

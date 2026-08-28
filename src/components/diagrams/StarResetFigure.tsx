@@ -65,16 +65,18 @@ export function StarResetFigure() {
             <path className="galo-flow__link" d="M140 140 H 196 V 114" markerEnd={`url(#${arrowId})`} />
 
             <g className="galo-flow__node galo-flow__node--operation">
-              <rect x="212" y="78" width="196" height="56" rx="14" />
-              <text x="310" y="100" textAnchor="middle">
+              <rect x="208" y="78" width="252" height="56" rx="14" />
+              {/* The label is a full phrase and runs to 35 characters in Russian,
+                  so it gets its own smaller size rather than a wider canvas. */}
+              <text className="galo-flow__node-label" x="334" y="100" textAnchor="middle">
                 {t("add the indices, then wrap")}
               </text>
-              <text className="galo-flow__mono" x="310" y="120" textAnchor="middle" direction="ltr">
+              <text className="galo-flow__mono" x="334" y="120" textAnchor="middle" direction="ltr">
                 (i+j) mod n
               </text>
             </g>
 
-            <path className="galo-flow__link" d="M408 106 H 470" markerEnd={`url(#${arrowId})`} />
+            <path className="galo-flow__link" d="M460 106 H 470" markerEnd={`url(#${arrowId})`} />
 
             <g className="galo-flow__node galo-flow__node--result">
               <rect x="482" y="78" width="150" height="56" rx="14" />
@@ -131,19 +133,19 @@ export function StarResetFigure() {
 
             <g className="galo-flow__node galo-flow__node--reset">
               <rect x="382" y="196" width="250" height="42" rx="12" />
-              <text x="450" y="222" textAnchor="middle">
+              <text className="galo-flow__node-label" x="396" y="222">
                 {t("reset")}
               </text>
-              <text className="galo-flow__mono" x="566" y="222" textAnchor="middle" direction="ltr">
+              <text className="galo-flow__mono" x="620" y="222" textAnchor="end" direction="ltr">
                 = P0
               </text>
             </g>
             <g className="galo-flow__node galo-flow__node--operation">
               <rect x="382" y="256" width="250" height="42" rx="12" />
-              <text x="450" y="282" textAnchor="middle">
+              <text className="galo-flow__node-label" x="396" y="282">
                 {t("add as usual")}
               </text>
-              <text className="galo-flow__mono" x="566" y="282" textAnchor="middle" direction="ltr">
+              <text className="galo-flow__mono" x="620" y="282" textAnchor="end" direction="ltr">
                 (i+j) mod n
               </text>
             </g>

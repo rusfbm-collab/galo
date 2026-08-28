@@ -8112,6 +8112,12 @@ caption bdi {
   font-weight: 640;
 }
 
+/* A node label that is a phrase rather than a name. Phrases grow by a third in
+   Russian and by more in Arabic, and an SVG box cannot grow with them. */
+.galo-flow__node .galo-flow__node-label {
+  font-size: 0.6rem;
+}
+
 .galo-flow__mono {
   font-family: var(--font-mono);
   font-size: 0.74rem;
@@ -10799,6 +10805,32 @@ caption bdi {
   font-weight: 640;
 }
 
+/* The fan at step five. The boxes are deliberately smaller than a step: they
+   are what the step is made of, not steps of their own. */
+.galo-cycle__condition rect {
+  fill: rgba(10, 130, 119, 0.08);
+  stroke: rgba(10, 130, 119, 0.4);
+  stroke-width: 1;
+}
+
+.galo-cycle__condition text {
+  fill: var(--teal-deep);
+  font-size: 0.56rem;
+  font-weight: 600;
+}
+
+.galo-cycle__fan {
+  fill: none;
+  stroke: rgba(10, 130, 119, 0.42);
+  stroke-width: 1;
+}
+
+.galo-cycle__conjunction {
+  fill: var(--figure-muted);
+  font-size: 0.55rem;
+  font-style: italic;
+}
+
 .galo-cycle__link {
   fill: none;
   stroke: var(--chart-neutral-strong);
@@ -10849,9 +10881,20 @@ caption bdi {
 }
 
 .galo-lanes__chip text {
+  fill: var(--figure-ink);
+  font-size: 0.66rem;
+  font-weight: 600;
+}
+
+/* The second line under a chip or a verdict: what earned it, or what is
+   missing. Never mono — these are phrases, not machine tokens. */
+.galo-lanes__chip-note,
+.galo-lanes__verdict .galo-lanes__chip-note {
   fill: var(--figure-muted);
-  font-family: var(--font-mono);
-  font-size: 0.64rem;
+  font-family: inherit;
+  font-size: 0.56rem;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 .galo-lanes__wall {
@@ -10863,6 +10906,10 @@ caption bdi {
   fill: var(--figure-muted);
   font-size: 0.6rem;
   font-style: italic;
+}
+
+.galo-lanes__gate-plate {
+  fill: var(--white);
 }
 
 .galo-lanes__cross {
@@ -12328,6 +12375,159 @@ caption bdi {
   }
 }
 
+/* ---- the route map on the thinking page ---- */
+
+.route-map {
+  margin: 34px 0 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--white);
+}
+
+.route-map__caption {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.route-map__eyebrow {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.route-map__caption strong {
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.42;
+}
+
+.route-map__note {
+  max-width: 76ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.62;
+}
+
+/* The rail: a dashed edge running the height of both the phases and the exits,
+   so the exits visibly hang off every phase rather than off the last one. */
+.route-map__rail {
+  padding-inline-start: 26px;
+  border-inline-start: 2px dashed var(--chart-neutral-strong);
+}
+
+.route-map__phases {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+}
+
+.route-map__phases li {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid rgba(10, 130, 119, 0.34);
+  border-radius: 14px;
+  background: rgba(10, 130, 119, 0.05);
+}
+
+.route-map__index {
+  flex: none;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.route-map__phases strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.93rem;
+  line-height: 1.36;
+}
+
+/* The engine's own name for the phase, kept and demoted. */
+.route-map__code {
+  display: block;
+  margin-top: 4px;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.route-map__exits {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.route-map__exits article {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px dashed var(--amber);
+  border-radius: 14px;
+  background: rgba(232, 169, 58, 0.07);
+}
+
+.route-map__exits strong {
+  color: var(--ink);
+  font-size: 0.93rem;
+  line-height: 1.36;
+}
+
+.route-map__exits .route-map__code {
+  color: #a06b12;
+}
+
+.route-map__exit-note {
+  flex: none;
+  color: #a06b12;
+  font-size: 0.78rem;
+}
+
+.route-map__legend {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+@media (max-width: 900px) {
+  .route-map__phases {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .route-map {
+    padding: 22px 18px;
+  }
+  .route-map__rail {
+    padding-inline-start: 16px;
+  }
+  .route-map__phases,
+  .route-map__exits {
+    grid-template-columns: 1fr;
+  }
+  .route-map__exits article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
 /* ---- the engine tour page ---- */
 
 .engine-hero__note {
@@ -13134,9 +13334,27 @@ caption bdi {
 
 .galo-pipeline__value {
   fill: var(--figure-ink);
+  font-size: 0.7rem;
+  font-weight: 650;
+}
+
+/* The engine's own name for the phase, kept and demoted: a reader who works
+   with the code still finds it, a first-time reader is not made to learn it. */
+.galo-pipeline__code {
+  fill: var(--chart-1);
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 640;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
+.galo-pipeline__node.is-target .galo-pipeline__code {
+  fill: var(--chart-2);
+}
+
+.galo-pipeline__status {
+  font-family: inherit;
+  letter-spacing: 0;
 }
 
 .galo-pipeline__status {

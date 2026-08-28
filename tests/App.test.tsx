@@ -1276,7 +1276,7 @@ describe("GALO public site", () => {
       screen.getByRole("heading", { level: 1, name: "The route an episode travels, phase by phase." }),
     ).toBeInTheDocument();
 
-    expect(document.querySelector(".galo-figure--pipeline")).toBeInTheDocument();
+    expect(document.querySelector(".route-map")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--gates")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--loop")).toBeInTheDocument();
     expect(document.querySelector(".galo-figure--determinism")).toBeInTheDocument();
