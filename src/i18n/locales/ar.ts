@@ -43,6 +43,7 @@ import { htmlFiguresAr } from "./htmlFigures";
 import { mathDiagramsAr } from "./mathDiagrams";
 import { cayleyPageAr } from "./cayleyPage";
 import { termFiguresAr } from "./termFigures";
+import { automorphismsAr } from "./automorphisms";
 import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
@@ -90,6 +91,7 @@ export const ar: TranslationDictionary = {
   ...mathDiagramsAr,
   ...cayleyPageAr,
   ...termFiguresAr,
+  ...automorphismsAr,
   ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",

@@ -43,6 +43,7 @@ import { htmlFiguresRu } from "./htmlFigures";
 import { mathDiagramsRu } from "./mathDiagrams";
 import { cayleyPageRu } from "./cayleyPage";
 import { termFiguresRu } from "./termFigures";
+import { automorphismsRu } from "./automorphisms";
 import { verdictLawRu } from "./verdictLaw";
 
 export const ru: TranslationDictionary = {
@@ -90,6 +91,7 @@ export const ru: TranslationDictionary = {
   ...mathDiagramsRu,
   ...cayleyPageRu,
   ...termFiguresRu,
+  ...automorphismsRu,
   ...verdictLawRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",

@@ -20991,3 +20991,360 @@ html[lang="ar"][lang="ar"] body * {
     gap: 4px;
   }
 }
+
+/* ============================================================================
+   AUTOMORPHISMS
+
+   Five computable figures. Everything they print is derived on render, so the
+   styling has one job: make a script look like a script and make a
+   disagreement between two channels impossible to miss.
+   ========================================================================= */
+
+.auto-block {
+  margin-top: 40px;
+  border-top: 1px solid var(--line);
+  padding-top: 30px;
+}
+
+.auto-block .eyebrow {
+  margin: 0 0 10px;
+}
+
+.auto-block h3 {
+  max-width: 60ch;
+  margin: 0 0 12px;
+  font-size: 1.28rem;
+  line-height: 1.32;
+}
+
+.auto-block__lead {
+  max-width: 82ch;
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.68;
+}
+
+.auto-block__reading {
+  max-width: 82ch;
+  margin: 18px 0 0;
+  color: var(--teal-deep);
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.62;
+}
+
+.auto-block.is-payoff h3 {
+  color: var(--teal-deep);
+}
+
+/* ---- a run of the definition, one lane that passes and one that does not ---- */
+
+.auto-cases {
+  display: grid;
+  gap: 18px;
+}
+
+.auto-case {
+  border: 1.4px solid var(--line);
+  border-radius: 20px;
+  padding: 20px;
+  background: var(--white);
+}
+
+.auto-case.is-pass {
+  border-color: var(--chart-1);
+}
+
+.auto-case.is-fail {
+  border-color: var(--chart-2);
+}
+
+.auto-case header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.auto-case header bdi {
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.auto-case__verdict {
+  color: var(--chart-1);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.auto-case.is-fail .auto-case__verdict {
+  color: var(--chart-2);
+}
+
+.auto-case__map {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.auto-case__map span {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 5px 9px;
+  color: var(--muted);
+  background: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+/* Two poles sent to one name. This is the failure that comes before any law is
+   even tested, so it is marked differently from a broken cell. */
+.auto-case__map span.is-collision {
+  border-color: var(--chart-2);
+  color: var(--chart-2);
+  background: rgba(216, 91, 97, 0.09);
+}
+
+.auto-case__body {
+  display: grid;
+  grid-template-columns: auto minmax(min(280px, 100%), 1fr);
+  align-items: start;
+  gap: 22px;
+}
+
+.auto-case__grid {
+  overflow-x: auto;
+}
+
+.auto-case__script {
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: var(--paper);
+}
+
+.auto-case__reading {
+  max-width: 82ch;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* A cell where the two routes around the square disagree. */
+.term-figure__table td.is-broken,
+.auto-table td.is-broken {
+  color: var(--white);
+  background: var(--red);
+}
+
+/* ---- the shared script renderer ---- */
+
+.auto-script {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.auto-script li {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.auto-script bdi {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+/* ---- the two ledgers ---- */
+
+.auto-ledger {
+  overflow-x: auto;
+}
+
+.auto-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 560px;
+}
+
+.auto-table caption {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: start;
+}
+
+.auto-table th,
+.auto-table td {
+  border-bottom: 1px solid var(--line);
+  padding: 11px 12px;
+  font-size: 0.88rem;
+  text-align: start;
+  vertical-align: top;
+}
+
+.auto-table thead th {
+  border-bottom-width: 1.6px;
+  color: var(--teal-deep);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.auto-table tbody th {
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-weight: 800;
+}
+
+.auto-table td {
+  color: var(--muted);
+}
+
+.auto-table td[dir="ltr"] {
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* The two counting channels sit side by side. Agreement is quiet; a
+   disagreement would be loud, which is the only reason to print both. */
+.auto-table td.is-agree {
+  color: var(--chart-1);
+}
+
+.auto-table tfoot th,
+.auto-table tfoot td {
+  border-top: 1.6px solid var(--teal-deep);
+  border-bottom: none;
+  color: var(--ink);
+  font-weight: 800;
+  padding-top: 13px;
+}
+
+.auto-burnside {
+  display: grid;
+  align-items: start;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+}
+
+.auto-burnside .auto-table {
+  min-width: 0;
+}
+
+/* ---- one orbit, walked ---- */
+
+.auto-walk {
+  display: grid;
+  align-items: start;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+.auto-walk__steps {
+  display: grid;
+  align-content: start;
+  gap: 7px;
+}
+
+.auto-walk__steps span {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 12px;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* The renaming that leaves the pair alone is the stabiliser, drawn so the
+   orbit-times-stabiliser identity below can be read off the picture. */
+.auto-walk__steps span.is-fixed {
+  border-color: var(--chart-1);
+  color: var(--teal-deep);
+  background: rgba(15, 156, 136, 0.09);
+}
+
+/* ---- what the symmetry buys ---- */
+
+.auto-uses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+  gap: 18px;
+  margin-top: 44px;
+}
+
+.auto-uses article {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 22px;
+  background: var(--white);
+}
+
+.auto-uses span {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.auto-uses h3 {
+  margin: 10px 0;
+  font-size: 1.02rem;
+  line-height: 1.38;
+}
+
+.auto-uses p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.62;
+}
+
+.auto-uses__check {
+  margin-top: 12px !important;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.auto-uses__check b {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--teal-deep);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.auto-close {
+  max-width: 82ch;
+  margin: 30px 0 22px;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.64;
+}
+
+@media (max-width: 900px) {
+  .auto-case__body {
+    grid-template-columns: 1fr;
+  }
+}

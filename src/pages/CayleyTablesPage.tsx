@@ -1,9 +1,44 @@
-import { ArrowLeft, ArrowRight, Grid3x3, ShieldAlert } from "lucide-react";
+import { ArrowLeft, ArrowRight, Grid3x3, Repeat2, ShieldAlert } from "lucide-react";
+import {
+  AutomorphismReplayFigure,
+  BurnsideScriptFigure,
+  OrbitCompressionFigure,
+  OrbitWalkFigure,
+  UnitLedgerFigure,
+} from "../components/math/AutomorphismFigures";
 import { CayleyTableCard } from "../components/math/CayleyTableCard";
 import { PageShell } from "../components/layout/PageShell";
 import { TermChips } from "../components/theory/TermExplainer";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
+import {
+  automorphismBoundary,
+  automorphismClose,
+  automorphismEyebrow,
+  automorphismHeadline,
+  automorphismLead,
+  burnsideBody,
+  burnsideEyebrow,
+  burnsideHeadline,
+  burnsideReading,
+  compressionBody,
+  compressionEyebrow,
+  compressionHeadline,
+  compressionReading,
+  definitionBody,
+  definitionEyebrow,
+  definitionHeadline,
+  ledgerBody,
+  ledgerEyebrow,
+  ledgerHeadline,
+  ledgerReading,
+  renamingCases,
+  symmetryUses,
+  walkBody,
+  walkEyebrow,
+  walkHeadline,
+  walkReading,
+} from "../content/automorphisms";
 import {
   cayleyEyebrow,
   cayleyHeadline,
@@ -28,6 +63,7 @@ const contents = [
   { href: "#plus", label: "The seven PLUS tables" },
   { href: "#star", label: "The seven STAR tables" },
   { href: "#richness", label: "Why this is rich" },
+  { href: "#automorphisms", label: "Automorphisms" },
 ] as const;
 
 /**
@@ -126,6 +162,76 @@ export function CayleyTablesPage() {
               <CayleyTableCard key={`${entry.operation}-${entry.level}`} entry={entry} />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="automorphisms" className="section section--paper math-anchor-section">
+        <div className="shell">
+          <SectionHeading
+            eyebrow={t(automorphismEyebrow)}
+            title={t(automorphismHeadline)}
+            text={t(automorphismLead)}
+            aside={<Repeat2 size={30} aria-hidden="true" />}
+          />
+
+          <div className="auto-block">
+            <p className="eyebrow">{t(definitionEyebrow)}</p>
+            <h3>{t(definitionHeadline)}</h3>
+            <p className="auto-block__lead">{t(definitionBody)}</p>
+            <AutomorphismReplayFigure cases={renamingCases} />
+          </div>
+
+          <div className="auto-block">
+            <p className="eyebrow">{t(ledgerEyebrow)}</p>
+            <h3>{t(ledgerHeadline)}</h3>
+            <p className="auto-block__lead">{t(ledgerBody)}</p>
+            <UnitLedgerFigure />
+            <p className="auto-block__reading">{t(ledgerReading)}</p>
+          </div>
+
+          <div className="auto-block is-payoff">
+            <p className="eyebrow">{t(compressionEyebrow)}</p>
+            <h3>{t(compressionHeadline)}</h3>
+            <p className="auto-block__lead">{t(compressionBody)}</p>
+            <OrbitCompressionFigure />
+            <p className="auto-block__reading">{t(compressionReading)}</p>
+          </div>
+
+          <div className="auto-block">
+            <p className="eyebrow">{t(burnsideEyebrow)}</p>
+            <h3>{t(burnsideHeadline)}</h3>
+            <p className="auto-block__lead">{t(burnsideBody)}</p>
+            <BurnsideScriptFigure />
+            <p className="auto-block__reading">{t(burnsideReading)}</p>
+          </div>
+
+          <div className="auto-block">
+            <p className="eyebrow">{t(walkEyebrow)}</p>
+            <h3>{t(walkHeadline)}</h3>
+            <p className="auto-block__lead">{t(walkBody)}</p>
+            <OrbitWalkFigure />
+            <p className="auto-block__reading">{t(walkReading)}</p>
+          </div>
+
+          <div className="auto-uses">
+            {symmetryUses.map((use) => (
+              <article key={use.number}>
+                <span dir="ltr">{use.number}</span>
+                <h3>{t(use.claim)}</h3>
+                <p>{t(use.mechanism)}</p>
+                <p className="auto-uses__check">
+                  <b>{t("Check it yourself")}</b> {t(use.check)}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <p className="auto-close">{t(automorphismClose)}</p>
+
+          <p className="scope-callout">
+            <ShieldAlert size={16} aria-hidden="true" /> <strong>{t("Shape, not meaning:")}</strong>{" "}
+            {t(automorphismBoundary)}
+          </p>
         </div>
       </section>
 
