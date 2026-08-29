@@ -41,6 +41,7 @@ import { inputContractRu } from "./inputContract";
 import { routeItemsRu } from "./routeItems";
 import { htmlFiguresRu } from "./htmlFigures";
 import { mathDiagramsRu } from "./mathDiagrams";
+import { cayleyPageRu } from "./cayleyPage";
 import { verdictLawRu } from "./verdictLaw";
 
 export const ru: TranslationDictionary = {
@@ -86,6 +87,7 @@ export const ru: TranslationDictionary = {
   ...routeItemsRu,
   ...htmlFiguresRu,
   ...mathDiagramsRu,
+  ...cayleyPageRu,
   ...verdictLawRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",

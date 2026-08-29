@@ -383,7 +383,7 @@ describe("GALO public site", () => {
       expect(map.querySelector(`a[href="${route}"]`), `Footer is missing ${route}`).toBeInTheDocument();
     }
     // Every entry carries a line saying what that page settles.
-    expect(map.querySelectorAll("li > span")).toHaveLength(12);
+    expect(map.querySelectorAll("li > span")).toHaveLength(13);
 
     const header = screen.getByRole("navigation", { name: "Primary navigation" });
     expect(header.querySelector('a[aria-current="page"]')).toHaveAttribute("href", "/audit");
@@ -395,7 +395,7 @@ describe("GALO public site", () => {
 
     const menu = screen.getByRole("navigation", { name: "Mobile navigation" });
     expect(menu.querySelectorAll(".mobile-nav__group")).toHaveLength(3);
-    expect(menu.querySelectorAll("a:not(.button)")).toHaveLength(12);
+    expect(menu.querySelectorAll("a:not(.button)")).toHaveLength(13);
     expect(menu.querySelector('a[href="/engine"]')).toBeInTheDocument();
   });
 
@@ -405,7 +405,7 @@ describe("GALO public site", () => {
 
     const map = screen.getByRole("navigation", { name: "All pages" });
     expect(map.querySelectorAll("h3")).toHaveLength(3);
-    expect(map.querySelectorAll("a")).toHaveLength(12);
+    expect(map.querySelectorAll("a")).toHaveLength(13);
     expect(screen.getByText("Whatever you were looking for, it is one of these.")).toBeInTheDocument();
   });
 
@@ -1589,6 +1589,7 @@ describe("GALO public site", () => {
         "/thinking",
         "/vs-llm",
         "/math",
+        "/cayley",
         "/symmetry",
         "/evidence",
         "/privacy",

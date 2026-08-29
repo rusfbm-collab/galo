@@ -15,6 +15,7 @@ export type PageRoute =
   | "/thinking"
   | "/vs-llm"
   | "/math"
+  | "/cayley"
   | "/symmetry"
   | "/evidence"
   | "/privacy"
@@ -90,6 +91,7 @@ export function parseLocalizedPath(pathname: string): {
     canonicalRawRoute === "/thinking" ||
     canonicalRawRoute === "/vs-llm" ||
     canonicalRawRoute === "/math" ||
+    canonicalRawRoute === "/cayley" ||
     canonicalRawRoute === "/symmetry" ||
     canonicalRawRoute === "/evidence" ||
     canonicalRawRoute === "/privacy"

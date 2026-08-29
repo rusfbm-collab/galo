@@ -20,6 +20,7 @@ const CANONICAL_ROUTES = [
   "/thinking",
   "/vs-llm",
   "/math",
+  "/cayley",
   "/symmetry",
   "/evidence",
 ] as const;

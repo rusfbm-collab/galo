@@ -1795,6 +1795,11 @@ export function TheoryPage() {
               <strong>{t("Tables, 560 coordinates, ranks, programs, and morphisms")}</strong>
               <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
             </a>
+            <a href={href("/cayley")}>
+              <span>{t("The tables themselves")}</span>
+              <strong>{t("All fourteen printed in full, each with a lookup traced line by line")}</strong>
+              <ArrowRight className="directional-icon" size={18} aria-hidden="true" />
+            </a>
             <a href={href("/symmetry")}>
               <span>{t("Academic symmetry")}</span>
               <strong>{t("Automorphisms, orbits, stabilizers, and Burnside")}</strong>

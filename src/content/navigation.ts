@@ -57,7 +57,12 @@ export const siteMap: readonly SiteMapGroup[] = [
     links: [
       { label: "Theory · start here", href: "/theory", hint: "Built up from the first state transition." },
       { label: "How it thinks", href: "/thinking", hint: "One decision followed from the input to the record." },
-      { label: "Mathematics", href: "/math", hint: "The PLUS and STAR Cayley tables, in full." },
+      { label: "Mathematics", href: "/math", hint: "Definitions, propositions, and the counts they generate." },
+      {
+        label: "Cayley tables",
+        href: "/cayley",
+        hint: "All fourteen printed in full, with a worked lookup through each.",
+      },
       { label: "Symmetry", href: "/symmetry", hint: "Automorphisms, orbits, and the Burnside counts." },
     ],
   },

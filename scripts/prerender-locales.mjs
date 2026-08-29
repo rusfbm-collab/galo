@@ -73,6 +73,12 @@ const locales = {
         description:
           "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.",
       },
+      cayley: {
+        path: "cayley",
+        title: "The Fourteen Cayley Tables — Every Step GALO Can Take",
+        description:
+          "All seven PLUS and all seven STAR tables printed in full, each with a worked lookup traced line by line, and six checkable reasons why tables this small generate rich logic rather than arithmetic.",
+      },
       symmetry: {
         path: "symmetry",
         title: "GALO Symmetry — Automorphisms, Orbits, and Burnside",
@@ -159,6 +165,12 @@ const locales = {
         description:
           "Изучите конечные таблицы Кэли PLUS и STAR, точные формулы, ориентации исполнения и раскрытые границы формального ядра GALO.",
       },
+      cayley: {
+        path: "cayley",
+        title: "Четырнадцать таблиц Кэли — каждый шаг, который может сделать GALO",
+        description:
+          "Все семь таблиц PLUS и все семь таблиц STAR, напечатанные целиком, с построчно разобранным вычислением для каждой и шестью проверяемыми причинами, почему такие маленькие таблицы дают богатую логику, а не арифметику.",
+      },
       symmetry: {
         path: "symmetry",
         title: "Симметрии GALO — автоморфизмы, орбиты и лемма Бёрнсайда",
@@ -244,6 +256,12 @@ const locales = {
         title: "GALO 数学 — PLUS 与 STAR 凯莱表",
         description: "探索有限的 PLUS 与 STAR 凯莱表、精确公式、执行方向以及 GALO 形式内核已披露的边界。",
       },
+      cayley: {
+        path: "cayley",
+        title: "十四张凯莱表 — GALO 能走的每一步",
+        description:
+          "七张 PLUS 表和七张 STAR 表全部完整印出，每一张都配一次逐行走完的查表演算，外加六条可自行核对的理由，说明这么小的表为什么给出的是丰富的逻辑而不是算术。",
+      },
       symmetry: {
         path: "symmetry",
         title: "GALO 对称性 — 自同构、轨道与伯恩赛德引理",
@@ -326,6 +344,12 @@ const locales = {
         title: "رياضيات GALO — جدولا كايلي PLUS وSTAR",
         description:
           "استكشف جدولي كايلي المحدودين PLUS وSTAR، والصيغ الدقيقة، واتجاهات التنفيذ، والحدود المعلنة للنواة الشكلية في GALO.",
+      },
+      cayley: {
+        path: "cayley",
+        title: "جداول كايلي الأربعة عشر — كلُّ خطوةٍ يستطيع GALO أن يخطوها",
+        description:
+          "جداول PLUS السبعة وجداول STAR السبعة مطبوعةً كاملةً، مع عمليةِ بحثٍ مشغولةٍ سطرًا سطرًا لكلِّ جدول، وستّةُ أسبابٍ قابلةٍ للفحص تبيّن لماذا تولّد جداولُ بهذا الصِّغَر منطقًا غنيًّا لا حسابًا.",
       },
       symmetry: {
         path: "symmetry",
@@ -466,6 +490,7 @@ const sitemapPriority = {
   thinking: 0.8,
   "vs-llm": 0.8,
   math: 0.7,
+  cayley: 0.7,
   symmetry: 0.7,
   evidence: 0.7,
   privacy: 0.3,

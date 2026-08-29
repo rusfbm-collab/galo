@@ -6,6 +6,7 @@ import { ComparisonPage } from "../pages/ComparisonPage";
 import { EvidencePage } from "../pages/EvidencePage";
 import { HomePage } from "../pages/HomePage";
 import { InvestorsPage } from "../pages/InvestorsPage";
+import { CayleyTablesPage } from "../pages/CayleyTablesPage";
 import { MathematicsPage } from "../pages/MathematicsPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { PlainWordsPage } from "../pages/PlainWordsPage";
@@ -82,6 +83,11 @@ const metadata: Record<PageRoute, { title: string; description: string }> = {
     title: "GALO Mathematics — PLUS and STAR Cayley Tables",
     description:
       "Explore the finite PLUS and STAR Cayley tables, exact formulas, execution orientations, and disclosed limits of the GALO formal kernel.",
+  },
+  "/cayley": {
+    title: "The Fourteen Cayley Tables — Every Step GALO Can Take",
+    description:
+      "All seven PLUS and all seven STAR tables printed in full, each with a worked lookup traced line by line, and six checkable reasons why tables this small generate rich logic rather than arithmetic.",
   },
   "/symmetry": {
     title: "GALO Symmetry — Automorphisms, Orbits, and Burnside",
@@ -192,6 +198,7 @@ export function App() {
       {route === "/thinking" && <ThinkingPage />}
       {route === "/vs-llm" && <ComparisonPage />}
       {route === "/math" && <MathematicsPage />}
+      {route === "/cayley" && <CayleyTablesPage />}
       {route === "/symmetry" && <SymmetryPage />}
       {route === "/evidence" && <EvidencePage />}
       {route === "/term" && <TermPage term={slug ? (termBySlug.get(slug) ?? null) : null} />}

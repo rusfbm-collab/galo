@@ -41,6 +41,7 @@ import { inputContractAr } from "./inputContract";
 import { routeItemsAr } from "./routeItems";
 import { htmlFiguresAr } from "./htmlFigures";
 import { mathDiagramsAr } from "./mathDiagrams";
+import { cayleyPageAr } from "./cayleyPage";
 import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
@@ -86,6 +87,7 @@ export const ar: TranslationDictionary = {
   ...routeItemsAr,
   ...htmlFiguresAr,
   ...mathDiagramsAr,
+  ...cayleyPageAr,
   ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",

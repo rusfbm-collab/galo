@@ -215,6 +215,12 @@ export function MathematicsPage() {
             aside={<span className="math-proof-chip">Q_n × Q_n → Q_n</span>}
           />
           <CayleyExplorer />
+          <p className="section-followup">
+            <a className="text-link" href={href("/cayley")}>
+              {t("All fourteen tables printed in full, with a worked lookup through each one")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
         </div>
       </section>
 

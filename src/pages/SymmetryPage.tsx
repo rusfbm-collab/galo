@@ -54,6 +54,12 @@ export function SymmetryPage() {
               "Rename all the positions at once, redo the tables, and see whether anything moved. The renamings that change nothing are the symmetries, and this chapter finds all of them, counts the shapes they group things into, and marks where that grouping stops being allowed to mean anything.",
             )}
           </p>
+          <p className="page-hero__aside">
+            <a className="text-link" href={href("/cayley")}>
+              {t("The fourteen tables these renamings act on")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </p>
           <div className="math-hero__status">
             <span>{t("Starts with no notation")}</span>
             <span>{t("Formal statements from the second section")}</span>
