@@ -1,13 +1,13 @@
 /**
  * The reasoning route.
  *
- * This page used to describe one artefact only: the frozen kernel release, whose
- * single bounded step performs no policy update at all. That is still a true
- * description of that release, and it is kept below where it belongs. It is not a
- * true description of how GALO reaches a decision, because the route an episode
- * actually travels is a closed set of phases with two lawful exits, a counted
- * budget, and a learning phase that only opens after somebody outside the system
- * discloses the outcome.
+ * This page used to describe one artefact only: a bounded execution slice that
+ * accepted two fixed input patterns and performed no learning at all. That
+ * artefact is superseded, and describing the route by it would describe a thing
+ * that no longer runs. The route an episode travels is a closed set of phases
+ * with two lawful exits, a counted budget, and a learning phase that opens only
+ * after somebody outside the system discloses the outcome; the bounded step the
+ * public runs actually measure sits inside it and is shown as one evaluated row.
  *
  * Rules for every string in this file. Nothing here describes cognition,
  * understanding, or autonomy; "thinking" names a written-out route, and the page
@@ -279,7 +279,7 @@ export const memoryRegisters: readonly MemoryRegister[] = [
     register: "The learned volume",
     holds: "Counters and learned orders over what to try first, held in a volume that can be detached.",
     detail:
-      "Detachable is the operative word. The same engine runs with the volume mounted and with it removed, and the difference between those two runs is what every published learning number measures. Nothing in the volume is a weight, and nothing in it can widen what is permitted.",
+      "Separable is the operative word. The volume is learned from the training data, then frozen and digested before the split that tests it is opened. Nothing in it is a weight, and nothing in it can widen what is permitted: removing it changes how quickly an answer is found, never which answers are lawful.",
     carried: true,
   },
   {
@@ -396,12 +396,12 @@ export const thinkingMisreadings = [
   {
     claim: "Nothing is learned here, since there are no weights.",
     correction:
-      "There are no weights, and there is learning. What is learned is where to look and in what order, held in a volume that can be detached; what may never be learned is the verdict. The measured results, and the comparator they were measured against, are on the evidence page.",
+      "There are no weights, and there is learning. What is learned is where to look and in what order, held in a volume kept apart from the engine; what may never be learned is the verdict. The public runs measure that learned state on data it was never fitted to, and the coverage that belongs beside each accuracy is published with it on the evidence page.",
   },
   {
     claim: "The route drawn on this page is what the published results measured.",
     correction:
-      "It is not, and the gap is published rather than glossed. The measuring path of the sealed campaigns is a counting ranker reading a learned volume; the tower, the typed routes, and the verifier are not in that path, so their joint contribution is not established. An end-to-end run that would settle it is the next registered step.",
+      "It is not, and the gap is published rather than glossed. What a public run exercises is one bounded step: a closed set of possible answers, a ranking over it, the three conditions an answer has to meet, and a typed route that has to pass. The phases around that step — taking a probe, waiting for an outside disclosure, revising a persistent Atlas — are not in the measured path, so the architecture's joint contribution is unestablished rather than demonstrated. An end-to-end run that would settle it is the next registered step.",
   },
 ] as const;
 

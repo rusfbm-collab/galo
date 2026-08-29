@@ -2,7 +2,7 @@ import { useId } from "react";
 import { useI18n } from "../../i18n/I18nContext";
 
 const WIDTH = 660;
-const HEIGHT = 214;
+const HEIGHT = 190;
 const STEPS = [90, 200, 310, 420];
 
 const lanes = [
@@ -20,6 +20,16 @@ const laneNotes = [
     id: "declared",
     title: "The decision wrote its own record",
     text: "The state, the permitted set, the ordering input, and the executed action are all in one record. Answering the question is reading a document, not running an investigation.",
+  },
+] as const;
+
+const steps = [
+  { label: "situation", gloss: "Something changes on the line, and a call has to be made about it." },
+  { label: "decision", gloss: "One option is taken out of whatever was open at that moment." },
+  { label: "action", gloss: "The chosen option is carried out, and the fact of it is logged." },
+  {
+    label: "questioned later",
+    gloss: "Months on, somebody asks what was permitted then, and why this option rather than another.",
   },
 ] as const;
 
@@ -92,21 +102,20 @@ export function DecisionTraceFigure() {
           ))}
 
           <line className="galo-trace__divider" x1="20" y1="102" x2={WIDTH - 20} y2="102" />
-
-          <text className="galo-trace__step-label" x="90" y={HEIGHT - 8} textAnchor="middle">
-            {t("situation")}
-          </text>
-          <text className="galo-trace__step-label" x="200" y={HEIGHT - 8} textAnchor="middle">
-            {t("decision")}
-          </text>
-          <text className="galo-trace__step-label" x="310" y={HEIGHT - 8} textAnchor="middle">
-            {t("action")}
-          </text>
-          <text className="galo-trace__step-label" x="430" y={HEIGHT - 8} textAnchor="middle">
-            {t("questioned later")}
-          </text>
         </svg>
       </div>
+
+      <ol className="galo-figure__stage-notes">
+        {steps.map((step, index) => (
+          <li key={step.label}>
+            <strong dir="ltr">{index + 1}</strong>
+            <span>
+              <b>{t(step.label)}</b>
+              {t(step.gloss)}
+            </span>
+          </li>
+        ))}
+      </ol>
 
       <div className="galo-figure__pair galo-figure__pair--prose">
         {laneNotes.map((note) => (

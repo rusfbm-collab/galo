@@ -2,7 +2,7 @@ import { useId } from "react";
 import { useI18n } from "../../i18n/I18nContext";
 
 const WIDTH = 640;
-const HEIGHT = 268;
+const HEIGHT = 240;
 
 const stations = [
   { id: "start", x: 60, y: 44, value: "P_i", label: "The position the run starts from" },
@@ -91,15 +91,13 @@ export function ThoughtLoopFigure() {
               rank_effects = 0
             </text>
             <text x="320" y="154" textAnchor="middle" direction="ltr">
-              learning_writes = 0
+              test_split_writes = 0
             </text>
           </g>
-
-          <text className="galo-loop__foot" x={WIDTH / 2} y={HEIGHT - 10} textAnchor="middle">
-            {t("one run performs exactly one turn of this cycle")}
-          </text>
         </svg>
       </div>
+
+      <p className="galo-figure__foot">{t("one run performs exactly one turn of this cycle")}</p>
 
       <div className="galo-figure__pair">
         {stations.map((station) => (

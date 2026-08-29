@@ -1,22 +1,54 @@
-import { useId } from "react";
 import { useI18n } from "../../i18n/I18nContext";
-
-const WIDTH = 640;
-const HEIGHT = 234;
-
-/** Exact register names, kept untranslated and left-to-right in every locale. */
-const carriedValues = ["receipts", "learned volume", "proven structures"];
-const droppedValues = ["weights", "wider verdict"];
 
 /**
  * What survives an episode. Three registers do; two things a reader will assume
- * are there deliberately are not — and the second carried register is the one
- * that changed: durable learned state exists, and it can be detached.
+ * are there deliberately are not.
+ *
+ * This was an SVG of five labelled boxes, which meant every label had to be one
+ * unwrappable line: the register names could not be glossed, and a longer
+ * translation had nowhere to go. There is no geometry here worth keeping — no
+ * arrows, no scale, no position that means anything — so it is HTML, and each
+ * register can now say what it actually holds in whatever length the language
+ * needs.
  */
+const bands = [
+  {
+    id: "carried",
+    tag: "carried into the next episode",
+    entries: [
+      {
+        value: "receipts",
+        gloss: "What was checked, what was probed, what was refused, and what the episode cost to run.",
+      },
+      {
+        value: "learned volume",
+        gloss:
+          "Counters and learned orders over what to try first, held apart from the engine so they can be replaced without touching what may be concluded.",
+      },
+      {
+        value: "proven structures",
+        gloss: "Structures that passed the formation checks, each standing as active, weakened, or retired.",
+      },
+    ],
+  },
+  {
+    id: "dropped",
+    tag: "absent by construction, not merely unused",
+    entries: [
+      {
+        value: "weights",
+        gloss: "No parameter is fitted, adjusted, or accumulated — not during a run, and not between runs.",
+      },
+      {
+        value: "wider verdict",
+        gloss: "Learning cannot reach what counts as a lawful answer. It changes the order, never the permission.",
+      },
+    ],
+  },
+] as const;
+
 export function ThinkingMemoryFigure() {
   const { t } = useI18n();
-  const titleId = useId();
-  const descriptionId = useId();
 
   return (
     <figure className="galo-figure galo-figure--memory">
@@ -25,67 +57,36 @@ export function ThinkingMemoryFigure() {
         <strong>{t("Three registers are carried forward. Two familiar ones are still absent.")}</strong>
         <span className="galo-figure__note">
           {t(
-            "Everything an episode leaves behind can be listed. That is what makes a later disagreement resolvable: two runs can be compared register by register instead of being argued about — and the learned volume can simply be removed, which is how every published learning number was measured.",
+            "Everything an episode leaves behind can be listed. That is what makes a later disagreement resolvable: two runs are compared register by register instead of being argued about, and a register that is absent is absent by construction rather than by omission.",
           )}
         </span>
       </figcaption>
 
-      <div className="galo-memory__bands">
-        <span className="galo-memory__band-tag">{t("carried into the next episode")}</span>
-        <span className="galo-memory__band-tag is-dropped">{t("absent by construction, not merely unused")}</span>
+      <div className="memory-bands">
+        {bands.map((band) => (
+          <section key={band.id} className={`memory-bands__band is-${band.id}`}>
+            <span className="memory-bands__tag">{t(band.tag)}</span>
+            <ul>
+              {band.entries.map((entry) => (
+                <li key={entry.value}>
+                  {/* The mark is decorative: "absent" is already carried by the band's own tag. */}
+                  <span className="memory-bands__mark" aria-hidden="true">
+                    {band.id === "dropped" ? "✗" : "•"}
+                  </span>
+                  <bdi dir="ltr">{entry.value}</bdi>
+                  <span>{t(entry.gloss)}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
       </div>
 
-      <div className="galo-figure__canvas">
-        <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
-          <title id={titleId}>{t("Carried and non-carried state between two runs")}</title>
-          <desc id={descriptionId}>
-            {t(
-              "An upper band with three solid boxes labelled receipts, learned volume, and proven structures, and a lower band drawn with a dashed border containing two boxes labelled weights and wider verdict, each marked with a cross.",
-            )}
-          </desc>
-
-          <g className="galo-memory__band">
-            <rect x="14" y="16" width={WIDTH - 28} height="82" rx="18" />
-          </g>
-          {carriedValues.map((value, index) => (
-            <g key={value} className="galo-memory__node">
-              <rect x={32 + index * 194} y={38} width="176" height="40" rx="11" />
-              <text x={32 + index * 194 + 88} y={58} dominantBaseline="central" textAnchor="middle" direction="ltr">
-                {value}
-              </text>
-            </g>
-          ))}
-
-          <g className="galo-memory__band is-dropped">
-            <rect x="14" y="118" width={WIDTH - 28} height="82" rx="18" />
-          </g>
-          {droppedValues.map((value, index) => (
-            <g key={value} className="galo-memory__node is-dropped">
-              <rect x={32 + index * 194} y={140} width="176" height="40" rx="11" />
-              <text x={32 + index * 194 + 88} y={160} dominantBaseline="central" textAnchor="middle" direction="ltr">
-                {value}
-              </text>
-              <text
-                className="galo-memory__cross"
-                x={32 + index * 194 + 18}
-                y={160}
-                dominantBaseline="central"
-                textAnchor="middle"
-                direction="ltr"
-              >
-                ✗
-              </text>
-            </g>
-          ))}
-          <text className="galo-memory__zero" x={WIDTH - 32} y="164" textAnchor="end" direction="ltr">
-            no fitted parameter
-          </text>
-
-          <text className="galo-memory__foot" x="14" y={HEIGHT - 8}>
-            {t("detach the volume and the same engine runs without it")}
-          </text>
-        </svg>
-      </div>
+      <p className="galo-figure__foot">
+        {t(
+          "Remove the learned volume and the same engine still runs. It reaches an answer more slowly, and it is never allowed a different one.",
+        )}
+      </p>
     </figure>
   );
 }

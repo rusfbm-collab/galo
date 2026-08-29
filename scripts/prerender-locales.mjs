@@ -443,4 +443,84 @@ for (const [locale, config] of Object.entries(locales)) {
   }
 }
 
-console.log(JSON.stringify({ status: "PASS", localizedHtmlEntries: written }));
+/* ------------------------------------------------------------- sitemap ---- */
+
+/**
+ * The sitemap is generated from the same page table that produced the HTML, so
+ * a route cannot exist on the site and be missing from the sitemap. It used to
+ * be a hand-maintained file in public/, and it had drifted to seven of the
+ * thirteen routes with none of the term pages and no hreflang at all.
+ *
+ * There is no <lastmod>. A build timestamp would claim every page changed on
+ * every deploy, which is not true, and a false freshness signal is worse than
+ * no signal.
+ */
+const sitemapPriority = {
+  home: 1.0,
+  simple: 0.8,
+  investors: 0.8,
+  engine: 0.8,
+  industry: 0.8,
+  audit: 0.8,
+  theory: 0.8,
+  thinking: 0.8,
+  "vs-llm": 0.8,
+  math: 0.7,
+  symmetry: 0.7,
+  evidence: 0.7,
+  privacy: 0.3,
+};
+
+// Term pages are one glossary entry each: real routes, low priority.
+const termPagePriority = 0.4;
+const monthly = new Set(["privacy"]);
+
+function sitemapEntry(locale, pageKey) {
+  const page = locales[locale].pages[pageKey];
+  const isTerm = pageKey.startsWith("term-");
+  const base = isTerm ? termPagePriority : (sitemapPriority[pageKey] ?? 0.5);
+  // English is the canonical face of each route; the translations sit one step below.
+  const priority = locale === "en" ? base : Math.max(0.1, Math.round((base - 0.1) * 10) / 10);
+  const changefreq = isTerm || monthly.has(pageKey) ? "monthly" : "weekly";
+  const alternateLinks = [
+    ...Object.entries(locales).map(
+      ([other, config]) =>
+        `    <xhtml:link rel="alternate" hreflang="${config.htmlLang}" href="${canonicalUrl(other, config.pages[pageKey])}"/>`,
+    ),
+    `    <xhtml:link rel="alternate" hreflang="x-default" href="${canonicalUrl("en", locales.en.pages[pageKey])}"/>`,
+  ].join("\n");
+
+  return [
+    "  <url>",
+    `    <loc>${canonicalUrl(locale, page)}</loc>`,
+    alternateLinks,
+    `    <changefreq>${changefreq}</changefreq>`,
+    `    <priority>${priority.toFixed(1)}</priority>`,
+    "  </url>",
+  ].join("\n");
+}
+
+const sitemapUrls = [];
+for (const locale of Object.keys(locales)) {
+  for (const pageKey of Object.keys(locales[locale].pages)) {
+    sitemapUrls.push(sitemapEntry(locale, pageKey));
+  }
+}
+
+if (sitemapUrls.length !== written) {
+  throw new Error(`sitemap covers ${sitemapUrls.length} URLs but ${written} pages were rendered`);
+}
+
+await writeFile(
+  join(distRoot, "sitemap.xml"),
+  [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">',
+    ...sitemapUrls,
+    "</urlset>",
+    "",
+  ].join("\n"),
+  "utf8",
+);
+
+console.log(JSON.stringify({ status: "PASS", localizedHtmlEntries: written, sitemapUrls: sitemapUrls.length }));

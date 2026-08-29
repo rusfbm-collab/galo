@@ -45,7 +45,7 @@ export function ThinkingPage() {
           <h1>{t("The route an episode travels, phase by phase.")}</h1>
           <p>
             {t(
-              "Reaching a decision here is not a hidden chain of reasoning. It is a closed set of phases with two lawful ways out, a budget counted in units as it is spent, and a learning phase that opens only after somebody outside the system discloses what actually happened. This page walks the whole of it, then shows the one bounded step of the frozen kernel release inside it — and ends with the part of the route the published results did not measure.",
+              "Reaching a decision here is not a hidden chain of reasoning. It is a closed set of phases with two lawful ways out, a budget counted in units as it is spent, and a learning phase that opens only after somebody outside the system discloses what actually happened. This page walks the whole of it, then shows one evaluated row of a public run inside it — and ends with the part of the route the published results did not measure.",
             )}
           </p>
           <div className="thinking-hero__pair">
@@ -208,20 +208,20 @@ export function ThinkingPage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("INSIDE ONE BOUNDED STEP")}
-            title={t("The frozen release performs one step, and every value in it can be recomputed.")}
+            title={t("One row is evaluated in one bounded step, and every value in it can be recomputed.")}
             text={t(
-              "This is not the route above; it is one bounded step of the frozen kernel release, which performs no policy update at all. It is here because it is the part of the system with the hardest numbers attached: the space is closed before the run starts, every cut is a rule anyone can read, and the ordering can be recomputed from the record alone.",
+              "This is not the route above; it is one evaluated row of a public run, which takes one bounded step and writes one receipt. It is here because it is the part of the system with the hardest numbers attached: the set of possible answers is closed before the split that tests it is opened, every cut is a rule anybody can read, and the ordering can be recomputed from the record alone.",
             )}
           />
           <SelectorFunnelFigure />
           <div
             className="thinking-table-wrap"
             role="region"
-            aria-label={t("One bounded step with concrete values")}
+            aria-label={t("One evaluated row with concrete values")}
             tabIndex={0}
           >
             <table className="thinking-table">
-              <caption>{t("One accepted observation carried through one bounded step")}</caption>
+              <caption>{t("One held-out row carried through one bounded step")}</caption>
               <thead>
                 <tr>
                   <th scope="col">{t("Step")}</th>
@@ -305,7 +305,7 @@ export function ThinkingPage() {
             eyebrow={t("MEMORY, STATED EXACTLY")}
             title={t("Three registers survive an episode, and two familiar ones are still absent.")}
             text={t(
-              "The interesting question about any decision-making system is what it carries forward, because that is what a later behaviour depends on. Two of the three carried registers hold something that was learned — which is why the second one can be detached and the same engine run without it.",
+              "The interesting question about any decision-making system is what it carries forward, because that is what a later behaviour depends on. Two of the three carried registers hold something that was learned, and the second is kept apart from the engine on purpose: what the system learned can be inspected, replaced or removed without touching what it is allowed to conclude.",
             )}
           />
           <ThinkingMemoryFigure />

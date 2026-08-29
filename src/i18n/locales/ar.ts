@@ -38,6 +38,8 @@ import { homeNarrativeAr } from "./homeNarrative";
 import { publicRunAr } from "./publicRun";
 import { replayWalkAr } from "./replayWalk";
 import { inputContractAr } from "./inputContract";
+import { routeItemsAr } from "./routeItems";
+import { htmlFiguresAr } from "./htmlFigures";
 import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
@@ -80,6 +82,8 @@ export const ar: TranslationDictionary = {
   ...publicRunAr,
   ...replayWalkAr,
   ...inputContractAr,
+  ...routeItemsAr,
+  ...htmlFiguresAr,
   ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",

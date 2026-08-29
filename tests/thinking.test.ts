@@ -79,11 +79,11 @@ describe("the reasoning route", () => {
     expect(memoryRegisters.filter((entry) => entry.carried)).toHaveLength(3);
     expect(memoryRegisters.filter((entry) => !entry.carried)).toHaveLength(2);
 
-    // Durable learned state is carried, and it is the detachable kind — that is
-    // what makes every published percentage a paired measurement.
+    // Durable learned state is carried, and it is held apart from the engine, so
+    // what was learned can be replaced without touching what may be concluded.
     const volume = memoryRegisters.find((entry) => entry.register === "The learned volume");
     expect(volume?.carried).toBe(true);
-    expect(volume?.detail).toMatch(/detach/i);
+    expect(volume?.detail).toMatch(/separable/i);
 
     // Two things a reader will assume are there have to stay absent.
     for (const entry of memoryRegisters.filter((register) => !register.carried)) {
@@ -121,7 +121,7 @@ describe("the reasoning route", () => {
     // so the page has to say it rather than let the diagram imply otherwise.
     const attribution = thinkingMisreadings.at(-1)!;
     expect(attribution.claim).toMatch(/what the published results measured/i);
-    expect(attribution.correction).toMatch(/not established/i);
+    expect(attribution.correction).toMatch(/unestablished|not established/i);
   });
 
   it("publishes no internal identifier, module path, or receipt type", () => {

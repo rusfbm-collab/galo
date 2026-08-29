@@ -38,6 +38,8 @@ import { homeNarrativeRu } from "./homeNarrative";
 import { publicRunRu } from "./publicRun";
 import { replayWalkRu } from "./replayWalk";
 import { inputContractRu } from "./inputContract";
+import { routeItemsRu } from "./routeItems";
+import { htmlFiguresRu } from "./htmlFigures";
 import { verdictLawRu } from "./verdictLaw";
 
 export const ru: TranslationDictionary = {
@@ -80,6 +82,8 @@ export const ru: TranslationDictionary = {
   ...publicRunRu,
   ...replayWalkRu,
   ...inputContractRu,
+  ...routeItemsRu,
+  ...htmlFiguresRu,
   ...verdictLawRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",

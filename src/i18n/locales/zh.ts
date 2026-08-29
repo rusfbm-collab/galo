@@ -38,6 +38,8 @@ import { homeNarrativeZh } from "./homeNarrative";
 import { publicRunZh } from "./publicRun";
 import { replayWalkZh } from "./replayWalk";
 import { inputContractZh } from "./inputContract";
+import { routeItemsZh } from "./routeItems";
+import { htmlFiguresZh } from "./htmlFigures";
 import { verdictLawZh } from "./verdictLaw";
 
 export const zh: TranslationDictionary = {
@@ -80,6 +82,8 @@ export const zh: TranslationDictionary = {
   ...publicRunZh,
   ...replayWalkZh,
   ...inputContractZh,
+  ...routeItemsZh,
+  ...htmlFiguresZh,
   ...verdictLawZh,
   Language: "语言",
   "Skip to content": "跳到正文",

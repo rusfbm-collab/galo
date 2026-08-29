@@ -1301,7 +1301,7 @@ describe("GALO public site", () => {
       expect(screen.getAllByText(phase).length, phase).toBeGreaterThan(0);
     }
 
-    expect(screen.getByRole("table", { name: /accepted observation/i })).toBeInTheDocument();
+    expect(screen.getByRole("table", { name: /held-out row/i })).toBeInTheDocument();
     expect(screen.getByText("GALO thinks the way a person thinks.")).toBeInTheDocument();
     // The attribution gap has to be on the page, not only in the archive.
     expect(
