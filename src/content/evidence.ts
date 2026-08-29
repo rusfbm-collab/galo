@@ -23,24 +23,35 @@ export const releaseEvidence = {
     fastReceipt: "5046b87d78373c6f9b3f707923f3b00fc9c2f013ae23c3e4d41313413f47d456",
     full: "NOT COMPLETED",
   },
+  /**
+   * The three numbers that say how the architecture stands on the tables.
+   *
+   * This used to be a mixed set: an address count, a receipt count, and a
+   * rebuild count. The last two are the public runs' own figures and are
+   * published where those runs are described, so restating them here said
+   * nothing twice. What belongs in this slot is the relation the rest of the
+   * site rests on — a decision is a coordinate in a finite table written down
+   * before anything ran, a prediction is a route through those coordinates, and
+   * nothing fitted stands anywhere between the two.
+   */
   metrics: [
     {
       value: "560",
-      label: "Oriented typed coordinates",
+      label: "Addresses the tables define",
       detail:
-        "140 ordered coordinates × two laws × two operand-role orientations. These are addresses, not semantic concepts, and one prediction runs 84 typed steps rather than visiting all of them.",
+        "140 ordered pairs of poles × two laws × two operand orientations. Each one is a coordinate in a Cayley table, re-derived from the laws on every build rather than stored, so the address space cannot drift away from the mathematics it is supposed to be.",
     },
     {
-      value: "2,275",
-      label: "Evaluation receipts",
+      value: "84",
+      label: "Typed steps one prediction runs",
       detail:
-        "One per test row across three public corpora, written whether the row was answered or refused. A row cannot leave the denominator by producing nothing.",
+        "Three reading channels × seven levels × four action families. A prediction does not visit the catalogue; it walks one route through it, and every step of that route has to execute against the frozen tables before an answer may be published.",
     },
     {
-      value: "3 / 3",
-      label: "Rebuilds that matched byte for byte",
+      value: "0",
+      label: "Fitted parameters in between",
       detail:
-        "A cold run from a fresh unpack reconstructed each learned state and each prediction ledger and compared them against the shipped ones.",
+        "Nothing stands between the question and the table lookup. There is no weight to tune, so what an answer depends on is the tables, the learned structure that proposed it, and the route — and each of those three can be printed and disagreed with.",
     },
   ],
   current: [

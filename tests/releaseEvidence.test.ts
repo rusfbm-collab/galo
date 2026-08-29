@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { describe, expect, it } from "vitest";
 import { claims } from "../src/content/claims";
 import { releaseEvidence } from "../src/content/evidence";
+import { canonicalTypedCellCount, galoActionFamilies, galoLevels } from "../src/content/mathematics";
 import { benchmarkArithmetic, benchmarkOutcomes, benchmarkTotals, supersededSelector } from "../src/content/publicRun";
 import { publicClaims } from "../src/content/publicClaims";
 import replayData from "../src/data/controlled-replay.json";
@@ -98,5 +99,32 @@ describe("the home-page replay walkthrough", () => {
     }
     // The terminal step keeps its boundary rather than closing on a pass.
     expect(replayData.steps.at(-1)?.status).toBe("BOUNDARY");
+  });
+});
+
+describe("the table-derived metrics", () => {
+  // The copy tells a reader these are re-derived from the laws rather than
+  // stored. That is only worth saying if it is enforced, so it is enforced here.
+  it("takes the address space and the route length from the mathematics, not from prose", () => {
+    const byLabel = Object.fromEntries(releaseEvidence.metrics.map((entry) => [entry.label, entry.value]));
+
+    expect(byLabel["Addresses the tables define"]).toBe(String(canonicalTypedCellCount));
+
+    // Three reading channels, every level, every typed action family.
+    const routeLength = 3 * galoLevels.length * galoActionFamilies.length;
+    expect(byLabel["Typed steps one prediction runs"]).toBe(String(routeLength));
+
+    // The weight-free claim is the load-bearing one on this site; it may not
+    // quietly become "few" in a later edit.
+    expect(byLabel["Fitted parameters in between"]).toBe("0");
+  });
+
+  it("keeps the run figures out of the architecture slot", () => {
+    const prose = releaseEvidence.metrics.map((entry) => `${entry.value} ${entry.label} ${entry.detail}`).join(" ");
+    // These belong to the public runs and are published with the runs, where
+    // their scope travels with them. Restating them here says nothing twice.
+    for (const runFigure of ["2,275", "1,953", "322", "3 / 3"]) {
+      expect(prose, runFigure).not.toContain(runFigure);
+    }
   });
 });

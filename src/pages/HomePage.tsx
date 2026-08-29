@@ -455,9 +455,9 @@ export function HomePage() {
         <div className="shell">
           <SectionHeading
             eyebrow={t("EVIDENCE")}
-            title={t("What the current numbers actually measure.")}
+            title={t("Every decision is an address in a table that was written down first.")}
             text={t(
-              "The numbers below describe formal inventory and release reproducibility. None is presented as a measure of intelligence, customer value, or external operational gain.",
+              "A neural network's decision lives somewhere in a space of fitted parameters: it can be sampled, and it cannot be pointed at. GALO's lives in a finite table of typed coordinates derived from the laws before anything ran, which is the whole reason a decision here can be named, replayed and argued with rather than only observed. The three numbers below are that relation in order — how many addresses the tables define, how many of them one prediction actually runs through, and how many fitted parameters stand anywhere in between.",
             )}
             aside={
               <a className="text-link" href={href("/evidence")}>

@@ -242,6 +242,24 @@ export const mathDiagramsRu: TranslationDictionary = {
     "Разобрано на уровне 6. Каждое число выше вычислено по тем же формулам, что использует проводник, поэтому читатель может воспроизвести оба вычисления вручную и не согласиться с ними конкретно, а не в принципе.",
   "the brackets change nothing": "скобки ничего не меняют",
   "the brackets change the answer": "скобки меняют ответ",
+  "140 ordered pairs of poles × two laws × two operand orientations. Each one is a coordinate in a Cayley table, re-derived from the laws on every build rather than stored, so the address space cannot drift away from the mathematics it is supposed to be.":
+    "140 упорядоченных пар полюсов × два закона × две ориентации операндов. Каждая из них — координата в таблице Кэли, заново выводимая из законов при каждой сборке, а не хранимая, так что адресное пространство не может разойтись с математикой, которой оно должно быть.",
+  "A neural network's decision lives somewhere in a space of fitted parameters: it can be sampled, and it cannot be pointed at. GALO's lives in a finite table of typed coordinates derived from the laws before anything ran, which is the whole reason a decision here can be named, replayed and argued with rather than only observed. The three numbers below are that relation in order — how many addresses the tables define, how many of them one prediction actually runs through, and how many fitted parameters stand anywhere in between.":
+    "Решение нейросети живёт где-то в пространстве подогнанных параметров: его можно семплировать, но на него нельзя указать. Решение GALO живёт в конечной таблице типизированных координат, выведенной из законов до того, как что-либо запустилось, — и именно поэтому решение здесь можно назвать, воспроизвести и оспорить, а не только наблюдать. Три числа ниже и есть это отношение, по порядку: сколько адресов задают таблицы, через сколько из них реально проходит один прогноз и сколько подогнанных параметров стоит между тем и другим.",
+  "Addresses the tables define": "Адресов задают таблицы",
+  "Every decision is an address in a table that was written down first.":
+    "Каждое решение — это адрес в таблице, которая была выписана раньше.",
+  "Fitted parameters in between": "Подогнанных параметров между ними",
+  "Nothing stands between the question and the table lookup. There is no weight to tune, so what an answer depends on is the tables, the learned structure that proposed it, and the route — and each of those three can be printed and disagreed with.":
+    "Между вопросом и обращением к таблице не стоит ничего. Настраивать нечего: ответ зависит от таблиц, от выученной структуры, которая его предложила, и от маршрута, — и каждое из этих трёх можно распечатать и оспорить.",
+  "The tables come first, and everything else on this page runs on top of them.":
+    "Сначала идут таблицы, и всё остальное на этой странице работает поверх них.",
+  "The three numbers immediately below are the algebra, not a result: an address space derived from the laws, the length of the route one prediction takes through it, and the number of fitted parameters standing in between. They are what the measured runs further down are measured against. Nothing on this page blends the two — the run figures are published where the runs are described, with their own scope beside them, and digests and file names are handed to a reviewer rather than posted here.":
+    "Три числа сразу ниже — это алгебра, а не результат: адресное пространство, выведенное из законов, длина маршрута, который один прогноз проходит по нему, и число подогнанных параметров, стоящих между. Именно с ними сверяются измеренные прогоны ниже по странице. Ничто на этой странице не смешивает одно с другим: числа прогонов публикуются там, где описаны сами прогоны, рядом с их областью применимости, а дайджесты и имена файлов передаются рецензенту, а не вывешиваются здесь.",
+  "Three reading channels × seven levels × four action families. A prediction does not visit the catalogue; it walks one route through it, and every step of that route has to execute against the frozen tables before an answer may be published.":
+    "Три канала чтения × семь уровней × четыре семейства действий. Прогноз не обходит каталог — он проходит по нему один маршрут, и каждый шаг этого маршрута обязан исполниться на замороженных таблицах, прежде чем ответ может быть опубликован.",
+  "Typed steps one prediction runs": "Типизированных шагов исполняет один прогноз",
+  "WHERE A DECISION IS ALLOWED TO LIVE": "ГДЕ РЕШЕНИЮ ДОЗВОЛЕНО ЖИТЬ",
 };
 
 export const mathDiagramsZh: TranslationDictionary = {
@@ -478,6 +496,24 @@ export const mathDiagramsZh: TranslationDictionary = {
     "在第 6 层上做的。上面每一个数都是用探索器所用的同一批公式算出来的，所以读者可以用手把两次求值都重做一遍，然后具体地、而不是在原则上，跟它们过不去。",
   "the brackets change nothing": "括号什么也不改变",
   "the brackets change the answer": "括号改变答案",
+  "140 ordered pairs of poles × two laws × two operand orientations. Each one is a coordinate in a Cayley table, re-derived from the laws on every build rather than stored, so the address space cannot drift away from the mathematics it is supposed to be.":
+    "140 个极的有序对 × 两条法则 × 两种操作数朝向。其中每一个都是凯莱表里的一个坐标，在每次构建时从法则重新推出来，而不是存着的；所以这个地址空间不会跟它本该是的那套数学走散。",
+  "A neural network's decision lives somewhere in a space of fitted parameters: it can be sampled, and it cannot be pointed at. GALO's lives in a finite table of typed coordinates derived from the laws before anything ran, which is the whole reason a decision here can be named, replayed and argued with rather than only observed. The three numbers below are that relation in order — how many addresses the tables define, how many of them one prediction actually runs through, and how many fitted parameters stand anywhere in between.":
+    "神经网络的决定活在一个拟合参数的空间里的某处：它可以被采样，却没法被指出来。GALO 的决定活在一张有限的类型化坐标表里，这张表在任何东西跑起来之前就已从法则推导出来——正因如此，这里的一个决定可以被命名、被重放、被反驳，而不只是被观察。下面三个数就是这层关系，按顺序：这些表定义了多少个地址，一次预测真正走过其中多少个，以及这两者之间站着多少个拟合参数。",
+  "Addresses the tables define": "这些表定义的地址数",
+  "Every decision is an address in a table that was written down first.":
+    "每一个决定，都是一张事先就写下来的表里的一个地址。",
+  "Fitted parameters in between": "两者之间的拟合参数",
+  "Nothing stands between the question and the table lookup. There is no weight to tune, so what an answer depends on is the tables, the learned structure that proposed it, and the route — and each of those three can be printed and disagreed with.":
+    "在问题和查表之间什么都不站着。没有权重可调，所以一个答案依赖的是那些表、提出它的那个学到的结构，以及那条路线——而这三样，每一样都可以打印出来、拿来反驳。",
+  "The tables come first, and everything else on this page runs on top of them.":
+    "先有这些表，本页上的其余一切都跑在它们之上。",
+  "The three numbers immediately below are the algebra, not a result: an address space derived from the laws, the length of the route one prediction takes through it, and the number of fitted parameters standing in between. They are what the measured runs further down are measured against. Nothing on this page blends the two — the run figures are published where the runs are described, with their own scope beside them, and digests and file names are handed to a reviewer rather than posted here.":
+    "紧挨着下面的三个数是代数，不是结果：一个从法则推出来的地址空间、一次预测穿过它所走的路线长度，以及站在两者之间的拟合参数个数。本页更下面那些被测量的运行，正是拿它们来对照的。本页不把两者混在一起——运行的数字公布在描述那些运行的地方，连同它们自己的适用范围；而摘要和文件名是交给审阅者的，不是贴在这里的。",
+  "Three reading channels × seven levels × four action families. A prediction does not visit the catalogue; it walks one route through it, and every step of that route has to execute against the frozen tables before an answer may be published.":
+    "三个读取通道 × 七层 × 四个动作族。一次预测并不去把目录走一遍；它在目录里走一条路线，而这条路线的每一步都必须在冻结的表上执行完，答案才可以被公开。",
+  "Typed steps one prediction runs": "一次预测跑的类型化步骤数",
+  "WHERE A DECISION IS ALLOWED TO LIVE": "一个决定被允许住在哪儿",
 };
 
 export const mathDiagramsAr: TranslationDictionary = {
@@ -718,4 +754,21 @@ export const mathDiagramsAr: TranslationDictionary = {
     "مشغولٌ عند المستوى 6. وكلُّ عددٍ أعلاه محسوبٌ بالصِّيَغ نفسِها التي يستعملها المستكشِف، فيستطيع القارئ أن يعيد إنتاجَ الحسابَين بيده وأن يخالفهما بالتحديد لا من حيث المبدأ.",
   "the brackets change nothing": "الأقواسُ لا تغيّر شيئًا",
   "the brackets change the answer": "الأقواسُ تغيّر الجواب",
+  "140 ordered pairs of poles × two laws × two operand orientations. Each one is a coordinate in a Cayley table, re-derived from the laws on every build rather than stored, so the address space cannot drift away from the mathematics it is supposed to be.":
+    "140 زوجًا مرتَّبًا من الأقطاب × قانونان × اتّجاها مُعامِلات. كلٌّ منها إحداثيٌّ في جدول كايلي، يُعاد اشتقاقُه من القوانين عند كلِّ بناءٍ لا يُخزَّن، فلا يستطيع فضاءُ العنونة أن يفترق عن الرياضيّات التي يُفترض أنّه هي.",
+  "A neural network's decision lives somewhere in a space of fitted parameters: it can be sampled, and it cannot be pointed at. GALO's lives in a finite table of typed coordinates derived from the laws before anything ran, which is the whole reason a decision here can be named, replayed and argued with rather than only observed. The three numbers below are that relation in order — how many addresses the tables define, how many of them one prediction actually runs through, and how many fitted parameters stand anywhere in between.":
+    "قرارُ الشبكة العصبيّة يعيش في مكانٍ ما من فضاءٍ من الوسائط المُلاءَمة: يمكن أخذُ عيّنةٍ منه ولا يمكن الإشارةُ إليه. أمّا قرارُ GALO فيعيش في جدولٍ منتهٍ من إحداثيّاتٍ محدَّدةِ النوع مُشتقّةٍ من القوانين قبل أن يجري أيُّ شيء، وهذا كلُّ سببِ أنّ قرارًا هنا يمكن تسميتُه وإعادةُ تشغيله ومجادلتُه لا ملاحظتُه فحسب. والأرقامُ الثلاثة أدناه هي تلك العلاقةُ بترتيبها: كم عنوانًا تُعرِّف الجداول، وكم منها يجتاز تنبّؤٌ واحدٌ فعلًا، وكم وسيطًا مُلاءَمًا يقف بينهما.",
+  "Addresses the tables define": "عناوينُ تُعرِّفها الجداول",
+  "Every decision is an address in a table that was written down first.": "كلُّ قرارٍ عنوانٌ في جدولٍ كُتِب قبلًا.",
+  "Fitted parameters in between": "وسائطُ مُلاءَمةٍ بينهما",
+  "Nothing stands between the question and the table lookup. There is no weight to tune, so what an answer depends on is the tables, the learned structure that proposed it, and the route — and each of those three can be printed and disagreed with.":
+    "لا شيءَ يقف بين السؤال والرجوع إلى الجدول. لا وزنَ يُضبَط، فالجوابُ يتوقّف على الجداول، وعلى البنية المتعلَّمة التي اقترحته، وعلى المسار — وكلٌّ من هذه الثلاثة يمكن طبعُه ومجادلتُه.",
+  "The tables come first, and everything else on this page runs on top of them.":
+    "الجداولُ أوّلًا، وكلُّ ما سواها في هذه الصفحة يجري فوقها.",
+  "The three numbers immediately below are the algebra, not a result: an address space derived from the laws, the length of the route one prediction takes through it, and the number of fitted parameters standing in between. They are what the measured runs further down are measured against. Nothing on this page blends the two — the run figures are published where the runs are described, with their own scope beside them, and digests and file names are handed to a reviewer rather than posted here.":
+    "الأرقامُ الثلاثةُ أدناه مباشرةً هي الجبرُ لا نتيجة: فضاءُ عنونةٍ مُشتَقٌّ من القوانين، وطولُ المسار الذي يقطعه تنبّؤٌ واحدٌ فيه، وعددُ الوسائط المُلاءَمة الواقفة بينهما. وهي ما تُقاس عليه التشغيلاتُ المقيسةُ أسفلَ الصفحة. ولا تخلط هذه الصفحةُ بينهما — فأرقامُ التشغيلات تُنشَر حيث تُوصَف تلك التشغيلات ونطاقُها إلى جانبها، والبصماتُ وأسماءُ الملفّات تُسلَّم إلى مُراجِعٍ لا تُعلَّق هنا.",
+  "Three reading channels × seven levels × four action families. A prediction does not visit the catalogue; it walks one route through it, and every step of that route has to execute against the frozen tables before an answer may be published.":
+    "ثلاثُ قنوات قراءة × سبعةُ مستويات × أربعُ عائلاتِ أفعال. والتنبّؤُ لا يزور الفهرس؛ بل يقطع فيه مسارًا واحدًا، وعلى كلِّ خطوةٍ من ذلك المسار أن تُنفَّذ على الجداول المجمَّدة قبل أن يُسمح بنشر جواب.",
+  "Typed steps one prediction runs": "خطواتٌ محدَّدةُ النوع ينفّذها تنبّؤٌ واحد",
+  "WHERE A DECISION IS ALLOWED TO LIVE": "أين يُسمح للقرار أن يعيش",
 };

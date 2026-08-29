@@ -55,11 +55,11 @@ export function EvidencePage() {
               <Fingerprint aria-hidden="true" />
             </div>
             <div>
-              <p className="eyebrow">{t("TWO CARRIERS, KEPT APART")}</p>
-              <h2>{t("Each set of numbers on this page comes from one carrier, and never from both.")}</h2>
+              <p className="eyebrow">{t("WHERE A DECISION IS ALLOWED TO LIVE")}</p>
+              <h2>{t("The tables come first, and everything else on this page runs on top of them.")}</h2>
               <p>
                 {t(
-                  "The release counts immediately below are the frozen kernel release. The sealed learning line further down runs from a separate carrier of its own. Neither set is blended with the other, and no figure here comes from an artefact that is out of circulation. Digests and file names are handed to a reviewer rather than published.",
+                  "The three numbers immediately below are the algebra, not a result: an address space derived from the laws, the length of the route one prediction takes through it, and the number of fitted parameters standing in between. They are what the measured runs further down are measured against. Nothing on this page blends the two — the run figures are published where the runs are described, with their own scope beside them, and digests and file names are handed to a reviewer rather than posted here.",
                 )}
               </p>
             </div>

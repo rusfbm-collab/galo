@@ -174,7 +174,7 @@ describe("GALO public site", () => {
         expect(text).not.toContain(figure);
       }
     }
-    expect(document.querySelector("#evidence")?.textContent).toContain("2,275");
+    expect(document.querySelector("#evidence")?.textContent).toContain("560");
   });
 
   // HOME-DIAGRAM-A11Y-05 — every new figure is reachable without sight or a mouse.
@@ -276,13 +276,15 @@ describe("GALO public site", () => {
     expect(route?.querySelectorAll(".hero-route__rail")).toHaveLength(routePhases.length + 3);
   });
 
-  it("shows exact evidence numbers with scope captions", () => {
+  it("shows the three table-derived numbers with the relation they stand for", () => {
     render(<App />);
+    // The address space, the route through it, and what stands in between. The
+    // run figures belong to the runs and are published where those are described.
     expect(screen.getByText("560")).toBeInTheDocument();
-    expect(screen.getByText("2,275")).toBeInTheDocument();
-    expect(screen.getAllByText("3 / 3")[0]).toBeInTheDocument();
-    expect(screen.getByText(/not semantic concepts/i)).toBeInTheDocument();
-    expect(screen.getByText(/measure of intelligence/i)).toBeInTheDocument();
+    expect(screen.getByText("84")).toBeInTheDocument();
+    expect(screen.getByText("0")).toBeInTheDocument();
+    expect(screen.getByText(/coordinate in a Cayley table/i)).toBeInTheDocument();
+    expect(screen.getByText(/space of fitted parameters/i)).toBeInTheDocument();
   });
 
   it("keeps current and target architecture visibly separate", () => {
