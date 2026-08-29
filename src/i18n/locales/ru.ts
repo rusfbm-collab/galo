@@ -40,6 +40,7 @@ import { replayWalkRu } from "./replayWalk";
 import { inputContractRu } from "./inputContract";
 import { routeItemsRu } from "./routeItems";
 import { htmlFiguresRu } from "./htmlFigures";
+import { mathDiagramsRu } from "./mathDiagrams";
 import { verdictLawRu } from "./verdictLaw";
 
 export const ru: TranslationDictionary = {
@@ -84,6 +85,7 @@ export const ru: TranslationDictionary = {
   ...inputContractRu,
   ...routeItemsRu,
   ...htmlFiguresRu,
+  ...mathDiagramsRu,
   ...verdictLawRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",

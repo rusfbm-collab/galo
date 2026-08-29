@@ -49,7 +49,7 @@ export const assessmentTable: readonly AssessmentRow[] = [
   {
     dimension: "Delivery in Arabic",
     answerToday:
-      "Built, not scheduled. The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and a test fails the build if a rendered string is missing its translation. It is a website. No product has been deployed, and we claim nothing beyond that.",
+      "The site runs in English, Russian, Chinese and Arabic with right-to-left layout, and the build fails if a rendered string is missing its translation. That is a property of a website and nothing more: no product has been deployed in any language.",
     status: "ESTABLISHED",
     whereToCheck: "/audit#what-you-can-check",
   },
@@ -126,11 +126,11 @@ export const regionFit: readonly RegionFit[] = [
       "No regulator, supervisory authority, or standards body has reviewed any of this, and no regulated deployment exists. The shape of the answer is established; its acceptance by anyone is not.",
   },
   {
-    claim: "Arabic is already shipped, not scheduled",
+    claim: "A corrected source does not cost a retraining run",
     mechanism:
-      "The whole site is delivered in Arabic with right-to-left layout, with mathematical notation isolated so it stays readable, and the build fails if a single rendered string lacks its translation. An assessor can check this in one click by switching the language.",
+      "Because what the system holds is explicit structure rather than fitted parameters, a corrected reading, an updated regulation, or a sensor taken out of service reaches only the structures that stand on it. Those lose their force, everything derived from them loses force with them, and the rest of the record keeps standing. There is nothing to refit, so the cost of a correction scales with what the correction touches rather than with the size of the system.",
     limit:
-      "A localized website is not a localized product. It shows that the discipline exists and is enforced, not that any Arabic-language deployment has been made.",
+      "Demonstrated on public corpora at the scale published on this site, and on nobody's operational data. That a correction stays cheap at industrial scale is an expectation from the architecture, not a measurement.",
   },
   {
     claim: "The shipped release is untrained, so deploying it moves no corpus",

@@ -40,6 +40,7 @@ import { replayWalkAr } from "./replayWalk";
 import { inputContractAr } from "./inputContract";
 import { routeItemsAr } from "./routeItems";
 import { htmlFiguresAr } from "./htmlFigures";
+import { mathDiagramsAr } from "./mathDiagrams";
 import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
@@ -84,6 +85,7 @@ export const ar: TranslationDictionary = {
   ...inputContractAr,
   ...routeItemsAr,
   ...htmlFiguresAr,
+  ...mathDiagramsAr,
   ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",

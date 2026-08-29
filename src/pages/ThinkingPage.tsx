@@ -18,7 +18,8 @@ import {
   thinkingMisreadings,
   thinkingWalkthrough,
 } from "../content/thinking";
-import { boundaryCauses } from "../content/verdictLaw";
+import { boundaryCauses, verdictHeadline } from "../content/verdictLaw";
+import { benchmarkTotals } from "../content/publicRun";
 import { useI18n } from "../i18n/I18nContext";
 
 const contents = [
@@ -155,9 +156,43 @@ export function ThinkingPage() {
             eyebrow={t("A STOP IS A RESULT")}
             title={t("A procedure that can stop is more useful than one that always answers.")}
             text={t(
-              "Four of the five below end in a boundary and one in a rejection, and the record says which. The difference matters: a boundary is a lawful run that could not settle the question, a rejection is a run that was not lawful at all. Collapsing the two would make every stop look the same.",
+              "There are eight declared places a run can stop, and they are not equal in standing. Three of them are the admission law, and they are what the published runs actually exercise. The other five belong to the wider route, and no published run has reached one. Both are listed, in that order, because presenting them as one undifferentiated set would let architecture borrow the credit of a measurement.",
             )}
           />
+
+          {/* The admission law leads, because it is the part with counts behind it. */}
+          <div className="thinking-verdict">
+            <p className="eyebrow">{t("WHAT ACTUALLY STOPS A RUN TODAY")}</p>
+            <h3>{t(verdictHeadline)}</h3>
+            <p className="thinking-verdict__lead">
+              {t(
+                "This is the test the public runs exercise on every row. {refused} of {rows} rows ended here rather than in an answer — including every row of one of the three benchmarks, where nothing bought the right to answer at all. A refusal is not a failure to produce output; it is an outcome with one of the three causes below written into its receipt.",
+                { refused: benchmarkTotals.refused, rows: benchmarkTotals.testRows },
+              )}
+            </p>
+            <ul className="thinking-verdict__causes">
+              {boundaryCauses.map((entry) => (
+                <li key={entry.cause}>
+                  <strong>{t(entry.cause)}</strong>
+                  <span>{t(entry.detail)}</span>
+                </li>
+              ))}
+            </ul>
+            <a className="text-link" href={href("/theory#verdict-law")}>
+              {t("The three conditions, and what each one prevents")}{" "}
+              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
+            </a>
+          </div>
+
+          <div className="thinking-gates__intro">
+            <p className="eyebrow">{t("AND FIVE MORE, FURTHER OUT ON THE ROUTE")}</p>
+            <h3>{t("The route declares five stops of its own, and no published run has reached one.")}</h3>
+            <p>
+              {t(
+                "These are the phases above the bounded step: what the route could not separate, could not open, could not compose, or could not afford, and the one case where the run was not lawful at all. Four end in a boundary and one in a rejection, and the record says which — a boundary is a lawful run that could not settle the question, a rejection is a run that was not lawful. They are declared and named here; they are not evidence, because nothing published has exercised them.",
+              )}
+            </p>
+          </div>
           <RefusalGateFigure />
           <div className="thinking-gates">
             {refusalGates.map((gate) => (
@@ -178,28 +213,6 @@ export function ThinkingPage() {
                 <p className="thinking-gates__instead">{t(gate.instead)}</p>
               </article>
             ))}
-          </div>
-
-          <div className="thinking-verdict">
-            <p className="eyebrow">{t("AND ONE MORE FAMILY, BELOW THE ROUTE")}</p>
-            <h3>{t("Even a route that finished can still end without a published answer.")}</h3>
-            <p className="thinking-verdict__lead">
-              {t(
-                "The five gates above are about the route: what it could not separate, could not open, could not compose, or could not afford. Underneath them sits a second test, applied to the answer itself. Three conditions have to hold together, and any one of them missing is also a boundary with a named cause.",
-              )}
-            </p>
-            <ul className="thinking-verdict__causes">
-              {boundaryCauses.map((entry) => (
-                <li key={entry.cause}>
-                  <strong>{t(entry.cause)}</strong>
-                  <span>{t(entry.detail)}</span>
-                </li>
-              ))}
-            </ul>
-            <a className="text-link" href={href("/theory#verdict-law")}>
-              {t("The three conditions, and what each one prevents")}{" "}
-              <ArrowRight className="directional-icon" size={16} aria-hidden="true" />
-            </a>
           </div>
         </div>
       </section>

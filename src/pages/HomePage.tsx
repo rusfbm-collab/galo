@@ -783,10 +783,10 @@ export function HomePage() {
             </article>
             <article>
               <span>03</span>
-              <h3>{t("Arabic already shipped")}</h3>
+              <h3>{t("Nothing checked from outside")}</h3>
               <p>
                 {t(
-                  "The site ships in Arabic with right-to-left layout, and the build fails if one rendered string lacks a translation. It is a website. Nobody has deployed anything, and we claim nothing beyond that.",
+                  "Every number on this site was produced by the project running its own code on its own machine. No partner has evaluated it on their own data, and no reviewer has attacked the mathematics. That is the largest gap in the dossier, and the second milestone below exists only to close it.",
                 )}
               </p>
             </article>

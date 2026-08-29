@@ -8475,6 +8475,12 @@ caption bdi {
   padding-top: 10px;
 }
 
+/* Machine names like STAR_LEFT do not fit the default column and break
+   mid-identifier, which reads as a typo rather than as a wrap. */
+.galo-figure__stage-notes--wide li {
+  grid-template-columns: 108px 1fr;
+}
+
 .galo-figure__stage-notes strong {
   color: var(--figure-accent);
   font-family: var(--font-mono);
@@ -10617,6 +10623,31 @@ caption bdi {
   line-height: 1.64;
 }
 
+.thinking-gates__intro {
+  max-width: 78ch;
+  margin-top: 52px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.thinking-gates__intro .eyebrow {
+  margin: 0 0 12px;
+}
+
+.thinking-gates__intro h3 {
+  margin: 0 0 12px;
+  color: var(--white);
+  font-size: 1.08rem;
+  line-height: 1.4;
+}
+
+.thinking-gates__intro p {
+  margin: 0;
+  color: rgba(226, 238, 246, 0.84);
+  font-size: 0.95rem;
+  line-height: 1.62;
+}
+
 .thinking-gates {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
@@ -12291,7 +12322,7 @@ caption bdi {
 /* ---- the verdict conditions, echoed on the thinking and evidence pages ---- */
 
 .thinking-verdict {
-  margin-top: 40px;
+  margin-top: 30px;
   padding: 26px 28px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 20px;
@@ -13731,12 +13762,6 @@ caption bdi {
   fill: var(--figure-ink);
   font-size: 0.76rem;
   font-weight: 680;
-}
-
-.galo-gate__foot {
-  fill: var(--figure-muted);
-  font-size: 0.68rem;
-  font-weight: 700;
 }
 
 /* ---- one-step loop figure ---- */
@@ -19700,4 +19725,621 @@ caption bdi {
 html[lang="ar"][lang="ar"] body,
 html[lang="ar"][lang="ar"] body * {
   letter-spacing: normal;
+}
+
+/* ============================================================================
+   MATHEMATICS FIGURES
+
+   Ten explanatory figures for the formal-kernel page, which until now carried
+   two. Everything text-heavy is HTML so it wraps in Russian and Arabic; SVG is
+   used only where a position, an arrow or a shape carries meaning that a list
+   would lose.
+   ========================================================================= */
+
+/* ---- carrier ladder: seven levels drawn at size ---- */
+
+.galo-ladder__row rect {
+  fill: rgba(15, 156, 136, 0.14);
+  stroke: var(--chart-1);
+  stroke-width: 1.2;
+}
+
+.galo-ladder__pole {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.galo-ladder__level {
+  fill: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.galo-ladder__count {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* ---- two reducts: one carrier, two laws, stated as properties ---- */
+
+.reducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  align-items: start;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.reducts__card {
+  border: 1.4px solid var(--figure-line);
+  border-radius: 18px;
+  padding: 18px;
+  background: var(--white);
+}
+
+.reducts__card.is-plus {
+  border-color: var(--chart-1);
+}
+
+.reducts__card.is-star {
+  border-color: var(--chart-2);
+}
+
+.reducts__card header {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.reducts__card header bdi {
+  justify-self: start;
+  color: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.reducts__card header span {
+  color: var(--figure-muted);
+  font-size: 0.86rem;
+}
+
+.reducts__label {
+  margin: 0 0 8px;
+  color: var(--chart-1);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.reducts__label.is-fails {
+  margin-top: 16px;
+  color: var(--chart-2);
+}
+
+.reducts ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.reducts li {
+  color: var(--figure-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.reducts__fails li::marker {
+  color: var(--chart-2);
+}
+
+/* ---- operand axes: the two-by-two that gives four families ---- */
+
+.galo-axes__head {
+  fill: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.galo-axes__cell rect {
+  fill: rgba(15, 156, 136, 0.07);
+  stroke: var(--chart-1);
+  stroke-width: 1.4;
+}
+
+.galo-axes__cell.is-star rect {
+  fill: rgba(216, 91, 97, 0.06);
+  stroke: var(--chart-2);
+}
+
+.galo-axes__family {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+/* ---- coordinate chain: two multiplications and a subtraction ---- */
+
+.galo-chain2__node rect {
+  fill: var(--white);
+  stroke: var(--chart-1);
+  stroke-width: 1.5;
+}
+
+.galo-chain2__node.is-last rect {
+  stroke: var(--chart-2);
+  stroke-dasharray: 6 4;
+}
+
+.galo-chain2__value {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  font-weight: 800;
+}
+
+.galo-chain2__link {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.6;
+}
+
+.galo-chain2__multiplier {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+/* ---- translation ranks: one law relabels, the other folds ---- */
+
+.galo-rank__lane rect {
+  fill: rgba(15, 156, 136, 0.1);
+  stroke: var(--chart-1);
+  stroke-width: 1.3;
+}
+
+.galo-rank__lane.is-star rect {
+  fill: rgba(216, 91, 97, 0.08);
+  stroke: var(--chart-2);
+}
+
+.galo-rank__lane text {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.galo-rank__family {
+  fill: var(--figure-accent) !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+}
+
+.galo-rank__rank {
+  fill: var(--figure-muted) !important;
+  font-size: 0.64rem !important;
+}
+
+/* A target nothing reaches is drawn hollow: that emptiness is the rank. */
+.galo-rank__target.is-empty rect {
+  fill: transparent;
+  stroke-dasharray: 5 4;
+  opacity: 0.55;
+}
+
+.galo-rank__target.is-empty text {
+  opacity: 0.45;
+}
+
+.galo-rank__link {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.3;
+}
+
+/* ---- bracket trees: where the brackets change the answer ----
+
+   Two bracketings per law, each shown as the order its steps actually happen
+   in. This was four small SVG syntax trees; two levels of nesting did not earn
+   a viewBox, and the boxes went white-on-white when the section's dark palette
+   flipped the text. ------------------------------------------------------- */
+
+.brackets {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.brackets__lane {
+  border: 1.4px solid var(--figure-line);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.brackets__lane.is-star {
+  border-color: var(--chart-2);
+}
+
+.brackets__lane.is-plus {
+  border-color: var(--chart-1);
+}
+
+.brackets__lane header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.brackets__lane header bdi {
+  color: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.brackets__verdict {
+  color: var(--chart-1);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brackets__verdict.is-diff {
+  color: var(--chart-2);
+}
+
+.brackets__trees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: 12px;
+}
+
+.brackets__trees article {
+  border: 1px solid var(--figure-line);
+  border-radius: 13px;
+  padding: 13px 15px;
+}
+
+.brackets__shape {
+  margin: 0 0 8px;
+  color: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* The steps are numbered because the order is the whole point. */
+.brackets__steps {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 10px;
+  padding-inline-start: 22px;
+}
+
+.brackets__steps li {
+  color: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.brackets__result {
+  margin: 0;
+  color: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.brackets__reading {
+  margin: 14px 0 0;
+  color: var(--figure-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+/* ---- congruence blocks: when a grouping may stand in for its members ---- */
+
+.galo-congruence__block rect {
+  fill: var(--white);
+  stroke: var(--figure-line);
+  stroke-width: 1.4;
+}
+
+.galo-congruence__name {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.galo-congruence__row {
+  fill: var(--figure-muted);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.galo-congruence__row.is-star {
+  fill: var(--chart-2);
+}
+
+.galo-congruence__verdict {
+  fill: var(--chart-1);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 800;
+}
+
+.galo-congruence__verdict.is-broken {
+  fill: var(--chart-2);
+}
+
+/* ---- morphism test: the square that has to close ---- */
+
+.galo-morphism__node rect {
+  fill: var(--white);
+  stroke: var(--chart-1);
+  stroke-width: 1.5;
+}
+
+.galo-morphism__node.is-target rect {
+  stroke: var(--chart-2);
+  stroke-dasharray: 6 4;
+}
+
+.galo-morphism__node text {
+  fill: var(--figure-ink);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.galo-morphism__edge {
+  fill: none;
+  stroke: var(--chart-neutral-strong);
+  stroke-width: 1.5;
+}
+
+.galo-morphism__edge-label {
+  fill: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.galo-morphism__question {
+  fill: var(--chart-2);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+/* ---- proof shape: the seven questions every card answers ---- */
+
+.proof-shape {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.proof-shape li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 14px;
+  border: 1.3px solid var(--figure-line);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: var(--white);
+}
+
+/* The two verification steps are the ones that make the rest checkable. */
+.proof-shape li.is-check {
+  border-color: var(--chart-1);
+  background: rgba(15, 156, 136, 0.05);
+}
+
+.proof-shape__step {
+  color: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.proof-shape h4 {
+  margin: 0 0 4px;
+  color: var(--figure-ink);
+  font-size: 0.96rem;
+  line-height: 1.35;
+}
+
+.proof-shape__asks {
+  margin: 0 0 6px !important;
+  color: var(--figure-accent) !important;
+  font-style: italic;
+}
+
+.proof-shape p {
+  margin: 0;
+  color: var(--figure-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+/* ---- boundary scopes: three nested regions, deliberately unequal ---- */
+
+.scope-rings {
+  display: grid;
+  gap: 0;
+  margin-top: 22px;
+}
+
+.scope-rings__ring {
+  border: 1.4px solid var(--figure-line);
+  border-radius: 20px;
+  padding: 20px;
+  background: var(--white);
+}
+
+/* Each region is inset inside the one before it, so the nesting is the layout
+   rather than a caption claiming nesting. */
+.scope-rings__ring + .scope-rings__ring {
+  margin-top: -12px;
+  margin-inline: 0;
+}
+
+.scope-rings__ring.is-tables {
+  border-color: var(--chart-1);
+}
+
+.scope-rings__ring.is-runs {
+  border-color: var(--figure-accent);
+  border-style: dashed;
+}
+
+.scope-rings__ring.is-open {
+  border-color: var(--chart-2);
+  border-style: dashed;
+  background: rgba(216, 91, 97, 0.04);
+}
+
+.scope-rings__ring header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.scope-rings__index {
+  color: var(--figure-accent);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.scope-rings__ring h4 {
+  margin: 0;
+  color: var(--figure-ink);
+  font-size: 1rem;
+}
+
+.scope-rings ul {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 12px;
+  padding-inline-start: 20px;
+}
+
+.scope-rings li {
+  color: var(--figure-muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.scope-rings__ring.is-open li::marker {
+  color: var(--chart-2);
+}
+
+.scope-rings__ring > p {
+  margin: 0;
+  color: var(--figure-accent);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+/* ---- the same cards on a dark section ----
+
+   Two of these figures live on navy and dark sections, where the figure tokens
+   flip to light text. A card that hardcoded a white background put light text on
+   white and disappeared; the backgrounds are translucent here so the section
+   shows through and the flipped tokens stay legible. */
+
+.section--navy .reducts__card,
+.section--dark .reducts__card,
+.section--navy .brackets__trees article,
+.section--dark .brackets__trees article,
+.section--navy .proof-shape li,
+.section--dark .proof-shape li,
+.section--navy .scope-rings__ring,
+.section--dark .scope-rings__ring,
+.section--navy .memory-bands li,
+.section--dark .memory-bands li {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.section--navy .reducts__card header bdi,
+.section--dark .reducts__card header bdi,
+.section--navy .proof-shape h4,
+.section--dark .proof-shape h4,
+.section--navy .scope-rings__ring h4,
+.section--dark .scope-rings__ring h4,
+.section--navy .memory-bands bdi,
+.section--dark .memory-bands bdi {
+  color: var(--figure-ink);
+}
+
+.section--navy .reducts li,
+.section--dark .reducts li,
+.section--navy .scope-rings li,
+.section--dark .scope-rings li,
+.section--navy .proof-shape p,
+.section--dark .proof-shape p,
+.section--navy .memory-bands li > span:last-child,
+.section--dark .memory-bands li > span:last-child {
+  color: var(--figure-muted);
+}
+
+.section--navy .proof-shape li.is-check,
+.section--dark .proof-shape li.is-check,
+.section--navy .scope-rings__ring.is-open,
+.section--dark .scope-rings__ring.is-open {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* The accent is the section's own cyan on dark, not the light-mode teal. */
+.section--navy .reducts__label,
+.section--dark .reducts__label,
+.section--navy .proof-shape__step,
+.section--dark .proof-shape__step,
+.section--navy .scope-rings__index,
+.section--dark .scope-rings__index,
+.section--navy .proof-shape__asks,
+.section--dark .proof-shape__asks,
+.section--navy .scope-rings__ring > p,
+.section--dark .scope-rings__ring > p {
+  color: var(--figure-accent);
+}
+
+.section--navy .reducts__label.is-fails,
+.section--dark .reducts__label.is-fails {
+  color: var(--amber);
+}
+
+@media (max-width: 720px) {
+  .proof-shape li {
+    grid-template-columns: 34px 1fr;
+    gap: 10px;
+  }
+
+  .scope-rings__ring {
+    padding: 16px;
+  }
 }

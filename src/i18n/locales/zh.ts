@@ -40,6 +40,7 @@ import { replayWalkZh } from "./replayWalk";
 import { inputContractZh } from "./inputContract";
 import { routeItemsZh } from "./routeItems";
 import { htmlFiguresZh } from "./htmlFigures";
+import { mathDiagramsZh } from "./mathDiagrams";
 import { verdictLawZh } from "./verdictLaw";
 
 export const zh: TranslationDictionary = {
@@ -84,6 +85,7 @@ export const zh: TranslationDictionary = {
   ...inputContractZh,
   ...routeItemsZh,
   ...htmlFiguresZh,
+  ...mathDiagramsZh,
   ...verdictLawZh,
   Language: "语言",
   "Skip to content": "跳到正文",

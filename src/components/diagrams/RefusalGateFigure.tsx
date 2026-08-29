@@ -3,15 +3,19 @@ import { refusalGates } from "../../content/thinking";
 import { useI18n } from "../../i18n/I18nContext";
 
 const WIDTH = 660;
-const HEIGHT = 216;
+const HEIGHT = 196;
 const LANE_Y = 62;
 const GATE_X = [116, 222, 328, 434, 540];
 const TRAY_Y = 140;
 
 /**
- * The five declared checks a thought has to pass. A thought that fails one stops
- * at that gate and the gate's code is written into the record, so a stop is an
- * outcome with a cause rather than an absence of output.
+ * The five declared checks the wider route puts in a thought's way.
+ *
+ * This figure used to head the stopping section as though five gates were the
+ * whole account of how a run stops. They are not: the stops the public runs
+ * actually exercise are the three conditions of the admission law, and these
+ * five sit further out on the route that no published run has travelled. The
+ * caption says so, so the drawing cannot borrow the standing of a measurement.
  */
 export function RefusalGateFigure() {
   const { t } = useI18n();
@@ -23,11 +27,11 @@ export function RefusalGateFigure() {
   return (
     <figure className="galo-figure galo-figure--gates">
       <figcaption className="galo-figure__caption">
-        <span className="galo-figure__eyebrow">{t("WHERE A THOUGHT IS ALLOWED TO STOP")}</span>
-        <strong>{t("Five gates, each with a name that ends up in the record.")}</strong>
+        <span className="galo-figure__eyebrow">{t("FIVE MORE STOPS, DECLARED AND NOT YET EXERCISED")}</span>
+        <strong>{t("Five gates on the wider route, each with a name that would end up in the record.")}</strong>
         <span className="galo-figure__note">
           {t(
-            "A thought travels the lane from left to right and has to clear every gate. Failing one is not an error condition to be recovered from: the run stops, and the gate that stopped it is written down, which is why a refusal can be argued with afterwards.",
+            "A thought travels the lane from left to right and has to clear every gate. Failing one is not an error condition to be recovered from: the run stops, and the gate that stopped it is written down, which is why a refusal can be argued with afterwards. These five belong to the route above the bounded step; the stops that produced every refusal in the published runs are the three conditions of the admission law, not these.",
           )}
         </span>
       </figcaption>
@@ -81,12 +85,14 @@ export function RefusalGateFigure() {
               {t("stopped here, with the gate written into the record")}
             </text>
           </g>
-
-          <text className="galo-gate__foot" x="20" y={HEIGHT - 8}>
-            {t("no gate is skipped, and no gate has a fallback branch")}
-          </text>
         </svg>
       </div>
+
+      <p className="galo-figure__foot">
+        {t(
+          "No gate is skipped and no gate has a fallback branch. This is the declared shape of the route, not a record of anything that has run.",
+        )}
+      </p>
     </figure>
   );
 }

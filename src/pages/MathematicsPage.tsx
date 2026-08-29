@@ -6,7 +6,17 @@ import { TermButton } from "../components/theory/TermExplainer";
 import { TypedCellExplorer } from "../components/math/TypedCellExplorer";
 import { PageShell } from "../components/layout/PageShell";
 import { AssociativityFigure } from "../components/diagrams/AssociativityFigure";
+import { BoundaryScopeFigure } from "../components/diagrams/BoundaryScopeFigure";
+import { BracketTreeFigure } from "../components/diagrams/BracketTreeFigure";
+import { CarrierLadderFigure } from "../components/diagrams/CarrierLadderFigure";
+import { CongruenceBlockFigure } from "../components/diagrams/CongruenceBlockFigure";
+import { CoordinateChainFigure } from "../components/diagrams/CoordinateChainFigure";
 import { LatinSquareFigure } from "../components/diagrams/LatinSquareFigure";
+import { MorphismTestFigure } from "../components/diagrams/MorphismTestFigure";
+import { OperandAxisFigure } from "../components/diagrams/OperandAxisFigure";
+import { ProofShapeFigure } from "../components/diagrams/ProofShapeFigure";
+import { TranslationRankFigure } from "../components/diagrams/TranslationRankFigure";
+import { TwoReductsFigure } from "../components/diagrams/TwoReductsFigure";
 import { PageContents } from "../components/ui/PageContents";
 import { SectionHeading } from "../components/ui/SectionHeading";
 import {
@@ -141,7 +151,7 @@ export function MathematicsPage() {
           <h1>{t("The mathematics beneath GALO AI.")}</h1>
           <p>
             {t(
-              "The L1–L7 Cayley tables define the frozen PLUS and STAR operators used by the current formal kernel. They specify exact finite transformations; they do not by themselves prove learning, intelligence, or external performance.",
+              "The L1–L7 Cayley tables define the frozen PLUS and STAR operators the engine runs on. They specify exact finite transformations, and the typed route that has to pass before any prediction is published executes against them — so the algebra is on the measured path rather than checked once at build time. What they do not do, on their own, is establish learning, intelligence, or any external result.",
             )}
           </p>
           <div className="math-hero__status" aria-label={t("Formal scope")}>
@@ -189,6 +199,8 @@ export function MathematicsPage() {
               <p>{t("This finite algebra has signature (2,2,0): two binary operations and one constant.")}</p>
             </article>
           </div>
+
+          <CarrierLadderFigure />
         </div>
       </section>
 
@@ -271,6 +283,7 @@ export function MathematicsPage() {
               "Open a card in order: start with the analogy, read the exact definition, replay the small example, inspect the reason, reject the common mistake, and make the table and formula agree.",
             )}
           />
+          <ProofShapeFigure />
           <div className="term-index">
             <p className="eyebrow">{t("COMPLETE TERM INDEX")}</p>
             <h3>{t("Open any of the 59 terms and read it in full.")}</h3>
@@ -360,6 +373,8 @@ export function MathematicsPage() {
               "P0 is a local algebraic anchor. It is not global truth, moral good, customer acceptance, access authorization, or a final real-world verdict.",
             )}
           </p>
+
+          <TwoReductsFigure />
         </div>
       </section>
 
@@ -372,6 +387,7 @@ export function MathematicsPage() {
               "The frozen PLUS and STAR laws do not change. The action family preserves the semantic roles source and active while mapping them to the raw left and right operands.",
             )}
           />
+          <OperandAxisFigure />
           <div className="action-family-grid">
             {orientations.map((orientation) => (
               <article key={orientation.name} id={orientation.name.toLowerCase().replace("_", "-")}>
@@ -424,6 +440,7 @@ export function MathematicsPage() {
             )}
             aside={<span className="math-proof-chip">Σ 4n² = 560</span>}
           />
+          <CoordinateChainFigure />
 
           <div className="cell-count-steps">
             {countSteps.map((step) => (
@@ -556,6 +573,7 @@ export function MathematicsPage() {
               "Fixing the family and active pole turns source-to-target records into a unary map. ABI LEFT/RIGHT names encode operand placement; they are not the standard names of left and right algebraic translations.",
             )}
           />
+          <TranslationRankFigure />
           <div className="transformation-grid">
             <article className="transformation-card">
               <span>{t("Object hierarchy")}</span>
@@ -641,6 +659,7 @@ export function MathematicsPage() {
               "A k-operand expression uses k−1 binary cells. For STAR, changing the tree can change the result, so a list of operands is not a complete program.",
             )}
           />
+          <BracketTreeFigure />
           <div className="composition-grid">
             <article>
               <span>{t("Program size")}</span>
@@ -742,6 +761,7 @@ export function MathematicsPage() {
             </article>
           </div>
           <AssociativityFigure />
+          <CongruenceBlockFigure />
         </div>
       </section>
 
@@ -755,6 +775,8 @@ export function MathematicsPage() {
             )}
             aside={<GitBranch size={30} aria-hidden="true" />}
           />
+
+          <MorphismTestFigure />
 
           <div className="morphism-contract">
             <article className="morphism-contract__formula">
@@ -912,6 +934,7 @@ export function MathematicsPage() {
             eyebrow={t("MATHEMATICAL BOUNDARY")}
             title={t("What these tables establish—and what they do not.")}
           />
+          <BoundaryScopeFigure />
           <div className="math-boundary-grid">
             <article className="math-boundary-card math-boundary-card--established">
               <div className="math-boundary-card__heading">
@@ -922,6 +945,11 @@ export function MathematicsPage() {
                 <li>{t("Total deterministic maps Q_n × Q_n → Q_n for L1–L7.")}</li>
                 <li>{t("Closure, operator formulas, typed operand orientation, and exact table count.")}</li>
                 <li>{t("A finite transition alphabet for the current formal execution layer.")}</li>
+                <li>
+                  {t(
+                    "A typed route compiled and executed against these tables on the path to every published prediction, with any step that fails turning the row into a boundary instead of an answer.",
+                  )}
+                </li>
               </ul>
             </article>
             <article className="math-boundary-card math-boundary-card--open">
@@ -932,7 +960,10 @@ export function MathematicsPage() {
               <ul>
                 <li>{t("Tables alone do not provide world semantics.")}</li>
                 <li>
-                  {t("Persistent policy learning:")} <bdi dir="ltr">NOT_STARTED</bdi>. {t("Trained Atlas:")}{" "}
+                  {t(
+                    "That the engine learns nothing. It does: a state is learned from a training split, then frozen. What has not started is persistent learning inside the shipped runtime —",
+                  )}{" "}
+                  <bdi dir="ltr">NOT_STARTED</bdi> — {t("and no trained Atlas is present:")}{" "}
                   <bdi dir="ltr">NOT_PRESENT</bdi>.
                 </li>
                 <li>
