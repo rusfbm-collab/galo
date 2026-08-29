@@ -170,11 +170,11 @@ describe("GALO public site", () => {
     // Every number that argues for GALO belongs to the evidence section, not the identity ones.
     for (const id of ["learned-state", "when-change", "provable", "learning-cycle", "scope"]) {
       const text = document.querySelector(`#${id}`)?.textContent ?? "";
-      for (const figure of ["1,204", "4,802", "880", "440"]) {
+      for (const figure of ["2,275", "1,074", "957", "970"]) {
         expect(text).not.toContain(figure);
       }
     }
-    expect(document.querySelector("#evidence")?.textContent).toContain("1,204");
+    expect(document.querySelector("#evidence")?.textContent).toContain("2,275");
   });
 
   // HOME-DIAGRAM-A11Y-05 — every new figure is reachable without sight or a mouse.
@@ -279,8 +279,8 @@ describe("GALO public site", () => {
   it("shows exact evidence numbers with scope captions", () => {
     render(<App />);
     expect(screen.getByText("560")).toBeInTheDocument();
-    expect(screen.getByText("1,204")).toBeInTheDocument();
-    expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
+    expect(screen.getByText("2,275")).toBeInTheDocument();
+    expect(screen.getAllByText("3 / 3")[0]).toBeInTheDocument();
     expect(screen.getByText(/not semantic concepts/i)).toBeInTheDocument();
     expect(screen.getByText(/measure of intelligence/i)).toBeInTheDocument();
   });
@@ -325,18 +325,12 @@ describe("GALO public site", () => {
   it("replays the receipt deterministically", async () => {
     const user = userEvent.setup();
     render(<App />);
-    expect(
-      screen.getByRole("heading", { name: "Bundled sample verified against the pinned release key" }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Training split read, test split still sealed" })).toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: /Show step 6/i }));
-    expect(
-      screen.getByRole("heading", { name: "Terminal release status preserved with disclosed boundaries" }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "One receipt written, answered or refused" })).toBeInTheDocument();
     expect(screen.getAllByText("BOUNDARY").length).toBeGreaterThan(0);
     await user.click(screen.getByRole("button", { name: /Reset/i }));
-    expect(
-      screen.getByRole("heading", { name: "Bundled sample verified against the pinned release key" }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Training split read, test split still sealed" })).toBeInTheDocument();
   });
 
   it("discloses all critical boundaries", () => {
@@ -502,13 +496,17 @@ describe("GALO public site", () => {
     expect(screen.getByText("Work runs on four tracks, and each one is at a different stage.")).toBeInTheDocument();
     expect(screen.getByText("Target world-model loop")).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
-    expect(screen.getByText("1,366 / 1,366")).toBeInTheDocument();
+    expect(screen.getAllByText("3 / 3")[0]).toBeInTheDocument();
     expect(screen.getByText("What the work count is, and what it is not.")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/closed deterministic selector\. Nothing about it was learned/i)).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Public claim matrix" })).toBeInTheDocument();
-    expect(screen.getByText("NOT PRESENT")).toBeInTheDocument();
+    // The boundary register no longer says NOT PRESENT about a trained state,
+    // because the public artefact now carries one. What is still open is where
+    // that state has been shown to be worth anything.
+    expect(screen.getAllByText("NOT PROVEN").length).toBeGreaterThan(0);
     expect(screen.getAllByText("NOT CLAIMED").length).toBeGreaterThan(0);
+    expect(screen.getByText("The full architecture in the measured path")).toBeInTheDocument();
   });
 
   it("opens with a plain-language briefing before any mathematics", () => {
@@ -908,9 +906,14 @@ describe("GALO public site", () => {
     const releaseCounts = screen.getByRole("table", {
       name: "The four numbers this release is held to, and what each one counts",
     });
-    expect(releaseCounts).toHaveTextContent("1,204");
-    expect(releaseCounts).toHaveTextContent("The complete committed descriptor universe in the current release.");
+    expect(releaseCounts).toHaveTextContent("2,275");
+    expect(releaseCounts).toHaveTextContent("3 × 7 × 4");
+    // The catalogue and the route are different numbers, and the table says so.
+    expect(releaseCounts).toHaveTextContent("560");
+    expect(releaseCounts).toHaveTextContent("84");
+    // The superseded descriptor arithmetic is not restated as current.
     expect(releaseCounts).not.toHaveTextContent("556 + 6 × 108");
+    expect(releaseCounts).not.toHaveTextContent("1,204");
     expect(screen.getByText("TARGET ARCHITECTURE · NOT CURRENT V4")).toBeInTheDocument();
     expect(screen.getByText(/must not be presented as a current multi-step runtime capability/i)).toBeInTheDocument();
     expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
@@ -1507,7 +1510,7 @@ describe("GALO public site", () => {
         name: "ذكاءٌ اصطناعيّ بُني لقراراتٍ قابلة للإثبات.",
       }),
     ).toBeInTheDocument();
-    expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"externalOriginProven": false');
+    expect(screen.getByLabelText("حمولة إيصال منقحة")).toHaveTextContent('"testSplitOpened": false');
     expect(screen.getByRole("link", { name: "rusfbm@gmail.com" })).toBeInTheDocument();
   });
 

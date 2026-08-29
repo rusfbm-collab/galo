@@ -28,8 +28,6 @@ export const thinkingRu: TranslationDictionary = {
   "HOW GALO REACHES A DECISION": "КАК GALO ПРИХОДИТ К РЕШЕНИЮ",
   "How it thinks": "Как он мыслит",
   "How this differs from a language model": "Чем это отличается от языковой модели",
-  "If the set of possible actions could grow during a run, no enumeration would ever be complete and no reviewer could check the whole of it. Fixing 1,204 descriptors at release time is what turns checking from sampling into exhaustion.":
-    "Если бы множество возможных действий могло расти во время запуска, ни одно перечисление не было бы полным и ни один проверяющий не смог бы охватить его целиком. Фиксация 1 204 дескрипторов на момент выпуска — это то, что превращает проверку из выборочной в исчерпывающую.",
   "In what order are they taken?": "В каком порядке они берутся?",
   "Learned weights": "Выученные веса",
   "MEMORY, STATED EXACTLY": "ПАМЯТЬ, НАЗВАННАЯ ТОЧНО",
@@ -136,8 +134,6 @@ export const thinkingZh: TranslationDictionary = {
   "HOW GALO REACHES A DECISION": "GALO 如何得出一个决定",
   "How it thinks": "它如何思考",
   "How this differs from a language model": "这与语言模型有何不同",
-  "If the set of possible actions could grow during a run, no enumeration would ever be complete and no reviewer could check the whole of it. Fixing 1,204 descriptors at release time is what turns checking from sampling into exhaustion.":
-    "如果可能动作的集合能在运行途中变大，那么任何枚举都不可能完整，任何审阅者也无法把它整个检查一遍。在发布时固定 1,204 个描述符，正是把抽样式的检查变成穷尽式检查的原因。",
   "In what order are they taken?": "它们按什么顺序被取用？",
   "Learned weights": "学出来的权重",
   "MEMORY, STATED EXACTLY": "被精确说明的记忆",
@@ -242,8 +238,6 @@ export const thinkingAr: TranslationDictionary = {
   "HOW GALO REACHES A DECISION": "كيف يصل GALO إلى قرار",
   "How it thinks": "كيف يفكّر",
   "How this differs from a language model": "بماذا يختلف هذا عن نموذج اللغة",
-  "If the set of possible actions could grow during a run, no enumeration would ever be complete and no reviewer could check the whole of it. Fixing 1,204 descriptors at release time is what turns checking from sampling into exhaustion.":
-    "لو أمكن لمجموعة الأفعال الممكنة أن تنمو أثناء التشغيل لما اكتمل أي تعداد ولما استطاع مراجع فحصها كلها. وتثبيت 1,204 واصفًا وقت الإصدار هو ما يحوّل الفحص من معاينة عيّنة إلى استقصاء شامل.",
   "In what order are they taken?": "بأي ترتيب تُؤخذ؟",
   "Learned weights": "أوزان متعلَّمة",
   "MEMORY, STATED EXACTLY": "الذاكرة، محدَّدة بدقة",

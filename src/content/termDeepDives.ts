@@ -186,7 +186,7 @@ export const termDeepDives: readonly TermDeepDive[] = [
       "Most confusion about a research system comes from quoting one layer while the reader assumes another. Keeping them apart is the reason this site exists in its current form.",
     whereYouMeetIt:
       "The four tracks on the evidence page, the FORMAL / CURRENT V4 / TARGET tags, and the claim matrix.",
-    related: ["Receipt", "Boundary", "Current V4 step-by-step replay"],
+    related: ["Receipt", "Boundary", "One evaluated row, step by step"],
   },
   {
     term: "Carrier",
@@ -401,13 +401,14 @@ export const termDeepDives: readonly TermDeepDive[] = [
     related: ["Embedding", "Homomorphism", "Level"],
   },
   {
-    term: "Current V4 step-by-step replay",
-    inOneLine: "The whole current engine written out as one worked pass, from accepted input to recorded receipt.",
+    term: "One evaluated row, step by step",
+    inOneLine:
+      "One question carried the whole way, from a closed set of possible answers to a published answer or a recorded refusal.",
     picture:
-      "A sealed card catalogue: recognise one of two request cards, discard the forbidden card types, pick one shelf, sort reproducibly, and use one card once.",
+      "A sealed card catalogue: write out every card the training set contained, seal the drawer, then answer only if you have earned the right, have a card that stands behind the answer, and can walk the route to it.",
     whyGalo:
-      "It is the single place where every published runtime number appears in the order the engine actually applies them.",
-    whereYouMeetIt: "The narrowing illustration, the descriptor arithmetic table, and the current-scope ledger.",
+      "It is the single place where every published run number appears in the order the engine actually applies them.",
+    whereYouMeetIt: "The narrowing illustration, the run ledger, and the three-condition law.",
     related: ["Formal, current, and target layers", "Receipt", "Boundary"],
   },
 ];

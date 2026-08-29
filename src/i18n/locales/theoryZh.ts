@@ -284,8 +284,6 @@ export const theoryZh: TranslationDictionary = {
     "数学提供精确的有限结构；当前 V4 版本只使用一个有边界的确定性执行切片。更完整的 World Atlas 与持续学习循环仍是目标架构。",
   "Current V4 actually does": "当前 V4 实际执行的内容",
   "works inside a committed finite candidate universe": "在已提交的有限候选全集内工作",
-  "orders a 440-candidate frontier for each of two fixed source patterns":
-    "为两个固定源模式分别排列一个包含 440 个候选项的前沿",
   "executes one bounded action and records receipts": "执行一次有边界的动作并记录回执",
   "performs zero Atlas semantic reads, rank effects, and learning writes": "Atlas 语义读取、排序影响与学习写入均为 0",
   "Current V4 does not yet do": "当前 V4 尚未实现的内容",
@@ -303,7 +301,6 @@ export const theoryZh: TranslationDictionary = {
   "L1–L7 mathematical coordinates": "L1–L7 数学坐标",
   "Active typed catalogue": "活动类型坐标目录",
   "L2–L7 active; L1 control-only": "L2–L7 活动；L1 仅用于控制",
-  "Committed descriptors": "已提交描述符",
   "Declared finite candidate universe": "已声明的有限候选全集",
   "Executable descriptors": "可执行描述符",
   "Four allowed action kinds": "四种允许的动作类型",
@@ -385,8 +382,6 @@ export const theoryZh: TranslationDictionary = {
   "All finite tables, typed cells, automorphisms, and homomorphisms are enumerated in tests.":
     "测试枚举了全部有限表格、类型化单元格、自同构与同态。",
   "Did the supplied archive pass the named replay contour?": "所提供档案是否通过了指定的重放验证范围？",
-  "Fresh STATIC and FAST passed; the stored FULL receipt reports 1,366/1,366.":
-    "Fresh STATIC 与 FAST 已通过；已存储的 FULL 回执报告 1,366/1,366。",
   "Is a required condition missing, blocked, or outside the tested scope?":
     "必要条件是否缺失、受阻或位于测试范围之外？",
   "Fresh FULL was not run and CPython 3.13 was unavailable in the review session.":
@@ -639,7 +634,6 @@ export const theoryZh: TranslationDictionary = {
   "The counted set changes, so the number changes.": "被计数的集合不同，因此所得数字也不同。",
   "One release coverage quantum across four typed families and the active levels L2–L7.":
     "覆盖四个类型化运算族和活动层级 L2–L7 的一个版本覆盖单元。",
-  "The complete committed descriptor universe in the current release.": "当前版本中完整的已提交描述符全集。",
   "The subset whose declared kinds are executable in current V4.": "其中已声明类型可在当前 V4 中执行的子集。",
   "The even- or odd-parity frontier exposed by one of the two accepted source patterns.":
     "两个获准源模式之一所给出的偶数项前沿或奇数项前沿。",
@@ -1209,16 +1203,12 @@ export const theoryZh: TranslationDictionary = {
     "把已证明的蓝图、今天实际运行的机器和提议中的未来机器分别放进三个具名文件夹。",
   "FORMAL=finite laws; CURRENT V4=bounded deterministic selector; TARGET=unimplemented or unproven World Atlas learning architecture.":
     "FORMAL=有限运算律；CURRENT V4=有边界的确定性选择器；TARGET=尚未实现或尚未证明的 World Atlas 学习架构。",
-  "Formal: 560 coordinates. Current: 556 active, 1,204 committed, 880 executable, 440 per pattern. Target: persistent trained Atlas NOT_PRESENT.":
-    "形式化层：560 个坐标。当前 V4：556 个活动坐标、1,204 个已提交描述符、880 个可执行描述符、每种模式 440 个。目标架构：持久化已训练 Atlas NOT_PRESENT。",
   "Each layer has different objects and evidence, so conclusions are licensed only inside the layer whose contract was checked.":
     "每一层都有不同的对象与证据，因此结论只在其契约已经接受检查的那一层内有效。",
   "Verified finite tables do not prove persistent learning, external operational gain, a trained Atlas, or General AI.":
     "经过核验的有限表格不能证明持久学习、外部运行增益、已训练 Atlas 或通用人工智能。",
   "Layer ledger: FORMAL | CURRENT V4 | TARGET, with a separate status column.":
     "分层清单：FORMAL | CURRENT V4 | TARGET，并另设 status 列。",
-  "1,204→880→440 is current selector arithmetic; it is not the 560-coordinate formal derivation.":
-    "1,204→880→440 是当前选择器的算术；它不是 560 个坐标的形式化推导。",
   "Symbol legend": "符号图例",
   "Mathematical symbols are road signs: learn what each sign asks you to do before trying to read the whole proof.":
     "数学符号就像路标：先学会每个符号要求你做什么，再尝试阅读完整证明。",
@@ -1488,20 +1478,10 @@ export const theoryZh: TranslationDictionary = {
   "Current V4 step-by-step replay": "当前 V4 的逐步推演",
   "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
     "设想一个封闭卡片目录：识别两张精确请求卡中的一张，丢弃禁止的卡片类型，选择一个奇偶书架，以可复现方式排序，并只使用一张卡一次。",
-  "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":
-    "alpha,beta→LEFT/even；gamma,delta→RIGHT/odd；committed=1,204；executable=880；frontier=440；order=SHA-256(observation,candidate_id,ordinal)；arity=2；route_depth=1。",
-  "For alpha,beta, the selector accepts the fixed pattern, enters 1,204 committed descriptors, keeps 880 of four executable kinds, exposes the 440 even-parity candidates, derives a hash order, binds one process-local handle, executes one bounded action, and records a receipt.":
-    "对于 alpha,beta，选择器接受固定模式，进入 1,204 个已提交描述符，保留四种可执行类型中的 880 个，公开 440 个偶数奇偶性候选项，导出哈希次序，绑定一个进程内句柄，执行一个有边界行动，并记录回执。",
   "The current release contract fixes each filter and count; semantic_reads, rank_effects, and learning_writes are all zero, so Atlas state cannot change the order.":
     "当前版本契约固定每个筛选器与计数；semantic_reads、rank_effects 和 learning_writes 均为 0，因此 Atlas 状态不能改变次序。",
   "A pole is a formal P_i label; a source pattern is one accepted input string; rank is |Im(T)|; ranking is the hash-derived candidate order. The arithmetic shows six 108-descriptor increments, but the reviewed source does not disclose names for six generated strata, so no such names may be invented.":
     "极是形式化 P_i 标签；source pattern 是一个获准输入字符串；rank 是 |Im(T)|；ranking 是由哈希导出的候选次序。算术显示 6 个每次 108 个描述符的增量，但已审查源材料并未披露 6 个生成层的名称，因此不得虚构这些名称。",
-  "Replay ledger: fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt.":
-    "重放清单：fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt。",
-  "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.":
-    "108=4Σ_(n=2)^7n；1,204=556+6·108；880=556+3·108；440=880/2。",
-
-  // Remaining symbol-legend readings and meanings
   "x belongs to X": "x 属于 X",
   "The object x is an element of the set X.": "对象 x 是集合 X 的一个元素。",
   "A implies B": "A 推出 B",

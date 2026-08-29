@@ -9,7 +9,6 @@ import {
   thinkingTranslationKeys,
   thinkingWalkthrough,
 } from "../src/content/thinking";
-import { releaseEvidence } from "../src/content/evidence";
 
 describe("the reasoning route", () => {
   it("keeps the phase set closed and in order", () => {
@@ -92,13 +91,20 @@ describe("the reasoning route", () => {
     }
   });
 
-  it("walks one bounded step through values that match the published release numbers", () => {
+  it("walks one evaluated row through the values the runs actually publish", () => {
     expect(thinkingWalkthrough).toHaveLength(9);
     const values = thinkingWalkthrough.map((row) => row.value);
-    expect(values).toContain(releaseEvidence.selector[0]!.value);
-    expect(values).toContain(releaseEvidence.selector[1]!.value);
-    expect(values).toContain(releaseEvidence.selector[2]!.value);
-    expect(values).toContain("SHA-256(observation, candidate_id, ordinal)");
+    // The closed answer set, the ranking that is never published on its own,
+    // the conjunction, and the route length — in that order.
+    expect(values).toContain("122");
+    expect(values).toContain("ranked, unpublished");
+    expect(values).toContain("right ∧ structure ∧ program");
+    expect(values).toContain("84");
+    // Nothing here may restate the superseded descriptor arithmetic.
+    const walkthrough = thinkingWalkthrough.map((row) => `${row.value} ${row.note}`).join(" ");
+    for (const stale of ["1,204", "880", "440"]) {
+      expect(walkthrough, stale).not.toContain(stale);
+    }
     for (const row of thinkingWalkthrough) {
       expect(row.asks.endsWith("?")).toBe(true);
       expect(row.note.length).toBeGreaterThan(40);

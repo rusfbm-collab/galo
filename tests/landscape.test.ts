@@ -102,16 +102,15 @@ describe("the headline, taken apart", () => {
 
   it("carries the numbers the rest of the site is held to", () => {
     const mechanisms = headlineClaims.map((claim) => claim.mechanism).join(" ");
-    expect(mechanisms).toContain("1,204");
-    expect(mechanisms).toContain("880");
-    expect(mechanisms).toContain("440");
-    expect(mechanisms).toContain("4,802");
+    expect(mechanisms).toContain("2,275");
+    expect(mechanisms).toContain("closed from the training data");
+    expect(mechanisms).toContain("byte for byte");
   });
 
   it("gives a sceptic an action for each promise, phrased as an instruction", () => {
     for (const claim of headlineClaims) {
       expect(claim.auditStep.length).toBeGreaterThan(100);
-      expect(claim.auditStep).toMatch(/^(Enumerate|Run|Take)\b/);
+      expect(claim.auditStep).toMatch(/^(Enumerate|Rebuild|Run|Take)\b/);
     }
     const steps = headlineClaims.map((claim) => claim.auditStep).join(" ");
     expect(steps).toMatch(/falsifies the claim/i);

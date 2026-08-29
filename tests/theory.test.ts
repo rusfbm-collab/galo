@@ -15,6 +15,7 @@ import {
   unitMultipliers,
 } from "../src/content/mathematics";
 import { releaseEvidence, workTrackMilestones } from "../src/content/evidence";
+import { benchmarkArithmetic } from "../src/content/publicRun";
 import {
   beginnerCountLedger,
   currentV4Flow,
@@ -151,7 +152,7 @@ describe("beginner theory dual-channel safeguards", () => {
       "TARGET",
     ]);
     expect(theoryArchitectureLayers.find(({ title }) => title === "Bounded current selection")?.detail).toContain(
-      "exactly two fixed source patterns",
+      "closed from the training data",
     );
     expect(theoryArchitectureLayers.find(({ title }) => title === "Adaptive World Atlas loop")?.detail).toContain(
       "remain target architecture",
@@ -162,7 +163,6 @@ describe("beginner theory dual-channel safeguards", () => {
     expect(releaseEvidence.tracks.map(({ reached }) => reached)).toEqual([3, 2, 3, 2]);
     expect(releaseEvidence.tracks.every(({ reached }) => reached < workTrackMilestones.length)).toBe(true);
     expect(releaseEvidence.freshReplay.full).toBe("NOT COMPLETED");
-    expect(releaseEvidence.arithmetic.storedFull).toBe(1366);
     expect(releaseEvidence.status).toBe("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES");
     expect(theoryEvidenceLadder.map(({ status }) => status)).toEqual([
       "FORMALLY DERIVED",
@@ -173,24 +173,29 @@ describe("beginner theory dual-channel safeguards", () => {
     ]);
   });
 
-  it("reconstructs the current 1204 → 880 → 440 selector ledger without semantic claims", () => {
-    const coverageQuantum = 4 * galoLevels.slice(1).reduce((sum, level) => sum + level, 0);
-    const activeTypedCells = canonicalTypedCellCount - galoActionFamilies.length;
-    const committed = activeTypedCells + 6 * coverageQuantum;
-    const executable = activeTypedCells + 3 * coverageQuantum;
-    const frontier = executable / 2;
+  it("keeps the catalogue, the route length and the evaluated rows as three separate numbers", () => {
+    // The catalogue and the route are different numbers, and the published row
+    // count is neither of them. Each is re-derived here rather than restated.
+    const catalogue = canonicalTypedCellCount;
+    const route = 3 * galoLevels.length * galoActionFamilies.length;
+    const receipts = benchmarkArithmetic.reduce((sum, run) => sum + run.rows, 0);
 
-    expect([coverageQuantum, committed, executable, frontier]).toEqual([108, 1204, 880, 440]);
-    expect(runtimeArithmeticRows.map(({ value }) => Number(value.replace(",", "")))).toEqual([
-      coverageQuantum,
-      committed,
-      executable,
-      frontier,
-    ]);
+    expect([catalogue, route, receipts]).toEqual([560, 84, 2275]);
+    expect(runtimeArithmeticRows.map(({ value }) => value)).toEqual(["560", "84", "28…84", "2,275"]);
+    // The route is longer than the set of addresses it visits, because two
+    // channels may land on the same cell.
+    expect(runtimeArithmeticRows[2]?.meaning).toContain("longer than the set of addresses");
+
     expect(currentV4Flow).toHaveLength(8);
-    expect(currentV4Flow.find(({ title }) => title === "Derive a deterministic order")?.detail).toContain(
-      "learning writes are all zero",
+    expect(currentV4Flow[0]?.title).toBe("Read the training split");
+    expect(currentV4Flow.find(({ title }) => title === "Buy the three rights, or refuse")?.detail).toContain(
+      "Any one missing and the row is a boundary",
     );
+    // Nothing in the flow may restate the superseded descriptor arithmetic.
+    const flowCopy = currentV4Flow.map((step) => `${step.title} ${step.exact} ${step.detail}`).join(" ");
+    for (const stale of ["1,204", "880", "440"]) {
+      expect(flowCopy, stale).not.toContain(stale);
+    }
   });
 
   it("keeps every beginner object class and target step explicitly scoped", () => {

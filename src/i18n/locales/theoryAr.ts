@@ -305,8 +305,6 @@ export const theoryAr: TranslationDictionary = {
     "تظل الحالة الدلالية المستديمة والتقييم المؤسس على شريك والبرامج متعددة الخطوات والتعلّم ضمن البنية المعمارية المستهدفة.",
   "Current V4 actually does": "ما يفعله V4 الحالي فعليًا",
   "works inside a committed finite candidate universe": "يعمل داخل كون مرشحين منتهٍ ومثبّت",
-  "orders a 440-candidate frontier for each of two fixed source patterns":
-    "يرتب جبهة من 440 مرشحًا لكل واحد من نمطي مصدر ثابتين",
   "executes one bounded action and records receipts": "ينفذ إجراءً واحدًا محدودًا ويسجل الإيصالات",
   "performs zero Atlas semantic reads, rank effects, and learning writes":
     "لا يجري أي قراءة دلالية من Atlas، ولا تأثيرات على الرتب، ولا كتابات تعلّم",
@@ -325,7 +323,6 @@ export const theoryAr: TranslationDictionary = {
   "L1–L7 mathematical coordinates": "الإحداثيات الرياضية لـ L1–L7",
   "Active typed catalogue": "الفهرس النشط محدد النوع",
   "L2–L7 active; L1 control-only": "L2–L7 نشطة؛ وL1 للتحكم فقط",
-  "Committed descriptors": "واصفات مُثبّتة",
   "Declared finite candidate universe": "كون مرشحين منتهٍ ومعلن",
   "Executable descriptors": "واصفات قابلة للتنفيذ",
   "Four allowed action kinds": "أربعة أنواع أفعال مسموح بها",
@@ -348,8 +345,6 @@ export const theoryAr: TranslationDictionary = {
   "All finite tables, typed cells, automorphisms, and homomorphisms are enumerated in tests.":
     "تُجرى في الاختبارات عملية تعداد كامل لجميع الجداول المنتهية والخلايا محددة النوع والتشاكلات الذاتية والتشاكلات.",
   "Did the supplied archive pass the named replay contour?": "هل اجتاز الأرشيف المورَّد مسار إعادة التشغيل المسمّى؟",
-  "Fresh STATIC and FAST passed; the stored FULL receipt reports 1,366/1,366.":
-    "اجتاز مسارا STATIC وFAST في التشغيل الحديث؛ ويفيد إيصال FULL المخزّن بنتيجة 1,366/1,366.",
   "Is a required condition missing, blocked, or outside the tested scope?":
     "هل شرط مطلوب مفقود أو محجوب أو خارج النطاق المختبَر؟",
   "Fresh FULL was not run and CPython 3.13 was unavailable in the review session.":
@@ -662,8 +657,6 @@ export const theoryAr: TranslationDictionary = {
   "Independent arithmetic": "الحساب المستقل",
   "One release coverage quantum across four typed families and the active levels L2–L7.":
     "وحدة تغطية واحدة للإصدار عبر 4 عائلات محددة النوع والمستويات النشطة L2–L7.",
-  "The complete committed descriptor universe in the current release.":
-    "كون الواصفات الكامل المدرج في التزام الإصدار الحالي.",
   "The subset whose declared kinds are executable in current V4.":
     "المجموعة الجزئية التي تكون أنواعها المعلنة قابلة للتنفيذ في V4 الحالي.",
   "The even- or odd-parity frontier exposed by one of the two accepted source patterns.":
@@ -1232,16 +1225,12 @@ export const theoryAr: TranslationDictionary = {
     "ضع المخطط المثبت والآلة العاملة اليوم والآلة المستقبلية المقترحة في ثلاثة مجلدات مسمّاة.",
   "FORMAL=finite laws; CURRENT V4=bounded deterministic selector; TARGET=unimplemented or unproven World Atlas learning architecture.":
     "FORMAL=قوانين منتهية؛ CURRENT V4=محدِّد حتمي محدود؛ TARGET=بنية تعلّم World Atlas غير منفّذة أو غير مثبتة.",
-  "Formal: 560 coordinates. Current: 556 active, 1,204 committed, 880 executable, 440 per pattern. Target: persistent trained Atlas NOT_PRESENT.":
-    "شكلي: 560 إحداثيًا. حالي: 556 نشطًا و1,204 ملتزمًا و880 قابلًا للتنفيذ و440 لكل نمط. مستهدف: Atlas مدرَّب مستديم NOT_PRESENT.",
   "Each layer has different objects and evidence, so conclusions are licensed only inside the layer whose contract was checked.":
     "لكل طبقة كائنات وأدلة مختلفة، لذلك لا تُجيز النتائج إلا داخل الطبقة التي فُحص عقدها.",
   "Verified finite tables do not prove persistent learning, external operational gain, a trained Atlas, or General AI.":
     "لا تثبت الجداول المنتهية المتحقَّق منها تعلّمًا مستديمًا أو مكسبًا تشغيليًا خارجيًا أو Atlas مدرَّبًا أو General AI.",
   "Layer ledger: FORMAL | CURRENT V4 | TARGET, with a separate status column.":
     "سجل الطبقات: FORMAL | CURRENT V4 | TARGET، مع عمود مستقل للحالة.",
-  "1,204→880→440 is current selector arithmetic; it is not the 560-coordinate formal derivation.":
-    "1,204→880→440 حساب المحدِّد الحالي؛ وليس اشتقاق الإحداثيات الشكلية الـ560.",
   "Symbol legend": "دليل الرموز",
   "Mathematical symbols are road signs: learn what each sign asks you to do before trying to read the whole proof.":
     "الرموز الرياضية مثل إشارات الطريق: تعلّم ما تطلبه كل إشارة قبل محاولة قراءة البرهان كله.",
@@ -1515,18 +1504,10 @@ export const theoryAr: TranslationDictionary = {
   "Current V4 step-by-step replay": "إعادة التشغيل خطوة بخطوة لـV4 الحالي",
   "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
     "تخيّل فهرس بطاقات مختومًا: تعرّف إحدى بطاقتي الطلب الدقيقتين، واستبعد أنواع البطاقات المحظورة، واختر رفًا وفق الزوجية أو الفردية، ورتّب ترتيبًا قابلًا للإعادة، ثم استخدم بطاقة واحدة مرة واحدة.",
-  "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":
-    "alpha,beta→LEFT/even؛ gamma,delta→RIGHT/odd؛ committed=1,204؛ executable=880؛ frontier=440؛ order=SHA-256(observation,candidate_id,ordinal)؛ arity=2؛ route_depth=1.",
-  "For alpha,beta, the selector accepts the fixed pattern, enters 1,204 committed descriptors, keeps 880 of four executable kinds, exposes the 440 even-parity candidates, derives a hash order, binds one process-local handle, executes one bounded action, and records a receipt.":
-    "بالنسبة إلى alpha,beta، يقبل المحدِّد النمط الثابت، ويدخل 1,204 واصفة ملتزمًا بها، ويُبقي 880 من أربعة أنواع قابلة للتنفيذ، ويعرض 440 مرشحًا ذا فهرس زوجي، ويشتق ترتيب تجزئة، ويربط مقبضًا واحدًا محليًا ضمن العملية، وينفّذ فعلًا محدودًا واحدًا، ويسجّل إيصال تنفيذ.",
   "The current release contract fixes each filter and count; semantic_reads, rank_effects, and learning_writes are all zero, so Atlas state cannot change the order.":
     "يثبّت عقد الإصدار الحالي كل مرشح وعدد؛ وكل من semantic_reads وrank_effects وlearning_writes يساوي صفرًا، لذلك لا تستطيع حالة Atlas تغيير الترتيب.",
   "A pole is a formal P_i label; a source pattern is one accepted input string; rank is |Im(T)|; ranking is the hash-derived candidate order. The arithmetic shows six 108-descriptor increments, but the reviewed source does not disclose names for six generated strata, so no such names may be invented.":
     "القطب تسمية شكلية P_i؛ ونمط المصدر سلسلة مُدخلات واحدة مقبولة؛ والرتبة rank هي |Im(T)|؛ أما الترتيب ranking فهو ترتيب المرشحين المشتق من التجزئة. يُظهر الحساب ست زيادات من 108 واصفات، لكن المصدر المراجَع لا يكشف أسماء ست طبقات مولَّدة، لذلك لا يجوز اختراع هذه الأسماء.",
-  "Replay ledger: fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt.":
-    "سجل إعادة التشغيل: نمط ثابت | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt.",
-  "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.":
-    "108=4Σ_(n=2)^7n؛ 1,204=556+6·108؛ 880=556+3·108؛ 440=880/2.",
   "x belongs to X": "x ينتمي إلى X",
   "The object x is an element of the set X.": "الكائن x عنصر من المجموعة X.",
   "A implies B": "A تستلزم B",

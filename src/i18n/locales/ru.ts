@@ -35,6 +35,9 @@ import { thinkingRu } from "./thinking";
 import { visualsRu } from "./visuals";
 import { weightFreeRu } from "./weightFree";
 import { homeNarrativeRu } from "./homeNarrative";
+import { publicRunRu } from "./publicRun";
+import { replayWalkRu } from "./replayWalk";
+import { inputContractRu } from "./inputContract";
 import { verdictLawRu } from "./verdictLaw";
 
 export const ru: TranslationDictionary = {
@@ -74,6 +77,9 @@ export const ru: TranslationDictionary = {
   ...engineTourRu,
   ...weightFreeRu,
   ...homeNarrativeRu,
+  ...publicRunRu,
+  ...replayWalkRu,
+  ...inputContractRu,
   ...verdictLawRu,
   Language: "Язык",
   "Skip to content": "Перейти к содержанию",
@@ -123,7 +129,6 @@ export const ru: TranslationDictionary = {
   "Receipt chain intact": "Цепочка протоколов не нарушена",
   "Verified current mechanics": "Верифицированные текущие механизмы",
   "Finite universe": "Конечное объявленное множество",
-  "1,204 commitments / 756 cells": "1 204 зафиксированных кандидата / 756 ячеек",
   "Bound execution": "Исполнение с привязкой",
   "Membership proof + one-shot handle": "Доказательство принадлежности + одноразовый дескриптор",
   "Budget law": "Ограничение бюджета",

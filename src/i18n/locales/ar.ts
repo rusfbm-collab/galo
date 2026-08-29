@@ -35,6 +35,9 @@ import { thinkingAr } from "./thinking";
 import { visualsAr } from "./visuals";
 import { weightFreeAr } from "./weightFree";
 import { homeNarrativeAr } from "./homeNarrative";
+import { publicRunAr } from "./publicRun";
+import { replayWalkAr } from "./replayWalk";
+import { inputContractAr } from "./inputContract";
 import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
@@ -74,6 +77,9 @@ export const ar: TranslationDictionary = {
   ...engineTourAr,
   ...weightFreeAr,
   ...homeNarrativeAr,
+  ...publicRunAr,
+  ...replayWalkAr,
+  ...inputContractAr,
   ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
@@ -123,7 +129,6 @@ export const ar: TranslationDictionary = {
   "Receipt chain intact": "سلسلة الإيصالات سليمة",
   "Verified current mechanics": "الآليات الحالية المتحقَّق منها",
   "Finite universe": "كون منتهٍ",
-  "1,204 commitments / 756 cells": "1,204 سجلًا مُثبّتًا / 756 خلية",
   "Bound execution": "تنفيذ مرتبط",
   "Membership proof + one-shot handle": "إثبات عضوية + مقبض أحادي الاستخدام",
   "Budget law": "قانون الميزانية",

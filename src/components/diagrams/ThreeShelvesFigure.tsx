@@ -22,8 +22,8 @@ const shelves = [
     title: "Observed in the release that exists today",
     question: "What does the shipped engine actually do?",
     items: [
-      "1,204 committed descriptors, 880 of them executable, 440 on the selected pattern frontier",
-      "A deterministic selector for exactly two fixed source patterns, with a hash-derived order",
+      "2,275 evaluation receipts across three public corpora, one for every row, answered or refused",
+      "A deterministic ranking over a closed set of possible answers, in a hash-derived order",
       "Stored release evidence; fresh FULL was not run",
       "Atlas semantic reads, rank effects, and learning writes are all zero",
     ],

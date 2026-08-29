@@ -306,8 +306,6 @@ export const theoryRu: TranslationDictionary = {
   "Current V4 actually does": "Что фактически делает текущий V4",
   "works inside a committed finite candidate universe":
     "работает внутри зафиксированного конечного универсума кандидатов",
-  "orders a 440-candidate frontier for each of two fixed source patterns":
-    "упорядочивает по 440 кандидатов для каждого из двух фиксированных шаблонов источника",
   "executes one bounded action and records receipts": "исполняет одно ограниченное действие и формирует протоколы",
   "performs zero Atlas semantic reads, rank effects, and learning writes":
     "выполняет ноль семантических чтений Atlas, воздействий на ранг и обучающих записей",
@@ -326,7 +324,6 @@ export const theoryRu: TranslationDictionary = {
   "L1–L7 mathematical coordinates": "Математические координаты L1–L7",
   "Active typed catalogue": "Активный типизированный каталог",
   "L2–L7 active; L1 control-only": "L2–L7 активны; L1 используется только как контрольный уровень",
-  "Committed descriptors": "Зафиксированные дескрипторы",
   "Declared finite candidate universe": "Объявленный конечный универсум кандидатов",
   "Executable descriptors": "Исполнимые дескрипторы",
   "Four allowed action kinds": "Четыре разрешённых вида действий",
@@ -351,8 +348,6 @@ export const theoryRu: TranslationDictionary = {
     "В тестах перебраны все конечные таблицы, типизированные ячейки, автоморфизмы и гомоморфизмы.",
   "Did the supplied archive pass the named replay contour?":
     "Прошёл ли предоставленный архив указанный контур воспроизведения?",
-  "Fresh STATIC and FAST passed; the stored FULL receipt reports 1,366/1,366.":
-    "Свежие STATIC и FAST завершились со статусом PASS; сохранённый протокол FULL сообщает 1 366/1 366.",
   "Is a required condition missing, blocked, or outside the tested scope?":
     "Отсутствует ли обязательное условие, заблокирована ли проверка или находится ли она вне проверенной области?",
   "Fresh FULL was not run and CPython 3.13 was unavailable in the review session.":
@@ -667,8 +662,6 @@ export const theoryRu: TranslationDictionary = {
   "Independent arithmetic": "Независимое вычисление",
   "One release coverage quantum across four typed families and the active levels L2–L7.":
     "Одна единица покрытия выпуска для четырёх типизированных семейств и активных уровней L2–L7.",
-  "The complete committed descriptor universe in the current release.":
-    "Полный зафиксированный универсум дескрипторов текущего выпуска.",
   "The subset whose declared kinds are executable in current V4.":
     "Подмножество, объявленные виды которого исполнимы в текущем V4.",
   "The even- or odd-parity frontier exposed by one of the two accepted source patterns.":
@@ -1327,16 +1320,12 @@ export const theoryRu: TranslationDictionary = {
     "Храните доказанный чертёж, работающую сегодня машину и предложенную будущую машину в трёх подписанных папках.",
   "FORMAL=finite laws; CURRENT V4=bounded deterministic selector; TARGET=unimplemented or unproven World Atlas learning architecture.":
     "FORMAL=конечные законы; CURRENT V4=ограниченный детерминированный селектор; TARGET=нереализованная или недоказанная архитектура обучения World Atlas.",
-  "Formal: 560 coordinates. Current: 556 active, 1,204 committed, 880 executable, 440 per pattern. Target: persistent trained Atlas NOT_PRESENT.":
-    "Формально: 560 координат. Сейчас: 556 активных, 1 204 зафиксированных, 880 исполнимых, 440 на шаблон. Цель: сохраняемый обученный Atlas NOT_PRESENT.",
   "Each layer has different objects and evidence, so conclusions are licensed only inside the layer whose contract was checked.":
     "У каждого слоя свои объекты и доказательства, поэтому вывод разрешён только внутри слоя, контракт которого проверен.",
   "Verified finite tables do not prove persistent learning, external operational gain, a trained Atlas, or General AI.":
     "Проверенные конечные таблицы не доказывают персистентное обучение, внешний операционный выигрыш, обученный Atlas или General AI.",
   "Layer ledger: FORMAL | CURRENT V4 | TARGET, with a separate status column.":
     "Реестр слоёв: FORMAL | CURRENT V4 | TARGET, с отдельным столбцом статуса.",
-  "1,204→880→440 is current selector arithmetic; it is not the 560-coordinate formal derivation.":
-    "1 204→880→440 — арифметика текущего селектора, а не формальный вывод 560 координат.",
 
   "Symbol legend": "Легенда символов",
   "Mathematical symbols are road signs: learn what each sign asks you to do before trying to read the whole proof.":
@@ -1656,18 +1645,10 @@ export const theoryRu: TranslationDictionary = {
   "Current V4 step-by-step replay": "Пошаговое воспроизведение Current V4",
   "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.":
     "Представьте закрытый карточный каталог: распознайте одну из двух точных карточек запроса, отбросьте запрещённые виды, выберите полку чётности, воспроизводимо отсортируйте и один раз используйте одну карточку.",
-  "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.":
-    "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.",
-  "For alpha,beta, the selector accepts the fixed pattern, enters 1,204 committed descriptors, keeps 880 of four executable kinds, exposes the 440 even-parity candidates, derives a hash order, binds one process-local handle, executes one bounded action, and records a receipt.":
-    "Для alpha,beta селектор принимает фиксированный шаблон, входит во множество из 1 204 зафиксированных дескрипторов, оставляет 880 дескрипторов четырёх исполнимых видов, раскрывает 440 кандидатов чётной половины, вычисляет хеш-порядок, связывает один локальный для процесса дескриптор, исполняет одно ограниченное действие и записывает протокол.",
   "The current release contract fixes each filter and count; semantic_reads, rank_effects, and learning_writes are all zero, so Atlas state cannot change the order.":
     "Контракт текущего выпуска фиксирует каждый фильтр и число; semantic_reads, rank_effects и learning_writes равны нулю, поэтому состояние Atlas не может изменить порядок.",
   "A pole is a formal P_i label; a source pattern is one accepted input string; rank is |Im(T)|; ranking is the hash-derived candidate order. The arithmetic shows six 108-descriptor increments, but the reviewed source does not disclose names for six generated strata, so no such names may be invented.":
     "Полюс — формальная метка P_i; source pattern — одна принятая входная строка; rank равен |Im(T)|; ranking — полученный из хеша порядок кандидатов. Арифметика показывает шесть добавок по 108 дескрипторов, но проверенный исходный код не раскрывает названия шести сгенерированных слоёв, поэтому придумывать такие названия нельзя.",
-  "Replay ledger: fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt.":
-    "Реестр воспроизведения: фиксированный шаблон | committed 1 204 | executable 880 | frontier чётности 440 | одноразовый handle | receipt.",
-  "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.":
-    "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.",
 
   "z is a left zero when z★x=z for every x; for STAR at n≥2, the unique left zero is z=P0.":
     "z является левым нулём, если z★x=z для любого x; при n≥2 единственный левый нуль STAR — z=P0.",

@@ -10,8 +10,6 @@ export const fieldRu: TranslationDictionary = {
   Comparison: "Сравнение",
   "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.":
     "Объявленные операторы, явное состояние, проверяющий, допускающий кандидатов предлагающего, — у каждого из этого своя литература и, как правило, работающий софт. Инвестору стоит знать это до того, как решать, что здесь на самом деле финансируется, поэтому три ответа ниже — те же, что мы дали бы на встрече.",
-  "Enumerate the declared universe yourself and count it. The published figures are 1,204 and 880; a different count is a finding you can name and we would have to answer.":
-    "Перечислите объявленный универсум сами и посчитайте его. Опубликованные цифры — 1 204 и 880; другой результат — это находка, которую вы можете назвать, а мы обязаны объяснить.",
   "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.":
     "Четыре строки, сказанные здесь, а не оставленные оценивающему на самостоятельный поиск. Каждая из них — повод отказать, и каждая верна.",
   "HOW THIS READS AGAINST THE FIELD": "КАК ЭТО ЧИТАЕТСЯ НА ФОНЕ ПОЛЯ",
@@ -62,8 +60,6 @@ export const fieldZh: TranslationDictionary = {
   Comparison: "对比",
   "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.":
     "已声明的算子、显式的状态、由检查器接受提议者的候选——每一样都有自己的文献，多数还有可运行的软件。投资人应当在判断这里究竟在资助什么之前先知道这一点，所以下面这三个回答，就是我们当面会给的回答。",
-  "Enumerate the declared universe yourself and count it. The published figures are 1,204 and 880; a different count is a finding you can name and we would have to answer.":
-    "自己把已声明的全集枚举一遍，数一数。公开的数字是 1,204 和 880；数出别的结果，就是一条你可以点名的发现，而我们必须给出解释。",
   "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.":
     "四条，写在这里，而不是留给评估方自己去发现。每一条都是拒绝的理由，而且每一条都属实。",
   "HOW THIS READS AGAINST THE FIELD": "这在整个领域里怎么读",
@@ -113,8 +109,6 @@ export const fieldAr: TranslationDictionary = {
   Comparison: "المقارنة",
   "Declared operators, explicit state, a checker admitting a proposer's candidates — each of those has a literature and, in most cases, working software behind it. An investor should know that before deciding what is actually being funded here, so the three answers below are the ones we would give in the room.":
     "المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ من ذلك أدبياته، وفي معظم الحالات برمجيات تعمل فعلًا. وينبغي للمستثمر أن يعرف ذلك قبل أن يقرّر ما الذي يُموَّل هنا حقًا، ولهذا فالأجوبة الثلاثة أدناه هي نفسها التي كنّا سنقولها في الاجتماع.",
-  "Enumerate the declared universe yourself and count it. The published figures are 1,204 and 880; a different count is a finding you can name and we would have to answer.":
-    "اسرد الكون المعلَن بنفسك ثمّ عُدّه. الرقمان المنشوران هما 1٬204 و880، وأي عدد مختلف ملاحظةٌ يمكنك تسميتها ويلزمنا أن نجيب عنها.",
   "Four lines, stated here rather than left for the assessor to find. Each one is a reason to say no, and each one is accurate.":
     "أربعة أسطر مذكورة هنا لا متروكة للمقيِّم كي يعثر عليها. كل سطر منها سبب لقول «لا»، وكلّها صحيحة.",
   "HOW THIS READS AGAINST THE FIELD": "كيف يُقرأ هذا في سياق الميدان",

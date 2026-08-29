@@ -5,8 +5,6 @@ export const releaseZh: TranslationDictionary = {
   "140 ordered coordinates × two laws × two operand-role orientations; 556 are active across runtime L2–L7. These are not semantic concepts.":
     "140 个有序坐标 × 两种运算律 × 两种操作数角色取向；其中 556 个在运行时 L2–L7 中处于活动状态。这些坐标不是语义概念。",
   "Committed candidate descriptors": "已提交的候选描述符",
-  "880 are executable in current V4; each of the two fixed source patterns exposes a 440-candidate frontier.":
-    "当前 V4 中有 880 个描述符可执行；两个固定来源模式各自给出一个由 440 个候选项组成的前沿集合。",
   "Passed across 131 modules in the stored FULL receipt; this FULL result was not freshly replayed here.":
     "存档的 FULL 回执记录了跨 131 个模块的检查全部通过；本次审阅未重新执行 FULL 重放。",
 
@@ -27,7 +25,6 @@ export const releaseZh: TranslationDictionary = {
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "一个二元、单步的 L2–L7 执行切片，包含两个封闭来源模式和四种可执行动作类型；L1 仅用于控制。",
 
-  "Committed descriptors": "已提交的描述符",
   "Finite declared universe": "已声明的有限全集",
   "Executable descriptors": "可执行描述符",
   "Four allowed action kinds": "四种获准动作类型",
@@ -71,8 +68,6 @@ export const releaseZh: TranslationDictionary = {
   "Fresh STATIC": "本次新执行的 STATIC",
   "Fresh FAST": "本次新执行的 FAST",
   "Fresh FULL": "本次新执行的 FULL",
-  "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
-    "1,366/1,366 的 FULL 结果来自存档发布回执，并非本次新执行的重放结果。",
   "THREE EVIDENCE LAYERS": "三层证据",
   "Do not infer runtime capability from formal or historical material.": "不得从形式材料或历史材料推断当前运行时能力。",
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
@@ -100,12 +95,9 @@ export const releaseZh: TranslationDictionary = {
   "A legacy relational-KG research artifact exists in compatibility history, but it is not the current V4 selector, has no proven strong-control advantage, and is not presented as a current trained Atlas.":
     "兼容性历史中存在一个旧版 relational-KG 研究制品，但它不是当前 V4 选择器，未证明其在强对照下具有优势，也不被表述为当前已训练的 Atlas。",
 
-  "1,204 descriptors / 880 executable": "1,204 个描述符 / 其中 880 个可执行",
   "Pinned-key sample integrity": "固定公钥下的样本完整性",
   "Bundled finite sample / two source patterns": "捆绑的有限样本 / 两个来源模式",
   "Deterministic selector": "确定性选择器",
-  "440-candidate frontier per source pattern": "每个来源模式对应 440 个候选项的前沿集合",
-  "4,802 internal work-unit IDs reconciled": "已核对一致的 4,802 个内部工作单元 ID",
   "Persist trust state": "持久化信任状态",
   "A durable trusted manifest head beyond process-local checks.": "建立超越进程本地检查的持久可信清单头。",
   "Isolate the executor": "隔离执行器",
@@ -125,7 +117,6 @@ export const releaseZh: TranslationDictionary = {
     "经脱敏的 current-V4 回执重放——具有确定性，仅限两个固定来源模式，且不是实时模型或外部基准测试。",
   "Bundled sample verified against the pinned release key": "捆绑样本已通过固定发布密钥验证",
   "Closed two-pattern source ontology admitted": "封闭的双模式来源本体已获准入",
-  "Deterministic 440-candidate frontier selected": "已选定由 440 个候选项构成的确定性前沿集合",
   "Integrated one-step source-to-action episode executed": "已执行集成式单步来源到动作回合",
   "Receipt-derived phase work ledger reconciled": "由回执推导的分阶段工作账本已核对一致",
   "Terminal release status preserved with disclosed boundaries": "终止发布状态已连同已披露边界一并保存",
@@ -140,8 +131,6 @@ export const releaseZh: TranslationDictionary = {
     "当前 V4 使用一个仅面向两个固定来源模式的确定性选择器。",
   "The bundled finite sample verifies against a release-pinned public key.":
     "捆绑的有限样本可通过与发布版本绑定的公钥验证。",
-  "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
-    "1,366/1,366 的 FULL 结果是存档发布证据；本次审阅未新执行 FULL。",
   "Current V4 direct selfcheck": "当前 V4 直接自检",
   "Current V4 release contract": "当前 V4 发布契约",
   "Stored FULL terminal receipt and fresh replay log": "存档 FULL 终止回执与本次重放日志",

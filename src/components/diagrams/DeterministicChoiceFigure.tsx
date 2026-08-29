@@ -10,7 +10,7 @@ const LANES = [
 ] as const;
 
 const STAGES = [
-  { x: 74, width: 108, value: "alpha,beta" },
+  { x: 74, width: 108, value: "row i" },
   { x: 200, width: 104, value: "SHA-256" },
   { x: 322, width: 104, value: "ordinal 1" },
 ] as const;

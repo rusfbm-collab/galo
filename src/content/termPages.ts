@@ -513,12 +513,12 @@ export const termPages: Record<string, TermPage> = {
     inGalo:
       "Five is the honest number of distinct situations GALO has at this level. Nine is the number of names for them.",
   },
-  "Current V4 step-by-step replay": {
+  "One evaluated row, step by step": {
     panels: [{ law: "PLUS", level: 3, cells: [[1, 2]] }],
     reading:
-      "One accepted request, one marked cell, one recorded answer. That is a complete run of the engine that exists today.",
+      "One question, one marked cell on the route it took, one recorded outcome. That is a complete evaluated row.",
     inGalo:
-      "This is the whole of GALO's shipped behaviour: one bounded step, then a stop. Everything larger is written architecture.",
+      "Every number GALO publishes is a count over rows like this one. What the row does not show is the wider architecture, which is written down and is not in the measured path.",
   },
 };
 
@@ -973,12 +973,12 @@ export const termAcademics: Record<string, TermAcademic> = {
     academic:
       "A worked application of the orbit-counting lemma to the diagonal action of Aut on ordered pairs at level three. The automorphism group has order two, the identity fixes all nine pairs and the involution fixes one, so the number of orbits is five. Restoring the four role tags multiplies this to twenty.",
   },
-  "Current V4 step-by-step replay": {
+  "One evaluated row, step by step": {
     discipline: "Project convention",
     standing: "Project term, not standard mathematics",
-    formal: "⟨committed 1,204;  executable 880;  frontier 440;  arity 2;  route_depth 1⟩",
+    formal: "⟨closed answer set;  full ranking;  three rights;  one receipt per row⟩",
     academic:
-      "A description of a software release, not a mathematical statement. The counts are cardinalities of declared finite sets fixed by the release contract, and they are reported for auditability. No theorem in this glossary depends on any of them.",
+      "A description of an evaluation protocol, not a mathematical statement. The counts are cardinalities of declared finite sets fixed before the evaluated split is read, and they are reported for auditability. No theorem in this glossary depends on any of them.",
   },
 };
 

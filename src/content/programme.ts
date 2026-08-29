@@ -35,7 +35,7 @@ export const assessmentTable: readonly AssessmentRow[] = [
   {
     dimension: "A running artefact exists",
     answerToday:
-      "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.",
+      "A release exists and reproduces. On a standard CPython 3.12.13 interpreter with no third-party dependencies, a cold rebuild reconstructs all three learned states and prediction ledgers and matches them byte for byte.",
     status: "ESTABLISHED",
     whereToCheck: "/evidence",
   },

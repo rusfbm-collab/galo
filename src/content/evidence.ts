@@ -9,8 +9,12 @@ export const workTrackMilestones = [
 ] as const;
 
 export const releaseEvidence = {
-  release: "R5B6A1_3",
-  currentApi: "R5B6A1_3_CURRENT_V4",
+  /**
+   * What the evidence on this site is evidence *of*. This used to be an internal
+   * release code, which told a reader nothing and named a build rather than a
+   * result. The public runs are the record now, so the record says so.
+   */
+  recordOfEvidence: "2,275 receipts across three public corpora",
   status: "READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES",
   freshReplay: {
     static: "PASS",
@@ -24,27 +28,28 @@ export const releaseEvidence = {
       value: "560",
       label: "Oriented typed coordinates",
       detail:
-        "140 ordered coordinates × two laws × two operand-role orientations; 556 are active across runtime L2–L7. These are not semantic concepts.",
+        "140 ordered coordinates × two laws × two operand-role orientations. These are addresses, not semantic concepts, and one prediction runs 84 typed steps rather than visiting all of them.",
     },
     {
-      value: "1,204",
-      label: "Committed candidate descriptors",
+      value: "2,275",
+      label: "Evaluation receipts",
       detail:
-        "880 are executable in current V4; each of the two fixed source patterns exposes a 440-candidate frontier.",
+        "One per test row across three public corpora, written whether the row was answered or refused. A row cannot leave the denominator by producing nothing.",
     },
     {
-      value: "1,366 / 1,366",
-      label: "Stored regression checks",
-      detail: "Passed across 131 modules in the stored FULL receipt; this FULL result was not freshly replayed here.",
+      value: "3 / 3",
+      label: "Rebuilds that matched byte for byte",
+      detail:
+        "A cold run from a fresh unpack reconstructed each learned state and each prediction ledger and compared them against the shipped ones.",
     },
   ],
   current: [
-    "Bundled finite sample verified against a release-pinned public key",
-    "Deterministic selector for exactly two fixed source patterns",
-    "Finite-universe membership and single-use executable handles",
-    "Process-local sequence, rollback, and revocation checks",
-    "Receipt-derived phase and occurrence work accounting",
-    "Zero Atlas semantic reads, rank effects, and learning writes",
+    "Corpus files byte-identical to named upstream commits, checked by hash",
+    "A set of possible answers closed from the training split before the test split is read",
+    "One machine-readable receipt for every test row, answered or refused",
+    "A learned state that is byte-identical before and after evaluation",
+    "A cold rebuild from a fresh unpack, compared ledger by ledger",
+    "A standard Python interpreter and its own standard library, and nothing else",
   ],
   tracks: [
     {
@@ -65,26 +70,26 @@ export const releaseEvidence = {
     },
     {
       name: "Engine running today",
-      state: "Running, and deliberately narrow",
+      state: "Running on public corpora, and deliberately narrow",
       detail:
-        "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.",
-      next: "Widening the accepted input contract and adding multi-step trajectories.",
+        "It learns a state from a training split, evaluates a held-out split read-only, and writes one receipt per row. The tasks are relation labelling and word inflection on three fixed public corpora — narrow on purpose, and nothing like an open-ended input contract.",
+      next: "An end-to-end run where the full architecture, rather than a counting ranker, is in the measured path.",
       reached: 3,
     },
     {
       name: "Target world-model loop",
-      state: "Running in a sealed prototype, not in the release",
+      state: "Specified, and not in the measured path",
       detail:
-        "The explicit World Atlas, adaptive resolution, local revision and the learning loop run in a separate sealed prototype with trained Atlases of its own. None of it is in the shipped runtime, and the wider loop the architecture describes is still specified rather than built.",
-      next: "Carrying it into a partner-controlled evaluation, which is the step none of the sealed work substitutes for.",
+        "The explicit World Atlas, adaptive resolution and local revision are what the architecture is built around. The runs above measure a counting ranker under the admission law, not that loop, and the gap is published rather than glossed.",
+      next: "Carrying it into a partner-controlled evaluation, which is the step none of the published work substitutes for.",
       reached: 2,
     },
   ],
   selector: [
-    { value: "1,204", label: "Committed descriptors", detail: "Finite declared universe" },
-    { value: "880", label: "Executable descriptors", detail: "Four allowed action kinds" },
-    { value: "440", label: "Pattern frontier", detail: "Even or odd enumeration parity" },
-    { value: "SHA-256", label: "Deterministic order", detail: "observation + candidate ID + ordinal" },
+    { value: "2,275", label: "Test rows evaluated", detail: "Across three public corpora" },
+    { value: "1,953", label: "Rows answered", detail: "All three rights were bought" },
+    { value: "322", label: "Rows refused", detail: "A boundary with a named cause" },
+    { value: "SHA-256", label: "Every input pinned", detail: "Byte-identical to a named upstream commit" },
   ],
   workLedger: [
     { label: "Shared preparation", value: 1902 },
@@ -94,43 +99,35 @@ export const releaseEvidence = {
     { label: "Outcome evaluation", value: 0 },
     { label: "Policy update", value: 0 },
   ],
-  arithmetic: {
-    parentStoredFull: 1277,
-    newStoredChecks: 89,
-    storedFull: 1366,
-    physicalWorkTotal: 4802,
-    wholeTowerUniverse: 1204,
-    activeTypedCoordinates: 556,
-    perLevelCoverageCells: 108,
-    coverageCells: 756,
-    selectedSourceModules: 324,
-    excludedSourceModules: 21,
-    allSourceModules: 345,
-    generatedRuntimePolicyMarkers: 1,
-    wheelInventory: 325,
-  },
   boundaries: [
     {
       label: "Arbitrary free-text semantic noninterference",
       status: "NOT PROVEN" as EvidenceStatus,
-      detail: "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.",
+      detail:
+        "The evaluated tasks are relation labelling and word inflection over declared schemas. Arbitrary natural-language input is outside the contract, not a solved case.",
     },
     {
       label: "Partner-controlled operational validity",
       status: "NOT PROVEN" as EvidenceStatus,
       detail:
-        "Internal work-unit accounting is not a speedup, a causal outcome, customer value or an external gain result. No partner has run an evaluation on their own data with their own evaluator.",
+        "Accuracy on a public corpus is not a speedup, a causal outcome, customer value, or an external gain result. No partner has run an evaluation on their own data with their own evaluator.",
     },
     {
-      label: "Trained World Atlas in the release",
-      status: "NOT PRESENT" as EvidenceStatus,
+      label: "The full architecture in the measured path",
+      status: "NOT PROVEN" as EvidenceStatus,
       detail:
-        "The shipped V4 runtime performs zero Atlas learning writes and carries no trained Atlas. The sealed prototype line has its own, and the two are never the same artefact.",
+        "What the published runs measure is a counting ranker under the admission law. The wider loop the architecture is built around — adaptive resolution, local revision across a persistent Atlas — is not in that path, so its contribution is unestablished rather than demonstrated.",
+    },
+    {
+      label: "Dataset redistribution chain",
+      status: "BOUNDARY" as EvidenceStatus,
+      detail:
+        "Every corpus file is byte-identical to a named upstream commit, and that much is checked. The complete rights chain from each original source is only partly evidenced, and is published as partial rather than assumed.",
     },
     {
       label: "General AI",
       status: "NOT CLAIMED" as EvidenceStatus,
-      detail: "Finite formal verification does not establish general intelligence.",
+      detail: "Finite formal verification and three benchmark runs do not establish general intelligence.",
     },
   ],
 } as const;

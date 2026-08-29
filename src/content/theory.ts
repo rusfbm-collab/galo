@@ -55,11 +55,12 @@ export const theoryObjectClasses = [
     boundary: "A descriptor may be non-executable and is not a learned concept or completed action.",
   },
   {
-    object: "Candidate frontier",
-    layer: "CURRENT V4",
-    exact: "440 candidates for one accepted pattern",
-    meaning: "The parity-filtered candidates that the deterministic selector is allowed to order.",
-    boundary: "The order comes out of a hash. No semantic judgment, probability, or learned preference goes into it.",
+    object: "Closed answer set",
+    layer: "CURRENT",
+    exact: "every outcome the training split contained, digested",
+    meaning: "The complete set of outcomes a prediction is allowed to name, fixed before the evaluated split is read.",
+    boundary:
+      "A truth outside the set produces a recorded boundary, never a guess. The set is a function of the training data and the declared schema, and the evaluated split is not one of its arguments.",
   },
   {
     object: "One-shot handle",
@@ -176,67 +177,75 @@ export const theorySymbolLegend = [
 
 export const runtimeArithmeticRows = [
   {
-    value: "108",
-    calculation: "4 × Σ_(n=2)^7 n = 4 × 27",
-    meaning: "One release coverage quantum across four typed families and the active levels L2–L7.",
+    value: "560",
+    calculation: "Σ_(n=1)^7 4n²",
+    meaning: "The complete catalogue of typed cells: every level, family, and ordered pair of poles.",
   },
   {
-    value: "1,204",
-    calculation: "556 + 6 × 108",
-    meaning: "The complete committed descriptor universe in the current release.",
+    value: "84",
+    calculation: "3 × 7 × 4",
+    meaning: "The typed steps one prediction runs: three reading channels, seven levels, four families.",
   },
   {
-    value: "880",
-    calculation: "556 + 3 × 108",
-    meaning: "The subset whose declared kinds are executable in current V4.",
+    value: "28…84",
+    calculation: "|image of the route in the catalogue|",
+    meaning:
+      "How many distinct catalogue cells one prediction actually touches. Two channels may land on the same cell, so the route is longer than the set of addresses it visits.",
   },
   {
-    value: "440",
-    calculation: "880 ÷ 2",
-    meaning: "The even- or odd-parity frontier exposed by one of the two accepted source patterns.",
+    value: "2,275",
+    calculation: "1,074 + 201 + 1,000",
+    meaning:
+      "Evaluated rows across the three public runs, and the number of receipts written — one per row, answered or refused.",
   },
 ] as const;
 
 export const currentV4Flow = [
   {
-    title: "Match one fixed source pattern",
-    exact: "alpha,beta or gamma,delta",
-    detail: "Only two exact closed patterns are accepted; arbitrary free text is outside this selector contract.",
+    title: "Read the training split",
+    exact: "training data only",
+    detail:
+      "Nothing else has been opened yet. Every later step reads only what this one and its successors have frozen.",
   },
   {
-    title: "Enter the committed universe",
-    exact: "committed=1,204",
-    detail: "Every candidate must already belong to the finite release commitment.",
+    title: "Close the set of possible answers",
+    exact: "25, 55 or 122 outcomes, digested",
+    detail:
+      "Every distinct outcome the training split contained becomes the complete list a prediction may name. The evaluated split is not an argument to it.",
   },
   {
-    title: "Filter executable kinds",
-    exact: "executable=880",
-    detail: "The executable ontology is limited to FREE_FRAME, JOINT_COMPOSITION, PROBE, and ROUTE.",
+    title: "Learn, then freeze the state",
+    exact: "counts, certificates, admitted structures",
+    detail:
+      "What is learned is integer event counts, first-pass certificates, and the structural addresses those admit. No trainable weight is adjusted and no gradient step is taken.",
   },
   {
-    title: "Choose a parity frontier",
-    exact: "LEFT/even or RIGHT/odd · frontier=440",
-    detail: "The recognized source pattern selects one half of the executable enumeration.",
+    title: "Fix the policy on a separate split",
+    exact: "selection split, never the evaluated one",
+    detail: "Every setting the evaluation runs under is chosen here and sealed before the evaluated split is read.",
   },
   {
-    title: "Derive a deterministic order",
-    exact: "SHA-256(observation,candidate_id,ordinal)",
-    detail: "The hash order is replayable; Atlas semantic reads, rank effects, and learning writes are all zero.",
+    title: "Rank the whole answer set",
+    exact: "proposal, recorded but unpublished",
+    detail: "Counting memory orders the closed set for this context. The ordering stays inside the record.",
   },
   {
-    title: "Bind a one-shot handle",
-    exact: "membership + sequence + single use",
-    detail: "The selected candidate is bound to one process-local execution contour.",
+    title: "Buy the three rights, or refuse",
+    exact: "right ∧ structure ∧ typed program",
+    detail:
+      "The context's out-of-sample record has to earn an answer, a learned structure has to stand behind the proposal, and the route's typed steps have to run. Any one missing and the row is a boundary.",
   },
   {
-    title: "Execute one bounded action",
-    exact: "arity=2 · route_depth=1",
-    detail: "Current V4 does not execute the formal multi-step program trees described in the mathematics chapter.",
+    title: "Run the typed route",
+    exact: "3 channels × 7 levels × 4 families = 84",
+    detail:
+      "The full index of typed steps is compiled and executed against the frozen tables, and every one of them has to pass.",
   },
   {
-    title: "Record the receipt",
-    exact: "phase + occurrence + work IDs",
-    detail: "The receipt supports bounded replay and accounting; it does not measure external gain or truth.",
+    title: "Write one receipt",
+    exact: "answered or refused, either way",
+    detail:
+      "The row leaves a machine-readable record with its cause named. The learned state is byte-identical before and after, and that is checked rather than asserted.",
   },
 ] as const;
 
@@ -311,7 +320,7 @@ export const theoryArchitectureLayers = [
     title: "Bounded current selection",
     status: "CURRENT V4",
     detail:
-      "A deterministic selector orders a finite declared candidate frontier for exactly two fixed source patterns.",
+      "A deterministic ranking over a set of possible answers closed from the training data, with the top of it published only where three separate rights were bought.",
   },
   {
     number: "05",
@@ -343,7 +352,8 @@ export const theoryEvidenceLadder = [
   {
     status: "RELEASE VERIFIED",
     question: "Did the supplied archive pass the named replay contour?",
-    example: "Fresh STATIC and FAST passed; the stored FULL receipt reports 1,366/1,366.",
+    example:
+      "A cold run from a fresh unpack rebuilt every learned state and prediction ledger and matched them byte for byte.",
   },
   {
     status: "BOUNDARY",
@@ -859,13 +869,13 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     exactDefinition:
       "FORMAL=finite laws; CURRENT V4=bounded deterministic selector; TARGET=unimplemented or unproven World Atlas learning architecture.",
     workedExample:
-      "Formal: 560 coordinates. Current: 556 active, 1,204 committed, 880 executable, 440 per pattern. Target: persistent trained Atlas NOT_PRESENT.",
+      "Formal: 560 catalogue cells, 84 typed steps on one route. Current: three public runs, 2,275 receipts, coverage published beside accuracy. Target: partner-controlled operational validity NOT_PROVEN.",
     whyTrue:
       "Each layer has different objects and evidence, so conclusions are licensed only inside the layer whose contract was checked.",
     commonMistake:
       "Verified finite tables do not prove persistent learning, external operational gain, a trained Atlas, or General AI.",
     tableCheck: "Layer ledger: FORMAL | CURRENT V4 | TARGET, with a separate status column.",
-    formulaCheck: "1,204→880→440 is current selector arithmetic; it is not the 560-coordinate formal derivation.",
+    formulaCheck: "560 is the catalogue and 84 is the route; neither is a count of what a public run measured.",
   }),
   conceptLesson({
     term: "Symbol legend",
@@ -1135,21 +1145,21 @@ export const conceptLessons: readonly ConceptLessonEntry[] = [
     formulaCheck: "Burnside: (9+1)/2=5; typed at L3: 4×5=20.",
   }),
   conceptLesson({
-    term: "Current V4 step-by-step replay",
+    term: "One evaluated row, step by step",
     chapter: "theory",
     analogy:
-      "Imagine a sealed card catalogue: recognize one of two exact request cards, discard forbidden card types, choose one parity shelf, sort reproducibly, and use one card once.",
+      "Imagine a sealed card catalogue: write out every card the training set contained, seal the drawer, then answer a question only if you have earned the right, have a card that stands behind the answer, and can walk the route to it.",
     exactDefinition:
-      "alpha,beta→LEFT/even; gamma,delta→RIGHT/odd; committed=1,204; executable=880; frontier=440; order=SHA-256(observation,candidate_id,ordinal); arity=2; route_depth=1.",
+      "answer set = f(TRAIN, declared schema); ranked in full; ANSWER ⇔ right ∧ structure ∧ 84 typed steps passed; otherwise BOUNDARY with predicted empty; one receipt per row either way.",
     workedExample:
-      "For alpha,beta, the selector accepts the fixed pattern, enters 1,204 committed descriptors, keeps 880 of four executable kinds, exposes the 440 even-parity candidates, derives a hash order, binds one process-local handle, executes one bounded action, and records a receipt.",
+      "On the largest public run the answer set held 122 outcomes closed from 10,000 training rows. Of 1,000 evaluated rows, 996 bought all three rights and 970 of those were correct; the remaining 4 had a truth outside the closed set and became boundaries.",
     whyTrue:
-      "The current release contract fixes each filter and count; semantic_reads, rank_effects, and learning_writes are all zero, so Atlas state cannot change the order.",
+      "Each step reads only what earlier steps have frozen, and each frozen object carries a digest that a cold rebuild is compared against.",
     commonMistake:
-      "A pole is a formal P_i label; a source pattern is one accepted input string; rank is |Im(T)|; ranking is the hash-derived candidate order. The arithmetic shows six 108-descriptor increments, but the reviewed source does not disclose names for six generated strata, so no such names may be invented.",
+      "Coverage is not accuracy, and the internal ranking is not the published answer. A run may rank well above chance and still publish nothing, which is exactly what one of the three did.",
     tableCheck:
-      "Replay ledger: fixed pattern | committed 1,204 | executable 880 | parity frontier 440 | one-shot handle | receipt.",
-    formulaCheck: "108=4Σ_(n=2)^7n; 1,204=556+6·108; 880=556+3·108; 440=880/2.",
+      "Run ledger: closed answer set | ranked in full | three rights | published answer or boundary | one receipt.",
+    formulaCheck: "catalogue = Σ_(n=1)^7 4n² = 560; route = 3·7·4 = 84; receipts = 1,074 + 201 + 1,000 = 2,275.",
   }),
 ] as const;
 

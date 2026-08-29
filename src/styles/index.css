@@ -1545,6 +1545,15 @@ html[lang="ar"] .hero h1 {
   color: #7f99aa;
 }
 
+/* The digest is only useful if the reader knows what it covers, so the note sits
+   against the payload block rather than in the disclaimer strip at the bottom. */
+.receipt-card__digest-note {
+  margin: 10px 0 0;
+  color: #7891a3;
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
 .replay-explorer__disclaimer {
   grid-column: 1 / -1;
   margin: 0;
@@ -12525,6 +12534,283 @@ caption bdi {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
+  }
+}
+
+/* ---- the public benchmark runs ---- */
+
+.runs,
+.replay-props,
+.public-run-limits {
+  margin-top: 30px;
+}
+
+.runs {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--white);
+}
+
+.runs__caption {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.runs__eyebrow {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.runs__caption strong {
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.42;
+}
+
+.runs__grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.runs__grid article {
+  display: grid;
+  align-content: start;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+
+.runs__grid header {
+  margin-bottom: 14px;
+}
+
+.runs__grid h4 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.runs__task {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.runs__counts,
+.runs__rates {
+  display: grid;
+  gap: 4px 12px;
+  margin: 0;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.runs__counts > div,
+.runs__rates > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.runs__rates {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  grid-template-columns: 1fr;
+}
+
+.runs__counts dt,
+.runs__rates dt {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.runs__counts dd,
+.runs__rates dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.runs__rates dd {
+  color: var(--teal-deep);
+}
+
+.runs__candidates {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.runs__reading {
+  margin: 12px 0 0;
+  padding-inline-start: 12px;
+  border-inline-start: 2px solid var(--teal-deep);
+  color: var(--ink);
+  font-size: 0.86rem;
+  line-height: 1.56;
+}
+
+.runs__totals {
+  margin: 20px 0 0;
+  padding: 14px 18px;
+  border: 1px solid rgba(10, 130, 119, 0.32);
+  border-radius: 14px;
+  background: rgba(10, 130, 119, 0.07);
+  color: var(--teal-deep);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.runs__totals span {
+  font-family: var(--font-mono);
+}
+
+.runs__task-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.replay-props {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.replay-props article {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--paper);
+}
+
+.replay-props strong {
+  display: block;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.replay-props h3 {
+  margin: 10px 0 8px;
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.replay-props p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.replay-props__note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.public-run-limits {
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-inline-start: 3px solid var(--amber);
+  border-radius: 18px;
+  background: var(--white);
+}
+
+.public-run-limits strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-size: 0.98rem;
+}
+
+.public-run-limits ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-inline-start: 20px;
+}
+
+.public-run-limits li {
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.58;
+}
+
+.public-run-limits__boundary {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.58;
+}
+
+.public-run-limits__boundary svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--amber);
+}
+
+.superseded {
+  margin-top: 22px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.superseded summary {
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.superseded p {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+@media (max-width: 1000px) {
+  .replay-props {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .runs__grid {
+    grid-template-columns: 1fr;
+  }
+  .runs {
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 620px) {
+  .replay-props {
+    grid-template-columns: 1fr;
   }
 }
 

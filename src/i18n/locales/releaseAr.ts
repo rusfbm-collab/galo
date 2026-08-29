@@ -1,13 +1,8 @@
 import type { TranslationDictionary } from "../translations";
 
 export const releaseAr: TranslationDictionary = {
-  "1,204 descriptors / 880 executable": "1,204 واصفًا / 880 قابلًا للتنفيذ",
   "140 ordered coordinates × two laws × two operand-role orientations; 556 are active across runtime L2–L7. These are not semantic concepts.":
     "140 إحداثيًا مرتبًا × قانونين × اتجاهين لدوري المُعاملين؛ منها 556 فعّالة في بيئة التشغيل L2–L7. وليست هذه مفاهيم دلالية.",
-  "4,802 internal work-unit IDs reconciled": "تمت مطابقة 4,802 معرّفًا داخليًا لوحدات العمل",
-  "440-candidate frontier per source pattern": "جبهة من 440 مرشّحًا لكل نمط مصدر",
-  "880 are executable in current V4; each of the two fixed source patterns exposes a 440-candidate frontier.":
-    "يوجد في V4 الحالية 880 واصفًا قابلًا للتنفيذ؛ ويكشف كل واحد من نمطي المصدر الثابتين جبهة من 440 مرشّحًا.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "شريحة تنفيذ ثنائية أحادية الخطوة على L2–L7، ذات نمطي مصدر مغلقين وأربعة أنواع من الأفعال القابلة للتنفيذ؛ أما L1 فللضبط فقط.",
   "A closed deterministic selector. Nothing about it was learned.": "مُحدِّد حتمي مغلق، وليس آلية استدلال متعلّمة.",
@@ -30,7 +25,6 @@ export const releaseAr: TranslationDictionary = {
   "CURRENT V4 SELECTOR": "مُحدِّد V4 الحالي",
   "Closed two-pattern source ontology admitted": "قُبلت أنطولوجيا مصدر مغلقة ذات نمطين",
   "Committed candidate descriptors": "واصفات مرشّحين مُثبّتة",
-  "Committed descriptors": "واصفات مُثبّتة",
   "Compatibility and audit layer": "طبقة التوافق والتدقيق",
   "Current V4 direct selfcheck": "الفحص الذاتي المباشر لـ V4 الحالية",
   "Current V4 performs no policy update; historical research artifacts are a separate audit record.":
@@ -42,7 +36,6 @@ export const releaseAr: TranslationDictionary = {
   "Current V4 uses a deterministic selector for exactly two fixed source patterns.":
     "تستخدم V4 الحالية مُحدِّدًا حتميًا لنمطي مصدر ثابتين لا غير.",
   "Current trained World Atlas": "World Atlas الحالي المدرَّب",
-  "Deterministic 440-candidate frontier selected": "اختيرت حتميًا جبهة من 440 مرشّحًا",
   "Deterministic order": "ترتيب حتمي",
   "Deterministic selector": "مُحدِّد حتمي",
   "Deterministic selector for exactly two fixed source patterns": "مُحدِّد حتمي لنمطي مصدر ثابتين لا غير",
@@ -109,10 +102,6 @@ export const releaseAr: TranslationDictionary = {
     "أُبقيت إعادات التشغيل المحفوظة والوحدات القديمة للمقارنة. ولا تصبح واجهات API الخاصة بها وتجاربها التاريخية تلقائيًا قدرات لبيئة التشغيل الحالية.",
   "THREE EVIDENCE LAYERS": "ثلاث طبقات للأدلة",
   "Terminal release status preserved with disclosed boundaries": "حُفظت الحالة النهائية للإصدار مع الحدود المعلنة",
-  "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
-    "نتيجة FULL البالغة 1,366/1,366 هي إيصال إصدار محفوظ، وليست نتيجة إعادة تشغيل جديدة.",
-  "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
-    "نتيجة FULL البالغة 1,366/1,366 دليل إصدار محفوظ؛ ولم يُشغَّل FULL جديد في هذه المراجعة.",
   "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms.":
     "عائلات PLUS/STAR على L1–L7، و560 إحداثيًا موجَّهًا محدد النوع، والتحويلات، والتناظرات، والتشاكلات بين المستويات.",
   "The bundled finite sample verifies against a release-pinned public key.":

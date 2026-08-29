@@ -1,49 +1,64 @@
 import { useId } from "react";
 import { useI18n } from "../../i18n/I18nContext";
 
+/**
+ * One question, from the closed answer set down to a published prediction.
+ *
+ * This drew the superseded release's descriptor arithmetic — 1,204 committed,
+ * 880 executable, 440 on one pattern. That artefact accepted two fixed input
+ * patterns and learned nothing, and restating its counts as the current shape
+ * of a decision would be the plainest kind of stale claim. The bars now count
+ * what the current artefact actually narrows: a closed set of possible answers,
+ * a ranking over it, the three rights that have to be bought, and the one
+ * prediction that survives — or the boundary that replaces it.
+ *
+ * The last two bars are drawn at a readable minimum width. They stand for one
+ * decision and one record, not for a proportional quantity.
+ */
 const stages = [
   {
-    value: "1,204",
-    weight: 1204,
-    label: "Committed descriptors",
-    detail: "The complete finite universe the release commits to before anything runs.",
+    value: "122",
+    weight: 1220,
+    label: "Possible answers, closed in advance",
+    detail: "Every distinct outcome the training split contained, frozen and digested before the test split is read.",
   },
   {
-    value: "880",
-    weight: 880,
-    label: "Executable descriptors",
-    detail: "Only four declared action kinds are executable; the rest stay inert.",
+    value: "122",
+    weight: 1220,
+    label: "Ranked for this question",
+    detail: "Counting memory orders the whole set. The ordering is recorded and is never published on its own.",
   },
   {
-    value: "440",
-    weight: 440,
-    label: "Pattern frontier",
-    detail: "One of the two accepted source patterns selects one parity half.",
-  },
-  {
-    value: "1",
-    weight: 40,
-    label: "One bound handle",
-    detail: "A hash-derived order picks one candidate and binds it to a single use.",
+    value: "3",
+    weight: 420,
+    label: "Rights that have to be bought",
+    detail: "The right to answer, a learned structure behind the proposal, and a typed program that runs.",
   },
   {
     value: "1",
-    weight: 40,
-    label: "One recorded receipt",
-    detail: "The bounded action and its work units are written into a replayable record.",
+    weight: 60,
+    label: "One published prediction, or none",
+    detail: "All three held and the top-ranked outcome is published; any one missing and a boundary replaces it.",
+  },
+  {
+    value: "1",
+    weight: 60,
+    label: "One receipt, either way",
+    detail: "Answered or refused, the row leaves a machine-readable record with its cause named.",
   },
 ] as const;
 
 /**
  * The label sits to the right of its bar, so the widest bar decides how much
- * room the longest label gets. "Committed descriptors" is two long words in
- * Russian and three in Arabic, and at the old 620/420 it ran off the viewBox
- * and was clipped mid-word.
+ * room the longest label gets. "Possible answers, closed in advance" is six
+ * words in Russian, and at a 380 bar it ran six pixels off the viewBox and was
+ * clipped mid-word. The bar is sized so the longest translation still clears
+ * the right edge; the bars are relative to each other, not to the canvas.
  */
 const WIDTH = 700;
 const ROW_HEIGHT = 54;
 const HEIGHT = ROW_HEIGHT * stages.length + 16;
-const MAX_BAR = 380;
+const MAX_BAR = 352;
 const MIN_BAR = 44;
 const maximumWeight = stages[0].weight;
 
@@ -59,21 +74,21 @@ export function SelectorFunnelFigure() {
   return (
     <figure className="galo-figure galo-figure--funnel">
       <figcaption className="galo-figure__caption">
-        <span className="galo-figure__eyebrow">{t("HOW THE CURRENT ENGINE NARROWS ITS CHOICES")}</span>
-        <strong>{t("From 1,204 declared candidates down to one recorded action.")}</strong>
+        <span className="galo-figure__eyebrow">{t("HOW ONE QUESTION NARROWS TO ONE ANSWER")}</span>
+        <strong>{t("From a closed set of possible answers to one published prediction, or none.")}</strong>
         <span className="galo-figure__note">
           {t(
-            "Every narrowing step is a filter written into the release contract. No step consults a learned preference, a probability, or Atlas state — the ordering comes from a hash and can be replayed exactly.",
+            "The first two bars are the same width on purpose: ranking narrows nothing, it only orders. What narrows is the third bar, where three separate rights have to be bought before any of the ranking may be published — and where most questions stop. The counts are from the largest of the three public runs.",
           )}
         </span>
       </figcaption>
 
       <div className="galo-figure__canvas">
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
-          <title id={titleId}>{t("Narrowing pipeline of the current runtime")}</title>
+          <title id={titleId}>{t("How one question narrows to one published answer")}</title>
           <desc id={descriptionId}>
             {t(
-              "Five stacked bars of decreasing width labelled 1,204 committed descriptors, 880 executable descriptors, 440 candidates on one pattern frontier, one bound handle, and one recorded receipt.",
+              "Five stacked bars. The first two are equal width, labelled 122 possible answers closed in advance and 122 ranked for this question. The third is much shorter, labelled three rights that have to be bought. The last two are short and fixed, labelled one published prediction or none, and one receipt either way.",
             )}
           </desc>
 

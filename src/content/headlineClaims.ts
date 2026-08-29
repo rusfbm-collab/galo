@@ -27,11 +27,11 @@ export const headlineClaims: readonly HeadlineClaim[] = [
     word: "Allowed",
     claim: "The list of permitted actions is closed before the run, not reconstructed after it.",
     mechanism:
-      "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.",
+      "The set of possible answers is closed from the training data before the test data is read, and its digest is published with the run. An outcome outside that set cannot be produced; the row becomes a boundary and is written down.",
     limit:
       "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.",
     auditStep:
-      "Enumerate the declared universe yourself and count it. The published figures are 1,204 and 880; a different count is a finding you can name and we would have to answer.",
+      "Rebuild the answer set from the training split yourself and count it. The published figures are 25, 55 and 122 outcomes with a digest each; a different count is a finding you can name and we would have to answer.",
     href: "/evidence",
     hrefLabel: "See the declared universe and how it is counted",
   },
@@ -39,7 +39,7 @@ export const headlineClaims: readonly HeadlineClaim[] = [
     word: "Decide",
     claim: "The record names the option that was taken and the options that were open at that moment.",
     mechanism:
-      "For each of the two fixed source patterns the selector narrows a 440-candidate frontier to one, in an order fixed by a hash rather than by a preference. The same input gives the same choice on any machine.",
+      "Counting memory orders the whole closed answer set, and the top of that order is published only if three separate rights were bought. The same input gives the same outcome on any machine.",
     limit:
       "There is no learned preference and no natural-language reason. The engine chooses inside a declared set; it does not judge what the set should have contained.",
     auditStep:
@@ -51,7 +51,7 @@ export const headlineClaims: readonly HeadlineClaim[] = [
     word: "Show",
     claim: "A stranger can repeat the run without asking us for anything, and compare it step by step.",
     mechanism:
-      "Each step leaves a receipt, 4,802 internal work-unit identifiers are reconciled against their parts, and the bundled finite sample verifies against a release-pinned public key.",
+      "Each evaluated row leaves a receipt — 2,275 of them across three runs, answered or refused — and every corpus file verifies byte for byte against a named upstream commit.",
     limit:
       "What is published is stored release evidence; fresh FULL was not run. External operational gain is not measured, and nothing here is a benchmark result.",
     auditStep:

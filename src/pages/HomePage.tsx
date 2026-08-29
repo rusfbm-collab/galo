@@ -157,7 +157,7 @@ const roadmap = [
   {
     number: "01",
     title: "Expand semantic closure",
-    text: "Preregistered rules beyond the current two fixed source patterns.",
+    text: "Preregistered rules for answer sets far wider than the tens or hundreds the public runs declare.",
   },
   {
     number: "02",
@@ -438,7 +438,7 @@ export function HomePage() {
             eyebrow={t("RECORDED RECEIPT")}
             title={t("Inspect the execution state, not a staged answer.")}
             text={t(
-              "This deterministic walkthrough uses sanitized identifiers from the current V4 direct selfcheck. It distinguishes two fixed source patterns, but it does not accept arbitrary observations, generate a semantic answer, or learn.",
+              "This deterministic walkthrough follows one evaluated row of a public run, from the sealed test split to the receipt. It is a sanitized record, not a live model: the engine answers inside a set of possible answers it closed in advance, and it does not accept arbitrary observations or generate a semantic answer.",
             )}
             light
             aside={

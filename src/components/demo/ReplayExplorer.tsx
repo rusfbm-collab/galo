@@ -26,9 +26,9 @@ export function ReplayExplorer() {
     return () => window.clearTimeout(timer);
   }, [isPlaying, isComplete]);
 
-  const receiptPreview = useMemo(() => {
+  const digestPreview = useMemo(() => {
     if (!activeStep) return "";
-    return `${activeStep.receipt.slice(0, 12)}…${activeStep.receipt.slice(-8)}`;
+    return `${activeStep.digest.slice(0, 12)}…${activeStep.digest.slice(-8)}`;
   }, [activeStep]);
 
   const reset = () => {
@@ -84,9 +84,9 @@ export function ReplayExplorer() {
             <h3>{activeStep ? t(activeStep.label) : ""}</h3>
             <dl>
               <div>
-                <dt>{t("Receipt")}</dt>
+                <dt>{t("Payload digest")}</dt>
                 <dd className="mono" dir="ltr">
-                  {receiptPreview}
+                  {digestPreview}
                 </dd>
               </div>
               <div>
@@ -97,6 +97,10 @@ export function ReplayExplorer() {
             <pre dir="ltr" aria-label={t("Sanitized receipt payload")}>
               {JSON.stringify(activeStep?.payload, null, 2)}
             </pre>
+            {/* The digest is over the block above, so this card can be checked rather than believed. */}
+            <p className="receipt-card__digest-note">
+              {t("SHA-256 of the block above, so the card can be checked rather than taken on trust.")}
+            </p>
             <div className="receipt-card__controls">
               <button className="button button--primary" type="button" onClick={play} disabled={isPlaying}>
                 <Play size={17} aria-hidden="true" />{" "}

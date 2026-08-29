@@ -25,19 +25,19 @@ export type FactChip = {
 
 export const oneMinuteFacts: readonly FactChip[] = [
   {
-    value: "1",
-    label: "bounded step per run",
-    note: "The engine that exists today performs one declared action and then stops. That is the honest size of it.",
+    value: "3",
+    label: "public corpora it has been run on",
+    note: "Relation labelling on two of them and word inflection on the third. That is the honest size of it: narrow, public, and nobody's production data.",
   },
   {
-    value: "1,204",
-    label: "possible actions, fixed in advance",
-    note: "The complete list is written before anything runs, which is what makes a full check possible instead of a sample.",
+    value: "2,275",
+    label: "questions asked, and receipts written",
+    note: "One machine-readable record per row, answered or refused, which is what makes a full check possible instead of a sample.",
   },
   {
-    value: "0",
-    label: "learning writes in the released kernel",
-    note: "The frozen release accumulates nothing between runs, so two runs on the same input behave identically a year apart. A separate Engine and Atlas prototype does learn, and it is reported apart from this number rather than folded into it.",
+    value: "322",
+    label: "questions it declined to answer",
+    note: "Fourteen per cent of them, and on one corpus every single row. A system allowed to refuse can flatter itself by answering less, so the refusals are published in the same table as the accuracy rather than under it.",
   },
   {
     value: "0",
@@ -139,7 +139,7 @@ export const stageFacts: readonly StageFact[] = [
   {
     question: "Is there something running?",
     answer:
-      "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning in the released kernel. A separate Engine and Atlas prototype does learn, and its results are reported on their own terms.",
+      "Yes, and it is narrow on purpose: three fixed public corpora, two task shapes, a closed set of possible answers, and a refusal on every row that did not earn all three rights. It learns from a training split and evaluates a held-out one; it does not take arbitrary text and it has never run on anybody else's data.",
     marker: "YES",
   },
   {
@@ -198,7 +198,7 @@ export const riskRegister: readonly RiskEntry[] = [
     code: "R2",
     risk: "Exhaustive checking may not survive scale.",
     whyItMatters:
-      "A finite universe of 1,204 entries can be enumerated. A universe several orders larger may not be, and the guarantee is only as good as the enumeration.",
+      "An answer set of a hundred-odd outcomes can be enumerated and digested. A set several orders larger may not be, and the guarantee is only as good as the enumeration.",
     settledBy:
       "Ask what the universe size would be for a realistic contract, and whether the check is still exhaustive at that size or quietly becomes sampling.",
   },

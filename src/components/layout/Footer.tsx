@@ -55,8 +55,8 @@ export function Footer() {
           )}
         </p>
         <p className="footer__record">
-          <span>{t("Release of record")}</span>
-          <bdi dir="ltr">{releaseEvidence.release}</bdi>
+          <span>{t("Evidence of record")}</span>
+          <span>{t(releaseEvidence.recordOfEvidence)}</span>
           <span>{t("Affiliation")}</span>
           <bdi dir="ltr">NONE</bdi>
           <a href={href("/privacy")}>{t("Privacy")}</a>

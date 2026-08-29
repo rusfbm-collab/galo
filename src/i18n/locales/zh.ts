@@ -35,6 +35,9 @@ import { thinkingZh } from "./thinking";
 import { visualsZh } from "./visuals";
 import { weightFreeZh } from "./weightFree";
 import { homeNarrativeZh } from "./homeNarrative";
+import { publicRunZh } from "./publicRun";
+import { replayWalkZh } from "./replayWalk";
+import { inputContractZh } from "./inputContract";
 import { verdictLawZh } from "./verdictLaw";
 
 export const zh: TranslationDictionary = {
@@ -74,6 +77,9 @@ export const zh: TranslationDictionary = {
   ...engineTourZh,
   ...weightFreeZh,
   ...homeNarrativeZh,
+  ...publicRunZh,
+  ...replayWalkZh,
+  ...inputContractZh,
   ...verdictLawZh,
   Language: "语言",
   "Skip to content": "跳到正文",
@@ -123,7 +129,6 @@ export const zh: TranslationDictionary = {
   "Receipt chain intact": "回执链完整",
   "Verified current mechanics": "当前已验证机制",
   "Finite universe": "有限全集",
-  "1,204 commitments / 756 cells": "1,204 项已提交记录 / 756 个覆盖单元",
   "Bound execution": "受约束执行",
   "Membership proof + one-shot handle": "成员资格证明 + 一次性句柄",
   "Budget law": "预算规则",

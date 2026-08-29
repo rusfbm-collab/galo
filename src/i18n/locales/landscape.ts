@@ -45,15 +45,11 @@ export const landscapeRu: TranslationDictionary = {
     "Объявленные операторы с предусловиями и эффектами. План или путь решения можно распечатать и прочитать построчно.",
   "Deployed and used by people outside the team that built them":
     "Внедрены и используются людьми за пределами создавшей их команды",
-  "Each step leaves a receipt, 4,802 internal work-unit identifiers are reconciled against their parts, and the bundled finite sample verifies against a release-pinned public key.":
-    "После каждого шага остаётся протокол, 4 802 внутренних идентификатора единиц работы сверены со своими слагаемыми, а встроенная конечная выборка проверяется закреплённым в выпуске открытым ключом.",
   "Everything, to a standard nothing else in this table reaches. Anyone can re-run the checker on the same proof.":
     "Всё — и на уровне, до которого не дотягивается ничто другое в этой таблице. Любой может заново прогнать проверяющую программу на том же доказательстве.",
   "Explicit state, which GALO also wants. What is missing there is the execution side: a budget, a single-use handle, and a record of the action that followed.":
     "Явное состояние — то, чего хочет и GALO. Чего там нет, так это стороны исполнения: лимита, одноразовой привязки и записи о том, какое действие за этим последовало.",
   "Follow one decision from input to record": "Проследить одно решение от входа до записи",
-  "For each of the two fixed source patterns the selector narrows a 440-candidate frontier to one, in an order fixed by a hash rather than by a preference. The same input gives the same choice on any machine.":
-    "Для каждого из двух фиксированных исходных шаблонов селектор сужает срез из 440 кандидатов до одного, в порядке, заданном хешем, а не предпочтением. Один и тот же вход даёт один и тот же выбор на любой машине.",
   "For the slice that runs today, that is a fair question and the honest answer is that a rule engine would cover much of it. The argument for the algebra is about what comes next — the level ladder and local revision — and that argument is not yet backed by a running system.":
     "Для того среза, что работает сегодня, вопрос справедлив, и честный ответ — что движок правил закрыл бы значительную его часть. Довод в пользу алгебры касается следующего шага — лестницы уровней и локального пересмотра, — и этот довод пока не подкреплён работающей системой.",
   "GPT, Claude, Gemini, Llama, Mistral, Qwen": "GPT, Claude, Gemini, Llama, Mistral, Qwen",
@@ -107,8 +103,6 @@ export const landscapeRu: TranslationDictionary = {
     "Ближайший внедрённый родственник нынешнего среза GALO и самый честный вызов ему: движок правил не даёт алгебраической структуры, лестницы уровней и петли пересмотра, вокруг которой построена архитектура, — а это как раз та часть, которая описана, но не отгружена.",
   "The closest thing to a direct overlap in practice. GALO's difference is that the permitted set is declared, enumerated and closed before the run, and appears in the record next to the choice.":
     "Самое близкое пересечение на практике. Отличие GALO в том, что множество разрешённого объявлено, перечислено и закрыто до запуска и попадает в запись рядом со сделанным выбором.",
-  "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.":
-    "Объявленное множество содержит 1 204 дескриптора, из них 880 исполняемых, и он целиком перечисляется на каждой сборке. Действие, которого нет в списке, выполнить нельзя: попытка отклоняется и записывается.",
   "The ingredients are not. Declared operators, explicit state, checkers admitting a proposer's candidates — each has a literature. What is claimed as ours is the specific kernel: a finite algebra whose levels, laws and symmetries are proved out, with typed execution and receipts sitting directly on it.":
     "Составные части — нет. Объявленные операторы, явное состояние, проверяющий, допускающий кандидатов предлагающего, — у каждого своя литература. Нашим заявлено конкретное ядро: конечная алгебра, у которой доказаны уровни, законы и симметрии, а прямо на ней стоят типизированное исполнение и протоколы.",
   "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.":
@@ -193,15 +187,11 @@ export const landscapeZh: TranslationDictionary = {
   "Declared operators with preconditions and effects. A plan or a decision path can be printed and read line by line.":
     "带有前置条件和效果的已声明算子。一个计划或一条决策路径可以打印出来逐行阅读。",
   "Deployed and used by people outside the team that built them": "已经落地，并被开发团队之外的人使用",
-  "Each step leaves a receipt, 4,802 internal work-unit identifiers are reconciled against their parts, and the bundled finite sample verifies against a release-pinned public key.":
-    "每一步都留下回执，4,802 个内部工作单元标识与其组成部分逐一对账，随附的有限样本则用版本内固定的公钥来校验。",
   "Everything, to a standard nothing else in this table reaches. Anyone can re-run the checker on the same proof.":
     "全部都能核验，而且严格程度是本表中其他任何一类都达不到的。任何人都可以拿同一份证明再跑一遍检查程序。",
   "Explicit state, which GALO also wants. What is missing there is the execution side: a budget, a single-use handle, and a record of the action that followed.":
     "显式的状态，这也正是 GALO 想要的。那里缺的是执行这一侧：额度、一次性绑定，以及随后那个动作的记录。",
   "Follow one decision from input to record": "跟着一次决策，从输入一路看到记录",
-  "For each of the two fixed source patterns the selector narrows a 440-candidate frontier to one, in an order fixed by a hash rather than by a preference. The same input gives the same choice on any machine.":
-    "对两种固定的源模式，选择器各自把 440 个候选的前沿收敛到一个，次序由哈希决定，而不是由偏好决定。同样的输入，在任何机器上都得到同样的选择。",
   "For the slice that runs today, that is a fair question and the honest answer is that a rule engine would cover much of it. The argument for the algebra is about what comes next — the level ladder and local revision — and that argument is not yet backed by a running system.":
     "就今天在跑的这一小块而言，这个问题问得公道，老实的回答是：规则引擎能覆盖其中相当一部分。支持代数的理由指向下一步——层级阶梯与局部修正——而这个理由目前还没有一个运行中的系统来支撑。",
   "GPT, Claude, Gemini, Llama, Mistral, Qwen": "GPT、Claude、Gemini、Llama、Mistral、Qwen",
@@ -253,8 +243,6 @@ export const landscapeZh: TranslationDictionary = {
     "当前 GALO 这一小块最接近的、已经落地的亲戚，也是对它最公道的挑战：规则引擎给不了的是代数结构、层级阶梯，以及这套架构所围绕的那个修正回路——而恰恰是这部分，只写在纸上，尚未交付。",
   "The closest thing to a direct overlap in practice. GALO's difference is that the permitted set is declared, enumerated and closed before the run, and appears in the record next to the choice.":
     "实践中重合得最多的一类。GALO 的不同之处在于：允许的集合在运行前就已声明、枚举并封闭，而且会和所作的选择一起写进记录。",
-  "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.":
-    "已声明的全集里有 1,204 个描述符，其中 880 个可执行，而且每次构建都会把它整个枚举一遍。不在清单里的动作无法执行，尝试会被拒绝并记录在案。",
   "The ingredients are not. Declared operators, explicit state, checkers admitting a proposer's candidates — each has a literature. What is claimed as ours is the specific kernel: a finite algebra whose levels, laws and symmetries are proved out, with typed execution and receipts sitting directly on it.":
     "配料不新。已声明的算子、显式的状态、由检查器接受提议者的候选——每一样都有自己的文献。我们主张属于自己的是那个具体的内核：一个层级、法则与对称性都已证明的有限代数，其上直接架着类型化执行与回执。",
   "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.":
@@ -339,15 +327,11 @@ export const landscapeAr: TranslationDictionary = {
   "Declared operators with preconditions and effects. A plan or a decision path can be printed and read line by line.":
     "مشغّلات معلَنة بشروط مسبقة وآثار. ويمكن طباعة الخطة أو مسار القرار وقراءته سطرًا سطرًا.",
   "Deployed and used by people outside the team that built them": "منشورة ويستعملها أناس من خارج الفريق الذي بناها",
-  "Each step leaves a receipt, 4,802 internal work-unit identifiers are reconciled against their parts, and the bundled finite sample verifies against a release-pinned public key.":
-    "تخلّف كل خطوة إيصالًا، وتُطابَق 4٬802 من معرّفات وحدات العمل الداخلية مع أجزائها، وتُتحقَّق العيّنة المنتهية المرفقة بمفتاح عامّ مثبَّت في الإصدار.",
   "Everything, to a standard nothing else in this table reaches. Anyone can re-run the checker on the same proof.":
     "كل شيء، وبمعيار لا يبلغه سواها في هذا الجدول. وبإمكان أي شخص أن يعيد تشغيل المدقّق على البرهان نفسه.",
   "Explicit state, which GALO also wants. What is missing there is the execution side: a budget, a single-use handle, and a record of the action that followed.":
     "حالة صريحة، وهو ما يريده GALO أيضًا. والناقص هناك هو جانب التنفيذ: حدّ للإنفاق، ومقبض يُستعمل مرّة واحدة، وسجلّ للفعل الذي تلا ذلك.",
   "Follow one decision from input to record": "تتبّع قرارًا واحدًا من المُدخَل إلى السجلّ",
-  "For each of the two fixed source patterns the selector narrows a 440-candidate frontier to one, in an order fixed by a hash rather than by a preference. The same input gives the same choice on any machine.":
-    "لكلٍّ من نمطَي المصدر الثابتين، يضيّق المنتقي جبهةً من 440 مرشّحًا إلى مرشّح واحد، بترتيب تحدّده دالّة تجزئة لا تفضيلٌ ما. والمُدخَل نفسه يعطي الاختيار نفسه على أي جهاز.",
   "For the slice that runs today, that is a fair question and the honest answer is that a rule engine would cover much of it. The argument for the algebra is about what comes next — the level ladder and local revision — and that argument is not yet backed by a running system.":
     "بالنسبة للشريحة التي تعمل اليوم، السؤال وجيه، والجواب الأمين أنّ محرّك قواعد كان ليغطّي جزءًا كبيرًا منها. أمّا حجّة الجبر فتتعلّق بالخطوة التالية — سلّم المستويات والمراجعة الموضعية — وهذه الحجّة لا يسندها بعدُ نظام يعمل.",
   "GPT, Claude, Gemini, Llama, Mistral, Qwen": "GPT وClaude وGemini وLlama وMistral وQwen",
@@ -399,8 +383,6 @@ export const landscapeAr: TranslationDictionary = {
     "أقرب قريب منشور للشريحة الحالية من GALO، وأنصف تحدٍّ لها: ما لا يمنحك إيّاه محرّك القواعد هو البنية الجبرية، وسلّم المستويات، وحلقة المراجعة التي بُنيت عليها البنية كلّها — وهذه بالذات هي الجزء الموصوف لا المُسلَّم.",
   "The closest thing to a direct overlap in practice. GALO's difference is that the permitted set is declared, enumerated and closed before the run, and appears in the record next to the choice.":
     "أقرب تداخل عمليّ في الواقع. والفارق في GALO أنّ مجموعة المسموح به معلَنة ومعدودة ومغلقة قبل التشغيل، وأنّها تظهر في السجلّ إلى جانب الاختيار.",
-  "The declared universe holds 1,204 descriptors, of which 880 are executable, and the whole of it is enumerated on every build. An action that is not in the list cannot be taken; the attempt is refused and written down.":
-    "يضمّ الكون المعلَن 1٬204 واصفًا، منها 880 قابلة للتنفيذ، ويُعدّ عدًّا كاملًا في كل عملية بناء. والفعل غير المدرَج لا يمكن اتخاذه، بل تُرفض المحاولة وتُدوَّن.",
   "The ingredients are not. Declared operators, explicit state, checkers admitting a proposer's candidates — each has a literature. What is claimed as ours is the specific kernel: a finite algebra whose levels, laws and symmetries are proved out, with typed execution and receipts sitting directly on it.":
     "المكوّنات ليست جديدة. المشغّلات المعلَنة، والحالة الصريحة، ومدقّقٌ يقبل مرشّحي مُقترِح — لكلٍّ منها أدبياتها. أمّا ما ندّعيه لأنفسنا فهو النواة بعينها: جبر منتهٍ بُرهنت مستوياته وقوانينه وتناظراته، ويقوم فوقه مباشرةً تنفيذ محدَّد الأنواع وإيصالات.",
   "The list is small and declared by hand. How far it can be widened before declaring it stops being practical is open work, not a solved problem.":

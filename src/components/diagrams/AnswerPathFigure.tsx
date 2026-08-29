@@ -15,7 +15,7 @@ const questions = [
   {
     question: "Has every possible case been checked?",
     model: "No, and the question is not well posed. The input space is open, so evaluation covers a sample.",
-    galo: "Yes for the declared universe. All 1,204 committed descriptors are enumerated on every build.",
+    galo: "Yes for the declared answer set. It is enumerated and digested before evaluation, and a truth outside it becomes a recorded boundary rather than a guess.",
   },
   {
     question: "Can somebody who distrusts you verify it?",

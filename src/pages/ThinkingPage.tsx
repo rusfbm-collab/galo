@@ -251,7 +251,7 @@ export function ThinkingPage() {
               <h3>{t("Why the universe is fixed in advance")}</h3>
               <p>
                 {t(
-                  "If the set of possible actions could grow during a run, no enumeration would ever be complete and no reviewer could check the whole of it. Fixing 1,204 descriptors at release time is what turns checking from sampling into exhaustion.",
+                  "If the set of possible answers could grow while a question was being evaluated, no enumeration would ever be complete and no reviewer could check the whole of it. Closing that set from the training data, and digesting it before the evaluated split is read, is what turns checking from sampling into exhaustion.",
                 )}
               </p>
             </article>
@@ -319,7 +319,7 @@ export function ThinkingPage() {
               </article>
             ))}
           </div>
-          <TermChips terms={["Carrier", "Pole", "Level", "Current V4 step-by-step replay"]} />
+          <TermChips terms={["Carrier", "Pole", "Level", "One evaluated row, step by step"]} />
         </div>
       </section>
 

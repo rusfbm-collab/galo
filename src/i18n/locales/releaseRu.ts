@@ -1,13 +1,8 @@
 import type { TranslationDictionary } from "../translations";
 
 export const releaseRu: TranslationDictionary = {
-  "1,204 descriptors / 880 executable": "1 204 дескриптора / 880 исполняемых",
   "140 ordered coordinates × two laws × two operand-role orientations; 556 are active across runtime L2–L7. These are not semantic concepts.":
     "140 упорядоченных координат × два закона × две ориентации ролей операндов; 556 координат активны в среде исполнения L2–L7. Это не семантические понятия.",
-  "4,802 internal work-unit IDs reconciled": "4 802 внутренних идентификатора единиц работы сведены",
-  "440-candidate frontier per source pattern": "440 кандидатов на срезе для каждого исходного шаблона",
-  "880 are executable in current V4; each of the two fixed source patterns exposes a 440-candidate frontier.":
-    "В текущей V4 исполняемыми являются 880 дескрипторов; каждому из двух фиксированных исходных шаблонов соответствует срез из 440 кандидатов.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "Бинарный одношаговый контур исполнения L2–L7 с двумя замкнутыми исходными шаблонами и четырьмя исполняемыми видами действий; L1 используется только для контроля.",
   "A closed deterministic selector. Nothing about it was learned.":
@@ -32,7 +27,6 @@ export const releaseRu: TranslationDictionary = {
   "CURRENT V4 SELECTOR": "ТЕКУЩИЙ СЕЛЕКТОР V4",
   "Closed two-pattern source ontology admitted": "Допущена замкнутая онтология источника из двух шаблонов",
   "Committed candidate descriptors": "Зафиксированные дескрипторы кандидатов",
-  "Committed descriptors": "Зафиксированные дескрипторы",
   "Compatibility and audit layer": "Слой совместимости и аудита",
   "Current V4 direct selfcheck": "Прямой selfcheck текущей V4",
   "Current V4 performs no policy update; historical research artifacts are a separate audit record.":
@@ -44,7 +38,6 @@ export const releaseRu: TranslationDictionary = {
   "Current V4 uses a deterministic selector for exactly two fixed source patterns.":
     "Текущая V4 использует детерминированный селектор ровно для двух фиксированных исходных шаблонов.",
   "Current trained World Atlas": "Текущий обученный World Atlas",
-  "Deterministic 440-candidate frontier selected": "Детерминированно выбран срез из 440 кандидатов",
   "Deterministic order": "Детерминированный порядок",
   "Deterministic selector": "Детерминированный селектор",
   "Deterministic selector for exactly two fixed source patterns":
@@ -120,10 +113,6 @@ export const releaseRu: TranslationDictionary = {
   "THREE EVIDENCE LAYERS": "ТРИ СЛОЯ ДОКАЗАТЕЛЬСТВ",
   "Terminal release status preserved with disclosed boundaries":
     "Терминальный статус выпуска сохранён с явно раскрытыми границами",
-  "The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.":
-    "Результат FULL 1 366/1 366 — это сохранённый протокол выпуска. Свежего воспроизведения за ним нет.",
-  "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.":
-    "Результат FULL 1 366/1 366 является сохранённым доказательством выпуска; свежий FULL в рамках этого анализа не запускался.",
   "The L1–L7 PLUS/STAR families, 560 oriented typed coordinates, transformations, symmetries, and cross-level homomorphisms.":
     "Семейства PLUS/STAR уровней L1–L7, 560 ориентированных типизированных координат, преобразования, симметрии и межуровневые гомоморфизмы.",
   "The bundled finite sample verifies against a release-pinned public key.":

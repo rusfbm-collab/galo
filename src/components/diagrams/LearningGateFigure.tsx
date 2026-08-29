@@ -15,7 +15,7 @@ const HEIGHT = 240;
 const openLabels = [
   "Arbitrary free-text semantic noninterference",
   "Partner-controlled operational validity",
-  "Trained World Atlas in the release",
+  "The full architecture in the measured path",
 ];
 
 const preconditions = openLabels.map((label, index) => {
@@ -35,21 +35,21 @@ export function LearningGateFigure() {
       <figcaption className="galo-figure__caption">
         <span className="galo-figure__eyebrow">{t("WHAT HAS TO CLOSE FIRST")}</span>
         <strong>
-          {t("Three open conditions stand between the shipped release and persistent learning inside it.")}
+          {t("Three open conditions stand between the published runs and a claim about anybody else's setting.")}
         </strong>
         <span className="galo-figure__note">
           {t(
-            "Every row comes from the published boundary register with the status it really has, and not one is closed today. That is why persistent policy learning inside this release is published as not started rather than as coming soon. It is a statement about the release: the sealed prototype line, which is a different artefact, learns already.",
+            "Every row comes from the published boundary register with the status it really has, and not one is closed today. The public artefact already learns — that is what the benchmark runs measure — so these are not gates on learning as such. They are what stands between those runs and a claim that the architecture works in somebody else's setting.",
           )}
         </span>
       </figcaption>
 
       <div className="galo-figure__canvas">
         <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} role="img" aria-labelledby={`${titleId} ${descriptionId}`}>
-          <title id={titleId}>{t("Three open preconditions leading to a closed gate")}</title>
+          <title id={titleId}>{t("Three open preconditions leading to a gate that is still closed")}</title>
           <desc id={descriptionId}>
             {t(
-              "Three stacked rows, each with a code, an open status, and a name. Arrows from all three converge on a gate marked closed, and beyond the gate is persistent policy learning inside this release, marked as not started.",
+              "Three stacked rows, each with a code, an open status, and a name. Arrows from all three converge on a gate marked closed, and beyond the gate is operational validity in a partner setting, marked as not proven.",
             )}
           </desc>
           <defs>
@@ -92,7 +92,7 @@ export function LearningGateFigure() {
               NOT
             </text>
             <text x="612" y="128" dominantBaseline="central" textAnchor="middle" direction="ltr">
-              STARTED
+              PROVEN
             </text>
           </g>
 

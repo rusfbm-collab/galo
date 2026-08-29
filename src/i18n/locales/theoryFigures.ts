@@ -4,8 +4,6 @@ export const theoryFiguresRu: TranslationDictionary = {
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one per level of the tower, and the bands widen because each level contributes four times the square of its size.":
     "Прямоугольная сетка из 560 квадратиков в 40 столбцов. Квадратики раскрашены семью полосами, по одной на каждый уровень башни; полосы к низу шире, потому что каждый уровень даёт вчетверо больше квадрата своего размера.",
   "Marks per level, from L1 to L7": "Меток на уровень, от L1 до L7",
-  "1,204 committed descriptors, 880 of them executable, 440 on the selected pattern frontier":
-    "1 204 объявленных дескриптора, из них 880 исполняемых, 440 на выбранной границе шаблона",
   "560 counted coordinates": "560 подсчитанных координат",
   "560 oriented typed transition coordinates, obtained by counting each level and adding":
     "560 ориентированных типизированных координат перехода, полученных сложением подсчётов по уровням",
@@ -193,8 +191,6 @@ export const theoryFiguresZh: TranslationDictionary = {
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one per level of the tower, and the bands widen because each level contributes four times the square of its size.":
     "一个由 560 个小方块排成 40 列的矩形网格。方块按七个色带着色，每个色带对应塔的一层；色带逐层变宽，因为每一层贡献的数目是其规模平方的四倍。",
   "Marks per level, from L1 to L7": "各层的方格数，从 L1 到 L7",
-  "1,204 committed descriptors, 880 of them executable, 440 on the selected pattern frontier":
-    "1,204 个已声明的描述符，其中 880 个可执行，440 个位于所选的模式前沿",
   "560 counted coordinates": "560 个经过清点的坐标",
   "560 oriented typed transition coordinates, obtained by counting each level and adding":
     "560 个有向的带类型转移坐标，由逐层清点后相加得出",
@@ -374,8 +370,6 @@ export const theoryFiguresAr: TranslationDictionary = {
   "A rectangular grid of 560 small squares arranged in 40 columns. The squares are shaded in seven bands, one per level of the tower, and the bands widen because each level contributes four times the square of its size.":
     "شبكة مستطيلة من 560 مربّعًا صغيرًا مرتَّبة في 40 عمودًا. المربّعات ملوَّنة في سبعة نطاقات، نطاقٌ لكل مستوى من البرج، وتتّسع النطاقات لأنّ كل مستوى يُسهم بأربعة أمثال مربّع حجمه.",
   "Marks per level, from L1 to L7": "عدد العلامات في كل مستوى، من L1 إلى L7",
-  "1,204 committed descriptors, 880 of them executable, 440 on the selected pattern frontier":
-    "‏1,204 واصفة معلَنة، منها 880 قابلة للتنفيذ و440 على حدّ النمط المختار",
   "560 counted coordinates": "560 إحداثية معدودة",
   "560 oriented typed transition coordinates, obtained by counting each level and adding":
     "560 إحداثية انتقال موجَّهة ومحددة النوع، نُتِجت بعدّ كل مستوى ثم الجمع",

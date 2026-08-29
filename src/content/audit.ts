@@ -40,7 +40,7 @@ export const verificationTiers: readonly VerificationTier[] = [
     label: "Recorded earlier, published with its scope",
     means:
       "A result produced at a stated time under stated conditions, republished without being re-run. It is evidence about that run and about nothing else.",
-    example: "The stored FULL receipt reporting 1,366 of 1,366 regression checks.",
+    example: "The cold rebuild that reconstructed all three prediction ledgers and matched them byte for byte.",
   },
   {
     code: "T4",
@@ -147,7 +147,7 @@ export const auditorQuestions: readonly AuditorQuestion[] = [
     number: "02",
     question: "Is the set of possible actions finite and fixed before the run?",
     answerToday:
-      "Yes. 1,204 committed descriptors, of which 880 are executable and 440 are exposed to any single accepted input pattern.",
+      "Yes, per run. The set of possible answers is closed from the training split before the test split is read, and it held 25, 55 and 122 outcomes on the three published runs.",
     howToCheck:
       "The counts are regenerated on the page from the release contract. Recompute them from the stated arithmetic and compare digit by digit.",
   },
@@ -221,7 +221,8 @@ export const reproductionSteps: readonly ReproductionStep[] = [
   {
     number: "03",
     action: "Reconstruct the selector arithmetic from the published increments.",
-    expected: "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.",
+    expected:
+      "You reach the same closed answer sets — 25, 55 and 122 outcomes — and the same digest for each, computed from the training split alone.",
   },
   {
     number: "04",

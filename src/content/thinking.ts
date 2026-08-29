@@ -314,22 +314,24 @@ export type WalkthroughRow = {
 };
 
 /**
- * The frozen kernel release, carried through with concrete values. This is one
- * bounded step, not the route above: the release performs no policy update at
- * all, and the counters that sit at zero are properties of that artefact.
+ * One evaluated row of a public run, carried through with concrete values. This
+ * is one bounded step, not the route above: the state was learned before the
+ * split that tests it was opened, and nothing in the run writes back to it. The
+ * counters that sit at zero are properties of that discipline, not evidence that
+ * the artefact learns nothing — it learns, and then it stops.
  */
 export const thinkingWalkthrough: readonly WalkthroughRow[] = [
   {
     step: "01",
     asks: "What came in?",
-    value: "alpha,beta",
-    note: "The input is held as an opaque value. Nothing is inferred from it before it is matched.",
+    value: "one held-out row",
+    note: "A row from the split that was sealed until now. Nothing about it may widen the set of answers it is allowed to reach.",
   },
   {
     step: "02",
-    asks: "Which declared pattern matched?",
-    value: "LEFT · even",
-    note: "The first of the two accepted patterns matched, which fixes both the operand role and the enumeration parity.",
+    asks: "What was already fixed?",
+    value: "answers · state · policy",
+    note: "The answer set, the learned state and the publishing policy were each frozen and digested from the training split. None of the three moves while this split is being read.",
   },
   {
     step: "03",
@@ -339,27 +341,27 @@ export const thinkingWalkthrough: readonly WalkthroughRow[] = [
   },
   {
     step: "04",
-    asks: "What exists at all?",
-    value: "1,204",
-    note: "The committed universe is entered in full. It was fixed by the release, not assembled during the run.",
+    asks: "What answers exist at all?",
+    value: "122",
+    note: "The closed answer set is entered in full. It was fixed from the training split before this row was read, not assembled during the run.",
   },
   {
     step: "05",
-    asks: "What is allowed to execute?",
-    value: "880",
-    note: "Only four action kinds are executable; every other descriptor stays inert by construction.",
+    asks: "In what order are they taken?",
+    value: "ranked, unpublished",
+    note: "Counting memory orders the whole set for this context. The ordering is recorded and never leaves the record on its own.",
   },
   {
     step: "06",
-    asks: "What is exposed to this pattern?",
-    value: "440",
-    note: "The matched pattern selects one parity half, so the other half is never even offered for ordering.",
+    asks: "May any of it be published?",
+    value: "right ∧ structure ∧ program",
+    note: "Three separate rights have to be bought. Any one missing and the row ends as a boundary with its cause named.",
   },
   {
     step: "07",
-    asks: "In what order are they taken?",
-    value: "SHA-256(observation, candidate_id, ordinal)",
-    note: "Every input to the order is recorded, so the same sequence can be recomputed by someone else.",
+    asks: "How many typed steps ran?",
+    value: "84",
+    note: "Three reading channels, seven levels, four families — and every one of them has to pass before anything is admitted.",
   },
   {
     step: "08",

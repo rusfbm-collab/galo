@@ -1,8 +1,18 @@
 import { ArrowLeft, ArrowRight, Check, FileCheck2, Fingerprint, Lock, ShieldAlert } from "lucide-react";
+import { BenchmarkOutcomeFigure } from "../components/diagrams/BenchmarkOutcomeFigure";
 import { ReceiptAnatomyFigure } from "../components/diagrams/ReceiptAnatomyFigure";
 import { TrackStatusFigure } from "../components/diagrams/TrackStatusFigure";
 import { PageShell } from "../components/layout/PageShell";
 import { releaseEvidence } from "../content/evidence";
+import {
+  benchmarkBody,
+  benchmarkBoundary,
+  benchmarkHeadline,
+  publicRunLimits,
+  replayNote,
+  replayProperties,
+  supersededSelector,
+} from "../content/publicRun";
 import {
   learningBoundaries,
   learningContract,
@@ -32,9 +42,7 @@ export function EvidencePage() {
           </p>
           <div className="release-status">
             <FileCheck2 size={19} aria-hidden="true" />
-            <span>
-              {t("CURRENT RELEASE STATUS")} · {releaseEvidence.release}
-            </span>
+            <span>{t("CURRENT RELEASE STATUS")}</span>
             <strong dir="ltr">{releaseEvidence.status}</strong>
           </div>
         </div>
@@ -87,7 +95,11 @@ export function EvidencePage() {
             <article>
               <span>{t("Fresh FULL")}</span>
               <strong>{releaseEvidence.freshReplay.full}</strong>
-              <p>{t("The 1,366/1,366 FULL result is a stored release receipt. No fresh replay stands behind it.")}</p>
+              <p>
+                {t(
+                  "A full regression sweep is stored release evidence rather than a fresh result, and nothing on this page is claimed from one.",
+                )}
+              </p>
             </article>
           </div>
         </div>
@@ -134,9 +146,9 @@ export function EvidencePage() {
           </div>
           <div className="selector-contract-grid">
             <article>
-              <span>{t("Source ontology")}</span>
-              <code dir="ltr">alpha,beta → LEFT/even</code>
-              <code dir="ltr">gamma,delta → RIGHT/odd</code>
+              <span>{t("Input contract")}</span>
+              <code dir="ltr">relation pair → label</code>
+              <code dir="ltr">word form → edit action</code>
             </article>
             <article>
               <span>{t("Executable kinds")}</span>
@@ -144,7 +156,7 @@ export function EvidencePage() {
             </article>
             <article>
               <span>{t("Atlas influence")}</span>
-              <code dir="ltr">semantic reads=0 · rank effects=0 · learning writes=0</code>
+              <code dir="ltr">semantic reads=0 · rank effects=0 · test split writes=0</code>
             </article>
           </div>
         </div>
@@ -197,6 +209,48 @@ export function EvidencePage() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section id="public-runs" className="section section--white math-anchor-section">
+        <div className="shell">
+          <div className="section-heading">
+            <div>
+              <p className="eyebrow">{t("WHAT THE PUBLIC ARTEFACT DOES")}</p>
+              <h2>{t(benchmarkHeadline)}</h2>
+              <p className="section-heading__text">{t(benchmarkBody)}</p>
+            </div>
+          </div>
+
+          <BenchmarkOutcomeFigure />
+
+          <div className="replay-props">
+            {replayProperties.map((row) => (
+              <article key={row.label}>
+                <strong dir="ltr">{row.value}</strong>
+                <h3>{t(row.label)}</h3>
+                <p>{t(row.detail)}</p>
+              </article>
+            ))}
+          </div>
+          <p className="replay-props__note">{t(replayNote)}</p>
+
+          <div className="public-run-limits">
+            <strong>{t("What none of it establishes")}</strong>
+            <ul>
+              {publicRunLimits.map((line) => (
+                <li key={line}>{t(line)}</li>
+              ))}
+            </ul>
+            <p className="public-run-limits__boundary">
+              <ShieldAlert size={16} aria-hidden="true" /> {t(benchmarkBoundary)}
+            </p>
+          </div>
+
+          <details className="superseded">
+            <summary>{t(supersededSelector.label)}</summary>
+            <p>{t(supersededSelector.note)}</p>
+          </details>
         </div>
       </section>
 
@@ -340,7 +394,7 @@ export function EvidencePage() {
             <h3>{t("Replay status")}</h3>
             <p>
               {t(
-                "Fresh STATIC and FAST verification passed in the current review session. The stored release receipt records 1,366/1,366 checks across 131 modules. Fresh FULL was not run, so nothing on this page is claimed from a fresh FULL.",
+                "Fresh STATIC and FAST verification passed in the current review session, and a cold rebuild reconstructed all three learned states and prediction ledgers and matched them byte for byte. A fresh full regression sweep was not run, so nothing on this page is claimed from one.",
               )}
             </p>
           </article>

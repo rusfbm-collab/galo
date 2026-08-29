@@ -10,8 +10,6 @@ export const audienceRu: TranslationDictionary = {
   "A diligence path you can run yourself": "Путь проверки, который вы можете пройти сами",
   "A finite algebra, a compatibility record kept for comparison, and one narrow execution slice built on the algebra. Three objects, deliberately not merged.":
     "Конечная алгебра, запись совместимости, которую держат для сравнения, и один узкий срез исполнения, построенный на алгебре. Три объекта, намеренно не слитые в один.",
-  "A finite universe of 1,204 entries can be enumerated. A universe several orders larger may not be, and the guarantee is only as good as the enumeration.":
-    "Конечную вселенную из 1 204 записей можно перечислить. Вселенную на несколько порядков больше — возможно, уже нет, а гарантия ровно настолько же хороша, насколько полно перечисление.",
   "A generated table, a source file, a stored receipt, or a fingerprinted archive. If no object can be named, the claim goes into the not-proven column instead.":
     "Сгенерированная таблица, файл исходного кода, сохранённый протокол исполнения или архив с отпечатком. Если назвать объект нельзя, утверждение уходит в столбец «не доказано».",
   "A horizontal line with six numbered stops. The first five are marked with short time boxes of thirty minutes to one day; the sixth is marked one week and is drawn as the point where a decision is required.":
@@ -356,8 +354,6 @@ export const audienceRu: TranslationDictionary = {
     "Короткие ответы — в том числе те, где ответ просто «нет».",
   "The state, the permitted set, the ordering input, and the executed action are all in one record. Answering the question is reading a document, not running an investigation.":
     "Где программа стояла, что ей было разрешено, как выбирала и что в итоге сделала — всё в одной записи. Чтобы ответить на вопрос, достаточно её прочитать; расследование не понадобится.",
-  "The stored FULL receipt reporting 1,366 of 1,366 regression checks.":
-    "Сохранённый протокол FULL: 1 366 проверок из 1 366.",
   "The system that actually moves money, machinery, or a case file":
     "То, что реально двигает деньги, технику или дело человека",
   "The tier is not a measure of importance. It answers one question: how many people, with what access, could establish this without trusting the project? A claim in the last tier is not weaker — it is outside what this site can settle.":
@@ -451,8 +447,6 @@ export const audienceRu: TranslationDictionary = {
     "Написали сами — и в том виде, в каком хотели бы прочитать их на вашем месте.",
   "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning.":
     "Да, и оно намеренно узкое: два принимаемых входных шаблона, один ограниченный шаг за запуск, четыре исполнимых вида действий и никакого обучения.",
-  "Yes. 1,204 committed descriptors, of which 880 are executable and 440 are exposed to any single accepted input pattern.":
-    "Да. 1 204 зафиксированных дескриптора, из которых 880 исполнимы, а 440 открыты для любого одного принимаемого входного шаблона.",
   "You are deciding whether to spend an hour on this": "Вы решаете, стоит ли тратить на это час",
   "You cannot establish a fresh full replay on the runtime that was unavailable; that is published as blocked, not as a pass.":
     "Свежий полный повтор в среде, которой не было под рукой, вы не установите. Он и опубликован как заблокированный — не как пройденный.",
@@ -465,8 +459,6 @@ export const audienceRu: TranslationDictionary = {
   "You cannot establish operating-system level isolation of the executing process; that is published as not proven.":
     "Вы не можете установить изоляцию исполняющегося процесса на уровне операционной системы; это опубликовано как недоказанное.",
   "You have to verify a claim, not enjoy it": "Вам нужно проверить утверждение, а не полюбоваться им",
-  "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.":
-    "Вы получаете 1 204 зафиксированных, 880 исполнимых и фронт из 440 кандидатов для одного принимаемого шаблона.",
   "You reach 560 across L1–L7, of which 556 are active in the runtime range.":
     "Вы получаете 560 по L1–L7, из которых 556 активны в диапазоне среды исполнения.",
   "You want the mechanism and then the proofs": "Вам нужен механизм, а затем доказательства",
@@ -515,8 +507,6 @@ export const audienceZh: TranslationDictionary = {
   "A diligence path you can run yourself": "一条你可以自己走完的尽调路径",
   "A finite algebra, a compatibility record kept for comparison, and one narrow execution slice built on the algebra. Three objects, deliberately not merged.":
     "一个有限代数、一份为比较而保留的兼容性记录，以及建立在该代数之上的一个狭窄执行切片。三个对象，刻意不合并。",
-  "A finite universe of 1,204 entries can be enumerated. A universe several orders larger may not be, and the guarantee is only as good as the enumeration.":
-    "1,204 条记录构成的有限宇宙可以被枚举。大上几个数量级的宇宙也许就不行了，而保证的强度不会超过枚举的完整度。",
   "A generated table, a source file, a stored receipt, or a fingerprinted archive. If no object can be named, the claim goes into the not-proven column instead.":
     "一张生成出来的表、一个源码文件、一份存下来的回执，或一个带指纹的归档。如果说不出具体是哪个对象，这条主张就进“未证明”那一栏。",
   "A horizontal line with six numbered stops. The first five are marked with short time boxes of thirty minutes to one day; the sixth is marked one week and is drawn as the point where a decision is required.":
@@ -844,8 +834,6 @@ export const audienceZh: TranslationDictionary = {
   "The short answers, including the ones that are simply no.": "简短的回答，包括那些干脆就是“没有”的。",
   "The state, the permitted set, the ordering input, and the executed action are all in one record. Answering the question is reading a document, not running an investigation.":
     "状态、被允许的集合、排序的输入，以及被执行的动作，全在一份记录里。回答问题就是读一份文件，而不是搞一场调查。",
-  "The stored FULL receipt reporting 1,366 of 1,366 regression checks.":
-    "那份存档的 FULL 回执，报告 1,366 项回归检查中通过 1,366 项。",
   "The system that actually moves money, machinery, or a case file": "真正会动钱、动机器或动一份案卷的那套系统",
   "The tier is not a measure of importance. It answers one question: how many people, with what access, could establish this without trusting the project? A claim in the last tier is not weaker — it is outside what this site can settle.":
     "等级不是重要性的度量。它只回答一个问题：有多少人、拥有什么权限，能够在不信任本项目的前提下把它确立下来？落在最后一级的主张并不更弱——它只是超出了本站能了结的范围。",
@@ -935,8 +923,6 @@ export const audienceZh: TranslationDictionary = {
     "由我们自己写的，而且是按我们自己作为读者时希望看到的形式写的。",
   "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning.":
     "有，而且是刻意做窄的：两个被接受的输入模式、每次运行一个受限步骤、四种可执行的动作类型，以及完全没有学习。",
-  "Yes. 1,204 committed descriptors, of which 880 are executable and 440 are exposed to any single accepted input pattern.":
-    "是的。1,204 个已承诺的描述符，其中 880 个可执行，而对任意一个被接受的输入模式开放的是 440 个。",
   "You are deciding whether to spend an hour on this": "你在决定要不要为这件事花一个小时",
   "You cannot establish a fresh full replay on the runtime that was unavailable; that is published as blocked, not as a pass.":
     "你无法确立在那台无法使用的运行时上做过全新的完整重放；那是以“被阻塞”而不是“通过”的形式公开的。",
@@ -949,8 +935,6 @@ export const audienceZh: TranslationDictionary = {
   "You cannot establish operating-system level isolation of the executing process; that is published as not proven.":
     "你无法确立执行进程在操作系统层面的隔离；那是以“未证明”的形式公开的。",
   "You have to verify a claim, not enjoy it": "你要做的是核实一条主张，而不是欣赏它",
-  "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.":
-    "你会得到：已承诺 1,204、可执行 880，以及对应一个被接受模式的 440 个候选前沿。",
   "You reach 560 across L1–L7, of which 556 are active in the runtime range.":
     "你会在 L1–L7 上得到 560，其中 556 个在运行时范围内是活跃的。",
   "You want the mechanism and then the proofs": "你想要的是先看机制，再看证明",
@@ -999,8 +983,6 @@ export const audienceAr: TranslationDictionary = {
   "A diligence path you can run yourself": "مسار عناية واجبة يمكنك سلوكه بنفسك",
   "A finite algebra, a compatibility record kept for comparison, and one narrow execution slice built on the algebra. Three objects, deliberately not merged.":
     "جبر منتهٍ، وسجل توافق يُحتفظ به للمقارنة، وشريحة تنفيذ ضيقة واحدة مبنية على الجبر. ثلاثة كائنات، غير مدموجة عن قصد.",
-  "A finite universe of 1,204 entries can be enumerated. A universe several orders larger may not be, and the guarantee is only as good as the enumeration.":
-    "كون منتهٍ من 1,204 مدخلًا يمكن تعداده. أما كون أكبر بمراتب فقد لا يمكن، والضمان لا يزيد جودةً عن اكتمال التعداد.",
   "A generated table, a source file, a stored receipt, or a fingerprinted archive. If no object can be named, the claim goes into the not-proven column instead.":
     "جدول مولَّد، أو ملف مصدري، أو إيصال مخزَّن، أو أرشيف ببصمة. وإن تعذّر تسمية كائن، ينتقل الادعاء إلى عمود غير المُثبت.",
   "A horizontal line with six numbered stops. The first five are marked with short time boxes of thirty minutes to one day; the sixth is marked one week and is drawn as the point where a decision is required.":
@@ -1327,8 +1309,6 @@ export const audienceAr: TranslationDictionary = {
   "The short answers, including the ones that are simply no.": "إجابات قصيرة، بما فيها ما جوابه ببساطة: لا.",
   "The state, the permitted set, the ordering input, and the executed action are all in one record. Answering the question is reading a document, not running an investigation.":
     "الحالة والمجموعة المسموح بها ومدخل الترتيب والفعل المنفَّذ كلها في سجل واحد. والإجابة عن السؤال قراءة وثيقة لا إجراء تحقيق.",
-  "The stored FULL receipt reporting 1,366 of 1,366 regression checks.":
-    "إيصال FULL المخزَّن الذي يفيد بـ1,366 من 1,366 فحص انحدار.",
   "The system that actually moves money, machinery, or a case file":
     "النظام الذي يحرّك فعلًا المال أو الآلات أو ملف قضية",
   "The tier is not a measure of importance. It answers one question: how many people, with what access, could establish this without trusting the project? A claim in the last tier is not weaker — it is outside what this site can settle.":
@@ -1420,8 +1400,6 @@ export const audienceAr: TranslationDictionary = {
     "كتبناها نحن، وبالصيغة التي كنا نودّ أن تُكتب بها لو كنا نحن القارئ.",
   "Yes, and it is narrow on purpose: two accepted input patterns, one bounded step per run, four executable action kinds, and no learning.":
     "نعم، وهو ضيّق عن قصد: نمطا مدخلات مقبولان، وخطوة مقيَّدة واحدة لكل تشغيل، وأربعة أنواع أفعال قابلة للتنفيذ، وبلا تعلّم.",
-  "Yes. 1,204 committed descriptors, of which 880 are executable and 440 are exposed to any single accepted input pattern.":
-    "نعم. 1,204 واصفًا مُثبَّتًا، منها 880 قابلة للتنفيذ و440 مكشوفة لأي نمط مدخلات مقبول واحد.",
   "You are deciding whether to spend an hour on this": "أنت تقرر إن كنت ستنفق ساعة على هذا",
   "You cannot establish a fresh full replay on the runtime that was unavailable; that is published as blocked, not as a pass.":
     "لا يمكنك إثبات إعادة تشغيل كاملة جديدة على البيئة التي لم تكن متاحة؛ فذلك منشور بوصفه محجوبًا لا ناجحًا.",
@@ -1434,8 +1412,6 @@ export const audienceAr: TranslationDictionary = {
   "You cannot establish operating-system level isolation of the executing process; that is published as not proven.":
     "لا يمكنك إثبات عزل العملية المنفِّذة على مستوى نظام التشغيل؛ فذلك منشور بوصفه غير مُثبت.",
   "You have to verify a claim, not enjoy it": "عليك التحقق من ادعاء لا الاستمتاع به",
-  "You reach 1,204 committed, 880 executable, and a 440-candidate frontier for one accepted pattern.":
-    "تصل إلى 1,204 واصفًا مُثبَّتًا، و880 قابلة للتنفيذ، وجبهة من 440 مرشحًا لنمط مقبول واحد.",
   "You reach 560 across L1–L7, of which 556 are active in the runtime range.":
     "تصل إلى 560 عبر L1–L7، منها 556 نشطة في نطاق التشغيل.",
   "You want the mechanism and then the proofs": "تريد الآلية ثم البراهين",

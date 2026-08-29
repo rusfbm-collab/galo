@@ -88,7 +88,8 @@ export const publicClaims: PublicClaim[] = [
   },
   {
     id: "C11_DETERMINISTIC_TWO_PATTERN_SELECTOR",
-    publicCopy: "Current V4 uses a deterministic selector for exactly two fixed source patterns.",
+    publicCopy:
+      "The engine ranks a set of possible answers closed from the training data, and publishes only what buys the right to be published.",
     status: "bounded",
     source: "Current V4 direct selfcheck",
   },
@@ -100,7 +101,8 @@ export const publicClaims: PublicClaim[] = [
   },
   {
     id: "C13_STORED_FULL_NOT_FRESH",
-    publicCopy: "The 1,366/1,366 FULL result is stored release evidence; fresh FULL was not run in this review.",
+    publicCopy:
+      "Three cold rebuilds reproduced their ledgers byte for byte; no fresh full regression sweep was run in this review.",
     status: "bounded",
     source: "Stored FULL terminal receipt and fresh replay log",
   },

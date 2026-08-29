@@ -1,8 +1,6 @@
 import type { TranslationDictionary } from "../translations";
 
 export const comparisonRu: TranslationDictionary = {
-  "1,204 declared candidates, of which 880 are executable. Enumerating the whole space is an ordinary operation that runs on every build.":
-    "1 204 объявленных кандидата, из них 880 исполнимых. Перечислить всё пространство — обычная операция, которая выполняется при каждой сборке.",
   "A PASS is meaningful only together with its scope. Quoting the status without the scope is the single most common way to overstate what a record shows.":
     "PASS осмыслен только вместе со своей областью действия. Процитировать статус без области — самый частый способ преувеличить то, что показывает запись.",
   "A coarser level does not lie. It stops being able to tell two cases apart.":
@@ -299,8 +297,6 @@ export const comparisonRu: TranslationDictionary = {
   "Will the same input give the same output tomorrow?": "Даст ли тот же вход тот же выход завтра?",
   "Yes by construction. The step is a table lookup and the candidate ordering is hash-derived.":
     "Да, по построению. Шаг — это просмотр таблицы, а порядок кандидатов выводится из хеша.",
-  "Yes for the declared universe. All 1,204 committed descriptors are enumerated on every build.":
-    "Да, для объявленного универсума. Все 1 204 зафиксированных дескриптора перечисляются при каждой сборке.",
   "Yes, from the record alone, on a different machine, cell by cell.":
     "Да, по одной только записи, на другой машине, ячейка за ячейкой.",
   "Yes. This is the thing it is genuinely extraordinary at.": "Да. Именно в этом она по-настоящему выдающаяся.",
@@ -347,8 +343,6 @@ export const comparisonRu: TranslationDictionary = {
 };
 
 export const comparisonZh: TranslationDictionary = {
-  "1,204 declared candidates, of which 880 are executable. Enumerating the whole space is an ordinary operation that runs on every build.":
-    "1,204 个已声明的候选项，其中 880 个可执行。枚举整个空间是一项寻常操作，每次构建都会跑一遍。",
   "A PASS is meaningful only together with its scope. Quoting the status without the scope is the single most common way to overstate what a record shows.":
     "PASS 只有连同它的适用范围一起才有意义。只引用状态而不引用范围，是夸大一条记录含义的最常见方式。",
   "A coarser level does not lie. It stops being able to tell two cases apart.":
@@ -637,8 +631,6 @@ export const comparisonZh: TranslationDictionary = {
   "Will the same input give the same output tomorrow?": "同样的输入，明天还会给出同样的输出吗？",
   "Yes by construction. The step is a table lookup and the candidate ordering is hash-derived.":
     "是，按构造如此。这一步是一次查表，而候选项的排序由哈希导出。",
-  "Yes for the declared universe. All 1,204 committed descriptors are enumerated on every build.":
-    "对已声明的全集而言是的。全部 1,204 个已提交描述符在每次构建时都会被枚举一遍。",
   "Yes, from the record alone, on a different machine, cell by cell.": "可以，仅凭那条记录，在另一台机器上，逐格比对。",
   "Yes. This is the thing it is genuinely extraordinary at.": "能。这正是它真正卓越之处。",
   "a distribution, not a choice": "一个分布，而不是一个选择",
@@ -684,8 +676,6 @@ export const comparisonZh: TranslationDictionary = {
 };
 
 export const comparisonAr: TranslationDictionary = {
-  "1,204 declared candidates, of which 880 are executable. Enumerating the whole space is an ordinary operation that runs on every build.":
-    "1,204 مرشحًا معلَنًا، منها 880 قابلة للتنفيذ. وتعداد الفضاء كله عملية اعتيادية تجري مع كل بناء.",
   "A PASS is meaningful only together with its scope. Quoting the status without the scope is the single most common way to overstate what a record shows.":
     "لا معنى لـ PASS إلا مع نطاقه. واقتباس الحالة دون النطاق هو الطريقة الأكثر شيوعًا للمبالغة فيما يظهره السجل.",
   "A coarser level does not lie. It stops being able to tell two cases apart.":
@@ -979,8 +969,6 @@ export const comparisonAr: TranslationDictionary = {
   "Will the same input give the same output tomorrow?": "هل يعطي المدخل نفسه المخرَج نفسه غدًا؟",
   "Yes by construction. The step is a table lookup and the candidate ordering is hash-derived.":
     "نعم بحكم البناء. فالخطوة بحث في جدول، وترتيب المرشحين مشتق من دالة تجزئة.",
-  "Yes for the declared universe. All 1,204 committed descriptors are enumerated on every build.":
-    "نعم بالنسبة إلى الكون المعلَن. فالواصفات الملتزَمة البالغة 1,204 تُعدَّد كلها مع كل بناء.",
   "Yes, from the record alone, on a different machine, cell by cell.": "نعم، من السجل وحده، على آلة أخرى، خلية بخلية.",
   "Yes. This is the thing it is genuinely extraordinary at.": "نعم. وهذا بالضبط ما يبرع فيه حقًا.",
   "a distribution, not a choice": "توزيع لا اختيار",

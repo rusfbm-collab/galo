@@ -36,7 +36,7 @@ export const comparisonRows: readonly ComparisonRow[] = [
     dimension: "Size of the space",
     model:
       "Astronomically large and open-ended. Enumerating it is not merely expensive, it is not a meaningful operation.",
-    galo: "1,204 declared candidates, of which 880 are executable. Enumerating the whole space is an ordinary operation that runs on every build.",
+    galo: "A closed set of possible answers, built from the training data and digested before anything is evaluated — 25, 55 and 122 outcomes on the three published runs. Enumerating the whole space is an ordinary operation.",
   },
   {
     dimension: "How you check it",
@@ -53,7 +53,7 @@ export const comparisonRows: readonly ComparisonRow[] = [
     dimension: "What it accepts",
     model:
       "Arbitrary natural language, images, and code. This is the enormous practical advantage of a language model.",
-    galo: "Two fixed source patterns in the current engine. Widening this contract is named open work, not a solved problem.",
+    galo: "Tens to low hundreds of possible answers, declared from the training data. Widening that contract is named open work, not a solved problem.",
   },
   {
     dimension: "What it produces",

@@ -1,60 +1,82 @@
 {
-  "title": "Recorded R5B6A1_3 bounded-execution receipt",
-  "disclaimer": "Sanitized current-V4 receipt replay — deterministic, limited to two fixed source patterns, and not a live model or external benchmark.",
+  "title": "One evaluated row, replayed step by step",
+  "disclaimer": "A sanitized walk through one evaluated row of a public run \u2014 deterministic, client-side, and neither a live model nor an external benchmark.",
   "isLive": false,
   "externalBenchmark": false,
-  "observationConditioned": "TWO_FIXED_PATTERNS_ONLY",
+  "observationConditioned": "PUBLIC_CORPORA_ONLY",
   "steps": [
     {
       "id": "source",
       "index": "01",
-      "label": "Bundled sample verified against the pinned release key",
+      "label": "Training split read, test split still sealed",
       "status": "PASS",
-      "receipt": "6d27944f0f5860ae872a799b544207c63f462c3e830b720370436a0706b57250",
-      "payload": { "freshAuthorityCount": 2, "freshStoreCount": 2, "externalOriginProven": false }
-    },
-    {
-      "id": "ontology",
-      "index": "02",
-      "label": "Closed two-pattern source ontology admitted",
-      "status": "PASS",
-      "receipt": "17cd256919abb03b5b38b9149ade200514deaad8eb1f3cb85569e06d6d7a8d60",
-      "payload": { "patterns": ["alpha,beta", "gamma,delta"], "arbitraryFreeText": false }
-    },
-    {
-      "id": "selector",
-      "index": "03",
-      "label": "Deterministic 440-candidate frontier selected",
-      "status": "PASS",
-      "receipt": "963b78a0413adca0631f02ae7596001d51e91ff1faffe3196ea79b47c326e827",
-      "payload": { "candidateUniverse": 1204, "executable": 880, "frontier": 440, "atlasRankEffects": 0 }
-    },
-    {
-      "id": "episode",
-      "index": "04",
-      "label": "Integrated one-step source-to-action episode executed",
-      "status": "PASS",
-      "receipt": "7868b3b6f5c2c3c62e5e1a89c57afc7b68b7911c4f7b5863ddfca7a502c57b22",
-      "payload": { "scope": "binary / one-step / L2-L7", "l1": "control-only", "multiStep": false }
-    },
-    {
-      "id": "ledger",
-      "index": "05",
-      "label": "Receipt-derived phase work ledger reconciled",
-      "status": "PASS",
-      "receipt": "8f9a85c151eca72dedc0f6b30c7b5ea09a1beeea228a1913b01a61c5114258ed",
-      "payload": { "physicalWorkUnits": 4802, "outcomeEvaluation": 0, "policyUpdate": 0 }
-    },
-    {
-      "id": "terminal",
-      "index": "06",
-      "label": "Terminal release status preserved with disclosed boundaries",
-      "status": "BOUNDARY",
-      "receipt": "5046b87d78373c6f9b3f707923f3b00fc9c2f013ae23c3e4d41313413f47d456",
+      "digest": "cc7cdd539ee8779e17cd80efa0e918f325fecc9e4f5134f86cfa5ffc766dc36a",
       "payload": {
-        "freshStatic": "PASS",
-        "freshFast": "PASS",
-        "freshFull": "NOT_COMPLETED",
+        "corpus": "English morphology",
+        "trainRows": 10000,
+        "testRows": 1000,
+        "testSplitOpened": false
+      }
+    },
+    {
+      "id": "answers",
+      "index": "02",
+      "label": "Answer set closed from the training split alone",
+      "status": "PASS",
+      "digest": "bd0d22aa904722cef902dde27d7557b550495be00ee6c9b22c5524a23b41d818",
+      "payload": {
+        "candidates": 122,
+        "builtFrom": "training split only",
+        "digestedBeforeTestRead": true
+      }
+    },
+    {
+      "id": "state",
+      "index": "03",
+      "label": "Learned state frozen, then digested",
+      "status": "PASS",
+      "digest": "31a9a9b87f74198d7048ec9d4661bba7846b39cc9ad5c2019fd96e28ce66ab9d",
+      "payload": {
+        "learnedWeights": 0,
+        "stateFrozen": true,
+        "policyFitOn": "held-out slice of the training split"
+      }
+    },
+    {
+      "id": "ranking",
+      "index": "04",
+      "label": "The whole answer set ranked for this row",
+      "status": "PASS",
+      "digest": "e5a99b69371d06de0da618d40cf40ab770051bd31c3f343f9b7433b8e313ef95",
+      "payload": {
+        "ranked": 122,
+        "publishedFromRankingAlone": 0
+      }
+    },
+    {
+      "id": "rights",
+      "index": "05",
+      "label": "Three rights bought, or the row is refused",
+      "status": "PASS",
+      "digest": "8152648059c2dbb04a410777605be62fb9720f8ae567b199dc68c4ba15422670",
+      "payload": {
+        "rightToAnswer": true,
+        "structureBehindProposal": true,
+        "typedProgramRan": true,
+        "refusedInThisRun": 4
+      }
+    },
+    {
+      "id": "receipt",
+      "index": "06",
+      "label": "One receipt written, answered or refused",
+      "status": "BOUNDARY",
+      "digest": "046530fa6f1c4f7346c36c0e2b49c9e44ea9386fc6309de618f4b1e08b483e74",
+      "payload": {
+        "receipts": 2275,
+        "answered": 1953,
+        "refused": 322,
+        "partnerEvaluator": "NOT_PROVEN",
         "externalGain": "NOT_PROVEN"
       }
     }

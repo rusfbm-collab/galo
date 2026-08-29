@@ -62,14 +62,17 @@ describe("investor entry point", () => {
     expect(zeroResults!.note).toMatch(/no operational gain has been measured anywhere/i);
   });
 
-  it("never lets one 'no learning' number stand for both the release and the prototype", () => {
-    const learning = oneMinuteFacts.find((fact) => fact.label.includes("learning writes"))!;
-    expect(learning.value).toBe("0");
-    expect(learning.label).toMatch(/released kernel/i);
-    expect(learning.note).toMatch(/separate engine and atlas prototype does learn/i);
+  it("never lets an accuracy stand without the share of questions it answered", () => {
+    // A system allowed to refuse can raise its score by answering less, so the
+    // refusals are a headline fact rather than a footnote.
+    const refused = oneMinuteFacts.find((fact) => fact.label.includes("declined to answer"))!;
+    expect(refused.value).toBe("322");
+    expect(refused.note).toMatch(/on one corpus every single row/i);
+    expect(refused.note).toMatch(/answering less/i);
 
     const running = stageFacts.find((fact) => fact.question === "Is there something running?")!;
-    expect(running.answer).toMatch(/no learning in the released kernel/i);
+    expect(running.answer).toMatch(/refusal on every row that did not earn all three rights/i);
+    expect(running.answer).toMatch(/never run on anybody else's data/i);
 
     // "Nothing has been measured" stopped being true when the benchmark line was
     // published, so this answer may not be a flat no — but the alternative it is
@@ -168,9 +171,8 @@ describe("audit entry point", () => {
     expect(reproductionSteps).toHaveLength(5);
     const expected = reproductionSteps.map((step) => step.expected).join(" ");
     expect(expected).toContain("560");
-    expect(expected).toContain("1,204");
-    expect(expected).toContain("880");
-    expect(expected).toContain("440");
+    expect(expected).toContain("560");
+    expect(expected).toContain("25, 55 and 122");
   });
 
   it("publishes five limits, all of them phrased as things the reader cannot establish", () => {
@@ -351,9 +353,9 @@ describe("academic register", () => {
     expect(coined).toEqual([
       "Active pole",
       "Boundary",
-      "Current V4 step-by-step replay",
       "Formal, current, and target layers",
       "Level",
+      "One evaluated row, step by step",
       "PLUS",
       "Pole",
       "Receipt",

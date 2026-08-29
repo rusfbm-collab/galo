@@ -55,10 +55,6 @@ export const visualsRu: TranslationDictionary = {
   "FOUR TRACKS OF WORK": "ЧЕТЫРЕ НАПРАВЛЕНИЯ РАБОТЫ",
   "FOUR TRACKS, FOUR DIFFERENT STAGES": "ЧЕТЫРЕ НАПРАВЛЕНИЯ — ЧЕТЫРЕ РАЗНЫЕ СТАДИИ",
   "Finished and re-derived on every build": "Завершено и заново выводится при каждой сборке",
-  "Five stacked bars of decreasing width labelled 1,204 committed descriptors, 880 executable descriptors, 440 candidates on one pattern frontier, one bound handle, and one recorded receipt.":
-    "Пять расположенных друг под другом полос убывающей ширины: 1 204 зафиксированных дескриптора, 880 исполнимых дескрипторов, 440 кандидатов на фронтире одного шаблона, один связанный handle и один записанный протокол.",
-  "From 1,204 declared candidates down to one recorded action.":
-    "От 1 204 объявленных кандидатов до одного записанного действия.",
   "HOW THE CURRENT ENGINE NARROWS ITS CHOICES": "КАК ТЕКУЩИЙ ДВИЖОК СУЖАЕТ ВЫБОР",
   "How older material is handled": "Как мы обращаемся с прежними материалами",
   "Identity leaves fixed": "Тождественное отображение оставляет неподвижными",
@@ -139,7 +135,6 @@ export const visualsRu: TranslationDictionary = {
     "Две фазы несут почти всю работу, а две фазы равны ровно нулю.",
   "Typed coordinates contributed by each level": "Типизированные координаты, которые даёт каждый уровень",
   "WHERE 560 COMES FROM, LEVEL BY LEVEL": "ОТКУДА БЕРЁТСЯ 560 — УРОВЕНЬ ЗА УРОВНЕМ",
-  "WHERE THE 4,802 COUNTED WORK UNITS COME FROM": "ОТКУДА БЕРУТСЯ 4 802 УЧТЁННЫЕ ЕДИНИЦЫ РАБОТЫ",
   "WHICH LEVELS CAN CARRY INFORMATION INTO WHICH": "КАКИЕ УРОВНИ МОГУТ ПЕРЕНОСИТЬ ИНФОРМАЦИЮ В КАКИЕ",
   "What already works, and what is being built next.": "Что уже работает и что строится дальше.",
   "What the current numbers actually measure.": "Что на самом деле измеряют эти числа.",
@@ -236,9 +231,6 @@ export const visualsZh: TranslationDictionary = {
   "FOUR TRACKS OF WORK": "四条工作线",
   "FOUR TRACKS, FOUR DIFFERENT STAGES": "四条工作线，四个不同阶段",
   "Finished and re-derived on every build": "已完成，并在每次构建时重新推导",
-  "Five stacked bars of decreasing width labelled 1,204 committed descriptors, 880 executable descriptors, 440 candidates on one pattern frontier, one bound handle, and one recorded receipt.":
-    "五条自上而下依次变窄的横条，分别标注为 1,204 个已提交描述符、880 个可执行描述符、单一模式前沿上的 440 个候选项、一个已绑定句柄，以及一条已记录的回执。",
-  "From 1,204 declared candidates down to one recorded action.": "从 1,204 个已声明的候选项收窄到一次被记录的动作。",
   "HOW THE CURRENT ENGINE NARROWS ITS CHOICES": "当前引擎如何收窄自己的选择",
   "How older material is handled": "较早的材料如何处理",
   "Identity leaves fixed": "恒等变换保持不动的位置数",
@@ -319,7 +311,6 @@ export const visualsZh: TranslationDictionary = {
     "两个阶段承担了几乎全部工作，另有两个阶段恰好为零。",
   "Typed coordinates contributed by each level": "各层级贡献的类型化坐标数",
   "WHERE 560 COMES FROM, LEVEL BY LEVEL": "560 从何而来：逐层拆解",
-  "WHERE THE 4,802 COUNTED WORK UNITS COME FROM": "4,802 个已计工作单元从何而来",
   "WHICH LEVELS CAN CARRY INFORMATION INTO WHICH": "哪些层级可以把信息带入哪些层级",
   "What already works, and what is being built next.": "已经能用的部分，以及接下来正在建设的部分。",
   "What the current numbers actually measure.": "当前这些数字究竟衡量了什么。",
@@ -414,10 +405,6 @@ export const visualsAr: TranslationDictionary = {
   "FOUR TRACKS OF WORK": "أربعة مسارات عمل",
   "FOUR TRACKS, FOUR DIFFERENT STAGES": "أربعة مسارات، أربع مراحل مختلفة",
   "Finished and re-derived on every build": "مُنجز ويُشتق من جديد مع كل بناء",
-  "Five stacked bars of decreasing width labelled 1,204 committed descriptors, 880 executable descriptors, 440 candidates on one pattern frontier, one bound handle, and one recorded receipt.":
-    "خمسة أشرطة متراصّة يتناقص عرضها، موسومة بـ 1,204 واصفًا ملتزَمًا، و880 واصفًا قابلًا للتنفيذ، و440 مرشحًا على واجهة نمط واحد، ومقبضًا مربوطًا واحدًا، وإيصالًا مسجَّلًا واحدًا.",
-  "From 1,204 declared candidates down to one recorded action.":
-    "من 1,204 مرشحًا معلَنًا وصولًا إلى إجراء واحد مسجَّل.",
   "HOW THE CURRENT ENGINE NARROWS ITS CHOICES": "كيف يضيّق المحرّك الحالي خياراته",
   "How older material is handled": "كيف نتعامل مع المواد الأقدم",
   "Identity leaves fixed": "التطبيق المحايد يُبقي ثابتًا",
@@ -498,7 +485,6 @@ export const visualsAr: TranslationDictionary = {
     "مرحلتان تحملان كل شيء تقريبًا، ومرحلتان قيمتهما صفر تمامًا.",
   "Typed coordinates contributed by each level": "الإحداثيات محددة النوع التي يسهم بها كل مستوى",
   "WHERE 560 COMES FROM, LEVEL BY LEVEL": "من أين يأتي العدد 560، مستوى بمستوى",
-  "WHERE THE 4,802 COUNTED WORK UNITS COME FROM": "من أين تأتي وحدات العمل المعدودة البالغة 4,802",
   "WHICH LEVELS CAN CARRY INFORMATION INTO WHICH": "أي المستويات يمكنها نقل المعلومات إلى أيها",
   "What already works, and what is being built next.": "ما يعمل بالفعل، وما نبنيه تاليًا.",
   "What the current numbers actually measure.": "ما الذي تقيسه هذه الأرقام فعلًا.",

@@ -24,8 +24,6 @@ export const programmeRu: TranslationDictionary = {
     "Пока никто не может сказать, сбылся план или нет, это не план, а пожелание. У каждого пункта здесь есть условие провала, так что таблицу можно сохранить и через год предъявить нам.",
   "A public endorsement, a logo, or a quotation to reuse in future material.":
     "Публичного одобрения, логотипа и цитаты, которую потом можно вставить в презентацию.",
-  "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
-    "Релиз есть, и он воспроизводится. Свежие повторы STATIC и FAST проходят на обычном интерпретаторе CPython 3.12.13; по 131 модулю сохранено 1 366 из 1 366 проверок FULL.",
   "A running artefact exists": "Есть работающий артефакт",
   AFFILIATION: "АФФИЛИАЦИЯ",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ДОСЬЕ ЗАЯВКИ · НЕ ОБЪЯВЛЕНИЕ",
@@ -149,7 +147,8 @@ export const programmeRu: TranslationDictionary = {
     "Опубликовать первое измерение внешнего эффекта — каким бы оно ни вышло.",
   "READ THIS FIRST": "СНАЧАЛА ПРОЧТИТЕ ЭТО",
   "RELEASE OF RECORD": "РЕЛИЗ, НА КОТОРЫЙ ССЫЛАЕМСЯ",
-  "Release of record": "Релиз, на который ссылаемся",
+  "Evidence of record": "Свидетельство, на которое ссылаемся",
+  "2,275 receipts across three public corpora": "2 275 протоколов по трём публичным корпусам",
   "Release record and boundaries": "Запись релиза и границы",
   "Replay runs on an ordinary interpreter": "Повтор идёт на обычном интерпретаторе",
   Revenue: "Выручка",
@@ -254,8 +253,6 @@ export const programmeZh: TranslationDictionary = {
     "只要没有人能判断计划是否兑现，它就仍然只是一个愿望。这里的每一项承诺都带有自己的未达成判定条件，因此这张表可以保存下来，一年后拿来对照本项目。",
   "A public endorsement, a logo, or a quotation to reuse in future material.":
     "公开背书、可供引用的标识，或日后材料中可以反复使用的一句话。",
-  "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
-    "版本确实存在并且可复现。新的 STATIC 与 FAST 重放在标准的 CPython 3.12.13 解释器上通过，并记录有跨 131 个模块的 1,366 / 1,366 项已存档 FULL 检查。",
   "A running artefact exists": "存在一个可运行的制品",
   AFFILIATION: "隶属关系",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "申请档案 · 并非公告",
@@ -371,7 +368,8 @@ export const programmeZh: TranslationDictionary = {
     "发布对外部运行效果的第一次测量，无论结果如何。",
   "READ THIS FIRST": "请先读这一段",
   "RELEASE OF RECORD": "作为依据的版本",
-  "Release of record": "作为依据的版本",
+  "Evidence of record": "作为依据的证据",
+  "2,275 receipts across three public corpora": "2,275 份回执，覆盖三个公开语料",
   "Release record and boundaries": "版本记录与边界",
   "Replay runs on an ordinary interpreter": "重放在普通解释器上就能运行",
   Revenue: "营收",
@@ -475,8 +473,6 @@ export const programmeAr: TranslationDictionary = {
     "الخطة أمنيةٌ ما دام لا أحد يستطيع الحكم بأنّها تحقّقت. ولكل التزام هنا شرط إخفاقه الخاص، فيمكن الاحتفاظ بهذا الجدول والعودة به إلى المشروع بعد عام.",
   "A public endorsement, a logo, or a quotation to reuse in future material.":
     "تأييدٍ علني أو شعارٍ أو اقتباسٍ يُعاد استعماله في موادّ لاحقة.",
-  "A release exists and reproduces. Fresh STATIC and FAST replays pass on a standard CPython 3.12.13 interpreter, and 1,366 of 1,366 stored FULL checks are recorded across 131 modules.":
-    "الإصدار موجود ويُعاد إنتاجه. تنجح إعادات التشغيل الحديثة STATIC وFAST على مفسِّر CPython 3.12.13 قياسي، وسُجِّل 1,366 فحصًا مخزَّنًا من نوع FULL من أصل 1,366، عبر 131 وحدة.",
   "A running artefact exists": "ثمّة مصنوعٌ يعمل",
   AFFILIATION: "الارتباط",
   "APPLICATION DOSSIER · NOT AN ANNOUNCEMENT": "ملف طلب · وليس إعلانًا",
@@ -597,7 +593,8 @@ export const programmeAr: TranslationDictionary = {
     "نشر أول قياس للأثر التشغيلي الخارجي، مهما تكن نتيجته.",
   "READ THIS FIRST": "اقرأ هذا أولًا",
   "RELEASE OF RECORD": "الإصدار المرجعي",
-  "Release of record": "الإصدار المرجعي",
+  "Evidence of record": "الدليل المرجعي",
+  "2,275 receipts across three public corpora": "2,275 إيصالًا عبر ثلاثة متونٍ عامّة",
   "Release record and boundaries": "سجل الإصدار والحدود",
   "Replay runs on an ordinary interpreter": "إعادة التشغيل تجري على مفسِّر عادي",
   Revenue: "الإيرادات",

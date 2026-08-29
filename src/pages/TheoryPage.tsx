@@ -174,7 +174,7 @@ const actionFamilies = [
   },
 ] as const;
 
-const currentV4ReplayLesson = theoryGlossary.find(({ term }) => term === "Current V4 step-by-step replay")!;
+const currentV4ReplayLesson = theoryGlossary.find(({ term }) => term === "One evaluated row, step by step")!;
 
 export function TheoryPage() {
   const { direction, href, t } = useI18n();
@@ -1423,7 +1423,7 @@ export function TheoryPage() {
             <h3>{t("A closed deterministic selector. Nothing about it was learned.")}</h3>
             <p>
               {t(
-                "What the released engine does is narrow enough to describe in one sentence: it accepts two kinds of input, narrows a list that was fixed before it ran, and orders what is left by a rule that depends only on the inputs. Run it twice on the same input a year apart and it returns the same thing, because there is nothing inside it that carries over.",
+                "Four numbers, and none of them is the same kind of thing. Two are properties of the mathematics and do not move; one is a range rather than a count; and the fourth is how many questions have actually been evaluated. Reading any of them as a measure of the others is the mistake this table exists to prevent.",
               )}
             </p>
           </div>
@@ -1431,7 +1431,7 @@ export function TheoryPage() {
           <div
             className="theory-runtime-arithmetic-wrap"
             role="region"
-            aria-label={t("Current V4 descriptor arithmetic")}
+            aria-label={t("The four numbers, and how each is derived")}
             tabIndex={0}
           >
             <table className="theory-runtime-arithmetic">
@@ -1439,6 +1439,7 @@ export function TheoryPage() {
               <thead>
                 <tr>
                   <th scope="col">{t("Value")}</th>
+                  <th scope="col">{t("Where it comes from")}</th>
                   <th scope="col">{t("Object counted")}</th>
                 </tr>
               </thead>
@@ -1448,6 +1449,7 @@ export function TheoryPage() {
                     <th scope="row" dir="ltr">
                       {row.value}
                     </th>
+                    <td dir="ltr">{row.calculation}</td>
                     <td>{t(row.meaning)}</td>
                   </tr>
                 ))}
@@ -1470,8 +1472,8 @@ export function TheoryPage() {
           </div>
           <div className="theory-current-contract">
             <p>
-              <span>{t("Source-pattern rule")}</span>
-              <code dir="ltr">alpha,beta → LEFT/even · gamma,delta → RIGHT/odd</code>
+              <span>{t("Input contract")}</span>
+              <code dir="ltr">relation pair → label · word form → edit action</code>
             </p>
             <p>
               <span>{t("Executable kinds")}</span>
@@ -1479,7 +1481,7 @@ export function TheoryPage() {
             </p>
             <p>
               <span>{t("Atlas effects")}</span>
-              <code dir="ltr">semantic_reads=0 · rank_effects=0 · learning_writes=0</code>
+              <code dir="ltr">semantic_reads=0 · rank_effects=0 · test_split_writes=0</code>
             </p>
           </div>
           <div
@@ -1504,34 +1506,29 @@ export function TheoryPage() {
                   <td>{t("L1–L7 mathematical coordinates")}</td>
                 </tr>
                 <tr>
-                  <th scope="row">{t("Active typed catalogue")}</th>
-                  <td dir="ltr">556</td>
-                  <td>{t("L2–L7 active; L1 control-only")}</td>
+                  <th scope="row">{t("Typed steps on one route")}</th>
+                  <td dir="ltr">84</td>
+                  <td>{t("3 channels × 7 levels × 4 families")}</td>
                 </tr>
                 <tr>
-                  <th scope="row">{t("Committed descriptors")}</th>
-                  <td dir="ltr">1,204</td>
-                  <td>{t("Declared finite candidate universe")}</td>
+                  <th scope="row">{t("Distinct cells one prediction touches")}</th>
+                  <td dir="ltr">28…84</td>
+                  <td>{t("Two channels may land on the same cell")}</td>
                 </tr>
                 <tr>
-                  <th scope="row">{t("Executable descriptors")}</th>
-                  <td dir="ltr">880</td>
-                  <td>{t("Four allowed action kinds")}</td>
+                  <th scope="row">{t("Public corpora evaluated")}</th>
+                  <td dir="ltr">3</td>
+                  <td>{t("Relation labelling and word inflection")}</td>
                 </tr>
                 <tr>
-                  <th scope="row">{t("Frontier per source pattern")}</th>
-                  <td dir="ltr">440</td>
-                  <td>{t("Deterministically ordered candidates")}</td>
+                  <th scope="row">{t("Evaluated rows, and receipts")}</th>
+                  <td dir="ltr">2,275</td>
+                  <td>{t("One per row, answered or refused")}</td>
                 </tr>
                 <tr>
-                  <th scope="row">{t("Accepted source patterns")}</th>
-                  <td dir="ltr">2</td>
-                  <td>{t("Fixed patterns, not arbitrary text")}</td>
-                </tr>
-                <tr>
-                  <th scope="row">{t("Arity / route depth")}</th>
-                  <td dir="ltr">2 / 1</td>
-                  <td>{t("Binary, one-step current contour")}</td>
+                  <th scope="row">{t("Closed answer sets")}</th>
+                  <td dir="ltr">25 · 55 · 122</td>
+                  <td>{t("Built from the training split alone")}</td>
                 </tr>
               </tbody>
             </table>
@@ -1539,21 +1536,21 @@ export function TheoryPage() {
           <div className="theory-current-target">
             <article>
               <ShieldCheck size={22} aria-hidden="true" />
-              <span>{t("Current V4 actually does")}</span>
+              <span>{t("What the public runs actually do")}</span>
               <ul>
-                <li>{t("works inside a committed finite candidate universe")}</li>
-                <li>{t("orders a 440-candidate frontier for each of two fixed source patterns")}</li>
-                <li>{t("executes one bounded action and records receipts")}</li>
-                <li>{t("performs zero Atlas semantic reads, rank effects, and learning writes")}</li>
+                <li>{t("close the set of possible answers before the evaluated split is read")}</li>
+                <li>{t("learn a state from the training split and freeze it with a digest")}</li>
+                <li>{t("publish an answer only when all three rights were bought")}</li>
+                <li>{t("write one receipt per row, answered or refused")}</li>
               </ul>
             </article>
             <article>
               <CircleAlert size={22} aria-hidden="true" />
-              <span>{t("Current V4 does not yet do")}</span>
+              <span>{t("What they do not do")}</span>
               <ul>
                 <li>{t("understand arbitrary natural-language observations")}</li>
-                <li>{t("run a persistent learned policy")}</li>
-                <li>{t("contain a trained World Atlas")}</li>
+                <li>{t("put the wider architecture in the measured path")}</li>
+                <li>{t("run on anybody else's data with anybody else's evaluator")}</li>
                 <li>{t("prove external operational gain or General AI")}</li>
               </ul>
             </article>
@@ -1590,7 +1587,7 @@ export function TheoryPage() {
               </li>
             ))}
           </ol>
-          <TermChips terms={["Formal, current, and target layers", "Current V4 step-by-step replay", "Receipt"]} />
+          <TermChips terms={["Formal, current, and target layers", "One evaluated row, step by step", "Receipt"]} />
         </div>
       </section>
 
@@ -1658,16 +1655,16 @@ export function TheoryPage() {
                 <dd>{releaseEvidence.freshReplay.full}</dd>
               </div>
               <div>
-                <dt>stored FULL</dt>
-                <dd>1,366 / 1,366</dd>
+                <dt>cold_rebuilds</dt>
+                <dd>3 / 3 BYTE_IDENTICAL</dd>
               </div>
               <div>
-                <dt>persistent_policy</dt>
-                <dd>NOT_STARTED</dd>
+                <dt>evaluation_receipts</dt>
+                <dd>2,275</dd>
               </div>
               <div>
-                <dt>trained_current_atlas</dt>
-                <dd>NOT_PRESENT</dd>
+                <dt>full_architecture_in_measured_path</dt>
+                <dd>NOT_PROVEN</dd>
               </div>
               <div>
                 <dt>external_operational_gain</dt>
