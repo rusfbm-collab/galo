@@ -1,4 +1,5 @@
 import type { ConceptLesson } from "../../content/theory";
+import { TermFigure } from "./TermFigure";
 
 function isolateBidiMathFragments(text: string) {
   const mathematicalFragment =
@@ -41,6 +42,7 @@ export function ConceptLessonCard({
           <strong className="concept-lesson__label">{translate("Intuition / analogy")}</strong>
           <p>{bilingualLine(lesson.analogy)}</p>
         </div>
+        <TermFigure term={lesson.term} />
         <div className="concept-lesson__field">
           <strong className="concept-lesson__label">{translate("Exact definition")}</strong>
           <p className="concept-lesson__formal">{bilingualLine(lesson.exactDefinition)}</p>

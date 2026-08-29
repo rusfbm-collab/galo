@@ -20762,3 +20762,232 @@ html[lang="ar"][lang="ar"] body * {
     margin-bottom: 12px;
   }
 }
+
+/* ============================================================================
+   TERM FIGURES
+
+   One picture per term in the theory chapter. Three renderers cover twenty
+   terms, because the terms are about three things: a set of poles, a table, or
+   named parts in an order. The figure spans the card's full width and sits
+   between the analogy and the exact definition, where the reader already has
+   something to hang it on and has not yet met the sentence it unpacks.
+   ========================================================================= */
+
+.term-figure {
+  display: grid;
+  gap: 12px;
+  grid-column: 1 / -1;
+  margin: 0;
+  border: 1px solid #c8e2df;
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--white);
+}
+
+.term-figure__canvas {
+  overflow-x: auto;
+}
+
+.term-figure figcaption {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+/* ---- a Cayley table with one region marked ---- */
+
+.term-figure__table {
+  border-collapse: separate;
+  border-spacing: 3px;
+}
+
+.term-figure__table th,
+.term-figure__table td {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  padding: 0 6px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.term-figure__table th {
+  color: var(--teal-deep);
+  background: rgba(15, 156, 136, 0.09);
+  font-weight: 800;
+}
+
+.term-figure__table td {
+  color: var(--ink);
+  background: var(--paper);
+  font-weight: 700;
+}
+
+.term-figure__table th.is-marked {
+  color: var(--white);
+  background: var(--teal-deep);
+}
+
+.term-figure__table td.is-marked {
+  color: var(--white);
+  background: var(--navy-900);
+}
+
+/* ---- poles, drawn at size ---- */
+
+.term-figure__poles {
+  display: grid;
+  gap: 6px;
+}
+
+.term-figure__pole-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.term-figure__pole-label {
+  min-width: 62px;
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.term-figure__pole-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.term-figure__pole {
+  display: inline-flex;
+  min-width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  border: 1.3px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.term-figure__pole.is-marked {
+  border-color: var(--teal-deep);
+  color: var(--white);
+  background: var(--teal-deep);
+}
+
+/* The wrap in "modulo n": where the count starts, and how far it runs. */
+.term-figure__pole.is-from {
+  border-color: var(--teal-deep);
+  color: var(--teal-deep);
+  background: rgba(15, 156, 136, 0.12);
+}
+
+.term-figure__pole.is-step {
+  border-style: dashed;
+  border-color: var(--chart-2);
+  color: var(--chart-2);
+}
+
+/* Residue classes: three blocks, told apart by colour rather than by caption. */
+.term-figure__pole.is-block-a {
+  border-color: var(--chart-1);
+  background: rgba(15, 156, 136, 0.14);
+}
+
+.term-figure__pole.is-block-b {
+  border-color: var(--chart-3, #6e8ce2);
+  background: rgba(110, 140, 226, 0.14);
+}
+
+.term-figure__pole.is-block-c {
+  border-color: var(--chart-2);
+  background: rgba(216, 91, 97, 0.12);
+}
+
+/* ---- named parts in an order ---- */
+
+.term-figure__flow {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.term-figure__flow li {
+  display: grid;
+  grid-template-columns: minmax(84px, auto) 1fr;
+  align-items: baseline;
+  gap: 12px;
+  border-radius: 10px;
+  padding: 9px 12px;
+  background: var(--paper);
+}
+
+.term-figure__flow bdi {
+  color: var(--teal-deep);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.term-figure__flow span {
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/* An arrow layout reads as a pipeline: each row after the first is a step on
+   from the one above it. */
+.term-figure__flow.is-arrow li + li {
+  position: relative;
+  margin-top: 8px;
+}
+
+.term-figure__flow.is-arrow li + li::before {
+  position: absolute;
+  top: -13px;
+  inset-inline-start: 34px;
+  color: var(--chart-neutral-strong);
+  content: "↓";
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+/* Layers are stacked and inset, so the ordering reads as depth. */
+.term-figure__flow.is-stack li {
+  border-inline-start: 3px solid var(--chart-1);
+}
+
+.term-figure__flow.is-stack li:nth-child(2) {
+  border-inline-start-color: var(--figure-accent, var(--teal-deep));
+}
+
+.term-figure__flow.is-stack li:nth-child(3) {
+  border-inline-start-color: var(--chart-2);
+  border-inline-start-style: dashed;
+}
+
+@media (max-width: 620px) {
+  .term-figure__flow li {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .term-figure__flow.is-arrow li + li::before {
+    inset-inline-start: 12px;
+  }
+
+  .term-figure__pole-row {
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

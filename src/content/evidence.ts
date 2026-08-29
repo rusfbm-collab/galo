@@ -15,7 +15,6 @@ export const releaseEvidence = {
    * result. The public runs are the record now, so the record says so.
    */
   recordOfEvidence: "2,275 receipts across three public corpora",
-  status: "READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES",
   freshReplay: {
     static: "PASS",
     staticReceipt: "f00581021163a7236194517d0370cff3d836803804959fdf1adfb318cb4666ea",

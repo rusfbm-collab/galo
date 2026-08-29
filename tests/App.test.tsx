@@ -497,8 +497,9 @@ describe("GALO public site", () => {
     ).toBeInTheDocument();
     expect(screen.getByText("Work runs on four tracks, and each one is at a different stage.")).toBeInTheDocument();
     expect(screen.getByText("Target world-model loop")).toBeInTheDocument();
-    expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
-    expect(screen.getAllByText("3 / 3")[0]).toBeInTheDocument();
+    expect(
+      screen.getByText("Reproducible, narrow, and unvalidated by anybody outside this project"),
+    ).toBeInTheDocument();
     expect(screen.getByText("What the work count is, and what it is not.")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/closed deterministic selector\. Nothing about it was learned/i)).toBeInTheDocument();
@@ -918,7 +919,6 @@ describe("GALO public site", () => {
     expect(releaseCounts).not.toHaveTextContent("1,204");
     expect(screen.getByText("TARGET ARCHITECTURE · NOT CURRENT V4")).toBeInTheDocument();
     expect(screen.getByText(/must not be presented as a current multi-step runtime capability/i)).toBeInTheDocument();
-    expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
     expect(screen.getByText(/stored release evidence and was not freshly replayed/i)).toBeInTheDocument();
     const lessonCards = document.querySelectorAll(".theory-glossary > .concept-lesson-card");
@@ -1493,7 +1493,6 @@ describe("GALO public site", () => {
     expect(
       screen.getByRole("heading", { level: 1, name: "已经能用的部分，以及接下来正在建设的部分。" }),
     ).toBeInTheDocument();
-    expect(screen.getByText("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES")).toBeInTheDocument();
     // "General AI" is now bounded twice on this page: once for the frozen release
     // and once for the V65-V67 learning line.
     expect(screen.getAllByText("通用人工智能").length).toBeGreaterThanOrEqual(2);

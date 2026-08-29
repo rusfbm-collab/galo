@@ -42,6 +42,7 @@ import { routeItemsZh } from "./routeItems";
 import { htmlFiguresZh } from "./htmlFigures";
 import { mathDiagramsZh } from "./mathDiagrams";
 import { cayleyPageZh } from "./cayleyPage";
+import { termFiguresZh } from "./termFigures";
 import { verdictLawZh } from "./verdictLaw";
 
 export const zh: TranslationDictionary = {
@@ -88,6 +89,7 @@ export const zh: TranslationDictionary = {
   ...htmlFiguresZh,
   ...mathDiagramsZh,
   ...cayleyPageZh,
+  ...termFiguresZh,
   ...verdictLawZh,
   Language: "语言",
   "Skip to content": "跳到正文",

@@ -43,7 +43,7 @@ export function EvidencePage() {
           <div className="release-status">
             <FileCheck2 size={19} aria-hidden="true" />
             <span>{t("CURRENT RELEASE STATUS")}</span>
-            <strong dir="ltr">{releaseEvidence.status}</strong>
+            <strong>{t("Reproducible, narrow, and unvalidated by anybody outside this project")}</strong>
           </div>
         </div>
       </section>

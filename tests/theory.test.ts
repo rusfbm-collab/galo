@@ -163,7 +163,6 @@ describe("beginner theory dual-channel safeguards", () => {
     expect(releaseEvidence.tracks.map(({ reached }) => reached)).toEqual([3, 2, 3, 2]);
     expect(releaseEvidence.tracks.every(({ reached }) => reached < workTrackMilestones.length)).toBe(true);
     expect(releaseEvidence.freshReplay.full).toBe("NOT COMPLETED");
-    expect(releaseEvidence.status).toBe("READY_NOT_DUAL_MINOR_SEALED_WITH_DISCLOSED_BOUNDARIES");
     expect(theoryEvidenceLadder.map(({ status }) => status)).toEqual([
       "FORMALLY DERIVED",
       "TESTED",

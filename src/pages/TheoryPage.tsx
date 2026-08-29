@@ -1629,10 +1629,6 @@ export function TheoryPage() {
           </div>
           <ThreeShelvesFigure />
           <div className="theory-release-witness">
-            <div>
-              <span>{t("Current legal release status")}</span>
-              <strong dir="ltr">{releaseEvidence.status}</strong>
-            </div>
             <dl dir="ltr">
               <div>
                 <dt>fresh STATIC</dt>

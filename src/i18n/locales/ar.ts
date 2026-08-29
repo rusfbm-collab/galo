@@ -42,6 +42,7 @@ import { routeItemsAr } from "./routeItems";
 import { htmlFiguresAr } from "./htmlFigures";
 import { mathDiagramsAr } from "./mathDiagrams";
 import { cayleyPageAr } from "./cayleyPage";
+import { termFiguresAr } from "./termFigures";
 import { verdictLawAr } from "./verdictLaw";
 
 export const ar: TranslationDictionary = {
@@ -88,6 +89,7 @@ export const ar: TranslationDictionary = {
   ...htmlFiguresAr,
   ...mathDiagramsAr,
   ...cayleyPageAr,
+  ...termFiguresAr,
   ...verdictLawAr,
   Language: "اللغة",
   "Skip to content": "الانتقال إلى المحتوى",
