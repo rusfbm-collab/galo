@@ -5,8 +5,6 @@ export const releaseRu: TranslationDictionary = {
     "140 упорядоченных координат × два закона × две ориентации ролей операндов; 556 координат активны в среде исполнения L2–L7. Это не семантические понятия.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "Бинарный одношаговый контур исполнения L2–L7 с двумя замкнутыми исходными шаблонами и четырьмя исполняемыми видами действий; L1 используется только для контроля.",
-  "A closed deterministic selector. Nothing about it was learned.":
-    "Замкнутый детерминированный селектор. Обучением тут и не пахнет.",
   "A current trained Atlas is not present.": "Текущий обученный Atlas отсутствует.",
   "A durable trusted manifest head beyond process-local checks.":
     "Устойчиво сохраняемая доверенная вершина манифеста за пределами проверок, локальных для процесса.",
@@ -129,8 +127,6 @@ export const releaseRu: TranslationDictionary = {
     "В выпуске явно разделены математика, доказательства совместимости и текущий исполняемый API. Утверждение одного слоя не переносится неявно в другой.",
   "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
     "Селектор принимает два фиксированных исходных шаблона. Произвольный текст на естественном языке он не берёт.",
-  "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
-    "Селектор распознаёт ровно два исходных шаблона, фильтрует зафиксированный конечный универсум по чётности и хеширует наблюдение, ID кандидата и порядковый номер, получая детерминированный порядок. Состояние Atlas не влияет на результат.",
   "This deterministic walkthrough uses sanitized identifiers from the current V4 direct selfcheck. It distinguishes two fixed source patterns, but it does not accept arbitrary observations, generate a semantic answer, or learn.":
     "В этом детерминированном walkthrough используются очищенные идентификаторы из прямого selfcheck текущей V4. Он различает два фиксированных исходных шаблона, но не принимает произвольные наблюдения, не формирует семантический ответ и не обучается.",
   "Trajectories, real CORE/QUASI/BOUNDARY actions, and a probe-response loop.":

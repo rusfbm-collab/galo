@@ -73,9 +73,6 @@ export const releaseZh: TranslationDictionary = {
   "The release keeps mathematics, compatibility evidence, and the current executable API explicit. A statement in one layer is not silently promoted into another.":
     "该版本明确区分数学层、兼容性证据层与当前可执行 API。任何一层中的陈述都不会被无提示地提升为另一层中的陈述。",
   "CURRENT V4 SELECTOR": "当前 V4 选择器",
-  "A closed deterministic selector. Nothing about it was learned.": "封闭的确定性选择器，而非学习型推理器。",
-  "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
-    "该选择器恰好识别两个来源模式，按奇偶性筛选已提交的有限全集，并对观测、候选 ID 与序号进行哈希以生成确定性次序。Atlas 状态不影响结果。",
   "Source ontology": "来源本体",
   "Executable kinds": "可执行动作类型",
   "Atlas influence": "Atlas 影响",

@@ -5,7 +5,6 @@ export const releaseAr: TranslationDictionary = {
     "140 إحداثيًا مرتبًا × قانونين × اتجاهين لدوري المُعاملين؛ منها 556 فعّالة في بيئة التشغيل L2–L7. وليست هذه مفاهيم دلالية.",
   "A binary, one-step L2–L7 execution slice with two closed source patterns and four executable action kinds; L1 is control-only.":
     "شريحة تنفيذ ثنائية أحادية الخطوة على L2–L7، ذات نمطي مصدر مغلقين وأربعة أنواع من الأفعال القابلة للتنفيذ؛ أما L1 فللضبط فقط.",
-  "A closed deterministic selector. Nothing about it was learned.": "مُحدِّد حتمي مغلق، وليس آلية استدلال متعلّمة.",
   "A current trained Atlas is not present.": "لا يوجد Atlas حالي مدرَّب.",
   "A durable trusted manifest head beyond process-local checks.":
     "رأس manifest موثوق ودائم يتجاوز الفحوص المحلية ضمن العملية.",
@@ -118,8 +117,6 @@ export const releaseAr: TranslationDictionary = {
     "يفصل الإصدار بوضوح بين الرياضيات وأدلة التوافق وواجهة API القابلة للتنفيذ حاليًا. ولا يُرقّى قول من طبقة إلى أخرى ضمنًا.",
   "The selector accepts two fixed source patterns. Arbitrary natural-language observations are refused.":
     "يقبل المُحدِّد نمطي مصدر ثابتين، لا ملاحظات تعسفية باللغة الطبيعية.",
-  "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.":
-    "يتعرف المُحدِّد نمطي مصدر لا غير، ويرشّح كونًا منتهيًا مُثبّتًا بحسب الزوجية، ثم يطبّق دالة تجزئة على الملاحظة ومعرّف المرشح والرتبة التعدادية لإنتاج ترتيب حتمي. ولا تؤثر حالة Atlas في النتيجة.",
   "This deterministic walkthrough uses sanitized identifiers from the current V4 direct selfcheck. It distinguishes two fixed source patterns, but it does not accept arbitrary observations, generate a semantic answer, or learn.":
     "يستخدم هذا العرض الحتمي معرّفات منقّحة من الفحص الذاتي المباشر لـ V4 الحالية. وهو يميّز بين نمطي مصدر ثابتين، لكنه لا يقبل ملاحظات تعسفية، ولا يولّد إجابة دلالية، ولا يتعلّم.",
   "Trajectories, real CORE/QUASI/BOUNDARY actions, and a probe-response loop.":

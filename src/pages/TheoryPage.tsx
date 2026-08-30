@@ -1420,7 +1420,7 @@ export function TheoryPage() {
           </div>
           <div className="theory-architecture-subheading">
             <span>{t("CURRENT V4 · EXACT REPLAYABLE PIPELINE")}</span>
-            <h3>{t("A closed deterministic selector. Nothing about it was learned.")}</h3>
+            <h3>{t("A catalogue, a route, and a count of questions actually asked.")}</h3>
             <p>
               {t(
                 "Four numbers, and none of them is the same kind of thing. Two are properties of the mathematics and do not move; one is a range rather than a count; and the fourth is how many questions have actually been evaluated. Reading any of them as a measure of the others is the mistake this table exists to prevent.",

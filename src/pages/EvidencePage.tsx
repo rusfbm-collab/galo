@@ -126,11 +126,11 @@ export function EvidencePage() {
         <div className="shell">
           <div className="section-heading section-heading--light">
             <div>
-              <p className="eyebrow">{t("CURRENT V4 SELECTOR")}</p>
-              <h2>{t("A closed deterministic selector. Nothing about it was learned.")}</h2>
+              <p className="eyebrow">{t("EVERY ROW, ANSWERED OR REFUSED")}</p>
+              <h2>{t("Every test row leaves a record, whichever way it went.")}</h2>
               <p className="section-heading__text">
                 {t(
-                  "The selector recognizes exactly two source patterns, filters a committed finite universe by parity, and hashes observation, candidate ID, and ordinal to produce a deterministic order. Atlas state does not affect the result.",
+                  "Three public corpora, one receipt per row. A row is answered only where all three conditions of the admission law held; where one did not, the row is a boundary and the missing condition is named in its record. Every corpus file is pinned by hash to an upstream commit, so a reviewer reproduces the inputs rather than trusting a description of them.",
                 )}
               </p>
             </div>

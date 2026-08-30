@@ -502,7 +502,7 @@ describe("GALO public site", () => {
     ).toBeInTheDocument();
     expect(screen.getByText("What the work count is, and what it is not.")).toBeInTheDocument();
     expect(screen.getByText("NOT COMPLETED")).toBeInTheDocument();
-    expect(screen.getByText(/closed deterministic selector\. Nothing about it was learned/i)).toBeInTheDocument();
+    expect(screen.getByText(/Every test row leaves a record, whichever way it went/i)).toBeInTheDocument();
     expect(screen.getByRole("table", { name: "Public claim matrix" })).toBeInTheDocument();
     // The boundary register no longer says NOT PRESENT about a trained state,
     // because the public artefact now carries one. What is still open is where

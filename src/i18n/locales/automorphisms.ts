@@ -119,6 +119,13 @@ export const automorphismsRu: TranslationDictionary = {
     "Возьмите отображение φ, которое отправляет каждый полюс куда-то. Оно является автоморфизмом, когда выполняются две вещи: это переобозначение, то есть никакие два полюса не отправлены в одно имя, и оно сохраняет оба закона, то есть φ(a ⊕ b) = φ(a) ⊕ φ(b) для каждой пары и то же самое для ★. Нужны оба условия. Отображение, отправляющее всё в P0, сохраняет оба закона безупречно и не переобозначает ничего, — поэтому первая проверка ниже ищет совпадения имён, а вторая проверяет закон. Это n² обращений к таблице на закон, и уровень, который умещается на печать, — это уровень, который можно проверить исчерпывающе.",
   "{operation} at level {level}, redrawn under the renaming":
     "{operation} на уровне {level}, перерисованный под переобозначением",
+  "A catalogue, a route, and a count of questions actually asked.":
+    "Каталог, маршрут и счёт реально заданных вопросов.",
+  "EVERY ROW, ANSWERED OR REFUSED": "КАЖДАЯ СТРОКА — ОТВЕЧЕНА ИЛИ ОТКЛОНЕНА",
+  "Every test row leaves a record, whichever way it went.":
+    "Каждая тестовая строка оставляет запись — чем бы дело ни кончилось.",
+  "Three public corpora, one receipt per row. A row is answered only where all three conditions of the admission law held; where one did not, the row is a boundary and the missing condition is named in its record. Every corpus file is pinned by hash to an upstream commit, so a reviewer reproduces the inputs rather than trusting a description of them.":
+    "Три публичных корпуса, по одному протоколу на строку. Строка получает ответ только там, где выполнились все три условия закона допуска; где одно не выполнилось, строка становится границей, и недостающее условие названо в её записи. Каждый файл корпуса закреплён хешем за коммитом источника, поэтому рецензент воспроизводит входные данные, а не доверяет их описанию.",
 };
 
 export const automorphismsZh: TranslationDictionary = {
@@ -234,6 +241,11 @@ export const automorphismsZh: TranslationDictionary = {
   "Take a map φ that sends each pole somewhere. It is an automorphism when two things hold: it is a renaming, meaning no two poles are sent to one name, and it preserves both laws, meaning φ(a ⊕ b) = φ(a) ⊕ φ(b) for every pair and the same for ★. Both conditions are needed. The map that sends everything to P0 preserves both laws perfectly and is not a renaming of anything, which is why the first check below is for collisions and the second is the law. That is n² lookups per law, and a level small enough to print is a level small enough to check exhaustively.":
     "取一个把每个极送到某处的映射 φ。它是自同构，当且仅当两件事同时成立：它是一次重新命名，也就是没有两个极被送到同一个名字上；并且它保住两条法则，也就是对每一对都有 φ(a ⊕ b) = φ(a) ⊕ φ(b)，★ 也一样。两个条件缺一不可。那个把一切都送到 P0 的映射，把两条法则保得完美无缺，却什么也没重新命名——所以下面第一项检查是找撞名，第二项才是查法则。每条法则 n² 次查表；而一个印得下的层，就是一个可以被穷尽核对的层。",
   "{operation} at level {level}, redrawn under the renaming": "第 {level} 层的 {operation}，在这个重新命名之下重画",
+  "A catalogue, a route, and a count of questions actually asked.": "一份目录、一条路线，以及真正被问过的问题的计数。",
+  "EVERY ROW, ANSWERED OR REFUSED": "每一行，答了还是拒答",
+  "Every test row leaves a record, whichever way it went.": "每一条测试行都留下一份记录，无论结果朝哪边去。",
+  "Three public corpora, one receipt per row. A row is answered only where all three conditions of the admission law held; where one did not, the row is a boundary and the missing condition is named in its record. Every corpus file is pinned by hash to an upstream commit, so a reviewer reproduces the inputs rather than trusting a description of them.":
+    "三个公开语料，每一行一份回执。只有在准入法则的三个条件都成立的地方，这一行才算答了；其中有一个不成立，这一行就是一条边界，而缺的那个条件会被写进它的记录里。每一个语料文件都用哈希钉在上游的某个提交上，所以审阅者复现的是输入本身，而不是去相信一段对输入的描述。",
 };
 
 export const automorphismsAr: TranslationDictionary = {
@@ -353,4 +365,9 @@ export const automorphismsAr: TranslationDictionary = {
     "خذ اقترانًا φ يرسل كلَّ قطبٍ إلى مكانٍ ما. يكون تشاكلًا ذاتيًّا حين يثبت أمران: أن يكون إعادةَ تسمية، أي ألّا يُرسَل قطبان إلى اسمٍ واحد، وأن يحفظ القانونين، أي φ(a ⊕ b) = φ(a) ⊕ φ(b) لكلِّ زوجٍ وكذلك لـ★. والشرطان كلاهما لازم. فالاقترانُ الذي يرسل كلَّ شيءٍ إلى P0 يحفظ القانونين حفظًا تامًّا ولا يعيد تسميةَ شيء، ولهذا يكون الفحصُ الأوّلُ أدناه عن التصادمات والثاني عن القانون. وهذا n² عمليّةَ بحثٍ لكلّ قانون، والمستوى الذي يسع الطباعةَ مستوًى يسع الفحصَ الشامل.",
   "{operation} at level {level}, redrawn under the renaming":
     "{operation} عند المستوى {level}، مُعادَ رسمُه تحت إعادة التسمية",
+  "A catalogue, a route, and a count of questions actually asked.": "فهرسٌ ومسارٌ وعددُ الأسئلة المطروحة فعلًا.",
+  "EVERY ROW, ANSWERED OR REFUSED": "كلُّ سطرٍ، أُجيب عنه أم رُفض",
+  "Every test row leaves a record, whichever way it went.": "كلُّ سطرِ اختبارٍ يترك سجلًّا، أيًّا كان ما آل إليه.",
+  "Three public corpora, one receipt per row. A row is answered only where all three conditions of the admission law held; where one did not, the row is a boundary and the missing condition is named in its record. Every corpus file is pinned by hash to an upstream commit, so a reviewer reproduces the inputs rather than trusting a description of them.":
+    "ثلاثةُ متونٍ عامّة، وإيصالٌ واحدٌ لكلّ سطر. ولا يُجاب عن السطر إلّا حيث ثبتت شروطُ قانون القبول الثلاثة جميعًا؛ وحيث سقط أحدُها كان السطرُ حدًّا وسُمِّي الشرطُ الغائبُ في سجلّه. وكلُّ ملفِّ متنٍ مُثبَّتٌ ببصمةٍ إلى التزامٍ منبعيّ، فيُعيد المراجِعُ إنتاجَ المدخلات بدل أن يثق بوصفٍ لها.",
 };
